@@ -140,4 +140,33 @@
 :root {
   --vp-c-text-1: #000;
   --vp-c-text-2: #454545;
+  --vp-badge-tip-text: var(--vp-c-green-1);
+  --vp-badge-tip-bg: var(--vp-c-green-soft);
+  --vp-code-color: var(--vp-c-text-1);
+}
+
+.example img {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 10px;
+}
+
+.routeBlock ul {
+  padding-left: 35px;
+}
+
+.VPDocOutlineItem.root > li > a {
+  font-weight: 600;
+}
+
+.VPDocOutlineItem.nested a {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.VPDocAsideCarbonAds {
+  position: sticky;
+  bottom: 0px;
+  z-index: 2;
+  /* order: -1; */
 }

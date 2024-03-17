@@ -12,6 +12,9 @@ export default defineConfig({
       code: 'CEAI653E',
       placement: 'docsrsshubapp'
     },
+    outline: {
+      level: [2, 3],
+    },
   
     // https://vitepress.dev/reference/default-theme-config
     nav: [
