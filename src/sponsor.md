@@ -2,7 +2,7 @@
 sidebar: auto
 ---
 
-# Support RSSHub
+# Sponsor RSSHub
 
 RSSHub is open source and completely free under the MIT license. However, just like any other open source projects, as the project grows, the hosting, development and maintenance require funding support.
 

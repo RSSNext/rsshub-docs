@@ -11,7 +11,8 @@ export const zh = defineConfig({
       { text: '指南', link: '/zh/guide/' },
       { text: '参与我们', link: '/zh/joinus/' },
       { text: '部署', link: '/zh/deploy/' },
-      { text: '支持我们', link: '/zh/support/' },
+      { text: '生态系统', link: '/zh/ecosystem' },
+      { text: '赞助', link: '/zh/sponsor' },
     ],
 
     editLink: {

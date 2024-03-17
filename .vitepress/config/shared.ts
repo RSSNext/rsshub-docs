@@ -59,7 +59,8 @@ export const shared = defineConfig({
       { text: 'Guide', link: '/guide/' },
       { text: 'Join Us', link: '/joinus/' },
       { text: 'Deploy', link: '/deploy/' },
-      { text: 'Support', link: '/support/' },
+      { text: 'Ecosystem', link: '/ecosystem' },
+      { text: 'Sponsor', link: '/sponsor' },
     ],
 
     socialLinks: [
