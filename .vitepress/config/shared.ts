@@ -75,7 +75,7 @@ export const shared = defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2018-present DIYgod'
+      copyright: `Copyright © 2018-${new Date().getFullYear()} DIYgod`
     },
 
     sidebar: {

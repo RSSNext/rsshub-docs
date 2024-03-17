@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "RSSHub"
   text: "万物皆可 RSS"
-  tagline: 🧡 从任何内容生成 RSS/Atom/JSON 订阅源。
+  tagline: 🧡 从任何内容生成 RSS/Atom/JSON 订阅源
   image:
     src: /logo.png
     alt: RSSHub

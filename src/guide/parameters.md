@@ -6,9 +6,7 @@ Parameters here are actually URI query and can be linked together with `&` to ge
 
 Parameters here need to be placed after the route path. Some routes may have <span style="color: blue">**custom route parameters**</span> and <span style="color: violet">**parameters here**</span> need to be placed after them.
 
-E.g., 
-
-<a href="https://rsshub.app/twitter/user/durov/readable=1&includeRts=0?brief=100&limit=5">
+E.g., <a href="https://rsshub.app/twitter/user/durov/readable=1&includeRts=0?brief=100&limit=5">
   https://rsshub.app/twitter/user/durov/<span style="color: blue">**readable=1&includeRts=0**</span>?<span style="color: violet">**brief=100&limit=5**</span>
 </a>
 
