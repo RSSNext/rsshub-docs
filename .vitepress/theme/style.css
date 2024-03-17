@@ -50,7 +50,7 @@
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
   --vp-c-brand-1: #ff894c;
-  --vp-c-brand-2: #ff894c;
+  --vp-c-brand-2: #ff752e;
   --vp-c-brand-3: #ff2900;
   --vp-c-brand-soft: var(--vp-c-indigo-soft);
 
@@ -91,19 +91,29 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-home-hero-name-color: #ff8c4f;
-  /* --vp-home-hero-name-background: -webkit-linear-gradient(
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #ff2900 30%,
-    #ffd6a6
-  ); */
+    #ff2900 5%,
+    #ff752e
+  );
 
-  /* --vp-home-hero-image-background-image: linear-gradient(
+  --vp-home-hero-image-background-image: linear-gradient(
     45deg,
-    #ff2900 50%,
-    #ffd6a6 50%
-  ); */
+    #ff2900 40%,
+    #ffd6a6 40%
+  );
   --vp-home-hero-image-filter: blur(44px);
+}
+
+.VPHomeHero .VPImage,
+.VPHomeHero .image-bg {
+  max-width: 280px;
+  max-height: 280px;
+}
+
+.VPHomeHero .image-container {
+  transform: translate(0, -5px);
 }
 
 @media (min-width: 640px) {
@@ -143,6 +153,8 @@
   --vp-badge-tip-text: var(--vp-c-green-1);
   --vp-badge-tip-bg: var(--vp-c-green-soft);
   --vp-code-color: var(--vp-c-text-1);
+  --vp-button-brand-bg: var(--vp-c-brand-2);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-1);
 }
 
 .example img {
