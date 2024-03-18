@@ -6,6 +6,7 @@ import './style.css'
 import Route from './components/Route.vue'
 import Site from './components/Site.vue'
 import Sponsors from './components/Sponsors.vue'
+import InstanceList from './components/InstanceList.vue'
 
 export default {
   extends: DefaultTheme,
@@ -19,5 +20,6 @@ export default {
     app.component('Route', Route)
     app.component('Site', Site)
     app.component('Sponsors', Sponsors)
+    app.component('InstanceList', InstanceList)
   }
 } satisfies Theme
