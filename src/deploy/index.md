@@ -542,7 +542,7 @@ Run RSSHub from just $1/month. Includes automatic updates and $5 free starting c
 3.  Create a new service in the project, select deploying from the **marketplace**.
 4.  Add a domain name, if you use a custom domain name, you can refer to [Zeabur's domain name binding document](https://docs.zeabur.com/deploy/domain-binding).
 
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://dash.zeabur.com/templates/X46PTP)
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
 ## Deploy to Google App Engine(GAE)
 
