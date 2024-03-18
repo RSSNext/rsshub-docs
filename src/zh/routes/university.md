@@ -171,6 +171,14 @@
 
 ## 北京师范大学 <Site url="bs.bnu.edu.cn"/>
 
+### Unknown <Site url="bs.bnu.edu.cn" size="sm" />
+
+<Route namespace="bnu" :data='{"path":"/fdy/:path{.+}?","name":"Unknown","maintainers":[],"location":"fdy.ts"}' />
+
+### Unknown <Site url="bs.bnu.edu.cn" size="sm" />
+
+<Route namespace="bnu" :data='{"path":"/lib/:category?","radar":[{"source":["www.lib.bnu.edu.cn/:category/index.htm"],"target":"/lib/:category"}],"name":"Unknown","maintainers":["TonyRL"],"location":"lib.ts"}' />
+
 ### 党委学生工作部 <Site url="bs.bnu.edu.cn" size="sm" />
 
 <Route namespace="bnu" :data='{"path":"/dwxgb/:category/:type","categories":["university"],"example":"/bnu/dwxgb/xwzx/tzgg","parameters":{"category":"大分类","type":"子分类，例子如下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dwxgb.bnu.edu.cn/:category/:type/index.html"]}],"name":"党委学生工作部","maintainers":["Fatpandac"],"description":"`https://dwxgb.bnu.edu.cn/xwzx/tzgg/index.html` 则对应为 `/bnu/dwxgb/xwzx/tzgg","location":"dwxgb.ts"}' />
@@ -187,6 +195,10 @@
 
 ## 北京航空航天大学 <Site url="news.buaa.edu.cn"/>
 
+### Unknown <Site url="news.buaa.edu.cn" size="sm" />
+
+<Route namespace="buaa" :data='{"path":"/sme/:path{.+}?","name":"Unknown","maintainers":[],"location":"sme.ts"}' />
+
 ### 新闻网 <Site url="news.buaa.edu.cn" size="sm" />
 
 <Route namespace="buaa" :data='{"path":"/news/:type","categories":["university"],"example":"/buaa/news/zhxw","parameters":{"type":"新闻版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻网","maintainers":["AlanDecode"],"description":"| 综合新闻 | 信息公告  | 学术文化     | 校园风采  | 科教在线  | 媒体北航  | 专题新闻 | 北航人物 |\n  | -------- | --------- | ------------ | --------- | --------- | --------- | -------- | -------- |\n  | zhxw     | xxgg_new | xsjwhhd_new | xyfc_new | kjzx_new | mtbh_new | ztxw     | bhrw     |","location":"news/index.ts"}' />
@@ -202,6 +214,14 @@
 <Route namespace="bupt" :data='{"path":"/rczp","categories":["university"],"example":"/bupt/rczp","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bupt.edu.cn/"]}],"name":"人才招聘","maintainers":["nczitzk"],"url":"bupt.edu.cn/","location":"rczp.ts"}' />
 
 ## 北京大学 <Site url="admission.pku.edu.cn"/>
+
+### Unknown <Site url="admission.pku.edu.cn" size="sm" />
+
+<Route namespace="pku" :data='{"path":"/eecs/:type?","name":"Unknown","maintainers":["Ir1d"],"location":"eecs.ts"}' />
+
+### Unknown <Site url="ss.pku.edu.cn/index.php/newscenter/notice" size="sm" />
+
+<Route namespace="pku" :data='{"path":"/ss/notice","radar":[{"source":["ss.pku.edu.cn/index.php/newscenter/notice","ss.pku.edu.cn/"]}],"name":"Unknown","maintainers":["legr4ndk"],"url":"ss.pku.edu.cn/index.php/newscenter/notice","location":"ss/notice.ts"}' />
 
 ### 北大未名 BBS 全站十大 <Site url="bbs.pku.edu.cn/v2/hot-topic.php" size="sm" />
 
@@ -518,13 +538,13 @@
 
 ## 哈尔滨工程大学 <Site url="yjsy.hrbeu.edu.cn"/>
 
-### Unknown <Site url="job.hrbeu.edu.cn/*" size="sm" />
+### Unknown <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
-<Route namespace="hrbeu" :data='{"path":"/job/bigemploy","categories":["university"],"example":"/hrbeu/job/bigemploy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["job.hrbeu.edu.cn/*"]}],"name":"Unknown","maintainers":["Derekmini"],"url":"job.hrbeu.edu.cn/*","location":"job/bigemploy.ts"}' />
+<Route namespace="hrbeu" :data='{"path":"/gx/card/:column/:id?","name":"Unknown","maintainers":[],"location":"gx/card.ts"}' />
 
 ### Unknown <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
-<Route namespace="hrbeu" :data='{"path":"/job/list/:id","categories":["university"],"example":"/hrbeu/job/list/tzgg","parameters":{"id":"栏目，如下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Unknown","maintainers":["Derekmini"],"location":"job/list.ts"}' />
+<Route namespace="hrbeu" :data='{"path":"/gx/list/:column/:id?","name":"Unknown","maintainers":[],"location":"gx/list.ts"}' />
 
 ### 本科生院工作通知 <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
@@ -580,6 +600,10 @@ author 列表：
 
   工作通知：无
 
+### 大型招聘会 <Site url="job.hrbeu.edu.cn/*" size="sm" />
+
+<Route namespace="hrbeu" :data='{"path":"/job/bigemploy","categories":["university"],"example":"/hrbeu/job/bigemploy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["job.hrbeu.edu.cn/*"]}],"name":"大型招聘会","maintainers":["Derekmini"],"url":"job.hrbeu.edu.cn/*","location":"job/bigemploy.ts"}' />
+
 ### 就业服务平台 <Site url="job.hrbeu.edu.cn/*" size="sm" />
 
 <Route namespace="hrbeu" :data='{"path":"/job/calendar","categories":["university"],"example":"/hrbeu/job/calendar","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["job.hrbeu.edu.cn/*"]}],"name":"就业服务平台","maintainers":["Derekmini"],"url":"job.hrbeu.edu.cn/*","description":"| 通知公告 | 热点新闻 |\n  | :------: | :------: |\n  |   tzgg   |   rdxw   |\n\n#### 大型招聘会 {#ha-er-bin-gong-cheng-da-xue-jiu-ye-fu-wu-ping-tai-da-xing-zhao-pin-hui}\n\n\n#### 今日招聘会 {#ha-er-bin-gong-cheng-da-xue-jiu-ye-fu-wu-ping-tai-jin-ri-zhao-pin-hui}","location":"job/calendar.ts"}' />
@@ -592,6 +616,14 @@ author 列表：
 
 
 #### 今日招聘会 {#ha-er-bin-gong-cheng-da-xue-jiu-ye-fu-wu-ping-tai-jin-ri-zhao-pin-hui}
+
+### 就业服务平台 <Site url="yjsy.hrbeu.edu.cn" size="sm" />
+
+<Route namespace="hrbeu" :data='{"path":"/job/list/:id","categories":["university"],"example":"/hrbeu/job/list/tzgg","parameters":{"id":"栏目，如下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"就业服务平台","maintainers":["Derekmini"],"description":"| 通知公告 | 热点新闻 |\n    | :------: | :------: |\n    |   tzgg   |   rdxw   |","location":"job/list.ts"}' />
+
+| 通知公告 | 热点新闻 |
+    | :------: | :------: |
+    |   tzgg   |   rdxw   |
 
 ### 水声工程学院 <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
@@ -852,6 +884,10 @@ author 列表：
 
 ## 吉首大学 <Site url="jsu.edu.cn"/>
 
+### Unknown <Site url="jsu.edu.cn" size="sm" />
+
+<Route namespace="jsu" :data='{"path":"/cxzx/:types?","name":"Unknown","maintainers":["wenjia03"],"location":"cxzx.ts"}' />
+
 ### 计算机科学与工程学院 - 通知公告 <Site url="jsu.edu.cn" size="sm" />
 
 <Route namespace="jsu" :data='{"path":"/rjxy","categories":["university"],"example":"/jsu/rjxy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与工程学院 - 通知公告","maintainers":["wenjia03"],"location":"rjxy.ts"}' />
@@ -1090,6 +1126,10 @@ author 列表：
 
 ## 南京航空航天大学 <Site url="aao.nuaa.edu.cn"/>
 
+### Unknown <Site url="aao.nuaa.edu.cn" size="sm" />
+
+<Route namespace="nuaa" :data='{"path":"/cae/:type/:getDescription?","name":"Unknown","maintainers":["Xm798"],"location":"college/cae.ts"}' />
+
 ### 计算机科学与技术学院 <Site url="aao.nuaa.edu.cn" size="sm" />
 
 <Route namespace="nuaa" :data='{"path":"/cs/:type/:getDescription?","categories":["university"],"example":"/nuaa/cs/jxdt","parameters":{"type":"分类名，见下表","getDescription":"是否获取全文"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院","maintainers":["LogicJake","Seiry","qrzbing","Xm798"],"description":"| 通知公告 | 热点新闻 | 学科科研 | 教学动态 | 本科生培养 | 研究生培养 | 学生工作 |\n  | -------- | -------- | -------- | -------- | ---------- | ---------- | -------- |\n  | tzgg     | rdxw     | xkky     | jxdt     | be         | me         | xsgz     |","location":"college/cs.ts"}' />
@@ -1153,6 +1193,14 @@ author 列表：
 | 通知公告 | 新闻快讯 | 学术动态 | 学生工作 | 研究生教育 | 本科教育 |
   | -------- | -------- | -------- | -------- | ---------- | -------- |
   | tzgg1    | xwkx     | xsdt1    | xsgz1    | yjsjy1     | bkjy1    |
+
+### Unknown <Site url="bulletin.nuist.edu.cn" size="sm" />
+
+<Route namespace="nuist" :data='{"path":"/yjs/*","name":"Unknown","maintainers":[],"location":"yjs.ts"}' />
+
+### Unknown <Site url="lib.nuist.edu.cn/" size="sm" />
+
+<Route namespace="nuist" :data='{"path":"/lib","radar":[{"source":["lib.nuist.edu.cn/","lib.nuist.edu.cn/index/tzgg.htm"]}],"name":"Unknown","maintainers":["gylidian"],"url":"lib.nuist.edu.cn/","location":"library/lib.ts"}' />
 
 ### 教务处 <Site url="bulletin.nuist.edu.cn" size="sm" />
 
@@ -1378,6 +1426,22 @@ author 列表：
 
 ## 上海大学 <Site url="jwb.shu.edu.cn"/>
 
+### Unknown <Site url="jwb.shu.edu.cn" size="sm" />
+
+<Route namespace="shu" :data='{"path":["/jwc/:type?","/jwb/:type?"],"radar":[{"source":["www.shu.edu.cn/:type"],"target":"/:type"}],"name":"Unknown","maintainers":[],"description":"| 通知通告 | 新闻 | 政策文件 |\n  | -------- | ---- | -------- |\n  | notice   | news | policy   |","location":"jwb.ts"}' />
+
+| 通知通告 | 新闻 | 政策文件 |
+  | -------- | ---- | -------- |
+  | notice   | news | policy   |
+
+### Unknown <Site url="jwb.shu.edu.cn" size="sm" />
+
+<Route namespace="shu" :data='{"path":["/jwc/:type?","/jwb/:type?"],"radar":[{"source":["www.shu.edu.cn/:type"],"target":"/:type"}],"name":"Unknown","maintainers":[],"description":"| 通知通告 | 新闻 | 政策文件 |\n  | -------- | ---- | -------- |\n  | notice   | news | policy   |","location":"jwb.ts"}' />
+
+| 通知通告 | 新闻 | 政策文件 |
+  | -------- | ---- | -------- |
+  | notice   | news | policy   |
+
 ### 官网信息 <Site url="jwb.shu.edu.cn" size="sm" />
 
 <Route namespace="shu" :data='{"path":"/:type?","categories":["university"],"example":"/shu/news","parameters":{"type":"消息类型,默认为`news`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shu.edu.cn/:type"],"target":"/:type"}],"name":"官网信息","maintainers":["lonelyion"],"description":"| 综合新闻 | 科研动态 | 通知公告 | 重要新闻  |\n  | -------- | -------- | -------- | --------- |\n  | news     | research | notice   | important |","location":"index.ts"}' />
@@ -1476,6 +1540,10 @@ author 列表：
 
 ## 四川工商学院 <Site url="stbu.edu.cn"/>
 
+### Unknown <Site url="stbu.edu.cn/html/news/xueyuan" size="sm" />
+
+<Route namespace="stbu" :data='{"path":"/xyxw","radar":[{"source":["stbu.edu.cn/html/news/xueyuan","stbu.edu.cn/"]}],"name":"Unknown","maintainers":["HyperCherry"],"url":"stbu.edu.cn/html/news/xueyuan","location":"xyxw.ts"}' />
+
 ### 计算机学院通知公告 <Site url="jsjxy.stbu.edu.cn/news" size="sm" />
 
 <Route namespace="stbu" :data='{"path":"/jsjxy","categories":["university"],"example":"/stbu/jsjxy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jsjxy.stbu.edu.cn/news","jsjxy.stbu.edu.cn/"]}],"name":"计算机学院通知公告","maintainers":["HyperCherry"],"url":"jsjxy.stbu.edu.cn/news","description":":::warning\n计算机学院通知公告疑似禁止了非大陆 IP 访问，使用路由需要自行 [部署](https://docs.rsshub.app/install)。\n:::","location":"jsjxy.ts"}' />
@@ -1531,6 +1599,14 @@ author 列表：
   | 学术纵横 |   xszh   |
 
 ## 武汉大学 <Site url="cs.whu.edu.cn"/>
+
+### Unknown <Site url="cs.whu.edu.cn" size="sm" />
+
+<Route namespace="whu" :data='{"path":"/hyxt/:category{.+}?","name":"Unknown","maintainers":[],"location":"hyxt.ts"}' />
+
+### Unknown <Site url="cs.whu.edu.cn" size="sm" />
+
+<Route namespace="whu" :data='{"path":"/news/:category{.+}?","name":"Unknown","maintainers":[],"location":"news.ts"}' />
 
 ### 计算机学院公告 <Site url="cs.whu.edu.cn" size="sm" />
 
@@ -1720,6 +1796,18 @@ author 列表：
 
 ## 西安交通大学 <Site url="2yuan.xjtu.edu.cn"/>
 
+### Unknown <Site url="2yuan.xjtu.edu.cn" size="sm" />
+
+<Route namespace="xjtu" :data='{"path":"/dean/:subpath{.+}","name":"Unknown","maintainers":[],"location":"dean.ts"}' />
+
+### Unknown <Site url="2yuan.xjtu.edu.cn" size="sm" />
+
+<Route namespace="xjtu" :data='{"path":"/international/:subpath{.+}","name":"Unknown","maintainers":[],"location":"international.ts"}' />
+
+### Unknown <Site url="2yuan.xjtu.edu.cn" size="sm" />
+
+<Route namespace="xjtu" :data='{"path":"/dyyy/:path{.+}","name":"Unknown","maintainers":[],"location":"dyyy/index.ts"}' />
+
 ### 第二附属医院新闻 <Site url="2yuan.xjtu.edu.cn" size="sm" />
 
 <Route namespace="xjtu" :data='{"path":"/2yuan/news/:id?","categories":["university"],"example":"/xjtu/2yuan/news","parameters":{"id":"编号，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"第二附属医院新闻","maintainers":["nczitzk"],"description":"| 分类     | 编号 |\n  | -------- | ---- |\n  | 通知公告 | 110  |\n  | 综合新闻 | 6    |\n  | 科室动态 | 8    |\n  | 教学动态 | 45   |\n  | 科研动态 | 51   |\n  | 护理动态 | 57   |\n  | 党群活动 | 63   |\n  | 外事活动 | 13   |\n  | 媒体二院 | 14   |\n  | 理论政策 | 16   |","location":"2yuan/news.ts"}' />
@@ -1793,10 +1881,6 @@ author 列表：
 
 ## 浙江大学 <Site url="physics.zju.edu.cn"/>
 
-### Unknown <Site url="physics.zju.edu.cn" size="sm" />
-
-<Route namespace="zju" :data='{"path":"/cst/:type","categories":["university"],"example":"/zju/cst/0","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Unknown","maintainers":["yonvenne","zwithz"],"location":"cst/index.ts"}' />
-
 ### 就业服务平台 <Site url="physics.zju.edu.cn" size="sm" />
 
 <Route namespace="zju" :data='{"path":"/career/:type","categories":["university"],"example":"/zju/career/1","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"就业服务平台","maintainers":["Caicailiushui"],"description":"| 新闻动态 | 活动通知 | 学院通知 | 告示通知 |\n  | -------- | -------- | -------- | -------- |\n  | 1        | 2        | 3        | 4        |","location":"career/index.ts"}' />
@@ -1819,6 +1903,14 @@ author 列表：
 
 #### 自定义聚合通知 {#zhe-jiang-da-xue-ruan-jian-xue-yuan-zi-ding-yi-ju-he-tong-zhi}
 
+### 软件学院 <Site url="physics.zju.edu.cn" size="sm" />
+
+<Route namespace="zju" :data='{"path":"/cst/:type","categories":["university"],"example":"/zju/cst/0","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"软件学院","description":"| 全部通知 | 招生信息 | 教务管理 | 论文管理 | 思政工作 | 评奖评优 | 实习就业 | 国际实习 | 国内合作科研 | 国际合作科研 | 校园服务 |\n    | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ------------ | ------------ | -------- |\n    | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        | 8            | 9            | 10       |","maintainers":["yonvenne","zwithz"],"location":"cst/index.ts"}' />
+
+| 全部通知 | 招生信息 | 教务管理 | 论文管理 | 思政工作 | 评奖评优 | 实习就业 | 国际实习 | 国内合作科研 | 国际合作科研 | 校园服务 |
+    | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ------------ | ------------ | -------- |
+    | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        | 8            | 9            | 10       |
+
 ### 物理学院 <Site url="physics.zju.edu.cn" size="sm" />
 
 <Route namespace="zju" :data='{"path":"/physics/:type","categories":["university"],"example":"/zju/physics/1","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"物理学院","maintainers":["Caicailiushui"],"description":"| 本院动态 | 科研进展 | 研究生教育最新消息 |\n  | -------- | -------- | ------------------ |\n  | 1        | 2        | 3                  |","location":"physics/index.ts"}' />
@@ -1836,6 +1928,14 @@ author 列表：
   | 1        | 2        | 3        | 4        | 5        |
 
 ## 中国科学院 <Site url="www.cas.cn"/>
+
+### Unknown <Site url="www.cas.cn" size="sm" />
+
+<Route namespace="cas" :data='{"path":"/genetics/:path{.+}","name":"Unknown","maintainers":[],"location":"genetics/index.ts"}' />
+
+### Unknown <Site url="www.cas.cn" size="sm" />
+
+<Route namespace="cas" :data='{"path":"/is/:path{.+}","name":"Unknown","maintainers":[],"location":"is/index.ts"}' />
 
 ### 成果转化 <Site url="www.cas.cn" size="sm" />
 
@@ -1863,15 +1963,15 @@ author 列表：
 
 ## 中国农业大学 <Site url="ciee.cau.edu.cn"/>
 
-### Unknown <Site url="yz.cau.edu.cn/col/col41740/index.html" size="sm" />
-
-<Route namespace="cau" :data='{"path":"/yjs","categories":["university"],"example":"/cau/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.cau.edu.cn/col/col41740/index.html","yz.cau.edu.cn/"]}],"name":"Unknown","maintainers":["shengmaosu"],"url":"yz.cau.edu.cn/col/col41740/index.html","location":"yjs.ts"}' />
-
 ### 研招网通知公告 <Site url="ciee.cau.edu.cn/col/col26712/index.html" size="sm" />
 
 <Route namespace="cau" :data='{"path":"/ele","categories":["university"],"example":"/cau/ele","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ciee.cau.edu.cn/col/col26712/index.html","ciee.cau.edu.cn/"]}],"name":"研招网通知公告","maintainers":["shengmaosu"],"url":"ciee.cau.edu.cn/col/col26712/index.html","description":"#### 信电学院 {#zhong-guo-nong-ye-da-xue-yan-zhao-wang-tong-zhi-gong-gao-xin-dian-xue-yuan}","location":"ele.ts"}' />
 
 #### 信电学院 {#zhong-guo-nong-ye-da-xue-yan-zhao-wang-tong-zhi-gong-gao-xin-dian-xue-yuan}
+
+### 研招网通知公告 <Site url="yz.cau.edu.cn/col/col41740/index.html" size="sm" />
+
+<Route namespace="cau" :data='{"path":"/yjs","categories":["university"],"example":"/cau/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.cau.edu.cn/col/col41740/index.html","yz.cau.edu.cn/"]}],"name":"研招网通知公告","maintainers":["shengmaosu"],"url":"yz.cau.edu.cn/col/col41740/index.html","location":"yjs.ts"}' />
 
 ## 中南大学 <Site url="career.csu.edu.cn"/>
 
@@ -1953,13 +2053,21 @@ author 列表：
 
 ## 中山大学 <Site url="cse.sysu.edu.cn"/>
 
-### Unknown <Site url="cse.sysu.edu.cn" size="sm" />
-
-<Route namespace="sysu" :data='{"path":"/ygafz/:type?","categories":["university"],"example":"/sysu/ygafz","parameters":{"type":"分类，见下表，默认为 `notice`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ygafz.sysu.edu.cn/:type?"]}],"name":"Unknown","maintainers":["TonyRL"],"location":"ygafz.ts"}' />
-
 ### 数据科学与计算机学院动态 <Site url="cse.sysu.edu.cn/" size="sm" />
 
 <Route namespace="sysu" :data='{"path":"/cse","categories":["university"],"example":"/sysu/cse","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cse.sysu.edu.cn/"]}],"name":"数据科学与计算机学院动态","maintainers":[],"url":"cse.sysu.edu.cn/","location":"cse.ts"}' />
+
+### 粤港澳发展研究院 <Site url="cse.sysu.edu.cn" size="sm" />
+
+<Route namespace="sysu" :data='{"path":"/ygafz/:type?","categories":["university"],"example":"/sysu/ygafz","parameters":{"type":"分类，见下表，默认为 `notice`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ygafz.sysu.edu.cn/:type?"]}],"name":"粤港澳发展研究院","description":"| 人才招聘   | 人才培养      | 新闻动态 | 通知公告 | 专家观点 |\n    | ---------- | ------------- | -------- | -------- | -------- |\n    | jobopening | personnelplan | news     | notice   | opinion  |\n\n    | 研究成果 | 研究论文 | 学术著作 | 形势政策 |\n    | -------- | -------- | -------- | -------- |\n    | results  | papers   | writings | policy   |","maintainers":["TonyRL"],"location":"ygafz.ts"}' />
+
+| 人才招聘   | 人才培养      | 新闻动态 | 通知公告 | 专家观点 |
+    | ---------- | ------------- | -------- | -------- | -------- |
+    | jobopening | personnelplan | news     | notice   | opinion  |
+
+    | 研究成果 | 研究论文 | 学术著作 | 形势政策 |
+    | -------- | -------- | -------- | -------- |
+    | results  | papers   | writings | policy   |
 
 ## 中国科学院大学 <Site url="ai.ucas.ac.cn"/>
 

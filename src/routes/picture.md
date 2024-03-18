@@ -12,6 +12,10 @@
 
 ## 8KCosplay <Site url="8kcosplay.com"/>
 
+### Unknown <Site url="8kcosplay.com/" size="sm" />
+
+<Route namespace="8kcos" :data='{"path":"/cat/:cat{.+}?","radar":[{"source":["8kcosplay.com/"],"target":""}],"name":"Unknown","maintainers":[],"url":"8kcosplay.com/","location":"cat.ts"}' />
+
 ### 标签 <Site url="8kcosplay.com/" size="sm" />
 
 <Route namespace="8kcos" :data='{"path":"/tag/:tag","categories":["picture"],"example":"/8kcos/tag/cosplay","parameters":{"tag":"标签名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["8kcosplay.com/tag/:tag"]}],"name":"标签","maintainers":["KotoriK"],"url":"8kcosplay.com/","location":"tag.ts"}' />
@@ -213,6 +217,10 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ## 国家地理 <Site url="nationalgeographic.com"/>
 
+### Unknown <Site url="nationalgeographic.com" size="sm" />
+
+<Route namespace="natgeo" :data='{"path":"/dailyselection","name":"Unknown","maintainers":["OrangeEd1t"],"location":"dailyselection.ts"}' />
+
 ### 每日一图 <Site url="nationalgeographic.com/photo-of-the-day/*" size="sm" />
 
 <Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture"],"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"每日一图","maintainers":["LogicJake","OrangeEd1t","TonyRL"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' />
@@ -243,7 +251,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ## 奇葩买家秀 <Site url="qipamaijia.com"/>
 
-### Unknown <Site url="qipamaijia.com/" size="sm" />
+### 频道 <Site url="qipamaijia.com/" size="sm" />
 
-<Route namespace="qipamaijia" :data='{"path":"/:cate?","categories":["picture"],"example":"/qipamaijia/fuli","parameters":{"cate":"频道名，可在对应网址中找到，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qipamaijia.com/","qipamaijia.com/:cate"],"target":"/:cate"}],"name":"Unknown","maintainers":["Fatpandac","nczitzk"],"url":"qipamaijia.com/","location":"index.ts"}' />
+<Route namespace="qipamaijia" :data='{"path":"/:cate?","categories":["picture"],"example":"/qipamaijia/fuli","parameters":{"cate":"频道名，可在对应网址中找到，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qipamaijia.com/","qipamaijia.com/:cate"],"target":"/:cate"}],"name":"频道","maintainers":["Fatpandac","nczitzk"],"url":"qipamaijia.com/","location":"index.ts"}' />
 

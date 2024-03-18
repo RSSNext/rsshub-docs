@@ -222,6 +222,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="xunhupay" :data='{"path":"/blog","categories":["blog"],"example":"/xunhupay/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.xunhupay.com/blog"]}],"name":"文章","maintainers":["Joey"],"url":"www.xunhupay.com/blog","location":"index.ts"}' />
 
+## 免費資源網路社群 <Site url="free.com.tw"/>
+
+### 最新文章 <Site url="free.com.tw/" size="sm" />
+
+<Route namespace="free" :data='{"path":"/","categories":["blog"],"example":"/free","radar":[{"source":["free.com.tw/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"free.com.tw/","location":"rss.ts"}' />
+
 ## 十年之约 <Site url="www.foreverblog.cn"/>
 
 ### 专题展示 - 文章 <Site url="www.foreverblog.cn/feeds.html" size="sm" />
@@ -241,6 +247,10 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 <Route namespace="xys" :data='{"path":"/new","categories":["blog"],"example":"/xys/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xys.org/","xys.org/new.html"]}],"name":"新到资料","maintainers":["wenzhenl"],"url":"xys.org/","location":"new.ts"}' />
 
 ## 雨苁博客 <Site url="ddosi.org"/>
+
+### Unknown <Site url="ddosi.org/" size="sm" />
+
+<Route namespace="ddosi" :data='{"path":"/","radar":[{"source":["ddosi.org/"],"target":""}],"name":"Unknown","maintainers":["XinRoom"],"url":"ddosi.org/","location":"index.ts"}' />
 
 ### 分类 <Site url="ddosi.org/" size="sm" />
 
@@ -272,9 +282,9 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ## 竹白 <Site url="zhubai.love"/>
 
-### Unknown <Site url="analy.zhubai.love/" size="sm" />
+### 上周热门 TOP 20 <Site url="analy.zhubai.love/" size="sm" />
 
-<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' />
+<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' />
 
 ### 文章 <Site url="zhubai.love" size="sm" />
 

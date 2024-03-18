@@ -96,6 +96,22 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 <Route namespace="ieee" :data='{"path":"/journal/:journal/earlyaccess/:sortType?","categories":["journal"],"example":"/ieee/journal/5306045/earlyaccess","parameters":{"journal":"Issue code, the number of the `isnumber` in the URL","sortType":"Sort Type, default: `vol-only-seq`, the part of the URL after `sortType`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Early Access Journal","maintainers":["5upernova-heng"],"location":"earlyaccess.ts"}' />
 
+### Unknown <Site url="www.ieee.org" size="sm" />
+
+<Route namespace="ieee" :data='{"path":["/:journal/latest/vol/:sortType?","/journal/:journal/:sortType?"],"name":"Unknown","maintainers":[],"location":"journal.ts"}' />
+
+### Unknown <Site url="www.ieee.org" size="sm" />
+
+<Route namespace="ieee" :data='{"path":["/:journal/latest/vol/:sortType?","/journal/:journal/:sortType?"],"name":"Unknown","maintainers":[],"location":"journal.ts"}' />
+
+### Unknown <Site url="www.ieee.org" size="sm" />
+
+<Route namespace="ieee" :data='{"path":["/:journal/latest/date/:sortType?","/journal/:journal/recent/:sortType?"],"name":"Unknown","maintainers":[],"location":"recent.ts"}' />
+
+### Unknown <Site url="www.ieee.org" size="sm" />
+
+<Route namespace="ieee" :data='{"path":["/:journal/latest/date/:sortType?","/journal/:journal/recent/:sortType?"],"name":"Unknown","maintainers":[],"location":"recent.ts"}' />
+
 ## IEEE Computer Society <Site url="ieee-security.org"/>
 
 ### IEEE Symposium on Security and Privacy <Site url="ieee-security.org/TC/SP-Index.html" size="sm" />
@@ -164,6 +180,10 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 :::warning
   Only some journals are supported.
   :::
+
+### Unknown <Site url="nature.com/latest-news" size="sm" />
+
+<Route namespace="nature" :data='{"path":"/news-and-comment/:journal?","radar":[{"source":["nature.com/latest-news","nature.com/news","nature.com/"],"target":"/news"}],"name":"Unknown","maintainers":["y9c","TonyRL"],"url":"nature.com/latest-news","location":"news-and-comment.ts"}' />
 
 ## National Bureau of Economic Research <Site url="nber.org"/>
 
@@ -331,10 +351,6 @@ Return results from 2020
 
 ## 中国知网 <Site url="navi.cnki.net"/>
 
-### Unknown <Site url="navi.cnki.net" size="sm" />
-
-<Route namespace="cnki" :data='{"path":"/author/:code","categories":["journal"],"example":"/cnki/author/000042423923","parameters":{"code":"作者对应code，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Unknown","maintainers":["harveyqiu","Derekmini"],"location":"author.ts"}' />
-
 ### 期刊 <Site url="navi.cnki.net" size="sm" />
 
 <Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' />
@@ -342,4 +358,12 @@ Return results from 2020
 ### 网络首发 <Site url="navi.cnki.net" size="sm" />
 
 <Route namespace="cnki" :data='{"path":"/journals/debut/:name","categories":["journal"],"example":"/cnki/journals/debut/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"网络首发","maintainers":["Fatpandac"],"location":"debut.ts"}' />
+
+### 作者期刊文献 <Site url="navi.cnki.net" size="sm" />
+
+<Route namespace="cnki" :data='{"path":"/author/:code","categories":["journal"],"example":"/cnki/author/000042423923","parameters":{"code":"作者对应code，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者期刊文献","description":":::tip\n    可能仅限中国大陆服务器访问，以实际情况为准。\n    :::","maintainers":["harveyqiu","Derekmini"],"location":"author.ts"}' />
+
+:::tip
+    可能仅限中国大陆服务器访问，以实际情况为准。
+    :::
 

@@ -156,6 +156,10 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ## Pikabu <Site url="pikabu.ru"/>
 
+### Unknown <Site url="pikabu.ru" size="sm" />
+
+<Route namespace="pikabu" :data='{"path":"/:type/:name","name":"Unknown","maintainers":[],"location":"community.ts"}' />
+
 ### User <Site url="pikabu.ru" size="sm" />
 
 <Route namespace="pikabu" :data='{"path":"/user/:name","categories":["bbs"],"example":"/pikabu/user/@bula.dragon","parameters":{"name":"User name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pikabu.ru/:name"]}],"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' />
@@ -342,6 +346,30 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ## 虎扑 <Site url=".hupu.com"/>
 
+### Unknown <Site url=".hupu.com" size="sm" />
+
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n  :::","location":"index.ts"}' />
+
+| NBA | CBA | 足球   |
+  | --- | --- | ------ |
+  | nba | cba | soccer |
+
+  :::tip
+  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
+  :::
+
+### Unknown <Site url=".hupu.com" size="sm" />
+
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n  :::","location":"index.ts"}' />
+
+| NBA | CBA | 足球   |
+  | --- | --- | ------ |
+  | nba | cba | soccer |
+
+  :::tip
+  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
+  :::
+
 ### 热帖 <Site url=".hupu.com" size="sm" />
 
 <Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":":::tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n  :::","location":"all.ts"}' />
@@ -443,6 +471,10 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 <Route namespace="nowcoder" :data='{"path":"/schedule/:propertyId?/:typeId?","categories":["bbs"],"example":"/nowcoder/schedule","parameters":{"propertyId":"行业, 在控制台中抓取接口，可获得行业id，默认0","typeId":"类别，同上"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/schedule"}],"name":"校招日程","maintainers":["junfengP"],"url":"nowcoder.com/","location":"schedule.ts"}' />
 
 ## 品葱 <Site url="pincong.rocks"/>
+
+### Unknown <Site url="pincong.rocks" size="sm" />
+
+<Route namespace="pincong" :data='{"path":"/topic/:topic","radar":[{"source":["pincong.rocks/topic/:topic"]}],"name":"Unknown","maintainers":["zphw"],"location":"topic.ts"}' />
 
 ### 发现 <Site url="pincong.rocks" size="sm" />
 
@@ -568,6 +600,38 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
   6.  找到 Request Payload 请求参数，例如 `filters: {planyr: "13", planmajor: "1", outname_w: "ACADIAU"}` ，则三个 id 分别为: 13,1,ACADIAU
   :::
 
+### 帖子 <Site url="instant.1point3acres.com/" size="sm" />
+
+<Route namespace="1point3acres" :data='{"path":["/post/:type?/:order?","/thread/:type?/:order?"],"name":"帖子","categories":["bbs"],"maintainers":["EthanWng97","DIYgod","nczitzk"],"url":"instant.1point3acres.com/","description":"分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"thread.ts"}' />
+
+分类
+
+  | 热门帖子 | 最新帖子 |
+  | -------- | -------- |
+  | hot      | new      |
+
+  排序方式
+
+  | 最新回复 | 最新发布 |
+  | -------- | -------- |
+  |          | post     |
+
+### 帖子 <Site url="instant.1point3acres.com/" size="sm" />
+
+<Route namespace="1point3acres" :data='{"path":["/post/:type?/:order?","/thread/:type?/:order?"],"name":"帖子","categories":["bbs"],"maintainers":["EthanWng97","DIYgod","nczitzk"],"url":"instant.1point3acres.com/","description":"分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"thread.ts"}' />
+
+分类
+
+  | 热门帖子 | 最新帖子 |
+  | -------- | -------- |
+  | hot      | new      |
+
+  排序方式
+
+  | 最新回复 | 最新发布 |
+  | -------- | -------- |
+  |          | post     |
+
 ### 用户回帖 <Site url="blog.1point3acres.com" size="sm" />
 
 <Route namespace="1point3acres" :data='{"path":"/user/:id/posts","categories":["bbs"],"example":"/1point3acres/user/1/posts","parameters":{"id":"用户 id，可在 Instant 版网站的个人主页 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/profile/:id","instant.1point3acres.com/"]}],"name":"用户回帖","maintainers":["Maecenas"],"location":"user/post.ts"}' />
@@ -580,7 +644,16 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Unknown <Site url="zhibo8.cc" size="sm" />
 
-<Route namespace="zhibo8" :data='{"path":"/more/:category?","categories":["bbs"],"example":"/zhibo8/more/nba","parameters":{"category":"分类，见下表，默认为 NBA"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.zhibo8.cc/:category"],"target":"/more/:category"}],"name":"Unknown","maintainers":["nczitzk"],"location":"more.ts"}' />
+<Route namespace="zhibo8" :data='{"path":"/luxiang/:category?","radar":[{"source":["zhibo8.cc/:category/luxiang.htm"],"target":"/luxiang/:category"}],"name":"Unknown","maintainers":["TonyRL"],"location":"luxiang.ts"}' />
+
+### 滚动新闻 <Site url="zhibo8.cc" size="sm" />
+
+<Route namespace="zhibo8" :data='{"path":"/more/:category?","categories":["bbs"],"example":"/zhibo8/more/nba","parameters":{"category":"分类，见下表，默认为 NBA"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.zhibo8.cc/:category"],"target":"/more/:category"}],"name":"滚动新闻","description":"\n| NBA | 足球  | 电竞     | 综合   |\n| --- | ----- | -------- | ------ |\n| nba | zuqiu | dianjing | zonghe |","maintainers":["nczitzk"],"location":"more.ts"}' />
+
+
+| NBA | 足球  | 电竞     | 综合   |
+| --- | ----- | -------- | ------ |
+| nba | zuqiu | dianjing | zonghe |
 
 ### 回帖 <Site url="zhibo8.cc" size="sm" />
 
