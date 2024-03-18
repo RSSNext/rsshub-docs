@@ -16,7 +16,7 @@ export const zh = defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/DIYgod/RSSHub-Docs/edit/main/src/zh/:path',
+      pattern: 'https://github.com/DIYgod/RSSHub-Docs/edit/main/src/:path',
       text: '在 GitHub 上编辑此页面',
     },
 
