@@ -142,6 +142,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' />
 
+## 便宜VPS网 <Site url="pianyivps.com"/>
+
+### 最新发布 <Site url="pianyivps.com/" size="sm" />
+
+<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' />
+
 ## 博客园 <Site url="www.cnblogs.com"/>
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
@@ -245,6 +251,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 ### 博客 <Site url="cloudnative.to" size="sm" />
 
 <Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' />
+
+## 赵容部落 <Site url="zrblog.net"/>
+
+### 最新文章 <Site url="zrblog.net/" size="sm" />
+
+<Route namespace="zrblog" :data='{"path":"/","categories":["blog"],"example":"/zrblog","radar":[{"source":["zrblog.net/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"zrblog.net/","location":"rss.ts"}' />
 
 ## 浙江大学可视分析小组 <Site url="zjuvag.org"/>
 
