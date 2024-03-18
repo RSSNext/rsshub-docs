@@ -40,7 +40,7 @@ export const shared = defineConfig({
     ['meta', { property: 'twitter:domain', content: 'rsshub.app' }],
     ['meta', { property: 'twitter:image', content: 'https://docs.rsshub.app/logo.png' }],
     ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-    ['link', { rel: 'shortcut icon', href: '/logo.png' }],
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
   ],
 
   themeConfig: {
