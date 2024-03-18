@@ -1,4 +1,4 @@
-# 📚 Reading
+# 📚 阅读
 
 ## hameln <Site url="syosetu.org"/>
 

@@ -1,4 +1,4 @@
-# 🖊️️ Blog
+# 🖊️️ 博客
 
 ## Apache <Site url="apisix.apache.org"/>
 

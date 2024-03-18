@@ -1,4 +1,4 @@
-# ❗️ Forecast and Alerts
+# ❗️ 预报预警
 
 ## BADAN METEOROLOGI, KLIMATOLOGI, DAN GEOFISIKA(Indonesian) <Site url="bmkg.go.id"/>
 

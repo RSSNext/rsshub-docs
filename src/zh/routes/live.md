@@ -1,4 +1,4 @@
-# 🎥 Live
+# 🎥 直播
 
 ## Bilibili <Site url="www.bilibili.com"/>
 

@@ -1,4 +1,4 @@
-# 🛍️ Shopping
+# 🛍️ 购物
 
 ## 0818 团 <Site url="0818tuan.com"/>
 

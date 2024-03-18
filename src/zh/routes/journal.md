@@ -1,4 +1,4 @@
-# 🔬 Scientific Journal
+# 🔬 科学期刊
 
 ## American Economic Association <Site url="aeaweb.org"/>
 

@@ -1,4 +1,4 @@
-# 📢 Government
+# 📢 政务消息
 
 ## Constitutional Court of Baden-Württemberg (Germany) <Site url="verfgh.baden-wuerttemberg.de"/>
 

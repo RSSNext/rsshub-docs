@@ -1,4 +1,4 @@
-# 💰 Finance
+# 💰 金融
 
 ## AInvest <Site url="ainvest.com"/>
 

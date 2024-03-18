@@ -1,4 +1,4 @@
-# 📱 New media
+# 📱 新媒体
 
 ## 36kr <Site url="36kr.com"/>
 

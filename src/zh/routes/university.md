@@ -1,4 +1,4 @@
-# 🎓 University
+# 🎓 大学通知
 
 ## East China Normal University 华东师范大学 <Site url="acm.ecnu.edu.cn"/>
 

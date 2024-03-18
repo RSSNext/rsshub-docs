@@ -1,4 +1,4 @@
-# 💬 Social Media
+# 💬 社交媒体
 
 ## Bilibili <Site url="www.bilibili.com"/>
 

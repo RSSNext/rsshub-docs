@@ -1,4 +1,4 @@
-# 🎨️ ACG
+# 🎨️ 二次元
 
 ## AcFun <Site url="www.acfun.cn"/>
 

@@ -1,4 +1,4 @@
-# 🎮 Gaming
+# 🎮 游戏
 
 ## 3DMGame <Site url="3dmgame.com"/>
 

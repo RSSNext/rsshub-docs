@@ -1,4 +1,4 @@
-# 📰 News
+# 📰 Traditional media
 
 ## AP News <Site url="apnews.com"/>
 

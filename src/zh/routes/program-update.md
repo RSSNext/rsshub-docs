@@ -1,4 +1,4 @@
-# 🔄 Application Updates
+# 🔄 程序更新
 
 ## Amazon <Site url="amazon.com"/>
 

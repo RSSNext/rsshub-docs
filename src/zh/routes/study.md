@@ -1,4 +1,4 @@
-# 📖 Study
+# 📖 学习
 
 ## Asian Innovation and Entrepreneurship Association <Site url="www.aiea.org"/>
 

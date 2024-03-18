@@ -1,4 +1,4 @@
-# 🖼️ Picture
+# 🖼️ 图片
 
 ## 500px 摄影社区 <Site url="500px.com.cn"/>
 
