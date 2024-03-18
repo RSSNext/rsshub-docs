@@ -157,6 +157,11 @@
   --vp-button-brand-hover-bg: var(--vp-c-brand-1);
 }
 
+.dark {
+  --vp-c-text-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-2: rgba(235, 235, 245, 0.6);
+}
+
 .example img {
   vertical-align: text-bottom;
   margin-left: 10px;

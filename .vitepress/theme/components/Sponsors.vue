@@ -34,7 +34,7 @@
 }
 
 .header {
-  color: rgba(60, 60, 67, .78);
+  color: var(--vp-c-text-2);
 }
 
 .love {
