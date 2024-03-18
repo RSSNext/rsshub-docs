@@ -32,3 +32,4 @@ features:
     details: Powerful APIs and ecosystem projects are supporting various scenarios.
 ---
 
+<Sponsors />

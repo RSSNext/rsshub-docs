@@ -32,3 +32,4 @@ features:
     details: 强大的 API 和生态项目正在支持各种场景。
 ---
 
+<Sponsors />

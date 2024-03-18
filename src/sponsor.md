@@ -28,8 +28,4 @@ We accept donations in the following ways:
 
 Open source is a very expensive thing. RSSHub would not be possible without the help of these individuals and organizations.
 
-<p align="center">
-  <a href="https://github.com/DIYgod/sponsors">
-    <img src="https://raw.githubusercontent.com/DIYgod/sponsors/main/sponsors.wide.svg" />
-  </a>
-</p>
+<Sponsors />

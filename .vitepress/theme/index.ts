@@ -5,6 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import Route from './components/Route.vue'
 import Site from './components/Site.vue'
+import Sponsors from './components/Sponsors.vue'
 
 export default {
   extends: DefaultTheme,
@@ -17,5 +18,6 @@ export default {
     // ...
     app.component('Route', Route)
     app.component('Site', Site)
+    app.component('Sponsors', Sponsors)
   }
 } satisfies Theme

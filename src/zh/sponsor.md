@@ -28,8 +28,4 @@ RSSHub 是采用 MIT 许可的开源项目，使用完全免费。但是随着�
 
 开源是一件非常昂贵的事情，没有这些个人和组织的帮助，RSSHub 是不可能存在和持续的。
 
-<p align="center">
-  <a href="https://github.com/DIYgod/sponsors">
-    <img src="https://raw.githubusercontent.com/DIYgod/sponsors/main/sponsors.wide.svg" />
-  </a>
-</p>
+<Sponsors />
