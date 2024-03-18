@@ -41,6 +41,11 @@ export const shared = defineConfig({
     ['meta', { property: 'twitter:image', content: 'https://docs.rsshub.app/logo.png' }],
     ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    ['script', {
+      src: 'https://umami.diygod.dev/script.js', 
+      'data-website-id': 'be1761be-7547-49d5-91b8-5c97c8f7cec7',
+      defer: ''
+    }]
   ],
 
   themeConfig: {
