@@ -1,7 +1,7 @@
 <template>
   <span class="namespace">
-    <a :href="`https://${props.url}`" target="_blank">
-      <img :width='width' :height='width' :src="icon" />
+    <a :href="`https://${props.url}`" target="_blank" rel="noopener noreferrer">
+      <img loading="lazy" :width='width' :height='width' :src="icon" />
     </a>
   </span>
 </template>
