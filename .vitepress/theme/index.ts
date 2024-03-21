@@ -13,6 +13,7 @@ export default {
   extends: DefaultTheme,
   setup() {
     onMounted(() => {
+      // For SSR Compatibility https://vitepress.dev/guide/ssr-compat#ssr-compatibility
       import('meilisearch-docsearch').then((docsearch) => {
         docsearch.default({
           container: "#docsearch",

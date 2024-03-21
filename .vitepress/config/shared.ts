@@ -33,6 +33,9 @@ export const shared = defineConfig({
       dark: 'github-dark',
     },
   },
+  sitemap: {
+    hostname: 'https://docs.rsshub.app',
+  },
 
   head: [
     ['meta', { property: 'og:image', content: 'https://docs.rsshub.app/logo.png' }],

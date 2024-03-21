@@ -1,0 +1,53 @@
+{
+  "index_uid": "rsshub-staging",
+  "sitemap_urls": ["https://docs.rsshub.app/sitemap.xml"],
+  "start_urls": ["https://docs.rsshub.app"],
+  "selectors": {
+    "lvl0": {
+      "selector": "",
+      "global": true,
+      "default_value": "Routes"
+    },
+    "lvl1": ".content h1",
+    "lvl2": ".content h2",
+    "lvl3": ".content h3",
+    "lvl4": ".content h4",
+    "lvl5": ".content h5",
+    "text": ".content p, .content .params, .content table, .content p code"
+  },
+  "strip_chars": " .,;:#",
+  "scrap_start_urls": false,
+  "min_indexed_level": 1,
+  "js_render": false,
+  "js_wait": 2,
+  "custom_settings": {
+    "displayedAttributes": [
+      "hierarchy_radio_lvl1",
+      "hierarchy_radio_lvl2",
+      "hierarchy_radio_lvl3",
+      "hierarchy_radio_lvl4",
+      "hierarchy_radio_lvl5",
+      "hierarchy_lvl0",
+      "hierarchy_lvl1",
+      "hierarchy_lvl2",
+      "hierarchy_lvl3",
+      "hierarchy_lvl4",
+      "hierarchy_lvl5",
+      "hierarchy_lvl6",
+      "anchor",
+      "url",
+      "content"
+    ],
+    "searchableAttributes": [
+      "hierarchy_lvl2",
+      "hierarchy_lvl3",
+      "hierarchy_lvl4",
+      "anchor",
+      "content",
+      "hierarchy_lvl5",
+      "hierarchy_lvl1"
+    ],
+    "sortableAttributes": ["anchor"]
+  },
+  "selectors_exclude": [".badge", ".author", ".tip"]
+}
