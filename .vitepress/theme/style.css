@@ -140,13 +140,26 @@
 }
 
 /**
- * Component: Algolia
+ * Component: meilisearch
  * -------------------------------------------------------------------------- */
 
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+:root {
+  --docsearch-primary-color: var(--vp-c-brand-2);
 }
 
+#content-before {
+  display: flex;
+  justify-content: space-between;
+}
+
+#docsearch {
+  margin: auto 1em;
+}
+
+
+/**
+ * Component: Other
+ * -------------------------------------------------------------------------- */
 :root {
   --vp-c-text-1: #000;
   --vp-c-text-2: #454545;

@@ -2,6 +2,7 @@
   "type": "module",
   "devDependencies": {
     "markdown-it": "14.0.0",
+    "meilisearch-docsearch": "0.6.0",
     "vitepress": "1.0.0-rc.45",
     "vue": "3.4.21"
   },

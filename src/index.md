@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "RSSHub"
   text: "Everything is RSSible"
-  tagline: 🧡 Generate a RSS/Atom/JSON feed from anything.
+  tagline: 🧡 Generate an RSS/Atom/JSON feed from anything.
   image:
     src: /logo.png
     alt: RSSHub

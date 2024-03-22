@@ -33,6 +33,9 @@ export const shared = defineConfig({
       dark: 'github-dark',
     },
   },
+  sitemap: {
+    hostname: 'https://docs.rsshub.app',
+  },
 
   head: [
     ['meta', { property: 'og:image', content: 'https://docs.rsshub.app/logo.png' }],
@@ -56,23 +59,6 @@ export const shared = defineConfig({
     },
     outline: {
       level: [2, 3],
-    },
-    search: {
-      provider: 'local',
-      options: {
-        miniSearch: {
-          options: {
-            extractField: (document, fieldName) => {
-              if (fieldName !== 'text' || document.id.includes('/routes/')) {
-                return document[fieldName]
-              }
-            },
-          },
-          searchOptions: {
-            boost: { title: 1, text: 0.1, titles: 1 }
-          }
-        }
-      }
     },
   
     // https://vitepress.dev/reference/default-theme-config
