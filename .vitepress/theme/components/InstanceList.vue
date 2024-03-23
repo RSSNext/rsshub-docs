@@ -102,6 +102,11 @@ const instances = [{
     location: '🇺🇸',
     maintainer: '麦当狗',
     maintainerUrl: 'https://t.me/rsshub/281479',
+  }, {
+    url: 'https://rss.owo.nz',
+    location: '🇩🇪',
+    maintainer: 'Vincent Yang',
+    maintainerUrl: 'https://missuo.me',
   }
 ]
 
