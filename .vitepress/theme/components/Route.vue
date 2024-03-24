@@ -1,15 +1,18 @@
 <template>
   <div :id="namespace + JSON.stringify(data.path)" class="routeBlock">
     <p class="badges">
+      <Badge v-if="!test" type="warning">🟡 Missing Test</Badge>
+      <Badge v-if="test?.code" type="danger" :title="test?.message">🔴 Failed Test</Badge>
+      <Badge v-if="test && !test?.code" type="tip">🟢 Passed Test</Badge>
       <a v-if="data.features?.antiCrawler" href="/faq" target="_blank">
-        <Badge type="danger">🚨 Strict anti-crawling</Badge>
+        <Badge type="danger">🚨 Strict Anti-crawling</Badge>
       </a>
       <Badge v-if="data.features?.supportBT" type="tip">🔄 Support BT</Badge>
       <Badge v-if="data.features?.supportPodcast" type="tip">🎙️ Support Podcast</Badge>
       <Badge v-if="data.features?.supportScihub" type="tip">🧪 Support Sci-Hub</Badge>
       <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 Rely on Puppeteer</Badge>
       <a v-if="data.features?.requireConfig" href="/install/config#route-specific-configurations" target="_blank">
-        <Badge type="warning">⚙️ Config required</Badge>
+        <Badge type="warning">⚙️ Config Required</Badge>
       </a>
       <a v-if="data.radar" href="/usage#radar" target="_blank">
         <Badge type="tip">🔍 Support Radar</Badge>
@@ -70,6 +73,10 @@ import type { Route } from '../types';
 const props = defineProps<{
   namespace: string,
   data: Route,
+  test?: {
+    code: number,
+    message?: string,
+  }
 }>();
 
 const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example) : null;
