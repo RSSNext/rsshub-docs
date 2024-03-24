@@ -1,3 +1,87 @@
+import type { Context } from 'hono';
+
+// Make sure it's synchronise with scripts/workflow/data.ts
+type Category =
+    | 'social-media'
+    | 'new-media'
+    | 'traditional-media'
+    | 'bbs'
+    | 'blog'
+    | 'programming'
+    | 'design'
+    | 'live'
+    | 'multimedia'
+    | 'picture'
+    | 'anime'
+    | 'program-update'
+    | 'university'
+    | 'forecast'
+    | 'travel'
+    | 'shopping'
+    | 'game'
+    | 'reading'
+    | 'government'
+    | 'study'
+    | 'journal'
+    | 'finance'
+    | 'other';
+
+// rss
+export type DataItem = {
+    title: string;
+    description?: string;
+    pubDate?: number | string | Date;
+    link?: string;
+    category?: string[];
+    author?: string | { name: string }[];
+    doi?: string;
+    guid?: string;
+    id?: string;
+    content?: {
+        html: string;
+        text: string;
+    };
+    image?: string;
+    banner?: string;
+    updated?: number | string | Date;
+    language?: string;
+    enclosure_url?: string;
+    enclosure_type?: string;
+    enclosure_title?: string;
+    enclosure_length?: number;
+    itunes_duration?: number | string;
+    itunes_item_image?: string;
+    media?: Record<string, Record<string, string>>;
+
+    _extra?: Record<string, any> & {
+        links?: {
+            url: string;
+            type: string;
+            content_html?: string;
+        }[];
+    };
+};
+
+export type Data = {
+    title: string;
+    description?: string;
+    link?: string;
+    item?: DataItem[];
+    allowEmpty?: boolean;
+    image?: string;
+    author?: string;
+    language?: string;
+    feedLink?: string;
+    lastBuildDate?: string;
+    itunes_author?: string;
+    itunes_category?: string;
+    itunes_explicit?: string | boolean;
+    id?: string;
+
+    atomlink?: string;
+    ttl?: number;
+};
+
 // namespace
 interface NamespaceItem {
     /**
@@ -14,7 +98,7 @@ interface NamespaceItem {
     /**
      * The classification of the namespace, which will be written into the corresponding classification document
      */
-    categories?: string[];
+    categories?: Category[];
 
     /**
      * Hints and additional explanations for users using this namespace, it will be inserted into the documentation
@@ -57,6 +141,11 @@ interface RouteItem {
     maintainers: string[];
 
     /**
+     * The handler function of the route
+     */
+    handler: (ctx: Context) => Promise<Data> | Data;
+
+    /**
      * An example URL of the route
      */
     example: string;
@@ -74,7 +163,7 @@ interface RouteItem {
     /**
      * The classification of the route, which will be written into the corresponding classification documentation
      */
-    categories?: string[];
+    categories?: Category[];
 
     /**
      * Special features of the route, such as what configuration items it depends on, whether it is strict anti-crawl, whether it supports a certain function and so on
