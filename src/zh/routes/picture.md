@@ -50,7 +50,7 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 
 ### MMDArchive 标签查询 <Site url="mmda.booru.org" size="sm" />
 
-<Route namespace="booru" :data='{"path":"/mmda/tags/:tags?","categories":["picture"],"example":"/booru/mmda/tags/full_body%20blue_eyes","parameters":{"tags":"标签，多个标签使用 `%20` 连接，如需根据作者查询则在 `user:` 后接上作者名，如：`user:xxxx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mmda.booru.org/index.php"]}],"name":"MMDArchive 标签查询","maintainers":["N78Wy"],"description":"For example:\n\n  -   默认查询 (什么 tag 都不加)：`/booru/mmda/tags`\n  -   默认查询单个 tag：`/booru/mmda/tags/full_body`\n  -   默认查询多个 tag：`/booru/mmda/tags/full_body%20blue_eyes`\n  -   默认查询根据作者查询：`/booru/mmda/tags/user:xxxx`","location":"mmda.ts"}' :test='{"code":0}' />
+<Route namespace="booru" :data='{"path":"/mmda/tags/:tags?","categories":["picture"],"example":"/booru/mmda/tags/full_body%20blue_eyes","parameters":{"tags":"标签，多个标签使用 `%20` 连接，如需根据作者查询则在 `user:` 后接上作者名，如：`user:xxxx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mmda.booru.org/index.php"]}],"name":"MMDArchive 标签查询","maintainers":["N78Wy"],"description":"For example:\n\n  -   默认查询 (什么 tag 都不加)：`/booru/mmda/tags`\n  -   默认查询单个 tag：`/booru/mmda/tags/full_body`\n  -   默认查询多个 tag：`/booru/mmda/tags/full_body%20blue_eyes`\n  -   默认查询根据作者查询：`/booru/mmda/tags/user:xxxx`","location":"mmda.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 For example:
 
@@ -175,7 +175,7 @@ Type
 
 ### Cheng Kung University Mirror <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":0}' />
 
 ### NASA 中文 <Site url="apod.nasa.govundefined" size="sm" />
 
@@ -229,7 +229,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 每日一图 <Site url="bjp.org.cn/APOD/today.shtml" size="sm" />
 
-<Route namespace="bjp" :data='{"path":"/apod","categories":["picture"],"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bjp" :data='{"path":"/apod","categories":["picture"],"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":0}' />
 
 ## 国家地理 <Site url="nationalgeographic.com"/>
 
