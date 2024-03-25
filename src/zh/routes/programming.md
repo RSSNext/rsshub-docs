@@ -230,7 +230,7 @@ GitHub provides some official RSS feeds:
 
 ### Repo Stars <Site url="github.com" size="sm" />
 
-<Route namespace="github" :data='{"path":"/stars/:user/:repo","categories":["programming"],"example":"/github/stars/DIYGod/RSSHub","parameters":{"user":"GitHub username","repo":"GitHub repo name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/:user/:repo/stargazers","github.com/:user/:repo"]}],"name":"Repo Stars","maintainers":["HenryQW"],"location":"star.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="github" :data='{"path":"/stars/:user/:repo","categories":["programming"],"example":"/github/stars/DIYGod/RSSHub","parameters":{"user":"GitHub username","repo":"GitHub repo name"},"features":{"requireConfig":[{"name":"GITHUB_ACCESS_TOKEN","description":"GitHub Access Token"}]},"radar":[{"source":["github.com/:user/:repo/stargazers","github.com/:user/:repo"]}],"name":"Repo Stars","maintainers":["HenryQW"],"location":"star.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Search Result <Site url="github.com" size="sm" />
 
@@ -273,7 +273,7 @@ GitHub provides some official RSS feeds:
 
 ### User Starred Repositories <Site url="github.com" size="sm" />
 
-<Route namespace="github" :data='{"path":"/starred_repos/:user","categories":["programming"],"example":"/github/starred_repos/DIYgod","parameters":{"user":"User name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/:user"]}],"name":"User Starred Repositories","maintainers":["LanceZhu"],"location":"starred-repos.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="github" :data='{"path":"/starred_repos/:user","categories":["programming"],"example":"/github/starred_repos/DIYgod","parameters":{"user":"User name"},"features":{"requireConfig":[{"name":"GITHUB_ACCESS_TOKEN","optional":true,"description":"To get more requests"}]},"radar":[{"source":["github.com/:user"]}],"name":"User Starred Repositories","maintainers":["LanceZhu"],"location":"starred-repos.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Wiki History <Site url="github.com" size="sm" />
 
