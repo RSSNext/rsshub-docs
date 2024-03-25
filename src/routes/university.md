@@ -1931,15 +1931,23 @@ author 列表：
   | -------- | -------- | -------- | -------- | -------- |
   | 1        | 2        | 3        | 4        | 5        |
 
-## 浙江工业大学 <Site url="zjut.edu.cn"/>
+## 浙江工业大学 <Site url="www.zjut.edu.cn"/>
 
-### 设计与建筑学院 <Site url="zjut.edu.cn" size="sm" />
+### 设计与建筑学院 <Site url="www.design.zjut.edu.cn" size="sm" />
 
-<Route namespace="zjut" :data='{"path":"/da/:type","categories":["university"],"example":"/zjut/da/1","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"设计与建筑学院","maintainers":["yikZero"],"description":"| 学院新闻 | 公告通知 | 科研申报 | 科研成果 | 文件与资源 | 学术交流 |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 1        | 2        | 3        | 4        | 5        | 6        |","location":"da/index.ts"}' :test='{"code":0}' />
+<Route namespace="zjut" :data='{"path":"/da/:type","categories":["university"],"example":"/zjut/da/1","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"设计与建筑学院","maintainers":["yikZero"],"url":"www.design.zjut.edu.cn","description":"| 学院新闻 | 公告通知 | 科研申报 | 科研成果 | 文件与资源 | 学术交流 |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 1        | 2        | 3        | 4        | 5        | 6        |","location":"da/index.ts"}' :test='{"code":0}' />
 
 | 学院新闻 | 公告通知 | 科研申报 | 科研成果 | 文件与资源 | 学术交流 |
 | -------- | -------- | -------- | -------- | -------- | -------- |
 | 1        | 2        | 3        | 4        | 5        | 6        |
+
+### 浙工大新闻 <Site url="www.news.zjut.edu.cn" size="sm" />
+
+<Route namespace="zjut" :data='{"path":"/news/:type","categories":["university"],"example":"/zjut/news/5414","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"浙工大新闻","maintainers":["junbaor","yikZero"],"url":"www.news.zjut.edu.cn","radar":[{"source":["www.news.zjut.edu.cn/:type/list.htm"]}],"description":"| 图片新闻 | 工大要闻 | 综合新闻 | 学术・探索 | 三创・人物 | 智库工大 | 美誉工大 | 葵园融媒 |\n| -------- | -------- | -------- | ---------- | ---------- | -------- | -------- | -------- |\n| 5414     | 5415     | 5416     | 5422       | 5423       | 5424     | 5425     | 5419     |","location":"news.ts"}' :test='undefined' />
+
+| 图片新闻 | 工大要闻 | 综合新闻 | 学术・探索 | 三创・人物 | 智库工大 | 美誉工大 | 葵园融媒 |
+| -------- | -------- | -------- | ---------- | ---------- | -------- | -------- | -------- |
+| 5414     | 5415     | 5416     | 5422       | 5423       | 5424     | 5425     | 5419     |
 
 ## 中国科学院 <Site url="www.cas.cn"/>
 
