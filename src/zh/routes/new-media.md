@@ -1833,7 +1833,7 @@ Member ID
 
 ### 果壳网专栏 <Site url="guokr.com/" size="sm" />
 
-<Route namespace="guokr" :data='{"path":"/:channel","categories":["new-media"],"example":"/guokr/calendar","parameters":{"channel":"专栏类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guokr.com/"]}],"name":"果壳网专栏","maintainers":["DHPO","hoilc"],"url":"guokr.com/","description":"| 物种日历 | 吃货研究所 | 美丽也是技术活 |\n  | -------- | ---------- | -------------- |\n  | calendar | institute  | beauty         |","location":"channel.ts"}' :test='{"code":0}' />
+<Route namespace="guokr" :data='{"path":"/column/:channel","categories":["new-media"],"example":"/guokr/column/calendar","parameters":{"channel":"专栏类别"},"radar":[{"source":["guokr.com/:channel"]}],"name":"果壳网专栏","maintainers":["DHPO","hoilc"],"url":"guokr.com/","description":"| 物种日历 | 吃货研究所 | 美丽也是技术活 |\n  | -------- | ---------- | -------------- |\n  | calendar | institute  | beauty         |","location":"channel.ts"}' :test='undefined' />
 
 | 物种日历 | 吃货研究所 | 美丽也是技术活 |
   | -------- | ---------- | -------------- |
@@ -1841,7 +1841,7 @@ Member ID
 
 ### 科学人 <Site url="guokr.com/scientific" size="sm" />
 
-<Route namespace="guokr" :data='{"path":"/scientific","categories":["new-media"],"example":"/guokr/scientific","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guokr.com/scientific","guokr.com/"]}],"name":"科学人","maintainers":["alphardex","nczitzk"],"url":"guokr.com/scientific","location":"scientific.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="guokr" :data='{"path":"/scientific","categories":["new-media"],"example":"/guokr/scientific","radar":[{"source":["guokr.com/scientific","guokr.com/"]}],"name":"科学人","maintainers":["alphardex","nczitzk"],"url":"guokr.com/scientific","location":"scientific.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 后续 <Site url="houxu.app"/>
 
