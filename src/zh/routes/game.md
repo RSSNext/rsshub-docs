@@ -646,6 +646,18 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 <Route namespace="arknights" :data='{"path":"/japan","categories":["game"],"example":"/arknights/japan","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ak.arknights.jp/news","ak.arknights.jp/"]}],"name":"アークナイツ (日服新闻)","maintainers":["ofyark"],"url":"ak.arknights.jp/news","location":"japan.ts"}' :test='{"code":0}' />
 
+## 全球游戏交流中心 <Site url="www.gamer520.com"/>
+
+### 文章 <Site url="www.gamer520.com/" size="sm" />
+
+<Route namespace="gamer520" :data='{"path":"/:category?/:order?","categories":["game"],"example":"/gamer520/switchyouxi","parameters":{"category":"分类，见下表","order":"排序，发布日期: date; 修改日期: modified"},"features":{"antiCrawler":true},"name":"文章","maintainers":["xzzpig"],"url":"www.gamer520.com/","description":"分类\n\n  | 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |\n  | ---- | --------------- | ---------- | ------- | ----------- | ------- |\n  | all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |","location":"index.ts"}' :test='undefined' />
+
+分类
+
+  | 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |
+  | ---- | --------------- | ---------- | ------- | ----------- | ------- |
+  | all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |
+
 ## 少女前线 <Site url="sunborngame.com"/>
 
 ### 情报局 <Site url="sunborngame.com" size="sm" />
