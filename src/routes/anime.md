@@ -237,6 +237,12 @@ Sources
 
 <Route namespace="nhentai" :data='{"path":"/:key/:keyword/:mode?","categories":["anime"],"example":"/nhentai/language/chinese","parameters":{"key":"Filter term, can be: `parody`, `character`, `tag`, `artist`, `group`, `language` or `category`","keyword":"Filter value","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](/install/#configuration-route-specific-configurations), default to `simple`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Filter","maintainers":["MegrezZhu","hoilc"],"location":"other.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## NT动漫 <Site url="www.ntdm9.com"/>
+
+### 番剧详情 <Site url="www.ntdm9.com" size="sm" />
+
+<Route namespace="ntdm" :data='{"path":"/video/:id","categories":["anime"],"example":"/ntdm/video/20200035","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ntdm9.com/video/:id"]}],"name":"番剧详情","maintainers":["alexhere"],"location":"video.ts"}' :test='undefined' />
+
 ## QooApp <Site url="apps.qoo-app.com"/>
 
 ### Game Store - Cards <Site url="apps.qoo-app.com" size="sm" />
