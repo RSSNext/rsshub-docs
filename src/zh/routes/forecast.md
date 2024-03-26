@@ -76,7 +76,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 大连市 <Site url="swj.dl.gov.cn/col/col4296/index.html" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/dalian","categories":["forecast"],"example":"/tingshuitz/dalian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swj.dl.gov.cn/col/col4296/index.html","swj.dl.gov.cn/"]}],"name":"大连市","maintainers":["DIYgod"],"url":"swj.dl.gov.cn/col/col4296/index.html","location":"dalian.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tingshuitz" :data='{"path":"/dalian","categories":["forecast"],"example":"/tingshuitz/dalian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swj.dl.gov.cn/col/col4296/index.html","swj.dl.gov.cn/"]}],"name":"大连市","maintainers":["DIYgod"],"url":"swj.dl.gov.cn/col/col4296/index.html","location":"dalian.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 东莞市 <Site url="swj.dl.gov.cn" size="sm" />
 
@@ -84,7 +84,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广州市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/guangzhou","categories":["forecast"],"example":"/tingshuitz/guangzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州市","maintainers":["xyqfer"],"location":"guangzhou.ts"}' :test='{"code":0}' />
+<Route namespace="tingshuitz" :data='{"path":"/guangzhou","categories":["forecast"],"example":"/tingshuitz/guangzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州市","maintainers":["xyqfer"],"location":"guangzhou.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 杭州市 <Site url="www.hzwgc.com/public/stop_the_water" size="sm" />
 
@@ -92,21 +92,21 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 南京市 <Site url="jlwater.com/portal/10000013" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/nanjing","categories":["forecast"],"example":"/tingshuitz/nanjing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlwater.com/portal/10000013","jlwater.com/"]}],"name":"南京市","maintainers":["ocleo1"],"url":"jlwater.com/portal/10000013","location":"nanjing.ts"}' :test='{"code":0}' />
+<Route namespace="tingshuitz" :data='{"path":"/nanjing","categories":["forecast"],"example":"/tingshuitz/nanjing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlwater.com/portal/10000013","jlwater.com/"]}],"name":"南京市","maintainers":["ocleo1"],"url":"jlwater.com/portal/10000013","location":"nanjing.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 深圳市 <Site url="sz-water.com.cn/*" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/shenzhen","categories":["forecast"],"example":"/tingshuitz/shenzhen","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sz-water.com.cn/*"]}],"name":"深圳市","maintainers":["lilPiper"],"url":"sz-water.com.cn/*","description":"可能仅限中国大陆服务器访问，以实际情况为准。","location":"shenzhen.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tingshuitz" :data='{"path":"/shenzhen","categories":["forecast"],"example":"/tingshuitz/shenzhen","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sz-water.com.cn/*"]}],"name":"深圳市","maintainers":["lilPiper"],"url":"sz-water.com.cn/*","description":"可能仅限中国大陆服务器访问，以实际情况为准。","location":"shenzhen.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 可能仅限中国大陆服务器访问，以实际情况为准。
 
 ### 西安市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/xian","categories":["forecast"],"example":"/tingshuitz/xian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"西安市","maintainers":["ciaranchen"],"location":"xian.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tingshuitz" :data='{"path":"/xian","categories":["forecast"],"example":"/tingshuitz/xian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"西安市","maintainers":["ciaranchen"],"location":"xian.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 萧山区 <Site url="www.xswater.com/gongshui/channels/227.html" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/xiaoshan","categories":["forecast"],"example":"/tingshuitz/xiaoshan","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.xswater.com/gongshui/channels/227.html","www.xswater.com/"]}],"name":"萧山区","maintainers":["znhocn"],"url":"www.xswater.com/gongshui/channels/227.html","location":"xiaoshan.ts"}' :test='{"code":0}' />
+<Route namespace="tingshuitz" :data='{"path":"/xiaoshan","categories":["forecast"],"example":"/tingshuitz/xiaoshan","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.xswater.com/gongshui/channels/227.html","www.xswater.com/"]}],"name":"萧山区","maintainers":["znhocn"],"url":"www.xswater.com/gongshui/channels/227.html","location":"xiaoshan.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 阳江市 <Site url="yjsswjt.com/zxdt_list.jsp" size="sm" />
 
@@ -214,21 +214,21 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广东省内城市预警信号 <Site url="www.tqyb.com.cn/gz/weatherAlarm/otherCity/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 突发性天气提示 <Site url="www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/tfxtq","categories":["forecast"],"example":"/gov/guangdong/tqyb/tfxtq","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/"]}],"name":"突发性天气提示","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/","location":"guangdong/tqyb/tfxtq.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/tfxtq","categories":["forecast"],"example":"/gov/guangdong/tqyb/tfxtq","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/"]}],"name":"突发性天气提示","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/","location":"guangdong/tqyb/tfxtq.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 中央气象台 <Site url="nmc.cn"/>
 
 ### 全国气象预警 <Site url="nmc.cn/publish/alarm.html" size="sm" />
 
-<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":0}' />
 
 ## 重庆燃气 <Site url="cqgas.cn"/>
 
 ### 停气检修通知 <Site url="cqgas.cn/" size="sm" />
 
-<Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts"}' :test='{"code":0}' />
+<Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 

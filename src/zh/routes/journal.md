@@ -175,7 +175,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Research Highlight <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/highlight/:journal?","categories":["journal"],"example":"/nature/highlight","parameters":{"journal":"short name for a journal, `nature` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nature.com/:journal/articles","nature.com/:journal","nature.com/"],"target":"/highlight/:journal"}],"name":"Research Highlight","maintainers":[],"description":":::warning\n  Only some journals are supported.\n  :::","location":"highlight.ts"}' :test='{"code":0}' />
+<Route namespace="nature" :data='{"path":"/highlight/:journal?","categories":["journal"],"example":"/nature/highlight","parameters":{"journal":"short name for a journal, `nature` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nature.com/:journal/articles","nature.com/:journal","nature.com/"],"target":"/highlight/:journal"}],"name":"Research Highlight","maintainers":[],"description":":::warning\n  Only some journals are supported.\n  :::","location":"highlight.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::warning
   Only some journals are supported.
@@ -211,7 +211,7 @@ Return results from 2020
 
 ### Oxford Academic <Site url="academic.oup.com/" size="sm" />
 
-<Route namespace="oup" :data='{"path":"/journals/:name","categories":["journal"],"example":"/oup/journals/adaptation","parameters":{"name":"short name for a journal, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["academic.oup.com/","academic.oup.com/:name/issue"]}],"name":"Oxford Academic","maintainers":[],"url":"academic.oup.com/","description":"#### Journal {#oxford-university-press-oxford-academic-journal}","location":"index.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="oup" :data='{"path":"/journals/:name","categories":["journal"],"example":"/oup/journals/adaptation","parameters":{"name":"short name for a journal, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["academic.oup.com/","academic.oup.com/:name/issue"]}],"name":"Oxford Academic","maintainers":[],"url":"academic.oup.com/","description":"#### Journal {#oxford-university-press-oxford-academic-journal}","location":"index.ts"}' :test='{"code":0}' />
 
 #### Journal {#oxford-university-press-oxford-academic-journal}
 
@@ -333,7 +333,7 @@ Sorting
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/usenix-security-sympoium","categories":["journal"],"example":"/usenix/usenix-security-sympoium","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/conferences/all","usenix.org/conferences","usenix.org/"]}],"name":"Security Symposia","maintainers":["ZeddYu"],"url":"usenix.org/conferences/all","description":"Return results from 2020","location":"usenix.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="usenix" :data='{"path":"/usenix-security-sympoium","categories":["journal"],"example":"/usenix/usenix-security-sympoium","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/conferences/all","usenix.org/conferences","usenix.org/"]}],"name":"Security Symposia","maintainers":["ZeddYu"],"url":"usenix.org/conferences/all","description":"Return results from 2020","location":"usenix.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Return results from 2020
 
