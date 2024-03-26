@@ -1449,6 +1449,10 @@ Member ID
 
 ## 報導者 <Site url="twreporter.org"/>
 
+### 分類 <Site url="twreporter.org/" size="sm" />
+
+<Route namespace="twreporter" :data='{"path":"/category/:category","categories":["new-media"],"example":"/twreporter/category/world","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/:category"]}],"name":"分類","maintainers":["emdoe"],"url":"twreporter.org/","location":"category.ts"}' :test='undefined' />
+
 ### 最新 <Site url="twreporter.org/" size="sm" />
 
 <Route namespace="twreporter" :data='{"path":"/newest","categories":["new-media"],"example":"/twreporter/newest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/"]}],"name":"最新","maintainers":["emdoe"],"url":"twreporter.org/","location":"newest.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
