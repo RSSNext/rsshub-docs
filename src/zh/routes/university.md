@@ -135,7 +135,7 @@
 
 <Route namespace="bit" :data='{"path":"/yjs","categories":["university"],"example":"/bit/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grd.bit.edu.cn/zsgz/zsxx/index.htm","grd.bit.edu.cn/"]}],"name":"研究生院招生信息","maintainers":["shengmaosu"],"url":"grd.bit.edu.cn/zsgz/zsxx/index.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
-## 北京师范大学 <Site url="graduate.bjfu.edu.cn"/>
+## 北京林业大学 <Site url="graduate.bjfu.edu.cn"/>
 
 ### 教务处通知公告 <Site url="graduate.bjfu.edu.cn" size="sm" />
 
