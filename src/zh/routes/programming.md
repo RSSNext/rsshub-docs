@@ -196,6 +196,10 @@ GitHub provides some official RSS feeds:
 -   Wiki history: `https://github.com/:owner/:repo/wiki.atom`
 :::
 
+### File Commits <Site url="github.com" size="sm" />
+
+<Route namespace="github" :data='{"path":"/file/:user/:repo/:branch/:filepath{.+}","example":"/github/file/DIYgod/RSSHub/master/README.md","parameters":{"user":"GitHub user or org name","repo":"repository name","branch":"branch name","filepath":"path of target file"},"radar":[{"source":["github.com/:user/:repo/blob/:branch/*filepath"],"target":"/file/:user/:repo/:branch/:filepath"}],"name":"File Commits","maintainers":["zengxs"],"location":"file.ts"}' :test='undefined' />
+
 ### Gist Commits <Site url="github.com" size="sm" />
 
 <Route namespace="github" :data='{"path":"/gist/:gistId","categories":["programming"],"example":"/github/gist/d2c152bb7179d07015f336b1a0582679","parameters":{"gistId":"Gist ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gist.github.com/:owner/:gistId/revisions","gist.github.com/:owner/:gistId/stargazers","gist.github.com/:owner/:gistId/forks","gist.github.com/:owner/:gistId"]}],"name":"Gist Commits","maintainers":["TonyRL"],"location":"gist.ts"}' :test='{"code":0}' />
@@ -258,10 +262,6 @@ GitHub provides some official RSS feeds:
 ### Trending <Site url="github.com/trending" size="sm" />
 
 <Route namespace="github" :data='{"path":"/trending/:since/:language/:spoken_language?","categories":["programming"],"example":"/github/trending/daily/javascript/en","parameters":{"since":"time frame, available in [Trending page](https://github.com/trending/javascript?since=monthly) &#39;s URL, possible values are: `daily`, `weekly` or `monthly`","language":"the feed language, available in [Trending page](https://github.com/trending/javascript?since=monthly) &#39;s URL, don&#39;t filter option is `any`","spoken_language":"natural language, available in [Trending page](https://github.com/trending/javascript?since=monthly) &#39;s URL"},"features":{"requireConfig":[{"name":"GITHUB_ACCESS_TOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/trending"],"target":"/trending/:since"}],"name":"Trending","maintainers":["DIYgod","jameschensmith"],"url":"github.com/trending","location":"trending.ts"}' :test='undefined' />
-
-### Unknown <Site url="github.com" size="sm" />
-
-<Route namespace="github" :data='{"path":"/file/:user/:repo/:branch/:filepath{.+}","radar":[{"source":["github.com/:user/:repo/blob/:branch/*filepath"],"target":"/file/:user/:repo/:branch/:filepath"}],"name":"Unknown","maintainers":[],"location":"file.ts"}' :test='undefined' />
 
 ### User Followers <Site url="github.com" size="sm" />
 
