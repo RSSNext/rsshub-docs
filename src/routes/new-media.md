@@ -2027,6 +2027,12 @@ Member ID
 将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。
 :::
 
+## 君合律师事务所 <Site url="junhe.com"/>
+
+### 君合法评 <Site url="junhe.com" size="sm" />
+
+<Route namespace="junhe" :data='{"path":"/legal-updates","name":"君合法评","url":"junhe.com","maintainers":["nczitzk"],"example":"/junhe/legal-updates","description":"","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["/legal-updates"],"target":"/legal-updates"}],"location":"legal-updates.ts"}' :test='undefined' />
+
 ## 靠谱新闻 <Site url="kaopu.news"/>
 
 ### 全部 <Site url="kaopu.news" size="sm" />
