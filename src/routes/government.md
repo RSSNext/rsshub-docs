@@ -414,10 +414,6 @@ Language
 
 ### Unknown <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/mot/:category{.+}?","name":"Unknown","maintainers":[],"location":"mot/index.ts"}' :test='undefined' />
-
-### Unknown <Site url="kjt.ah.gov.cn" size="sm" />
-
 <Route namespace="gov" :data='{"path":"/ndrc/fggz/:category{.+}?","name":"Unknown","maintainers":[],"location":"ndrc/fggz.ts"}' :test='undefined' />
 
 ### Unknown <Site url="kjt.ah.gov.cn" size="sm" />
@@ -945,6 +941,10 @@ Language
 
   如需订阅完整的热点专题，仅需订阅 **热点专题**`rdzt` 一项即可。
   :::
+
+### 中华人民共和国交通运输部 <Site url="kjt.ah.gov.cn" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/mot/:category{.+}?","name":"中华人民共和国交通运输部","maintainers":["ladeng07"],"location":"mot/index.ts"}' :test='undefined' />
 
 ### 重庆市人民政府 国有资产监督管理委员会 <Site url="gzw.cq.gov.cn" size="sm" />
 
