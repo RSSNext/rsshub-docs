@@ -175,7 +175,7 @@ Type
 
 ### Cheng Kung University Mirror <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":0}' />
+<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### NASA 中文 <Site url="apod.nasa.govundefined" size="sm" />
 
@@ -187,7 +187,7 @@ Type
 
 ### NASA <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod","categories":["picture"],"example":"/nasa/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod.ts"}' :test='{"code":0}' />
+<Route namespace="nasa" :data='{"path":"/apod","categories":["picture"],"example":"/nasa/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Pixabay <Site url="pixabay.com"/>
 
@@ -217,7 +217,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### Search <Site url="wallhaven.cc/" size="sm" />
 
-<Route namespace="wallhaven" :data='{"path":["/search/:filter?/:needDetails?","/:filter?/:needDetails?"],"categories":["picture"],"example":"/wallhaven/search/categories=110&purity=110&sorting=date_added&order=desc","parameters":{"filter":"Filter, empty by default","needDetails":"Need Details, `true`/`yes` as yes, no by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallhaven.cc/"]}],"name":"Search","maintainers":["nczitzk","Fatpandac"],"url":"wallhaven.cc/","description":":::tip\n  Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:\n\n  The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="wallhaven" :data='{"path":["/search/:filter?/:needDetails?","/:filter?/:needDetails?"],"categories":["picture"],"example":"/wallhaven/search/categories=110&purity=110&sorting=date_added&order=desc","parameters":{"filter":"Filter, empty by default","needDetails":"Need Details, `true`/`yes` as yes, no by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallhaven.cc/"]}],"name":"Search","maintainers":["nczitzk","Fatpandac"],"url":"wallhaven.cc/","description":":::tip\n  Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:\n\n  The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:
@@ -229,7 +229,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 每日一图 <Site url="bjp.org.cn/APOD/today.shtml" size="sm" />
 
-<Route namespace="bjp" :data='{"path":"/apod","categories":["picture"],"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":0}' />
+<Route namespace="bjp" :data='{"path":"/apod","categories":["picture"],"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 国家地理 <Site url="nationalgeographic.com"/>
 
@@ -239,7 +239,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 每日一图 <Site url="nationalgeographic.com/photo-of-the-day/*" size="sm" />
 
-<Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture"],"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"每日一图","maintainers":["LogicJake","OrangeEd1t","TonyRL"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' :test='{"code":0}' />
+<Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture"],"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"每日一图","maintainers":["LogicJake","OrangeEd1t","TonyRL"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 极品性感美女 <Site url="www.jpxgmn.com"/>
 

@@ -4,7 +4,7 @@
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":0}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -90,7 +90,7 @@
 
 ### BlueStacks 5 Release Notes <Site url="bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5" size="sm" />
 
-<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":0}' />
 
 ## Brave <Site url="brave.com"/>
 
@@ -102,7 +102,7 @@
 
 ### Latest models <Site url="civitai.com/" size="sm" />
 
-<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":0}' />
+<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Model discussions <Site url="civitai.com" size="sm" />
 
@@ -212,7 +212,7 @@ Language
 
 ### Release Notes <Site url="firecore.com" size="sm" />
 
-<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 312595982564 to be less than 311040000000"}' />
+<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 312682581735 to be less than 311040000000"}' />
 
 ## iFi audio <Site url="ifi-audio.com"/>
 
@@ -230,7 +230,7 @@ Language
 
 ### Changelog <Site url="imagemagick.org/script/download.php" size="sm" />
 
-<Route namespace="imagemagick" :data='{"path":"/changelog","categories":["program-update"],"example":"/imagemagick/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["imagemagick.org/script/download.php","imagemagick.org/script","imagemagick.org/"]}],"name":"Changelog","maintainers":["nczitzk"],"url":"imagemagick.org/script/download.php","location":"changelog.ts"}' :test='{"code":0}' />
+<Route namespace="imagemagick" :data='{"path":"/changelog","categories":["program-update"],"example":"/imagemagick/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["imagemagick.org/script/download.php","imagemagick.org/script","imagemagick.org/"]}],"name":"Changelog","maintainers":["nczitzk"],"url":"imagemagick.org/script/download.php","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## IPSW.me <Site url="ipsw.me"/>
 
@@ -264,7 +264,7 @@ Language
 
 ### New firmware <Site url="miui.com" size="sm" />
 
-<Route namespace="miui" :data='{"path":"/:device/:type?/:region?","categories":["program-update"],"example":"/miui/aries","parameters":{"device":"the device `codename` eg. `aries` for Mi 2S","type":"type","region":"Region, default to `cn`"},"name":"New firmware","maintainers":["Indexyz"],"description":"  | stable  | development |\n    | ------- | ----------- |\n    | release | dev         |\n  \n    | region | region |\n    | ------ | ------ |\n    | China  | cn     |\n    | Global | global |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="miui" :data='{"path":"/firmware/:device/:type?/:region?","categories":["program-update"],"example":"/miui/firmware/aries","parameters":{"device":"the device `codename` eg. `aries` for Mi 2S","type":"type","region":"Region, default to `cn`"},"name":"New firmware","maintainers":["Indexyz"],"description":"  | stable  | development |\n    | ------- | ----------- |\n    | release | dev         |\n  \n    | region | region |\n    | ------ | ------ |\n    | China  | cn     |\n    | Global | global |","location":"firmware/index.ts"}' :test='undefined' />
 
   | stable  | development |
     | ------- | ----------- |
@@ -285,7 +285,7 @@ Language
 
 ### Tesla Software Updates <Site url="notateslaapp.com/software-updates/history" size="sm" />
 
-<Route namespace="notateslaapp" :data='{"path":"/ota","categories":["program-update"],"example":"/notateslaapp/ota","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notateslaapp.com/software-updates/history","notateslaapp.com/software-updates","notateslaapp.com/"]}],"name":"Tesla Software Updates","maintainers":["mrbruce516"],"url":"notateslaapp.com/software-updates/history","location":"update.ts"}' :test='{"code":1,"message":"expected [ …(3) ] to not include &#39;https://www.notateslaapp.com/software…&#39;"}' />
+<Route namespace="notateslaapp" :data='{"path":"/ota","categories":["program-update"],"example":"/notateslaapp/ota","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notateslaapp.com/software-updates/history","notateslaapp.com/software-updates","notateslaapp.com/"]}],"name":"Tesla Software Updates","maintainers":["mrbruce516"],"url":"notateslaapp.com/software-updates/history","location":"update.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## O&O Software <Site url="oo-software.com"/>
 
@@ -310,13 +310,13 @@ Language
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 335751695485 to be less than 311040000000"}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 335838507081 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
 ### News <Site url="qbittorrent.org/news.php" size="sm" />
 
-<Route namespace="qbittorrent" :data='{"path":"/news","categories":["program-update"],"example":"/qbittorrent/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbittorrent.org/news.php","qbittorrent.org/"]}],"name":"News","maintainers":["TonyRL"],"url":"qbittorrent.org/news.php","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qbittorrent" :data='{"path":"/news","categories":["program-update"],"example":"/qbittorrent/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbittorrent.org/news.php","qbittorrent.org/"]}],"name":"News","maintainers":["TonyRL"],"url":"qbittorrent.org/news.php","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## RemNote <Site url="remnote.com"/>
 
@@ -328,7 +328,7 @@ Language
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
 
-<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ …(127) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
+<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="docs.rsshub.app" size="sm" />
 
@@ -382,7 +382,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://hub.docker.com/r/tabbyml/tabb…&#39;"}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(6) ] to not include &#39;https://hub.docker.com/r/tabbyml/tabb…&#39;"}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 
@@ -394,7 +394,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Download <Site url="support.wdc.com" size="sm" />
 
-<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -37236811258 to be greater than -432000000"}' />
+<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -5613920765 to be greater than -432000000"}' />
 
 ## winstall <Site url="winstall.app"/>
 

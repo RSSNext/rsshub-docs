@@ -22,7 +22,7 @@
 
 ### User Feed <Site url="blog.csdn.net" size="sm" />
 
-<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Delta Lake <Site url="delta.io"/>
 
@@ -152,7 +152,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
 
-<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 博客园 <Site url="www.cnblogs.com"/>
 
@@ -206,7 +206,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 严选 <Site url="chuanliu.org/nice" size="sm" />
 
-<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":0}' />
+<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 大眼仔旭 <Site url="dayanzai.me"/>
 
@@ -296,7 +296,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 博客 <Site url="cloudnative.to" size="sm" />
 
-<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 赵容部落 <Site url="zrblog.net"/>
 
@@ -334,5 +334,5 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
