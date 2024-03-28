@@ -241,7 +241,7 @@ Sources
 
 ### 番剧详情 <Site url="www.ntdm9.com" size="sm" />
 
-<Route namespace="ntdm" :data='{"path":"/video/:id","categories":["anime"],"example":"/ntdm/video/20200035","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ntdm9.com/video/:id"]}],"name":"番剧详情","maintainers":["alexhere"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ntdm" :data='{"path":"/video/:id","categories":["anime"],"example":"/ntdm/video/4309","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ntdm9.com/video/:id"]}],"name":"番剧详情","maintainers":["Yamico"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## QooApp <Site url="apps.qoo-app.com"/>
 
