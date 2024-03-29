@@ -11,7 +11,7 @@
       <Badge v-if="data.features?.supportPodcast" type="tip">🎙️ Support Podcast</Badge>
       <Badge v-if="data.features?.supportScihub" type="tip">🧪 Support Sci-Hub</Badge>
       <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 Rely on Puppeteer</Badge>
-      <a v-if="data.features?.requireConfig" href="/install/config#route-specific-configurations" target="_blank">
+      <a v-if="data.features?.requireConfig" href="/deploy/config#route-specific-configurations" target="_blank">
         <Badge type="warning">⚙️ Config Required</Badge>
       </a>
       <a v-if="data.radar" href="/usage#radar" target="_blank">

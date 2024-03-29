@@ -513,7 +513,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 ## Notion <Site url="notion.so"/>
 
 :::warning
-Need to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/install/#Deployment) for details.
+Need to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/#Deployment) for details.
 :::
 
 :::tip Recommendation

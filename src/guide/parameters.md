@@ -25,7 +25,7 @@ Please make sure you've [fully URL-encoded](https://gchq.github.io/CyberChef/#re
 
 filter supports Regex, and due to the fact that some Regex are vulnerable to DoS (ReDoS), default engine `re2` blocks some of these functionalities available in node `Regexp`. These two engines also behaves a bit different in some corner cases. [Details](https://github.com/uhop/node-re2#limitations-things-re2-does-not-support)
 
-If you need to use a different engine, please refer to [Deploy->Features->FILTER_REGEX_ENGINE](/install/#configuration-features).
+If you need to use a different engine, please refer to [Deploy->Features->FILTER_REGEX_ENGINE](/deploy/#configuration-features).
 
 :::
 
@@ -170,7 +170,7 @@ For example：
 
 ## Summarized by ChatGPT (Self-hosted)
 
-Set the parameter `chatgpt` to generate a summary by ChatGPT. See [Install](/install/config#other-application-configurations) for details. Please consider the necessity of this feature, because it will consume some tokens.
+Set the parameter `chatgpt` to generate a summary by ChatGPT. See [Install](/deploy/config#other-application-configurations) for details. Please consider the necessity of this feature, because it will consume some tokens.
 
 -   `chatgpt`: set to any value
 
