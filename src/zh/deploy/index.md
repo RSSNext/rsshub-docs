@@ -141,7 +141,7 @@ $ docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 -e GITHUB_ACCESS
 
 该部署方式不包括 puppeteer（除非改用 `diygod/rsshub:chromium-bundled`）和 redis 依赖，如有需要请改用 Docker Compose 部署方式或自行部署外部依赖
 
-更多配置项请看 [#配置](/zh/install/config)
+更多配置项请看 [#配置](/zh/deploy/config)
 
 ## Kubernetes 部署 (Helm)
 
@@ -386,7 +386,7 @@ CACHE_EXPIRE=600
 
 该部署方式不包括 redis 依赖，如有需要请改用 Docker Compose 部署方式或自行部署外部依赖
 
-更多配置项请看 [#配置](/zh/install/config)
+更多配置项请看 [#配置](/zh/deploy/config)
 
 ### 更新
 
