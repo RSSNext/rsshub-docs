@@ -485,7 +485,7 @@ Automatic updates are included.
 
 3.  [Sign up for Fly.io](https://fly.io/app/sign-up) and install the [flyctl CLI](https://fly.io/docs/hands-on/install-flyctl/);
 4.  Run `fly launch` and choose a unique name and region to deploy;
-5.  Use `fly secrets set KEY=VALUE` to [configure some modules](#configuration-route-specific-configurations);
+5.  Use `fly secrets set KEY=VALUE` to [configure some modules](config#route-specific-configurations);
 6.  [Set up automatic deployment via GitHub Actions](https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/);
 7.  (Optional) Use `fly certs add your domain` to configure a custom domain, and follow the instructions to configure the related domain resolution at your DNS service provider (you can check the domain configuration status on the Dashboard Certificate page).
 
@@ -503,7 +503,7 @@ Upgrade: On the homepage of your Forked repository, click "Sync fork - Update Br
    ```
 
    Depending on the actual situation, you may want to use other image tags, please read the relevant content of [Docker Image](#docker-image);
-4.  Modify the `[env]` section in fly.toml or use `fly secrets set KEY=VALUE` to [configure some modules](#configuration-route-specific-configurations);
+4.  Modify the `[env]` section in fly.toml or use `fly secrets set KEY=VALUE` to [configure some modules](config#route-specific-configurations);
 5.  Execute `fly deploy` to start the application;
 6.  (Optional) Use `fly certs add your domain` to configure a custom domain, and follow the instructions to configure the related domain resolution at your DNS service provider (you can check the domain configuration status on the Dashboard Certificate page).
 

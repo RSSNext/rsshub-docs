@@ -476,7 +476,7 @@ Heroku [不再](https://blog.heroku.com/next-chapter) 提供免费服务。
 
 4.  运行 `fly launch`, 并选择一个唯一的名称和实例地区；
 
-5.  使用 `fly secrets set KEY=VALUE` [对部分模块进行配置](#pei-zhi-bu-fen-rss-mo-kuai-pei-zhi)；
+5.  使用 `fly secrets set KEY=VALUE` [对部分模块进行配置](config#route-specific-configurations)；
 
 6.  [配置通过 GitHub Actions 自动部署](https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/)；
 
@@ -496,7 +496,7 @@ Heroku [不再](https://blog.heroku.com/next-chapter) 提供免费服务。
     ```
 
     根据实际情况，你可能希望使用其他镜像标签，请阅读 [Docker 镜像](#docker-jing-xiang) 的有关内容；
-4.  修改 fly.toml 中的 `[env]` 段或使用`fly secrets set KEY=VALUE` [对部分模块进行配置](#pei-zhi-bu-fen-rss-mo-kuai-pei-zhi)；
+4.  修改 fly.toml 中的 `[env]` 段或使用`fly secrets set KEY=VALUE` [对部分模块进行配置](config#route-specific-configurations)；
 5.  执行 `fly deploy` 启动应用；
 6.  （可选）利用 `fly certs add 你的域名` 来配置自定义域名，并根据指引在你的 DNS 服务商配置相关域名解析（你可在 Dashboard Certificate 页面查看域名的配置状态）。
 
