@@ -25,7 +25,7 @@ Please make sure you've [fully URL-encoded](https://gchq.github.io/CyberChef/#re
 
 filter supports Regex, and due to the fact that some Regex are vulnerable to DoS (ReDoS), default engine `re2` blocks some of these functionalities available in node `Regexp`. These two engines also behaves a bit different in some corner cases. [Details](https://github.com/uhop/node-re2#limitations-things-re2-does-not-support)
 
-If you need to use a different engine, please refer to [Deploy->Features->FILTER_REGEX_ENGINE](deploy/#configuration-features).
+If you need to use a different engine, please refer to [Deploy->Features->FILTER_REGEX_ENGINE](/deploy/#configuration-features).
 
 :::
 
@@ -87,7 +87,7 @@ E.g. Bilibili article [https://rsshub.app/bilibili/user/article/334958638?mode=f
 
 ## Access Control
 
-Set `key` or `code` to grant access to requests. See [Access Control Configuration](deploy/config#access-control-configurations).
+Set `key` or `code` to grant access to requests. See [Access Control Configuration](/deploy/config#access-control-configurations).
 
 ## Telegram Instant View
 
