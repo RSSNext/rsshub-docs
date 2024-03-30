@@ -162,6 +162,6 @@ const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'
 
 :::danger
 
-v1 路由规范已被弃用。所有新路由都应遵循 [路由规范](#lu-you-gui-fan)。
+v1 路由规范已被弃用。所有新路由都应遵循 [路由规范](#路由规范-1)。
 
 :::
