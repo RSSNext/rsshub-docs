@@ -427,6 +427,18 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="fffdm" :data='{"path":"/manhua/:id/:cdn?","categories":["anime"],"example":"/fffdm/manhua/93","parameters":{"id":"漫画ID。默认获取全部，建议使用通用参数limit获取指定数量","cdn":"cdn加速器。默认5，当前可选1-5"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.fffdm.com/manhua/:id","www.fffdm.com/:id"],"target":"/manhua/:id"}],"name":"在线漫画","maintainers":["zytomorrow"],"location":"manhua/manhua.ts"}' :test='{"code":1,"message":"expected [ …(30) ] to not include &#39;https://manhua.fffdm.com/93/020/&#39;"}' />
 
+## 幻之羁绊动漫网 <Site url="005.tv"/>
+
+### 资讯 <Site url="005.tv" size="sm" />
+
+<Route namespace="005" :data='{"path":"/:category?","name":"资讯","url":"005.tv","maintainers":["nczitzk"],"example":"/005/zx","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为二次元资讯"},"description":"\n  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |\n  | ---------- | ------ | -------- | -------- |\n  | zx         | zwh    | dtts     | zh       |\n    ","categories":["anime"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["005.tv/:category"]},{"title":"二次元资讯","source":["005.tv/zx/"],"target":"/005/zx"},{"title":"慢慢说","source":["005.tv/zwh/"],"target":"/005/zwh"},{"title":"道听途说","source":["005.tv/dtts/"],"target":"/005/dtts"},{"title":"展会资讯","source":["005.tv/zh/"],"target":"/005/zh"}],"location":"index.ts"}' :test='undefined' />
+
+
+  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |
+  | ---------- | ------ | -------- | -------- |
+  | zx         | zwh    | dtts     | zh       |
+    
+
 ## 禁漫天堂 <Site url="18comic.org"/>
 
 :::tip
