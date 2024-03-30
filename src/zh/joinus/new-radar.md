@@ -10,11 +10,11 @@ sidebar_position: 3
 
 :::
 
-如果需要查看新规则的结果，建议您安装浏览器扩展程序。您可以在 [参与我们](/zh/joinus/quick-start#提交新的-rsshub-radar-规则) 页面下载适合您浏览器的扩展程序。
+如果需要查看新规则的结果，建议您安装浏览器扩展程序。您可以在 [参与我们](/zh/joinus/) 页面下载适合您浏览器的扩展程序。
 
 ## 编写规则
 
-要制作新的 RSSHub Radar 规则，需要在 `/lib/routes/` 目录下，相应的域名空间创建 `radar.ts` 文件。下面以制作 `GitHub 仓库 Issues` 的 RSS 源为例，详见此处。编写的代码应如下所示：
+要制作新的 RSSHub Radar 规则，需要在 [/lib/routes/](https://github.com/DIYgod/RSSHub/tree/master/lib/routes) 目录下，相应的域名空间创建 `radar.ts` 文件。下面以制作 `GitHub 仓库 Issues` 的 RSS 源为例，详见[此处](/zh/joinus/new-rss/before-start)。编写的代码应如下所示：
 
 ```js
 export default {
@@ -115,7 +115,7 @@ export default {
 
 ### `docs`
 
-文档链接也是*必填*字段。在这种情况下，`GitHub 仓库 Issues` 的文档链接将是 `https://docs.rsshub.app/routes/programming#github`。请注意，URL hash 应位于二级标题 (`##`) 处，而不是三级标题 (`###`) `https://docs.rsshub.app/routes/programming#github-cang-ku-issues`。
+文档链接也是*必填*字段。在这种情况下，`GitHub 仓库 Issues` 的文档链接将是 `https://docs.rsshub.app/zh/routes/programming#github`。请注意，URL hash 应位于二级标题 (`##`) 处，而不是三级标题 (`###`) `https://docs.rsshub.app/zh/routes/programming#repo-issues`。
 
 ### `source`
 

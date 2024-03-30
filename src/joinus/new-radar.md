@@ -10,7 +10,7 @@ The following document is the old version standard, please refer [/lib/types.ts#
 
 :::
 
-If you want to see the results, we suggest you install the browser extension. You can download it for your browser on the [Join Us](/joinus/quick-start#submit-new-rsshub-radar-rules-before-you-start) page.
+If you want to see the results, we suggest you install the browser extension. You can download it for your browser on the [Join Us](/joinus/) page.
 
 ## Code the rule
 
@@ -117,7 +117,7 @@ The title is a *required* field and should be the same as the level 3 heading (`
 
 The documentation link is also a *required* field. In this case, the documentation link for `GitHub Repo Issues` will be `https://docs.rsshub.app/routes/programming#github`.
 
-Note that the hash should be positioned to the level 2 heading (`##`), and not `https://docs.rsshub.app/routes/programming#github-repo-issues`.
+Note that the hash should be positioned to the level 2 heading (`##`), and not `https://docs.rsshub.app/routes/programming#repo-issues`.
 
 ### `source`
 
@@ -227,7 +227,7 @@ Here's an example radar rule that you can play with:
 })
 ```
 
-:::note Extra examples
+:::note Other Examples
 
 ```js
 ({
