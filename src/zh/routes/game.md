@@ -364,7 +364,21 @@ Region
 
 ### Java Game Update <Site url="minecraft.net/" size="sm" />
 
-<Route namespace="minecraft" :data='{"path":"/version","categories":["game"],"example":"/minecraft/version","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ"],"url":"minecraft.net/","location":"version.ts"}' :test='{"code":1,"message":"expected 311585649971 to be less than 311040000000"}' />
+<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='undefined' />
+
+
+| Version                    | versionType |
+| -------------------------- | ----------- |
+| 正式版                     | release     |
+| 快照                       | snapshot    |
+| Alpha 及更早的版本         | old_alpha  |
+| Beta 版                    | old_beta   |
+| Target                     | linkType    |
+| -------------------------- | --------    |
+| minecraft.net              | official    |
+| 英文 Minecraft Wiki 版本页 | enwiki      |
+| 中文 Minecraft Wiki 版本页 | zhwiki      |
+
 
 ## Modrinth <Site url="modrinth.com"/>
 
