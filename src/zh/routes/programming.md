@@ -62,13 +62,13 @@ You have the option to utilize the main heading or use individual categories as 
 
 ### Platform Software <Site url="www.alternativeto.net" size="sm" />
 
-<Route namespace="alternativeto" :data='{"path":"/platform/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/platform/firefox","parameters":{"name":"Platform name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/platform/:name"],"target":"/platform/:name"}],"name":"Platform Software","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/platform/firefox/license=free`","location":"platform.ts"}' :test='{"code":0}' />
+<Route namespace="alternativeto" :data='{"path":"/platform/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/platform/firefox","parameters":{"name":"Platform name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/platform/:name"],"target":"/platform/:name"}],"name":"Platform Software","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/platform/firefox/license=free`","location":"platform.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 > routeParms can be copied from original site URL, example: `/alternativeto/platform/firefox/license=free`
 
 ### Software Alternatives <Site url="www.alternativeto.net" size="sm" />
 
-<Route namespace="alternativeto" :data='{"path":"/software/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/software/cpp","parameters":{"name":"Software name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/software/:name"],"target":"/software/:name"}],"name":"Software Alternatives","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`","location":"software.ts"}' :test='{"code":0}' />
+<Route namespace="alternativeto" :data='{"path":"/software/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/software/cpp","parameters":{"name":"Software name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/software/:name"],"target":"/software/:name"}],"name":"Software Alternatives","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`","location":"software.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 > routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`
 
@@ -128,7 +128,7 @@ Rated Range
 
 ### Category <Site url="cncf.io" size="sm" />
 
-<Route namespace="cncf" :data='{"path":"/:cate?","categories":["programming"],"example":"/cncf","parameters":{"cate":"blog by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"description":"| Blog | News | Announcements | Reports |\n  | ---- | ---- | ------------- | ------- |\n  | blog | news | announcements | reports |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="cncf" :data='{"path":"/:cate?","categories":["programming"],"example":"/cncf","parameters":{"cate":"blog by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"description":"| Blog | News | Announcements | Reports |\n  | ---- | ---- | ------------- | ------- |\n  | blog | news | announcements | reports |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Blog | News | Announcements | Reports |
   | ---- | ---- | ------------- | ------- |
@@ -146,7 +146,7 @@ Rated Range
 
 ### Recent actions <Site url="codeforces.com/recent-actions" size="sm" />
 
-<Route namespace="codeforces" :data='{"path":"/recent-actions/:minrating?","categories":["programming"],"example":"/codeforces/recent-actions","parameters":{"minrating":"The minimum blog/comment rating required. Default: 1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["codeforces.com/recent-actions"],"target":"/recent-actions"}],"name":"Recent actions","maintainers":[],"url":"codeforces.com/recent-actions","location":"recent-actions.ts"}' :test='{"code":0}' />
+<Route namespace="codeforces" :data='{"path":"/recent-actions/:minrating?","categories":["programming"],"example":"/codeforces/recent-actions","parameters":{"minrating":"The minimum blog/comment rating required. Default: 1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["codeforces.com/recent-actions"],"target":"/recent-actions"}],"name":"Recent actions","maintainers":[],"url":"codeforces.com/recent-actions","location":"recent-actions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## dbaplus社群 <Site url="dbaplus.cn"/>
 
@@ -178,7 +178,7 @@ Rated Range
 
 ### 仓库 Releases <Site url="gitee.com" size="sm" />
 
-<Route namespace="gitee" :data='{"path":"/releases/:owner/:repo","categories":["programming"],"example":"/gitee/releases/y_project/RuoYi","parameters":{"owner":"用户名","repo":"仓库名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitee.com/:owner/:repo/releases"]}],"name":"仓库 Releases","maintainers":["TonyRL"],"location":"repos/releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gitee" :data='{"path":"/releases/:owner/:repo","categories":["programming"],"example":"/gitee/releases/y_project/RuoYi","parameters":{"owner":"用户名","repo":"仓库名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitee.com/:owner/:repo/releases"]}],"name":"仓库 Releases","maintainers":["TonyRL"],"location":"repos/releases.ts"}' :test='{"code":0}' />
 
 ### 用户公开动态 <Site url="gitee.com" size="sm" />
 
@@ -311,7 +311,7 @@ GitHub provides some official RSS feeds:
 
 ### 板块 <Site url="studygolang.com" size="sm" />
 
-<Route namespace="studygolang" :data='{"path":"/go/:id?","categories":["programming"],"example":"/studygolang/go/daily","parameters":{"id":"板块 id，默认为周刊"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["studygolang.com/go/:id","studygolang.com/"]}],"name":"板块","maintainers":["nczitzk"],"location":"go.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="studygolang" :data='{"path":"/go/:id?","categories":["programming"],"example":"/studygolang/go/daily","parameters":{"id":"板块 id，默认为周刊"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["studygolang.com/go/:id","studygolang.com/"]}],"name":"板块","maintainers":["nczitzk"],"location":"go.ts"}' :test='{"code":0}' />
 
 ### 招聘 <Site url="studygolang.com" size="sm" />
 
@@ -419,7 +419,7 @@ GitHub provides some official RSS feeds:
 
 ### 博客最新文章 <Site url="konghq.com/blog/*" size="sm" />
 
-<Route namespace="konghq" :data='{"path":"/blog-posts","categories":["programming"],"example":"/konghq/blog-posts","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["konghq.com/blog/*"]}],"name":"博客最新文章","maintainers":["piglei"],"url":"konghq.com/blog/*","location":"blog-posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="konghq" :data='{"path":"/blog-posts","categories":["programming"],"example":"/konghq/blog-posts","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["konghq.com/blog/*"]}],"name":"博客最新文章","maintainers":["piglei"],"url":"konghq.com/blog/*","location":"blog-posts.ts"}' :test='{"code":0}' />
 
 ## LeetCode <Site url="leetcode.com"/>
 
@@ -465,7 +465,7 @@ GitHub provides some official RSS feeds:
 
 ### Release Notes <Site url="dev.mysql.com" size="sm" />
 
-<Route namespace="mysql" :data='{"path":"/release/:version?","categories":["programming"],"example":"/mysql/release/8.0","parameters":{"version":"Version, see below, 8.0 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["nczitzk"],"description":"| 8.0 | 5.7 | 5.6 |\n  | --- | --- | --- |","location":"release.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mysql" :data='{"path":"/release/:version?","categories":["programming"],"example":"/mysql/release/8.0","parameters":{"version":"Version, see below, 8.0 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["nczitzk"],"description":"| 8.0 | 5.7 | 5.6 |\n  | --- | --- | --- |","location":"release.ts"}' :test='{"code":0}' />
 
 | 8.0 | 5.7 | 5.6 |
   | --- | --- | --- |
@@ -520,7 +520,7 @@ GitHub provides some official RSS feeds:
 
 ### 动作分享 <Site url="getquicker.net" size="sm" />
 
-<Route namespace="quicker" :data='{"path":"/share/:category?","categories":["programming"],"example":"/quicker/share/Recent","parameters":{"category":"分类，见下表，默认为动作库最新更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["getquicker.net/Share/:category","getquicker.net/"]}],"name":"动作分享","maintainers":["nczitzk"],"description":"| 动作库最新更新 | 动作库最多赞 | 动作库新动作 | 动作库最近赞 |\n  | -------------- | ------------ | ------------ | ------------ |\n  | Recent         | Recommended  | NewActions   | RecentLiked  |\n\n  | 子程序      | 扩展热键  | 文本指令     |\n  | ----------- | --------- | ------------ |\n  | SubPrograms | PowerKeys | TextCommands |","location":"share.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="quicker" :data='{"path":"/share/:category?","categories":["programming"],"example":"/quicker/share/Recent","parameters":{"category":"分类，见下表，默认为动作库最新更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["getquicker.net/Share/:category","getquicker.net/"]}],"name":"动作分享","maintainers":["nczitzk"],"description":"| 动作库最新更新 | 动作库最多赞 | 动作库新动作 | 动作库最近赞 |\n  | -------------- | ------------ | ------------ | ------------ |\n  | Recent         | Recommended  | NewActions   | RecentLiked  |\n\n  | 子程序      | 扩展热键  | 文本指令     |\n  | ----------- | --------- | ------------ |\n  | SubPrograms | PowerKeys | TextCommands |","location":"share.ts"}' :test='{"code":0}' />
 
 | 动作库最新更新 | 动作库最多赞 | 动作库新动作 | 动作库最近赞 |
   | -------------- | ------------ | ------------ | ------------ |
@@ -532,7 +532,7 @@ GitHub provides some official RSS feeds:
 
 ### 讨论区 <Site url="getquicker.net" size="sm" />
 
-<Route namespace="quicker" :data='{"path":"/qa/:category?/:state?","categories":["programming"],"example":"/quicker/qa","parameters":{"category":"分类，见下表，默认为全部","state":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["Cesaryuan","nczitzk"],"description":"分类\n\n  | 使用问题 | 动作开发 | BUG 反馈 | 功能建议 |\n  | -------- | -------- | -------- | -------- |\n  | 1        | 9        | 3        | 4        |\n\n  | 动作需求 | 经验创意 | 动作推荐 | 信息发布 |\n  | -------- | -------- | -------- | -------- |\n  | 6        | 2        | 7        | 5        |\n\n  | 随便聊聊 | 异常报告 | 全部 |\n  | -------- | -------- | ---- |\n  | 8        | 10       | all  |\n\n  状态\n\n  | 全部 | 精华   | 已归档  |\n  | ---- | ------ | ------- |\n  |      | digest | achived |","location":"qa.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="quicker" :data='{"path":"/qa/:category?/:state?","categories":["programming"],"example":"/quicker/qa","parameters":{"category":"分类，见下表，默认为全部","state":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["Cesaryuan","nczitzk"],"description":"分类\n\n  | 使用问题 | 动作开发 | BUG 反馈 | 功能建议 |\n  | -------- | -------- | -------- | -------- |\n  | 1        | 9        | 3        | 4        |\n\n  | 动作需求 | 经验创意 | 动作推荐 | 信息发布 |\n  | -------- | -------- | -------- | -------- |\n  | 6        | 2        | 7        | 5        |\n\n  | 随便聊聊 | 异常报告 | 全部 |\n  | -------- | -------- | ---- |\n  | 8        | 10       | all  |\n\n  状态\n\n  | 全部 | 精华   | 已归档  |\n  | ---- | ------ | ------- |\n  |      | digest | achived |","location":"qa.ts"}' :test='{"code":0}' />
 
 分类
 
@@ -644,7 +644,7 @@ GitHub provides some official RSS feeds:
 
 ### Articles <Site url="web.dev" size="sm" />
 
-<Route namespace="web" :data='{"path":"/articles","categories":["programming"],"example":"/web/articles","radar":[{"source":["web.dev/articles"]}],"name":"Articles","maintainers":["KarasuShin"],"location":"articles.ts"}' :test='{"code":1,"message":"expected -973644462 to be greater than -432000000"}' />
+<Route namespace="web" :data='{"path":"/articles","categories":["programming"],"example":"/web/articles","radar":[{"source":["web.dev/articles"]}],"name":"Articles","maintainers":["KarasuShin"],"location":"articles.ts"}' :test='{"code":1,"message":"expected -887189781 to be greater than -432000000"}' />
 
 ### Blog <Site url="web.dev" size="sm" />
 
@@ -724,7 +724,7 @@ GitHub provides some official RSS feeds:
 
 ### 智源社区 - 活动 <Site url="hub.baai.ac.cn/events" size="sm" />
 
-<Route namespace="baai" :data='{"path":"/hub/events","categories":["programming"],"example":"/baai/hub/events","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hub.baai.ac.cn/events","hub.baai.ac.cn/"]}],"name":"智源社区 - 活动","maintainers":["TonyRL"],"url":"hub.baai.ac.cn/events","location":"events.ts"}' :test='{"code":1,"message":"expected -886875812 to be greater than -432000000"}' />
+<Route namespace="baai" :data='{"path":"/hub/events","categories":["programming"],"example":"/baai/hub/events","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hub.baai.ac.cn/events","hub.baai.ac.cn/"]}],"name":"智源社区 - 活动","maintainers":["TonyRL"],"url":"hub.baai.ac.cn/events","location":"events.ts"}' :test='{"code":1,"message":"expected -800373053 to be greater than -432000000"}' />
 
 ## 登链社区 <Site url="learnblockchain.cn"/>
 
@@ -778,7 +778,7 @@ GitHub provides some official RSS feeds:
 
 ### 单个收藏夹 <Site url="juejin.cn" size="sm" />
 
-<Route namespace="juejin" :data='{"path":"/collection/:collectionId","categories":["programming"],"example":"/juejin/collection/6845243180586123271","parameters":{"collectionId":"收藏夹唯一标志符, 在浏览器地址栏URL中能够找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["juejin.cn/collection/:collectionId"]}],"name":"单个收藏夹","maintainers":["isQ"],"location":"collection.ts"}' :test='{"code":0}' />
+<Route namespace="juejin" :data='{"path":"/collection/:collectionId","categories":["programming"],"example":"/juejin/collection/6845243180586123271","parameters":{"collectionId":"收藏夹唯一标志符, 在浏览器地址栏URL中能够找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["juejin.cn/collection/:collectionId"]}],"name":"单个收藏夹","maintainers":["isQ"],"location":"collection.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 沸点 <Site url="juejin.cn" size="sm" />
 
@@ -822,7 +822,7 @@ GitHub provides some official RSS feeds:
 
 ### 收藏集 <Site url="juejin.cn" size="sm" />
 
-<Route namespace="juejin" :data='{"path":"/collections/:userId","categories":["programming"],"example":"/juejin/collections/1697301682482439","parameters":{"userId":"用户唯一标志符, 在浏览器地址栏URL中能够找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["juejin.cn/user/:id","juejin.cn/user/:id/collections"],"target":"/collections/:id"}],"name":"收藏集","maintainers":["isQ"],"location":"favorites.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="juejin" :data='{"path":"/collections/:userId","categories":["programming"],"example":"/juejin/collections/1697301682482439","parameters":{"userId":"用户唯一标志符, 在浏览器地址栏URL中能够找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["juejin.cn/user/:id","juejin.cn/user/:id/collections"],"target":"/collections/:id"}],"name":"收藏集","maintainers":["isQ"],"location":"favorites.ts"}' :test='{"code":0}' />
 
 ### 小册 <Site url="juejin.cn/books" size="sm" />
 
@@ -854,7 +854,7 @@ GitHub provides some official RSS feeds:
 
 ### 资讯 <Site url="oschina.net" size="sm" />
 
-<Route namespace="oschina" :data='{"path":"/news/:category?","categories":["programming"],"example":"/oschina/news/project","parameters":{"category":"板块名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["oschina.net/news/:category"],"target":"/news/:category"}],"name":"资讯","maintainers":["tgly307","zengxs"],"description":"| [综合资讯][osc_gen] | [软件更新资讯][osc_proj] | [行业资讯][osc_ind] | [编程语言资讯][osc_pl] |\n  | ------------------- | ------------------------ | ------------------- | ---------------------- |\n  | industry            | project                  | industry-news       | programming            |\n\n  订阅 [全部板块资讯][osc_all] 可以使用 [https://rsshub.app/oschina/news](https://rsshub.app/oschina/news)\n\n  [osc_all]: https://www.oschina.net/news \"开源中国 - 全部资讯\"\n\n  [osc_gen]: https://www.oschina.net/news/industry \"开源中国 - 综合资讯\"\n\n  [osc_proj]: https://www.oschina.net/news/project \"开源中国 - 软件更新资讯\"\n\n  [osc_ind]: https://www.oschina.net/news/industry-news \"开源中国 - 行业资讯\"\n\n  [osc_pl]: https://www.oschina.net/news/programming \"开源中国 - 编程语言资讯\"","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="oschina" :data='{"path":"/news/:category?","categories":["programming"],"example":"/oschina/news/project","parameters":{"category":"板块名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["oschina.net/news/:category"],"target":"/news/:category"}],"name":"资讯","maintainers":["tgly307","zengxs"],"description":"| [综合资讯][osc_gen] | [软件更新资讯][osc_proj] | [行业资讯][osc_ind] | [编程语言资讯][osc_pl] |\n  | ------------------- | ------------------------ | ------------------- | ---------------------- |\n  | industry            | project                  | industry-news       | programming            |\n\n  订阅 [全部板块资讯][osc_all] 可以使用 [https://rsshub.app/oschina/news](https://rsshub.app/oschina/news)\n\n  [osc_all]: https://www.oschina.net/news \"开源中国 - 全部资讯\"\n\n  [osc_gen]: https://www.oschina.net/news/industry \"开源中国 - 综合资讯\"\n\n  [osc_proj]: https://www.oschina.net/news/project \"开源中国 - 软件更新资讯\"\n\n  [osc_ind]: https://www.oschina.net/news/industry-news \"开源中国 - 行业资讯\"\n\n  [osc_pl]: https://www.oschina.net/news/programming \"开源中国 - 编程语言资讯\"","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | [综合资讯][osc_gen] | [软件更新资讯][osc_proj] | [行业资讯][osc_ind] | [编程语言资讯][osc_pl] |
   | ------------------- | ------------------------ | ------------------- | ---------------------- |
@@ -876,7 +876,7 @@ GitHub provides some official RSS feeds:
 
 ### 技术社区 <Site url="lanqiao.cn/questions/" size="sm" />
 
-<Route namespace="lanqiao" :data='{"path":"/questions/:id","categories":["programming"],"example":"/lanqiao/questions/2","parameters":{"id":"topic_id 主题 `id` 可在社区板块 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lanqiao.cn/questions/","lanqiao.cn/questions/topics/:id"]}],"name":"技术社区","maintainers":["huhuhang"],"url":"lanqiao.cn/questions/","location":"questions.ts"}' :test='{"code":0}' />
+<Route namespace="lanqiao" :data='{"path":"/questions/:id","categories":["programming"],"example":"/lanqiao/questions/2","parameters":{"id":"topic_id 主题 `id` 可在社区板块 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lanqiao.cn/questions/","lanqiao.cn/questions/topics/:id"]}],"name":"技术社区","maintainers":["huhuhang"],"url":"lanqiao.cn/questions/","location":"questions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 全站发布的课程 <Site url="lanqiao.cn" size="sm" />
 
@@ -884,13 +884,13 @@ GitHub provides some official RSS feeds:
 
 ### 作者发布的课程 <Site url="lanqiao.cn" size="sm" />
 
-<Route namespace="lanqiao" :data='{"path":"/author/:uid","categories":["programming"],"example":"/lanqiao/author/1701267","parameters":{"uid":"作者 `uid` 可在作者主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lanqiao.cn/users/:uid"]}],"name":"作者发布的课程","maintainers":["huhuhang"],"location":"author.ts"}' :test='{"code":0}' />
+<Route namespace="lanqiao" :data='{"path":"/author/:uid","categories":["programming"],"example":"/lanqiao/author/1701267","parameters":{"uid":"作者 `uid` 可在作者主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lanqiao.cn/users/:uid"]}],"name":"作者发布的课程","maintainers":["huhuhang"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 洛谷 <Site url="luogu.com.cn"/>
 
 ### 比赛列表 <Site url="luogu.com.cn/contest/list" size="sm" />
 
-<Route namespace="luogu" :data='{"path":"/contest","categories":["programming"],"example":"/luogu/contest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luogu.com.cn/contest/list","luogu.com.cn/"]}],"name":"比赛列表","maintainers":["prnake"],"url":"luogu.com.cn/contest/list","location":"contest.ts"}' :test='{"code":1,"message":"expected -621521142 to be greater than -432000000"}' />
+<Route namespace="luogu" :data='{"path":"/contest","categories":["programming"],"example":"/luogu/contest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luogu.com.cn/contest/list","luogu.com.cn/"]}],"name":"比赛列表","maintainers":["prnake"],"url":"luogu.com.cn/contest/list","location":"contest.ts"}' :test='{"code":1,"message":"expected -534995234 to be greater than -432000000"}' />
 
 ### 日报 <Site url="luogu.com.cn/discuss/47327" size="sm" />
 
