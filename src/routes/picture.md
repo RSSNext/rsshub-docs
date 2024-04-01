@@ -44,7 +44,7 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 
 ### Artist Profolio <Site url="www.artstation.com" size="sm" />
 
-<Route namespace="artstation" :data='{"path":"/:handle","categories":["picture"],"example":"/artstation/wlop","parameters":{"handle":"Artist handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.artstation.com/:handle"]}],"name":"Artist Profolio","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="artstation" :data='{"path":"/:handle","categories":["picture"],"example":"/artstation/wlop","parameters":{"handle":"Artist handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.artstation.com/:handle"]}],"name":"Artist Profolio","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Booru <Site url="mmda.booru.org"/>
 
@@ -148,7 +148,7 @@ Type
 
 ### Update <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/doodles/:language?","categories":["picture"],"example":"/google/doodles/zh-CN","parameters":{"language":"Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Update","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":0}' />
+<Route namespace="google" :data='{"path":"/doodles/:language?","categories":["picture"],"example":"/google/doodles/zh-CN","parameters":{"language":"Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Update","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## MM 范 <Site url="95mm.org"/>
 
@@ -229,7 +229,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 每日一图 <Site url="bjp.org.cn/APOD/today.shtml" size="sm" />
 
-<Route namespace="bjp" :data='{"path":"/apod","categories":["picture"],"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bjp" :data='{"path":"/apod","categories":["picture"],"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":0}' />
 
 ## 国家地理 <Site url="nationalgeographic.com"/>
 
@@ -245,15 +245,15 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 本周热门 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/weekly","categories":["picture"],"example":"/jpxgmn/weekly","radar":[{"source":["www.12356782.xyz/"],"target":"/weekly"}],"name":"本周热门","maintainers":["Urabartin"],"location":"weekly.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jpxgmn" :data='{"path":"/weekly","categories":["picture"],"example":"/jpxgmn/weekly","radar":[{"source":["www.12356782.xyz/"],"target":"/weekly"}],"name":"本周热门","maintainers":["Urabartin"],"location":"weekly.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 分类 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/tab/:tab?","categories":["picture"],"example":"/jpxgmn/tab","parameters":{"tab":"分类，默认为`top`，包括`top`、`new`、`hot`，以及[源网站](http://www.jpxgmn.com/)所包含的其他相对路径，比如`Xiuren`、`XiaoYu`等"},"radar":[{"source":["www.12356782.xyz/:tab"],"target":"/:tab"}],"name":"分类","maintainers":["Urabartin"],"location":"tab.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jpxgmn" :data='{"path":"/tab/:tab?","categories":["picture"],"example":"/jpxgmn/tab","parameters":{"tab":"分类，默认为`top`，包括`top`、`new`、`hot`，以及[源网站](http://www.jpxgmn.com/)所包含的其他相对路径，比如`Xiuren`、`XiaoYu`等"},"radar":[{"source":["www.12356782.xyz/:tab"],"target":"/:tab"}],"name":"分类","maintainers":["Urabartin"],"location":"tab.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 搜索 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/search/:kw","categories":["picture"],"example":"/jpxgmn/search/candy","parameters":{"kw":"搜索关键词"},"name":"搜索","maintainers":["Urabartin"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jpxgmn" :data='{"path":"/search/:kw","categories":["picture"],"example":"/jpxgmn/search/candy","parameters":{"kw":"搜索关键词"},"name":"搜索","maintainers":["Urabartin"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 喷嚏 <Site url="dapenti.com"/>
 
