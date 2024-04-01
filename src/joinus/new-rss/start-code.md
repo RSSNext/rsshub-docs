@@ -52,7 +52,7 @@ GitHub provides some official RSS feeds:
 
 Once you have created a namespace for the route, the next step is to create a route file to register the route.
 
-For example, if you are making an RSS feed for [GitHub Repo Issues]((/routes/programming#github-yong-hu-cang-ku)), and assume that you want users to enter the GitHub username and repo name, if they do not enter the repo name, they will return to RSSHub. You can register your new RSS route in /lib/routes/github/issue.ts, the file needs to return an object that conforms to the Route type through route. The definition of Route is at [/lib/types.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/types.ts#L86)
+For example, if you are making an RSS feed for [GitHub Repo Issues](/routes/programming#repo-issues), and assume that you want users to enter the GitHub username and repo name, if they do not enter the repo name, they will return to RSSHub. You can register your new RSS route in /lib/routes/github/issue.ts, the file needs to return an object that conforms to the Route type through route. The definition of Route is at [/lib/types.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/types.ts#L86)
 
 - path: The route path, using [Hono routing](https://hono.dev/api/routing) syntax
 - name: The human-readable name of the route, which will be used as the title of the document
@@ -100,11 +100,11 @@ In the above example, `issue` is an exact match, `:user` is a required parameter
 
 The handler function will be passed a parameter ctx. By the end of the function, it needs to return an object that contains the information required for RSS.
 
-You can see the APIs available for ctx to use in the [Hono context documentation]((https://hono.dev/api/context))
+You can see the APIs available for ctx to use in the [Hono context documentation](https://hono.dev/api/context)
 
 The type of the return value is defined here: [/lib/types.ts#L37](https://github.com/DIYgod/RSSHub/blob/master/lib/types.ts#L37)
 
-As mentioned earlier, we will create an RSS feed for [GitHub Repo Issues](/routes/programming#github-repo-issues) as an example. We will show all four data collection methods mentioned:
+As mentioned earlier, we will create an RSS feed for [GitHub Repo Issues](/routes/programming#repo-issues) as an example. We will show all four data collection methods mentioned:
 
 1.  [Via API](#via-api)
 2.  [Via HTML web page using got](#via-html-web-page-using-got)
@@ -193,7 +193,7 @@ Both of these code snippets do the same thing. The first one uses object destruc
 
 ### Getting data from the API
 
-After we have the user input, we can use it to make a request to the API. In most cases, you will need to use `got` from `@/utils/got` (a customized got wrapper) to make HTTP requests. For more information, please refer to the [got documentation](https://github.com/sindresorhus/got/tree/v11#usage).
+After we have the user input, we can use it to make a request to the API. In most cases, you will need to use `got` from `@/utils/got` (a customized got wrapper) to make HTTP requests. For more information, please refer to the [got documentation](https://github.com/sindresorhus/got/tree/v11.8.6?tab=readme-ov-file#usage).
 
 <Tabs groupId="jsStyle">
 <TabItem value="Object destructuring" label="Object destructuring" default>
@@ -408,7 +408,7 @@ In this code, `user` will be set to the value of `user` parameter, and `repo` wi
 
 ### Getting data from the web page
 
-After receiving the user input, we need to make a request to the web page to retrieve the information we need. In most cases, we'll use `got` from `@/utils/got` (a customized [got](https://www.npmjs.com/package/got) wrapper) to make HTTP requests. You can find more information on how to use got in the [got documentation](https://github.com/sindresorhus/got/tree/v11#usage).
+After receiving the user input, we need to make a request to the web page to retrieve the information we need. In most cases, we'll use `got` from `@/utils/got` (a customized [got](https://www.npmjs.com/package/got) wrapper) to make HTTP requests. You can find more information on how to use got in the [got documentation](https://github.com/sindresorhus/got/tree/v11.8.6?tab=readme-ov-file#usage).
 
 To begin, we'll make an HTTP GET request to the API and load the HTML response into Cheerio, a library that helps us parse and manipulate HTML.
 

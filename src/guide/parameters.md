@@ -87,7 +87,7 @@ E.g. Bilibili article [https://rsshub.app/bilibili/user/article/334958638?mode=f
 
 ## Access Control
 
-Set `key` or `code` to grant access to requests. See [Access Control Configuration](install/#configuration-access-control-configuration-access-key-code).
+Set `key` or `code` to grant access to requests. See [Access Control Configuration](/deploy/config#access-control-configurations).
 
 ## Telegram Instant View
 
@@ -127,7 +127,7 @@ This is an experimental API
 -   `multimedia_hotlink_template`: the same as `image_hotlink_template` but apply to audio and video. Note: the service must follow redirects, allow reverse-proxy for audio and video, and must drop the `Referer` header when reverse-proxying. [Here is an easy-to-deploy project that fits these requirements](https://github.com/Rongronggg9/rsstt-img-relay). The project accepts simple URL concatenation, e.g. `https://example.com/${href}`, in which `example.com` should be replaced with the domain name of the service you've deployed
 -   `wrap_multimedia_in_iframe`: wrap audio and video in `<iframe>` to prevent the reader from sending `Referer` header. This workaround is only compatible with a few readers, such as RSS Guard and Akregator, which may not support the previous method. You can try this method in such a case
 
-There are more details in the [FAQ](/faq).
+There are more details in the [FAQ](/guide/faq).
 
 ## Output Formats
 

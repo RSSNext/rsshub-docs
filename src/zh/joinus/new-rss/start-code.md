@@ -52,7 +52,7 @@ GitHub provides some official RSS feeds:
 
 一旦您为路由创建了命名空间，下一步创建一个路由文件注册路由。
 
-例如，如果您为 [GitHub 仓库 Issues](/zh/routes/programming#github-yong-hu-cang-ku) 制作 RSS 源，并且假设您希望用户输入 GitHub 用户名和仓库名，如果他们没有输入仓库名，则返回到 `RSSHub`，您可以在 `/lib/routes/github/issue.ts` 中注册您的新 RSS 路由，文件需要通过 route 返回一个符合 Route 类型的对象。Route 的定义在 [/lib/types.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/types.ts#L86)
+例如，如果您为 [GitHub 仓库 Issues](/zh/routes/programming#repo-issues) 制作 RSS 源，并且假设您希望用户输入 GitHub 用户名和仓库名，如果他们没有输入仓库名，则返回到 `RSSHub`，您可以在 `/lib/routes/github/issue.ts` 中注册您的新 RSS 路由，文件需要通过 route 返回一个符合 Route 类型的对象。Route 的定义在 [/lib/types.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/types.ts#L86)
 
 - path: 路由路径，使用 [Hono 路由](https://hono.dev/api/routing) 语法
 - name: 供人类阅读的路由名称，它会被用作文档的标题
@@ -106,10 +106,10 @@ ctx 可以使用的 API 可以在 [Hono context 文档](https://hono.dev/api/con
 
 如前所述，我们以 [GitHub 仓库 Issues](/zh/routes/programming#github-yong-hu-cang-ku) 为例制作 RSS 源。我们将展示前面提到的四种数据获取方法：
 
-1.  [通过 API](#tong-guo-api)
-2.  [通过 got 从 HTML 获取数据](#tong-guo-got-cong-html-huo-qu-shu-ju)
-3.  [使用通用配置路由](#shi-yong-tong-yong-pei-zhi-lu-you)
-4.  [使用 puppeteer](#shi-yong-puppeteer)
+1.  [通过 API](#通过-api)
+2.  [通过 got 从 HTML 获取数据](#通过-got-从-html-获取数据)
+3.  [使用通用配置路由](#使用通用配置路由)
+4.  [使用 puppeteer](#使用-puppeteer)
 
 :::warning
 
@@ -193,7 +193,7 @@ export default async (ctx) => {
 
 ### 从 API 获取数据
 
-在获取用户输入后，我们可以使用它向 API 发送请求。大多数情况下，您需要使用 `@/utils/got` 中的 `got`（一个自订的 [got](https://www.npmjs.com/package/got) 包装函数）发送 HTTP 请求。有关更多信息，请参阅 [got 文档](https://github.com/sindresorhus/got/tree/v11#usage)。
+在获取用户输入后，我们可以使用它向 API 发送请求。大多数情况下，您需要使用 `@/utils/got` 中的 `got`（一个自订的 [got](https://www.npmjs.com/package/got) 包装函数）发送 HTTP 请求。有关更多信息，请参阅 [got 文档](https://github.com/sindresorhus/got/tree/v11.8.6?tab=readme-ov-file#usage)。
 
 <Tabs>
 <TabItem value="Object destructuring" label="解构赋值" default>
@@ -405,7 +405,7 @@ export default async (ctx) => {
 
 ### 从网页获取数据
 
-在获取了用户输入之后，我们需要向网页发起请求，以检索所需的信息。在大多数情况下，我们将使用 `@/utils/got` 中的 `got`（一个自订的 [got](https://www.npmjs.com/package/got) 包装函数）发送 HTTP 请求。您可以在 [got 文档](https://github.com/sindresorhus/got/tree/v11#usage) 中找到有关如何使用 got 的更多信息。
+在获取了用户输入之后，我们需要向网页发起请求，以检索所需的信息。在大多数情况下，我们将使用 `@/utils/got` 中的 `got`（一个自订的 [got](https://www.npmjs.com/package/got) 包装函数）发送 HTTP 请求。您可以在 [got 文档](https://github.com/sindresorhus/got/tree/v11.8.6?tab=readme-ov-file#usage) 中找到有关如何使用 got 的更多信息。
 
 首先，我们将向 API 发送 HTTP GET 请求，并将 HTML 响应加载到 Cheerio 中，Cheerio 是一个帮助我们解析和操作 HTML 的库。
 
@@ -639,7 +639,7 @@ export default async (ctx) => {
 };
 ```
 
-你会发现，此代码与上面的 [从网页获取数据](#tong-guo-got-cong-html-huo-qu-shu-ju-cong-wang-ye-huo-qu-shu-ju) 部分相似。但是，这个 RSS 订阅源不包含 GitHub Issue 的正文。
+你会发现，此代码与上面的 [从网页获取数据](#通过-got-从-html-获取数据) 部分相似。但是，这个 RSS 订阅源不包含 GitHub Issue 的正文。
 
 ### 获取完整文章
 
@@ -689,11 +689,11 @@ export default async (ctx) => {
 };
 ```
 
-你可以看到，上面的代码与 [前一节](#tong-guo-got-cong-html-huo-qu-shu-ju-geng-hao-de-yue-du-ti-yan) 非常相似，通过添加一些代码它获取了完整文章。建议你尽可能使用 [前一节](#tong-guo-got-cong-html-huo-qu-shu-ju-geng-hao-de-yue-du-ti-yan) 中的方法，因为它比使用 `@/utils/common-config` 更加灵活。
+你可以看到，上面的代码与 [前一节](#更好的阅读体验) 非常相似，通过添加一些代码它获取了完整文章。建议你尽可能使用 [前一节](#更好的阅读体验) 中的方法，因为它比使用 `@/utils/common-config` 更加灵活。
 
 ## 使用 puppeteer
 
-使用 Puppeteer 是从网站获取数据的另一种方法。不过，建议您首先尝试 [上述方法](#tong-guo-got-cong-html-huo-qu-shu-ju)。还建议您先阅读 [通过 got 从 HTML 获取数据](#tong-guo-got-cong-html-huo-qu-shu-ju)，因为本节是前一节的扩展，不会解释一些基本概念。
+使用 Puppeteer 是从网站获取数据的另一种方法。不过，建议您首先尝试 [上述方法](#通过-got-从-html-获取数据)。还建议您先阅读 [通过 got 从 HTML 获取数据](#通过-got-从-html-获取数据)，因为本节是前一节的扩展，不会解释一些基本概念。
 
 ### 创建主文件
 
@@ -801,7 +801,7 @@ export default async (ctx) => {
 
 ### 获取完整文章
 
-使用浏览器新标签页获取每个 GitHub Issue 的正文，类似于 [上一节](#tong-guo-got-cong-html-huo-qu-shu-ju-geng-hao-de-yue-du-ti-yan)。我们可以使用以下代码：
+使用浏览器新标签页获取每个 GitHub Issue 的正文，类似于 [上一节](#更好的阅读体验)。我们可以使用以下代码：
 
 ```js
 import { load } from 'cheerio';

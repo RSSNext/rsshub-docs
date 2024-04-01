@@ -25,7 +25,7 @@
 
 filter 支持正则表达式。由于正则部分特性可被利用于 DoS (ReDOS)，默认引擎`re2`屏蔽了部分`Regexp`功能，且在部分情况下表现不一致。具体差异可以[查看文档](https://github.com/uhop/node-re2#limitations-things-re2-does-not-support)
 
-如果需要指定不同的引擎，请参考[功能特性 -> FILTER_REGEX_ENGINE](install/#pei-zhi-gong-neng-te-xing)。
+如果需要指定不同的引擎，请参考[功能特性 -> FILTER_REGEX_ENGINE](/zh/deploy/config#功能特性)。
 
 :::
 
@@ -88,7 +88,7 @@ filter 支持正则表达式。由于正则部分特性可被利用于 DoS (ReDO
 
 ## 访问控制
 
-可以使用 `code` 或 `key` 进行访问控制。参考[访问控制配置](install/#pei-zhi-fang-wen-kong-zhi-pei-zhi-fang-wen-mi-yue-ma)。
+可以使用 `code` 或 `key` 进行访问控制。参考[访问控制配置](/zh/deploy/config#访问控制配置)。
 
 ## 输出 Telegram 即时预览链接
 
@@ -128,7 +128,7 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 -   `multimedia_hotlink_template`: 用法同 `image_hotlink_template`，但应用于音频和视频。注意：该服务必须跟随跳转、允许反代音频和视频，且必须在反代时丢弃 `Referer` 请求头。[这里有一个符合要求的易于自行搭建的项目](https://github.com/Rongronggg9/rsstt-img-relay/blob/main/README_zh-CN.md)，该项目接受直接拼接 URL，即 `https://example.com/${href}`，其中 `example.com` 应替换为自行搭建的服务的域名
 -   `wrap_multimedia_in_iframe`: 将音频和视频包裹在 `<iframe>` 中，以阻止阅读器发送 `Referer` 请求头。支持该变通解决方案的阅读器较少，且可能造成显示错误。有些阅读器，如 RSS Guard、Akregator，可能不支持前一种方法，则可尝试此方法。设置为 `1` 生效
 
-[FAQ](/zh/faq) 中有更多信息。
+[FAQ](/zh/guide/faq) 中有更多信息。
 
 ## 输出格式
 

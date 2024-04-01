@@ -107,6 +107,12 @@ const instances = [{
     location: '🇩🇪',
     maintainer: 'Vincent Yang',
     maintainerUrl: 'https://missuo.me',
+  },
+  {
+    url: 'https://rss.wudifeixue.com',
+    location: '🇨🇦',
+    maintainer: 'wudifeixue',
+    maintainerUrl: 'https://github.com/wudifeixue',
   }
 ]
 

@@ -160,7 +160,7 @@ RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全�
 
 :::tip 新配置方式
 
-我们正在试验新的，更灵活的配置方式。如果有需要，请转到 [通用参数 -> 多媒体处理](/zh/parameter#多媒体处理) 了解更多。
+我们正在试验新的，更灵活的配置方式。如果有需要，请转到 [通用参数 -> 多媒体处理](/zh/guide/parameters#多媒体处理) 了解更多。
 
 在使用新配置时，请将下方环境变量留空。否则默认图片模版会继续遵循下方配置。
 
@@ -190,9 +190,9 @@ RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全�
 
 :::
 
-`ALLOW_USER_HOTLINK_TEMPLATE`: [通用参数 -> 多媒体处理](/zh/parameter#多媒体处理)特性控制
+`ALLOW_USER_HOTLINK_TEMPLATE`: [通用参数 -> 多媒体处理](/zh/guide/parameters#多媒体处理)特性控制
 
-`FILTER_REGEX_ENGINE`: 控制 [通用参数 -> 内容过滤](/zh/parameter#内容过滤) 使用的正则引擎。可选`[re2, regexp]`，默认`re2`。我们推荐公开实例不要调整这个选项，这个选项目前主要用于向后兼容。
+`FILTER_REGEX_ENGINE`: 控制 [通用参数 -> 内容过滤](/zh/guide/parameters#内容过滤) 使用的正则引擎。可选`[re2, regexp]`，默认`re2`。我们推荐公开实例不要调整这个选项，这个选项目前主要用于向后兼容。
 
 `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN`: 允许用户为路由提供域名作为参数。建议公共实例不要调整此选项，开启后可能会导致 [服务端请求伪造（SSRF）](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
 
