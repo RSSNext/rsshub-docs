@@ -1087,7 +1087,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 歌单歌曲 <Site url="163.com" size="sm" />
 
-<Route namespace="163" :data='{"path":"/music/playlist/:id","categories":["multimedia"],"example":"/163/music/playlist/35798529","parameters":{"id":"歌单 id, 可在歌单页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"歌单歌曲","maintainers":["DIYgod"],"location":"music/playlist.ts"}' :test='undefined' />
+<Route namespace="163" :data='{"path":"/music/playlist/:id","categories":["multimedia"],"example":"/163/music/playlist/35798529","parameters":{"id":"歌单 id, 可在歌单页 URL 中找到"},"features":{"requireConfig":[{"name":"NCM_COOKIES","optional":true,"description":"网易云音乐登陆后的 cookie 值，可在浏览器控制台通过`document.cookie`获取。"}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"歌单歌曲","maintainers":["DIYgod"],"location":"music/playlist.ts"}' :test='undefined' />
 
 ### 用户动态 <Site url="163.com" size="sm" />
 
@@ -1099,7 +1099,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 用户听歌排行 <Site url="163.com" size="sm" />
 
-<Route namespace="163" :data='{"path":"/music/user/playrecords/:uid/:type?","categories":["multimedia"],"example":"/163/music/user/playrecords/45441555/1","parameters":{"uid":"用户 uid, 可在用户主页 URL 中找到","type":"排行榜类型，0所有时间(默认)，1最近一周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户听歌排行","maintainers":["alfredcai"],"location":"music/userplayrecords.ts"}' :test='undefined' />
+<Route namespace="163" :data='{"path":"/music/user/playrecords/:uid/:type?","categories":["multimedia"],"example":"/163/music/user/playrecords/45441555/1","parameters":{"uid":"用户 uid, 可在用户主页 URL 中找到","type":"排行榜类型，0所有时间(默认)，1最近一周"},"features":{"requireConfig":[{"name":"NCM_COOKIES","optional":true,"description":"网易云音乐登陆后的 cookie 值，可在浏览器控制台通过`document.cookie`获取。"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户听歌排行","maintainers":["alfredcai"],"location":"music/userplayrecords.ts"}' :test='undefined' />
 
 ## 西瓜视频 <Site url="ixigua.com"/>
 
