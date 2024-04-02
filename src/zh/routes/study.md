@@ -172,13 +172,13 @@
 
 ### 学会动态 <Site url="caai.cn" size="sm" />
 
-<Route namespace="caai" :data='{"path":"/:caty","categories":["study"],"example":"/caai/45","parameters":{"caty":"分类 ID，可在 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学会动态","maintainers":["tudou027"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="caai" :data='{"path":"/:caty","categories":["study"],"example":"/caai/45","parameters":{"caty":"分类 ID，可在 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学会动态","maintainers":["tudou027"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 中国管理现代化研究会 <Site url="cste.org.cn"/>
 
 ### 栏目 <Site url="cste.org.cn" size="sm" />
 
-<Route namespace="camchina" :data='{"path":"/:id?","categories":["study"],"example":"/camchina","parameters":{"id":"分类，见下表，默认为 1，即新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cste.org.cn/categories/:id","cste.org.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"description":"| 新闻 | 通告栏 |\n  | ---- | ------ |\n  | 1    | 2      |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="camchina" :data='{"path":"/:id?","categories":["study"],"example":"/camchina","parameters":{"id":"分类，见下表，默认为 1，即新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cste.org.cn/categories/:id","cste.org.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"description":"| 新闻 | 通告栏 |\n  | ---- | ------ |\n  | 1    | 2      |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 新闻 | 通告栏 |
   | ---- | ------ |
@@ -210,7 +210,7 @@
 
 ### 各学位授予单位学位证书上网进度 <Site url="chinadegrees.com.cn" size="sm" />
 
-<Route namespace="chinadegrees" :data='{"path":"/:province?","categories":["study"],"example":"/chinadegrees/11","parameters":{"province":"省市代号，见下表，亦可在 [这里](http://www.chinadegrees.com.cn/help/provinceSwqk.html) 找到，默认为 `11`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"各学位授予单位学位证书上网进度","description":"| 省市             | 代号 |\n    | ---------------- | ---- |\n    | 北京市           | 11   |\n    | 天津市           | 12   |\n    | 河北省           | 13   |\n    | 山西省           | 14   |\n    | 内蒙古自治区     | 15   |\n    | 辽宁省           | 21   |\n    | 吉林省           | 22   |\n    | 黑龙江省         | 23   |\n    | 上海市           | 31   |\n    | 江苏省           | 32   |\n    | 浙江省           | 33   |\n    | 安徽省           | 34   |\n    | 福建省           | 35   |\n    | 江西省           | 36   |\n    | 山东省           | 37   |\n    | 河南省           | 41   |\n    | 湖北省           | 42   |\n    | 湖南省           | 43   |\n    | 广东省           | 44   |\n    | 广西壮族自治区   | 45   |\n    | 海南省           | 46   |\n    | 重庆市           | 50   |\n    | 四川省           | 51   |\n    | 贵州省           | 52   |\n    | 云南省           | 53   |\n    | 西藏自治区       | 54   |\n    | 陕西省           | 61   |\n    | 甘肃省           | 62   |\n    | 青海省           | 63   |\n    | 宁夏回族自治区   | 64   |\n    | 新疆维吾尔自治区 | 65   |\n    | 台湾             | 71   |","maintainers":["TonyRL"],"location":"province.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="chinadegrees" :data='{"path":"/:province?","categories":["study"],"example":"/chinadegrees/11","parameters":{"province":"省市代号，见下表，亦可在 [这里](http://www.chinadegrees.com.cn/help/provinceSwqk.html) 找到，默认为 `11`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"各学位授予单位学位证书上网进度","description":"| 省市             | 代号 |\n    | ---------------- | ---- |\n    | 北京市           | 11   |\n    | 天津市           | 12   |\n    | 河北省           | 13   |\n    | 山西省           | 14   |\n    | 内蒙古自治区     | 15   |\n    | 辽宁省           | 21   |\n    | 吉林省           | 22   |\n    | 黑龙江省         | 23   |\n    | 上海市           | 31   |\n    | 江苏省           | 32   |\n    | 浙江省           | 33   |\n    | 安徽省           | 34   |\n    | 福建省           | 35   |\n    | 江西省           | 36   |\n    | 山东省           | 37   |\n    | 河南省           | 41   |\n    | 湖北省           | 42   |\n    | 湖南省           | 43   |\n    | 广东省           | 44   |\n    | 广西壮族自治区   | 45   |\n    | 海南省           | 46   |\n    | 重庆市           | 50   |\n    | 四川省           | 51   |\n    | 贵州省           | 52   |\n    | 云南省           | 53   |\n    | 西藏自治区       | 54   |\n    | 陕西省           | 61   |\n    | 甘肃省           | 62   |\n    | 青海省           | 63   |\n    | 宁夏回族自治区   | 64   |\n    | 新疆维吾尔自治区 | 65   |\n    | 台湾             | 71   |","maintainers":["TonyRL"],"location":"province.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 省市             | 代号 |
     | ---------------- | ---- |
@@ -305,7 +305,7 @@
 
 ### 考研热点新闻 <Site url="yz.chsi.com.cn/" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/hotnews","categories":["study"],"example":"/chsi/hotnews","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/"]}],"name":"考研热点新闻","maintainers":["yanbot-team"],"url":"yz.chsi.com.cn/","location":"hotnews.ts"}' :test='{"code":1,"message":"expected [ …(7) ] to not include &#39;https://yz.chsi.com.cn/yztj/&#39;"}' />
+<Route namespace="chsi" :data='{"path":"/hotnews","categories":["study"],"example":"/chsi/hotnews","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/"]}],"name":"考研热点新闻","maintainers":["yanbot-team"],"url":"yz.chsi.com.cn/","location":"hotnews.ts"}' :test='{"code":1,"message":"expected [ …(8) ] to not include &#39;https://yz.chsi.com.cn/yztj/&#39;"}' />
 
 ### 考研动态 <Site url="yz.chsi.com.cn/kyzx/kydt" size="sm" />
 

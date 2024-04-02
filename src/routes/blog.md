@@ -22,7 +22,7 @@
 
 ### User Feed <Site url="blog.csdn.net" size="sm" />
 
-<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Delta Lake <Site url="delta.io"/>
 
@@ -176,13 +176,13 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
@@ -334,5 +334,5 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
