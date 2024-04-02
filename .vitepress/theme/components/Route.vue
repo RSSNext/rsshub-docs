@@ -41,7 +41,7 @@
           <code>{{ item.replace(/:|\?|\+|\*/g, '') }}</code>,{{ ' ' }}
           <!-- TODO: Handle below translations based on last character in the item -->
           required - {{ ' ' }}
-          <span>{{ renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '') }}</span>
+          <span v-html="renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '')"/>
         </li>
       </ul>
     </div>
@@ -52,7 +52,7 @@
           <code>{{ item.name }}</code>,{{ ' ' }}
           {{ item.optional ? 'optional' : 'required' }}
           {{ ' - ' }}
-          <span>{{ renderMarkdown(item.description) }}</span>
+          <span v-html="renderMarkdown(item.description)"/>
         </li>
       </ul>
     </div>
