@@ -288,17 +288,9 @@
 
 ## iDaily <Site url="idai.ly"/>
 
-### Unknown <Site url="idai.ly" size="sm" />
+### 每日环球视野 <Site url="idai.ly" size="sm" />
 
-<Route namespace="idaily" :data='{"path":["/today/:language?","/:language?"],"name":"Unknown","maintainers":[],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='undefined' />
-
-| 简体中文 | 繁体中文 |
-  | -------- | -------- |
-  | zh-hans  | zh-hant  |
-
-### Unknown <Site url="idai.ly" size="sm" />
-
-<Route namespace="idaily" :data='{"path":["/today/:language?","/:language?"],"name":"Unknown","maintainers":[],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='undefined' />
+<Route namespace="idaily" :data='{"path":["/:language?"],"name":"每日环球视野","example":"/idaily","maintainers":["zphw","nczitzk"],"parameters":{"language":"语言，见下表，默认为简体中文"},"radar":[{"source":["idai.ly/"]}],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='undefined' />
 
 | 简体中文 | 繁体中文 |
   | -------- | -------- |
