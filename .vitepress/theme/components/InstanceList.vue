@@ -113,6 +113,11 @@ const instances = [{
     location: '🇨🇦',
     maintainer: 'wudifeixue',
     maintainerUrl: 'https://github.com/wudifeixue',
+  }, {
+    url: 'https://yangzhi.app',
+    location: '🇯🇵',
+    maintainer: '仰止',
+    maintainerUrl: 'https://yangzhi.org',
   }
 ]
 
