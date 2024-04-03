@@ -207,6 +207,12 @@ Papers that are published in this week.
 
 Return results from 2020
 
+## nymity <Site url="censorbib.nymity.ch"/>
+
+### CensorBib Updates <Site url="censorbib.nymity.ch/" size="sm" />
+
+<Route namespace="nymity" :data='{"path":"/censorbib","categories":["journal"],"example":"/nymity/censorbib","radar":[{"source":["censorbib.nymity.ch/"]}],"name":"CensorBib Updates","maintainers":["xtexChooser"],"url":"censorbib.nymity.ch/","location":"censorbib.ts"}' :test='undefined' />
+
 ## Oxford University Press <Site url="academic.oup.com"/>
 
 ### Oxford Academic <Site url="academic.oup.com/" size="sm" />
