@@ -750,6 +750,10 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ## 小黑盒 <Site url="xiaoheihe.cn"/>
 
+### 喜加一 <Site url="xiaoheihe.cn" size="sm" />
+
+<Route namespace="xiaoheihe" :data='{"path":"/add2cart/:platform","categories":["game"],"example":"/xiaoheihe/add2cart/epic","parameters":{"platform":"平台名：epic、steam或gog"},"name":"喜加一","maintainers":["ladeng07"],"location":"add2cart.ts"}' :test='undefined' />
+
 ### 用户动态 <Site url="xiaoheihe.cn" size="sm" />
 
 <Route namespace="xiaoheihe" :data='{"path":"/user/:id","categories":["game"],"example":"/xiaoheihe/user/30664023","parameters":{"id":"用户 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["tssujt"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
