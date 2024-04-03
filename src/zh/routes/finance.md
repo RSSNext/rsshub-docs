@@ -669,6 +669,18 @@ Language:
 
 <Route namespace="xueqiu" :data='{"path":"/favorite/:id","categories":["finance"],"example":"/xueqiu/favorite/8152922548","parameters":{"id":"用户 id, 可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xueqiu.com/u/:id"]}],"name":"用户收藏动态","maintainers":["imlonghao"],"location":"favorite.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+### 用户关注时间线 <Site url="danjuanapp.com" size="sm" />
+
+<Route namespace="xueqiu" :data='{"path":"/timeline/:usergroup_id?","categories":["finance"],"example":"/xueqiu/timeline/","parameters":{"usergroup_id":"用户组 ID，-1 为全部关注用户"},"features":{"requireConfig":[{"name":"XUEQIU_COOKIES","description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户关注时间线","maintainers":["ErnestDong"],"description":":::warning\n  用户关注动态需要登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。\n  :::\n\n  | -1   | -2       | 1             |\n  | ---- | -------- | ------------- |\n  | 全部 | 关注精选 | 自定义第 1 组 |","location":"timeline.ts"}' :test='undefined' />
+
+:::warning
+  用户关注动态需要登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
+  :::
+
+  | -1   | -2       | 1             |
+  | ---- | -------- | ------------- |
+  | 全部 | 关注精选 | 自定义第 1 组 |
+
 ### 用户自选动态 <Site url="danjuanapp.com" size="sm" />
 
 <Route namespace="xueqiu" :data='{"path":"/user_stock/:id","categories":["finance"],"example":"/xueqiu/user_stock/1247347556","parameters":{"id":"用户 id, 可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xueqiu.com/u/:id"]}],"name":"用户自选动态","maintainers":["hillerliao"],"location":"user-stock.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
