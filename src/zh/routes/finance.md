@@ -20,7 +20,7 @@
 
 ### Authors <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":"/authors/:id/:slug/:source?","categories":["finance"],"example":"/bloomberg/authors/ARbTQlRLRjE/matthew-s-levine","parameters":{"id":"Author ID, can be found in URL","slug":"Author Slug, can be found in URL","source":"Data source, either `api` or `rss`,`api` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bloomberg.com/*/authors/:id/:slug","www.bloomberg.com/authors/:id/:slug"],"target":"/authors/:id/:slug"}],"name":"Authors","maintainers":["josh"],"location":"authors.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bloomberg" :data='{"path":"/authors/:id/:slug/:source?","categories":["finance"],"example":"/bloomberg/authors/ARbTQlRLRjE/matthew-s-levine","parameters":{"id":"Author ID, can be found in URL","slug":"Author Slug, can be found in URL","source":"Data source, either `api` or `rss`,`api` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bloomberg.com/*/authors/:id/:slug","www.bloomberg.com/authors/:id/:slug"],"target":"/authors/:id/:slug"}],"name":"Authors","maintainers":["josh"],"location":"authors.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="www.bloomberg.com" size="sm" />
 
@@ -194,15 +194,15 @@ TokenInsight also provides official RSS, you can take a look at [https://api.tok
 
 ### Blogs <Site url="tokeninsight.com" size="sm" />
 
-<Route namespace="tokeninsight" :data='{"path":"/blog/:lang?","categories":["finance"],"example":"/tokeninsight/blog/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/blogs"],"target":"/blog/:lang"}],"name":"Blogs","maintainers":["fuergaosi233"],"location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tokeninsight" :data='{"path":"/blog/:lang?","categories":["finance"],"example":"/tokeninsight/blog/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/blogs"],"target":"/blog/:lang"}],"name":"Blogs","maintainers":["fuergaosi233"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Latest <Site url="tokeninsight.com" size="sm" />
 
-<Route namespace="tokeninsight" :data='{"path":"/bulletin/:lang?","categories":["finance"],"example":"/tokeninsight/bulletin/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/latest"],"target":"/bulletin/:lang"}],"name":"Latest","maintainers":[],"location":"bulletin.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tokeninsight" :data='{"path":"/bulletin/:lang?","categories":["finance"],"example":"/tokeninsight/bulletin/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/latest"],"target":"/bulletin/:lang"}],"name":"Latest","maintainers":[],"location":"bulletin.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Research <Site url="tokeninsight.com" size="sm" />
 
-<Route namespace="tokeninsight" :data='{"path":"/report/:lang?","categories":["finance"],"example":"/tokeninsight/report/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/report"],"target":"/report/:lang"}],"name":"Research","maintainers":[],"description":"Language:\n\n  | Chinese | English |\n  | ------- | ------- |\n  | zh      | en      |","location":"report.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tokeninsight" :data='{"path":"/report/:lang?","categories":["finance"],"example":"/tokeninsight/report/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/report"],"target":"/report/:lang"}],"name":"Research","maintainers":[],"description":"Language:\n\n  | Chinese | English |\n  | ------- | ------- |\n  | zh      | en      |","location":"report.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Language:
 
@@ -268,7 +268,7 @@ Language:
 
 ### 电报 <Site url="cls.cn/telegraph" size="sm" />
 
-<Route namespace="cls" :data='{"path":"/telegraph/:category?","categories":["finance"],"example":"/cls/telegraph","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/telegraph","cls.cn/"],"target":"/telegraph"}],"name":"电报","maintainers":["nczitzk"],"url":"cls.cn/telegraph","description":"| 看盘  | 公司         | 解读    | 加红 | 推送  | 提醒   | 基金 | 港股 |\n  | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |\n  | watch | announcement | explain | red  | jpush | remind | fund | hk   |","location":"telegraph.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cls" :data='{"path":"/telegraph/:category?","categories":["finance"],"example":"/cls/telegraph","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/telegraph","cls.cn/"],"target":"/telegraph"}],"name":"电报","maintainers":["nczitzk"],"url":"cls.cn/telegraph","description":"| 看盘  | 公司         | 解读    | 加红 | 推送  | 提醒   | 基金 | 港股 |\n  | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |\n  | watch | announcement | explain | red  | jpush | remind | fund | hk   |","location":"telegraph.ts"}' :test='{"code":0}' />
 
 | 看盘  | 公司         | 解读    | 加红 | 推送  | 提醒   | 基金 | 港股 |
   | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |
@@ -276,11 +276,11 @@ Language:
 
 ### 热门文章排行榜 <Site url="cls.cn/" size="sm" />
 
-<Route namespace="cls" :data='{"path":"/hot","categories":["finance"],"example":"/cls/hot","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/"]}],"name":"热门文章排行榜","maintainers":["5upernova-heng","nczitzk"],"url":"cls.cn/","location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cls" :data='{"path":"/hot","categories":["finance"],"example":"/cls/hot","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/"]}],"name":"热门文章排行榜","maintainers":["5upernova-heng","nczitzk"],"url":"cls.cn/","location":"hot.ts"}' :test='{"code":0}' />
 
 ### 深度 <Site url="cls.cn" size="sm" />
 
-<Route namespace="cls" :data='{"path":"/depth/:category?","categories":["finance"],"example":"/cls/depth/1000","parameters":{"category":"分类代码，可在首页导航栏的目标网址 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"深度","maintainers":["nczitzk"],"description":"| 头条 | 股市 | 港股 | 环球 | 公司 | 券商 | 基金 | 地产 | 金融 | 汽车 | 科创 | 创业版 | 品见 | 期货 | 投教 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- |\n  | 1000 | 1003 | 1135 | 1007 | 1005 | 1118 | 1110 | 1006 | 1032 | 1119 | 1111 | 1127   | 1160 | 1124 | 1176 |","location":"depth.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cls" :data='{"path":"/depth/:category?","categories":["finance"],"example":"/cls/depth/1000","parameters":{"category":"分类代码，可在首页导航栏的目标网址 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"深度","maintainers":["nczitzk"],"description":"| 头条 | 股市 | 港股 | 环球 | 公司 | 券商 | 基金 | 地产 | 金融 | 汽车 | 科创 | 创业版 | 品见 | 期货 | 投教 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- |\n  | 1000 | 1003 | 1135 | 1007 | 1005 | 1118 | 1110 | 1006 | 1032 | 1119 | 1111 | 1127   | 1160 | 1124 | 1176 |","location":"depth.ts"}' :test='{"code":0}' />
 
 | 头条 | 股市 | 港股 | 环球 | 公司 | 券商 | 基金 | 地产 | 金融 | 汽车 | 科创 | 创业版 | 品见 | 期货 | 投教 |
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- |
@@ -352,7 +352,7 @@ Language:
 
 ### 研究 <Site url="www.nifd.cn" size="sm" />
 
-<Route namespace="nifd" :data='{"path":"/research/:categoryGuid?","categories":["finance"],"example":"/nifd/research/3333d2af-91d6-429b-be83-28b92f31b6d7","parameters":{"categoryGuid":"资讯类型，默认为周报"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究","maintainers":["Fatpandac"],"description":"资讯类型可以从网址中获取，如：\n\n  `http://www.nifd.cn/Research?categoryGuid=7a6a826d-b525-42aa-b550-4236e524227f` 对应 `/nifd/research/7a6a826d-b525-42aa-b550-4236e524227f`","location":"research.ts"}' :test='{"code":0}' />
+<Route namespace="nifd" :data='{"path":"/research/:categoryGuid?","categories":["finance"],"example":"/nifd/research/3333d2af-91d6-429b-be83-28b92f31b6d7","parameters":{"categoryGuid":"资讯类型，默认为周报"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究","maintainers":["Fatpandac"],"description":"资讯类型可以从网址中获取，如：\n\n  `http://www.nifd.cn/Research?categoryGuid=7a6a826d-b525-42aa-b550-4236e524227f` 对应 `/nifd/research/7a6a826d-b525-42aa-b550-4236e524227f`","location":"research.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 资讯类型可以从网址中获取，如：
 
@@ -462,7 +462,7 @@ Language:
 
 ### 分类 <Site url="nbd.com.cn/" size="sm" />
 
-<Route namespace="nbd" :data='{"path":"/:id?","categories":["finance"],"example":"/nbd","parameters":{"id":"分类 id，见下表，默认为要闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nbd.com.cn/","nbd.com.cn/columns/:id?"]}],"name":"分类","maintainers":["nczitzk"],"url":"nbd.com.cn/","description":"| 头条 | 要闻 | 图片新闻 | 推荐 |\n  | ---- | ---- | -------- | ---- |\n  | 2    | 3    | 4        | 5    |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nbd" :data='{"path":"/:id?","categories":["finance"],"example":"/nbd","parameters":{"id":"分类 id，见下表，默认为要闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nbd.com.cn/","nbd.com.cn/columns/:id?"]}],"name":"分类","maintainers":["nczitzk"],"url":"nbd.com.cn/","description":"| 头条 | 要闻 | 图片新闻 | 推荐 |\n  | ---- | ---- | -------- | ---- |\n  | 2    | 3    | 4        | 5    |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 头条 | 要闻 | 图片新闻 | 推荐 |
   | ---- | ---- | -------- | ---- |
@@ -476,7 +476,7 @@ Language:
 
 ### 排行榜 <Site url="qianzhan.com/analyst" size="sm" />
 
-<Route namespace="qianzhan" :data='{"path":"/analyst/rank/:type?","categories":["finance"],"example":"/qianzhan/analyst/rank/week","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qianzhan.com/analyst","qianzhan.com/"],"target":"/analyst/rank"}],"name":"排行榜","maintainers":["moke8"],"url":"qianzhan.com/analyst","description":"| 周排行 | 月排行 |\n  | ------ | ------ |\n  | week   | month  |","location":"rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qianzhan" :data='{"path":"/analyst/rank/:type?","categories":["finance"],"example":"/qianzhan/analyst/rank/week","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qianzhan.com/analyst","qianzhan.com/"],"target":"/analyst/rank"}],"name":"排行榜","maintainers":["moke8"],"url":"qianzhan.com/analyst","description":"| 周排行 | 月排行 |\n  | ------ | ------ |\n  | week   | month  |","location":"rank.ts"}' :test='{"code":0}' />
 
 | 周排行 | 月排行 |
   | ------ | ------ |
@@ -484,7 +484,7 @@ Language:
 
 ### 文章列表 <Site url="qianzhan.com" size="sm" />
 
-<Route namespace="qianzhan" :data='{"path":"/analyst/column/:type?","categories":["finance"],"example":"/qianzhan/analyst/column/all","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章列表","maintainers":["moke8"],"description":"| 全部 | 研究员专栏 | 规划师专栏 | 观察家专栏 |\n  | ---- | ---------- | ---------- | ---------- |\n  | all  | 220        | 627        | 329        |","location":"column.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qianzhan" :data='{"path":"/analyst/column/:type?","categories":["finance"],"example":"/qianzhan/analyst/column/all","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章列表","maintainers":["moke8"],"description":"| 全部 | 研究员专栏 | 规划师专栏 | 观察家专栏 |\n  | ---- | ---------- | ---------- | ---------- |\n  | all  | 220        | 627        | 329        |","location":"column.ts"}' :test='{"code":0}' />
 
 | 全部 | 研究员专栏 | 规划师专栏 | 观察家专栏 |
   | ---- | ---------- | ---------- | ---------- |
@@ -560,11 +560,11 @@ Language:
 
 ### 上市公告 - 可转换债券 <Site url="szse.cn/disclosure/notice/company/index.html" size="sm" />
 
-<Route namespace="szse" :data='{"path":"/notice","categories":["finance"],"example":"/szse/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["szse.cn/disclosure/notice/company/index.html","szse.cn/"]}],"name":"上市公告 - 可转换债券","maintainers":["Jeason0228","nczitzk"],"url":"szse.cn/disclosure/notice/company/index.html","location":"notice.ts"}' :test='{"code":0}' />
+<Route namespace="szse" :data='{"path":"/notice","categories":["finance"],"example":"/szse/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["szse.cn/disclosure/notice/company/index.html","szse.cn/"]}],"name":"上市公告 - 可转换债券","maintainers":["Jeason0228","nczitzk"],"url":"szse.cn/disclosure/notice/company/index.html","location":"notice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 问询函件 <Site url="szse.cn/disclosure/supervision/inquire/index.html" size="sm" />
 
-<Route namespace="szse" :data='{"path":"/inquire/:category?/:select?/:keyword?","categories":["finance"],"example":"/szse/inquire","parameters":{"category":"类型，见下表，默认为 `0` 即 主板","select":"函件类别, 见下表，默认为全部函件类别","keyword":"公司代码或简称，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["szse.cn/disclosure/supervision/inquire/index.html","szse.cn/"],"target":"/inquire"}],"name":"问询函件","maintainers":["Jeason0228","nczitzk"],"url":"szse.cn/disclosure/supervision/inquire/index.html","description":"类型\n\n  | 主板 | 创业板 |\n  | ---- | ------ |\n  | 0    | 1      |\n\n  函件类别\n\n  | 全部函件类别 | 非许可类重组问询函 | 问询函 | 违法违规线索分析报告 | 许可类重组问询函 | 监管函（会计师事务所模板） | 提请关注函（会计师事务所模板） | 年报问询函 | 向中介机构发函 | 半年报问询函 | 关注函 | 公司部函 | 三季报问询函 |\n  | ------------ | ------------------ | ------ | -------------------- | ---------------- | -------------------------- | ------------------------------ | ---------- | -------------- | ------------ | ------ | -------- | ------------ |","location":"inquire.ts"}' :test='{"code":1,"message":"expected [ …(18) ] to not include &#39;http://reportdocs.static.szse.cn/UpFi…&#39;"}' />
+<Route namespace="szse" :data='{"path":"/inquire/:category?/:select?/:keyword?","categories":["finance"],"example":"/szse/inquire","parameters":{"category":"类型，见下表，默认为 `0` 即 主板","select":"函件类别, 见下表，默认为全部函件类别","keyword":"公司代码或简称，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["szse.cn/disclosure/supervision/inquire/index.html","szse.cn/"],"target":"/inquire"}],"name":"问询函件","maintainers":["Jeason0228","nczitzk"],"url":"szse.cn/disclosure/supervision/inquire/index.html","description":"类型\n\n  | 主板 | 创业板 |\n  | ---- | ------ |\n  | 0    | 1      |\n\n  函件类别\n\n  | 全部函件类别 | 非许可类重组问询函 | 问询函 | 违法违规线索分析报告 | 许可类重组问询函 | 监管函（会计师事务所模板） | 提请关注函（会计师事务所模板） | 年报问询函 | 向中介机构发函 | 半年报问询函 | 关注函 | 公司部函 | 三季报问询函 |\n  | ------------ | ------------------ | ------ | -------------------- | ---------------- | -------------------------- | ------------------------------ | ---------- | -------------- | ------------ | ------ | -------- | ------------ |","location":"inquire.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 类型
 
@@ -689,7 +689,7 @@ Language:
 
 ### 有知文章 <Site url="youzhiyouxing.cn/materials" size="sm" />
 
-<Route namespace="youzhiyouxing" :data='{"path":"/materials/:id?","categories":["finance"],"example":"/youzhiyouxing/materials","parameters":{"id":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["youzhiyouxing.cn/materials"],"target":"/materials"}],"name":"有知文章","maintainers":["broven","Fatpandac","nczitzk"],"url":"youzhiyouxing.cn/materials","description":"| 全部 | 知行小酒馆 | 知行黑板报 | 无人知晓 | 孟岩专栏 | 知行读书会 | 你好，同路人 |\n  | :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |\n  |   0  |      4     |      2     |    10    |     1    |      3     |      11      |","location":"materials.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="youzhiyouxing" :data='{"path":"/materials/:id?","categories":["finance"],"example":"/youzhiyouxing/materials","parameters":{"id":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["youzhiyouxing.cn/materials"],"target":"/materials"}],"name":"有知文章","maintainers":["broven","Fatpandac","nczitzk"],"url":"youzhiyouxing.cn/materials","description":"| 全部 | 知行小酒馆 | 知行黑板报 | 无人知晓 | 孟岩专栏 | 知行读书会 | 你好，同路人 |\n  | :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |\n  |   0  |      4     |      2     |    10    |     1    |      3     |      11      |","location":"materials.ts"}' :test='{"code":0}' />
 
 | 全部 | 知行小酒馆 | 知行黑板报 | 无人知晓 | 孟岩专栏 | 知行读书会 | 你好，同路人 |
   | :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |
@@ -741,7 +741,7 @@ Language:
 
 ### 推荐 <Site url="zhitongcaijing.com" size="sm" />
 
-<Route namespace="zhitongcaijing" :data='{"path":"/:id?/:category?","categories":["finance"],"example":"/zhitongcaijing","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 recommend，即推荐","category":"分类 id，可在对应栏目子分类页 URL 中找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"推荐","maintainers":["nczitzk"],"description":"| id           | 栏目 |\n  | ------------ | ---- |\n  | recommend    | 推荐 |\n  | hkstock      | 港股 |\n  | meigu        | 美股 |\n  | agu          | 沪深 |\n  | ct           | 创投 |\n  | esg          | ESG  |\n  | aqs          | 券商 |\n  | ajj          | 基金 |\n  | focus        | 要闻 |\n  | announcement | 公告 |\n  | research     | 研究 |\n  | shares       | 新股 |\n  | bazaar       | 市场 |\n  | company      | 公司 |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zhitongcaijing" :data='{"path":"/:id?/:category?","categories":["finance"],"example":"/zhitongcaijing","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 recommend，即推荐","category":"分类 id，可在对应栏目子分类页 URL 中找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"推荐","maintainers":["nczitzk"],"description":"| id           | 栏目 |\n  | ------------ | ---- |\n  | recommend    | 推荐 |\n  | hkstock      | 港股 |\n  | meigu        | 美股 |\n  | agu          | 沪深 |\n  | ct           | 创投 |\n  | esg          | ESG  |\n  | aqs          | 券商 |\n  | ajj          | 基金 |\n  | focus        | 要闻 |\n  | announcement | 公告 |\n  | research     | 研究 |\n  | shares       | 新股 |\n  | bazaar       | 市场 |\n  | company      | 公司 |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | id           | 栏目 |
   | ------------ | ---- |
@@ -862,7 +862,7 @@ Language:
 
 ### 中证视频 <Site url="cs.com.cn" size="sm" />
 
-<Route namespace="cs" :data='{"path":"/video/:category?","categories":["finance"],"example":"/cs/video/今日聚焦","parameters":{"category":"分类，见下表，默认为今日聚焦"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"中证视频","description":"| 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |\n    | -------- | -------- | -------- | -------- | ------ |","maintainers":["nczitzk"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cs" :data='{"path":"/video/:category?","categories":["finance"],"example":"/cs/video/今日聚焦","parameters":{"category":"分类，见下表，默认为今日聚焦"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"中证视频","description":"| 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |\n    | -------- | -------- | -------- | -------- | ------ |","maintainers":["nczitzk"],"location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |
     | -------- | -------- | -------- | -------- | ------ |
@@ -915,9 +915,9 @@ Language:
 
 ### 沟通交流 <Site url="pbc.gov.cn/goutongjiaoliu/113456/113469/index.html" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/pbc/goutongjiaoliu","categories":["finance"],"example":"/gov/pbc/goutongjiaoliu","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pbc.gov.cn/goutongjiaoliu/113456/113469/index.html"]}],"name":"沟通交流","maintainers":["nczitzk"],"url":"pbc.gov.cn/goutongjiaoliu/113456/113469/index.html","location":"pbc/goutongjiaoliu.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/pbc/goutongjiaoliu","categories":["finance"],"example":"/gov/pbc/goutongjiaoliu","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pbc.gov.cn/goutongjiaoliu/113456/113469/index.html"]}],"name":"沟通交流","maintainers":["nczitzk"],"url":"pbc.gov.cn/goutongjiaoliu/113456/113469/index.html","location":"pbc/goutongjiaoliu.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 货币政策司公开市场交易公告 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/pbc/tradeAnnouncement","categories":["finance"],"example":"/gov/pbc/tradeAnnouncement","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"货币政策司公开市场交易公告","maintainers":["nczitzk"],"location":"pbc/trade-announcement.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/pbc/tradeAnnouncement","categories":["finance"],"example":"/gov/pbc/tradeAnnouncement","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"货币政策司公开市场交易公告","maintainers":["nczitzk"],"location":"pbc/trade-announcement.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 

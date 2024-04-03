@@ -121,18 +121,18 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 栏目 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/column/:id","categories":["reading"],"example":"/aisixiang/column/722","parameters":{"id":"栏目 ID, 可在对应栏目 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["HenryQW","nczitzk"],"location":"column.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aisixiang" :data='{"path":"/column/:id","categories":["reading"],"example":"/aisixiang/column/722","parameters":{"id":"栏目 ID, 可在对应栏目 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["HenryQW","nczitzk"],"location":"column.ts"}' :test='{"code":0}' />
 
 ### 思想库（专栏） <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":0}' />
 
 | 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 
 ### 专题 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 313059832545 to be less than 311040000000"}' />
 
 :::tip
   更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)
@@ -178,7 +178,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 新聞 <Site url="tongli.com.tw" size="sm" />
 
-<Route namespace="tongli" :data='{"path":"/news/:type","categories":["reading"],"example":"/tongli/news/6","parameters":{"type":"分類，可以在“新聞”鏈接中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新聞","maintainers":["CokeMine"],"location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="tongli" :data='{"path":"/news/:type","categories":["reading"],"example":"/tongli/news/6","parameters":{"type":"分類，可以在“新聞”鏈接中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新聞","maintainers":["CokeMine"],"location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 欢乐书客 <Site url="hbooker.com"/>
 

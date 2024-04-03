@@ -66,7 +66,7 @@
 
 ### Exchange and Repair Extension Programs <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 490147731282 to be less than 311040000000"}' />
+<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 490234145312 to be less than 311040000000"}' />
 
 ## Aqara <Site url="aqara.com"/>
 
@@ -260,7 +260,7 @@
 
 ### Search <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Grub Street <Site url="grubstreet.com"/>
 
@@ -456,7 +456,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ### Firefox Monitor <Site url="monitor.firefox.com/" size="sm" />
 
-<Route namespace="firefox" :data='{"path":"/breaches","categories":["other"],"example":"/firefox/breaches","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["monitor.firefox.com/","monitor.firefox.com/breaches"]}],"name":"Firefox Monitor","maintainers":["TonyRL"],"url":"monitor.firefox.com/","location":"breaches.ts"}' :test='{"code":1,"message":"expected 312250446586 to be less than 311040000000"}' />
+<Route namespace="firefox" :data='{"path":"/breaches","categories":["other"],"example":"/firefox/breaches","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["monitor.firefox.com/","monitor.firefox.com/breaches"]}],"name":"Firefox Monitor","maintainers":["TonyRL"],"url":"monitor.firefox.com/","location":"breaches.ts"}' :test='{"code":1,"message":"expected 312336964487 to be less than 311040000000"}' />
 
 ## Metacritic <Site url="metacritic.com"/>
 
@@ -546,7 +546,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### OpenSource Square <Site url="oshwhub.com" size="sm" />
 
-<Route namespace="oshwhub" :data='{"path":"/:sortType?","categories":["other"],"example":"/oshwhub","parameters":{"sortType":"sortType"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"OpenSource Square","maintainers":["tylinux"],"location":"explore.ts"}' :test='{"code":0}' />
+<Route namespace="oshwhub" :data='{"path":"/:sortType?","categories":["other"],"example":"/oshwhub","parameters":{"sortType":"sortType"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"OpenSource Square","maintainers":["tylinux"],"location":"explore.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Proceedings of The National Academy of Sciences <Site url="pnas.org"/>
 
@@ -572,7 +572,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Sustainability <Site url="strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html" size="sm" />
 
-<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":0}' />
+<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Panda <Site url="usepanda.com"/>
 
@@ -799,7 +799,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 329859414079 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 324218495183 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -1118,7 +1118,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 快递订单追踪 <Site url="kuaidi100.com" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 快递公司代号如果不能确定，可通过下方快递列表获得。
 
@@ -1130,7 +1130,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 支持的快递公司列表 <Site url="kuaidi100.com/" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 理想生活实验室 <Site url="toodaylab.com"/>
 
@@ -1324,11 +1324,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 搜索 <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 354587091041 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 354673794336 to be less than 311040000000"}' />
 
 ### 特色 LOGO <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 311041489040 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 311128191209 to be less than 311040000000"}' />
 
 ## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
 
@@ -1466,11 +1466,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### Unknown <Site url="cebbank.com/site/ygzx/whpj/index.html" size="sm" />
 
-<Route namespace="cebbank" :data='{"path":"/quotation/all","categories":["other"],"example":"/cebbank/quotation/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cebbank.com/site/ygzx/whpj/index.html","cebbank.com/eportal/ui","cebbank.com/"]}],"name":"Unknown","maintainers":["linbuxiao"],"url":"cebbank.com/site/ygzx/whpj/index.html","location":"all.ts"}' :test='{"code":0}' />
+<Route namespace="cebbank" :data='{"path":"/quotation/all","categories":["other"],"example":"/cebbank/quotation/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cebbank.com/site/ygzx/whpj/index.html","cebbank.com/eportal/ui","cebbank.com/"]}],"name":"Unknown","maintainers":["linbuxiao"],"url":"cebbank.com/site/ygzx/whpj/index.html","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 外汇牌价 <Site url="cebbank.com" size="sm" />
 
-<Route namespace="cebbank" :data='{"path":"/quotation/history/:type","categories":["other"],"example":"/cebbank/quotation/history/usd","parameters":{"type":"货币的缩写，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外汇牌价","maintainers":["linbuxiao"],"description":"#### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}\n\n\n#### 历史牌价 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-li-shi-pai-jia}\n\n  | 美元 | 英镑 | 港币 | 瑞士法郎 | 瑞典克郎 | 丹麦克郎 | 挪威克郎 | 日元 | 加拿大元 | 澳大利亚元 | 新加坡元 | 欧元 | 澳门元 | 泰国铢 | 新西兰元 | 韩圆 |\n  | ---- | ---- | ---- | -------- | -------- | -------- | -------- | ---- | -------- | ---------- | -------- | ---- | ------ | ------ | -------- | ---- |\n  | usd  | gbp  | hkd  | chf      | sek      | dkk      | nok      | jpy  | cad      | aud        | sgd      | eur  | mop    | thb    | nzd      | krw  |","location":"history.ts"}' :test='{"code":1,"message":"expected [ &#39;美元(USD)&#39; ] to not include &#39;美元(USD)&#39;"}' />
+<Route namespace="cebbank" :data='{"path":"/quotation/history/:type","categories":["other"],"example":"/cebbank/quotation/history/usd","parameters":{"type":"货币的缩写，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外汇牌价","maintainers":["linbuxiao"],"description":"#### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}\n\n\n#### 历史牌价 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-li-shi-pai-jia}\n\n  | 美元 | 英镑 | 港币 | 瑞士法郎 | 瑞典克郎 | 丹麦克郎 | 挪威克郎 | 日元 | 加拿大元 | 澳大利亚元 | 新加坡元 | 欧元 | 澳门元 | 泰国铢 | 新西兰元 | 韩圆 |\n  | ---- | ---- | ---- | -------- | -------- | -------- | -------- | ---- | -------- | ---------- | -------- | ---- | ------ | ------ | -------- | ---- |\n  | usd  | gbp  | hkd  | chf      | sek      | dkk      | nok      | jpy  | cad      | aud        | sgd      | eur  | mop    | thb    | nzd      | krw  |","location":"history.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 #### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}
 
@@ -1513,7 +1513,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="cib.com.cn/" size="sm" />
 
-<Route namespace="cib" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/cib/whpj/xh?filter_title=USD","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cib.com.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["Qixingchen"],"url":"cib.com.cn/","description":"| 短格式 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cib" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/cib/whpj/xh?filter_title=USD","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cib.com.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["Qixingchen"],"url":"cib.com.cn/","description":"| 短格式 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 短格式 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1660,7 +1660,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 读者云平台 <Site url="read.nlc.cn" size="sm" />
 
-<Route namespace="nlc" :data='{"path":"/read/:type?","categories":["other"],"example":"/nlc/read/电子图书","parameters":{"type":"分类，见下表，默认为电子图书"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"读者云平台","maintainers":["nczitzk"],"description":"| [电子图书](http://read.nlc.cn/outRes/outResList?type=电子图书) | [电子期刊](http://read.nlc.cn/outRes/outResList?type=电子期刊) | [电子论文](http://read.nlc.cn/outRes/outResList?type=电子论文) | [电子报纸](http://read.nlc.cn/outRes/outResList?type=电子报纸) | [音视频](http://read.nlc.cn/outRes/outResList?type=音视频) |\n  | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------- |\n\n  | [标准专利](http://read.nlc.cn/outRes/outResList?type=标准专利) | [工具书](http://read.nlc.cn/outRes/outResList?type=工具书) | [少儿资源](http://read.nlc.cn/outRes/outResList?type=少儿资源) |\n  | -------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |","location":"read.ts"}' :test='{"code":0}' />
+<Route namespace="nlc" :data='{"path":"/read/:type?","categories":["other"],"example":"/nlc/read/电子图书","parameters":{"type":"分类，见下表，默认为电子图书"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"读者云平台","maintainers":["nczitzk"],"description":"| [电子图书](http://read.nlc.cn/outRes/outResList?type=电子图书) | [电子期刊](http://read.nlc.cn/outRes/outResList?type=电子期刊) | [电子论文](http://read.nlc.cn/outRes/outResList?type=电子论文) | [电子报纸](http://read.nlc.cn/outRes/outResList?type=电子报纸) | [音视频](http://read.nlc.cn/outRes/outResList?type=音视频) |\n  | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------- |\n\n  | [标准专利](http://read.nlc.cn/outRes/outResList?type=标准专利) | [工具书](http://read.nlc.cn/outRes/outResList?type=工具书) | [少儿资源](http://read.nlc.cn/outRes/outResList?type=少儿资源) |\n  | -------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |","location":"read.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | [电子图书](http://read.nlc.cn/outRes/outResList?type=电子图书) | [电子期刊](http://read.nlc.cn/outRes/outResList?type=电子期刊) | [电子论文](http://read.nlc.cn/outRes/outResList?type=电子论文) | [电子报纸](http://read.nlc.cn/outRes/outResList?type=电子报纸) | [音视频](http://read.nlc.cn/outRes/outResList?type=音视频) |
   | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------- |

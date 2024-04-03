@@ -90,7 +90,7 @@
 
 ### BlueStacks 5 Release Notes <Site url="bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5" size="sm" />
 
-<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":0}' />
+<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Brave <Site url="brave.com"/>
 
@@ -193,7 +193,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -212,7 +212,7 @@ Language
 
 ### Release Notes <Site url="firecore.com" size="sm" />
 
-<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 313114440704 to be less than 311040000000"}' />
+<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 313200956436 to be less than 311040000000"}' />
 
 ## iFi audio <Site url="ifi-audio.com"/>
 
@@ -230,7 +230,7 @@ Language
 
 ### Changelog <Site url="imagemagick.org/script/download.php" size="sm" />
 
-<Route namespace="imagemagick" :data='{"path":"/changelog","categories":["program-update"],"example":"/imagemagick/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["imagemagick.org/script/download.php","imagemagick.org/script","imagemagick.org/"]}],"name":"Changelog","maintainers":["nczitzk"],"url":"imagemagick.org/script/download.php","location":"changelog.ts"}' :test='{"code":0}' />
+<Route namespace="imagemagick" :data='{"path":"/changelog","categories":["program-update"],"example":"/imagemagick/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["imagemagick.org/script/download.php","imagemagick.org/script","imagemagick.org/"]}],"name":"Changelog","maintainers":["nczitzk"],"url":"imagemagick.org/script/download.php","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## IPSW.me <Site url="ipsw.me"/>
 
@@ -279,7 +279,7 @@ Language
 
 ### Download <Site url="neatdownloadmanager.com/index.php" size="sm" />
 
-<Route namespace="neatdownloadmanager" :data='{"path":"/download/:os?","categories":["program-update"],"example":"/neatdownloadmanager/download","parameters":{"os":"Operating system, windows or macos, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["neatdownloadmanager.com/index.php","neatdownloadmanager.com/"]}],"name":"Download","maintainers":["nczitzk"],"url":"neatdownloadmanager.com/index.php","location":"download.ts"}' :test='{"code":0}' />
+<Route namespace="neatdownloadmanager" :data='{"path":"/download/:os?","categories":["program-update"],"example":"/neatdownloadmanager/download","parameters":{"os":"Operating system, windows or macos, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["neatdownloadmanager.com/index.php","neatdownloadmanager.com/"]}],"name":"Download","maintainers":["nczitzk"],"url":"neatdownloadmanager.com/index.php","location":"download.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Not a Tesla App <Site url="notateslaapp.com"/>
 
@@ -310,7 +310,7 @@ Language
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 336270147965 to be less than 311040000000"}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 336356816477 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
@@ -394,7 +394,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Download <Site url="support.wdc.com" size="sm" />
 
-<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -36718375953 to be greater than -432000000"}' />
+<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -5095625345 to be greater than -432000000"}' />
 
 ## winstall <Site url="winstall.app"/>
 

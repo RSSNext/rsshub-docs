@@ -16,13 +16,13 @@
 
 ### 直播搜索 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/live/search/:key/:order","categories":["live"],"example":"/bilibili/live/search/dota/online","parameters":{"key":"搜索关键字","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播搜索","maintainers":["Qixingchen"],"location":"live-search.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/live/search/:key/:order","categories":["live"],"example":"/bilibili/live/search/dota/online","parameters":{"key":"搜索关键字","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播搜索","maintainers":["Qixingchen"],"location":"live-search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## LiSA <Site url="www.sonymusic.co.jp"/>
 
 ### Latest Discography <Site url="www.lxixsxa.com/" size="sm" />
 
-<Route namespace="lxixsxa" :data='{"path":"/disco","categories":["live"],"example":"/lxixsxa/disco","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lxixsxa.com/","www.lxixsxa.com/discography"]}],"name":"Latest Discography","maintainers":["Kiotlin"],"url":"www.lxixsxa.com/","location":"discography.ts"}' :test='{"code":1,"message":"expected -4318860175 to be greater than -432000000"}' />
+<Route namespace="lxixsxa" :data='{"path":"/disco","categories":["live"],"example":"/lxixsxa/disco","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lxixsxa.com/","www.lxixsxa.com/discography"]}],"name":"Latest Discography","maintainers":["Kiotlin"],"url":"www.lxixsxa.com/","location":"discography.ts"}' :test='{"code":1,"message":"expected -4232270210 to be greater than -432000000"}' />
 
 ### News <Site url="www.lxixsxa.com/" size="sm" />
 
@@ -96,5 +96,5 @@
 
 ### 直播间开播 <Site url="lang.live" size="sm" />
 
-<Route namespace="lang" :data='{"path":"/live/room/:id","categories":["live"],"example":"/lang/live/room/1352360","parameters":{"id":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lang.live/room/:id"]}],"name":"直播间开播","maintainers":["MittWillson"],"location":"room.ts"}' :test='{"code":0}' />
+<Route namespace="lang" :data='{"path":"/live/room/:id","categories":["live"],"example":"/lang/live/room/1352360","parameters":{"id":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lang.live/room/:id"]}],"name":"直播间开播","maintainers":["MittWillson"],"location":"room.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
