@@ -146,7 +146,7 @@
 
 ### 自学考试通知公告 <Site url="www.shmeea.edu.cn/page/04000/index.html" size="sm" />
 
-<Route namespace="shmeea" :data='{"path":"/self-study","categories":["study"],"example":"/shmeea/self-study","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shmeea.edu.cn/page/04000/index.html","www.shmeea.edu.cn/"]}],"name":"自学考试通知公告","maintainers":["h2ws"],"url":"www.shmeea.edu.cn/page/04000/index.html","location":"self-study.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shmeea" :data='{"path":"/self-study","categories":["study"],"example":"/shmeea/self-study","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shmeea.edu.cn/page/04000/index.html","www.shmeea.edu.cn/"]}],"name":"自学考试通知公告","maintainers":["h2ws"],"url":"www.shmeea.edu.cn/page/04000/index.html","location":"self-study.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 网易公开课 <Site url="163.com"/>
 
@@ -162,7 +162,7 @@
 
 ### 知识库 <Site url="yuque.com" size="sm" />
 
-<Route namespace="yuque" :data='{"path":"/:name/:book","categories":["study"],"example":"/yuque/ruanyf/weekly","parameters":{"name":"用戶名","book":"知识库 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuque.com/:name/:book"]}],"name":"知识库","maintainers":["aha2mao","ltaoo"],"description":"| Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |\n  | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |\n  | [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |","location":"book.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="yuque" :data='{"path":"/:name/:book","categories":["study"],"example":"/yuque/ruanyf/weekly","parameters":{"name":"用戶名","book":"知识库 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuque.com/:name/:book"]}],"name":"知识库","maintainers":["aha2mao","ltaoo"],"description":"| Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |\n  | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |\n  | [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |","location":"book.ts"}' :test='{"code":0}' />
 
 | Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |
   | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |
@@ -188,11 +188,11 @@
 
 ### 大数据专家委员会 <Site url="ccf.org.cn" size="sm" />
 
-<Route namespace="ccf" :data='{"path":"/tfbd/:caty/:id","categories":["study"],"example":"/ccf/tfbd/xwdt/tzgg","parameters":{"caty":"主分类，可在 URL 找到","id":"子分类，可在 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tfbd.ccf.org.cn/tfbd/:caty/:id","tfbd.ccf.org.cn/"]}],"name":"大数据专家委员会","maintainers":["tudou027"],"location":"tfbd/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccf" :data='{"path":"/tfbd/:caty/:id","categories":["study"],"example":"/ccf/tfbd/xwdt/tzgg","parameters":{"caty":"主分类，可在 URL 找到","id":"子分类，可在 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tfbd.ccf.org.cn/tfbd/:caty/:id","tfbd.ccf.org.cn/"]}],"name":"大数据专家委员会","maintainers":["tudou027"],"location":"tfbd/index.ts"}' :test='{"code":0}' />
 
 ### 计算机视觉专委会 - 学术动态 - 分类 <Site url="ccf.org.cn" size="sm" />
 
-<Route namespace="ccf" :data='{"path":"/ccfcv/:channel/:category","categories":["study"],"example":"/ccf/ccfcv/xsdt/xsqy","parameters":{"channel":"频道，仅支持 `xsdt`","category":"分类，见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机视觉专委会 - 学术动态 - 分类","maintainers":["elxy"],"description":"| 学术前沿 | 热点征文 | 学术会议 |\n  | -------- | -------- | -------- |\n  | xsqy     | rdzw     | xshy     |","location":"ccfcv/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccf" :data='{"path":"/ccfcv/:channel/:category","categories":["study"],"example":"/ccf/ccfcv/xsdt/xsqy","parameters":{"channel":"频道，仅支持 `xsdt`","category":"分类，见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机视觉专委会 - 学术动态 - 分类","maintainers":["elxy"],"description":"| 学术前沿 | 热点征文 | 学术会议 |\n  | -------- | -------- | -------- |\n  | xsqy     | rdzw     | xshy     |","location":"ccfcv/index.ts"}' :test='{"code":0}' />
 
 | 学术前沿 | 热点征文 | 学术会议 |
   | -------- | -------- | -------- |
@@ -200,7 +200,7 @@
 
 ### 新闻 <Site url="ccf.org.cn" size="sm" />
 
-<Route namespace="ccf" :data='{"path":"/news/:category?","categories":["study"],"example":"/ccf/news","parameters":{"category":"分类，见下表，默认为 CCF 新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ccf.org.cn/:category","ccf.org.cn/"],"target":"/news/:category"}],"name":"新闻","maintainers":["nczitzk"],"description":"| CCF 新闻    | CCF 聚焦 | ACM 信息  |\n  | ----------- | -------- | --------- |\n  | Media_list | Focus    | ACM_News |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccf" :data='{"path":"/news/:category?","categories":["study"],"example":"/ccf/news","parameters":{"category":"分类，见下表，默认为 CCF 新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ccf.org.cn/:category","ccf.org.cn/"],"target":"/news/:category"}],"name":"新闻","maintainers":["nczitzk"],"description":"| CCF 新闻    | CCF 聚焦 | ACM 信息  |\n  | ----------- | -------- | --------- |\n  | Media_list | Focus    | ACM_News |","location":"news.ts"}' :test='{"code":0}' />
 
 | CCF 新闻    | CCF 聚焦 | ACM 信息  |
   | ----------- | -------- | --------- |
@@ -305,15 +305,15 @@
 
 ### 考研热点新闻 <Site url="yz.chsi.com.cn/" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/hotnews","categories":["study"],"example":"/chsi/hotnews","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/"]}],"name":"考研热点新闻","maintainers":["yanbot-team"],"url":"yz.chsi.com.cn/","location":"hotnews.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="chsi" :data='{"path":"/hotnews","categories":["study"],"example":"/chsi/hotnews","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/"]}],"name":"考研热点新闻","maintainers":["yanbot-team"],"url":"yz.chsi.com.cn/","location":"hotnews.ts"}' :test='{"code":1,"message":"expected [ …(8) ] to not include &#39;https://yz.chsi.com.cn/yztj/&#39;"}' />
 
 ### 考研动态 <Site url="yz.chsi.com.cn/kyzx/kydt" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/kydt","categories":["study"],"example":"/chsi/kydt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/kydt"]}],"name":"考研动态","maintainers":["SunBK201"],"url":"yz.chsi.com.cn/kyzx/kydt","location":"kydt.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="chsi" :data='{"path":"/kydt","categories":["study"],"example":"/chsi/kydt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/kydt"]}],"name":"考研动态","maintainers":["SunBK201"],"url":"yz.chsi.com.cn/kyzx/kydt","location":"kydt.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ### 考研资讯 <Site url="yz.chsi.com.cn" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/kyzx/:type","categories":["study"],"example":"/chsi/kyzx/fstj","parameters":{"type":" type 见下表，亦可在网站 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/:type"]}],"name":"考研资讯","maintainers":["yanbot-team"],"description":"| `:type` | 专题名称 |\n  | ------- | -------- |\n  | fstj    | 复试调剂 |\n  | kydt    | 考研动态 |\n  | zcdh    | 政策导航 |\n  | kyrw    | 考研人物 |\n  | jyxd    | 经验心得 |","location":"kyzx.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="chsi" :data='{"path":"/kyzx/:type","categories":["study"],"example":"/chsi/kyzx/fstj","parameters":{"type":" type 见下表，亦可在网站 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/:type"]}],"name":"考研资讯","maintainers":["yanbot-team"],"description":"| `:type` | 专题名称 |\n  | ------- | -------- |\n  | fstj    | 复试调剂 |\n  | kydt    | 考研动态 |\n  | zcdh    | 政策导航 |\n  | kyrw    | 考研人物 |\n  | jyxd    | 经验心得 |","location":"kyzx.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 | `:type` | 专题名称 |
   | ------- | -------- |

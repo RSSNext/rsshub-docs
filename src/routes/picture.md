@@ -148,7 +148,7 @@ Type
 
 ### Update <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/doodles/:language?","categories":["picture"],"example":"/google/doodles/zh-CN","parameters":{"language":"Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Update","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="google" :data='{"path":"/doodles/:language?","categories":["picture"],"example":"/google/doodles/zh-CN","parameters":{"language":"Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Update","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":0}' />
 
 ## MM 范 <Site url="95mm.org"/>
 
@@ -175,11 +175,11 @@ Type
 
 ### Cheng Kung University Mirror <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":0}' />
 
 ### NASA 中文 <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-cn","categories":["picture"],"example":"/nasa/apod-cn","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA 中文","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","description":":::tip\n  [NASA 中文](https://www.nasachina.cn/) 提供了每日天文图的中英双语图文说明，但在更新上偶尔略有一两天的延迟。\n  :::","location":"apod-cn.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nasa" :data='{"path":"/apod-cn","categories":["picture"],"example":"/nasa/apod-cn","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA 中文","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","description":":::tip\n  [NASA 中文](https://www.nasachina.cn/) 提供了每日天文图的中英双语图文说明，但在更新上偶尔略有一两天的延迟。\n  :::","location":"apod-cn.ts"}' :test='{"code":0}' />
 
 :::tip
   [NASA 中文](https://www.nasachina.cn/) 提供了每日天文图的中英双语图文说明，但在更新上偶尔略有一两天的延迟。
@@ -187,13 +187,13 @@ Type
 
 ### NASA <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod","categories":["picture"],"example":"/nasa/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nasa" :data='{"path":"/apod","categories":["picture"],"example":"/nasa/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod.ts"}' :test='{"code":0}' />
 
 ## Pixabay <Site url="pixabay.com"/>
 
 ### Search <Site url="pixabay.com" size="sm" />
 
-<Route namespace="pixabay" :data='{"path":"/search/:q/:order?","categories":["picture"],"example":"/pixabay/search/cat","parameters":{"q":"Search term","order":"Order, `popular` or `latest`, `latest` by default"},"features":{"requireConfig":[{"name":"PIXABAY_KEY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pixabay.com/:searchType/search/:q"],"target":"/search/:q"}],"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pixabay" :data='{"path":"/search/:q/:order?","categories":["picture"],"example":"/pixabay/search/cat","parameters":{"q":"Search term","order":"Order, `popular` or `latest`, `latest` by default"},"features":{"requireConfig":[{"name":"PIXABAY_KEY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pixabay.com/:searchType/search/:q"],"target":"/search/:q"}],"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":0}' />
 
 ## wallhaven <Site url="wallhaven.cc"/>
 
@@ -239,7 +239,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 每日一图 <Site url="nationalgeographic.com/photo-of-the-day/*" size="sm" />
 
-<Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture"],"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"每日一图","maintainers":["LogicJake","OrangeEd1t","TonyRL"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture"],"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"每日一图","maintainers":["LogicJake","OrangeEd1t","TonyRL"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' :test='{"code":0}' />
 
 ## 极品性感美女 <Site url="www.jpxgmn.com"/>
 
@@ -253,17 +253,17 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 搜索 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/search/:kw","categories":["picture"],"example":"/jpxgmn/search/candy","parameters":{"kw":"搜索关键词"},"name":"搜索","maintainers":["Urabartin"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jpxgmn" :data='{"path":"/search/:kw","categories":["picture"],"example":"/jpxgmn/search/candy","parameters":{"kw":"搜索关键词"},"name":"搜索","maintainers":["Urabartin"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 喷嚏 <Site url="dapenti.com"/>
 
 ### 图卦 <Site url="dapenti.com" size="sm" />
 
-<Route namespace="dapenti" :data='{"path":"/tugua","categories":["picture"],"example":"/dapenti/tugua","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图卦","maintainers":["tgly307"],"location":"tugua.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="dapenti" :data='{"path":"/tugua","categories":["picture"],"example":"/dapenti/tugua","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图卦","maintainers":["tgly307"],"location":"tugua.ts"}' :test='{"code":0}' />
 
 ### 主题 <Site url="dapenti.com" size="sm" />
 
-<Route namespace="dapenti" :data='{"path":"/subject/:id","categories":["picture"],"example":"/dapenti/subject/184","parameters":{"id":"主题 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主题","maintainers":["xyqfer"],"location":"subject.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="dapenti" :data='{"path":"/subject/:id","categories":["picture"],"example":"/dapenti/subject/184","parameters":{"id":"主题 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主题","maintainers":["xyqfer"],"location":"subject.ts"}' :test='{"code":0}' />
 
 ## 奇葩买家秀 <Site url="qipamaijia.com"/>
 
