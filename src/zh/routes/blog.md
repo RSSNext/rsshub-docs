@@ -252,6 +252,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":0}' />
 
+## 罗磊的独立博客 <Site url="luolei.org"/>
+
+### 罗磊的独立博客 <Site url="luolei.org" size="sm" />
+
+<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='undefined' />
+
 ## 免費資源網路社群 <Site url="free.com.tw"/>
 
 ### 最新文章 <Site url="free.com.tw/" size="sm" />
