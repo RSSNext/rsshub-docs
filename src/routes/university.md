@@ -2217,6 +2217,14 @@ author 列表：
   | ----------- | ------------ | --------- | -------- |
   | RecruitList | Doublechoice | Broadcast | joblist2 |
 
+### 数学科学学院 <Site url="math.ustc.edu.cn/" size="sm" />
+
+<Route namespace="ustc" :data='{"path":"/math/:type?","categories":["university"],"example":"/ustc/math/tzgg","parameters":{"type":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["math.ustc.edu.cn/"],"target":"/math"}],"name":"数学科学学院","maintainers":["ne0-wu"],"url":"math.ustc.edu.cn/","description":"| 学院新闻 | 通知公告 | 学术交流 | 学术报告 |\n  | -------- | -------- | -------- | -------- |\n  | xyxw     | tzgg     | xsjl     | xsbg     |","location":"math.ts"}' :test='undefined' />
+
+| 学院新闻 | 通知公告 | 学术交流 | 学术报告 |
+  | -------- | -------- | -------- | -------- |
+  | xyxw     | tzgg     | xsjl     | xsbg     |
+
 ### 信息科学技术学院 <Site url="sist.ustc.edu.cn/" size="sm" />
 
 <Route namespace="ustc" :data='{"path":"/sist/:type?","categories":["university"],"example":"/ustc/sist/tzgg","parameters":{"type":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sist.ustc.edu.cn/"],"target":"/sist"}],"name":"信息科学技术学院","maintainers":["jasongzy"],"url":"sist.ustc.edu.cn/","description":"| 通知公告 | 招生工作 |\n  | -------- | -------- |\n  | tzgg     | zsgz     |","location":"sist.ts"}' :test='{"code":0}' />
