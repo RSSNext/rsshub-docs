@@ -8,8 +8,8 @@ export const zh = defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/zh/' },
-      { text: '指南', link: '/zh/guide/' },
-      { text: '参与我们', link: '/zh/joinus/' },
+      { text: '食用指南', link: '/zh/guide/' },
+      { text: '开发路由', link: '/zh/joinus/' },
       { text: '部署', link: '/zh/deploy/' },
       { text: '生态系统', link: '/zh/ecosystem' },
       { text: '赞助', link: '/zh/sponsor' },
@@ -53,7 +53,7 @@ export const zh = defineConfig({
     sidebar: {
       '/zh/joinus/': [
         {
-          text: '参与我们',
+          text: '开发路由',
           items: [
             { text: '快速开始', link: '/zh/joinus/' },
           ],

@@ -79,7 +79,7 @@ export const shared = defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
-      { text: 'Join Us', link: '/joinus/' },
+      { text: 'Develop', link: '/joinus/' },
       { text: 'Deploy', link: '/deploy/' },
       { text: 'Ecosystem', link: '/ecosystem' },
       { text: 'Sponsor', link: '/sponsor' },
@@ -104,7 +104,7 @@ export const shared = defineConfig({
     sidebar: {
       '/joinus/': [
         {
-          text: 'Join Us',
+          text: 'Develop',
           items: [
             { text: 'Quick Start', link: '/joinus/' },
           ],
