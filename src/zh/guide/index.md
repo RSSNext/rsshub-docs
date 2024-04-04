@@ -2,54 +2,50 @@
 
 ## 生成订阅源
 
-比如我希望订阅 Twitter 上一个名为 DIYgod 的用户的时间线
+比如你希望订阅 Telegram 上 [@awesomeRSSHub](https://t.me/awesomeRSSHub) 频道的内容
 
-根据 [Twitter 用户时间线路由](/zh/routes/social-media#twitter)的文档，路由为 `/twitter/user/:id`，把 `:id` 替换为用户名，得到路径为 `/twitter/user/DIYgod`，再加上域名 `https://rsshub.app`，一个订阅源就生成了：`https://rsshub.app/twitter/user/DIYgod`
+根据 [Telegram 路由](/zh/routes/social-media#telegram)的文档，路由为 `/telegram/channel/:username/:routeParams?`，其中 username 为必选参数，routeParams 为可选参数，把 `:username` 替换为频道 id awesomeRSSHub，得到路径为 `/telegram/channel/awesomeRSSHub`，再加上实例域名 `https://rsshub.app`，一个订阅源就生成了：`https://rsshub.app/telegram/channel/awesomeRSSHub`
 
-然后我们可以把 `https://rsshub.app/twitter/user/DIYgod` 添加到任意 RSS 阅读器里来使用
+然后你可以把 `https://rsshub.app/telegram/channel/awesomeRSSHub` 添加到任意 RSS 阅读器里来使用
 
-其中域名 `https://rsshub.app` 可以替换为你[自部署](/zh/deploy)或任意[公共实例](/zh/guide/instances)的域名
+其中实例域名 `https://rsshub.app` 可以替换为你[自部署](/zh/deploy/)或任意[公共实例](/zh/guide/instances)的域名
 
-另外 RSSHub 支持很多实用的参数，比如内容过滤、全文输出等，可以在 [通用参数](/zh/parameters) 文档了解具体使用方法
+另外 RSSHub 支持很多实用的参数，比如内容过滤、全文输出等，可以在 [通用参数](/zh/guide/parameters) 文档了解具体使用方法
 
 ## 编写订阅源
 
 RSSHub 的发展离不开社区的力量，欢迎编写你感兴趣的订阅源[参与我们](/zh/joinus/#quick-start)
 
-## 作为 npm 包使用
+## 作为 npm 包使用 <Badge type="warning" text="experimental" />
 
 除了作为订阅源，RSSHub 还支持作为 npm 包在你的 Node.js 项目中使用
 
 ### 安装
 
-<Tabs groupId="package-manager">
-<TabItem value="pnpm" label="pnpm" default>
+::: code-group
 
-```bash
-pnpm add rsshub
+```sh [npm]
+$ npm install rsshub --save
 ```
 
-</TabItem>
-<TabItem value="yarn" label="yarnv1">
-
-```bash
-yarn add rsshub
+```sh [pnpm]
+$ pnpm add rsshub
 ```
 
-</TabItem>
-<TabItem value="npm" label="npm">
-
-```bash
-npm install rsshub --save
+```sh [yarn]
+$ yarn add rsshub
 ```
 
-</TabItem>
-</Tabs>
+```sh [bun]
+$ bun add rsshub
+```
+
+:::
 
 ### 使用
 
 ```js
-const RSSHub = require('rsshub');
+import RSSHub from 'rsshub';
 
 RSSHub.init({
     // config
@@ -74,11 +70,11 @@ RSSHub.request('/bilibili/bangumi/media/9192')
 
 ## Radar
 
-除了生成 RSS 和获取数据两个功能之外，RSSHub 还提供了一个 Radar 功能，用于将网站地址映射到 RSSHub 地址
+RSSHub 还提供了一个 Radar 功能，用于将网站地址映射到 RSSHub 地址
 
-### 配置文件
+### 规则
 
-Radar 有两种配置文件，一种是全功能的 [js 文件](https://github.com/DIYgod/RSSHub/blob/gh-pages/build/radar-rules.js)，一种是简化的 [json 文件](https://github.com/DIYgod/RSSHub/blob/gh-pages/build/radar-rules.json)
+可以通过实例的 API 来获取当前实例支持的 Radar 规则，比如官方实例 https://rsshub.app/api/radar/rules
 
 ### 使用
 

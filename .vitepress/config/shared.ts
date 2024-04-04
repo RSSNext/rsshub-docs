@@ -157,6 +157,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { text: 'Getting Started', link: '/guide/' },
         { text: 'Public Instances', link: '/guide/instances' },
         { text: 'FAQs', link: '/guide/faqs' },
+        { text: 'Troubleshooting', link: '/guide/troubleshooting' },
         { text: 'Parameters', link: '/guide/parameters' },
         { text: 'API', link: '/guide/api' },
       ],

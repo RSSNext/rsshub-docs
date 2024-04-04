@@ -1,55 +1,51 @@
 # Getting Started
 
-## Generate an RSS Feed
+## Generate a Feed
 
-To subscribe to a Twitter user's timeline, first look at the route document of [Twitter User Timeline](/routes/social-media#twitter-user-timeline).
+For example, if you want to subscribe to the content of the channel [@awesomeRSSHub](https://t.me/awesomeRSSHub) on Telegram.
 
-`/twitter/user/:id` is the route where `:id` is the actual Twitter username you need to replace. For instance, `/twitter/user/DIYgod` with a prefix domain name will give you the timeline of Twitter user DIYgod.
+According to the [Telegram route](/routes/social-media#telegram) documentation, the route is `/telegram/channel/:username/:routeParams?`, where username is a required parameter and routeParams is an optional parameter. Replace `:username` with the channel id awesomeRSSHub to get the path `/telegram/channel/awesomeRSSHub`, then add the instance domain `https://rsshub.app`, a subscription source is generated: `https://rsshub.app/telegram/channel/awesomeRSSHub`.
 
-The demo instance will generate an RSS feed at `https://rsshub.app/twitter/user/DIYgod`, use your own domain name when applicable. This feed should work with all RSS readers conforming to the RSS Standard.
+Then you can add `https://rsshub.app/telegram/channel/awesomeRSSHub` to any RSS reader for use.
 
-You can replace the domain name `https://rsshub.app` with your [self-hosted instance](/deploy) or any [public instance](/guide/instances).
+The instance domain `https://rsshub.app` can be replaced with  your [self-hosted instance](/deploy) or any [public instance](/guide/instances).
 
-RSSHub supports additional parameters such as content filtering and full-text extraction, refer to [Parameters](/parameters) for details.
+In addition, RSSHub supports many useful parameters, such as content filtering, full-text output, etc., refer to [Parameters](/guide/parameters) for details.
 
 ## Contribute a New Route
 
 Our thriving community is the key to RSSHub's success, we invite everyone to join us and [contribute new routes](/joinus/#quick-start) for all kinds of interesting sources.
 
-## Use as a npm Package
+## Use as a npm Package <Badge type="warning" text="experimental" />
 
 Apart from serving as an information source hub, RSSHub is also made compatible with all Node.js projects as an npm Package.
 
 ### Install
 
-<Tabs>
-<TabItem value="pnpm" label="pnpm" default>
+::: code-group
 
-```bash
-pnpm add rsshub
+```sh [npm]
+$ npm install rsshub --save
 ```
 
-</TabItem>
-<TabItem value="yarn" label="yarnv1">
-
-```bash
-yarn add rsshub
+```sh [pnpm]
+$ pnpm add rsshub
 ```
 
-</TabItem>
-<TabItem value="npm" label="npm">
-
-```bash
-npm install rsshub --save
+```sh [yarn]
+$ yarn add rsshub
 ```
 
-</TabItem>
-</Tabs>
+```sh [bun]
+$ bun add rsshub
+```
+
+:::
 
 ### Usage
 
 ```js
-const RSSHub = require('rsshub');
+import RSSHub from 'rsshub';
 
 RSSHub.init({
     // config
@@ -76,11 +72,11 @@ A short example for disabling caching can be written as:
 
 ## Radar
 
-In addition to the two functions of generating RSS and obtaining data, RSSHub also provides a Radar function, which is used to map website addresses to RSSHub addresses.
+RSSHub also provides a Radar function, which is used to map website addresses to RSSHub addresses.
 
-### Configuration file
+### Rules
 
-Radar has two types of configuration files, one is a full-featured [js file](https://github.com/DIYgod/RSSHub/blob/gh-pages/build/radar-rules.js), and the other is a simplified [json file](https://github.com/DIYgod/RSSHub/blob/gh-pages/build/radar-rules.json).
+You can use the API of the instance to obtain the Radar rules supported by the current instance, such as the rules of official instance https://rsshub.app/api/radar/rules .
 
 ### Usage
 
