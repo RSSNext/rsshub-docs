@@ -2293,6 +2293,12 @@ Member ID
 
 <Route namespace="niaogebiji" :data='{"path":"/today","categories":["new-media"],"example":"/niaogebiji/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["niaogebiji.com/","niaogebiji.com/bulletin"],"target":""}],"name":"今日事","maintainers":["KotoriK"],"url":"niaogebiji.com/","location":"today.ts"}' :test='{"code":0}' />
 
+## 歐洲動態（國際） <Site url="europechinese.blogspot.com"/>
+
+### 最新 <Site url="europechinese.blogspot.com/" size="sm" />
+
+<Route namespace="europechinese" :data='{"path":"/latest","categories":["new-media"],"example":"/europechinese/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["europechinese.blogspot.com"]}],"name":"最新","maintainers":["emdoe"],"url":"europechinese.blogspot.com/","location":"latest.ts"}' :test='undefined' />
+
 ## 品玩 <Site url="pingwest.com"/>
 
 ### 话题动态 <Site url="pingwest.com" size="sm" />
