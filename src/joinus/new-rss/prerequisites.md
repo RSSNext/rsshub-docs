@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Prerequisites
+# Development Environment
 
 Before you begin, it is important that your development environment set up properly.
 
@@ -27,7 +27,6 @@ To write code, you need a code editor. If you already have one, you can skip thi
 
 To speed up the development process and make it easier to keep your code clean, you can install some appropriate extensions to the code editor of your choice. In the latter part of this guide, we will use Visual Studio Code as an example, you can install the following extensions:
 
--   [Art Template Helper](https://marketplace.visualstudio.com/items?itemName=ZihanLi.at-helper)(provides syntax highlighting for a template engine used by RSSHub)
 -   [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)(maintain consistent coding styles across different editors and IDEs)
 -   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)(identify and fix common errors in your code)
 -   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)(formats your code to make it more readable and consistent)

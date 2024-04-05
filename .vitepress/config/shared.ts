@@ -107,20 +107,10 @@ export const shared = defineConfig({
           text: 'Develop',
           items: [
             { text: 'Quick Start', link: '/joinus/' },
-          ],
-        },
-        {
-          text: 'New RSSHub Rules',
-          items: [
-            { text: 'Prerequisites', link: '/joinus/new-rss/prerequisites' },
+            { text: 'Development Environment', link: '/joinus/new-rss/prerequisites' },
             { text: 'Just before you start', link: '/joinus/new-rss/before-start' },
             { text: 'Create Route', link: '/joinus/new-rss/start-code' },
             { text: 'Submit your route', link: '/joinus/new-rss/submit-route' },
-          ],
-        },
-        {
-          items: [
-            { text: 'New RSSHub Radar Rules', link: '/joinus/new-radar' },
           ],
         },
         {

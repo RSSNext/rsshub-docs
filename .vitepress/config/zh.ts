@@ -56,20 +56,10 @@ export const zh = defineConfig({
           text: '开发路由',
           items: [
             { text: '快速开始', link: '/zh/joinus/' },
-          ],
-        },
-        {
-          text: '提交新的 RSSHub 规则',
-          items: [
-            { text: '准备工作', link: '/zh/joinus/new-rss/prerequisites' },
+            { text: '开发环境', link: '/zh/joinus/new-rss/prerequisites' },
             { text: '开始之前', link: '/zh/joinus/new-rss/before-start' },
             { text: '制作路由', link: '/zh/joinus/new-rss/start-code' },
             { text: '提交路由', link: '/zh/joinus/new-rss/submit-route' },
-          ],
-        },
-        {
-          items: [
-            { text: '提交新的 RSSHub Radar 规则', link: '/zh/joinus/new-radar' },
           ],
         },
         {

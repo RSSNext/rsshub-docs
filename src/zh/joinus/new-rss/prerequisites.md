@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 准备工作
+# 开发环境
 
 在开始编写新的 RSS 规则之前，确保您的开发环境已正确配置很重要。
 
@@ -27,7 +27,6 @@ sidebar_position: 1
 
 为了加速开发过程并更容易维护代码风格的一致性，可以为您选择的代码编辑器安装一些适当的扩展。在本指南的后半部分，我们将使用 Visual Studio Code 作为示例，您可以安装以下扩展：
 
--   [Art Template Helper](https://marketplace.visualstudio.com/items?itemName=ZihanLi.at-helper)（为 RSSHub 使用的一种模板引擎提供语法高亮）
 -   [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)（保持在不同的 IDE 中的一致的代码风格）
 -   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)（识别并修复代码中的常见错误）
 -   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)（使您的代码更易读和更一致地格式化）

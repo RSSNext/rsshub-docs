@@ -63,7 +63,13 @@ sidebar_position: 2
 -   Use `kebab-case` for files and folders.
 -   Use `CONSTANT_CASE` for constants.
 
-## Route Standard
+### v2 Route Standard
+
+:::danger
+
+The v2 Route Standard is deprecated. All new routes should be following the [Create Route](/joinus/new-rss/start-code).
+
+:::
 
 When creating a new route in RSSHub, you need to organize your files in a specific way. Your namespace folder should be stored in the `lib/routes` directory and should include three mandatory files:
 
@@ -156,10 +162,10 @@ import { art } from '@/utils/render';
 const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'), author);
 ```
 
-### v1 Route Standard
+## v1 Route Standard
 
 :::danger
 
-The v1 Route Standard is deprecated. All new routes should be following the [Route Standard](/joinus/advanced/script-standard#route-standard).
+The v1 Route Standard is deprecated. All new routes should be following the [Create Route](/joinus/new-rss/start-code).
 
 :::

@@ -63,7 +63,13 @@ sidebar_position: 2
 -   使用 `kebab-case` 命名文件和文件夹。
 -   使用 `CONSTANT_CASE` 命名常量。
 
-## 路由规范
+## v2 路由规范
+
+:::danger
+
+v2 路由规范已被弃用。所有新路由都应遵循[制作路由](/joinus/new-rss/start-code)
+
+:::
 
 当在 RSSHub 中编写新的路由时，需要按特定方式组织文件。命名空间文件夹应该存储在 `lib/routes` 目录下，并且应包括三个必需文件：
 
@@ -158,10 +164,10 @@ const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'
 
 <!-- markdownlint-enable MD046 -->
 
-### v1 路由规范
+## v1 路由规范
 
 :::danger
 
-v1 路由规范已被弃用。所有新路由都应遵循 [路由规范](#路由规范-1)。
+v1 路由规范已被弃用。所有新路由都应遵循[制作路由](/joinus/new-rss/start-code)
 
 :::
