@@ -148,6 +148,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":0}' />
 
+## Watasuke <Site url="watasuke.net"/>
+
+### Blog <Site url="watasuke.net/blog/" size="sm" />
+
+<Route namespace="watasuke" :data='{"path":"/blog","example":"/watasuke/blog","radar":[{"source":["watasuke.net/blog/","watasuke.net/"]}],"name":"Blog","maintainers":["honahuku"],"url":"watasuke.net/blog/","location":"blog.ts"}' :test='undefined' />
+
 ## 便宜VPS网 <Site url="pianyivps.com"/>
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
