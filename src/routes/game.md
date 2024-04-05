@@ -362,6 +362,39 @@ Region
 
 ## Minecraft <Site url="minecraft.net"/>
 
+### Java Blocked Servers <Site url="minecraft.net/" size="sm" />
+
+<Route namespace="minecraft" :data='{"path":"/blockedservers","categories":["game"],"example":"/minecraft/blockedservers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Blocked Servers","maintainers":["xtexChooser"],"url":"minecraft.net/","description":"Java 版中被 Mojang 通过 sessionserver 阻止的服务器域名的 SHA-1 散列","zh":{"name":"Java版被阻止的服务器域名散列"},"location":"blockedservers.ts"}' :test='undefined' />
+
+Java 版中被 Mojang 通过 sessionserver 阻止的服务器域名的 SHA-1 散列
+
+### Java Runtimes <Site url="minecraft.net/" size="sm" />
+
+<Route namespace="minecraft" :data='{"path":"/java-runtime/:arch?/:javaType?","categories":["game"],"example":"/minecraft/java-runtime","parameters":{"arch":"Arch, `all` by default","javaType":"Java runtime type, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Runtimes","maintainers":["xtexChooser"],"url":"minecraft.net/","description":"\narch:\n\n- gamecore (Currently not used by Mojang)\n- linux\n- linux-i386\n- mac-os\n- mac-os-arm64\n- windows-arm64\n- windows-x64\n- windows-x86\n\njavaType:\n\n- java-runtime-alpha\n- java-runtime-beta\n- java-runtime-delta\n- java-runtime-gamma\n- java-runtime-gamma-snapshot\n- jre-legacy\n- minecraft-java-exe (Only on Windows)\n","zh":{"name":"Java运行时"},"location":"java-runtime.ts"}' :test='undefined' />
+
+
+arch:
+
+- gamecore (Currently not used by Mojang)
+- linux
+- linux-i386
+- mac-os
+- mac-os-arm64
+- windows-arm64
+- windows-x64
+- windows-x86
+
+javaType:
+
+- java-runtime-alpha
+- java-runtime-beta
+- java-runtime-delta
+- java-runtime-gamma
+- java-runtime-gamma-snapshot
+- jre-legacy
+- minecraft-java-exe (Only on Windows)
+
+
 ### Java Game Update <Site url="minecraft.net/" size="sm" />
 
 <Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 311504646027 to be less than 311040000000"}' />
