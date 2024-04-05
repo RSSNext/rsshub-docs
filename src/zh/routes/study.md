@@ -110,6 +110,12 @@
   | --------------------------- | -------------- | -------------------------- | -------------- | ---------------------- | ---------- | -------- | -------- |
   | 0                           | 1              | 2                          | 3              | 4                      | 5          | news     | policy   |
 
+## 国家哲学社会科学文献中心 <Site url="ncpssd.cn"/>
+
+### 最新文献 <Site url="ncpssd.cn/" size="sm" />
+
+<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='undefined' />
+
 ## 湖南人事考试网 <Site url="rsks.hunanpea.com"/>
 
 ### 公告 <Site url="rsks.hunanpea.com" size="sm" />
