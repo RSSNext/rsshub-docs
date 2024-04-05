@@ -150,6 +150,16 @@ Language
   | -------- | -------- | -------- | ---- | -------- | -------- | ------------------ | -------- | ---------- | -------- | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
   | 86       | 99       | 102      | 103  | 106      | 107      | 108                | 111      | 112        | 114      | 115        | 116      | 118      | 119      | 120      | 121      | 122      |
 
+## 共产党员网 <Site url="www.12371.cn"/>
+
+### 最新发布 <Site url="www.12371.cn" size="sm" />
+
+<Route namespace="12371" :data='{"path":"/:category?","example":"/12371/zxfb","parameters":{"category":"新闻分类名，预设 `zxfb`"},"radar":[{"source":["www.12371.cn/:category"]}],"name":"最新发布","maintainers":["zvrr"],"url":"www.12371.cn","description":"| 最新发布 |\n    | :------: |\n    |   zxfb   |","location":"zxfb.ts"}' :test='undefined' />
+
+| 最新发布 |
+    | :------: |
+    |   zxfb   |
+
 ## 国家药品审评网站 <Site url="www.cde.org.cn"/>
 
 ### 首页 <Site url="www.cde.org.cn" size="sm" />
