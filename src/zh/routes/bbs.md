@@ -436,6 +436,36 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
   | ----- | ---- | ---- |
   | 30    | 7    | 1    |
 
+## 看雪 <Site url="kanxue.com"/>
+
+### 论坛 <Site url="kanxue.com" size="sm" />
+
+<Route namespace="kanxue" :data='{"path":"/topic/:category?/:type?","categories":["bbs"],"example":"/kanxue/topic/android/digest","parameters":{"category":"版块, 缺省为`all`","type":"类型, 缺省为`latest`"},"name":"论坛","maintainers":["renzhexigua"],"description":"| 版块           | category  |\n    | -------------- | --------- |\n    | 智能设备       | iot       |\n    | Android 安全   | android   |\n    | iOS 安全       | ios       |\n    | HarmonyOS 安全 | harmonyos |\n    | 软件逆向       | re        |\n    | 编程技术       | coding    |\n    | 加壳脱壳       | unpack    |\n    | 密码应用       | crypto    |\n    | 二进制漏洞     | vuln      |\n    | CTF 对抗       | ctf       |\n    | Pwn            | pwn       |\n    | WEB 安全       | web       |\n    | 茶余饭后       | chat      |\n    | 极客空间       | geekzone  |\n    | 外文翻译       | translate |\n    | 全站           | all       |\n    \n    | 类型     | type   |\n    | -------- | ------ |\n    | 最新主题 | latest |\n    | 精华主题 | digest |","location":"topic.ts"}' :test='undefined' />
+
+| 版块           | category  |
+    | -------------- | --------- |
+    | 智能设备       | iot       |
+    | Android 安全   | android   |
+    | iOS 安全       | ios       |
+    | HarmonyOS 安全 | harmonyos |
+    | 软件逆向       | re        |
+    | 编程技术       | coding    |
+    | 加壳脱壳       | unpack    |
+    | 密码应用       | crypto    |
+    | 二进制漏洞     | vuln      |
+    | CTF 对抗       | ctf       |
+    | Pwn            | pwn       |
+    | WEB 安全       | web       |
+    | 茶余饭后       | chat      |
+    | 极客空间       | geekzone  |
+    | 外文翻译       | translate |
+    | 全站           | all       |
+    
+    | 类型     | type   |
+    | -------- | ------ |
+    | 最新主题 | latest |
+    | 精华主题 | digest |
+
 ## 牛客网 <Site url="nowcoder.com"/>
 
 ### 面经 <Site url="nowcoder.com/" size="sm" />
