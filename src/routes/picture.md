@@ -175,7 +175,7 @@ Type
 
 ### Cheng Kung University Mirror <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":0}' />
+<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### NASA 中文 <Site url="apod.nasa.govundefined" size="sm" />
 
@@ -245,15 +245,15 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 本周热门 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/weekly","categories":["picture"],"example":"/jpxgmn/weekly","radar":[{"source":["www.12356782.xyz/"],"target":"/weekly"}],"name":"本周热门","maintainers":["Urabartin"],"location":"weekly.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="jpxgmn" :data='{"path":"/weekly","categories":["picture"],"example":"/jpxgmn/weekly","radar":[{"source":["www.12356782.xyz/"],"target":"/weekly"}],"name":"本周热门","maintainers":["Urabartin"],"location":"weekly.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 分类 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/tab/:tab?","categories":["picture"],"example":"/jpxgmn/tab","parameters":{"tab":"分类，默认为`top`，包括`top`、`new`、`hot`，以及[源网站](http://www.jpxgmn.com/)所包含的其他相对路径，比如`Xiuren`、`XiaoYu`等"},"radar":[{"source":["www.12356782.xyz/:tab"],"target":"/:tab"}],"name":"分类","maintainers":["Urabartin"],"location":"tab.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="jpxgmn" :data='{"path":"/tab/:tab?","categories":["picture"],"example":"/jpxgmn/tab","parameters":{"tab":"分类，默认为`top`，包括`top`、`new`、`hot`，以及[源网站](http://www.jpxgmn.com/)所包含的其他相对路径，比如`Xiuren`、`XiaoYu`等"},"radar":[{"source":["www.12356782.xyz/:tab"],"target":"/:tab"}],"name":"分类","maintainers":["Urabartin"],"location":"tab.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 搜索 <Site url="www.jpxgmn.com" size="sm" />
 
-<Route namespace="jpxgmn" :data='{"path":"/search/:kw","categories":["picture"],"example":"/jpxgmn/search/candy","parameters":{"kw":"搜索关键词"},"name":"搜索","maintainers":["Urabartin"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="jpxgmn" :data='{"path":"/search/:kw","categories":["picture"],"example":"/jpxgmn/search/candy","parameters":{"kw":"搜索关键词"},"name":"搜索","maintainers":["Urabartin"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 喷嚏 <Site url="dapenti.com"/>
 

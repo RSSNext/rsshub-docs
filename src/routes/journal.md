@@ -16,7 +16,7 @@ The URL of the journal [American Economic Review](https://www.aeaweb.org/journal
 
 ### Journal <Site url="pubs.aip.org" size="sm" />
 
-<Route namespace="aip" :data='{"path":"/:pub/:jrn","categories":["journal"],"example":"/aip/aapt/ajp","parameters":{"pub":"Publisher id","jrn":"Journal id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["pubs.aip.org/:pub/:jrn"]}],"name":"Journal","maintainers":["Derekmini","auto-bot-ty"],"description":"Refer to the URL format `pubs.aip.org/:pub/:jrn`\n\n  :::tip\n  More jounals can be found in [AIP Publications](https://publishing.aip.org/publications/find-the-right-journal).\n  :::","location":"journal.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="aip" :data='{"path":"/:pub/:jrn","categories":["journal"],"example":"/aip/aapt/ajp","parameters":{"pub":"Publisher id","jrn":"Journal id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["pubs.aip.org/:pub/:jrn"]}],"name":"Journal","maintainers":["Derekmini","auto-bot-ty"],"description":"Refer to the URL format `pubs.aip.org/:pub/:jrn`\n\n  :::tip\n  More jounals can be found in [AIP Publications](https://publishing.aip.org/publications/find-the-right-journal).\n  :::","location":"journal.ts"}' :test='{"code":0}' />
 
 Refer to the URL format `pubs.aip.org/:pub/:jrn`
 
@@ -124,7 +124,7 @@ Return results from 2020
 
 ### Category <Site url="pubsonline.informs.org" size="sm" />
 
-<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MDPI <Site url="www.mdpi.com"/>
 
@@ -146,7 +146,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Journal List <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":0}' />
 
 ### Latest Research <Site url="nature.com" size="sm" />
 
@@ -245,7 +245,7 @@ To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pi
 
 ### Cover Story <Site url="science.org/" size="sm" />
 
-<Route namespace="science" :data='{"path":"/cover","categories":["journal"],"example":"/science/cover","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/"]}],"name":"Cover Story","maintainers":["y9c","TonyRL"],"url":"science.org/","description":"Subscribe to the cover images of Science journals, and get the latest publication updates in time.\n\n  Including &#39;Science&#39;, &#39;Science Advances&#39;, &#39;Science Immunology&#39;, &#39;Science Robotics&#39;, &#39;Science Signaling&#39; and &#39;Science Translational Medicine&#39;.","location":"cover.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="science" :data='{"path":"/cover","categories":["journal"],"example":"/science/cover","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/"]}],"name":"Cover Story","maintainers":["y9c","TonyRL"],"url":"science.org/","description":"Subscribe to the cover images of Science journals, and get the latest publication updates in time.\n\n  Including &#39;Science&#39;, &#39;Science Advances&#39;, &#39;Science Immunology&#39;, &#39;Science Robotics&#39;, &#39;Science Signaling&#39; and &#39;Science Translational Medicine&#39;.","location":"cover.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Subscribe to the cover images of Science journals, and get the latest publication updates in time.
 
@@ -371,7 +371,7 @@ Return results from 2020
 
 ### 作者期刊文献 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/author/:code","categories":["journal"],"example":"/cnki/author/000042423923","parameters":{"code":"作者对应code，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者期刊文献","description":":::tip\n    可能仅限中国大陆服务器访问，以实际情况为准。\n    :::","maintainers":["harveyqiu","Derekmini"],"location":"author.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnki" :data='{"path":"/author/:code","categories":["journal"],"example":"/cnki/author/000042423923","parameters":{"code":"作者对应code，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者期刊文献","description":":::tip\n    可能仅限中国大陆服务器访问，以实际情况为准。\n    :::","maintainers":["harveyqiu","Derekmini"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
     可能仅限中国大陆服务器访问，以实际情况为准。
