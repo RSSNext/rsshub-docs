@@ -435,11 +435,11 @@ Topics
 
 ### TODAY - Channel <Site url="today.line.me" size="sm" />
 
-<Route namespace="line" :data='{"path":"/today/:edition/publisher/:id","categories":["new-media"],"example":"/line/today/th/publisher/101048","parameters":{"edition":"Edition, see table above","id":"Channel ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["today.line.me/:edition/v2/publisher/:id"]}],"name":"TODAY - Channel","maintainers":["TonyRL"],"location":"publisher.ts"}' :test='{"code":0}' />
+<Route namespace="line" :data='{"path":"/today/:edition/publisher/:id","categories":["new-media"],"example":"/line/today/th/publisher/101048","parameters":{"edition":"Edition, see table above","id":"Channel ID, can be found in URL"},"radar":[{"source":["today.line.me/:edition/v2/publisher/:id"]}],"name":"TODAY - Channel","maintainers":["TonyRL"],"location":"publisher.ts"}' :test='{"code":0}' />
 
 ### TODAY <Site url="today.line.me/" size="sm" />
 
-<Route namespace="line" :data='{"path":"/today/:edition?/:tab?","categories":["new-media"],"example":"/line/today","parameters":{"edition":"Edition, see below, Taiwan by default","tab":"Tag, can be found in URL, `top` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["today.line.me/"]}],"name":"TODAY","maintainers":["nczitzk"],"url":"today.line.me/","description":"Edition\n\n  | Taiwan | Thailand | Hong Kong |\n  | ------ | -------- | --------- |\n  | tw     | th       | hk        |","location":"today.ts"}' :test='{"code":0}' />
+<Route namespace="line" :data='{"path":"/today/:edition?/:tab?","categories":["new-media"],"example":"/line/today","parameters":{"edition":"Edition, see below, Taiwan by default","tab":"Tag, can be found in URL, `top` by default"},"radar":[{"source":["today.line.me/"]}],"name":"TODAY","maintainers":["nczitzk"],"url":"today.line.me/","description":"Edition\n\n  | Taiwan | Thailand | Hong Kong |\n  | ------ | -------- | --------- |\n  | tw     | th       | hk        |","location":"today.ts"}' :test='{"code":0}' />
 
 Edition
 
