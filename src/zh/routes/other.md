@@ -707,6 +707,16 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="sec-in" :data='{"path":"/","name":"Unknown","maintainers":["p7e4"],"location":"index.ts"}' :test='undefined' />
 
+## Shopify <Site url="shopify.com"/>
+
+### App reviews <Site url="shopify.com" size="sm" />
+
+<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='undefined' />
+
+### App store search <Site url="shopify.com" size="sm" />
+
+<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='undefined' />
+
 ## Stratechery by Ben Thompson <Site url="blog.stratechery.com"/>
 
 ### Unknown <Site url="blog.stratechery.com" size="sm" />
