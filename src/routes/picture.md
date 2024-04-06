@@ -263,7 +263,7 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 主题 <Site url="dapenti.com" size="sm" />
 
-<Route namespace="dapenti" :data='{"path":"/subject/:id","categories":["picture"],"example":"/dapenti/subject/184","parameters":{"id":"主题 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主题","maintainers":["xyqfer"],"location":"subject.ts"}' :test='{"code":0}' />
+<Route namespace="dapenti" :data='{"path":"/subject/:id","categories":["picture"],"example":"/dapenti/subject/184","parameters":{"id":"主题 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主题","maintainers":["xyqfer"],"location":"subject.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 奇葩买家秀 <Site url="qipamaijia.com"/>
 

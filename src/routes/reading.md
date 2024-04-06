@@ -97,7 +97,7 @@ For instance, when doing search at [https://magazinelib.com](https://magazinelib
 
 ### chapter <Site url="ncode.syosetu.com" size="sm" />
 
-<Route namespace="syosetu" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/syosetu/chapter/n1976ey","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["novel18.syosetu.com/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: `https://ncode.syosetu.com/n1976ey/`","location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="syosetu" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/syosetu/chapter/n1976ey","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["novel18.syosetu.com/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: `https://ncode.syosetu.com/n1976ey/`","location":"chapter.ts"}' :test='{"code":0}' />
 
 Eg: `https://ncode.syosetu.com/n1976ey/`
 
@@ -132,7 +132,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 专题 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 313232645731 to be less than 311040000000"}' />
+<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 313319007265 to be less than 311040000000"}' />
 
 :::tip
   更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)
