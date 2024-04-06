@@ -1,5 +1,11 @@
 # 💻 编程
 
+## 51CTO <Site url="51cto.com"/>
+
+### 推荐 <Site url="51cto.com/" size="sm" />
+
+<Route namespace="51cto" :data='{"path":"/index/recommend","categories":["programming"],"example":"/51cto/index/recommend","radar":[{"source":["51cto.com/"]}],"name":"推荐","maintainers":["cnkmmk"],"url":"51cto.com/","location":"recommend.ts"}' :test='undefined' />
+
 ## A List Apart <Site url="alistapart.com"/>
 
 ### Topics <Site url="alistapart.com/articles/" size="sm" />
