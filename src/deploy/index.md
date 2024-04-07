@@ -26,21 +26,33 @@ Deploy for public access may require:
 
 ## Docker Image
 
-We recommend using the latest version `diygod/rsshub` (i.e. `diygod/rsshub:latest`) of the docker image.
+The following two registries are supported:
 
-When the latest version is unstable, you can use the image with a date tag for temporary use. For example:
+- Docker Hub: [`diygod/rsshub`](https://hub.docker.com/r/diygod/rsshub)
 
-```bash
-$ docker pull diygod/rsshub:2021-06-18
-```
+- GitHub: [`ghcr.io/diygod/rsshub`](https://github.com/DIYgod/RSSHub/pkgs/container/rsshub)
 
-You can back to the latest version when the code has been fixed and rebuild the image.
+Supported architectures include:
 
-To enable puppeteer, `diygod/rsshub:chromium-bundled` is a good choice. If date specified, it will become: `diygod/rsshub:chromium-bundled-2021-06-18`.
+- `linux/amd64`
 
-Another approach to enable puppeteer is deploying with Docker Compose. However, it consumes more disk space and memory. By modifying `docker-compose.yml`, you can use `diygod/rsshub:chromium-bundled` instead to reduce the disk space and memory consumption.
+- `linux/arm/v7`
 
-## Docker Compose Deployment
+- `linux/arm64`
+
+There are several tags available:
+
+| Tag | Description | Puppeteer Supported | Example |
+| --- | --- | --- | --- |
+| `latest` | Latest version  | No  | `latest` |
+| `chromium-bundled`  | Latest version with Chromium bundled in  | Yes | `chromium-bundled`|
+| `{YYYY-MM-DD}`   | Specific date of the release    | No     | `2021-06-18` |
+| `chromium-bundled-{YYYY-MM-DD}` | Specific date of the release with Chromium bundled in | Yes | `chromium-bundled-2021-06-18` |
+| `{commit hash}` | Specific commit | No | `e7c233b1df982fae10684a11c9df57892e96940a` |
+
+While supporting puppeteer may consume more resources, it also supports a wider range of routes.
+
+## Docker Compose Deployment (Recommended)
 
 ### Install
 
@@ -56,33 +68,33 @@ Check if any configuration needs to be changed
 $ vi docker-compose.yml  # or your favorite editor
 ```
 
-Create a docker volume to persist Redis caches
-
-```bash
-$ docker volume create redis-data
-```
-
 Launch
 
 ```bash
 $ docker-compose up -d
 ```
 
+Open `http://{Server IP}:1200` in your browser, enjoy it! ✅
+
 ### Update
 
-Remove old containers
+**Automatic Update**
+
+Use [watchtower](https://github.com/containrrr/watchtower)
+
+**Manual Update**
+
+Update image
 
 ```bash
-$ docker-compose down
+$ docker-compose pull
 ```
 
-Repull the latest image if you have downloaded the image before. It is helpful to resolve some issues.
+Restart container
 
 ```bash
-$ docker pull diygod/rsshub
+$ docker-compose up -d
 ```
-
-Then repeat the installation steps
 
 ### Configuration
 
@@ -90,9 +102,9 @@ Edit `environment` in [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob
 
 ## Docker Deployment
 
-:::tip
+:::warning
 
-To enable puppeteer, replace `diygod/rsshub` with `diygod/rsshub:chromium-bundled` in **EACH** command.
+This deployment method does not include browserless and redis dependencies. If needed, please switch to the Docker Compose deployment method or deploy external dependencies yourself.
 
 :::
 
@@ -100,25 +112,27 @@ To enable puppeteer, replace `diygod/rsshub` with `diygod/rsshub:chromium-bundle
 
 Execute the following command to pull RSSHub's docker image.
 
-```bash
-$ docker pull diygod/rsshub
-```
-
-Start an RSSHub container
+No puppeteer dependency
 
 ```bash
 $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 ```
 
-Visit [http://127.0.0.1:1200](http://127.0.0.1:1200), and enjoy it! ✅
-
-Execute the following command to stop `RSSHub`.
+With puppeteer dependency
 
 ```bash
-$ docker stop rsshub
+$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub:chromium-bundled
 ```
 
+Open `http://{Server IP}:1200` in your browser, enjoy it! ✅
+
 ### Update
+
+**Automatic Update**
+
+Use [watchtower](https://github.com/containrrr/watchtower)
+
+**Manual Update**
 
 Remove the old container
 
@@ -143,147 +157,6 @@ This deployment method does not include puppeteer (unless using `diygod/rsshub:c
 
 To configure more options please refer to [Configuration](#configuration).
 
-## Kubernetes Deployment (Helm)
-
-RSSHub can be installed in Kubernetes using the Helm Chart from [RSSHub Helm Chart](https://github.com/NaturalSelectionLabs/helm-charts/tree/main/charts/rsshub)
-
-Ensure that the following requirements are met:
-
--   Kubernetes 1.16+
--   Helm version 3.9+ is [installed](https://helm.sh/docs/intro/install/)
-
-### Install
-
-Add NaturalSelection Labs chart repository to Helm:
-
-```bash
-helm repo add nsl https://naturalselectionlabs.github.io/helm-charts
-```
-
-You can update the chart repository by running:
-
-```bash
-helm repo update
-```
-
-And install it with the `helm` command line:
-
-```bash
-helm install my-release nsl/rsshub
-```
-
-### Update
-
-To upgrade the my-release RSSHub deployment:
-
-```bash
-helm upgade my-release nsl/rsshub
-```
-
-### Uninstall
-
-To uninstall/delete the my-release RSSHub deployment:
-
-```bash
-helm delete my-release
-```
-
-### Installing with custom values
-
-<Tabs groupId="package-manager">
-<TabItem value="using-helm-cli" label="Using Helm CLI" default>
-
-```bash
-helm install my-release nsl/rsshub \
-  --set="image.tag=2023-12-04" \
-  --set="replicaCount=2"
-```
-
-</TabItem>
-<TabItem value="with-a-custom-values-file" label="With a custom values file">
-
-```yaml
-# File custom-values.yml
-## Install with "helm install my-release nsl/rsshub -f ./custom-values.yml
-image:
-  tag: "2023-12-04"
-replicaCount: 2
-```
-
-</TabItem>
-</Tabs>
-
-### Install with HA mode
-
-<Tabs groupId="package-manager">
-<TabItem value="ha-mode-without-autoscaling" label="HA mode without autoscaling" default>
-
-```yaml
-replicaCount: 3
-
-puppeteer:
-  replicaCount: 2
-```
-
-</TabItem>
-<TabItem value="ha-mode-with-autoscaling" label="HA mode with autoscaling">
-
-```yaml
-autoscaling:
-  enabled: true
-  minReplicas: 3
-
-puppeteer:
-  autoscaling:
-    enabled: true
-    minReplicas: 2
-```
-
-</TabItem>
-</Tabs>
-
-### Install with external Redis
-
-```yaml
-redis:
-  # -- Disable internal redis
-  enabled: false
-env:
-  # -- other env --
-  REDIS_URL: redis://external-redis:6379/
-```
-
-To configure more values please refer to [RSSHub Helm Chart](https://github.com/NaturalSelectionLabs/helm-charts/tree/main/charts/rsshub).
-
-## Ansible Deployment
-
-This Ansible playbook includes RSSHub, Redis, browserless (uses Docker) and Caddy 2
-
-Currently only support Ubuntu 20.04
-
-Requires sudo privilege and virtualization capability (Docker will be automatically installed)
-
-### Install
-
-```bash
-sudo apt update
-sudo apt install ansible
-git clone https://github.com/DIYgod/RSSHub.git ~/RSSHub
-cd ~/RSSHub/scripts/ansible
-sudo ansible-playbook rsshub.yaml
-# When prompt to enter a domain name, enter the domain name that this machine/VM will use
-# For example, if your users use https://rsshub.example.com to access your RSSHub instance, enter rsshub.example.com (remove the https://)
-```
-
-### Update
-
-```bash
-cd ~/RSSHub/scripts/ansible
-sudo ansible-playbook rsshub.yaml
-# When prompt to enter a domain name, enter the domain name that this machine/VM will use
-# For example, if your users use https://rsshub.example.com to access your RSSHub instance, enter rsshub.example.com (remove the https://)
-```
-
 ## Manual Deployment
 
 The most direct way to deploy `RSSHub`, you can follow the steps below to deploy`RSSHub` on your computer, server or anywhere.
@@ -297,69 +170,67 @@ $ git clone https://github.com/DIYgod/RSSHub.git
 $ cd RSSHub
 ```
 
-Execute the following commands to install dependencies (Do not add the `--production` parameter for development).
+Execute the following commands to install dependencies
 
-<Tabs groupId="package-manager">
-<TabItem value="pnpm" label="pnpm" default>
+::: code-group
 
-```bash
-pnpm install --prod
+```bash [pnpm]
+pnpm i
 ```
 
-</TabItem>
-<TabItem value="yarn" label="yarnv1">
-
-```bash
-yarn --production
+```bash [yarn]
+yarn i
 ```
 
-</TabItem>
-<TabItem value="npm" label="npm">
-
-```bash
-npm install --omit=dev
+```bash [npm]
+npm install
 ```
 
-</TabItem>
-</Tabs>
+:::
+
+### Build
+
+::: code-group
+
+```bash [pnpm]
+pnpm build
+```
+
+```bash [yarn]
+yarn build
+```
+
+```bash [npm]
+npm run build
+```
+
+:::
 
 ### Launch
 
 Under `RSSHub`'s root directory, execute the following commands to launch
 
-<Tabs groupId="package-manager">
-<TabItem value="pnpm" label="pnpm" default>
+::: code-group
 
-```bash
+```bash [pnpm]
 pnpm start
 ```
 
-</TabItem>
-<TabItem value="yarn" label="yarnv1">
-
-```bash
-$ yarn start
+```bash [yarn]
+yarn start
 ```
 
-</TabItem>
-<TabItem value="npm" label="npm">
-
-```bash
-$ npm start
+```bash [npm]
+npm run start
 ```
 
-</TabItem>
-</Tabs>
-
-Or use [PM2](https://pm2.io/docs/plus/quick-start/)
-
-```bash
-$ pm2 start lib/index.js --name rsshub
+```bash [pm2]
+pm2 start lib/index.ts --name rsshub
 ```
 
-Visit [http://127.0.0.1:1200/](http://127.0.0.1:1200/), and enjoy it! ✅
+:::
 
-Refer to our [Guide](https://docs.rsshub.app/) for usage. Replace `https://rsshub.app/` with `http://localhost:1200` in any route example to see the effect.
+Open `http://{Server IP}:1200` in your browser, enjoy it! ✅
 
 ### Configuration
 
@@ -424,6 +295,137 @@ in pkgs.stdenv.mkDerivation {
 }
 ```
 
+## Kubernetes(Helm) Deployment
+
+RSSHub can be installed in Kubernetes using the Helm Chart from [RSSHub Helm Chart](https://github.com/NaturalSelectionLabs/helm-charts/tree/main/charts/rsshub)
+
+Ensure that the following requirements are met:
+
+-   Kubernetes 1.16+
+-   Helm version 3.9+ is [installed](https://helm.sh/docs/intro/install/)
+
+### Install
+
+Add NaturalSelection Labs chart repository to Helm:
+
+```bash
+helm repo add nsl https://naturalselectionlabs.github.io/helm-charts
+```
+
+You can update the chart repository by running:
+
+```bash
+helm repo update
+```
+
+And install it with the `helm` command line:
+
+```bash
+helm install my-release nsl/rsshub
+```
+
+### Update
+
+To upgrade the my-release RSSHub deployment:
+
+```bash
+helm upgade my-release nsl/rsshub
+```
+
+### Uninstall
+
+To uninstall/delete the my-release RSSHub deployment:
+
+```bash
+helm delete my-release
+```
+
+### Installing with custom values
+
+::: code-group
+
+```bash [Using Helm CLI]
+helm install my-release nsl/rsshub \
+  --set="image.tag=2023-12-04" \
+  --set="replicaCount=2"
+```
+
+```yaml [With a custom values file]
+# File custom-values.yml
+## Install with "helm install my-release nsl/rsshub -f ./custom-values.yml
+image:
+  tag: "2023-12-04"
+replicaCount: 2
+```
+
+:::
+
+### Install with HA mode
+
+::: code-group
+
+```yaml [HA mode without autoscaling]
+replicaCount: 3
+
+puppeteer:
+  replicaCount: 2
+```
+
+```yaml [HA mode with autoscaling]
+autoscaling:
+  enabled: true
+  minReplicas: 3
+
+puppeteer:
+  autoscaling:
+    enabled: true
+    minReplicas: 2
+```
+
+:::
+
+### Install with external Redis
+
+```yaml
+redis:
+  # -- Disable internal redis
+  enabled: false
+env:
+  # -- other env --
+  REDIS_URL: redis://external-redis:6379/
+```
+
+To configure more values please refer to [RSSHub Helm Chart](https://github.com/NaturalSelectionLabs/helm-charts/tree/main/charts/rsshub).
+
+## Ansible Deployment
+
+This Ansible playbook includes RSSHub, Redis, browserless (uses Docker) and Caddy 2
+
+Currently only support Ubuntu 20.04
+
+Requires sudo privilege and virtualization capability (Docker will be automatically installed)
+
+### Install
+
+```bash
+sudo apt update
+sudo apt install ansible
+git clone https://github.com/DIYgod/RSSHub.git ~/RSSHub
+cd ~/RSSHub/scripts/ansible
+sudo ansible-playbook rsshub.yaml
+# When prompt to enter a domain name, enter the domain name that this machine/VM will use
+# For example, if your users use https://rsshub.example.com to access your RSSHub instance, enter rsshub.example.com (remove the https://)
+```
+
+### Update
+
+```bash
+cd ~/RSSHub/scripts/ansible
+sudo ansible-playbook rsshub.yaml
+# When prompt to enter a domain name, enter the domain name that this machine/VM will use
+# For example, if your users use https://rsshub.example.com to access your RSSHub instance, enter rsshub.example.com (remove the https://)
+```
+
 ## Deploy to Railway
 
 Automatic updates are included.
@@ -431,16 +433,6 @@ Automatic updates are included.
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW__f?referralCode=9wT3hc)
 
 ## Deploy to Heroku
-
-### Notice
-
-:::warning Update
-
-Heroku [no longer](https://blog.heroku.com/next-chapter) offers free product plans.
-
-:::
-
-~~Heroku accounts with unverified payment methods have only 550 hours of credit per month (about 23 days), and up to 1,000 hours per month with verified payment methods.~~
 
 ### Instant deploy (without automatic update)
 
@@ -453,13 +445,16 @@ Heroku [no longer](https://blog.heroku.com/next-chapter) offers free product pla
 3.  Configure `automatic deploy` in Heroku app to follow the changes to your fork.
 4.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
 
-## Deploy to Sealos(use Redis as cache)
+## Deploy to Zeabur
 
-Automatic updates are included.
+1.  [Sign up for Zeabur](https://dash.zeabur.com)
+2.  Create a new project.
+3.  Create a new service in the project, select deploying from the **marketplace**.
+4.  Add a domain name, if you use a custom domain name, you can refer to [Zeabur's domain name binding document](https://docs.zeabur.com/deploy/domain-binding).
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
-## Deploy to Vercel (ZEIT Now)
+## Deploy to Vercel <Badge type="danger" text="🚧 Under repair" />
 
 ### Instant deploy (without automatic update)
 
@@ -529,20 +524,17 @@ $ fly secrets set CACHE_TYPE=redis REDIS_URL='<the connection URL>'
 
 and execute `fly deploy` (if use the second install method) to trigger a redeployment to complete the configuration.
 
+## Deploy to Sealos(use Redis as cache)
+
+Automatic updates are included.
+
+[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+
 ## Deploy to PikaPods
 
 Run RSSHub from just $1/month. Includes automatic updates and $5 free starting credit.
 
 [![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
-
-## Deploy to Zeabur
-
-1.  [Sign up for Zeabur](https://dash.zeabur.com)
-2.  Create a new project.
-3.  Create a new service in the project, select deploying from the **marketplace**.
-4.  Add a domain name, if you use a custom domain name, you can refer to [Zeabur's domain name binding document](https://docs.zeabur.com/deploy/domain-binding).
-
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
 ## Deploy to Google App Engine(GAE)
 

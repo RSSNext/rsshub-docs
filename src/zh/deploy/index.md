@@ -26,21 +26,30 @@ sidebar: auto
 
 ## Docker 镜像
 
-默认推荐使用 `diygod/rsshub` 即 `diygod/rsshub:latest` 最新版镜像以获取最新路由。
+支持两种注册表：
 
-当 `diygod/rsshub:latest` 存在问题时，可以使用以日期为标签的近期镜像临时使用，例如：
+- Docker Hub: [`diygod/rsshub`](https://hub.docker.com/r/diygod/rsshub)
+- GitHub: [`ghcr.io/diygod/rsshub`](https://github.com/DIYgod/RSSHub/pkgs/container/rsshub)
 
-```bash
-$ docker pull diygod/rsshub:2021-06-18
-```
+支持以下架构：
 
-待最新镜像更新后再切换回 `diygod/rsshub:latest` 最新版镜像。
+- `linux/amd64`
+- `linux/arm/v7`
+- `linux/arm64`
 
-如需启用 puppeteer，可使用 `diygod/rsshub:chromium-bundled`；若指定日期则为 `diygod/rsshub:chromium-bundled-2021-06-18`。
+有以下几种 tags：
 
-亦可使用 Docker Compose 部署以启用 puppeteer，但更消耗磁盘空间和内存。通过修改 `docker-compose.yml`，也可以使用 `diygod/rsshub:chromium-bundled`，这样就没有更消耗资源的问题了。
+| Tag | 描述 | 支持 puppeteer | 举例 |
+| --- | --- | --- | --- |
+| `latest` | 最新 | No | `latest` |
+| `chromium-bundled` | 最新 | Yes | `chromium-bundled` |
+| `{YYYY-MM-DD}` | 特定日期 | No | `2021-06-18` |
+| `chromium-bundled-{YYYY-MM-DD}` | 特定日期 | Yes | `chromium-bundled-2021-06-18` |
+| `{commit hash}` | 特定提交  | No | `e7c233b1df982fae10684a11c9df57892e96940a` |
 
-## Docker Compose 部署
+支持 puppeteer 会占用更多资源，但支持更多路由
+
+## Docker Compose 部署（推荐）
 
 ### 安装
 
@@ -56,33 +65,33 @@ $ wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
 $ vi docker-compose.yml  # 也可以是你喜欢的编辑器
 ```
 
-创建 volume 持久化 Redis 缓存
-
-```bash
-$ docker volume create redis-data
-```
-
 启动
 
 ```bash
 $ docker-compose up -d
 ```
 
+在浏览器中打开 `http://{Server IP}:1200`，enjoy it! ✅
+
 ### 更新
 
-删除旧容器
+**自动更新**
+
+使用 [watchtower](https://github.com/containrrr/watchtower)
+
+**手动更新**
+
+更新镜像
 
 ```bash
-$ docker-compose down
+$ docker-compose pull
 ```
 
-如果之前已经下载 / 使用过镜像，下方命令可以帮助你获取最新版本：这可能可以解决一些问题。
+重启容器
 
 ```bash
-$ docker pull diygod/rsshub
+$ docker-compose up -d
 ```
-
-然后重复安装步骤
 
 ### 添加配置
 
@@ -90,35 +99,35 @@ $ docker pull diygod/rsshub
 
 ## Docker 部署
 
-:::tip
+:::warning
 
-如需启用 puppeteer，请在**每条**命令中均将 `diygod/rsshub` 替换为 `diygod/rsshub:chromium-bundled`。
+该部署方式不包括 browserless 和 redis 依赖，如有需要请改用 Docker Compose 部署方式或自行部署外部依赖
 
 :::
 
 ### 安装
 
-运行下面的命令下载 RSSHub 镜像
-
-```bash
-$ docker pull diygod/rsshub
-```
-
-然后运行 RSSHub 即可
+无 puppeteer 依赖
 
 ```bash
 $ docker run -d --name rsshub -p 1200:1200 diygod/rsshub
 ```
 
-在浏览器中打开 [http://127.0.0.1:1200](http://127.0.0.1:1200)，enjoy it! ✅
-
-您可以使用下面的命令来关闭 RSSHub
+有 puppeteer 依赖
 
 ```bash
-$ docker stop rsshub
+$ docker run -d --name rsshub -p 1200:1200 diygod/rsshub:chromium-bundled
 ```
 
+在浏览器中打开 `http://{Server IP}:1200`，enjoy it! ✅
+
 ### 更新
+
+**自动更新**
+
+使用 [watchtower](https://github.com/containrrr/watchtower)
+
+**手动更新**
 
 删除旧容器
 
@@ -139,11 +148,143 @@ $ docker rm rsshub
 $ docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 -e GITHUB_ACCESS_TOKEN=example diygod/rsshub
 ```
 
-该部署方式不包括 puppeteer（除非改用 `diygod/rsshub:chromium-bundled`）和 redis 依赖，如有需要请改用 Docker Compose 部署方式或自行部署外部依赖
+## 手动部署
 
-更多配置项请看 [#配置](/zh/deploy/config)
+部署 `RSSHub` 最直接的方式，您可以按照以下步骤将 `RSSHub` 部署在您的电脑、服务器或者其他任何地方
 
-## Kubernetes 部署 (Helm)
+### 安装
+
+首先是下载 `RSSHub` 的源码
+
+```bash
+$ git clone https://github.com/DIYgod/RSSHub.git
+$ cd RSSHub
+```
+
+下载完成后，需要安装依赖
+
+::: code-group
+
+```bash [pnpm]
+pnpm i
+```
+
+```bash [yarn]
+yarn i
+```
+
+```bash [npm]
+npm install
+```
+
+:::
+
+### 编译
+
+::: code-group
+
+```bash [pnpm]
+pnpm build
+```
+
+```bash [yarn]
+yarn build
+```
+
+```bash [npm]
+npm run build
+```
+
+:::
+
+### 启动
+
+然后在 `RSSHub` 文件夹中运行下面的命令就可以启动
+
+::: code-group
+
+```bash [pnpm]
+pnpm start
+```
+
+```bash [yarn]
+yarn start
+```
+
+```bash [npm]
+npm run start
+```
+
+```bash [pm2]
+pm2 start lib/index.ts --name rsshub
+```
+
+:::
+
+在浏览器中打开 `http://{Server IP}:1200`，enjoy it! ✅
+
+### 添加配置
+
+:::tip
+
+在 arm/arm64 上，此部署方式不包含 puppeteer 依赖。要启用 puppeteer，你需要先从发行版安装 Chromium，然后设置 `CHROMIUM_EXECUTABLE_PATH` 为其可执行路径。
+
+Debian:
+
+```bash
+$ apt install chromium
+$ echo >> .env
+$ echo 'CHROMIUM_EXECUTABLE_PATH=chromium' >> .env
+```
+
+Ubuntu/Raspbian:
+
+```bash
+$ apt install chromium-browser
+$ echo >> .env
+$ echo 'CHROMIUM_EXECUTABLE_PATH=chromium-browser' >> .env
+```
+
+:::
+
+可以通过设置环境变量来配置 RSSHub
+
+在项目根目录新建一个 `.env` 文件，每行以 `NAME=VALUE` 格式添加环境变量，例如
+
+```env
+CACHE_TYPE=redis
+CACHE_EXPIRE=600
+```
+
+注意它不会覆盖已有的环境变量，更多规则请参考 [dotenv](https://github.com/motdotla/dotenv)
+
+该部署方式不包括 redis 依赖，如有需要请改用 Docker Compose 部署方式或自行部署外部依赖
+
+### 更新
+
+在 `RSSHub` 文件夹中运行下面的命令就从 github 仓库拉取最新版本
+
+```bash
+$ git pull
+```
+
+然后重复安装步骤。
+
+### Nix 用户提示
+
+通过 `nix-shell` 配置简化安装 nodejs, yarn 和 jieba：
+
+```nix
+let
+    pkgs = import <nixpkgs> {};
+    node = pkgs.nodejs-12_x;
+in pkgs.stdenv.mkDerivation {
+    name = "nodejs-yarn-jieba";
+    buildInputs = [node pkgs.yarn pkgs.pythonPackages.jieba];
+}
+```
+
+## Kubernetes(Helm) 部署
 
 RSSHub 可以使用来自 [RSSHub Helm Chart](https://github.com/NaturalSelectionLabs/helm-charts/tree/main/charts/rsshub) 的 Helm Chart 在 Kubernetes 中安装
 
@@ -190,19 +331,15 @@ helm delete my-release
 
 ### 使用自定义配置安装
 
-<Tabs groupId="package-manager">
-<TabItem value="using-helm-cli" label="使用 Helm CLI" default>
+::: code-group
 
-```bash
+```bash [使用 Helm CLI]
 helm install my-release nsl/rsshub \
   --set="image.tag=2023-12-04" \
   --set="replicaCount=2"
 ```
 
-</TabItem>
-<TabItem value="with-a-custom-values-file" label="使用自定义配置文件">
-
-```yaml
+```yaml [使用自定义配置文件]
 # custom-values.yml 文件
 ## 使用 "helm install my-release nsl/rsshub -f ./custom-values.yml" 安装
 image:
@@ -210,25 +347,20 @@ image:
 replicaCount: 2
 ```
 
-</TabItem>
-</Tabs>
+:::
 
 ### 使用 HA 模式安装
 
-<Tabs groupId="package-manager">
-<TabItem value="ha-mode-without-autoscaling" label="不使用自动扩缩的 HA 模式" default>
+::: code-group
 
-```yaml
+```yaml [不使用自动扩缩的 HA 模式]
 replicaCount: 3
 
 puppeteer:
   replicaCount: 2
 ```
 
-</TabItem>
-<TabItem value="ha-mode-with-autoscaling" label="使用自动扩缩的 HA 模式">
-
-```yaml
+```yaml [使用自动扩缩的 HA 模式]
 autoscaling:
   enabled: true
   minReplicas: 3
@@ -239,8 +371,7 @@ puppeteer:
     minReplicas: 2
 ```
 
-</TabItem>
-</Tabs>
+:::
 
 ### 使用外部 Redis 安装
 
@@ -284,134 +415,6 @@ sudo ansible-playbook rsshub.yaml
 # 举例：如果您的 RSSHub 用户使用 https://rsshub.example.com 访问您的 RSSHub 实例，输入 rsshub.example.com（去掉 https://）
 ```
 
-## 手动部署
-
-部署 `RSSHub` 最直接的方式，您可以按照以下步骤将 `RSSHub` 部署在您的电脑、服务器或者其他任何地方
-
-### 安装
-
-首先是下载 `RSSHub` 的源码
-
-```bash
-$ git clone https://github.com/DIYgod/RSSHub.git
-$ cd RSSHub
-```
-
-下载完成后，需要安装依赖（开发不要加 `--production` 参数）
-
-<Tabs groupId="package-manager">
-<TabItem value="pnpm" label="pnpm" active>
-
-```bash
-pnpm install --prod
-```
-
-</TabItem>
-<TabItem value="yarn" label="yarnv1">
-
-```bash
-yarn --production
-```
-
-</TabItem>
-<TabItem value="npm" label="npm">
-
-```bash
-npm install --omit=dev
-```
-
-</TabItem>
-</Tabs>
-
-由于众所周知的原因，在中国使用 `npm` 下载依赖十分缓慢，建议挂一个代理或者考虑使用 [NPM 镜像](https://npm.taobao.org/)
-
-### 启动
-
-然后在 `RSSHub` 文件夹中运行下面的命令就可以启动
-
-```bash
-$ yarn start
-```
-
-或
-
-```bash
-$ npm start
-```
-
-或使用 [PM2](https://pm2.keymetrics.io/docs/usage/quick-start/)
-
-```bash
-$ pm2 start lib/index.js --name rsshub
-```
-
-在浏览器中打开 [http://127.0.0.1:1200](http://127.0.0.1:1200)，enjoy it! ✅
-
-详细使用说明参照 [指南](/zh/)，替换所有路由例子中的 `https://rsshub.app/` 为 `http://localhost:1200` 即可正常使用
-
-### 添加配置
-
-:::tip
-
-在 arm/arm64 上，此部署方式不包含 puppeteer 依赖。要启用 puppeteer，你需要先从发行版安装 Chromium，然后设置 `CHROMIUM_EXECUTABLE_PATH` 为其可执行路径。
-
-Debian:
-
-```bash
-$ apt install chromium
-$ echo >> .env
-$ echo 'CHROMIUM_EXECUTABLE_PATH=chromium' >> .env
-```
-
-Ubuntu/Raspbian:
-
-```bash
-$ apt install chromium-browser
-$ echo >> .env
-$ echo 'CHROMIUM_EXECUTABLE_PATH=chromium-browser' >> .env
-```
-
-:::
-
-可以通过设置环境变量来配置 RSSHub
-
-在项目根目录新建一个 `.env` 文件，每行以 `NAME=VALUE` 格式添加环境变量，例如
-
-```env
-CACHE_TYPE=redis
-CACHE_EXPIRE=600
-```
-
-注意它不会覆盖已有的环境变量，更多规则请参考 [dotenv](https://github.com/motdotla/dotenv)
-
-该部署方式不包括 redis 依赖，如有需要请改用 Docker Compose 部署方式或自行部署外部依赖
-
-更多配置项请看 [#配置](/zh/deploy/config)
-
-### 更新
-
-在 `RSSHub` 文件夹中运行下面的命令就从 github 仓库拉取最新版本
-
-```bash
-$ git pull
-```
-
-然后重复安装步骤。
-
-### Nix 用户提示
-
-通过 `nix-shell` 配置简化安装 nodejs, yarn 和 jieba：
-
-```nix
-let
-    pkgs = import <nixpkgs> {};
-    node = pkgs.nodejs-12_x;
-in pkgs.stdenv.mkDerivation {
-    name = "nodejs-yarn-jieba";
-    buildInputs = [node pkgs.yarn pkgs.pythonPackages.jieba];
-}
-```
-
 ## 部署到 Railway
 
 包含自动更新。
@@ -419,16 +422,6 @@ in pkgs.stdenv.mkDerivation {
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW\_\_f?referralCode=9wT3hc)
 
 ## 部署到 Heroku
-
-### 注意
-
-:::warning
-
-Heroku [不再](https://blog.heroku.com/next-chapter) 提供免费服务。
-
-:::
-
-~~未验证支付方式的 heroku 账户每月仅有 550 小时额度（约 23 天），验证支付方式后可达每月 1000 小时。~~
 
 ### 一键部署（无自动更新）
 
@@ -441,13 +434,16 @@ Heroku [不再](https://blog.heroku.com/next-chapter) 提供免费服务。
 3.  检查 Heroku 设置，随代码库更新自动部署。
 4.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的分叉。
 
-## 部署到 Sealos（包含 Redis 缓存）
+## 部署到 Zeabur
 
-包含自动更新
+1.  前往 [Zeabur 完成注册](https://dash.zeabur.com)
+2.  创建一个新项目
+3.  在项目中选择创建新服务，选择从**服务市场**部署。
+4.  添加域名，若使用自定义域名，可参见 [Zeabur 的域名绑定文档](https://docs.zeabur.com/zh-CN/deploy/domain-binding)。
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
-## 部署到 Vercel (ZEIT Now)
+## 部署到 Vercel <Badge type="danger" text="🚧 修复中" />
 
 ### 一键部署（无自动更新）
 
@@ -522,20 +518,17 @@ $ fly secrets set CACHE_TYPE=redis REDIS_URL='<刚才的连接 URL>'
 
 并执行 `fly deploy` 触发重新部署来完成配置。
 
+## 部署到 Sealos
+
+包含自动更新
+
+[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+
 ## 部署到 PikaPods
 
 每月只需 1 美元即可运行 RSSHub。包括自动更新和 5 美元的免费起始额度。
 
 [![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
-
-## 部署到 Zeabur
-
-1.  前往 [Zeabur 完成注册](https://dash.zeabur.com)
-2.  创建一个新项目
-3.  在项目中选择创建新服务，选择从**服务市场**部署。
-4.  添加域名，若使用自定义域名，可参见 [Zeabur 的域名绑定文档](https://docs.zeabur.com/zh-CN/deploy/domain-binding)。
-
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
 ## 部署到 Google App Engine
 

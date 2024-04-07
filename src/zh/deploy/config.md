@@ -24,7 +24,7 @@ RSSHub 默认对跨域请求限制为当前连接所在的域名，即不允许�
 
 ## 缓存配置
 
-RSSHub 支持 `memory` 和 `redis` 两种缓存方式
+RSSHub 支持 `memory` 和 `redis` 两种缓存方式，建议使用 `redis` 以持久化缓存。
 
 `CACHE_TYPE`: 缓存类型，可为 `memory` 和 `redis`，设为空可以禁止缓存，默认为 `memory`
 
@@ -40,95 +40,21 @@ RSSHub 支持 `memory` 和 `redis` 两种缓存方式
 
 部分路由反爬严格，可以配置使用代理抓取。
 
-可通过**代理 URI** 或**代理选项**或**代理自动配置文件 (PAC)** 或**反向代理**等方式来配置代理。
+`PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 只支持 http, https。socks5 支持讨论见 [nodejs/undici#2224](https://github.com/nodejs/undici/issues/2224)
 
-### 代理 URI
-
-`PROXY_URI`: 代理 URI，支持 socks4, socks5（本地查询域名的 SOCKS5，不推荐使用）, socks5h（传域名的 SOCKS5，推荐使用，以防止 DNS 污染或 DNS 泄露）, http, https，具体以 [socks-proxy-agent](https://www.npmjs.com/package/socks-proxy-agent) NPM 包的支持为准，也可参考 [curl 中 SOCKS 代理协议的用法](https://daniel.haxx.se/blog/2020/05/26/curl-ootw-socks5/)。
-
-> 代理 URI 的格式为：
->
-> -   `{protocol}://{host}:{port}`
-> -   `{protocol}://{username}:{password}@{host}:{port}` （带身份凭证）
->
-> 一些示例：
->
-> -   `socks4://127.0.0.1:1080`
-> -   `socks5h://user:pass@127.0.0.1:1080` （用户名为 `user`, 密码为 `pass`）
-> -   `socks://127.0.0.1:1080` （protocol 为 socks 时表示 `socks5h`）
-> -   `http://127.0.0.1:8080`
-> -   `http://user:pass@127.0.0.1:8080`
-> -   `https://127.0.0.1:8443`
-
-### 代理选项
-
-`PROXY_PROTOCOL`: 使用代理，支持 socks，http，https
-
-`PROXY_HOST`: 代理服务器域名或 IP
-
-`PROXY_PORT`: 代理服务器端口
-
-`PROXY_AUTH`: 给代理服务器的身份验证凭证，`Proxy-Authorization: Basic ${process.env.PROXY_AUTH}`
+`PROXY_AUTH`: 给代理服务器的身份验证凭证，会添加 header `Proxy-Authorization: Basic ${PROXY_AUTH}`
 
 `PROXY_URL_REGEX`: 启用代理的 URL 正则表达式，默认全部开启 `.*`
-
-### 代理自动配置文件 (PAC)
-
-:::warning
-
-该方法会覆盖 `PROXY_URI`, `PROXY_PROTOCOL`, `PROXY_HOST` 以及 `PROXY_PORT`。
-
-:::
-
-关于代理自动配置文件 (PAC)，请查看[代理自动配置文件（PAC）文件](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file)。
-
-`PAC_URI`: PAC 文件 URI，支持 http, https, ftp, file, data。具体以 [pac-proxy-agent](https://www.npmjs.com/package/pac-proxy-agent) NPM 包的支持为准。
-
-`PAC_SCRIPT`: 硬编码的 PAC 脚本字符串。覆盖 `PAC_URI`。
-
-### 反向代理
-
-:::warning
-
-这种代理方式无法代理包含 cookie 的请求。
-
-:::
-
-`REVERSE_PROXY_URL`: 反向代理地址，RSSHub 将会使用该地址作为前缀来发起请求，例如 `https://proxy.example.com/?target=`，对 `https://google.com` 发起的请求将被自动转换为 `https://proxy.example.com/?target=https%3A%2F%2Fgoogle.com`
-
-你可以使用 Cloudflare Workers 来搭建一个简易的反向代理，例如：
-
-```js
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
-})
-
-async function handleRequest(request) {
-  const url = new URL(request.url)
-  let target = url.searchParams.get('target')
-
-  if (!target) {
-    return new Response('Hello, this is Cloudflare Proxy Service. To proxy your requests, please use the "target" URL parameter.')
-  } else {
-    target = decodeURIComponent(target)
-    const newRequest = new Request(target, {
-      headers: request.headers,
-      method: request.method,
-      body: request.body
-    })
-    return await fetch(newRequest)
-  }
-}
-```
 
 ## 访问控制配置
 
 RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全局访问控制，没有访问权限将会导致访问被拒绝。
-### 允许清单/拒绝清单
 
-此配置已被移除，建议使用类似 Nginx 或 Cloudflare 的代理服务器进行访问控制。
+**允许清单/拒绝清单**
 
-### 访问密钥 / 码
+建议使用类似 Nginx 或 Cloudflare 的代理服务器进行访问控制。
+
+**访问密钥 / 码**
 
 -   `ACCESS_KEY`: 访问密钥，用于直接访问所有路由或者生成访问码
 
@@ -184,7 +110,7 @@ RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全�
 
 ## 功能特性
 
-:::tip[测试特性]
+:::tip 测试特性
 
 这个板块控制的是一些新特性的选项，他们都是**默认关闭**的。如果有需要请阅读对应说明后按需开启
 

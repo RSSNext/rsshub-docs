@@ -24,7 +24,7 @@ RSSHub by default reject CORS requests. This behavior can be modified via settin
 
 ## Cache Configurations
 
-RSSHub supports two caching methods: memory and redis
+RSSHub supports two caching methods: memory and redis, it is recommended to use `redis` for persistent caching.
 
 `CACHE_TYPE`: cache type, `memory` or `redis`, empty this value will disable caching, default to `memory`
 
@@ -40,97 +40,21 @@ RSSHub supports two caching methods: memory and redis
 
 Partial routes have a strict anti-crawler policy, and can be configured to use proxy.
 
-Proxy can be configured through **Proxy URI**, **Proxy options**, **PAC script**, or **Reverse proxy**.
+`PROXY_URI`: The proxy URI should be in the format `{protocol}://{host}:{port}`. The protocol only supports http and https. For discussions on socks5 support, refer to [nodejs/undici#2224](https://github.com/nodejs/undici/issues/2224).
 
-### Proxy URI
+`PROXY_AUTH`: Authentication credentials for the proxy server, will add header `Proxy-Authorization: Basic ${PROXY_AUTH}`
 
-`PROXY_URI`: Proxy supports socks4, socks5(hostname is resolved locally, not recommanded), socks5h(hostname is
-resolved by the SOCKS server, recommanded, prevents DNS poisoning or DNS leak), http, https. See [socks-proxy-agent](https://www.npmjs.com/package/socks-proxy-agent) NPM package page. See also [cURL OOTW: SOCKS5](https://daniel.haxx.se/blog/2020/05/26/curl-ootw-socks5/).
-
-> Proxy URI's format:
->
-> -   `{protocol}://{host}:{port}`
-> -   `{protocol}://{username}:{password}@{host}:{port}` (with credentials)
->
-> Some examples:
->
-> -   `socks4://127.0.0.1:1080`
-> -   `socks5h://user:pass@127.0.0.1:1080` (username as `user`, password as `pass`)
-> -   `socks://127.0.0.1:1080` (`socks5h` when protocol is `socks`)
-> -   `http://127.0.0.1:8080`
-> -   `http://user:pass@127.0.0.1:8080`
-> -   `https://127.0.0.1:8443`
-
-### Reverse proxy
-
-:::warning
-
-This proxy method cannot proxy requests that contain cookies.
-
-:::
-
-`REVERSE_PROXY_URL`: Reverse proxy URL, RSSHub will use this URL as a prefix to initiate requests, for example `https://proxy.example.com?target=`, requests to `https://google.com` will be automatically converted to `https://proxy.example.com?target=https%3A%2F%2Fgoogle.com`
-
-You can use Cloudflare Workers to build a simple reverse proxy, for example:
-
-```js
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
-})
-
-async function handleRequest(request) {
-  const url = new URL(request.url)
-  let target = url.searchParams.get('target')
-
-  if (!target) {
-    return new Response('Hello, this is Cloudflare Proxy Service. To proxy your requests, please use the "target" URL parameter.')
-  } else {
-    target = decodeURIComponent(target)
-    const newRequest = new Request(target, {
-      headers: request.headers,
-      method: request.method,
-      body: request.body
-    })
-    return await fetch(newRequest)
-  }
-}
-```
-
-### PAC script
-
-:::warning
-
-This proxy method overwrites `PROXY_URI`, `PROXY_PROTOCOL`, `PROXY_HOST` and `PROXY_PORT`.
-
-:::
-
-About PAC script, please refer to [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file).
-
-`PAC_URI`: PAC script URL, supports http, https, ftp, file, data. See [pac-proxy-agent](https://www.npmjs.com/package/pac-proxy-agent) NPM package page.
-
-`PAC_SCRIPT`: Hard-coded JavaScript code string of PAC script. Overwrites `PAC_URI`.
-
-### Proxy options
-
-`PROXY_PROTOCOL`: Using proxy, supports socks, http, https, etc. See [socks-proxy-agent](https://www.npmjs.com/package/socks-proxy-agent) NPM package page and [source](https://github.com/TooTallNate/proxy-agents/blob/63adbcefdb4783cc67c0eb90200886b4064e8639/packages/socks-proxy-agent/src/index.ts#L81) for what these protocols mean. See also [cURL OOTW: SOCKS5](https://daniel.haxx.se/blog/2020/05/26/curl-ootw-socks5/) for reference.
-
-`PROXY_HOST`: host or IP of the proxy
-
-`PROXY_PORT`: port of the proxy
-
-`PROXY_AUTH`: credentials to authenticate a user agent to proxy server, `Proxy-Authorization: Basic ${process.env.PROXY_AUTH}`
-
-`PROXY_URL_REGEX`: regex for url of enabling proxy, default to `.*`
+`PROXY_URL_REGEX`: Regular expression of URL to enable proxy, all enabled by default `.*`
 
 ## Access Control Configurations
 
 RSSHub supports access control using access keys/codes. Enabling it will activate global access control, and lack of access permission will result in denied access.
 
-### Allowlisting/denylisting
+**Allowlisting/denylisting**
 
 This configuration has been removed. It is recommended to use a proxy server such as Nginx or Cloudflare for access control.
 
-### Access Key/Code
+**Access Key/Code**
 
 -   `ACCESS_KEY`: the access key. When set, access via the key directly or the access code described above
 
@@ -186,7 +110,7 @@ It is also valid to contain route parameters, e.g. `/weibo/user/2612249974`.
 
 ## Features
 
-:::tip[Experimental features]
+:::tip Experimental features
 
 Configs in this sections are in beta stage, and **are turn off by default**. Please read corresponded description and turn on if necessary.
 
