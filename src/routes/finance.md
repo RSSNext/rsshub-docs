@@ -28,13 +28,26 @@
 
 <Route namespace="bloomberg" :data='{"path":"/authors/:id/:slug/:source?","categories":["finance"],"example":"/bloomberg/authors/ARbTQlRLRjE/matthew-s-levine","parameters":{"id":"Author ID, can be found in URL","slug":"Author Slug, can be found in URL","source":"Data source, either `api` or `rss`,`api` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bloomberg.com/*/authors/:id/:slug","www.bloomberg.com/authors/:id/:slug"],"target":"/authors/:id/:slug"}],"name":"Authors","maintainers":["josh"],"location":"authors.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Unknown <Site url="www.bloomberg.com" size="sm" />
+### Bloomberg Site <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":["/:site","/"],"name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
+<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance"],"example":"/bloomberg/bbiz","parameters":{"site":"Site ID, can be found below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n    | Site ID      | Title        |\n    | ------------ | ------------ |\n    | /            | News         |\n    | bpol         | Politics     |\n    | bbiz         | Business     |\n    | markets      | Markets      |\n    | technology   | Technology   |\n    | green        | Green        |\n    | wealth       | Wealth       |\n    | pursuits     | Pursuits     |\n    | bview        | Opinion      |\n    | equality     | Equality     |\n    | businessweek | Businessweek |\n    | citylab      | CityLab      |\n    ","location":"index.ts"}' :test='undefined' />
 
-### Unknown <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":["/:site","/"],"name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
+    | Site ID      | Title        |
+    | ------------ | ------------ |
+    | /            | News         |
+    | bpol         | Politics     |
+    | bbiz         | Business     |
+    | markets      | Markets      |
+    | technology   | Technology   |
+    | green        | Green        |
+    | wealth       | Wealth       |
+    | pursuits     | Pursuits     |
+    | bview        | Opinion      |
+    | equality     | Equality     |
+    | businessweek | Businessweek |
+    | citylab      | CityLab      |
+    
 
 ## DT 财经 <Site url="dtcj.com"/>
 
