@@ -98,6 +98,14 @@
 
 <Route namespace="asiantolick" :data='{"path":"/:category{.+}?","radar":[{"source":["asiantolick.com/"],"target":""}],"name":"Unknown","maintainers":[],"url":"asiantolick.com/","location":"index.ts"}' :test='undefined' />
 
+## ATP Tour <Site url="www.atptour.com"/>
+
+News from the official site of men's professional tennis.
+
+### News <Site url="www.atptour.com" size="sm" />
+
+<Route namespace="atptour" :data='{"path":"/news/:lang?","categories":["other"],"example":"/atptour/news/en","parameters":{"lang":"en or es."},"radar":[{"source":["atptour.com"]}],"name":"News","maintainers":["LM1207"],"location":"news.ts"}' :test='undefined' />
+
 ## Bad.news <Site url="bad.news"/>
 
 ### Unknown <Site url="bad.news" size="sm" />
