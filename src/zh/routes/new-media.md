@@ -3148,6 +3148,18 @@ Member ID
 
 <Route namespace="kepu" :data='{"path":"/live","categories":["new-media"],"example":"/kepu/live","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.kepu.net.cn/replay/index"]}],"name":"直播回看","maintainers":["nczitzk"],"url":"live.kepu.net.cn/replay/index","location":"live.ts"}' :test='{"code":0}' />
 
+## 中伦律师事务所 <Site url="zhonglun.com"/>
+
+### 中伦研究专业文章 <Site url="zhonglun.com" size="sm" />
+
+<Route namespace="zhonglun" :data='{"path":"/research/article/:language{[a-zA-Z0-9-]+}?","name":"中伦研究专业文章","url":"zhonglun.com","maintainers":["nczitzk"],"example":"/zhonglun/research/article/zh","parameters":{"category":"语言，默认为 zh，即简体中文，可在对应分类页 URL 中找到"},"description":"\n  | ENG | 简体中文 | 日本語 | 한국어 |\n  | --- | -------- | ------ | ------ |\n  | en  | zh       | ja     | kr     |\n    ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"专业文章","source":["zhonglun.com/research/articles"],"target":"/research/article/zh"},{"title":" Articles","source":["en.zhonglun.com/research/articles"],"target":"/research/article/en"},{"title":"論評","source":["ja.zhonglun.com/research/articles"],"target":"/research/article/ja"},{"title":"전문기사","source":["kr.zhonglun.com/research/articles"],"target":"/research/article/kr"}],"location":"index.ts"}' :test='undefined' />
+
+
+  | ENG | 简体中文 | 日本語 | 한국어 |
+  | --- | -------- | ------ | ------ |
+  | en  | zh       | ja     | kr     |
+    
+
 ## 珠海网 <Site url="hizh.cn"/>
 
 ### 栏目 <Site url="hizh.cn/" size="sm" />
