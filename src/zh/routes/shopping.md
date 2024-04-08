@@ -120,7 +120,7 @@ Country
 
 ### Activity <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Category
 
@@ -149,7 +149,7 @@ Category
 
 ### 圖片 <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/:category?/:language?","categories":["shopping"],"example":"/myfigurecollection/potd","parameters":{"category":"分类，默认为每日圖片","language":"语言，见上表，默认为空，即 `en`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"]}],"name":"圖片","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"| 每日圖片 | 每週圖片 | 每月圖片 |\n  | -------- | -------- | -------- |\n  | potd     | potw     | potm     |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="myfigurecollection" :data='{"path":"/:category?/:language?","categories":["shopping"],"example":"/myfigurecollection/potd","parameters":{"category":"分类，默认为每日圖片","language":"语言，见上表，默认为空，即 `en`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"]}],"name":"圖片","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"| 每日圖片 | 每週圖片 | 每月圖片 |\n  | -------- | -------- | -------- |\n  | potd     | potw     | potm     |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 每日圖片 | 每週圖片 | 每月圖片 |
   | -------- | -------- | -------- |
@@ -159,7 +159,7 @@ Category
 
 ### User Sheets <Site url="mymusicsheet.com" size="sm" />
 
-<Route namespace="mymusicsheet" :data='{"path":"/user/sheets/:username/:iso?/:freeOnly?","categories":["shopping"],"example":"/mymusicsheet/user/sheets/HalcyonMusic/USD/1","parameters":{"username":"用户名，可在URL中找到","iso":"用于显示价格的ISO 4217货币代码, 支持常见代码, 默认为人民币, 即`CNY`","freeOnly":"只返回免费谱, 任意值为开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mymusicsheet.com/:username/*","mymusicsheet.com/:username"],"target":"/user/sheets/:username"}],"name":"User Sheets","maintainers":["Freddd13"],"description":"关于 ISO 4217，请参考[维基百科](https://zh.wikipedia.org/zh-cn/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81)","location":"usersheets.ts"}' :test='{"code":0}' />
+<Route namespace="mymusicsheet" :data='{"path":"/user/sheets/:username/:iso?/:freeOnly?","categories":["shopping"],"example":"/mymusicsheet/user/sheets/HalcyonMusic/USD/1","parameters":{"username":"用户名，可在URL中找到","iso":"用于显示价格的ISO 4217货币代码, 支持常见代码, 默认为人民币, 即`CNY`","freeOnly":"只返回免费谱, 任意值为开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mymusicsheet.com/:username/*","mymusicsheet.com/:username"],"target":"/user/sheets/:username"}],"name":"User Sheets","maintainers":["Freddd13"],"description":"关于 ISO 4217，请参考[维基百科](https://zh.wikipedia.org/zh-cn/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81)","location":"usersheets.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 关于 ISO 4217，请参考[维基百科](https://zh.wikipedia.org/zh-cn/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81)
 
@@ -203,7 +203,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 票务更新 <Site url="search.damai.cn" size="sm" />
 
-<Route namespace="damai" :data='{"path":"/activity/:city/:category/:subcategory/:keyword?","categories":["shopping"],"example":"/damai/activity/上海/音乐会/全部/柴可夫斯基","parameters":{"city":"城市，如果不需要限制，请填入`全部`","category":"分类，如果不需要限制，请填入`全部`","subcategory":"子分类，如果不需要限制，请填入`全部`","keyword":"搜索关键字，置空为不限制"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"票务更新","maintainers":["hoilc"],"description":"城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)","location":"activity.ts"}' :test='{"code":0}' />
+<Route namespace="damai" :data='{"path":"/activity/:city/:category/:subcategory/:keyword?","categories":["shopping"],"example":"/damai/activity/上海/音乐会/全部/柴可夫斯基","parameters":{"city":"城市，如果不需要限制，请填入`全部`","category":"分类，如果不需要限制，请填入`全部`","subcategory":"子分类，如果不需要限制，请填入`全部`","keyword":"搜索关键字，置空为不限制"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"票务更新","maintainers":["hoilc"],"description":"城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)","location":"activity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)
 
@@ -221,7 +221,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 国内折扣 / 海外折扣 <Site url="guangdiu.com" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/:query?","categories":["shopping"],"example":"/guangdiu/k=daily","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国内折扣 / 海外折扣","maintainers":["Fatpandac"],"description":":::tip\n  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="guangdiu" :data='{"path":"/:query?","categories":["shopping"],"example":"/guangdiu/k=daily","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国内折扣 / 海外折扣","maintainers":["Fatpandac"],"description":":::tip\n  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)
@@ -249,7 +249,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 众筹 <Site url="modian.com" size="sm" />
 
-<Route namespace="modian" :data='{"path":"/zhongchou/:category?/:sort?/:status?","categories":["shopping"],"example":"/modian/zhongchou","parameters":{"category":"分类，见下表，默认为全部","sort":"排序，见下表，默认为最新上线","status":"状态，见下表，默认为全部"},"name":"众筹","maintainers":["nczitzk"],"description":"分类\n\n    | 全部 | 游戏  | 动漫   | 出版       | 桌游       |\n    | ---- | ----- | ------ | ---------- | ---------- |\n    | all  | games | comics | publishing | tablegames |\n\n    | 卡牌  | 潮玩模型 | 影视       | 音乐  | 活动       |\n    | ----- | -------- | ---------- | ----- | ---------- |\n    | cards | toys     | film-video | music | activities |\n\n    | 设计   | 科技       | 食品 | 爱心通道 | 动物救助 |\n    | ------ | ---------- | ---- | -------- | -------- |\n    | design | technology | food | charity  | animals  |\n\n    | 个人愿望 | 其他   |\n    | -------- | ------ |\n    | wishes   | others |\n\n    排序\n\n    | 最新上线  | 金额最高   | 评论最多     |\n    | --------- | ---------- | ------------ |\n    | top_time | top_money | top_comment |\n\n    状态\n\n    | 全部 | 创意 | 预热    | 众筹中 | 众筹成功 |\n    | ---- | ---- | ------- | ------ | -------- |\n    | all  | idea | preheat | going  | success  |","radar":[{"source":["zhongchou.modian.com/:category/:sort/:status"]}],"location":"zhongchou.ts"}' :test='{"code":1,"message":"expected -15327693185 to be greater than -432000000"}' />
+<Route namespace="modian" :data='{"path":"/zhongchou/:category?/:sort?/:status?","categories":["shopping"],"example":"/modian/zhongchou","parameters":{"category":"分类，见下表，默认为全部","sort":"排序，见下表，默认为最新上线","status":"状态，见下表，默认为全部"},"name":"众筹","maintainers":["nczitzk"],"description":"分类\n\n    | 全部 | 游戏  | 动漫   | 出版       | 桌游       |\n    | ---- | ----- | ------ | ---------- | ---------- |\n    | all  | games | comics | publishing | tablegames |\n\n    | 卡牌  | 潮玩模型 | 影视       | 音乐  | 活动       |\n    | ----- | -------- | ---------- | ----- | ---------- |\n    | cards | toys     | film-video | music | activities |\n\n    | 设计   | 科技       | 食品 | 爱心通道 | 动物救助 |\n    | ------ | ---------- | ---- | -------- | -------- |\n    | design | technology | food | charity  | animals  |\n\n    | 个人愿望 | 其他   |\n    | -------- | ------ |\n    | wishes   | others |\n\n    排序\n\n    | 最新上线  | 金额最高   | 评论最多     |\n    | --------- | ---------- | ------------ |\n    | top_time | top_money | top_comment |\n\n    状态\n\n    | 全部 | 创意 | 预热    | 众筹中 | 众筹成功 |\n    | ---- | ---- | ------- | ------ | -------- |\n    | all  | idea | preheat | going  | success  |","radar":[{"source":["zhongchou.modian.com/:category/:sort/:status"]}],"location":"zhongchou.ts"}' :test='{"code":1,"message":"expected -1017372459 to be greater than -432000000"}' />
 
 分类
 
@@ -369,7 +369,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 用户爆料 <Site url="post.smzdm.com" size="sm" />
 
-<Route namespace="smzdm" :data='{"path":"/baoliao/:uid","categories":["shopping"],"example":"/smzdm/baoliao/7367111021","parameters":{"uid":"用户id，网址上直接可以看到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zhiyou.smzdm.com/member/:uid/baoliao"]}],"name":"用户爆料","maintainers":["nczitzk"],"location":"baoliao.ts"}' :test='{"code":0}' />
+<Route namespace="smzdm" :data='{"path":"/baoliao/:uid","categories":["shopping"],"example":"/smzdm/baoliao/7367111021","parameters":{"uid":"用户id，网址上直接可以看到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zhiyou.smzdm.com/member/:uid/baoliao"]}],"name":"用户爆料","maintainers":["nczitzk"],"location":"baoliao.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 淘宝众筹 <Site url="izhongchou.taobao.com"/>
 
@@ -472,7 +472,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 线板酷 <Site url="new.xianbao.fun" size="sm" />
 
-<Route namespace="xianbao" :data='{"path":"/:category?","name":"线板酷","url":"new.xianbao.fun","maintainers":["nashi23"],"example":"/xianbao","parameters":{"category":"类别id，默认为：latest"},"description":"\n| 分类         | id             |\n| ------------ | -------------- |\n| 最新         | latest         |\n| 赚客吧       | zuankeba       |\n| 赚客吧热帖   | zuankeba-hot   |\n| 新赚吧       | xinzuanba      |\n| 新赚吧热帖   | xinzuanba-hot  |\n| 微博         | weibo          |\n| 微博热帖     | weibo-hot      |\n| 豆瓣线报     | douban         |\n| 豆瓣热帖     | douban-hot     |\n| 酷安         | kuan           |\n| 小嘀咕       | xiaodigu       |\n| 葫芦侠       | huluxia        |\n| 小刀娱乐网   | xiadao         |\n| 技术 QQ 网   | qqjishu        |\n| YYOK 大全    | yyok           |\n| 活动资讯网   | huodong        |\n| 免费赚钱中心 | maifei         |\n| 一小时       | yixiaoshi      |\n| 三小时       | sanxiaoshi     |\n| 六小时       | liuxiaoshi     |\n| 十二小时     | shierxiaoshi   |\n| 二十四小时   | ershisixiaoshi |\n| 四十八小时   | sishibaxiaoshi |\n| 今天         | jintian        |\n| 昨天         | zuotian        |\n| 前天         | qiantian       |\n| 三天         | santian        |\n| 五天         | wutian         |\n| 七天         | qitian         |\n| 十五天       | shiwutian      |","categories":["shopping"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["new.xianbao.fun"],"target":"/"}],"location":"index.ts"}' :test='undefined' />
+<Route namespace="xianbao" :data='{"path":"/:category?","name":"线板酷","url":"new.xianbao.fun","maintainers":["nashi23"],"example":"/xianbao","parameters":{"category":"类别id，默认为：latest"},"description":"\n| 分类         | id             |\n| ------------ | -------------- |\n| 最新         | latest         |\n| 赚客吧       | zuankeba       |\n| 赚客吧热帖   | zuankeba-hot   |\n| 新赚吧       | xinzuanba      |\n| 新赚吧热帖   | xinzuanba-hot  |\n| 微博         | weibo          |\n| 微博热帖     | weibo-hot      |\n| 豆瓣线报     | douban         |\n| 豆瓣热帖     | douban-hot     |\n| 酷安         | kuan           |\n| 小嘀咕       | xiaodigu       |\n| 葫芦侠       | huluxia        |\n| 小刀娱乐网   | xiadao         |\n| 技术QQ网     | qqjishu        |\n| YYOK大全     | yyok           |\n| 活动资讯网   | huodong        |\n| 免费赚钱中心 | mianfei        |\n| 一小时       | yixiaoshi      |\n| 三小时       | sanxiaoshi     |\n| 六小时       | liuxiaoshi     |\n| 十二小时     | shierxiaoshi   |\n| 二十四小时   | ershisixiaoshi |\n| 四十八小时   | sishibaxiaoshi |\n| 今天         | jintian        |\n| 昨天         | zuotian        |\n| 前天         | qiantian       |\n| 三天         | santian        |\n| 五天         | wutian         |\n| 七天         | qitian         |\n| 十五天       | shiwutian      |","categories":["shopping"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["new.xianbao.fun"],"target":"/"}],"location":"index.ts"}' :test='{"code":0}' />
 
 
 | 分类         | id             |
@@ -490,10 +490,10 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 | 小嘀咕       | xiaodigu       |
 | 葫芦侠       | huluxia        |
 | 小刀娱乐网   | xiadao         |
-| 技术 QQ 网   | qqjishu        |
-| YYOK 大全    | yyok           |
+| 技术QQ网     | qqjishu        |
+| YYOK大全     | yyok           |
 | 活动资讯网   | huodong        |
-| 免费赚钱中心 | maifei         |
+| 免费赚钱中心 | mianfei        |
 | 一小时       | yixiaoshi      |
 | 三小时       | sanxiaoshi     |
 | 六小时       | liuxiaoshi     |
@@ -512,7 +512,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 要闻 <Site url="www.ccreports.com.cn/" size="sm" />
 
-<Route namespace="ccreports" :data='{"path":"/article","categories":["shopping"],"example":"/ccreports/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ccreports.com.cn/"]}],"name":"要闻","maintainers":["EsuRt","Fatpandac"],"url":"www.ccreports.com.cn/","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="ccreports" :data='{"path":"/article","categories":["shopping"],"example":"/ccreports/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ccreports.com.cn/"]}],"name":"要闻","maintainers":["EsuRt","Fatpandac"],"url":"www.ccreports.com.cn/","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 小米 <Site url="mi.com"/>
 
@@ -542,7 +542,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 演出更新 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/event/:cityCode/:showStyle?","categories":["shopping"],"example":"/showstart/event/571/3","parameters":{"cityCode":"演出城市 (编号)","showStyle":"演出风格 (编号)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出更新","maintainers":["lchtao26"],"description":":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::","location":"event.ts"}' :test='{"code":0}' />
+<Route namespace="showstart" :data='{"path":"/event/:cityCode/:showStyle?","categories":["shopping"],"example":"/showstart/event/571/3","parameters":{"cityCode":"演出城市 (编号)","showStyle":"演出风格 (编号)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出更新","maintainers":["lchtao26"],"description":":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::","location":"event.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
 -   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)

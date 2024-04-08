@@ -22,7 +22,7 @@
 
 ### Latest Discography <Site url="www.lxixsxa.com/" size="sm" />
 
-<Route namespace="lxixsxa" :data='{"path":"/disco","categories":["live"],"example":"/lxixsxa/disco","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lxixsxa.com/","www.lxixsxa.com/discography"]}],"name":"Latest Discography","maintainers":["Kiotlin"],"url":"www.lxixsxa.com/","location":"discography.ts"}' :test='{"code":1,"message":"expected -3886850569 to be greater than -432000000"}' />
+<Route namespace="lxixsxa" :data='{"path":"/disco","categories":["live"],"example":"/lxixsxa/disco","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lxixsxa.com/","www.lxixsxa.com/discography"]}],"name":"Latest Discography","maintainers":["Kiotlin"],"url":"www.lxixsxa.com/","location":"discography.ts"}' :test='{"code":1,"message":"expected -3800198742 to be greater than -432000000"}' />
 
 ### News <Site url="www.lxixsxa.com/" size="sm" />
 
@@ -44,7 +44,7 @@
 
 ### Stream Schedule <Site url="www.twitch.tv" size="sm" />
 
-<Route namespace="twitch" :data='{"path":"/schedule/:login","categories":["live"],"example":"/twitch/schedule/riotgames","parameters":{"login":"Twitch username"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.twitch.tv/:login/schedule"]}],"name":"Stream Schedule","maintainers":["hoilc"],"location":"schedule.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="twitch" :data='{"path":"/schedule/:login","categories":["live"],"example":"/twitch/schedule/riotgames","parameters":{"login":"Twitch username"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.twitch.tv/:login/schedule"]}],"name":"Stream Schedule","maintainers":["hoilc"],"location":"schedule.ts"}' :test='{"code":0}' />
 
 ## Yoasobi Official <Site url="www.yoasobi-music.jp"/>
 
@@ -96,5 +96,5 @@
 
 ### 直播间开播 <Site url="lang.live" size="sm" />
 
-<Route namespace="lang" :data='{"path":"/live/room/:id","categories":["live"],"example":"/lang/live/room/1352360","parameters":{"id":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lang.live/room/:id"]}],"name":"直播间开播","maintainers":["MittWillson"],"location":"room.ts"}' :test='{"code":0}' />
+<Route namespace="lang" :data='{"path":"/live/room/:id","categories":["live"],"example":"/lang/live/room/1352360","parameters":{"id":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lang.live/room/:id"]}],"name":"直播间开播","maintainers":["MittWillson"],"location":"room.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 

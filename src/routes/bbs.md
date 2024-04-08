@@ -160,7 +160,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分区帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected [ …(31) ] to not include &#39;https://nga.178.com/read.php?tid=3968…&#39;"}' />
+<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":0}' />
 
 ### 帖子 <Site url="bbs.nga.cn" size="sm" />
 
@@ -208,13 +208,13 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛摘要 <Site url="bbs.saraba1st.com" size="sm" />
 
-<Route namespace="saraba1st" :data='{"path":"/digest/:tid","categories":["bbs"],"example":"/saraba1st/digest/forum-75-1","parameters":{"tid":"论坛 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛摘要","maintainers":["shinemoon"],"description":"版面网址如果为 `https://bbs.saraba1st.com/2b/forum-75-1.html` 那么论坛 id 就是 `forum-75-1`。","location":"digest.ts"}' :test='{"code":0}' />
+<Route namespace="saraba1st" :data='{"path":"/digest/:tid","categories":["bbs"],"example":"/saraba1st/digest/forum-75-1","parameters":{"tid":"论坛 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛摘要","maintainers":["shinemoon"],"description":"版面网址如果为 `https://bbs.saraba1st.com/2b/forum-75-1.html` 那么论坛 id 就是 `forum-75-1`。","location":"digest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 版面网址如果为 `https://bbs.saraba1st.com/2b/forum-75-1.html` 那么论坛 id 就是 `forum-75-1`。
 
 ### 帖子 <Site url="bbs.saraba1st.com" size="sm" />
 
-<Route namespace="saraba1st" :data='{"path":"/thread/:tid","categories":["bbs"],"example":"/saraba1st/thread/1842868","parameters":{"tid":"帖子 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["zengxs"],"description":"帖子网址如果为 `https://bbs.saraba1st.com/2b/thread-1842868-1-1.html` 那么帖子 id 就是 `1789863`。","location":"thread.ts"}' :test='{"code":0}' />
+<Route namespace="saraba1st" :data='{"path":"/thread/:tid","categories":["bbs"],"example":"/saraba1st/thread/1842868","parameters":{"tid":"帖子 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["zengxs"],"description":"帖子网址如果为 `https://bbs.saraba1st.com/2b/thread-1842868-1-1.html` 那么帖子 id 就是 `1789863`。","location":"thread.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 帖子网址如果为 `https://bbs.saraba1st.com/2b/thread-1842868-1-1.html` 那么帖子 id 就是 `1789863`。
 
@@ -330,7 +330,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 个人帖子 <Site url="dxy.cn" size="sm" />
 
-<Route namespace="dxy" :data='{"path":"/bbs/profile/thread/:userId","categories":["bbs"],"example":"/dxy/bbs/profile/thread/8335054","parameters":{"userId":"个人 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dxy.cn/bbs/newweb/pc/profile/:userId/threads","dxy.cn/bbs/newweb/pc/profile/:userId"]}],"name":"个人帖子","maintainers":["TonyRL"],"location":"profile/thread.ts"}' :test='{"code":0}' />
+<Route namespace="dxy" :data='{"path":"/bbs/profile/thread/:userId","categories":["bbs"],"example":"/dxy/bbs/profile/thread/8335054","parameters":{"userId":"个人 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dxy.cn/bbs/newweb/pc/profile/:userId/threads","dxy.cn/bbs/newweb/pc/profile/:userId"]}],"name":"个人帖子","maintainers":["TonyRL"],"location":"profile/thread.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 专题 <Site url="dxy.cn" size="sm" />
 
@@ -354,7 +354,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 板块 <Site url="right.com.cn" size="sm" />
 
-<Route namespace="right" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/right/forum/31","parameters":{"id":"板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板块","maintainers":["nczitzk"],"location":"forum.ts"}' :test='{"code":0}' />
+<Route namespace="right" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/right/forum/31","parameters":{"id":"板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板块","maintainers":["nczitzk"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 虎扑 <Site url=".hupu.com"/>
 
@@ -416,7 +416,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 广场 <Site url="jisilu.cn/home/explore" size="sm" />
 
-<Route namespace="jisilu" :data='{"path":"/:category?/:sort?/:day?","categories":["bbs"],"example":"/jisilu","parameters":{"category":"分类，见下表，默认为全部，可在 URL 中找到","sort":"排序，见下表，默认为最新，可在 URL 中找到","day":"几天内，见下表，默认为30天，本参数仅在排序参数设定为 `热门` 后才可生效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jisilu.cn/home/explore","jisilu.cn/explore","jisilu.cn/"]}],"name":"广场","maintainers":["nczitzk"],"url":"jisilu.cn/home/explore","description":"分类\n\n  | 全部 | 债券 / 可转债 | 基金 | 套利 | 新股 |\n  | ---- | ------------- | ---- | ---- | ---- |\n  |      | 4             | 7    | 5    | 3    |\n\n  排序\n\n  | 最新 | 热门 | 按发表时间 |\n  | ---- | ---- | ---------- |\n  |      | hot  | add_time  |\n\n  几天内\n\n  | 30 天 | 7 天 | 当天 |\n  | ----- | ---- | ---- |\n  | 30    | 7    | 1    |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="jisilu" :data='{"path":"/:category?/:sort?/:day?","categories":["bbs"],"example":"/jisilu","parameters":{"category":"分类，见下表，默认为全部，可在 URL 中找到","sort":"排序，见下表，默认为最新，可在 URL 中找到","day":"几天内，见下表，默认为30天，本参数仅在排序参数设定为 `热门` 后才可生效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jisilu.cn/home/explore","jisilu.cn/explore","jisilu.cn/"]}],"name":"广场","maintainers":["nczitzk"],"url":"jisilu.cn/home/explore","description":"分类\n\n  | 全部 | 债券 / 可转债 | 基金 | 套利 | 新股 |\n  | ---- | ------------- | ---- | ---- | ---- |\n  |      | 4             | 7    | 5    | 3    |\n\n  排序\n\n  | 最新 | 热门 | 按发表时间 |\n  | ---- | ---- | ---------- |\n  |      | hot  | add_time  |\n\n  几天内\n\n  | 30 天 | 7 天 | 当天 |\n  | ----- | ---- | ---- |\n  | 30    | 7    | 1    |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 分类
 
@@ -470,7 +470,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 面经 <Site url="nowcoder.com/" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/experience/:tagId","categories":["bbs"],"example":"/nowcoder/experience/639?order=3&companyId=665&phaseId=0","parameters":{"tagId":"职位id [🔗查询链接](https://www.nowcoder.com/profile/all-jobs)复制打开"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/experience"}],"name":"面经","maintainers":["huyyi"],"url":"nowcoder.com/","description":"可选参数：\n\n  -   companyId：公司 id，[🔗查询链接](https://www.nowcoder.com/discuss/tag/exp), 复制打开\n  -   order：3 - 最新；1 - 最热\n  -   phaseId：0 - 所有；1 - 校招；2 - 实习；3 - 社招","location":"experience.ts"}' :test='{"code":0}' />
+<Route namespace="nowcoder" :data='{"path":"/experience/:tagId","categories":["bbs"],"example":"/nowcoder/experience/639?order=3&companyId=665&phaseId=0","parameters":{"tagId":"职位id [🔗查询链接](https://www.nowcoder.com/profile/all-jobs)复制打开"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/experience"}],"name":"面经","maintainers":["huyyi"],"url":"nowcoder.com/","description":"可选参数：\n\n  -   companyId：公司 id，[🔗查询链接](https://www.nowcoder.com/discuss/tag/exp), 复制打开\n  -   order：3 - 最新；1 - 最热\n  -   phaseId：0 - 所有；1 - 校招；2 - 实习；3 - 社招","location":"experience.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 可选参数：
 
@@ -480,11 +480,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 求职推荐 <Site url="nowcoder.com/" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/recommend","categories":["bbs"],"example":"/nowcoder/recommend","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"]}],"name":"求职推荐","maintainers":["junfengP"],"url":"nowcoder.com/","location":"recommend.ts"}' :test='{"code":0}' />
+<Route namespace="nowcoder" :data='{"path":"/recommend","categories":["bbs"],"example":"/nowcoder/recommend","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"]}],"name":"求职推荐","maintainers":["junfengP"],"url":"nowcoder.com/","location":"recommend.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 实习广场 & 社招广场 <Site url="nowcoder.com/" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/jobcenter/:recruitType?/:city?/:type?/:order?/:latest?","categories":["bbs"],"example":"/nowcoder/jobcenter/1/北京/1/1/true","parameters":{"recruitType":"招聘分类，`1` 指 实习广场，`2` 指 社招广场，默认为 `1`","city":"所在城市，可选城市见下表，若空则为 `全国`","type":"职位类型，可选职位代码见下表，若空则为 `全部`","order":"排序参数，可选排序参数代码见下表，若空则为 `默认`","latest":"是否仅查看最近一周，可选 `true` 和 `false`，默认为 `false`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/jobcenter"}],"name":"实习广场 & 社招广场","maintainers":["nczitzk"],"url":"nowcoder.com/","description":"可选城市有：北京、上海、广州、深圳、杭州、南京、成都、厦门、武汉、西安、长沙、哈尔滨、合肥、其他\n\n  职位类型代码见下表：\n\n  | 研发 | 测试 | 数据 | 算法 | 前端 | 产品 | 运营 | 其他 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 0    |\n\n  排序参数见下表：\n\n  | 最新发布 | 最快处理 | 处理率最高 |\n  | -------- | -------- | ---------- |\n  | 1        | 2        | 3          |","location":"jobcenter.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nowcoder" :data='{"path":"/jobcenter/:recruitType?/:city?/:type?/:order?/:latest?","categories":["bbs"],"example":"/nowcoder/jobcenter/1/北京/1/1/true","parameters":{"recruitType":"招聘分类，`1` 指 实习广场，`2` 指 社招广场，默认为 `1`","city":"所在城市，可选城市见下表，若空则为 `全国`","type":"职位类型，可选职位代码见下表，若空则为 `全部`","order":"排序参数，可选排序参数代码见下表，若空则为 `默认`","latest":"是否仅查看最近一周，可选 `true` 和 `false`，默认为 `false`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/jobcenter"}],"name":"实习广场 & 社招广场","maintainers":["nczitzk"],"url":"nowcoder.com/","description":"可选城市有：北京、上海、广州、深圳、杭州、南京、成都、厦门、武汉、西安、长沙、哈尔滨、合肥、其他\n\n  职位类型代码见下表：\n\n  | 研发 | 测试 | 数据 | 算法 | 前端 | 产品 | 运营 | 其他 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 0    |\n\n  排序参数见下表：\n\n  | 最新发布 | 最快处理 | 处理率最高 |\n  | -------- | -------- | ---------- |\n  | 1        | 2        | 3          |","location":"jobcenter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 可选城市有：北京、上海、广州、深圳、杭州、南京、成都、厦门、武汉、西安、长沙、哈尔滨、合肥、其他
 
@@ -502,7 +502,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 讨论区 <Site url="nowcoder.com" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/discuss/:type/:order","categories":["bbs"],"example":"/nowcoder/discuss/2/4","parameters":{"type":"讨论区分区id 在 URL 中可以找到","order":"排序方式"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["LogicJake"],"description":"| 最新回复 | 最新发表 | 最新 | 精华 |\n  | -------- | -------- | ---- | ---- |\n  | 0        | 3        | 1    | 4    |","location":"discuss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nowcoder" :data='{"path":"/discuss/:type/:order","categories":["bbs"],"example":"/nowcoder/discuss/2/4","parameters":{"type":"讨论区分区id 在 URL 中可以找到","order":"排序方式"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["LogicJake"],"description":"| 最新回复 | 最新发表 | 最新 | 精华 |\n  | -------- | -------- | ---- | ---- |\n  | 0        | 3        | 1    | 4    |","location":"discuss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 最新回复 | 最新发表 | 最新 | 精华 |
   | -------- | -------- | ---- | ---- |
@@ -510,7 +510,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 校招日程 <Site url="nowcoder.com/" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/schedule/:propertyId?/:typeId?","categories":["bbs"],"example":"/nowcoder/schedule","parameters":{"propertyId":"行业, 在控制台中抓取接口，可获得行业id，默认0","typeId":"类别，同上"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/schedule"}],"name":"校招日程","maintainers":["junfengP"],"url":"nowcoder.com/","location":"schedule.ts"}' :test='{"code":0}' />
+<Route namespace="nowcoder" :data='{"path":"/schedule/:propertyId?/:typeId?","categories":["bbs"],"example":"/nowcoder/schedule","parameters":{"propertyId":"行业, 在控制台中抓取接口，可获得行业id，默认0","typeId":"类别，同上"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/schedule"}],"name":"校招日程","maintainers":["junfengP"],"url":"nowcoder.com/","location":"schedule.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 品葱 <Site url="pincong.rocks"/>
 
@@ -690,7 +690,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 滚动新闻 <Site url="zhibo8.cc" size="sm" />
 
-<Route namespace="zhibo8" :data='{"path":"/more/:category?","categories":["bbs"],"example":"/zhibo8/more/nba","parameters":{"category":"分类，见下表，默认为 NBA"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.zhibo8.cc/:category"],"target":"/more/:category"}],"name":"滚动新闻","description":"\n| NBA | 足球  | 电竞     | 综合   |\n| --- | ----- | -------- | ------ |\n| nba | zuqiu | dianjing | zonghe |","maintainers":["nczitzk"],"location":"more.ts"}' :test='{"code":0}' />
+<Route namespace="zhibo8" :data='{"path":"/more/:category?","categories":["bbs"],"example":"/zhibo8/more/nba","parameters":{"category":"分类，见下表，默认为 NBA"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.zhibo8.cc/:category"],"target":"/more/:category"}],"name":"滚动新闻","description":"\n| NBA | 足球  | 电竞     | 综合   |\n| --- | ----- | -------- | ------ |\n| nba | zuqiu | dianjing | zonghe |","maintainers":["nczitzk"],"location":"more.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 
 | NBA | 足球  | 电竞     | 综合   |

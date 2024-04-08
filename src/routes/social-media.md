@@ -87,7 +87,7 @@
 
 ### 分区视频排行榜 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/partion/ranking/:tid/:days?/:disableEmbed?","categories":["social-media"],"example":"/bilibili/partion/ranking/171/3","parameters":{"tid":"分区 id, 见上方表格","days":"缺省为 7, 指最近多少天内的热度排序","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频排行榜","maintainers":["lengthmin"],"location":"partion-ranking.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/partion/ranking/:tid/:days?/:disableEmbed?","categories":["social-media"],"example":"/bilibili/partion/ranking/171/3","parameters":{"tid":"分区 id, 见上方表格","days":"缺省为 7, 指最近多少天内的热度排序","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频排行榜","maintainers":["lengthmin"],"location":"partion-ranking.ts"}' :test='{"code":0}' />
 
 ### 分区视频 <Site url="www.bilibili.com" size="sm" />
 
@@ -359,7 +359,7 @@
 
 ### User <Site url="curius.app" size="sm" />
 
-<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":0}' />
+<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Daily.dev <Site url="daily.dev"/>
 
@@ -848,7 +848,7 @@ Chart
 
 ### 用户 <Site url="changba.com" size="sm" />
 
-<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media"],"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":[],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media"],"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":[],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 抖音直播 <Site url="douyin.com"/>
 
@@ -894,11 +894,11 @@ Chart
 
 ### 豆瓣电影人 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/celebrity/:id/:sort?","categories":["social-media"],"example":"/douban/celebrity/1274261","parameters":{"id":"电影人 id","sort":"排序方式，缺省为 `time`（时间排序），可为 `vote` （评价排序）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影人","maintainers":["minimalistrojan"],"location":"other/celebrity.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/celebrity/:id/:sort?","categories":["social-media"],"example":"/douban/celebrity/1274261","parameters":{"id":"电影人 id","sort":"排序方式，缺省为 `time`（时间排序），可为 `vote` （评价排序）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影人","maintainers":["minimalistrojan"],"location":"other/celebrity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 豆瓣电影分类 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/classification/:sort?/:score?/:tags?","categories":["social-media"],"example":"/douban/movie/classification/R/7.5/Netflix,2020","parameters":{"sort":"排序方式，默认为U","score":"最低评分，默认不限制","tags":"分类标签，多个标签之间用英文逗号分隔，常见的标签到豆瓣电影的分类页面查看，支持自定义标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影分类","maintainers":["zzwab"],"description":"排序方式可选值如下\n\n| 近期热门 | 标记最多 | 评分最高 | 最近上映 |\n| -------- | -------- | -------- | -------- |\n| U        | T        | S        | R        |","location":"other/classification.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/movie/classification/:sort?/:score?/:tags?","categories":["social-media"],"example":"/douban/movie/classification/R/7.5/Netflix,2020","parameters":{"sort":"排序方式，默认为U","score":"最低评分，默认不限制","tags":"分类标签，多个标签之间用英文逗号分隔，常见的标签到豆瓣电影的分类页面查看，支持自定义标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影分类","maintainers":["zzwab"],"description":"排序方式可选值如下\n\n| 近期热门 | 标记最多 | 评分最高 | 最近上映 |\n| -------- | -------- | -------- | -------- |\n| U        | T        | S        | R        |","location":"other/classification.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 排序方式可选值如下
 
@@ -920,7 +920,7 @@ Chart
 
 ### 豆瓣招聘 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/jobs/:type","categories":["social-media"],"example":"/douban/jobs/campus","parameters":{"type":"招聘类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣招聘","maintainers":["Fatpandac"],"description":"| 社会招聘 | 校园招聘 | 实习生招聘 |\n  | :------: | :------: | :--------: |\n  |  social  |  campus  |   intern   |","location":"other/jobs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/jobs/:type","categories":["social-media"],"example":"/douban/jobs/campus","parameters":{"type":"招聘类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣招聘","maintainers":["Fatpandac"],"description":"| 社会招聘 | 校园招聘 | 实习生招聘 |\n  | :------: | :------: | :--------: |\n  |  social  |  campus  |   intern   |","location":"other/jobs.ts"}' :test='{"code":0}' />
 
 | 社会招聘 | 校园招聘 | 实习生招聘 |
   | :------: | :------: | :--------: |
@@ -967,7 +967,7 @@ Chart
 
 ### 豆瓣每月推荐片单 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n  :::tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n  :::","location":"other/recommended.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n  :::tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n  :::","location":"other/recommended.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 额外参数 | 含义                   | 接受的值 | 默认值 |
   | -------- | ---------------------- | -------- | ------ |
@@ -1002,7 +1002,7 @@ Chart
 
 ### 频道专题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 326705236915 to be less than 311040000000"}' />
+<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 326791758407 to be less than 311040000000"}' />
 
 | 默认    | 热门 | 最新 |
   | ------- | ---- | ---- |
@@ -1010,7 +1010,7 @@ Chart
 
 ### 热门图书排行 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/rank/:type?","categories":["social-media"],"example":"/douban/book/rank/fiction","parameters":{"type":"图书类型，默认合并列表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门图书排行","maintainers":["xyqfer","queensferryme"],"description":"| 全部 | 虚构    | 非虚构     |\n  | ---- | ------- | ---------- |\n  |      | fiction | nonfiction |","location":"book/rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/book/rank/:type?","categories":["social-media"],"example":"/douban/book/rank/fiction","parameters":{"type":"图书类型，默认合并列表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门图书排行","maintainers":["xyqfer","queensferryme"],"description":"| 全部 | 虚构    | 非虚构     |\n  | ---- | ------- | ---------- |\n  |      | fiction | nonfiction |","location":"book/rank.ts"}' :test='{"code":0}' />
 
 | 全部 | 虚构    | 非虚构     |
   | ---- | ------- | ---------- |
@@ -1018,7 +1018,7 @@ Chart
 
 ### 热门同城活动 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/event/hot/:locationId","categories":["social-media"],"example":"/douban/event/hot/118172","parameters":{"locationId":"位置 id, [同城首页](https://www.douban.com/location)打开控制台执行 `window.__loc_id__` 获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门同城活动","maintainers":["xyqfer"],"location":"event/hot.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/event/hot/:locationId","categories":["social-media"],"example":"/douban/event/hot/118172","parameters":{"locationId":"位置 id, [同城首页](https://www.douban.com/location)打开控制台执行 `window.__loc_id__` 获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门同城活动","maintainers":["xyqfer"],"location":"event/hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 日记最新回应 <Site url="www.douban.com" size="sm" />
 
@@ -1030,7 +1030,7 @@ Chart
 
 ### 新书速递 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |
     | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |
@@ -1116,11 +1116,11 @@ Chart
 
 ### 话题 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 看看号 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。
@@ -1128,7 +1128,7 @@ Chart
 
 ### 热榜 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |
   | -------- | -------- | ------ | ------ | ------ | ------ |
@@ -1144,7 +1144,7 @@ Chart
 
 ### 头条 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/toutiao/:type?","categories":["social-media"],"example":"/coolapk/toutiao","parameters":{"type":"默认为history"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["xizeyoupan"],"description":"| 参数名称 | 历史头条 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | history  | latest |","location":"toutiao.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/toutiao/:type?","categories":["social-media"],"example":"/coolapk/toutiao","parameters":{"type":"默认为history"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["xizeyoupan"],"description":"| 参数名称 | 历史头条 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | history  | latest |","location":"toutiao.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 参数名称 | 历史头条 | 最新   |
   | -------- | -------- | ------ |
@@ -1152,7 +1152,7 @@ Chart
 
 ### 图文 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":["/tuwen/:type?","/tuwen-xinxian"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":["/tuwen/:type?","/tuwen-xinxian"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 参数名称 | 编辑精选 | 最新   |
   | -------- | -------- | ------ |
@@ -1168,7 +1168,7 @@ Chart
 
 ### 用户 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
 
@@ -1415,7 +1415,7 @@ Chart
 
 ### 知乎分类热榜 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media"],"example":"/zhihu/hot","parameters":{"category":"分类，见下表，默认为全站"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎分类热榜","maintainers":["nczitzk"],"description":"| 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |\n  | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |\n  | total | focus | science | car  | zvideo | fashion | depth | digital | sport | school | film |","location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media"],"example":"/zhihu/hot","parameters":{"category":"分类，见下表，默认为全站"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎分类热榜","maintainers":["nczitzk"],"description":"| 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |\n  | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |\n  | total | focus | science | car  | zvideo | fashion | depth | digital | sport | school | film |","location":"hot.ts"}' :test='{"code":1,"message":"expected 355929553885 to be less than 311040000000"}' />
 
 | 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |
   | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |
