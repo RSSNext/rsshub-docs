@@ -403,6 +403,16 @@ GitHub provides some official RSS feeds:
 
 <Route namespace="hex-rays" :data='{"path":"/news","categories":["programming"],"example":"/hex-rays/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hex-rays.com/","hex-rays.com/blog"]}],"name":"Hex-Rays News","maintainers":["hellodword ","TonyRL"],"url":"hex-rays.com/","location":"index.ts"}' :test='undefined' />
 
+## HITCON <Site url="hitcon.org"/>
+
+### 漏洞 <Site url="hitcon.org" size="sm" />
+
+<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='undefined' />
+
+| 缺省   | all  | closed | disclosed | patching |
+  | ------ | ---- | ------ | --------- | -------- |
+  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |
+
 ## Huggingface <Site url="huggingface.co"/>
 
 ### Daily Papers <Site url="huggingface.co/papers" size="sm" />
