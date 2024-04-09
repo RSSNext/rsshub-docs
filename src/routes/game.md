@@ -397,7 +397,7 @@ javaType:
 
 ### Java Game Update <Site url="minecraft.net/" size="sm" />
 
-<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 311763936564 to be less than 311040000000"}' />
+<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 311850268877 to be less than 311040000000"}' />
 
 
 | Version                    | versionType |
@@ -463,7 +463,7 @@ javaType:
 
 ### Beatmap Packs <Site url="osu.ppy.sh" size="sm" />
 
-<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":0}' />
 
 ## PRINCESS CONNECT! Re Dive プリンセスコネクト！Re Dive <Site url="priconne-redive.jp"/>
 
@@ -570,7 +570,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 文章列表 <Site url="tgbus.com" size="sm" />
 
-<Route namespace="tgbus" :data='{"path":"/list/:category","parameters":{"category":"列表分类，见下表"},"categories":["game"],"example":"/tgbus/list/news","radar":[{"source":["www.tgbus.com/list/:category/"],"target":"/list/:category"}],"name":"文章列表","maintainers":["Xzonn"],"description":"| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n    | -------- | -------- | -------- | ------------ | -------- |\n    | news     | review   | video    | special      | hardware |","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tgbus" :data='{"path":"/list/:category","parameters":{"category":"列表分类，见下表"},"categories":["game"],"example":"/tgbus/list/news","radar":[{"source":["www.tgbus.com/list/:category/"],"target":"/list/:category"}],"name":"文章列表","maintainers":["Xzonn"],"description":"| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n    | -------- | -------- | -------- | ------------ | -------- |\n    | news     | review   | video    | special      | hardware |","location":"list.ts"}' :test='{"code":0}' />
 
 | 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |
     | -------- | -------- | -------- | ------------ | -------- |
@@ -707,7 +707,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 游戏内公告 <Site url="ak.arknights.jp" size="sm" />
 
-<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -14169035336 to be greater than -432000000"}' />
+<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -14082628624 to be greater than -432000000"}' />
 
 平台
 
