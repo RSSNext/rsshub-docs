@@ -157,7 +157,7 @@ Here's an example taken from the [furstar](https://github.com/DIYgod/RSSHub/blob
 ```
 
 ```js
-import * as path from 'node:path';
+import path from 'node:path';
 import { art } from '@/utils/render';
 const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'), author);
 ```

@@ -157,7 +157,7 @@ RSSHub 会将所有路由命名空间的文件夹名附加到路由前面。路�
 ```
 
 ```js
-import * as path from 'node:path';
+import path from 'node:path';
 import { art } from '@/utils/render';
 const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'), author);
 ```
