@@ -20,11 +20,7 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 
 ### 部落影集 <Site url="500px.com.cn" size="sm" />
 
-<Route namespace="500px" :data='{"path":"/tribe/set/:id","categories":["picture"],"example":"/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001","parameters":{"id":"部落 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"部落影集","maintainers":["TonyRL"],"location":"tribe-set.ts"}' :test='undefined' />
-
-### 摄影师作品 <Site url="500px.com.cn" size="sm" />
-
-<Route namespace="500px" :data='{"path":"/user/works/:id","categories":["picture"],"example":"/500px/user/works/hujunli","parameters":{"id":"摄影师 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["500px.com.cn/:id","500px.com.cn/community/user-details/:id","500px.com.cn/community/user-details/:id/*"]}],"name":"摄影师作品","maintainers":["TonyRL"],"location":"user.ts"}' :test='undefined' />
+<Route namespace="500px" :data='{"path":"/tribe/set/:id","categories":["picture"],"example":"/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001","parameters":{"id":"部落 ID"},"name":"部落影集","maintainers":["TonyRL"],"location":"tribe-set.ts"}' :test='undefined' />
 
 ## 8KCosplay <Site url="8kcosplay.com"/>
 
