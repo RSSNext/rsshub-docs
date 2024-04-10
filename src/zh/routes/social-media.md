@@ -424,6 +424,16 @@ You may need to setup cookie for a less restrictive rate limit and private profi
 | ------------- | ------- |
 | user          | tags    |
 
+## Instagram <Site url="picnob.com"/>
+
+:::tip
+It's highly recommended to deploy with Redis cache enabled.
+:::
+
+### User Profile - Picnob <Site url="picnob.com" size="sm" />
+
+<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["picnob.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"location":"user.ts"}' :test='undefined' />
+
 ## Instagram <Site url="www.picuki.com"/>
 
 :::tip

@@ -326,16 +326,6 @@ News from the official site of men's professional tennis.
   | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
   |     | circuits | workshop | craft | cooking | living | outside | teachers |
 
-## Instagram <Site url="picnob.com"/>
-
-:::tip
-It's highly recommended to deploy with Redis cache enabled.
-:::
-
-### Unknown <Site url="picnob.com" size="sm" />
-
-<Route namespace="picnob" :data='{"path":"/user/:id","radar":[{"source":["picnob.com/profile/:id/*"]}],"name":"Unknown","maintainers":["TonyRL","micheal-death"],"location":"user.ts"}' :test='undefined' />
-
 ## Japanpost 日本郵便 <Site url="trackings.post.japanpost.jp"/>
 
 ### Track & Trace Service 郵便追跡サービス <Site url="trackings.post.japanpost.jp" size="sm" />
