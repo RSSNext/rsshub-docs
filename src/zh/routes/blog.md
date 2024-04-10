@@ -154,6 +154,24 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="watasuke" :data='{"path":"/blog","example":"/watasuke/blog","radar":[{"source":["watasuke.net/blog/","watasuke.net/"]}],"name":"Blog","maintainers":["honahuku"],"url":"watasuke.net/blog/","location":"blog.ts"}' :test='{"code":0}' />
 
+## WordPress <Site url="wordpress.org"/>
+
+### WordPress <Site url="wordpress.org" size="sm" />
+
+<Route namespace="wordpress" :data='{"path":"/:url?/:filter{.+}?","name":"WordPress","url":"wordpress.org","maintainers":["nczitzk"],"example":"/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast","parameters":{"url":"URL, <https://wordpress.org/news> by default","filter":"Filter, see below"},"description":"If you subscribe to [WordPress News](https://wordpress.org/news/)，where the URL is `https://wordpress.org/news/`, Encode the URL using `encodeURIComponent()` and then use it as the parameter. Therefore, the route will be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews).\n\n  :::tip\n  If you wish to subscribe to specific categories or tags, you can fill in the \"filter\" parameter in the route. `/category/Podcast` to subscribe to the Podcast category. In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast).\n\n  You can also subscribe to multiple categories. `/category/Podcast,Community` to subscribe to both the Podcast and Community categories. In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast,Community`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast,Community).\n\n  Categories and tags can be combined as well. `/category/Releases/tag/tagging` to subscribe to the Releases category and the tagging tag. In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Releases/tag/tagging`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Releases/tag/tagging).\n  \n  You can also search for keywords. `/search/Blog` to search for the keyword \"Blog\". In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/search/Blog`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/search/Blog).\n  :::","categories":["blog"],"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":"This RSS is disabled unless &#39;ALLOW_USER_SUPPLY_UNSAFE_DOMAIN&#39; is set to &#39;true&#39;.","optional":false}],"requirePuppeteer":false,"antiCrawler":false,"supportRadar":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[],"location":"index.ts"}' :test='undefined' />
+
+If you subscribe to [WordPress News](https://wordpress.org/news/)，where the URL is `https://wordpress.org/news/`, Encode the URL using `encodeURIComponent()` and then use it as the parameter. Therefore, the route will be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews).
+
+  :::tip
+  If you wish to subscribe to specific categories or tags, you can fill in the "filter" parameter in the route. `/category/Podcast` to subscribe to the Podcast category. In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast).
+
+  You can also subscribe to multiple categories. `/category/Podcast,Community` to subscribe to both the Podcast and Community categories. In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast,Community`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Podcast,Community).
+
+  Categories and tags can be combined as well. `/category/Releases/tag/tagging` to subscribe to the Releases category and the tagging tag. In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Releases/tag/tagging`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/category/Releases/tag/tagging).
+  
+  You can also search for keywords. `/search/Blog` to search for the keyword "Blog". In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/search/Blog`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/search/Blog).
+  :::
+
 ## 便宜VPS网 <Site url="pianyivps.com"/>
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
