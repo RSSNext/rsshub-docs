@@ -286,7 +286,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 新到资料 <Site url="xys.org/" size="sm" />
 
-<Route namespace="xys" :data='{"path":"/new","categories":["blog"],"example":"/xys/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xys.org/","xys.org/new.html"]}],"name":"新到资料","maintainers":["wenzhenl"],"url":"xys.org/","location":"new.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="xys" :data='{"path":"/new","categories":["blog"],"example":"/xys/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xys.org/","xys.org/new.html"]}],"name":"新到资料","maintainers":["wenzhenl"],"url":"xys.org/","location":"new.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 甬哥侃侃侃YouTube教程摘要随笔 <Site url="ygkkk.blogspot.com"/>
 
@@ -326,7 +326,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 博客 <Site url="apiseven.com" size="sm" />
 
-<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 竹白 <Site url="zhubai.love"/>
 

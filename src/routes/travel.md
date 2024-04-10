@@ -20,7 +20,7 @@
 
 ### Latest Stories <Site url="www.nationalgeographic.com/pages/topic/latest-stories" size="sm" />
 
-<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## New Museum 纽约新美术馆 <Site url="www.newmuseum.org"/>
 
