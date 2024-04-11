@@ -126,7 +126,7 @@ Category of news
 
 ### 測試報告 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/reviews/:type?","categories":["new-media"],"example":"/dcfever/reviews/cameras","parameters":{"type":"分類，預設為 `cameras`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dcfever.com/:type/reviews.php"],"target":"/reviews/:type"}],"name":"測試報告","maintainers":["TonyRL"],"description":"| 相機及鏡頭 | 手機平板 | 試車報告 |\n  | ---------- | -------- | -------- |\n  | cameras    | phones   | cars     |","location":"reviews.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dcfever" :data='{"path":"/reviews/:type?","categories":["new-media"],"example":"/dcfever/reviews/cameras","parameters":{"type":"分類，預設為 `cameras`"},"radar":[{"source":["dcfever.com/:type/reviews.php"],"target":"/reviews/:type"}],"name":"測試報告","maintainers":["TonyRL"],"description":"| 相機及鏡頭 | 手機平板 | 試車報告 |\n  | ---------- | -------- | -------- |\n  | cameras    | phones   | cars     |","location":"reviews.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 相機及鏡頭 | 手機平板 | 試車報告 |
   | ---------- | -------- | -------- |
@@ -134,11 +134,11 @@ Category of news
 
 ### 二手市集 - 物品搜尋 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/trading/search/:keyword/:mainCat?","categories":["new-media"],"example":"/dcfever/trading/search/Sony","parameters":{"keyword":"關鍵字","mainCat":"主要分類 ID，見上表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"二手市集 - 物品搜尋","maintainers":["TonyRL"],"location":"trading-search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dcfever" :data='{"path":"/trading/search/:keyword/:mainCat?","categories":["new-media"],"example":"/dcfever/trading/search/Sony","parameters":{"keyword":"關鍵字","mainCat":"主要分類 ID，見上表"},"name":"二手市集 - 物品搜尋","maintainers":["TonyRL"],"location":"trading-search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 二手市集 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/trading/:id","categories":["new-media"],"example":"/dcfever/trading/1","parameters":{"id":"分類 ID，見下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"二手市集","maintainers":["TonyRL"],"description":"[所有物品分類](https://www.dcfever.com/trading/index.php#all_cats)\n\n  | 攝影產品 | 電腦 | 手機通訊 | 影音產品 | 遊戲機、模型 | 電器傢俱 | 潮流服飾 | 手錶 | 單車及運動 | 其它 |\n  | -------- | ---- | -------- | -------- | ------------ | -------- | -------- | ---- | ---------- | ---- |\n  | 1        | 2    | 3        | 44       | 43           | 104      | 45       | 99   | 109        | 4    |","location":"trading.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dcfever" :data='{"path":"/trading/:id","categories":["new-media"],"example":"/dcfever/trading/1","parameters":{"id":"分類 ID，見下表"},"name":"二手市集","maintainers":["TonyRL"],"description":"[所有物品分類](https://www.dcfever.com/trading/index.php#all_cats)\n\n  | 攝影產品 | 電腦 | 手機通訊 | 影音產品 | 遊戲機、模型 | 電器傢俱 | 潮流服飾 | 手錶 | 單車及運動 | 其它 |\n  | -------- | ---- | -------- | -------- | ------------ | -------- | -------- | ---- | ---------- | ---- |\n  | 1        | 2    | 3        | 44       | 43           | 104      | 45       | 99   | 109        | 4    |","location":"trading.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 [所有物品分類](https://www.dcfever.com/trading/index.php#all_cats)
 
@@ -148,7 +148,7 @@ Category of news
 
 ### 新聞中心 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/news/:type?","categories":["new-media"],"example":"/dcfever/news","parameters":{"type":"分類，預設為所有新聞"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新聞中心","maintainers":["TonyRL"],"description":"| 所有新聞 | 攝影器材 | 手機通訊 | 汽車熱話 | 攝影文化    | 影片攝錄    | 測試報告 | 生活科技 | 攝影技巧  |\n  | -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |\n  |          | camera   | mobile   | auto     | photography | videography | reviews  | gadget   | technique |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dcfever" :data='{"path":"/news/:type?","categories":["new-media"],"example":"/dcfever/news","parameters":{"type":"分類，預設為所有新聞"},"name":"新聞中心","maintainers":["TonyRL"],"radar":[{"source":["dcfever.com/news/index.php"],"target":"/news"}],"description":"| 所有新聞 | 攝影器材 | 手機通訊 | 汽車熱話 | 攝影文化    | 影片攝錄    | 測試報告 | 生活科技 | 攝影技巧  |\n  | -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |\n  |          | camera   | mobile   | auto     | photography | videography | reviews  | gadget   | technique |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 所有新聞 | 攝影器材 | 手機通訊 | 汽車熱話 | 攝影文化    | 影片攝錄    | 測試報告 | 生活科技 | 攝影技巧  |
   | -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |
