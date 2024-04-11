@@ -14,7 +14,7 @@
 
 ### Graduate Institute <Site url="index.nua.edu.cn" size="sm" />
 
-<Route namespace="nua" :data='{"path":"/gra/:type","categories":["university"],"example":"/nua/gra/1959","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grad.nua.edu.cn/:type/list.htm"]}],"name":"Graduate Institute","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 招生工作  | 1959       |\n  | 培养工作  | 1962       |\n  | 学位工作  | 1958       |","location":"gra.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nua" :data='{"path":"/gra/:type","categories":["university"],"example":"/nua/gra/1959","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grad.nua.edu.cn/:type/list.htm"]}],"name":"Graduate Institute","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 招生工作  | 1959       |\n  | 培养工作  | 1962       |\n  | 学位工作  | 1958       |","location":"gra.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | News Type | Parameters |
   | --------- | ---------- |
@@ -24,7 +24,7 @@
 
 ### Library <Site url="index.nua.edu.cn" size="sm" />
 
-<Route namespace="nua" :data='{"path":"/lib/:type","categories":["university"],"example":"/nua/lib/xwdt","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lib.nua.edu.cn/:type/list.htm"]}],"name":"Library","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 新闻动态  | xwdt       |\n  | 党建动态  | djdt       |\n  | 资源动态  | zydt       |\n  | 服务动态  | fwdt       |","location":"lib.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nua" :data='{"path":"/lib/:type","categories":["university"],"example":"/nua/lib/xwdt","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lib.nua.edu.cn/:type/list.htm"]}],"name":"Library","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 新闻动态  | xwdt       |\n  | 党建动态  | djdt       |\n  | 资源动态  | zydt       |\n  | 服务动态  | fwdt       |","location":"lib.ts"}' :test='{"code":0}' />
 
 | News Type | Parameters |
   | --------- | ---------- |
@@ -35,7 +35,7 @@
 
 ### Official Information <Site url="index.nua.edu.cn" size="sm" />
 
-<Route namespace="nua" :data='{"path":"/index/:type","categories":["university"],"example":"/nua/index/346","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["index.nua.edu.cn/:type/list.htm"]}],"name":"Official Information","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 公告      | 346        |\n  | 南艺要闻  | 332        |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nua" :data='{"path":"/index/:type","categories":["university"],"example":"/nua/index/346","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["index.nua.edu.cn/:type/list.htm"]}],"name":"Official Information","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 公告      | 346        |\n  | 南艺要闻  | 332        |","location":"index.ts"}' :test='{"code":0}' />
 
 | News Type | Parameters |
   | --------- | ---------- |
@@ -57,7 +57,7 @@
 
 ### Shuangxing Information <Site url="index.nua.edu.cn" size="sm" />
 
-<Route namespace="nua" :data='{"path":"/sxw/:type","categories":["university"],"example":"/nua/sxw/230","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sxw.nua.edu.cn/:type/list.htm"]}],"name":"Shuangxing Information","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 校园电视  | 230        |\n  | 院部动态  | 232        |\n  | 动感校园  | 233        |\n  | 招就指南  | 234        |\n  | 南艺院报  | 236        |","location":"sxw.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nua" :data='{"path":"/sxw/:type","categories":["university"],"example":"/nua/sxw/230","parameters":{"type":"News Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sxw.nua.edu.cn/:type/list.htm"]}],"name":"Shuangxing Information","maintainers":["evnydd0sf"],"description":"| News Type | Parameters |\n  | --------- | ---------- |\n  | 校园电视  | 230        |\n  | 院部动态  | 232        |\n  | 动感校园  | 233        |\n  | 招就指南  | 234        |\n  | 南艺院报  | 236        |","location":"sxw.ts"}' :test='{"code":0}' />
 
 | News Type | Parameters |
   | --------- | ---------- |
@@ -71,7 +71,7 @@
 
 ### Admission Office of Graduate <Site url="cic.tju.edu.cn" size="sm" />
 
-<Route namespace="tju" :data='{"path":"/yzb/:type?","categories":["university"],"example":"/tju/yzb/notice","parameters":{"type":"default `notice`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Admission Office of Graduate","maintainers":["SuperPung"],"description":"| School-level Notice | Master | Doctor | On-the-job Degree |\n  | :-----------------: | :----: | :----: | :---------------: |\n  |        notice       | master | doctor |        job        |","location":"yzb/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tju" :data='{"path":"/yzb/:type?","categories":["university"],"example":"/tju/yzb/notice","parameters":{"type":"default `notice`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Admission Office of Graduate","maintainers":["SuperPung"],"description":"| School-level Notice | Master | Doctor | On-the-job Degree |\n  | :-----------------: | :----: | :----: | :---------------: |\n  |        notice       | master | doctor |        job        |","location":"yzb/index.ts"}' :test='{"code":0}' />
 
 | School-level Notice | Master | Doctor | On-the-job Degree |
   | :-----------------: | :----: | :----: | :---------------: |
@@ -79,7 +79,7 @@
 
 ### College of Intelligence and Computing <Site url="cic.tju.edu.cn" size="sm" />
 
-<Route namespace="tju" :data='{"path":"/cic/:type?","categories":["university"],"example":"/tju/cic/news","parameters":{"type":"default `news`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"College of Intelligence and Computing","maintainers":["SuperPung"],"description":"| College News | Notification | TJU Forum for CIC |\n  | :----------: | :----------: | :---------------: |\n  |     news     | notification |       forum       |","location":"cic/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tju" :data='{"path":"/cic/:type?","categories":["university"],"example":"/tju/cic/news","parameters":{"type":"default `news`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"College of Intelligence and Computing","maintainers":["SuperPung"],"description":"| College News | Notification | TJU Forum for CIC |\n  | :----------: | :----------: | :---------------: |\n  |     news     | notification |       forum       |","location":"cic/index.ts"}' :test='{"code":0}' />
 
 | College News | Notification | TJU Forum for CIC |
   | :----------: | :----------: | :---------------: |
@@ -87,7 +87,7 @@
 
 ### News <Site url="cic.tju.edu.cn" size="sm" />
 
-<Route namespace="tju" :data='{"path":"/news/:type?","categories":["university"],"example":"/tju/news/focus","parameters":{"type":"default `focus`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["SuperPung"],"description":"| Focus on TJU | General News | Internal News | Media Report | Pictures of TJU |\n  | :----------: | :----------: | :-----------: | :----------: | :-------------: |\n  |     focus    |    general   |    internal   |     media    |     picture     |","location":"news/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tju" :data='{"path":"/news/:type?","categories":["university"],"example":"/tju/news/focus","parameters":{"type":"default `focus`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["SuperPung"],"description":"| Focus on TJU | General News | Internal News | Media Report | Pictures of TJU |\n  | :----------: | :----------: | :-----------: | :----------: | :-------------: |\n  |     focus    |    general   |    internal   |     media    |     picture     |","location":"news/index.ts"}' :test='{"code":0}' />
 
 | Focus on TJU | General News | Internal News | Media Report | Pictures of TJU |
   | :----------: | :----------: | :-----------: | :----------: | :-------------: |
@@ -139,7 +139,7 @@
 
 ### 教务处通知公告 <Site url="graduate.bjfu.edu.cn" size="sm" />
 
-<Route namespace="bjfu" :data='{"path":"/jwc/:type","categories":["university"],"example":"/bjfu/jwc/jwkx","parameters":{"type":"通知类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.bjfu.edu.cn/:type/index.html"]}],"name":"教务处通知公告","maintainers":["markmingjie"],"description":"| 教务快讯 | 考试信息 | 课程信息 | 教改动态 | 图片新闻 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | jwkx     | ksxx     | kcxx     | jgdt     | tpxw     |","location":"jwc/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bjfu" :data='{"path":"/jwc/:type","categories":["university"],"example":"/bjfu/jwc/jwkx","parameters":{"type":"通知类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.bjfu.edu.cn/:type/index.html"]}],"name":"教务处通知公告","maintainers":["markmingjie"],"description":"| 教务快讯 | 考试信息 | 课程信息 | 教改动态 | 图片新闻 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | jwkx     | ksxx     | kcxx     | jgdt     | tpxw     |","location":"jwc/index.ts"}' :test='{"code":0}' />
 
 | 教务快讯 | 考试信息 | 课程信息 | 教改动态 | 图片新闻 |
   | -------- | -------- | -------- | -------- | -------- |
@@ -151,7 +151,7 @@
 
 ### 绿色新闻网 <Site url="graduate.bjfu.edu.cn" size="sm" />
 
-<Route namespace="bjfu" :data='{"path":"/news/:type","categories":["university"],"example":"/bjfu/news/lsyw","parameters":{"type":"新闻栏目"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.bjfu.edu.cn/:type/index.html"]}],"name":"绿色新闻网","maintainers":["markmingjie"],"description":"| 绿色要闻 | 校园动态 | 教学科研 | 党建思政 | 一周排行 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | lsyw     | xydt     | jxky     | djsz     | yzph     |","location":"news/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bjfu" :data='{"path":"/news/:type","categories":["university"],"example":"/bjfu/news/lsyw","parameters":{"type":"新闻栏目"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.bjfu.edu.cn/:type/index.html"]}],"name":"绿色新闻网","maintainers":["markmingjie"],"description":"| 绿色要闻 | 校园动态 | 教学科研 | 党建思政 | 一周排行 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | lsyw     | xydt     | jxky     | djsz     | yzph     |","location":"news/index.ts"}' :test='{"code":0}' />
 
 | 绿色要闻 | 校园动态 | 教学科研 | 党建思政 | 一周排行 |
   | -------- | -------- | -------- | -------- | -------- |
@@ -159,7 +159,7 @@
 
 ### 信息学院通知 <Site url="graduate.bjfu.edu.cn" size="sm" />
 
-<Route namespace="bjfu" :data='{"path":"/it/:type","categories":["university"],"example":"/bjfu/it/xyxw","parameters":{"type":"通知类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["it.bjfu.edu.cn/:type/index.html"]}],"name":"信息学院通知","maintainers":["wzc-blog"],"description":"| 学院新闻 | 科研动态 | 本科生培养 | 研究生培养 |\n  | -------- | -------- | ---------- | ---------- |\n  | xyxw     | kydt     | pydt       | pydt2      |","location":"it/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bjfu" :data='{"path":"/it/:type","categories":["university"],"example":"/bjfu/it/xyxw","parameters":{"type":"通知类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["it.bjfu.edu.cn/:type/index.html"]}],"name":"信息学院通知","maintainers":["wzc-blog"],"description":"| 学院新闻 | 科研动态 | 本科生培养 | 研究生培养 |\n  | -------- | -------- | ---------- | ---------- |\n  | xyxw     | kydt     | pydt       | pydt2      |","location":"it/index.ts"}' :test='{"code":0}' />
 
 | 学院新闻 | 科研动态 | 本科生培养 | 研究生培养 |
   | -------- | -------- | ---------- | ---------- |
@@ -181,17 +181,17 @@
 
 ### 党委学生工作部 <Site url="bs.bnu.edu.cn" size="sm" />
 
-<Route namespace="bnu" :data='{"path":"/dwxgb/:category/:type","categories":["university"],"example":"/bnu/dwxgb/xwzx/tzgg","parameters":{"category":"大分类","type":"子分类，例子如下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dwxgb.bnu.edu.cn/:category/:type/index.html"]}],"name":"党委学生工作部","maintainers":["Fatpandac"],"description":"`https://dwxgb.bnu.edu.cn/xwzx/tzgg/index.html` 则对应为 `/bnu/dwxgb/xwzx/tzgg","location":"dwxgb.ts"}' :test='{"code":1,"message":"expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality"}' />
+<Route namespace="bnu" :data='{"path":"/dwxgb/:category/:type","categories":["university"],"example":"/bnu/dwxgb/xwzx/tzgg","parameters":{"category":"大分类","type":"子分类，例子如下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dwxgb.bnu.edu.cn/:category/:type/index.html"]}],"name":"党委学生工作部","maintainers":["Fatpandac"],"description":"`https://dwxgb.bnu.edu.cn/xwzx/tzgg/index.html` 则对应为 `/bnu/dwxgb/xwzx/tzgg","location":"dwxgb.ts"}' :test='{"code":0}' />
 
 `https://dwxgb.bnu.edu.cn/xwzx/tzgg/index.html` 则对应为 `/bnu/dwxgb/xwzx/tzgg
 
 ### 教务部（研究生院） <Site url="jwb.bnu.edu.cn/tzgg/index.htm" size="sm" />
 
-<Route namespace="bnu" :data='{"path":"/jwb","categories":["university"],"example":"/bnu/jwb","parameters":{},"radar":[{"source":["jwb.bnu.edu.cn"]}],"name":"教务部（研究生院）","maintainers":["ladeng07"],"url":"jwb.bnu.edu.cn/tzgg/index.htm","location":"jwb.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bnu" :data='{"path":"/jwb","categories":["university"],"example":"/bnu/jwb","parameters":{},"radar":[{"source":["jwb.bnu.edu.cn"]}],"name":"教务部（研究生院）","maintainers":["ladeng07"],"url":"jwb.bnu.edu.cn/tzgg/index.htm","location":"jwb.ts"}' :test='{"code":0}' />
 
 ### 经济与工商管理学院 <Site url="bs.bnu.edu.cn" size="sm" />
 
-<Route namespace="bnu" :data='{"path":"/bs/:category?","categories":["university"],"example":"/bnu/bs","parameters":{"category":"分类，见下表，默认为学院新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bs.bnu.edu.cn/:category/index.html"],"target":"/bs/:category"}],"name":"经济与工商管理学院","maintainers":["nczitzk"],"description":"| 学院新闻 | 通知公告 | 学术成果 | 学术讲座 | 教师观点 | 人才招聘 |\n  | -------- | -------- | -------- | -------- | -------- | -------- |\n  | xw       | zytzyyg  | xzcg     | xzjz     | xz       | bshzs    |","location":"bs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bnu" :data='{"path":"/bs/:category?","categories":["university"],"example":"/bnu/bs","parameters":{"category":"分类，见下表，默认为学院新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bs.bnu.edu.cn/:category/index.html"],"target":"/bs/:category"}],"name":"经济与工商管理学院","maintainers":["nczitzk"],"description":"| 学院新闻 | 通知公告 | 学术成果 | 学术讲座 | 教师观点 | 人才招聘 |\n  | -------- | -------- | -------- | -------- | -------- | -------- |\n  | xw       | zytzyyg  | xzcg     | xzjz     | xz       | bshzs    |","location":"bs.ts"}' :test='{"code":0}' />
 
 | 学院新闻 | 通知公告 | 学术成果 | 学术讲座 | 教师观点 | 人才招聘 |
   | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -201,7 +201,7 @@
 
 ### 集成电路科学与工程学院 <Site url="www.sme.buaa.edu.cn" size="sm" />
 
-<Route namespace="buaa" :data='{"path":"/sme/:path{.+}?","name":"集成电路科学与工程学院","url":"www.sme.buaa.edu.cn","maintainers":["MeanZhang"],"example":"/buaa/sme/tzgg","parameters":{"path":"版块路径，默认为 `tzgg`（通知公告）"},"description":":::tip\n\n版块路径（`path`）应填写板块 URL 中 `http://www.sme.buaa.edu.cn/` 和 `.htm` 之间的字段。\n\n示例：\n\n1. [通知公告](http://www.sme.buaa.edu.cn/tzgg.htm) 页面的 URL 为 `http://www.sme.buaa.edu.cn/tzgg.htm`，对应的路径参数为 `tzgg`，完整路由为 `/buaa/sme/tzgg`；\n2. [就业信息](http://www.sme.buaa.edu.cn/zsjy/jyxx.htm) 页面的 URL 为 `http://www.sme.buaa.edu.cn/zsjy/jyxx.htm`，对应的路径参数为 `zsjy/jyxx`，完整路由为 `/buaa/sme/zsjy/jyxx`。\n\n:::\n\n:::warning\n\n部分页面（如[学院介绍](http://www.sme.buaa.edu.cn/xygk/xyjs.htm)、[微纳中心](http://www.sme.buaa.edu.cn/wnzx.htm)、[院学生会](http://www.sme.buaa.edu.cn/xsgz/yxsh.htm)）存在无内容、内容跳转至外站等情况，因此可能出现解析失败的现象。\n\n:::","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"sme.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="buaa" :data='{"path":"/sme/:path{.+}?","name":"集成电路科学与工程学院","url":"www.sme.buaa.edu.cn","maintainers":["MeanZhang"],"example":"/buaa/sme/tzgg","parameters":{"path":"版块路径，默认为 `tzgg`（通知公告）"},"description":":::tip\n\n版块路径（`path`）应填写板块 URL 中 `http://www.sme.buaa.edu.cn/` 和 `.htm` 之间的字段。\n\n示例：\n\n1. [通知公告](http://www.sme.buaa.edu.cn/tzgg.htm) 页面的 URL 为 `http://www.sme.buaa.edu.cn/tzgg.htm`，对应的路径参数为 `tzgg`，完整路由为 `/buaa/sme/tzgg`；\n2. [就业信息](http://www.sme.buaa.edu.cn/zsjy/jyxx.htm) 页面的 URL 为 `http://www.sme.buaa.edu.cn/zsjy/jyxx.htm`，对应的路径参数为 `zsjy/jyxx`，完整路由为 `/buaa/sme/zsjy/jyxx`。\n\n:::\n\n:::warning\n\n部分页面（如[学院介绍](http://www.sme.buaa.edu.cn/xygk/xyjs.htm)、[微纳中心](http://www.sme.buaa.edu.cn/wnzx.htm)、[院学生会](http://www.sme.buaa.edu.cn/xsgz/yxsh.htm)）存在无内容、内容跳转至外站等情况，因此可能出现解析失败的现象。\n\n:::","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"sme.ts"}' :test='{"code":0}' />
 
 :::tip
 
@@ -222,7 +222,7 @@
 
 ### 新闻网 <Site url="news.buaa.edu.cn" size="sm" />
 
-<Route namespace="buaa" :data='{"path":"/news/:type","categories":["university"],"example":"/buaa/news/zhxw","parameters":{"type":"新闻版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻网","maintainers":["AlanDecode"],"description":"| 综合新闻 | 信息公告  | 学术文化     | 校园风采  | 科教在线  | 媒体北航  | 专题新闻 | 北航人物 |\n  | -------- | --------- | ------------ | --------- | --------- | --------- | -------- | -------- |\n  | zhxw     | xxgg_new | xsjwhhd_new | xyfc_new | kjzx_new | mtbh_new | ztxw     | bhrw     |","location":"news/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="buaa" :data='{"path":"/news/:type","categories":["university"],"example":"/buaa/news/zhxw","parameters":{"type":"新闻版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻网","maintainers":["AlanDecode"],"description":"| 综合新闻 | 信息公告  | 学术文化     | 校园风采  | 科教在线  | 媒体北航  | 专题新闻 | 北航人物 |\n  | -------- | --------- | ------------ | --------- | --------- | --------- | -------- | -------- |\n  | zhxw     | xxgg_new | xsjwhhd_new | xyfc_new | kjzx_new | mtbh_new | ztxw     | bhrw     |","location":"news/index.ts"}' :test='{"code":0}' />
 
 | 综合新闻 | 信息公告  | 学术文化     | 校园风采  | 科教在线  | 媒体北航  | 专题新闻 | 北航人物 |
   | -------- | --------- | ------------ | --------- | --------- | --------- | -------- | -------- |
@@ -272,23 +272,23 @@
 
 ### 软件与微电子学院 - 招生通知 <Site url="ss.pku.edu.cn/admission/admnotice" size="sm" />
 
-<Route namespace="pku" :data='{"path":"/ss/admission","categories":["university"],"example":"/pku/ss/admission","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ss.pku.edu.cn/admission/admnotice","ss.pku.edu.cn/"]}],"name":"软件与微电子学院 - 招生通知","maintainers":["legr4ndk"],"url":"ss.pku.edu.cn/admission/admnotice","location":"ss/admission.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pku" :data='{"path":"/ss/admission","categories":["university"],"example":"/pku/ss/admission","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ss.pku.edu.cn/admission/admnotice","ss.pku.edu.cn/"]}],"name":"软件与微电子学院 - 招生通知","maintainers":["legr4ndk"],"url":"ss.pku.edu.cn/admission/admnotice","location":"ss/admission.ts"}' :test='{"code":0}' />
 
 ### 软件与微电子学院 - 硕士统考招生通知 <Site url="ss.pku.edu.cn/admission/admbrochure/admission01" size="sm" />
 
-<Route namespace="pku" :data='{"path":"/ss/pgadmin","categories":["university"],"example":"/pku/ss/pgadmin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ss.pku.edu.cn/admission/admbrochure/admission01","ss.pku.edu.cn/"]}],"name":"软件与微电子学院 - 硕士统考招生通知","maintainers":["legr4ndk"],"url":"ss.pku.edu.cn/admission/admbrochure/admission01","location":"ss/pg-admin.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pku" :data='{"path":"/ss/pgadmin","categories":["university"],"example":"/pku/ss/pgadmin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ss.pku.edu.cn/admission/admbrochure/admission01","ss.pku.edu.cn/"]}],"name":"软件与微电子学院 - 硕士统考招生通知","maintainers":["legr4ndk"],"url":"ss.pku.edu.cn/admission/admbrochure/admission01","location":"ss/pg-admin.ts"}' :test='{"code":0}' />
 
 ### 生命科学学院通知公告 <Site url="bio.pku.edu.cn/homes/Index/news/21/21.html" size="sm" />
 
-<Route namespace="pku" :data='{"path":"/cls/announcement","categories":["university"],"example":"/pku/cls/announcement","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bio.pku.edu.cn/homes/Index/news/21/21.html","bio.pku.edu.cn/"]}],"name":"生命科学学院通知公告","maintainers":["william-swl"],"url":"bio.pku.edu.cn/homes/Index/news/21/21.html","location":"cls/announcement.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pku" :data='{"path":"/cls/announcement","categories":["university"],"example":"/pku/cls/announcement","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bio.pku.edu.cn/homes/Index/news/21/21.html","bio.pku.edu.cn/"]}],"name":"生命科学学院通知公告","maintainers":["william-swl"],"url":"bio.pku.edu.cn/homes/Index/news/21/21.html","location":"cls/announcement.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 生命科学学院近期讲座 <Site url="bio.pku.edu.cn/homes/Index/news_jz/7/7.html" size="sm" />
 
-<Route namespace="pku" :data='{"path":"/cls/lecture","categories":["university"],"example":"/pku/cls/lecture","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bio.pku.edu.cn/homes/Index/news_jz/7/7.html","bio.pku.edu.cn/"]}],"name":"生命科学学院近期讲座","maintainers":["TPOB"],"url":"bio.pku.edu.cn/homes/Index/news_jz/7/7.html","location":"cls/lecture.ts"}' :test='{"code":1,"message":"expected -1208054139 to be greater than -432000000"}' />
+<Route namespace="pku" :data='{"path":"/cls/lecture","categories":["university"],"example":"/pku/cls/lecture","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bio.pku.edu.cn/homes/Index/news_jz/7/7.html","bio.pku.edu.cn/"]}],"name":"生命科学学院近期讲座","maintainers":["TPOB"],"url":"bio.pku.edu.cn/homes/Index/news_jz/7/7.html","location":"cls/lecture.ts"}' :test='{"code":1,"message":"expected -1121985734 to be greater than -432000000"}' />
 
 ### 学生就业指导服务中心 <Site url="admission.pku.edu.cn" size="sm" />
 
-<Route namespace="pku" :data='{"path":"/scc/recruit/:type?","categories":["university"],"example":"/pku/scc/recruit/zpxx","parameters":{"type":"分区，见下表，默认请求 `zpxx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学生就业指导服务中心","maintainers":["DylanXie123"],"description":"| xwrd     | tzgg     | zpxx     | sxxx     | cyxx     |\n  | -------- | -------- | -------- | -------- | -------- |\n  | 新闻热点 | 通知公告 | 招聘信息 | 实习信息 | 创业信息 |","location":"scc/recruit.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pku" :data='{"path":"/scc/recruit/:type?","categories":["university"],"example":"/pku/scc/recruit/zpxx","parameters":{"type":"分区，见下表，默认请求 `zpxx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学生就业指导服务中心","maintainers":["DylanXie123"],"description":"| xwrd     | tzgg     | zpxx     | sxxx     | cyxx     |\n  | -------- | -------- | -------- | -------- | -------- |\n  | 新闻热点 | 通知公告 | 招聘信息 | 实习信息 | 创业信息 |","location":"scc/recruit.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | xwrd     | tzgg     | zpxx     | sxxx     | cyxx     |
   | -------- | -------- | -------- | -------- | -------- |
@@ -296,13 +296,13 @@
 
 ### 研究生招生网 <Site url="admission.pku.edu.cn/zsxx/sszs/index.htm" size="sm" />
 
-<Route namespace="pku" :data='{"path":"/admission/sszs","categories":["university"],"example":"/pku/admission/sszs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["admission.pku.edu.cn/zsxx/sszs/index.htm","admission.pku.edu.cn/"]}],"name":"研究生招生网","maintainers":["pkuyjs"],"url":"admission.pku.edu.cn/zsxx/sszs/index.htm","location":"pkuyjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pku" :data='{"path":"/admission/sszs","categories":["university"],"example":"/pku/admission/sszs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["admission.pku.edu.cn/zsxx/sszs/index.htm","admission.pku.edu.cn/"]}],"name":"研究生招生网","maintainers":["pkuyjs"],"url":"admission.pku.edu.cn/zsxx/sszs/index.htm","location":"pkuyjs.ts"}' :test='{"code":0}' />
 
 ## 北京协和医学院 <Site url="mdadmission.pumc.edu.cn"/>
 
 ### “4+4” 试点班招生网通知公告 <Site url="mdadmission.pumc.edu.cn/mdweb/site" size="sm" />
 
-<Route namespace="pumc" :data='{"path":"/mdadmission","categories":["university"],"example":"/pumc/mdadmission","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mdadmission.pumc.edu.cn/mdweb/site","mdadmission.pumc.edu.cn/"]}],"name":"“4+4” 试点班招生网通知公告","maintainers":["nczitzk"],"url":"mdadmission.pumc.edu.cn/mdweb/site","location":"mdadmission.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pumc" :data='{"path":"/mdadmission","categories":["university"],"example":"/pumc/mdadmission","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mdadmission.pumc.edu.cn/mdweb/site","mdadmission.pumc.edu.cn/"]}],"name":"“4+4” 试点班招生网通知公告","maintainers":["nczitzk"],"url":"mdadmission.pumc.edu.cn/mdweb/site","location":"mdadmission.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 北京科技大学 <Site url="gs.ustb.edu.cn"/>
 
@@ -334,7 +334,7 @@
 
 ### 教务处 <Site url="jwc.uestc.edu.cn/" size="sm" />
 
-<Route namespace="uestc" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/uestc/jwc/student","parameters":{"type":"默认为 `important`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.uestc.edu.cn/"],"target":"/jwc"}],"name":"教务处","maintainers":["achjqz","mobyw"],"url":"jwc.uestc.edu.cn/","description":"| 重要公告  | 学生事务公告 | 教师事务公告 | 教学新闻 | 办公室 |\n  | --------- | ------------ | ------------ | -------- | ------ |\n  | important | student      | teacher      | teach    | office |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="uestc" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/uestc/jwc/student","parameters":{"type":"默认为 `important`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.uestc.edu.cn/"],"target":"/jwc"}],"name":"教务处","maintainers":["achjqz","mobyw"],"url":"jwc.uestc.edu.cn/","description":"| 重要公告  | 学生事务公告 | 教师事务公告 | 教学新闻 | 办公室 |\n  | --------- | ------------ | ------------ | -------- | ------ |\n  | important | student      | teacher      | teach    | office |","location":"jwc.ts"}' :test='{"code":0}' />
 
 | 重要公告  | 学生事务公告 | 教师事务公告 | 教学新闻 | 办公室 |
   | --------- | ------------ | ------------ | -------- | ------ |
@@ -350,7 +350,7 @@
 
 ### 新闻中心 <Site url="news.uestc.edu.cn/" size="sm" />
 
-<Route namespace="uestc" :data='{"path":"/news/:type?","categories":["university"],"example":"/uestc/news/culture","parameters":{"type":"默认为 `announcement`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.uestc.edu.cn/"],"target":"/news"}],"name":"新闻中心","maintainers":["achjqz","mobyw"],"url":"news.uestc.edu.cn/","description":"| 学术    | 文化    | 公告         | 校内通知     |\n  | ------- | ------- | ------------ | ------------ |\n  | academy | culture | announcement | notification |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="uestc" :data='{"path":"/news/:type?","categories":["university"],"example":"/uestc/news/culture","parameters":{"type":"默认为 `announcement`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.uestc.edu.cn/"],"target":"/news"}],"name":"新闻中心","maintainers":["achjqz","mobyw"],"url":"news.uestc.edu.cn/","description":"| 学术    | 文化    | 公告         | 校内通知     |\n  | ------- | ------- | ------------ | ------------ |\n  | academy | culture | announcement | notification |","location":"news.ts"}' :test='{"code":0}' />
 
 | 学术    | 文化    | 公告         | 校内通知     |
   | ------- | ------- | ------------ | ------------ |
@@ -370,7 +370,7 @@
 
 ### 研究生院 <Site url="gr.uestc.edu.cn/" size="sm" />
 
-<Route namespace="uestc" :data='{"path":"/gr","categories":["university"],"example":"/uestc/gr","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gr.uestc.edu.cn/"]}],"name":"研究生院","maintainers":["huyyi","mobyw"],"url":"gr.uestc.edu.cn/","location":"gr.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="uestc" :data='{"path":"/gr","categories":["university"],"example":"/uestc/gr","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gr.uestc.edu.cn/"]}],"name":"研究生院","maintainers":["huyyi","mobyw"],"url":"gr.uestc.edu.cn/","location":"gr.ts"}' :test='{"code":0}' />
 
 ### 自动化工程学院 <Site url="auto.uestc.edu.cn/" size="sm" />
 
@@ -388,11 +388,11 @@
 
 ### 学术信息 <Site url="news.dhu.edu.cn/6410" size="sm" />
 
-<Route namespace="dhu" :data='{"path":"/news/xsxx","categories":["university"],"example":"/dhu/news/xsxx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.dhu.edu.cn/6410"]}],"name":"学术信息","maintainers":["fox2049"],"url":"news.dhu.edu.cn/6410","location":"news/xsxx.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dhu" :data='{"path":"/news/xsxx","categories":["university"],"example":"/dhu/news/xsxx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.dhu.edu.cn/6410"]}],"name":"学术信息","maintainers":["fox2049"],"url":"news.dhu.edu.cn/6410","location":"news/xsxx.ts"}' :test='{"code":0}' />
 
 ### 研究生院通知 <Site url="gs.dhu.edu.cn" size="sm" />
 
-<Route namespace="dhu" :data='{"path":"/yjs/news/:type?","categories":["university"],"example":"/dhu/yjs/news/class","parameters":{"type":"默认为 `class`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院通知","maintainers":["fox2049"],"description":"| 新闻动态 | 通知公告 | 选课考试 |\n  | -------- | -------- | -------- |\n  | trend    | notice   | class    |","location":"yjs/news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dhu" :data='{"path":"/yjs/news/:type?","categories":["university"],"example":"/dhu/yjs/news/class","parameters":{"type":"默认为 `class`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院通知","maintainers":["fox2049"],"description":"| 新闻动态 | 通知公告 | 选课考试 |\n  | -------- | -------- | -------- |\n  | trend    | notice   | class    |","location":"yjs/news.ts"}' :test='{"code":0}' />
 
 | 新闻动态 | 通知公告 | 选课考试 |
   | -------- | -------- | -------- |
@@ -400,7 +400,7 @@
 
 ### 研究生招生信息 <Site url="gs.dhu.edu.cn" size="sm" />
 
-<Route namespace="dhu" :data='{"path":"/yjs/zs/:type?","categories":["university"],"example":"/dhu/yjs/zs/master","parameters":{"type":"默认为 `master`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生招生信息","maintainers":["fox2049"],"description":"| 博士招生 | 硕士招生 |\n  | -------- | -------- |\n  | doctor   | master   |","location":"yjs/zs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dhu" :data='{"path":"/yjs/zs/:type?","categories":["university"],"example":"/dhu/yjs/zs/master","parameters":{"type":"默认为 `master`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生招生信息","maintainers":["fox2049"],"description":"| 博士招生 | 硕士招生 |\n  | -------- | -------- |\n  | doctor   | master   |","location":"yjs/zs.ts"}' :test='{"code":0}' />
 
 | 博士招生 | 硕士招生 |
   | -------- | -------- |
@@ -408,13 +408,13 @@
 
 ### 最新信息公开 <Site url="gs.dhu.edu.cn" size="sm" />
 
-<Route namespace="dhu" :data='{"path":"/xxgk/news","categories":["university"],"example":"/dhu/xxgk/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新信息公开","maintainers":["KiraKiseki"],"location":"xxgk/news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dhu" :data='{"path":"/xxgk/news","categories":["university"],"example":"/dhu/xxgk/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新信息公开","maintainers":["KiraKiseki"],"location":"xxgk/news.ts"}' :test='{"code":0}' />
 
 ## 东北大学 <Site url="neunews.neu.edu.cn"/>
 
 ### 新闻网 <Site url="neunews.neu.edu.cn" size="sm" />
 
-<Route namespace="neu" :data='{"path":"/news/:type","categories":["university"],"example":"/neu/news/ddyw","parameters":{"type":"种类名，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["neunews.neu.edu.cn/:type/list.htm"]}],"name":"新闻网","maintainers":["JeasonLau"],"description":"| 种类名   | 参数 |\n  | -------- | ---- |\n  | 东大要闻 | ddyw |\n  | 媒体东大 | mtdd |\n  | 通知公告 | tzgg |\n  | 新闻纵横 | xwzh |\n  | 人才培养 | rcpy |\n  | 学术科研 | xsky |\n  | 英文新闻 | 217  |\n  | 招生就业 | zsjy |\n  | 考研出国 | kycg |\n  | 校园文学 | xywx |\n  | 校友风采 | xyfc |\n  | 时事热点 | ssrd |\n  | 教育前沿 | jyqy |\n  | 文化体育 | whty |\n  | 最新科技 | zxkj |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="neu" :data='{"path":"/news/:type","categories":["university"],"example":"/neu/news/ddyw","parameters":{"type":"种类名，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["neunews.neu.edu.cn/:type/list.htm"]}],"name":"新闻网","maintainers":["JeasonLau"],"description":"| 种类名   | 参数 |\n  | -------- | ---- |\n  | 东大要闻 | ddyw |\n  | 媒体东大 | mtdd |\n  | 通知公告 | tzgg |\n  | 新闻纵横 | xwzh |\n  | 人才培养 | rcpy |\n  | 学术科研 | xsky |\n  | 英文新闻 | 217  |\n  | 招生就业 | zsjy |\n  | 考研出国 | kycg |\n  | 校园文学 | xywx |\n  | 校友风采 | xyfc |\n  | 时事热点 | ssrd |\n  | 教育前沿 | jyqy |\n  | 文化体育 | whty |\n  | 最新科技 | zxkj |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 种类名   | 参数 |
   | -------- | ---- |
@@ -436,7 +436,7 @@
 
 ### 医学与生物信息工程学院 <Site url="neunews.neu.edu.cn" size="sm" />
 
-<Route namespace="neu" :data='{"path":"/bmie/:type","categories":["university"],"example":"/neu/bmie/news","parameters":{"type":"分类 id 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"医学与生物信息工程学院","maintainers":["tennousuathena"],"description":"| Id                      | 名称       |\n  | ----------------------- | ---------- |\n  | news                    | 学院新闻   |\n  | academic                | 学术科研   |\n  | talent_development     | 人才培养   |\n  | international_exchange | 国际交流   |\n  | announcement            | 通知公告   |\n  | undergraduate_dev      | 本科生培养 |\n  | postgraduate_dev       | 研究生培养 |\n  | undergraduate_recruit  | 本科生招募 |\n  | postgraduate_recruit   | 研究生招募 |\n  | CPC_build              | 党的建设   |\n  | CPC_work               | 党委工作   |\n  | union_work             | 工会工作   |\n  | CYL_work               | 共青团工作 |\n  | security_management    | 安全管理   |\n  | alumni_style           | 校友风采   |","location":"bmie.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="neu" :data='{"path":"/bmie/:type","categories":["university"],"example":"/neu/bmie/news","parameters":{"type":"分类 id 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"医学与生物信息工程学院","maintainers":["tennousuathena"],"description":"| Id                      | 名称       |\n  | ----------------------- | ---------- |\n  | news                    | 学院新闻   |\n  | academic                | 学术科研   |\n  | talent_development     | 人才培养   |\n  | international_exchange | 国际交流   |\n  | announcement            | 通知公告   |\n  | undergraduate_dev      | 本科生培养 |\n  | postgraduate_dev       | 研究生培养 |\n  | undergraduate_recruit  | 本科生招募 |\n  | postgraduate_recruit   | 研究生招募 |\n  | CPC_build              | 党的建设   |\n  | CPC_work               | 党委工作   |\n  | union_work             | 工会工作   |\n  | CYL_work               | 共青团工作 |\n  | security_management    | 安全管理   |\n  | alumni_style           | 校友风采   |","location":"bmie.ts"}' :test='{"code":0}' />
 
 | Id                      | 名称       |
   | ----------------------- | ---------- |
@@ -460,7 +460,7 @@
 
 ### 计算机技术与工程学院 <Site url="cse.seu.edu.cn" size="sm" />
 
-<Route namespace="seu" :data='{"path":"/cse/:type?","categories":["university"],"example":"/seu/cse/xyxw","parameters":{"type":"分类名，默认为 `xyxw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cse.seu.edu.cn/:type/list.htm","cse.seu.edu.cn/"]}],"name":"计算机技术与工程学院","maintainers":["LogicJake"],"description":"| 学院新闻 | 通知公告 | 教务信息 | 就业信息 | 学工事务 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | xyxw     | tzgg     | jwxx     | jyxx     | xgsw     |","location":"cse/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="seu" :data='{"path":"/cse/:type?","categories":["university"],"example":"/seu/cse/xyxw","parameters":{"type":"分类名，默认为 `xyxw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cse.seu.edu.cn/:type/list.htm","cse.seu.edu.cn/"]}],"name":"计算机技术与工程学院","maintainers":["LogicJake"],"description":"| 学院新闻 | 通知公告 | 教务信息 | 就业信息 | 学工事务 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | xyxw     | tzgg     | jwxx     | jyxx     | xgsw     |","location":"cse/index.ts"}' :test='{"code":0}' />
 
 | 学院新闻 | 通知公告 | 教务信息 | 就业信息 | 学工事务 |
   | -------- | -------- | -------- | -------- | -------- |
@@ -468,11 +468,11 @@
 
 ### 信息科学与工程学院学术活动 <Site url="radio.seu.edu.cn/_s29/15986/list.psp" size="sm" />
 
-<Route namespace="seu" :data='{"path":"/radio/academic","categories":["university"],"example":"/seu/radio/academic","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["radio.seu.edu.cn/_s29/15986/list.psp","radio.seu.edu.cn/"]}],"name":"信息科学与工程学院学术活动","maintainers":["HenryQW"],"url":"radio.seu.edu.cn/_s29/15986/list.psp","location":"radio/academic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="seu" :data='{"path":"/radio/academic","categories":["university"],"example":"/seu/radio/academic","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["radio.seu.edu.cn/_s29/15986/list.psp","radio.seu.edu.cn/"]}],"name":"信息科学与工程学院学术活动","maintainers":["HenryQW"],"url":"radio.seu.edu.cn/_s29/15986/list.psp","location":"radio/academic.ts"}' :test='{"code":0}' />
 
 ### 研究生院全部公告 <Site url="seugs.seu.edu.cn/26671/list.htm" size="sm" />
 
-<Route namespace="seu" :data='{"path":"/yjs","categories":["university"],"example":"/seu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["seugs.seu.edu.cn/26671/list.htm","seugs.seu.edu.cn/"]}],"name":"研究生院全部公告","maintainers":["Denkiyohou"],"url":"seugs.seu.edu.cn/26671/list.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="seu" :data='{"path":"/yjs","categories":["university"],"example":"/seu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["seugs.seu.edu.cn/26671/list.htm","seugs.seu.edu.cn/"]}],"name":"研究生院全部公告","maintainers":["Denkiyohou"],"url":"seugs.seu.edu.cn/26671/list.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ### 研究生招生网通知公告 <Site url="cse.seu.edu.cn" size="sm" />
 
@@ -498,7 +498,7 @@
 
 ### 人工智能学院通知公告 <Site url="ai.gxmzu.edu.cn/index/tzgg.htm" size="sm" />
 
-<Route namespace="gxmzu" :data='{"path":"/aitzgg","categories":["university"],"example":"/gxmzu/aitzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ai.gxmzu.edu.cn/index/tzgg.htm","ai.gxmzu.edu.cn/"]}],"name":"人工智能学院通知公告","maintainers":["real-jiakai"],"url":"ai.gxmzu.edu.cn/index/tzgg.htm","location":"ai.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gxmzu" :data='{"path":"/aitzgg","categories":["university"],"example":"/gxmzu/aitzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ai.gxmzu.edu.cn/index/tzgg.htm","ai.gxmzu.edu.cn/"]}],"name":"人工智能学院通知公告","maintainers":["real-jiakai"],"url":"ai.gxmzu.edu.cn/index/tzgg.htm","location":"ai.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 图书馆最新消息 <Site url="library.gxmzu.edu.cn/news/news_list.jsp" size="sm" />
 
@@ -512,7 +512,7 @@
 
 ### 研究生院招生动态 <Site url="yjsy.gzhu.edu.cn/zsxx/zsdt/zsdt.htm" size="sm" />
 
-<Route namespace="gzhu" :data='{"path":"/yjs","categories":["university"],"example":"/gzhu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjsy.gzhu.edu.cn/zsxx/zsdt/zsdt.htm","yjsy.gzhu.edu.cn/"]}],"name":"研究生院招生动态","maintainers":["shengmaosu"],"url":"yjsy.gzhu.edu.cn/zsxx/zsdt/zsdt.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gzhu" :data='{"path":"/yjs","categories":["university"],"example":"/gzhu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjsy.gzhu.edu.cn/zsxx/zsdt/zsdt.htm","yjsy.gzhu.edu.cn/"]}],"name":"研究生院招生动态","maintainers":["shengmaosu"],"url":"yjsy.gzhu.edu.cn/zsxx/zsdt/zsdt.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ## 哈尔滨工业大学 <Site url="jwc.hit.edu.cn"/>
 
@@ -526,7 +526,7 @@
 
 ### 今日哈工大 <Site url="jwc.hit.edu.cn" size="sm" />
 
-<Route namespace="hit" :data='{"path":"/today/:category","categories":["university"],"example":"/hit/today/10","parameters":{"category":"分类编号，`10`为公告公示，`11`为新闻快讯，同时支持详细分类，使用方法见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["today.hit.edu.cn/category/:category"]}],"name":"今日哈工大","maintainers":["ranpox"],"description":":::tip\n  今日哈工大的文章分为公告公示和新闻快讯，每个页面右侧列出了更详细的分类，其编号为每个 URL 路径的最后一个数字。\n  例如会议讲座的路径为`/taxonomy/term/10/25`，则可以通过 [`/hit/today/25`](https://rsshub.app/hit/today/25) 订阅该详细类别。\n  :::\n\n  :::warning\n  部分文章需要经过统一身份认证后才能阅读全文。\n  :::","location":"today.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hit" :data='{"path":"/today/:category","categories":["university"],"example":"/hit/today/10","parameters":{"category":"分类编号，`10`为公告公示，`11`为新闻快讯，同时支持详细分类，使用方法见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["today.hit.edu.cn/category/:category"]}],"name":"今日哈工大","maintainers":["ranpox"],"description":":::tip\n  今日哈工大的文章分为公告公示和新闻快讯，每个页面右侧列出了更详细的分类，其编号为每个 URL 路径的最后一个数字。\n  例如会议讲座的路径为`/taxonomy/term/10/25`，则可以通过 [`/hit/today/25`](https://rsshub.app/hit/today/25) 订阅该详细类别。\n  :::\n\n  :::warning\n  部分文章需要经过统一身份认证后才能阅读全文。\n  :::","location":"today.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 :::tip
   今日哈工大的文章分为公告公示和新闻快讯，每个页面右侧列出了更详细的分类，其编号为每个 URL 路径的最后一个数字。
@@ -555,7 +555,7 @@
 
 ### 今日工大 - 通知公告 <Site url="hitwh.edu.cn/1024/list.htm" size="sm" />
 
-<Route namespace="hitwh" :data='{"path":"/today","categories":["university"],"example":"/hitwh/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hitwh.edu.cn/1024/list.htm","hitwh.edu.cn/"]}],"name":"今日工大 - 通知公告","maintainers":["raptazure"],"url":"hitwh.edu.cn/1024/list.htm","location":"today.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hitwh" :data='{"path":"/today","categories":["university"],"example":"/hitwh/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hitwh.edu.cn/1024/list.htm","hitwh.edu.cn/"]}],"name":"今日工大 - 通知公告","maintainers":["raptazure"],"url":"hitwh.edu.cn/1024/list.htm","location":"today.ts"}' :test='{"code":0}' />
 
 ## 哈尔滨工程大学 <Site url="yjsy.hrbeu.edu.cn"/>
 
@@ -569,7 +569,7 @@
 
 ### 本科生院工作通知 <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
-<Route namespace="hrbeu" :data='{"path":"/ugs/news/:author?/:category?","categories":["university"],"example":"/hrbeu/ugs/news/jwc/jxap","parameters":{"author":"发布部门，默认为 `gztz`","category":"分类，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ugs.hrbeu.edu.cn/:author/list.htm"],"target":"/ugs/news/:author"}],"name":"本科生院工作通知","maintainers":["XYenon"],"description":"author 列表：\n\n  | 教务处 | 实践教学与交流处 | 教育评估处 | 专业建设处 | 国家大学生文化素质基地 | 教师教学发展中心 | 综合办公室 | 工作通知 |\n  | ------ | ---------------- | ---------- | ---------- | ---------------------- | ---------------- | ---------- | -------- |\n  | jwc    | sjjxyjlzx        | jypgc      | zyjsc      | gjdxswhszjd            | jsjxfzzx         | zhbgs      | gztz     |\n\n  category 列表：\n\n  `all` 为全部\n\n  教务处：\n\n  | 教学安排 | 考试管理 | 学籍管理 | 外语统考 | 成绩管理 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | jxap     | ksgl     | xjgl     | wytk     | cjgl     |\n\n  实践教学与交流处：\n\n  | 实验教学 | 实验室建设 | 校外实习 | 学位论文 | 课程设计 | 创新创业 | 校际交流 |\n  | -------- | ---------- | -------- | -------- | -------- | -------- | -------- |\n  | syjx     | sysjs      | xwsx     | xwlw     | kcsj     | cxcy     | xjjl     |\n\n  教育评估处：\n\n  | 教学研究与教学成果 | 质量监控 |\n  | ------------------ | -------- |\n  | jxyjyjxcg          | zljk     |\n\n  专业建设处：\n\n  | 专业与教材建设 | 陈赓实验班 | 教学名师与优秀主讲教师 | 课程建设 | 双语教学 |\n  | -------------- | ---------- | ---------------------- | -------- | -------- |\n  | zyyjcjs        | cgsyb      | jxmsyyxzjjs            | kcjs     | syjx     |\n\n  国家大学生文化素质基地：无\n\n  教师教学发展中心：\n\n  | 教师培训 |\n  | -------- |\n  | jspx     |\n\n  综合办公室：\n\n  | 联系课程 |\n  | -------- |\n  | lxkc     |\n\n  工作通知：无","location":"ugs/news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hrbeu" :data='{"path":"/ugs/news/:author?/:category?","categories":["university"],"example":"/hrbeu/ugs/news/jwc/jxap","parameters":{"author":"发布部门，默认为 `gztz`","category":"分类，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ugs.hrbeu.edu.cn/:author/list.htm"],"target":"/ugs/news/:author"}],"name":"本科生院工作通知","maintainers":["XYenon"],"description":"author 列表：\n\n  | 教务处 | 实践教学与交流处 | 教育评估处 | 专业建设处 | 国家大学生文化素质基地 | 教师教学发展中心 | 综合办公室 | 工作通知 |\n  | ------ | ---------------- | ---------- | ---------- | ---------------------- | ---------------- | ---------- | -------- |\n  | jwc    | sjjxyjlzx        | jypgc      | zyjsc      | gjdxswhszjd            | jsjxfzzx         | zhbgs      | gztz     |\n\n  category 列表：\n\n  `all` 为全部\n\n  教务处：\n\n  | 教学安排 | 考试管理 | 学籍管理 | 外语统考 | 成绩管理 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | jxap     | ksgl     | xjgl     | wytk     | cjgl     |\n\n  实践教学与交流处：\n\n  | 实验教学 | 实验室建设 | 校外实习 | 学位论文 | 课程设计 | 创新创业 | 校际交流 |\n  | -------- | ---------- | -------- | -------- | -------- | -------- | -------- |\n  | syjx     | sysjs      | xwsx     | xwlw     | kcsj     | cxcy     | xjjl     |\n\n  教育评估处：\n\n  | 教学研究与教学成果 | 质量监控 |\n  | ------------------ | -------- |\n  | jxyjyjxcg          | zljk     |\n\n  专业建设处：\n\n  | 专业与教材建设 | 陈赓实验班 | 教学名师与优秀主讲教师 | 课程建设 | 双语教学 |\n  | -------------- | ---------- | ---------------------- | -------- | -------- |\n  | zyyjcjs        | cgsyb      | jxmsyyxzjjs            | kcjs     | syjx     |\n\n  国家大学生文化素质基地：无\n\n  教师教学发展中心：\n\n  | 教师培训 |\n  | -------- |\n  | jspx     |\n\n  综合办公室：\n\n  | 联系课程 |\n  | -------- |\n  | lxkc     |\n\n  工作通知：无","location":"ugs/news.ts"}' :test='{"code":0}' />
 
 author 列表：
 
@@ -623,7 +623,7 @@ author 列表：
 
 ### 大型招聘会 <Site url="job.hrbeu.edu.cn/*" size="sm" />
 
-<Route namespace="hrbeu" :data='{"path":"/job/bigemploy","categories":["university"],"example":"/hrbeu/job/bigemploy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["job.hrbeu.edu.cn/*"]}],"name":"大型招聘会","maintainers":["Derekmini"],"url":"job.hrbeu.edu.cn/*","location":"job/bigemploy.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hrbeu" :data='{"path":"/job/bigemploy","categories":["university"],"example":"/hrbeu/job/bigemploy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["job.hrbeu.edu.cn/*"]}],"name":"大型招聘会","maintainers":["Derekmini"],"url":"job.hrbeu.edu.cn/*","location":"job/bigemploy.ts"}' :test='{"code":1,"message":"expected -1122250243 to be greater than -432000000"}' />
 
 ### 就业服务平台 <Site url="job.hrbeu.edu.cn/*" size="sm" />
 
@@ -640,7 +640,7 @@ author 列表：
 
 ### 就业服务平台 <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
-<Route namespace="hrbeu" :data='{"path":"/job/list/:id","categories":["university"],"example":"/hrbeu/job/list/tzgg","parameters":{"id":"栏目，如下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"就业服务平台","maintainers":["Derekmini"],"description":"| 通知公告 | 热点新闻 |\n    | :------: | :------: |\n    |   tzgg   |   rdxw   |","location":"job/list.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hrbeu" :data='{"path":"/job/list/:id","categories":["university"],"example":"/hrbeu/job/list/tzgg","parameters":{"id":"栏目，如下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"就业服务平台","maintainers":["Derekmini"],"description":"| 通知公告 | 热点新闻 |\n    | :------: | :------: |\n    |   tzgg   |   rdxw   |","location":"job/list.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 热点新闻 |
     | :------: | :------: |
@@ -656,7 +656,7 @@ author 列表：
 
 ### 研究生院 <Site url="yjsy.hrbeu.edu.cn" size="sm" />
 
-<Route namespace="hrbeu" :data='{"path":"/yjsy/list/:id","categories":["university"],"example":"/hrbeu/yjsy/list/2981","parameters":{"id":"栏目编号，由 `URL` 中获取。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjsy.hrbeu.edu.cn/:id/list.htm"]}],"name":"研究生院","maintainers":["Derekmini"],"description":"| 通知公告 | 新闻动态 | 学籍注册 | 奖助学金 | 其他 |\n  | :------: | :------: | :------: | :------: | :--: |\n  |   2981   |   2980   |   3009   |   3011   |  ... |","location":"yjsy/list.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hrbeu" :data='{"path":"/yjsy/list/:id","categories":["university"],"example":"/hrbeu/yjsy/list/2981","parameters":{"id":"栏目编号，由 `URL` 中获取。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjsy.hrbeu.edu.cn/:id/list.htm"]}],"name":"研究生院","maintainers":["Derekmini"],"description":"| 通知公告 | 新闻动态 | 学籍注册 | 奖助学金 | 其他 |\n  | :------: | :------: | :------: | :------: | :--: |\n  |   2981   |   2980   |   3009   |   3011   |  ... |","location":"yjsy/list.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 新闻动态 | 学籍注册 | 奖助学金 | 其他 |
   | :------: | :------: | :------: | :------: | :--: |
@@ -686,7 +686,7 @@ author 列表：
 
 ### 河南财政金融学院 <Site url="www.hafu.edu.cn" size="sm" />
 
-<Route namespace="hafu" :data='{"path":"/news/:type?","categories":["university"],"example":"/hafu/news/ggtz","parameters":{"type":"分类，见下表（默认为 `ggtz`)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"河南财政金融学院","maintainers":[],"description":"| 校内公告通知 | 教务处公告通知 | 招生就业处公告通知 |\n  | ------------ | -------------- | ------------------ |\n  | ggtz         | jwc            | zsjyc              |","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="hafu" :data='{"path":"/news/:type?","categories":["university"],"example":"/hafu/news/ggtz","parameters":{"type":"分类，见下表（默认为 `ggtz`)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"河南财政金融学院","maintainers":[],"description":"| 校内公告通知 | 教务处公告通知 | 招生就业处公告通知 |\n  | ------------ | -------------- | ------------------ |\n  | ggtz         | jwc            | zsjyc              |","location":"news.ts"}' :test='{"code":0}' />
 
 | 校内公告通知 | 教务处公告通知 | 招生就业处公告通知 |
   | ------------ | -------------- | ------------------ |
@@ -706,13 +706,13 @@ author 列表：
 
 ### 校园招聘 <Site url="scc.hnu.edu.cnundefined" size="sm" />
 
-<Route namespace="hnu" :data='{"path":"/careers","categories":["university"],"example":"/hnu/careers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scc.hnu.edu.cnundefined"]}],"name":"校园招聘","maintainers":["ningyougan"],"url":"scc.hnu.edu.cnundefined","location":"careers.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hnu" :data='{"path":"/careers","categories":["university"],"example":"/hnu/careers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scc.hnu.edu.cnundefined"]}],"name":"校园招聘","maintainers":["ningyougan"],"url":"scc.hnu.edu.cnundefined","location":"careers.ts"}' :test='{"code":0}' />
 
 ## 湖北大学 <Site url="hubu.edu.cn"/>
 
 ### 主页 <Site url="hubu.edu.cn" size="sm" />
 
-<Route namespace="hubu" :data='{"path":"/www/:category{.+}?","name":"主页","url":"hubu.edu.cn","maintainers":["nczitzk"],"example":"/hubu/www/index/tzgg","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为[通知公告](https://www.hubu.edu.cn/index/tzgg.htm)"},"description":":::tip\n  若订阅 [通知公告](https://www.hubu.edu.cn/index/tzgg.htm)，网址为 `https://www.hubu.edu.cn/index/tzgg.htm`。截取 `https://www.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/www/index/tzgg`](https://rsshub.app/hubu/www/index/tzgg)。\n  :::\n\n  | 通知公告   | 学术预告   |\n  | ---------- | ---------- |\n  | index/tzgg | index/xsyg |\n  ","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"通知公告","source":["hubu.edu.cn/index/tzgg.htm"],"target":"/www/index/tzgg"},{"title":"学术预告","source":["hubu.edu.cn/index/xsyg.htm"],"target":"/www/index/xsyg"}],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hubu" :data='{"path":"/www/:category{.+}?","name":"主页","url":"hubu.edu.cn","maintainers":["nczitzk"],"example":"/hubu/www/index/tzgg","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为[通知公告](https://www.hubu.edu.cn/index/tzgg.htm)"},"description":":::tip\n  若订阅 [通知公告](https://www.hubu.edu.cn/index/tzgg.htm)，网址为 `https://www.hubu.edu.cn/index/tzgg.htm`。截取 `https://www.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/www/index/tzgg`](https://rsshub.app/hubu/www/index/tzgg)。\n  :::\n\n  | 通知公告   | 学术预告   |\n  | ---------- | ---------- |\n  | index/tzgg | index/xsyg |\n  ","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"通知公告","source":["hubu.edu.cn/index/tzgg.htm"],"target":"/www/index/tzgg"},{"title":"学术预告","source":["hubu.edu.cn/index/xsyg.htm"],"target":"/www/index/xsyg"}],"location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   若订阅 [通知公告](https://www.hubu.edu.cn/index/tzgg.htm)，网址为 `https://www.hubu.edu.cn/index/tzgg.htm`。截取 `https://www.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/www/index/tzgg`](https://rsshub.app/hubu/www/index/tzgg)。
@@ -725,7 +725,7 @@ author 列表：
 
 ### 资源环境学院 <Site url="zhxy.hubu.edu.cn" size="sm" />
 
-<Route namespace="hubu" :data='{"path":"/zhxy/:category{.+}?","name":"资源环境学院","url":"zhxy.hubu.edu.cn","maintainers":["nczitzk"],"example":"/hubu/zhxy/index/tzgg","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为[通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)"},"description":":::tip\n  若订阅 [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)，网址为 `https://zhxy.hubu.edu.cn/index/tzgg.htm`。截取 `https://zhxy.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/zhxy/index/tzgg`](https://rsshub.app/hubu/zhxy/index/tzgg)。\n  :::\n\n  | [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm) | [新闻动态](https://zhxy.hubu.edu.cn/index/xwdt.htm) |\n  | --------------------------------------------------- | --------------------------------------------------- |\n  | index/tzgg                                          | index/xwdt                                          |  \n\n  #### [人才培养](https://zhxy.hubu.edu.cn/rcpy.htm)\n  \n  | [人才培养](https://zhxy.hubu.edu.cn/rcpy.htm) | [本科生教育](https://zhxy.hubu.edu.cn/rcpy/bksjy.htm) | [研究生教育](https://zhxy.hubu.edu.cn/rcpy/yjsjy.htm) | [招生与就业](https://zhxy.hubu.edu.cn/rcpy/zsyjy/zsxx.htm) |\n  | --------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------- |\n  | rcpy                                          | rcpy/bksjy                                            | rcpy/yjsjy                                            | rcpy/zsyjy/zsxx                                            |\n  \n  #### [学科建设](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm)\n  \n  | [学科建设](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm) | [重点学科](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm) | [硕士点](https://zhxy.hubu.edu.cn/xkjianshe/ssd.htm) | [博士点](https://zhxy.hubu.edu.cn/xkjianshe/bsd.htm) |\n  | ------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |\n  | xkjianshe/zdxk                                          | xkjianshe/zdxk                                          | xkjianshe/ssd                                        | xkjianshe/bsd                                        |\n  \n  #### [科研服务](https://zhxy.hubu.edu.cn/kyfw.htm)\n  \n  | [科研服务](https://zhxy.hubu.edu.cn/kyfw.htm) | [科研动态](https://zhxy.hubu.edu.cn/kyfw/kydongt.htm) | [学术交流](https://zhxy.hubu.edu.cn/kyfw/xsjl.htm) | [科研平台](https://zhxy.hubu.edu.cn/kyfw/keyapt.htm) | [社会服务](https://zhxy.hubu.edu.cn/kyfw/shfuw.htm) |\n  | --------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------- |\n  | kyfw                                          | kyfw/kydongt                                          | kyfw/xsjl                                          | kyfw/keyapt                                          | kyfw/shfuw                                          |\n  \n  #### [党群工作](https://zhxy.hubu.edu.cn/dqgz.htm)\n  \n  | [党群工作](https://zhxy.hubu.edu.cn/dqgz.htm) | [党建工作](https://zhxy.hubu.edu.cn/dqgz/djgz/jgdj.htm) | [工会工作](https://zhxy.hubu.edu.cn/dqgz/ghgon.htm) |\n  | --------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------- |\n  | dqgz                                          | dqgz/djgz/jgdj                                          | dqgz/ghgon                                          |\n  ","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"通知公告","source":["zhxy.hubu.edu.cn/index/tzgg.htm"],"target":"/zhxy/index/tzgg"},{"title":"新闻动态","source":["zhxy.hubu.edu.cn/index/xwdt.htm"],"target":"/zhxy/index/xwdt"},{"title":"人才培养","source":["zhxy.hubu.edu.cn/rcpy.htm"],"target":"/zhxy/rcpy"},{"title":"人才培养 - 本科生教育","source":["zhxy.hubu.edu.cn/rcpy/bksjy.htm"],"target":"/zhxy/rcpy/bksjy"},{"title":"人才培养 - 研究生教育","source":["zhxy.hubu.edu.cn/rcpy/yjsjy.htm"],"target":"/zhxy/rcpy/yjsjy"},{"title":"人才培养 - 招生与就业","source":["zhxy.hubu.edu.cn/rcpy/zsyjy/zsxx.htm"],"target":"/zhxy/rcpy/zsyjy/zsxx"},{"title":"学科建设","source":["zhxy.hubu.edu.cn/xkjianshe/zdxk.htm"],"target":"/zhxy/xkjianshe/zdxk"},{"title":"学科建设 - 重点学科","source":["zhxy.hubu.edu.cn/xkjianshe/zdxk.htm"],"target":"/zhxy/xkjianshe/zdxk"},{"title":"学科建设 - 硕士点","source":["zhxy.hubu.edu.cn/xkjianshe/ssd.htm"],"target":"/zhxy/xkjianshe/ssd"},{"title":"学科建设 - 博士点","source":["zhxy.hubu.edu.cn/xkjianshe/bsd.htm"],"target":"/zhxy/xkjianshe/bsd"},{"title":"科研服务","source":["zhxy.hubu.edu.cn/kyfw.htm"],"target":"/zhxy/kyfw"},{"title":"科研服务 - 科研动态","source":["zhxy.hubu.edu.cn/kyfw/kydongt.htm"],"target":"/zhxy/kyfw/kydongt"},{"title":"科研服务 - 学术交流","source":["zhxy.hubu.edu.cn/kyfw/xsjl.htm"],"target":"/zhxy/kyfw/xsjl"},{"title":"科研服务 - 科研平台","source":["zhxy.hubu.edu.cn/kyfw/keyapt.htm"],"target":"/zhxy/kyfw/keyapt"},{"title":"科研服务 - 社会服务","source":["zhxy.hubu.edu.cn/kyfw/shfuw.htm"],"target":"/zhxy/kyfw/shfuw"},{"title":"党群工作","source":["zhxy.hubu.edu.cn/dqgz.htm"],"target":"/zhxy/dqgz"},{"title":"党群工作 - 党建工作","source":["zhxy.hubu.edu.cn/dqgz/djgz/jgdj.htm"],"target":"/zhxy/dqgz/djgz/jgdj"},{"title":"党群工作 - 工会工作","source":["zhxy.hubu.edu.cn/dqgz/ghgon.htm"],"target":"/zhxy/dqgz/ghgon"}],"location":"zhxy.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hubu" :data='{"path":"/zhxy/:category{.+}?","name":"资源环境学院","url":"zhxy.hubu.edu.cn","maintainers":["nczitzk"],"example":"/hubu/zhxy/index/tzgg","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为[通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)"},"description":":::tip\n  若订阅 [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)，网址为 `https://zhxy.hubu.edu.cn/index/tzgg.htm`。截取 `https://zhxy.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/zhxy/index/tzgg`](https://rsshub.app/hubu/zhxy/index/tzgg)。\n  :::\n\n  | [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm) | [新闻动态](https://zhxy.hubu.edu.cn/index/xwdt.htm) |\n  | --------------------------------------------------- | --------------------------------------------------- |\n  | index/tzgg                                          | index/xwdt                                          |  \n\n  #### [人才培养](https://zhxy.hubu.edu.cn/rcpy.htm)\n  \n  | [人才培养](https://zhxy.hubu.edu.cn/rcpy.htm) | [本科生教育](https://zhxy.hubu.edu.cn/rcpy/bksjy.htm) | [研究生教育](https://zhxy.hubu.edu.cn/rcpy/yjsjy.htm) | [招生与就业](https://zhxy.hubu.edu.cn/rcpy/zsyjy/zsxx.htm) |\n  | --------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------- |\n  | rcpy                                          | rcpy/bksjy                                            | rcpy/yjsjy                                            | rcpy/zsyjy/zsxx                                            |\n  \n  #### [学科建设](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm)\n  \n  | [学科建设](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm) | [重点学科](https://zhxy.hubu.edu.cn/xkjianshe/zdxk.htm) | [硕士点](https://zhxy.hubu.edu.cn/xkjianshe/ssd.htm) | [博士点](https://zhxy.hubu.edu.cn/xkjianshe/bsd.htm) |\n  | ------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |\n  | xkjianshe/zdxk                                          | xkjianshe/zdxk                                          | xkjianshe/ssd                                        | xkjianshe/bsd                                        |\n  \n  #### [科研服务](https://zhxy.hubu.edu.cn/kyfw.htm)\n  \n  | [科研服务](https://zhxy.hubu.edu.cn/kyfw.htm) | [科研动态](https://zhxy.hubu.edu.cn/kyfw/kydongt.htm) | [学术交流](https://zhxy.hubu.edu.cn/kyfw/xsjl.htm) | [科研平台](https://zhxy.hubu.edu.cn/kyfw/keyapt.htm) | [社会服务](https://zhxy.hubu.edu.cn/kyfw/shfuw.htm) |\n  | --------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------- |\n  | kyfw                                          | kyfw/kydongt                                          | kyfw/xsjl                                          | kyfw/keyapt                                          | kyfw/shfuw                                          |\n  \n  #### [党群工作](https://zhxy.hubu.edu.cn/dqgz.htm)\n  \n  | [党群工作](https://zhxy.hubu.edu.cn/dqgz.htm) | [党建工作](https://zhxy.hubu.edu.cn/dqgz/djgz/jgdj.htm) | [工会工作](https://zhxy.hubu.edu.cn/dqgz/ghgon.htm) |\n  | --------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------- |\n  | dqgz                                          | dqgz/djgz/jgdj                                          | dqgz/ghgon                                          |\n  ","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"通知公告","source":["zhxy.hubu.edu.cn/index/tzgg.htm"],"target":"/zhxy/index/tzgg"},{"title":"新闻动态","source":["zhxy.hubu.edu.cn/index/xwdt.htm"],"target":"/zhxy/index/xwdt"},{"title":"人才培养","source":["zhxy.hubu.edu.cn/rcpy.htm"],"target":"/zhxy/rcpy"},{"title":"人才培养 - 本科生教育","source":["zhxy.hubu.edu.cn/rcpy/bksjy.htm"],"target":"/zhxy/rcpy/bksjy"},{"title":"人才培养 - 研究生教育","source":["zhxy.hubu.edu.cn/rcpy/yjsjy.htm"],"target":"/zhxy/rcpy/yjsjy"},{"title":"人才培养 - 招生与就业","source":["zhxy.hubu.edu.cn/rcpy/zsyjy/zsxx.htm"],"target":"/zhxy/rcpy/zsyjy/zsxx"},{"title":"学科建设","source":["zhxy.hubu.edu.cn/xkjianshe/zdxk.htm"],"target":"/zhxy/xkjianshe/zdxk"},{"title":"学科建设 - 重点学科","source":["zhxy.hubu.edu.cn/xkjianshe/zdxk.htm"],"target":"/zhxy/xkjianshe/zdxk"},{"title":"学科建设 - 硕士点","source":["zhxy.hubu.edu.cn/xkjianshe/ssd.htm"],"target":"/zhxy/xkjianshe/ssd"},{"title":"学科建设 - 博士点","source":["zhxy.hubu.edu.cn/xkjianshe/bsd.htm"],"target":"/zhxy/xkjianshe/bsd"},{"title":"科研服务","source":["zhxy.hubu.edu.cn/kyfw.htm"],"target":"/zhxy/kyfw"},{"title":"科研服务 - 科研动态","source":["zhxy.hubu.edu.cn/kyfw/kydongt.htm"],"target":"/zhxy/kyfw/kydongt"},{"title":"科研服务 - 学术交流","source":["zhxy.hubu.edu.cn/kyfw/xsjl.htm"],"target":"/zhxy/kyfw/xsjl"},{"title":"科研服务 - 科研平台","source":["zhxy.hubu.edu.cn/kyfw/keyapt.htm"],"target":"/zhxy/kyfw/keyapt"},{"title":"科研服务 - 社会服务","source":["zhxy.hubu.edu.cn/kyfw/shfuw.htm"],"target":"/zhxy/kyfw/shfuw"},{"title":"党群工作","source":["zhxy.hubu.edu.cn/dqgz.htm"],"target":"/zhxy/dqgz"},{"title":"党群工作 - 党建工作","source":["zhxy.hubu.edu.cn/dqgz/djgz/jgdj.htm"],"target":"/zhxy/dqgz/djgz/jgdj"},{"title":"党群工作 - 工会工作","source":["zhxy.hubu.edu.cn/dqgz/ghgon.htm"],"target":"/zhxy/dqgz/ghgon"}],"location":"zhxy.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 :::tip
   若订阅 [通知公告](https://zhxy.hubu.edu.cn/index/tzgg.htm)，网址为 `https://zhxy.hubu.edu.cn/index/tzgg.htm`。截取 `https://zhxy.hubu.edu.cn/` 到末尾 `.htm` 的部分 `index/tzgg` 作为参数填入，此时路由为 [`/hubu/zhxy/index/tzgg`](https://rsshub.app/hubu/zhxy/index/tzgg)。
@@ -764,7 +764,7 @@ author 列表：
 
 ### 公共管理与法学学院 <Site url="xky.hunau.edu.cn/" size="sm" />
 
-<Route namespace="hunau" :data='{"path":"/gfxy/:category?/:page?","categories":["university"],"example":"/hunau/gfxy","parameters":{"category":"页面分类，默认为 `tzgg`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"公共管理与法学学院","maintainers":[],"url":"xky.hunau.edu.cn/","description":"| 分类 | 通知公告 | 学院新闻 | 其他分类通知... |\n  | ---- | -------- | -------- | --------------- |\n  | 参数 | tzgg     | xyxw     | 对应 URL        |","location":"gfxy/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hunau" :data='{"path":"/gfxy/:category?/:page?","categories":["university"],"example":"/hunau/gfxy","parameters":{"category":"页面分类，默认为 `tzgg`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"公共管理与法学学院","maintainers":[],"url":"xky.hunau.edu.cn/","description":"| 分类 | 通知公告 | 学院新闻 | 其他分类通知... |\n  | ---- | -------- | -------- | --------------- |\n  | 参数 | tzgg     | xyxw     | 对应 URL        |","location":"gfxy/index.ts"}' :test='{"code":1,"message":"expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality"}' />
 
 | 分类 | 通知公告 | 学院新闻 | 其他分类通知... |
   | ---- | -------- | -------- | --------------- |
@@ -772,7 +772,7 @@ author 列表：
 
 ### 国际交流与合作处、国际教育学院、港澳台事务办公室 <Site url="xky.hunau.edu.cn/" size="sm" />
 
-<Route namespace="hunau" :data='{"path":"/ied/:type?/:category?/:page?","categories":["university"],"example":"/hunau/ied","parameters":{"type":"页面归属，默认为 `xwzx`","category":"页面分类，默认为 `ggtz`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"国际交流与合作处、国际教育学院、港澳台事务办公室","maintainers":["lcandy2"],"url":"xky.hunau.edu.cn/","description":"| 分类     | 公告通知 | 新闻快讯 | 其他分类... |\n  | -------- | -------- | -------- | ----------- |\n  | type     | xwzx     | xwzx     | 对应 URL    |\n  | category | tzgg     | xwkx     | 对应 URL    |","location":"ied.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hunau" :data='{"path":"/ied/:type?/:category?/:page?","categories":["university"],"example":"/hunau/ied","parameters":{"type":"页面归属，默认为 `xwzx`","category":"页面分类，默认为 `ggtz`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"国际交流与合作处、国际教育学院、港澳台事务办公室","maintainers":["lcandy2"],"url":"xky.hunau.edu.cn/","description":"| 分类     | 公告通知 | 新闻快讯 | 其他分类... |\n  | -------- | -------- | -------- | ----------- |\n  | type     | xwzx     | xwzx     | 对应 URL    |\n  | category | tzgg     | xwkx     | 对应 URL    |","location":"ied.ts"}' :test='{"code":1,"message":"expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality"}' />
 
 | 分类     | 公告通知 | 新闻快讯 | 其他分类... |
   | -------- | -------- | -------- | ----------- |
@@ -781,7 +781,7 @@ author 列表：
 
 ### 教务处 <Site url="xky.hunau.edu.cn/" size="sm" />
 
-<Route namespace="hunau" :data='{"path":"/jwc/:category?/:page?","categories":["university"],"example":"/hunau/jwc","parameters":{"category":"页面分类，默认为 `tzgg`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"教务处","maintainers":[],"url":"xky.hunau.edu.cn/","description":"| 分类 | 通知公告 | 教务动态 | 其他教务通知... |\n  | ---- | -------- | -------- | --------------- |\n  | 参数 | tzgg     | jwds     | 对应 URL        |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hunau" :data='{"path":"/jwc/:category?/:page?","categories":["university"],"example":"/hunau/jwc","parameters":{"category":"页面分类，默认为 `tzgg`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"教务处","maintainers":[],"url":"xky.hunau.edu.cn/","description":"| 分类 | 通知公告 | 教务动态 | 其他教务通知... |\n  | ---- | -------- | -------- | --------------- |\n  | 参数 | tzgg     | jwds     | 对应 URL        |","location":"jwc.ts"}' :test='{"code":1,"message":"expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality"}' />
 
 | 分类 | 通知公告 | 教务动态 | 其他教务通知... |
   | ---- | -------- | -------- | --------------- |
@@ -789,7 +789,7 @@ author 列表：
 
 ### 信息与智能科学学院 <Site url="xky.hunau.edu.cn/" size="sm" />
 
-<Route namespace="hunau" :data='{"path":"/xky/:category?/:page?","categories":["university"],"example":"/hunau/xky","parameters":{"category":"页面分类，默认为 `tzgg_8472`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"信息与智能科学学院","maintainers":[],"url":"xky.hunau.edu.cn/","description":"| 分类 | 通知公告   | 学院新闻 | 其他分类通知... |\n  | ---- | ---------- | -------- | --------------- |\n  | 参数 | tzgg_8472 | xyxw     | 对应 URL        |","location":"xky/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hunau" :data='{"path":"/xky/:category?/:page?","categories":["university"],"example":"/hunau/xky","parameters":{"category":"页面分类，默认为 `tzgg_8472`","page":"页码，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xky.hunau.edu.cn/","xky.hunau.edu.cntzgg_8472","xky.hunau.edu.cn/:category"],"target":"/:category"}],"name":"信息与智能科学学院","maintainers":[],"url":"xky.hunau.edu.cn/","description":"| 分类 | 通知公告   | 学院新闻 | 其他分类通知... |\n  | ---- | ---------- | -------- | --------------- |\n  | 参数 | tzgg_8472 | xyxw     | 对应 URL        |","location":"xky/index.ts"}' :test='{"code":1,"message":"expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality"}' />
 
 | 分类 | 通知公告   | 学院新闻 | 其他分类通知... |
   | ---- | ---------- | -------- | --------------- |
@@ -799,19 +799,19 @@ author 列表：
 
 ### 计算机学院 <Site url="cs.ccnu.edu.cn/xwzx/tzgg.htm" size="sm" />
 
-<Route namespace="ccnu" :data='{"path":"/cs","categories":["university"],"example":"/ccnu/cs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cs.ccnu.edu.cn/xwzx/tzgg.htm","cs.ccnu.edu.cn/"]}],"name":"计算机学院","maintainers":["shengmaosu"],"url":"cs.ccnu.edu.cn/xwzx/tzgg.htm","location":"cs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccnu" :data='{"path":"/cs","categories":["university"],"example":"/ccnu/cs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cs.ccnu.edu.cn/xwzx/tzgg.htm","cs.ccnu.edu.cn/"]}],"name":"计算机学院","maintainers":["shengmaosu"],"url":"cs.ccnu.edu.cn/xwzx/tzgg.htm","location":"cs.ts"}' :test='{"code":0}' />
 
 ### 就业信息 <Site url="ccnu.91wllm.com/news/index/tag/tzgg" size="sm" />
 
-<Route namespace="ccnu" :data='{"path":"/career","categories":["university"],"example":"/ccnu/career","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ccnu.91wllm.com/news/index/tag/tzgg","ccnu.91wllm.com/"]}],"name":"就业信息","maintainers":["jackyu1996"],"url":"ccnu.91wllm.com/news/index/tag/tzgg","location":"career.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccnu" :data='{"path":"/career","categories":["university"],"example":"/ccnu/career","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ccnu.91wllm.com/news/index/tag/tzgg","ccnu.91wllm.com/"]}],"name":"就业信息","maintainers":["jackyu1996"],"url":"ccnu.91wllm.com/news/index/tag/tzgg","location":"career.ts"}' :test='{"code":0}' />
 
 ### 伍论贡学院 <Site url="uowji.ccnu.edu.cn/xwzx/tzgg.htm" size="sm" />
 
-<Route namespace="ccnu" :data='{"path":"/wu","categories":["university"],"example":"/ccnu/wu","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["uowji.ccnu.edu.cn/xwzx/tzgg.htm","uowji.ccnu.edu.cn/"]}],"name":"伍论贡学院","maintainers":["shengmaosu"],"url":"uowji.ccnu.edu.cn/xwzx/tzgg.htm","location":"wu.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccnu" :data='{"path":"/wu","categories":["university"],"example":"/ccnu/wu","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["uowji.ccnu.edu.cn/xwzx/tzgg.htm","uowji.ccnu.edu.cn/"]}],"name":"伍论贡学院","maintainers":["shengmaosu"],"url":"uowji.ccnu.edu.cn/xwzx/tzgg.htm","location":"wu.ts"}' :test='{"code":0}' />
 
 ### 研究生通知公告 <Site url="gs.ccnu.edu.cn/zsgz/ssyjs.htm" size="sm" />
 
-<Route namespace="ccnu" :data='{"path":"/yjs","categories":["university"],"example":"/ccnu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.ccnu.edu.cn/zsgz/ssyjs.htm","gs.ccnu.edu.cn/"]}],"name":"研究生通知公告","maintainers":["shengmaosu"],"url":"gs.ccnu.edu.cn/zsgz/ssyjs.htm","location":"yjs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ccnu" :data='{"path":"/yjs","categories":["university"],"example":"/ccnu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.ccnu.edu.cn/zsgz/ssyjs.htm","gs.ccnu.edu.cn/"]}],"name":"研究生通知公告","maintainers":["shengmaosu"],"url":"gs.ccnu.edu.cn/zsgz/ssyjs.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 华东理工大学 <Site url="e.ecust.edu.cn"/>
 
@@ -835,7 +835,7 @@ author 列表：
 
 ### 人工智能和自动化学院新闻 <Site url="aia.hust.edu.cn/xyxw.htm" size="sm" />
 
-<Route namespace="hust" :data='{"path":["/aia/news","/auto/news"],"categories":["university"],"example":"/hust/aia/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aia.hust.edu.cn/xyxw.htm","aia.hust.edu.cn/"]}],"name":"人工智能和自动化学院新闻","maintainers":["budui"],"url":"aia.hust.edu.cn/xyxw.htm","location":"aia/news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hust" :data='{"path":["/aia/news","/auto/news"],"categories":["university"],"example":"/hust/aia/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aia.hust.edu.cn/xyxw.htm","aia.hust.edu.cn/"]}],"name":"人工智能和自动化学院新闻","maintainers":["budui"],"url":"aia.hust.edu.cn/xyxw.htm","location":"aia/news.ts"}' :test='{"code":0}' />
 
 ### 人工智能和自动化学院新闻 <Site url="aia.hust.edu.cn/xyxw.htm" size="sm" />
 
@@ -843,7 +843,7 @@ author 列表：
 
 ### 人工智能和自动化学院通知 <Site url="aia.hust.edu.cn" size="sm" />
 
-<Route namespace="hust" :data='{"path":["/aia/notice/:type?","/auto/notice/:type?"],"categories":["university"],"example":"/hust/aia/notice","parameters":{"type":"分区，默认为最新通知，可在网页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"人工智能和自动化学院通知","maintainers":["budui"],"description":"| 最新 | 党政 | 科研 | 本科生 | 研究生 | 学工思政 | 离退休 |\n  | ---- | ---- | ---- | ------ | ------ | -------- | ------ |\n  |      | dz   | ky   | bk     | yjs    | xgsz     | litui  |","location":"aia/notice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hust" :data='{"path":["/aia/notice/:type?","/auto/notice/:type?"],"categories":["university"],"example":"/hust/aia/notice","parameters":{"type":"分区，默认为最新通知，可在网页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"人工智能和自动化学院通知","maintainers":["budui"],"description":"| 最新 | 党政 | 科研 | 本科生 | 研究生 | 学工思政 | 离退休 |\n  | ---- | ---- | ---- | ------ | ------ | -------- | ------ |\n  |      | dz   | ky   | bk     | yjs    | xgsz     | litui  |","location":"aia/notice.ts"}' :test='{"code":0}' />
 
 | 最新 | 党政 | 科研 | 本科生 | 研究生 | 学工思政 | 离退休 |
   | ---- | ---- | ---- | ------ | ------ | -------- | ------ |
@@ -859,13 +859,13 @@ author 列表：
 
 ### 研究生院通知公告 <Site url="gszs.hust.edu.cn/zsxx/ggtz.htm" size="sm" />
 
-<Route namespace="hust" :data='{"path":"/yjs","categories":["university"],"example":"/hust/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gszs.hust.edu.cn/zsxx/ggtz.htm","gszs.hust.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"gszs.hust.edu.cn/zsxx/ggtz.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hust" :data='{"path":"/yjs","categories":["university"],"example":"/hust/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gszs.hust.edu.cn/zsxx/ggtz.htm","gszs.hust.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"gszs.hust.edu.cn/zsxx/ggtz.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ## 华北电力大学 <Site url="yjsy.ncepu.edu.cn"/>
 
 ### 北京校区研究生院 <Site url="yjsy.ncepu.edu.cn" size="sm" />
 
-<Route namespace="ncepu" :data='{"path":"/master/:type","categories":["university"],"example":"/ncepu/master/tzgg","parameters":{"type":"类型参数"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北京校区研究生院","maintainers":["nilleo"],"description":"| 类型 | 硕士招生信息 | 通知公告 | 研究生培养信息 |\n  | ---- | ------------ | -------- | -------------- |\n  | 参数 | zsxx         | tzgg     | pyxx           |","location":"master/masterinfo.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ncepu" :data='{"path":"/master/:type","categories":["university"],"example":"/ncepu/master/tzgg","parameters":{"type":"类型参数"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北京校区研究生院","maintainers":["nilleo"],"description":"| 类型 | 硕士招生信息 | 通知公告 | 研究生培养信息 |\n  | ---- | ------------ | -------- | -------------- |\n  | 参数 | zsxx         | tzgg     | pyxx           |","location":"master/masterinfo.ts"}' :test='{"code":0}' />
 
 | 类型 | 硕士招生信息 | 通知公告 | 研究生培养信息 |
   | ---- | ------------ | -------- | -------------- |
@@ -875,17 +875,17 @@ author 列表：
 
 ### 学校通知 <Site url="ncwu.edu.cn/xxtz.htm" size="sm" />
 
-<Route namespace="ncwu" :data='{"path":"/notice","categories":["university"],"example":"/ncwu/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ncwu.edu.cn/xxtz.htm"]}],"name":"学校通知","maintainers":[],"url":"ncwu.edu.cn/xxtz.htm","location":"notice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ncwu" :data='{"path":"/notice","categories":["university"],"example":"/ncwu/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ncwu.edu.cn/xxtz.htm"]}],"name":"学校通知","maintainers":[],"url":"ncwu.edu.cn/xxtz.htm","location":"notice.ts"}' :test='{"code":0}' />
 
 ## 华南农业大学 <Site url="yzb.scau.edu.cn"/>
 
 ### 华农研讯 <Site url="yzb.scau.edu.cn/2136/list1.htm" size="sm" />
 
-<Route namespace="scau" :data='{"path":"/yzb","categories":["university"],"example":"/scau/yzb","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yzb.scau.edu.cn/2136/list1.htm","yzb.scau.edu.cn/"]}],"name":"华农研讯","maintainers":["shengmaosu"],"url":"yzb.scau.edu.cn/2136/list1.htm","location":"yjs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="scau" :data='{"path":"/yzb","categories":["university"],"example":"/scau/yzb","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yzb.scau.edu.cn/2136/list1.htm","yzb.scau.edu.cn/"]}],"name":"华农研讯","maintainers":["shengmaosu"],"url":"yzb.scau.edu.cn/2136/list1.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ### 研究生院通知 <Site url="yjsy.scau.edu.cn/208/list.htm" size="sm" />
 
-<Route namespace="scau" :data='{"path":"/yjsy","categories":["university"],"example":"/scau/yjsy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjsy.scau.edu.cn/208/list.htm","yjsy.scau.edu.cn/"]}],"name":"研究生院通知","maintainers":["Chunssu"],"url":"yjsy.scau.edu.cn/208/list.htm","location":"yjsy.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="scau" :data='{"path":"/yjsy","categories":["university"],"example":"/scau/yjsy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjsy.scau.edu.cn/208/list.htm","yjsy.scau.edu.cn/"]}],"name":"研究生院通知","maintainers":["Chunssu"],"url":"yjsy.scau.edu.cn/208/list.htm","location":"yjsy.ts"}' :test='{"code":0}' />
 
 ## 华南师范大学 <Site url="cs.scnu.edu.cn"/>
 
@@ -921,7 +921,7 @@ author 列表：
 
 ### 机械与汽车工程学院 - 通知公告 <Site url="jw.scut.edu.cn" size="sm" />
 
-<Route namespace="scut" :data='{"path":"/smae/:category?","categories":["university"],"example":"/scut/smae/yjsjw","parameters":{"category":"通知分类，默认为 `yjsjw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"机械与汽车工程学院 - 通知公告","maintainers":["Ermaotie"],"description":"| 公务信息 | 党建工作 | 人事工作 | 学生工作 | 科研实验室 | 本科生教务 | 研究生教务 |\n  | -------- | -------- | -------- | -------- | ---------- | ---------- | ---------- |\n  | gwxx     | djgz     | rsgz     | xsgz     | kysys      | bksjw      | yjsjw      |","location":"smae/notice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="scut" :data='{"path":"/smae/:category?","categories":["university"],"example":"/scut/smae/yjsjw","parameters":{"category":"通知分类，默认为 `yjsjw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"机械与汽车工程学院 - 通知公告","maintainers":["Ermaotie"],"description":"| 公务信息 | 党建工作 | 人事工作 | 学生工作 | 科研实验室 | 本科生教务 | 研究生教务 |\n  | -------- | -------- | -------- | -------- | ---------- | ---------- | ---------- |\n  | gwxx     | djgz     | rsgz     | xsgz     | kysys      | bksjw      | yjsjw      |","location":"smae/notice.ts"}' :test='{"code":0}' />
 
 | 公务信息 | 党建工作 | 人事工作 | 学生工作 | 科研实验室 | 本科生教务 | 研究生教务 |
   | -------- | -------- | -------- | -------- | ---------- | ---------- | ---------- |
@@ -953,7 +953,7 @@ author 列表：
 
 ### 研究生院通知公告 <Site url="www2.scut.edu.cn/graduate/14562/list.htm" size="sm" />
 
-<Route namespace="scut" :data='{"path":"/yjs","categories":["university"],"example":"/scut/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www2.scut.edu.cn/graduate/14562/list.htm"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"www2.scut.edu.cn/graduate/14562/list.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="scut" :data='{"path":"/yjs","categories":["university"],"example":"/scut/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www2.scut.edu.cn/graduate/14562/list.htm"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"www2.scut.edu.cn/graduate/14562/list.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ## 吉首大学 <Site url="jsu.edu.cn"/>
 
@@ -967,7 +967,7 @@ author 列表：
 
 ### 教务处 <Site url="jsu.edu.cn" size="sm" />
 
-<Route namespace="jsu" :data='{"path":"/jwc/:types?","categories":["university"],"example":"/jsu/jwc/jwdt","parameters":{"types":"通知分类 默认为`jwtz`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["wenjia03"],"description":"| 教务通知 | 教务动态 |\n  | -------- | -------- |\n  | jwtz     | jwdt     |","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jsu" :data='{"path":"/jwc/:types?","categories":["university"],"example":"/jsu/jwc/jwdt","parameters":{"types":"通知分类 默认为`jwtz`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["wenjia03"],"description":"| 教务通知 | 教务动态 |\n  | -------- | -------- |\n  | jwtz     | jwdt     |","location":"jwc.ts"}' :test='{"code":0}' />
 
 | 教务通知 | 教务动态 |
   | -------- | -------- |
@@ -975,7 +975,7 @@ author 列表：
 
 ### 数学与统计学院 - 通知公告 <Site url="jsu.edu.cn" size="sm" />
 
-<Route namespace="jsu" :data='{"path":"/stxy","categories":["university"],"example":"/jsu/stxy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"数学与统计学院 - 通知公告","maintainers":["wenjia03"],"location":"math.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="jsu" :data='{"path":"/stxy","categories":["university"],"example":"/jsu/stxy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"数学与统计学院 - 通知公告","maintainers":["wenjia03"],"location":"math.ts"}' :test='{"code":0}' />
 
 ### 通知公告 <Site url="jsu.edu.cn" size="sm" />
 
@@ -995,7 +995,7 @@ author 列表：
 
 ### 教学部通知公告 <Site url="lsnu.edu.cn/" size="sm" />
 
-<Route namespace="lsnu" :data='{"path":"/jiaowc/tzgg/:category?","categories":["university"],"example":"/lsnu/jiaowc/tzgg","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lsnu.edu.cn/"],"target":"/jiaowc/tzgg"}],"name":"教学部通知公告","maintainers":["nyaShine"],"url":"lsnu.edu.cn/","description":"| 实践教学科 | 教育运行科 | 教研教改科 | 学籍管理科 | 考试科 | 教材建设管理科 |\n  | ---------- | ---------- | ---------- | ---------- | ------ | -------------- |\n  | sjjxk      | jxyxk      | jyjgk      | xjglk      | ksk    | jcjsglk        |","location":"jiaowc/tzgg.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lsnu" :data='{"path":"/jiaowc/tzgg/:category?","categories":["university"],"example":"/lsnu/jiaowc/tzgg","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lsnu.edu.cn/"],"target":"/jiaowc/tzgg"}],"name":"教学部通知公告","maintainers":["nyaShine"],"url":"lsnu.edu.cn/","description":"| 实践教学科 | 教育运行科 | 教研教改科 | 学籍管理科 | 考试科 | 教材建设管理科 |\n  | ---------- | ---------- | ---------- | ---------- | ------ | -------------- |\n  | sjjxk      | jxyxk      | jyjgk      | xjglk      | ksk    | jcjsglk        |","location":"jiaowc/tzgg.ts"}' :test='{"code":0}' />
 
 | 实践教学科 | 教育运行科 | 教研教改科 | 学籍管理科 | 考试科 | 教材建设管理科 |
   | ---------- | ---------- | ---------- | ---------- | ------ | -------------- |
@@ -1005,13 +1005,13 @@ author 列表：
 
 ### 教务通知 <Site url="jwc.ncu.edu.cn/" size="sm" />
 
-<Route namespace="ncu" :data='{"path":"/jwc","categories":["university"],"example":"/ncu/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.ncu.edu.cn/","jwc.ncu.edu.cn/jwtz/index.htm"]}],"name":"教务通知","maintainers":["ywh555hhh"],"url":"jwc.ncu.edu.cn/","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ncu" :data='{"path":"/jwc","categories":["university"],"example":"/ncu/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.ncu.edu.cn/","jwc.ncu.edu.cn/jwtz/index.htm"]}],"name":"教务通知","maintainers":["ywh555hhh"],"url":"jwc.ncu.edu.cn/","location":"jwc.ts"}' :test='{"code":1,"message":"expected -16846888957 to be greater than -432000000"}' />
 
 ## 南京工程学院 <Site url="jwc.njit.edu.cn"/>
 
 ### 南京工程学院教务处 <Site url="jwc.njit.edu.cn" size="sm" />
 
-<Route namespace="njit" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/njit/jwc/jx","parameters":{"type":"默认为 `jx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"南京工程学院教务处","maintainers":["zefengdaguo"],"description":"| 教学 | 考试 | 信息 | 实践 |\n| ---- | ---- | ---- | ---- |\n| jx   | ks   | xx   | sj   |","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="njit" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/njit/jwc/jx","parameters":{"type":"默认为 `jx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"南京工程学院教务处","maintainers":["zefengdaguo"],"description":"| 教学 | 考试 | 信息 | 实践 |\n| ---- | ---- | ---- | ---- |\n| jx   | ks   | xx   | sj   |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 教学 | 考试 | 信息 | 实践 |
 | ---- | ---- | ---- | ---- |
@@ -1019,13 +1019,13 @@ author 列表：
 
 ### 南京工程学院通知公告 <Site url="www.njit.edu.cn/" size="sm" />
 
-<Route namespace="njit" :data='{"path":"/tzgg","categories":["university"],"example":"/njit/tzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.njit.edu.cn/"]}],"name":"南京工程学院通知公告","maintainers":["zefengdaguo"],"url":"www.njit.edu.cn/","location":"tzgg.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="njit" :data='{"path":"/tzgg","categories":["university"],"example":"/njit/tzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.njit.edu.cn/"]}],"name":"南京工程学院通知公告","maintainers":["zefengdaguo"],"url":"www.njit.edu.cn/","location":"tzgg.ts"}' :test='{"code":0}' />
 
 ## 南京师范大学 <Site url="ceai.njnu.edu.cn"/>
 
 ### 计算机与电子信息学院 - 人工智能学院 <Site url="ceai.njnu.edu.cn" size="sm" />
 
-<Route namespace="njnu" :data='{"path":"/ceai/:type","categories":["university"],"example":"/njnu/ceai/xszx","parameters":{"type":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机与电子信息学院 - 人工智能学院","maintainers":["Shujakuinkuraudo"],"description":"| 学院公告 | 学院新闻 | 学生资讯 |\n  | -------- | -------- | -------- |\n  | xygg     | xyxw     | xszx     |","location":"ceai/ceai.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="njnu" :data='{"path":"/ceai/:type","categories":["university"],"example":"/njnu/ceai/xszx","parameters":{"type":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机与电子信息学院 - 人工智能学院","maintainers":["Shujakuinkuraudo"],"description":"| 学院公告 | 学院新闻 | 学生资讯 |\n  | -------- | -------- | -------- |\n  | xygg     | xyxw     | xszx     |","location":"ceai/ceai.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 学院公告 | 学院新闻 | 学生资讯 |
   | -------- | -------- | -------- |
@@ -1043,11 +1043,11 @@ author 列表：
 
 ### ITSC 信息中心 <Site url="itsc.nju.edu.cn/tzgg/list.htm" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/itsc","categories":["university"],"example":"/nju/itsc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["itsc.nju.edu.cn/tzgg/list.htm"]}],"name":"ITSC 信息中心","maintainers":["ret-1"],"url":"itsc.nju.edu.cn/tzgg/list.htm","location":"itsc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/itsc","categories":["university"],"example":"/nju/itsc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["itsc.nju.edu.cn/tzgg/list.htm"]}],"name":"ITSC 信息中心","maintainers":["ret-1"],"url":"itsc.nju.edu.cn/tzgg/list.htm","location":"itsc.ts"}' :test='{"code":0}' />
 
 ### 本科迎新 <Site url="admission.nju.edu.cn/tzgg/index.html" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/admission","categories":["university"],"example":"/nju/admission","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["admission.nju.edu.cn/tzgg/index.html","admission.nju.edu.cn/tzgg","admission.nju.edu.cn/"]}],"name":"本科迎新","maintainers":["ret-1"],"url":"admission.nju.edu.cn/tzgg/index.html","location":"admission.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/admission","categories":["university"],"example":"/nju/admission","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["admission.nju.edu.cn/tzgg/index.html","admission.nju.edu.cn/tzgg","admission.nju.edu.cn/"]}],"name":"本科迎新","maintainers":["ret-1"],"url":"admission.nju.edu.cn/tzgg/index.html","location":"admission.ts"}' :test='{"code":0}' />
 
 ### 本科生交换生系统 <Site url="admission.nju.edu.cn" size="sm" />
 
@@ -1067,7 +1067,7 @@ author 列表：
 
 ### 大学外语部 <Site url="dafls.nju.edu.cn/13167/list.html" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/dafls","categories":["university"],"example":"/nju/dafls","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dafls.nju.edu.cn/13167/list.html","dafls.nju.edu.cn/"]}],"name":"大学外语部","maintainers":["ret-1"],"url":"dafls.nju.edu.cn/13167/list.html","location":"dafls.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/dafls","categories":["university"],"example":"/nju/dafls","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dafls.nju.edu.cn/13167/list.html","dafls.nju.edu.cn/"]}],"name":"大学外语部","maintainers":["ret-1"],"url":"dafls.nju.edu.cn/13167/list.html","location":"dafls.ts"}' :test='{"code":0}' />
 
 ### 后勤集团 <Site url="webplus.nju.edu.cn/_s25/main.psp" size="sm" />
 
@@ -1075,11 +1075,11 @@ author 列表：
 
 ### 基建处 <Site url="jjc.nju.edu.cn/main.htm" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/jjc","categories":["university"],"example":"/nju/jjc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jjc.nju.edu.cn/main.htm","jjc.nju.edu.cn/"]}],"name":"基建处","maintainers":["ret-1"],"url":"jjc.nju.edu.cn/main.htm","location":"jjc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/jjc","categories":["university"],"example":"/nju/jjc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jjc.nju.edu.cn/main.htm","jjc.nju.edu.cn/"]}],"name":"基建处","maintainers":["ret-1"],"url":"jjc.nju.edu.cn/main.htm","location":"jjc.ts"}' :test='{"code":0}' />
 
 ### 科学技术处 <Site url="admission.nju.edu.cn" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/scit/:type","categories":["university"],"example":"/nju/scit/tzgg","parameters":{"type":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科学技术处","maintainers":["ret-1"],"description":"| 通知公告 | 科研动态 |\n  | -------- | -------- |\n  | tzgg     | kydt     |","location":"scit.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/scit/:type","categories":["university"],"example":"/nju/scit/tzgg","parameters":{"type":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科学技术处","maintainers":["ret-1"],"description":"| 通知公告 | 科研动态 |\n  | -------- | -------- |\n  | tzgg     | kydt     |","location":"scit.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 科研动态 |
   | -------- | -------- |
@@ -1095,11 +1095,11 @@ author 列表：
 
 ### 校医院 <Site url="hospital.nju.edu.cn/ggtz/index.html" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/hospital","categories":["university"],"example":"/nju/hospital","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hospital.nju.edu.cn/ggtz/index.html"]}],"name":"校医院","maintainers":["ret-1"],"url":"hospital.nju.edu.cn/ggtz/index.html","location":"hosptial.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/hospital","categories":["university"],"example":"/nju/hospital","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hospital.nju.edu.cn/ggtz/index.html"]}],"name":"校医院","maintainers":["ret-1"],"url":"hospital.nju.edu.cn/ggtz/index.html","location":"hosptial.ts"}' :test='{"code":0}' />
 
 ### 研究生院 <Site url="grawww.nju.edu.cn/main.htm" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/gra","categories":["university"],"example":"/nju/gra","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grawww.nju.edu.cn/main.htm","grawww.nju.edu.cn/"]}],"name":"研究生院","maintainers":["ret-1"],"url":"grawww.nju.edu.cn/main.htm","location":"gra.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/gra","categories":["university"],"example":"/nju/gra","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grawww.nju.edu.cn/main.htm","grawww.nju.edu.cn/"]}],"name":"研究生院","maintainers":["ret-1"],"url":"grawww.nju.edu.cn/main.htm","location":"gra.ts"}' :test='{"code":0}' />
 
 ### 招标办公室 <Site url="admission.nju.edu.cn" size="sm" />
 
@@ -1111,7 +1111,7 @@ author 列表：
 
 ### 资产管理处 <Site url="zcc.nju.edu.cn/tzgg/gyfytdglk/index.html" size="sm" />
 
-<Route namespace="nju" :data='{"path":"/zcc","categories":["university"],"example":"/nju/zcc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zcc.nju.edu.cn/tzgg/gyfytdglk/index.html","zcc.nju.edu.cn/tzgg/index.html","zcc.nju.edu.cn/"]}],"name":"资产管理处","maintainers":["ret-1"],"url":"zcc.nju.edu.cn/tzgg/gyfytdglk/index.html","location":"zcc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nju" :data='{"path":"/zcc","categories":["university"],"example":"/nju/zcc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zcc.nju.edu.cn/tzgg/gyfytdglk/index.html","zcc.nju.edu.cn/tzgg/index.html","zcc.nju.edu.cn/"]}],"name":"资产管理处","maintainers":["ret-1"],"url":"zcc.nju.edu.cn/tzgg/gyfytdglk/index.html","location":"zcc.ts"}' :test='{"code":0}' />
 
 ## 南京中医药大学 <Site url="lib.njucm.edu.cn"/>
 
@@ -1181,7 +1181,7 @@ author 列表：
 
 ### 研究生院 <Site url="jwc.njust.edu.cn" size="sm" />
 
-<Route namespace="njust" :data='{"path":"/gs/:type?","categories":["university"],"example":"/njust/gs/sytzgg_4568","parameters":{"type":"分类 ID，部分示例参数见下表，默认为首页通知公告，其他分类 ID 可以从网站 URL Path 中找到，如国际交流为 `gjjl`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.njust.edu.cn/:type/list.htm"],"target":"/gs/:type"}],"name":"研究生院","maintainers":["MilkShakeYoung","jasongzy"],"description":"| 首页通知公告 | 首页新闻动态 | 最新通知 | 招生信息 | 培养信息 | 学术活动 |\n  | ------------ | ------------ | -------- | -------- | -------- | -------- |\n  | sytzgg_4568 | sytzgg       | 14686    | 14687    | 14688    | xshdggl  |","location":"gs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="njust" :data='{"path":"/gs/:type?","categories":["university"],"example":"/njust/gs/sytzgg_4568","parameters":{"type":"分类 ID，部分示例参数见下表，默认为首页通知公告，其他分类 ID 可以从网站 URL Path 中找到，如国际交流为 `gjjl`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.njust.edu.cn/:type/list.htm"],"target":"/gs/:type"}],"name":"研究生院","maintainers":["MilkShakeYoung","jasongzy"],"description":"| 首页通知公告 | 首页新闻动态 | 最新通知 | 招生信息 | 培养信息 | 学术活动 |\n  | ------------ | ------------ | -------- | -------- | -------- | -------- |\n  | sytzgg_4568 | sytzgg       | 14686    | 14687    | 14688    | xshdggl  |","location":"gs.ts"}' :test='{"code":0}' />
 
 | 首页通知公告 | 首页新闻动态 | 最新通知 | 招生信息 | 培养信息 | 学术活动 |
   | ------------ | ------------ | -------- | -------- | -------- | -------- |
@@ -1245,7 +1245,7 @@ author 列表：
 
 ### NUIST AS（南信大大气科学学院） <Site url="bulletin.nuist.edu.cn" size="sm" />
 
-<Route namespace="nuist" :data='{"path":"/cas/:category?","categories":["university"],"example":"/nuist/cas/xxgg","parameters":{"category":"默认为信息公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"NUIST AS（南信大大气科学学院）","maintainers":["gylidian"],"description":"| 信息公告 | 新闻快讯 | 科学研究 | 网上公示 | 本科教育 | 研究生教育 |\n  | -------- | -------- | -------- | -------- | -------- | ---------- |\n  | xxgg     | xwkx     | kxyj     | wsgs     | bkjy     | yjsjy      |","location":"cas.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nuist" :data='{"path":"/cas/:category?","categories":["university"],"example":"/nuist/cas/xxgg","parameters":{"category":"默认为信息公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"NUIST AS（南信大大气科学学院）","maintainers":["gylidian"],"description":"| 信息公告 | 新闻快讯 | 科学研究 | 网上公示 | 本科教育 | 研究生教育 |\n  | -------- | -------- | -------- | -------- | -------- | ---------- |\n  | xxgg     | xwkx     | kxyj     | wsgs     | bkjy     | yjsjy      |","location":"cas.ts"}' :test='{"code":0}' />
 
 | 信息公告 | 新闻快讯 | 科学研究 | 网上公示 | 本科教育 | 研究生教育 |
   | -------- | -------- | -------- | -------- | -------- | ---------- |
@@ -1253,7 +1253,7 @@ author 列表：
 
 ### NUIST CS（南信大计软院） <Site url="bulletin.nuist.edu.cn" size="sm" />
 
-<Route namespace="nuist" :data='{"path":"/scs/:category?","categories":["university"],"example":"/nuist/scs/xwkx","parameters":{"category":"默认为新闻快讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scs.nuist.edu.cn/:category/list.htm"],"target":"/scs/:category"}],"name":"NUIST CS（南信大计软院）","maintainers":["gylidian"],"description":"| 新闻快讯 | 通知公告 | 教务信息 | 科研动态 | 学子风采 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | xwkx     | tzgg     | jwxx     | kydt     | xzfc     |","location":"scs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nuist" :data='{"path":"/scs/:category?","categories":["university"],"example":"/nuist/scs/xwkx","parameters":{"category":"默认为新闻快讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scs.nuist.edu.cn/:category/list.htm"],"target":"/scs/:category"}],"name":"NUIST CS（南信大计软院）","maintainers":["gylidian"],"description":"| 新闻快讯 | 通知公告 | 教务信息 | 科研动态 | 学子风采 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | xwkx     | tzgg     | jwxx     | kydt     | xzfc     |","location":"scs.ts"}' :test='{"code":0}' />
 
 | 新闻快讯 | 通知公告 | 教务信息 | 科研动态 | 学子风采 |
   | -------- | -------- | -------- | -------- | -------- |
@@ -1261,7 +1261,7 @@ author 列表：
 
 ### NUIST ESE（南信大环科院） <Site url="bulletin.nuist.edu.cn" size="sm" />
 
-<Route namespace="nuist" :data='{"path":"/sese/:category?","categories":["university"],"example":"/nuist/sese/tzgg1","parameters":{"category":"默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"NUIST ESE（南信大环科院）","maintainers":["gylidian"],"description":"| 通知公告 | 新闻快讯 | 学术动态 | 学生工作 | 研究生教育 | 本科教育 |\n  | -------- | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg1    | xwkx     | xsdt1    | xsgz1    | yjsjy1     | bkjy1    |","location":"sese.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nuist" :data='{"path":"/sese/:category?","categories":["university"],"example":"/nuist/sese/tzgg1","parameters":{"category":"默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"NUIST ESE（南信大环科院）","maintainers":["gylidian"],"description":"| 通知公告 | 新闻快讯 | 学术动态 | 学生工作 | 研究生教育 | 本科教育 |\n  | -------- | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg1    | xwkx     | xsdt1    | xsgz1    | yjsjy1     | bkjy1    |","location":"sese.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 新闻快讯 | 学术动态 | 学生工作 | 研究生教育 | 本科教育 |
   | -------- | -------- | -------- | -------- | ---------- | -------- |
@@ -1277,7 +1277,7 @@ author 列表：
 
 ### 教务处 <Site url="bulletin.nuist.edu.cn" size="sm" />
 
-<Route namespace="nuist" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/nuist/jwc/jxyw","parameters":{"category":"默认为教学要闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["gylidian"],"description":"| 教学要闻 | 学院教学 | 教务管理 | 教学研究 | 教务管理 | 教材建设 | 考试中心 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | jxyw     | xyjx     | jwgl     | jxyj     | sjjx     | jcjs     | kszx     |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nuist" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/nuist/jwc/jxyw","parameters":{"category":"默认为教学要闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["gylidian"],"description":"| 教学要闻 | 学院教学 | 教务管理 | 教学研究 | 教务管理 | 教材建设 | 考试中心 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | jxyw     | xyjx     | jwgl     | jxyj     | sjjx     | jcjs     | kszx     |","location":"jwc.ts"}' :test='{"code":0}' />
 
 | 教学要闻 | 学院教学 | 教务管理 | 教学研究 | 教务管理 | 教材建设 | 考试中心 |
   | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1285,7 +1285,7 @@ author 列表：
 
 ### 南信大信息公告栏 <Site url="bulletin.nuist.edu.cn" size="sm" />
 
-<Route namespace="nuist" :data='{"path":"/bulletin/:category?","categories":["university"],"example":"/nuist/bulletin/791","parameters":{"category":"默认为 `791`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bulletin.nuist.edu.cn/:category/list.htm"],"target":"/bulletin/:category"}],"name":"南信大信息公告栏","maintainers":["gylidian"],"description":"| 全部 | 文件公告 | 学术报告 | 招标信息 | 会议通知 | 党政事务 | 组织人事 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 791  | 792      | xsbgw    | 779      | 780      | 781      | 782      |\n\n  | 科研信息 | 招生就业 | 教学考试 | 专题讲座 | 校园活动 | 学院动态 | 其他 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | ---- |\n  | 783      | 784      | 785      | 786      | 788      | 789      | qt   |\n\n  :::warning\n  全文内容需使用 校园网或[VPN](http://vpn.nuist.edu.cn) 获取\n  :::","location":"bulletin.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nuist" :data='{"path":"/bulletin/:category?","categories":["university"],"example":"/nuist/bulletin/791","parameters":{"category":"默认为 `791`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bulletin.nuist.edu.cn/:category/list.htm"],"target":"/bulletin/:category"}],"name":"南信大信息公告栏","maintainers":["gylidian"],"description":"| 全部 | 文件公告 | 学术报告 | 招标信息 | 会议通知 | 党政事务 | 组织人事 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 791  | 792      | xsbgw    | 779      | 780      | 781      | 782      |\n\n  | 科研信息 | 招生就业 | 教学考试 | 专题讲座 | 校园活动 | 学院动态 | 其他 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | ---- |\n  | 783      | 784      | 785      | 786      | 788      | 789      | qt   |\n\n  :::warning\n  全文内容需使用 校园网或[VPN](http://vpn.nuist.edu.cn) 获取\n  :::","location":"bulletin.ts"}' :test='{"code":0}' />
 
 | 全部 | 文件公告 | 学术报告 | 招标信息 | 会议通知 | 党政事务 | 组织人事 |
   | ---- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1301,13 +1301,13 @@ author 列表：
 
 ### 南信大学生工作处 <Site url="xgc.nuist.edu.cn/" size="sm" />
 
-<Route namespace="nuist" :data='{"path":"/xgc","categories":["university"],"example":"/nuist/xgc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xgc.nuist.edu.cn/","xgc.nuist.edu.cn/419/list.htm"]}],"name":"南信大学生工作处","maintainers":["gylidian"],"url":"xgc.nuist.edu.cn/","location":"xgc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nuist" :data='{"path":"/xgc","categories":["university"],"example":"/nuist/xgc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xgc.nuist.edu.cn/","xgc.nuist.edu.cn/419/list.htm"]}],"name":"南信大学生工作处","maintainers":["gylidian"],"url":"xgc.nuist.edu.cn/","location":"xgc.ts"}' :test='{"code":0}' />
 
 ## 南方科技大学 <Site url="biddingoffice.sustech.edu.cn"/>
 
 ### 采购与招标管理部 <Site url="biddingoffice.sustech.edu.cn/" size="sm" />
 
-<Route namespace="sustech" :data='{"path":"/bidding","categories":["university"],"example":"/sustech/bidding","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["biddingoffice.sustech.edu.cn/"]}],"name":"采购与招标管理部","maintainers":["sparkcyf"],"url":"biddingoffice.sustech.edu.cn/","location":"bidding.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sustech" :data='{"path":"/bidding","categories":["university"],"example":"/sustech/bidding","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["biddingoffice.sustech.edu.cn/"]}],"name":"采购与招标管理部","maintainers":["sparkcyf"],"url":"biddingoffice.sustech.edu.cn/","location":"bidding.ts"}' :test='{"code":0}' />
 
 ### 新闻网（中文） <Site url="newshub.sustech.edu.cn/news" size="sm" />
 
@@ -1321,29 +1321,29 @@ author 列表：
 
 ### 通知公告 <Site url="qlu.edu.cn/tzggsh/list1.htm" size="sm" />
 
-<Route namespace="qlu" :data='{"path":"/notice","categories":["university"],"example":"/qlu/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qlu.edu.cn/tzggsh/list1.htm"]}],"name":"通知公告","maintainers":["SunBK201"],"url":"qlu.edu.cn/tzggsh/list1.htm","location":"notice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qlu" :data='{"path":"/notice","categories":["university"],"example":"/qlu/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qlu.edu.cn/tzggsh/list1.htm"]}],"name":"通知公告","maintainers":["SunBK201"],"url":"qlu.edu.cn/tzggsh/list1.htm","location":"notice.ts"}' :test='{"code":0}' />
 
 ## 青岛大学 <Site url="jwc.qdu.edu.cn"/>
 
 ### 后勤管理处通知 <Site url="houqin.qdu.edu.cn/tzgg.htm" size="sm" />
 
-<Route namespace="qdu" :data='{"path":"/houqin","categories":["university"],"example":"/qdu/houqin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["houqin.qdu.edu.cn/tzgg.htm","houqin.qdu.edu.cn/"]}],"name":"后勤管理处通知","maintainers":["abc1763613206"],"url":"houqin.qdu.edu.cn/tzgg.htm","location":"houqin.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="qdu" :data='{"path":"/houqin","categories":["university"],"example":"/qdu/houqin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["houqin.qdu.edu.cn/tzgg.htm","houqin.qdu.edu.cn/"]}],"name":"后勤管理处通知","maintainers":["abc1763613206"],"url":"houqin.qdu.edu.cn/tzgg.htm","location":"houqin.ts"}' :test='{"code":0}' />
 
 ### 教务处通知 <Site url="jwc.qdu.edu.cn/jwtz.htm" size="sm" />
 
-<Route namespace="qdu" :data='{"path":"/jwc","categories":["university"],"example":"/qdu/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.qdu.edu.cn/jwtz.htm","jwc.qdu.edu.cn/"]}],"name":"教务处通知","maintainers":["abc1763613206"],"url":"jwc.qdu.edu.cn/jwtz.htm","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qdu" :data='{"path":"/jwc","categories":["university"],"example":"/qdu/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.qdu.edu.cn/jwtz.htm","jwc.qdu.edu.cn/"]}],"name":"教务处通知","maintainers":["abc1763613206"],"url":"jwc.qdu.edu.cn/jwtz.htm","location":"jwc.ts"}' :test='{"code":0}' />
 
 ## 青岛科技大学 <Site url="jw.qust.edu.cn"/>
 
 ### 教务通知 <Site url="jw.qust.edu.cn/jwtz.htm" size="sm" />
 
-<Route namespace="qust" :data='{"path":"/jw","categories":["university"],"example":"/qust/jw","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.qust.edu.cn/jwtz.htm","jw.qust.edu.cn/"]}],"name":"教务通知","maintainers":["Silent-wqh"],"url":"jw.qust.edu.cn/jwtz.htm","location":"jw.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qust" :data='{"path":"/jw","categories":["university"],"example":"/qust/jw","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.qust.edu.cn/jwtz.htm","jw.qust.edu.cn/"]}],"name":"教务通知","maintainers":["Silent-wqh"],"url":"jw.qust.edu.cn/jwtz.htm","location":"jw.ts"}' :test='{"code":0}' />
 
 ## 山东大学（威海） <Site url="xinwen.wh.sdu.edu.cn"/>
 
 ### 材料科学与工程学院通知 <Site url="xinwen.wh.sdu.edu.cn" size="sm" />
 
-<Route namespace="sdu" :data='{"path":"/cmse/:type?","categories":["university"],"example":"/sdu/cmse/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"材料科学与工程学院通知","maintainers":["Ji4n1ng"],"description":"| 通知公告 | 学院新闻 | 本科生教育 | 研究生教育 | 学术动态 |\n  | -------- | -------- | ---------- | ---------- | -------- |\n  | 0        | 1        | 2          | 3          | 4        |","location":"cmse.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sdu" :data='{"path":"/cmse/:type?","categories":["university"],"example":"/sdu/cmse/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"材料科学与工程学院通知","maintainers":["Ji4n1ng"],"description":"| 通知公告 | 学院新闻 | 本科生教育 | 研究生教育 | 学术动态 |\n  | -------- | -------- | ---------- | ---------- | -------- |\n  | 0        | 1        | 2          | 3          | 4        |","location":"cmse.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 学院新闻 | 本科生教育 | 研究生教育 | 学术动态 |
   | -------- | -------- | ---------- | ---------- | -------- |
@@ -1359,7 +1359,7 @@ author 列表：
 
 ### 计算机科学与技术学院通知 <Site url="xinwen.wh.sdu.edu.cn" size="sm" />
 
-<Route namespace="sdu" :data='{"path":"/cs/:type?","categories":["university"],"example":"/sdu/cs/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院通知","maintainers":["Ji4n1ng"],"description":"| 学院公告 | 学术报告 | 科技简讯 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |","location":"cs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sdu" :data='{"path":"/cs/:type?","categories":["university"],"example":"/sdu/cs/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院通知","maintainers":["Ji4n1ng"],"description":"| 学院公告 | 学术报告 | 科技简讯 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |","location":"cs.ts"}' :test='{"code":0}' />
 
 | 学院公告 | 学术报告 | 科技简讯 |
   | -------- | -------- | -------- |
@@ -1401,7 +1401,7 @@ author 列表：
 
 ### 研究生招生网 <Site url="sdust.edu.cn" size="sm" />
 
-<Route namespace="sdust" :data='{"path":"/yjsy/zhaosheng/:id?","categories":["university"],"example":"/sdust/yjsy/zhaosheng","parameters":{"id":"栏目 id，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生招生网","maintainers":["nczitzk"],"description":"栏目\n\n  | 招生简章 | 专业目录 | 往届录取 | 管理规定 | 资料下载 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | zsjz     | zyml     | wjlq     | glgd     | zlxz     |\n\n  | 通知公告 | 博士招生 | 硕士招生 | 推免生招生 | 招生宣传 |\n  | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg     | bszs     | sszs     | tms        | zsxc     |","location":"yjsy/zhaosheng.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sdust" :data='{"path":"/yjsy/zhaosheng/:id?","categories":["university"],"example":"/sdust/yjsy/zhaosheng","parameters":{"id":"栏目 id，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生招生网","maintainers":["nczitzk"],"description":"栏目\n\n  | 招生简章 | 专业目录 | 往届录取 | 管理规定 | 资料下载 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | zsjz     | zyml     | wjlq     | glgd     | zlxz     |\n\n  | 通知公告 | 博士招生 | 硕士招生 | 推免生招生 | 招生宣传 |\n  | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg     | bszs     | sszs     | tms        | zsxc     |","location":"yjsy/zhaosheng.ts"}' :test='{"code":0}' />
 
 栏目
 
@@ -1417,7 +1417,7 @@ author 列表：
 
 ### 研究生院 <Site url="gs.sass.org.cn" size="sm" />
 
-<Route namespace="sass" :data='{"path":"/gs/:type","categories":["university"],"example":"/sass/gs/1793","parameters":{"type":"类别 ID，见下表，其他未列出的栏目参数可以从页面的 URL Path 中找到，例如：硕士统考招生的网址为 `https://gs.sass.org.cn/1793/list.htm`，则类别 ID 为`1793`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.sass.org.cn/:type/list.htm"]}],"name":"研究生院","maintainers":["yanbot-team"],"description":"| 硕士统考招生 | 硕士推免招生 |\n  | ------------ | ------------ |\n  | 1793         | sstmzs       |","location":"gs/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sass" :data='{"path":"/gs/:type","categories":["university"],"example":"/sass/gs/1793","parameters":{"type":"类别 ID，见下表，其他未列出的栏目参数可以从页面的 URL Path 中找到，例如：硕士统考招生的网址为 `https://gs.sass.org.cn/1793/list.htm`，则类别 ID 为`1793`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.sass.org.cn/:type/list.htm"]}],"name":"研究生院","maintainers":["yanbot-team"],"description":"| 硕士统考招生 | 硕士推免招生 |\n  | ------------ | ------------ |\n  | 1793         | sstmzs       |","location":"gs/index.ts"}' :test='{"code":0}' />
 
 | 硕士统考招生 | 硕士推免招生 |
   | ------------ | ------------ |
@@ -1465,7 +1465,7 @@ author 列表：
 
 ### 上外新闻 <Site url="news.shisu.edu.cn" size="sm" />
 
-<Route namespace="shisu" :data='{"path":"/news/:category","categories":["university"],"example":"/shisu/news/notice","parameters":{"category":"新闻的分类可根据自己的需要选择，首页为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.shisu.edu.cn/:category/index.html"]}],"name":"上外新闻","maintainers":["Duuckjing"],"description":"| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n  | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n  | news | gazette | research- | academics- | international | campus | people | multimedia | notice |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shisu" :data='{"path":"/news/:category","categories":["university"],"example":"/shisu/news/notice","parameters":{"category":"新闻的分类可根据自己的需要选择，首页为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.shisu.edu.cn/:category/index.html"]}],"name":"上外新闻","maintainers":["Duuckjing"],"description":"| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n  | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n  | news | gazette | research- | academics- | international | campus | people | multimedia | notice |","location":"news.ts"}' :test='{"code":0}' />
 
 | 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |
   | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |
@@ -1483,7 +1483,7 @@ author 列表：
 
 ### 教务信息 <Site url="jwc.shmtu.edu.cn" size="sm" />
 
-<Route namespace="shmtu" :data='{"path":"/jwc/:type","categories":["university"],"example":"/shmtu/jwc/jwgg","parameters":{"type":"类型名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.shmtu.edu.cn/:type"]}],"name":"教务信息","maintainers":["imbytecat","simonsmh"],"description":"| 教务公告 | 教务新闻 |\n| -------- | -------- |\n| jwgg     | jwxw     |","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shmtu" :data='{"path":"/jwc/:type","categories":["university"],"example":"/shmtu/jwc/jwgg","parameters":{"type":"类型名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.shmtu.edu.cn/:type"]}],"name":"教务信息","maintainers":["imbytecat","simonsmh"],"description":"| 教务公告 | 教务新闻 |\n| -------- | -------- |\n| jwgg     | jwxw     |","location":"jwc.ts"}' :test='{"code":0}' />
 
 | 教务公告 | 教务新闻 |
 | -------- | -------- |
@@ -1491,7 +1491,7 @@ author 列表：
 
 ### 数字平台 <Site url="jwc.shmtu.edu.cn" size="sm" />
 
-<Route namespace="shmtu" :data='{"path":"/portal/:type","categories":["university"],"example":"/shmtu/portal/bmtzgg","parameters":{"type":"类型名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["portal.shmtu.edu.cn/:type"]}],"name":"数字平台","maintainers":["imbytecat"],"description":"| 部门通知公告 | 学术与大型活动公告 | 部门动态 |\n| ------------ | ------------------ | -------- |\n| bmtzgg       | xsydxhdgg          | bmdt     |","location":"portal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shmtu" :data='{"path":"/portal/:type","categories":["university"],"example":"/shmtu/portal/bmtzgg","parameters":{"type":"类型名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["portal.shmtu.edu.cn/:type"]}],"name":"数字平台","maintainers":["imbytecat"],"description":"| 部门通知公告 | 学术与大型活动公告 | 部门动态 |\n| ------------ | ------------------ | -------- |\n| bmtzgg       | xsydxhdgg          | bmdt     |","location":"portal.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 部门通知公告 | 学术与大型活动公告 | 部门动态 |
 | ------------ | ------------------ | -------- |
@@ -1589,7 +1589,7 @@ author 列表：
 
 ### 动物科技学院 <Site url="dky.sicau.edu.cn/" size="sm" />
 
-<Route namespace="sicau" :data='{"path":"/dky/:category?","categories":["university"],"example":"/sicau/dky/tzgg","parameters":{"category":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dky.sicau.edu.cn/"]}],"name":"动物科技学院","maintainers":["nczitzk"],"url":"dky.sicau.edu.cn/","description":"| 通知公告 | 学院动态 | 教学管理 | 动科大讲堂 | 就业信息 |\n  | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg     | xydt     | jxgl     | dkdjt      | zpxx     |","location":"dky.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sicau" :data='{"path":"/dky/:category?","categories":["university"],"example":"/sicau/dky/tzgg","parameters":{"category":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dky.sicau.edu.cn/"]}],"name":"动物科技学院","maintainers":["nczitzk"],"url":"dky.sicau.edu.cn/","description":"| 通知公告 | 学院动态 | 教学管理 | 动科大讲堂 | 就业信息 |\n  | -------- | -------- | -------- | ---------- | -------- |\n  | tzgg     | xydt     | jxgl     | dkdjt      | zpxx     |","location":"dky.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 学院动态 | 教学管理 | 动科大讲堂 | 就业信息 |
   | -------- | -------- | -------- | ---------- | -------- |
@@ -1653,7 +1653,7 @@ author 列表：
 
 ### 研究生院通知公告 <Site url="yz.tongji.edu.cn/zsxw/ggtz.htm" size="sm" />
 
-<Route namespace="tongji" :data='{"path":"/yjs","categories":["university"],"example":"/tongji/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.tongji.edu.cn/zsxw/ggtz.htm","yz.tongji.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"yz.tongji.edu.cn/zsxw/ggtz.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tongji" :data='{"path":"/yjs","categories":["university"],"example":"/tongji/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.tongji.edu.cn/zsxw/ggtz.htm","yz.tongji.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"yz.tongji.edu.cn/zsxw/ggtz.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ## 潍坊学院 <Site url="jwc.wfu.edu.cn"/>
 
@@ -1701,7 +1701,7 @@ author 列表：
 
 ### 新闻中心 <Site url="www.wsyu.edu.cn" size="sm" />
 
-<Route namespace="wsyu" :data='{"path":"/news/:type?","categories":["university"],"example":"/wsyu/news/xxyw","parameters":{"type":"分类，默认为 `xxyw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻中心","maintainers":["Derekmini"],"description":"| 学校要闻 | 综合新闻 | 媒体聚焦 |\n  | -------- | -------- | -------- |\n  | xxyw     | zhxw     | mtjj     |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="wsyu" :data='{"path":"/news/:type?","categories":["university"],"example":"/wsyu/news/xxyw","parameters":{"type":"分类，默认为 `xxyw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻中心","maintainers":["Derekmini"],"description":"| 学校要闻 | 综合新闻 | 媒体聚焦 |\n  | -------- | -------- | -------- |\n  | xxyw     | zhxw     | mtjj     |","location":"news.ts"}' :test='{"code":0}' />
 
 | 学校要闻 | 综合新闻 | 媒体聚焦 |
   | -------- | -------- | -------- |
@@ -1711,7 +1711,7 @@ author 列表：
 
 ### 就业信息 <Site url="wtu.91wllm.com" size="sm" />
 
-<Route namespace="wtu" :data='{"path":"/job/:type","categories":["university"],"example":"/wtu/job/xxtz","parameters":{"type":"信息类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wtu.91wllm.com/news/index/tag/:type"]}],"name":"就业信息","maintainers":["ticks-tan"],"description":"| 信息类型 | 消息通知 | 通知公告 | 新闻快递 |\n  | -------- | -------- | -------- | -------- |\n  | 参数     | xxtz     | tzgg     | xwkd     |","location":"job.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="wtu" :data='{"path":"/job/:type","categories":["university"],"example":"/wtu/job/xxtz","parameters":{"type":"信息类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wtu.91wllm.com/news/index/tag/:type"]}],"name":"就业信息","maintainers":["ticks-tan"],"description":"| 信息类型 | 消息通知 | 通知公告 | 新闻快递 |\n  | -------- | -------- | -------- | -------- |\n  | 参数     | xxtz     | tzgg     | xwkd     |","location":"job.ts"}' :test='{"code":0}' />
 
 | 信息类型 | 消息通知 | 通知公告 | 新闻快递 |
   | -------- | -------- | -------- | -------- |
@@ -1719,7 +1719,7 @@ author 列表：
 
 ### 信息门户公告 <Site url="wtu.91wllm.com" size="sm" />
 
-<Route namespace="wtu" :data='{"path":"/:type","categories":["university"],"example":"/wtu/2","parameters":{"type":"公告类型，详见表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"信息门户公告","maintainers":["loyio"],"description":"| 公告类型 | 通知公告 | 教务信息 | 科研动态 |\n  | -------- | -------- | -------- | -------- |\n  | 参数     | 1        | 2        | 3        |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="wtu" :data='{"path":"/:type","categories":["university"],"example":"/wtu/2","parameters":{"type":"公告类型，详见表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"信息门户公告","maintainers":["loyio"],"description":"| 公告类型 | 通知公告 | 教务信息 | 科研动态 |\n  | -------- | -------- | -------- | -------- |\n  | 参数     | 1        | 2        | 3        |","location":"index.ts"}' :test='{"code":0}' />
 
 | 公告类型 | 通知公告 | 教务信息 | 科研动态 |
   | -------- | -------- | -------- | -------- |
@@ -1741,21 +1741,21 @@ author 列表：
 
 ### 交通运输与物流学院 <Site url="ctt.swjtu.edu.cn" size="sm" />
 
-<Route namespace="swjtu" :data='{"path":"/jtys/yjs","categories":["university"],"example":"/swjtu/jtys/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"交通运输与物流学院","maintainers":["qizidog"],"description":"#### 研究生通知 {#xi-nan-jiao-tong-da-xue-jiao-tong-yun-shu-yu-wu-liu-xue-yuan-yan-jiu-sheng-tong-zhi}","location":"jtys/yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="swjtu" :data='{"path":"/jtys/yjs","categories":["university"],"example":"/swjtu/jtys/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"交通运输与物流学院","maintainers":["qizidog"],"description":"#### 研究生通知 {#xi-nan-jiao-tong-da-xue-jiao-tong-yun-shu-yu-wu-liu-xue-yuan-yan-jiu-sheng-tong-zhi}","location":"jtys/yjs.ts"}' :test='{"code":0}' />
 
 #### 研究生通知 {#xi-nan-jiao-tong-da-xue-jiao-tong-yun-shu-yu-wu-liu-xue-yuan-yan-jiu-sheng-tong-zhi}
 
 ### 教务网 <Site url="jwc.swjtu.edu.cn/vatuu/WebAction" size="sm" />
 
-<Route namespace="swjtu" :data='{"path":"/jwc","categories":["university"],"example":"/swjtu/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.swjtu.edu.cn/vatuu/WebAction","jwc.swjtu.edu.cn/"]}],"name":"教务网","maintainers":["mobyw"],"url":"jwc.swjtu.edu.cn/vatuu/WebAction","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="swjtu" :data='{"path":"/jwc","categories":["university"],"example":"/swjtu/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.swjtu.edu.cn/vatuu/WebAction","jwc.swjtu.edu.cn/"]}],"name":"教务网","maintainers":["mobyw"],"url":"jwc.swjtu.edu.cn/vatuu/WebAction","location":"jwc.ts"}' :test='{"code":0}' />
 
 ### 就业招聘信息 <Site url="jiuye.swjtu.edu.cn/career" size="sm" />
 
-<Route namespace="swjtu" :data='{"path":"/jyzpxx","categories":["university"],"example":"/swjtu/jyzpxx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiuye.swjtu.edu.cn/career","jiuye.swjtu.edu.cn/"]}],"name":"就业招聘信息","maintainers":["qizidog"],"url":"jiuye.swjtu.edu.cn/career","location":"jyzpxx.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="swjtu" :data='{"path":"/jyzpxx","categories":["university"],"example":"/swjtu/jyzpxx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiuye.swjtu.edu.cn/career","jiuye.swjtu.edu.cn/"]}],"name":"就业招聘信息","maintainers":["qizidog"],"url":"jiuye.swjtu.edu.cn/career","location":"jyzpxx.ts"}' :test='{"code":0}' />
 
 ### 扬华素质网 <Site url="xg.swjtu.edu.cn/web/Home/PushNewsList" size="sm" />
 
-<Route namespace="swjtu" :data='{"path":"/xg/:code?","categories":["university"],"example":"/swjtu/xg/tzgg","parameters":{"code":"栏目(默认为tzgg)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xg.swjtu.edu.cn/web/Home/PushNewsList","xg.swjtu.edu.cn/web/Home/NewsList","xg.swjtu.edu.cn/web/Home/ColourfulCollegeNewsList","xg.swjtu.edu.cn/web/Publicity/List","xg.swjtu.edu.cn/"],"target":"/xg"}],"name":"扬华素质网","maintainers":["mobyw"],"url":"xg.swjtu.edu.cn/web/Home/PushNewsList","description":"栏目列表：\n\n  | 通知公告 | 扬华新闻 | 多彩学院 | 学工之家 |\n  | -------- | -------- | -------- | -------- |\n  | tzgg     | yhxw     | dcxy     | xgzj     |","location":"xg.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="swjtu" :data='{"path":"/xg/:code?","categories":["university"],"example":"/swjtu/xg/tzgg","parameters":{"code":"栏目(默认为tzgg)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xg.swjtu.edu.cn/web/Home/PushNewsList","xg.swjtu.edu.cn/web/Home/NewsList","xg.swjtu.edu.cn/web/Home/ColourfulCollegeNewsList","xg.swjtu.edu.cn/web/Publicity/List","xg.swjtu.edu.cn/"],"target":"/xg"}],"name":"扬华素质网","maintainers":["mobyw"],"url":"xg.swjtu.edu.cn/web/Home/PushNewsList","description":"栏目列表：\n\n  | 通知公告 | 扬华新闻 | 多彩学院 | 学工之家 |\n  | -------- | -------- | -------- | -------- |\n  | tzgg     | yhxw     | dcxy     | xgzj     |","location":"xg.ts"}' :test='{"code":0}' />
 
 栏目列表：
 
@@ -1791,7 +1791,7 @@ author 列表：
 
 ### 计算机科学学院 <Site url="swpu.edu.cn/" size="sm" />
 
-<Route namespace="swpu" :data='{"path":"/scs/:code","categories":["university"],"example":"/swpu/scs/tzgg","parameters":{"code":"栏目代码"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swpu.edu.cn/"],"target":""}],"name":"计算机科学学院","maintainers":["CYTMWIA"],"url":"swpu.edu.cn/","description":"| 栏目 | 通知公告 | 新闻速递 |\n  | ---- | -------- | -------- |\n  | 代码 | tzgg     | xwsd     |","location":"scs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="swpu" :data='{"path":"/scs/:code","categories":["university"],"example":"/swpu/scs/tzgg","parameters":{"code":"栏目代码"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swpu.edu.cn/"],"target":""}],"name":"计算机科学学院","maintainers":["CYTMWIA"],"url":"swpu.edu.cn/","description":"| 栏目 | 通知公告 | 新闻速递 |\n  | ---- | -------- | -------- |\n  | 代码 | tzgg     | xwsd     |","location":"scs.ts"}' :test='{"code":0}' />
 
 | 栏目 | 通知公告 | 新闻速递 |
   | ---- | -------- | -------- |
@@ -1817,7 +1817,7 @@ author 列表：
 
 ### 教务处 <Site url="jiaowu.xaufe.edu.cn" size="sm" />
 
-<Route namespace="xaufe" :data='{"path":"/jiaowu/:category?","categories":["university"],"example":"/xaufe/jiaowu/tzgg","parameters":{"category":"分类，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["shaokeyibb"],"description":"| 通知公告 |\n  | :------: |\n  |   tzgg   |","location":"jiaowu.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xaufe" :data='{"path":"/jiaowu/:category?","categories":["university"],"example":"/xaufe/jiaowu/tzgg","parameters":{"category":"分类，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["shaokeyibb"],"description":"| 通知公告 |\n  | :------: |\n  |   tzgg   |","location":"jiaowu.ts"}' :test='{"code":0}' />
 
 | 通知公告 |
   | :------: |
@@ -1827,7 +1827,7 @@ author 列表：
 
 ### 教务处 <Site url="index.xaut.edu.cn" size="sm" />
 
-<Route namespace="xaut" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/xaut/jwc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["mocusez"],"description":":::warning\n  有些内容需使用校园网或 VPN 访问知行网获取\n  :::\n\n  | 通知公告 | 新闻动态 | 规章制度 | 竞赛结果公示 | 竞赛获奖通知 | 竞赛信息 | 公开公示 |\n  | :------: | :------: | :------: | :----------: | :----------: | :------: | :------: |\n  |   tzgg   |   xwdt   |   gzzd   |     jggs     |     jsjg     |   jsxx   |   gkgs   |","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xaut" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/xaut/jwc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["mocusez"],"description":":::warning\n  有些内容需使用校园网或 VPN 访问知行网获取\n  :::\n\n  | 通知公告 | 新闻动态 | 规章制度 | 竞赛结果公示 | 竞赛获奖通知 | 竞赛信息 | 公开公示 |\n  | :------: | :------: | :------: | :----------: | :----------: | :------: | :------: |\n  |   tzgg   |   xwdt   |   gzzd   |     jggs     |     jsjg     |   jsxx   |   gkgs   |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
   有些内容需使用校园网或 VPN 访问知行网获取
@@ -1839,7 +1839,7 @@ author 列表：
 
 ### 人事处 <Site url="index.xaut.edu.cn" size="sm" />
 
-<Route namespace="xaut" :data='{"path":"/rsc/:category?","categories":["university"],"example":"/xaut/rsc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"人事处","maintainers":["mocusez","light0926"],"description":":::warning\n  有些内容指向外部链接，目前只提供这些链接，不提供具体内容，去除 jwc 和 index 的修改\n  :::\n\n  | 通知公告 | 工作动态 |\n  | :------: | :------: |\n  |   tzgg   |   gzdt   |","location":"rsc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xaut" :data='{"path":"/rsc/:category?","categories":["university"],"example":"/xaut/rsc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"人事处","maintainers":["mocusez","light0926"],"description":":::warning\n  有些内容指向外部链接，目前只提供这些链接，不提供具体内容，去除 jwc 和 index 的修改\n  :::\n\n  | 通知公告 | 工作动态 |\n  | :------: | :------: |\n  |   tzgg   |   gzdt   |","location":"rsc.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 :::warning
   有些内容指向外部链接，目前只提供这些链接，不提供具体内容，去除 jwc 和 index 的修改
@@ -1851,7 +1851,7 @@ author 列表：
 
 ### 学校主页 <Site url="index.xaut.edu.cn" size="sm" />
 
-<Route namespace="xaut" :data='{"path":"/index/:category?","categories":["university"],"example":"/xaut/index/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学校主页","maintainers":["mocusez"],"description":"| 通知公告 | 校园要闻 | 媒体播报 | 学术活动 |\n  | :------: | :------: | :------: | :------: |\n  |   tzgg   |   xyyw   |   mtbd   |   xshd   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xaut" :data='{"path":"/index/:category?","categories":["university"],"example":"/xaut/index/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学校主页","maintainers":["mocusez"],"description":"| 通知公告 | 校园要闻 | 媒体播报 | 学术活动 |\n  | :------: | :------: | :------: | :------: |\n  |   tzgg   |   xyyw   |   mtbd   |   xshd   |","location":"index.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 | 通知公告 | 校园要闻 | 媒体播报 | 学术活动 |
   | :------: | :------: | :------: | :------: |
@@ -1861,7 +1861,7 @@ author 列表：
 
 ### 教务处 <Site url="jwc.xidian.edu.cn" size="sm" />
 
-<Route namespace="xidian" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/xidian/jwc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["ShadowySpirits"],"description":"| 教学信息 | 教学研究 | 实践教学 | 质量监控 | 通知公告 |\n  | :------: | :------: | :------: | :------: | :------: |\n  |   jxxx   |   jxyj   |   sjjx   |   zljk   |   tzgg   |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="xidian" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/xidian/jwc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["ShadowySpirits"],"description":"| 教学信息 | 教学研究 | 实践教学 | 质量监控 | 通知公告 |\n  | :------: | :------: | :------: | :------: | :------: |\n  |   jxxx   |   jxyj   |   sjjx   |   zljk   |   tzgg   |","location":"jwc.ts"}' :test='{"code":0}' />
 
 | 教学信息 | 教学研究 | 实践教学 | 质量监控 | 通知公告 |
   | :------: | :------: | :------: | :------: | :------: |
@@ -1928,7 +1928,7 @@ author 列表：
 
 ### 官网信息 <Site url="sqmc.edu.cn" size="sm" />
 
-<Route namespace="sqmc" :data='{"path":"/www/:category?","categories":["university"],"example":"/sqmc/www/3157","parameters":{"category":"分类ID，默认为`3157`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sqmc.edu.cn/:category/list.htm"]}],"name":"官网信息","maintainers":["nyaShine"],"description":"| 学校要闻 | 通知 | 学术讲座 | 基层风采书院 | 基层风采院系 | 外媒报道 | 三全学院报 |\n  | -------- | ---- | -------- | ------------ | ------------ | -------- | ---------- |\n  | 3157     | 3187 | 3188     | 3185         | 3186         | 3199     | 3200       |","location":"www.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sqmc" :data='{"path":"/www/:category?","categories":["university"],"example":"/sqmc/www/3157","parameters":{"category":"分类ID，默认为`3157`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sqmc.edu.cn/:category/list.htm"]}],"name":"官网信息","maintainers":["nyaShine"],"description":"| 学校要闻 | 通知 | 学术讲座 | 基层风采书院 | 基层风采院系 | 外媒报道 | 三全学院报 |\n  | -------- | ---- | -------- | ------------ | ------------ | -------- | ---------- |\n  | 3157     | 3187 | 3188     | 3185         | 3186         | 3199     | 3200       |","location":"www.ts"}' :test='{"code":0}' />
 
 | 学校要闻 | 通知 | 学术讲座 | 基层风采书院 | 基层风采院系 | 外媒报道 | 三全学院报 |
   | -------- | ---- | -------- | ------------ | ------------ | -------- | ---------- |
@@ -1946,7 +1946,7 @@ author 列表：
 
 ### 药学院 <Site url="jwc.zcmu.edu.cn" size="sm" />
 
-<Route namespace="zcmu" :data='{"path":"/yxy/:type?","categories":["university"],"example":"/zcmu/yxy/0","parameters":{"type":"模块id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"药学院","maintainers":["CCraftY"],"description":"| 通知公告 | 评优评奖 | 文明规范 | 创新创业 | 校园文化 | 心理驿站 | 日常通知 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 0        | 1        | 2        | 3        | 4        | 5        | 6        |","location":"yxy/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="zcmu" :data='{"path":"/yxy/:type?","categories":["university"],"example":"/zcmu/yxy/0","parameters":{"type":"模块id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"药学院","maintainers":["CCraftY"],"description":"| 通知公告 | 评优评奖 | 文明规范 | 创新创业 | 校园文化 | 心理驿站 | 日常通知 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 0        | 1        | 2        | 3        | 4        | 5        | 6        |","location":"yxy/index.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 评优评奖 | 文明规范 | 创新创业 | 校园文化 | 心理驿站 | 日常通知 |
   | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1968,7 +1968,7 @@ author 列表：
 
 ### 软件学院 <Site url="physics.zju.edu.cn" size="sm" />
 
-<Route namespace="zju" :data='{"path":"/cst/custom/:id","categories":["university"],"example":"/zju/cst/custom/36194+36241+36246","parameters":{"id":"提取出通知页面中的 `ID`，如 `http://www.cst.zju.edu.cn/36246/list.htm` 中的 `36246`，可将你想获取通知的多个页面，通过 `+` 符号来聚合。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"软件学院","maintainers":["zwithz"],"description":"| 全部通知 | 招生信息 | 教务管理 | 论文管理 | 思政工作 | 评奖评优 | 实习就业 | 国际实习 | 国内合作科研 | 国际合作科研 | 校园服务 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ------------ | ------------ | -------- |\n  | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        | 8            | 9            | 10       |\n\n#### 自定义聚合通知 {#zhe-jiang-da-xue-ruan-jian-xue-yuan-zi-ding-yi-ju-he-tong-zhi}","location":"cst/custom.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="zju" :data='{"path":"/cst/custom/:id","categories":["university"],"example":"/zju/cst/custom/36194+36241+36246","parameters":{"id":"提取出通知页面中的 `ID`，如 `http://www.cst.zju.edu.cn/36246/list.htm` 中的 `36246`，可将你想获取通知的多个页面，通过 `+` 符号来聚合。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"软件学院","maintainers":["zwithz"],"description":"| 全部通知 | 招生信息 | 教务管理 | 论文管理 | 思政工作 | 评奖评优 | 实习就业 | 国际实习 | 国内合作科研 | 国际合作科研 | 校园服务 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ------------ | ------------ | -------- |\n  | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        | 8            | 9            | 10       |\n\n#### 自定义聚合通知 {#zhe-jiang-da-xue-ruan-jian-xue-yuan-zi-ding-yi-ju-he-tong-zhi}","location":"cst/custom.ts"}' :test='{"code":0}' />
 
 | 全部通知 | 招生信息 | 教务管理 | 论文管理 | 思政工作 | 评奖评优 | 实习就业 | 国际实习 | 国内合作科研 | 国际合作科研 | 校园服务 |
   | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ------------ | ------------ | -------- |
@@ -1994,7 +1994,7 @@ author 列表：
 
 ### 研究生院 <Site url="physics.zju.edu.cn" size="sm" />
 
-<Route namespace="zju" :data='{"path":"/grs/:type","categories":["university"],"example":"/zju/grs/1","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院","maintainers":["Caicailiushui"],"description":"| 全部公告 | 教学管理 | 各类资助 | 学科建设 | 海外交流 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | 1        | 2        | 3        | 4        | 5        |","location":"grs/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="zju" :data='{"path":"/grs/:type","categories":["university"],"example":"/zju/grs/1","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院","maintainers":["Caicailiushui"],"description":"| 全部公告 | 教学管理 | 各类资助 | 学科建设 | 海外交流 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | 1        | 2        | 3        | 4        | 5        |","location":"grs/index.ts"}' :test='{"code":0}' />
 
 | 全部公告 | 教学管理 | 各类资助 | 学科建设 | 海外交流 |
   | -------- | -------- | -------- | -------- | -------- |
@@ -2030,7 +2030,7 @@ author 列表：
 
 ### 成果转化 <Site url="www.cas.cn" size="sm" />
 
-<Route namespace="cas" :data='{"path":"/cg/:caty?","categories":["university"],"example":"/cas/cg/cgzhld","parameters":{"caty":"分类，见下表，默认为工作动态"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cas.cn/cg/:caty?"]}],"name":"成果转化","maintainers":["nczitzk"],"description":"| 工作动态 | 科技成果转移转化亮点工作 |\n  | -------- | ------------------------ |\n  | zh       | cgzhld                   |","location":"cg/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cas" :data='{"path":"/cg/:caty?","categories":["university"],"example":"/cas/cg/cgzhld","parameters":{"caty":"分类，见下表，默认为工作动态"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cas.cn/cg/:caty?"]}],"name":"成果转化","maintainers":["nczitzk"],"description":"| 工作动态 | 科技成果转移转化亮点工作 |\n  | -------- | ------------------------ |\n  | zh       | cgzhld                   |","location":"cg/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 工作动态 | 科技成果转移转化亮点工作 |
   | -------- | ------------------------ |
@@ -2038,7 +2038,7 @@ author 列表：
 
 ### 电工研究所 科研动态 <Site url="www.iee.cas.cn/xwzx/kydt" size="sm" />
 
-<Route namespace="cas" :data='{"path":"/iee/kydt","categories":["university"],"example":"/cas/iee/kydt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iee.cas.cn/xwzx/kydt","www.iee.cas.cn/"]}],"name":"电工研究所 科研动态","maintainers":["nczitzk"],"url":"www.iee.cas.cn/xwzx/kydt","location":"iee/kydt.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cas" :data='{"path":"/iee/kydt","categories":["university"],"example":"/cas/iee/kydt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iee.cas.cn/xwzx/kydt","www.iee.cas.cn/"]}],"name":"电工研究所 科研动态","maintainers":["nczitzk"],"url":"www.iee.cas.cn/xwzx/kydt","location":"iee/kydt.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 上海微系统与信息技术研究所 科技进展 <Site url="www.sim.cas.cn/xwzx2016/kyjz" size="sm" />
 
@@ -2050,25 +2050,25 @@ author 列表：
 
 ### 自动化所 <Site url="www.ia.cas.cn/yjsjy/zs/sszs" size="sm" />
 
-<Route namespace="cas" :data='{"path":"/ia/yjs","categories":["university"],"example":"/cas/ia/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ia.cas.cn/yjsjy/zs/sszs","www.ia.cas.cn/"]}],"name":"自动化所","maintainers":["shengmaosu"],"url":"www.ia.cas.cn/yjsjy/zs/sszs","location":"ia/yjs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cas" :data='{"path":"/ia/yjs","categories":["university"],"example":"/cas/ia/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ia.cas.cn/yjsjy/zs/sszs","www.ia.cas.cn/"]}],"name":"自动化所","maintainers":["shengmaosu"],"url":"www.ia.cas.cn/yjsjy/zs/sszs","location":"ia/yjs.ts"}' :test='{"code":0}' />
 
 ## 中国农业大学 <Site url="ciee.cau.edu.cn"/>
 
 ### 研招网通知公告 <Site url="ciee.cau.edu.cn/col/col26712/index.html" size="sm" />
 
-<Route namespace="cau" :data='{"path":"/ele","categories":["university"],"example":"/cau/ele","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ciee.cau.edu.cn/col/col26712/index.html","ciee.cau.edu.cn/"]}],"name":"研招网通知公告","maintainers":["shengmaosu"],"url":"ciee.cau.edu.cn/col/col26712/index.html","description":"#### 信电学院 {#zhong-guo-nong-ye-da-xue-yan-zhao-wang-tong-zhi-gong-gao-xin-dian-xue-yuan}","location":"ele.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cau" :data='{"path":"/ele","categories":["university"],"example":"/cau/ele","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ciee.cau.edu.cn/col/col26712/index.html","ciee.cau.edu.cn/"]}],"name":"研招网通知公告","maintainers":["shengmaosu"],"url":"ciee.cau.edu.cn/col/col26712/index.html","description":"#### 信电学院 {#zhong-guo-nong-ye-da-xue-yan-zhao-wang-tong-zhi-gong-gao-xin-dian-xue-yuan}","location":"ele.ts"}' :test='{"code":0}' />
 
 #### 信电学院 {#zhong-guo-nong-ye-da-xue-yan-zhao-wang-tong-zhi-gong-gao-xin-dian-xue-yuan}
 
 ### 研招网通知公告 <Site url="yz.cau.edu.cn/col/col41740/index.html" size="sm" />
 
-<Route namespace="cau" :data='{"path":"/yjs","categories":["university"],"example":"/cau/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.cau.edu.cn/col/col41740/index.html","yz.cau.edu.cn/"]}],"name":"研招网通知公告","maintainers":["shengmaosu"],"url":"yz.cau.edu.cn/col/col41740/index.html","location":"yjs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cau" :data='{"path":"/yjs","categories":["university"],"example":"/cau/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.cau.edu.cn/col/col41740/index.html","yz.cau.edu.cn/"]}],"name":"研招网通知公告","maintainers":["shengmaosu"],"url":"yz.cau.edu.cn/col/col41740/index.html","location":"yjs.ts"}' :test='{"code":0}' />
 
 ## 中南大学 <Site url="career.csu.edu.cn"/>
 
 ### 计算机学院 <Site url="career.csu.edu.cn" size="sm" />
 
-<Route namespace="csu" :data='{"path":"/cse/:type?","categories":["university"],"example":"/csu/cse","parameters":{"type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机学院","maintainers":["j1g5awi"],"description":"| 类型 | 学院新闻 | 通知公告 | 学术信息 | 学工动态 | 科研动态 |\n  | ---- | -------- | -------- | -------- | -------- | -------- |\n  | 参数 | xyxw     | tzgg     | xsxx     | xgdt     | kydt     |","location":"cse.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="csu" :data='{"path":"/cse/:type?","categories":["university"],"example":"/csu/cse","parameters":{"type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机学院","maintainers":["j1g5awi"],"description":"| 类型 | 学院新闻 | 通知公告 | 学术信息 | 学工动态 | 科研动态 |\n  | ---- | -------- | -------- | -------- | -------- | -------- |\n  | 参数 | xyxw     | tzgg     | xsxx     | xgdt     | kydt     |","location":"cse.ts"}' :test='{"code":0}' />
 
 | 类型 | 学院新闻 | 通知公告 | 学术信息 | 学工动态 | 科研动态 |
   | ---- | -------- | -------- | -------- | -------- | -------- |
@@ -2076,11 +2076,11 @@ author 列表：
 
 ### 就业信息网招聘信息 <Site url="career.csu.edu.cn/campus/index/category/1" size="sm" />
 
-<Route namespace="csu" :data='{"path":"/career","categories":["university"],"example":"/csu/career","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["career.csu.edu.cn/campus/index/category/1","career.csu.edu.cn/campus","career.csu.edu.cn/"]}],"name":"就业信息网招聘信息","maintainers":["TonyRL"],"url":"career.csu.edu.cn/campus/index/category/1","location":"career.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="csu" :data='{"path":"/career","categories":["university"],"example":"/csu/career","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["career.csu.edu.cn/campus/index/category/1","career.csu.edu.cn/campus","career.csu.edu.cn/"]}],"name":"就业信息网招聘信息","maintainers":["TonyRL"],"url":"career.csu.edu.cn/campus/index/category/1","location":"career.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 校长信箱 <Site url="career.csu.edu.cn" size="sm" />
 
-<Route namespace="csu" :data='{"path":"/mail/:type?","categories":["university"],"example":"/csu/mail","parameters":{"type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"校长信箱","maintainers":["j1g5awi"],"description":"| 类型 | 校长信箱 | 党委信箱 |\n  | ---- | -------- | -------- |\n  | 参数 | 01       | 02       |","location":"mail.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="csu" :data='{"path":"/mail/:type?","categories":["university"],"example":"/csu/mail","parameters":{"type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"校长信箱","maintainers":["j1g5awi"],"description":"| 类型 | 校长信箱 | 党委信箱 |\n  | ---- | -------- | -------- |\n  | 参数 | 01       | 02       |","location":"mail.ts"}' :test='{"code":0}' />
 
 | 类型 | 校长信箱 | 党委信箱 |
   | ---- | -------- | -------- |
@@ -2090,17 +2090,17 @@ author 列表：
 
 ### 研究生招生网 <Site url="yz.cuc.edu.cn/8549/list.htm" size="sm" />
 
-<Route namespace="cuc" :data='{"path":"/yz","categories":["university"],"example":"/cuc/yz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.cuc.edu.cn/8549/list.htm","yz.cuc.edu.cn/"]}],"name":"研究生招生网","maintainers":["niuyi1017"],"url":"yz.cuc.edu.cn/8549/list.htm","location":"yz.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cuc" :data='{"path":"/yz","categories":["university"],"example":"/cuc/yz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.cuc.edu.cn/8549/list.htm","yz.cuc.edu.cn/"]}],"name":"研究生招生网","maintainers":["niuyi1017"],"url":"yz.cuc.edu.cn/8549/list.htm","location":"yz.ts"}' :test='{"code":0}' />
 
 ## 中国海洋大学 <Site url="it.ouc.edu.cn"/>
 
 ### 后勤公告通知 <Site url="hqsz.ouc.edu.cn/news.html?typeId=02" size="sm" />
 
-<Route namespace="ouc" :data='{"path":"/hqsz","categories":["university"],"example":"/ouc/hqsz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hqsz.ouc.edu.cn/news.html"]}],"name":"后勤公告通知","maintainers":["ladeng07"],"url":"hqsz.ouc.edu.cn/news.html?typeId=02","location":"hqsz.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ouc" :data='{"path":"/hqsz","categories":["university"],"example":"/ouc/hqsz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hqsz.ouc.edu.cn/news.html"]}],"name":"后勤公告通知","maintainers":["ladeng07"],"url":"hqsz.ouc.edu.cn/news.html?typeId=02","location":"hqsz.ts"}' :test='{"code":0}' />
 
 ### 教务处 <Site url="jwc.ouc.edu.cn/" size="sm" />
 
-<Route namespace="ouc" :data='{"path":"/jwc","categories":["university"],"example":"/ouc/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.ouc.edu.cn/","jwc.ouc.edu.cn/6517/list.htm"]}],"name":"教务处","maintainers":["3401797899"],"url":"jwc.ouc.edu.cn/","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ouc" :data='{"path":"/jwc","categories":["university"],"example":"/ouc/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.ouc.edu.cn/","jwc.ouc.edu.cn/6517/list.htm"]}],"name":"教务处","maintainers":["3401797899"],"url":"jwc.ouc.edu.cn/","location":"jwc.ts"}' :test='{"code":0}' />
 
 ### 信息科学与工程学院研究生招生通知公告 <Site url="it.ouc.edu.cn/_s381/16619/list.psp" size="sm" />
 
@@ -2108,7 +2108,7 @@ author 列表：
 
 ### 信息科学与工程学院团学工作 <Site url="it.ouc.edu.cn/" size="sm" />
 
-<Route namespace="ouc" :data='{"path":"/it/tx/:id?","categories":["university"],"example":"/ouc/it/tx/xwdt","parameters":{"id":"默认为 `xwdt`，id过多，这里只举几个例"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["it.ouc.edu.cn/tx/:id/list.htm"],"target":"/it/tx/:id"}],"name":"信息科学与工程学院团学工作","maintainers":["3401797899"],"url":"it.ouc.edu.cn/","description":"| 新闻动态 | 学院活动 | 奖助工作获奖情况 |\n  | -------- | -------- | ---------------- |\n  | xwdt     | tzgg     | 21758            |","location":"it-tx.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ouc" :data='{"path":"/it/tx/:id?","categories":["university"],"example":"/ouc/it/tx/xwdt","parameters":{"id":"默认为 `xwdt`，id过多，这里只举几个例"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["it.ouc.edu.cn/tx/:id/list.htm"],"target":"/it/tx/:id"}],"name":"信息科学与工程学院团学工作","maintainers":["3401797899"],"url":"it.ouc.edu.cn/","description":"| 新闻动态 | 学院活动 | 奖助工作获奖情况 |\n  | -------- | -------- | ---------------- |\n  | xwdt     | tzgg     | 21758            |","location":"it-tx.ts"}' :test='{"code":0}' />
 
 | 新闻动态 | 学院活动 | 奖助工作获奖情况 |
   | -------- | -------- | ---------------- |
@@ -2116,7 +2116,7 @@ author 列表：
 
 ### 信息科学与工程学院 <Site url="it.ouc.edu.cn/" size="sm" />
 
-<Route namespace="ouc" :data='{"path":"/it/:type?","categories":["university"],"example":"/ouc/it/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["it.ouc.edu.cn/"],"target":"/it"}],"name":"信息科学与工程学院","maintainers":["GeoffreyChen777","3401797899"],"url":"it.ouc.edu.cn/","description":"| 学院要闻 | 学院公告 | 学院活动 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |","location":"it.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ouc" :data='{"path":"/it/:type?","categories":["university"],"example":"/ouc/it/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["it.ouc.edu.cn/"],"target":"/it"}],"name":"信息科学与工程学院","maintainers":["GeoffreyChen777","3401797899"],"url":"it.ouc.edu.cn/","description":"| 学院要闻 | 学院公告 | 学院活动 |\n  | -------- | -------- | -------- |\n  | 0        | 1        | 2        |","location":"it.ts"}' :test='{"code":0}' />
 
 | 学院要闻 | 学院公告 | 学院活动 |
   | -------- | -------- | -------- |
@@ -2150,7 +2150,7 @@ author 列表：
 
 ### 数据科学与计算机学院动态 <Site url="cse.sysu.edu.cn/" size="sm" />
 
-<Route namespace="sysu" :data='{"path":"/cse","categories":["university"],"example":"/sysu/cse","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cse.sysu.edu.cn/"]}],"name":"数据科学与计算机学院动态","maintainers":[],"url":"cse.sysu.edu.cn/","location":"cse.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sysu" :data='{"path":"/cse","categories":["university"],"example":"/sysu/cse","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cse.sysu.edu.cn/"]}],"name":"数据科学与计算机学院动态","maintainers":[],"url":"cse.sysu.edu.cn/","location":"cse.ts"}' :test='{"code":0}' />
 
 ### 粤港澳发展研究院 <Site url="cse.sysu.edu.cn" size="sm" />
 
@@ -2182,7 +2182,7 @@ author 列表：
 
 ### 计算机科学与技术学院 <Site url="computer.upc.edu.cn" size="sm" />
 
-<Route namespace="upc" :data='{"path":"/jsj/:type","categories":["university"],"example":"/upc/jsj/news","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院","maintainers":["Veagau"],"description":"| 学院新闻 | 学术关注 | 学工动态 | 通知公告 |\n  | -------- | -------- | -------- | -------- |\n  | news     | scholar  | states   | notice   |","location":"jsj.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="upc" :data='{"path":"/jsj/:type","categories":["university"],"example":"/upc/jsj/news","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院","maintainers":["Veagau"],"description":"| 学院新闻 | 学术关注 | 学工动态 | 通知公告 |\n  | -------- | -------- | -------- | -------- |\n  | news     | scholar  | states   | notice   |","location":"jsj.ts"}' :test='{"code":0}' />
 
 | 学院新闻 | 学术关注 | 学工动态 | 通知公告 |
   | -------- | -------- | -------- | -------- |
@@ -2190,11 +2190,11 @@ author 列表：
 
 ### 研究生院通知公告 <Site url="zs.gs.upc.edu.cn/sszs/list.htm" size="sm" />
 
-<Route namespace="upc" :data='{"path":"/yjs","categories":["university"],"example":"/upc/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zs.gs.upc.edu.cn/sszs/list.htm","zs.gs.upc.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"zs.gs.upc.edu.cn/sszs/list.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="upc" :data='{"path":"/yjs","categories":["university"],"example":"/upc/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zs.gs.upc.edu.cn/sszs/list.htm","zs.gs.upc.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"zs.gs.upc.edu.cn/sszs/list.htm","location":"yjs.ts"}' :test='{"code":0}' />
 
 ### 主页 <Site url="computer.upc.edu.cn" size="sm" />
 
-<Route namespace="upc" :data='{"path":"/main/:type","categories":["university"],"example":"/upc/main/notice","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主页","maintainers":["Veagau"],"description":"| 通知公告 | 学术动态 |\n  | -------- | -------- |\n  | notice   | scholar  |","location":"main.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="upc" :data='{"path":"/main/:type","categories":["university"],"example":"/upc/main/notice","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主页","maintainers":["Veagau"],"description":"| 通知公告 | 学术动态 |\n  | -------- | -------- |\n  | notice   | scholar  |","location":"main.ts"}' :test='{"code":0}' />
 
 | 通知公告 | 学术动态 |
   | -------- | -------- |
@@ -2212,7 +2212,7 @@ author 列表：
 
 ### 官网通知公告 <Site url="ustc.edu.cn/" size="sm" />
 
-<Route namespace="ustc" :data='{"path":"/news/:type?","categories":["university"],"example":"/ustc/news/gl","parameters":{"type":"分类，默认为管理类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ustc.edu.cn/"],"target":"/news"}],"name":"官网通知公告","maintainers":["hang333","jasongzy"],"url":"ustc.edu.cn/","description":"| 教学类 | 科研类 | 管理类 | 服务类 |\n  | ------ | ------ | ------ | ------ |\n  | jx     | ky     | gl     | fw     |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ustc" :data='{"path":"/news/:type?","categories":["university"],"example":"/ustc/news/gl","parameters":{"type":"分类，默认为管理类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ustc.edu.cn/"],"target":"/news"}],"name":"官网通知公告","maintainers":["hang333","jasongzy"],"url":"ustc.edu.cn/","description":"| 教学类 | 科研类 | 管理类 | 服务类 |\n  | ------ | ------ | ------ | ------ |\n  | jx     | ky     | gl     | fw     |","location":"index.ts"}' :test='{"code":0}' />
 
 | 教学类 | 科研类 | 管理类 | 服务类 |
   | ------ | ------ | ------ | ------ |
@@ -2220,7 +2220,7 @@ author 列表：
 
 ### 教务处通知新闻 <Site url="www.teach.ustc.edu.cn/" size="sm" />
 
-<Route namespace="ustc" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/ustc/jwc/info","parameters":{"type":"分类，默认显示所有种类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.teach.ustc.edu.cn/"],"target":"/jwc"}],"name":"教务处通知新闻","maintainers":["hang333"],"url":"www.teach.ustc.edu.cn/","description":"| 信息 | 教学     | 考试 | 交流     |\n  | ---- | -------- | ---- | -------- |\n  | info | teaching | exam | exchange |","location":"jwc.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ustc" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/ustc/jwc/info","parameters":{"type":"分类，默认显示所有种类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.teach.ustc.edu.cn/"],"target":"/jwc"}],"name":"教务处通知新闻","maintainers":["hang333"],"url":"www.teach.ustc.edu.cn/","description":"| 信息 | 教学     | 考试 | 交流     |\n  | ---- | -------- | ---- | -------- |\n  | info | teaching | exam | exchange |","location":"jwc.ts"}' :test='{"code":0}' />
 
 | 信息 | 教学     | 考试 | 交流     |
   | ---- | -------- | ---- | -------- |
@@ -2252,7 +2252,7 @@ author 列表：
 
 ### 研究生院 <Site url="gradschool.ustc.edu.cn/" size="sm" />
 
-<Route namespace="ustc" :data='{"path":"/gs/:type?","categories":["university"],"example":"/ustc/gs/tzgg","parameters":{"type":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gradschool.ustc.edu.cn/"],"target":"/gs"}],"name":"研究生院","maintainers":["jasongzy"],"url":"gradschool.ustc.edu.cn/","description":"| 通知公告 | 新闻动态 |\n  | -------- | -------- |\n  | tzgg     | xwdt     |","location":"gs.ts"}' :test='{"code":0}' />
+<Route namespace="ustc" :data='{"path":"/gs/:type?","categories":["university"],"example":"/ustc/gs/tzgg","parameters":{"type":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gradschool.ustc.edu.cn/"],"target":"/gs"}],"name":"研究生院","maintainers":["jasongzy"],"url":"gradschool.ustc.edu.cn/","description":"| 通知公告 | 新闻动态 |\n  | -------- | -------- |\n  | tzgg     | xwdt     |","location":"gs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 通知公告 | 新闻动态 |
   | -------- | -------- |
@@ -2268,7 +2268,7 @@ author 列表：
 
 ### 通知公告 <Site url="www.cqwu.net" size="sm" />
 
-<Route namespace="cqwu" :data='{"path":"/news/:type?","categories":["university"],"example":"/cqwu/news/academiceve","parameters":{"type":"可选，默认为 academiceve "},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"通知公告","maintainers":["Fatpandac"],"description":"| 通知公告 | 学术活动公告 |\n  | -------- | ------------ |\n  | notify   | academiceve  |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cqwu" :data='{"path":"/news/:type?","categories":["university"],"example":"/cqwu/news/academiceve","parameters":{"type":"可选，默认为 academiceve "},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"通知公告","maintainers":["Fatpandac"],"description":"| 通知公告 | 学术活动公告 |\n  | -------- | ------------ |\n  | notify   | academiceve  |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 通知公告 | 学术活动公告 |
   | -------- | ------------ |
