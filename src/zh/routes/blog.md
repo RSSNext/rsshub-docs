@@ -186,30 +186,6 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
-### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
-
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
-
-### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
-
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
-
-### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
-
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
-
-### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
-
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
-
 ## 不良林 <Site url="bulianglin.com"/>
 
 ### 全部文章 <Site url="bulianglin.com/" size="sm" />
