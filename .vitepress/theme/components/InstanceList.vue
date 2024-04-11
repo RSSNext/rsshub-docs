@@ -108,6 +108,12 @@ const instances = [{
     location: '🇯🇵',
     maintainer: '仰止',
     maintainerUrl: 'https://yangzhi.org',
+  },
+  {
+    url: 'https://rsshub.friesport.ac.cn/',
+    location: '🇨🇳',
+    maintainer: '薯条港科学院',
+    maintainerUrl: 'https://space.bilibili.com/1690617042',
   }
 ]
 
