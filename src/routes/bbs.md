@@ -96,6 +96,12 @@
 
 <Route namespace="dcard" :data='{"path":"/:section/:type?","categories":["bbs"],"example":"/dcard/funny/popular","parameters":{"section":"板塊名稱，URL 中獲得","type":"排序，popular 熱門；latest 最新，默認為 latest"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板塊帖子","maintainers":["HenryQW"],"location":"section.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## Deepin <Site url="bbs.deepin.org"/>
+
+### BBS Home Page <Site url="bbs.deepin.org" size="sm" />
+
+<Route namespace="deepin" :data='{"path":"/homepage/:user_id","categories":["bbs"],"example":"/deepin/homepage/78326","parameters":{"user_id":"user id"},"name":"BBS Home Page","maintainers":["tensor-tech"],"radar":{"source":["bbs.deepin.org/user/:user_id"],"target":"/homepage/:user_id"},"location":"homepage.ts"}' :test='undefined' />
+
 ## Discourse 
 
 :::warning
