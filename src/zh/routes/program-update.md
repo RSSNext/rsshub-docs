@@ -164,7 +164,7 @@ Language
 
 ### 最新限免 / 促销应用 <Site url="gofans.cn" size="sm" />
 
-<Route namespace="gofans" :data='{"path":"/:kind?","categories":["program-update"],"example":"/gofans","parameters":{"kind":"Platform, either `macos` or `ios`, empty means both (default)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新限免 / 促销应用","maintainers":["HenryQW"],"location":"index.ts"}' :test='{"code":1,"message":"expected [ …(15) ] to not include &#39;https://gofans.cn/app/e6ca8620-b6eb-4…&#39;"}' />
+<Route namespace="gofans" :data='{"path":"/:kind?","categories":["program-update"],"example":"/gofans","parameters":{"kind":"Platform, either `macos` or `ios`, empty means both (default)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新限免 / 促销应用","maintainers":["HenryQW"],"location":"index.ts"}' :test='{"code":1,"message":"expected [ …(18) ] to not include &#39;https://gofans.cn/app/1e12e92a-6bff-4…&#39;"}' />
 
 ## Google <Site url="www.google.com"/>
 
@@ -212,7 +212,7 @@ Language
 
 ### Release Notes <Site url="firecore.com" size="sm" />
 
-<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 311559190767 to be less than 311040000000"}' />
+<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 311645723666 to be less than 311040000000"}' />
 
 ## iFi audio <Site url="ifi-audio.com"/>
 
@@ -279,7 +279,7 @@ Language
 
 ### Download <Site url="neatdownloadmanager.com/index.php" size="sm" />
 
-<Route namespace="neatdownloadmanager" :data='{"path":"/download/:os?","categories":["program-update"],"example":"/neatdownloadmanager/download","parameters":{"os":"Operating system, windows or macos, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["neatdownloadmanager.com/index.php","neatdownloadmanager.com/"]}],"name":"Download","maintainers":["nczitzk"],"url":"neatdownloadmanager.com/index.php","location":"download.ts"}' :test='{"code":0}' />
+<Route namespace="neatdownloadmanager" :data='{"path":"/download/:os?","categories":["program-update"],"example":"/neatdownloadmanager/download","parameters":{"os":"Operating system, windows or macos, all by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["neatdownloadmanager.com/index.php","neatdownloadmanager.com/"]}],"name":"Download","maintainers":["nczitzk"],"url":"neatdownloadmanager.com/index.php","location":"download.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Not a Tesla App <Site url="notateslaapp.com"/>
 
@@ -310,7 +310,7 @@ Language
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 337047620559 to be less than 311040000000"}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 337134377731 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
@@ -328,7 +328,7 @@ Language
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
 
-<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ …(128) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
+<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="docs.rsshub.app" size="sm" />
 
@@ -394,7 +394,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Download <Site url="support.wdc.com" size="sm" />
 
-<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -35940935795 to be greater than -432000000"}' />
+<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -4318089790 to be greater than -432000000"}' />
 
 ## winstall <Site url="winstall.app"/>
 

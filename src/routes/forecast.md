@@ -32,7 +32,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 中国地震台 <Site url="www.cea.gov.cn/cea/xwzx/zqsd/index.html" size="sm" />
 
-<Route namespace="earthquake" :data='{"path":"/ceic/:type?","categories":["forecast"],"example":"/earthquake/ceic/1","parameters":{"type":"类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震台","maintainers":["SettingDust"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"| 参数 | 类型                        |\n  | ---- | --------------------------- |\n  | 1    | 最近 24 小时地震信息        |\n  | 2    | 最近 48 小时地震信息        |\n  | 5    | 最近一年 3.0 级以上地震信息 |\n  | 7    | 最近一年 3.0 级以下地震     |\n  | 8    | 最近一年 4.0 级以上地震信息 |\n  | 9    | 最近一年 5.0 级以上地震信息 |\n  | 0    | 最近一年 6.0 级以上地震信息 |\n\n  可通过全局过滤参数订阅您感兴趣的地区.","location":"ceic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="earthquake" :data='{"path":"/ceic/:type?","categories":["forecast"],"example":"/earthquake/ceic/1","parameters":{"type":"类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震台","maintainers":["SettingDust"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"| 参数 | 类型                        |\n  | ---- | --------------------------- |\n  | 1    | 最近 24 小时地震信息        |\n  | 2    | 最近 48 小时地震信息        |\n  | 5    | 最近一年 3.0 级以上地震信息 |\n  | 7    | 最近一年 3.0 级以下地震     |\n  | 8    | 最近一年 4.0 级以上地震信息 |\n  | 9    | 最近一年 5.0 级以上地震信息 |\n  | 0    | 最近一年 6.0 级以上地震信息 |\n\n  可通过全局过滤参数订阅您感兴趣的地区.","location":"ceic.ts"}' :test='{"code":0}' />
 
 | 参数 | 类型                        |
   | ---- | --------------------------- |
@@ -92,7 +92,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 南京市 <Site url="jlwater.com/portal/10000013" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/nanjing","categories":["forecast"],"example":"/tingshuitz/nanjing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlwater.com/portal/10000013","jlwater.com/"]}],"name":"南京市","maintainers":["ocleo1"],"url":"jlwater.com/portal/10000013","location":"nanjing.ts"}' :test='{"code":0}' />
+<Route namespace="tingshuitz" :data='{"path":"/nanjing","categories":["forecast"],"example":"/tingshuitz/nanjing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlwater.com/portal/10000013","jlwater.com/"]}],"name":"南京市","maintainers":["ocleo1"],"url":"jlwater.com/portal/10000013","location":"nanjing.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 深圳市 <Site url="sz-water.com.cn/*" size="sm" />
 
@@ -214,11 +214,11 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广东省内城市预警信号 <Site url="www.tqyb.com.cn/gz/weatherAlarm/otherCity/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 突发性天气提示 <Site url="www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/tfxtq","categories":["forecast"],"example":"/gov/guangdong/tqyb/tfxtq","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/"]}],"name":"突发性天气提示","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/","location":"guangdong/tqyb/tfxtq.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/tfxtq","categories":["forecast"],"example":"/gov/guangdong/tqyb/tfxtq","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/"]}],"name":"突发性天气提示","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/","location":"guangdong/tqyb/tfxtq.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 中央气象台 <Site url="nmc.cn"/>
 
