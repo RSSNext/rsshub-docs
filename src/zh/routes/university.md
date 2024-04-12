@@ -1871,10 +1871,6 @@ author 列表：
 
 ### Unknown <Site url="2yuan.xjtu.edu.cn" size="sm" />
 
-<Route namespace="xjtu" :data='{"path":"/dean/:subpath{.+}","name":"Unknown","maintainers":[],"location":"dean.ts"}' :test='undefined' />
-
-### Unknown <Site url="2yuan.xjtu.edu.cn" size="sm" />
-
 <Route namespace="xjtu" :data='{"path":"/international/:subpath{.+}","name":"Unknown","maintainers":[],"location":"international.ts"}' :test='undefined' />
 
 ### Unknown <Site url="2yuan.xjtu.edu.cn" size="sm" />
@@ -1901,6 +1897,12 @@ author 列表：
 ### 电气学院 <Site url="ee.xjtu.edu.cn/" size="sm" />
 
 <Route namespace="xjtu" :data='{"path":"/ee/:id?","categories":["university"],"example":"/xjtu/ee/1114","parameters":{"id":"栏目id，默认请求`1124`，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ee.xjtu.edu.cn/"]}],"name":"电气学院","maintainers":["DylanXie123"],"url":"ee.xjtu.edu.cn/","location":"ee.ts"}' :test='{"code":0}' />
+
+### 教务处 <Site url="2yuan.xjtu.edu.cn" size="sm" />
+
+<Route namespace="xjtu" :data='{"path":"/dean/:subpath{.+}","name":"教务处","maintainers":["hoilc"],"example":"/xjtu/dean/jxxx/jxtz2","description":"打开一个类似 <https://dean.xjtu.edu.cn/jxxx/jxtz2.htm> 的网址，在 `.cn` 后的内容就是 subpath，此例中是 `jxxx/jxtz2`","location":"dean.ts"}' :test='undefined' />
+
+打开一个类似 <https://dean.xjtu.edu.cn/jxxx/jxtz2.htm> 的网址，在 `.cn` 后的内容就是 subpath，此例中是 `jxxx/jxtz2`
 
 ### 就业创业中心 <Site url="2yuan.xjtu.edu.cn" size="sm" />
 
