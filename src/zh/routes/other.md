@@ -72,7 +72,7 @@
 
 ### Exchange and Repair Extension Programs <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 491011740202 to be less than 311040000000"}' />
+<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 491098098689 to be less than 311040000000"}' />
 
 ## Aqara <Site url="aqara.com"/>
 
@@ -274,7 +274,7 @@ News from the official site of men's professional tennis.
 
 ### Search <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":0}' />
 
 ## Grub Street <Site url="grubstreet.com"/>
 
@@ -388,7 +388,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
-<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?","categories":["other"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":[],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
+<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?","categories":["other"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":[],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 #### `job_types` list
 
@@ -566,7 +566,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### OpenSource Square <Site url="oshwhub.com" size="sm" />
 
-<Route namespace="oshwhub" :data='{"path":"/:sortType?","categories":["other"],"example":"/oshwhub","parameters":{"sortType":"sortType"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"OpenSource Square","maintainers":["tylinux"],"location":"explore.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="oshwhub" :data='{"path":"/:sortType?","categories":["other"],"example":"/oshwhub","parameters":{"sortType":"sortType"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"OpenSource Square","maintainers":["tylinux"],"location":"explore.ts"}' :test='{"code":0}' />
 
 ## Proceedings of The National Academy of Sciences <Site url="pnas.org"/>
 
@@ -592,7 +592,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Sustainability <Site url="strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html" size="sm" />
 
-<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":0}' />
 
 ## Panda <Site url="usepanda.com"/>
 
@@ -799,7 +799,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 349742833667 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 520210084790 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -1124,7 +1124,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 快递订单追踪 <Site url="kuaidi100.com" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 快递公司代号如果不能确定，可通过下方快递列表获得。
 
@@ -1136,7 +1136,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 支持的快递公司列表 <Site url="kuaidi100.com/" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 理想生活实验室 <Site url="toodaylab.com"/>
 
@@ -1330,11 +1330,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 搜索 <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 355451361509 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 355537696122 to be less than 311040000000"}' />
 
 ### 特色 LOGO <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 311214558634 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 311300893036 to be less than 311040000000"}' />
 
 ## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
 
@@ -1519,7 +1519,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="cib.com.cn/" size="sm" />
 
-<Route namespace="cib" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/cib/whpj/xh?filter_title=USD","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cib.com.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["Qixingchen"],"url":"cib.com.cn/","description":"| 短格式 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cib" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/cib/whpj/xh?filter_title=USD","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cib.com.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["Qixingchen"],"url":"cib.com.cn/","description":"| 短格式 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 短格式 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1650,7 +1650,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="icbc.com.cn/column/1438058341489590354.html" size="sm" />
 
-<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
+<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |

@@ -128,11 +128,17 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
   Personalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.
   :::
 
+## Open Github社区 <Site url="open.itc.cn"/>
+
+### 合集 <Site url="open.itc.cn" size="sm" />
+
+<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='undefined' />
+
 ## Paul Graham <Site url="paulgraham.com"/>
 
 ### Essays <Site url="paulgraham.com/articles.html" size="sm" />
 
-<Route namespace="paulgraham" :data='{"path":["/articles","/essays","/"],"categories":["blog"],"example":"/paulgraham/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["paulgraham.com/articles.html"]}],"name":"Essays","maintainers":["Maecenas","nczitzk"],"url":"paulgraham.com/articles.html","location":"article.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="paulgraham" :data='{"path":["/articles","/essays","/"],"categories":["blog"],"example":"/paulgraham/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["paulgraham.com/articles.html"]}],"name":"Essays","maintainers":["Maecenas","nczitzk"],"url":"paulgraham.com/articles.html","location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Essays <Site url="paulgraham.com/articles.html" size="sm" />
 
@@ -176,7 +182,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
 
-<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 博客园 <Site url="www.cnblogs.com"/>
 
@@ -252,7 +258,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 文章 <Site url="fxiaoke.com" size="sm" />
 
-<Route namespace="fxiaoke" :data='{"path":"/crm/:type","categories":["blog"],"example":"/fxiaoke/crm/news","parameters":{"type":"文章类型, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["akynazh"],"description":"| 全部文章 | 文章干货 | CRM 知识 | 纷享动态        | 签约喜报  |\n  | -------- | -------- | -------- | --------------- | --------- |\n  | news     | blog     | articles | about-influence | customers |","location":"crm.ts"}' :test='{"code":0}' />
+<Route namespace="fxiaoke" :data='{"path":"/crm/:type","categories":["blog"],"example":"/fxiaoke/crm/news","parameters":{"type":"文章类型, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["akynazh"],"description":"| 全部文章 | 文章干货 | CRM 知识 | 纷享动态        | 签约喜报  |\n  | -------- | -------- | -------- | --------------- | --------- |\n  | news     | blog     | articles | about-influence | customers |","location":"crm.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 | 全部文章 | 文章干货 | CRM 知识 | 纷享动态        | 签约喜报  |
   | -------- | -------- | -------- | --------------- | --------- |
