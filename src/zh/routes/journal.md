@@ -68,6 +68,24 @@ Return results from 2020
 
 <Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":0}' />
 
+## Cool Papers <Site url="papers.cool"/>
+
+### Topic <Site url="papers.cool" size="sm" />
+
+<Route namespace="papers" :data='{"path":"/:category{.+}?","name":"Topic","url":"papers.cool","maintainers":["nczitzk"],"example":"/papers/arxiv/cs.AI","parameters":{"category":"Category, arXiv Artificial Intelligence (cs.AI) by default"},"description":":::tip\n  If you subscribe to [arXiv Artificial Intelligence (cs.AI)](https://papers.cool/arxiv/cs.AI)，where the URL is `https://papers.cool/arxiv/cs.AI`, extract the part `https://papers.cool/` to the end, and use it as the parameter to fill in. Therefore, the route will be [`/papers/arxiv/cs.AI`](https://rsshub.app/papers/arxiv/cs.AI).\n  :::\n\n  | Category                                              | id          |\n  | ----------------------------------------------------- | ----------- |\n  | arXiv Artificial Intelligence (cs.AI)                 | arxiv/cs.AI |\n  | arXiv Computation and Language (cs.CL)                | arxiv/cs.CL |\n  | arXiv Computer Vision and Pattern Recognition (cs.CV) | arxiv/cs.CV |\n  | arXiv Machine Learning (cs.LG)                        | arxiv/cs.LG |\n  ","categories":["journal"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"title":"arXiv Artificial Intelligence (cs.AI)","source":["papers.cool/arxiv/cs.AI"],"target":"/arxiv/cs.AI"},{"title":"arXiv Computation and Language (cs.CL)","source":["papers.cool/arxiv/cs.CL"],"target":"/arxiv/cs.CL"},{"title":"arXiv Computer Vision and Pattern Recognition (cs.CV)","source":["papers.cool/arxiv/cs.CV"],"target":"/arxiv/cs.CV"},{"title":"arXiv Machine Learning (cs.LG)","source":["papers.cool/arxiv/cs.LG"],"target":"/arxiv/cs.LG"}],"location":"index.ts"}' :test='undefined' />
+
+:::tip
+  If you subscribe to [arXiv Artificial Intelligence (cs.AI)](https://papers.cool/arxiv/cs.AI)，where the URL is `https://papers.cool/arxiv/cs.AI`, extract the part `https://papers.cool/` to the end, and use it as the parameter to fill in. Therefore, the route will be [`/papers/arxiv/cs.AI`](https://rsshub.app/papers/arxiv/cs.AI).
+  :::
+
+  | Category                                              | id          |
+  | ----------------------------------------------------- | ----------- |
+  | arXiv Artificial Intelligence (cs.AI)                 | arxiv/cs.AI |
+  | arXiv Computation and Language (cs.CL)                | arxiv/cs.CL |
+  | arXiv Computer Vision and Pattern Recognition (cs.CV) | arxiv/cs.CV |
+  | arXiv Machine Learning (cs.LG)                        | arxiv/cs.LG |
+  
+
 ## Google <Site url="www.google.com"/>
 
 ### Author Citations <Site url="www.google.com" size="sm" />

@@ -144,12 +144,6 @@ News from the official site of men's professional tennis.
 
 <Route namespace="curiouscat" :data='{"path":"/user/:id","radar":[{"source":["curiouscat.live/:id"]}],"name":"Unknown","maintainers":["lucasew"],"location":"user.ts"}' :test='undefined' />
 
-## Cool Papers <Site url="papers.cool"/>
-
-### Unknown <Site url="papers.cool" size="sm" />
-
-<Route namespace="papers" :data='{"path":"/:category{.+}?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
-
 ## Corona Virus Disease 2019 <Site url="scmp.com"/>
 
 ### South China Morning Post - China coronavirus outbreak <Site url="scmp.com" size="sm" />
