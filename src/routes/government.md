@@ -566,6 +566,10 @@ Language
   | -------------------- | ---------------- | -------------- | -------------------- |
   | 821                  | 706              | 707            | 708                  |
 
+### 江苏文旅局审批公告 <Site url="wlt.jiangsu.gov.cn/" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/jiangsu/wlt/:page?","categories":["government"],"example":"/gov/jiangsu/wlt","parameters":{"page":"页数，默认第 1 页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wlt.jiangsu.gov.cn/"],"target":"/jiangsu/wlt"}],"name":"江苏文旅局审批公告","maintainers":["GideonSenku"],"url":"wlt.jiangsu.gov.cn/","location":"jiangsu/wlt/index.ts"}' :test='undefined' />
+
 ### 今日绵竹 <Site url="www.mztoday.gov.cn/*" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/sichuan/deyang/mztoday/:infoType?","categories":["government"],"example":"/gov/sichuan/deyang/mztoday/zx","parameters":{"infoType":"信息栏目名称。默认最新(zx)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mztoday.gov.cn/*"],"target":"/sichuan/deyang/mztoday"}],"name":"今日绵竹","maintainers":["zytomorrow"],"url":"www.mztoday.gov.cn/*","description":"| 最新 | 推荐 | 时政 | 教育 | 民生 | 文旅 | 经济 | 文明创建 | 部门 | 镇（街道） | 健康绵竹 | 南轩讲堂 | 视频 | 文明实践 | 领航中国 | 绵竹年画 | 绵竹历史 | 绵竹旅游 | 外媒看绵竹 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---------- | -------- | -------- | ---- | -------- | -------- | -------- | -------- | -------- | ---------- |\n  | zx   | tj   | sz   | jy   | ms   | wl   | jj   | wmcj     | bm   | zj         | jkmz     | nxjt     | sp   | wmsj     | lhzg     | mznh     | mzls     | mzly     | wmkmz      |","location":"sichuan/deyang/mztoday.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
