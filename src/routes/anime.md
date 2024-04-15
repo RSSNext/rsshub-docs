@@ -552,6 +552,12 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="laimanhua" :data='{"path":"/:id","categories":["anime"],"example":"/laimanhua/tiandikangzhanjiVERSUS","parameters":{"id":"漫画 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.laimanhua8.com/kanmanhua/:id"]}],"name":"漫画列表","maintainers":["TonyRL"],"location":"index.ts"}' :test='{"code":1,"message":"expected [ …(4) ] to not include &#39;https://www.laimanhua8.com/kanmanhua/…&#39;"}' />
 
+## 漫小肆韓漫 <Site url="freexcomic.com"/>
+
+### 漫画更新 <Site url="www.jjmhw.cc" size="sm" />
+
+<Route namespace="freexcomic" :data='{"path":"/book/:id","example":"/freexcomic/book/90","parameters":{"id":"漫画id，漫画主页的地址栏中"},"radar":[{"source":["www.jjmhw.cc/book/:id"]}],"name":"漫画更新","maintainers":["junfengP"],"url":"www.jjmhw.cc","location":"book.ts"}' :test='undefined' />
+
 ## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
 
 ### Unknown <Site url="ac.qq.com" size="sm" />
