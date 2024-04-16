@@ -16,7 +16,7 @@
 
 ### Articles <Site url="lock.cmpxchg8b.com/articles" size="sm" />
 
-<Route namespace="cmpxchg8b" :data='{"path":"/articles","categories":["blog"],"example":"/cmpxchg8b/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lock.cmpxchg8b.com/articles"]}],"name":"Articles","maintainers":["yuguorui"],"url":"lock.cmpxchg8b.com/articles","location":"articles.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cmpxchg8b" :data='{"path":"/articles","categories":["blog"],"example":"/cmpxchg8b/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lock.cmpxchg8b.com/articles"]}],"name":"Articles","maintainers":["yuguorui"],"url":"lock.cmpxchg8b.com/articles","location":"articles.ts"}' :test='{"code":0}' />
 
 ## CSDN <Site url="blog.csdn.net"/>
 
@@ -194,7 +194,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
@@ -226,7 +226,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 全部文章 <Site url="bulianglin.com/" size="sm" />
 
-<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 财新博客 <Site url="caixin.com"/>
 
@@ -242,7 +242,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 严选 <Site url="chuanliu.org/nice" size="sm" />
 
-<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 大眼仔旭 <Site url="dayanzai.me"/>
 
@@ -338,7 +338,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 博客 <Site url="cloudnative.to" size="sm" />
 
-<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 赵容部落 <Site url="zrblog.net"/>
 
@@ -356,7 +356,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 博客 <Site url="apiseven.com" size="sm" />
 
-<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 竹白 <Site url="zhubai.love"/>
 
