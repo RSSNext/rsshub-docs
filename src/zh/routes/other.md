@@ -114,9 +114,9 @@ News from the official site of men's professional tennis.
 
 ## Bing <Site url="cn.bing.com"/>
 
-### Unknown <Site url="cn.bing.com/" size="sm" />
+### 每日壁纸 <Site url="cn.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/","radar":[{"source":["cn.bing.com/"],"target":""}],"name":"Unknown","maintainers":["FHYunCai"],"url":"cn.bing.com/","location":"daily-wallpaper.ts"}' :test='undefined' />
+<Route namespace="bing" :data='{"path":"/","radar":[{"source":["cn.bing.com/"],"target":""}],"name":"每日壁纸","maintainers":["FHYunCai"],"url":"cn.bing.com/","location":"daily-wallpaper.ts"}' :test='undefined' />
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
