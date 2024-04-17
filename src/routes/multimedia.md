@@ -198,6 +198,12 @@
   | ------- | -------- | -------- |
   | en_US  | cn_CN   | zh_ZH   |
 
+## Apple <Site url="apps.apple.com"/>
+
+### 播客 <Site url="https://www.apple.com.cn/apple-podcasts/" size="sm" />
+
+<Route namespace="apple" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/apple/podcast/id1559695855","parameters":{"id":"播客id，可以在 Apple 播客app 内分享的播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["podcasts.apple.com/cn/podcast/:id"]}],"name":"播客","maintainers":["Acring"],"url":"https://www.apple.com.cn/apple-podcasts/","location":"podcast.ts"}' :test='undefined' />
+
 ## BT 之家 1LOU 站 <Site url="1lou.me"/>
 
 ### 通用 <Site url="1lou.me" size="sm" />
