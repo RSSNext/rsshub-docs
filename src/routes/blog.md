@@ -160,6 +160,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":0}' />
 
+## Wojciech Muła <Site url="0x80.pl"/>
+
+### Articles <Site url="0x80.pl/notesen.html" size="sm" />
+
+<Route namespace="0x80" :data='{"path":"/blog","categories":["blog"],"example":"/0x80/blog","url":"0x80.pl/notesen.html","name":"Articles","maintainers":["xnum"],"location":"index.ts"}' :test='undefined' />
+
 ## Watasuke <Site url="watasuke.net"/>
 
 ### Blog <Site url="watasuke.net/blog/" size="sm" />
