@@ -131,7 +131,7 @@ There are more details in the [FAQ](/guide/faq).
 
 ## Output Formats
 
-RSSHub conforms to RSS 2.0, Atom, JSON Feed and RSS3 UMS Standard. To obtain the feed in a specific format, simply add the `format` parameter with the value `rss`, `atom`, `json`, or `ums` to the feed address to obtain the feed in corresponding format. The default output format is RSS 2.0.
+RSSHub conforms to RSS 2.0, Atom, JSON Feed, and RSS3 Protocol. To obtain the feed in a specific format, simply add the `format` parameter with the value `rss`, `atom`, `json`, or `rss3` to the feed address to obtain the feed in the corresponding format. The default output format is RSS 2.0.
 
 E.g.
 
@@ -139,7 +139,7 @@ E.g.
 -   RSS 2.0 - [https://rsshub.app/dribbble/popular?format=rss](https://rsshub.app/dribbble/popular?format=rss)
 -   Atom - [https://rsshub.app/dribbble/popular?format=atom](https://rsshub.app/dribbble/popular?format=atom)
 -   JSON Feed - [https://rsshub.app/twitter/user/DIYgod?format=json](https://rsshub.app/twitter/user/DIYgod?format=json)
--   RSS3 UMS - [https://rsshub.app/abc?format=ums](https://rsshub.app/abc?format=ums)
+-   RSS3 - [https://rsshub.app/abc?format=rss3](https://rsshub.app/abc?format=rss3)
 -   Apply filters or URL query - [https://rsshub.app/dribbble/popular?format=atom&filterout=Blue|Yellow|Black](https://rsshub.app/dribbble/popular?format=atom&filterout=Blue|Yellow|Black)
 
 ### debug.json

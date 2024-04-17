@@ -132,7 +132,7 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 ## 输出格式
 
-RSSHub 同时支持 RSS 2.0、Atom、JSON Feed 和 RSS3 UMS 输出格式，在路由添加 `format` 参数（值为`rss`、`atom`、`json` 或 `ums`）即可请求对应输出格式，缺省为 RSS 2.0
+RSSHub 同时支持 RSS 2.0、Atom、JSON Feed 和 RSS3 输出格式，在路由添加 `format` 参数（值为`rss`、`atom`、`json` 或 `rss3`）即可请求对应输出格式，缺省为 RSS 2.0
 
 举例:
 
@@ -140,7 +140,7 @@ RSSHub 同时支持 RSS 2.0、Atom、JSON Feed 和 RSS3 UMS 输出格式，在�
 -   RSS 2.0 - [https://rsshub.app/jianshu/home?format=rss](https://rsshub.app/jianshu/home?format=rss)
 -   Atom - [https://rsshub.app/jianshu/home?format=atom](https://rsshub.app/jianshu/home?format=atom)
 -   JSON Feed - [https://rsshub.app/twitter/user/DIYgod?format=json](https://rsshub.app/twitter/user/DIYgod?format=json)
--   RSS3 UMS - [https://rsshub.app/abc?format=ums](https://rsshub.app/abc?format=ums)
+-   RSS3 - [https://rsshub.app/abc?format=rss3](https://rsshub.app/abc?format=rss3)
 -   和 filter 或其他 URL query 一起使用 - `https://rsshub.app/bilibili/user/coin/2267573?format=atom&filter=微小微|赤九玖|暴走大事件`
 
 ### debug.json
