@@ -14,7 +14,7 @@
 
 ### Report <Site url="outage.report" size="sm" />
 
-<Route namespace="outagereport" :data='{"path":"/:name/:count?","categories":["forecast"],"example":"/outagereport/ubisoft/5","parameters":{"name":"Service name, spelling format must be consistent with URL","count":"Counting threshold, will only be written in RSS if the number of people who report to stop serving is not less than this number"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Report","maintainers":["cxumol","nczitzk"],"description":"Please skip the local service area code for `name`, for example `https://outage.report/us/verizon-wireless` to `verizon-wireless`.","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="outagereport" :data='{"path":"/:name/:count?","categories":["forecast"],"example":"/outagereport/ubisoft/5","parameters":{"name":"Service name, spelling format must be consistent with URL","count":"Counting threshold, will only be written in RSS if the number of people who report to stop serving is not less than this number"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Report","maintainers":["cxumol","nczitzk"],"description":"Please skip the local service area code for `name`, for example `https://outage.report/us/verizon-wireless` to `verizon-wireless`.","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Please skip the local service area code for `name`, for example `https://outage.report/us/verizon-wireless` to `verizon-wireless`.
 
@@ -224,7 +224,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 全国气象预警 <Site url="nmc.cn/publish/alarm.html" size="sm" />
 
-<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":0}' />
+<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 重庆燃气 <Site url="cqgas.cn"/>
 

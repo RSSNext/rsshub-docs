@@ -22,7 +22,7 @@
 
 ### User Feed <Site url="blog.csdn.net" size="sm" />
 
-<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Delta Lake <Site url="delta.io"/>
 
@@ -144,7 +144,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Essays <Site url="paulgraham.com/articles.html" size="sm" />
 
-<Route namespace="paulgraham" :data='{"path":["/articles","/essays","/"],"categories":["blog"],"example":"/paulgraham/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["paulgraham.com/articles.html"]}],"name":"Essays","maintainers":["Maecenas","nczitzk"],"url":"paulgraham.com/articles.html","location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="paulgraham" :data='{"path":["/articles","/essays","/"],"categories":["blog"],"example":"/paulgraham/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["paulgraham.com/articles.html"]}],"name":"Essays","maintainers":["Maecenas","nczitzk"],"url":"paulgraham.com/articles.html","location":"article.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ### Essays <Site url="paulgraham.com/articles.html" size="sm" />
 
@@ -232,7 +232,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 全部文章 <Site url="bulianglin.com/" size="sm" />
 
-<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 财新博客 <Site url="caixin.com"/>
 
@@ -292,7 +292,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
