@@ -1630,6 +1630,20 @@ Member ID
 
 <Route namespace="dedao" :data='{"path":"/knowledge/:topic?/:type?","categories":["new-media"],"example":"/dedao/knowledge","parameters":{"topic":"话题 id，可在对应话题页 URL 中找到","type":"分享类型，`true` 指精选，`false` 指最新，默认为精选"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dedao.cn/knowledge/topic/:topic","dedao.cn/knowledge","dedao.cn/"]}],"name":"知识城邦","maintainers":["nczitzk"],"location":"knowledge.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## 德恒律师事务所 <Site url="dehenglaw.com"/>
+
+### 德恒探索 <Site url="dehenglaw.com" size="sm" />
+
+<Route namespace="dehenglaw" :data='{"path":"/:language?/:category?","name":"德恒探索","url":"dehenglaw.com","maintainers":["nczitzk"],"example":"/dehenglaw/CN/paper","parameters":{"language":"语言，默认为中文，即 CN，可在对应分类页 URL 中找到，可选 CN 和 EN","category":"分类，默认为专业文章，即 paper，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [专业文章](https://dehenglaw.com/)，网址为 `https://www.dehenglaw.com/CN/paper/0008/000902.aspx`。截取 `https://dehenglaw.com/` 到末尾 `/0008/000902.aspx` 的部分 `CN/paper` 作为参数填入，此时路由为 [`/dehenglaw/CN/paper`](https://rsshub.app/dehenglaw/CN/paper)。\n\n  | 专业文章 | 出版物  | 德恒论坛 |\n  | -------- | ------- | -------- |\n  | paper    | publish | luntan   |\n  :::","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"专业文章","source":["dehenglaw.com/:language/paper/0008/000902.aspx"],"target":"/:language/paper"},{"title":"出版物","source":["dehenglaw.com/:language/publish/0008/000903.aspx"],"target":"/:language/publish"},{"title":"德恒论坛","source":["dehenglaw.com/:language/luntan/0008/000901.aspx"],"target":"/:language/luntan"}],"location":"index.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [专业文章](https://dehenglaw.com/)，网址为 `https://www.dehenglaw.com/CN/paper/0008/000902.aspx`。截取 `https://dehenglaw.com/` 到末尾 `/0008/000902.aspx` 的部分 `CN/paper` 作为参数填入，此时路由为 [`/dehenglaw/CN/paper`](https://rsshub.app/dehenglaw/CN/paper)。
+
+  | 专业文章 | 出版物  | 德恒论坛 |
+  | -------- | ------- | -------- |
+  | paper    | publish | luntan   |
+  :::
+
 ## 电獭少女 <Site url="agirls.aotter.net"/>
 
 ### 当前精选主题列表 <Site url="agirls.aotter.net/" size="sm" />
