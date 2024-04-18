@@ -777,7 +777,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Unknown 
 
-<Route namespace="test" :data='{"path":"/:id","name":"Unknown","maintainers":["DIYgod","NeverBehave"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="test" :data='{"path":"/:id/:params?","name":"Unknown","maintainers":["DIYgod","NeverBehave"],"location":"index.ts"}' :test='undefined' />
 
 ## u9a9 <Site url="u9a9.com"/>
 
