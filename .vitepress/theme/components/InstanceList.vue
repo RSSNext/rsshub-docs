@@ -97,8 +97,7 @@ const instances = [{
     location: '🇩🇪',
     maintainer: 'Vincent Yang',
     maintainerUrl: 'https://missuo.me',
-  },
-  {
+  }, {
     url: 'https://rss.wudifeixue.com',
     location: '🇨🇦',
     maintainer: 'wudifeixue',
@@ -108,6 +107,11 @@ const instances = [{
     location: '🇯🇵',
     maintainer: '仰止',
     maintainerUrl: 'https://yangzhi.org',
+  }, {
+    url: 'https://rsshub.viki.moe',
+    location: '🇺🇸',
+    maintainer: 'Viki',
+    maintainerUrl: 'https://github.com/vikiboss',
   }
 ]
 
