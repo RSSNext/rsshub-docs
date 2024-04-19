@@ -32,7 +32,7 @@ Language
 
 ### Latest News <Site url="ccac.org.mo" size="sm" />
 
-<Route namespace="ccac" :data='{"path":"/news/:type/:lang?","categories":["government"],"example":"/ccac/news/all","parameters":{"type":"Category","lang":"Language, default to `sc`. Supprot `en`(English), `sc`(Simplified Chinese), `tc`(Traditional Chinese) and `pt`(Portuguese)"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Latest News","maintainers":["linbuxiao"],"description":"Category\n\n  | All | Detected Cases | Investigation Reports or Recommendations | Annual Reports | CCAC&#39;s Updates |\n  | --- | -------------- | ---------------------------------------- | -------------- | -------------- |\n  | all | case           | Persuasion                               | AnnualReport   | PCANews        |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ccac" :data='{"path":"/news/:type/:lang?","categories":["government"],"example":"/ccac/news/all","parameters":{"type":"Category","lang":"Language, default to `sc`. Supprot `en`(English), `sc`(Simplified Chinese), `tc`(Traditional Chinese) and `pt`(Portuguese)"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Latest News","maintainers":["linbuxiao"],"description":"Category\n\n  | All | Detected Cases | Investigation Reports or Recommendations | Annual Reports | CCAC&#39;s Updates |\n  | --- | -------------- | ---------------------------------------- | -------------- | -------------- |\n  | all | case           | Persuasion                               | AnnualReport   | PCANews        |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Category
 
@@ -204,11 +204,21 @@ Language
 
 <Route namespace="njglyy" :data='{"path":"/ygbjypx","categories":["government"],"example":"/njglyy/ygbjypx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["njglyy.com/ygb/jypx/jypx.aspx","njglyy.com/"]}],"name":"员工版教育培训","maintainers":["real-jiakai"],"url":"njglyy.com/ygb/jypx/jypx.aspx","location":"ygbjypx.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## 上海业余无线电协会 <Site url="www.sara.org.cn"/>
+
+### 新闻资讯 <Site url="www.sara.org.cn" size="sm" />
+
+<Route namespace="sara" :data='{"path":"/:type","categories":["government"],"example":"/sara/announcement","parameters":{"type":"dynamic | announcement | industry"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"| 协会动态 | 通知公告 |行业动态 |\n    | -------- | ------------ | -------- |\n    | dynamic | announcement | industry |","name":"新闻资讯","maintainers":["HChenZi"],"location":"index.ts"}' :test='undefined' />
+
+| 协会动态 | 通知公告 |行业动态 |
+    | -------- | ------------ | -------- |
+    | dynamic | announcement | industry |
+
 ## 台湾行政院消费者保护会 <Site url="cpc.ey.gov.tw"/>
 
 ### 消费资讯 <Site url="cpc.ey.gov.tw" size="sm" />
 
-<Route namespace="cpcey" :data='{"path":"/:type?","categories":["government"],"example":"/cpcey/xwg","parameters":{"type":"默认为 `xwg`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"消费资讯","maintainers":["Fatpandac"],"description":"| 新闻稿 | 消费资讯 |\n  | :----: | :------: |\n  |   xwg  |   xfzx   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cpcey" :data='{"path":"/:type?","categories":["government"],"example":"/cpcey/xwg","parameters":{"type":"默认为 `xwg`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"消费资讯","maintainers":["Fatpandac"],"description":"| 新闻稿 | 消费资讯 |\n  | :----: | :------: |\n  |   xwg  |   xfzx   |","location":"index.ts"}' :test='{"code":0}' />
 
 | 新闻稿 | 消费资讯 |
   | :----: | :------: |
@@ -224,7 +234,7 @@ Language
 
 ### 研究会动态 <Site url="casssp.org.cn" size="sm" />
 
-<Route namespace="casssp" :data='{"path":"/news/:category?","categories":["government"],"example":"/casssp/news/3","parameters":{"category":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究会动态","maintainers":["nczitzk"],"description":"| 通知公告 | 新闻动态 | 信息公开 | 时政要闻 |\n  | -------- | -------- | -------- | -------- |\n  | 3        | 2        | 92       | 93       |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="casssp" :data='{"path":"/news/:category?","categories":["government"],"example":"/casssp/news/3","parameters":{"category":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究会动态","maintainers":["nczitzk"],"description":"| 通知公告 | 新闻动态 | 信息公开 | 时政要闻 |\n  | -------- | -------- | -------- | -------- |\n  | 3        | 2        | 92       | 93       |","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 | 通知公告 | 新闻动态 | 信息公开 | 时政要闻 |
   | -------- | -------- | -------- | -------- |
@@ -234,7 +244,7 @@ Language
 
 ### 通用 <Site url="cast.org.cn" size="sm" />
 
-<Route namespace="cast" :data='{"path":"/:column/:subColumn/:category?","categories":["government"],"example":"/cast/xw/tzgg/ZH","parameters":{"column":"栏目编号，见下表","subColumn":"二级栏目编号","category":"分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cast.org.cn/:column/:subColumn/:category/index.html","cast.org.cn/:column/:subColumn/index.html"],"target":"/:column/:subColumn/:category?"}],"name":"通用","maintainers":["KarasuShin","TonyRL"],"description":":::tip\n  在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`10`\n  :::\n\n  | 分类     | 编码 |\n  | -------- | ---- |\n  | 全景科协 | qjkx |\n  | 智库     | zk   |\n  | 学术     | xs   |\n  | 科普     | kp   |\n  | 党建     | dj   |\n  | 数据     | sj   |\n  | 新闻     | xw   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cast" :data='{"path":"/:column/:subColumn/:category?","categories":["government"],"example":"/cast/xw/tzgg/ZH","parameters":{"column":"栏目编号，见下表","subColumn":"二级栏目编号","category":"分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cast.org.cn/:column/:subColumn/:category/index.html","cast.org.cn/:column/:subColumn/index.html"],"target":"/:column/:subColumn/:category?"}],"name":"通用","maintainers":["KarasuShin","TonyRL"],"description":":::tip\n  在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`10`\n  :::\n\n  | 分类     | 编码 |\n  | -------- | ---- |\n  | 全景科协 | qjkx |\n  | 智库     | zk   |\n  | 学术     | xs   |\n  | 科普     | kp   |\n  | 党建     | dj   |\n  | 数据     | sj   |\n  | 新闻     | xw   |","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`10`
@@ -254,7 +264,7 @@ Language
 
 ### 最新资讯 <Site url="www.crac.org.cn" size="sm" />
 
-<Route namespace="crac" :data='{"path":"/:type?","categories":["government"],"example":"/crac/2","parameters":{"type":"类型，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新资讯","maintainers":["Misaka13514"],"description":"| 新闻动态 | 通知公告 | 政策法规 | 常见问题 | 资料下载 | English | 业余中继台 | 科普专栏 |\n  | -------- | -------- | -------- | -------- | -------- | ------- | ---------- | -------- |\n  | 1        | 2        | 3        | 5        | 6        | 7       | 8          | 9        |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="crac" :data='{"path":"/:type?","categories":["government"],"example":"/crac/2","parameters":{"type":"类型，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新资讯","maintainers":["Misaka13514"],"description":"| 新闻动态 | 通知公告 | 政策法规 | 常见问题 | 资料下载 | English | 业余中继台 | 科普专栏 |\n  | -------- | -------- | -------- | -------- | -------- | ------- | ---------- | -------- |\n  | 1        | 2        | 3        | 5        | 6        | 7       | 8          | 9        |","location":"index.ts"}' :test='{"code":0}' />
 
 | 新闻动态 | 通知公告 | 政策法规 | 常见问题 | 资料下载 | English | 业余中继台 | 科普专栏 |
   | -------- | -------- | -------- | -------- | -------- | ------- | ---------- | -------- |
@@ -690,7 +700,7 @@ Language
 
 ### 拍卖信息 / 海关法规 <Site url="www.customs.gov.cn/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/customs/list/:gchannel?","categories":["government"],"example":"/gov/customs/list/paimai","parameters":{"gchannel":"支持 `paimai` 及 `fagui` 2个频道，默认为 `paimai`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.customs.gov.cn/"],"target":"/customs/list"}],"name":"拍卖信息 / 海关法规","maintainers":["Jeason0228","TonyRL","he1q"],"url":"www.customs.gov.cn/","description":":::warning\n  由于区域限制，建议在国内 IP 的机器上自建\n  :::","location":"customs/list.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/customs/list/:gchannel?","categories":["government"],"example":"/gov/customs/list/paimai","parameters":{"gchannel":"支持 `paimai` 及 `fagui` 2个频道，默认为 `paimai`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.customs.gov.cn/"],"target":"/customs/list"}],"name":"拍卖信息 / 海关法规","maintainers":["Jeason0228","TonyRL","he1q"],"url":"www.customs.gov.cn/","description":":::warning\n  由于区域限制，建议在国内 IP 的机器上自建\n  :::","location":"customs/list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::warning
   由于区域限制，建议在国内 IP 的机器上自建
@@ -754,7 +764,7 @@ Language
 
 ### 事故及灾害查处 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/mem/gk/sgcc/:category?","categories":["government"],"example":"/gov/mem/gk/sgcc/tbzdsgdcbg","parameters":{"category":"分类，见下表，默认为挂牌督办"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mem.gov.cn/gk/sgcc/:category"],"target":"/mem/gk/sgcc/:category"}],"name":"事故及灾害查处","maintainers":["nczitzk"],"description":"| 挂牌督办 | 调查报告   |\n  | -------- | ---------- |\n  | sggpdbqk | tbzdsgdcbg |","location":"mem/sgcc.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/mem/gk/sgcc/:category?","categories":["government"],"example":"/gov/mem/gk/sgcc/tbzdsgdcbg","parameters":{"category":"分类，见下表，默认为挂牌督办"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mem.gov.cn/gk/sgcc/:category"],"target":"/mem/gk/sgcc/:category"}],"name":"事故及灾害查处","maintainers":["nczitzk"],"description":"| 挂牌督办 | 调查报告   |\n  | -------- | ---------- |\n  | sggpdbqk | tbzdsgdcbg |","location":"mem/sgcc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 挂牌督办 | 调查报告   |
   | -------- | ---------- |
@@ -762,7 +772,7 @@ Language
 
 ### 司局通知 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/moe/s78/:column","categories":["government"],"example":"/gov/moe/s78/A13","parameters":{"column":"司局 ID，可在 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["moe.gov.cn/s78/:column/tongzhi","moe.gov.cn/s78/:column"]}],"name":"司局通知","maintainers":["TonyRL"],"location":"moe/s78.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/moe/s78/:column","categories":["government"],"example":"/gov/moe/s78/A13","parameters":{"column":"司局 ID，可在 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["moe.gov.cn/s78/:column/tongzhi","moe.gov.cn/s78/:column"]}],"name":"司局通知","maintainers":["TonyRL"],"location":"moe/s78.ts"}' :test='{"code":0}' />
 
 ### 太原市人力资源和社会保障局政府公开信息 <Site url="rsj.taiyuan.gov.cn/*" size="sm" />
 
@@ -784,7 +794,7 @@ Language
 
 ### 通知公告 <Site url="jw.beijing.gov.cn/tzgg" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/beijing/jw/tzgg","categories":["government"],"example":"/gov/beijing/jw/tzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.beijing.gov.cn/tzgg"]}],"name":"通知公告","maintainers":["nczitzk"],"url":"jw.beijing.gov.cn/tzgg","location":"beijing/jw/tzgg.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/beijing/jw/tzgg","categories":["government"],"example":"/gov/beijing/jw/tzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.beijing.gov.cn/tzgg"]}],"name":"通知公告","maintainers":["nczitzk"],"url":"jw.beijing.gov.cn/tzgg","location":"beijing/jw/tzgg.ts"}' :test='{"code":0}' />
 
 ### 通用 <Site url="kjt.ah.gov.cn" size="sm" />
 
@@ -824,7 +834,7 @@ Language
 
 ### 投诉建议 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/safe/complaint/:site?","categories":["government"],"example":"/gov/safe/complaint/beijing","parameters":{"site":"站点，见上表，默认为 beijing"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"投诉建议","maintainers":["nczitzk"],"location":"safe/complaint.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/safe/complaint/:site?","categories":["government"],"example":"/gov/safe/complaint/beijing","parameters":{"site":"站点，见上表，默认为 beijing"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"投诉建议","maintainers":["nczitzk"],"location":"safe/complaint.ts"}' :test='{"code":0}' />
 
 ### 文件发布 <Site url="kjt.ah.gov.cn" size="sm" />
 
@@ -832,7 +842,7 @@ Language
 
 ### 文件公示 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/miit/wjgs","categories":["government"],"example":"/gov/miit/wjgs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文件公示","maintainers":["Yoge-Code"],"location":"miit/wjgs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/miit/wjgs","categories":["government"],"example":"/gov/miit/wjgs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文件公示","maintainers":["Yoge-Code"],"location":"miit/wjgs.ts"}' :test='{"code":0}' />
 
 ### 武汉要闻 <Site url="wuhan.gov.cn/sy/whyw/" size="sm" />
 
@@ -879,7 +889,7 @@ Language
 
 ### 业务咨询 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/safe/business/:site?","categories":["government"],"example":"/gov/safe/business/beijing","parameters":{"site":"站点，见上表，默认为 beijing"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"业务咨询","maintainers":["nczitzk"],"location":"safe/business.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/safe/business/:site?","categories":["government"],"example":"/gov/safe/business/beijing","parameters":{"site":"站点，见上表，默认为 beijing"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"业务咨询","maintainers":["nczitzk"],"location":"safe/business.ts"}' :test='{"code":0}' />
 
 ### 意见征集 <Site url="miit.gov.cn/gzcy/yjzj/index.html" size="sm" />
 
@@ -896,7 +906,7 @@ Language
 
 ### 政策解读 <Site url="kjt.ah.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/miit/zcjd","categories":["government"],"example":"/gov/miit/zcjd","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政策解读","maintainers":["Yoge-Code"],"location":"miit/zcjd.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/miit/zcjd","categories":["government"],"example":"/gov/miit/zcjd","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政策解读","maintainers":["Yoge-Code"],"location":"miit/zcjd.ts"}' :test='{"code":0}' />
 
 ### 政策文件 <Site url="kjt.ah.gov.cn" size="sm" />
 
