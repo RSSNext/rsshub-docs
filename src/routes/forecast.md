@@ -32,7 +32,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 中国地震台 <Site url="www.cea.gov.cn/cea/xwzx/zqsd/index.html" size="sm" />
 
-<Route namespace="earthquake" :data='{"path":"/ceic/:type?","categories":["forecast"],"example":"/earthquake/ceic/1","parameters":{"type":"类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震台","maintainers":["SettingDust"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"| 参数 | 类型                        |\n  | ---- | --------------------------- |\n  | 1    | 最近 24 小时地震信息        |\n  | 2    | 最近 48 小时地震信息        |\n  | 5    | 最近一年 3.0 级以上地震信息 |\n  | 7    | 最近一年 3.0 级以下地震     |\n  | 8    | 最近一年 4.0 级以上地震信息 |\n  | 9    | 最近一年 5.0 级以上地震信息 |\n  | 0    | 最近一年 6.0 级以上地震信息 |\n\n  可通过全局过滤参数订阅您感兴趣的地区.","location":"ceic.ts"}' :test='{"code":0}' />
+<Route namespace="earthquake" :data='{"path":"/ceic/:type?","categories":["forecast"],"example":"/earthquake/ceic/1","parameters":{"type":"类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震台","maintainers":["SettingDust"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"| 参数 | 类型                        |\n  | ---- | --------------------------- |\n  | 1    | 最近 24 小时地震信息        |\n  | 2    | 最近 48 小时地震信息        |\n  | 5    | 最近一年 3.0 级以上地震信息 |\n  | 7    | 最近一年 3.0 级以下地震     |\n  | 8    | 最近一年 4.0 级以上地震信息 |\n  | 9    | 最近一年 5.0 级以上地震信息 |\n  | 0    | 最近一年 6.0 级以上地震信息 |\n\n  可通过全局过滤参数订阅您感兴趣的地区.","location":"ceic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 参数 | 类型                        |
   | ---- | --------------------------- |
@@ -76,7 +76,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 大连市 <Site url="swj.dl.gov.cn/col/col4296/index.html" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/dalian","categories":["forecast"],"example":"/tingshuitz/dalian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swj.dl.gov.cn/col/col4296/index.html","swj.dl.gov.cn/"]}],"name":"大连市","maintainers":["DIYgod"],"url":"swj.dl.gov.cn/col/col4296/index.html","location":"dalian.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tingshuitz" :data='{"path":"/dalian","categories":["forecast"],"example":"/tingshuitz/dalian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swj.dl.gov.cn/col/col4296/index.html","swj.dl.gov.cn/"]}],"name":"大连市","maintainers":["DIYgod"],"url":"swj.dl.gov.cn/col/col4296/index.html","location":"dalian.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 东莞市 <Site url="swj.dl.gov.cn" size="sm" />
 
@@ -84,7 +84,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广州市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/guangzhou","categories":["forecast"],"example":"/tingshuitz/guangzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州市","maintainers":["xyqfer"],"location":"guangzhou.ts"}' :test='{"code":0}' />
+<Route namespace="tingshuitz" :data='{"path":"/guangzhou","categories":["forecast"],"example":"/tingshuitz/guangzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州市","maintainers":["xyqfer"],"location":"guangzhou.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 杭州市 <Site url="www.hzwgc.com/public/stop_the_water" size="sm" />
 
@@ -102,7 +102,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 西安市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/xian","categories":["forecast"],"example":"/tingshuitz/xian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"西安市","maintainers":["ciaranchen"],"location":"xian.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tingshuitz" :data='{"path":"/xian","categories":["forecast"],"example":"/tingshuitz/xian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"西安市","maintainers":["ciaranchen"],"location":"xian.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 萧山区 <Site url="www.xswater.com/gongshui/channels/227.html" size="sm" />
 
@@ -114,7 +114,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 长沙市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/changsha/:channelId?","categories":["forecast"],"example":"/tingshuitz/changsha/78","parameters":{"channelId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"长沙市","maintainers":["shansing"],"description":"可能仅限于中国大陆服务器访问，以实际情况为准。\n\n  | channelId | 分类     |\n  | --------- | -------- |\n  | 78        | 计划停水 |\n  | 157       | 抢修停水 |","location":"changsha.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="tingshuitz" :data='{"path":"/changsha/:channelId?","categories":["forecast"],"example":"/tingshuitz/changsha/78","parameters":{"channelId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"长沙市","maintainers":["shansing"],"description":"可能仅限于中国大陆服务器访问，以实际情况为准。\n\n  | channelId | 分类     |\n  | --------- | -------- |\n  | 78        | 计划停水 |\n  | 157       | 抢修停水 |","location":"changsha.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 可能仅限于中国大陆服务器访问，以实际情况为准。
 
@@ -224,11 +224,11 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 全国气象预警 <Site url="nmc.cn/publish/alarm.html" size="sm" />
 
-<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":0}' />
+<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 重庆燃气 <Site url="cqgas.cn"/>
 
 ### 停气检修通知 <Site url="cqgas.cn/" size="sm" />
 
-<Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts"}' :test='{"code":0}' />
+<Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
