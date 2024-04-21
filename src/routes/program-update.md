@@ -102,7 +102,7 @@
 
 ### Latest models <Site url="civitai.com/" size="sm" />
 
-<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":0}' />
 
 ### Model discussions <Site url="civitai.com" size="sm" />
 
@@ -193,7 +193,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -212,7 +212,7 @@ Language
 
 ### Release Notes <Site url="firecore.com" size="sm" />
 
-<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 312336970136 to be less than 311040000000"}' />
+<Route namespace="firecore" :data='{"path":"/:os","categories":["program-update"],"example":"/firecore/ios","parameters":{"os":"`ios`,`tvos`,`macos`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["NathanDai"],"location":"index.ts"}' :test='{"code":1,"message":"expected 312423237147 to be less than 311040000000"}' />
 
 ## iFi audio <Site url="ifi-audio.com"/>
 
@@ -310,7 +310,7 @@ Language
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 337825650582 to be less than 311040000000"}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 337911694570 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
@@ -382,7 +382,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ Array(1) ] to not include &#39;https://hub.docker.com/r/datarhei/res…&#39;"}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(6) ] to not include &#39;https://hub.docker.com/r/datarhei/res…&#39;"}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 
@@ -394,7 +394,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Download <Site url="support.wdc.com" size="sm" />
 
-<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -35162803826 to be greater than -432000000"}' />
+<Route namespace="wdc" :data='{"path":"/download/:id?","categories":["program-update"],"example":"/wdc/download/279","parameters":{"id":"Software id, can be found in URL, 279 as Western Digital Dashboard by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Download","maintainers":[],"location":"download.ts"}' :test='{"code":1,"message":"expected -3540850436 to be greater than -432000000"}' />
 
 ## winstall <Site url="winstall.app"/>
 

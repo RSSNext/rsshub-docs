@@ -359,7 +359,7 @@
 
 ### User <Site url="curius.app" size="sm" />
 
-<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":0}' />
 
 ## Daily.dev <Site url="daily.dev"/>
 
@@ -413,7 +413,7 @@ Due to [Instagram Private API](https://github.com/dilame/instagram-private-api) 
 
 ### User Profile / Hashtag <Site url="www.instagram.com" size="sm" />
 
-<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
 You may need to setup cookie for a less restrictive rate limit and private profiles.
@@ -471,7 +471,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### Tag <Site url="www.lofter.com" size="sm" />
 
-<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":0}' />
 
 | new  | date | week | month | total |
   | ---- | ---- | ---- | ----- | ----- |
@@ -479,7 +479,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User <Site url="www.lofter.com" size="sm" />
 
-<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## Mastodon <Site url="mastodon.social"/>
 
@@ -606,7 +606,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### User Threads <Site url="rattibha.com" size="sm" />
 
-<Route namespace="rattibha" :data='{"path":"/user/:user","categories":["social-media"],"example":"/rattibha/user/elonmusk","parameters":{"user":"Twitter username, without @"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rattibha.com/:user"]}],"name":"User Threads","maintainers":["yshalsager"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="rattibha" :data='{"path":"/user/:user","categories":["social-media"],"example":"/rattibha/user/elonmusk","parameters":{"user":"Twitter username, without @"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rattibha.com/:user"]}],"name":"User Threads","maintainers":["yshalsager"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## Telegram <Site url="t.me"/>
 
@@ -796,7 +796,7 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 
 ### Music Charts <Site url="charts.youtube.com" size="sm" />
 
-<Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n  | Top artists | Top songs | Top music videos | Trending       |\n  | ----------- | --------- | ---------------- | -------------- |\n  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n  | ar        | au        | at      | be      | bo      | br     | ca     |\n\n  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n  | cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n  | eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n  | hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n  | Uruguay | Zimbabwe |\n  | ------- | -------- |\n  | uy      | zw       |","location":"charts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n  | Top artists | Top songs | Top music videos | Trending       |\n  | ----------- | --------- | ---------------- | -------------- |\n  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n  | ar        | au        | at      | be      | bo      | br     | ca     |\n\n  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n  | cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n  | eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n  | hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n  | Uruguay | Zimbabwe |\n  | ------- | -------- |\n  | uy      | zw       |","location":"charts.ts"}' :test='{"code":0}' />
 
 Chart
 
@@ -900,11 +900,11 @@ Chart
 
 ### 豆瓣书店 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/bookstore","categories":["social-media"],"example":"/douban/bookstore","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣书店","maintainers":["xyqfer"],"location":"other/bookstore.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/bookstore","categories":["social-media"],"example":"/douban/bookstore","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣书店","maintainers":["xyqfer"],"location":"other/bookstore.ts"}' :test='{"code":0}' />
 
 ### 豆瓣电影人 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/celebrity/:id/:sort?","categories":["social-media"],"example":"/douban/celebrity/1274261","parameters":{"id":"电影人 id","sort":"排序方式，缺省为 `time`（时间排序），可为 `vote` （评价排序）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影人","maintainers":["minimalistrojan"],"location":"other/celebrity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/celebrity/:id/:sort?","categories":["social-media"],"example":"/douban/celebrity/1274261","parameters":{"id":"电影人 id","sort":"排序方式，缺省为 `time`（时间排序），可为 `vote` （评价排序）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影人","maintainers":["minimalistrojan"],"location":"other/celebrity.ts"}' :test='{"code":0}' />
 
 ### 豆瓣电影分类 <Site url="www.douban.com" size="sm" />
 
@@ -926,11 +926,11 @@ Chart
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":0}' />
 
 ### 豆瓣招聘 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/jobs/:type","categories":["social-media"],"example":"/douban/jobs/campus","parameters":{"type":"招聘类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣招聘","maintainers":["Fatpandac"],"description":"| 社会招聘 | 校园招聘 | 实习生招聘 |\n  | :------: | :------: | :--------: |\n  |  social  |  campus  |   intern   |","location":"other/jobs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/jobs/:type","categories":["social-media"],"example":"/douban/jobs/campus","parameters":{"type":"招聘类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣招聘","maintainers":["Fatpandac"],"description":"| 社会招聘 | 校园招聘 | 实习生招聘 |\n  | :------: | :------: | :--------: |\n  |  social  |  campus  |   intern   |","location":"other/jobs.ts"}' :test='{"code":0}' />
 
 | 社会招聘 | 校园招聘 | 实习生招聘 |
   | :------: | :------: | :--------: |
@@ -1012,7 +1012,7 @@ Chart
 
 ### 频道专题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 327828525633 to be less than 311040000000"}' />
+<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 327914820364 to be less than 311040000000"}' />
 
 | 默认    | 热门 | 最新 |
   | ------- | ---- | ---- |
@@ -1082,7 +1082,7 @@ Chart
 
 ### 最新回应过的日记 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/replied/:uid","categories":["social-media"],"example":"/douban/replied/xiaoyaxiaoya","parameters":{"uid":"用户id，可在用户日记页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新回应过的日记","maintainers":["nczitzk"],"location":"other/replied.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/replied/:uid","categories":["social-media"],"example":"/douban/replied/xiaoyaxiaoya","parameters":{"uid":"用户id，可在用户日记页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新回应过的日记","maintainers":["nczitzk"],"location":"other/replied.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 方格子 <Site url="vocus.cc"/>
 
@@ -1116,7 +1116,7 @@ Chart
 
 ### 专题 <Site url="www.jianshu.com" size="sm" />
 
-<Route namespace="jianshu" :data='{"path":"/collection/:id","categories":["social-media"],"example":"/jianshu/collection/xYuZYD","parameters":{"id":"专题 id, 可在专题页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/c/:id"]}],"name":"专题","maintainers":["DIYgod","HenryQW","JimenezLi"],"location":"collection.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="jianshu" :data='{"path":"/collection/:id","categories":["social-media"],"example":"/jianshu/collection/xYuZYD","parameters":{"id":"专题 id, 可在专题页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jianshu.com/c/:id"]}],"name":"专题","maintainers":["DIYgod","HenryQW","JimenezLi"],"location":"collection.ts"}' :test='{"code":0}' />
 
 ### 作者 <Site url="www.jianshu.com" size="sm" />
 
@@ -1126,11 +1126,11 @@ Chart
 
 ### 话题 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":0}' />
 
 ### 看看号 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":0}' />
 
 :::tip
   仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。
@@ -1138,7 +1138,7 @@ Chart
 
 ### 热榜 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |
   | -------- | -------- | ------ | ------ | ------ | ------ |
@@ -1162,7 +1162,7 @@ Chart
 
 ### 图文 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":["/tuwen/:type?","/tuwen-xinxian"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="coolapk" :data='{"path":["/tuwen/:type?","/tuwen-xinxian"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 编辑精选 | 最新   |
   | -------- | -------- | ------ |
@@ -1425,7 +1425,7 @@ Chart
 
 ### 知乎分类热榜 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media"],"example":"/zhihu/hot","parameters":{"category":"分类，见下表，默认为全站"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎分类热榜","maintainers":["nczitzk"],"description":"| 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |\n  | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |\n  | total | focus | science | car  | zvideo | fashion | depth | digital | sport | school | film |","location":"hot.ts"}' :test='{"code":1,"message":"expected 311940012149 to be less than 311040000000"}' />
+<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media"],"example":"/zhihu/hot","parameters":{"category":"分类，见下表，默认为全站"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎分类热榜","maintainers":["nczitzk"],"description":"| 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |\n  | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |\n  | total | focus | science | car  | zvideo | fashion | depth | digital | sport | school | film |","location":"hot.ts"}' :test='{"code":0}' />
 
 | 全站  | 国际  | 科学    | 汽车 | 视频   | 时尚    | 时事  | 数码    | 体育  | 校园   | 影视 |
   | ----- | ----- | ------- | ---- | ------ | ------- | ----- | ------- | ----- | ------ | ---- |

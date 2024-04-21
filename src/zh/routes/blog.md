@@ -248,13 +248,13 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 严选 <Site url="chuanliu.org/nice" size="sm" />
 
-<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 大眼仔旭 <Site url="dayanzai.me"/>
 
 ### 分类 <Site url="dayanzai.me" size="sm" />
 
-<Route namespace="dayanzai" :data='{"path":"/:category/:fulltext?","categories":["blog"],"example":"/dayanzai/windows","parameters":{"category":"分类","fulltext":"是否获取全文，需要获取则传入参数`y`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dayanzai.me/:category","dayanzai.me/:category/*"],"target":"/:category"}],"name":"分类","maintainers":[],"description":"| 微软应用 | 安卓应用 | 教程资源 | 其他资源 |\n  | -------- | -------- | -------- | -------- |\n  | windows  | android  | tutorial | other    |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="dayanzai" :data='{"path":"/:category/:fulltext?","categories":["blog"],"example":"/dayanzai/windows","parameters":{"category":"分类","fulltext":"是否获取全文，需要获取则传入参数`y`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dayanzai.me/:category","dayanzai.me/:category/*"],"target":"/:category"}],"name":"分类","maintainers":[],"description":"| 微软应用 | 安卓应用 | 教程资源 | 其他资源 |\n  | -------- | -------- | -------- | -------- |\n  | windows  | android  | tutorial | other    |","location":"index.ts"}' :test='{"code":0}' />
 
 | 微软应用 | 安卓应用 | 教程资源 | 其他资源 |
   | -------- | -------- | -------- | -------- |
@@ -310,7 +310,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 专题展示 - 文章 <Site url="www.foreverblog.cn/feeds.html" size="sm" />
 
-<Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":1,"message":"expected [ …(8) ] to not include &#39;https://kezhi.tech/en/46493a5d.html&#39;"}' />
+<Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":0}' />
 
 ## 土猛的员外 <Site url="luxiangdong.com"/>
 
@@ -322,7 +322,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 新到资料 <Site url="xys.org/" size="sm" />
 
-<Route namespace="xys" :data='{"path":"/new","categories":["blog"],"example":"/xys/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xys.org/","xys.org/new.html"]}],"name":"新到资料","maintainers":["wenzhenl"],"url":"xys.org/","location":"new.ts"}' :test='{"code":1,"message":"expected [ …(24) ] to not include &#39;https://www.youtube.com/channel/UCgTx…&#39;"}' />
+<Route namespace="xys" :data='{"path":"/new","categories":["blog"],"example":"/xys/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xys.org/","xys.org/new.html"]}],"name":"新到资料","maintainers":["wenzhenl"],"url":"xys.org/","location":"new.ts"}' :test='{"code":1,"message":"expected [ …(22) ] to not include &#39;https://www.youtube.com/channel/UCgTx…&#39;"}' />
 
 ## 甬哥侃侃侃YouTube教程摘要随笔 <Site url="ygkkk.blogspot.com"/>
 
@@ -338,7 +338,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 分类 <Site url="ddosi.org/" size="sm" />
 
-<Route namespace="ddosi" :data='{"path":"/category/:category?","categories":["blog"],"example":"/ddosi/category/黑客工具","parameters":{"category":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ddosi.org/category/:category/"],"target":"/category/:category"}],"name":"分类","maintainers":[],"url":"ddosi.org/","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ddosi" :data='{"path":"/category/:category?","categories":["blog"],"example":"/ddosi/category/黑客工具","parameters":{"category":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ddosi.org/category/:category/"],"target":"/category/:category"}],"name":"分类","maintainers":[],"url":"ddosi.org/","location":"category.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 云原生社区 <Site url="cloudnative.to"/>
 
@@ -362,13 +362,13 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 博客 <Site url="apiseven.com" size="sm" />
 
-<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 竹白 <Site url="zhubai.love"/>
 
 ### 上周热门 TOP 20 <Site url="analy.zhubai.love/" size="sm" />
 
-<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' :test='{"code":0}' />
 
 ### 文章 <Site url="zhubai.love" size="sm" />
 
