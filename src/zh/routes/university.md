@@ -692,6 +692,16 @@ author 列表：
   | ------------ | -------------- | ------------------ |
   | ggtz         | jwc            | zsjyc              |
 
+## 黑龙江八一农垦大学 <Site url="byau.edu.cn"/>
+
+### 新闻网 <Site url="xinwen.byau.edu.cn" size="sm" />
+
+<Route namespace="byau" :data='{"path":"/news/:type_id","categories":["university"],"example":"/byau/news/3674","parameters":{"type_id":"栏目类型(从菜单栏获取对应 ID)"},"radar":[{"source":["xinwen.byau.edu.cn/:type_id/list.htm"],"target":"/news/:type_id"}],"name":"新闻网","maintainers":["ueiu"],"url":"xinwen.byau.edu.cn","description":"| 学校要闻 | 校园动态 |\n  | ---- | ----------- |\n  | 3674 | 3676 |","location":"xinwen/index.ts"}' :test='undefined' />
+
+| 学校要闻 | 校园动态 |
+  | ---- | ----------- |
+  | 3674 | 3676 |
+
 ## 黑龙江中医药大学 <Site url="yjsy.hljucm.net"/>
 
 ### 研究生院 <Site url="yjsy.hljucm.net" size="sm" />
