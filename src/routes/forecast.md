@@ -170,7 +170,7 @@ Please skip the local service area code for `name`, for example `https://outage.
   | ---- | -------- | -------- |
   |      | gnxw     | gjxw     |
 
-## 中国人民银行 <Site url="kjt.ah.gov.cn"/>
+## 中国人民银行 <Site url="pbc.gov.cn"/>
 
 <details>
   <summary>*业务咨询* 和 *投诉建议* 可用的站点参数</summary>
