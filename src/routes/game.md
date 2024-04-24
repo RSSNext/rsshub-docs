@@ -123,7 +123,7 @@ Categories
 
 ### News <Site url="dorohedoro.net/news" size="sm" />
 
-<Route namespace="dorohedoro" :data='{"path":"/news","categories":["game"],"example":"/dorohedoro/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dorohedoro.net/news","dorohedoro.net/"]}],"name":"News","maintainers":["nczitzk"],"url":"dorohedoro.net/news","location":"news.ts"}' :test='{"code":1,"message":"expected [ …(14) ] to not include &#39;https://dorohedoro.net/&#39;"}' />
+<Route namespace="dorohedoro" :data='{"path":"/news","categories":["game"],"example":"/dorohedoro/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dorohedoro.net/news","dorohedoro.net/"]}],"name":"News","maintainers":["nczitzk"],"url":"dorohedoro.net/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Epic Games Store <Site url="store.epicgames.com"/>
 
@@ -183,7 +183,7 @@ Region
 
 ### News <Site url="fortnite.com" size="sm" />
 
-<Route namespace="fortnite" :data='{"path":"/news/:options?","categories":["game"],"example":"/fortnite/news","parameters":{"options":"Params"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["lyqluis"],"description":"-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n  | English (default) | Spanish | Japanese | French | Korean | Polish |\n  | ----------------- | ------- | -------- | ------ | ------ | ------ |\n  | en-US             | es-ES   | ja       | fr     | ko     | pl     |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="fortnite" :data='{"path":"/news/:options?","categories":["game"],"example":"/fortnite/news","parameters":{"options":"Params"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["lyqluis"],"description":"-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n  | English (default) | Spanish | Japanese | French | Korean | Polish |\n  | ----------------- | ------- | -------- | ------ | ------ | ------ |\n  | en-US             | es-ES   | ja       | fr     | ko     | pl     |","location":"news.ts"}' :test='{"code":0}' />
 
 -   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)
 
@@ -258,15 +258,15 @@ Region
 
 ### 会员开发游戏库 <Site url="indienova.com/usergames" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/usergames","categories":["game"],"example":"/indienova/usergames","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/usergames","indienova.com/"]}],"name":"会员开发游戏库","maintainers":["TonyRL"],"url":"indienova.com/usergames","location":"usergames.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indienova" :data='{"path":"/usergames","categories":["game"],"example":"/indienova/usergames","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/usergames","indienova.com/"]}],"name":"会员开发游戏库","maintainers":["TonyRL"],"url":"indienova.com/usergames","location":"usergames.ts"}' :test='{"code":0}' />
 
 ### 文章 <Site url="indienova.com" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/:type","categories":["game"],"example":"/indienova/article","parameters":{"type":"类型: `article` 文章，`development` 开发"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["GensouSakuya","kt286"],"location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indienova" :data='{"path":"/:type","categories":["game"],"example":"/indienova/article","parameters":{"type":"类型: `article` 文章，`development` 开发"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["GensouSakuya","kt286"],"location":"article.ts"}' :test='{"code":0}' />
 
 ### 专题 <Site url="indienova.com" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/column/:columnId","categories":["game"],"example":"/indienova/column/52","parameters":{"columnId":"专题 ID，可在 URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/column/:columnId"]}],"name":"专题","maintainers":["TonyRL"],"description":"<details>\n    <summary>专题 ID</summary>\n\n    游戏推荐\n\n    | itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |\n    | --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |\n    | 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |\n\n    游戏评论\n\n    | 游必有方 Podcast | 独立游戏潮（RED） |\n    | ---------------- | ----------------- |\n    | 6                | 3                 |\n\n    游戏开发\n\n    | 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |\n    | ------------ | -------------- | ------------ |\n    | 15           | 14             | 7            |\n\n    游戏设计\n\n    | 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |\n    | ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |\n    | 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |\n\n    游戏文化\n\n    | NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |\n    | --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |\n    | 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |\n\n    Game Jam\n\n    | Ludum Dare | Global Game Jam |\n    | ---------- | --------------- |\n    | 31         | 13              |\n  </details>","location":"column.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indienova" :data='{"path":"/column/:columnId","categories":["game"],"example":"/indienova/column/52","parameters":{"columnId":"专题 ID，可在 URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/column/:columnId"]}],"name":"专题","maintainers":["TonyRL"],"description":"<details>\n    <summary>专题 ID</summary>\n\n    游戏推荐\n\n    | itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |\n    | --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |\n    | 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |\n\n    游戏评论\n\n    | 游必有方 Podcast | 独立游戏潮（RED） |\n    | ---------------- | ----------------- |\n    | 6                | 3                 |\n\n    游戏开发\n\n    | 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |\n    | ------------ | -------------- | ------------ |\n    | 15           | 14             | 7            |\n\n    游戏设计\n\n    | 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |\n    | ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |\n    | 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |\n\n    游戏文化\n\n    | NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |\n    | --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |\n    | 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |\n\n    Game Jam\n\n    | Ludum Dare | Global Game Jam |\n    | ---------- | --------------- |\n    | 31         | 13              |\n  </details>","location":"column.ts"}' :test='{"code":0}' />
 
 <details>
     <summary>专题 ID</summary>
@@ -397,7 +397,7 @@ javaType:
 
 ### Java Game Update <Site url="minecraft.net/" size="sm" />
 
-<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 313059744983 to be less than 311040000000"}' />
+<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 313146159372 to be less than 311040000000"}' />
 
 
 | Version                    | versionType |
@@ -457,13 +457,13 @@ javaType:
 
 ### 首页资讯（中国） <Site url="nintendoswitch.com.cn/" size="sm" />
 
-<Route namespace="nintendo" :data='{"path":"/news/china","categories":["game"],"example":"/nintendo/news/china","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nintendoswitch.com.cn/"]}],"name":"首页资讯（中国）","maintainers":["NeverBehave"],"url":"nintendoswitch.com.cn/","location":"news-china.ts"}' :test='{"code":0}' />
+<Route namespace="nintendo" :data='{"path":"/news/china","categories":["game"],"example":"/nintendo/news/china","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nintendoswitch.com.cn/"]}],"name":"首页资讯（中国）","maintainers":["NeverBehave"],"url":"nintendoswitch.com.cn/","location":"news-china.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## osu! <Site url="osu.ppy.sh"/>
 
 ### Beatmap Packs <Site url="osu.ppy.sh" size="sm" />
 
-<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":0}' />
 
 ## PRINCESS CONNECT! Re Dive プリンセスコネクト！Re Dive <Site url="priconne-redive.jp"/>
 
@@ -498,6 +498,30 @@ javaType:
 <Route namespace="sega" :data='{"path":"/pjsekai/news","categories":["game"],"example":"/sega/pjsekai/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pjsekai.sega.jp/news/index.html"]}],"name":"世界计划 多彩舞台 ｜ ProjectSekai ｜ プロセカ","maintainers":["15x15G"],"url":"pjsekai.sega.jp/news/index.html","location":"pjsekai.ts"}' :test='{"code":0}' />
 
 ## Steam <Site url="store.steampowered.com"/>
+
+### Steam Community Hub Feeds <Site url="store.steampowered.com" size="sm" />
+
+<Route namespace="steam" :data='{"path":"/appcommunityfeed/:appid/:routeParams?","categories":["game"],"example":"/steam/appcommunityfeed/730","parameters":{"appid":"Steam appid, can be found on the community hub page or store page URL.","routeParams":"Query parameters."},"radar":[{"title":"Community Hub","source":["steamcommunity.com/app/:appid"],"target":"/appcommunityfeed/:appid"},{"title":"Community Hub","source":["store.steampowered.com/app/:appid/*/"],"target":"/appcommunityfeed/:appid"}],"description":"Query Parameters:\n\n| Name                   | Type   | Description             |\n| ---------------------- | ------ | ----------------------- |\n| p                      | string | p                       |\n| rgSections[]           | string | rgSections              |\n| filterLanguage         | string | Filter Language         |\n| languageTag            | string | Language Tag            |\n| nMaxInappropriateScore | string | Max Inappropriate Score |\n\nExample:\n- `/appcommunityfeed/730/p=1&rgSections[]=2&rgSections[]=4&filterLanguage=english&languageTag=english&nMaxInappropriateScore=1` for CS2 Screenshot and Artwork contents.\n- `/appcommunityfeed/730/rgSections[]=6` for CS2 Workshop contents only.\n- `/appcommunityfeed/570/rgSections[]=3&rgSections[]=9` for Dota2 Video and Guides contents.\n\n:::tip\nIt can also access community hub contents that require a logged-in account.\n:::\n","name":"Steam Community Hub Feeds","maintainers":["NyaaaDoge"],"location":"appcommunityfeed.ts"}' :test='undefined' />
+
+Query Parameters:
+
+| Name                   | Type   | Description             |
+| ---------------------- | ------ | ----------------------- |
+| p                      | string | p                       |
+| rgSections[]           | string | rgSections              |
+| filterLanguage         | string | Filter Language         |
+| languageTag            | string | Language Tag            |
+| nMaxInappropriateScore | string | Max Inappropriate Score |
+
+Example:
+- `/appcommunityfeed/730/p=1&rgSections[]=2&rgSections[]=4&filterLanguage=english&languageTag=english&nMaxInappropriateScore=1` for CS2 Screenshot and Artwork contents.
+- `/appcommunityfeed/730/rgSections[]=6` for CS2 Workshop contents only.
+- `/appcommunityfeed/570/rgSections[]=3&rgSections[]=9` for Dota2 Video and Guides contents.
+
+:::tip
+It can also access community hub contents that require a logged-in account.
+:::
+
 
 ### Store Search <Site url="store.steampowered.com" size="sm" />
 
@@ -586,7 +610,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 资讯 <Site url="xboxfan.com/" size="sm" />
 
-<Route namespace="xboxfan" :data='{"path":"/news","categories":["game"],"example":"/xboxfan/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xboxfan.com/"]}],"name":"资讯","maintainers":["XXY233"],"url":"xboxfan.com/","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="xboxfan" :data='{"path":"/news","categories":["game"],"example":"/xboxfan/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xboxfan.com/"]}],"name":"资讯","maintainers":["XXY233"],"url":"xboxfan.com/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 旅法师营地 <Site url="www.iyingdi.com"/>
 
@@ -600,11 +624,11 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 首页 <Site url="www.iyingdi.com/" size="sm" />
 
-<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":0}' />
 
 ### 首页（旧版） <Site url="www.iyingdi.com/" size="sm" />
 
-<Route namespace="lfsyd" :data='{"path":"/old_home","categories":["game"],"example":"/lfsyd/old_home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页（旧版）","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"old-home.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lfsyd" :data='{"path":"/old_home","categories":["game"],"example":"/lfsyd/old_home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页（旧版）","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"old-home.ts"}' :test='{"code":0}' />
 
 ## 米哈游 <Site url="genshin.hoyoverse.com"/>
 
@@ -707,7 +731,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 游戏内公告 <Site url="ak.arknights.jp" size="sm" />
 
-<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -12873030325 to be greater than -432000000"}' />
+<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -12786657694 to be greater than -432000000"}' />
 
 平台
 
@@ -785,15 +809,15 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 喜加一 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/add2cart/:platform","categories":["game"],"example":"/xiaoheihe/add2cart/epic","parameters":{"platform":"平台名：epic、steam或gog"},"name":"喜加一","maintainers":["ladeng07"],"location":"add2cart.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/add2cart/:platform","categories":["game"],"example":"/xiaoheihe/add2cart/epic","parameters":{"platform":"平台名：epic、steam或gog"},"name":"喜加一","maintainers":["ladeng07"],"location":"add2cart.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 用户动态 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/user/:id","categories":["game"],"example":"/xiaoheihe/user/30664023","parameters":{"id":"用户 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["tssujt"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/user/:id","categories":["game"],"example":"/xiaoheihe/user/30664023","parameters":{"id":"用户 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["tssujt"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 游戏折扣 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/discount/:platform","categories":["game"],"example":"/xiaoheihe/discount/pc","parameters":{"platform":"平台分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏折扣","maintainers":["tssujt"],"description":"| PC  | Switch  | PSN   | Xbox |\n  | ----- | ------ | ----- | ----- |\n  | pc    | switch | psn   | xbox  |","location":"discount.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/discount/:platform","categories":["game"],"example":"/xiaoheihe/discount/pc","parameters":{"platform":"平台分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏折扣","maintainers":["tssujt"],"description":"| PC  | Switch  | PSN   | Xbox |\n  | ----- | ------ | ----- | ----- |\n  | pc    | switch | psn   | xbox  |","location":"discount.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | PC  | Switch  | PSN   | Xbox |
   | ----- | ------ | ----- | ----- |
@@ -801,7 +825,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 游戏新闻 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/news","categories":["game"],"example":"/xiaoheihe/news","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏新闻","maintainers":["tssujt"],"location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/news","categories":["game"],"example":"/xiaoheihe/news","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏新闻","maintainers":["tssujt"],"location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 英雄联盟 <Site url="lol.garena.tw"/>
 
@@ -829,7 +853,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### 资讯 <Site url="news.gamegene.cn/news" size="sm" />
 
-<Route namespace="gamegene" :data='{"path":"/news","categories":["game"],"example":"/gamegene/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.gamegene.cn/news"]}],"name":"资讯","maintainers":["lone1y-51"],"url":"news.gamegene.cn/news","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="gamegene" :data='{"path":"/news","categories":["game"],"example":"/gamegene/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.gamegene.cn/news"]}],"name":"资讯","maintainers":["lone1y-51"],"url":"news.gamegene.cn/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 游讯网 <Site url="yxdown.com"/>
 
@@ -894,7 +918,7 @@ News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/
 
 ### Category <Site url="famitsu.com" size="sm" />
 
-<Route namespace="famitsu" :data='{"path":"/category/:category?","categories":["game"],"example":"/famitsu/category/new-article","parameters":{"category":"Category, see table below, `new-article` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["TonyRL"],"description":"| 新着        | PS5 | Switch | PS4 | ニュース | ゲームニュース | PR TIMES | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |\n  | ----------- | --- | ------ | --- | -------- | -------------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |\n  | new-article | ps5 | switch | ps4 | news     | news-game      | prtimes  | videos | special-article | interview    | event-report   | review   | indie-game       |","location":"category.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="famitsu" :data='{"path":"/category/:category?","categories":["game"],"example":"/famitsu/category/new-article","parameters":{"category":"Category, see table below, `new-article` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["TonyRL"],"description":"| 新着        | PS5 | Switch | PS4 | ニュース | ゲームニュース | PR TIMES | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |\n  | ----------- | --- | ------ | --- | -------- | -------------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |\n  | new-article | ps5 | switch | ps4 | news     | news-game      | prtimes  | videos | special-article | interview    | event-report   | review   | indie-game       |","location":"category.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 | 新着        | PS5 | Switch | PS4 | ニュース | ゲームニュース | PR TIMES | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |
   | ----------- | --- | ------ | --- | -------- | -------------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |

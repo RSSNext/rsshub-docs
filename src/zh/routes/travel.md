@@ -64,7 +64,7 @@
 
 ### 通知公告 <Site url="www.fzmtr.com" size="sm" />
 
-<Route namespace="fzmtr" :data='{"path":"/announcements","categories":["travel"],"example":"/fzmtr/announcements","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"通知公告","maintainers":["HankChow"],"location":"announcements.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="fzmtr" :data='{"path":"/announcements","categories":["travel"],"example":"/fzmtr/announcements","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"通知公告","maintainers":["HankChow"],"location":"announcements.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 广州地铁 <Site url="www.gzmtr.com"/>
 

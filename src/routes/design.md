@@ -52,7 +52,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### Blog <Site url="cn.eagle.cool/blog" size="sm" />
 
-<Route namespace="eagle" :data='{"path":"/blog/:cate?/:language?","categories":["design"],"example":"/eagle/blog/en","parameters":{"cate":"Category, get by URL, `all` by default","language":"Language, `cn`, `tw`, `en`, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.eagle.cool/blog"],"target":"/blog"}],"name":"Blog","maintainers":["Fatpandac"],"url":"cn.eagle.cool/blog","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="eagle" :data='{"path":"/blog/:cate?/:language?","categories":["design"],"example":"/eagle/blog/en","parameters":{"cate":"Category, get by URL, `all` by default","language":"Language, `cn`, `tw`, `en`, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.eagle.cool/blog"],"target":"/blog"}],"name":"Blog","maintainers":["Fatpandac"],"url":"cn.eagle.cool/blog","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Google <Site url="www.google.com"/>
 
@@ -100,7 +100,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 最新 H5 <Site url="iguoguo.net" size="sm" />
 
-<Route namespace="iguoguo" :data='{"path":"/html5","categories":["design"],"example":"/iguoguo/html5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新 H5","maintainers":["yuxinliu-alex"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="iguoguo" :data='{"path":"/html5","categories":["design"],"example":"/iguoguo/html5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新 H5","maintainers":["yuxinliu-alex"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## 站酷 <Site url="www.zcool.com.cn"/>
 
