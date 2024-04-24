@@ -84,10 +84,12 @@ export const route: Route = {
         supportPodcast: false,
         supportScihub: false,
     },
-    radar: {
-        source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
-        target: '/issue/:user/:repo',
-    },
+    radar: [
+        {
+            source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
+            target: '/issue/:user/:repo',
+        },
+    ],
     name: 'Repo Issues',
     maintainers: ['HenryQW', 'AndreyMZ'],
     handler,
@@ -107,10 +109,12 @@ import { Route } from '@/types';
 
 export const route: Route = {
     // ...
-    radar: {
-        source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
-        target: '/issue/:user/:repo',
-    },
+    radar: [
+        {
+            source: ['github.com/:user/:repo/issues', 'github.com/:user/:repo/issues/:id', 'github.com/:user/:repo'],
+            target: '/issue/:user/:repo',
+        },
+    ],
 };
 ```
 
