@@ -40,7 +40,7 @@ The URL of the journal [Annual Review of Analytical Chemistry](https://www.annua
 
 ### The ACM Conference on Computer and Communications Security <Site url="sigsac.org/ccs.html" size="sm" />
 
-<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":[],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Return results from 2020
 
@@ -134,7 +134,7 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ### IEEE Symposium on Security and Privacy <Site url="ieee-security.org/TC/SP-Index.html" size="sm" />
 
-<Route namespace="ieee-security" :data='{"path":"/security-privacy","categories":["journal"],"example":"/ieee-security/security-privacy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ieee-security.org/TC/SP-Index.html","ieee-security.org/"]}],"name":"IEEE Symposium on Security and Privacy","maintainers":["ZeddYu"],"url":"ieee-security.org/TC/SP-Index.html","description":"Return results from 2020","location":"sp.ts"}' :test='undefined' />
+<Route namespace="ieee-security" :data='{"path":"/security-privacy","categories":["journal"],"example":"/ieee-security/security-privacy","radar":[{"source":["ieee-security.org/TC/SP-Index.html","ieee-security.org/"]}],"name":"IEEE Symposium on Security and Privacy","maintainers":["ZeddYu"],"url":"ieee-security.org/TC/SP-Index.html","description":"Return results from 2020","location":"sp.ts"}' :test='undefined' />
 
 Return results from 2020
 
@@ -357,7 +357,7 @@ Sorting
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/usenix-security-sympoium","categories":["journal"],"example":"/usenix/usenix-security-sympoium","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/conferences/all","usenix.org/conferences","usenix.org/"]}],"name":"Security Symposia","maintainers":["ZeddYu"],"url":"usenix.org/conferences/all","description":"Return results from 2020","location":"usenix.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="usenix" :data='{"path":"/usenix-security-sympoium","categories":["journal"],"example":"/usenix/usenix-security-sympoium","radar":[{"source":["usenix.org/conferences/all","usenix.org/conferences","usenix.org/"]}],"name":"Security Symposia","maintainers":["ZeddYu"],"url":"usenix.org/conferences/all","description":"Return results from 2020","location":"usenix.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Return results from 2020
 
