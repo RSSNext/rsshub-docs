@@ -722,25 +722,25 @@ GitHub provides some official RSS feeds:
 
 ## 北京智源人工智能研究院 <Site url="hub.baai.ac.cn"/>
 
-### Unknown <Site url="hub.baai.ac.cn" size="sm" />
-
-<Route namespace="baai" :data='{"path":["/hub/:tagId/:sort?/:range?","/hub/:tagId/:sort?","/hub/:sort?"],"name":"Unknown","maintainers":[],"location":"hub.ts"}' :test='undefined' />
-
-### Unknown <Site url="hub.baai.ac.cn" size="sm" />
-
-<Route namespace="baai" :data='{"path":["/hub/:tagId/:sort?/:range?","/hub/:tagId/:sort?","/hub/:sort?"],"name":"Unknown","maintainers":[],"location":"hub.ts"}' :test='undefined' />
-
-### Unknown <Site url="hub.baai.ac.cn" size="sm" />
-
-<Route namespace="baai" :data='{"path":["/hub/:tagId/:sort?/:range?","/hub/:tagId/:sort?","/hub/:sort?"],"name":"Unknown","maintainers":[],"location":"hub.ts"}' :test='undefined' />
-
-### 智源社区 - 评论 <Site url="hub.baai.ac.cn/comments" size="sm" />
-
-<Route namespace="baai" :data='{"path":"/hub/comments","categories":["programming"],"example":"/baai/hub/comments","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hub.baai.ac.cn/comments","hub.baai.ac.cn/"]}],"name":"智源社区 - 评论","maintainers":["TonyRL"],"url":"hub.baai.ac.cn/comments","location":"comments.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
 ### 智源社区 - 活动 <Site url="hub.baai.ac.cn/events" size="sm" />
 
-<Route namespace="baai" :data='{"path":"/hub/events","categories":["programming"],"example":"/baai/hub/events","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hub.baai.ac.cn/events","hub.baai.ac.cn/"]}],"name":"智源社区 - 活动","maintainers":["TonyRL"],"url":"hub.baai.ac.cn/events","location":"events.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="baai" :data='{"path":"/hub/events","categories":["programming"],"example":"/baai/hub/events","radar":[{"source":["hub.baai.ac.cn/events","hub.baai.ac.cn/"]}],"name":"智源社区 - 活动","maintainers":["TonyRL"],"url":"hub.baai.ac.cn/events","location":"events.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### 智源社区 <Site url="hub.baai.ac.cn" size="sm" />
+
+<Route namespace="baai" :data='{"path":["/hub/:tagId?/:sort?/:range?"],"categories":["programming"],"example":"/baai/hub","parameters":{"tagId":"社群 ID，可在 [社群页](https://hub.baai.ac.cn/taglist) 或 URL 中找到","sort":"排序，见下表，默认为 `new`","range":"时间跨度，仅在排序 `readCnt` 时有效"},"description":"排序\n\n| 最新 | 最热    |\n| ---- | ------- |\n| new  | readCnt |\n\n时间跨度\n\n| 3 天 | 本周 | 本月 |\n| ---- | ---- | ---- |\n| 3    | 7    | 30   |","radar":[{"source":["baai.ac.cn/"]}],"name":"智源社区","maintainers":["TonyRL"],"location":"hub.ts"}' :test='undefined' />
+
+排序
+
+| 最新 | 最热    |
+| ---- | ------- |
+| new  | readCnt |
+
+时间跨度
+
+| 3 天 | 本周 | 本月 |
+| ---- | ---- | ---- |
+| 3    | 7    | 30   |
 
 ## 登链社区 <Site url="learnblockchain.cn"/>
 
