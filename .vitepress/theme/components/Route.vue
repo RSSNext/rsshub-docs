@@ -29,6 +29,7 @@
       <a :href="demoUrl" target="_blank">
         {{ demoUrl }}
       </a>
+      <CopyButton :text="demoUrl" />
       <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" />
     </p>
     <p class="path">
@@ -69,6 +70,7 @@
 <script setup lang="ts">
 import MarkdownIt from 'markdown-it';
 import type { Route } from '../types';
+import CopyButton from './CopyButton.vue';
 
 const props = defineProps<{
   namespace: string,
