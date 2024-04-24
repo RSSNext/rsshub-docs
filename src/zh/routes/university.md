@@ -1,10 +1,14 @@
 # 🎓 大学通知
 
-## East China Normal University 华东师范大学 <Site url="acm.ecnu.edu.cn"/>
+## East China Normal University 华东师范大学 <Site url="ecnu.edu.cn"/>
 
 ### ACM Online-Judge contests list <Site url="acm.ecnu.edu.cn/contest/" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/acm/contest/:category?","categories":["university"],"example":"/ecnu/acm/contest/public","parameters":{"category":"category is optional, default is all, use `public` for public only contests"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["acm.ecnu.edu.cn/contest/","acm.ecnu.edu.cn/"],"target":"/acm/contest/"}],"name":"ACM Online-Judge contests list","maintainers":["a180285"],"url":"acm.ecnu.edu.cn/contest/","location":"contest.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### 教务处通知 <Site url="ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/jwc","categories":["university"],"example":"/ecnu/jwc","radar":[{"source":["www.jwc.ecnu.edu.cn","www.ecnu.edu.cn"],"target":"/tzgg"}],"name":"教务处通知","maintainers":["markbang"],"location":"jwc.ts"}' :test='undefined' />
 
 ### 研究生院 <Site url="yz.kaoyan.com/ecnu/tiaoji" size="sm" />
 
