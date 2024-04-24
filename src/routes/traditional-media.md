@@ -573,7 +573,7 @@ Free articles only.
 
 ### 财新周刊 <Site url="weekly.caixin.com/" size="sm" />
 
-<Route namespace="caixin" :data='{"path":"/weekly","categories":["traditional-media"],"example":"/caixin/weekly","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["weekly.caixin.com/","weekly.caixin.com/*"]}],"name":"财新周刊","maintainers":["TonyRL"],"url":"weekly.caixin.com/","location":"weekly.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="caixin" :data='{"path":"/weekly","categories":["traditional-media"],"example":"/caixin/weekly","radar":[{"source":["weekly.caixin.com/","weekly.caixin.com/*"]}],"name":"财新周刊","maintainers":["TonyRL"],"url":"weekly.caixin.com/","location":"weekly.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 首页新闻 <Site url="caixin.com/" size="sm" />
 
