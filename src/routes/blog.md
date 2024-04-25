@@ -22,7 +22,7 @@
 
 ### User Feed <Site url="blog.csdn.net" size="sm" />
 
-<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Delta Lake <Site url="delta.io"/>
 
@@ -82,7 +82,7 @@
 
 ### Essay <Site url="kunchengblog.com/essay" size="sm" />
 
-<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MacMenuBar <Site url="macmenubar.com"/>
 
@@ -170,7 +170,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Blog <Site url="watasuke.net/blog/" size="sm" />
 
-<Route namespace="watasuke" :data='{"path":"/blog","example":"/watasuke/blog","radar":[{"source":["watasuke.net/blog/","watasuke.net/"]}],"name":"Blog","maintainers":["honahuku"],"url":"watasuke.net/blog/","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="watasuke" :data='{"path":"/blog","example":"/watasuke/blog","radar":[{"source":["watasuke.net/blog/","watasuke.net/"]}],"name":"Blog","maintainers":["honahuku"],"url":"watasuke.net/blog/","location":"blog.ts"}' :test='{"code":0}' />
 
 ## WordPress <Site url="wordpress.org"/>
 
@@ -298,7 +298,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 罗磊的独立博客 <Site url="luolei.org" size="sm" />
 
-<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='{"code":0}' />
 
 ## 免費資源網路社群 <Site url="free.com.tw"/>
 
