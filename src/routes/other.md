@@ -360,6 +360,12 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 <Route namespace="keepass" :data='{"path":"/","name":"Unknown","maintainers":["TonyRL"],"location":"news.ts"}' :test='undefined' />
 
+## KPMG <Site url="kpmg.com"/>
+
+### Insights <Site url="kpmg.com/xx/en/home/insights.html" size="sm" />
+
+<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='undefined' />
+
 ## Layoffs.fyi <Site url="layoffs.fyi"/>
 
 ### Unknown <Site url="layoffs.fyi/" size="sm" />
