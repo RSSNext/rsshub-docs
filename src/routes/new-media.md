@@ -2750,6 +2750,21 @@ Member ID
   | -------- | ---- | ---- | -------- | -------- | ---- | ---- | ------ | ------ | ---- | -------- | ------ | -------- | ---- | ---- |
   | 1        | 2    | 3    | 4        | 5        | 6    | 7    | 8      | 9      | 10   | 11       | 12     | 13       | 14   | 15   |
 
+## 网猴线报 <Site url="iehou.com"/>
+
+### 线报 <Site url="iehou.com" size="sm" />
+
+<Route namespace="iehou" :data='{"path":"/:category?","name":"线报","url":"iehou.com","maintainers":["nczitzk"],"example":"/iehou","parameters":{"category":"分类，默认为空，即最新线报，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [24小时热门线报](https://iehou.com/page-dayhot.htm)，网址为 `https://iehou.com/page-dayhot.htm`。截取 `https://iehou.com/page-` 到末尾 `.htm` 的部分 `dayhot` 作为参数填入，此时路由为 [`/iehou/dayhot`](https://rsshub.app/iehou/dayhot)。\n  :::\n  \n  | [最新线报](https://iehou.com/) | [24 小时热门](https://iehou.com/page-dayhot.htm) | [一周热门](https://iehou.com/page-weekhot.htm) |\n  | ------------------------------ | ------------------------------------------------ | ---------------------------------------------- |\n  | [](https://rsshub.app/iehou)   | [dayhot](https://rsshub.app/iehou/dayhot)        | [weekhot](https://rsshub.app/iehou/weekhot)    |\n  ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"最新线报","source":["iehou.com"],"target":"/"},{"title":"24小时热门","source":["iehou.com/page-dayhot.htm"],"target":"/dayhot"},{"title":"一周热门","source":["iehou.com/page-weekhot.htm"],"target":"/weekhot"}],"location":"index.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [24小时热门线报](https://iehou.com/page-dayhot.htm)，网址为 `https://iehou.com/page-dayhot.htm`。截取 `https://iehou.com/page-` 到末尾 `.htm` 的部分 `dayhot` 作为参数填入，此时路由为 [`/iehou/dayhot`](https://rsshub.app/iehou/dayhot)。
+  :::
+  
+  | [最新线报](https://iehou.com/) | [24 小时热门](https://iehou.com/page-dayhot.htm) | [一周热门](https://iehou.com/page-weekhot.htm) |
+  | ------------------------------ | ------------------------------------------------ | ---------------------------------------------- |
+  | [](https://rsshub.app/iehou)   | [dayhot](https://rsshub.app/iehou/dayhot)        | [weekhot](https://rsshub.app/iehou/weekhot)    |
+  
+
 ## 微信小程序 <Site url="posts.careerengine.us"/>
 
 :::tip
