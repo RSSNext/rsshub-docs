@@ -524,6 +524,12 @@ GitHub provides some official RSS feeds:
     | 技术分析 | `skill`    |
     | 安全工具 | `tool`     |
 
+## Ollama <Site url="ollama.com"/>
+
+### Models <Site url="ollama.com" size="sm" />
+
+<Route namespace="ollama" :data='{"path":"/library","categories":["programming"],"example":"/ollama/library","radar":[{"source":["ollama.com/library"]}],"name":"Models","maintainers":["Nick22nd"],"location":"models.ts"}' :test='undefined' />
+
 ## Quicker <Site url="getquicker.net"/>
 
 ### Unknown <Site url="getquicker.net/Help/Versions" size="sm" />
