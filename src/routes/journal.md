@@ -58,7 +58,7 @@ Return results from 2020
 
 ### Book Reviews <Site url="caareviews.org/reviews/book" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/book","categories":["journal"],"example":"/caareviews/book","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/book"]}],"name":"Book Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/book","location":"book.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="caareviews" :data='{"path":"/book","categories":["journal"],"example":"/caareviews/book","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/book"]}],"name":"Book Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/book","location":"book.ts"}' :test='{"code":0}' />
 
 ### Essays <Site url="caareviews.org/reviews/essay" size="sm" />
 
@@ -158,13 +158,13 @@ You can get all short name of a journal from [https://www.nature.com/siteindex](
 
 ### Cover Story <Site url="nature.com/" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/cover","categories":["journal"],"example":"/nature/cover","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nature.com/"]}],"name":"Cover Story","maintainers":["y9c"],"url":"nature.com/","description":"Subscribe to the cover images of the Nature journals, and get the latest publication updates in time.","location":"cover.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nature" :data='{"path":"/cover","categories":["journal"],"example":"/nature/cover","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nature.com/"]}],"name":"Cover Story","maintainers":["y9c"],"url":"nature.com/","description":"Subscribe to the cover images of the Nature journals, and get the latest publication updates in time.","location":"cover.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Subscribe to the cover images of the Nature journals, and get the latest publication updates in time.
 
 ### Journal List <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":0}' />
 
 ### Latest Research <Site url="nature.com" size="sm" />
 
@@ -193,7 +193,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Research Highlight <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/highlight/:journal?","categories":["journal"],"example":"/nature/highlight","parameters":{"journal":"short name for a journal, `nature` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nature.com/:journal/articles","nature.com/:journal","nature.com/"],"target":"/highlight/:journal"}],"name":"Research Highlight","maintainers":[],"description":":::warning\n  Only some journals are supported.\n  :::","location":"highlight.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nature" :data='{"path":"/highlight/:journal?","categories":["journal"],"example":"/nature/highlight","parameters":{"journal":"short name for a journal, `nature` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nature.com/:journal/articles","nature.com/:journal","nature.com/"],"target":"/highlight/:journal"}],"name":"Research Highlight","maintainers":[],"description":":::warning\n  Only some journals are supported.\n  :::","location":"highlight.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
   Only some journals are supported.
@@ -353,7 +353,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
@@ -389,7 +389,7 @@ Return results from 2020
 
 ### 作者期刊文献 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/author/:code","categories":["journal"],"example":"/cnki/author/000042423923","parameters":{"code":"作者对应code，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者期刊文献","description":":::tip\n    可能仅限中国大陆服务器访问，以实际情况为准。\n    :::","maintainers":["harveyqiu","Derekmini"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cnki" :data='{"path":"/author/:code","categories":["journal"],"example":"/cnki/author/000042423923","parameters":{"code":"作者对应code，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者期刊文献","description":":::tip\n    可能仅限中国大陆服务器访问，以实际情况为准。\n    :::","maintainers":["harveyqiu","Derekmini"],"location":"author.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
     可能仅限中国大陆服务器访问，以实际情况为准。
