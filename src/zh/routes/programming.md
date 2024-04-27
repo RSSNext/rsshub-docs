@@ -357,45 +357,37 @@ GitHub provides some official RSS feeds:
 
 ## HelloGitHub <Site url="hellogithub.com"/>
 
-### Unknown <Site url="hellogithub.com" size="sm" />
+### 榜单报告 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/ranking/:type?","/report/:type?"],"name":"Unknown","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='undefined' />
-
-| 编程语言 | 服务器   | 数据库     |
-  | -------- | -------- | ---------- |
-  | tiobe    | netcraft | db-engines |
-
-### Unknown <Site url="hellogithub.com" size="sm" />
-
-<Route namespace="hellogithub" :data='{"path":["/ranking/:type?","/report/:type?"],"name":"Unknown","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='undefined' />
+<Route namespace="hellogithub" :data='{"path":["/ranking/:type?","/report/:type?"],"example":"/hellogithub/ranking","name":"榜单报告","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='undefined' />
 
 | 编程语言 | 服务器   | 数据库     |
   | -------- | -------- | ---------- |
   | tiobe    | netcraft | db-engines |
 
-### Unknown <Site url="hellogithub.com" size="sm" />
+### 榜单报告 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"name":"Unknown","maintainers":["moke8","nczitzk"],"location":"volume.ts"}' :test='undefined' />
+<Route namespace="hellogithub" :data='{"path":["/ranking/:type?","/report/:type?"],"example":"/hellogithub/ranking","name":"榜单报告","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='undefined' />
 
-### Unknown <Site url="hellogithub.com" size="sm" />
-
-<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"name":"Unknown","maintainers":["moke8","nczitzk"],"location":"volume.ts"}' :test='undefined' />
+| 编程语言 | 服务器   | 数据库     |
+  | -------- | -------- | ---------- |
+  | tiobe    | netcraft | db-engines |
 
 ### 文章 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?","/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":0}' />
 
 | 热门 | 最近 |
   | ---- | ---- |
   | hot  | last |
 
-### 文章 <Site url="hellogithub.com" size="sm" />
+### 月刊 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?","/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"example":"/hellogithub/volume","name":"月刊","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"location":"volume.ts"}' :test='undefined' />
 
-| 热门 | 最近 |
-  | ---- | ---- |
-  | hot  | last |
+### 月刊 <Site url="hellogithub.com" size="sm" />
+
+<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"example":"/hellogithub/volume","name":"月刊","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"location":"volume.ts"}' :test='undefined' />
 
 ## Hex-Rays <Site url="hex-rays.com"/>
 
