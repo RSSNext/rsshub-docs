@@ -2583,12 +2583,13 @@ Member ID
 
 ## 搜狐号 <Site url="sohu.com"/>
 
-### 更新 <Site url="sohu.com" size="sm" />
+### 最新 <Site url="sohu.com" size="sm" />
 
-<Route namespace="sohu" :data='{"path":"/mp/:id","categories":["new-media"],"example":"/sohu/mp/119097","parameters":{"id":"搜狐号 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新","maintainers":["HenryQW"],"description":"1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。\n  2.  通过浏览器控制台执行 `contentData.mkey`，返回的即为搜狐号 ID。","location":"mp.ts"}' :test='{"code":0}' />
+<Route namespace="sohu" :data='{"path":"/mp/:xpt","categories":["new-media"],"example":"/sohu/mp/c29odXptdGhnbjZ3NEBzb2h1LmNvbQ==","parameters":{"xpt":"搜狐号 xpt ，可在URL中找到或搜狐号 ID"},"radar":[{"source":["mp.sohu.com/profile"]}],"name":"最新","maintainers":["HenryQW"],"description":"搜狐号 ID 可以通过以下方式获取：\n  1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。\n  2.  通过浏览器控制台执行 `window.globalConst.mkeyConst_mkey`，返回的即为搜狐号 ID。","location":"mp.ts"}' :test='undefined' />
 
-1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。
-  2.  通过浏览器控制台执行 `contentData.mkey`，返回的即为搜狐号 ID。
+搜狐号 ID 可以通过以下方式获取：
+  1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。
+  2.  通过浏览器控制台执行 `window.globalConst.mkeyConst_mkey`，返回的即为搜狐号 ID。
 
 ## 唐书房 <Site url="tangshufang.com"/>
 
