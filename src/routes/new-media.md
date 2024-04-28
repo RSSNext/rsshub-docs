@@ -147,6 +147,12 @@ Category of news
   | ---------- | ------------------ | ----------- | ------------- |
   | domestic   | international      | social      | news100       |
 
+## Chub <Site url="chub.ai"/>
+
+### Characters <Site url="chub.ai" size="sm" />
+
+<Route namespace="chub" :data='{"path":"/characters","categories":["new-media"],"example":"/chub/characters","name":"Characters","maintainers":["flameleaf"],"location":"characters.ts"}' :test='undefined' />
+
 ## CoinDesk Consensus Magazine <Site url="coindesk.com"/>
 
 ### 新闻周刊 <Site url="coindesk.com/" size="sm" />
