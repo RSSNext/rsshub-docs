@@ -931,6 +931,16 @@ When `mediaType` is `tv`, `sheet` should be:
 
 <Route namespace="storyfm" :data='{"path":"/index","categories":["multimedia"],"example":"/storyfm/index","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["storyfm.cn/"]}],"name":"首页","maintainers":["sanmmm"],"url":"storyfm.cn/","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## 欧乐影院 <Site url="olevod.one"/>
+
+### 视频 <Site url="olevod.one" size="sm" />
+
+<Route namespace="olevod" :data='{"path":"/vod/:id","categories":["multimedia"],"example":"/olevod/vod/202449091","parameters":{"id":"视频id号"},"radar":[{"source":["www.olevod.one/vod/:id"],"target":"/vod/:id"}],"name":"视频","maintainers":["fang63625"],"location":"vod.ts"}' :test='undefined' />
+
+### 最新视频 <Site url="olevod.one" size="sm" />
+
+<Route namespace="olevod" :data='{"path":"/vodlist","categories":["multimedia"],"example":"/olevod/vodlist","radar":[{"source":["www.olevod.one"],"target":"/vodlist"}],"name":"最新视频","maintainers":["fang63625"],"location":"vodlist.ts"}' :test='undefined' />
+
 ## 片源网 <Site url="pianyuan.org"/>
 
 ### Unknown <Site url="pianyuan.org/" size="sm" />
