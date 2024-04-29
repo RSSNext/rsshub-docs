@@ -365,15 +365,19 @@
 
 ### Most Discussed <Site url="daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/discussed","categories":["social-media"],"example":"/daily/discussed","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily.dev/popular"],"target":""}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"discussed.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="daily" :data='{"path":"/discussed","example":"/daily/discussed","radar":[{"source":["daily.dev/popular"]}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"discussed.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Most upvoted <Site url="daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/upvoted","categories":["social-media"],"example":"/daily/upvoted","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily.dev/popular"],"target":""}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"upvoted.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="daily" :data='{"path":"/upvoted","example":"/daily/upvoted","radar":[{"source":["daily.dev/popular"]}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"upvoted.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Unknown <Site url="daily.dev/popular" size="sm" />
+### Popular <Site url="daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/","radar":[{"source":["daily.dev/popular"],"target":""}],"name":"Unknown","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"index.ts"}' :test='undefined' />
+<Route namespace="daily" :data='{"path":"/","example":"/daily","radar":[{"source":["daily.dev/popular"]}],"name":"Popular","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"index.ts"}' :test='undefined' />
+
+### User Posts <Site url="daily.dev" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/user/:userId","example":"/daily/user/kramer","radar":[{"source":["daily.dev/:userId/posts","daily.dev/:userId"]}],"name":"User Posts","maintainers":["TonyRL"],"url":"daily.dev","location":"user.ts"}' :test='undefined' />
 
 ## Discord <Site url="discord.com"/>
 
