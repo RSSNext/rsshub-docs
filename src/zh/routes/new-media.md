@@ -2489,6 +2489,12 @@ Member ID
 
 <Route namespace="woshipm" :data='{"path":"/user_article/:id","categories":["new-media"],"example":"/woshipm/user_article/324696","parameters":{"id":"用户 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["woshipm.com/u/:id"]}],"name":"用户文章","maintainers":["LogicJake"],"location":"user-article.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## 日新说 <Site url="www.copernicium.tw"/>
+
+### 分类 <Site url="www.copernicium.tw" size="sm" />
+
+<Route namespace="copernicium" :data='{"path":"/:category","categories":["new-media"],"radar":[{"source":["www.copernicium.tw"]}],"name":"分类","example":"/copernicium/环球视角","parameters":{"category":"分类名"},"maintainers":["dzx-dzx"],"location":"index.ts"}' :test='undefined' />
+
 ## 软餐 <Site url="ruancan.com"/>
 
 ### Unknown <Site url="ruancan.com/" size="sm" />
