@@ -3,7 +3,7 @@
   "devDependencies": {
     "markdown-it": "14.1.0",
     "vitepress": "1.1.4",
-    "vue": "3.4.25"
+    "vue": "3.4.26"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
