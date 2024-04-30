@@ -20,7 +20,7 @@
 
 ### Latest Stories <Site url="www.nationalgeographic.com/pages/topic/latest-stories" size="sm" />
 
-<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## New Museum 纽约新美术馆 <Site url="www.newmuseum.org"/>
 
@@ -76,7 +76,7 @@
 
 ### 分类 <Site url="nationalgeographic.com" size="sm" />
 
-<Route namespace="natgeo" :data='{"path":"/:cat/:type?","categories":["travel"],"example":"/natgeo/environment/article","parameters":{"cat":"分类","type":"类型, 例如`https://www.natgeomedia.com/environment/photo/`对应 `cat`, `type` 分别为 `environment`, `photo`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["natgeomedia.com/:cat/:type","natgeomedia.com/"],"target":"/:cat/:type"}],"name":"分类","maintainers":["fengkx"],"location":"natgeo.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="natgeo" :data='{"path":"/:cat/:type?","categories":["travel"],"example":"/natgeo/environment/article","parameters":{"cat":"分类","type":"类型, 例如`https://www.natgeomedia.com/environment/photo/`对应 `cat`, `type` 分别为 `environment`, `photo`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["natgeomedia.com/:cat/:type","natgeomedia.com/"],"target":"/:cat/:type"}],"name":"分类","maintainers":["fengkx"],"location":"natgeo.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## 纽约犹太人博物馆 <Site url="thejewishmuseum.org"/>
 

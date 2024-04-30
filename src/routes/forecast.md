@@ -164,7 +164,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 应急新闻 <Site url="cneb.gov.cn" size="sm" />
 
-<Route namespace="cneb" :data='{"path":"/yjxw/:category?","categories":["forecast"],"example":"/cneb/yjxw","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cneb.gov.cn/yjxw/:category?","cneb.gov.cn/"]}],"name":"应急新闻","maintainers":["nczitzk"],"description":"| 全部 | 国内新闻 | 国际新闻 |\n  | ---- | -------- | -------- |\n  |      | gnxw     | gjxw     |","location":"yjxw.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cneb" :data='{"path":"/yjxw/:category?","categories":["forecast"],"example":"/cneb/yjxw","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cneb.gov.cn/yjxw/:category?","cneb.gov.cn/"]}],"name":"应急新闻","maintainers":["nczitzk"],"description":"| 全部 | 国内新闻 | 国际新闻 |\n  | ---- | -------- | -------- |\n  |      | gnxw     | gjxw     |","location":"yjxw.ts"}' :test='{"code":0}' />
 
 | 全部 | 国内新闻 | 国际新闻 |
   | ---- | -------- | -------- |

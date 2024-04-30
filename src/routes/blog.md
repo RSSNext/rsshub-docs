@@ -138,7 +138,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 合集 <Site url="open.itc.cn" size="sm" />
 
-<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":0}' />
 
 ## Paul Graham <Site url="paulgraham.com"/>
 
@@ -206,25 +206,25 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
 ### 10 天推荐排行榜 <Site url="www.cnblogs.com/aggsite/topdiggs" size="sm" />
 
-<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnblogs" :data='{"path":["/aggsite/topdiggs","/aggsite/topviews","/aggsite/headline","/cate/:type","/pick"],"categories":["blog"],"example":"/cnblogs/aggsite/topdiggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnblogs.com/aggsite/topdiggs"]}],"name":"10 天推荐排行榜","maintainers":["hujingnb"],"url":"www.cnblogs.com/aggsite/topdiggs","description":"在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)","location":"common.ts"}' :test='{"code":0}' />
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
@@ -316,7 +316,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 文章 <Site url="luxiangdong.com/" size="sm" />
 
-<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 311154501999 to be less than 311040000000"}' />
+<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 311240648946 to be less than 311040000000"}' />
 
 ## 新语丝 <Site url="xys.org"/>
 
@@ -368,7 +368,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 上周热门 TOP 20 <Site url="analy.zhubai.love/" size="sm" />
 
-<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' :test='{"code":0}' />
 
 ### 文章 <Site url="zhubai.love" size="sm" />
 
