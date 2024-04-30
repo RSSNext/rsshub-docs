@@ -1377,6 +1377,12 @@ Column 列表：
   | 健康四川               | 1014767 |
   | 技能四川               | 12023   |
 
+## 台視新聞網 <Site url="news.ttv.com.tw"/>
+
+### 分类 <Site url="news.ttv.com.tw" size="sm" />
+
+<Route namespace="ttv" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/ttv","parameters":{"category":"分类"},"name":"分类","maintainers":["dzx-dzx"],"radar":[{"source":["news.ttv.com.tw/:category"]}],"location":"index.ts"}' :test='undefined' />
+
 ## 天下雜誌 <Site url="cw.com.tw"/>
 
 ### 主頻道 <Site url="cw.com.tw" size="sm" />
