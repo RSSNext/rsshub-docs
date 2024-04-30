@@ -101,6 +101,12 @@ For instance, when doing search at [https://magazinelib.com](https://magazinelib
 
 Eg: `https://ncode.syosetu.com/n1976ey/`
 
+## Yen Press <Site url="yenpress.com"/>
+
+### Series <Site url="yenpress.com" size="sm" />
+
+<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='undefined' />
+
 ## 爱思想 <Site url="aisixiang.com"/>
 
 ### Unknown <Site url="aisixiang.com" size="sm" />
