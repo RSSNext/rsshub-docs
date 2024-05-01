@@ -384,30 +384,7 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 <Route namespace="layoffs" :data='{"path":"/","radar":[{"source":["layoffs.fyi/"],"target":""}],"name":"Unknown","maintainers":["BrandNewLifeJackie26"],"url":"layoffs.fyi/","location":"index.ts"}' :test='undefined' />
 
-## LinkedIn 领英中国 <Site url="linkedin.com"/>
-
-### Jobs <Site url="linkedin.com" size="sm" />
-
-<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?","categories":["other"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jobs","maintainers":[],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
-
-#### `job_types` list
-
-  | Full Time | Part Time | Contractor | All |
-  | --------- | --------- | ---------- | --- |
-  | F         | P         | C          | all |
-
-  #### `exp_levels` list
-
-  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
-  | --------- | ----------- | --------- | ---------------- | -------- | --- |
-  | 1         | 2           | 3         | 4                | 5        | all |
-
-  For example:
-
-  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
-  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
-
-  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
+## LinkedIn 领英 <Site url="linkedin.com"/>
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
