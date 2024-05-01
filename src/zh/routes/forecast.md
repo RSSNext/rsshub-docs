@@ -224,11 +224,11 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 全国气象预警 <Site url="nmc.cn/publish/alarm.html" size="sm" />
 
-<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":0}' />
+<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 重庆燃气 <Site url="cqgas.cn"/>
 
 ### 停气检修通知 <Site url="cqgas.cn/" size="sm" />
 
-<Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts"}' :test='{"code":0}' />
 

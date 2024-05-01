@@ -341,19 +341,19 @@
 
 ### Feeds of following <Site url="crossbell.io" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/feeds/following/:characterId","categories":["social-media"],"example":"/crossbell/feeds/following/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds of following","maintainers":["DIYgod"],"location":"feeds/following.ts"}' :test='{"code":0}' />
+<Route namespace="crossbell" :data='{"path":"/feeds/following/:characterId","categories":["social-media"],"example":"/crossbell/feeds/following/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds of following","maintainers":["DIYgod"],"location":"feeds/following.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Notes of character <Site url="crossbell.io/*" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/notes/character/:characterId","categories":["social-media"],"example":"/crossbell/notes/character/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of character","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/character.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="crossbell" :data='{"path":"/notes/character/:characterId","categories":["social-media"],"example":"/crossbell/notes/character/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of character","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/character.ts"}' :test='{"code":0}' />
 
 ### Notes <Site url="crossbell.io/*" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/notes","categories":["social-media"],"example":"/crossbell/notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"]}],"name":"Notes","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="crossbell" :data='{"path":"/notes","categories":["social-media"],"example":"/crossbell/notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"]}],"name":"Notes","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/index.ts"}' :test='{"code":0}' />
 
 ### Notes of source <Site url="crossbell.io/*" size="sm" />
 
-<Route namespace="crossbell" :data='{"path":"/notes/source/:source","categories":["social-media"],"example":"/crossbell/notes/source/xlog","parameters":{"source":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of source","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/source.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="crossbell" :data='{"path":"/notes/source/:source","categories":["social-media"],"example":"/crossbell/notes/source/xlog","parameters":{"source":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of source","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/source.ts"}' :test='{"code":0}' />
 
 ## Curius <Site url="curius.app"/>
 
@@ -384,6 +384,12 @@
 ### Channel Messages <Site url="discord.com" size="sm" />
 
 <Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
+
+## fanbox <Site url="https://www.fanbox.cc"/>
+
+### Creator <Site url="https://www.fanbox.cc" size="sm" />
+
+<Route namespace="fanbox" :data='{"path":"/:creator","categories":["social-media"],"example":"/fanbox/official","parameters":{"creator":"fanbox user name"},"maintainers":["KarasuShin"],"name":"Creator","features":{"requireConfig":[{"name":"FANBOX_SESSION_ID","description":"Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID","optional":true}]},"location":"index.ts"}' :test='undefined' />
 
 ## Fansly <Site url="fansly.com"/>
 
@@ -588,7 +594,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Top <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | Top Replurks | Top Favorites | Top Responded |
   | ------------ | ------------- | ------------- |
@@ -862,7 +868,7 @@ Chart
 
 ### 用户 <Site url="changba.com" size="sm" />
 
-<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media"],"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":[],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media"],"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":[],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 抖音直播 <Site url="douyin.com"/>
 
@@ -926,11 +932,11 @@ Chart
 
 ### 豆瓣豆列 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/doulist/:id","categories":["social-media"],"example":"/douban/doulist/37716774","parameters":{"id":"豆列id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣豆列","maintainers":["LogicJake","honue"],"location":"other/doulist.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="douban" :data='{"path":"/doulist/:id","categories":["social-media"],"example":"/douban/doulist/37716774","parameters":{"id":"豆列id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣豆列","maintainers":["LogicJake","honue"],"location":"other/doulist.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 豆瓣招聘 <Site url="www.douban.com" size="sm" />
 
@@ -981,7 +987,7 @@ Chart
 
 ### 豆瓣每月推荐片单 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n  :::tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n  :::","location":"other/recommended.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n  :::tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n  :::","location":"other/recommended.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 额外参数 | 含义                   | 接受的值 | 默认值 |
   | -------- | ---------------------- | -------- | ------ |
@@ -1016,7 +1022,7 @@ Chart
 
 ### 频道专题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 328692374737 to be less than 311040000000"}' />
+<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"expected 328778869551 to be less than 311040000000"}' />
 
 | 默认    | 热门 | 最新 |
   | ------- | ---- | ---- |
@@ -1024,7 +1030,7 @@ Chart
 
 ### 热门图书排行 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/rank/:type?","categories":["social-media"],"example":"/douban/book/rank/fiction","parameters":{"type":"图书类型，默认合并列表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门图书排行","maintainers":["xyqfer","queensferryme"],"description":"| 全部 | 虚构    | 非虚构     |\n  | ---- | ------- | ---------- |\n  |      | fiction | nonfiction |","location":"book/rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/book/rank/:type?","categories":["social-media"],"example":"/douban/book/rank/fiction","parameters":{"type":"图书类型，默认合并列表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门图书排行","maintainers":["xyqfer","queensferryme"],"description":"| 全部 | 虚构    | 非虚构     |\n  | ---- | ------- | ---------- |\n  |      | fiction | nonfiction |","location":"book/rank.ts"}' :test='{"code":0}' />
 
 | 全部 | 虚构    | 非虚构     |
   | ---- | ------- | ---------- |
@@ -1044,7 +1050,7 @@ Chart
 
 ### 新书速递 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |
     | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |
@@ -1425,7 +1431,7 @@ Chart
 
 ### 知乎日报 <Site url="daily.zhihu.com/*" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/daily","categories":["social-media"],"example":"/zhihu/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily.zhihu.com/*"]}],"name":"知乎日报","maintainers":["DHPO"],"url":"daily.zhihu.com/*","location":"daily.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="zhihu" :data='{"path":"/daily","categories":["social-media"],"example":"/zhihu/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily.zhihu.com/*"]}],"name":"知乎日报","maintainers":["DHPO"],"url":"daily.zhihu.com/*","location":"daily.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 知乎分类热榜 <Site url="www.zhihu.com" size="sm" />
 
