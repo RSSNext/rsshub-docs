@@ -802,6 +802,18 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="web3caff" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
+## Wellcee 唯心所寓 <Site url="wellcee.com"/>
+
+### 支持的城市 <Site url="www.wellcee.com" size="sm" />
+
+<Route namespace="wellcee" :data='{"path":"/support-city","example":"/wellcee/support-city","name":"支持的城市","maintainers":["TonyRL"],"radar":[{"source":["www.wellcee.com"]}],"url":"www.wellcee.com","location":"support-city.ts"}' :test='undefined' />
+
+### 租房信息 <Site url="www.wellcee.com" size="sm" />
+
+<Route namespace="wellcee" :data='{"path":"/rent/:city/:district?","example":"/wellcee/rent/北京","parameters":{"city":"城市","district":"地区"},"name":"租房信息","maintainers":["TonyRL"],"url":"www.wellcee.com","description":"支持的城市可以通过 [/wellcee/support-city](https://rsshub.app/wellcee/support-city) 获取","location":"rent.ts"}' :test='undefined' />
+
+支持的城市可以通过 [/wellcee/support-city](https://rsshub.app/wellcee/support-city) 获取
+
 ## WFDF <Site url="wfdf.sport"/>
 
 ### News <Site url="wfdf.sport/news/" size="sm" />
@@ -1361,9 +1373,9 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ## 新假期周刊 <Site url="weekendhk.com"/>
 
-### Unknown <Site url="weekendhk.com/" size="sm" />
+### 最新文章 <Site url="weekendhk.com/" size="sm" />
 
-<Route namespace="weekendhk" :data='{"path":"/","radar":[{"source":["weekendhk.com/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"weekendhk.com/","location":"posts.ts"}' :test='undefined' />
+<Route namespace="weekendhk" :data='{"path":"/","example":"/weekendhk","radar":[{"source":["weekendhk.com/"]}],"name":"最新文章","maintainers":["TonyRL"],"url":"weekendhk.com/","location":"posts.ts"}' :test='undefined' />
 
 ## 星洲网 <Site url="sinchew.com.my"/>
 
