@@ -167,6 +167,12 @@ Type
   | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- |
   | 1        | 2        | 4        | 5      | 6        | 7        | 9        | 11       |
 
+## Magnum Photos <Site url="magnumphotos.com"/>
+
+### Magazine <Site url="magnumphotos.com/" size="sm" />
+
+<Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture"],"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='undefined' />
+
 ## NASA Astronomy Picture of the Day <Site url="apod.nasa.gov"/>
 
 ### Cheng Kung University Mirror <Site url="apod.nasa.govundefined" size="sm" />
