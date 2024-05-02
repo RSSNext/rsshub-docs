@@ -491,9 +491,11 @@ Topics
 
 ### 专题 <Site url="ithome.com" size="sm" />
 
-<Route namespace="ithome" :data='{"path":"/zt/:id","categories":["new-media"],"example":"/ithome/zt/xijiayi","parameters":{"id":"专题 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ithome.com/zt/:id"]}],"name":"专题","maintainers":["nczitzk"],"description":"所有专题请见[此处](https://www.ithome.com/zt)","location":"zt.ts"}' :test='{"code":0}' />
+<Route namespace="ithome" :data='{"path":"/zt/:id?","name":"专题","url":"ithome.com","maintainers":["nczitzk"],"example":"/ithome/zt/xijiayi","parameters":{"category":"专题 id，默认为 xijiayi，即 [喜加一](https://www.ithome.com/zt/xijiayi)，可在对应专题页 URL 中找到"},"description":":::tip\n  更多专题请见 [IT之家专题](https://www.ithome.com/zt)\n  :::","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ithome.com/zt/:id"],"target":"/zt/:id"}],"location":"zt.ts"}' :test='undefined' />
 
-所有专题请见[此处](https://www.ithome.com/zt)
+:::tip
+  更多专题请见 [IT之家专题](https://www.ithome.com/zt)
+  :::
 
 ## KBS <Site url="world.kbs.co.kr"/>
 
