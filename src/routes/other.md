@@ -973,18 +973,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="nenu" :data='{"path":"/yjsy/*","name":"Unknown","maintainers":[],"location":"yjsy.ts"}' :test='undefined' />
 
-## 端传媒 <Site url="theinitium.com"/>
-
-通过提取文章全文，以提供比官方源更佳的阅读体验。
-
-:::warning
-付费内容全文可能需要登陆获取，详情见部署页面的配置模块。
-:::
-
-### Unknown <Site url="theinitium.com" size="sm" />
-
-<Route namespace="theinitium" :data='{"path":"/:model?/:type?/:language?","name":"Unknown","maintainers":[],"location":"full.ts"}' :test='undefined' />
-
 ## 二次元虫洞 <Site url="2cycd.com"/>
 
 ### Unknown <Site url="2cycd.com" size="sm" />

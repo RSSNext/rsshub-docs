@@ -1812,6 +1812,38 @@ Member ID
 
 <Route namespace="dongqiudi" :data='{"path":"/result/:team","categories":["new-media"],"example":"/dongqiudi/result/50001755","parameters":{"team":"球队 id, 可在[懂球帝数据](https://www.dongqiudi.com/data)中找到"},"radar":[{"source":["www.dongqiudi.com/team/*team"]}],"name":"足球赛果","maintainers":["HenryQW"],"location":"result.ts"}' :test='{"code":0}' />
 
+## 端传媒 <Site url="theinitium.com"/>
+
+通过提取文章全文，以提供比官方源更佳的阅读体验。
+
+:::warning
+付费内容全文可能需要登陆获取，详情见部署页面的配置模块。
+:::
+
+### 个人订阅追踪动态 <Site url="theinitium.com" size="sm" />
+
+<Route namespace="theinitium" :data='{"path":"/follow/articles/:language?","name":"个人订阅追踪动态","maintainers":["AgFlore"],"parameters":{"language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"title":"作者","source":["theinitium.com/author/:type"],"target":"/author/:type"}],"example":"/theinitium/author/ninghuilulu/zh-hans","categories":["new-media"],"description":"Web 版认证 token 和 iOS 内购回执认证 token 只需选择其一填入即可。你也可选择直接在环境设置中填写明文的用户名和密码","features":{"requireConfig":[{"name":"INITIUM_BEARER_TOKEN","optional":true,"description":"端传媒 Web 版认证 token。获取方式：登陆后打开端传媒站内任意页面，打开浏览器开发者工具中 “网络”(Network) 选项卡，筛选 URL 找到任一个地址为 `api.initium.com` 开头的请求，点击检查其 “消息头”，在 “请求头” 中找到Authorization字段，将其值复制填入配置即可。你的配置应该形如 `INITIUM_BEARER_TOKEN: &#39;Bearer eyJxxxx......xx_U8&#39;`。使用 token 部署的好处是避免占据登陆设备数的额度，但这个 token 一般有效期为两周，因此只可作临时测试使用。"},{"name":"INITIUM_IAP_RECEIPT","optional":true,"description":"端传媒 iOS 版内购回执认证 token。获取方式：登陆后打开端传媒 iOS app 内任意页面，打开抓包工具，筛选 URL 找到任一个地址为 `api.initium.com` 开头的请求，点击检查其 “消息头”，在 “请求头” 中找到 `X-IAP-Receipt` 字段，将其值复制填入配置即可。你的配置应该形如 `INITIUM_IAP_RECEIPT: ef81dee9e4e2fe084a0af1ea82da2f7b16e75f756db321618a119fa62b52550e`。"},{"name":"INITIUM_USERNAME","optional":true,"description":"端传媒用户名 （邮箱）"},{"name":"INITIUM_PASSWORD","optional":true,"description":"端传媒密码"}]},"location":"follow.ts"}' :test='undefined' />
+
+Web 版认证 token 和 iOS 内购回执认证 token 只需选择其一填入即可。你也可选择直接在环境设置中填写明文的用户名和密码
+
+### 话题・标签 <Site url="theinitium.com" size="sm" />
+
+<Route namespace="theinitium" :data='{"path":"/tags/:type/:language?","name":"话题・标签","maintainers":["AgFlore"],"parameters":{"type":"话题 ID，可从话题页 URL 中获取，如 `https://theinitium.com/tags/2019_10/`","language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"source":["theinitium.com/tags/:type"],"target":"/tags/:type"}],"example":"/theinitium/tags/2019_10/zh-hans","categories":["new-media"],"location":"tags.ts"}' :test='undefined' />
+
+### 专题・栏目 <Site url="theinitium.com" size="sm" />
+
+<Route namespace="theinitium" :data='{"path":"/channel/:type?/:language?","name":"专题・栏目","maintainers":["prnake"],"parameters":{"type":"栏目，缺省为最新","language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"source":["theinitium.com/channel/:type"],"target":"/channel/:type"}],"example":"/theinitium/channel/latest/zh-hans","categories":["new-media"],"description":"Type 栏目：\n\n  | 最新   | 深度    | What’s New | 广场              | 科技       | 风物    | 特约     | ... |\n  | ------ | ------- | ---------- | ----------------- | ---------- | ------- | -------- | --- |\n  | latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |","location":"channel.ts"}' :test='undefined' />
+
+Type 栏目：
+
+  | 最新   | 深度    | What’s New | 广场              | 科技       | 风物    | 特约     | ... |
+  | ------ | ------- | ---------- | ----------------- | ---------- | ------- | -------- | --- |
+  | latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |
+
+### 作者 <Site url="theinitium.com" size="sm" />
+
+<Route namespace="theinitium" :data='{"path":"/author/:type/:language?","name":"作者","maintainers":["AgFlore"],"parameters":{"type":"作者 ID，可从作者主页 URL 中获取，如 `https://theinitium.com/author/ninghuilulu`","language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"source":["theinitium.com/author/:type"],"target":"/author/:type"}],"example":"/theinitium/author/ninghuilulu/zh-hans","categories":["new-media"],"location":"author.ts"}' :test='undefined' />
+
 ## 樊登读书 <Site url="card.dushu.io"/>
 
 ### 樊登福州运营中心 <Site url="www.dushu365.com*" size="sm" />
