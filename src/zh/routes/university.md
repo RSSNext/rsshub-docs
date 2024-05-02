@@ -2243,6 +2243,14 @@ author 列表：
   | -------- | -------- | -------- | -------- |
   | news     | scholar  | states   | notice   |
 
+### 教务处通知公告 <Site url="jwc.upc.edu.cn/tzgg/list.htm" size="sm" />
+
+<Route namespace="upc" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/upc/jwc/tzgg","parameters":{"type":"分类，见下表，其值与对应网页url路径参数一致，默认为所有通知"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jwc.upc.edu.cn","jwc.upc.edu.cn/:type/list.htm"],"target":"/jwc/:type?"}],"name":"教务处通知公告","maintainers":["sddzhyc"],"description":"| 所有通知 | 教学·运行 | 学业·学籍 | 教学·研究 | 课程·教材 | 实践·教学 | 创新·创业 | 语言·文字 | 继续·教育 | 本科·招生 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | tzgg     | 18519    | 18520   | 18521    |    18522 |    18523 | 18524    |  yywwz   |  jxwjy   |   bkwzs  |","url":"jwc.upc.edu.cn/tzgg/list.htm","location":"jwc.ts"}' :test='undefined' />
+
+| 所有通知 | 教学·运行 | 学业·学籍 | 教学·研究 | 课程·教材 | 实践·教学 | 创新·创业 | 语言·文字 | 继续·教育 | 本科·招生 |
+  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+  | tzgg     | 18519    | 18520   | 18521    |    18522 |    18523 | 18524    |  yywwz   |  jxwjy   |   bkwzs  |
+
 ### 研究生院通知公告 <Site url="zs.gs.upc.edu.cn/sszs/list.htm" size="sm" />
 
 <Route namespace="upc" :data='{"path":"/yjs","categories":["university"],"example":"/upc/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zs.gs.upc.edu.cn/sszs/list.htm","zs.gs.upc.edu.cn/"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"zs.gs.upc.edu.cn/sszs/list.htm","location":"yjs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
