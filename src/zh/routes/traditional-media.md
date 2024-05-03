@@ -17,6 +17,10 @@
 
 ## AP News <Site url="apnews.com"/>
 
+### RSS <Site url="apnews.com" size="sm" />
+
+<Route namespace="apnews" :data='{"path":"/rss/:rss?","categories":["traditional-media"],"example":"/apnews/rss/business","parameters":{"rss":"Route name from the first segment of the corresponding site, or `index` for the front page(default)."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apnews.com/:rss"],"target":"/rss/:rss"}],"name":"RSS","maintainers":["zoenglinghou","mjysci","TonyRL"],"location":"rss.ts"}' :test='undefined' />
+
 ### Topics <Site url="apnews.com" size="sm" />
 
 <Route namespace="apnews" :data='{"path":"/topics/:topic?","categories":["traditional-media"],"example":"/apnews/topics/apf-topnews","parameters":{"topic":"Topic name, can be found in URL. For example: the topic name of AP Top News [https://apnews.com/apf-topnews](https://apnews.com/apf-topnews) is `apf-topnews`, `trending-news` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apnews.com/hub/:topic"],"target":"/topics/:topic"}],"name":"Topics","maintainers":["zoenglinghou","mjysci","TonyRL"],"location":"topics.ts"}' :test='{"code":1,"message":"expected [ …(4) ] to not include &#39;0c99a160-ea40-3e8b-9333-ee9b389feb13&#39;"}' />
