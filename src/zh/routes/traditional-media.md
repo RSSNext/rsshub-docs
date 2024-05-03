@@ -131,6 +131,12 @@ Channels:
   -   Obtain the key from the personal RSS address, it looks like `12345678-abcd-4036-82db-vdv20db024b8`
   :::
 
+## GQ <Site url="gq.com"/>
+
+### News <Site url="gq.com" size="sm" />
+
+<Route namespace="gq" :data='{"path":"/news","categories":["traditional-media"],"example":"/gq/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gq.com/"]}],"name":"News","maintainers":["EthanWng97"],"location":"news.ts"}' :test='undefined' />
+
 ## infzm 
 
 ### 频道 
