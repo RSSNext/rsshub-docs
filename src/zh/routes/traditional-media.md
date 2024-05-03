@@ -193,6 +193,12 @@ Provides a way to get an specific rss feed by date and category over the officia
   | Política             | politica    |
   | Sociedad             | sociedad    |
 
+## New Yorker <Site url="newyorker.com"/>
+
+### The New Yorker <Site url="newyorker.com" size="sm" />
+
+<Route namespace="newyorker" :data='{"path":"/:category/:subCategory?","categories":["traditional-media"],"example":"/newyorker/everything","parameters":{"category":"rss category. can be found at `https://www.newyorker.com/about/feeds`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["newyorker.com/feed/:category/:subCategory?"]}],"name":"The New Yorker","maintainers":["EthanWng97"],"location":"news.ts"}' :test='undefined' />
+
 ## NHK <Site url="www3.nhk.or.jp"/>
 
 ### News Web Easy <Site url="www3.nhk.or.jp/news/easy/" size="sm" />
