@@ -33,7 +33,7 @@
       <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" />
     </p>
     <p class="path">
-      🛎️ Route: <code>/{{ namespace + data.path }}</code>
+      🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}<CopyButton :text="`/${namespace}${data.path}`" />
     </p>
     <div v-if="paramMatch">
       <p>🔗 Parameters: </p>
