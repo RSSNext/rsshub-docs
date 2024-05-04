@@ -100,7 +100,7 @@
 
 ### BBS Home Page <Site url="bbs.deepin.org" size="sm" />
 
-<Route namespace="deepin" :data='{"path":"/homepage/:user_id","categories":["bbs"],"example":"/deepin/homepage/78326","parameters":{"user_id":"user id"},"name":"BBS Home Page","maintainers":["tensor-tech"],"radar":{"source":["bbs.deepin.org/user/:user_id"],"target":"/homepage/:user_id"},"location":"homepage.ts"}' :test='{"code":0}' />
+<Route namespace="deepin" :data='{"path":"/homepage/:user_id","categories":["bbs"],"example":"/deepin/homepage/78326","parameters":{"user_id":"user id"},"name":"BBS Home Page","maintainers":["tensor-tech"],"radar":[{"source":["bbs.deepin.org/user/:user_id"],"target":"/homepage/:user_id"}],"location":"homepage.ts"}' :test='{"code":0}' />
 
 ## Discourse 
 
