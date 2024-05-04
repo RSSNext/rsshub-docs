@@ -242,6 +242,12 @@ Category of news
 
 <Route namespace="deepmind" :data='{"path":"/blog","categories":["new-media"],"example":"/deepmind/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["deepmind.com/blog","deepmind.com/"]}],"name":"Blog","maintainers":["nczitzk","TonyRL"],"url":"deepmind.com/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Digital Camera World <Site url="digitalcameraworld.com"/>
+
+### News <Site url="digitalcameraworld.com" size="sm" />
+
+<Route namespace="digitalcameraworld" :data='{"path":"/news","categories":["new-media"],"example":"/digitalcameraworld/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["digitalcameraworld.com/"]}],"name":"News","maintainers":["EthanWng97"],"location":"news.ts"}' :test='undefined' />
+
 ## DN.com <Site url="dn.com"/>
 
 ### News <Site url="dn.com" size="sm" />
