@@ -1179,12 +1179,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="iqilu" :data='{"path":"/v/:category{.+}?","name":"Unknown","maintainers":[],"location":"program.ts"}' :test='undefined' />
 
-## 其乐 <Site url="keylol.com"/>
-
-### Unknown <Site url="keylol.com" size="sm" />
-
-<Route namespace="keylol" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
-
 ## 汽油价格网 <Site url="qiyoujiage.com"/>
 
 ### Unknown <Site url="qiyoujiage.com" size="sm" />
