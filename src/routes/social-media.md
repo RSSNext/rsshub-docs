@@ -807,7 +807,7 @@ Currently supports two authentication methods:
 
 ### User likes <Site url="twitter.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### User media <Site url="twitter.com" size="sm" />
 
