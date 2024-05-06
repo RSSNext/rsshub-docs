@@ -111,7 +111,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### Series <Site url="yenpress.com" size="sm" />
 
-<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='{"code":1,"message":"expected -9243099440 to be greater than -432000000"}' />
+<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='{"code":1,"message":"expected -9156779958 to be greater than -432000000"}' />
 
 ## 爱思想 <Site url="aisixiang.com"/>
 
@@ -137,14 +137,14 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 思想库（专栏） <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"expected 312833656877 to be less than 311040000000"}' />
+<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"expected 312920033923 to be less than 311040000000"}' />
 
 | 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 
 ### 专题 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 315824658419 to be less than 311040000000"}' />
+<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 315911031971 to be less than 311040000000"}' />
 
 :::tip
   更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)
@@ -281,4 +281,22 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 | 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |
   | -------- | -------- | -------- | -------- | -------- |
   | weekly   | skills   | books    | news     | essay    |
+
+## 虚词 <Site url="p-articles.com"/>
+
+
+:::tip
+p-articles provides some official RSS feeds:
+
+-   section: `https://p-articles.com/section/:section`
+-   contributors: `https://p-articles.com/contributors/:author`
+:::
+
+### 版块 <Site url="p-articles.com" size="sm" />
+
+<Route namespace="p-articles" :data='{"path":"/section/:section","categories":["reading"],"example":"/p-articles/section/critics","parameters":{"section":"版块名称, 可在对应版块 URL 中找到, 子版块链接用`-`连接"},"name":"版块","maintainers":["Insomnia1437"],"radar":[{"source":["p-articles.com/:section/"]}],"location":"section.ts"}' :test='undefined' />
+
+### 虛詞作者 <Site url="p-articles.com" size="sm" />
+
+<Route namespace="p-articles" :data='{"path":"/contributors/:author","categories":["reading"],"example":"/p-articles/contributors/黃衍仁","parameters":{"author":"虛詞作者, 可在作者页面 URL 找到"},"name":"虛詞作者","maintainers":["Insomnia1437"],"radar":[{"source":["p-articles.com/contributors/:author"]}],"location":"contributors.ts"}' :test='undefined' />
 
