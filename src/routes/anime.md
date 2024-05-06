@@ -602,9 +602,9 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="bangumi" :data='{"path":"/moe/*","radar":[{"source":["bangumi.moe/"],"target":"/moe"}],"name":"Unknown","maintainers":[],"url":"bangumi.moe/","location":"moe/index.ts"}' :test='undefined' />
 
-### 成员关注动画榜 <Site url="bgm.tv/anime" size="sm" />
+### 成员关注榜 <Site url="bangumi.moe" size="sm" />
 
-<Route namespace="bangumi" :data='{"path":"/tv/followrank","categories":["anime"],"example":"/bangumi/tv/followrank","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/anime"]}],"name":"成员关注动画榜","maintainers":["honue"],"url":"bgm.tv/anime","location":"tv/other/followrank.ts"}' :test='{"code":0}' />
+<Route namespace="bangumi" :data='{"path":"/:type/followrank","categories":["anime"],"example":"/bangumi/anime/followrank","parameters":{"type":"类型：anime - 动画, book - 图书, music - 音乐, game - 游戏, real - 三次元"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bgm.tv/:type"],"target":"/:type/followrank"}],"name":"成员关注榜","maintainers":["honue","zhoukuncheng"],"location":"tv/other/followrank.ts"}' :test='undefined' />
 
 ### 當季新番 <Site url="bangumi.online/" size="sm" />
 
