@@ -207,13 +207,11 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### All Papers <Site url="nber.org/papers" size="sm" />
 
-<Route namespace="nber" :data='{"path":["/papers","/news"],"categories":["journal"],"example":"/nber/papers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"name":"All Papers","maintainers":[],"url":"nber.org/papers","description":"Papers that are published in this week.","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nber" :data='{"name":"All Papers","maintainers":["5upernova-heng"],"path":"/papers","example":"/nber/papers","features":{"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"url":"nber.org/papers","location":"all.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-Papers that are published in this week.
+### New Papers <Site url="nber.org/papers" size="sm" />
 
-### All Papers <Site url="nber.org/papers" size="sm" />
-
-<Route namespace="nber" :data='{"path":["/papers","/news"],"categories":["journal"],"example":"/nber/papers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"name":"All Papers","maintainers":[],"url":"nber.org/papers","description":"Papers that are published in this week.","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nber" :data='{"name":"New Papers","maintainers":["5upernova-heng"],"path":"/new","example":"/nber/new","features":{"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"url":"nber.org/papers","description":"Papers that are published in this week.","location":"new.ts"}' :test='undefined' />
 
 Papers that are published in this week.
 

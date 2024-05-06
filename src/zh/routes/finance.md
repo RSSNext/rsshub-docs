@@ -602,17 +602,13 @@ Language:
 
 ## 深潮 TechFlow <Site url="techflowpost.com"/>
 
-### Unknown <Site url="techflowpost.com/" size="sm" />
+### 快讯 <Site url="techflowpost.com/" size="sm" />
 
-<Route namespace="techflowpost" :data='{"path":"/","radar":[{"source":["techflowpost.com/"],"target":""}],"name":"Unknown","maintainers":["nczitzk"],"url":"techflowpost.com/","location":"index.ts"}' :test='undefined' />
+<Route namespace="techflowpost" :data='{"path":"/express","categories":["finance"],"example":"/techflowpost/express","radar":[{"source":["techflowpost.com/newsletter/index.html"]}],"name":"快讯","maintainers":["nczitzk"],"url":"techflowpost.com/","location":"express.ts"}' :test='{"code":0}' />
 
-### 快讯 <Site url="techflowpost.com/newsletter/index.html" size="sm" />
+### 首页 <Site url="techflowpost.com/" size="sm" />
 
-<Route namespace="techflowpost" :data='{"path":["/express","/newsflash"],"categories":["finance"],"example":"/techflowpost/express","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["techflowpost.com/newsletter/index.html"]}],"name":"快讯","maintainers":["nczitzk"],"url":"techflowpost.com/newsletter/index.html","location":"express.ts"}' :test='{"code":0}' />
-
-### 快讯 <Site url="techflowpost.com/newsletter/index.html" size="sm" />
-
-<Route namespace="techflowpost" :data='{"path":["/express","/newsflash"],"categories":["finance"],"example":"/techflowpost/express","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["techflowpost.com/newsletter/index.html"]}],"name":"快讯","maintainers":["nczitzk"],"url":"techflowpost.com/newsletter/index.html","location":"express.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="techflowpost" :data='{"path":"/","example":"/techflowpost","radar":[{"source":["techflowpost.com/"]}],"name":"首页","maintainers":["nczitzk"],"url":"techflowpost.com/","location":"index.ts"}' :test='undefined' />
 
 ## 淘股吧 <Site url="taoguba.com.cn"/>
 

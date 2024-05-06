@@ -73,25 +73,29 @@ See the [official RSS page](https://www.scmp.com/rss) to get the ID of each cate
 
 ## DNA India <Site url="dnaindia.com"/>
 
-### News <Site url="dnaindia.com" size="sm" />
+### News <Site url="www.dnaindia.com" size="sm" />
 
-<Route namespace="dnaindia" :data='{"path":["/:category","/topic/:topic"],"categories":["traditional-media"],"example":"/dnaindia/headlines","parameters":{"category":"Find it in the URL, or tables below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dnaindia.com/:category"]}],"name":"News","maintainers":["Rjnishant530"],"description":"Categories:\n\n  | Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |\n  | --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |\n  | headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |","location":"category.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
-
-Categories:
-
-  | Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |
-  | --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |
-  | headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |
-
-### News <Site url="dnaindia.com" size="sm" />
-
-<Route namespace="dnaindia" :data='{"path":["/:category","/topic/:topic"],"categories":["traditional-media"],"example":"/dnaindia/headlines","parameters":{"category":"Find it in the URL, or tables below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dnaindia.com/:category"]}],"name":"News","maintainers":["Rjnishant530"],"description":"Categories:\n\n  | Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |\n  | --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |\n  | headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |","location":"category.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dnaindia" :data='{"name":"News","maintainers":["Rjnishant530"],"path":["/:category"],"example":"/dnaindia/headlines","parameters":{"category":"Find it in the URL, or tables below"},"radar":[{"source":["www.dnaindia.com/:category"]}],"url":"www.dnaindia.com","description":"Categories:\n\n| Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |\n| --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |\n| headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 Categories:
 
-  | Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |
-  | --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |
-  | headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |
+| Headlines | Explainer | India | Entertainment | Sports | Viral | Lifestyle | Education | Business | World |
+| --------- | --------- | ----- | ------------- | ------ | ----- | --------- | --------- | -------- | ----- |
+| headlines | explainer | india | entertainment | sports | viral | lifestyle | education | business | world |
+
+### Topic <Site url="www.dnaindia.com" size="sm" />
+
+<Route namespace="dnaindia" :data='{"name":"Topic","maintainers":["Rjnishant530"],"path":["/topic/:topic"],"example":"/dnaindia/topic/dna-verified","parameters":{"category":"Find it in the URL"},"radar":[{"source":["www.dnaindia.com/topic/:topic"]}],"url":"www.dnaindia.com","description":"Topics:\n\n| DNA verified |\n| ------------ |\n| dna-verified |\n\n:::tip\nThe URL of the form `https://www.dnaindia.com/topic/dna-verified` demonstrates the utilization of the subdomain `topic`.\n:::","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+Topics:
+
+| DNA verified |
+| ------------ |
+| dna-verified |
+
+:::tip
+The URL of the form `https://www.dnaindia.com/topic/dna-verified` demonstrates the utilization of the subdomain `topic`.
+:::
 
 ## Ekantipur / कान्तिपुर (Nepal) <Site url="ekantipur.com"/>
 

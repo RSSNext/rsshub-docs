@@ -153,6 +153,28 @@ Category of news
 
 <Route namespace="chub" :data='{"path":"/characters","categories":["new-media"],"example":"/chub/characters","name":"Characters","maintainers":["flameleaf"],"location":"characters.ts"}' :test='{"code":0}' />
 
+## cnBeta.COM <Site url="cnbeta.com.tw"/>
+
+### 分类 <Site url="cnbeta.com.tw" size="sm" />
+
+<Route namespace="cnbeta" :data='{"name":"分类","path":["/category/:id"],"example":"/cnbeta/category/movie","maintainers":["nczitzk"],"parameters":{"id":"分类 id，可在对应分类页的 URL 中找到"},"radar":[{"source":["cnbeta.com.tw/category/:id"]}],"url":"cnbeta.com.tw","description":"| 影视  | 音乐  | 游戏 | 动漫  | 趣闻  | 科学    | 软件 |\n  | ----- | ----- | ---- | ----- | ----- | ------- | ---- |\n  | movie | music | game | comic | funny | science | soft |","location":"category.ts"}' :test='undefined' />
+
+| 影视  | 音乐  | 游戏 | 动漫  | 趣闻  | 科学    | 软件 |
+  | ----- | ----- | ---- | ----- | ----- | ------- | ---- |
+  | movie | music | game | comic | funny | science | soft |
+
+### 头条资讯 <Site url="cnbeta.com.tw" size="sm" />
+
+<Route namespace="cnbeta" :data='{"name":"头条资讯","path":["/"],"example":"/cnbeta","radar":[{"source":["cnbeta.com.tw/"]}],"maintainers":["kt286","HaitianLiu","nczitzk"],"url":"cnbeta.com.tw","location":"index.ts"}' :test='undefined' />
+
+### 主题 <Site url="cnbeta.com.tw" size="sm" />
+
+<Route namespace="cnbeta" :data='{"name":"主题","path":["/topics/:id"],"example":"/cnbeta/topics/453","maintainers":["cczhong11","nczitzk"],"parameters":{"id":"主题 id，可在对应主题页的 URL 中找到"},"radar":[{"source":["cnbeta.com.tw/topics/:id"]}],"url":"cnbeta.com.tw","description":"::: tip\n完整的主题列表参见 [主题列表](https://www.cnbeta.com.tw/topics.htm)\n:::","location":"topics.ts"}' :test='undefined' />
+
+::: tip
+完整的主题列表参见 [主题列表](https://www.cnbeta.com.tw/topics.htm)
+:::
+
 ## CoinDesk Consensus Magazine <Site url="coindesk.com"/>
 
 ### 新闻周刊 <Site url="coindesk.com/" size="sm" />
@@ -301,21 +323,21 @@ Category of news
 
 ## Farmatters <Site url="farmatters.com"/>
 
-### Exclusive <Site url="farmatters.com/exclusive" size="sm" />
+### Exclusive <Site url="farmatters.com/news" size="sm" />
 
-<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/exclusive","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/news","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Exclusive <Site url="farmatters.com/exclusive" size="sm" />
+### Exclusive <Site url="farmatters.com/news" size="sm" />
 
-<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/exclusive","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/news","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Exclusive <Site url="farmatters.com/exclusive" size="sm" />
+### Exclusive <Site url="farmatters.com/news" size="sm" />
 
-<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/exclusive","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/news","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Exclusive <Site url="farmatters.com/exclusive" size="sm" />
+### Exclusive <Site url="farmatters.com/news" size="sm" />
 
-<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/exclusive","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="farmatters" :data='{"path":["/exclusive/:locale?","/news/:locale?","/:locale?","/:type/:id/:locale?"],"categories":["new-media"],"example":"/farmatters/exclusive","parameters":{"locale":"Locale, `zh-CN` or `en-US`, `zh-CN` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["farmatters.com/exclusive"],"target":"/exclusive"}],"name":"Exclusive","maintainers":["nczitzk"],"url":"farmatters.com/news","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Focus Taiwan <Site url="focustaiwan.tw"/>
 
@@ -680,15 +702,11 @@ This route provides a better reading experience (full text articles) over the of
 
 ### 快讯 <Site url="panewslab.com/" size="sm" />
 
-<Route namespace="panewslab" :data='{"path":["/news","/newsflash"],"categories":["new-media"],"example":"/panewslab/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["panewslab.com/"]}],"name":"快讯","maintainers":["nczitzk"],"url":"panewslab.com/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### 快讯 <Site url="panewslab.com/" size="sm" />
-
-<Route namespace="panewslab" :data='{"path":["/news","/newsflash"],"categories":["new-media"],"example":"/panewslab/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["panewslab.com/"]}],"name":"快讯","maintainers":["nczitzk"],"url":"panewslab.com/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="panewslab" :data='{"path":"/news","categories":["new-media"],"example":"/panewslab/news","radar":[{"source":["panewslab.com/"]}],"name":"快讯","maintainers":["nczitzk"],"url":"panewslab.com/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 深度 <Site url="panewslab.com/" size="sm" />
 
-<Route namespace="panewslab" :data='{"path":"/:category?","categories":["new-media"],"example":"/panewslab","parameters":{"category":"分类，见下表，默认为精选"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["panewslab.com/"]}],"name":"深度","maintainers":["nczitzk"],"url":"panewslab.com/","description":"| 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |\n  | ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="panewslab" :data='{"path":"/profundity/:category?","categories":["new-media"],"example":"/panewslab/profundity","parameters":{"category":"分类，见下表，默认为精选"},"radar":[{"source":["panewslab.com/","www.panewslab.com/zh/profundity/index.html"]}],"name":"深度","maintainers":["nczitzk"],"url":"panewslab.com/","description":"| 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |\n  | ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |","location":"profundity.ts"}' :test='undefined' />
 
 | 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |
   | ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |
@@ -2009,25 +2027,17 @@ Type 栏目：
 
 <Route namespace="houxu" :data='{"path":"/lives/:id","categories":["new-media"],"example":"/houxu/lives/33899","parameters":{"id":"编号，可在对应 Live 页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["houxu.app/lives/:id","houxu.app/"]}],"name":"Live","maintainers":["nczitzk"],"url":"houxu.app/","location":"lives.ts"}' :test='{"code":0}' />
 
-### Unknown <Site url="houxu.app/" size="sm" />
-
-<Route namespace="houxu" :data='{"path":["/featured","/index","/"],"radar":[{"source":["houxu.app/"],"target":""}],"name":"Unknown","maintainers":[],"url":"houxu.app/","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="houxu.app/" size="sm" />
-
-<Route namespace="houxu" :data='{"path":["/featured","/index","/"],"radar":[{"source":["houxu.app/"],"target":""}],"name":"Unknown","maintainers":[],"url":"houxu.app/","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="houxu.app/" size="sm" />
-
-<Route namespace="houxu" :data='{"path":["/featured","/index","/"],"radar":[{"source":["houxu.app/"],"target":""}],"name":"Unknown","maintainers":[],"url":"houxu.app/","location":"index.ts"}' :test='undefined' />
-
 ### 跟踪 <Site url="houxu.app/memory" size="sm" />
 
-<Route namespace="houxu" :data='{"path":"/memory","categories":["new-media"],"example":"/houxu/memory","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["houxu.app/memory","houxu.app/"]}],"name":"跟踪","maintainers":["nczitzk"],"url":"houxu.app/memory","location":"memory.ts"}' :test='{"code":0}' />
+<Route namespace="houxu" :data='{"path":"/memory","categories":["new-media"],"example":"/houxu/memory","radar":[{"source":["houxu.app/memory","houxu.app/"]}],"name":"跟踪","maintainers":["nczitzk"],"url":"houxu.app/memory","location":"memory.ts"}' :test='{"code":0}' />
+
+### 热点 <Site url="houxu.app/" size="sm" />
+
+<Route namespace="houxu" :data='{"name":"热点","maintainers":["nczitzk"],"example":"/houxu","path":"/","radar":[{"source":["houxu.app/"]}],"url":"houxu.app/","location":"index.ts"}' :test='undefined' />
 
 ### 专栏 <Site url="houxu.app/events" size="sm" />
 
-<Route namespace="houxu" :data='{"path":"/events","categories":["new-media"],"example":"/houxu/events","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["houxu.app/events","houxu.app/"]}],"name":"专栏","maintainers":["nczitzk"],"url":"houxu.app/events","location":"events.ts"}' :test='{"code":0}' />
+<Route namespace="houxu" :data='{"path":"/events","categories":["new-media"],"example":"/houxu/events","radar":[{"source":["houxu.app/events","houxu.app/"]}],"name":"专栏","maintainers":["nczitzk"],"url":"houxu.app/events","location":"events.ts"}' :test='{"code":0}' />
 
 ## 虎嗅 <Site url="huxiu.com"/>
 

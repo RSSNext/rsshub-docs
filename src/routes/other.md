@@ -128,16 +128,6 @@ News from the official site of men's professional tennis.
 
 <Route namespace="clickme" :data='{"path":"/:site/:grouping/:name","categories":["other"],"example":"/clickme/default/category/beauty","parameters":{"site":"站点，`default`为普通站，`r18`为成人站，其它值默认为普通站","grouping":"分组方式，`category`为分类，`tag`为标签，其他值默认为分类","name":"分类名或标签名，分类名为英文，可以在分类 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-## cnBeta.COM <Site url="cnbeta.com.tw"/>
-
-### Unknown <Site url="cnbeta.com.tw/" size="sm" />
-
-<Route namespace="cnbeta" :data='{"path":["/:type/:id","/"],"radar":[{"source":["cnbeta.com.tw/"],"target":""}],"name":"Unknown","maintainers":[],"url":"cnbeta.com.tw/","location":"type.ts"}' :test='undefined' />
-
-### Unknown <Site url="cnbeta.com.tw/" size="sm" />
-
-<Route namespace="cnbeta" :data='{"path":["/:type/:id","/"],"radar":[{"source":["cnbeta.com.tw/"],"target":""}],"name":"Unknown","maintainers":[],"url":"cnbeta.com.tw/","location":"type.ts"}' :test='undefined' />
-
 ## CuriousCat <Site url="curiouscat.live"/>
 
 ### Unknown <Site url="curiouscat.live" size="sm" />
@@ -152,13 +142,9 @@ News from the official site of men's professional tennis.
 
 ## Darwin Awards <Site url="darwinawards.com"/>
 
-### Unknown <Site url="darwinawards.com/darwin" size="sm" />
+### Award Winners <Site url="darwinawards.com/darwin" size="sm" />
 
-<Route namespace="darwinawards" :data='{"path":["/all","/"],"radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"],"target":""}],"name":"Unknown","maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="darwinawards.com/darwin" size="sm" />
-
-<Route namespace="darwinawards" :data='{"path":["/all","/"],"radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"],"target":""}],"name":"Unknown","maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='undefined' />
+<Route namespace="darwinawards" :data='{"name":"Award Winners","example":"/darwinawards","path":"/","radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"]}],"maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='undefined' />
 
 ## Deadline <Site url="deadline.com"/>
 
@@ -401,21 +387,21 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 ## LogoNews 标志情报局 <Site url="logonews.cn"/>
 
-### Unknown <Site url="logonews.cn/work" size="sm" />
+### Unknown <Site url="logonews.cn/" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
-
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
-
-### Unknown <Site url="logonews.cn/work" size="sm" />
-
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
 如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
-### Unknown <Site url="logonews.cn/work" size="sm" />
+### Unknown <Site url="logonews.cn/" size="sm" />
 
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/work","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
+
+如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
+
+### Unknown <Site url="logonews.cn/" size="sm" />
+
+<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
 
 如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
@@ -1267,17 +1253,17 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ## 紳士漫畫 <Site url="wnacg.org"/>
 
-### Unknown <Site url="wnacg.org/albums.html" size="sm" />
+### 標籤更新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"path":["/","/category/:cid","/tag/:tag"],"radar":[{"source":["wnacg.org/albums.html","wnacg.org/"],"target":""}],"name":"Unknown","maintainers":["KenMizz"],"url":"wnacg.org/albums.html","location":"index.ts"}' :test='undefined' />
+<Route namespace="wnacg" :data='{"name":"標籤更新","maintainers":["Gandum2077"],"path":"/tag/:tag","example":"/wnacg/tag/漢化","radar":[{"source":["wnacg.com/*"]}],"url":"wnacg.com/albums.html","location":"tag.ts"}' :test='undefined' />
 
-### Unknown <Site url="wnacg.org/albums.html" size="sm" />
+### 分类更新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"path":["/","/category/:cid","/tag/:tag"],"radar":[{"source":["wnacg.org/albums.html","wnacg.org/"],"target":""}],"name":"Unknown","maintainers":["KenMizz"],"url":"wnacg.org/albums.html","location":"index.ts"}' :test='undefined' />
+<Route namespace="wnacg" :data='{"name":"分类更新","maintainers":["Gandum2077"],"path":"/category/:cid","example":"/wnacg/category/6","radar":[{"source":["wnacg.com/*"]}],"url":"wnacg.com/albums.html","location":"category.ts"}' :test='undefined' />
 
-### Unknown <Site url="wnacg.org/albums.html" size="sm" />
+### 最新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"path":["/","/category/:cid","/tag/:tag"],"radar":[{"source":["wnacg.org/albums.html","wnacg.org/"],"target":""}],"name":"Unknown","maintainers":["KenMizz"],"url":"wnacg.org/albums.html","location":"index.ts"}' :test='undefined' />
+<Route namespace="wnacg" :data='{"name":"最新","maintainers":["KenMizz"],"path":"/","example":"/wnacg","radar":[{"source":["wnacg.com/albums.html","wnacg.com/"]}],"url":"wnacg.com/albums.html","location":"index.ts"}' :test='undefined' />
 
 ## 世界新聞網 <Site url="worldjournal.com"/>
 
@@ -1309,25 +1295,21 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
 
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
+### 專題 / 重點專區 <Site url="tfc-taiwan.org.tw/articles/report" size="sm" />
 
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
+<Route namespace="tfc-taiwan" :data='{"name":"專題 / 重點專區","maintainers":["TonyRL"],"example":"/tfc-taiwan/category/242","path":"/:type/:id{.+}","parameters":{"type":"分類，見下表，預設為 `report`"},"url":"tfc-taiwan.org.tw/articles/report","description":"| 專題     | 重點專區 |\n| -------- | -------- |\n| category | topic    |","location":"topic.ts"}' :test='undefined' />
 
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
+| 專題     | 重點專區 |
+| -------- | -------- |
+| category | topic    |
 
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
+### 最新相關資訊 / 最新查核報告 <Site url="tfc-taiwan.org.tw/articles/report" size="sm" />
 
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
+<Route namespace="tfc-taiwan" :data='{"name":"最新相關資訊 / 最新查核報告","maintainers":["TonyRL"],"example":"/tfc-taiwan","path":"/:type?","parameters":{"type":"分類，見下表，預設為 `report`"},"url":"tfc-taiwan.org.tw/articles/report","description":"| 最新相關資訊 | 最新查核報告 |\n| ------------ | ------------ |\n| info         | report       |","location":"index.ts"}' :test='undefined' />
 
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
-
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
-
-### Unknown <Site url="tfc-taiwan.org.tw/articles/info" size="sm" />
-
-<Route namespace="tfc-taiwan" :data='{"path":["/","/category/:id{.+}","/info","/report","/topic/:id"],"name":"Unknown","maintainers":["TonyRL"],"url":"tfc-taiwan.org.tw/articles/info","location":"index.ts"}' :test='undefined' />
+| 最新相關資訊 | 最新查核報告 |
+| ------------ | ------------ |
+| info         | report       |
 
 ## 太原师范学院 <Site url="tynu.edu.cn"/>
 
