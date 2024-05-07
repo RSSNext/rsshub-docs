@@ -1005,12 +1005,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="cmde" :data='{"path":"/:cate{.+}?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
-## 国家气候中心 <Site url="cmdp.ncc-cma.net"/>
-
-### Unknown <Site url="cmdp.ncc-cma.net" size="sm" />
-
-<Route namespace="ncc-cma" :data='{"path":"/cmdp/image/:id{.+}?","name":"Unknown","maintainers":[],"location":"cmdp.ts"}' :test='undefined' />
-
 ## 环球法律评论 <Site url="globallawreview.org"/>
 
 ### Unknown <Site url="globallawreview.org/Magazine/GetIssueContentList" size="sm" />
