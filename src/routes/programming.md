@@ -612,6 +612,17 @@ GitHub provides some official RSS feeds:
 
 <Route namespace="segmentfault" :data='{"path":"/user/:name","categories":["programming"],"example":"/segmentfault/user/minnanitkong","parameters":{"name":"用户 Id，用户详情页 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["segmentfault.com/u/:name"]}],"name":"用户","maintainers":["leyuuu","Fatpandac"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## Sketis | Website of Dr. Makarius Wenzel <Site url="sketis.net"/>
+
+### Isabelle Development Blogs <Site url="isabelle-dev.sketis.net" size="sm" />
+
+<Route namespace="sketis" :data='{"path":"/isabelle-dev/blog/:blog","categories":["programming"],"example":"/sketis/isabelle-dev/blog/1","parameters":{"blog":"name of blog (1 for NEWS; 2 for Release)"},"description":"\n- Isabelle News: `https://isabelle-dev.sketis.net/phame/blog/view/1/`\n- Isabelle Release: `https://isabelle-dev.sketis.net/phame/blog/view/2/`\n","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["isabelle-dev.sketis.net/phame/","isabelle-dev.sketis.net/phame/blog/","isabelle-dev.sketis.net/phame/blog/view/:blog/","isabelle-dev.sketis.net/phame/post/","isabelle-dev.sketis.net/phame/post/view/:post_id/:post_title/"],"target":"/isabelle-dev/blog/1"},{"source":["isabelle-dev.sketis.net/phame/","isabelle-dev.sketis.net/phame/blog/","isabelle-dev.sketis.net/phame/blog/view/:blog/","isabelle-dev.sketis.net/phame/post/","isabelle-dev.sketis.net/phame/post/view/:post_id/:post_title/"],"target":"/isabelle-dev/blog/2"}],"name":"Isabelle Development Blogs","url":"isabelle-dev.sketis.net","maintainers":["Ritsuka314"],"location":"isabelle-dev/blog/index.ts"}' :test='undefined' />
+
+
+- Isabelle News: `https://isabelle-dev.sketis.net/phame/blog/view/1/`
+- Isabelle Release: `https://isabelle-dev.sketis.net/phame/blog/view/2/`
+
+
 ## Smashing Magazine <Site url="smashingmagazine.com"/>
 
 ### Category <Site url="smashingmagazine.com/articles/" size="sm" />
