@@ -1392,6 +1392,21 @@ author 列表：
 
 <Route namespace="qust" :data='{"path":"/jw","categories":["university"],"example":"/qust/jw","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.qust.edu.cn/jwtz.htm","jw.qust.edu.cn/"]}],"name":"教务通知","maintainers":["Silent-wqh"],"url":"jw.qust.edu.cn/jwtz.htm","location":"jw.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## 清华大学 <Site url="tsinghua.edu.cn"/>
+
+### 图书馆资源动态 <Site url="lib.tsinghua.edu.cn" size="sm" />
+
+<Route namespace="tsinghua" :data='{"path":"/lib/zydt/:category?","name":"图书馆资源动态","url":"lib.tsinghua.edu.cn","maintainers":["nczitzk"],"example":"/tsinghua/lib/zydt","parameters":{"category":"分类，默认为空，即全部，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [清华大学图书馆已购资源动态](https://lib.tsinghua.edu.cn/zydt/yg.htm)，网址为 `https://lib.tsinghua.edu.cn/zydt/yg.htm`。截取 `https://lib.tsinghua.edu.cn/zydt` 到末尾 `.htm` 的部分 `yg` 作为参数填入，此时路由为 [`/tsinghua/lib/zydt/yg`](https://rsshub.app/tsinghua/lib/zydt/yg)。\n  :::\n\n  | 已购 | 试用 |\n  | ---- | ---- |\n  | yg   | sy   |\n  ","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lib.tsinghua.edu.cn/zydt/:category?"]},{"title":"图书馆资源动态","source":["lib.tsinghua.edu.cn/zydt"],"target":"/lib/zydt"},{"title":"图书馆已购资源动态","source":["lib.tsinghua.edu.cn/zydt/yg"],"target":"/lib/zydt/yg"},{"title":"图书馆试用资源动态","source":["lib.tsinghua.edu.cn/zydt/sy"],"target":"/lib/zydt/sy"}],"location":"lib/zydt.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [清华大学图书馆已购资源动态](https://lib.tsinghua.edu.cn/zydt/yg.htm)，网址为 `https://lib.tsinghua.edu.cn/zydt/yg.htm`。截取 `https://lib.tsinghua.edu.cn/zydt` 到末尾 `.htm` 的部分 `yg` 作为参数填入，此时路由为 [`/tsinghua/lib/zydt/yg`](https://rsshub.app/tsinghua/lib/zydt/yg)。
+  :::
+
+  | 已购 | 试用 |
+  | ---- | ---- |
+  | yg   | sy   |
+  
+
 ## 山东大学（威海） <Site url="xinwen.wh.sdu.edu.cn"/>
 
 ### 材料科学与工程学院通知 <Site url="xinwen.wh.sdu.edu.cn" size="sm" />
