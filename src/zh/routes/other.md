@@ -72,7 +72,7 @@
 
 ### Exchange and Repair Extension Programs <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 312595748996 to be less than 311040000000"}' />
+<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 312682183785 to be less than 311040000000"}' />
 
 ## Aqara <Site url="aqara.com"/>
 
@@ -120,7 +120,7 @@ News from the official site of men's professional tennis.
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":0}' />
 
 ## biodiscover.com 生物探索 <Site url="www.biodiscover.com"/>
 
@@ -254,7 +254,7 @@ News from the official site of men's professional tennis.
 
 ### Search <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="google" :data='{"path":"/search/:keyword/:language?","categories":["other"],"example":"/google/search/rss/zh-CN,zh","parameters":{"keyword":"Keyword","language":"Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":0}' />
 
 ## Grub Street <Site url="grubstreet.com"/>
 
@@ -529,7 +529,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### OpenSource Square <Site url="oshwhub.com" size="sm" />
 
-<Route namespace="oshwhub" :data='{"path":"/:sortType?","categories":["other"],"example":"/oshwhub","parameters":{"sortType":"sortType"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"OpenSource Square","maintainers":["tylinux"],"location":"explore.ts"}' :test='{"code":0}' />
+<Route namespace="oshwhub" :data='{"path":"/:sortType?","categories":["other"],"example":"/oshwhub","parameters":{"sortType":"sortType"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"OpenSource Square","maintainers":["tylinux"],"location":"explore.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Proceedings of The National Academy of Sciences <Site url="pnas.org"/>
 
@@ -762,7 +762,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 491419426372 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 590914576607 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -792,7 +792,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### 支持的城市 <Site url="www.wellcee.com" size="sm" />
 
-<Route namespace="wellcee" :data='{"path":"/support-city","example":"/wellcee/support-city","name":"支持的城市","maintainers":["TonyRL"],"radar":[{"source":["www.wellcee.com"]}],"url":"www.wellcee.com","location":"support-city.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="wellcee" :data='{"path":"/support-city","example":"/wellcee/support-city","name":"支持的城市","maintainers":["TonyRL"],"radar":[{"source":["www.wellcee.com"]}],"url":"www.wellcee.com","location":"support-city.ts"}' :test='{"code":0}' />
 
 ### 租房信息 <Site url="www.wellcee.com" size="sm" />
 
@@ -865,13 +865,13 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 最近更新 <Site url="iqnew.com/post/new_100/" size="sm" />
 
-<Route namespace="iqnew" :data='{"path":"/latest","categories":["other"],"example":"/iqnew/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqnew.com/post/new_100/","iqnew.com/"]}],"name":"最近更新","maintainers":["nczitzk"],"url":"iqnew.com/post/new_100/","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="iqnew" :data='{"path":"/latest","categories":["other"],"example":"/iqnew/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqnew.com/post/new_100/","iqnew.com/"]}],"name":"最近更新","maintainers":["nczitzk"],"url":"iqnew.com/post/new_100/","location":"latest.ts"}' :test='{"code":0}' />
 
 ## 百度 <Site url="www.baidu.com"/>
 
 ### 热搜榜单 <Site url="www.baidu.com" size="sm" />
 
-<Route namespace="baidu" :data='{"path":"/top/:board?","categories":["other"],"example":"/baidu/top","parameters":{"board":"榜单，默认为 `realtime`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热搜榜单","maintainers":["xyqfer"],"description":"| 热搜榜   | 小说榜 | 电影榜 | 电视剧榜 | 汽车榜 | 游戏榜 |\n  | -------- | ------ | ------ | -------- | ------ | ------ |\n  | realtime | novel  | movie  | teleplay | car    | game   |","location":"top.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="baidu" :data='{"path":"/top/:board?","categories":["other"],"example":"/baidu/top","parameters":{"board":"榜单，默认为 `realtime`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热搜榜单","maintainers":["xyqfer"],"description":"| 热搜榜   | 小说榜 | 电影榜 | 电视剧榜 | 汽车榜 | 游戏榜 |\n  | -------- | ------ | ------ | -------- | ------ | ------ |\n  | realtime | novel  | movie  | teleplay | car    | game   |","location":"top.ts"}' :test='{"code":0}' />
 
 | 热搜榜   | 小说榜 | 电影榜 | 电视剧榜 | 汽车榜 | 游戏榜 |
   | -------- | ------ | ------ | -------- | ------ | ------ |
@@ -925,7 +925,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 商品住房购房登记 <Site url="zw.cdzjryb.com/lottery/accept/projectList" size="sm" />
 
-<Route namespace="cdzjryb" :data='{"path":"/zw/projectList","categories":["other"],"example":"/cdzjryb/zw/projectList","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zw.cdzjryb.com/lottery/accept/projectList","zw.cdzjryb.com/"]}],"name":"商品住房购房登记","maintainers":["TonyRL"],"url":"zw.cdzjryb.com/lottery/accept/projectList","location":"project-list.ts"}' :test='{"code":0}' />
+<Route namespace="cdzjryb" :data='{"path":"/zw/projectList","categories":["other"],"example":"/cdzjryb/zw/projectList","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zw.cdzjryb.com/lottery/accept/projectList","zw.cdzjryb.com/"]}],"name":"商品住房购房登记","maintainers":["TonyRL"],"url":"zw.cdzjryb.com/lottery/accept/projectList","location":"project-list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 大连理工大学 <Site url="dutdice.dlut.edu.cn"/>
 
@@ -1253,11 +1253,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 分类更新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"name":"分类更新","maintainers":["Gandum2077"],"path":"/category/:cid","example":"/wnacg/category/6","radar":[{"source":["wnacg.com/*"]}],"url":"wnacg.com/albums.html","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="wnacg" :data='{"name":"分类更新","maintainers":["Gandum2077"],"path":"/category/:cid","example":"/wnacg/category/6","radar":[{"source":["wnacg.com/*"]}],"url":"wnacg.com/albums.html","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 最新 <Site url="wnacg.com/albums.html" size="sm" />
 
-<Route namespace="wnacg" :data='{"name":"最新","maintainers":["KenMizz"],"path":"/","example":"/wnacg","radar":[{"source":["wnacg.com/albums.html","wnacg.com/"]}],"url":"wnacg.com/albums.html","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="wnacg" :data='{"name":"最新","maintainers":["KenMizz"],"path":"/","example":"/wnacg","radar":[{"source":["wnacg.com/albums.html","wnacg.com/"]}],"url":"wnacg.com/albums.html","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 世界新聞網 <Site url="worldjournal.com"/>
 
@@ -1281,11 +1281,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 搜索 <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 357870505261 to be less than 311040000000"}' />
 
 ### 特色 LOGO <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 312769502729 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 312856103172 to be less than 311040000000"}' />
 
 ## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
 
@@ -1397,7 +1397,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="boc.cn/sourcedb/whpj" size="sm" />
 
-<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1419,11 +1419,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### Unknown <Site url="cebbank.com/site/ygzx/whpj/index.html" size="sm" />
 
-<Route namespace="cebbank" :data='{"path":"/quotation/all","categories":["other"],"example":"/cebbank/quotation/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cebbank.com/site/ygzx/whpj/index.html","cebbank.com/eportal/ui","cebbank.com/"]}],"name":"Unknown","maintainers":["linbuxiao"],"url":"cebbank.com/site/ygzx/whpj/index.html","location":"all.ts"}' :test='{"code":0}' />
+<Route namespace="cebbank" :data='{"path":"/quotation/all","categories":["other"],"example":"/cebbank/quotation/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cebbank.com/site/ygzx/whpj/index.html","cebbank.com/eportal/ui","cebbank.com/"]}],"name":"Unknown","maintainers":["linbuxiao"],"url":"cebbank.com/site/ygzx/whpj/index.html","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 外汇牌价 <Site url="cebbank.com" size="sm" />
 
-<Route namespace="cebbank" :data='{"path":"/quotation/history/:type","categories":["other"],"example":"/cebbank/quotation/history/usd","parameters":{"type":"货币的缩写，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外汇牌价","maintainers":["linbuxiao"],"description":"#### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}\n\n\n#### 历史牌价 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-li-shi-pai-jia}\n\n  | 美元 | 英镑 | 港币 | 瑞士法郎 | 瑞典克郎 | 丹麦克郎 | 挪威克郎 | 日元 | 加拿大元 | 澳大利亚元 | 新加坡元 | 欧元 | 澳门元 | 泰国铢 | 新西兰元 | 韩圆 |\n  | ---- | ---- | ---- | -------- | -------- | -------- | -------- | ---- | -------- | ---------- | -------- | ---- | ------ | ------ | -------- | ---- |\n  | usd  | gbp  | hkd  | chf      | sek      | dkk      | nok      | jpy  | cad      | aud        | sgd      | eur  | mop    | thb    | nzd      | krw  |","location":"history.ts"}' :test='{"code":1,"message":"expected [ &#39;美元(USD)&#39; ] to not include &#39;美元(USD)&#39;"}' />
+<Route namespace="cebbank" :data='{"path":"/quotation/history/:type","categories":["other"],"example":"/cebbank/quotation/history/usd","parameters":{"type":"货币的缩写，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外汇牌价","maintainers":["linbuxiao"],"description":"#### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}\n\n\n#### 历史牌价 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-li-shi-pai-jia}\n\n  | 美元 | 英镑 | 港币 | 瑞士法郎 | 瑞典克郎 | 丹麦克郎 | 挪威克郎 | 日元 | 加拿大元 | 澳大利亚元 | 新加坡元 | 欧元 | 澳门元 | 泰国铢 | 新西兰元 | 韩圆 |\n  | ---- | ---- | ---- | -------- | -------- | -------- | -------- | ---- | -------- | ---------- | -------- | ---- | ------ | ------ | -------- | ---- |\n  | usd  | gbp  | hkd  | chf      | sek      | dkk      | nok      | jpy  | cad      | aud        | sgd      | eur  | mop    | thb    | nzd      | krw  |","location":"history.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 #### 总览 {#zhong-guo-guang-da-yin-hang-wai-hui-pai-jia-zong-lan}
 

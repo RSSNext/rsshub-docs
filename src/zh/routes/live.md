@@ -22,7 +22,7 @@
 
 ### Latest Discography <Site url="www.lxixsxa.com/" size="sm" />
 
-<Route namespace="lxixsxa" :data='{"path":"/disco","categories":["live"],"example":"/lxixsxa/disco","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lxixsxa.com/","www.lxixsxa.com/discography"]}],"name":"Latest Discography","maintainers":["Kiotlin"],"url":"www.lxixsxa.com/","location":"discography.ts"}' :test='{"code":1,"message":"expected -1122023286 to be greater than -432000000"}' />
+<Route namespace="lxixsxa" :data='{"path":"/disco","categories":["live"],"example":"/lxixsxa/disco","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lxixsxa.com/","www.lxixsxa.com/discography"]}],"name":"Latest Discography","maintainers":["Kiotlin"],"url":"www.lxixsxa.com/","location":"discography.ts"}' :test='{"code":1,"message":"expected -1035482451 to be greater than -432000000"}' />
 
 ### News <Site url="www.lxixsxa.com/" size="sm" />
 
@@ -64,7 +64,7 @@
 
 ### Live <Site url="youtube.com" size="sm" />
 
-<Route namespace="youtube" :data='{"path":"/live/:username/:embed?","categories":["live"],"example":"/youtube/live/@GawrGura","parameters":{"username":"YouTuber id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Live","maintainers":["sussurr127"],"location":"live.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="youtube" :data='{"path":"/live/:username/:embed?","categories":["live"],"example":"/youtube/live/@GawrGura","parameters":{"username":"YouTuber id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Live","maintainers":["sussurr127"],"location":"live.ts"}' :test='undefined' />
 
 ## 抖音直播 <Site url="douyin.com"/>
 

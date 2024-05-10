@@ -46,7 +46,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### User (or team) <Site url="dribbble.com" size="sm" />
 
-<Route namespace="dribbble" :data='{"path":"/user/:name","categories":["design"],"example":"/dribbble/user/google","parameters":{"name":"username, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dribbble.com/:name"]}],"name":"User (or team)","maintainers":["DIYgod","loganrockmore"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="dribbble" :data='{"path":"/user/:name","categories":["design"],"example":"/dribbble/user/google","parameters":{"name":"username, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dribbble.com/:name"]}],"name":"User (or team)","maintainers":["DIYgod","loganrockmore"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Eagle <Site url="cn.eagle.cool"/>
 
@@ -236,7 +236,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 作品总榜单 <Site url="www.zcool.com.cn" size="sm" />
 
-<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design"],"example":"/zcool/top/design","parameters":{"type":"推荐类型,详见下面的表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"description":"榜单类型\n\n  | design   | article  |\n  | -------- | -------- |\n  | 作品榜单 | 文章榜单 |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design"],"example":"/zcool/top/design","parameters":{"type":"推荐类型,详见下面的表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"description":"榜单类型\n\n  | design   | article  |\n  | -------- | -------- |\n  | 作品榜单 | 文章榜单 |","location":"top.ts"}' :test='{"code":0}' />
 
 榜单类型
 
