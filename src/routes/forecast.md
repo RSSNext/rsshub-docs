@@ -4,7 +4,7 @@
 
 ### News <Site url="bmkg.go.id/" size="sm" />
 
-<Route namespace="bmkg" :data='{"path":"/news","categories":["forecast"],"example":"/bmkg/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bmkg.go.id/","bmkg.go.id/berita"]}],"name":"News","maintainers":["Shinanory"],"url":"bmkg.go.id/","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="bmkg" :data='{"path":"/news","categories":["forecast"],"example":"/bmkg/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bmkg.go.id/","bmkg.go.id/berita"]}],"name":"News","maintainers":["Shinanory"],"url":"bmkg.go.id/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Recent Earthquakes <Site url="bmkg.go.id/" size="sm" />
 
@@ -32,7 +32,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 中国地震台 <Site url="www.cea.gov.cn/cea/xwzx/zqsd/index.html" size="sm" />
 
-<Route namespace="earthquake" :data='{"path":"/ceic/:type?","categories":["forecast"],"example":"/earthquake/ceic/1","parameters":{"type":"类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震台","maintainers":["SettingDust"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"| 参数 | 类型                        |\n  | ---- | --------------------------- |\n  | 1    | 最近 24 小时地震信息        |\n  | 2    | 最近 48 小时地震信息        |\n  | 5    | 最近一年 3.0 级以上地震信息 |\n  | 7    | 最近一年 3.0 级以下地震     |\n  | 8    | 最近一年 4.0 级以上地震信息 |\n  | 9    | 最近一年 5.0 级以上地震信息 |\n  | 0    | 最近一年 6.0 级以上地震信息 |\n\n  可通过全局过滤参数订阅您感兴趣的地区.","location":"ceic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="earthquake" :data='{"path":"/ceic/:type?","categories":["forecast"],"example":"/earthquake/ceic/1","parameters":{"type":"类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震台","maintainers":["SettingDust"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"| 参数 | 类型                        |\n  | ---- | --------------------------- |\n  | 1    | 最近 24 小时地震信息        |\n  | 2    | 最近 48 小时地震信息        |\n  | 5    | 最近一年 3.0 级以上地震信息 |\n  | 7    | 最近一年 3.0 级以下地震     |\n  | 8    | 最近一年 4.0 级以上地震信息 |\n  | 9    | 最近一年 5.0 级以上地震信息 |\n  | 0    | 最近一年 6.0 级以上地震信息 |\n\n  可通过全局过滤参数订阅您感兴趣的地区.","location":"ceic.ts"}' :test='{"code":0}' />
 
 | 参数 | 类型                        |
   | ---- | --------------------------- |
@@ -48,7 +48,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 中国地震局 <Site url="www.cea.gov.cn/cea/xwzx/zqsd/index.html" size="sm" />
 
-<Route namespace="earthquake" :data='{"path":"/:region?","categories":["forecast"],"example":"/earthquake","parameters":{"region":"区域，0全部，1国内（默认），2国外"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震局","maintainers":["LogicJake"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"可通过全局过滤参数订阅您感兴趣的地区.","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="earthquake" :data='{"path":"/:region?","categories":["forecast"],"example":"/earthquake","parameters":{"region":"区域，0全部，1国内（默认），2国外"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震局","maintainers":["LogicJake"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"可通过全局过滤参数订阅您感兴趣的地区.","location":"index.ts"}' :test='{"code":0}' />
 
 可通过全局过滤参数订阅您感兴趣的地区.
 
@@ -214,7 +214,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 应急新闻 <Site url="cneb.gov.cn" size="sm" />
 
-<Route namespace="cneb" :data='{"path":"/yjxw/:category?","categories":["forecast"],"example":"/cneb/yjxw","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cneb.gov.cn/yjxw/:category?","cneb.gov.cn/"]}],"name":"应急新闻","maintainers":["nczitzk"],"description":"| 全部 | 国内新闻 | 国际新闻 |\n  | ---- | -------- | -------- |\n  |      | gnxw     | gjxw     |","location":"yjxw.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cneb" :data='{"path":"/yjxw/:category?","categories":["forecast"],"example":"/cneb/yjxw","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cneb.gov.cn/yjxw/:category?","cneb.gov.cn/"]}],"name":"应急新闻","maintainers":["nczitzk"],"description":"| 全部 | 国内新闻 | 国际新闻 |\n  | ---- | -------- | -------- |\n  |      | gnxw     | gjxw     |","location":"yjxw.ts"}' :test='{"code":0}' />
 
 | 全部 | 国内新闻 | 国际新闻 |
   | ---- | -------- | -------- |
@@ -264,7 +264,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广东省内城市预警信号 <Site url="www.tqyb.com.cn/gz/weatherAlarm/otherCity/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":0}' />
 
 ### 突发性天气提示 <Site url="www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/" size="sm" />
 
@@ -274,7 +274,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 全国气象预警 <Site url="nmc.cn/publish/alarm.html" size="sm" />
 
-<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nmc" :data='{"path":"/weatheralarm/:province?","categories":["forecast"],"example":"/nmc/weatheralarm/广东省","parameters":{"province":"省份"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nmc.cn/publish/alarm.html","nmc.cn/"],"target":"/weatheralarm"}],"name":"全国气象预警","maintainers":["ylc395"],"url":"nmc.cn/publish/alarm.html","location":"weatheralarm.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 重庆燃气 <Site url="cqgas.cn"/>
 

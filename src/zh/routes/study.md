@@ -86,7 +86,7 @@
 
 ### Thesis <Site url="kimlaw.or.kr/67" size="sm" />
 
-<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Tableau <Site url="public.tableau.com"/>
 
@@ -114,7 +114,7 @@
 
 ### 最新文献 <Site url="ncpssd.cn/" size="sm" />
 
-<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## 湖南人事考试网 <Site url="rsks.hunanpea.com"/>
 
@@ -126,7 +126,7 @@
 
 ### 新闻 <Site url="sdzk.cn" size="sm" />
 
-<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。
@@ -311,7 +311,7 @@
 
 ### 考研热点新闻 <Site url="yz.chsi.com.cn/" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/hotnews","categories":["study"],"example":"/chsi/hotnews","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/"]}],"name":"考研热点新闻","maintainers":["yanbot-team"],"url":"yz.chsi.com.cn/","location":"hotnews.ts"}' :test='{"code":0}' />
+<Route namespace="chsi" :data='{"path":"/hotnews","categories":["study"],"example":"/chsi/hotnews","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/"]}],"name":"考研热点新闻","maintainers":["yanbot-team"],"url":"yz.chsi.com.cn/","location":"hotnews.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 考研动态 <Site url="yz.chsi.com.cn/kyzx/kydt" size="sm" />
 
@@ -319,7 +319,7 @@
 
 ### 考研资讯 <Site url="yz.chsi.com.cn" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/kyzx/:type","categories":["study"],"example":"/chsi/kyzx/fstj","parameters":{"type":" type 见下表，亦可在网站 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/:type"]}],"name":"考研资讯","maintainers":["yanbot-team"],"description":"| `:type` | 专题名称 |\n  | ------- | -------- |\n  | fstj    | 复试调剂 |\n  | kydt    | 考研动态 |\n  | zcdh    | 政策导航 |\n  | kyrw    | 考研人物 |\n  | jyxd    | 经验心得 |","location":"kyzx.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="chsi" :data='{"path":"/kyzx/:type","categories":["study"],"example":"/chsi/kyzx/fstj","parameters":{"type":" type 见下表，亦可在网站 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/:type"]}],"name":"考研资讯","maintainers":["yanbot-team"],"description":"| `:type` | 专题名称 |\n  | ------- | -------- |\n  | fstj    | 复试调剂 |\n  | kydt    | 考研动态 |\n  | zcdh    | 政策导航 |\n  | kyrw    | 考研人物 |\n  | jyxd    | 经验心得 |","location":"kyzx.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | `:type` | 专题名称 |
   | ------- | -------- |
