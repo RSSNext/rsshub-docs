@@ -86,7 +86,7 @@
 
 ### Thesis <Site url="kimlaw.or.kr/67" size="sm" />
 
-<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":0}' />
 
 ## Tableau <Site url="public.tableau.com"/>
 
@@ -114,7 +114,7 @@
 
 ### 最新文献 <Site url="ncpssd.cn/" size="sm" />
 
-<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 湖南人事考试网 <Site url="rsks.hunanpea.com"/>
 
@@ -257,7 +257,7 @@
 
 ### 观点与实践 <Site url="www.chinathinktanks.org.cn" size="sm" />
 
-<Route namespace="chinathinktanks" :data='{"path":"/:id","categories":["study"],"example":"/chinathinktanks/57","parameters":{"id":"见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"观点与实践","maintainers":["Aeliu"],"description":"| `:id` | 专题名称 |\n  | ----- | -------- |\n  | 2     | 党的建设 |\n  | 3     | 社会     |\n  | 4     | 生态     |\n  | 5     | 政治     |\n  | 6     | 经济     |\n  | 7     | 文化     |\n  | 9     | 热点专题 |\n  | 10    | 国际关系 |\n  | 13    | 国外智库 |\n  | 46    | 智库报告 |\n  | 57    | 智库要闻 |\n  | 126   | 世界经济 |\n  | 127   | 宏观经济 |\n  | 128   | 区域经济 |\n  | 129   | 产业企业 |\n  | 130   | 三农问题 |\n  | 131   | 财政金融 |\n  | 132   | 科技创新 |\n  | 133   | 民主     |\n  | 134   | 法治     |\n  | 135   | 行政     |\n  | 136   | 国家治理 |\n  | 137   | 社会事业 |\n  | 138   | 社会保障 |\n  | 139   | 民族宗教 |\n  | 140   | 人口就业 |\n  | 141   | 社会治理 |\n  | 142   | 文化产业 |\n  | 143   | 公共文化 |\n  | 144   | 文化体制 |\n  | 145   | 文化思想 |\n  | 146   | 资源     |\n  | 147   | 能源     |\n  | 148   | 环境     |\n  | 149   | 生态文明 |\n  | 150   | 思想建设 |\n  | 151   | 作风建设 |\n  | 152   | 组织建设 |\n  | 153   | 制度建设 |\n  | 154   | 反腐倡廉 |\n  | 155   | 中国外交 |\n  | 156   | 全球治理 |\n  | 157   | 大国关系 |\n  | 158   | 地区政治 |\n  | 181   | 执政能力 |","location":"viewpoint.ts"}' :test='{"code":0}' />
+<Route namespace="chinathinktanks" :data='{"path":"/:id","categories":["study"],"example":"/chinathinktanks/57","parameters":{"id":"见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"观点与实践","maintainers":["Aeliu"],"description":"| `:id` | 专题名称 |\n  | ----- | -------- |\n  | 2     | 党的建设 |\n  | 3     | 社会     |\n  | 4     | 生态     |\n  | 5     | 政治     |\n  | 6     | 经济     |\n  | 7     | 文化     |\n  | 9     | 热点专题 |\n  | 10    | 国际关系 |\n  | 13    | 国外智库 |\n  | 46    | 智库报告 |\n  | 57    | 智库要闻 |\n  | 126   | 世界经济 |\n  | 127   | 宏观经济 |\n  | 128   | 区域经济 |\n  | 129   | 产业企业 |\n  | 130   | 三农问题 |\n  | 131   | 财政金融 |\n  | 132   | 科技创新 |\n  | 133   | 民主     |\n  | 134   | 法治     |\n  | 135   | 行政     |\n  | 136   | 国家治理 |\n  | 137   | 社会事业 |\n  | 138   | 社会保障 |\n  | 139   | 民族宗教 |\n  | 140   | 人口就业 |\n  | 141   | 社会治理 |\n  | 142   | 文化产业 |\n  | 143   | 公共文化 |\n  | 144   | 文化体制 |\n  | 145   | 文化思想 |\n  | 146   | 资源     |\n  | 147   | 能源     |\n  | 148   | 环境     |\n  | 149   | 生态文明 |\n  | 150   | 思想建设 |\n  | 151   | 作风建设 |\n  | 152   | 组织建设 |\n  | 153   | 制度建设 |\n  | 154   | 反腐倡廉 |\n  | 155   | 中国外交 |\n  | 156   | 全球治理 |\n  | 157   | 大国关系 |\n  | 158   | 地区政治 |\n  | 181   | 执政能力 |","location":"viewpoint.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | `:id` | 专题名称 |
   | ----- | -------- |
