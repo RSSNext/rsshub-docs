@@ -297,6 +297,24 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 用户 ID 可以通过打开用户的主页后查看地址栏的 `un` 字段来获取。
 
+## 百合会 <Site url="yamibo.com"/>
+
+### BBS - 板块 <Site url="yamibo.com" size="sm" />
+
+<Route namespace="yamibo" :data='{"name":"BBS - 板块","categories":["bbs"],"path":"/bbs/forum/:fid/:type?","example":"/yamibo/bbs/forum/5/404","parameters":{"fid":"板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值","type":"板块子分类，网页中选中板块分类后URL中的typeid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::","location":"bbs/forum.ts"}' :test='undefined' />
+
+:::warning
+百合会BBS访问部分板块需要用户登录认证，请参考配置说明
+:::
+
+### BBS - 讨论串 <Site url="yamibo.com" size="sm" />
+
+<Route namespace="yamibo" :data='{"name":"BBS - 讨论串","categories":["bbs"],"path":"/bbs/thread/:tid","example":"/yamibo/bbs/thread/541914","parameters":{"tid":"讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::","location":"bbs/thread.ts"}' :test='undefined' />
+
+:::warning
+百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明
+:::
+
 ## 第一会所 <Site url="sis001.com"/>
 
 ### 子版块 <Site url="sis001.com" size="sm" />
