@@ -1757,6 +1757,32 @@ author 列表：
   | -------- | -------- | -------- | -------- | -------- |
   | 参数     | 0        | 1        | 2        | 3        |
 
+### 武汉大学遥感信息工程学院 <Site url="cs.whu.edu.cn" size="sm" />
+
+<Route namespace="whu" :data='{"path":"/rsgis/:type/:sub?","categories":["university"],"example":"/whu/rsgis/index","parameters":{"type":"栏目，详见表格","sub":"子栏目。当 `type` 为 `index` 的时候不起效；当 `type` 为其他合法值时，默认为 `all` 表示所有子类，其他可选项见下表。"},"radar":[{"source":["rsgis.whu.edu.cn/index.htm"],"target":"/rsgis/index"}],"name":"武汉大学遥感信息工程学院","maintainers":["HPDell"],"description":"\n\n|  分类名  | `type` 值 |  子类名  | `sub` 值 |\n| :------: | :-------- | :------: | :------- |\n|   首页   | `index`   |          |          |\n| 学院新闻 | `xyxw`    |   全部   | `all`    |\n|          |           | 学院要闻 | `xyyw`   |\n|          |           | 合作交流 | `hzjl`   |\n|          |           | 媒体聚焦 | `mtjj`   |\n|          |           | 学工要闻 | `xgyw`   |\n| 科学研究 | `kxyj`    |   全部   | `all`    |\n|          |           | 学术报告 | `xsbg`   |\n|          |           | 学术交流 | `xsjl`   |\n|          |           | 学术成果 | `kycg`   |\n|          |           | 申报信息 | `sbxx`   |\n| 通知公告 | `tzgg`    |   全部   | `all`    |\n|          |           | 学院通知 | `xytz`   |\n|          |           | 教学动态 | `jxdt`   |\n|          |           | 学术动态 | `xsdt`   |\n|          |           | 人才引进 | `rcyj`   |\n","location":"rsgis.ts"}' :test='undefined' />
+
+
+
+|  分类名  | `type` 值 |  子类名  | `sub` 值 |
+| :------: | :-------- | :------: | :------- |
+|   首页   | `index`   |          |          |
+| 学院新闻 | `xyxw`    |   全部   | `all`    |
+|          |           | 学院要闻 | `xyyw`   |
+|          |           | 合作交流 | `hzjl`   |
+|          |           | 媒体聚焦 | `mtjj`   |
+|          |           | 学工要闻 | `xgyw`   |
+| 科学研究 | `kxyj`    |   全部   | `all`    |
+|          |           | 学术报告 | `xsbg`   |
+|          |           | 学术交流 | `xsjl`   |
+|          |           | 学术成果 | `kycg`   |
+|          |           | 申报信息 | `sbxx`   |
+| 通知公告 | `tzgg`    |   全部   | `all`    |
+|          |           | 学院通知 | `xytz`   |
+|          |           | 教学动态 | `jxdt`   |
+|          |           | 学术动态 | `xsdt`   |
+|          |           | 人才引进 | `rcyj`   |
+
+
 ### 研究生院 <Site url="gs.whu.edu.cn/index.htm" size="sm" />
 
 <Route namespace="whu" :data='{"path":"/gs/:type?","categories":["university"],"example":"/whu/gs/0","parameters":{"type":"分类，默认为 `0`，具体参数见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.whu.edu.cn/index.htm","gs.whu.edu.cn/"],"target":"/gs"}],"name":"研究生院","maintainers":["Delreyaa"],"url":"gs.whu.edu.cn/index.htm","description":"| 公告类型 | 新闻动态 | 学术探索 | 院系风采 | 通知 (全部) | 通知 (招生) | 通知 (培养) | 通知 (学位) | 通知 (质量与专业学位) | 通知 (综合) |\n  | -------- | -------- | -------- | -------- | ----------- | ----------- | ----------- | ----------- | --------------------- | ----------- |\n  | 参数     | 0        | 1        | 2        | 3           | 4           | 5           | 6           | 7                     | 8           |","location":"gs/index.ts"}' :test='{"code":0}' />
