@@ -437,6 +437,16 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 <Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://typora.io/releases/dev#1.8.3-…&#39;"}' />
 
+## Typst <Site url="typst.com"/>
+
+
+Compose papers faster: Focus on your text and let Typst take care of layout and formatting.
+
+
+### Universe <Site url="typst.com" size="sm" />
+
+<Route namespace="typst" :data='{"path":"/universe","categories":["program-update"],"example":"/typst/universe","radar":[{"source":["typst.app/universe"],"target":"/universe"}],"name":"Universe","maintainers":["HPDell"],"location":"universe.ts"}' :test='undefined' />
+
 ## Unraid <Site url="unraid.net"/>
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
