@@ -134,7 +134,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url="learnku.com" size="sm" />
 
-<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":0}' />
 
 | 招聘 | 翻译         | 问答 | 链接  |
 | ---- | ------------ | ---- | ----- |
@@ -166,11 +166,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分区帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected [ …(7) ] to not include &#39;https://nga.178.com/read.php?tid=4015…&#39;"}' />
+<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/post/:tid/:authorId?","categories":["bbs"],"example":"/nga/post/18449558","parameters":{"tid":"帖子 id, 可在帖子 URL 找到","authorId":"作者 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["xyqfer","syrinka"],"location":"post.ts"}' :test='{"code":0}' />
+<Route namespace="nga" :data='{"path":"/post/:tid/:authorId?","categories":["bbs"],"example":"/nga/post/18449558","parameters":{"tid":"帖子 id, 可在帖子 URL 找到","authorId":"作者 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["xyqfer","syrinka"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Pikabu <Site url="pikabu.ru"/>
 
@@ -214,7 +214,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛摘要 <Site url="bbs.saraba1st.com" size="sm" />
 
-<Route namespace="saraba1st" :data='{"path":"/digest/:tid","categories":["bbs"],"example":"/saraba1st/digest/forum-75-1","parameters":{"tid":"论坛 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛摘要","maintainers":["shinemoon"],"description":"版面网址如果为 `https://bbs.saraba1st.com/2b/forum-75-1.html` 那么论坛 id 就是 `forum-75-1`。","location":"digest.ts"}' :test='{"code":0}' />
+<Route namespace="saraba1st" :data='{"path":"/digest/:tid","categories":["bbs"],"example":"/saraba1st/digest/forum-75-1","parameters":{"tid":"论坛 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛摘要","maintainers":["shinemoon"],"description":"版面网址如果为 `https://bbs.saraba1st.com/2b/forum-75-1.html` 那么论坛 id 就是 `forum-75-1`。","location":"digest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 版面网址如果为 `https://bbs.saraba1st.com/2b/forum-75-1.html` 那么论坛 id 就是 `forum-75-1`。
 
@@ -234,7 +234,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 标签 <Site url="v2ex.com" size="sm" />
 
-<Route namespace="v2ex" :data='{"path":"/tab/:tabid","categories":["bbs"],"example":"/v2ex/tab/hot","parameters":{"tabid":"tab标签ID,在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"标签","maintainers":["liyefox"],"location":"tab.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="v2ex" :data='{"path":"/tab/:tabid","categories":["bbs"],"example":"/v2ex/tab/hot","parameters":{"tabid":"tab标签ID,在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"标签","maintainers":["liyefox"],"location":"tab.ts"}' :test='{"code":0}' />
 
 ### 帖子 <Site url="v2ex.com" size="sm" />
 
@@ -301,7 +301,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### BBS - 板块 <Site url="yamibo.com" size="sm" />
 
-<Route namespace="yamibo" :data='{"name":"BBS - 板块","categories":["bbs"],"path":"/bbs/forum/:fid/:type?","example":"/yamibo/bbs/forum/5/404","parameters":{"fid":"板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值","type":"板块子分类，网页中选中板块分类后URL中的typeid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::","location":"bbs/forum.ts"}' :test='undefined' />
+<Route namespace="yamibo" :data='{"name":"BBS - 板块","categories":["bbs"],"path":"/bbs/forum/:fid/:type?","example":"/yamibo/bbs/forum/5/404","parameters":{"fid":"板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值","type":"板块子分类，网页中选中板块分类后URL中的typeid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::","location":"bbs/forum.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
 百合会BBS访问部分板块需要用户登录认证，请参考配置说明
@@ -309,7 +309,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### BBS - 讨论串 <Site url="yamibo.com" size="sm" />
 
-<Route namespace="yamibo" :data='{"name":"BBS - 讨论串","categories":["bbs"],"path":"/bbs/thread/:tid","example":"/yamibo/bbs/thread/541914","parameters":{"tid":"讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::","location":"bbs/thread.ts"}' :test='undefined' />
+<Route namespace="yamibo" :data='{"name":"BBS - 讨论串","categories":["bbs"],"path":"/bbs/thread/:tid","example":"/yamibo/bbs/thread/541914","parameters":{"tid":"讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::","location":"bbs/thread.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
 百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明
@@ -325,7 +325,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分类文章 <Site url="eleduck.com" size="sm" />
 
-<Route namespace="eleduck" :data='{"path":"/posts/:id?","categories":["bbs"],"example":"/eleduck/posts/4","parameters":{"id":"分类id,可以论坛的URL找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类文章","maintainers":["running-grass"],"description":"| id | 分类     |\n  | -- | -------- |\n  | 0  | 全部     |\n  | 1  | 讨论     |\n  | 2  | 分享     |\n  | 3  | 露个脸   |\n  | 4  | 访谈故事 |\n  | 5  | 招聘     |\n  | 10 | 海外移民 |\n  | 12 | 英语     |\n  | 14 | 电鸭官方 |\n  | 15 | 独立产品 |\n  | 17 | 闲话开源 |\n  | 19 | Web3     |\n  | 21 | 设计     |\n  | 22 | 人才库   |\n  | 23 | Upwork   |\n  | 24 | 经验课   |","location":"posts.ts"}' :test='{"code":0}' />
+<Route namespace="eleduck" :data='{"path":"/posts/:id?","categories":["bbs"],"example":"/eleduck/posts/4","parameters":{"id":"分类id,可以论坛的URL找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类文章","maintainers":["running-grass"],"description":"| id | 分类     |\n  | -- | -------- |\n  | 0  | 全部     |\n  | 1  | 讨论     |\n  | 2  | 分享     |\n  | 3  | 露个脸   |\n  | 4  | 访谈故事 |\n  | 5  | 招聘     |\n  | 10 | 海外移民 |\n  | 12 | 英语     |\n  | 14 | 电鸭官方 |\n  | 15 | 独立产品 |\n  | 17 | 闲话开源 |\n  | 19 | Web3     |\n  | 21 | 设计     |\n  | 22 | 人才库   |\n  | 23 | Upwork   |\n  | 24 | 经验课   |","location":"posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | id | 分类     |
   | -- | -------- |
@@ -348,7 +348,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 工作机会 <Site url="eleduck.com/categories/5" size="sm" />
 
-<Route namespace="eleduck" :data='{"path":"/jobs","categories":["bbs"],"example":"/eleduck/jobs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["eleduck.com/categories/5","eleduck.com/"]}],"name":"工作机会","maintainers":["sfyumi"],"url":"eleduck.com/categories/5","location":"jobs.ts"}' :test='{"code":0}' />
+<Route namespace="eleduck" :data='{"path":"/jobs","categories":["bbs"],"example":"/eleduck/jobs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["eleduck.com/categories/5","eleduck.com/"]}],"name":"工作机会","maintainers":["sfyumi"],"url":"eleduck.com/categories/5","location":"jobs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 丁香园 <Site url="dxy.cn"/>
 
@@ -378,7 +378,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 板块 <Site url="right.com.cn" size="sm" />
 
-<Route namespace="right" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/right/forum/31","parameters":{"id":"板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板块","maintainers":["nczitzk"],"location":"forum.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="right" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/right/forum/31","parameters":{"id":"板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板块","maintainers":["nczitzk"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 虎扑 <Site url=".hupu.com"/>
 
@@ -440,7 +440,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 广场 <Site url="jisilu.cn/home/explore" size="sm" />
 
-<Route namespace="jisilu" :data='{"path":"/:category?/:sort?/:day?","categories":["bbs"],"example":"/jisilu","parameters":{"category":"分类，见下表，默认为全部，可在 URL 中找到","sort":"排序，见下表，默认为最新，可在 URL 中找到","day":"几天内，见下表，默认为30天，本参数仅在排序参数设定为 `热门` 后才可生效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jisilu.cn/home/explore","jisilu.cn/explore","jisilu.cn/"]}],"name":"广场","maintainers":["nczitzk"],"url":"jisilu.cn/home/explore","description":"分类\n\n  | 全部 | 债券 / 可转债 | 基金 | 套利 | 新股 |\n  | ---- | ------------- | ---- | ---- | ---- |\n  |      | 4             | 7    | 5    | 3    |\n\n  排序\n\n  | 最新 | 热门 | 按发表时间 |\n  | ---- | ---- | ---------- |\n  |      | hot  | add_time  |\n\n  几天内\n\n  | 30 天 | 7 天 | 当天 |\n  | ----- | ---- | ---- |\n  | 30    | 7    | 1    |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="jisilu" :data='{"path":"/:category?/:sort?/:day?","categories":["bbs"],"example":"/jisilu","parameters":{"category":"分类，见下表，默认为全部，可在 URL 中找到","sort":"排序，见下表，默认为最新，可在 URL 中找到","day":"几天内，见下表，默认为30天，本参数仅在排序参数设定为 `热门` 后才可生效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jisilu.cn/home/explore","jisilu.cn/explore","jisilu.cn/"]}],"name":"广场","maintainers":["nczitzk"],"url":"jisilu.cn/home/explore","description":"分类\n\n  | 全部 | 债券 / 可转债 | 基金 | 套利 | 新股 |\n  | ---- | ------------- | ---- | ---- | ---- |\n  |      | 4             | 7    | 5    | 3    |\n\n  排序\n\n  | 最新 | 热门 | 按发表时间 |\n  | ---- | ---- | ---------- |\n  |      | hot  | add_time  |\n\n  几天内\n\n  | 30 天 | 7 天 | 当天 |\n  | ----- | ---- | ---- |\n  | 30    | 7    | 1    |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 分类
 
@@ -592,7 +592,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 首页帖子 <Site url="xiaote.com/" size="sm" />
 
-<Route namespace="xiaote" :data='{"path":"/news","categories":["bbs"],"example":"/xiaote/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaote.com/"]}],"name":"首页帖子","maintainers":["wxsimon"],"url":"xiaote.com/","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="xiaote" :data='{"path":"/news","categories":["bbs"],"example":"/xiaote/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaote.com/"]}],"name":"首页帖子","maintainers":["wxsimon"],"url":"xiaote.com/","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 一亩三分地 <Site url="blog.1point3acres.com"/>
 
