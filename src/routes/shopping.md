@@ -217,7 +217,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 关键字搜索 <Site url="guangdiu.com" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/search/:query?","categories":["shopping"],"example":"/guangdiu/search/k=百度网盘","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键字搜索","maintainers":["Huzhixin00"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="guangdiu" :data='{"path":"/search/:query?","categories":["shopping"],"example":"/guangdiu/search/q=百度网盘","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键字搜索","maintainers":["Huzhixin00"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 国内折扣 / 海外折扣 <Site url="guangdiu.com" size="sm" />
 
