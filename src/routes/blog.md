@@ -28,7 +28,7 @@
 
 ### Blogs <Site url="delta.io/blog" size="sm" />
 
-<Route namespace="deltaio" :data='{"path":"/blog","categories":["blog"],"example":"/deltaio/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["delta.io/blog"]}],"name":"Blogs","maintainers":["RengarLee"],"url":"delta.io/blog","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="deltaio" :data='{"path":"/blog","categories":["blog"],"example":"/deltaio/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["delta.io/blog"]}],"name":"Blogs","maintainers":["RengarLee"],"url":"delta.io/blog","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## DevolverDigital <Site url="devolverdigital.com"/>
 
@@ -138,7 +138,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 合集 <Site url="open.itc.cn" size="sm" />
 
-<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":0}' />
 
 ## Paul Graham <Site url="paulgraham.com"/>
 
@@ -310,13 +310,13 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 专题展示 - 文章 <Site url="www.foreverblog.cn/feeds.html" size="sm" />
 
-<Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":0}' />
+<Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":1,"message":"expected [ …(5) ] to not include &#39;https://www.yvii.cn/archives/236.html&#39;"}' />
 
 ## 土猛的员外 <Site url="luxiangdong.com"/>
 
 ### 文章 <Site url="luxiangdong.com/" size="sm" />
 
-<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 312536842113 to be less than 311040000000"}' />
+<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 312623257580 to be less than 311040000000"}' />
 
 ## 新语丝 <Site url="xys.org"/>
 
@@ -362,13 +362,13 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 博客 <Site url="apiseven.com" size="sm" />
 
-<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="apiseven" :data='{"path":"/blog","categories":["blog"],"example":"/apiseven/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 竹白 <Site url="zhubai.love"/>
 
 ### 上周热门 TOP 20 <Site url="analy.zhubai.love/" size="sm" />
 
-<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' :test='{"code":0}' />
+<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 文章 <Site url="zhubai.love" size="sm" />
 
@@ -382,5 +382,5 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
 
