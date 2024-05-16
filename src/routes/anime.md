@@ -564,13 +564,9 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="freexcomic" :data='{"path":"/book/:id","example":"/freexcomic/book/90","parameters":{"id":"漫画id，漫画主页的地址栏中"},"radar":[{"source":["www.jjmhw.cc/book/:id"]}],"name":"漫画更新","maintainers":["junfengP"],"url":"www.jjmhw.cc","location":"book.ts"}' :test='{"code":0}' />
 
-## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
+## 腾讯网 <Site url="qq.com"/>
 
-### Unknown <Site url="ac.qq.com" size="sm" />
-
-<Route namespace="qq" :data='{"path":"/ac/comic/:id?","radar":[{"source":["ac.qq.com/Comic/ComicInfo/id/:id","ac.qq.com/"],"target":"/ac/comic/:id"}],"name":"Unknown","maintainers":[],"location":"ac/comic.ts"}' :test='undefined' />
-
-### 排行榜 <Site url="ac.qq.com" size="sm" />
+### 排行榜 <Site url="qq.com" size="sm" />
 
 <Route namespace="qq" :data='{"path":"/ac/rank/:type?/:time?","categories":["anime"],"example":"/qq/ac/rank","parameters":{"type":"分类，见下表，默认为月票榜","time":"时间，`cur` 为当周、`prev` 为上周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ac.qq.com/Rank/comicRank/type/:type","ac.qq.com/"]}],"name":"排行榜","maintainers":["nczitzk"],"description":"| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n  :::tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n  :::","location":"ac/rank.ts"}' :test='{"code":0}' />
 

@@ -2695,6 +2695,12 @@ Type 栏目：
   | -------- | -------- | -------- | -------- | -------- | -------- |
   | hexin    | tougao   | suibi    | caibao   | youji    | bamang   |
 
+## 腾讯网 <Site url="qq.com"/>
+
+### Unknown <Site url="qq.com" size="sm" />
+
+<Route namespace="qq" :data='{"path":"/ac/comic/:id?","radar":[{"source":["ac.qq.com/Comic/ComicInfo/id/:id","ac.qq.com/"],"target":"/ac/comic/:id"}],"name":"Unknown","maintainers":[],"location":"ac/comic.ts"}' :test='undefined' />
+
 ## 腾讯研究院 <Site url="tisi.org"/>
 
 ### 最近更新 <Site url="tisi.org" size="sm" />

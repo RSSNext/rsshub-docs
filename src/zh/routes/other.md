@@ -1305,7 +1305,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="tynu" :data='{"path":"/","radar":[{"source":["tynu.edu.cn/index/tzgg.htm","tynu.edu.cn/index.htm","tynu.edu.cn/"],"target":""}],"name":"Unknown","maintainers":["2PoL"],"url":"tynu.edu.cn/index/tzgg.htm","location":"tynu.ts"}' :test='undefined' />
 
-## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
+## 腾讯网 <Site url="qq.com"/>
 
 ### 最新辟谣 <Site url="vp.fact.qq.com/home" size="sm" />
 

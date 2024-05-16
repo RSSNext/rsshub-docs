@@ -1241,13 +1241,13 @@ Chart
 
 <Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":0}' />
 
-## 腾讯新闻较真查证平台 <Site url="ac.qq.com"/>
+## 腾讯网 <Site url="qq.com"/>
 
-### 用户作品评论动态 <Site url="ac.qq.com" size="sm" />
+### 用户作品评论动态 <Site url="qq.com" size="sm" />
 
 <Route namespace="qq" :data='{"path":"/kg/reply/:playId","categories":["social-media"],"example":"/qq/kg/reply/OhXHMdO1VxLWQOOm","parameters":{"playId":"音频页 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户作品评论动态","maintainers":["zhangxiang012"],"location":"kg/reply.ts"}' :test='{"code":0}' />
 
-### 用户作品列表 <Site url="ac.qq.com" size="sm" />
+### 用户作品列表 <Site url="qq.com" size="sm" />
 
 <Route namespace="qq" :data='{"path":"/kg/:userId","categories":["social-media"],"example":"/qq/kg/639a9a86272c308e33","parameters":{"userId":"用户 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"用户作品列表","maintainers":["zhangxiang012"],"location":"kg/user.ts"}' :test='{"code":0}' />
 
