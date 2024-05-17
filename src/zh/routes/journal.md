@@ -241,7 +241,7 @@ Return results from 2020
 
 ### Journal <Site url="pubs.rsc.org" size="sm" />
 
-<Route namespace="rsc" :data='{"path":"/journal/:id/:category?","categories":["journal"],"example":"/rsc/journal/ta","parameters":{"id":"Journal id, can be found in URL","category":"Category, see below, All Recent Articles by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal","maintainers":["nczitzk"],"description":":::tip\n  All journals at [Current journals](https://pubs.rsc.org/en/journals)\n  :::\n\n  | All Recent Articles | Advance Articles |\n  | ------------------- | ---------------- |\n  | allrecentarticles   | advancearticles  |","location":"journal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="rsc" :data='{"path":"/journal/:id/:category?","categories":["journal"],"example":"/rsc/journal/ta","parameters":{"id":"Journal id, can be found in URL","category":"Category, see below, All Recent Articles by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal","maintainers":["nczitzk"],"description":":::tip\n  All journals at [Current journals](https://pubs.rsc.org/en/journals)\n  :::\n\n  | All Recent Articles | Advance Articles |\n  | ------------------- | ---------------- |\n  | allrecentarticles   | advancearticles  |","location":"journal.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 :::tip
   All journals at [Current journals](https://pubs.rsc.org/en/journals)
@@ -383,7 +383,7 @@ Return results from 2020
 
 ### 网络首发 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/journals/debut/:name","categories":["journal"],"example":"/cnki/journals/debut/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"网络首发","maintainers":["Fatpandac"],"location":"debut.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cnki" :data='{"path":"/journals/debut/:name","categories":["journal"],"example":"/cnki/journals/debut/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"网络首发","maintainers":["Fatpandac"],"location":"debut.ts"}' :test='{"code":0}' />
 
 ### 作者期刊文献 <Site url="navi.cnki.net" size="sm" />
 
