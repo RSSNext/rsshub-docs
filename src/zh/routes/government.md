@@ -230,6 +230,17 @@ Language
 
 <Route namespace="mohw" :data='{"path":"/clarification","categories":["government"],"example":"/mohw/clarification","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mohw.gov.tw/"]}],"name":"即時新聞澄清","maintainers":["nczitzk"],"url":"mohw.gov.tw/","location":"clarification.ts"}' :test='{"code":0}' />
 
+## 中国军网 <Site url="81.cn"/>
+
+### 中国人民解放军专业技术人才网 <Site url="81rc.81.cn" size="sm" />
+
+<Route namespace="81" :data='{"path":"/81rc/:category{.+}?","name":"中国人民解放军专业技术人才网","url":"81rc.81.cn","maintainers":["nczitzk"],"example":"/81/81rc/sy/gzdt_210283","parameters":{"category":"分类，默认为 `sy/gzdt_210283`，即工作动态，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [工作动态](https://81rc.81.cn/sy/gzdt_210283)，网址为 `https://81rc.81.cn/sy/gzdt_210283`。截取 `https://81rc.81.cn/` 到末尾的部分 `sy/gzdt_210283` 作为参数填入，此时路由为 [`/81/81rc/sy/gzdt_210283`](https://rsshub.app/81/81rc/sy/gzdt_210283)。\n  :::\n  ","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["81rc.81.cn/:category"]}],"location":"81rc/index.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [工作动态](https://81rc.81.cn/sy/gzdt_210283)，网址为 `https://81rc.81.cn/sy/gzdt_210283`。截取 `https://81rc.81.cn/` 到末尾的部分 `sy/gzdt_210283` 作为参数填入，此时路由为 [`/81/81rc/sy/gzdt_210283`](https://rsshub.app/81/81rc/sy/gzdt_210283)。
+  :::
+  
+
 ## 中国科学学与科技政策研究会 <Site url="casssp.org.cn"/>
 
 ### 研究会动态 <Site url="casssp.org.cn" size="sm" />

@@ -1365,12 +1365,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="getitfree" :data='{"path":"/:filter{.+}?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
-## 中国军网 <Site url="81rc.81.cn"/>
-
-### Unknown <Site url="81rc.81.cn" size="sm" />
-
-<Route namespace="81" :data='{"path":"/81rc/*","name":"Unknown","maintainers":[],"location":"81rc/index.ts"}' :test='undefined' />
-
 ## 中华全国专利代理师协会 <Site url="acpaa.cn"/>
 
 ### 标签 <Site url="acpaa.cn" size="sm" />
