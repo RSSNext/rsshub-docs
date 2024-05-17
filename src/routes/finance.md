@@ -440,11 +440,11 @@ Language:
 
 <Route namespace="laohu8" :data='{"path":"/personal/:id","categories":["finance"],"example":"/laohu8/personal/3527667596890271","parameters":{"id":"用户 ID，见网址链接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["laohu8.com/personal/:id"]}],"name":"个人主页","maintainers":["Fatpandac"],"location":"personal.ts"}' :test='{"code":0}' />
 
-## 律动 <Site url="rszhaopin.theblockbeats.info"/>
+## 律动 BlockBeats <Site url="www.theblockbeats.info"/>
 
-### 新闻快讯 <Site url="rszhaopin.theblockbeats.info" size="sm" />
+### 新闻快讯 <Site url="www.theblockbeats.info" size="sm" />
 
-<Route namespace="theblockbeats" :data='{"path":"/:channel?","categories":["finance"],"example":"/theblockbeats/newsflash","parameters":{"channel":"类型，见下表，默认为快讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻快讯","maintainers":["Fatpandac","jameshih"],"description":"|    快讯   |   文章  |\n  | :-------: | :-----: |\n  | newsflash | article |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="theblockbeats" :data='{"path":"/:channel?","categories":["finance"],"example":"/theblockbeats/newsflash","parameters":{"channel":"类型，见下表，默认为快讯"},"name":"新闻快讯","maintainers":["Fatpandac","jameshih"],"radar":[{"title":"文章","source":["www.theblockbeats.info/article"],"target":"/article"},{"title":"快讯","source":["www.theblockbeats.info/newsflash"],"target":"/newsflash"}],"description":"|    快讯   |   文章  |\n  | :-------: | :-----: |\n  | newsflash | article |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 |    快讯   |   文章  |
   | :-------: | :-----: |
