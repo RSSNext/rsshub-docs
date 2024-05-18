@@ -743,7 +743,25 @@ Specify options (in the format of query string) in parameter `routeParams` to co
 
 <Route namespace="tiktok" :data='{"path":"/user/:user/:iframe?","categories":["social-media"],"example":"/tiktok/user/@linustech/true","parameters":{"user":"User ID, including @","iframe":"Use the official iframe to embed the video, which allows you to view the video if the default option does not work. Default to `false`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tiktok.com/:user"],"target":"/user/:user"}],"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-## Twitter <Site url="twitter.com"/>
+## Vimeo <Site url="vimeo.com"/>
+
+### Category <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/category/:category/:staffpicks?","categories":["social-media"],"example":"/vimeo/category/documentary/staffpicks","parameters":{"category":"Category name can get from url like `documentary` in [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) ","staffpicks":"type `staffpicks` to sort with staffpicks"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["MisteryMonster"],"location":"category.ts"}' :test='{"code":0}' />
+
+### Channel <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/channel/:channel","categories":["social-media"],"example":"/vimeo/channel/bestoftheyear","parameters":{"channel":"channel name can get from url like `bestoftheyear` in  [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) ."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vimeo.com/channels/:channel","vimeo.com/channels/:channel/videos","vimeo.com/channels/:channel/videos/:sort/:format"]}],"name":"Channel","maintainers":["MisteryMonster"],"location":"channel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### User Profile <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/user/:username/:cat?","categories":["social-media"],"example":"/vimeo/user/filmsupply/picks","parameters":{"username":"In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`","cat":"deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won&#39;t show up"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile","maintainers":["MisteryMonster"],"description":":::tip Special category name attention\n  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.\n  :::","location":"usr-videos.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+
+:::tip Special category name attention
+  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
+  :::
+
+## X (Twitter) <Site url="x.com"/>
 
 Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets
 
@@ -787,55 +805,37 @@ Currently supports two authentication methods:
 - Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure the Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.
 
 
-### Home timeline <Site url="twitter.com" size="sm" />
+### Home timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod"],"radar":[{"source":["twitter.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod"],"radar":[{"source":["x.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
 
-### Keyword <Site url="twitter.com" size="sm" />
+### Keyword <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media"],"example":"/twitter/keyword/RSSHub","parameters":{"keyword":"keyword","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["twitter.com/search"]}],"location":"keyword.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media"],"example":"/twitter/keyword/RSSHub","parameters":{"keyword":"keyword","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/search"]}],"location":"keyword.ts"}' :test='undefined' />
 
-### List timeline <Site url="twitter.com" size="sm" />
+### List timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["twitter.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["x.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
 
-### Trends <Site url="twitter.com" size="sm" />
+### Trends <Site url="x.com" size="sm" />
 
 <Route namespace="twitter" :data='{"path":"/trends/:woeid?","categories":["social-media"],"example":"/twitter/trends/23424856","parameters":{"woeid":"Yahoo! Where On Earth ID. default to woeid=1 (World Wide)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trends","maintainers":["sakamossan"],"location":"trends.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
-### Tweet Details <Site url="twitter.com" size="sm" />
+### Tweet Details <Site url="x.com" size="sm" />
 
 <Route namespace="twitter" :data='{"path":"/tweet/:id/status/:status/:original?","categories":["social-media"],"example":"/twitter/tweet/DIYgod/status/1650844643997646852","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","status":"tweet ID","original":"extra parameters, data type of return, if the value is not `0`/`false` and `config.isPackage` is `true`, return the original data of twitter"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tweet Details","maintainers":["LarchLiu","Rongronggg9"],"location":"tweet.ts"}' :test='undefined' />
 
-### User likes <Site url="twitter.com" size="sm" />
+### User likes <Site url="x.com" size="sm" />
 
 <Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='undefined' />
 
-### User media <Site url="twitter.com" size="sm" />
+### User media <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/media/:id/:routeParams?","categories":["social-media"],"example":"/twitter/media/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User media","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["twitter.com/:id/media"],"target":"/media/:id"}],"location":"media.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/media/:id/:routeParams?","categories":["social-media"],"example":"/twitter/media/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User media","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id/media"],"target":"/media/:id"}],"location":"media.ts"}' :test='undefined' />
 
-### User timeline <Site url="twitter.com" size="sm" />
+### User timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/user/:id/:routeParams?","categories":["social-media"],"example":"/twitter/user/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTHENTICATION_SECRET","description":"TOTP 2FA secret, please see above for details.","optional":true},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["twitter.com/:id"],"target":"/user/:id"}],"location":"user.ts"}' :test='undefined' />
-
-## Vimeo <Site url="vimeo.com"/>
-
-### Category <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/category/:category/:staffpicks?","categories":["social-media"],"example":"/vimeo/category/documentary/staffpicks","parameters":{"category":"Category name can get from url like `documentary` in [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) ","staffpicks":"type `staffpicks` to sort with staffpicks"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["MisteryMonster"],"location":"category.ts"}' :test='{"code":0}' />
-
-### Channel <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/channel/:channel","categories":["social-media"],"example":"/vimeo/channel/bestoftheyear","parameters":{"channel":"channel name can get from url like `bestoftheyear` in  [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) ."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vimeo.com/channels/:channel","vimeo.com/channels/:channel/videos","vimeo.com/channels/:channel/videos/:sort/:format"]}],"name":"Channel","maintainers":["MisteryMonster"],"location":"channel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### User Profile <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/user/:username/:cat?","categories":["social-media"],"example":"/vimeo/user/filmsupply/picks","parameters":{"username":"In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`","cat":"deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won&#39;t show up"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile","maintainers":["MisteryMonster"],"description":":::tip Special category name attention\n  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.\n  :::","location":"usr-videos.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
-
-:::tip Special category name attention
-  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
-  :::
+<Route namespace="twitter" :data='{"path":"/user/:id/:routeParams?","categories":["social-media"],"example":"/twitter/user/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTHENTICATION_SECRET","description":"TOTP 2FA secret, please see above for details.","optional":true},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id"],"target":"/user/:id"}],"location":"user.ts"}' :test='undefined' />
 
 ## YouTube <Site url="youtube.com"/>
 
