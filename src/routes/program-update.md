@@ -159,7 +159,7 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Image New Build <Site url="hub.docker.com" size="sm" />
 
-<Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update"],"example":"/dockerhub/build/wangqiru/ttrss","parameters":{"owner":"Image owner","image":"Image name","tag":"Image tag，default to latest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"description":":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)\n  :::","location":"build.ts"}' :test='{"code":0}' />
+<Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update","popular"],"example":"/dockerhub/build/wangqiru/ttrss","parameters":{"owner":"Image owner","image":"Image name","tag":"Image tag，default to latest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"description":":::warning\n  The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)\n  :::","location":"build.ts"}' :test='{"code":0}' />
 
 :::warning
   The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)
@@ -387,7 +387,7 @@ Language
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
 
-<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ …(131) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
+<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update","popular"],"example":"/rsshub/routes/en","parameters":{"lang":"Language, `zh` means Chinese docs, other values or null means English docs, `en` by default"},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ …(131) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
 
 ### Unknown <Site url="docs.rsshub.app" size="sm" />
 

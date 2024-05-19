@@ -343,6 +343,30 @@
 本路由以 `magnet` 为默认 linktype，可以通过在路由后方加上 `?linktype=链接类型` 指定导出的链接类型。比如路由为 [`/zimuxia/portfolio/我们这一天?linktype=baidu`](https://rsshub.app/zimuxia/portfolio/我们这一天?linktype=baidu) 来导出百度盘链接。目前，你可以选择的 `链接类型` 包括: `magnet`(默认), `all`(所有), `ed2k`(电驴), `baidu`(百度盘), `quark`(夸克盘), `115`(115 盘), `subhd`(字幕).
 :::
 
+## JavBus <Site url="www.javbus.com"/>
+
+:::warning
+Requests from non-Asia areas will be redirected to login page.
+:::
+
+:::tip Language
+You can change the language of each route to the languages listed below.
+
+| English | 日本语 | 한국의 | 中文             |
+| ------- | ------ | ------ | ---------------- |
+| en      | ja     | ko     | (leave it empty) |
+:::
+
+:::tip
+JavBus has multiple backup domains, these routes use default domain `https://javbus.com`. If the domain is unreachable, you can add `?domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.icu`, you can add `?domain=javsee.icu` to the end of the route, then the route will be [`/javbus/en?domain=javsee.icu`](https://rsshub.app/javbus?domain=javsee.icu)
+
+**Note**: **Western** has different domain than the main site, the backup domains are also different. The default domain is `https://javbus.org` and you can add `?western_domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain `https://javsee.one`, you can add `?western_domain=javsee.one` to the end of the route, then the route will be [`/javbus/western/en?western_domain=javsee.one`](https://rsshub.app/javbus/western?western_domain=javsee.one)
+:::
+
+### Unknown <Site url="www.seejav.pw/" size="sm" />
+
+<Route namespace="javbus" :data='{"path":"*","radar":[{"source":["www.seejav.pw/"],"target":""}],"name":"Unknown","maintainers":[],"categories":["multimedia","popular"],"url":"www.seejav.pw/","location":"index.ts"}' :test='undefined' />
+
 ## JavDB <Site url="javdb.com"/>
 
 :::tip
@@ -1075,7 +1099,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 作者文章 <Site url="sehuatang.net" size="sm" />
 
-<Route namespace="sehuatang" :data='{"path":"/user/:uid","categories":["multimedia"],"example":"/sehuatang/user/411096","parameters":{"uid":"用户 uid, 可在用户主页 URL 中找到"},"features":{"requireConfig":[{"name":"SEHUATANG_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者文章","maintainers":["JamYiz"],"location":"user.ts"}' :test='undefined' />
+<Route namespace="sehuatang" :data='{"path":"/user/:uid","categories":["multimedia","popular"],"example":"/sehuatang/user/411096","parameters":{"uid":"用户 uid, 可在用户主页 URL 中找到"},"features":{"requireConfig":[{"name":"SEHUATANG_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者文章","maintainers":["JamYiz"],"location":"user.ts"}' :test='undefined' />
 
 ## 听听 FM <Site url="mobile.tingtingfm.com"/>
 
@@ -1125,23 +1149,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ## 喜马拉雅 <Site url="ximalaya.com"/>
 
-### 专辑（不输出 ShowNote） <Site url="ximalaya.com" size="sm" />
+### 专辑 <Site url="ximalaya.com" size="sm" />
 
-<Route namespace="ximalaya" :data='{"path":["/:type/:id/:all?","/:type/:id/:all/:shownote?"],"categories":["multimedia"],"example":"/ximalaya/album/299146","parameters":{"type":"专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到","id":"专辑 id, 可在对应专辑页面的 URL 中找到","all":"是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。"},"features":{"requireConfig":[{"name":"XIMALAYA_TOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"专辑（不输出 ShowNote）","maintainers":["lengthmin","jjeejj","prnake"],"description":"目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。\n\n  :::warning\n  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了\n\n  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**\n  :::","location":"album.ts"}' :test='undefined' />
+<Route namespace="ximalaya" :data='{"path":["/:type/:id/:all/:shownote?"],"categories":["multimedia","popular"],"example":"/ximalaya/album/299146","parameters":{"type":"专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到","id":"专辑 id, 可在对应专辑页面的 URL 中找到","all":"是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。"},"features":{"requireConfig":[{"name":"XIMALAYA_TOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"专辑","maintainers":["lengthmin","jjeejj","prnake"],"description":"目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。\n\n  :::warning\n  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了\n\n  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**\n  :::","location":"album.ts"}' :test='undefined' />
 
-目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。
-
-  :::warning
-  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了
-
-  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**
-  :::
-
-### 专辑（不输出 ShowNote） <Site url="ximalaya.com" size="sm" />
-
-<Route namespace="ximalaya" :data='{"path":["/:type/:id/:all?","/:type/:id/:all/:shownote?"],"categories":["multimedia"],"example":"/ximalaya/album/299146","parameters":{"type":"专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到","id":"专辑 id, 可在对应专辑页面的 URL 中找到","all":"是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。"},"features":{"requireConfig":[{"name":"XIMALAYA_TOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"专辑（不输出 ShowNote）","maintainers":["lengthmin","jjeejj","prnake"],"description":"目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。\n\n  :::warning\n  专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了\n\n  **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**\n  :::","location":"album.ts"}' :test='undefined' />
-
-目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。
+目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。
 
   :::warning
   专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了
@@ -1157,7 +1169,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="xiaoyuzhoufm.com/" size="sm" />
 
-<Route namespace="xiaoyuzhou" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/xiaoyuzhou/podcast/6021f949a789fca4eff4492c","parameters":{"id":"播客id，可以在小宇宙播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaoyuzhoufm.com/podcast/:id"]}],"name":"播客","maintainers":["hondajojo","jtsang4"],"url":"xiaoyuzhoufm.com/","location":"podcast.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoyuzhou" :data='{"path":"/podcast/:id","categories":["multimedia","popular"],"example":"/xiaoyuzhou/podcast/6021f949a789fca4eff4492c","parameters":{"id":"播客id，可以在小宇宙播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaoyuzhoufm.com/podcast/:id"]}],"name":"播客","maintainers":["hondajojo","jtsang4"],"url":"xiaoyuzhoufm.com/","location":"podcast.ts"}' :test='{"code":0}' />
 
 ## 优酷 <Site url="i.youku.com"/>
 

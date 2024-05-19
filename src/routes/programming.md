@@ -228,7 +228,7 @@ GitHub provides some official RSS feeds:
 
 ### Repo Issues <Site url="github.com" size="sm" />
 
-<Route namespace="github" :data='{"path":"/issue/:user/:repo/:state?/:labels?","categories":["programming"],"example":"/github/issue/vuejs/core/all/wontfix","parameters":{"user":"GitHub username","repo":"GitHub repo name","state":"the state of the issues. Can be either `open`, `closed`, or `all`. Default: `open`.","labels":"a list of comma separated label names"},"radar":[{"source":["github.com/:user/:repo/issues","github.com/:user/:repo/issues/:id","github.com/:user/:repo"],"target":"/issue/:user/:repo"}],"name":"Repo Issues","maintainers":["HenryQW","AndreyMZ"],"location":"issue.ts"}' :test='{"code":0}' />
+<Route namespace="github" :data='{"path":"/issue/:user/:repo/:state?/:labels?","categories":["programming","popular"],"example":"/github/issue/vuejs/core/all/wontfix","parameters":{"user":"GitHub username","repo":"GitHub repo name","state":"the state of the issues. Can be either `open`, `closed`, or `all`. Default: `open`.","labels":"a list of comma separated label names"},"radar":[{"source":["github.com/:user/:repo/issues","github.com/:user/:repo/issues/:id","github.com/:user/:repo"],"target":"/issue/:user/:repo"}],"name":"Repo Issues","maintainers":["HenryQW","AndreyMZ"],"location":"issue.ts"}' :test='{"code":0}' />
 
 ### Repo Pull Requests <Site url="github.com" size="sm" />
 

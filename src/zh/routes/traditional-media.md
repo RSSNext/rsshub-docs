@@ -19,7 +19,7 @@
 
 ### RSS <Site url="apnews.com" size="sm" />
 
-<Route namespace="apnews" :data='{"path":"/rss/:rss?","categories":["traditional-media"],"example":"/apnews/rss/business","parameters":{"rss":"Route name from the first segment of the corresponding site, or `index` for the front page(default)."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apnews.com/:rss"],"target":"/rss/:rss"}],"name":"RSS","maintainers":["zoenglinghou","mjysci","TonyRL"],"location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="apnews" :data='{"path":"/rss/:rss?","categories":["traditional-media","popular"],"example":"/apnews/rss/business","parameters":{"rss":"Route name from the first segment of the corresponding site, or `index` for the front page(default)."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apnews.com/:rss"],"target":"/rss/:rss"}],"name":"RSS","maintainers":["zoenglinghou","mjysci","TonyRL"],"location":"rss.ts"}' :test='{"code":0}' />
 
 ### Topics <Site url="apnews.com" size="sm" />
 
