@@ -134,7 +134,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url="learnku.com" size="sm" />
 
-<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 招聘 | 翻译         | 问答 | 链接  |
 | ---- | ------------ | ---- | ----- |
@@ -166,7 +166,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分区帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected [ …(21) ] to not include &#39;https://nga.178.com/read.php?tid=4018…&#39;"}' />
+<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected [ …(10) ] to not include &#39;https://nga.178.com/read.php?tid=4020…&#39;"}' />
 
 ### 帖子 <Site url="bbs.nga.cn" size="sm" />
 
@@ -378,7 +378,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 板块 <Site url="right.com.cn" size="sm" />
 
-<Route namespace="right" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/right/forum/31","parameters":{"id":"板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板块","maintainers":["nczitzk"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="right" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/right/forum/31","parameters":{"id":"板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板块","maintainers":["nczitzk"],"location":"forum.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## 虎扑 <Site url=".hupu.com"/>
 
@@ -416,7 +416,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/bbs/:id?/:order?","/bxj/:id?/:order?"],"categories":["bbs"],"example":"/hupu/bbs/topic-daily","parameters":{"id":"编号，可在对应社区 URL 中找到，默认为#步行街主干道","order":"排序方式，可选 `0` 即 最新回复 或 `1` 即 最新发布，默认为最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"社区","maintainers":["LogicJake","nczitzk"],"description":":::tip\n  更多社区参见 [社区](https://bbs.hupu.com)\n  :::","location":"bbs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hupu" :data='{"path":["/bbs/:id?/:order?","/bxj/:id?/:order?"],"categories":["bbs"],"example":"/hupu/bbs/topic-daily","parameters":{"id":"编号，可在对应社区 URL 中找到，默认为#步行街主干道","order":"排序方式，可选 `0` 即 最新回复 或 `1` 即 最新发布，默认为最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"社区","maintainers":["LogicJake","nczitzk"],"description":":::tip\n  更多社区参见 [社区](https://bbs.hupu.com)\n  :::","location":"bbs.ts"}' :test='{"code":0}' />
 
 :::tip
   更多社区参见 [社区](https://bbs.hupu.com)
@@ -544,7 +544,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 发现 <Site url="pincong.rocks" size="sm" />
 
-<Route namespace="pincong" :data='{"path":"/category/:category?/:sort?","categories":["bbs"],"example":"/pincong/category/1/new","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部","sort":"排序方式，参数可见下表，默认为推荐"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"发现","maintainers":["zphw"],"description":"| 最新 | 推荐      | 热门 |\n| ---- | --------- | ---- |\n| new  | recommend | hot  |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pincong" :data='{"path":"/category/:category?/:sort?","categories":["bbs"],"example":"/pincong/category/1/new","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部","sort":"排序方式，参数可见下表，默认为推荐"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"发现","maintainers":["zphw"],"description":"| 最新 | 推荐      | 热门 |\n| ---- | --------- | ---- |\n| new  | recommend | hot  |","location":"index.ts"}' :test='{"code":0}' />
 
 | 最新 | 推荐      | 热门 |
 | ---- | --------- | ---- |
@@ -552,7 +552,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 精选 <Site url="pincong.rocks" size="sm" />
 
-<Route namespace="pincong" :data='{"path":"/hot/:category?","categories":["bbs"],"example":"/pincong/hot","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"精选","maintainers":["zphw"],"location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pincong" :data='{"path":"/hot/:category?","categories":["bbs"],"example":"/pincong/hot","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"精选","maintainers":["zphw"],"location":"hot.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## 司机社 <Site url="xsijishe.com"/>
 

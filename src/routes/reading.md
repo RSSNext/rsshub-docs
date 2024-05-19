@@ -10,7 +10,7 @@
 
 ### Book List <Site url="freecomputerbooks.com" size="sm" />
 
-<Route namespace="freecomputerbooks" :data='{"path":"/:category?","name":"Book List","url":"freecomputerbooks.com","maintainers":["cubroe"],"example":"/freecomputerbooks/compscAlgorithmBooks","parameters":{"category":"A category id., which should be the HTML file name (but **without** the `.html` suffix) in the URL path of a book list page."},"categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["freecomputerbooks.com/","freecomputerbooks.com/index.html"],"target":""}],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="freecomputerbooks" :data='{"path":"/:category?","name":"Book List","url":"freecomputerbooks.com","maintainers":["cubroe"],"example":"/freecomputerbooks/compscAlgorithmBooks","parameters":{"category":"A category id., which should be the HTML file name (but **without** the `.html` suffix) in the URL path of a book list page."},"categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["freecomputerbooks.com/","freecomputerbooks.com/index.html"],"target":""}],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## hameln <Site url="syosetu.org"/>
 
@@ -111,7 +111,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### Series <Site url="yenpress.com" size="sm" />
 
-<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='{"code":1,"message":"expected -8119537937 to be greater than -432000000"}' />
+<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='{"code":1,"message":"expected -8033429613 to be greater than -432000000"}' />
 
 ## 爱思想 <Site url="aisixiang.com"/>
 
@@ -137,14 +137,14 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 思想库（专栏） <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"expected 314043286559 to be less than 311040000000"}' />
 
 | 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 
 ### 专题 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 316947826960 to be less than 311040000000"}' />
+<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 317034287779 to be less than 311040000000"}' />
 
 :::tip
   更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)
