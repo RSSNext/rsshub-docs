@@ -164,7 +164,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Journal List <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Latest Research <Site url="nature.com" size="sm" />
 
@@ -379,11 +379,11 @@ Return results from 2020
 
 ### 期刊 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 网络首发 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/journals/debut/:name","categories":["journal"],"example":"/cnki/journals/debut/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"网络首发","maintainers":["Fatpandac"],"location":"debut.ts"}' :test='{"code":0}' />
+<Route namespace="cnki" :data='{"path":"/journals/debut/:name","categories":["journal"],"example":"/cnki/journals/debut/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"网络首发","maintainers":["Fatpandac"],"location":"debut.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 作者期刊文献 <Site url="navi.cnki.net" size="sm" />
 
