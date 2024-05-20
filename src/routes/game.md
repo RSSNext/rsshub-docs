@@ -590,6 +590,14 @@ It can also access community hub contents that require a logged-in account.
 News data from [https://warthunder.com/en/news/](https://warthunder.com/en/news/)
   The year, month and day provided under UTC time zone are the same as the official website, so please ignore the specific time!!!
 
+## World of Warships <Site url="worldofwarships.com"/>
+
+Tip: use proxy if necessary.
+
+### Development Blog <Site url="worldofwarships.com" size="sm" />
+
+<Route namespace="worldofwarships" :data='{"path":"/devblog","categories":["game"],"example":"/worldofwarships/devblog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.worldofwarships.com"],"target":"/devblog"}],"name":"Development Blog","maintainers":["SinCerely023"],"location":"devblog.ts"}' :test='undefined' />
+
 ## 电玩巴士 TGBUS <Site url="tgbus.com"/>
 
 ### 文章列表 <Site url="tgbus.com" size="sm" />
