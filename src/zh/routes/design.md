@@ -52,7 +52,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### Blog <Site url="cn.eagle.cool/blog" size="sm" />
 
-<Route namespace="eagle" :data='{"path":"/blog/:cate?/:language?","categories":["design"],"example":"/eagle/blog/en","parameters":{"cate":"Category, get by URL, `all` by default","language":"Language, `cn`, `tw`, `en`, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.eagle.cool/blog"],"target":"/blog"}],"name":"Blog","maintainers":["Fatpandac"],"url":"cn.eagle.cool/blog","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="eagle" :data='{"path":"/blog/:cate?/:language?","categories":["design"],"example":"/eagle/blog/en","parameters":{"cate":"Category, get by URL, `all` by default","language":"Language, `cn`, `tw`, `en`, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.eagle.cool/blog"],"target":"/blog"}],"name":"Blog","maintainers":["Fatpandac"],"url":"cn.eagle.cool/blog","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Google <Site url="www.google.com"/>
 
@@ -100,7 +100,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 最新 H5 <Site url="iguoguo.net" size="sm" />
 
-<Route namespace="iguoguo" :data='{"path":"/html5","categories":["design"],"example":"/iguoguo/html5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新 H5","maintainers":["yuxinliu-alex"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="iguoguo" :data='{"path":"/html5","categories":["design"],"example":"/iguoguo/html5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新 H5","maintainers":["yuxinliu-alex"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## 站酷 <Site url="www.zcool.com.cn"/>
 
@@ -226,7 +226,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 用户作品 <Site url="www.zcool.com.cn" size="sm" />
 
-<Route namespace="zcool" :data='{"path":"/user/:uid","categories":["design"],"example":"/zcool/user/baiyong","parameters":{"uid":"个性域名前缀或者用户ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zcool.com.cn/u/:id"],"target":"/user/:id"}],"name":"用户作品","description":"  例如:\n\n    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`\n\n    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`","maintainers":["junbaor"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="zcool" :data='{"path":"/user/:uid","categories":["design"],"example":"/zcool/user/baiyong","parameters":{"uid":"个性域名前缀或者用户ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zcool.com.cn/u/:id"],"target":"/user/:id"}],"name":"用户作品","description":"  例如:\n\n    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`\n\n    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`","maintainers":["junbaor"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
   例如:
 
@@ -236,7 +236,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 作品总榜单 <Site url="www.zcool.com.cn" size="sm" />
 
-<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design"],"example":"/zcool/top/design","parameters":{"type":"推荐类型,详见下面的表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"description":"榜单类型\n\n  | design   | article  |\n  | -------- | -------- |\n  | 作品榜单 | 文章榜单 |","location":"top.ts"}' :test='{"code":0}' />
+<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design"],"example":"/zcool/top/design","parameters":{"type":"推荐类型,详见下面的表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"description":"榜单类型\n\n  | design   | article  |\n  | -------- | -------- |\n  | 作品榜单 | 文章榜单 |","location":"top.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 榜单类型
 

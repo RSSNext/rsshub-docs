@@ -148,7 +148,7 @@ Return results from 2020
 
 ### Journal <Site url="www.mdpi.com" size="sm" />
 
-<Route namespace="mdpi" :data='{"path":"/:journal","categories":["journal"],"example":"/mdpi/analytica","parameters":{"journal":"Journal Name, get it from the journal homepage"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mdpi.com/journal/:journal"]}],"name":"Journal","maintainers":["Derekmini"],"location":"journal.ts"}' :test='{"code":0}' />
+<Route namespace="mdpi" :data='{"path":"/:journal","categories":["journal"],"example":"/mdpi/analytica","parameters":{"journal":"Journal Name, get it from the journal homepage"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mdpi.com/journal/:journal"]}],"name":"Journal","maintainers":["Derekmini"],"location":"journal.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Nature Journal <Site url="nature.com"/>
 
@@ -164,7 +164,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Journal List <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Latest Research <Site url="nature.com" size="sm" />
 
@@ -241,7 +241,7 @@ Return results from 2020
 
 ### Journal <Site url="pubs.rsc.org" size="sm" />
 
-<Route namespace="rsc" :data='{"path":"/journal/:id/:category?","categories":["journal"],"example":"/rsc/journal/ta","parameters":{"id":"Journal id, can be found in URL","category":"Category, see below, All Recent Articles by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal","maintainers":["nczitzk"],"description":":::tip\n  All journals at [Current journals](https://pubs.rsc.org/en/journals)\n  :::\n\n  | All Recent Articles | Advance Articles |\n  | ------------------- | ---------------- |\n  | allrecentarticles   | advancearticles  |","location":"journal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="rsc" :data='{"path":"/journal/:id/:category?","categories":["journal"],"example":"/rsc/journal/ta","parameters":{"id":"Journal id, can be found in URL","category":"Category, see below, All Recent Articles by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal","maintainers":["nczitzk"],"description":":::tip\n  All journals at [Current journals](https://pubs.rsc.org/en/journals)\n  :::\n\n  | All Recent Articles | Advance Articles |\n  | ------------------- | ---------------- |\n  | allrecentarticles   | advancearticles  |","location":"journal.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 :::tip
   All journals at [Current journals](https://pubs.rsc.org/en/journals)
@@ -255,7 +255,7 @@ Return results from 2020
 
 ### Blogs <Site url="science.org" size="sm" />
 
-<Route namespace="science" :data='{"path":"/blogs/:name?","categories":["journal"],"example":"/science/blogs/pipeline","parameters":{"name":"Short name for the blog, get this from the url. Defaults to pipeline"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/blogs/:name"],"target":"/blogs/:name"}],"name":"Blogs","maintainers":["TomHodson"],"description":"To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor&#39;s blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.","location":"blogs.ts"}' :test='{"code":0}' />
+<Route namespace="science" :data='{"path":"/blogs/:name?","categories":["journal"],"example":"/science/blogs/pipeline","parameters":{"name":"Short name for the blog, get this from the url. Defaults to pipeline"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/blogs/:name"],"target":"/blogs/:name"}],"name":"Blogs","maintainers":["TomHodson"],"description":"To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor&#39;s blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.","location":"blogs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor's blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.
 
@@ -345,7 +345,7 @@ Sorting
 
 ### Current Issue <Site url="journals.uchicago.edu" size="sm" />
 
-<Route namespace="uchicago" :data='{"path":"/journals/current/:journal","categories":["journal"],"example":"/uchicago/journals/current/jpe","parameters":{"journal":"Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["journals.uchicago.edu/toc/:journal/current","journals.uchicago.edu/journal/:journal"]}],"name":"Current Issue","maintainers":["TonyRL"],"location":"current.ts"}' :test='{"code":0}' />
+<Route namespace="uchicago" :data='{"path":"/journals/current/:journal","categories":["journal"],"example":"/uchicago/journals/current/jpe","parameters":{"journal":"Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["journals.uchicago.edu/toc/:journal/current","journals.uchicago.edu/journal/:journal"]}],"name":"Current Issue","maintainers":["TonyRL"],"location":"current.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## USENIX <Site url="usenix.org"/>
 
@@ -379,7 +379,7 @@ Return results from 2020
 
 ### 期刊 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 网络首发 <Site url="navi.cnki.net" size="sm" />
 
