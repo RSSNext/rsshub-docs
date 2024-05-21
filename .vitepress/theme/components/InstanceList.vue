@@ -112,6 +112,11 @@ const instances = [{
     location: '🇺🇸',
     maintainer: 'Viki',
     maintainerUrl: 'https://github.com/vikiboss',
+  }, {
+    url: 'https://rss.littlebaby.lol/rsshub',
+    location: '🇺🇸',
+    maintainer: 'yuanhong',
+    maintainerUrl: 'https://github.com/yuanhong078',
   }
 ]
 
