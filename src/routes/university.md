@@ -1560,11 +1560,18 @@ author 列表：
 
   参数与来源页面对应规则为：`https://${type}.shiep.edu.cn/${id}/list.htm`
 
-## 上海外国语大学 <Site url="news.shisu.edu.cn"/>
+## 上海外国语大学 <Site url="shisu.edu.cn"/>
 
-### 上外新闻 <Site url="news.shisu.edu.cn" size="sm" />
+### SISU TODAY | FEATURED STORIES <Site url="shisu.edu.cn" size="sm" />
 
-<Route namespace="shisu" :data='{"path":"/news/:category","categories":["university"],"example":"/shisu/news/notice","parameters":{"category":"新闻的分类可根据自己的需要选择，首页为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.shisu.edu.cn/:category/index.html"]}],"name":"上外新闻","maintainers":["Duuckjing"],"description":"| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n  | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n  | news | gazette | research- | academics- | international | campus | people | multimedia | notice |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="shisu" :data='{"path":"/en/:section","categories":["university"],"example":"/shisu/en/news","parameters":{"section":"The name of resources"},"radar":[{"source":["en.shisu.edu.cn/resources/:section/"],"target":"/en/:section"}],"name":"SISU TODAY | FEATURED STORIES","maintainers":["Duuckjing"],"description":"- features: Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.\n  - news: SISU TODAY English site.","location":"en.ts"}' :test='undefined' />
+
+- features: Read a series of in-depth stories about SISU faculty, students, alumni and beyond campus.
+  - news: SISU TODAY English site.
+
+### 上外新闻 <Site url="shisu.edu.cn" size="sm" />
+
+<Route namespace="shisu" :data='{"path":"/news/:section","categories":["university"],"example":"/shisu/news/news","parameters":{"section":"主站的新闻类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.shisu.edu.cn/:section/index.html"],"target":"/news/:section"}],"name":"上外新闻","maintainers":["Duuckjing"],"description":"| 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |\n  | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |\n  | news | gazette | research- | academics- | international | campus | people | multimedia | notice |","location":"news.ts"}' :test='undefined' />
 
 | 首页 | 特稿    | 学术      | 教学       | 国际          | 校园   | 人物   | 视讯       | 公告   |
   | ---- | ------- | --------- | ---------- | ------------- | ------ | ------ | ---------- | ------ |
