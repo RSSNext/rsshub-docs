@@ -735,32 +735,6 @@ Tip: use proxy if necessary.
   | ------ | ---- | ------ | -------- |
   | latest | news | notice | activity |
 
-## 明日方舟 <Site url="ak.arknights.jp"/>
-
-### 游戏内公告 <Site url="ak.arknights.jp" size="sm" />
-
-<Route namespace="arknights" :data='{"path":"/announce/:platform?/:group?","categories":["game"],"example":"/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -10367459845 to be greater than -432000000"}' />
-
-平台
-
-  |  安卓服 | iOS 服 |   B 服   |
-  | :-----: | :----: | :------: |
-  | Android |   IOS  | Bilibili |
-
-  分组
-
-  | 全部 | 系统公告 | 活动公告 |
-  | :--: | :------: | :------: |
-  |  ALL |  SYSTEM  | ACTIVITY |
-
-### 游戏公告与新闻 <Site url="ak-conf.hypergryph.com/*" size="sm" />
-
-<Route namespace="arknights" :data='{"path":"/news","categories":["game"],"example":"/arknights/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ak-conf.hypergryph.com/*"]}],"name":"游戏公告与新闻","maintainers":["Astrian"],"url":"ak-conf.hypergryph.com/*","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### アークナイツ (日服新闻) <Site url="ak.arknights.jp/news" size="sm" />
-
-<Route namespace="arknights" :data='{"path":"/japan","categories":["game"],"example":"/arknights/japan","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ak.arknights.jp/news","ak.arknights.jp/"]}],"name":"アークナイツ (日服新闻)","maintainers":["ofyark"],"url":"ak.arknights.jp/news","location":"japan.ts"}' :test='{"code":0}' />
-
 ## 其乐 <Site url="keylol.com"/>
 
 ### 论坛 <Site url="keylol.com" size="sm" />
@@ -874,6 +848,37 @@ Tip: use proxy if necessary.
 | 活动  | 资讯 | 系统   | 电竞   | 版本资讯 | 战棋资讯 |
   | ----- | ---- | ------ | ------ | -------- | -------- |
   | event | info | system | esport | patch    | TFTpatch |
+
+## 鹰角网络 <Site url="www.hypergryph.com"/>
+
+### 明日方舟 - 游戏内公告 <Site url="www.hypergryph.com" size="sm" />
+
+<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='undefined' />
+
+平台
+
+  |  安卓服 | iOS 服 |   B 服   |
+  | :-----: | :----: | :------: |
+  | Android |   IOS  | Bilibili |
+
+  分组
+
+  | 全部 | 系统公告 | 活动公告 |
+  | :--: | :------: | :------: |
+  |  ALL |  SYSTEM  | ACTIVITY |
+
+### 明日方舟 - 游戏公告与新闻 <Site url="ak-conf.hypergryph.com/news" size="sm" />
+
+<Route namespace="hypergryph" :data='{"path":"/arknights/news/:group?","categories":["game"],"example":"/hypergryph/arknights/news","parameters":{"group":"分组，默认为 `ALL`"},"radar":[{"source":["ak-conf.hypergryph.com/news"]}],"name":"明日方舟 - 游戏公告与新闻","maintainers":["Astrian"],"url":"ak-conf.hypergryph.com/news","description":"\n  | 全部 | 最新   | 公告         | 活动     | 新闻 |\n  | ---- | ------ | ------------ | -------- | ---- |\n  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |","location":"news.ts"}' :test='undefined' />
+
+
+  | 全部 | 最新   | 公告         | 活动     | 新闻 |
+  | ---- | ------ | ------------ | -------- | ---- |
+  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |
+
+### アークナイツ (日服新闻) <Site url="ak.arknights.jp/news" size="sm" />
+
+<Route namespace="hypergryph" :data='{"path":"/arknights/japan","categories":["game"],"example":"/hypergryph/arknights/japan","radar":[{"source":["ak.arknights.jp/news","ak.arknights.jp/"]}],"name":"アークナイツ (日服新闻)","maintainers":["ofyark"],"url":"ak.arknights.jp/news","location":"japan.ts"}' :test='undefined' />
 
 ## 游戏星辰 <Site url="www.2023game.com"/>
 
