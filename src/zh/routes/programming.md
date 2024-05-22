@@ -216,7 +216,7 @@ GitHub provides some official RSS feeds:
 
 ### Notifications <Site url="github.com/notifications" size="sm" />
 
-<Route namespace="github" :data='{"path":"/notifications","categories":["programming"],"example":"/github/notifications","parameters":{},"features":{"requireConfig":[{"name":"GITHUB_ACCESS_TOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/notifications"]}],"name":"Notifications","maintainers":["zhzy0077"],"url":"github.com/notifications","location":"notifications.ts"}' :test='undefined' />
+<Route namespace="github" :data='{"path":"/notifications","categories":["programming"],"example":"/github/notifications","features":{"requireConfig":[{"name":"GITHUB_ACCESS_TOKEN","description":""}]},"radar":[{"source":["github.com/notifications"]}],"name":"Notifications","maintainers":["zhzy0077"],"url":"github.com/notifications","location":"notifications.ts"}' :test='undefined' />
 
 ### Repo Branches <Site url="github.com" size="sm" />
 
