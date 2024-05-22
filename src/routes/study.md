@@ -16,7 +16,7 @@
 
 ### Institute of Law <Site url="iolaw.cssn.cn" size="sm" />
 
-<Route namespace="cssn" :data='{"path":"/iolaw/:section?","categories":["study"],"example":"/cssn/iolaw/zxzp","parameters":{"section":"Section ID, can be found in the URL. For example, the Section ID of URL `http://iolaw.cssn.cn/zxzp/` is `zxzp`. The default value is `zxzp`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Institute of Law","maintainers":["HankChow"],"location":"iolaw.ts"}' :test='{"code":0}' />
+<Route namespace="cssn" :data='{"path":"/iolaw/:section?","categories":["study"],"example":"/cssn/iolaw/zxzp","parameters":{"section":"Section ID, can be found in the URL. For example, the Section ID of URL `http://iolaw.cssn.cn/zxzp/` is `zxzp`. The default value is `zxzp`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Institute of Law","maintainers":["HankChow"],"location":"iolaw.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## DBLP <Site url="dblp.org"/>
 
@@ -34,7 +34,7 @@
 
 ### Public Maps <Site url="mindmeister.com" size="sm" />
 
-<Route namespace="mindmeister" :data='{"path":"/:category?/:language?","categories":["study"],"example":"/mindmeister/mind-map-examples","parameters":{"category":"Categories, see the table below, `mind-map-examples` by default","language":"Languages, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Public Maps","maintainers":["TonyRL"],"description":"| Categories    | parameter         |\n  | ------------- | ----------------- |\n  | Featured Map  | mind-map-examples |\n  | Business      | business          |\n  | Design        | design            |\n  | Education     | education         |\n  | Entertainment | entertainment     |\n  | Life          | life              |\n  | Marketing     | marketing         |\n  | Productivity  | productivity      |\n  | Summaries     | summaries         |\n  | Technology    | technology        |\n  | Other         | other             |\n\n  | Languages  | parameter |\n  | ---------- | --------- |\n  | English    | en        |\n  | Deutsch    | de        |\n  | Français   | fr        |\n  | Español    | es        |\n  | Português  | pt        |\n  | Nederlands | nl        |\n  | Dansk      | da        |\n  | Русский    | ru        |\n  | 日本語     | ja        |\n  | Italiano   | it        |\n  | 简体中文   | zh        |\n  | 한국어     | ko        |\n  | Other      | other     |","location":"example.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="mindmeister" :data='{"path":"/:category?/:language?","categories":["study"],"example":"/mindmeister/mind-map-examples","parameters":{"category":"Categories, see the table below, `mind-map-examples` by default","language":"Languages, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Public Maps","maintainers":["TonyRL"],"description":"| Categories    | parameter         |\n  | ------------- | ----------------- |\n  | Featured Map  | mind-map-examples |\n  | Business      | business          |\n  | Design        | design            |\n  | Education     | education         |\n  | Entertainment | entertainment     |\n  | Life          | life              |\n  | Marketing     | marketing         |\n  | Productivity  | productivity      |\n  | Summaries     | summaries         |\n  | Technology    | technology        |\n  | Other         | other             |\n\n  | Languages  | parameter |\n  | ---------- | --------- |\n  | English    | en        |\n  | Deutsch    | de        |\n  | Français   | fr        |\n  | Español    | es        |\n  | Português  | pt        |\n  | Nederlands | nl        |\n  | Dansk      | da        |\n  | Русский    | ru        |\n  | 日本語     | ja        |\n  | Italiano   | it        |\n  | 简体中文   | zh        |\n  | 한국어     | ko        |\n  | Other      | other     |","location":"example.ts"}' :test='{"code":0}' />
 
 | Categories    | parameter         |
   | ------------- | ----------------- |
@@ -80,7 +80,7 @@
 
 ### Works List <Site url="orcid.org" size="sm" />
 
-<Route namespace="orcid" :data='{"path":"/:id","categories":["study"],"example":"/orcid/0000-0002-4731-9700","parameters":{"id":"Open Researcher and Contributor ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Works List","maintainers":["OrangeEd1t"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="orcid" :data='{"path":"/:id","categories":["study"],"example":"/orcid/0000-0002-4731-9700","parameters":{"id":"Open Researcher and Contributor ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Works List","maintainers":["OrangeEd1t"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## The Korea Institute of Marine Law <Site url="kimlaw.or.kr"/>
 
@@ -126,7 +126,7 @@
 
 ### 新闻 <Site url="sdzk.cn" size="sm" />
 
-<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。
@@ -184,7 +184,7 @@
 
 ### 栏目 <Site url="cste.org.cn" size="sm" />
 
-<Route namespace="camchina" :data='{"path":"/:id?","categories":["study"],"example":"/camchina","parameters":{"id":"分类，见下表，默认为 1，即新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cste.org.cn/categories/:id","cste.org.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"description":"| 新闻 | 通告栏 |\n  | ---- | ------ |\n  | 1    | 2      |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="camchina" :data='{"path":"/:id?","categories":["study"],"example":"/camchina","parameters":{"id":"分类，见下表，默认为 1，即新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cste.org.cn/categories/:id","cste.org.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"description":"| 新闻 | 通告栏 |\n  | ---- | ------ |\n  | 1    | 2      |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 新闻 | 通告栏 |
   | ---- | ------ |
