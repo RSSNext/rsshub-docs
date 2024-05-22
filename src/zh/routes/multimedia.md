@@ -321,6 +321,10 @@
 新增 `second` 参数，用于选择下载地址二（地址二不可用或者不填都默认地址一），用法: `/domp4/detail/LBTANI22222I?second=1`。
 :::
 
+### 最近更新的电源BT列表 <Site url="domp4.cc/" size="sm" />
+
+<Route namespace="domp4" :data='{"path":"/latest_movie_bt","categories":["multimedia"],"example":"/domp4/latest_movie_bt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["domp4.cc/","domp4.cc/custom/update.html"]}],"name":"最近更新的电源BT列表","maintainers":["xianghuawe"],"url":"domp4.cc/","location":"latest-movie-bt.ts"}' :test='undefined' />
+
 ### 最近更新 <Site url="domp4.cc/" size="sm" />
 
 <Route namespace="domp4" :data='{"path":"/latest/:type?","categories":["multimedia"],"example":"/domp4/latest/vod","parameters":{"type":"`vod` 代表电影，`tv` 代表电视剧，默认 vod"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["domp4.cc/","domp4.cc/custom/update.html"]}],"name":"最近更新","maintainers":["savokiss"],"url":"domp4.cc/","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
