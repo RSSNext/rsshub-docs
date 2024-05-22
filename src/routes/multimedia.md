@@ -831,6 +831,12 @@ When `mediaType` is `tv`, `sheet` should be:
 
 <Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia"],"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":0}' />
 
+## 阿里云盘 <Site url="www.alipan.com"/>
+
+### 文件列表 <Site url="www.alipan.com/s" size="sm" />
+
+<Route namespace="alipan" :data='{"path":"/files/:share_id/:parent_file_id?","example":"/alipan/files/jjtKEgXJAtC/64a957744876479ab17941b29d1289c6ebdd71ef","parameters":{"share_id":"分享 id，可以从分享页面 URL 中找到","parent_file_id":"文件夹 id，可以从文件夹页面 URL 中找到"},"radar":[{"source":["www.alipan.com/s/:share_id/folder/:parent_file_id","www.alipan.com/s/:share_id"]}],"name":"文件列表","maintainers":["DIYgod"],"url":"www.alipan.com/s","location":"files.ts"}' :test='undefined' />
+
 ## 爱奇艺 <Site url="iq.com"/>
 
 ### 剧集 <Site url="iq.com" size="sm" />
