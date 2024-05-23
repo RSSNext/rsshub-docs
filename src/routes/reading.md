@@ -192,6 +192,12 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 <Route namespace="tongli" :data='{"path":"/news/:type","categories":["reading"],"example":"/tongli/news/6","parameters":{"type":"分類，可以在“新聞”鏈接中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新聞","maintainers":["CokeMine"],"location":"news.ts"}' :test='{"code":0}' />
 
+## 番茄小说 <Site url="fanqienovel.com"/>
+
+### 小说更新 <Site url="fanqienovel.com" size="sm" />
+
+<Route namespace="fanqienovel" :data='{"path":"/page/:bookId","example":"/fanqienovel/page/6621052928482348040","parameters":{"bookId":"小说 ID，可在 URL 中找到"},"maintainers":["TonyRL"],"name":"小说更新","radar":[{"source":["fanqienovel.com/page/:bookId"]}],"location":"page.ts"}' :test='undefined' />
+
 ## 欢乐书客 <Site url="hbooker.com"/>
 
 ### 章节 <Site url="hbooker.com" size="sm" />

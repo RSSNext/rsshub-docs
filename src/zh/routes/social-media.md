@@ -385,9 +385,9 @@
 
 <Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
 
-## fanbox <Site url="https://www.fanbox.cc"/>
+## fanbox <Site url="www.fanbox.cc"/>
 
-### Creator <Site url="https://www.fanbox.cc" size="sm" />
+### Creator <Site url="www.fanbox.cc" size="sm" />
 
 <Route namespace="fanbox" :data='{"path":"/:creator","categories":["social-media"],"example":"/fanbox/official","parameters":{"creator":"fanbox user name"},"maintainers":["KarasuShin"],"name":"Creator","features":{"requireConfig":[{"name":"FANBOX_SESSION_ID","description":"Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID","optional":true}]},"location":"index.ts"}' :test='{"code":0}' />
 
