@@ -447,6 +447,12 @@ Language:
   | 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |
   | Layer2 | NFT  | DAO     | 百科       |      |
 
+## 韭研公社 <Site url="www.jiuyangongshe.com"/>
+
+### 社群 <Site url="www.jiuyangongshe.com" size="sm" />
+
+<Route namespace="jiuyangongshe" :data='{"path":"/community","example":"/jiuyangongshe/community","maintainers":["TonyRL"],"name":"社群","radar":[{"source":["www.jiuyangongshe.com"]}],"location":"community.ts"}' :test='undefined' />
+
 ## 老虎社区 <Site url="laohu8.com"/>
 
 ### 个人主页 <Site url="laohu8.com" size="sm" />
