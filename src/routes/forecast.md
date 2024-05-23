@@ -4,7 +4,7 @@
 
 ### News <Site url="bmkg.go.id/" size="sm" />
 
-<Route namespace="bmkg" :data='{"path":"/news","categories":["forecast"],"example":"/bmkg/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bmkg.go.id/","bmkg.go.id/berita"]}],"name":"News","maintainers":["Shinanory"],"url":"bmkg.go.id/","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="bmkg" :data='{"path":"/news","categories":["forecast"],"example":"/bmkg/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bmkg.go.id/","bmkg.go.id/berita"]}],"name":"News","maintainers":["Shinanory"],"url":"bmkg.go.id/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Recent Earthquakes <Site url="bmkg.go.id/" size="sm" />
 
@@ -126,7 +126,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 大连市 <Site url="swj.dl.gov.cn/col/col4296/index.html" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/dalian","categories":["forecast"],"example":"/tingshuitz/dalian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swj.dl.gov.cn/col/col4296/index.html","swj.dl.gov.cn/"]}],"name":"大连市","maintainers":["DIYgod"],"url":"swj.dl.gov.cn/col/col4296/index.html","location":"dalian.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tingshuitz" :data='{"path":"/dalian","categories":["forecast"],"example":"/tingshuitz/dalian","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["swj.dl.gov.cn/col/col4296/index.html","swj.dl.gov.cn/"]}],"name":"大连市","maintainers":["DIYgod"],"url":"swj.dl.gov.cn/col/col4296/index.html","location":"dalian.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 东莞市 <Site url="swj.dl.gov.cn" size="sm" />
 
@@ -134,7 +134,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广州市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/guangzhou","categories":["forecast"],"example":"/tingshuitz/guangzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州市","maintainers":["xyqfer"],"location":"guangzhou.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tingshuitz" :data='{"path":"/guangzhou","categories":["forecast"],"example":"/tingshuitz/guangzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州市","maintainers":["xyqfer"],"location":"guangzhou.ts"}' :test='{"code":0}' />
 
 ### 杭州市 <Site url="www.hzwgc.com/public/stop_the_water" size="sm" />
 
@@ -142,7 +142,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 南京市 <Site url="jlwater.com/portal/10000013" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/nanjing","categories":["forecast"],"example":"/tingshuitz/nanjing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlwater.com/portal/10000013","jlwater.com/"]}],"name":"南京市","maintainers":["ocleo1"],"url":"jlwater.com/portal/10000013","location":"nanjing.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tingshuitz" :data='{"path":"/nanjing","categories":["forecast"],"example":"/tingshuitz/nanjing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlwater.com/portal/10000013","jlwater.com/"]}],"name":"南京市","maintainers":["ocleo1"],"url":"jlwater.com/portal/10000013","location":"nanjing.ts"}' :test='{"code":0}' />
 
 ### 深圳市 <Site url="sz-water.com.cn/*" size="sm" />
 
@@ -164,7 +164,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 长沙市 <Site url="swj.dl.gov.cn" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/changsha/:channelId?","categories":["forecast"],"example":"/tingshuitz/changsha/78","parameters":{"channelId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"长沙市","maintainers":["shansing"],"description":"可能仅限于中国大陆服务器访问，以实际情况为准。\n\n  | channelId | 分类     |\n  | --------- | -------- |\n  | 78        | 计划停水 |\n  | 157       | 抢修停水 |","location":"changsha.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tingshuitz" :data='{"path":"/changsha/:channelId?","categories":["forecast"],"example":"/tingshuitz/changsha/78","parameters":{"channelId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"长沙市","maintainers":["shansing"],"description":"可能仅限于中国大陆服务器访问，以实际情况为准。\n\n  | channelId | 分类     |\n  | --------- | -------- |\n  | 78        | 计划停水 |\n  | 157       | 抢修停水 |","location":"changsha.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 可能仅限于中国大陆服务器访问，以实际情况为准。
 

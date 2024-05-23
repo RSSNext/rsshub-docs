@@ -28,7 +28,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 分类 <Site url="bossdesign.cn" size="sm" />
 
-<Route namespace="bossdesign" :data='{"path":"/:category?","categories":["design"],"example":"/bossdesign","parameters":{"category":"分类，可在对应分类页 URL 中找到，留空为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["TonyRL"],"description":"| Boss 笔记 | 电脑日志        | 素材资源         | 设计师神器      | 设计教程        | 设计资讯            |\n  | --------- | --------------- | ---------------- | --------------- | --------------- | ------------------- |\n  | note      | computer-skills | design-resources | design-software | design-tutorial | design_information |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bossdesign" :data='{"path":"/:category?","categories":["design"],"example":"/bossdesign","parameters":{"category":"分类，可在对应分类页 URL 中找到，留空为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["TonyRL"],"description":"| Boss 笔记 | 电脑日志        | 素材资源         | 设计师神器      | 设计教程        | 设计资讯            |\n  | --------- | --------------- | ---------------- | --------------- | --------------- | ------------------- |\n  | note      | computer-skills | design-resources | design-software | design-tutorial | design_information |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Boss 笔记 | 电脑日志        | 素材资源         | 设计师神器      | 设计教程        | 设计资讯            |
   | --------- | --------------- | ---------------- | --------------- | --------------- | ------------------- |
@@ -226,7 +226,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 用户作品 <Site url="www.zcool.com.cn" size="sm" />
 
-<Route namespace="zcool" :data='{"path":"/user/:uid","categories":["design"],"example":"/zcool/user/baiyong","parameters":{"uid":"个性域名前缀或者用户ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zcool.com.cn/u/:id"],"target":"/user/:id"}],"name":"用户作品","description":"  例如:\n\n    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`\n\n    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`","maintainers":["junbaor"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="zcool" :data='{"path":"/user/:uid","categories":["design"],"example":"/zcool/user/baiyong","parameters":{"uid":"个性域名前缀或者用户ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zcool.com.cn/u/:id"],"target":"/user/:id"}],"name":"用户作品","description":"  例如:\n\n    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`\n\n    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`","maintainers":["junbaor"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
   例如:
 
@@ -236,7 +236,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### 作品总榜单 <Site url="www.zcool.com.cn" size="sm" />
 
-<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design"],"example":"/zcool/top/design","parameters":{"type":"推荐类型,详见下面的表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"description":"榜单类型\n\n  | design   | article  |\n  | -------- | -------- |\n  | 作品榜单 | 文章榜单 |","location":"top.ts"}' :test='{"code":0}' />
+<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design"],"example":"/zcool/top/design","parameters":{"type":"推荐类型,详见下面的表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"description":"榜单类型\n\n  | design   | article  |\n  | -------- | -------- |\n  | 作品榜单 | 文章榜单 |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 榜单类型
 
