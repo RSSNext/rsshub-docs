@@ -4,7 +4,7 @@
 
 ### Journal <Site url="aeaweb.org" size="sm" />
 
-<Route namespace="aeaweb" :data='{"path":"/:id","categories":["journal"],"example":"/aeaweb/aer","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["aeaweb.org/journals/:id","aeaweb.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [American Economic Review](https://www.aeaweb.org/journals/aer) is `https://www.aeaweb.org/journals/aer`, where `aer` is the id of the journal, so the route for this journal is `/aeaweb/aer`.\n\n  :::tip\n  More jounals can be found in [AEA Journals](https://www.aeaweb.org/journals).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aeaweb" :data='{"path":"/:id","categories":["journal"],"example":"/aeaweb/aer","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["aeaweb.org/journals/:id","aeaweb.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [American Economic Review](https://www.aeaweb.org/journals/aer) is `https://www.aeaweb.org/journals/aer`, where `aer` is the id of the journal, so the route for this journal is `/aeaweb/aer`.\n\n  :::tip\n  More jounals can be found in [AEA Journals](https://www.aeaweb.org/journals).\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 The URL of the journal [American Economic Review](https://www.aeaweb.org/journals/aer) is `https://www.aeaweb.org/journals/aer`, where `aer` is the id of the journal, so the route for this journal is `/aeaweb/aer`.
 
@@ -40,7 +40,7 @@ The URL of the journal [Annual Review of Analytical Chemistry](https://www.annua
 
 ### The ACM Conference on Computer and Communications Security <Site url="sigsac.org/ccs.html" size="sm" />
 
-<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":0}' />
 
 Return results from 2020
 
@@ -98,7 +98,7 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ### Keywords Monitoring <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/scholar/:query","categories":["journal"],"example":"/google/scholar/data+visualization","parameters":{"query":"query statement which supports「Basic」and「Advanced」modes"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keywords Monitoring","maintainers":["HenryQW"],"description":":::warning\n  Google Scholar has strict anti-crawling mechanism implemented, the demo below doesn&#39;t guarantee availability. Please deploy your own instance as it might increase the stability.\n  :::\n\n  1.  Basic mode, sample query is the keywords desired, eg.「data visualization」, [https://rsshub.app/google/scholar/data+visualization](https://rsshub.app/google/scholar/data+visualization).\n\n  2.  Advanced mode, visit [Google Scholar](https://scholar.google.com/schhp?hl=en&as_sdt=0,5), click the top left corner and select「Advanced Search」, fill in your conditions and submit the search. The URL should look like this: [https://scholar.google.com/scholar?as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5](https://scholar.google.com/scholar?as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5), copy everything after `https://scholar.google.com/scholar?` from the URL and use it as the query for this route. The complete URL for the above example should look like this: [https://rsshub.app/google/scholar/as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5](https://rsshub.app/google/scholar/as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5).","location":"scholar.ts"}' :test='{"code":0}' />
+<Route namespace="google" :data='{"path":"/scholar/:query","categories":["journal"],"example":"/google/scholar/data+visualization","parameters":{"query":"query statement which supports「Basic」and「Advanced」modes"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keywords Monitoring","maintainers":["HenryQW"],"description":":::warning\n  Google Scholar has strict anti-crawling mechanism implemented, the demo below doesn&#39;t guarantee availability. Please deploy your own instance as it might increase the stability.\n  :::\n\n  1.  Basic mode, sample query is the keywords desired, eg.「data visualization」, [https://rsshub.app/google/scholar/data+visualization](https://rsshub.app/google/scholar/data+visualization).\n\n  2.  Advanced mode, visit [Google Scholar](https://scholar.google.com/schhp?hl=en&as_sdt=0,5), click the top left corner and select「Advanced Search」, fill in your conditions and submit the search. The URL should look like this: [https://scholar.google.com/scholar?as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5](https://scholar.google.com/scholar?as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5), copy everything after `https://scholar.google.com/scholar?` from the URL and use it as the query for this route. The complete URL for the above example should look like this: [https://rsshub.app/google/scholar/as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5](https://rsshub.app/google/scholar/as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5).","location":"scholar.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::warning
   Google Scholar has strict anti-crawling mechanism implemented, the demo below doesn't guarantee availability. Please deploy your own instance as it might increase the stability.
@@ -142,7 +142,7 @@ Return results from 2020
 
 ### Category <Site url="pubsonline.informs.org" size="sm" />
 
-<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## MDPI <Site url="www.mdpi.com"/>
 
@@ -207,11 +207,11 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### All Papers <Site url="nber.org/papers" size="sm" />
 
-<Route namespace="nber" :data='{"name":"All Papers","maintainers":["5upernova-heng"],"path":"/papers","example":"/nber/papers","features":{"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"url":"nber.org/papers","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nber" :data='{"name":"All Papers","maintainers":["5upernova-heng"],"path":"/papers","example":"/nber/papers","features":{"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"url":"nber.org/papers","location":"all.ts"}' :test='{"code":0}' />
 
 ### New Papers <Site url="nber.org/papers" size="sm" />
 
-<Route namespace="nber" :data='{"name":"New Papers","maintainers":["5upernova-heng"],"path":"/new","example":"/nber/new","features":{"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"url":"nber.org/papers","description":"Papers that are published in this week.","location":"new.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nber" :data='{"name":"New Papers","maintainers":["5upernova-heng"],"path":"/new","example":"/nber/new","features":{"supportScihub":true},"radar":[{"source":["nber.org/papers"]}],"url":"nber.org/papers","description":"Papers that are published in this week.","location":"new.ts"}' :test='{"code":0}' />
 
 Papers that are published in this week.
 
@@ -351,7 +351,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
