@@ -117,6 +117,11 @@ const instances = [{
     location: '🇺🇸',
     maintainer: 'yuanhong',
     maintainerUrl: 'https://github.com/yuanhong078',
+  }, {
+    url: 'https://rsshub.henry.wang',
+    location: '🇬🇧',
+    maintainer: 'HenryQW',
+    maintainerUrl: 'https://github.com/HenryQW',
   }
 ]
 
