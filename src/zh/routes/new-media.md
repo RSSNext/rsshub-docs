@@ -603,6 +603,24 @@ Edition
 
 <Route namespace="macfilos" :data='{"path":"/blog","categories":["new-media"],"example":"/macfilos/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macfilos.com/blog","macfilos.com/"]}],"name":"Blog","maintainers":["nczitzk"],"url":"macfilos.com/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Matters <Site url="matters.town"/>
+
+### Author <Site url="matters.town" size="sm" />
+
+<Route namespace="matters" :data='{"path":"/author/:uid","name":"Author","example":"/matters/author/robertu","parameters":{"uid":"Author id, can be found at author&#39;s homepage url"},"maintainers":["Cerebrater","xosdy"],"radar":[{"source":["matters.town/:uid"]}],"location":"author.ts"}' :test='undefined' />
+
+### Latest, heat, essence <Site url="matters.town" size="sm" />
+
+<Route namespace="matters" :data='{"path":"/latest/:type?","name":"Latest, heat, essence","example":"/matters/latest/heat","parameters":{"uid":"Defaults to latest, see table below"},"maintainers":["xyqfer","Cerebrater","xosdy"],"radar":[{"source":["matters.town"]}],"description":"| 最新   | 热门 | 精华    |\n  | ------ | ---- | ------- |\n  | latest | heat | essence |","location":"latest.ts"}' :test='undefined' />
+
+| 最新   | 热门 | 精华    |
+  | ------ | ---- | ------- |
+  | latest | heat | essence |
+
+### Tags <Site url="matters.town" size="sm" />
+
+<Route namespace="matters" :data='{"path":"/tags/:tid","name":"Tags","example":"/matters/tags/972-哲學","parameters":{"tid":"Tag id, can be found in the url of the tag page"},"maintainers":["Cerebrater"],"radar":[{"source":["matters.town/tags/:tid"]}],"location":"tags.ts"}' :test='undefined' />
+
 ## Mirror <Site url="mirror.xyz"/>
 
 ### User <Site url="mirror.xyz" size="sm" />
