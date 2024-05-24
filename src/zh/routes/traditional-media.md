@@ -1047,11 +1047,11 @@ Column 列表：
 
 ### 互动新闻 <Site url="www.zaobao.com" size="sm" />
 
-<Route namespace="zaobao" :data='{"path":"/interactive-graphics","categories":["traditional-media"],"example":"/zaobao/interactive-graphics","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"互动新闻","maintainers":["shunf4"],"location":"interactive.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="zaobao" :data='{"path":"/interactive-graphics","categories":["traditional-media"],"example":"/zaobao/interactive-graphics","name":"互动新闻","maintainers":["shunf4"],"location":"interactive.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 即时新闻 <Site url="www.zaobao.com" size="sm" />
 
-<Route namespace="zaobao" :data='{"path":"/realtime/:section?","categories":["traditional-media"],"example":"/zaobao/realtime/china","parameters":{"section":"分类，缺省为 china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"即时新闻","maintainers":["shunf4"],"description":"| 中国  | 新加坡    | 国际  | 财经     |\n  | ----- | --------- | ----- | -------- |\n  | china | singapore | world | zfinance |","location":"realtime.ts"}' :test='{"code":0}' />
+<Route namespace="zaobao" :data='{"path":"/realtime/:section?","categories":["traditional-media"],"example":"/zaobao/realtime/china","parameters":{"section":"分类，缺省为 china"},"name":"即时新闻","maintainers":["shunf4"],"description":"| 中国  | 新加坡    | 国际  | 财经     |\n  | ----- | --------- | ----- | -------- |\n  | china | singapore | world | zfinance |","location":"realtime.ts"}' :test='{"code":0}' />
 
 | 中国  | 新加坡    | 国际  | 财经     |
   | ----- | --------- | ----- | -------- |
@@ -1059,7 +1059,7 @@ Column 列表：
 
 ### 其他栏目 <Site url="www.zaobao.com" size="sm" />
 
-<Route namespace="zaobao" :data='{"path":"/:type?/:section?","categories":["traditional-media"],"example":"/zaobao/lifestyle/health","parameters":{"type":"https://www.zaobao.com/**lifestyle**/health 中的 **lifestyle**","section":"https://www.zaobao.com/lifestyle/**health** 中的 **health**"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"其他栏目","maintainers":["shunf4"],"description":"除了上面两个兼容规则之外，联合早报网站里所有页面形如 [https://www.zaobao.com/lifestyle/health](https://www.zaobao.com/lifestyle/health) 这样的栏目都能被这个规则解析到，早报的大部分栏目都是这个样式的。你可以测试之后再订阅。","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="zaobao" :data='{"path":"/other/:type?/:section?","categories":["traditional-media"],"example":"/zaobao/other/lifestyle/health","parameters":{"type":"https://www.zaobao.com/**lifestyle**/health 中的 **lifestyle**","section":"https://www.zaobao.com/lifestyle/**health** 中的 **health**"},"name":"其他栏目","maintainers":["shunf4"],"description":"除了上面两个兼容规则之外，联合早报网站里所有页面形如 [https://www.zaobao.com/lifestyle/health](https://www.zaobao.com/lifestyle/health) 这样的栏目都能被这个规则解析到，早报的大部分栏目都是这个样式的。你可以测试之后再订阅。","location":"other.ts"}' :test='undefined' />
 
 除了上面两个兼容规则之外，联合早报网站里所有页面形如 [https://www.zaobao.com/lifestyle/health](https://www.zaobao.com/lifestyle/health) 这样的栏目都能被这个规则解析到，早报的大部分栏目都是这个样式的。你可以测试之后再订阅。
 
