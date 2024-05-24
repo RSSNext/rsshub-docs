@@ -49,6 +49,12 @@ Provides a better reading experience (full text articles) over the official ones
 
 <Route namespace="cbc" :data='{"path":"/topics/:topic?","categories":["traditional-media"],"example":"/cbc/topics","parameters":{"topic":"Channel,`Top Stories` by default. For secondary channel like `canada/toronto`, use `-` to replace `/`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cbc.ca/news"],"target":"/topics"}],"name":"News","maintainers":["wb14123"],"url":"cbc.ca/news","location":"topics.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## Council on Foreign Relations <Site url="www.cfr.org"/>
+
+### News <Site url="www.cfr.org" size="sm" />
+
+<Route namespace="cfr" :data='{"path":"/:category/:subCategory?","categories":["traditional-media"],"parameters":{"category":"category, find it in the URL","subCategory":"sub-category, find it in the URL"},"example":"/cfr/asia","name":"News","maintainers":["KarasuShin"],"radar":[{"source":["www.cfr.org/:category","www.cfr.org/:category/:subCategory"],"target":"/:category/:subCategory?"}],"features":{"antiCrawler":true},"location":"index.ts"}' :test='undefined' />
+
 ## CNBC <Site url="search.cnbc.com"/>
 
 ### Full article RSS <Site url="search.cnbc.com" size="sm" />
