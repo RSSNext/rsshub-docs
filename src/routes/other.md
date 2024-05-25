@@ -1025,6 +1025,12 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="50forum" :data='{"path":"/","radar":[{"source":["50forum.org.cn/home/article/index/category/zhuanjia.html","50forum.org.cn/"],"target":""}],"name":"Unknown","maintainers":["sddiky"],"url":"50forum.org.cn/home/article/index/category/zhuanjia.html","location":"zhuanjia.ts"}' :test='undefined' />
 
+## 精真估 <Site url="www.jingzhengu.com"/>
+
+### 资讯 <Site url="www.jingzhengu.com" size="sm" />
+
+<Route namespace="jingzhengu" :data='{"path":"/news","categories":["other"],"example":"/jingzhengu/news","radar":[{"source":["www.jingzhengu.com"]}],"name":"资讯","maintainers":["TonyRL"],"url":"www.jingzhengu.com","location":"news.ts"}' :test='undefined' />
+
 ## 巨量算数 - 算数指数 <Site url="trendinsight.oceanengine.com"/>
 
 ### Unknown <Site url="trendinsight.oceanengine.com" size="sm" />
