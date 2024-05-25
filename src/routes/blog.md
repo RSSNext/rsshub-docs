@@ -22,7 +22,7 @@
 
 ### User Feed <Site url="blog.csdn.net" size="sm" />
 
-<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Delta Lake <Site url="delta.io"/>
 
@@ -194,7 +194,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
 
-<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## 博客园 <Site url="www.cnblogs.com"/>
 
@@ -232,7 +232,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 全部文章 <Site url="bulianglin.com/" size="sm" />
 
-<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 财新博客 <Site url="caixin.com"/>
 
@@ -310,13 +310,13 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 专题展示 - 文章 <Site url="www.foreverblog.cn/feeds.html" size="sm" />
 
-<Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":1,"message":"expected [ …(6) ] to not include &#39;https://www.yvii.cn/archives/2014.html&#39;"}' />
+<Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":0}' />
 
 ## 土猛的员外 <Site url="luxiangdong.com"/>
 
 ### 文章 <Site url="luxiangdong.com/" size="sm" />
 
-<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 313314545019 to be less than 311040000000"}' />
+<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 313400948381 to be less than 311040000000"}' />
 
 ## 新语丝 <Site url="xys.org"/>
 

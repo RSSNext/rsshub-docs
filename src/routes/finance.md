@@ -300,7 +300,7 @@ Language:
 
 ### 电报 <Site url="cls.cn/telegraph" size="sm" />
 
-<Route namespace="cls" :data='{"path":"/telegraph/:category?","categories":["finance"],"example":"/cls/telegraph","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/telegraph","cls.cn/"],"target":"/telegraph"}],"name":"电报","maintainers":["nczitzk"],"url":"cls.cn/telegraph","description":"| 看盘  | 公司         | 解读    | 加红 | 推送  | 提醒   | 基金 | 港股 |\n  | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |\n  | watch | announcement | explain | red  | jpush | remind | fund | hk   |","location":"telegraph.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cls" :data='{"path":"/telegraph/:category?","categories":["finance"],"example":"/cls/telegraph","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/telegraph","cls.cn/"],"target":"/telegraph"}],"name":"电报","maintainers":["nczitzk"],"url":"cls.cn/telegraph","description":"| 看盘  | 公司         | 解读    | 加红 | 推送  | 提醒   | 基金 | 港股 |\n  | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |\n  | watch | announcement | explain | red  | jpush | remind | fund | hk   |","location":"telegraph.ts"}' :test='{"code":0}' />
 
 | 看盘  | 公司         | 解读    | 加红 | 推送  | 提醒   | 基金 | 港股 |
   | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |
@@ -312,7 +312,7 @@ Language:
 
 ### 深度 <Site url="cls.cn" size="sm" />
 
-<Route namespace="cls" :data='{"path":"/depth/:category?","categories":["finance"],"example":"/cls/depth/1000","parameters":{"category":"分类代码，可在首页导航栏的目标网址 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"深度","maintainers":["nczitzk"],"description":"| 头条 | 股市 | 港股 | 环球 | 公司 | 券商 | 基金 | 地产 | 金融 | 汽车 | 科创 | 创业版 | 品见 | 期货 | 投教 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- |\n  | 1000 | 1003 | 1135 | 1007 | 1005 | 1118 | 1110 | 1006 | 1032 | 1119 | 1111 | 1127   | 1160 | 1124 | 1176 |","location":"depth.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="cls" :data='{"path":"/depth/:category?","categories":["finance"],"example":"/cls/depth/1000","parameters":{"category":"分类代码，可在首页导航栏的目标网址 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"深度","maintainers":["nczitzk"],"description":"| 头条 | 股市 | 港股 | 环球 | 公司 | 券商 | 基金 | 地产 | 金融 | 汽车 | 科创 | 创业版 | 品见 | 期货 | 投教 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- |\n  | 1000 | 1003 | 1135 | 1007 | 1005 | 1118 | 1110 | 1006 | 1032 | 1119 | 1111 | 1127   | 1160 | 1124 | 1176 |","location":"depth.ts"}' :test='{"code":0}' />
 
 | 头条 | 股市 | 港股 | 环球 | 公司 | 券商 | 基金 | 地产 | 金融 | 汽车 | 科创 | 创业版 | 品见 | 期货 | 投教 |
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- |
@@ -370,11 +370,11 @@ Language:
 
 ### 用户文章 <Site url="gelonghui.com" size="sm" />
 
-<Route namespace="gelonghui" :data='{"path":"/user/:id","categories":["finance"],"example":"/gelonghui/user/5273","parameters":{"id":"用户编号，可在用户页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gelonghui.com/user/:id"]}],"name":"用户文章","maintainers":["nczitzk"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gelonghui" :data='{"path":"/user/:id","categories":["finance"],"example":"/gelonghui/user/5273","parameters":{"id":"用户编号，可在用户页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gelonghui.com/user/:id"]}],"name":"用户文章","maintainers":["nczitzk"],"location":"user.ts"}' :test='{"code":0}' />
 
 ### 主题文章 <Site url="gelonghui.com" size="sm" />
 
-<Route namespace="gelonghui" :data='{"path":"/subject/:id","categories":["finance"],"example":"/gelonghui/subject/4","parameters":{"id":"主题编号，可在主题页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gelonghui.com/subject/:id"]}],"name":"主题文章","maintainers":["nczitzk"],"location":"subject.ts"}' :test='{"code":0}' />
+<Route namespace="gelonghui" :data='{"path":"/subject/:id","categories":["finance"],"example":"/gelonghui/subject/4","parameters":{"id":"主题编号，可在主题页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gelonghui.com/subject/:id"]}],"name":"主题文章","maintainers":["nczitzk"],"location":"subject.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 最热文章 <Site url="gelonghui.com/" size="sm" />
 
@@ -420,7 +420,7 @@ Language:
 
 ### 分类 <Site url="jinse.cn" size="sm" />
 
-<Route namespace="jinse" :data='{"path":"/:category?","categories":["finance"],"example":"/jinse/zhengce","parameters":{"category":"分类，见下表，默认为政策"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"| 政策    | 行情         | DeFi | 矿业  | 以太坊 2.0 |\n  | ------- | ------------ | ---- | ----- | ---------- |\n  | zhengce | fenxishishuo | defi | kuang | 以太坊 2.0 |\n\n  | 产业     | IPFS | 技术 | 百科  | 研报          |\n  | -------- | ---- | ---- | ----- | ------------- |\n  | industry | IPFS | tech | baike | capitalmarket |","location":"catalogue.ts"}' :test='{"code":0}' />
+<Route namespace="jinse" :data='{"path":"/:category?","categories":["finance"],"example":"/jinse/zhengce","parameters":{"category":"分类，见下表，默认为政策"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"| 政策    | 行情         | DeFi | 矿业  | 以太坊 2.0 |\n  | ------- | ------------ | ---- | ----- | ---------- |\n  | zhengce | fenxishishuo | defi | kuang | 以太坊 2.0 |\n\n  | 产业     | IPFS | 技术 | 百科  | 研报          |\n  | -------- | ---- | ---- | ----- | ------------- |\n  | industry | IPFS | tech | baike | capitalmarket |","location":"catalogue.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 政策    | 行情         | DeFi | 矿业  | 以太坊 2.0 |
   | ------- | ------------ | ---- | ----- | ---------- |
@@ -432,7 +432,7 @@ Language:
 
 ### 快讯 <Site url="jinse.cn" size="sm" />
 
-<Route namespace="jinse" :data='{"path":"/lives/:category?","categories":["finance"],"example":"/jinse/lives","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快讯","maintainers":["nczitzk"],"description":"| 全部 | 精选 | 政策 | 数据 | NFT | 项目 |\n  | ---- | ---- | ---- | ---- | --- | ---- |\n  | 0    | 1    | 2    | 3    | 4   | 5    |","location":"lives.ts"}' :test='{"code":0}' />
+<Route namespace="jinse" :data='{"path":"/lives/:category?","categories":["finance"],"example":"/jinse/lives","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快讯","maintainers":["nczitzk"],"description":"| 全部 | 精选 | 政策 | 数据 | NFT | 项目 |\n  | ---- | ---- | ---- | ---- | --- | ---- |\n  | 0    | 1    | 2    | 3    | 4   | 5    |","location":"lives.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 全部 | 精选 | 政策 | 数据 | NFT | 项目 |
   | ---- | ---- | ---- | ---- | --- | ---- |
@@ -440,7 +440,7 @@ Language:
 
 ### 首页 <Site url="jinse.cn" size="sm" />
 
-<Route namespace="jinse" :data='{"path":"/timeline/:category?","categories":["finance"],"example":"/jinse/timeline","parameters":{"category":"分类，见下表，默认为头条"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["nczitzk"],"description":"| 头条   | 独家 | 铭文    | 产业       | 项目 |\n  | ------ | ---- | ------- | ---------- | ---- |\n  | 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |\n  | Layer2 | NFT  | DAO     | 百科       |      |","location":"timeline.ts"}' :test='{"code":0}' />
+<Route namespace="jinse" :data='{"path":"/timeline/:category?","categories":["finance"],"example":"/jinse/timeline","parameters":{"category":"分类，见下表，默认为头条"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["nczitzk"],"description":"| 头条   | 独家 | 铭文    | 产业       | 项目 |\n  | ------ | ---- | ------- | ---------- | ---- |\n  | 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |\n  | Layer2 | NFT  | DAO     | 百科       |      |","location":"timeline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 头条   | 独家 | 铭文    | 产业       | 项目 |
   | ------ | ---- | ------- | ---------- | ---- |
@@ -500,7 +500,7 @@ Language:
 
 ### 分类 <Site url="nbd.com.cn/" size="sm" />
 
-<Route namespace="nbd" :data='{"path":"/:id?","categories":["finance"],"example":"/nbd","parameters":{"id":"分类 id，见下表，默认为要闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nbd.com.cn/","nbd.com.cn/columns/:id?"]}],"name":"分类","maintainers":["nczitzk"],"url":"nbd.com.cn/","description":"| 头条 | 要闻 | 图片新闻 | 推荐 |\n  | ---- | ---- | -------- | ---- |\n  | 2    | 3    | 4        | 5    |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nbd" :data='{"path":"/:id?","categories":["finance"],"example":"/nbd","parameters":{"id":"分类 id，见下表，默认为要闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nbd.com.cn/","nbd.com.cn/columns/:id?"]}],"name":"分类","maintainers":["nczitzk"],"url":"nbd.com.cn/","description":"| 头条 | 要闻 | 图片新闻 | 推荐 |\n  | ---- | ---- | -------- | ---- |\n  | 2    | 3    | 4        | 5    |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 头条 | 要闻 | 图片新闻 | 推荐 |
   | ---- | ---- | -------- | ---- |
@@ -560,7 +560,7 @@ Language:
 
 ### 创业板项目动态 <Site url="listing.szse.cn/projectdynamic/1/index.html" size="sm" />
 
-<Route namespace="szse" :data='{"path":"/projectdynamic/:type?/:stage?/:status?","categories":["finance"],"example":"/szse/projectdynamic","parameters":{"type":"类型，见下表，默认为IPO","stage":"阶段，见下表，默认为全部","status":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["listing.szse.cn/projectdynamic/1/index.html","listing.szse.cn/projectdynamic/2/index.html","listing.szse.cn/projectdynamic/3/index.html","listing.szse.cn/"]}],"name":"创业板项目动态","maintainers":["nczitzk"],"url":"listing.szse.cn/projectdynamic/1/index.html","description":"类型\n\n  | IPO | 再融资 | 重大资产重组 |\n  | --- | ------ | ------------ |\n  | 1   | 2      | 3            |\n\n  阶段\n\n  | 全部 | 受理 | 问询 | 上市委会议 |\n  | ---- | ---- | ---- | ---------- |\n  | 0    | 10   | 20   | 30         |\n\n  | 提交注册 | 注册结果 | 中止 | 终止 |\n  | -------- | -------- | ---- | ---- |\n  | 35       | 40       | 50   | 60   |\n\n  状态\n\n  | 全部 | 新受理 | 已问询 | 通过 | 未通过 |\n  | ---- | ------ | ------ | ---- | ------ |\n  | 0    | 20     | 30     | 45   | 44     |\n\n  | 暂缓审议 | 复审通过 | 复审不通过 | 提交注册 |\n  | -------- | -------- | ---------- | -------- |\n  | 46       | 56       | 54         | 60       |\n\n  | 注册生效 | 不予注册 | 补充审核 | 终止注册 |\n  | -------- | -------- | -------- | -------- |\n  | 70       | 74       | 78       | 76       |\n\n  | 中止 | 审核不通过 | 撤回 |\n  | ---- | ---------- | ---- |\n  | 80   | 90         | 95   |","location":"projectdynamic.ts"}' :test='{"code":0}' />
+<Route namespace="szse" :data='{"path":"/projectdynamic/:type?/:stage?/:status?","categories":["finance"],"example":"/szse/projectdynamic","parameters":{"type":"类型，见下表，默认为IPO","stage":"阶段，见下表，默认为全部","status":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["listing.szse.cn/projectdynamic/1/index.html","listing.szse.cn/projectdynamic/2/index.html","listing.szse.cn/projectdynamic/3/index.html","listing.szse.cn/"]}],"name":"创业板项目动态","maintainers":["nczitzk"],"url":"listing.szse.cn/projectdynamic/1/index.html","description":"类型\n\n  | IPO | 再融资 | 重大资产重组 |\n  | --- | ------ | ------------ |\n  | 1   | 2      | 3            |\n\n  阶段\n\n  | 全部 | 受理 | 问询 | 上市委会议 |\n  | ---- | ---- | ---- | ---------- |\n  | 0    | 10   | 20   | 30         |\n\n  | 提交注册 | 注册结果 | 中止 | 终止 |\n  | -------- | -------- | ---- | ---- |\n  | 35       | 40       | 50   | 60   |\n\n  状态\n\n  | 全部 | 新受理 | 已问询 | 通过 | 未通过 |\n  | ---- | ------ | ------ | ---- | ------ |\n  | 0    | 20     | 30     | 45   | 44     |\n\n  | 暂缓审议 | 复审通过 | 复审不通过 | 提交注册 |\n  | -------- | -------- | ---------- | -------- |\n  | 46       | 56       | 54         | 60       |\n\n  | 注册生效 | 不予注册 | 补充审核 | 终止注册 |\n  | -------- | -------- | -------- | -------- |\n  | 70       | 74       | 78       | 76       |\n\n  | 中止 | 审核不通过 | 撤回 |\n  | ---- | ---------- | ---- |\n  | 80   | 90         | 95   |","location":"projectdynamic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 类型
 

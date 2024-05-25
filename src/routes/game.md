@@ -397,7 +397,7 @@ javaType:
 
 ### Java Game Update <Site url="minecraft.net/" size="sm" />
 
-<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 311507657531 to be less than 311040000000"}' />
+<Route namespace="minecraft" :data='{"path":"/version/:versionType?/:linkType?","categories":["game"],"example":"/minecraft/version","parameters":{"versionType":"Game version type, `all` by default","linkType":"Link added to feed, `official` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["minecraft.net/"]}],"name":"Java Game Update","maintainers":["TheresaQWQ","xtexChooser"],"url":"minecraft.net/","description":"\n| Version                    | versionType |\n| -------------------------- | ----------- |\n| 正式版                     | release     |\n| 快照                       | snapshot    |\n| Alpha 及更早的版本         | old_alpha  |\n| Beta 版                    | old_beta   |\n| Target                     | linkType    |\n| -------------------------- | --------    |\n| minecraft.net              | official    |\n| 英文 Minecraft Wiki 版本页 | enwiki      |\n| 中文 Minecraft Wiki 版本页 | zhwiki      |\n","zh":{"name":"Java版游戏更新"},"location":"version.ts"}' :test='{"code":1,"message":"expected 311064929877 to be less than 311040000000"}' />
 
 
 | Version                    | versionType |
@@ -463,7 +463,7 @@ javaType:
 
 ### Beatmap Packs <Site url="osu.ppy.sh" size="sm" />
 
-<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":0}' />
+<Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## PRINCESS CONNECT! Re Dive プリンセスコネクト！Re Dive <Site url="priconne-redive.jp"/>
 
@@ -618,7 +618,7 @@ Tip: use proxy if necessary.
 
 ### 资讯 <Site url="xboxfan.com/" size="sm" />
 
-<Route namespace="xboxfan" :data='{"path":"/news","categories":["game"],"example":"/xboxfan/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xboxfan.com/"]}],"name":"资讯","maintainers":["XXY233"],"url":"xboxfan.com/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xboxfan" :data='{"path":"/news","categories":["game"],"example":"/xboxfan/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xboxfan.com/"]}],"name":"资讯","maintainers":["XXY233"],"url":"xboxfan.com/","location":"news.ts"}' :test='{"code":0}' />
 
 ## 旅法师营地 <Site url="www.iyingdi.com"/>
 
@@ -632,7 +632,7 @@ Tip: use proxy if necessary.
 
 ### 首页 <Site url="www.iyingdi.com/" size="sm" />
 
-<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":0}' />
+<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 首页（旧版） <Site url="www.iyingdi.com/" size="sm" />
 
@@ -821,7 +821,7 @@ Tip: use proxy if necessary.
 
 ### 喜加一 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/add2cart/:platform","categories":["game"],"example":"/xiaoheihe/add2cart/epic","parameters":{"platform":"平台名：epic、steam或gog"},"name":"喜加一","maintainers":["ladeng07"],"location":"add2cart.ts"}' :test='{"code":1,"message":"expected -570328602 to be greater than -432000000"}' />
+<Route namespace="xiaoheihe" :data='{"path":"/add2cart/:platform","categories":["game"],"example":"/xiaoheihe/add2cart/epic","parameters":{"platform":"平台名：epic、steam或gog"},"name":"喜加一","maintainers":["ladeng07"],"location":"add2cart.ts"}' :test='{"code":1,"message":"expected -483920068 to be greater than -432000000"}' />
 
 ### 用户动态 <Site url="xiaoheihe.cn" size="sm" />
 
@@ -853,7 +853,7 @@ Tip: use proxy if necessary.
 
 ### 明日方舟 - 游戏内公告 <Site url="www.hypergryph.com" size="sm" />
 
-<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -10193987415 to be greater than -432000000"}' />
+<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"announce.ts"}' :test='{"code":1,"message":"expected -10107608957 to be greater than -432000000"}' />
 
 平台
 
@@ -869,7 +869,7 @@ Tip: use proxy if necessary.
 
 ### 明日方舟 - 游戏公告与新闻 <Site url="ak-conf.hypergryph.com/news" size="sm" />
 
-<Route namespace="hypergryph" :data='{"path":"/arknights/news/:group?","categories":["game"],"example":"/hypergryph/arknights/news","parameters":{"group":"分组，默认为 `ALL`"},"radar":[{"source":["ak-conf.hypergryph.com/news"]}],"name":"明日方舟 - 游戏公告与新闻","maintainers":["Astrian"],"url":"ak-conf.hypergryph.com/news","description":"\n  | 全部 | 最新   | 公告         | 活动     | 新闻 |\n  | ---- | ------ | ------------ | -------- | ---- |\n  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |","location":"news.ts"}' :test='{"code":1,"message":"expected [ Array(1) ] to not include &#39;https://ak.hypergryph.com/news/7404&#39;"}' />
+<Route namespace="hypergryph" :data='{"path":"/arknights/news/:group?","categories":["game"],"example":"/hypergryph/arknights/news","parameters":{"group":"分组，默认为 `ALL`"},"radar":[{"source":["ak-conf.hypergryph.com/news"]}],"name":"明日方舟 - 游戏公告与新闻","maintainers":["Astrian"],"url":"ak-conf.hypergryph.com/news","description":"\n  | 全部 | 最新   | 公告         | 活动     | 新闻 |\n  | ---- | ------ | ------------ | -------- | ---- |\n  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |","location":"news.ts"}' :test='{"code":1,"message":"expected [ Array(1) ] to not include &#39;https://ak.hypergryph.com/news/5293&#39;"}' />
 
 
   | 全部 | 最新   | 公告         | 活动     | 新闻 |

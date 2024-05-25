@@ -24,7 +24,7 @@ Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)
 
 ### RSS <Site url="inoreader.com" size="sm" />
 
-<Route namespace="inoreader" :data='{"path":"/rss/:user/:tag","categories":["reading"],"example":"/inoreader/rss/1005137674/user-favorites","parameters":{"user":"user id, the interger after user/ in the example URL","tag":"tag, the string after tag/ in the example URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"RSS","maintainers":["EthanWng97"],"location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="inoreader" :data='{"path":"/rss/:user/:tag","categories":["reading"],"example":"/inoreader/rss/1005137674/user-favorites","parameters":{"user":"user id, the interger after user/ in the example URL","tag":"tag, the string after tag/ in the example URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"RSS","maintainers":["EthanWng97"],"location":"rss.ts"}' :test='{"code":0}' />
 
 ### Unknown <Site url="inoreader.com" size="sm" />
 
@@ -111,7 +111,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### Series <Site url="yenpress.com" size="sm" />
 
-<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='{"code":1,"message":"expected -7601093760 to be greater than -432000000"}' />
+<Route namespace="yenpress" :data='{"path":"/series/:name","example":"/yenpress/series/alya-sometimes-hides-her-feelings-in-russian","parameters":{"name":"Series name"},"name":"Series","maintainers":["TonyRL"],"radar":[{"source":["yenpress.com/series/:name"],"target":"/series/:name"}],"location":"series.ts"}' :test='{"code":1,"message":"expected -7514681469 to be greater than -432000000"}' />
 
 ## 爱思想 <Site url="aisixiang.com"/>
 
@@ -133,18 +133,18 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 栏目 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/column/:id","categories":["reading"],"example":"/aisixiang/column/722","parameters":{"id":"栏目 ID, 可在对应栏目 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["HenryQW","nczitzk"],"location":"column.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aisixiang" :data='{"path":"/column/:id","categories":["reading"],"example":"/aisixiang/column/722","parameters":{"id":"栏目 ID, 可在对应栏目 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["HenryQW","nczitzk"],"location":"column.ts"}' :test='{"code":0}' />
 
 ### 思想库（专栏） <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"expected 314475277265 to be less than 311040000000"}' />
+<Route namespace="aisixiang" :data='{"path":"/thinktank/:id/:type?","categories":["reading"],"example":"/aisixiang/thinktank/WuQine/论文","parameters":{"id":"专栏 ID，一般为作者拼音，可在URL中找到","type":"栏目类型，参考下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"思想库（专栏）","maintainers":["hoilc","nczitzk"],"description":"| 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"thinktank.ts"}' :test='{"code":1,"message":"expected 314561630541 to be less than 311040000000"}' />
 
 | 论文 | 时评 | 随笔 | 演讲 | 访谈 | 著作 | 读书 | 史论 | 译作 | 诗歌 | 书信 | 科学 |
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 
 ### 专题 <Site url="aisixiang.com" size="sm" />
 
-<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 317466280669 to be less than 311040000000"}' />
+<Route namespace="aisixiang" :data='{"path":"/zhuanti/:id","categories":["reading"],"example":"/aisixiang/zhuanti/211","parameters":{"id":"专题 ID, 可在对应专题 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专题","maintainers":["nczitzk"],"description":":::tip\n  更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)\n  :::","location":"zhuanti.ts"}' :test='{"code":1,"message":"expected 317552629855 to be less than 311040000000"}' />
 
 :::tip
   更多专题请见 [关键词](http://www.aisixiang.com/zhuanti/)
@@ -184,7 +184,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 章节 <Site url="wap.ciweimao.com" size="sm" />
 
-<Route namespace="ciweimao" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/ciweimao/chapter/100043404","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wap.ciweimao.com/book/:id"]}],"name":"章节","maintainers":["keocheung"],"location":"chapter.ts"}' :test='{"code":0}' />
+<Route namespace="ciweimao" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/ciweimao/chapter/100043404","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wap.ciweimao.com/book/:id"]}],"name":"章节","maintainers":["keocheung"],"location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 東立出版社 <Site url="tongli.com.tw"/>
 
@@ -282,7 +282,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 分类 <Site url="bookfere.com" size="sm" />
 
-<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading"],"example":"/bookfere/skills","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading"],"example":"/bookfere/skills","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
 
 | 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |
   | -------- | -------- | -------- | -------- | -------- |

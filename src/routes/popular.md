@@ -249,7 +249,7 @@ Currently supports two authentication methods:
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":0}' />
 
 ## 即刻 <Site url="m.okjike.com"/>
 
@@ -344,5 +344,5 @@ Currently supports two authentication methods:
 
 ### 用户动态 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/people/activities/:id","categories":["social-media","popular"],"example":"/zhihu/people/activities/diygod","parameters":{"id":"作者 id，可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/people/:id"]}],"name":"用户动态","maintainers":["DIYgod"],"location":"activities.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="zhihu" :data='{"path":"/people/activities/:id","categories":["social-media","popular"],"example":"/zhihu/people/activities/diygod","parameters":{"id":"作者 id，可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/people/:id"]}],"name":"用户动态","maintainers":["DIYgod"],"location":"activities.ts"}' :test='{"code":0}' />
 

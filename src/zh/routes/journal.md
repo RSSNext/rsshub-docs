@@ -62,7 +62,7 @@ Return results from 2020
 
 ### Essays <Site url="caareviews.org/reviews/essay" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/essay","categories":["journal"],"example":"/caareviews/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/essay"]}],"name":"Essays","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/essay","location":"essay.ts"}' :test='{"code":0}' />
+<Route namespace="caareviews" :data='{"path":"/essay","categories":["journal"],"example":"/caareviews/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/essay"]}],"name":"Essays","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Exhibition Reviews <Site url="caareviews.org/reviews/exhibition" size="sm" />
 
@@ -164,7 +164,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Journal List <Site url="nature.com" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nature" :data='{"path":"/siteindex","categories":["journal"],"example":"/nature/siteindex","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Journal List","maintainers":["TonyRL"],"location":"siteindex.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Latest Research <Site url="nature.com" size="sm" />
 
@@ -189,7 +189,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 ### Nature News <Site url="nature.com/latest-news" size="sm" />
 
-<Route namespace="nature" :data='{"path":"/news","categories":["journal"],"example":"/nature/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nature.com/latest-news","nature.com/news","nature.com/"]}],"name":"Nature News","maintainers":["y9c","TonyRL"],"url":"nature.com/latest-news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nature" :data='{"path":"/news","categories":["journal"],"example":"/nature/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["nature.com/latest-news","nature.com/news","nature.com/"]}],"name":"Nature News","maintainers":["y9c","TonyRL"],"url":"nature.com/latest-news","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Research Highlight <Site url="nature.com" size="sm" />
 
@@ -227,7 +227,7 @@ Return results from 2020
 
 ### CensorBib Updates <Site url="censorbib.nymity.ch/" size="sm" />
 
-<Route namespace="nymity" :data='{"path":"/censorbib","categories":["journal"],"example":"/nymity/censorbib","radar":[{"source":["censorbib.nymity.ch/"]}],"name":"CensorBib Updates","maintainers":["xtexChooser"],"url":"censorbib.nymity.ch/","location":"censorbib.ts"}' :test='{"code":0}' />
+<Route namespace="nymity" :data='{"path":"/censorbib","categories":["journal"],"example":"/nymity/censorbib","radar":[{"source":["censorbib.nymity.ch/"]}],"name":"CensorBib Updates","maintainers":["xtexChooser"],"url":"censorbib.nymity.ch/","location":"censorbib.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Oxford University Press <Site url="academic.oup.com"/>
 
@@ -269,7 +269,7 @@ Subscribe to the cover images of Science journals, and get the latest publicatio
 
 ### Current Issue <Site url="science.org" size="sm" />
 
-<Route namespace="science" :data='{"path":"/current/:journal?","categories":["journal"],"example":"/science/current/science","parameters":{"journal":"Short name for a journal"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["science.org/journal/:journal","science.org/toc/:journal/current"],"target":"/current/:journal"}],"name":"Current Issue","maintainers":["y9c","TonyRL"],"description":"|  Short name |    Full name of the journal    | Route                                                                          |\n  | :---------: | :----------------------------: | ------------------------------------------------------------------------------ |\n  |   science   |             Science            | [/science/current/science](https://rsshub.app/science/current/science)         |\n  |    sciadv   |        Science Advances        | [/science/current/sciadv](https://rsshub.app/science/current/sciadv)           |\n  |  sciimmunol |       Science Immunology       | [/science/current/sciimmunol](https://rsshub.app/science/current/sciimmunol)   |\n  | scirobotics |        Science Robotics        | [/science/current/scirobotics](https://rsshub.app/science/current/scirobotics) |\n  |  signaling  |        Science Signaling       | [/science/current/signaling](https://rsshub.app/science/current/signaling)     |\n  |     stm     | Science Translational Medicine | [/science/current/stm](https://rsshub.app/science/current/stm)                 |\n\n  -   Using route (`/science/current/` + \"short name for a journal\") to get current issue of a journal from AAAS.\n  -   Leaving it empty (`/science/current`) to get update from Science.","location":"current.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="science" :data='{"path":"/current/:journal?","categories":["journal"],"example":"/science/current/science","parameters":{"journal":"Short name for a journal"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["science.org/journal/:journal","science.org/toc/:journal/current"],"target":"/current/:journal"}],"name":"Current Issue","maintainers":["y9c","TonyRL"],"description":"|  Short name |    Full name of the journal    | Route                                                                          |\n  | :---------: | :----------------------------: | ------------------------------------------------------------------------------ |\n  |   science   |             Science            | [/science/current/science](https://rsshub.app/science/current/science)         |\n  |    sciadv   |        Science Advances        | [/science/current/sciadv](https://rsshub.app/science/current/sciadv)           |\n  |  sciimmunol |       Science Immunology       | [/science/current/sciimmunol](https://rsshub.app/science/current/sciimmunol)   |\n  | scirobotics |        Science Robotics        | [/science/current/scirobotics](https://rsshub.app/science/current/scirobotics) |\n  |  signaling  |        Science Signaling       | [/science/current/signaling](https://rsshub.app/science/current/signaling)     |\n  |     stm     | Science Translational Medicine | [/science/current/stm](https://rsshub.app/science/current/stm)                 |\n\n  -   Using route (`/science/current/` + \"short name for a journal\") to get current issue of a journal from AAAS.\n  -   Leaving it empty (`/science/current`) to get update from Science.","location":"current.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 |  Short name |    Full name of the journal    | Route                                                                          |
   | :---------: | :----------------------------: | ------------------------------------------------------------------------------ |
@@ -351,7 +351,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
@@ -379,7 +379,7 @@ Return results from 2020
 
 ### 期刊 <Site url="navi.cnki.net" size="sm" />
 
-<Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cnki" :data='{"path":"/journals/:name","categories":["journal"],"example":"/cnki/journals/LKGP","parameters":{"name":"期刊缩写，可以在网址中得到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["navi.cnki.net/knavi/journals/:name/detail"]}],"name":"期刊","maintainers":["Fatpandac","Derekmini"],"location":"journals.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 网络首发 <Site url="navi.cnki.net" size="sm" />
 
