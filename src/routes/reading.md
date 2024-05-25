@@ -1,10 +1,10 @@
 # 📚 Reading
 
-## 69书吧 <Site url="69shu.top"/>
+## 69书吧 <Site url="69shuba.pro"/>
 
-### 章节 <Site url="www.69shu.top" size="sm" />
+### 章节 <Site url="www.69shuba.pro" size="sm" />
 
-<Route namespace="69shu" :data='{"path":"/article/:id","name":"章节","url":"www.69shu.top","maintainers":["eternasuno"],"example":"/article/47117","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.69shu.top/book/:id.htm"],"target":"/article/:id"}],"location":"article.ts"}' :test='undefined' />
+<Route namespace="69shu" :data='{"path":"/article/:id","name":"章节","url":"www.69shuba.pro","maintainers":["eternasuno"],"example":"/69shu/article/47117","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.69shuba.pro/book/:id.htm"],"target":"/article/:id"}],"location":"article.ts"}' :test='undefined' />
 
 ## Free Computer Books <Site url="freecomputerbooks.com"/>
 
