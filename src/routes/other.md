@@ -604,22 +604,6 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ## RSSHub Test 
 
-### config-not-found-error 
-
-<Route namespace="test" :data='{"path":"/config-not-found-error","name":"config-not-found-error","maintainers":["DIYgod"],"example":"/config-not-found-error","location":"config-not-found-error.ts"}' :test='undefined' />
-
-### error 
-
-<Route namespace="test" :data='{"path":"/error","name":"error","maintainers":["DIYgod"],"example":"/error","location":"error.ts"}' :test='undefined' />
-
-### httperror 
-
-<Route namespace="test" :data='{"path":"/httperror","name":"httperror","maintainers":["DIYgod"],"example":"/httperror","location":"httperror.ts"}' :test='undefined' />
-
-### invalid-parameter-error 
-
-<Route namespace="test" :data='{"path":"/invalid-parameter-error","name":"invalid-parameter-error","maintainers":["DIYgod"],"example":"/invalid-parameter-error","location":"invalid-parameter-error.ts"}' :test='undefined' />
-
 ### Test 
 
 <Route namespace="test" :data='{"path":"/:id/:params?","name":"Test","maintainers":["DIYgod","NeverBehave"],"location":"index.ts"}' :test='undefined' />
