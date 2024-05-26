@@ -60,7 +60,7 @@
 
 ### Exchange and Repair Extension Programs <Site url="apps.apple.com" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 313978147300 to be less than 311040000000"}' />
+<Route namespace="apple" :data='{"path":"/exchange_repair/:country?","categories":["other"],"example":"/apple/exchange_repair","parameters":{"country":"country code in apple.com URL (exception: for `United States` please use `us`), default to China `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:country/service-programs"],"target":"/exchange_repair/:country"}],"name":"Exchange and Repair Extension Programs","maintainers":["metowolf","HenryQW","kt286"],"location":"exchange-repair.ts"}' :test='{"code":1,"message":"expected 314064594809 to be less than 311040000000"}' />
 
 ## Aqara <Site url="aqara.com"/>
 
@@ -138,7 +138,7 @@ News from the official site of men's professional tennis.
 
 ### Award Winners <Site url="darwinawards.com/darwin" size="sm" />
 
-<Route namespace="darwinawards" :data='{"name":"Award Winners","example":"/darwinawards","path":"/","radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"]}],"maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="darwinawards" :data='{"name":"Award Winners","example":"/darwinawards","path":"/","radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"]}],"maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Deadline <Site url="deadline.com"/>
 
@@ -732,7 +732,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 419697632360 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 402655286185 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -1029,7 +1029,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 资讯 <Site url="www.jingzhengu.com" size="sm" />
 
-<Route namespace="jingzhengu" :data='{"path":"/news","categories":["other"],"example":"/jingzhengu/news","radar":[{"source":["www.jingzhengu.com"]}],"name":"资讯","maintainers":["TonyRL"],"url":"www.jingzhengu.com","location":"news.ts"}' :test='undefined' />
+<Route namespace="jingzhengu" :data='{"path":"/news","categories":["other"],"example":"/jingzhengu/news","radar":[{"source":["www.jingzhengu.com"]}],"name":"资讯","maintainers":["TonyRL"],"url":"www.jingzhengu.com","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 巨量算数 - 算数指数 <Site url="trendinsight.oceanengine.com"/>
 
@@ -1257,11 +1257,11 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 搜索 <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 359166648272 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/search/:keyword","categories":["other"],"example":"/sogou/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"搜索","maintainers":["CaoMeiYouRen"],"location":"search.ts"}' :test='{"code":1,"message":"expected 359253117024 to be less than 311040000000"}' />
 
 ### 特色 LOGO <Site url="www.sogou.com" size="sm" />
 
-<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 314152244607 to be less than 311040000000"}' />
+<Route namespace="sogou" :data='{"path":"/doodles","categories":["other"],"example":"/sogou/doodles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"特色 LOGO","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":1,"message":"expected 314238714604 to be less than 311040000000"}' />
 
 ## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
 
@@ -1567,7 +1567,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="icbc.com.cn/column/1438058341489590354.html" size="sm" />
 
-<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1595,7 +1595,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 今日辟谣 <Site url="piyao.org.cn/jrpy/index.htm" size="sm" />
 
-<Route namespace="piyao" :data='{"path":"/jrpy","categories":["other"],"example":"/piyao/jrpy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["piyao.org.cn/jrpy/index.htm"]}],"name":"今日辟谣","maintainers":["Fatpandac"],"url":"piyao.org.cn/jrpy/index.htm","location":"jrpy.ts"}' :test='{"code":0}' />
+<Route namespace="piyao" :data='{"path":"/jrpy","categories":["other"],"example":"/piyao/jrpy","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["piyao.org.cn/jrpy/index.htm"]}],"name":"今日辟谣","maintainers":["Fatpandac"],"url":"piyao.org.cn/jrpy/index.htm","location":"jrpy.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 中文播客榜 <Site url="xyzrank.com"/>
 

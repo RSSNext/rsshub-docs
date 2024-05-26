@@ -166,7 +166,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分区帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected [ …(28) ] to not include &#39;https://nga.178.com/read.php?tid=4019…&#39;"}' />
+<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 帖子 <Site url="bbs.nga.cn" size="sm" />
 
@@ -220,7 +220,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 帖子 <Site url="bbs.saraba1st.com" size="sm" />
 
-<Route namespace="saraba1st" :data='{"path":"/thread/:tid","categories":["bbs"],"example":"/saraba1st/thread/1842868","parameters":{"tid":"帖子 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["zengxs"],"description":"帖子网址如果为 `https://bbs.saraba1st.com/2b/thread-1842868-1-1.html` 那么帖子 id 就是 `1789863`。","location":"thread.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="saraba1st" :data='{"path":"/thread/:tid","categories":["bbs"],"example":"/saraba1st/thread/1842868","parameters":{"tid":"帖子 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["zengxs"],"description":"帖子网址如果为 `https://bbs.saraba1st.com/2b/thread-1842868-1-1.html` 那么帖子 id 就是 `1789863`。","location":"thread.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 帖子网址如果为 `https://bbs.saraba1st.com/2b/thread-1842868-1-1.html` 那么帖子 id 就是 `1789863`。
 
@@ -319,7 +319,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 子版块 <Site url="sis001.com" size="sm" />
 
-<Route namespace="sis001" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/sis001/forum/322","parameters":{"id":"子版块 ID，可在子论坛 URL 找到，默认为 `Funny Jokes | 短篇笑话区`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"子版块","maintainers":[],"location":"forum.ts"}' :test='{"code":0}' />
+<Route namespace="sis001" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/sis001/forum/322","parameters":{"id":"子版块 ID，可在子论坛 URL 找到，默认为 `Funny Jokes | 短篇笑话区`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"子版块","maintainers":[],"location":"forum.ts"}' :test='{"code":1,"message":"expected 328160074269 to be less than 311040000000"}' />
 
 ## 电鸭社区 <Site url="eleduck.com"/>
 
@@ -348,7 +348,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 工作机会 <Site url="eleduck.com/categories/5" size="sm" />
 
-<Route namespace="eleduck" :data='{"path":"/jobs","categories":["bbs"],"example":"/eleduck/jobs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["eleduck.com/categories/5","eleduck.com/"]}],"name":"工作机会","maintainers":["sfyumi"],"url":"eleduck.com/categories/5","location":"jobs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="eleduck" :data='{"path":"/jobs","categories":["bbs"],"example":"/eleduck/jobs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["eleduck.com/categories/5","eleduck.com/"]}],"name":"工作机会","maintainers":["sfyumi"],"url":"eleduck.com/categories/5","location":"jobs.ts"}' :test='{"code":0}' />
 
 ## 丁香园 <Site url="dxy.cn"/>
 
@@ -408,7 +408,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 热帖 <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":":::tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n  :::","location":"all.ts"}' :test='{"code":0}' />
+<Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":":::tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n  :::","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   更多热帖版面参见 [论坛](https://bbs.hupu.com)
@@ -714,7 +714,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 滚动新闻 <Site url="zhibo8.cc" size="sm" />
 
-<Route namespace="zhibo8" :data='{"path":"/more/:category?","categories":["bbs"],"example":"/zhibo8/more/nba","parameters":{"category":"分类，见下表，默认为 NBA"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.zhibo8.cc/:category"],"target":"/more/:category"}],"name":"滚动新闻","description":"\n| NBA | 足球  | 电竞     | 综合   |\n| --- | ----- | -------- | ------ |\n| nba | zuqiu | dianjing | zonghe |","maintainers":["nczitzk"],"location":"more.ts"}' :test='{"code":0}' />
+<Route namespace="zhibo8" :data='{"path":"/more/:category?","categories":["bbs"],"example":"/zhibo8/more/nba","parameters":{"category":"分类，见下表，默认为 NBA"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.zhibo8.cc/:category"],"target":"/more/:category"}],"name":"滚动新闻","description":"\n| NBA | 足球  | 电竞     | 综合   |\n| --- | ----- | -------- | ------ |\n| nba | zuqiu | dianjing | zonghe |","maintainers":["nczitzk"],"location":"more.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 
 | NBA | 足球  | 电竞     | 综合   |
