@@ -745,6 +745,12 @@ Language:
   | :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |
   |   0  |      4     |      2     |    10    |     1    |      3     |      11      |
 
+## 远川研究所 <Site url="www.stream-capital.com"/>
+
+### 最新 <Site url="www.stream-capital.com" size="sm" />
+
+<Route namespace="stream-capital" :data='{"path":"/search","name":"最新","categories":["finance"],"example":"/stream-capital/search","maintainers":["TonyRL"],"radar":[{"source":["www.stream-capital.com/search"]}],"location":"search.ts"}' :test='undefined' />
+
 ## 证券时报网 <Site url="stcn.com"/>
 
 ### 栏目 <Site url="stcn.com" size="sm" />
