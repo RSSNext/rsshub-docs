@@ -602,6 +602,28 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
   | `itemLink`  | `html_url`      |
   | `itemDesc`  | `body`          |
 
+## RSSHub Test 
+
+### config-not-found-error 
+
+<Route namespace="test" :data='{"path":"/config-not-found-error","name":"config-not-found-error","maintainers":["DIYgod"],"example":"/config-not-found-error","location":"config-not-found-error.ts"}' :test='undefined' />
+
+### error 
+
+<Route namespace="test" :data='{"path":"/error","name":"error","maintainers":["DIYgod"],"example":"/error","location":"error.ts"}' :test='undefined' />
+
+### httperror 
+
+<Route namespace="test" :data='{"path":"/httperror","name":"httperror","maintainers":["DIYgod"],"example":"/httperror","location":"httperror.ts"}' :test='undefined' />
+
+### invalid-parameter-error 
+
+<Route namespace="test" :data='{"path":"/invalid-parameter-error","name":"invalid-parameter-error","maintainers":["DIYgod"],"example":"/invalid-parameter-error","location":"invalid-parameter-error.ts"}' :test='undefined' />
+
+### Test 
+
+<Route namespace="test" :data='{"path":"/:id/:params?","name":"Test","maintainers":["DIYgod","NeverBehave"],"location":"index.ts"}' :test='undefined' />
+
 ## SecIN 信息安全技术社区 <Site url="sec-in.com"/>
 
 ### Unknown <Site url="sec-in.com" size="sm" />
@@ -711,12 +733,6 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 ### Unknown <Site url="bytes.dev/issues" size="sm" />
 
 <Route namespace="reactnewsletter" :data='{"path":"/","radar":[{"source":["bytes.dev/issues","bytes.dev/"],"target":""}],"name":"Unknown","maintainers":["meixger"],"url":"bytes.dev/issues","location":"reactnewsletter.ts"}' :test='undefined' />
-
-## test 
-
-### Unknown 
-
-<Route namespace="test" :data='{"path":"/:id/:params?","name":"Unknown","maintainers":["DIYgod","NeverBehave"],"location":"index.ts"}' :test='undefined' />
 
 ## U9A9 <Site url="u9a9.com"/>
 
