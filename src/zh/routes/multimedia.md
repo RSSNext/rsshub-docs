@@ -703,6 +703,16 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 <Route namespace="otobanana" :data='{"path":"/user/:id","categories":["multimedia"],"example":"/otobanana/user/cee16401-96b1-420f-8188-abd4d33093f1","parameters":{"id":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["otobanana.com/user/:id"]}],"name":"Timeline タイムライン","maintainers":["TonyRL"],"location":"timeline.ts"}' :test='{"code":0}' />
 
+## Podwise <Site url="podwise.ai"/>
+
+### Collections <Site url="podwise.ai" size="sm" />
+
+<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia"],"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='undefined' />
+
+### Episodes <Site url="podwise.ai" size="sm" />
+
+<Route namespace="podwise" :data='{"path":"/explore/:type","categories":["multimedia"],"example":"/podwise/explore/latest","parameters":{"type":"latest or all episodes."},"radar":[{"source":["podwise.ai/explore/:type"]}],"name":"Episodes","maintainers":["lyling"],"location":"episodes.ts"}' :test='undefined' />
+
 ## PornHub <Site url="pornhub.com"/>
 
 ### Category <Site url="pornhub.com" size="sm" />
