@@ -312,6 +312,14 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 <Route namespace="foreverblog" :data='{"path":"/feeds","categories":["blog"],"example":"/foreverblog/feeds","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.foreverblog.cn/feeds.html"]}],"name":"专题展示 - 文章","maintainers":["7Wate","a180285"],"url":"www.foreverblog.cn/feeds.html","location":"feeds.ts"}' :test='{"code":0}' />
 
+## 台灣角川 <Site url="kadokawa.com.tw"/>
+
+TAIWAN KADOKAWA
+
+### 角編新聞台 <Site url="kadokawa.com.tw" size="sm" />
+
+<Route namespace="kadokawa" :data='{"path":"/blog","name":"角編新聞台","url":"kadokawa.com.tw","maintainers":["nczitzk"],"example":"/kadokawa/blog","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kadokawa.com.tw/blog/posts"],"target":"/blog"}],"location":"blog.ts"}' :test='undefined' />
+
 ## 土猛的员外 <Site url="luxiangdong.com"/>
 
 ### 文章 <Site url="luxiangdong.com/" size="sm" />
