@@ -28,7 +28,7 @@
 
 ### Tutorials <Site url="howtoforge.com/" size="sm" />
 
-<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MindMeister <Site url="mindmeister.com"/>
 

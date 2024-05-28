@@ -4,7 +4,7 @@
 
 ### APISIX 博客 <Site url="apisix.apache.org" size="sm" />
 
-<Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":0}' />
+<Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Backlinko <Site url="backlinko.com"/>
 
@@ -138,7 +138,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### 合集 <Site url="open.itc.cn" size="sm" />
 
-<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":0}' />
+<Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Paul Graham <Site url="paulgraham.com"/>
 

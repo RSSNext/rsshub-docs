@@ -14,7 +14,7 @@
 
 ### 专题报告 <Site url="bigquant.com/" size="sm" />
 
-<Route namespace="bigquant" :data='{"path":"/collections","categories":["finance"],"example":"/bigquant/collections","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bigquant.com/"]}],"name":"专题报告","maintainers":["nczitzk"],"url":"bigquant.com/","location":"collections.ts"}' :test='{"code":0}' />
+<Route namespace="bigquant" :data='{"path":"/collections","categories":["finance"],"example":"/bigquant/collections","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bigquant.com/"]}],"name":"专题报告","maintainers":["nczitzk"],"url":"bigquant.com/","location":"collections.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Binance <Site url="binance.com"/>
 
@@ -246,7 +246,7 @@ Language:
 
 ### News Flow <Site url="unusualwhales.com/news" size="sm" />
 
-<Route namespace="unusualwhales" :data='{"path":"/news","categories":["finance"],"example":"/unusualwhales/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unusualwhales.com/news","unusualwhales.com/"]}],"name":"News Flow","maintainers":["TonyRL"],"url":"unusualwhales.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="unusualwhales" :data='{"path":"/news","categories":["finance"],"example":"/unusualwhales/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unusualwhales.com/news","unusualwhales.com/"]}],"name":"News Flow","maintainers":["TonyRL"],"url":"unusualwhales.com/news","location":"news.ts"}' :test='{"code":0}' />
 
 ## 巴伦周刊中文版 <Site url="barronschina.com.cn"/>
 

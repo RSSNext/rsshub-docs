@@ -41,7 +41,7 @@
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":0}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -51,7 +51,7 @@
 
 ### SDK Platform Tools release notes <Site url="developer.android.com/studio/releases/platform-tools" size="sm" />
 
-<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## APKPure <Site url="apkpure.com"/>
 
@@ -117,7 +117,7 @@
 
 ### 更新情报 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/app/:id?","categories":["program-update"],"example":"/bilibili/app/android","parameters":{"id":"客户端 id，见下表，默认为安卓版"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新情报","maintainers":["nczitzk"],"description":"| 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |\n| ------- | --------- | ---------- | ------ | ---------------- |\n| android | iphone    | ipad       | win    | android_tv_yst |","location":"app.ts"}' :test='{"code":1,"message":"expected [ &#39;https://app.bilibili.com/&#39; ] to not include &#39;https://app.bilibili.com/&#39;"}' />
+<Route namespace="bilibili" :data='{"path":"/app/:id?","categories":["program-update"],"example":"/bilibili/app/android","parameters":{"id":"客户端 id，见下表，默认为安卓版"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新情报","maintainers":["nczitzk"],"description":"| 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |\n| ------- | --------- | ---------- | ------ | ---------------- |\n| android | iphone    | ipad       | win    | android_tv_yst |","location":"app.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |
 | ------- | --------- | ---------- | ------ | ---------------- |
@@ -133,7 +133,7 @@
 
 ### Release Notes <Site url="brave.com/latest" size="sm" />
 
-<Route namespace="brave" :data='{"path":"/latest","categories":["program-update"],"example":"/brave/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["brave.com/latest","brave.com/"]}],"name":"Release Notes","maintainers":["nczitzk"],"url":"brave.com/latest","location":"latest.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="brave" :data='{"path":"/latest","categories":["program-update"],"example":"/brave/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["brave.com/latest","brave.com/"]}],"name":"Release Notes","maintainers":["nczitzk"],"url":"brave.com/latest","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Civitai <Site url="civitai.com"/>
 
@@ -177,7 +177,7 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Changelog <Site url="cn.eagle.cool" size="sm" />
 
-<Route namespace="eagle" :data='{"path":"/changelog/:language?","categories":["program-update"],"example":"/eagle/changelog/en","parameters":{"language":"Language, see list, default to be `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Changelog","maintainers":["tigercubden"],"description":"Language\n\n  | Simplified Chinese | Traditional Chinese | English |\n  | ------------------ | ------------------- | ------- |\n  | cn                 | tw                  | en      |","location":"changelog.ts"}' :test='{"code":0}' />
+<Route namespace="eagle" :data='{"path":"/changelog/:language?","categories":["program-update"],"example":"/eagle/changelog/en","parameters":{"language":"Language, see list, default to be `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Changelog","maintainers":["tigercubden"],"description":"Language\n\n  | Simplified Chinese | Traditional Chinese | English |\n  | ------------------ | ------------------- | ------- |\n  | cn                 | tw                  | en      |","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Language
 
@@ -213,7 +213,7 @@ Language
 
 ### Script Feedback <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":0}' />
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 

@@ -28,7 +28,7 @@ Refer to the URL format `pubs.aip.org/:pub/:jrn`
 
 ### Journal <Site url="annualreviews.org" size="sm" />
 
-<Route namespace="annualreviews" :data='{"path":"/:id","categories":["journal"],"example":"/annualreviews/anchem","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["annualreviews.org/journal/:id","annualreviews.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.\n\n  :::tip\n  More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="annualreviews" :data='{"path":"/:id","categories":["journal"],"example":"/annualreviews/anchem","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["annualreviews.org/journal/:id","annualreviews.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.\n\n  :::tip\n  More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.
 
@@ -142,7 +142,7 @@ Return results from 2020
 
 ### Category <Site url="pubsonline.informs.org" size="sm" />
 
-<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## MDPI <Site url="www.mdpi.com"/>
 
@@ -351,7 +351,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
