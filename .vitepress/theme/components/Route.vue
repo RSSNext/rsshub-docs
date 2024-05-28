@@ -14,7 +14,7 @@
       <a v-if="data.features?.requireConfig" href="/deploy/config#route-specific-configurations" target="_blank">
         <Badge type="warning">⚙️ Config Required</Badge>
       </a>
-      <a v-if="data.radar" href="/usage#radar" target="_blank">
+      <a v-if="data.radar" href="/guide/#radar" target="_blank">
         <Badge type="tip">🔍 Support Radar</Badge>
       </a>
     </p>
