@@ -1039,6 +1039,12 @@ author 列表：
 
 <Route namespace="scut" :data='{"path":"/yjs","categories":["university"],"example":"/scut/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www2.scut.edu.cn/graduate/14562/list.htm"]}],"name":"研究生院通知公告","maintainers":["shengmaosu"],"url":"www2.scut.edu.cn/graduate/14562/list.htm","location":"yjs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## 吉林大学 <Site url="jlu.edu.cn"/>
+
+### 教务通知 <Site url="jwc.jlu.edu.cn" size="sm" />
+
+<Route namespace="jlu" :data='{"path":"/jwc","categories":["university"],"example":"/jlu/jwc","radar":[{"source":["jwc.jlu.edu.cn","jwc.jlu.edu.cn/index.htm"]}],"name":"教务通知","maintainers":["mayouxi"],"url":"jwc.jlu.edu.cn","location":"jwc.ts"}' :test='undefined' />
+
 ## 吉首大学 <Site url="jsu.edu.cn"/>
 
 ### Unknown <Site url="jsu.edu.cn" size="sm" />
