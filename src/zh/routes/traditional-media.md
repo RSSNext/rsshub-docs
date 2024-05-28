@@ -542,7 +542,7 @@ en_us
 
 ### Topic <Site url="vice.com/" size="sm" />
 
-<Route namespace="vice" :data='{"path":"/topic/:topic/:language?","categories":["traditional-media"],"example":"/vice/topic/politics/en","parameters":{"topic":"Can be found in the URL","content":"Set to true to retrieve the full article (images are blurry), anything else will pull the short text","language":"defaults to `en`, use the website to discover other codes"},"radar":[{"source":["www.vice.com/:language/topic/:topic"],"target":"/topic/:topic/:language"}],"name":"Topic","maintainers":["K33k0"],"url":"vice.com/","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="vice" :data='{"path":"/topic/:topic/:language?","categories":["traditional-media"],"example":"/vice/topic/politics/en","parameters":{"topic":"Can be found in the URL","language":"defaults to `en`, use the website to discover other codes"},"radar":[{"source":["www.vice.com/:language/topic/:topic"],"target":"/topic/:topic/:language"}],"name":"Topic","maintainers":["K33k0"],"url":"vice.com/","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Voice of Mongolia 蒙古之声 <Site url="vom.mn"/>
 
