@@ -483,9 +483,9 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 <Route namespace="zotero" :data='{"path":"/versions","categories":["program-update"],"example":"/zotero/versions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zotero.org/","zotero.org/support/changelog"]}],"name":"Version History","maintainers":["jasongzy"],"url":"zotero.org/","location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
-## 王者荣耀 <Site url="mp.weixin.qq.com"/>
+## 腾讯 <Site url="tencent.com"/>
 
-### 更新日志 <Site url="mp.weixin.qq.com" size="sm" />
+### 更新日志 <Site url="tencent.com" size="sm" />
 
 <Route namespace="tencent" :data='{"path":"/qq/sdk/changelog/:platform","categories":["program-update"],"example":"/tencent/qq/sdk/changelog/iOS","parameters":{"platform":"平台，iOS / Android"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新日志","maintainers":["nuomi1"],"location":"qq/sdk/changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 

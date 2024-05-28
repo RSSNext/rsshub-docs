@@ -787,6 +787,16 @@ Tip: use proxy if necessary.
   | [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |
   
 
+## 腾讯 <Site url="tencent.com"/>
+
+### 新闻中心 <Site url="tencent.com" size="sm" />
+
+<Route namespace="tencent" :data='{"path":"/pvp/newsindex/:type","categories":["game"],"example":"/tencent/pvp/newsindex/all","parameters":{"type":"栏目分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻中心","maintainers":["Jeason0228","HenryQW"],"description":"| 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | all  | rm   | xw   | gg   | hd   | ss   | yh   |","location":"pvp/newsindex.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+| 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |
+  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+  | all  | rm   | xw   | gg   | hd   | ss   | yh   |
+
 ## 完美世界电竞 <Site url="wmpvp.com"/>
 
 ### 资讯列表 <Site url="wmpvp.com" size="sm" />
@@ -796,16 +806,6 @@ Tip: use proxy if necessary.
 | DOTA2 | CS2 |
   | ----- | --- |
   | 1     | 2   |
-
-## 王者荣耀 <Site url="mp.weixin.qq.com"/>
-
-### 新闻中心 <Site url="mp.weixin.qq.com" size="sm" />
-
-<Route namespace="tencent" :data='{"path":"/pvp/newsindex/:type","categories":["game"],"example":"/tencent/pvp/newsindex/all","parameters":{"type":"栏目分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻中心","maintainers":["Jeason0228","HenryQW"],"description":"| 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | all  | rm   | xw   | gg   | hd   | ss   | yh   |","location":"pvp/newsindex.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-| 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | all  | rm   | xw   | gg   | hd   | ss   | yh   |
 
 ## 网易公开课 <Site url="163.com"/>
 

@@ -2719,6 +2719,12 @@ Type 栏目：
 
 <Route namespace="qq" :data='{"path":"/ac/comic/:id?","radar":[{"source":["ac.qq.com/Comic/ComicInfo/id/:id","ac.qq.com/"],"target":"/ac/comic/:id"}],"name":"Unknown","maintainers":[],"location":"ac/comic.ts"}' :test='undefined' />
 
+## 腾讯 <Site url="tencent.com"/>
+
+### 更新 <Site url="tencent.com" size="sm" />
+
+<Route namespace="tencent" :data='{"path":"/news/author/:mid","categories":["new-media"],"example":"/tencent/news/author/5933889","parameters":{"mid":"企鹅号 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["new.qq.com/omn/author/:mid"]}],"name":"更新","maintainers":["LogicJake","miles170"],"location":"news/author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
 ## 腾讯研究院 <Site url="tisi.org"/>
 
 ### 最近更新 <Site url="tisi.org" size="sm" />
@@ -2760,12 +2766,6 @@ Type 栏目：
 | 最新报道 | 晚点独家 | 人物访谈 | 晚点早知道 | 长报道 |
   | -------- | -------- | -------- | ---------- | ------ |
   |          | 1        | 2        | 3          | 4      |
-
-## 王者荣耀 <Site url="mp.weixin.qq.com"/>
-
-### 更新 <Site url="mp.weixin.qq.com" size="sm" />
-
-<Route namespace="tencent" :data='{"path":"/news/author/:mid","categories":["new-media"],"example":"/tencent/news/author/5933889","parameters":{"mid":"企鹅号 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["new.qq.com/omn/author/:mid"]}],"name":"更新","maintainers":["LogicJake","miles170"],"location":"news/author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 网易公开课 <Site url="163.com"/>
 
