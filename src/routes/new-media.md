@@ -2763,14 +2763,6 @@ Type 栏目：
 
 ## 王者荣耀 <Site url="mp.weixin.qq.com"/>
 
-### Unknown <Site url="mp.weixin.qq.com" size="sm" />
-
-<Route namespace="tencent" :data='{"path":"/news/coronavirus/data/:province?/:city?","name":"Unknown","maintainers":["CaoMeiYouRen"],"location":"news/coronavirus/data.ts"}' :test='undefined' />
-
-### Unknown <Site url="new.qq.com/zt2020/page/feiyan.htm" size="sm" />
-
-<Route namespace="tencent" :data='{"path":"/news/coronavirus/total","radar":[{"source":["new.qq.com/zt2020/page/feiyan.htm"]}],"name":"Unknown","maintainers":["CaoMeiYouRen"],"url":"new.qq.com/zt2020/page/feiyan.htm","location":"news/coronavirus/total.ts"}' :test='undefined' />
-
 ### 更新 <Site url="mp.weixin.qq.com" size="sm" />
 
 <Route namespace="tencent" :data='{"path":"/news/author/:mid","categories":["new-media"],"example":"/tencent/news/author/5933889","parameters":{"mid":"企鹅号 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["new.qq.com/omn/author/:mid"]}],"name":"更新","maintainers":["LogicJake","miles170"],"location":"news/author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />

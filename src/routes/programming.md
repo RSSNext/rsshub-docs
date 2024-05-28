@@ -993,6 +993,20 @@ GitHub provides some official RSS feeds:
   | --------- | -------- | -------- | --------- | -------- | -------- |
   | recommend | quality  | growth   | community | material | industry |
 
+## 王者荣耀 <Site url="mp.weixin.qq.com"/>
+
+### Unknown <Site url="mp.weixin.qq.com" size="sm" />
+
+<Route namespace="tencent" :data='{"path":"/news/coronavirus/data/:province?/:city?","name":"Unknown","maintainers":["CaoMeiYouRen"],"location":"news/coronavirus/data.ts"}' :test='undefined' />
+
+### Unknown <Site url="new.qq.com/zt2020/page/feiyan.htm" size="sm" />
+
+<Route namespace="tencent" :data='{"path":"/news/coronavirus/total","radar":[{"source":["new.qq.com/zt2020/page/feiyan.htm"]}],"name":"Unknown","maintainers":["CaoMeiYouRen"],"url":"new.qq.com/zt2020/page/feiyan.htm","location":"news/coronavirus/total.ts"}' :test='undefined' />
+
+### 腾讯云开发者社区专栏 <Site url="mp.weixin.qq.com" size="sm" />
+
+<Route namespace="tencent" :data='{"path":"/cloud/developer/column/:categoryId?","categories":["programming"],"example":"/tencent/cloud/developer/column/1","parameters":{"categoryId":"categoryId from page url"},"radar":[{"source":["cloud.tencent.com/developer/column"]}],"name":"腾讯云开发者社区专栏","maintainers":["lyling"],"location":"cloud/developer/column.ts"}' :test='undefined' />
+
 ## 微信小程序 <Site url="posts.careerengine.us"/>
 
 :::tip
