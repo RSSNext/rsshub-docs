@@ -43,7 +43,7 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -106,10 +106,12 @@
   --vp-home-hero-image-filter: blur(44px);
 }
 
-.VPHomeHero .VPImage,
-.VPHomeHero .image-bg {
-  max-width: 280px;
-  max-height: 280px;
+@media (min-width: 960px) {
+  .VPHomeHero .VPImage,
+  .VPHomeHero .image-bg {
+    max-width: 280px;
+    max-height: 280px;
+  }
 }
 
 .VPHomeHero .image-container {
