@@ -1041,6 +1041,10 @@ author 列表：
 
 ## 吉林大学 <Site url="jlu.edu.cn"/>
 
+### 吉林大学计算机科学与技术学院 - 新闻中心 <Site url="ccst.jlu.edu.cn" size="sm" />
+
+<Route namespace="jlu" :data='{"path":"/ccst/xwzx/:category","categories":["university"],"example":"/jlu/ccst/xwzx/gsl","radar":[{"source":["ccst.jlu.edu.cn/xwzx/gsl.htm","ccst.jlu.edu.cn/xwzx/xstd.htm","ccst.jlu.edu.cn/xwzx/xytz.htm","ccst.jlu.edu.cn/xwzx/xyxw.htm","ccst.jlu.edu.cn/xwzx/zsjy.htm"]}],"name":"吉林大学计算机科学与技术学院 - 新闻中心","maintainers":["mayouxi"],"url":"ccst.jlu.edu.cn","location":"ccst/xwzx/index.ts"}' :test='undefined' />
+
 ### 教务通知 <Site url="jwc.jlu.edu.cn" size="sm" />
 
 <Route namespace="jlu" :data='{"path":"/jwc","categories":["university"],"example":"/jlu/jwc","radar":[{"source":["jwc.jlu.edu.cn","jwc.jlu.edu.cn/index.htm"]}],"name":"教务通知","maintainers":["mayouxi"],"url":"jwc.jlu.edu.cn","location":"jwc.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
