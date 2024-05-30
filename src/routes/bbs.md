@@ -144,23 +144,23 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 最热 / 最新帖子 <Site url="bbs.loongarch.org/" size="sm" />
 
-<Route namespace="loongarch" :data='{"path":"/post/:type?","categories":["bbs"],"example":"/loongarch/post/newest","parameters":{"type":"top 或 newest"},"radar":[{"source":["bbs.loongarch.org"]}],"name":"最热 / 最新帖子","maintainers":["ladeng07","3401797899"],"url":"bbs.loongarch.org/","location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="loongarch" :data='{"path":"/post/:type?","categories":["bbs"],"example":"/loongarch/post/newest","parameters":{"type":"top 或 newest"},"radar":[{"source":["bbs.loongarch.org"]}],"name":"最热 / 最新帖子","maintainers":["ladeng07","3401797899"],"url":"bbs.loongarch.org/","location":"post.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Meteor <Site url="meteor.today"/>
 
 ### 看板列表 <Site url="meteor.today/" size="sm" />
 
-<Route namespace="meteor" :data='{"path":"/boards","categories":["bbs"],"example":"/meteor/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["meteor.today/"]}],"name":"看板列表","maintainers":["TonyRL"],"url":"meteor.today/","location":"boards.ts"}' :test='{"code":1,"message":"expected [ …(307) ] to not include &#39;https://meteor.today/board/%E5%BD%B0%…&#39;"}' />
+<Route namespace="meteor" :data='{"path":"/boards","categories":["bbs"],"example":"/meteor/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["meteor.today/"]}],"name":"看板列表","maintainers":["TonyRL"],"url":"meteor.today/","location":"boards.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 看板 <Site url="meteor.today" size="sm" />
 
-<Route namespace="meteor" :data='{"path":"/:board?","categories":["bbs"],"example":"/meteor/all","parameters":{"board":"看板 ID 或簡稱，可在 URL 或下方路由找到，預設為 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板","maintainers":["TonyRL"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="meteor" :data='{"path":"/:board?","categories":["bbs"],"example":"/meteor/all","parameters":{"board":"看板 ID 或簡稱，可在 URL 或下方路由找到，預設為 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板","maintainers":["TonyRL"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MIUI <Site url="miui.com"/>
 
 ### 小米社区用户发帖 <Site url="miui.com" size="sm" />
 
-<Route namespace="miui" :data='{"path":"/community/user/:uid","categories":["bbs"],"example":"/miui/community/user/1200057564","parameters":{"uid":"小米用户 UID，可于网页版用户主页链接中 `uid` 项获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.vip.miui.com/page/info/mio/mio/homePage"]}],"name":"小米社区用户发帖","maintainers":["abc1763613206"],"location":"community/user.ts"}' :test='{"code":0}' />
+<Route namespace="miui" :data='{"path":"/community/user/:uid","categories":["bbs"],"example":"/miui/community/user/1200057564","parameters":{"uid":"小米用户 UID，可于网页版用户主页链接中 `uid` 项获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.vip.miui.com/page/info/mio/mio/homePage"]}],"name":"小米社区用户发帖","maintainers":["abc1763613206"],"location":"community/user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## NGA <Site url="bbs.nga.cn"/>
 
@@ -434,7 +434,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Zone <Site url="zone.huoxian.cn" size="sm" />
 
-<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":0}' />
+<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 集思录 <Site url="jisilu.cn"/>
 

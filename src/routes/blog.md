@@ -22,7 +22,7 @@
 
 ### User Feed <Site url="blog.csdn.net" size="sm" />
 
-<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="csdn" :data='{"path":"/blog/:user","categories":["blog"],"example":"/csdn/blog/csdngeeknews","parameters":{"user":"`user` is the username of a CSDN blog which can be found in the url of the home page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.csdn.net/:user"]}],"name":"User Feed","maintainers":[],"location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Delta Lake <Site url="delta.io"/>
 
@@ -56,7 +56,7 @@
 
 ### 用户博客 <Site url="hashnode.dev/" size="sm" />
 
-<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
@@ -88,13 +88,13 @@
 
 ### Recently <Site url="macmenubar.com" size="sm" />
 
-<Route namespace="macmenubar" :data='{"path":"/recently/:category?","categories":["blog"],"example":"/macmenubar/recently/developer-apps,system-tools","parameters":{"category":"Category path name, seperate by comma, default is all categories. Category path name can be found in url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Recently","maintainers":["5upernova-heng"],"location":"recently.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="macmenubar" :data='{"path":"/recently/:category?","categories":["blog"],"example":"/macmenubar/recently/developer-apps,system-tools","parameters":{"category":"Category path name, seperate by comma, default is all categories. Category path name can be found in url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Recently","maintainers":["5upernova-heng"],"location":"recently.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Medium <Site url="medium.com"/>
 
 ### List <Site url="medium.com" size="sm" />
 
-<Route namespace="medium" :data='{"path":"/list/:user/:catalogId","categories":["blog"],"example":"/medium/list/imsingee/f2d8d48096a9","parameters":{"user":"Username","catalogId":"List ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List","maintainers":["ImSingee"],"description":"The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.\n\n  :::warning\n  To access private lists, only self-hosting is supported.\n  :::","location":"list.ts"}' :test='{"code":0}' />
+<Route namespace="medium" :data='{"path":"/list/:user/:catalogId","categories":["blog"],"example":"/medium/list/imsingee/f2d8d48096a9","parameters":{"user":"Username","catalogId":"List ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List","maintainers":["ImSingee"],"description":"The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.\n\n  :::warning\n  To access private lists, only self-hosting is supported.\n  :::","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.
 
@@ -248,7 +248,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 严选 <Site url="chuanliu.org/nice" size="sm" />
 
-<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="chuanliu" :data='{"path":"/nice","categories":["blog"],"example":"/chuanliu/nice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chuanliu.org/nice"]}],"name":"严选","maintainers":["nczitzk"],"url":"chuanliu.org/nice","location":"nice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 大眼仔旭 <Site url="dayanzai.me"/>
 
@@ -292,13 +292,13 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
 ### 罗磊的独立博客 <Site url="luolei.org" size="sm" />
 
-<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 免費資源網路社群 <Site url="free.com.tw"/>
 
@@ -324,7 +324,7 @@ TAIWAN KADOKAWA
 
 ### 文章 <Site url="luxiangdong.com/" size="sm" />
 
-<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 新语丝 <Site url="xys.org"/>
 
@@ -390,5 +390,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
