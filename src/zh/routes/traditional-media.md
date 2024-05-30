@@ -554,6 +554,12 @@ en_us
   | ------- | ------ | ------ | ------- | -------- |
   | en      | ja     | mn     | ru      | zh       |
 
+## WIRED <Site url="www.wired.com"/>
+
+### Tags <Site url="www.wired.com" size="sm" />
+
+<Route namespace="wired" :data='{"path":"/tag/:tag","example":"/wired/tag/facebook","parameters":{"tag":"Tag name"},"radar":[{"source":["www.wired.com/tag/:tag/"]}],"name":"Tags","maintainers":["Naiqus"],"location":"tag.ts"}' :test='undefined' />
+
 ## Yomiuri Shimbun 読売新聞 <Site url="www.yomiuri.co.jp"/>
 
 ### News <Site url="www.yomiuri.co.jp" size="sm" />
