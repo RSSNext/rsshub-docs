@@ -110,25 +110,9 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ## IEEE Xplore <Site url="www.ieee.org"/>
 
-### Early Access Journal <Site url="www.ieee.org" size="sm" />
+### IEEE Journal Articles <Site url="www.ieee.org" size="sm" />
 
-<Route namespace="ieee" :data='{"path":"/journal/:journal/earlyaccess/:sortType?","categories":["journal"],"example":"/ieee/journal/5306045/earlyaccess","parameters":{"journal":"Issue code, the number of the `isnumber` in the URL","sortType":"Sort Type, default: `vol-only-seq`, the part of the URL after `sortType`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Early Access Journal","maintainers":["5upernova-heng"],"location":"earlyaccess.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### Unknown <Site url="www.ieee.org" size="sm" />
-
-<Route namespace="ieee" :data='{"path":["/:journal/latest/vol/:sortType?","/journal/:journal/:sortType?"],"name":"Unknown","maintainers":[],"location":"journal.ts"}' :test='undefined' />
-
-### Unknown <Site url="www.ieee.org" size="sm" />
-
-<Route namespace="ieee" :data='{"path":["/:journal/latest/vol/:sortType?","/journal/:journal/:sortType?"],"name":"Unknown","maintainers":[],"location":"journal.ts"}' :test='undefined' />
-
-### Unknown <Site url="www.ieee.org" size="sm" />
-
-<Route namespace="ieee" :data='{"path":["/:journal/latest/date/:sortType?","/journal/:journal/recent/:sortType?"],"name":"Unknown","maintainers":[],"location":"recent.ts"}' :test='undefined' />
-
-### Unknown <Site url="www.ieee.org" size="sm" />
-
-<Route namespace="ieee" :data='{"path":["/:journal/latest/date/:sortType?","/journal/:journal/recent/:sortType?"],"name":"Unknown","maintainers":[],"location":"recent.ts"}' :test='undefined' />
+<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='undefined' />
 
 ## IEEE Computer Society <Site url="ieee-security.org"/>
 
