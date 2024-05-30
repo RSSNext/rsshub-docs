@@ -1336,6 +1336,18 @@ Chart
 -   使用`/weibo/search/hot/fulltext?pic=true`可以获取图片缩略（但需要配合额外的手段，例如浏览器上的 Header Editor 等来修改 referer 参数为`https://weibo.com`，以规避微博的外链限制，否则图片无法显示。）
 -   使用`/weibo/search/hot/fulltext?pic=true&fullpic=true`可以获取 Original 图片（但需要配合额外的手段，例如浏览器上的 Header Editor 等来修改 referer 参数为`https://weibo.com`，以规避微博的外链限制，否则图片无法显示。）
 
+### 用户收藏动态 <Site url="weibo.com/" size="sm" />
+
+<Route namespace="weibo" :data='{"path":"/user_bookmarks/:uid/:routeParams?","categories":["social-media"],"example":"/weibo/user_bookmarks/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["weibo.com/"],"target":"/user_bookmarks/:uid"}],"name":"用户收藏动态","maintainers":["cztchoice"],"url":"weibo.com/","description":":::warning\n  此方案必须使用用户`Cookie`进行抓取，只可以获取本人的收藏动态\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"user-bookmarks.ts"}' :test='undefined' />
+
+:::warning
+  此方案必须使用用户`Cookie`进行抓取，只可以获取本人的收藏动态
+
+  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知
+
+  微博用户 Cookie 的配置可参照部署文档
+  :::
+
 ### 用户 <Site url="weibo.com" size="sm" />
 
 <Route namespace="weibo" :data='{"path":"/oasis/user/:userid","categories":["social-media"],"example":"/weibo/oasis/user/1990895721","parameters":{"userid":"用户 id, 可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid"],"target":"/user/:uid"}],"name":"用户","maintainers":["kt286"],"location":"oasis/user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
