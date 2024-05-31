@@ -40,7 +40,7 @@ The URL of the journal [Annual Review of Analytical Chemistry](https://www.annua
 
 ### The ACM Conference on Computer and Communications Security <Site url="sigsac.org/ccs.html" size="sm" />
 
-<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":0}' />
 
 Return results from 2020
 
@@ -112,7 +112,7 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ### IEEE Journal Articles <Site url="www.ieee.org" size="sm" />
 
-<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='undefined' />
+<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## IEEE Computer Society <Site url="ieee-security.org"/>
 
@@ -323,7 +323,7 @@ Sorting
 
 ### Trending Papers on arXiv <Site url="trendingpapers.com" size="sm" />
 
-<Route namespace="trendingpapers" :data='{"path":"/papers/:category?/:time?/:cited?","categories":["journal"],"example":"/trendingpapers/papers","parameters":{"category":"Category of papers, can be found in URL. `All categories` by default.","time":"Time like `24 hours` to specify the duration of ranking, can be found in URL. `Since beginning` by default.","cited":"Cited or uncited papers, can be found in URL. `Cited and uncited papers` by default."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trending Papers on arXiv","maintainers":["CookiePieWw"],"location":"papers.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="trendingpapers" :data='{"path":"/papers/:category?/:time?/:cited?","categories":["journal"],"example":"/trendingpapers/papers","parameters":{"category":"Category of papers, can be found in URL. `All categories` by default.","time":"Time like `24 hours` to specify the duration of ranking, can be found in URL. `Since beginning` by default.","cited":"Cited or uncited papers, can be found in URL. `Cited and uncited papers` by default."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trending Papers on arXiv","maintainers":["CookiePieWw"],"location":"papers.ts"}' :test='{"code":0}' />
 
 ## The University of Chicago Press: Journals <Site url="journals.uchicago.edu"/>
 
@@ -335,7 +335,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 

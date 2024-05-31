@@ -75,7 +75,7 @@
 
 ### Categories <Site url="aeon.aeon.co" size="sm" />
 
-<Route namespace="aeon" :data='{"path":"/category/:category","categories":["new-media"],"example":"/aeon/category/philosophy","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aeon.aeon.co/:category"]}],"name":"Categories","maintainers":["emdoe"],"description":"Supported categories: Philosophy, Science, Psychology, Society, and Culture.","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aeon" :data='{"path":"/category/:category","categories":["new-media"],"example":"/aeon/category/philosophy","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aeon.aeon.co/:category"]}],"name":"Categories","maintainers":["emdoe"],"description":"Supported categories: Philosophy, Science, Psychology, Society, and Culture.","location":"category.ts"}' :test='{"code":0}' />
 
 Supported categories: Philosophy, Science, Psychology, Society, and Culture.
 
@@ -93,7 +93,7 @@ Supported types: Essays, Videos, and Audio.
 
 ### 共和報 <Site url="agorahub.github.io/pen0" size="sm" />
 
-<Route namespace="agora0" :data='{"path":"/pen0","categories":["new-media"],"example":"/agora0/pen0","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agorahub.github.io/pen0"]}],"name":"共和報","maintainers":["TonyRL"],"url":"agorahub.github.io/pen0","location":"pen0.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="agora0" :data='{"path":"/pen0","categories":["new-media"],"example":"/agora0/pen0","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agorahub.github.io/pen0"]}],"name":"共和報","maintainers":["TonyRL"],"url":"agorahub.github.io/pen0","location":"pen0.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 零博客 <Site url="agorahub.github.io" size="sm" />
 
@@ -465,7 +465,7 @@ Topics
 
 ### HKEPC 电脑领域 <Site url="hkepc.com/" size="sm" />
 
-<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |
   | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |
@@ -475,7 +475,7 @@ Topics
 
 ### News <Site url="indiansinkuwait.com/latest-news" size="sm" />
 
-<Route namespace="indiansinkuwait" :data='{"path":"/latest","categories":["new-media"],"example":"/indiansinkuwait/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indiansinkuwait.com/latest-news","indiansinkuwait.com/"]}],"name":"News","maintainers":["TonyRL"],"url":"indiansinkuwait.com/latest-news","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="indiansinkuwait" :data='{"path":"/latest","categories":["new-media"],"example":"/indiansinkuwait/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indiansinkuwait.com/latest-news","indiansinkuwait.com/"]}],"name":"News","maintainers":["TonyRL"],"url":"indiansinkuwait.com/latest-news","location":"latest.ts"}' :test='{"code":0}' />
 
 ## InfoQ 中文 <Site url="infoq.cn"/>
 
@@ -547,7 +547,7 @@ Topics
 
 ### Categorised News <Site url="kuwaitlocal.com/news/latest" size="sm" />
 
-<Route namespace="kuwaitlocal" :data='{"path":"/:category?","categories":["new-media"],"example":"/kuwaitlocal/article","parameters":{"category":"Category name, can be found in URL, `latest` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuwaitlocal.com/news/categories/:category"],"target":"/:category"}],"name":"Categorised News","maintainers":["TonyRL"],"url":"kuwaitlocal.com/news/latest","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuwaitlocal" :data='{"path":"/:category?","categories":["new-media"],"example":"/kuwaitlocal/article","parameters":{"category":"Category name, can be found in URL, `latest` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuwaitlocal.com/news/categories/:category"],"target":"/:category"}],"name":"Categorised News","maintainers":["TonyRL"],"url":"kuwaitlocal.com/news/latest","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## LINE <Site url="today.line.me"/>
 
@@ -569,13 +569,13 @@ Edition
 
 ### 实时消息 <Site url="liveuamap.com" size="sm" />
 
-<Route namespace="liveuamap" :data='{"path":"/:region?","categories":["new-media"],"example":"/liveuamap","parameters":{"region":"region 热点地区，默认为`ukraine`，其他选项见liveuamap.com的三级域名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["liveuamap.com/:region*"],"target":"/:region"}],"name":"实时消息","maintainers":["CoderSherlock"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="liveuamap" :data='{"path":"/:region?","categories":["new-media"],"example":"/liveuamap","parameters":{"region":"region 热点地区，默认为`ukraine`，其他选项见liveuamap.com的三级域名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["liveuamap.com/:region*"],"target":"/:region"}],"name":"实时消息","maintainers":["CoderSherlock"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## LVV2 <Site url="lvv2.com"/>
 
 ### 24 小时点击排行 Top 10 <Site url="lvv2.com" size="sm" />
 
-<Route namespace="lvv2" :data='{"path":"/top/:channel/:sort?","categories":["new-media"],"example":"/lvv2/top/sort-score","parameters":{"channel":"频道，见下表","sort":"排序方式，仅得分和24小时榜可选填该参数，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"24 小时点击排行 Top 10","maintainers":["Fatpandac"],"description":"|   热门   |   最新   |    得分    |   24 小时榜   |\n  | :------: | :------: | :--------: | :-----------: |\n  | sort-hot | sort-new | sort-score | sort-realtime |\n\n  | 排序方式 | 一小时内 | 一天内 | 一个周内 | 一个月内 |\n  | :------: | :------: | :----: | :------: | :------: |\n  |          |  t-hour  |  t-day |  t-week  |  t-month |","location":"top.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lvv2" :data='{"path":"/top/:channel/:sort?","categories":["new-media"],"example":"/lvv2/top/sort-score","parameters":{"channel":"频道，见下表","sort":"排序方式，仅得分和24小时榜可选填该参数，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"24 小时点击排行 Top 10","maintainers":["Fatpandac"],"description":"|   热门   |   最新   |    得分    |   24 小时榜   |\n  | :------: | :------: | :--------: | :-----------: |\n  | sort-hot | sort-new | sort-score | sort-realtime |\n\n  | 排序方式 | 一小时内 | 一天内 | 一个周内 | 一个月内 |\n  | :------: | :------: | :----: | :------: | :------: |\n  |          |  t-hour  |  t-day |  t-week  |  t-month |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 |   热门   |   最新   |    得分    |   24 小时榜   |
   | :------: | :------: | :--------: | :-----------: |
@@ -587,7 +587,7 @@ Edition
 
 ### 频道 <Site url="lvv2.com" size="sm" />
 
-<Route namespace="lvv2" :data='{"path":"/news/:channel/:sort?","categories":["new-media"],"example":"/lvv2/news/sort-score","parameters":{"channel":"频道，见下表","sort":"排序方式，仅得分和24小时榜可选填该参数，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["Fatpandac"],"description":"|   热门   |   最新   |    得分    |   24 小时榜   |\n  | :------: | :------: | :--------: | :-----------: |\n  | sort-hot | sort-new | sort-score | sort-realtime |\n\n  | 排序方式 | 一小时内 | 一天内 | 一个周内 | 一个月内 |\n  | :------: | :------: | :----: | :------: | :------: |\n  |          |  t-hour  |  t-day |  t-week  |  t-month |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lvv2" :data='{"path":"/news/:channel/:sort?","categories":["new-media"],"example":"/lvv2/news/sort-score","parameters":{"channel":"频道，见下表","sort":"排序方式，仅得分和24小时榜可选填该参数，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["Fatpandac"],"description":"|   热门   |   最新   |    得分    |   24 小时榜   |\n  | :------: | :------: | :--------: | :-----------: |\n  | sort-hot | sort-new | sort-score | sort-realtime |\n\n  | 排序方式 | 一小时内 | 一天内 | 一个周内 | 一个月内 |\n  | :------: | :------: | :----: | :------: | :------: |\n  |          |  t-hour  |  t-day |  t-week  |  t-month |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 |   热门   |   最新   |    得分    |   24 小时榜   |
   | :------: | :------: | :--------: | :-----------: |
@@ -601,7 +601,7 @@ Edition
 
 ### Blog <Site url="macfilos.com/blog" size="sm" />
 
-<Route namespace="macfilos" :data='{"path":"/blog","categories":["new-media"],"example":"/macfilos/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macfilos.com/blog","macfilos.com/"]}],"name":"Blog","maintainers":["nczitzk"],"url":"macfilos.com/blog","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="macfilos" :data='{"path":"/blog","categories":["new-media"],"example":"/macfilos/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macfilos.com/blog","macfilos.com/"]}],"name":"Blog","maintainers":["nczitzk"],"url":"macfilos.com/blog","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Matters <Site url="matters.town"/>
 
@@ -1122,7 +1122,7 @@ Member ID
 
 ### News <Site url="techcrunch.com/" size="sm" />
 
-<Route namespace="techcrunch" :data='{"path":"/news","categories":["new-media"],"example":"/techcrunch/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["techcrunch.com/"]}],"name":"News","maintainers":["EthanWng97"],"url":"techcrunch.com/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="techcrunch" :data='{"path":"/news","categories":["new-media"],"example":"/techcrunch/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["techcrunch.com/"]}],"name":"News","maintainers":["EthanWng97"],"url":"techcrunch.com/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## TechPowerUp <Site url="techpowerup.com"/>
 
@@ -1547,7 +1547,7 @@ Member ID
 
 ### 今日热榜 <Site url="hot.zyw.asia" size="sm" />
 
-<Route namespace="zyw" :data='{"path":"/hot/:site?","categories":["new-media"],"example":"/zyw/hot","parameters":{"site":"站点，见下表，默认为空，即全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"今日热榜","maintainers":["nczitzk"],"description":":::tip\n  全部站点请见 [此处](https://hot.zyw.asia/#/list)\n  :::\n\n  | 哔哩哔哩 | 微博 | 知乎 | 36 氪 | 百度 | 少数派 | IT 之家 | 澎湃新闻 | 今日头条 | 百度贴吧 | 稀土掘金 | 腾讯新闻 |\n  | -------- | ---- | ---- | ----- | ---- | ------ | ------- | -------- | -------- | -------- | -------- | -------- |","location":"hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zyw" :data='{"path":"/hot/:site?","categories":["new-media"],"example":"/zyw/hot","parameters":{"site":"站点，见下表，默认为空，即全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"今日热榜","maintainers":["nczitzk"],"description":":::tip\n  全部站点请见 [此处](https://hot.zyw.asia/#/list)\n  :::\n\n  | 哔哩哔哩 | 微博 | 知乎 | 36 氪 | 百度 | 少数派 | IT 之家 | 澎湃新闻 | 今日头条 | 百度贴吧 | 稀土掘金 | 腾讯新闻 |\n  | -------- | ---- | ---- | ----- | ---- | ------ | ------- | -------- | -------- | -------- | -------- | -------- |","location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   全部站点请见 [此处](https://hot.zyw.asia/#/list)
@@ -1587,7 +1587,7 @@ Member ID
 
 ### 快讯 <Site url="hellobtc.com/news" size="sm" />
 
-<Route namespace="hellobtc" :data='{"path":"/news","categories":["new-media"],"example":"/hellobtc/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hellobtc.com/news"]}],"name":"快讯","maintainers":["Fatpandac"],"url":"hellobtc.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hellobtc" :data='{"path":"/news","categories":["new-media"],"example":"/hellobtc/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hellobtc.com/news"]}],"name":"快讯","maintainers":["Fatpandac"],"url":"hellobtc.com/news","location":"news.ts"}' :test='{"code":0}' />
 
 ### 首页 <Site url="hellobtc.com" size="sm" />
 
@@ -1597,11 +1597,11 @@ Member ID
 
 ### 分類 <Site url="twreporter.org/" size="sm" />
 
-<Route namespace="twreporter" :data='{"path":"/category/:category","categories":["new-media"],"example":"/twreporter/category/world","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/:category"]}],"name":"分類","maintainers":["emdoe"],"url":"twreporter.org/","location":"category.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="twreporter" :data='{"path":"/category/:category","categories":["new-media"],"example":"/twreporter/category/world","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/:category"]}],"name":"分類","maintainers":["emdoe"],"url":"twreporter.org/","location":"category.ts"}' :test='{"code":0}' />
 
 ### 最新 <Site url="twreporter.org/" size="sm" />
 
-<Route namespace="twreporter" :data='{"path":"/newest","categories":["new-media"],"example":"/twreporter/newest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/"]}],"name":"最新","maintainers":["emdoe"],"url":"twreporter.org/","location":"newest.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="twreporter" :data='{"path":"/newest","categories":["new-media"],"example":"/twreporter/newest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/"]}],"name":"最新","maintainers":["emdoe"],"url":"twreporter.org/","location":"newest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 本地宝 <Site url="bendibao.com"/>
 
@@ -1781,7 +1781,7 @@ Member ID
 
 ### 分类 <Site url="agirls.aotter.net" size="sm" />
 
-<Route namespace="agirls" :data='{"path":"/:category?","categories":["new-media"],"example":"/agirls/app","parameters":{"category":"分类，默认为最新文章，可在对应主题页的 URL 中找到，下表仅列出部分"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agirls.aotter.net/posts/:category"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |\n  | -------- | -------- | -------- | ----------- | ---------- | -------- |\n  | app      | phone    | computer | accessories | tutorial   | techlife |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="agirls" :data='{"path":"/:category?","categories":["new-media"],"example":"/agirls/app","parameters":{"category":"分类，默认为最新文章，可在对应主题页的 URL 中找到，下表仅列出部分"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agirls.aotter.net/posts/:category"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |\n  | -------- | -------- | -------- | ----------- | ---------- | -------- |\n  | app      | phone    | computer | accessories | tutorial   | techlife |","location":"index.ts"}' :test='{"code":0}' />
 
 | App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |
   | -------- | -------- | -------- | ----------- | ---------- | -------- |
@@ -2067,7 +2067,7 @@ Type 栏目：
 
 ### 跟踪 <Site url="houxu.app/memory" size="sm" />
 
-<Route namespace="houxu" :data='{"path":"/memory","categories":["new-media"],"example":"/houxu/memory","radar":[{"source":["houxu.app/memory","houxu.app/"]}],"name":"跟踪","maintainers":["nczitzk"],"url":"houxu.app/memory","location":"memory.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="houxu" :data='{"path":"/memory","categories":["new-media"],"example":"/houxu/memory","radar":[{"source":["houxu.app/memory","houxu.app/"]}],"name":"跟踪","maintainers":["nczitzk"],"url":"houxu.app/memory","location":"memory.ts"}' :test='{"code":0}' />
 
 ### 热点 <Site url="houxu.app/" size="sm" />
 
@@ -2193,7 +2193,7 @@ Type 栏目：
 
 ### 志祺七七 <Site url="blog.simpleinfo.cc" size="sm" />
 
-<Route namespace="simpleinfo" :data='{"path":"/:category?","categories":["new-media"],"example":"/simpleinfo","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.simpleinfo.cc/blog/:category"],"target":"/:category"}],"name":"志祺七七","maintainers":["haukeng"],"description":"| 夥伴聊聊 | 專案設計 |\n  | -------- | -------- |\n  | work     | talk     |\n\n  | 國內外新聞 | 政治百分百 | 社會觀察家 | 心理與哲學            |\n  | ---------- | ---------- | ---------- | --------------------- |\n  | news       | politics   | society    | psychology-philosophy |\n\n  | 科學大探索 | 環境與健康         | ACG 快樂聊 | 好書籍分享   | 其它主題     |\n  | ---------- | ------------------ | ---------- | ------------ | ------------ |\n  | science    | environment-health | acg        | book-sharing | other-topics |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="simpleinfo" :data='{"path":"/:category?","categories":["new-media"],"example":"/simpleinfo","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.simpleinfo.cc/blog/:category"],"target":"/:category"}],"name":"志祺七七","maintainers":["haukeng"],"description":"| 夥伴聊聊 | 專案設計 |\n  | -------- | -------- |\n  | work     | talk     |\n\n  | 國內外新聞 | 政治百分百 | 社會觀察家 | 心理與哲學            |\n  | ---------- | ---------- | ---------- | --------------------- |\n  | news       | politics   | society    | psychology-philosophy |\n\n  | 科學大探索 | 環境與健康         | ACG 快樂聊 | 好書籍分享   | 其它主題     |\n  | ---------- | ------------------ | ---------- | ------------ | ------------ |\n  | science    | environment-health | acg        | book-sharing | other-topics |","location":"index.ts"}' :test='{"code":0}' />
 
 | 夥伴聊聊 | 專案設計 |
   | -------- | -------- |
@@ -2221,11 +2221,11 @@ Type 栏目：
 
 ### 榜单 <Site url="tophub.today" size="sm" />
 
-<Route namespace="tophub" :data='{"path":"/:id","categories":["new-media"],"example":"/tophub/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单","maintainers":["LogicJake"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tophub" :data='{"path":"/:id","categories":["new-media"],"example":"/tophub/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单","maintainers":["LogicJake"],"location":"index.ts"}' :test='{"code":0}' />
 
 ### 榜单列表 <Site url="tophub.today" size="sm" />
 
-<Route namespace="tophub" :data='{"path":"/list/:id","categories":["new-media"],"example":"/tophub/list/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单列表","maintainers":["akynazh"],"description":":::tip\n将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。\n:::","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tophub" :data='{"path":"/list/:id","categories":["new-media"],"example":"/tophub/list/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单列表","maintainers":["akynazh"],"description":":::tip\n将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。\n:::","location":"list.ts"}' :test='{"code":0}' />
 
 :::tip
 将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。
@@ -2385,7 +2385,7 @@ Type 栏目：
 
 ### 报告 <Site url="logclub.com" size="sm" />
 
-<Route namespace="logclub" :data='{"path":["/lc_report/:id?","/report/:id?"],"categories":["new-media"],"example":"/logclub/lc_report","parameters":{"id":"报告 id，见下表，默认为罗戈研究出品"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"报告","maintainers":["nczitzk"],"description":"| 罗戈研究出品 | 物流报告       | 绿色双碳报告          |\n  | ------------ | -------------- | --------------------- |\n  | Report       | IndustryReport | GreenDualCarbonReport |","location":"report.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="logclub" :data='{"path":["/lc_report/:id?","/report/:id?"],"categories":["new-media"],"example":"/logclub/lc_report","parameters":{"id":"报告 id，见下表，默认为罗戈研究出品"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"报告","maintainers":["nczitzk"],"description":"| 罗戈研究出品 | 物流报告       | 绿色双碳报告          |\n  | ------------ | -------------- | --------------------- |\n  | Report       | IndustryReport | GreenDualCarbonReport |","location":"report.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 罗戈研究出品 | 物流报告       | 绿色双碳报告          |
   | ------------ | -------------- | --------------------- |
@@ -2627,7 +2627,7 @@ Type 栏目：
 
 ### Shortcuts Gallery <Site url="shortcuts.sspai.com/*" size="sm" />
 
-<Route namespace="sspai" :data='{"path":"/shortcuts","categories":["new-media"],"example":"/sspai/shortcuts","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["shortcuts.sspai.com/*"]}],"name":"Shortcuts Gallery","maintainers":["Andiedie"],"url":"shortcuts.sspai.com/*","location":"shortcuts-gallery.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sspai" :data='{"path":"/shortcuts","categories":["new-media"],"example":"/sspai/shortcuts","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["shortcuts.sspai.com/*"]}],"name":"Shortcuts Gallery","maintainers":["Andiedie"],"url":"shortcuts.sspai.com/*","location":"shortcuts-gallery.ts"}' :test='{"code":1,"message":"expected [ &#39;47&#39;, &#39;85&#39;, &#39;105&#39;, &#39;95&#39;, &#39;80&#39;, …(2) ] to not include &#39;155&#39;"}' />
 
 ### 标签订阅 <Site url="sspai.com" size="sm" />
 
@@ -3048,7 +3048,7 @@ Type 栏目：
 
 ### 分类 <Site url="xd.x6d.com" size="sm" />
 
-<Route namespace="x6d" :data='{"path":"/:id?","name":"分类","url":"xd.x6d.com","maintainers":["nczitzk"],"example":"/x6d/34","parameters":{"id":"分类 id，可在对应分类页面的 URL 中找到，默认为首页最近更新"},"description":"| 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |\n  | -------- | ------- | -------- | -------- | -------- |\n  | 31       | 55      | 112      | 33       | 88       |\n\n  | 宅家自学 | 健身养生 | 摄影剪辑 | 长点知识 | 自我提升 | 两性相关 | 编程办公 | 职场关系 | 新媒体运营 | 其他教程 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ---------- | -------- |\n  | 18       | 98       | 94       | 93       | 99       | 100      | 21       | 22       | 19         | 44       |\n\n  | 活动线报 | 流量话费 | 免费会员 | 实物活动 | 游戏活动 | 红包活动 | 空间域名 | 其他活动 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 34       | 35       | 91       | 92       | 39       | 38       | 37       | 36       |\n\n  | 值得一看 | 找点乐子 | 热门事件 | 节目推荐 |\n  | -------- | -------- | -------- | -------- |\n  | 65       | 50       | 77       | 101      |\n\n  | 值得一听 | 每日一听 | 歌单推荐 |\n  | -------- | -------- | -------- |\n  | 71       | 87       | 79       |\n\n  | 资源宝库 | 书籍资料 | 设计资源 | 剪辑资源 | 办公资源 | 壁纸资源 | 编程资源 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 106      | 107      | 108      | 109      | 110      | 111      | 113      |","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="x6d" :data='{"path":"/:id?","name":"分类","url":"xd.x6d.com","maintainers":["nczitzk"],"example":"/x6d/34","parameters":{"id":"分类 id，可在对应分类页面的 URL 中找到，默认为首页最近更新"},"description":"| 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |\n  | -------- | ------- | -------- | -------- | -------- |\n  | 31       | 55      | 112      | 33       | 88       |\n\n  | 宅家自学 | 健身养生 | 摄影剪辑 | 长点知识 | 自我提升 | 两性相关 | 编程办公 | 职场关系 | 新媒体运营 | 其他教程 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ---------- | -------- |\n  | 18       | 98       | 94       | 93       | 99       | 100      | 21       | 22       | 19         | 44       |\n\n  | 活动线报 | 流量话费 | 免费会员 | 实物活动 | 游戏活动 | 红包活动 | 空间域名 | 其他活动 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 34       | 35       | 91       | 92       | 39       | 38       | 37       | 36       |\n\n  | 值得一看 | 找点乐子 | 热门事件 | 节目推荐 |\n  | -------- | -------- | -------- | -------- |\n  | 65       | 50       | 77       | 101      |\n\n  | 值得一听 | 每日一听 | 歌单推荐 |\n  | -------- | -------- | -------- |\n  | 71       | 87       | 79       |\n\n  | 资源宝库 | 书籍资料 | 设计资源 | 剪辑资源 | 办公资源 | 壁纸资源 | 编程资源 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 106      | 107      | 108      | 109      | 110      | 111      | 113      |","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |
   | -------- | ------- | -------- | -------- | -------- |
