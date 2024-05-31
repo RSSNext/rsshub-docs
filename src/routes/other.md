@@ -463,7 +463,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Unknown <Site url="npmjs.com" size="sm" />
 
-<Route namespace="npm" :data='{"path":"package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Unknown","maintainers":[],"location":"package.ts"}' :test='undefined' />
+<Route namespace="npm" :data='{"path":"/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Unknown","maintainers":[],"location":"package.ts"}' :test='undefined' />
 
 ## oshwhub 立创开源硬件平台 <Site url="oshwhub.com"/>
 
