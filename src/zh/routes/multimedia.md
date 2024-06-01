@@ -401,6 +401,14 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 <Route namespace="javdb" :data='{"path":"/lists/:id/:filter?/:sort?","radar":[{"source":["javdb.com/"],"target":""}],"name":"Unknown","maintainers":["dddepg"],"url":"javdb.com/","location":"lists.ts"}' :test='undefined' />
 
+### 番号 <Site url="javdb.com/" size="sm" />
+
+<Route namespace="javdb" :data='{"path":"/video_codes/:code/:filter?","categories":["multimedia"],"example":"/javdb/video_codes/SIVR","parameters":{"id":"番号前缀","filter":"过滤，见下表，默认为 `全部`"},"features":{"requireConfig":[{"name":"JAVDB_SESSION","description":"JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取","optional":true}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["javdb.com/"],"target":""}],"name":"番号","maintainers":["sgpublic"],"url":"javdb.com/","description":"| 全部 | 可播放   | 單體作品 | 可下載   | 字幕  | 預覽圖  |\n  | ---- | -------- | -------- | -------- | ----- | ------- |\n  |      | playable | single   | download | cnsub | preview |","location":"videocodes.ts"}' :test='undefined' />
+
+| 全部 | 可播放   | 單體作品 | 可下載   | 字幕  | 預覽圖  |
+  | ---- | -------- | -------- | -------- | ----- | ------- |
+  |      | playable | single   | download | cnsub | preview |
+
 ### 分類 <Site url="javdb.com/" size="sm" />
 
 <Route namespace="javdb" :data='{"path":"/tags/:query?/:category?","categories":["multimedia"],"example":"/javdb/tags/c2=5&c10=1","parameters":{"query":"筛选，默认为 `c10=1`","category":"分类，见下表，默认为 `有碼`"},"features":{"requireConfig":[{"name":"JAVDB_SESSION","description":"JavDB登陆后的session值，可在控制台的cookie下查找 `_jdb_session` 的值，即可获取","optional":true}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["javdb.com/"],"target":""}],"name":"分類","maintainers":["nczitzk"],"url":"javdb.com/","description":":::tip\n  在 [分類](https://javdb.com/tags) 中选定分类后，URL 中 `tags?` 后的字段即为筛选参数。\n\n  如 `https://javdb.com/tags?c2=5&c10=1` 中 `c2=5&c10=1` 为筛选参数。\n  :::\n\n  分类\n\n  | 有碼     | 無碼       | 歐美    |\n  | -------- | ---------- | ------- |\n  | censored | uncensored | western |","location":"tags.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
