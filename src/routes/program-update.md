@@ -324,6 +324,12 @@ Language
 
 <Route namespace="notateslaapp" :data='{"path":"/ota","categories":["program-update"],"example":"/notateslaapp/ota","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notateslaapp.com/software-updates/history","notateslaapp.com/software-updates","notateslaapp.com/"]}],"name":"Tesla Software Updates","maintainers":["mrbruce516"],"url":"notateslaapp.com/software-updates/history","location":"update.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## NPM <Site url="npmjs.com"/>
+
+### Package <Site url="npmjs.com" size="sm" />
+
+<Route namespace="npm" :data='{"path":"/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Package","maintainers":["Fatpandac"],"categories":["program-update"],"example":"/npm/package/rsshub","radar":[{"source":["www.npmjs.com/package/:name"]}],"location":"package.ts"}' :test='undefined' />
+
 ## O&O Software <Site url="oo-software.com"/>
 
 ### Changelog <Site url="oo-software.com" size="sm" />

@@ -465,12 +465,6 @@ There is an optional query parameter called `properties=` that can be used to cu
 
   please refer to the [Notion API documentation](https://developers.notion.com/reference/post-database-query) and execute `encodeURIComponent(JSON.stringify(custom rules))` to provide the query parameter.
 
-## NPM <Site url="npmjs.com"/>
-
-### Unknown <Site url="npmjs.com" size="sm" />
-
-<Route namespace="npm" :data='{"path":"/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Unknown","maintainers":[],"location":"package.ts"}' :test='undefined' />
-
 ## oshwhub 立创开源硬件平台 <Site url="oshwhub.com"/>
 
 ### OpenSource Square <Site url="oshwhub.com" size="sm" />
