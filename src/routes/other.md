@@ -140,6 +140,12 @@ News from the official site of men's professional tennis.
 
 <Route namespace="darwinawards" :data='{"name":"Award Winners","example":"/darwinawards","path":"/","radar":[{"source":["darwinawards.com/darwin","darwinawards.com/"]}],"maintainers":["zoenglinghou","nczitzk"],"url":"darwinawards.com/darwin","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## DataGuidance <Site url="dataguidance.com"/>
+
+### News <Site url="dataguidance.com/news" size="sm" />
+
+<Route namespace="dataguidance" :data='{"name":"News","example":"/dataguidance/news","path":"/news","radar":[{"source":["dataguidance.com/search/news"]}],"maintainers":["harveyqiu"],"url":"dataguidance.com/news","location":"index.ts"}' :test='undefined' />
+
 ## Deadline <Site url="deadline.com"/>
 
 ### Unknown <Site url="deadline.com/" size="sm" />
