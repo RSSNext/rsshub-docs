@@ -773,6 +773,20 @@ This route provides a better reading experience (full text articles) over the of
 
 <Route namespace="phoronix" :data='{"path":"/:category?/:topic?","categories":["new-media"],"example":"/phoronix/linux/KDE","parameters":{"category":"Category","topic":"Topic. You may find available parameters from their navigator links. E.g. to subscribe to `https://www.phoronix.com/reviews/Operating+Systems`, fill in the path `/phoronix/reviews/Operating+Systems`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["phoronix.com/:category?/:topic?"]}],"name":"News & Reviews","maintainers":["oppliate","Rongronggg9"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## Psyche <Site url="psyche.co"/>
+
+### Topics <Site url="psyche.co" size="sm" />
+
+<Route namespace="psyche" :data='{"path":"/topic/:topic","categories":["new-media"],"example":"/psyche/topic/therapeia","parameters":{"topic":"Topic"},"radar":[{"source":["psyche.co/:topic"]}],"name":"Topics","maintainers":["emdoe"],"description":"Supported categories: Therapeia, Eudaimonia, and Poiesis.","location":"topic.ts"}' :test='undefined' />
+
+Supported categories: Therapeia, Eudaimonia, and Poiesis.
+
+### Types <Site url="psyche.co" size="sm" />
+
+<Route namespace="psyche" :data='{"path":"/type/:type","categories":["new-media"],"example":"/psyche/type/ideas","parameters":{"type":"Type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["psyche.co/:type"]}],"name":"Types","maintainers":["emdoe"],"description":"Supported types: Ideas, Guides, and Films.","location":"type.ts"}' :test='undefined' />
+
+Supported types: Ideas, Guides, and Films.
+
 ## PetCity 毛孩日常 <Site url="thepetcity.com"/>
 
 ### 分類 <Site url="thepetcity.co/" size="sm" />
