@@ -642,6 +642,12 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="surfshark" :data='{"path":"/blog/:category{.+}?","name":"Unknown","maintainers":[],"location":"blog.ts"}' :test='undefined' />
 
+## Sustainability Magazine <Site url="https://sustainabilitymag.com"/>
+
+### Articles <Site url="sustainabilitymag.com/articles" size="sm" />
+
+<Route namespace="sustainabilitymag" :data='{"path":"/articles","name":"Articles","url":"sustainabilitymag.com/articles","maintainers":["mintyfrankie"],"categories":["other"],"example":"/sustainabilitymag/articles","radar":[{"source":["https://sustainabilitymag.com/articles"],"target":"/sustainabilitymag/articles"}],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"articles.ts"}' :test='undefined' />
+
 ## The News Lens 關鍵評論 <Site url="thenewslens.com"/>
 
 ### Unknown <Site url="thenewslens.com" size="sm" />
