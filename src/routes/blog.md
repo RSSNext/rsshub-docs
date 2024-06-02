@@ -4,7 +4,7 @@
 
 ### APISIX 博客 <Site url="apisix.apache.org" size="sm" />
 
-<Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":0}' />
+<Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Backlinko <Site url="backlinko.com"/>
 
@@ -82,7 +82,7 @@
 
 ### Essay <Site url="kunchengblog.com/essay" size="sm" />
 
-<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## MacMenuBar <Site url="macmenubar.com"/>
 
@@ -292,7 +292,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
@@ -318,7 +318,7 @@ TAIWAN KADOKAWA
 
 ### 角編新聞台 <Site url="kadokawa.com.tw" size="sm" />
 
-<Route namespace="kadokawa" :data='{"path":"/blog","name":"角編新聞台","url":"kadokawa.com.tw","maintainers":["nczitzk"],"example":"/kadokawa/blog","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kadokawa.com.tw/blog/posts"],"target":"/blog"}],"location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kadokawa" :data='{"path":"/blog","name":"角編新聞台","url":"kadokawa.com.tw","maintainers":["nczitzk"],"example":"/kadokawa/blog","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kadokawa.com.tw/blog/posts"],"target":"/blog"}],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 土猛的员外 <Site url="luxiangdong.com"/>
 

@@ -28,7 +28,7 @@ Refer to the URL format `pubs.aip.org/:pub/:jrn`
 
 ### Journal <Site url="annualreviews.org" size="sm" />
 
-<Route namespace="annualreviews" :data='{"path":"/:id","categories":["journal"],"example":"/annualreviews/anchem","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["annualreviews.org/journal/:id","annualreviews.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.\n\n  :::tip\n  More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="annualreviews" :data='{"path":"/:id","categories":["journal"],"example":"/annualreviews/anchem","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["annualreviews.org/journal/:id","annualreviews.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.\n\n  :::tip\n  More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.
 
@@ -220,6 +220,16 @@ Return results from 2020
 <Route namespace="oup" :data='{"path":"/journals/:name","categories":["journal"],"example":"/oup/journals/adaptation","parameters":{"name":"short name for a journal, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["academic.oup.com/","academic.oup.com/:name/issue"]}],"name":"Oxford Academic","maintainers":[],"url":"academic.oup.com/","description":"#### Journal {#oxford-university-press-oxford-academic-journal}","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 #### Journal {#oxford-university-press-oxford-academic-journal}
+
+## PubScholar 公益学术平台 <Site url="pubscholar.cn"/>
+
+### Explore <Site url="pubscholar.cn" size="sm" />
+
+<Route namespace="pubscholar" :data='{"path":"/explore/:category?/:keyword?","name":"Explore","maintainers":["TonyRL"],"example":"/pubscholar/explore","parameters":{"category":"Category, see the table below, `articles` by default","keyword":"Search Keyword"},"description":"| Articles / 论文 | Patents / 专利 | Reports / 领域快报 | Information / 动态快讯 | Datasets / 科学数据 | Books / 图书 |\n| --------------- | -------------- | ------------------ | ---------------------- | ------------------- | ------------ |\n| articles        | patents        | bulletins          | reports                | sciencedata         | books        |","location":"explore.ts"}' :test='undefined' />
+
+| Articles / 论文 | Patents / 专利 | Reports / 领域快报 | Information / 动态快讯 | Datasets / 科学数据 | Books / 图书 |
+| --------------- | -------------- | ------------------ | ---------------------- | ------------------- | ------------ |
+| articles        | patents        | bulletins          | reports                | sciencedata         | books        |
 
 ## Royal Society of Chemistry <Site url="pubs.rsc.org"/>
 

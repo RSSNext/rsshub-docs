@@ -154,7 +154,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 卷 <Site url="linovelib.com" size="sm" />
 
-<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 小说更新 <Site url="linovelib.com" size="sm" />
 
@@ -208,11 +208,11 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 作者最新作品 <Site url="jjwxc.net" size="sm" />
 
-<Route namespace="jjwxc" :data='{"path":"/author/:id?","categories":["reading"],"example":"/jjwxc/author/4364484","parameters":{"id":"作者 id，可在对应作者页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者最新作品","maintainers":["nczitzk"],"location":"author.ts"}' :test='{"code":0}' />
+<Route namespace="jjwxc" :data='{"path":"/author/:id?","categories":["reading"],"example":"/jjwxc/author/4364484","parameters":{"id":"作者 id，可在对应作者页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者最新作品","maintainers":["nczitzk"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 作品 <Site url="jjwxc.net" size="sm" />
 
-<Route namespace="jjwxc" :data='{"path":"/book/:id?","categories":["reading"],"example":"/jjwxc/book/7013024","parameters":{"id":"作品 id，可在对应作品页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品","maintainers":["nczitzk"],"location":"book.ts"}' :test='{"code":0}' />
+<Route namespace="jjwxc" :data='{"path":"/book/:id?","categories":["reading"],"example":"/jjwxc/book/7013024","parameters":{"id":"作品 id，可在对应作品页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品","maintainers":["nczitzk"],"location":"book.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 明月中文网 <Site url="56kog.com"/>
 

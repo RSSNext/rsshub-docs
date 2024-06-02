@@ -475,7 +475,7 @@ Topics
 
 ### News <Site url="indiansinkuwait.com/latest-news" size="sm" />
 
-<Route namespace="indiansinkuwait" :data='{"path":"/latest","categories":["new-media"],"example":"/indiansinkuwait/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indiansinkuwait.com/latest-news","indiansinkuwait.com/"]}],"name":"News","maintainers":["TonyRL"],"url":"indiansinkuwait.com/latest-news","location":"latest.ts"}' :test='{"code":0}' />
+<Route namespace="indiansinkuwait" :data='{"path":"/latest","categories":["new-media"],"example":"/indiansinkuwait/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indiansinkuwait.com/latest-news","indiansinkuwait.com/"]}],"name":"News","maintainers":["TonyRL"],"url":"indiansinkuwait.com/latest-news","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## InfoQ 中文 <Site url="infoq.cn"/>
 
@@ -529,7 +529,7 @@ Topics
 
 ### News <Site url="world.kbs.co.kr/" size="sm" />
 
-<Route namespace="kbs" :data='{"path":"/news/:category?/:language?","categories":["new-media"],"example":"/kbs/news","parameters":{"category":"Category, can be found in Url as `id`, all by default","language":"Language, see below, e as English by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["world.kbs.co.kr/"],"target":"/news"}],"name":"News","maintainers":["nczitzk"],"url":"world.kbs.co.kr/","description":"| 한국어 | عربي | 中国语 | English | Français | Deutsch | Bahasa Indonesia | 日本語 | Русский | Español | Tiếng Việt |\n  | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |\n  | k      | a    | c      | e       | f        | g       | i                | j      | r       | s       | v          |","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kbs" :data='{"path":"/news/:category?/:language?","categories":["new-media"],"example":"/kbs/news","parameters":{"category":"Category, can be found in Url as `id`, all by default","language":"Language, see below, e as English by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["world.kbs.co.kr/"],"target":"/news"}],"name":"News","maintainers":["nczitzk"],"url":"world.kbs.co.kr/","description":"| 한국어 | عربي | 中国语 | English | Français | Deutsch | Bahasa Indonesia | 日本語 | Русский | Español | Tiếng Việt |\n  | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |\n  | k      | a    | c      | e       | f        | g       | i                | j      | r       | s       | v          |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 한국어 | عربي | 中国语 | English | Français | Deutsch | Bahasa Indonesia | 日本語 | Русский | Español | Tiếng Việt |
   | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |
@@ -537,7 +537,7 @@ Topics
 
 ### Today <Site url="world.kbs.co.kr/" size="sm" />
 
-<Route namespace="kbs" :data='{"path":"/today/:language?","categories":["new-media"],"example":"/kbs/today","parameters":{"language":"Language, see below, e as English by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["world.kbs.co.kr/"],"target":"/today"}],"name":"Today","maintainers":["nczitzk"],"url":"world.kbs.co.kr/","description":"| 한국어 | عربي | 中国语 | English | Français | Deutsch | Bahasa Indonesia | 日本語 | Русский | Español | Tiếng Việt |\n  | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |\n  | k      | a    | c      | e       | f        | g       | i                | j      | r       | s       | v          |","location":"today.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kbs" :data='{"path":"/today/:language?","categories":["new-media"],"example":"/kbs/today","parameters":{"language":"Language, see below, e as English by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["world.kbs.co.kr/"],"target":"/today"}],"name":"Today","maintainers":["nczitzk"],"url":"world.kbs.co.kr/","description":"| 한국어 | عربي | 中国语 | English | Français | Deutsch | Bahasa Indonesia | 日本語 | Русский | Español | Tiếng Việt |\n  | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |\n  | k      | a    | c      | e       | f        | g       | i                | j      | r       | s       | v          |","location":"today.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 한국어 | عربي | 中国语 | English | Français | Deutsch | Bahasa Indonesia | 日本語 | Русский | Español | Tiếng Việt |
   | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |
@@ -547,17 +547,17 @@ Topics
 
 ### Categorised News <Site url="kuwaitlocal.com/news/latest" size="sm" />
 
-<Route namespace="kuwaitlocal" :data='{"path":"/:category?","categories":["new-media"],"example":"/kuwaitlocal/article","parameters":{"category":"Category name, can be found in URL, `latest` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuwaitlocal.com/news/categories/:category"],"target":"/:category"}],"name":"Categorised News","maintainers":["TonyRL"],"url":"kuwaitlocal.com/news/latest","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuwaitlocal" :data='{"path":"/:category?","categories":["new-media"],"example":"/kuwaitlocal/article","parameters":{"category":"Category name, can be found in URL, `latest` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuwaitlocal.com/news/categories/:category"],"target":"/:category"}],"name":"Categorised News","maintainers":["TonyRL"],"url":"kuwaitlocal.com/news/latest","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## LINE <Site url="today.line.me"/>
 
 ### TODAY - Channel <Site url="today.line.me" size="sm" />
 
-<Route namespace="line" :data='{"path":"/today/:edition/publisher/:id","categories":["new-media"],"example":"/line/today/th/publisher/101048","parameters":{"edition":"Edition, see table above","id":"Channel ID, can be found in URL"},"radar":[{"source":["today.line.me/:edition/v2/publisher/:id"]}],"name":"TODAY - Channel","maintainers":["TonyRL"],"location":"publisher.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="line" :data='{"path":"/today/:edition/publisher/:id","categories":["new-media"],"example":"/line/today/th/publisher/101048","parameters":{"edition":"Edition, see table above","id":"Channel ID, can be found in URL"},"radar":[{"source":["today.line.me/:edition/v2/publisher/:id"]}],"name":"TODAY - Channel","maintainers":["TonyRL"],"location":"publisher.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### TODAY <Site url="today.line.me/" size="sm" />
 
-<Route namespace="line" :data='{"path":"/today/:edition?/:tab?","categories":["new-media"],"example":"/line/today","parameters":{"edition":"Edition, see below, Taiwan by default","tab":"Tag, can be found in URL, `top` by default"},"radar":[{"source":["today.line.me/"]}],"name":"TODAY","maintainers":["nczitzk"],"url":"today.line.me/","description":"Edition\n\n  | Taiwan | Thailand | Hong Kong |\n  | ------ | -------- | --------- |\n  | tw     | th       | hk        |","location":"today.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="line" :data='{"path":"/today/:edition?/:tab?","categories":["new-media"],"example":"/line/today","parameters":{"edition":"Edition, see below, Taiwan by default","tab":"Tag, can be found in URL, `top` by default"},"radar":[{"source":["today.line.me/"]}],"name":"TODAY","maintainers":["nczitzk"],"url":"today.line.me/","description":"Edition\n\n  | Taiwan | Thailand | Hong Kong |\n  | ------ | -------- | --------- |\n  | tw     | th       | hk        |","location":"today.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Edition
 
@@ -2235,7 +2235,7 @@ Type 栏目：
 
 ### 君合法评 <Site url="junhe.com" size="sm" />
 
-<Route namespace="junhe" :data='{"path":"/legal-updates","name":"君合法评","url":"junhe.com","maintainers":["nczitzk"],"example":"/junhe/legal-updates","description":"","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["/legal-updates"],"target":"/legal-updates"}],"location":"legal-updates.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="junhe" :data='{"path":"/legal-updates","name":"君合法评","url":"junhe.com","maintainers":["nczitzk"],"example":"/junhe/legal-updates","description":"","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["/legal-updates"],"target":"/legal-updates"}],"location":"legal-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 靠谱新闻 <Site url="kaopu.news"/>
 
@@ -2305,7 +2305,7 @@ Type 栏目：
 
 ### 业界资讯 <Site url="leiphone.com/" size="sm" />
 
-<Route namespace="leiphone" :data='{"path":"/newsflash","categories":["new-media"],"example":"/leiphone/newsflash","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["leiphone.com/"]}],"name":"业界资讯","maintainers":[],"url":"leiphone.com/","location":"newsflash.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="leiphone" :data='{"path":"/newsflash","categories":["new-media"],"example":"/leiphone/newsflash","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["leiphone.com/"]}],"name":"业界资讯","maintainers":[],"url":"leiphone.com/","location":"newsflash.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 链新闻 ABMedia <Site url="www.abmedia.io"/>
 
@@ -2761,7 +2761,7 @@ Type 栏目：
 
 ### 报道 <Site url="latepost.com" size="sm" />
 
-<Route namespace="latepost" :data='{"path":"/:proma?","categories":["new-media"],"example":"/latepost","parameters":{"proma":"栏目 id，见下表，默认为最新报道"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"报道","maintainers":["nczitzk"],"description":"| 最新报道 | 晚点独家 | 人物访谈 | 晚点早知道 | 长报道 |\n  | -------- | -------- | -------- | ---------- | ------ |\n  |          | 1        | 2        | 3          | 4      |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="latepost" :data='{"path":"/:proma?","categories":["new-media"],"example":"/latepost","parameters":{"proma":"栏目 id，见下表，默认为最新报道"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"报道","maintainers":["nczitzk"],"description":"| 最新报道 | 晚点独家 | 人物访谈 | 晚点早知道 | 长报道 |\n  | -------- | -------- | -------- | ---------- | ------ |\n  |          | 1        | 2        | 3          | 4      |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 最新报道 | 晚点独家 | 人物访谈 | 晚点早知道 | 长报道 |
   | -------- | -------- | -------- | ---------- | ------ |
@@ -3360,7 +3360,7 @@ Type 栏目：
 
 ### 直播回看 <Site url="live.kepu.net.cn/replay/index" size="sm" />
 
-<Route namespace="kepu" :data='{"path":"/live","categories":["new-media"],"example":"/kepu/live","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.kepu.net.cn/replay/index"]}],"name":"直播回看","maintainers":["nczitzk"],"url":"live.kepu.net.cn/replay/index","location":"live.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kepu" :data='{"path":"/live","categories":["new-media"],"example":"/kepu/live","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.kepu.net.cn/replay/index"]}],"name":"直播回看","maintainers":["nczitzk"],"url":"live.kepu.net.cn/replay/index","location":"live.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 中伦律师事务所 <Site url="zhonglun.com"/>
 

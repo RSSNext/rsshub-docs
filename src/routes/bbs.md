@@ -134,7 +134,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url="learnku.com" size="sm" />
 
-<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 招聘 | 翻译         | 问答 | 链接  |
 | ---- | ------------ | ---- | ----- |
@@ -434,7 +434,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Zone <Site url="zone.huoxian.cn" size="sm" />
 
-<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":0}' />
+<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 集思录 <Site url="jisilu.cn"/>
 
@@ -464,7 +464,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛 <Site url="kanxue.com" size="sm" />
 
-<Route namespace="kanxue" :data='{"path":"/topic/:category?/:type?","categories":["bbs"],"example":"/kanxue/topic/android/digest","parameters":{"category":"版块, 缺省为`all`","type":"类型, 缺省为`latest`"},"name":"论坛","maintainers":["renzhexigua"],"description":"| 版块           | category  |\n    | -------------- | --------- |\n    | 智能设备       | iot       |\n    | Android 安全   | android   |\n    | iOS 安全       | ios       |\n    | HarmonyOS 安全 | harmonyos |\n    | 软件逆向       | re        |\n    | 编程技术       | coding    |\n    | 加壳脱壳       | unpack    |\n    | 密码应用       | crypto    |\n    | 二进制漏洞     | vuln      |\n    | CTF 对抗       | ctf       |\n    | Pwn            | pwn       |\n    | WEB 安全       | web       |\n    | 茶余饭后       | chat      |\n    | 极客空间       | geekzone  |\n    | 外文翻译       | translate |\n    | 全站           | all       |\n    \n    | 类型     | type   |\n    | -------- | ------ |\n    | 最新主题 | latest |\n    | 精华主题 | digest |","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kanxue" :data='{"path":"/topic/:category?/:type?","categories":["bbs"],"example":"/kanxue/topic/android/digest","parameters":{"category":"版块, 缺省为`all`","type":"类型, 缺省为`latest`"},"name":"论坛","maintainers":["renzhexigua"],"description":"| 版块           | category  |\n    | -------------- | --------- |\n    | 智能设备       | iot       |\n    | Android 安全   | android   |\n    | iOS 安全       | ios       |\n    | HarmonyOS 安全 | harmonyos |\n    | 软件逆向       | re        |\n    | 编程技术       | coding    |\n    | 加壳脱壳       | unpack    |\n    | 密码应用       | crypto    |\n    | 二进制漏洞     | vuln      |\n    | CTF 对抗       | ctf       |\n    | Pwn            | pwn       |\n    | WEB 安全       | web       |\n    | 茶余饭后       | chat      |\n    | 极客空间       | geekzone  |\n    | 外文翻译       | translate |\n    | 全站           | all       |\n    \n    | 类型     | type   |\n    | -------- | ------ |\n    | 最新主题 | latest |\n    | 精华主题 | digest |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 版块           | category  |
     | -------------- | --------- |

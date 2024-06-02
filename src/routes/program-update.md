@@ -41,7 +41,7 @@
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -51,7 +51,7 @@
 
 ### SDK Platform Tools release notes <Site url="developer.android.com/studio/releases/platform-tools" size="sm" />
 
-<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## APKPure <Site url="apkpure.com"/>
 
@@ -101,7 +101,7 @@
 
 ### Programs <Site url="appstorrent.ru/programs/" size="sm" />
 
-<Route namespace="appstorrent" :data='{"path":"/programs","categories":["program-update"],"example":"/appstorrent/programs","name":"Programs","maintainers":["xzzpig"],"url":"appstorrent.ru/programs/","location":"programs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="appstorrent" :data='{"path":"/programs","categories":["program-update"],"example":"/appstorrent/programs","name":"Programs","maintainers":["xzzpig"],"url":"appstorrent.ru/programs/","location":"programs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## ASUS <Site url="asus.com.cn"/>
 
@@ -133,7 +133,7 @@
 
 ### Release Notes <Site url="brave.com/latest" size="sm" />
 
-<Route namespace="brave" :data='{"path":"/latest","categories":["program-update"],"example":"/brave/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["brave.com/latest","brave.com/"]}],"name":"Release Notes","maintainers":["nczitzk"],"url":"brave.com/latest","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="brave" :data='{"path":"/latest","categories":["program-update"],"example":"/brave/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["brave.com/latest","brave.com/"]}],"name":"Release Notes","maintainers":["nczitzk"],"url":"brave.com/latest","location":"latest.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## Civitai <Site url="civitai.com"/>
 
@@ -213,7 +213,7 @@ Language
 
 ### Script Feedback <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":0}' />
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
@@ -328,7 +328,7 @@ Language
 
 ### Package <Site url="npmjs.com" size="sm" />
 
-<Route namespace="npm" :data='{"path":"/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Package","maintainers":["Fatpandac"],"categories":["program-update"],"example":"/npm/package/rsshub","radar":[{"source":["www.npmjs.com/package/:name"]}],"location":"package.ts"}' :test='undefined' />
+<Route namespace="npm" :data='{"path":"/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Package","maintainers":["Fatpandac"],"categories":["program-update"],"example":"/npm/package/rsshub","radar":[{"source":["www.npmjs.com/package/:name"]}],"location":"package.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## O&O Software <Site url="oo-software.com"/>
 
