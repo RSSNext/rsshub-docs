@@ -4,7 +4,7 @@
 
 ### interest <Site url="academia.edu" size="sm" />
 
-<Route namespace="academia" :data='{"path":"/topic/:interest","example":"/academia/topic/Urban_History","radar":[{"source":["academia.edu/Documents/in/:interest"],"target":"/topic/:interest"}],"name":"interest","maintainers":["K33k0"],"categories":["journal"],"url":"academia.edu","location":"topics.ts"}' :test='undefined' />
+<Route namespace="academia" :data='{"path":"/topic/:interest","example":"/academia/topic/Urban_History","parameters":{"interest":"interest"},"radar":[{"source":["academia.edu/Documents/in/:interest"],"target":"/topic/:interest"}],"name":"interest","maintainers":["K33k0"],"categories":["journal"],"url":"academia.edu","location":"topics.ts"}' :test='undefined' />
 
 ## American Economic Association <Site url="aeaweb.org"/>
 
