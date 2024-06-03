@@ -130,6 +130,16 @@ Rated Range
 
 <Route namespace="bitmovin" :data='{"path":"/blog","categories":["programming"],"example":"/bitmovin/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bitmovin.com/blog","bitmovin.com/"]}],"name":"Blog","maintainers":["elxy"],"url":"bitmovin.com/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Bugzilla <Site url="bugzilla.org"/>
+
+Bugzilla instances hosted by organizations.
+
+### bugs <Site url="bugzilla.org" size="sm" />
+
+<Route namespace="bugzilla" :data='{"path":"/bug/:site/:bugId","name":"bugs","maintainers":["FranklinYu"],"example":"/bug/webkit/251528","parameters":{"site":"site identifier","bugId":"numeric identifier of the bug in the site"},"description":"Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache.ooo`](https://bz.apache.org/ooo), [`apache.SpamAssassin`](https://bz.apache.org/SpamAssassin), [`mozilla`](https://bugzilla.mozilla.org), [`webkit`](https://bugs.webkit.org).","categories":["programming"],"zh":{"name":"bugs","description":"支持的站点标识符：[`apache`](https://bz.apache.org/bugzilla)、[`apache.ooo`](https://bz.apache.org/ooo)、[`apache.SpamAssassin`](https://bz.apache.org/SpamAssassin)、[`mozilla`](https://bugzilla.mozilla.org)、[`webkit`](https://bugs.webkit.org)。"},"location":"bug.ts"}' :test='undefined' />
+
+Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache.ooo`](https://bz.apache.org/ooo), [`apache.SpamAssassin`](https://bz.apache.org/SpamAssassin), [`mozilla`](https://bugzilla.mozilla.org), [`webkit`](https://bugs.webkit.org).
+
 ## CNCF <Site url="cncf.io"/>
 
 ### Category <Site url="cncf.io" size="sm" />
