@@ -134,7 +134,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url="learnku.com" size="sm" />
 
-<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 招聘 | 翻译         | 问答 | 链接  |
 | ---- | ------------ | ---- | ----- |
@@ -364,7 +364,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 鱼吧帖子 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":0}' />
 
 | 回复时间排序 | 发布时间排序 |
   | ------------ | ------------ |
@@ -408,7 +408,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 热帖 <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":":::tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n  :::","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":":::tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n  :::","location":"all.ts"}' :test='{"code":0}' />
 
 :::tip
   更多热帖版面参见 [论坛](https://bbs.hupu.com)
@@ -416,7 +416,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/bbs/:id?/:order?","/bxj/:id?/:order?"],"categories":["bbs"],"example":"/hupu/bbs/topic-daily","parameters":{"id":"编号，可在对应社区 URL 中找到，默认为#步行街主干道","order":"排序方式，可选 `0` 即 最新回复 或 `1` 即 最新发布，默认为最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"社区","maintainers":["LogicJake","nczitzk"],"description":":::tip\n  更多社区参见 [社区](https://bbs.hupu.com)\n  :::","location":"bbs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hupu" :data='{"path":["/bbs/:id?/:order?","/bxj/:id?/:order?"],"categories":["bbs"],"example":"/hupu/bbs/topic-daily","parameters":{"id":"编号，可在对应社区 URL 中找到，默认为#步行街主干道","order":"排序方式，可选 `0` 即 最新回复 或 `1` 即 最新发布，默认为最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"社区","maintainers":["LogicJake","nczitzk"],"description":":::tip\n  更多社区参见 [社区](https://bbs.hupu.com)\n  :::","location":"bbs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   更多社区参见 [社区](https://bbs.hupu.com)
@@ -434,7 +434,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Zone <Site url="zone.huoxian.cn" size="sm" />
 
-<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":0}' />
 
 ## 集思录 <Site url="jisilu.cn"/>
 

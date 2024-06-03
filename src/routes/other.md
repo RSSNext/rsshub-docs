@@ -108,7 +108,7 @@ News from the official site of men's professional tennis.
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## biodiscover.com 生物探索 <Site url="www.biodiscover.com"/>
 
@@ -278,7 +278,7 @@ News from the official site of men's professional tennis.
 
 ### 每日环球视野 <Site url="idai.ly" size="sm" />
 
-<Route namespace="idaily" :data='{"path":["/:language?"],"name":"每日环球视野","example":"/idaily","maintainers":["zphw","nczitzk"],"parameters":{"language":"语言，见下表，默认为简体中文"},"radar":[{"source":["idai.ly/"]}],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="idaily" :data='{"path":["/:language?"],"name":"每日环球视野","example":"/idaily","maintainers":["zphw","nczitzk"],"parameters":{"language":"语言，见下表，默认为简体中文"},"radar":[{"source":["idai.ly/"]}],"description":"| 简体中文 | 繁体中文 |\n  | -------- | -------- |\n  | zh-hans  | zh-hant  |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 简体中文 | 繁体中文 |
   | -------- | -------- |
@@ -294,7 +294,7 @@ News from the official site of men's professional tennis.
 
 ### Projects <Site url="instructables.com/projects" size="sm" />
 
-<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":0}' />
 
 | All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |
   | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
@@ -326,7 +326,7 @@ News from the official site of men's professional tennis.
 
 ### Insights <Site url="kpmg.com/xx/en/home/insights.html" size="sm" />
 
-<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Layoffs.fyi <Site url="layoffs.fyi"/>
 
@@ -646,7 +646,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Articles <Site url="sustainabilitymag.com/articles" size="sm" />
 
-<Route namespace="sustainabilitymag" :data='{"path":"/articles","name":"Articles","url":"sustainabilitymag.com/articles","maintainers":["mintyfrankie"],"categories":["other"],"example":"/sustainabilitymag/articles","radar":[{"source":["https://sustainabilitymag.com/articles"],"target":"/sustainabilitymag/articles"}],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"articles.ts"}' :test='undefined' />
+<Route namespace="sustainabilitymag" :data='{"path":"/articles","name":"Articles","url":"sustainabilitymag.com/articles","maintainers":["mintyfrankie"],"categories":["other"],"example":"/sustainabilitymag/articles","radar":[{"source":["https://sustainabilitymag.com/articles"],"target":"/sustainabilitymag/articles"}],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"articles.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## The News Lens 關鍵評論 <Site url="thenewslens.com"/>
 
@@ -738,7 +738,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 350350086843 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -945,7 +945,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 日榜 <Site url="data.guduodata.com/" size="sm" />
 
-<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":0}' />
+<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 观海新闻 <Site url="guanhai.com.cn"/>
 
@@ -1063,7 +1063,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 快递订单追踪 <Site url="kuaidi100.com" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 快递公司代号如果不能确定，可通过下方快递列表获得。
 
@@ -1373,7 +1373,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="boc.cn/sourcedb/whpj" size="sm" />
 
-<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1573,7 +1573,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="icbc.com.cn/column/1438058341489590354.html" size="sm" />
 
-<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |

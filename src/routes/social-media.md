@@ -83,7 +83,7 @@
 
 ### 番剧 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/bangumi/media/:mediaid","name":"番剧","parameters":{"mediaid":"番剧媒体 id, 番剧主页 URL 中获取"},"example":"/bilibili/bangumi/media/9192","categories":["social-media"],"maintainers":["DIYgod"],"location":"bangumi.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/bangumi/media/:mediaid","name":"番剧","parameters":{"mediaid":"番剧媒体 id, 番剧主页 URL 中获取"},"example":"/bilibili/bangumi/media/9192","categories":["social-media"],"maintainers":["DIYgod"],"location":"bangumi.ts"}' :test='{"code":0}' />
 
 ### 分区视频排行榜 <Site url="www.bilibili.com" size="sm" />
 
@@ -209,7 +209,7 @@
 
 ### 歌单 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/audio/:id","categories":["social-media"],"example":"/bilibili/audio/10624","parameters":{"id":"歌单 id, 可在歌单页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"歌单","maintainers":["LogicJake"],"location":"audio.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/audio/:id","categories":["social-media"],"example":"/bilibili/audio/10624","parameters":{"id":"歌单 id, 可在歌单页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"歌单","maintainers":["LogicJake"],"location":"audio.ts"}' :test='{"code":0}' />
 
 ### 会员购作品 <Site url="www.bilibili.com" size="sm" />
 
@@ -251,7 +251,7 @@
 
 ### 视频弹幕 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/video/danmaku/:bvid/:pid?","categories":["social-media"],"example":"/bilibili/video/danmaku/BV1vA411b7ip/1","parameters":{"bvid":"视频AV号,可在视频页 URL 中找到","pid":"分P号,不填默认为1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频弹幕","maintainers":["Qixingchen"],"location":"danmaku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/video/danmaku/:bvid/:pid?","categories":["social-media"],"example":"/bilibili/video/danmaku/BV1vA411b7ip/1","parameters":{"bvid":"视频AV号,可在视频页 URL 中找到","pid":"分P号,不填默认为1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频弹幕","maintainers":["Qixingchen"],"location":"danmaku.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 视频选集列表 <Site url="www.bilibili.com" size="sm" />
 
@@ -423,7 +423,7 @@ Due to [Instagram Private API](https://github.com/dilame/instagram-private-api) 
 
 ### User Profile / Hashtag <Site url="www.instagram.com" size="sm" />
 
-<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
 You may need to setup cookie for a less restrictive rate limit and private profiles.
@@ -475,7 +475,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### Community 
 
-<Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":"Sort by, defaut to Active"},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":"Sort by, defaut to Active"},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## LinkedIn 领英 <Site url="linkedin.com"/>
 
@@ -943,7 +943,7 @@ Chart
 
 ### 博主 <Site url="douyin.com" size="sm" />
 
-<Route namespace="douyin" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao","parameters":{"uid":"uid，可在用户页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/user/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["Max-Tortoise","Rongronggg9"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyin" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao","parameters":{"uid":"uid，可在用户页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/user/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["Max-Tortoise","Rongronggg9"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 豆瓣 <Site url="www.douban.com"/>
 
@@ -957,7 +957,7 @@ Chart
 
 ### 北美票房榜 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/ustop","categories":["social-media"],"example":"/douban/movie/ustop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北美票房榜","maintainers":["DIYgod"],"location":"other/ustop.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/ustop","categories":["social-media"],"example":"/douban/movie/ustop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北美票房榜","maintainers":["DIYgod"],"location":"other/ustop.ts"}' :test='{"code":0}' />
 
 ### 豆瓣书店 <Site url="www.douban.com" size="sm" />
 
@@ -999,7 +999,7 @@ Chart
 
 ### 豆瓣榜单与集合 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":0}' />
 
 | 榜单 / 集合        | 路由                          |
   | ------------------ | ----------------------------- |
@@ -1038,7 +1038,7 @@ Chart
 
 ### 豆瓣每月推荐片单 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n  :::tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n  :::","location":"other/recommended.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n  :::tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n  :::","location":"other/recommended.ts"}' :test='{"code":0}' />
 
 | 额外参数 | 含义                   | 接受的值 | 默认值 |
   | -------- | ---------------------- | -------- | ------ |
@@ -1053,11 +1053,11 @@ Chart
 
 ### 话题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake"],"location":"other/topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake"],"location":"other/topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 即将上映的电影 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/later","categories":["social-media"],"example":"/douban/movie/later","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"即将上映的电影","maintainers":["DIYgod"],"location":"other/later.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/later","categories":["social-media"],"example":"/douban/movie/later","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"即将上映的电影","maintainers":["DIYgod"],"location":"other/later.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 浏览发现 <Site url="www.douban.com" size="sm" />
 
@@ -1093,7 +1093,7 @@ Chart
 
 ### 日记最新回应 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/replies/:uid","categories":["social-media"],"example":"/douban/replies/xiaoyaxiaoya","parameters":{"uid":"用户id，可在用户日记页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"日记最新回应","maintainers":["nczitzk"],"location":"other/replies.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/replies/:uid","categories":["social-media"],"example":"/douban/replies/xiaoyaxiaoya","parameters":{"uid":"用户id，可在用户日记页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"日记最新回应","maintainers":["nczitzk"],"location":"other/replies.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 商务印书馆新书速递 <Site url="www.douban.com" size="sm" />
 
@@ -1109,7 +1109,7 @@ Chart
 
 ### 一周口碑榜 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":0}' />
 
 | 一周口碑电影榜      | 华语口碑剧集榜            |
   | ------------------- | ------------------------- |
@@ -1117,7 +1117,7 @@ Chart
 
 ### 用户想看 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式
 
@@ -1127,7 +1127,7 @@ Chart
 
 ### 正在上映的电影 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":["/movie/playing","/movie/playing/:score"],"categories":["social-media"],"example":"/douban/movie/playing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"正在上映的电影","maintainers":["DIYgod"],"location":"other/playing.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":["/movie/playing","/movie/playing/:score"],"categories":["social-media"],"example":"/douban/movie/playing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"正在上映的电影","maintainers":["DIYgod"],"location":"other/playing.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 正在上映的电影 <Site url="www.douban.com" size="sm" />
 
@@ -1135,7 +1135,7 @@ Chart
 
 ### 最新增加的音乐 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/music/latest/:area?","categories":["social-media"],"example":"/douban/music/latest/chinese","parameters":{"area":"区域类型，默认全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新增加的音乐","maintainers":["fengkx","xyqfer"],"description":"| 华语    | 欧美    | 日韩        |\n  | ------- | ------- | ----------- |\n  | chinese | western | japankorean |","location":"other/latest-music.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/music/latest/:area?","categories":["social-media"],"example":"/douban/music/latest/chinese","parameters":{"area":"区域类型，默认全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新增加的音乐","maintainers":["fengkx","xyqfer"],"description":"| 华语    | 欧美    | 日韩        |\n  | ------- | ------- | ----------- |\n  | chinese | western | japankorean |","location":"other/latest-music.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 华语    | 欧美    | 日韩        |
   | ------- | ------- | ----------- |
@@ -1143,7 +1143,7 @@ Chart
 
 ### 最新回应过的日记 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/replied/:uid","categories":["social-media"],"example":"/douban/replied/xiaoyaxiaoya","parameters":{"uid":"用户id，可在用户日记页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新回应过的日记","maintainers":["nczitzk"],"location":"other/replied.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/replied/:uid","categories":["social-media"],"example":"/douban/replied/xiaoyaxiaoya","parameters":{"uid":"用户id，可在用户日记页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新回应过的日记","maintainers":["nczitzk"],"location":"other/replied.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 方格子 <Site url="vocus.cc"/>
 

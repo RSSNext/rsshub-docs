@@ -29,7 +29,7 @@
 
 ### News <Site url="bbc.com" size="sm" />
 
-<Route namespace="bbc" :data='{"path":"/:site?/:channel?","name":"News","maintainers":["HenryQW","DIYgod"],"example":"/bbc/world-asia","parameters":{"site":"语言，简体或繁体中文","channel":"channel, default to `top stories`"},"categories":["traditional-media"],"description":"Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bbc" :data='{"path":"/:site?/:channel?","name":"News","maintainers":["HenryQW","DIYgod"],"example":"/bbc/world-asia","parameters":{"site":"语言，简体或繁体中文","channel":"channel, default to `top stories`"},"categories":["traditional-media"],"description":"Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Provides a better reading experience (full text articles) over the official ones.
 
@@ -591,7 +591,7 @@ Free articles only.
 
 ### 光伏 <Site url="guangfu.bjx.com.cn" size="sm" />
 
-<Route namespace="bjx" :data='{"path":"/gf/:type","categories":["traditional-media"],"example":"/bjx/gf/sc","parameters":{"type":"分类，北极星光伏最后的`type`字段"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"光伏","maintainers":["Sxuet"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |\n  | ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |\n  | yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |","location":"types.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bjx" :data='{"path":"/gf/:type","categories":["traditional-media"],"example":"/bjx/gf/sc","parameters":{"type":"分类，北极星光伏最后的`type`字段"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"光伏","maintainers":["Sxuet"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |\n  | ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |\n  | yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |","location":"types.ts"}' :test='{"code":0}' />
 
 `:type` 类型可选如下
 
@@ -928,7 +928,7 @@ Column 列表：
 
 ### 客户端 <Site url="gzdaily.cn" size="sm" />
 
-<Route namespace="gzdaily" :data='{"path":"/app/:column?","categories":["traditional-media"],"example":"/gzdaily/app/74","parameters":{"column":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"客户端","maintainers":["TimWu007"],"description":":::tip\n  在北京时间深夜可能无法获取内容。\n  :::\n\n  常用栏目 ID：\n\n  | 栏目名 | ID   |\n  | ------ | ---- |\n  | 首页   | 74   |\n  | 时局   | 374  |\n  | 广州   | 371  |\n  | 大湾区 | 397  |\n  | 城区   | 2980 |","location":"app.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gzdaily" :data='{"path":"/app/:column?","categories":["traditional-media"],"example":"/gzdaily/app/74","parameters":{"column":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"客户端","maintainers":["TimWu007"],"description":":::tip\n  在北京时间深夜可能无法获取内容。\n  :::\n\n  常用栏目 ID：\n\n  | 栏目名 | ID   |\n  | ------ | ---- |\n  | 首页   | 74   |\n  | 时局   | 374  |\n  | 广州   | 371  |\n  | 大湾区 | 397  |\n  | 城区   | 2980 |","location":"app.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   在北京时间深夜可能无法获取内容。
@@ -1033,7 +1033,7 @@ Column 列表：
 
 ### 分类 <Site url="huanqiu.com/" size="sm" />
 
-<Route namespace="huanqiu" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/huanqiu/news/china","parameters":{"category":"类别，可以使用二级域名作为参数，默认为：china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huanqiu.com/"]}],"name":"分类","maintainers":["yuxinliu-alex"],"url":"huanqiu.com/","description":"| 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |\n  | -------- | -------- | ---- | ------ | ------- |\n  | china    | world    | mil  | taiwai | opinion |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="huanqiu" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/huanqiu/news/china","parameters":{"category":"类别，可以使用二级域名作为参数，默认为：china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huanqiu.com/"]}],"name":"分类","maintainers":["yuxinliu-alex"],"url":"huanqiu.com/","description":"| 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |\n  | -------- | -------- | ---- | ------ | ------- |\n  | china    | world    | mil  | taiwai | opinion |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |
   | -------- | -------- | ---- | ------ | ------- |
@@ -1053,7 +1053,7 @@ Column 列表：
 
 ### 学习时报 <Site url="paper.cntheory.com" size="sm" />
 
-<Route namespace="cntheory" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/cntheory/paper","parameters":{"id":"板块，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学习时报","maintainers":["nczitzk"],"description":"如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。","location":"paper.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cntheory" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/cntheory/paper","parameters":{"id":"板块，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学习时报","maintainers":["nczitzk"],"description":"如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。","location":"paper.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。
 

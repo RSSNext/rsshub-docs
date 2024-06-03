@@ -16,7 +16,7 @@
 
 ### chapter <Site url="syosetu.org" size="sm" />
 
-<Route namespace="hameln" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hameln/chapter/264928","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["syosetu.org/novel/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)","location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hameln" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hameln/chapter/264928","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["syosetu.org/novel/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)","location":"chapter.ts"}' :test='{"code":0}' />
 
 Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)
 
@@ -154,7 +154,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 卷 <Site url="linovelib.com" size="sm" />
 
-<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 小说更新 <Site url="linovelib.com" size="sm" />
 
@@ -202,7 +202,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 章节 <Site url="hbooker.com" size="sm" />
 
-<Route namespace="hbooker" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hbooker/chapter/100113279","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbooker.com/book/:id"]}],"name":"章节","maintainers":["keocheung"],"location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hbooker" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hbooker/chapter/100113279","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbooker.com/book/:id"]}],"name":"章节","maintainers":["keocheung"],"location":"chapter.ts"}' :test='{"code":0}' />
 
 ## 晋江文学城 <Site url="jjwxc.net"/>
 
@@ -282,7 +282,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 分类 <Site url="bookfere.com" size="sm" />
 
-<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading"],"example":"/bookfere/skills","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading"],"example":"/bookfere/skills","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
 
 | 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |
   | -------- | -------- | -------- | -------- | -------- |

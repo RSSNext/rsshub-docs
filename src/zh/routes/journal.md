@@ -4,7 +4,7 @@
 
 ### interest <Site url="academia.edu" size="sm" />
 
-<Route namespace="academia" :data='{"path":"/topic/:interest","example":"/academia/topic/Urban_History","parameters":{"interest":"interest"},"radar":[{"source":["academia.edu/Documents/in/:interest"],"target":"/topic/:interest"}],"name":"interest","maintainers":["K33k0"],"categories":["journal"],"url":"academia.edu","location":"topics.ts"}' :test='undefined' />
+<Route namespace="academia" :data='{"path":"/topic/:interest","example":"/academia/topic/Urban_History","parameters":{"interest":"interest"},"radar":[{"source":["academia.edu/Documents/in/:interest"],"target":"/topic/:interest"}],"name":"interest","maintainers":["K33k0"],"categories":["journal"],"url":"academia.edu","location":"topics.ts"}' :test='{"code":0}' />
 
 ## American Economic Association <Site url="aeaweb.org"/>
 
@@ -64,7 +64,7 @@ Return results from 2020
 
 ### Book Reviews <Site url="caareviews.org/reviews/book" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/book","categories":["journal"],"example":"/caareviews/book","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/book"]}],"name":"Book Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/book","location":"book.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="caareviews" :data='{"path":"/book","categories":["journal"],"example":"/caareviews/book","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/book"]}],"name":"Book Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/book","location":"book.ts"}' :test='{"code":0}' />
 
 ### Essays <Site url="caareviews.org/reviews/essay" size="sm" />
 
@@ -72,7 +72,7 @@ Return results from 2020
 
 ### Exhibition Reviews <Site url="caareviews.org/reviews/exhibition" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":0}' />
 
 ## Cool Papers <Site url="papers.cool"/>
 
@@ -118,7 +118,7 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ### IEEE Journal Articles <Site url="www.ieee.org" size="sm" />
 
-<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='{"code":0}' />
 
 ## IEEE Computer Society <Site url="ieee-security.org"/>
 
@@ -132,7 +132,7 @@ Return results from 2020
 
 ### Category <Site url="pubsonline.informs.org" size="sm" />
 
-<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="informs" :data='{"path":"/:category?","categories":["journal"],"example":"/informs/mnsc","parameters":{"category":"Category, can be found in the url of the page, `orsc` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## MDPI <Site url="www.mdpi.com"/>
 
@@ -231,7 +231,7 @@ Return results from 2020
 
 ### Explore <Site url="pubscholar.cn" size="sm" />
 
-<Route namespace="pubscholar" :data='{"path":"/explore/:category?/:keyword?","name":"Explore","maintainers":["TonyRL"],"example":"/pubscholar/explore","parameters":{"category":"Category, see the table below, `articles` by default","keyword":"Search Keyword"},"description":"| Articles / 论文 | Patents / 专利 | Reports / 领域快报 | Information / 动态快讯 | Datasets / 科学数据 | Books / 图书 |\n| --------------- | -------------- | ------------------ | ---------------------- | ------------------- | ------------ |\n| articles        | patents        | bulletins          | reports                | sciencedata         | books        |","location":"explore.ts"}' :test='undefined' />
+<Route namespace="pubscholar" :data='{"path":"/explore/:category?/:keyword?","name":"Explore","maintainers":["TonyRL"],"example":"/pubscholar/explore","parameters":{"category":"Category, see the table below, `articles` by default","keyword":"Search Keyword"},"description":"| Articles / 论文 | Patents / 专利 | Reports / 领域快报 | Information / 动态快讯 | Datasets / 科学数据 | Books / 图书 |\n| --------------- | -------------- | ------------------ | ---------------------- | ------------------- | ------------ |\n| articles        | patents        | bulletins          | reports                | sciencedata         | books        |","location":"explore.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Articles / 论文 | Patents / 专利 | Reports / 领域快报 | Information / 动态快讯 | Datasets / 科学数据 | Books / 图书 |
 | --------------- | -------------- | ------------------ | ---------------------- | ------------------- | ------------ |
