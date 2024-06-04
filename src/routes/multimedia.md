@@ -645,6 +645,12 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
   See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
   :::
 
+## ManyVids <Site url="www.manyvids.com"/>
+
+### Creator Videos <Site url="www.manyvids.com" size="sm" />
+
+<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='undefined' />
+
 ## MissAV.com <Site url="missav.com"/>
 
 ### 最近更新 <Site url="missav.com/dm397/new" size="sm" />

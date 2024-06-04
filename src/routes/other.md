@@ -387,6 +387,12 @@ News from the official site of men's professional tennis.
 
 <Route namespace="firefox" :data='{"path":"/breaches","categories":["other"],"example":"/firefox/breaches","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["monitor.firefox.com/","monitor.firefox.com/breaches"]}],"name":"Firefox Monitor","maintainers":["TonyRL"],"url":"monitor.firefox.com/","location":"breaches.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## MangaDex <Site url="mangadex.org"/>
+
+### Unknown <Site url="mangadex.org" size="sm" />
+
+<Route namespace="mangadex" :data='{"path":"/:id/:lang?","radar":[{"source":["mangadex.org/title/:id/*","mangadex.org/title/:id"],"target":"/:id"}],"name":"Unknown","maintainers":["vzz64"],"location":"index.ts"}' :test='undefined' />
+
 ## Metacritic <Site url="metacritic.com"/>
 
 ### Unknown <Site url="metacritic.com" size="sm" />
@@ -699,12 +705,6 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 ### Unknown <Site url="jseea.cn" size="sm" />
 
 <Route namespace="jseea" :data='{"path":"/news/:type?","radar":[{"source":["jseea.cn/webfile/news/:type"],"target":"/news/:type"}],"name":"Unknown","maintainers":["schen1024"],"location":"news.ts"}' :test='undefined' />
-
-## mangadex <Site url="mangadex.org"/>
-
-### Unknown <Site url="mangadex.org" size="sm" />
-
-<Route namespace="mangadex" :data='{"path":"/:id/:lang?","radar":[{"source":["mangadex.org/title/:id/*","mangadex.org/title/:id"],"target":"/:id"}],"name":"Unknown","maintainers":["vzz64"],"location":"index.ts"}' :test='undefined' />
 
 ## metmuseum <Site url="www.metmuseum.org"/>
 

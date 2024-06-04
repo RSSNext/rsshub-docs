@@ -399,7 +399,7 @@ News from the official site of men's professional tennis.
 
 <Route namespace="firefox" :data='{"path":"/breaches","categories":["other"],"example":"/firefox/breaches","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["monitor.firefox.com/","monitor.firefox.com/breaches"]}],"name":"Firefox Monitor","maintainers":["TonyRL"],"url":"monitor.firefox.com/","location":"breaches.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
-## mangadex <Site url="mangadex.org"/>
+## MangaDex <Site url="mangadex.org"/>
 
 ### Unknown <Site url="mangadex.org" size="sm" />
 
