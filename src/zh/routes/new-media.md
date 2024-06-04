@@ -2651,6 +2651,10 @@ Type 栏目：
 
 <Route namespace="sspai" :data='{"path":"/series/:id","categories":["new-media"],"example":"/sspai/series/77","parameters":{"id":"专栏 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sspai.com/series/:id","sspai.com/series/:id/list","sspai.com/series/:id/metadata"]}],"name":"付费专栏文章更新","maintainers":["TonyRL"],"url":"sspai.com/series","location":"series-update.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+### 会员社区 <Site url="sspai.com" size="sm" />
+
+<Route namespace="sspai" :data='{"path":"/prime/community","categories":["new-media"],"example":"/sspai/prime/community","features":{"requireConfig":[{"name":"SSPAI_BEARERTOKEN","optional":false,"description":"少数派会员账号认证 token。获取方式：登陆后打开少数派会员社区界面，打开浏览器开发者工具中 “网络”(Network) 选项卡，筛选 URL 找到任一个地址为 `sspai.com/api` 开头的请求，点击检查其 “消息头”，在 “请求头” 中找到Authorization字段，将其值复制填入配置即可。你的配置应该形如 `SSPAI_BEARERTOKEN: &#39;Bearer eyJxxxx......xx_U8&#39;`。"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sspai.com/community"]}],"name":"会员社区","maintainers":["mintyfrankie"],"location":"prime-community.ts"}' :test='undefined' />
+
 ### 首页 <Site url="sspai.com/index" size="sm" />
 
 <Route namespace="sspai" :data='{"path":"/index","categories":["new-media"],"example":"/sspai/index","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sspai.com/index"]}],"name":"首页","maintainers":["HenryQW"],"url":"sspai.com/index","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
