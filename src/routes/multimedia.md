@@ -649,19 +649,19 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Creator Videos <Site url="www.manyvids.com" size="sm" />
 
-<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='undefined' />
+<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MissAV.com <Site url="missav.com"/>
 
 ### 最近更新 <Site url="missav.com/dm397/new" size="sm" />
 
-<Route namespace="missav" :data='{"path":"/new","categories":["multimedia"],"example":"/missav/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["missav.com/dm397/new","missav.com/new","missav.com/"]}],"name":"最近更新","maintainers":["TonyRL"],"url":"missav.com/dm397/new","location":"new.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="missav" :data='{"path":"/new","categories":["multimedia"],"example":"/missav/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["missav.com/dm397/new","missav.com/new","missav.com/"]}],"name":"最近更新","maintainers":["TonyRL"],"url":"missav.com/dm397/new","location":"new.ts"}' :test='{"code":0}' />
 
 ## Mixcloud <Site url="www.mixcloud.com"/>
 
 ### User <Site url="www.mixcloud.com" size="sm" />
 
-<Route namespace="mixcloud" :data='{"path":"/:username/:type?","categories":["multimedia"],"example":"/mixcloud/dholbach/uploads","parameters":{"username":"Username, can be found in URL","type":"Type, see below, uploads by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/:type?"]},{"source":["www.mixcloud.com/:username/:type?"]}],"name":"User","maintainers":["Misaka13514"],"description":"| Shows   | Reposts | Favorites | History | Stream |\n  | ------- | ------- | --------- | ------- | ------ |\n  | uploads | reposts | favorites | listens | stream |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mixcloud" :data='{"path":"/:username/:type?","categories":["multimedia"],"example":"/mixcloud/dholbach/uploads","parameters":{"username":"Username, can be found in URL","type":"Type, see below, uploads by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/:type?"]},{"source":["www.mixcloud.com/:username/:type?"]}],"name":"User","maintainers":["Misaka13514"],"description":"| Shows   | Reposts | Favorites | History | Stream |\n  | ------- | ------- | --------- | ------- | ------ |\n  | uploads | reposts | favorites | listens | stream |","location":"index.ts"}' :test='{"code":0}' />
 
 | Shows   | Reposts | Favorites | History | Stream |
   | ------- | ------- | --------- | ------- | ------ |
@@ -845,7 +845,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="m.ajmide.com" size="sm" />
 
-<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia"],"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia"],"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 阿里云盘 <Site url="www.alipan.com"/>
 
@@ -865,7 +865,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 用户视频 <Site url="iq.com" size="sm" />
 
-<Route namespace="iqiyi" :data='{"path":"/user/video/:uid","categories":["multimedia"],"example":"/iqiyi/user/video/2289191062","parameters":{"uid":"用户名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqiyi.com/u/:uid/*"]}],"name":"用户视频","maintainers":["talengu","JimenezLi"],"location":"video.ts"}' :test='{"code":0}' />
+<Route namespace="iqiyi" :data='{"path":"/user/video/:uid","categories":["multimedia"],"example":"/iqiyi/user/video/2289191062","parameters":{"uid":"用户名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqiyi.com/u/:uid/*"]}],"name":"用户视频","maintainers":["talengu","JimenezLi"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 哔嘀影视 <Site url="52bdys.com"/>
 
@@ -1217,7 +1217,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 直播 <Site url="radio.cn" size="sm" />
 
-<Route namespace="radio" :data='{"path":"/zhibo/:id","categories":["multimedia"],"example":"/radio/zhibo/1395528","parameters":{"id":"直播 id，可在对应点播页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"直播","maintainers":["nczitzk"],"description":"如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`\n\n  所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)\n\n  :::tip\n  查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)\n  :::","location":"zhibo.ts"}' :test='{"code":0}' />
+<Route namespace="radio" :data='{"path":"/zhibo/:id","categories":["multimedia"],"example":"/radio/zhibo/1395528","parameters":{"id":"直播 id，可在对应点播页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"直播","maintainers":["nczitzk"],"description":"如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`\n\n  所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)\n\n  :::tip\n  查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)\n  :::","location":"zhibo.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`
 
