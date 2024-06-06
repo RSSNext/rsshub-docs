@@ -28,13 +28,13 @@
 
 ### Tutorials <Site url="howtoforge.com/" size="sm" />
 
-<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## MindMeister <Site url="mindmeister.com"/>
 
 ### Public Maps <Site url="mindmeister.com" size="sm" />
 
-<Route namespace="mindmeister" :data='{"path":"/:category?/:language?","categories":["study"],"example":"/mindmeister/mind-map-examples","parameters":{"category":"Categories, see the table below, `mind-map-examples` by default","language":"Languages, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Public Maps","maintainers":["TonyRL"],"description":"| Categories    | parameter         |\n  | ------------- | ----------------- |\n  | Featured Map  | mind-map-examples |\n  | Business      | business          |\n  | Design        | design            |\n  | Education     | education         |\n  | Entertainment | entertainment     |\n  | Life          | life              |\n  | Marketing     | marketing         |\n  | Productivity  | productivity      |\n  | Summaries     | summaries         |\n  | Technology    | technology        |\n  | Other         | other             |\n\n  | Languages  | parameter |\n  | ---------- | --------- |\n  | English    | en        |\n  | Deutsch    | de        |\n  | Français   | fr        |\n  | Español    | es        |\n  | Português  | pt        |\n  | Nederlands | nl        |\n  | Dansk      | da        |\n  | Русский    | ru        |\n  | 日本語     | ja        |\n  | Italiano   | it        |\n  | 简体中文   | zh        |\n  | 한국어     | ko        |\n  | Other      | other     |","location":"example.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mindmeister" :data='{"path":"/:category?/:language?","categories":["study"],"example":"/mindmeister/mind-map-examples","parameters":{"category":"Categories, see the table below, `mind-map-examples` by default","language":"Languages, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Public Maps","maintainers":["TonyRL"],"description":"| Categories    | parameter         |\n  | ------------- | ----------------- |\n  | Featured Map  | mind-map-examples |\n  | Business      | business          |\n  | Design        | design            |\n  | Education     | education         |\n  | Entertainment | entertainment     |\n  | Life          | life              |\n  | Marketing     | marketing         |\n  | Productivity  | productivity      |\n  | Summaries     | summaries         |\n  | Technology    | technology        |\n  | Other         | other             |\n\n  | Languages  | parameter |\n  | ---------- | --------- |\n  | English    | en        |\n  | Deutsch    | de        |\n  | Français   | fr        |\n  | Español    | es        |\n  | Português  | pt        |\n  | Nederlands | nl        |\n  | Dansk      | da        |\n  | Русский    | ru        |\n  | 日本語     | ja        |\n  | Italiano   | it        |\n  | 简体中文   | zh        |\n  | 한국어     | ko        |\n  | Other      | other     |","location":"example.ts"}' :test='{"code":0}' />
 
 | Categories    | parameter         |
   | ------------- | ----------------- |
@@ -114,7 +114,7 @@
 
 ### 最新文献 <Site url="ncpssd.cn/" size="sm" />
 
-<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ncpssd" :data='{"path":"/newlist","categories":["study"],"example":"/ncpssd/newlist","radar":[{"source":["ncpssd.cn/","ncpssd.cn/newlist"]}],"name":"最新文献","maintainers":["LyleLee"],"url":"ncpssd.cn/","location":"newlist.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 湖南人事考试网 <Site url="rsks.hunanpea.com"/>
 

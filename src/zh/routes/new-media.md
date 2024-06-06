@@ -381,15 +381,15 @@ Category of news
 
 ### Featured <Site url="grist.org/" size="sm" />
 
-<Route namespace="grist" :data='{"path":"/featured","categories":["new-media"],"example":"/grist/featured","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/"]}],"name":"Featured","maintainers":["Rjnishant530"],"url":"grist.org/","location":"featured.ts"}' :test='{"code":0}' />
+<Route namespace="grist" :data='{"path":"/featured","categories":["new-media"],"example":"/grist/featured","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/"]}],"name":"Featured","maintainers":["Rjnishant530"],"url":"grist.org/","location":"featured.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Series <Site url="grist.org/articles/" size="sm" />
 
-<Route namespace="grist" :data='{"path":"/series/:series","categories":["new-media"],"example":"/grist/series/best-of-grist","parameters":{"series":"Find in the URL which has /series/"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/series/:series"]}],"name":"Series","maintainers":["Rjnishant530"],"url":"grist.org/articles/","location":"series.ts"}' :test='{"code":0}' />
+<Route namespace="grist" :data='{"path":"/series/:series","categories":["new-media"],"example":"/grist/series/best-of-grist","parameters":{"series":"Find in the URL which has /series/"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/series/:series"]}],"name":"Series","maintainers":["Rjnishant530"],"url":"grist.org/articles/","location":"series.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Topic <Site url="grist.org/articles/" size="sm" />
 
-<Route namespace="grist" :data='{"path":"/topic/:topic","categories":["new-media"],"example":"/grist/topic/extreme-heat","parameters":{"topic":"Any Topic from Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/:topic"]}],"name":"Topic","maintainers":["Rjnishant530"],"url":"grist.org/articles/","description":"Topics\n\n  | Topic Name               | Topic Link         |\n  | ------------------------ | ------------------ |\n  | Accountability           | accountability     |\n  | Agriculture              | agriculture        |\n  | Ask Umbra                | ask-umbra-series   |\n  | Buildings                | buildings          |\n  | Cities                   | cities             |\n  | Climate & Energy         | climate-energy     |\n  | Climate Fiction          | climate-fiction    |\n  | Climate of Courage       | climate-of-courage |\n  | COP26                    | cop26              |\n  | COP27                    | cop27              |\n  | Culture                  | culture            |\n  | Economics                | economics          |\n  | Energy                   | energy             |\n  | Equity                   | equity             |\n  | Extreme Weather          | extreme-weather    |\n  | Fix                      | fix                |\n  | Food                     | food               |\n  | Grist                    | grist              |\n  | Grist News               | grist-news         |\n  | Health                   | health             |\n  | Housing                  | housing            |\n  | Indigenous Affairs       | indigenous         |\n  | International            | international      |\n  | Labor                    | labor              |\n  | Language                 | language           |\n  | Migration                | migration          |\n  | Opinion                  | opinion            |\n  | Politics                 | politics           |\n  | Protest                  | protest            |\n  | Race                     | race               |\n  | Regulation               | regulation         |\n  | Science                  | science            |\n  | Shift Happens Newsletter | shift-happens      |\n  | Solutions                | solutions          |\n  | Spanish                  | spanish            |\n  | Sponsored                | sponsored          |\n  | Technology               | technology         |\n  | Temperature Check        | temperature-check  |\n  | Uncategorized            | article            |\n  | Updates                  | updates            |\n  | Video                    | video              |","location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="grist" :data='{"path":"/topic/:topic","categories":["new-media"],"example":"/grist/topic/extreme-heat","parameters":{"topic":"Any Topic from Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/:topic"]}],"name":"Topic","maintainers":["Rjnishant530"],"url":"grist.org/articles/","description":"Topics\n\n  | Topic Name               | Topic Link         |\n  | ------------------------ | ------------------ |\n  | Accountability           | accountability     |\n  | Agriculture              | agriculture        |\n  | Ask Umbra                | ask-umbra-series   |\n  | Buildings                | buildings          |\n  | Cities                   | cities             |\n  | Climate & Energy         | climate-energy     |\n  | Climate Fiction          | climate-fiction    |\n  | Climate of Courage       | climate-of-courage |\n  | COP26                    | cop26              |\n  | COP27                    | cop27              |\n  | Culture                  | culture            |\n  | Economics                | economics          |\n  | Energy                   | energy             |\n  | Equity                   | equity             |\n  | Extreme Weather          | extreme-weather    |\n  | Fix                      | fix                |\n  | Food                     | food               |\n  | Grist                    | grist              |\n  | Grist News               | grist-news         |\n  | Health                   | health             |\n  | Housing                  | housing            |\n  | Indigenous Affairs       | indigenous         |\n  | International            | international      |\n  | Labor                    | labor              |\n  | Language                 | language           |\n  | Migration                | migration          |\n  | Opinion                  | opinion            |\n  | Politics                 | politics           |\n  | Protest                  | protest            |\n  | Race                     | race               |\n  | Regulation               | regulation         |\n  | Science                  | science            |\n  | Shift Happens Newsletter | shift-happens      |\n  | Solutions                | solutions          |\n  | Spanish                  | spanish            |\n  | Sponsored                | sponsored          |\n  | Technology               | technology         |\n  | Temperature Check        | temperature-check  |\n  | Uncategorized            | article            |\n  | Updates                  | updates            |\n  | Video                    | video              |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Topics
 
@@ -445,13 +445,13 @@ Topics
 
 ### Health Blog <Site url="www.health.harvard.edu/blog" size="sm" />
 
-<Route namespace="harvard" :data='{"path":"/health/blog","categories":["new-media"],"example":"/harvard/health/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.health.harvard.edu/blog"]}],"name":"Health Blog","maintainers":["nczitzk"],"url":"www.health.harvard.edu/blog","location":"health/blog.ts"}' :test='{"code":0}' />
+<Route namespace="harvard" :data='{"path":"/health/blog","categories":["new-media"],"example":"/harvard/health/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.health.harvard.edu/blog"]}],"name":"Health Blog","maintainers":["nczitzk"],"url":"www.health.harvard.edu/blog","location":"health/blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Harvard Business Review <Site url="hbr.org"/>
 
 ### Topic <Site url="hbr.org" size="sm" />
 
-<Route namespace="hbr" :data='{"path":"/topic/:topic?/:type?","categories":["new-media"],"example":"/hbr/topic/leadership","parameters":{"topic":"Topic, can be found in URL, Leadership by default","type":"Type, see below, Latest by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbr.org/topic/:topic?","hbr.org/"]}],"name":"Topic","maintainers":["nczitzk"],"description":"| LATEST | POPULAR | FROM THE STORE | FOR YOU |\n  | ------ | ------- | -------------- | ------- |\n  | Latest | Popular | From the Store | For You |\n\n  :::tip\n  Click here to view [All Topics](https://hbr.org/topics)\n  :::","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hbr" :data='{"path":"/topic/:topic?/:type?","categories":["new-media"],"example":"/hbr/topic/leadership","parameters":{"topic":"Topic, can be found in URL, Leadership by default","type":"Type, see below, Latest by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbr.org/topic/:topic?","hbr.org/"]}],"name":"Topic","maintainers":["nczitzk"],"description":"| LATEST | POPULAR | FROM THE STORE | FOR YOU |\n  | ------ | ------- | -------------- | ------- |\n  | Latest | Popular | From the Store | For You |\n\n  :::tip\n  Click here to view [All Topics](https://hbr.org/topics)\n  :::","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | LATEST | POPULAR | FROM THE STORE | FOR YOU |
   | ------ | ------- | -------------- | ------- |
@@ -607,11 +607,11 @@ Edition
 
 ### Author <Site url="matters.town" size="sm" />
 
-<Route namespace="matters" :data='{"path":"/author/:uid","name":"Author","example":"/matters/author/robertu","parameters":{"uid":"Author id, can be found at author&#39;s homepage url"},"maintainers":["Cerebrater","xosdy"],"radar":[{"source":["matters.town/:uid"]}],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="matters" :data='{"path":"/author/:uid","name":"Author","example":"/matters/author/robertu","parameters":{"uid":"Author id, can be found at author&#39;s homepage url"},"maintainers":["Cerebrater","xosdy"],"radar":[{"source":["matters.town/:uid"]}],"location":"author.ts"}' :test='{"code":0}' />
 
 ### Latest, heat, essence <Site url="matters.town" size="sm" />
 
-<Route namespace="matters" :data='{"path":"/latest/:type?","name":"Latest, heat, essence","example":"/matters/latest/heat","parameters":{"uid":"Defaults to latest, see table below"},"maintainers":["xyqfer","Cerebrater","xosdy"],"radar":[{"source":["matters.town"]}],"description":"| 最新   | 热门 | 精华    |\n  | ------ | ---- | ------- |\n  | latest | heat | essence |","location":"latest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="matters" :data='{"path":"/latest/:type?","name":"Latest, heat, essence","example":"/matters/latest/heat","parameters":{"uid":"Defaults to latest, see table below"},"maintainers":["xyqfer","Cerebrater","xosdy"],"radar":[{"source":["matters.town"]}],"description":"| 最新   | 热门 | 精华    |\n  | ------ | ---- | ------- |\n  | latest | heat | essence |","location":"latest.ts"}' :test='{"code":0}' />
 
 | 最新   | 热门 | 精华    |
   | ------ | ---- | ------- |
@@ -619,13 +619,13 @@ Edition
 
 ### Tags <Site url="matters.town" size="sm" />
 
-<Route namespace="matters" :data='{"path":"/tags/:tid","name":"Tags","example":"/matters/tags/972-哲學","parameters":{"tid":"Tag id, can be found in the url of the tag page"},"maintainers":["Cerebrater"],"radar":[{"source":["matters.town/tags/:tid"]}],"location":"tags.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="matters" :data='{"path":"/tags/:tid","name":"Tags","example":"/matters/tags/972-哲學","parameters":{"tid":"Tag id, can be found in the url of the tag page"},"maintainers":["Cerebrater"],"radar":[{"source":["matters.town/tags/:tid"]}],"location":"tags.ts"}' :test='{"code":0}' />
 
 ## Mirror <Site url="mirror.xyz"/>
 
 ### User <Site url="mirror.xyz" size="sm" />
 
-<Route namespace="mirror" :data='{"path":"/:id","categories":["new-media"],"example":"/mirror/tingfei.eth","parameters":{"id":"user id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["fifteen42","rde9","nczitzk"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mirror" :data='{"path":"/:id","categories":["new-media"],"example":"/mirror/tingfei.eth","parameters":{"id":"user id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["fifteen42","rde9","nczitzk"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## MyGoPen <Site url="mygopen.com"/>
 
@@ -946,7 +946,7 @@ Supported types: Ideas, Guides, and Films.
 
 ### Hinatazaka46 Blog 日向坂 46 博客 <Site url="hinatazaka46.com" size="sm" />
 
-<Route namespace="hinatazaka46" :data='{"path":"/blog/:id?/:page?","categories":["new-media"],"example":"/hinatazaka46/blog","parameters":{"id":"Member ID, see below, `all` by default","page":"Page, `0` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Hinatazaka46 Blog 日向坂 46 博客","maintainers":[],"description":"Member ID\n\n  | Member ID | Name         |\n  | --------- | ------------ |\n  | 2000      | 四期生リレー |\n  | 36        | 渡辺 莉奈    |\n  | 35        | 山下 葉留花  |\n  | 34        | 宮地 すみれ  |\n  | 33        | 藤嶌 果歩    |\n  | 32        | 平岡 海月    |\n  | 31        | 平尾 帆夏    |\n  | 30        | 竹内 希来里  |\n  | 29        | 正源司 陽子  |\n  | 28        | 清水 理央    |\n  | 27        | 小西 夏菜実  |\n  | 26        | 岸 帆夏      |\n  | 25        | 石塚 瑶季    |\n  | 24        | 山口 陽世    |\n  | 23        | 森本 茉莉    |\n  | 22        | 髙橋 未来虹  |\n  | 21        | 上村 ひなの  |\n  | 18        | 松田 好花    |\n  | 17        | 濱岸 ひより  |\n  | 16        | 丹生 明里    |\n  | 15        | 富田 鈴花    |\n  | 14        | 小坂 菜緒    |\n  | 13        | 河田 陽菜    |\n  | 12        | 金村 美玖    |\n  | 11        | 東村 芽依    |\n  | 10        | 高本 彩花    |\n  | 9         | 高瀬 愛奈    |\n  | 8         | 佐々木 美玲  |\n  | 7         | 佐々木 久美  |\n  | 6         | 齊藤 京子    |\n  | 5         | 加藤 史帆    |\n  | 4         | 影山 優佳    |\n  | 2         | 潮 紗理菜    |","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hinatazaka46" :data='{"path":"/blog/:id?/:page?","categories":["new-media"],"example":"/hinatazaka46/blog","parameters":{"id":"Member ID, see below, `all` by default","page":"Page, `0` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Hinatazaka46 Blog 日向坂 46 博客","maintainers":[],"description":"Member ID\n\n  | Member ID | Name         |\n  | --------- | ------------ |\n  | 2000      | 四期生リレー |\n  | 36        | 渡辺 莉奈    |\n  | 35        | 山下 葉留花  |\n  | 34        | 宮地 すみれ  |\n  | 33        | 藤嶌 果歩    |\n  | 32        | 平岡 海月    |\n  | 31        | 平尾 帆夏    |\n  | 30        | 竹内 希来里  |\n  | 29        | 正源司 陽子  |\n  | 28        | 清水 理央    |\n  | 27        | 小西 夏菜実  |\n  | 26        | 岸 帆夏      |\n  | 25        | 石塚 瑶季    |\n  | 24        | 山口 陽世    |\n  | 23        | 森本 茉莉    |\n  | 22        | 髙橋 未来虹  |\n  | 21        | 上村 ひなの  |\n  | 18        | 松田 好花    |\n  | 17        | 濱岸 ひより  |\n  | 16        | 丹生 明里    |\n  | 15        | 富田 鈴花    |\n  | 14        | 小坂 菜緒    |\n  | 13        | 河田 陽菜    |\n  | 12        | 金村 美玖    |\n  | 11        | 東村 芽依    |\n  | 10        | 高本 彩花    |\n  | 9         | 高瀬 愛奈    |\n  | 8         | 佐々木 美玲  |\n  | 7         | 佐々木 久美  |\n  | 6         | 齊藤 京子    |\n  | 5         | 加藤 史帆    |\n  | 4         | 影山 優佳    |\n  | 2         | 潮 紗理菜    |","location":"blog.ts"}' :test='{"code":0}' />
 
 Member ID
 
@@ -1477,7 +1477,7 @@ Member ID
 
 ### 关键字 <Site url="topys.cn" size="sm" />
 
-<Route namespace="topys" :data='{"path":"/:keyword?","categories":["new-media"],"example":"/topys","parameters":{"keyword":"关键字，可在对应结果页的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["topys.cn/search/:keyword","topys.cn/"]}],"name":"关键字","maintainers":["nczitzk"],"description":"| 创意 | 设计 | 商业 | 艺术 | 文化 | 科技 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="topys" :data='{"path":"/:keyword?","categories":["new-media"],"example":"/topys","parameters":{"keyword":"关键字，可在对应结果页的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["topys.cn/search/:keyword","topys.cn/"]}],"name":"关键字","maintainers":["nczitzk"],"description":"| 创意 | 设计 | 商业 | 艺术 | 文化 | 科技 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |","location":"index.ts"}' :test='{"code":0}' />
 
 | 创意 | 设计 | 商业 | 艺术 | 文化 | 科技 |
   | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -1486,7 +1486,7 @@ Member ID
 
 ### 分类 <Site url="utgd.net" size="sm" />
 
-<Route namespace="utgd" :data='{"path":"/:category?","categories":["new-media"],"example":"/utgd/method","parameters":{"category":"分类，可在对应分类页的 URL 中找到，默认为方法"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/category/s/:category","utgd.net/"],"target":"/:category"}],"name":"分类","maintainers":["nczitzk"],"description":"| 方法   | 观点    |\n  | ------ | ------- |\n  | method | opinion |","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="utgd" :data='{"path":"/:category?","categories":["new-media"],"example":"/utgd/method","parameters":{"category":"分类，可在对应分类页的 URL 中找到，默认为方法"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/category/s/:category","utgd.net/"],"target":"/:category"}],"name":"分类","maintainers":["nczitzk"],"description":"| 方法   | 观点    |\n  | ------ | ------- |\n  | method | opinion |","location":"category.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 方法   | 观点    |
   | ------ | ------- |
@@ -1494,11 +1494,11 @@ Member ID
 
 ### 时间线 <Site url="utgd.net/" size="sm" />
 
-<Route namespace="utgd" :data='{"path":"/timeline","categories":["new-media"],"example":"/utgd/timeline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/"]}],"name":"时间线","maintainers":["nczitzk"],"url":"utgd.net/","location":"timeline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="utgd" :data='{"path":"/timeline","categories":["new-media"],"example":"/utgd/timeline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/"]}],"name":"时间线","maintainers":["nczitzk"],"url":"utgd.net/","location":"timeline.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 专题 <Site url="utgd.net/topic" size="sm" />
 
-<Route namespace="utgd" :data='{"path":"/topic/:topic?","categories":["new-media"],"example":"/utgd/topic/在线阅读专栏","parameters":{"topic":"专题，默认为在线阅读专栏"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/topic","utgd.net/"],"target":"/topic/:topic"}],"name":"专题","maintainers":["nczitzk"],"url":"utgd.net/topic","description":"| 在线阅读专栏 | 卡片笔记专题 |\n  | ------------ | ------------ |\n\n  更多专栏请见 [专题广场](https://utgd.net/topic)","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="utgd" :data='{"path":"/topic/:topic?","categories":["new-media"],"example":"/utgd/topic/在线阅读专栏","parameters":{"topic":"专题，默认为在线阅读专栏"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/topic","utgd.net/"],"target":"/topic/:topic"}],"name":"专题","maintainers":["nczitzk"],"url":"utgd.net/topic","description":"| 在线阅读专栏 | 卡片笔记专题 |\n  | ------------ | ------------ |\n\n  更多专栏请见 [专题广场](https://utgd.net/topic)","location":"topic.ts"}' :test='{"code":0}' />
 
 | 在线阅读专栏 | 卡片笔记专题 |
   | ------------ | ------------ |
@@ -1601,7 +1601,7 @@ Member ID
 
 ### 快讯 <Site url="hellobtc.com/news" size="sm" />
 
-<Route namespace="hellobtc" :data='{"path":"/news","categories":["new-media"],"example":"/hellobtc/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hellobtc.com/news"]}],"name":"快讯","maintainers":["Fatpandac"],"url":"hellobtc.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hellobtc" :data='{"path":"/news","categories":["new-media"],"example":"/hellobtc/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hellobtc.com/news"]}],"name":"快讯","maintainers":["Fatpandac"],"url":"hellobtc.com/news","location":"news.ts"}' :test='{"code":0}' />
 
 ### 首页 <Site url="hellobtc.com" size="sm" />
 
@@ -1611,11 +1611,11 @@ Member ID
 
 ### 分類 <Site url="twreporter.org/" size="sm" />
 
-<Route namespace="twreporter" :data='{"path":"/category/:category","categories":["new-media"],"example":"/twreporter/category/world","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/:category"]}],"name":"分類","maintainers":["emdoe"],"url":"twreporter.org/","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="twreporter" :data='{"path":"/category/:category","categories":["new-media"],"example":"/twreporter/category/world","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/:category"]}],"name":"分類","maintainers":["emdoe"],"url":"twreporter.org/","location":"category.ts"}' :test='{"code":0}' />
 
 ### 最新 <Site url="twreporter.org/" size="sm" />
 
-<Route namespace="twreporter" :data='{"path":"/newest","categories":["new-media"],"example":"/twreporter/newest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/"]}],"name":"最新","maintainers":["emdoe"],"url":"twreporter.org/","location":"newest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="twreporter" :data='{"path":"/newest","categories":["new-media"],"example":"/twreporter/newest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/"]}],"name":"最新","maintainers":["emdoe"],"url":"twreporter.org/","location":"newest.ts"}' :test='{"code":0}' />
 
 ## 本地宝 <Site url="bendibao.com"/>
 
@@ -1924,7 +1924,7 @@ Type 栏目：
 
 ### 樊登福州运营中心 <Site url="www.dushu365.com*" size="sm" />
 
-<Route namespace="dushu" :data='{"path":"/fuzhou","categories":["new-media"],"example":"/dushu/fuzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dushu365.com*"]}],"name":"樊登福州运营中心","maintainers":["Fatpandac"],"url":"www.dushu365.com*","location":"fuzhou/index.ts"}' :test='{"code":0}' />
+<Route namespace="dushu" :data='{"path":"/fuzhou","categories":["new-media"],"example":"/dushu/fuzhou","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dushu365.com*"]}],"name":"樊登福州运营中心","maintainers":["Fatpandac"],"url":"www.dushu365.com*","location":"fuzhou/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 仮面ライダ <Site url="kamen-rider-official.com"/>
 
@@ -2019,11 +2019,11 @@ Type 栏目：
 
 ### 个人主页文章 <Site url="guancha.cn" size="sm" />
 
-<Route namespace="guancha" :data='{"path":"/personalpage/:uid","categories":["new-media"],"example":"/guancha/personalpage/243983","parameters":{"uid":"用户id， 可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"个人主页文章","maintainers":["Jeason0228"],"location":"personalpage.ts"}' :test='{"code":1,"message":"expected -15923399565 to be greater than -432000000"}' />
+<Route namespace="guancha" :data='{"path":"/personalpage/:uid","categories":["new-media"],"example":"/guancha/personalpage/243983","parameters":{"uid":"用户id， 可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"个人主页文章","maintainers":["Jeason0228"],"location":"personalpage.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 观学院 <Site url="guancha.cn/" size="sm" />
 
-<Route namespace="guancha" :data='{"path":"/member/:category?","categories":["new-media"],"example":"/guancha/member/recommend","parameters":{"category":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/"],"target":"/:category?"}],"name":"观学院","maintainers":["nczitzk"],"url":"guancha.cn/","description":"| 精选      | 观书堂 | 在线课  | 观学院   |\n  | --------- | ------ | ------- | -------- |\n  | recommend | books  | courses | huodongs |","location":"member.ts"}' :test='{"code":0}' />
+<Route namespace="guancha" :data='{"path":"/member/:category?","categories":["new-media"],"example":"/guancha/member/recommend","parameters":{"category":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/"],"target":"/:category?"}],"name":"观学院","maintainers":["nczitzk"],"url":"guancha.cn/","description":"| 精选      | 观书堂 | 在线课  | 观学院   |\n  | --------- | ------ | ------- | -------- |\n  | recommend | books  | courses | huodongs |","location":"member.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 精选      | 观书堂 | 在线课  | 观学院   |
   | --------- | ------ | ------- | -------- |
@@ -2031,7 +2031,7 @@ Type 栏目：
 
 ### 首页 <Site url="guancha.cn/" size="sm" />
 
-<Route namespace="guancha" :data='{"path":"/:category?","categories":["new-media"],"example":"/guancha","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/"]}],"name":"首页","maintainers":["nczitzk","Jeason0228"],"url":"guancha.cn/","description":"| 全部 | 评论 & 研究 | 要闻  | 风闻    | 热点新闻 | 滚动新闻 |\n  | ---- | ----------- | ----- | ------- | -------- | -------- |\n  | all  | review      | story | fengwen | redian   | gundong  |\n\n  home = 评论 & 研究 + 要闻 + 风闻\n\n  others = 热点新闻 + 滚动新闻\n\n  :::tip\n  观察者网首页左中右的三个 column 分别对应 **评论 & 研究**、**要闻**、**风闻** 三个部分。\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="guancha" :data='{"path":"/:category?","categories":["new-media"],"example":"/guancha","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/"]}],"name":"首页","maintainers":["nczitzk","Jeason0228"],"url":"guancha.cn/","description":"| 全部 | 评论 & 研究 | 要闻  | 风闻    | 热点新闻 | 滚动新闻 |\n  | ---- | ----------- | ----- | ------- | -------- | -------- |\n  | all  | review      | story | fengwen | redian   | gundong  |\n\n  home = 评论 & 研究 + 要闻 + 风闻\n\n  others = 热点新闻 + 滚动新闻\n\n  :::tip\n  观察者网首页左中右的三个 column 分别对应 **评论 & 研究**、**要闻**、**风闻** 三个部分。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 全部 | 评论 & 研究 | 要闻  | 风闻    | 热点新闻 | 滚动新闻 |
   | ---- | ----------- | ----- | ------- | -------- | -------- |
@@ -2047,7 +2047,7 @@ Type 栏目：
 
 ### 头条 <Site url="guancha.cn/GuanChaZheTouTiao" size="sm" />
 
-<Route namespace="guancha" :data='{"path":"/headline","categories":["new-media"],"example":"/guancha/headline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/GuanChaZheTouTiao","guancha.cn/"]}],"name":"头条","maintainers":["nczitzk"],"url":"guancha.cn/GuanChaZheTouTiao","location":"headline.ts"}' :test='{"code":0}' />
+<Route namespace="guancha" :data='{"path":"/headline","categories":["new-media"],"example":"/guancha/headline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/GuanChaZheTouTiao","guancha.cn/"]}],"name":"头条","maintainers":["nczitzk"],"url":"guancha.cn/GuanChaZheTouTiao","location":"headline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 国家高端智库 / 综合开发研究院 <Site url="cdi.com.cn"/>
 
@@ -2071,7 +2071,7 @@ Type 栏目：
 
 ### 科学人 <Site url="guokr.com/scientific" size="sm" />
 
-<Route namespace="guokr" :data='{"path":"/scientific","categories":["new-media"],"example":"/guokr/scientific","radar":[{"source":["guokr.com/scientific","guokr.com/"]}],"name":"科学人","maintainers":["alphardex","nczitzk"],"url":"guokr.com/scientific","location":"scientific.ts"}' :test='{"code":0}' />
+<Route namespace="guokr" :data='{"path":"/scientific","categories":["new-media"],"example":"/guokr/scientific","radar":[{"source":["guokr.com/scientific","guokr.com/"]}],"name":"科学人","maintainers":["alphardex","nczitzk"],"url":"guokr.com/scientific","location":"scientific.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 后续 <Site url="houxu.app"/>
 
@@ -2235,11 +2235,11 @@ Type 栏目：
 
 ### 榜单 <Site url="tophub.today" size="sm" />
 
-<Route namespace="tophub" :data='{"path":"/:id","categories":["new-media"],"example":"/tophub/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单","maintainers":["LogicJake"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tophub" :data='{"path":"/:id","categories":["new-media"],"example":"/tophub/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单","maintainers":["LogicJake"],"location":"index.ts"}' :test='{"code":0}' />
 
 ### 榜单列表 <Site url="tophub.today" size="sm" />
 
-<Route namespace="tophub" :data='{"path":"/list/:id","categories":["new-media"],"example":"/tophub/list/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单列表","maintainers":["akynazh"],"description":":::tip\n将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。\n:::","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tophub" :data='{"path":"/list/:id","categories":["new-media"],"example":"/tophub/list/Om4ejxvxEN","parameters":{"id":"榜单id，可在 URL 中找到"},"features":{"requireConfig":[{"name":"TOPHUB_COOKIE","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tophub.today/n/:id"]}],"name":"榜单列表","maintainers":["akynazh"],"description":":::tip\n将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。\n:::","location":"list.ts"}' :test='{"code":0}' />
 
 :::tip
 将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。
@@ -2249,7 +2249,7 @@ Type 栏目：
 
 ### 君合法评 <Site url="junhe.com" size="sm" />
 
-<Route namespace="junhe" :data='{"path":"/legal-updates","name":"君合法评","url":"junhe.com","maintainers":["nczitzk"],"example":"/junhe/legal-updates","description":"","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["/legal-updates"],"target":"/legal-updates"}],"location":"legal-updates.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="junhe" :data='{"path":"/legal-updates","name":"君合法评","url":"junhe.com","maintainers":["nczitzk"],"example":"/junhe/legal-updates","description":"","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["/legal-updates"],"target":"/legal-updates"}],"location":"legal-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 靠谱新闻 <Site url="kaopu.news"/>
 
@@ -2319,7 +2319,7 @@ Type 栏目：
 
 ### 业界资讯 <Site url="leiphone.com/" size="sm" />
 
-<Route namespace="leiphone" :data='{"path":"/newsflash","categories":["new-media"],"example":"/leiphone/newsflash","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["leiphone.com/"]}],"name":"业界资讯","maintainers":[],"url":"leiphone.com/","location":"newsflash.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="leiphone" :data='{"path":"/newsflash","categories":["new-media"],"example":"/leiphone/newsflash","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["leiphone.com/"]}],"name":"业界资讯","maintainers":[],"url":"leiphone.com/","location":"newsflash.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 链新闻 ABMedia <Site url="www.abmedia.io"/>
 
@@ -2417,7 +2417,7 @@ Type 栏目：
 
 ### 首页 <Site url="mittrchina.com" size="sm" />
 
-<Route namespace="mittrchina" :data='{"path":"/:type?","categories":["new-media"],"example":"/mittrchina/index","parameters":{"type":"类型，见下表，默认为首页资讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["EsuRt","queensferryme"],"description":"| 快讯     | 本周热文 | 首页资讯 | 视频  |\n  | -------- | -------- | -------- | ----- |\n  | breaking | hot      | index    | video |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mittrchina" :data='{"path":"/:type?","categories":["new-media"],"example":"/mittrchina/index","parameters":{"type":"类型，见下表，默认为首页资讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["EsuRt","queensferryme"],"description":"| 快讯     | 本周热文 | 首页资讯 | 视频  |\n  | -------- | -------- | -------- | ----- |\n  | breaking | hot      | index    | video |","location":"index.ts"}' :test='{"code":0}' />
 
 | 快讯     | 本周热文 | 首页资讯 | 视频  |
   | -------- | -------- | -------- | ----- |
@@ -2437,7 +2437,7 @@ Type 栏目：
 
 ### 资讯 <Site url="medsci.cn" size="sm" />
 
-<Route namespace="medsci" :data='{"path":"/:sid?/:tid?","categories":["new-media"],"example":"/medsci","parameters":{"sid":"科室，见下表，默认为推荐","tid":"亚专业，可在对应科室页 URL 中找到，默认为该科室的全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":":::tip\n  下表为科室对应的 sid，若想获得 tid，可以到对应科室页面 URL 中寻找 `t_id` 字段的值，下面是一个例子：\n\n  如 [肿瘤 - NSCLC](https://www.medsci.cn/department/details?s_id=5&t_id=277) 的 URL 为 `https://www.medsci.cn/department/details?s_id=5&t_id=277`，可以看到此时 `s_id` 对应 `sid` 的值为 5， `t_id` 对应 `tid` 的值为 277，所以可以得到路由 [`/medsci/5/277`](https://rsshub.app/medsci/5/277)\n  :::\n\n  | 心血管 | 内分泌 | 消化 | 呼吸 | 神经科 |\n  | ------ | ------ | ---- | ---- | ------ |\n  | 2      | 6      | 4    | 12   | 17     |\n\n  | 传染科 | 精神心理 | 肾内科 | 风湿免疫 | 血液科 |\n  | ------ | -------- | ------ | -------- | ------ |\n  | 9      | 13       | 14     | 15       | 21     |\n\n  | 老年医学 | 胃肠外科 | 血管外科 | 肝胆胰外 | 骨科 |\n  | -------- | -------- | -------- | -------- | ---- |\n  | 19       | 76       | 92       | 91       | 10   |\n\n  | 普通外科 | 胸心外科 | 神经外科 | 泌尿外科 | 烧伤科 |\n  | -------- | -------- | -------- | -------- | ------ |\n  | 23       | 24       | 25       | 26       | 27     |\n\n  | 整形科 | 麻醉疼痛 | 罕见病 | 康复医学 | 药械 |\n  | ------ | -------- | ------ | -------- | ---- |\n  | 28     | 29       | 304    | 95       | 11   |\n\n  | 儿科 | 耳鼻咽喉 | 口腔科 | 眼科 | 政策人文 |\n  | ---- | -------- | ------ | ---- | -------- |\n  | 18   | 30       | 31     | 32   | 33       |\n\n  | 营养全科 | 预防公卫 | 妇产科 | 中医科 | 急重症 |\n  | -------- | -------- | ------ | ------ | ------ |\n  | 34       | 35       | 36     | 37     | 38     |\n\n  | 皮肤性病 | 影像放射 | 转化医学 | 检验病理 | 护理 |\n  | -------- | -------- | -------- | -------- | ---- |\n  | 39       | 40       | 42       | 69       | 79   |\n\n  | 糖尿病 | 冠心病 | 肝病 | 乳腺癌 |\n  | ------ | ------ | ---- | ------ |\n  | 8      | 43     | 22   | 89     |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="medsci" :data='{"path":"/:sid?/:tid?","categories":["new-media"],"example":"/medsci","parameters":{"sid":"科室，见下表，默认为推荐","tid":"亚专业，可在对应科室页 URL 中找到，默认为该科室的全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":":::tip\n  下表为科室对应的 sid，若想获得 tid，可以到对应科室页面 URL 中寻找 `t_id` 字段的值，下面是一个例子：\n\n  如 [肿瘤 - NSCLC](https://www.medsci.cn/department/details?s_id=5&t_id=277) 的 URL 为 `https://www.medsci.cn/department/details?s_id=5&t_id=277`，可以看到此时 `s_id` 对应 `sid` 的值为 5， `t_id` 对应 `tid` 的值为 277，所以可以得到路由 [`/medsci/5/277`](https://rsshub.app/medsci/5/277)\n  :::\n\n  | 心血管 | 内分泌 | 消化 | 呼吸 | 神经科 |\n  | ------ | ------ | ---- | ---- | ------ |\n  | 2      | 6      | 4    | 12   | 17     |\n\n  | 传染科 | 精神心理 | 肾内科 | 风湿免疫 | 血液科 |\n  | ------ | -------- | ------ | -------- | ------ |\n  | 9      | 13       | 14     | 15       | 21     |\n\n  | 老年医学 | 胃肠外科 | 血管外科 | 肝胆胰外 | 骨科 |\n  | -------- | -------- | -------- | -------- | ---- |\n  | 19       | 76       | 92       | 91       | 10   |\n\n  | 普通外科 | 胸心外科 | 神经外科 | 泌尿外科 | 烧伤科 |\n  | -------- | -------- | -------- | -------- | ------ |\n  | 23       | 24       | 25       | 26       | 27     |\n\n  | 整形科 | 麻醉疼痛 | 罕见病 | 康复医学 | 药械 |\n  | ------ | -------- | ------ | -------- | ---- |\n  | 28     | 29       | 304    | 95       | 11   |\n\n  | 儿科 | 耳鼻咽喉 | 口腔科 | 眼科 | 政策人文 |\n  | ---- | -------- | ------ | ---- | -------- |\n  | 18   | 30       | 31     | 32   | 33       |\n\n  | 营养全科 | 预防公卫 | 妇产科 | 中医科 | 急重症 |\n  | -------- | -------- | ------ | ------ | ------ |\n  | 34       | 35       | 36     | 37     | 38     |\n\n  | 皮肤性病 | 影像放射 | 转化医学 | 检验病理 | 护理 |\n  | -------- | -------- | -------- | -------- | ---- |\n  | 39       | 40       | 42       | 69       | 79   |\n\n  | 糖尿病 | 冠心病 | 肝病 | 乳腺癌 |\n  | ------ | ------ | ---- | ------ |\n  | 8      | 43     | 22   | 89     |","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   下表为科室对应的 sid，若想获得 tid，可以到对应科室页面 URL 中寻找 `t_id` 字段的值，下面是一个例子：
@@ -3122,7 +3122,7 @@ Type 栏目：
 
 ### 科技 - 科学探索 <Site url="finance.sina.com.cn" size="sm" />
 
-<Route namespace="sina" :data='{"path":"/discovery/:type","categories":["new-media"],"example":"/sina/discovery/zx","parameters":{"type":"订阅分区类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科技 - 科学探索","maintainers":["LogicJake"],"description":"| 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | zx   | twhk     | dwzw     | zrdl     | lskg     | smyx     | shbk     | kjqy     |","location":"discovery.ts"}' :test='{"code":0}' />
+<Route namespace="sina" :data='{"path":"/discovery/:type","categories":["new-media"],"example":"/sina/discovery/zx","parameters":{"type":"订阅分区类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科技 - 科学探索","maintainers":["LogicJake"],"description":"| 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | zx   | twhk     | dwzw     | zrdl     | lskg     | smyx     | shbk     | kjqy     |","location":"discovery.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |
   | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -3378,7 +3378,7 @@ Type 栏目：
 
 ### 直播回看 <Site url="live.kepu.net.cn/replay/index" size="sm" />
 
-<Route namespace="kepu" :data='{"path":"/live","categories":["new-media"],"example":"/kepu/live","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.kepu.net.cn/replay/index"]}],"name":"直播回看","maintainers":["nczitzk"],"url":"live.kepu.net.cn/replay/index","location":"live.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kepu" :data='{"path":"/live","categories":["new-media"],"example":"/kepu/live","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.kepu.net.cn/replay/index"]}],"name":"直播回看","maintainers":["nczitzk"],"url":"live.kepu.net.cn/replay/index","location":"live.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 中伦律师事务所 <Site url="zhonglun.com"/>
 
