@@ -2481,6 +2481,12 @@ Type 栏目：
   | ------ | ------ | ---- | ------ |
   | 8      | 43     | 22   | 89     |
 
+## 美麗島電子報 <Site url="my-formosa.com"/>
+
+### 首页 <Site url="my-formosa.com" size="sm" />
+
+<Route namespace="my-formosa" :data='{"path":"/","categories":["new-media"],"example":"/my-formosa","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["my-formosa.com/"]}],"name":"首页","maintainers":["dzx-dzx"],"url":"my-formosa.com","location":"index.ts"}' :test='undefined' />
+
 ## 米课 <Site url="imiker.com"/>
 
 ### 米课圈精华 <Site url="imiker.com/explore/find" size="sm" />
