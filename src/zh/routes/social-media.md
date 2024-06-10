@@ -1470,7 +1470,7 @@ Chart
 
 ### 用户文章 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/posts/:usertype/:id","categories":["social-media"],"example":"/zhihu/posts/people/frederchen","parameters":{"usertype":"作者 id，可在用户主页 URL 中找到","id":"用户类型usertype，参考用户主页的URL。目前有两种，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/:usertype/:id/posts"]}],"name":"用户文章","maintainers":["whtsky","Colin-XKL"],"description":"| 普通用户 | 机构用户 |\n| -------- | -------- |\n| people   | org      |","location":"posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zhihu" :data='{"path":"/posts/:usertype/:id","categories":["social-media"],"example":"/zhihu/posts/people/frederchen","parameters":{"usertype":"作者 id，可在用户主页 URL 中找到","id":"用户类型usertype，参考用户主页的URL。目前有两种，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/:usertype/:id/posts","www.zhihu.com/:usertype/:id"]}],"name":"用户文章","maintainers":["whtsky","Colin-XKL"],"description":"| 普通用户 | 机构用户 |\n| -------- | -------- |\n| people   | org      |","location":"posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 普通用户 | 机构用户 |
 | -------- | -------- |
