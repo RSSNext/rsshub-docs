@@ -108,9 +108,16 @@ News from the official site of men's professional tennis.
 
 ## Bing <Site url="cn.bing.com"/>
 
-### 每日壁纸 <Site url="cn.bing.com/" size="sm" />
+### 每日壁纸 <Site url="www.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/","radar":[{"source":["cn.bing.com/"],"target":""}],"name":"每日壁纸","maintainers":["FHYunCai"],"url":"cn.bing.com/","location":"daily-wallpaper.ts"}' :test='undefined' />
+<Route namespace="bing" :data='{"path":"/:routeParams?","parameters":{"routeParams":"额外参数type,story和lang:请参阅以下说明和表格"},"radar":[{"source":["www.bing.com/","cn.bing.com/"],"target":""}],"name":"每日壁纸","maintainers":["FHYunCai","LLLLLFish"],"url":"www.bing.com/","example":"/bing/type=UHD&story=1&lang=zh-CN","description":"| 参数    | 含义                 | 接受的值                                                      | 默认值       | 备注                                                     |\n|-------|--------------------|-----------------------------------------------------------|-----------|--------------------------------------------------------|\n| type  | 输出壁纸的像素类型          | UHD/1920x1080/1920x1200/768x1366/1080x1920/1080x1920_logo | 1920x1080 | 1920x1200与1080x1920_logo带有水印,输入的值不在接受范围内都会输出成1920x1080 |\n| story | 是否输出壁纸的故事          | 1/0                                                       | 0         | 输入的值不为1都不会输出故事                                         |\n| lang  | 输出壁纸图文的地区(中文或者是英文) | zh/en                                               | zh     | zh/en输出的壁纸图文不一定是一样的;如果en不生效,试着部署到其他地方               |\n","location":"daily-wallpaper.ts"}' :test='undefined' />
+
+| 参数    | 含义                 | 接受的值                                                      | 默认值       | 备注                                                     |
+|-------|--------------------|-----------------------------------------------------------|-----------|--------------------------------------------------------|
+| type  | 输出壁纸的像素类型          | UHD/1920x1080/1920x1200/768x1366/1080x1920/1080x1920_logo | 1920x1080 | 1920x1200与1080x1920_logo带有水印,输入的值不在接受范围内都会输出成1920x1080 |
+| story | 是否输出壁纸的故事          | 1/0                                                       | 0         | 输入的值不为1都不会输出故事                                         |
+| lang  | 输出壁纸图文的地区(中文或者是英文) | zh/en                                               | zh     | zh/en输出的壁纸图文不一定是一样的;如果en不生效,试着部署到其他地方               |
+
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
