@@ -142,11 +142,11 @@
 
 ### News <Site url="finviz.com/news.ashx" size="sm" />
 
-<Route namespace="finviz" :data='{"path":"/:category?","categories":["finance"],"example":"/finviz","parameters":{"category":"Category, see below, News by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["finviz.com/news.ashx","finviz.com/"]}],"name":"News","maintainers":["nczitzk"],"url":"finviz.com/news.ashx","description":"| News | Blog |\n  | ---- | ---- |\n  | news | blog |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="finviz" :data='{"path":"/:category?","categories":["finance"],"example":"/finviz","parameters":{"category":"Category, see below, News by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["finviz.com/news.ashx","finviz.com/"]}],"name":"News","maintainers":["nczitzk"],"url":"finviz.com/news.ashx","description":"| News | Blogs |\n  | ---- | ---- |\n  | news | blogs |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
-| News | Blog |
+| News | Blogs |
   | ---- | ---- |
-  | news | blog |
+  | news | blogs |
 
 ### US Stock News <Site url="finviz.com" size="sm" />
 
