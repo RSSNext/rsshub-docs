@@ -144,7 +144,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 最热 / 最新帖子 <Site url="bbs.loongarch.org/" size="sm" />
 
-<Route namespace="loongarch" :data='{"path":"/post/:type?","categories":["bbs"],"example":"/loongarch/post/newest","parameters":{"type":"top 或 newest"},"radar":[{"source":["bbs.loongarch.org"]}],"name":"最热 / 最新帖子","maintainers":["ladeng07","3401797899"],"url":"bbs.loongarch.org/","location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="loongarch" :data='{"path":"/post/:type?","categories":["bbs"],"example":"/loongarch/post/newest","parameters":{"type":"top 或 newest"},"radar":[{"source":["bbs.loongarch.org"]}],"name":"最热 / 最新帖子","maintainers":["ladeng07","3401797899"],"url":"bbs.loongarch.org/","location":"post.ts"}' :test='{"code":0}' />
 
 ## Meteor <Site url="meteor.today"/>
 
@@ -364,7 +364,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 鱼吧帖子 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":0}' />
 
 | 回复时间排序 | 发布时间排序 |
   | ------------ | ------------ |
@@ -372,7 +372,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 鱼吧跟帖 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/post/:id","categories":["bbs"],"example":"/douyu/post/631737151576473201","parameters":{"id":"帖子 id，可在帖子页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/p/:id","yuba.douyu.com/"]}],"name":"鱼吧跟帖","maintainers":["nczitzk"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyu" :data='{"path":"/post/:id","categories":["bbs"],"example":"/douyu/post/631737151576473201","parameters":{"id":"帖子 id，可在帖子页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/p/:id","yuba.douyu.com/"]}],"name":"鱼吧跟帖","maintainers":["nczitzk"],"location":"post.ts"}' :test='{"code":0}' />
 
 ## 恩山无线论坛 <Site url="right.com.cn"/>
 

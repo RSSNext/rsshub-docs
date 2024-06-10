@@ -351,7 +351,7 @@
 
 ### Charts <Site url="www.imdb.com/chart/top/" size="sm" />
 
-<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia"],"parameters":{"chart":"The chart to display, `top` by default"},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
+<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia"],"parameters":{"chart":"The chart to display, `top` by default"},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |
   | -------------- | ------------------- | ---------------- | --------------------- |
@@ -721,7 +721,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Collections <Site url="podwise.ai" size="sm" />
 
-<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia"],"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia"],"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":0}' />
 
 ### Episodes <Site url="podwise.ai" size="sm" />
 
@@ -743,7 +743,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Video List <Site url="pornhub.com" size="sm" />
 
-<Route namespace="pornhub" :data='{"path":"/category_url/:url?/:language?","categories":["multimedia"],"example":"/pornhub/category_url/video%3Fc%3D15%26o%3Dmv%26t%3Dw%26cc%3Djp","parameters":{"language":"language, see below","url":"relative path after `pornhub.com/`, need to be URL encoded"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Video List","maintainers":["I2IMk","queensferryme"],"description":"**`language`**\n\n  Refer to [Pornhub F.A.Qs](https://help.pornhub.com/hc/en-us/articles/360044327034-How-do-I-change-the-language-), English by default. For example:\n\n  -   `cn` (Chinese), for Pornhub in China [https://cn.pornhub.com](https://cn.pornhub.com)；\n\n  -   `jp` (Japanese), for Pornhub in Japan [https://jp.pornhub.com](https://jp.pornhub.com) etc.","location":"category-url.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pornhub" :data='{"path":"/category_url/:url?/:language?","categories":["multimedia"],"example":"/pornhub/category_url/video%3Fc%3D15%26o%3Dmv%26t%3Dw%26cc%3Djp","parameters":{"language":"language, see below","url":"relative path after `pornhub.com/`, need to be URL encoded"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Video List","maintainers":["I2IMk","queensferryme"],"description":"**`language`**\n\n  Refer to [Pornhub F.A.Qs](https://help.pornhub.com/hc/en-us/articles/360044327034-How-do-I-change-the-language-), English by default. For example:\n\n  -   `cn` (Chinese), for Pornhub in China [https://cn.pornhub.com](https://cn.pornhub.com)；\n\n  -   `jp` (Japanese), for Pornhub in Japan [https://jp.pornhub.com](https://jp.pornhub.com) etc.","location":"category-url.ts"}' :test='{"code":0}' />
 
 **`language`**
 
@@ -755,11 +755,11 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Verified amateur / Model <Site url="pornhub.com" size="sm" />
 
-<Route namespace="pornhub" :data='{"path":"/model/:username/:language?/:sort?","categories":["multimedia"],"example":"/pornhub/model/stacy-starando","parameters":{"language":"language, see below","username":"username, part of the url e.g. `pornhub.com/model/stacy-starando`","sort":"sorting method, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/model/:username/*"],"target":"/model/:username"}],"name":"Verified amateur / Model","maintainers":["I2IMk","queensferryme"],"location":"model.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pornhub" :data='{"path":"/model/:username/:language?/:sort?","categories":["multimedia"],"example":"/pornhub/model/stacy-starando","parameters":{"language":"language, see below","username":"username, part of the url e.g. `pornhub.com/model/stacy-starando`","sort":"sorting method, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/model/:username/*"],"target":"/model/:username"}],"name":"Verified amateur / Model","maintainers":["I2IMk","queensferryme"],"location":"model.ts"}' :test='{"code":0}' />
 
 ### Verified model / Pornstar <Site url="pornhub.com" size="sm" />
 
-<Route namespace="pornhub" :data='{"path":"/pornstar/:username/:language?/:sort?","categories":["multimedia"],"example":"/pornhub/pornstar/june-liu","parameters":{"language":"language, see below","username":"username, part of the url e.g. `pornhub.com/pornstar/june-liu`","sort":"sorting method, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/pornstar/:username/*"],"target":"/pornstar/:username"}],"name":"Verified model / Pornstar","maintainers":["I2IMk","queensferryme"],"description":"**`sort`**\n\n  | Most Recent | Most Viewed | Top Rated | Longest | Best |\n  | ----------- | ----------- | --------- | ------- | ---- |\n  | mr          | mv          | tr        | lg      |      |","location":"pornstar.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pornhub" :data='{"path":"/pornstar/:username/:language?/:sort?","categories":["multimedia"],"example":"/pornhub/pornstar/june-liu","parameters":{"language":"language, see below","username":"username, part of the url e.g. `pornhub.com/pornstar/june-liu`","sort":"sorting method, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/pornstar/:username/*"],"target":"/pornstar/:username"}],"name":"Verified model / Pornstar","maintainers":["I2IMk","queensferryme"],"description":"**`sort`**\n\n  | Most Recent | Most Viewed | Top Rated | Longest | Best |\n  | ----------- | ----------- | --------- | ------- | ---- |\n  | mr          | mv          | tr        | lg      |      |","location":"pornstar.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 **`sort`**
 
@@ -835,11 +835,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### Search <Site url="u3c3.com" size="sm" />
 
-<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2358255850984 to be greater than -432000000"}' />
+<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2358083145265 to be greater than -432000000"}' />
 
 ### Search <Site url="u3c3.com" size="sm" />
 
-<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2358255848887 to be greater than -432000000"}' />
+<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2358083145259 to be greater than -432000000"}' />
 
 ## 阿基米德 FM <Site url="m.ajmide.com"/>
 
@@ -1005,13 +1005,13 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="qingting.fm" size="sm" />
 
-<Route namespace="qingting" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/qingting/podcast/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"supportPodcast":true,"requireConfig":[{"name":"QINGTING_ID","optional":true,"description":"用户id， 部分专辑需要会员身份，用户id可以通过从网页端登录蜻蜓fm后使用开发者工具，在控制台中运行JSON.parse(localStorage.getItem(\"user\")).qingting_id获取"}]},"radar":[{"source":["qingting.fm/channels/:id"]}],"name":"播客","maintainers":["RookieZoe","huyyi"],"description":"获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。","location":"podcast.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qingting" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/qingting/podcast/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"supportPodcast":true,"requireConfig":[{"name":"QINGTING_ID","optional":true,"description":"用户id， 部分专辑需要会员身份，用户id可以通过从网页端登录蜻蜓fm后使用开发者工具，在控制台中运行JSON.parse(localStorage.getItem(\"user\")).qingting_id获取"}]},"radar":[{"source":["qingting.fm/channels/:id"]}],"name":"播客","maintainers":["RookieZoe","huyyi"],"description":"获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。","location":"podcast.ts"}' :test='{"code":0}' />
 
 获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。
 
 ### 专辑 <Site url="qingting.fm" size="sm" />
 
-<Route namespace="qingting" :data='{"path":"/channel/:id","categories":["multimedia"],"example":"/qingting/channel/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qingting" :data='{"path":"/channel/:id","categories":["multimedia"],"example":"/qingting/channel/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"location":"channel.ts"}' :test='{"code":0}' />
 
 ## 秋爸日字 <Site url="qq88.info"/>
 

@@ -8,7 +8,7 @@
 
 ### link 公告 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/link/news/:product","categories":["social-media"],"example":"/bilibili/link/news/live","parameters":{"product":"公告分类, 包括 直播:live 小视频:vc 相簿:wh"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"link 公告","maintainers":["Qixingchen"],"location":"link-news.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/link/news/:product","categories":["social-media"],"example":"/bilibili/link/news/live","parameters":{"product":"公告分类, 包括 直播:live 小视频:vc 相簿:wh"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"link 公告","maintainers":["Qixingchen"],"location":"link-news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### UP 主专栏 <Site url="www.bilibili.com" size="sm" />
 
@@ -39,7 +39,7 @@
 
 ### UP 主非默认收藏夹 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/fav/:uid/:fid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/fav/756508/50948568","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","fid":"收藏夹 ID, 可在收藏夹的 URL 中找到, 默认收藏夹建议使用 UP 主默认收藏夹功能","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"UP 主非默认收藏夹","maintainers":["Qixingchen"],"location":"fav.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/fav/:uid/:fid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/fav/756508/50948568","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","fid":"收藏夹 ID, 可在收藏夹的 URL 中找到, 默认收藏夹建议使用 UP 主默认收藏夹功能","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"UP 主非默认收藏夹","maintainers":["Qixingchen"],"location":"fav.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### UP 主粉丝 <Site url="www.bilibili.com" size="sm" />
 
@@ -87,7 +87,7 @@
 
 ### 分区视频排行榜 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/partion/ranking/:tid/:days?/:disableEmbed?","categories":["social-media"],"example":"/bilibili/partion/ranking/171/3","parameters":{"tid":"分区 id, 见上方表格","days":"缺省为 7, 指最近多少天内的热度排序","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频排行榜","maintainers":["lengthmin"],"location":"partion-ranking.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/partion/ranking/:tid/:days?/:disableEmbed?","categories":["social-media"],"example":"/bilibili/partion/ranking/171/3","parameters":{"tid":"分区 id, 见上方表格","days":"缺省为 7, 指最近多少天内的热度排序","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频排行榜","maintainers":["lengthmin"],"location":"partion-ranking.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 分区视频 <Site url="www.bilibili.com" size="sm" />
 
@@ -251,7 +251,7 @@
 
 ### 视频弹幕 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/video/danmaku/:bvid/:pid?","categories":["social-media"],"example":"/bilibili/video/danmaku/BV1vA411b7ip/1","parameters":{"bvid":"视频AV号,可在视频页 URL 中找到","pid":"分P号,不填默认为1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频弹幕","maintainers":["Qixingchen"],"location":"danmaku.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/video/danmaku/:bvid/:pid?","categories":["social-media"],"example":"/bilibili/video/danmaku/BV1vA411b7ip/1","parameters":{"bvid":"视频AV号,可在视频页 URL 中找到","pid":"分P号,不填默认为1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频弹幕","maintainers":["Qixingchen"],"location":"danmaku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 视频选集列表 <Site url="www.bilibili.com" size="sm" />
 
@@ -331,7 +331,7 @@
 
 ### Keywords <Site url="bsky.app" size="sm" />
 
-<Route namespace="bsky" :data='{"path":"/keyword/:keyword","categories":["social-media"],"example":"/bsky/keyword/hello","parameters":{"keyword":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keywords","maintainers":["untitaker"],"location":"keyword.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bsky" :data='{"path":"/keyword/:keyword","categories":["social-media"],"example":"/bsky/keyword/hello","parameters":{"keyword":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keywords","maintainers":["untitaker"],"location":"keyword.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Post <Site url="bsky.app" size="sm" />
 
@@ -643,7 +643,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Top <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
 
 | Top Replurks | Top Favorites | Top Responded |
   | ------------ | ------------- | ------------- |
@@ -655,11 +655,11 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Topic <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/topic/:topic","categories":["social-media"],"example":"/plurk/topic/standwithukraine","parameters":{"topic":"Topic ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/topic/:topic"]}],"name":"Topic","maintainers":["TonyRL"],"location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="plurk" :data='{"path":"/topic/:topic","categories":["social-media"],"example":"/plurk/topic/standwithukraine","parameters":{"topic":"Topic ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/topic/:topic"]}],"name":"Topic","maintainers":["TonyRL"],"location":"topic.ts"}' :test='{"code":0}' />
 
 ### User <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media"],"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media"],"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## Rattibha <Site url="rattibha.com"/>
 
@@ -943,7 +943,7 @@ Chart
 
 ### 博主 <Site url="douyin.com" size="sm" />
 
-<Route namespace="douyin" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao","parameters":{"uid":"uid，可在用户页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/user/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["Max-Tortoise","Rongronggg9"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyin" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao","parameters":{"uid":"uid，可在用户页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/user/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["Max-Tortoise","Rongronggg9"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 豆瓣 <Site url="www.douban.com"/>
 
@@ -1053,7 +1053,7 @@ Chart
 
 ### 话题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake"],"location":"other/topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake"],"location":"other/topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 即将上映的电影 <Site url="www.douban.com" size="sm" />
 
@@ -1109,7 +1109,7 @@ Chart
 
 ### 一周口碑榜 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":0}' />
 
 | 一周口碑电影榜      | 华语口碑剧集榜            |
   | ------------------- | ------------------------- |
@@ -1117,7 +1117,7 @@ Chart
 
 ### 用户想看 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":0}' />
 
 对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式
 
@@ -1245,11 +1245,11 @@ Chart
 
 ### 用户作品评论动态 <Site url="qq.com" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/kg/reply/:playId","categories":["social-media"],"example":"/qq/kg/reply/OhXHMdO1VxLWQOOm","parameters":{"playId":"音频页 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户作品评论动态","maintainers":["zhangxiang012"],"location":"kg/reply.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qq" :data='{"path":"/kg/reply/:playId","categories":["social-media"],"example":"/qq/kg/reply/OhXHMdO1VxLWQOOm","parameters":{"playId":"音频页 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户作品评论动态","maintainers":["zhangxiang012"],"location":"kg/reply.ts"}' :test='{"code":0}' />
 
 ### 用户作品列表 <Site url="qq.com" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/kg/:userId","categories":["social-media"],"example":"/qq/kg/639a9a86272c308e33","parameters":{"userId":"用户 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"用户作品列表","maintainers":["zhangxiang012"],"location":"kg/user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qq" :data='{"path":"/kg/:userId","categories":["social-media"],"example":"/qq/kg/639a9a86272c308e33","parameters":{"userId":"用户 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"用户作品列表","maintainers":["zhangxiang012"],"location":"kg/user.ts"}' :test='{"code":0}' />
 
 ## 微博绿洲 <Site url="weibo.com"/>
 
