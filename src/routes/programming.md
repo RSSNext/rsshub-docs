@@ -765,7 +765,7 @@ GitHub provides some official RSS feeds:
 
 ### 公告 <Site url="open.dangdang.com" size="sm" />
 
-<Route namespace="dangdang" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/dangdang/notice/1","parameters":{"type":"公告分类，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["zhijunchai"],"description":"| 类型     | type |\n  | -------- | ---- |\n  | 全部      | 0    |\n  | 其他      | 1    |\n  | 规则变更   | 2    |","location":"notice.ts"}' :test='undefined' />
+<Route namespace="dangdang" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/dangdang/notice/1","parameters":{"type":"公告分类，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["353325487"],"description":"| 类型     | type |\n  | -------- | ---- |\n  | 全部      | 0    |\n  | 其他      | 1    |\n  | 规则变更   | 2    |","location":"notice.ts"}' :test='undefined' />
 
 | 类型     | type |
   | -------- | ---- |
