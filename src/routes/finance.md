@@ -4,11 +4,11 @@
 
 ### Latest Article <Site url="ainvest.com/news" size="sm" />
 
-<Route namespace="ainvest" :data='{"path":"/article","categories":["finance"],"example":"/ainvest/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest Article","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"article.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ainvest" :data='{"path":"/article","categories":["finance"],"example":"/ainvest/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest Article","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Latest News <Site url="ainvest.com/news" size="sm" />
 
-<Route namespace="ainvest" :data='{"path":"/news","categories":["finance"],"example":"/ainvest/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest News","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="ainvest" :data='{"path":"/news","categories":["finance"],"example":"/ainvest/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest News","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## BigQuant <Site url="bigquant.com"/>
 
@@ -226,11 +226,11 @@ TokenInsight also provides official RSS, you can take a look at [https://api.tok
 
 ### Blogs <Site url="tokeninsight.com" size="sm" />
 
-<Route namespace="tokeninsight" :data='{"path":"/blog/:lang?","categories":["finance"],"example":"/tokeninsight/blog/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/blogs"],"target":"/blog/:lang"}],"name":"Blogs","maintainers":["fuergaosi233"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tokeninsight" :data='{"path":"/blog/:lang?","categories":["finance"],"example":"/tokeninsight/blog/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/blogs"],"target":"/blog/:lang"}],"name":"Blogs","maintainers":["fuergaosi233"],"location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Latest <Site url="tokeninsight.com" size="sm" />
 
-<Route namespace="tokeninsight" :data='{"path":"/bulletin/:lang?","categories":["finance"],"example":"/tokeninsight/bulletin/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/latest"],"target":"/bulletin/:lang"}],"name":"Latest","maintainers":[],"location":"bulletin.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tokeninsight" :data='{"path":"/bulletin/:lang?","categories":["finance"],"example":"/tokeninsight/bulletin/en","parameters":{"lang":"Language, see below, Chinese by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tokeninsight.com/:lang/latest"],"target":"/bulletin/:lang"}],"name":"Latest","maintainers":[],"location":"bulletin.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Research <Site url="tokeninsight.com" size="sm" />
 
@@ -473,7 +473,7 @@ Language:
 
 ### 洞见 <Site url="mckinsey.com.cn" size="sm" />
 
-<Route namespace="mckinsey" :data='{"path":"/cn/:category?","categories":["finance"],"example":"/mckinsey/cn","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"洞见","maintainers":["laampui"],"description":"| 分类 | 分类名             |\n  | ---- | ------------------ |\n  | 25   | 全部洞见           |\n  | 2    | 汽车               |\n  | 3    | 金融服务           |\n  | 4    | 消费者             |\n  | 5    | 医药               |\n  | 7    | 数字化             |\n  | 8    | 制造业             |\n  | 9    | 私募               |\n  | 10   | 技术，媒体与通信   |\n  | 12   | 城市化与可持续发展 |\n  | 13   | 创新               |\n  | 16   | 人才与领导力       |\n  | 18   | 宏观经济           |\n  | 19   | 麦肯锡全球研究院   |\n  | 37   | 麦肯锡季刊         |\n  | 41   | 资本项目和基础设施 |\n  | 42   | 旅游、运输和物流   |\n  | 45   | 全球基础材料       |","location":"cn/index.ts"}' :test='{"code":0}' />
+<Route namespace="mckinsey" :data='{"path":"/cn/:category?","categories":["finance"],"example":"/mckinsey/cn","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"洞见","maintainers":["laampui"],"description":"| 分类 | 分类名             |\n  | ---- | ------------------ |\n  | 25   | 全部洞见           |\n  | 2    | 汽车               |\n  | 3    | 金融服务           |\n  | 4    | 消费者             |\n  | 5    | 医药               |\n  | 7    | 数字化             |\n  | 8    | 制造业             |\n  | 9    | 私募               |\n  | 10   | 技术，媒体与通信   |\n  | 12   | 城市化与可持续发展 |\n  | 13   | 创新               |\n  | 16   | 人才与领导力       |\n  | 18   | 宏观经济           |\n  | 19   | 麦肯锡全球研究院   |\n  | 37   | 麦肯锡季刊         |\n  | 41   | 资本项目和基础设施 |\n  | 42   | 旅游、运输和物流   |\n  | 45   | 全球基础材料       |","location":"cn/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 分类 | 分类名             |
   | ---- | ------------------ |
@@ -560,7 +560,7 @@ Language:
 
 ### 科创板项目动态 <Site url="kcb.sse.com.cn/home" size="sm" />
 
-<Route namespace="sse" :data='{"path":"/renewal","categories":["finance"],"example":"/sse/renewal","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kcb.sse.com.cn/home","kcb.sse.com.cn/"]}],"name":"科创板项目动态","maintainers":["Jeason0228"],"url":"kcb.sse.com.cn/home","location":"renewal.ts"}' :test='{"code":0}' />
+<Route namespace="sse" :data='{"path":"/renewal","categories":["finance"],"example":"/sse/renewal","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kcb.sse.com.cn/home","kcb.sse.com.cn/"]}],"name":"科创板项目动态","maintainers":["Jeason0228"],"url":"kcb.sse.com.cn/home","location":"renewal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 可转换公司债券公告 <Site url="bond.sse.com.cn" size="sm" />
 

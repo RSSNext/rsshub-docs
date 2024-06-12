@@ -351,7 +351,7 @@
 
 ### Charts <Site url="www.imdb.com/chart/top/" size="sm" />
 
-<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia"],"parameters":{"chart":"The chart to display, `top` by default"},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia"],"parameters":{"chart":"The chart to display, `top` by default"},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
 
 | Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |
   | -------------- | ------------------- | ---------------- | --------------------- |
@@ -649,7 +649,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Creator Videos <Site url="www.manyvids.com" size="sm" />
 
-<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='{"code":0}' />
+<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MissAV.com <Site url="missav.com"/>
 
@@ -721,7 +721,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Collections <Site url="podwise.ai" size="sm" />
 
-<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia"],"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":0}' />
+<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia"],"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Episodes <Site url="podwise.ai" size="sm" />
 
@@ -835,11 +835,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### Search <Site url="u3c3.com" size="sm" />
 
-<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2358083145265 to be greater than -432000000"}' />
+<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2357910397031 to be greater than -432000000"}' />
 
 ### Search <Site url="u3c3.com" size="sm" />
 
-<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2358083145259 to be greater than -432000000"}' />
+<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 阿基米德 FM <Site url="m.ajmide.com"/>
 
@@ -1017,7 +1017,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 分类 <Site url="qq88.info" size="sm" />
 
-<Route namespace="qq88" :data='{"path":"/:category?","categories":["multimedia"],"example":"/qq88","parameters":{"category":"分类 id，见下表，默认为首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"| 首页 | オトナの土ドラ | 日剧 | 日剧 SP |\n  | ---- | -------------- | ---- | ------- |\n  |      | 10             | 5    | 11      |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qq88" :data='{"path":"/:category?","categories":["multimedia"],"example":"/qq88","parameters":{"category":"分类 id，见下表，默认为首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"| 首页 | オトナの土ドラ | 日剧 | 日剧 SP |\n  | ---- | -------------- | ---- | ------- |\n  |      | 10             | 5    | 11      |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 首页 | オトナの土ドラ | 日剧 | 日剧 SP |
   | ---- | -------------- | ---- | ------- |
@@ -1217,7 +1217,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 直播 <Site url="radio.cn" size="sm" />
 
-<Route namespace="radio" :data='{"path":"/zhibo/:id","categories":["multimedia"],"example":"/radio/zhibo/1395528","parameters":{"id":"直播 id，可在对应点播页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"直播","maintainers":["nczitzk"],"description":"如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`\n\n  所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)\n\n  :::tip\n  查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)\n  :::","location":"zhibo.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="radio" :data='{"path":"/zhibo/:id","categories":["multimedia"],"example":"/radio/zhibo/1395528","parameters":{"id":"直播 id，可在对应点播页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"直播","maintainers":["nczitzk"],"description":"如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`\n\n  所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)\n\n  :::tip\n  查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)\n  :::","location":"zhibo.ts"}' :test='{"code":0}' />
 
 如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`
 

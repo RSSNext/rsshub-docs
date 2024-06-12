@@ -41,7 +41,7 @@
 
 ### 番剧详情 <Site url="agemys.cc" size="sm" />
 
-<Route namespace="agefans" :data='{"path":"/detail/:id","categories":["anime"],"example":"/agefans/detail/20200035","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agemys.org/detail/:id"]}],"name":"番剧详情","maintainers":["s2marine"],"location":"detail.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="agefans" :data='{"path":"/detail/:id","categories":["anime"],"example":"/agefans/detail/20200035","parameters":{"id":"番剧 id，对应详情 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agemys.org/detail/:id"]}],"name":"番剧详情","maintainers":["s2marine"],"location":"detail.ts"}' :test='{"code":0}' />
 
 ### 最近更新 <Site url="agemys.org/update" size="sm" />
 
@@ -143,11 +143,11 @@
 
 ### 热门推荐 <Site url="www.hpoi.net/bannerItem/list" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/bannerItem","categories":["anime"],"example":"/hpoi/bannerItem","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/bannerItem/list"]}],"name":"热门推荐","maintainers":["DIYgod"],"url":"www.hpoi.net/bannerItem/list","location":"banner-item.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hpoi" :data='{"path":"/bannerItem","categories":["anime"],"example":"/hpoi/bannerItem","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/bannerItem/list"]}],"name":"热门推荐","maintainers":["DIYgod"],"url":"www.hpoi.net/bannerItem/list","location":"banner-item.ts"}' :test='{"code":0}' />
 
 ### 所有周边 <Site url="www.hpoi.net/hobby/all" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/all/:order?","categories":["anime"],"example":"/hpoi/items/all","parameters":{"order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/hobby/all"],"target":"/items/all"}],"name":"所有周边","maintainers":["DIYgod"],"url":"www.hpoi.net/hobby/all","description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hpoi" :data='{"path":"/items/all/:order?","categories":["anime"],"example":"/hpoi/items/all","parameters":{"order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/hobby/all"],"target":"/items/all"}],"name":"所有周边","maintainers":["DIYgod"],"url":"www.hpoi.net/hobby/all","description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"all.ts"}' :test='{"code":0}' />
 
 | 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
   | ------- | ---- | ------ | -------- | -------- | ------ |
@@ -193,7 +193,7 @@
 
 ### Posts <Site url="kemono.su" size="sm" />
 
-<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n  :::tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n  :::tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Sources
 
@@ -232,7 +232,7 @@ Sources
 
 ### 首頁 <Site url="mox.moe" size="sm" />
 
-<Route namespace="mox" :data='{"path":"/:category?","categories":["anime"],"example":"/mox","parameters":{"category":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":[{"name":"MOX_COOKIE","optional":true,"description":"注册用户登录后的 Cookie, 可以从浏览器开发者工具Network面板中的mox页面请求获取，Cookie内容形如VOLSKEY=xxxxxx; VLIBSID=xxxxxx; VOLSESS=xxxxxx"}],"antiCrawler":true},"radar":[{"source":["mox.moe/l/:category","mox.moe/"]}],"name":"首頁","maintainers":["nczitzk"],"description":":::tip\n  在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n  :::\n\n  :::warning\n  由于 mox.moe 对非登录用户屏蔽了部分漫画详情内容的获取，且极易触发反爬机制，导致访问ip被重定向至google.com，因此在未配置`MOX_COOKIE`参数的情况下路由只会返回漫画标题和封面，不会对详情内容进行抓取。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mox" :data='{"path":"/:category?","categories":["anime"],"example":"/mox","parameters":{"category":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":[{"name":"MOX_COOKIE","optional":true,"description":"注册用户登录后的 Cookie, 可以从浏览器开发者工具Network面板中的mox页面请求获取，Cookie内容形如VOLSKEY=xxxxxx; VLIBSID=xxxxxx; VOLSESS=xxxxxx"}],"antiCrawler":true},"radar":[{"source":["mox.moe/l/:category","mox.moe/"]}],"name":"首頁","maintainers":["nczitzk"],"description":":::tip\n  在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n  如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n  :::\n\n  :::warning\n  由于 mox.moe 对非登录用户屏蔽了部分漫画详情内容的获取，且极易触发反爬机制，导致访问ip被重定向至google.com，因此在未配置`MOX_COOKIE`参数的情况下路由只会返回漫画标题和封面，不会对详情内容进行抓取。\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。
@@ -442,7 +442,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 漫画更新 <Site url="cartoonmad.com" size="sm" />
 
-<Route namespace="cartoonmad" :data='{"path":"/comic/:id","categories":["anime"],"example":"/cartoonmad/comic/5827","parameters":{"id":"漫画ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cartoonmad.com/comic/:id"]}],"name":"漫画更新","maintainers":["KellyHwong"],"location":"comic.ts"}' :test='{"code":0}' />
+<Route namespace="cartoonmad" :data='{"path":"/comic/:id","categories":["anime"],"example":"/cartoonmad/comic/5827","parameters":{"id":"漫画ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cartoonmad.com/comic/:id"]}],"name":"漫画更新","maintainers":["KellyHwong"],"location":"comic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 番组放送 <Site url="bgmlist.com"/>
 
@@ -531,11 +531,11 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 漫画更新 <Site url="www.manhuagui.com" size="sm" />
 
-<Route namespace="manhuagui" :data='{"path":["/comic/:id/:chapterCnt?","/:domain?/comic/:id/:chapterCnt?"],"categories":["anime"],"example":"/manhuagui/comic/22942/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为0，返回所有章节"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mhgui.com/comic/:id/"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["MegrezZhu"],"location":"comic.ts"}' :test='{"code":0}' />
+<Route namespace="manhuagui" :data='{"path":["/comic/:id/:chapterCnt?","/:domain?/comic/:id/:chapterCnt?"],"categories":["anime"],"example":"/manhuagui/comic/22942/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为0，返回所有章节"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mhgui.com/comic/:id/"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["MegrezZhu"],"location":"comic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 漫画更新 <Site url="www.manhuagui.com" size="sm" />
 
-<Route namespace="manhuagui" :data='{"path":["/comic/:id/:chapterCnt?","/:domain?/comic/:id/:chapterCnt?"],"categories":["anime"],"example":"/manhuagui/comic/22942/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为0，返回所有章节"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mhgui.com/comic/:id/"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["MegrezZhu"],"location":"comic.ts"}' :test='{"code":0}' />
+<Route namespace="manhuagui" :data='{"path":["/comic/:id/:chapterCnt?","/:domain?/comic/:id/:chapterCnt?"],"categories":["anime"],"example":"/manhuagui/comic/22942/5","parameters":{"id":"漫画ID","chapterCnt":"返回章节的数量，默认为0，返回所有章节"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mhgui.com/comic/:id/"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["MegrezZhu"],"location":"comic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 漫画个人订阅 <Site url="www.mhgui.com/user/book/shelf" size="sm" />
 
@@ -568,7 +568,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 排行榜 <Site url="qq.com" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/ac/rank/:type?/:time?","categories":["anime"],"example":"/qq/ac/rank","parameters":{"type":"分类，见下表，默认为月票榜","time":"时间，`cur` 为当周、`prev` 为上周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ac.qq.com/Rank/comicRank/type/:type","ac.qq.com/"]}],"name":"排行榜","maintainers":["nczitzk"],"description":"| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n  :::tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n  :::","location":"ac/rank.ts"}' :test='{"code":0}' />
+<Route namespace="qq" :data='{"path":"/ac/rank/:type?/:time?","categories":["anime"],"example":"/qq/ac/rank","parameters":{"type":"分类，见下表，默认为月票榜","time":"时间，`cur` 为当周、`prev` 为上周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ac.qq.com/Rank/comicRank/type/:type","ac.qq.com/"]}],"name":"排行榜","maintainers":["nczitzk"],"description":"| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n  :::tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n  :::","location":"ac/rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |
   | ------ | ------ | ------ | ------ | ------ | ------ | ------ |

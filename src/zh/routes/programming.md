@@ -369,7 +369,7 @@ GitHub provides some official RSS feeds:
 
 ### 榜单报告 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/ranking/:type?","/report/:type?"],"example":"/hellogithub/ranking","name":"榜单报告","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hellogithub" :data='{"path":["/ranking/:type?","/report/:type?"],"example":"/hellogithub/ranking","name":"榜单报告","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='{"code":0}' />
 
 | 编程语言 | 服务器   | 数据库     |
   | -------- | -------- | ---------- |
@@ -385,7 +385,7 @@ GitHub provides some official RSS feeds:
 
 ### 文章 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 热门 | 最近 |
   | ---- | ---- |
@@ -393,11 +393,11 @@ GitHub provides some official RSS feeds:
 
 ### 月刊 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"example":"/hellogithub/volume","name":"月刊","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"location":"volume.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"example":"/hellogithub/volume","name":"月刊","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"location":"volume.ts"}' :test='{"code":0}' />
 
 ### 月刊 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"example":"/hellogithub/volume","name":"月刊","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"location":"volume.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hellogithub" :data='{"path":["/month","/volume"],"example":"/hellogithub/volume","name":"月刊","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"location":"volume.ts"}' :test='{"code":0}' />
 
 ## Hex-Rays <Site url="hex-rays.com"/>
 
@@ -761,6 +761,18 @@ GitHub provides some official RSS feeds:
 | ---- | ---- | ---- |
 | 3    | 7    | 30   |
 
+## 当当开放平台 <Site url="open.dangdang.com"/>
+
+### 公告 <Site url="open.dangdang.com" size="sm" />
+
+<Route namespace="dangdang" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/dangdang/notice/1","parameters":{"type":"公告分类，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["zhijunchai"],"description":"| 类型     | type |\n  | -------- | ---- |\n  | 全部      | 0    |\n  | 其他      | 1    |\n  | 规则变更   | 2    |","location":"notice.ts"}' :test='undefined' />
+
+| 类型     | type |
+  | -------- | ---- |
+  | 全部      | 0    |
+  | 其他      | 1    |
+  | 规则变更   | 2    |
+
 ## 登链社区 <Site url="learnblockchain.cn"/>
 
 ### 文章 <Site url="learnblockchain.cn" size="sm" />
@@ -1029,7 +1041,7 @@ GitHub provides some official RSS feeds:
 
 ### 公众平台系统公告栏目 <Site url="mp.weixin.qq.com/cgi-bin/announce" size="sm" />
 
-<Route namespace="wechat" :data='{"path":"/announce","categories":["programming"],"example":"/wechat/announce","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mp.weixin.qq.com/cgi-bin/announce"]}],"name":"公众平台系统公告栏目","maintainers":["xyqfer"],"url":"mp.weixin.qq.com/cgi-bin/announce","location":"announce.ts"}' :test='{"code":0}' />
+<Route namespace="wechat" :data='{"path":"/announce","categories":["programming"],"example":"/wechat/announce","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mp.weixin.qq.com/cgi-bin/announce"]}],"name":"公众平台系统公告栏目","maintainers":["xyqfer"],"url":"mp.weixin.qq.com/cgi-bin/announce","location":"announce.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 印记中文 <Site url="docschina.org"/>
 

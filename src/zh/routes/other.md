@@ -110,7 +110,7 @@ News from the official site of men's professional tennis.
 
 ### 每日壁纸 <Site url="www.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/:routeParams?","parameters":{"routeParams":"额外参数type,story和lang:请参阅以下说明和表格"},"radar":[{"source":["www.bing.com/","cn.bing.com/"],"target":""}],"name":"每日壁纸","maintainers":["FHYunCai","LLLLLFish"],"url":"www.bing.com/","example":"/bing/type=UHD&story=1&lang=zh-CN","description":"| 参数    | 含义                 | 接受的值                                                      | 默认值       | 备注                                                     |\n|-------|--------------------|-----------------------------------------------------------|-----------|--------------------------------------------------------|\n| type  | 输出壁纸的像素类型          | UHD/1920x1080/1920x1200/768x1366/1080x1920/1080x1920_logo | 1920x1080 | 1920x1200与1080x1920_logo带有水印,输入的值不在接受范围内都会输出成1920x1080 |\n| story | 是否输出壁纸的故事          | 1/0                                                       | 0         | 输入的值不为1都不会输出故事                                         |\n| lang  | 输出壁纸图文的地区(中文或者是英文) | zh/en                                               | zh     | zh/en输出的壁纸图文不一定是一样的;如果en不生效,试着部署到其他地方               |\n","location":"daily-wallpaper.ts"}' :test='undefined' />
+<Route namespace="bing" :data='{"path":"/:routeParams?","parameters":{"routeParams":"额外参数type,story和lang:请参阅以下说明和表格"},"radar":[{"source":["www.bing.com/","cn.bing.com/"],"target":""}],"name":"每日壁纸","maintainers":["FHYunCai","LLLLLFish"],"url":"www.bing.com/","example":"/bing/type=UHD&story=1&lang=zh-CN","description":"| 参数    | 含义                 | 接受的值                                                      | 默认值       | 备注                                                     |\n|-------|--------------------|-----------------------------------------------------------|-----------|--------------------------------------------------------|\n| type  | 输出壁纸的像素类型          | UHD/1920x1080/1920x1200/768x1366/1080x1920/1080x1920_logo | 1920x1080 | 1920x1200与1080x1920_logo带有水印,输入的值不在接受范围内都会输出成1920x1080 |\n| story | 是否输出壁纸的故事          | 1/0                                                       | 0         | 输入的值不为1都不会输出故事                                         |\n| lang  | 输出壁纸图文的地区(中文或者是英文) | zh/en                                               | zh     | zh/en输出的壁纸图文不一定是一样的;如果en不生效,试着部署到其他地方               |\n","location":"daily-wallpaper.ts"}' :test='{"code":0}' />
 
 | 参数    | 含义                 | 接受的值                                                      | 默认值       | 备注                                                     |
 |-------|--------------------|-----------------------------------------------------------|-----------|--------------------------------------------------------|
@@ -307,7 +307,7 @@ News from the official site of men's professional tennis.
 
 ### Projects <Site url="instructables.com/projects" size="sm" />
 
-<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":0}' />
 
 | All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |
   | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
@@ -739,13 +739,13 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Search <Site url="u9a9.com/" size="sm" />
 
-<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Urban Dictionary <Site url="urbandictionary.com"/>
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 377243893784 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 444528440170 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -874,7 +874,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 研究成果 <Site url="www.research.ke.com/researchResults" size="sm" />
 
-<Route namespace="ke" :data='{"path":"/researchResults","categories":["other"],"example":"/ke/researchResults","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.research.ke.com/researchResults"]}],"name":"研究成果","maintainers":["shaomingbo"],"url":"www.research.ke.com/researchResults","location":"results.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ke" :data='{"path":"/researchResults","categories":["other"],"example":"/ke/researchResults","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.research.ke.com/researchResults"]}],"name":"研究成果","maintainers":["shaomingbo"],"url":"www.research.ke.com/researchResults","location":"results.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 笔趣阁 <Site url="xbiquwx.la"/>
 
@@ -1082,7 +1082,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 支持的快递公司列表 <Site url="kuaidi100.com/" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 理想生活实验室 <Site url="toodaylab.com"/>
 
@@ -1176,7 +1176,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### CloudFlareYes <Site url="stock.hostmonit.com" size="sm" />
 
-<Route namespace="hostmonit" :data='{"path":"/cloudflareyes/:type?","categories":["other"],"example":"/hostmonit/cloudflareyes","parameters":{"type":"类型，见下表，默认为 v4"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"CloudFlareYes","maintainers":["nczitzk"],"description":"| v4 | v6 |\n  | -- | -- |\n  |    | v6 |","location":"cloudflareyes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hostmonit" :data='{"path":"/cloudflareyes/:type?","categories":["other"],"example":"/hostmonit/cloudflareyes","parameters":{"type":"类型，见下表，默认为 v4"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"CloudFlareYes","maintainers":["nczitzk"],"description":"| v4 | v6 |\n  | -- | -- |\n  |    | v6 |","location":"cloudflareyes.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | v4 | v6 |
   | -- | -- |
@@ -1304,7 +1304,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 最新辟谣 <Site url="vp.fact.qq.com/home" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/fact","categories":["other"],"example":"/qq/fact","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vp.fact.qq.com/home","vp.fact.qq.com/"]}],"name":"最新辟谣","maintainers":["hoilc"],"url":"vp.fact.qq.com/home","location":"fact/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="qq" :data='{"path":"/fact","categories":["other"],"example":"/qq/fact","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vp.fact.qq.com/home","vp.fact.qq.com/"]}],"name":"最新辟谣","maintainers":["hoilc"],"url":"vp.fact.qq.com/home","location":"fact/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 温州大学 <Site url="wzu.edu.cn"/>
 
@@ -1580,7 +1580,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="icbc.com.cn/column/1438058341489590354.html" size="sm" />
 
-<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |

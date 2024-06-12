@@ -88,11 +88,11 @@ Country
 
 ### hottest <Site url="www.hotukdeals.com/" size="sm" />
 
-<Route namespace="hotukdeals" :data='{"path":"/hottest","categories":["shopping"],"example":"/hotukdeals/hottest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hotukdeals.com/"]}],"name":"hottest","maintainers":["DIYgod"],"url":"www.hotukdeals.com/","location":"hottest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hotukdeals" :data='{"path":"/hottest","categories":["shopping"],"example":"/hotukdeals/hottest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hotukdeals.com/"]}],"name":"hottest","maintainers":["DIYgod"],"url":"www.hotukdeals.com/","location":"hottest.ts"}' :test='{"code":0}' />
 
 ### thread <Site url="www.hotukdeals.com" size="sm" />
 
-<Route namespace="hotukdeals" :data='{"path":"/:type","categories":["shopping"],"example":"/hotukdeals/hot","parameters":{"type":"should be one of highlights, hot, new, discussed"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"thread","maintainers":["DIYgod"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hotukdeals" :data='{"path":"/:type","categories":["shopping"],"example":"/hotukdeals/hot","parameters":{"type":"should be one of highlights, hot, new, discussed"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"thread","maintainers":["DIYgod"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## IKEA <Site url="ikea.com"/>
 
@@ -106,7 +106,7 @@ Country
 
 ### 中国 - 会员特惠 <Site url="ikea.cn/cn/zh/offers/family-offers" size="sm" />
 
-<Route namespace="ikea" :data='{"path":"/cn/family_offers","categories":["shopping"],"example":"/ikea/cn/family_offers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ikea.cn/cn/zh/offers/family-offers","ikea.cn/"]}],"name":"中国 - 会员特惠","maintainers":["jzhangdev"],"url":"ikea.cn/cn/zh/offers/family-offers","location":"cn/family-offers.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ikea" :data='{"path":"/cn/family_offers","categories":["shopping"],"example":"/ikea/cn/family_offers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ikea.cn/cn/zh/offers/family-offers","ikea.cn/"]}],"name":"中国 - 会员特惠","maintainers":["jzhangdev"],"url":"ikea.cn/cn/zh/offers/family-offers","location":"cn/family-offers.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 中国 - 低价优选 <Site url="ikea.cn/cn/zh/campaigns/wo3-men2-de-chao1-zhi2-di1-jia4-pub8b08af40" size="sm" />
 
@@ -120,7 +120,7 @@ Country
 
 ### Activity <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Category
 
@@ -183,7 +183,7 @@ Category
 
 ### New Arrivals(USA) <Site url="snowpeak.com/collections/new-arrivals" size="sm" />
 
-<Route namespace="snowpeak" :data='{"path":"/us/new-arrivals","categories":["shopping"],"example":"/snowpeak/us/new-arrivals","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["snowpeak.com/collections/new-arrivals","snowpeak.com/"]}],"name":"New Arrivals(USA)","maintainers":["EthanWng97"],"url":"snowpeak.com/collections/new-arrivals","location":"us-new-arrivals.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="snowpeak" :data='{"path":"/us/new-arrivals","categories":["shopping"],"example":"/snowpeak/us/new-arrivals","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["snowpeak.com/collections/new-arrivals","snowpeak.com/"]}],"name":"New Arrivals(USA)","maintainers":["EthanWng97"],"url":"snowpeak.com/collections/new-arrivals","location":"us-new-arrivals.ts"}' :test='{"code":0}' />
 
 ## Uniqlo <Site url="www.uniqlo.com"/>
 
@@ -221,7 +221,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 国内折扣 / 海外折扣 <Site url="guangdiu.com" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/:query?","categories":["shopping"],"example":"/guangdiu/k=daily","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国内折扣 / 海外折扣","maintainers":["Fatpandac"],"description":":::tip\n  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="guangdiu" :data='{"path":"/:query?","categories":["shopping"],"example":"/guangdiu/k=daily","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国内折扣 / 海外折扣","maintainers":["Fatpandac"],"description":":::tip\n  海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   海外折扣: [`/guangdiu/k=daily&c=us`](https://rsshub.app/guangdiu/k=daily&c=us)
@@ -301,7 +301,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 关键词 <Site url="post.smzdm.com" size="sm" />
 
-<Route namespace="smzdm" :data='{"path":"/keyword/:keyword","categories":["shopping"],"example":"/smzdm/keyword/女装","parameters":{"keyword":"你想订阅的关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["DIYgod","MeanZhang"],"location":"keyword.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;-&#39;"}' />
+<Route namespace="smzdm" :data='{"path":"/keyword/:keyword","categories":["shopping"],"example":"/smzdm/keyword/女装","parameters":{"keyword":"你想订阅的关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["DIYgod","MeanZhang"],"location":"keyword.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 好文分类 <Site url="post.smzdm.com" size="sm" />
 
@@ -518,7 +518,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 小米众筹 <Site url="mi.com" size="sm" />
 
-<Route namespace="mi" :data='{"path":"/crowdfunding","categories":["shopping"],"example":"/mi/crowdfunding","name":"小米众筹","maintainers":["DIYgod"],"location":"crowdfunding.ts"}' :test='{"code":0}' />
+<Route namespace="mi" :data='{"path":"/crowdfunding","categories":["shopping"],"example":"/mi/crowdfunding","name":"小米众筹","maintainers":["DIYgod"],"location":"crowdfunding.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 小米有品 <Site url="xiaomiyoupin.com"/>
 

@@ -120,11 +120,11 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 广东省内城市预警信号 <Site url="www.tqyb.com.cn/gz/weatherAlarm/otherCity/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/sncsyjxh","categories":["forecast"],"example":"/gov/guangdong/tqyb/sncsyjxh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/otherCity/"]}],"name":"广东省内城市预警信号","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/otherCity/","location":"guangdong/tqyb/sncsyjxh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 突发性天气提示 <Site url="www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/guangdong/tqyb/tfxtq","categories":["forecast"],"example":"/gov/guangdong/tqyb/tfxtq","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/"]}],"name":"突发性天气提示","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/","location":"guangdong/tqyb/tfxtq.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/guangdong/tqyb/tfxtq","categories":["forecast"],"example":"/gov/guangdong/tqyb/tfxtq","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/"]}],"name":"突发性天气提示","maintainers":["Fatpandac"],"url":"www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/","location":"guangdong/tqyb/tfxtq.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 停水通知 <Site url="swj.dl.gov.cn"/>
 
@@ -166,7 +166,7 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 萧山区 <Site url="www.xswater.com/gongshui/channels/227.html" size="sm" />
 
-<Route namespace="tingshuitz" :data='{"path":"/xiaoshan","categories":["forecast"],"example":"/tingshuitz/xiaoshan","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.xswater.com/gongshui/channels/227.html","www.xswater.com/"]}],"name":"萧山区","maintainers":["znhocn"],"url":"www.xswater.com/gongshui/channels/227.html","location":"xiaoshan.ts"}' :test='{"code":0}' />
+<Route namespace="tingshuitz" :data='{"path":"/xiaoshan","categories":["forecast"],"example":"/tingshuitz/xiaoshan","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.xswater.com/gongshui/channels/227.html","www.xswater.com/"]}],"name":"萧山区","maintainers":["znhocn"],"url":"www.xswater.com/gongshui/channels/227.html","location":"xiaoshan.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 阳江市 <Site url="yjsswjt.com/zxdt_list.jsp" size="sm" />
 

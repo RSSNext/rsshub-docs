@@ -41,7 +41,7 @@
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":0}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -51,7 +51,7 @@
 
 ### SDK Platform Tools release notes <Site url="developer.android.com/studio/releases/platform-tools" size="sm" />
 
-<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## APKPure <Site url="apkpure.com"/>
 
@@ -139,7 +139,7 @@
 
 ### Latest models <Site url="civitai.com/" size="sm" />
 
-<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":0}' />
 
 ### Model discussions <Site url="civitai.com" size="sm" />
 
@@ -213,11 +213,11 @@ Language
 
 ### Script Feedback <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":0}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 316918251402 to be less than 311040000000"}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -230,7 +230,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 316918253893 to be less than 311040000000"}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -243,7 +243,7 @@ Language
 
 ### Script Version History <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":0}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Infuse <Site url="firecore.com"/>
 
@@ -267,7 +267,7 @@ Language
 
 ### Changelog <Site url="imagemagick.org/script/download.php" size="sm" />
 
-<Route namespace="imagemagick" :data='{"path":"/changelog","categories":["program-update"],"example":"/imagemagick/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["imagemagick.org/script/download.php","imagemagick.org/script","imagemagick.org/"]}],"name":"Changelog","maintainers":["nczitzk"],"url":"imagemagick.org/script/download.php","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="imagemagick" :data='{"path":"/changelog","categories":["program-update"],"example":"/imagemagick/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["imagemagick.org/script/download.php","imagemagick.org/script","imagemagick.org/"]}],"name":"Changelog","maintainers":["nczitzk"],"url":"imagemagick.org/script/download.php","location":"changelog.ts"}' :test='{"code":0}' />
 
 ## IPSW.me <Site url="ipsw.me"/>
 
@@ -289,7 +289,7 @@ Language
 
 ### Update <Site url="macupdate.com" size="sm" />
 
-<Route namespace="macupdate" :data='{"path":"/app/:appId/:appSlug?","categories":["program-update"],"example":"/macupdate/app/11942","parameters":{"appId":"Application unique ID, can be found in URL","appSlug":"Application slug, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macupdate.com/app/mac/:appId/:appSlug"]}],"name":"Update","maintainers":["TonyRL"],"location":"app.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="macupdate" :data='{"path":"/app/:appId/:appSlug?","categories":["program-update"],"example":"/macupdate/app/11942","parameters":{"appId":"Application unique ID, can be found in URL","appSlug":"Application slug, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macupdate.com/app/mac/:appId/:appSlug"]}],"name":"Update","maintainers":["TonyRL"],"location":"app.ts"}' :test='{"code":0}' />
 
 ## Microsoft Edge <Site url="microsoftedge.microsoft.com"/>
 
@@ -353,7 +353,7 @@ Language
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 342233064662 to be less than 311040000000"}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 342405814867 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
