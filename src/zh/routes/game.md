@@ -543,6 +543,16 @@ It can also access community hub contents that require a logged-in account.
 
 <Route namespace="steam" :data='{"path":"/search/:params","categories":["game"],"example":"/steam/search/sort_by=Released_DESC&tags=492&category1=10&os=linux","parameters":{"params":"Query parameters for a Steam Store search."},"radar":[{"source":["store.steampowered.com","store.steampowered.com/search/:params"]}],"name":"Store Search","maintainers":["moppman"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+### Sharefile Changelog <Site url="store.steampowered.com" size="sm" />
+
+<Route namespace="steam" :data='{"path":"/sharefile-changelog/:sharefileID/:routeParams?","categories":["game"],"example":"/sharefile-changelog/2851063440/l=schinese","parameters":{"sharefileID":"Steam community sharefile id. Usually refers to a workshop item.","routeParams":"Route parameters."},"radar":[{"title":"Sharefile Changelog","source":["steamcommunity.com/sharedfiles/filedetails/changelog/:sharefileID"],"target":"/sharefile-changelog/:sharefileID"}],"description":"Steam Community Sharefile&#39;s Changelog. Primary used for a workshop item.\nHelpful route parameters:\n- `l=` language parameter, change the language of description.\n- `p=` page parameter, change the results page. p=1 by default.\n","name":"Sharefile Changelog","maintainers":["NyaaaDoge"],"location":"sharefile-changelog.ts"}' :test='undefined' />
+
+Steam Community Sharefile's Changelog. Primary used for a workshop item.
+Helpful route parameters:
+- `l=` language parameter, change the language of description.
+- `p=` page parameter, change the results page. p=1 by default.
+
+
 ## TapTap 中国 <Site url="taptap.com"/>
 
 :::warning
