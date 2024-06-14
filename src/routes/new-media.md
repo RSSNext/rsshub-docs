@@ -487,6 +487,21 @@ Topics
 
 <Route namespace="infoq" :data='{"path":"/recommend","categories":["new-media"],"example":"/infoq/recommend","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["infoq.cn/"]}],"name":"推荐","maintainers":["brilon"],"url":"infoq.cn/","location":"recommend.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## Informed AI News <Site url="informedainews.com"/>
+
+
+:::tip
+informed AI RSS feeds:
+
+-   World News Daily: 'https://rsshub.app/informedainews/zh-Hans/docs/world-news-daily'
+-   Tech Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/tech-enthusiast-weekly'
+-   AI Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/ai-enthusiast-daily'
+:::
+
+### 知闻AI <Site url="informedainews.com" size="sm" />
+
+<Route namespace="informedainews" :data='{"path":"/zh-Hans/docs/:type","categories":["new-media"],"example":"/informedainews/zh-Hans/docs/world-news-daily","parameters":{"type":"world-news-daily|tech-enthusiast-weekly|ai-enthusiast-daily"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["informedainews.com","informedainews.com/zh-Hans/docs/:type","informedainews.com/docs/:type"],"target":"/zh-Hans/docs/:type"}],"name":"知闻AI","maintainers":["guicaiyue"],"location":"docs.ts"}' :test='undefined' />
+
 ## iThome 台灣 <Site url="ithome.com"/>
 
 ### Feeds <Site url="ithome.com" size="sm" />
