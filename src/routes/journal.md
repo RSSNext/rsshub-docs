@@ -72,7 +72,7 @@ Return results from 2020
 
 ### Exhibition Reviews <Site url="caareviews.org/reviews/exhibition" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":0}' />
 
 ## Cool Papers <Site url="papers.cool"/>
 
@@ -351,7 +351,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 

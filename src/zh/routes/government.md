@@ -499,7 +499,7 @@ Language
 
 ### 国务院政策文件库 <Site url="sh.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/zhengce/zhengceku/:department","categories":["government"],"example":"/gov/zhengce/zhengceku/bmwj","parameters":{"department":"库名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国务院政策文件库","maintainers":["zxx-457"],"location":"zhengce/zhengceku.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/zhengce/zhengceku/:department","categories":["government"],"example":"/gov/zhengce/zhengceku/bmwj","parameters":{"department":"库名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国务院政策文件库","maintainers":["zxx-457"],"location":"zhengce/zhengceku.ts"}' :test='{"code":0}' />
 
 ### 惠州市人民政府 <Site url="sh.gov.cn" size="sm" />
 
@@ -509,7 +509,7 @@ Language
 
 ### 获取国家医师资格考试通知 <Site url="jnmhc.jinan.gov.cn/*" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/jinan/healthcommission/medical_exam_notice","categories":["government"],"example":"/gov/jinan/healthcommission/medical_exam_notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jnmhc.jinan.gov.cn/*"]}],"name":"获取国家医师资格考试通知","maintainers":["tzjyxb"],"url":"jnmhc.jinan.gov.cn/*","location":"jinan/healthcommission/medical-exam-notice.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/jinan/healthcommission/medical_exam_notice","categories":["government"],"example":"/gov/jinan/healthcommission/medical_exam_notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jnmhc.jinan.gov.cn/*"]}],"name":"获取国家医师资格考试通知","maintainers":["tzjyxb"],"url":"jnmhc.jinan.gov.cn/*","location":"jinan/healthcommission/medical-exam-notice.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 价格监测中心 <Site url="sh.gov.cn" size="sm" />
 
@@ -801,7 +801,7 @@ Language
 
 ### 通知 <Site url="zjks.gov.cn/zjgwy/website/init.htm" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/zhejiang/gwy/:category?/:column?","categories":["government"],"example":"/gov/zhejiang/gwy/1","parameters":{"category":"分类，见下表，默认为全部","column":"地市专栏，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zjks.gov.cn/zjgwy/website/init.htm","zjks.gov.cn/zjgwy/website/queryDetail.htm","zjks.gov.cn/zjgwy/website/queryMore.htm"],"target":"/zhejiang/gwy"}],"name":"通知","maintainers":["nczitzk"],"url":"zjks.gov.cn/zjgwy/website/init.htm","description":"| 分类         | id |\n  | ------------ | -- |\n  | 重要通知     | 1  |\n  | 招考公告     | 2  |\n  | 招考政策     | 3  |\n  | 面试体检考察 | 4  |\n  | 录用公示专栏 | 5  |\n\n  | 地市         | id    |\n  | ------------ | ----- |\n  | 浙江省       | 133   |\n  | 浙江省杭州市 | 13301 |\n  | 浙江省宁波市 | 13302 |\n  | 浙江省温州市 | 13303 |\n  | 浙江省嘉兴市 | 13304 |\n  | 浙江省湖州市 | 13305 |\n  | 浙江省绍兴市 | 13306 |\n  | 浙江省金华市 | 13307 |\n  | 浙江省衢州市 | 13308 |\n  | 浙江省舟山市 | 13309 |\n  | 浙江省台州市 | 13310 |\n  | 浙江省丽水市 | 13311 |\n  | 省级单位     | 13317 |","location":"zhejiang/gwy.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/zhejiang/gwy/:category?/:column?","categories":["government"],"example":"/gov/zhejiang/gwy/1","parameters":{"category":"分类，见下表，默认为全部","column":"地市专栏，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zjks.gov.cn/zjgwy/website/init.htm","zjks.gov.cn/zjgwy/website/queryDetail.htm","zjks.gov.cn/zjgwy/website/queryMore.htm"],"target":"/zhejiang/gwy"}],"name":"通知","maintainers":["nczitzk"],"url":"zjks.gov.cn/zjgwy/website/init.htm","description":"| 分类         | id |\n  | ------------ | -- |\n  | 重要通知     | 1  |\n  | 招考公告     | 2  |\n  | 招考政策     | 3  |\n  | 面试体检考察 | 4  |\n  | 录用公示专栏 | 5  |\n\n  | 地市         | id    |\n  | ------------ | ----- |\n  | 浙江省       | 133   |\n  | 浙江省杭州市 | 13301 |\n  | 浙江省宁波市 | 13302 |\n  | 浙江省温州市 | 13303 |\n  | 浙江省嘉兴市 | 13304 |\n  | 浙江省湖州市 | 13305 |\n  | 浙江省绍兴市 | 13306 |\n  | 浙江省金华市 | 13307 |\n  | 浙江省衢州市 | 13308 |\n  | 浙江省舟山市 | 13309 |\n  | 浙江省台州市 | 13310 |\n  | 浙江省丽水市 | 13311 |\n  | 省级单位     | 13317 |","location":"zhejiang/gwy.ts"}' :test='{"code":0}' />
 
 | 分类         | id |
   | ------------ | -- |
@@ -841,7 +841,7 @@ Language
 
 ### 武汉要闻 <Site url="wuhan.gov.cn/sy/whyw/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/wuhan/sy/whyw","categories":["government"],"example":"/gov/wuhan/sy/whyw","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wuhan.gov.cn/sy/whyw/","wuhan.gov.cn/whyw","wuhan.gov.cn/"]}],"name":"武汉要闻","maintainers":["nczitzk"],"url":"wuhan.gov.cn/sy/whyw/","location":"wuhan/whyw.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/wuhan/sy/whyw","categories":["government"],"example":"/gov/wuhan/sy/whyw","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wuhan.gov.cn/sy/whyw/","wuhan.gov.cn/whyw","wuhan.gov.cn/"]}],"name":"武汉要闻","maintainers":["nczitzk"],"url":"wuhan.gov.cn/sy/whyw/","location":"wuhan/whyw.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 新闻 <Site url="sh.gov.cn" size="sm" />
 
@@ -1022,7 +1022,7 @@ Language
 
 ### 最新消息 <Site url="sh.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/moj/aac/news/:type?","categories":["government"],"example":"/gov/moj/aac/news","parameters":{"type":"資料大類，留空為全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新消息","maintainers":["TonyRL"],"description":"| 全部 | 其他 | 採購公告 | 新聞稿 | 肅貪 | 預防 | 綜合 | 防疫專區 |\n  | ---- | ---- | -------- | ------ | ---- | ---- | ---- | -------- |\n  |      | 02   | 01       | 06     | 05   | 04   | 03   | 99       |","location":"moj/aac/news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/moj/aac/news/:type?","categories":["government"],"example":"/gov/moj/aac/news","parameters":{"type":"資料大類，留空為全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新消息","maintainers":["TonyRL"],"description":"| 全部 | 其他 | 採購公告 | 新聞稿 | 肅貪 | 預防 | 綜合 | 防疫專區 |\n  | ---- | ---- | -------- | ------ | ---- | ---- | ---- | -------- |\n  |      | 02   | 01       | 06     | 05   | 04   | 03   | 99       |","location":"moj/aac/news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 全部 | 其他 | 採購公告 | 新聞稿 | 肅貪 | 預防 | 綜合 | 防疫專區 |
   | ---- | ---- | -------- | ------ | ---- | ---- | ---- | -------- |
@@ -1034,7 +1034,7 @@ Language
 
 ### 最新政策 <Site url="www.gov.cn/zhengce/zuixin.htm" size="sm" />
 
-<Route namespace="gov" :data='{"path":["/zhengce/zuixin","/zhengce/:category{.+}?"],"categories":["government"],"example":"/gov/zhengce/zuixin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gov.cn/zhengce/zuixin.htm","www.gov.cn/"]}],"name":"最新政策","maintainers":["SettingDust","nczitzk"],"url":"www.gov.cn/zhengce/zuixin.htm","location":"zhengce/index.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":["/zhengce/zuixin","/zhengce/:category{.+}?"],"categories":["government"],"example":"/gov/zhengce/zuixin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gov.cn/zhengce/zuixin.htm","www.gov.cn/"]}],"name":"最新政策","maintainers":["SettingDust","nczitzk"],"url":"www.gov.cn/zhengce/zuixin.htm","location":"zhengce/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 最新文件 <Site url="www.gov.cn/" size="sm" />
 

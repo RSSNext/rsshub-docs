@@ -246,7 +246,7 @@ Language:
 
 ### News Flow <Site url="unusualwhales.com/news" size="sm" />
 
-<Route namespace="unusualwhales" :data='{"path":"/news","categories":["finance"],"example":"/unusualwhales/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unusualwhales.com/news","unusualwhales.com/"]}],"name":"News Flow","maintainers":["TonyRL"],"url":"unusualwhales.com/news","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="unusualwhales" :data='{"path":"/news","categories":["finance"],"example":"/unusualwhales/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unusualwhales.com/news","unusualwhales.com/"]}],"name":"News Flow","maintainers":["TonyRL"],"url":"unusualwhales.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 巴伦周刊中文版 <Site url="barronschina.com.cn"/>
 
@@ -457,7 +457,7 @@ Language:
 
 ### 个人主页 <Site url="laohu8.com" size="sm" />
 
-<Route namespace="laohu8" :data='{"path":"/personal/:id","categories":["finance"],"example":"/laohu8/personal/3527667596890271","parameters":{"id":"用户 ID，见网址链接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["laohu8.com/personal/:id"]}],"name":"个人主页","maintainers":["Fatpandac"],"location":"personal.ts"}' :test='{"code":0}' />
+<Route namespace="laohu8" :data='{"path":"/personal/:id","categories":["finance"],"example":"/laohu8/personal/3527667596890271","parameters":{"id":"用户 ID，见网址链接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["laohu8.com/personal/:id"]}],"name":"个人主页","maintainers":["Fatpandac"],"location":"personal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 律动 BlockBeats <Site url="www.theblockbeats.info"/>
 
@@ -673,7 +673,7 @@ Language:
 
 ### 频道 <Site url="www.ulapia.com" size="sm" />
 
-<Route namespace="ulapia" :data='{"path":"/reports/:category?","categories":["finance"],"example":"/ulapia/reports/stock_research","parameters":{"category":"频道类型，默认为券商晨报（今日晨报）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["Fatpandac"],"description":"|     个股研报    |      行业研报      |      策略研报      |     宏观研报    |    新股研报   | 券商晨报（今日晨报） |\n  | :-------------: | :----------------: | :----------------: | :-------------: | :-----------: | :------------------: |\n  | stock_research | industry_research | strategy_research | macro_research | ipo_research |    brokerage_news   |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="ulapia" :data='{"path":"/reports/:category?","categories":["finance"],"example":"/ulapia/reports/stock_research","parameters":{"category":"频道类型，默认为券商晨报（今日晨报）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["Fatpandac"],"description":"|     个股研报    |      行业研报      |      策略研报      |     宏观研报    |    新股研报   | 券商晨报（今日晨报） |\n  | :-------------: | :----------------: | :----------------: | :-------------: | :-----------: | :------------------: |\n  | stock_research | industry_research | strategy_research | macro_research | ipo_research |    brokerage_news   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 |     个股研报    |      行业研报      |      策略研报      |     宏观研报    |    新股研报   | 券商晨报（今日晨报） |
   | :-------------: | :----------------: | :----------------: | :-------------: | :-----------: | :------------------: |
@@ -681,7 +681,7 @@ Language:
 
 ### 最新研报 <Site url="www.ulapia.com/" size="sm" />
 
-<Route namespace="ulapia" :data='{"path":"/research/latest","categories":["finance"],"example":"/ulapia/research/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ulapia.com/"]}],"name":"最新研报","maintainers":[],"url":"www.ulapia.com/","location":"research.ts"}' :test='{"code":0}' />
+<Route namespace="ulapia" :data='{"path":"/research/latest","categories":["finance"],"example":"/ulapia/research/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ulapia.com/"]}],"name":"最新研报","maintainers":[],"url":"www.ulapia.com/","location":"research.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 雪球 <Site url="danjuanapp.com"/>
 

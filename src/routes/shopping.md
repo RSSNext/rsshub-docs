@@ -34,7 +34,7 @@ Country
 
 ### Outlet <Site url="arcteryx.com" size="sm" />
 
-<Route namespace="arcteryx" :data='{"path":"/outlet/:country/:gender","categories":["shopping"],"example":"/arcteryx/outlet/us/mens","parameters":{"country":"country","gender":"gender"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["outlet.arcteryx.com/:country/en/c/:gender"]}],"name":"Outlet","maintainers":["EthanWng97"],"description":"Country\n\n  | United States | Canada | United Kingdom |\n  | ------------- | ------ | -------------- |\n  | us            | ca     | gb             |\n\n  gender\n\n  | male | female |\n  | ---- | ------ |\n  | mens | womens |\n\n  :::tip\n  Parameter `country` can be found within the url of `Arcteryx` website.\n  :::","location":"outlet.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="arcteryx" :data='{"path":"/outlet/:country/:gender","categories":["shopping"],"example":"/arcteryx/outlet/us/mens","parameters":{"country":"country","gender":"gender"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["outlet.arcteryx.com/:country/en/c/:gender"]}],"name":"Outlet","maintainers":["EthanWng97"],"description":"Country\n\n  | United States | Canada | United Kingdom |\n  | ------------- | ------ | -------------- |\n  | us            | ca     | gb             |\n\n  gender\n\n  | male | female |\n  | ---- | ------ |\n  | mens | womens |\n\n  :::tip\n  Parameter `country` can be found within the url of `Arcteryx` website.\n  :::","location":"outlet.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Country
 
@@ -54,13 +54,13 @@ Country
 
 ### Regear New Arrivals <Site url="regear.arcteryx.com/shop/new-arrivals" size="sm" />
 
-<Route namespace="arcteryx" :data='{"path":"/regear/new-arrivals","categories":["shopping"],"example":"/arcteryx/regear/new-arrivals","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["regear.arcteryx.com/shop/new-arrivals","regear.arcteryx.com/"]}],"name":"Regear New Arrivals","maintainers":["EthanWng97"],"url":"regear.arcteryx.com/shop/new-arrivals","location":"regear-new-arrivals.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="arcteryx" :data='{"path":"/regear/new-arrivals","categories":["shopping"],"example":"/arcteryx/regear/new-arrivals","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["regear.arcteryx.com/shop/new-arrivals","regear.arcteryx.com/"]}],"name":"Regear New Arrivals","maintainers":["EthanWng97"],"url":"regear.arcteryx.com/shop/new-arrivals","location":"regear-new-arrivals.ts"}' :test='{"code":0}' />
 
 ## Bellroy <Site url="bellroy.com"/>
 
 ### New Releases <Site url="bellroy.com/collection/new-releases" size="sm" />
 
-<Route namespace="bellroy" :data='{"path":"/new-releases","categories":["shopping"],"example":"/bellroy/new-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bellroy.com/collection/new-releases","bellroy.com/"]}],"name":"New Releases","maintainers":["EthanWng97"],"url":"bellroy.com/collection/new-releases","location":"new-releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bellroy" :data='{"path":"/new-releases","categories":["shopping"],"example":"/bellroy/new-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bellroy.com/collection/new-releases","bellroy.com/"]}],"name":"New Releases","maintainers":["EthanWng97"],"url":"bellroy.com/collection/new-releases","location":"new-releases.ts"}' :test='{"code":0}' />
 
 ## Furstar <Site url="furstar.jp"/>
 
@@ -88,11 +88,11 @@ Country
 
 ### hottest <Site url="www.hotukdeals.com/" size="sm" />
 
-<Route namespace="hotukdeals" :data='{"path":"/hottest","categories":["shopping"],"example":"/hotukdeals/hottest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hotukdeals.com/"]}],"name":"hottest","maintainers":["DIYgod"],"url":"www.hotukdeals.com/","location":"hottest.ts"}' :test='{"code":0}' />
+<Route namespace="hotukdeals" :data='{"path":"/hottest","categories":["shopping"],"example":"/hotukdeals/hottest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hotukdeals.com/"]}],"name":"hottest","maintainers":["DIYgod"],"url":"www.hotukdeals.com/","location":"hottest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### thread <Site url="www.hotukdeals.com" size="sm" />
 
-<Route namespace="hotukdeals" :data='{"path":"/:type","categories":["shopping"],"example":"/hotukdeals/hot","parameters":{"type":"should be one of highlights, hot, new, discussed"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"thread","maintainers":["DIYgod"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hotukdeals" :data='{"path":"/:type","categories":["shopping"],"example":"/hotukdeals/hot","parameters":{"type":"should be one of highlights, hot, new, discussed"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"thread","maintainers":["DIYgod"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## IKEA <Site url="ikea.com"/>
 
@@ -102,7 +102,7 @@ Country
 
 ### UK - Offers <Site url="ikea.com/gb/en/offers" size="sm" />
 
-<Route namespace="ikea" :data='{"path":"/gb/offer","categories":["shopping"],"example":"/ikea/gb/offer","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ikea.com/gb/en/offers","ikea.com/"]}],"name":"UK - Offers","maintainers":["HenryQW"],"url":"ikea.com/gb/en/offers","location":"gb/offer.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ikea" :data='{"path":"/gb/offer","categories":["shopping"],"example":"/ikea/gb/offer","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ikea.com/gb/en/offers","ikea.com/"]}],"name":"UK - Offers","maintainers":["HenryQW"],"url":"ikea.com/gb/en/offers","location":"gb/offer.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 中国 - 会员特惠 <Site url="ikea.cn/cn/zh/offers/family-offers" size="sm" />
 
@@ -189,7 +189,7 @@ Category
 
 ### New Arrivals <Site url="www.uniqlo.com" size="sm" />
 
-<Route namespace="uniqlo" :data='{"path":"/new/:country/:category","categories":["shopping"],"example":"/uniqlo/new/sg/men","parameters":{"country":"currently only supports sg, us, jp","category":"supports `men` `women`, `kids`, `baby`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"New Arrivals","maintainers":["DIYgod"],"location":"new.ts"}' :test='{"code":0}' />
+<Route namespace="uniqlo" :data='{"path":"/new/:country/:category","categories":["shopping"],"example":"/uniqlo/new/sg/men","parameters":{"country":"currently only supports sg, us, jp","category":"supports `men` `women`, `kids`, `baby`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"New Arrivals","maintainers":["DIYgod"],"location":"new.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Zagg <Site url="zagg.com"/>
 
