@@ -1723,7 +1723,7 @@ author 列表：
 
 <Route namespace="scvtc" :data='{"path":"/xygg","categories":["university"],"example":"/scvtc/xygg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scvtc.edu.cn/ggfw1/xygg.htm","scvtc.edu.cn/"]}],"name":"学院公告","maintainers":["nczitzk"],"url":"scvtc.edu.cn/ggfw1/xygg.htm","location":"xygg.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
-## 四川农业大学 <Site url="dky.sicau.edu.cn"/>
+## 四川农业大学 <Site url="www.sicau.edu.cn"/>
 
 ### 动物科技学院 <Site url="dky.sicau.edu.cn/" size="sm" />
 
@@ -1732,6 +1732,10 @@ author 列表：
 | 通知公告 | 学院动态 | 教学管理 | 动科大讲堂 | 就业信息 |
   | -------- | -------- | -------- | ---------- | -------- |
   | tzgg     | xydt     | jxgl     | dkdjt      | zpxx     |
+
+### 教务处 <Site url="jiaowu.sicau.edu.cn/" size="sm" />
+
+<Route namespace="sicau" :data='{"path":"/jiaowu/jxtz","categories":["university"],"example":"/sicau/jiaowu/jxtz","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiaowu.sicau.edu.cn/"]}],"name":"教务处","maintainers":["hualiong"],"url":"jiaowu.sicau.edu.cn/","location":"jiaowu.ts"}' :test='undefined' />
 
 ### 研究生院 <Site url="yan.sicau.edu.cn/" size="sm" />
 
