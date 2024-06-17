@@ -649,7 +649,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Creator Videos <Site url="www.manyvids.com" size="sm" />
 
-<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='{"code":0}' />
+<Route namespace="manyvids" :data='{"path":"/profile/vids/:uid","radar":[{"source":["www.manyvids.com/Profile/:uid/:handle/Store/*","www.manyvids.com/Profile/:uid/:handle/Store"]}],"parameters":{"uid":"User ID, can be found in the URL."},"name":"Creator Videos","example":"/manyvids/profile/vids/1001213004","maintainers":["TonyRL"],"location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MissAV.com <Site url="missav.com"/>
 

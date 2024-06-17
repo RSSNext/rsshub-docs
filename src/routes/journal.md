@@ -72,7 +72,7 @@ Return results from 2020
 
 ### Exhibition Reviews <Site url="caareviews.org/reviews/exhibition" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":0}' />
+<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Cool Papers <Site url="papers.cool"/>
 
@@ -138,7 +138,7 @@ Return results from 2020
 
 ### Journal <Site url="www.mdpi.com" size="sm" />
 
-<Route namespace="mdpi" :data='{"path":"/:journal","categories":["journal"],"example":"/mdpi/analytica","parameters":{"journal":"Journal Name, get it from the journal homepage"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mdpi.com/journal/:journal"]}],"name":"Journal","maintainers":["Derekmini"],"location":"journal.ts"}' :test='{"code":0}' />
+<Route namespace="mdpi" :data='{"path":"/:journal","categories":["journal"],"example":"/mdpi/analytica","parameters":{"journal":"Journal Name, get it from the journal homepage"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mdpi.com/journal/:journal"]}],"name":"Journal","maintainers":["Derekmini"],"location":"journal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Nature Journal <Site url="nature.com"/>
 
