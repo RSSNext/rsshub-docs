@@ -1735,7 +1735,7 @@ author 列表：
 
 ### 教务处 <Site url="jiaowu.sicau.edu.cn/" size="sm" />
 
-<Route namespace="sicau" :data='{"path":"/jiaowu/jxtz","categories":["university"],"example":"/sicau/jiaowu/jxtz","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiaowu.sicau.edu.cn/"]}],"name":"教务处","maintainers":["hualiong"],"url":"jiaowu.sicau.edu.cn/","location":"jiaowu.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sicau" :data='{"path":"/jiaowu/jxtz","categories":["university"],"example":"/sicau/jiaowu/jxtz","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiaowu.sicau.edu.cn/web/web/web/index.asp"],"target":"/jiaowu/jxtz"}],"name":"教务处","maintainers":["hualiong"],"url":"jiaowu.sicau.edu.cn/","location":"jiaowu.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 研究生院 <Site url="yan.sicau.edu.cn/" size="sm" />
 
