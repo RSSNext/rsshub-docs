@@ -1733,6 +1733,107 @@ author 列表：
   | -------- | -------- | -------- | ---------- | -------- |
   | tzgg     | xydt     | jxgl     | dkdjt      | zpxx     |
 
+### 二课活动 <Site url="jk.sicau.edu.cn" size="sm" />
+
+<Route namespace="sicau" :data='{"path":"/jk/:gid/:typeId/:sortType/:token","categories":["university"],"example":"/sicau/jk/0/0/2/8d95466cf63e537292b303cb92b5958c","parameters":{"gid":"活动所属组织ID，见下表","typeId":"活动类别ID，见下表","sortType":"排序方式，见下表","token":"访问令牌，可通过示例中的令牌直接访问（会过期）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"二课活动","maintainers":["hualiong"],"url":"jk.sicau.edu.cn","description":"\n\n:::tip\n**本校学生**可以直接 POST `https://jk.sicau.edu.cn/user/login/v1.0.0/snoLogin` 从返回结果中的 `token` 字段拿到个人令牌\n记得在url后添加以下**查询参数**：\n\n-   sid: `f1c97a0e81c24e98adb1ebdadca0699b`\n-   loginName: `你的学号`\n-   password: `你的i川农密码`\n\n:::\n\n:::warning\n由于i川农后台有请求限制，为避免一次性大量请求而被限流，每次订阅只请求结果的第一页数据，即前20条\n:::\n\n**活动所属组织ID：**\n\n0.  全部组织\n1.  管理学院\n2.  学生心理健康服务中心\n3.  档案馆\n4.  马克思主义学院\n5.  都江堰校区党政办\n6.  土木工程学院\n7.  林学院\n8.  动物医学院\n9.  保卫处\n10.  理学院\n11.  艺术与传媒学院\n12.  大学生艺术团\n13.  都江堰校区基础教学部\n14.  校纪委\n15.  生命科学学院\n16.  水利水电学院\n17.  国合处\n18.  商旅学院\n19.  风景园林学院\n20.  建筑与城乡规划学院\n21.  体育学院\n22.  校体委\n23.  校区团委\n24.  后勤管理处\n25.  教务处\n26.  人文学院\n27.  党委宣传部\n28.  食品学院\n29.  环境学院\n30.  国家重点实验室\n31.  党委统战部\n32.  草业科技学院\n33.  商学院\n34.  党委组织部\n35.  校团委\n36.  法学院\n37.  水稻研究所\n38.  研究生院\n39.  后勤服务总公司\n40.  招生就业处\n41.  学生社团管理与服务中心\n42.  经济学院\n43.  机电学院\n44.  都江堰校区综合办后管科\n45.  园艺学院\n46.  资源学院\n47.  学生处\n48.  农学院\n49.  公共管理学院\n50.  图书馆\n51.  校学生会\n52.  动物科技学院\n53.  信息工程学院\n\n**活动类别ID：**\n\n0. 所有类别\n1. 党团学习\n2. 学生干部社会工作\n3. 校院班任务\n4. 德育（志愿公益）\n5. 校本文化（校规校纪）\n6. 德育—社会实践\n7. 创新创业类\n8. 科技学术讲座\n9. 体育活动（新）\n10. 体质测试\n11. 文化艺术活动\n12. 文艺演出或讲座\n13. 劳动教育\n\n**排序方式：**\n\n| 即将开始 | 最新活动 | 可参与 |\n| -------- | -------- | -------- |\n| 1     | 2     | 4     |\n","location":"jk.ts"}' :test='undefined' />
+
+
+
+:::tip
+**本校学生**可以直接 POST `https://jk.sicau.edu.cn/user/login/v1.0.0/snoLogin` 从返回结果中的 `token` 字段拿到个人令牌
+记得在url后添加以下**查询参数**：
+
+-   sid: `f1c97a0e81c24e98adb1ebdadca0699b`
+-   loginName: `你的学号`
+-   password: `你的i川农密码`
+
+:::
+
+:::warning
+由于i川农后台有请求限制，为避免一次性大量请求而被限流，每次订阅只请求结果的第一页数据，即前20条
+:::
+
+**活动所属组织ID：**
+
+0.  全部组织
+1.  管理学院
+2.  学生心理健康服务中心
+3.  档案馆
+4.  马克思主义学院
+5.  都江堰校区党政办
+6.  土木工程学院
+7.  林学院
+8.  动物医学院
+9.  保卫处
+10.  理学院
+11.  艺术与传媒学院
+12.  大学生艺术团
+13.  都江堰校区基础教学部
+14.  校纪委
+15.  生命科学学院
+16.  水利水电学院
+17.  国合处
+18.  商旅学院
+19.  风景园林学院
+20.  建筑与城乡规划学院
+21.  体育学院
+22.  校体委
+23.  校区团委
+24.  后勤管理处
+25.  教务处
+26.  人文学院
+27.  党委宣传部
+28.  食品学院
+29.  环境学院
+30.  国家重点实验室
+31.  党委统战部
+32.  草业科技学院
+33.  商学院
+34.  党委组织部
+35.  校团委
+36.  法学院
+37.  水稻研究所
+38.  研究生院
+39.  后勤服务总公司
+40.  招生就业处
+41.  学生社团管理与服务中心
+42.  经济学院
+43.  机电学院
+44.  都江堰校区综合办后管科
+45.  园艺学院
+46.  资源学院
+47.  学生处
+48.  农学院
+49.  公共管理学院
+50.  图书馆
+51.  校学生会
+52.  动物科技学院
+53.  信息工程学院
+
+**活动类别ID：**
+
+0. 所有类别
+1. 党团学习
+2. 学生干部社会工作
+3. 校院班任务
+4. 德育（志愿公益）
+5. 校本文化（校规校纪）
+6. 德育—社会实践
+7. 创新创业类
+8. 科技学术讲座
+9. 体育活动（新）
+10. 体质测试
+11. 文化艺术活动
+12. 文艺演出或讲座
+13. 劳动教育
+
+**排序方式：**
+
+| 即将开始 | 最新活动 | 可参与 |
+| -------- | -------- | -------- |
+| 1     | 2     | 4     |
+
+
 ### 教务处 <Site url="jiaowu.sicau.edu.cn/" size="sm" />
 
 <Route namespace="sicau" :data='{"path":"/jiaowu/jxtz","categories":["university"],"example":"/sicau/jiaowu/jxtz","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiaowu.sicau.edu.cn/web/web/web/index.asp"],"target":"/jiaowu/jxtz"}],"name":"教务处","maintainers":["hualiong"],"url":"jiaowu.sicau.edu.cn/","location":"jiaowu.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
