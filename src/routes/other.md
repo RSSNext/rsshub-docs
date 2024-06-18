@@ -333,7 +333,7 @@ News from the official site of men's professional tennis.
 
 ### Insights <Site url="kpmg.com/xx/en/home/insights.html" size="sm" />
 
-<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Layoffs.fyi <Site url="layoffs.fyi"/>
 
@@ -514,7 +514,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Feeds <Site url="usepanda.com" size="sm" />
 
-<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":0}' />
 
 | Channel | feedId                   |
   | ------- | ------------------------ |
@@ -631,11 +631,11 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### App reviews <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":0}' />
 
 ### App store search <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='{"code":0}' />
 
 ## Stratechery by Ben Thompson <Site url="blog.stratechery.com"/>
 
@@ -735,7 +735,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Search <Site url="u9a9.com/" size="sm" />
 
-<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":0}' />
 
 ### Search <Site url="u9a9.com/" size="sm" />
 
@@ -745,7 +745,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 455411234272 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -952,7 +952,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 日榜 <Site url="data.guduodata.com/" size="sm" />
 
-<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":0}' />
 
 ## 观海新闻 <Site url="guanhai.com.cn"/>
 
@@ -1064,7 +1064,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 实时 AQI <Site url="aqicn.org" size="sm" />
 
-<Route namespace="aqicn" :data='{"path":"/:city/:pollution?","categories":["other"],"example":"/aqicn/beijing/pm25","parameters":{"city":"城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)","pollution":"可选择显示更详细的空气污染成分"},"radar":[{"source":["aqicn.org"]}],"name":"实时 AQI","maintainers":["ladeng07"],"url":"aqicn.org","descriptions":"\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.app/aqicn/beijing/pm25](https://rsshub.app/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.app/aqicn/4258](https://rsshub.app/aqicn/4258)\n","location":"aqi.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aqicn" :data='{"path":"/:city/:pollution?","categories":["other"],"example":"/aqicn/beijing/pm25","parameters":{"city":"城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)","pollution":"可选择显示更详细的空气污染成分"},"radar":[{"source":["aqicn.org"]}],"name":"实时 AQI","maintainers":["ladeng07"],"url":"aqicn.org","descriptions":"\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.app/aqicn/beijing/pm25](https://rsshub.app/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.app/aqicn/4258](https://rsshub.app/aqicn/4258)\n","location":"aqi.ts"}' :test='{"code":0}' />
 
 ## 快递 100 <Site url="kuaidi100.com"/>
 
@@ -1380,7 +1380,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="boc.cn/sourcedb/whpj" size="sm" />
 
-<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1580,7 +1580,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="icbc.com.cn/column/1438058341489590354.html" size="sm" />
 
-<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |

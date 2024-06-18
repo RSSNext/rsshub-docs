@@ -34,7 +34,7 @@ Refer to the URL format `pubs.aip.org/:pub/:jrn`
 
 ### Journal <Site url="annualreviews.org" size="sm" />
 
-<Route namespace="annualreviews" :data='{"path":"/:id","categories":["journal"],"example":"/annualreviews/anchem","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["annualreviews.org/journal/:id","annualreviews.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.\n\n  :::tip\n  More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="annualreviews" :data='{"path":"/:id","categories":["journal"],"example":"/annualreviews/anchem","parameters":{"id":"Journal id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":true},"radar":[{"source":["annualreviews.org/journal/:id","annualreviews.org/"]}],"name":"Journal","maintainers":["nczitzk"],"description":"The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.\n\n  :::tip\n  More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.
 
@@ -46,7 +46,7 @@ The URL of the journal [Annual Review of Analytical Chemistry](https://www.annua
 
 ### The ACM Conference on Computer and Communications Security <Site url="sigsac.org/ccs.html" size="sm" />
 
-<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":0}' />
 
 Return results from 2020
 
@@ -118,7 +118,7 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ### IEEE Journal Articles <Site url="www.ieee.org" size="sm" />
 
-<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ieee" :data='{"name":"IEEE Journal Articles","maintainers":["HenryQW"],"categories":["journal"],"path":"/journal/:punumber/:earlyAccess?","parameters":{"punumber":"Publication Number, look for `punumber` in the URL","earlyAccess":"Optional, set any value to get early access articles"},"example":"/ieee/journal/6287639/preprint","location":"journal.ts"}' :test='{"code":0}' />
 
 ## IEEE Computer Society <Site url="ieee-security.org"/>
 
@@ -255,7 +255,7 @@ Return results from 2020
 
 ### Blogs <Site url="science.org" size="sm" />
 
-<Route namespace="science" :data='{"path":"/blogs/:name?","categories":["journal"],"example":"/science/blogs/pipeline","parameters":{"name":"Short name for the blog, get this from the url. Defaults to pipeline"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/blogs/:name"],"target":"/blogs/:name"}],"name":"Blogs","maintainers":["TomHodson"],"description":"To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor&#39;s blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.","location":"blogs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="science" :data='{"path":"/blogs/:name?","categories":["journal"],"example":"/science/blogs/pipeline","parameters":{"name":"Short name for the blog, get this from the url. Defaults to pipeline"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/blogs/:name"],"target":"/blogs/:name"}],"name":"Blogs","maintainers":["TomHodson"],"description":"To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor&#39;s blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.","location":"blogs.ts"}' :test='{"code":0}' />
 
 To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor's blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.
 
@@ -345,13 +345,13 @@ Sorting
 
 ### Current Issue <Site url="journals.uchicago.edu" size="sm" />
 
-<Route namespace="uchicago" :data='{"path":"/journals/current/:journal","categories":["journal"],"example":"/uchicago/journals/current/jpe","parameters":{"journal":"Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["journals.uchicago.edu/toc/:journal/current","journals.uchicago.edu/journal/:journal"]}],"name":"Current Issue","maintainers":["TonyRL"],"location":"current.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="uchicago" :data='{"path":"/journals/current/:journal","categories":["journal"],"example":"/uchicago/journals/current/jpe","parameters":{"journal":"Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["journals.uchicago.edu/toc/:journal/current","journals.uchicago.edu/journal/:journal"]}],"name":"Current Issue","maintainers":["TonyRL"],"location":"current.ts"}' :test='{"code":0}' />
 
 ## USENIX <Site url="usenix.org"/>
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 

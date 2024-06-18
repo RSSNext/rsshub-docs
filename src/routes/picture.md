@@ -271,5 +271,5 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 频道 <Site url="qipamaijia.com/" size="sm" />
 
-<Route namespace="qipamaijia" :data='{"path":"/:cate?","categories":["picture"],"example":"/qipamaijia/fuli","parameters":{"cate":"频道名，可在对应网址中找到，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qipamaijia.com/","qipamaijia.com/:cate"],"target":"/:cate"}],"name":"频道","maintainers":["Fatpandac","nczitzk"],"url":"qipamaijia.com/","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qipamaijia" :data='{"path":"/:cate?","categories":["picture"],"example":"/qipamaijia/fuli","parameters":{"cate":"频道名，可在对应网址中找到，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qipamaijia.com/","qipamaijia.com/:cate"],"target":"/:cate"}],"name":"频道","maintainers":["Fatpandac","nczitzk"],"url":"qipamaijia.com/","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 

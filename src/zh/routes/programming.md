@@ -68,13 +68,13 @@ You have the option to utilize the main heading or use individual categories as 
 
 ### Platform Software <Site url="www.alternativeto.net" size="sm" />
 
-<Route namespace="alternativeto" :data='{"path":"/platform/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/platform/firefox","parameters":{"name":"Platform name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/platform/:name"],"target":"/platform/:name"}],"name":"Platform Software","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/platform/firefox/license=free`","location":"platform.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="alternativeto" :data='{"path":"/platform/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/platform/firefox","parameters":{"name":"Platform name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/platform/:name"],"target":"/platform/:name"}],"name":"Platform Software","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/platform/firefox/license=free`","location":"platform.ts"}' :test='{"code":0}' />
 
 > routeParms can be copied from original site URL, example: `/alternativeto/platform/firefox/license=free`
 
 ### Software Alternatives <Site url="www.alternativeto.net" size="sm" />
 
-<Route namespace="alternativeto" :data='{"path":"/software/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/software/cpp","parameters":{"name":"Software name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/software/:name"],"target":"/software/:name"}],"name":"Software Alternatives","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`","location":"software.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="alternativeto" :data='{"path":"/software/:name/:routeParams?","categories":["programming"],"example":"/alternativeto/software/cpp","parameters":{"name":"Software name","routeParams":"Filters of software type"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alternativeto.net/software/:name"],"target":"/software/:name"}],"name":"Software Alternatives","maintainers":["JimenezLi"],"description":"> routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`","location":"software.ts"}' :test='{"code":0}' />
 
 > routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`
 
@@ -112,7 +112,7 @@ Rated Range
 
 ### News <Site url="bbcnewslabs.co.uk/" size="sm" />
 
-<Route namespace="bbcnewslabs" :data='{"path":"/news","categories":["programming"],"example":"/bbcnewslabs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bbcnewslabs.co.uk/"]}],"name":"News","maintainers":["elxy"],"url":"bbcnewslabs.co.uk/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bbcnewslabs" :data='{"path":"/news","categories":["programming"],"example":"/bbcnewslabs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bbcnewslabs.co.uk/"]}],"name":"News","maintainers":["elxy"],"url":"bbcnewslabs.co.uk/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Bitbucket <Site url="bitbucket.com"/>
 
@@ -341,7 +341,7 @@ GitHub provides some official RSS feeds:
 
 ### 用户 <Site url="ycombinator.com" size="sm" />
 
-<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":0}' />
 
 订阅特定用户的内容
 
@@ -349,11 +349,11 @@ GitHub provides some official RSS feeds:
 
 ### 搜索 <Site url="hacking8.com" size="sm" />
 
-<Route namespace="hacking8" :data='{"path":"/search/:keyword?","categories":["programming"],"example":"/hacking8/search/rsshub","parameters":{"keyword":"关键字，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"],"target":"/:category?"}],"name":"搜索","maintainers":["nczitzk"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hacking8" :data='{"path":"/search/:keyword?","categories":["programming"],"example":"/hacking8/search/rsshub","parameters":{"keyword":"关键字，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"],"target":"/:category?"}],"name":"搜索","maintainers":["nczitzk"],"location":"search.ts"}' :test='{"code":0}' />
 
 ### 信息流 <Site url="hacking8.com" size="sm" />
 
-<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":0}' />
 
 | 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |
   | ----- | -------- | --------------- | --- |
@@ -363,7 +363,7 @@ GitHub provides some official RSS feeds:
 
 ### Profile <Site url="hackmd.io" size="sm" />
 
-<Route namespace="hackmd" :data='{"path":"/profile/:path","categories":["programming"],"example":"/hackmd/profile/hackmd","parameters":{"path":"userpath or teampath"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Profile","maintainers":["Yukaii","kaiix"],"location":"profile.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hackmd" :data='{"path":"/profile/:path","categories":["programming"],"example":"/hackmd/profile/hackmd","parameters":{"path":"userpath or teampath"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Profile","maintainers":["Yukaii","kaiix"],"location":"profile.ts"}' :test='{"code":0}' />
 
 ## HelloGitHub <Site url="hellogithub.com"/>
 
@@ -385,7 +385,7 @@ GitHub provides some official RSS feeds:
 
 ### 文章 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 热门 | 最近 |
   | ---- | ---- |
@@ -409,7 +409,7 @@ GitHub provides some official RSS feeds:
 
 ### 漏洞 <Site url="hitcon.org" size="sm" />
 
-<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='{"code":0}' />
 
 | 缺省   | all  | closed | disclosed | patching |
   | ------ | ---- | ------ | --------- | -------- |
@@ -419,11 +419,11 @@ GitHub provides some official RSS feeds:
 
 ### Daily Papers <Site url="huggingface.co/papers" size="sm" />
 
-<Route namespace="huggingface" :data='{"path":"/daily-papers","categories":["programming"],"example":"/huggingface/daily-papers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/papers","huggingface.co/"]}],"name":"Daily Papers","maintainers":["zeyugao"],"url":"huggingface.co/papers","location":"daily-papers.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="huggingface" :data='{"path":"/daily-papers","categories":["programming"],"example":"/huggingface/daily-papers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/papers","huggingface.co/"]}],"name":"Daily Papers","maintainers":["zeyugao"],"url":"huggingface.co/papers","location":"daily-papers.ts"}' :test='{"code":0}' />
 
 ### 中文博客 <Site url="huggingface.co/blog/zh" size="sm" />
 
-<Route namespace="huggingface" :data='{"path":"/blog-zh","categories":["programming"],"example":"/huggingface/blog-zh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/blog/zh","huggingface.co/"]}],"name":"中文博客","maintainers":["zcf0508"],"url":"huggingface.co/blog/zh","location":"blog-zh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="huggingface" :data='{"path":"/blog-zh","categories":["programming"],"example":"/huggingface/blog-zh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/blog/zh","huggingface.co/"]}],"name":"中文博客","maintainers":["zcf0508"],"url":"huggingface.co/blog/zh","location":"blog-zh.ts"}' :test='{"code":0}' />
 
 ## Issue Hunt <Site url="issuehunt.io"/>
 
@@ -709,7 +709,7 @@ GitHub provides some official RSS feeds:
 
 ### 开发者社区 - 主题 <Site url="developer.aliyun.com" size="sm" />
 
-<Route namespace="aliyun" :data='{"path":"/developer/group/:type","categories":["programming"],"example":"/aliyun/developer/group/alitech","parameters":{"type":"对应技术领域分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.aliyun.com/group/:type"]}],"name":"开发者社区 - 主题","maintainers":["umm233"],"location":"developer/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="aliyun" :data='{"path":"/developer/group/:type","categories":["programming"],"example":"/aliyun/developer/group/alitech","parameters":{"type":"对应技术领域分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.aliyun.com/group/:type"]}],"name":"开发者社区 - 主题","maintainers":["umm233"],"location":"developer/group.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 数据库内核月报 <Site url="mysql.taobao.org/monthly" size="sm" />
 
@@ -723,7 +723,7 @@ GitHub provides some official RSS feeds:
 
 ### 分类订阅 <Site url="anquanke.com" size="sm" />
 
-<Route namespace="anquanke" :data='{"path":"/:category/:fulltext?","categories":["programming"],"example":"/anquanke/week","parameters":{"category":"分类订阅","fulltext":"是否获取全文，如需获取全文参数传入 `quanwen` 或 `fulltext`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类订阅","maintainers":["qwertyuiop6"],"description":"| 360 网络安全周报 | 活动     | 知识      | 资讯 | 招聘 | 工具 |\n  | ---------------- | -------- | --------- | ---- | ---- | ---- |\n  | week             | activity | knowledge | news | job  | tool |","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="anquanke" :data='{"path":"/:category/:fulltext?","categories":["programming"],"example":"/anquanke/week","parameters":{"category":"分类订阅","fulltext":"是否获取全文，如需获取全文参数传入 `quanwen` 或 `fulltext`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类订阅","maintainers":["qwertyuiop6"],"description":"| 360 网络安全周报 | 活动     | 知识      | 资讯 | 招聘 | 工具 |\n  | ---------------- | -------- | --------- | ---- | ---- | ---- |\n  | week             | activity | knowledge | news | job  | tool |","location":"category.ts"}' :test='{"code":0}' />
 
 | 360 网络安全周报 | 活动     | 知识      | 资讯 | 招聘 | 工具 |
   | ---------------- | -------- | --------- | ---- | ---- | ---- |
@@ -842,7 +842,7 @@ GitHub provides some official RSS feeds:
 
 ### 最新文章 <Site url="blogread.cn" size="sm" />
 
-<Route namespace="blogread" :data='{"path":"/newest","categories":["programming"],"example":"/blogread/newest","radar":[{"source":["blogread.cn/news/newest.php"]}],"name":"最新文章","maintainers":["fashioncj"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="blogread" :data='{"path":"/newest","categories":["programming"],"example":"/blogread/newest","radar":[{"source":["blogread.cn/news/newest.php"]}],"name":"最新文章","maintainers":["fashioncj"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## 掘金 <Site url="juejin.cn"/>
 
