@@ -587,9 +587,19 @@ Free articles only.
   | 社説           | editorial |
   | 皇室           | koushitsu |
 
-## 北极星电力网 <Site url="guangfu.bjx.com.cn"/>
+## 北极星电力网 <Site url="www.bjx.com.cn"/>
 
-### 光伏 <Site url="guangfu.bjx.com.cn" size="sm" />
+### 风电 <Site url="www.bjx.com.cn" size="sm" />
+
+<Route namespace="bjx" :data='{"path":"/fd/:type","categories":["traditional-media"],"example":"/bjx/fd/yw","parameters":{"type":"文章分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"风电","maintainers":["hualiong"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |","location":"fd.ts"}' :test='undefined' />
+
+`:type` 类型可选如下
+
+  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |
+
+### 光伏 <Site url="www.bjx.com.cn" size="sm" />
 
 <Route namespace="bjx" :data='{"path":"/gf/:type","categories":["traditional-media"],"example":"/bjx/gf/sc","parameters":{"type":"分类，北极星光伏最后的`type`字段"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"光伏","maintainers":["Sxuet"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |\n  | ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |\n  | yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |","location":"types.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
