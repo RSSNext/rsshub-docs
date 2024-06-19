@@ -92,7 +92,7 @@ News from the official site of men's professional tennis.
 
 ### News <Site url="www.atptour.com" size="sm" />
 
-<Route namespace="atptour" :data='{"path":"/news/:lang?","categories":["other"],"example":"/atptour/news/en","parameters":{"lang":"en or es."},"radar":[{"source":["atptour.com"]}],"name":"News","maintainers":["LM1207"],"location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="atptour" :data='{"path":"/news/:lang?","categories":["other"],"example":"/atptour/news/en","parameters":{"lang":"en or es."},"radar":[{"source":["atptour.com"]}],"name":"News","maintainers":["LM1207"],"location":"news.ts"}' :test='{"code":0}' />
 
 ## Bad.news <Site url="bad.news"/>
 
@@ -301,7 +301,7 @@ News from the official site of men's professional tennis.
 
 ### Projects <Site url="instructables.com/projects" size="sm" />
 
-<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":0}' />
 
 | All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |
   | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
@@ -514,7 +514,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Feeds <Site url="usepanda.com" size="sm" />
 
-<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Channel | feedId                   |
   | ------- | ------------------------ |
@@ -631,11 +631,11 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### App reviews <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":0}' />
+<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### App store search <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='{"code":0}' />
+<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Stratechery by Ben Thompson <Site url="blog.stratechery.com"/>
 
@@ -735,7 +735,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Search <Site url="u9a9.com/" size="sm" />
 
-<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Search <Site url="u9a9.com/" size="sm" />
 
@@ -745,7 +745,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 455411234272 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -1064,7 +1064,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 实时 AQI <Site url="aqicn.org" size="sm" />
 
-<Route namespace="aqicn" :data='{"path":"/:city/:pollution?","categories":["other"],"example":"/aqicn/beijing/pm25","parameters":{"city":"城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)","pollution":"可选择显示更详细的空气污染成分"},"radar":[{"source":["aqicn.org"]}],"name":"实时 AQI","maintainers":["ladeng07"],"url":"aqicn.org","descriptions":"\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.app/aqicn/beijing/pm25](https://rsshub.app/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.app/aqicn/4258](https://rsshub.app/aqicn/4258)\n","location":"aqi.ts"}' :test='{"code":0}' />
+<Route namespace="aqicn" :data='{"path":"/:city/:pollution?","categories":["other"],"example":"/aqicn/beijing/pm25","parameters":{"city":"城市拼音或地区 ID，详见[aqicn.org](http://aqicn.org/city/)","pollution":"可选择显示更详细的空气污染成分"},"radar":[{"source":["aqicn.org"]}],"name":"实时 AQI","maintainers":["ladeng07"],"url":"aqicn.org","descriptions":"\n|   参数   | 污染成分 |\n| -------- | -------- |\n|   pm25   |  PM2.5   |\n|   pm10   |  PM10    |\n|   o3     |  O3      |\n|   no2    |  NO2     |\n|   so2    |  SO2     |\n|   co     |  CO      |\n\n举例: [https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n\n1. 显示单个污染成分，例如「pm25」, [https://rsshub.app/aqicn/beijing/pm25](https://rsshub.app/aqicn/beijing/pm25)\n2. 逗号分隔显示多个污染成分，例如「pm25,pm10」，[https://rsshub.app/aqicn/beijing/pm25,pm10](https://rsshub.app/aqicn/beijing/pm25,pm10)\n3. 城市子站 ID 获取方法：右键显示网页源代码，搜索 \"idx\" （带双冒号），后面的 ID 就是子站的 ID，如你给的链接 ID 是 4258，RSS 地址就是 [https://rsshub.app/aqicn/4258](https://rsshub.app/aqicn/4258)\n","location":"aqi.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 快递 100 <Site url="kuaidi100.com"/>
 
@@ -1082,7 +1082,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 支持的快递公司列表 <Site url="kuaidi100.com/" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 理想生活实验室 <Site url="toodaylab.com"/>
 

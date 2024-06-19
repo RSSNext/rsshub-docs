@@ -66,7 +66,7 @@
 
 ### 最近发表 <Site url="hicairo.com/" size="sm" />
 
-<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## Ian Spriggss <Site url="ianspriggs.com"/>
 
@@ -82,7 +82,7 @@
 
 ### Essay <Site url="kunchengblog.com/essay" size="sm" />
 
-<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MacMenuBar <Site url="macmenubar.com"/>
 
@@ -390,5 +390,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
 
