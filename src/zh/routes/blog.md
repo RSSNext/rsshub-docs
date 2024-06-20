@@ -66,7 +66,7 @@
 
 ### 最近发表 <Site url="hicairo.com/" size="sm" />
 
-<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Ian Spriggss <Site url="ianspriggs.com"/>
 
@@ -94,7 +94,7 @@
 
 ### List <Site url="medium.com" size="sm" />
 
-<Route namespace="medium" :data='{"path":"/list/:user/:catalogId","categories":["blog"],"example":"/medium/list/imsingee/f2d8d48096a9","parameters":{"user":"Username","catalogId":"List ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List","maintainers":["ImSingee"],"description":"The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.\n\n  :::warning\n  To access private lists, only self-hosting is supported.\n  :::","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="medium" :data='{"path":"/list/:user/:catalogId","categories":["blog"],"example":"/medium/list/imsingee/f2d8d48096a9","parameters":{"user":"Username","catalogId":"List ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List","maintainers":["ImSingee"],"description":"The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.\n\n  :::warning\n  To access private lists, only self-hosting is supported.\n  :::","location":"list.ts"}' :test='{"code":0}' />
 
 The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.
 
