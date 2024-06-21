@@ -115,7 +115,7 @@ News from the official site of men's professional tennis.
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":0}' />
 
 ## biodiscover.com 生物探索 <Site url="www.biodiscover.com"/>
 
@@ -301,7 +301,7 @@ News from the official site of men's professional tennis.
 
 ### Projects <Site url="instructables.com/projects" size="sm" />
 
-<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":0}' />
+<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |
   | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
@@ -514,7 +514,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Feeds <Site url="usepanda.com" size="sm" />
 
-<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Channel | feedId                   |
   | ------- | ------------------------ |
@@ -631,7 +631,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### App reviews <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":0}' />
+<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### App store search <Site url="shopify.com" size="sm" />
 
@@ -745,7 +745,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 368233522040 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -1082,7 +1082,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 支持的快递公司列表 <Site url="kuaidi100.com/" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kuaidi100" :data='{"path":"/company","categories":["other"],"example":"/kuaidi100/company","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kuaidi100.com/"]}],"name":"支持的快递公司列表","maintainers":["NeverBehave"],"url":"kuaidi100.com/","location":"supported-company.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 理想生活实验室 <Site url="toodaylab.com"/>
 
@@ -1580,7 +1580,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="icbc.com.cn/column/1438058341489590354.html" size="sm" />
 
-<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="icbc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/icbc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["icbc.com.cn/column/1438058341489590354.html"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["leoleoasd"],"url":"icbc.com.cn/column/1438058341489590354.html","description":"| 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 参考价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |

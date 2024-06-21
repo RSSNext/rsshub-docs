@@ -16,7 +16,7 @@
 
 ### 直播搜索 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/live/search/:key/:order","categories":["live"],"example":"/bilibili/live/search/dota/online","parameters":{"key":"搜索关键字","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播搜索","maintainers":["Qixingchen"],"location":"live-search.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/live/search/:key/:order","categories":["live"],"example":"/bilibili/live/search/dota/online","parameters":{"key":"搜索关键字","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播搜索","maintainers":["Qixingchen"],"location":"live-search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## LiSA <Site url="www.sonymusic.co.jp"/>
 
@@ -32,7 +32,7 @@
 
 ### Channel Video <Site url="www.twitch.tv" size="sm" />
 
-<Route namespace="twitch" :data='{"path":"/video/:login/:filter?","categories":["live"],"example":"/twitch/video/riotgames/highlights","parameters":{"login":"Twitch username","filter":"Video type, Default to all"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.twitch.tv/:login/videos"],"target":"/video/:login"}],"name":"Channel Video","maintainers":["hoilc"],"description":"| archive           | highlights                    | all        |\n| ----------------- | ----------------------------- | ---------- |\n| Recent broadcasts | Recent highlights and uploads | All videos |","location":"video.ts"}' :test='{"code":0}' />
+<Route namespace="twitch" :data='{"path":"/video/:login/:filter?","categories":["live"],"example":"/twitch/video/riotgames/highlights","parameters":{"login":"Twitch username","filter":"Video type, Default to all"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.twitch.tv/:login/videos"],"target":"/video/:login"}],"name":"Channel Video","maintainers":["hoilc"],"description":"| archive           | highlights                    | all        |\n| ----------------- | ----------------------------- | ---------- |\n| Recent broadcasts | Recent highlights and uploads | All videos |","location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | archive           | highlights                    | all        |
 | ----------------- | ----------------------------- | ---------- |

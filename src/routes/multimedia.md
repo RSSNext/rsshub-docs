@@ -655,13 +655,13 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### 最近更新 <Site url="missav.com/dm397/new" size="sm" />
 
-<Route namespace="missav" :data='{"path":"/new","categories":["multimedia"],"example":"/missav/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["missav.com/dm397/new","missav.com/new","missav.com/"]}],"name":"最近更新","maintainers":["TonyRL"],"url":"missav.com/dm397/new","location":"new.ts"}' :test='{"code":0}' />
+<Route namespace="missav" :data='{"path":"/new","categories":["multimedia"],"example":"/missav/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["missav.com/dm397/new","missav.com/new","missav.com/"]}],"name":"最近更新","maintainers":["TonyRL"],"url":"missav.com/dm397/new","location":"new.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Mixcloud <Site url="www.mixcloud.com"/>
 
 ### User <Site url="www.mixcloud.com" size="sm" />
 
-<Route namespace="mixcloud" :data='{"path":"/:username/:type?","categories":["multimedia"],"example":"/mixcloud/dholbach/uploads","parameters":{"username":"Username, can be found in URL","type":"Type, see below, uploads by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/:type?"]},{"source":["www.mixcloud.com/:username/:type?"]}],"name":"User","maintainers":["Misaka13514"],"description":"| Shows   | Reposts | Favorites | History | Stream |\n  | ------- | ------- | --------- | ------- | ------ |\n  | uploads | reposts | favorites | listens | stream |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="mixcloud" :data='{"path":"/:username/:type?","categories":["multimedia"],"example":"/mixcloud/dholbach/uploads","parameters":{"username":"Username, can be found in URL","type":"Type, see below, uploads by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/:type?"]},{"source":["www.mixcloud.com/:username/:type?"]}],"name":"User","maintainers":["Misaka13514"],"description":"| Shows   | Reposts | Favorites | History | Stream |\n  | ------- | ------- | --------- | ------- | ------ |\n  | uploads | reposts | favorites | listens | stream |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Shows   | Reposts | Favorites | History | Stream |
   | ------- | ------- | --------- | ------- | ------ |
@@ -735,7 +735,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### Keyword Search <Site url="pornhub.com" size="sm" />
 
-<Route namespace="pornhub" :data='{"path":"/search/:keyword","categories":["multimedia"],"example":"/pornhub/search/stepsister","parameters":{"keyword":"keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword Search","maintainers":["nczitzk"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="pornhub" :data='{"path":"/search/:keyword","categories":["multimedia"],"example":"/pornhub/search/stepsister","parameters":{"keyword":"keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword Search","maintainers":["nczitzk"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Users <Site url="pornhub.com" size="sm" />
 
@@ -835,11 +835,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### Search <Site url="u3c3.com" size="sm" />
 
-<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2357219055218 to be greater than -432000000"}' />
+<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Search <Site url="u3c3.com" size="sm" />
 
-<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected -2357219054946 to be greater than -432000000"}' />
+<Route namespace="u3c3" :data='{"path":["/search/:keyword/:preview?","/:type?/:preview?"],"categories":["multimedia"],"example":"/u3c3/search/新片速递","parameters":{"keyword":"Search keyword","preview":"Show image preview, off by default, non empty value means on"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["storytellerF"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 阿基米德 FM <Site url="m.ajmide.com"/>
 
@@ -865,7 +865,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 用户视频 <Site url="iq.com" size="sm" />
 
-<Route namespace="iqiyi" :data='{"path":"/user/video/:uid","categories":["multimedia"],"example":"/iqiyi/user/video/2289191062","parameters":{"uid":"用户名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqiyi.com/u/:uid/*"]}],"name":"用户视频","maintainers":["talengu","JimenezLi"],"location":"video.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="iqiyi" :data='{"path":"/user/video/:uid","categories":["multimedia"],"example":"/iqiyi/user/video/2289191062","parameters":{"uid":"用户名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqiyi.com/u/:uid/*"]}],"name":"用户视频","maintainers":["talengu","JimenezLi"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 哔嘀影视 <Site url="52bdys.com"/>
 
@@ -937,6 +937,22 @@ When `mediaType` is `tv`, `sheet` should be:
   | -------- | -------- |
   | 0        | 1        |
 
+## 不太灵影视 <Site url="2bt0.com"/>
+
+:::tip
+  (1-9)bt0.com 都指向同一个
+  :::
+
+### 影视资源下载列表 <Site url="2bt0.com" size="sm" />
+
+<Route namespace="bt0" :data='{"path":"/mv/:number/:domain?","categories":["multimedia"],"example":"/mv/35575567/2","parameters":{"domain":"1-9,默认 2","number":"影视详情id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/mv/"]}],"name":"影视资源下载列表","maintainers":["miemieYaho"],"description":":::tip\n  (1-9)bt0.com 都能访问, 就拿 2bt0.com 为默认了\n  影视详情id 是`https://www.2bt0.com/mv/{id}.html`其中的 id 的值\n  可选参数`domain` 是 `https://www.{domain}bt0.com` 其中的 domain 的值,可以是 1-9,访问的都是同一个东西\n  :::","location":"mv.ts"}' :test='undefined' />
+
+:::tip
+  (1-9)bt0.com 都能访问, 就拿 2bt0.com 为默认了
+  影视详情id 是`https://www.2bt0.com/mv/{id}.html`其中的 id 的值
+  可选参数`domain` 是 `https://www.{domain}bt0.com` 其中的 domain 的值,可以是 1-9,访问的都是同一个东西
+  :::
+
 ## 草榴社区 <Site url="t66y.com"/>
 
 ### 分区帖子 <Site url="t66y.com" size="sm" />
@@ -959,7 +975,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 帖子跟踪 <Site url="t66y.com" size="sm" />
 
-<Route namespace="t66y" :data='{"path":"/post/:tid","categories":["multimedia"],"example":"/t66y/post/3286088","parameters":{"tid":"帖子 id, 可在帖子 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子跟踪","maintainers":["cnzgray"],"description":":::tip\n  帖子 id 查找办法:\n\n  打开想跟踪的帖子，比如：`https://t66y.com/htm_data/20/1811/3286088.html` 其中 `3286088` 就是帖子 id。\n  :::","location":"post.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="t66y" :data='{"path":"/post/:tid","categories":["multimedia"],"example":"/t66y/post/3286088","parameters":{"tid":"帖子 id, 可在帖子 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子跟踪","maintainers":["cnzgray"],"description":":::tip\n  帖子 id 查找办法:\n\n  打开想跟踪的帖子，比如：`https://t66y.com/htm_data/20/1811/3286088.html` 其中 `3286088` 就是帖子 id。\n  :::","location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   帖子 id 查找办法:
@@ -1011,7 +1027,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 专辑 <Site url="qingting.fm" size="sm" />
 
-<Route namespace="qingting" :data='{"path":"/channel/:id","categories":["multimedia"],"example":"/qingting/channel/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"location":"channel.ts"}' :test='{"code":0}' />
+<Route namespace="qingting" :data='{"path":"/channel/:id","categories":["multimedia"],"example":"/qingting/channel/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 秋爸日字 <Site url="qq88.info"/>
 
