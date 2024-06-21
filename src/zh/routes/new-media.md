@@ -1648,6 +1648,12 @@ Member ID
 
 <Route namespace="twreporter" :data='{"path":"/newest","categories":["new-media"],"example":"/twreporter/newest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["twreporter.org/"]}],"name":"最新","maintainers":["emdoe"],"url":"twreporter.org/","location":"newest.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## 爆料公社 <Site url="web.bc3ts.net"/>
+
+### 動態 <Site url="web.bc3ts.net" size="sm" />
+
+<Route namespace="bc3ts" :data='{"path":"/post/list/:sort?","example":"/bc3ts/post/list","parameters":{"sort":"排序方式，`1` 為最新，`2` 為熱門，默认為 `1`"},"features":{"antiCrawler":true},"radar":[{"source":["web.bc3ts.net"]}],"name":"動態","maintainers":["TonyRL"],"location":"list.ts"}' :test='undefined' />
+
 ## 本地宝 <Site url="bendibao.com"/>
 
 ### 焦点资讯 <Site url="bendibao.com/" size="sm" />
