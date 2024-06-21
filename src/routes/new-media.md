@@ -558,6 +558,22 @@ informed AI RSS feeds:
   | ------ | ---- | ------ | ------- | -------- | ------- | ---------------- | ------ | ------- | ------- | ---------- |
   | k      | a    | c      | e       | f        | g       | i                | j      | r       | s       | v          |
 
+## Kelowna Capital News <Site url="www.kelownacapnews.com"/>
+
+### News <Site url="www.kelownacapnews.com" size="sm" />
+
+<Route namespace="kelownacapnews" :data='{"path":"/:type","categories":["new-media"],"example":"/kelownacapnews/local-news","parameters":{"type":"Type of news"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.kelownacapnews.com/:type"],"target":"/:type"}],"name":"News","maintainers":["hualiong"],"url":"www.kelownacapnews.com","description":"`type` is as follows:\n  \n| News type     | Value         | News type    | Value        |\n| ------------- | ------------- | ------------ | ------------ |\n| News          | news          | Sports       | sports       |\n| Local News    | local-news    | Business     | business     |\n| Canadian News | national-news | Trending Now | trending-now |\n| World News    | world-news    | Opinion      | opinion      |\n| Entertainment | entertainment |              |              |","location":"news.ts"}' :test='undefined' />
+
+`type` is as follows:
+  
+| News type     | Value         | News type    | Value        |
+| ------------- | ------------- | ------------ | ------------ |
+| News          | news          | Sports       | sports       |
+| Local News    | local-news    | Business     | business     |
+| Canadian News | national-news | Trending Now | trending-now |
+| World News    | world-news    | Opinion      | opinion      |
+| Entertainment | entertainment |              |              |
+
 ## Kuwait Local <Site url="kuwaitlocal.com"/>
 
 ### Categorised News <Site url="kuwaitlocal.com/news/latest" size="sm" />
