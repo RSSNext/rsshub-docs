@@ -8,4 +8,4 @@ The API is under active development and is subject to change. All suggestions ar
 
 RSSHub provides the following APIs:
 
-https://rsshub.app/api/ui
+[https://rsshub.app/api/reference](https://rsshub.app/api/reference)
