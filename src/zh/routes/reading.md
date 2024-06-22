@@ -16,7 +16,7 @@
 
 ### chapter <Site url="syosetu.org" size="sm" />
 
-<Route namespace="hameln" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hameln/chapter/264928","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["syosetu.org/novel/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)","location":"chapter.ts"}' :test='{"code":0}' />
+<Route namespace="hameln" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hameln/chapter/264928","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["syosetu.org/novel/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)","location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)
 
@@ -154,11 +154,11 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 卷 <Site url="linovelib.com" size="sm" />
 
-<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 小说更新 <Site url="linovelib.com" size="sm" />
 
-<Route namespace="linovelib" :data='{"path":"/novel/:id","categories":["reading"],"example":"/linovelib/novel/2547","parameters":{"id":"小说 id，对应书架开始阅读 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"小说更新","maintainers":["misakicoca"],"location":"novel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="linovelib" :data='{"path":"/novel/:id","categories":["reading"],"example":"/linovelib/novel/2547","parameters":{"id":"小说 id，对应书架开始阅读 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"小说更新","maintainers":["misakicoca"],"location":"novel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 超星 <Site url="chaoxing.com"/>
 

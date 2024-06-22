@@ -4,7 +4,7 @@
 
 ### APISIX 博客 <Site url="apisix.apache.org" size="sm" />
 
-<Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":0}' />
 
 ## Backlinko <Site url="backlinko.com"/>
 
@@ -56,7 +56,7 @@
 
 ### 用户博客 <Site url="hashnode.dev/" size="sm" />
 
-<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
@@ -232,7 +232,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 全部文章 <Site url="bulianglin.com/" size="sm" />
 
-<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## 财新博客 <Site url="caixin.com"/>
 
@@ -292,7 +292,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
@@ -352,7 +352,7 @@ TAIWAN KADOKAWA
 
 ### 博客 <Site url="cloudnative.to" size="sm" />
 
-<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 赵容部落 <Site url="zrblog.net"/>
 
@@ -390,5 +390,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
 

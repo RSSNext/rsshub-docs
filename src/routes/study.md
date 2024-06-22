@@ -28,7 +28,7 @@
 
 ### Tutorials <Site url="howtoforge.com/" size="sm" />
 
-<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MindMeister <Site url="mindmeister.com"/>
 
@@ -86,7 +86,7 @@
 
 ### Thesis <Site url="kimlaw.or.kr/67" size="sm" />
 
-<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Tableau <Site url="public.tableau.com"/>
 
@@ -120,7 +120,7 @@
 
 ### 公告 <Site url="rsks.hunanpea.com" size="sm" />
 
-<Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":0}' />
+<Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 山东省教育招生考试院 <Site url="sdzk.cn"/>
 
