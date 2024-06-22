@@ -945,13 +945,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 影视资源下载列表 <Site url="2bt0.com" size="sm" />
 
-<Route namespace="bt0" :data='{"path":"/mv/:number/:domain?","categories":["multimedia"],"example":"/mv/35575567/2","parameters":{"domain":"1-9,默认 2","number":"影视详情id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/mv/"]}],"name":"影视资源下载列表","maintainers":["miemieYaho"],"description":":::tip\n  (1-9)bt0.com 都能访问, 就拿 2bt0.com 为默认了\n  影视详情id 是`https://www.2bt0.com/mv/{id}.html`其中的 id 的值\n  可选参数`domain` 是 `https://www.{domain}bt0.com` 其中的 domain 的值,可以是 1-9,访问的都是同一个东西\n  :::","location":"mv.ts"}' :test='{"code":1,"message":"expected 404 to be 200 // Object.is equality"}' />
+<Route namespace="bt0" :data='{"path":"/mv/:number/:domain?","categories":["multimedia"],"example":"/bt0/mv/35575567/2","parameters":{"number":"影视详情id, 网页路径为`/mv/{id}.html`其中的id部分, 一般为8位纯数字","domain":"数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/mv/"]}],"name":"影视资源下载列表","maintainers":["miemieYaho"],"location":"mv.ts"}' :test='{"code":1,"message":"expected 404 to be 200 // Object.is equality"}' />
 
-:::tip
-  (1-9)bt0.com 都能访问, 就拿 2bt0.com 为默认了
-  影视详情id 是`https://www.2bt0.com/mv/{id}.html`其中的 id 的值
-  可选参数`domain` 是 `https://www.{domain}bt0.com` 其中的 domain 的值,可以是 1-9,访问的都是同一个东西
-  :::
+### 最新资源列表 <Site url="2bt0.com" size="sm" />
+
+<Route namespace="bt0" :data='{"path":"/tlist/:sc/:domain?","categories":["multimedia"],"example":"/bt0/tlist/1","parameters":{"sc":"分类(1-5), 1:电影, 2:电视剧, 3:周热门, 4:月热门, 5:年度热门","domain":"数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/tlist/"]}],"name":"最新资源列表","maintainers":["miemieYaho"],"location":"tlist.ts"}' :test='undefined' />
 
 ## 草榴社区 <Site url="t66y.com"/>
 
