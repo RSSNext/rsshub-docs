@@ -667,6 +667,12 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
   | ------- | ------- | --------- | ------- | ------ |
   | uploads | reposts | favorites | listens | stream |
 
+## myfans <Site url="myfans.jp"/>
+
+### User Posts <Site url="myfans.jp" size="sm" />
+
+<Route namespace="myfans" :data='{"path":"/user/:username","categories":["multimedia"],"example":"/myfans/user/secret_japan","parameters":{"username":"User handle"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["myfans.jp/:username","myfans.jp/:language/:username"]}],"name":"User Posts","maintainers":["TonyRL"],"location":"post.ts"}' :test='undefined' />
+
 ## NEW 字幕组 <Site url="newzmz.com"/>
 
 ### 指定剧集 <Site url="newzmz.com/" size="sm" />
