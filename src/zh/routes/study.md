@@ -28,7 +28,7 @@
 
 ### Tutorials <Site url="howtoforge.com/" size="sm" />
 
-<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## MindMeister <Site url="mindmeister.com"/>
 
@@ -86,7 +86,7 @@
 
 ### Thesis <Site url="kimlaw.or.kr/67" size="sm" />
 
-<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kimlaw" :data='{"path":"/thesis","categories":["study"],"example":"/kimlaw/thesis","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kimlaw.or.kr/67","kimlaw.or.kr/"]}],"name":"Thesis","maintainers":["TonyRL"],"url":"kimlaw.or.kr/67","location":"thesis.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Tableau <Site url="public.tableau.com"/>
 

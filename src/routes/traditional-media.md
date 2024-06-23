@@ -19,7 +19,7 @@
 
 ### RSS <Site url="apnews.com" size="sm" />
 
-<Route namespace="apnews" :data='{"path":"/rss/:rss?","categories":["traditional-media","popular"],"example":"/apnews/rss/business","parameters":{"rss":"Route name from the first segment of the corresponding site, or `index` for the front page(default)."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apnews.com/:rss"],"target":"/rss/:rss"}],"name":"RSS","maintainers":["zoenglinghou","mjysci","TonyRL"],"location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="apnews" :data='{"path":"/rss/:rss?","categories":["traditional-media","popular"],"example":"/apnews/rss/business","parameters":{"rss":"Route name from the first segment of the corresponding site, or `index` for the front page(default)."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apnews.com/:rss"],"target":"/rss/:rss"}],"name":"RSS","maintainers":["zoenglinghou","mjysci","TonyRL"],"location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Topics <Site url="apnews.com" size="sm" />
 
@@ -29,7 +29,7 @@
 
 ### News <Site url="bbc.com" size="sm" />
 
-<Route namespace="bbc" :data='{"path":"/:site?/:channel?","name":"News","maintainers":["HenryQW","DIYgod"],"example":"/bbc/world-asia","parameters":{"site":"语言，简体或繁体中文","channel":"channel, default to `top stories`"},"categories":["traditional-media"],"description":"Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bbc" :data='{"path":"/:site?/:channel?","name":"News","maintainers":["HenryQW","DIYgod"],"example":"/bbc/world-asia","parameters":{"site":"语言，简体或繁体中文","channel":"channel, default to `top stories`"},"categories":["traditional-media"],"description":"Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Provides a better reading experience (full text articles) over the official ones.
 
@@ -59,7 +59,7 @@ Provides a better reading experience (full text articles) over the official ones
 
 ### Full article RSS <Site url="search.cnbc.com" size="sm" />
 
-<Route namespace="cnbc" :data='{"path":"/rss/:id?","categories":["traditional-media"],"example":"/cnbc/rss","parameters":{"id":"Channel ID, can be found in Official RSS URL, `100003114` (Top News) by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnbc.com/id/:id/device/rss/rss.html"],"target":"/rss/:id"}],"name":"Full article RSS","maintainers":["TonyRL"],"description":"Provides a better reading experience (full articles) over the official ones.\n\n  Support all channels, refer to [CNBC RSS feeds](https://www.cnbc.com/rss-feeds/).","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cnbc" :data='{"path":"/rss/:id?","categories":["traditional-media"],"example":"/cnbc/rss","parameters":{"id":"Channel ID, can be found in Official RSS URL, `100003114` (Top News) by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cnbc.com/id/:id/device/rss/rss.html"],"target":"/rss/:id"}],"name":"Full article RSS","maintainers":["TonyRL"],"description":"Provides a better reading experience (full articles) over the official ones.\n\n  Support all channels, refer to [CNBC RSS feeds](https://www.cnbc.com/rss-feeds/).","location":"rss.ts"}' :test='{"code":0}' />
 
 Provides a better reading experience (full articles) over the official ones.
 
@@ -623,7 +623,7 @@ Free articles only.
 
 ### 财新一线 <Site url="caixin.com" size="sm" />
 
-<Route namespace="caixin" :data='{"path":"/k","categories":["traditional-media"],"example":"/caixin/k","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"财新一线","maintainers":["boypt"],"location":"k.ts"}' :test='{"code":0}' />
+<Route namespace="caixin" :data='{"path":"/k","categories":["traditional-media"],"example":"/caixin/k","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"财新一线","maintainers":["boypt"],"location":"k.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 财新周刊 <Site url="weekly.caixin.com/" size="sm" />
 
@@ -631,7 +631,7 @@ Free articles only.
 
 ### 首页新闻 <Site url="caixin.com/" size="sm" />
 
-<Route namespace="caixin" :data='{"path":"/article","categories":["traditional-media"],"example":"/caixin/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["caixin.com/"]}],"name":"首页新闻","maintainers":["EsuRt"],"url":"caixin.com/","location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="caixin" :data='{"path":"/article","categories":["traditional-media"],"example":"/caixin/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["caixin.com/"]}],"name":"首页新闻","maintainers":["EsuRt"],"url":"caixin.com/","location":"article.ts"}' :test='{"code":0}' />
 
 ### 新闻分类 <Site url="caixin.com" size="sm" />
 
@@ -930,7 +930,7 @@ Column 列表：
 
 ### 最新报道 <Site url="china.kyodonews.net" size="sm" />
 
-<Route namespace="kyodonews" :data='{"path":"/:language?/:keyword?","categories":["traditional-media"],"example":"/kyodonews","parameters":{"language":"语言: `china` = 简体中文 (默认), `tchina` = 繁體中文","keyword":"关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新报道","maintainers":["Rongronggg9"],"description":"`keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kyodonews" :data='{"path":"/:language?/:keyword?","categories":["traditional-media"],"example":"/kyodonews","parameters":{"language":"语言: `china` = 简体中文 (默认), `tchina` = 繁體中文","keyword":"关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新报道","maintainers":["Rongronggg9"],"description":"`keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 `keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。
 
@@ -938,7 +938,7 @@ Column 列表：
 
 ### 客户端 <Site url="gzdaily.cn" size="sm" />
 
-<Route namespace="gzdaily" :data='{"path":"/app/:column?","categories":["traditional-media"],"example":"/gzdaily/app/74","parameters":{"column":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"客户端","maintainers":["TimWu007"],"description":":::tip\n  在北京时间深夜可能无法获取内容。\n  :::\n\n  常用栏目 ID：\n\n  | 栏目名 | ID   |\n  | ------ | ---- |\n  | 首页   | 74   |\n  | 时局   | 374  |\n  | 广州   | 371  |\n  | 大湾区 | 397  |\n  | 城区   | 2980 |","location":"app.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gzdaily" :data='{"path":"/app/:column?","categories":["traditional-media"],"example":"/gzdaily/app/74","parameters":{"column":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"客户端","maintainers":["TimWu007"],"description":":::tip\n  在北京时间深夜可能无法获取内容。\n  :::\n\n  常用栏目 ID：\n\n  | 栏目名 | ID   |\n  | ------ | ---- |\n  | 首页   | 74   |\n  | 时局   | 374  |\n  | 广州   | 371  |\n  | 大湾区 | 397  |\n  | 城区   | 2980 |","location":"app.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   在北京时间深夜可能无法获取内容。
@@ -1063,7 +1063,7 @@ Column 列表：
 
 ### 学习时报 <Site url="paper.cntheory.com" size="sm" />
 
-<Route namespace="cntheory" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/cntheory/paper","parameters":{"id":"板块，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学习时报","maintainers":["nczitzk"],"description":"如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。","location":"paper.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cntheory" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/cntheory/paper","parameters":{"id":"板块，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学习时报","maintainers":["nczitzk"],"description":"如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。","location":"paper.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。
 

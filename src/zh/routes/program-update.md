@@ -37,6 +37,16 @@
   | [win11](https://rsshub.app/423down/win11)   | [win10](https://rsshub.app/423down/win10)   | [win7](https://rsshub.app/423down/win7)   | [win7/winxp](https://rsshub.app/423down/win7/winxp) | [pe-system](https://rsshub.app/423down/pe-system) |
   
 
+## Alpine Linux <Site url="alpinelinux.org"/>
+
+Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox.
+
+### Packages <Site url="alpinelinux.org" size="sm" />
+
+<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='undefined' />
+
+Alpine Linux packages update
+
 ## Amazon <Site url="amazon.com"/>
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
@@ -117,7 +127,7 @@
 
 ### 更新情报 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/app/:id?","categories":["program-update"],"example":"/bilibili/app/android","parameters":{"id":"客户端 id，见下表，默认为安卓版"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新情报","maintainers":["nczitzk"],"description":"| 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |\n| ------- | --------- | ---------- | ------ | ---------------- |\n| android | iphone    | ipad       | win    | android_tv_yst |","location":"app.ts"}' :test='{"code":1,"message":"expected [ &#39;https://app.bilibili.com/&#39; ] to not include &#39;https://app.bilibili.com/&#39;"}' />
+<Route namespace="bilibili" :data='{"path":"/app/:id?","categories":["program-update"],"example":"/bilibili/app/android","parameters":{"id":"客户端 id，见下表，默认为安卓版"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新情报","maintainers":["nczitzk"],"description":"| 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |\n| ------- | --------- | ---------- | ------ | ---------------- |\n| android | iphone    | ipad       | win    | android_tv_yst |","location":"app.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |
 | ------- | --------- | ---------- | ------ | ---------------- |
@@ -139,7 +149,7 @@
 
 ### Latest models <Site url="civitai.com/" size="sm" />
 
-<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":0}' />
+<Route namespace="civitai" :data='{"path":"/models","categories":["program-update"],"example":"/civitai/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["civitai.com/"]}],"name":"Latest models","maintainers":["DIYgod"],"url":"civitai.com/","location":"models.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Model discussions <Site url="civitai.com" size="sm" />
 
@@ -177,7 +187,7 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Changelog <Site url="cn.eagle.cool" size="sm" />
 
-<Route namespace="eagle" :data='{"path":"/changelog/:language?","categories":["program-update"],"example":"/eagle/changelog/en","parameters":{"language":"Language, see list, default to be `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Changelog","maintainers":["tigercubden"],"description":"Language\n\n  | Simplified Chinese | Traditional Chinese | English |\n  | ------------------ | ------------------- | ------- |\n  | cn                 | tw                  | en      |","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="eagle" :data='{"path":"/changelog/:language?","categories":["program-update"],"example":"/eagle/changelog/en","parameters":{"language":"Language, see list, default to be `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Changelog","maintainers":["tigercubden"],"description":"Language\n\n  | Simplified Chinese | Traditional Chinese | English |\n  | ------------------ | ------------------- | ------- |\n  | cn                 | tw                  | en      |","location":"changelog.ts"}' :test='{"code":0}' />
 
 Language
 
@@ -213,11 +223,11 @@ Language
 
 ### Script Feedback <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":0}' />
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -230,7 +240,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -243,7 +253,7 @@ Language
 
 ### Script Version History <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":0}' />
 
 ## Infuse <Site url="firecore.com"/>
 
