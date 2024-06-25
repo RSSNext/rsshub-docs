@@ -341,7 +341,7 @@ GitHub provides some official RSS feeds:
 
 ### 用户 <Site url="ycombinator.com" size="sm" />
 
-<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 订阅特定用户的内容
 
@@ -363,7 +363,7 @@ GitHub provides some official RSS feeds:
 
 ### Profile <Site url="hackmd.io" size="sm" />
 
-<Route namespace="hackmd" :data='{"path":"/profile/:path","categories":["programming"],"example":"/hackmd/profile/hackmd","parameters":{"path":"userpath or teampath"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Profile","maintainers":["Yukaii","kaiix"],"location":"profile.ts"}' :test='{"code":0}' />
+<Route namespace="hackmd" :data='{"path":"/profile/:path","categories":["programming"],"example":"/hackmd/profile/hackmd","parameters":{"path":"userpath or teampath"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Profile","maintainers":["Yukaii","kaiix"],"location":"profile.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## HelloGitHub <Site url="hellogithub.com"/>
 
@@ -385,7 +385,7 @@ GitHub provides some official RSS feeds:
 
 ### 文章 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hellogithub" :data='{"path":["/article/:sort?/:id?"],"categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `hot`，即热门","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 热门 | 最近 |
   | ---- | ---- |
@@ -437,7 +437,7 @@ GitHub provides some official RSS feeds:
 
 ### 博客最新文章 <Site url="konghq.com/blog/*" size="sm" />
 
-<Route namespace="konghq" :data='{"path":"/blog-posts","categories":["programming"],"example":"/konghq/blog-posts","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["konghq.com/blog/*"]}],"name":"博客最新文章","maintainers":["piglei"],"url":"konghq.com/blog/*","location":"blog-posts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="konghq" :data='{"path":"/blog-posts","categories":["programming"],"example":"/konghq/blog-posts","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["konghq.com/blog/*"]}],"name":"博客最新文章","maintainers":["piglei"],"url":"konghq.com/blog/*","location":"blog-posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## LeetCode <Site url="leetcode.com"/>
 

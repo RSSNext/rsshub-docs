@@ -125,7 +125,7 @@
 
 ### 角色周边 <Site url="www.hpoi.net" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/character/:id/:order?","categories":["anime"],"example":"/hpoi/items/character/1035374","parameters":{"id":"角色 ID","order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"角色周边","maintainers":["DIYgod"],"description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"character.ts"}' :test='{"code":0}' />
+<Route namespace="hpoi" :data='{"path":"/items/character/:id/:order?","categories":["anime"],"example":"/hpoi/items/character/1035374","parameters":{"id":"角色 ID","order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"角色周边","maintainers":["DIYgod"],"description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"character.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
   | ------- | ---- | ------ | -------- | -------- | ------ |
@@ -133,7 +133,7 @@
 
 ### 情报 <Site url="www.hpoi.net" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/info/:type?","categories":["anime"],"example":"/hpoi/info/all","parameters":{"type":"分类, 见下表, 默认为`all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"情报","maintainers":["sanmmm DIYgod"],"description":"分类\n\n  | 全部 | 手办  | 模型  |\n  | ---- | ----- | ----- |\n  | all  | hobby | model |","location":"info.ts"}' :test='{"code":0}' />
+<Route namespace="hpoi" :data='{"path":"/info/:type?","categories":["anime"],"example":"/hpoi/info/all","parameters":{"type":"分类, 见下表, 默认为`all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"情报","maintainers":["sanmmm DIYgod"],"description":"分类\n\n  | 全部 | 手办  | 模型  |\n  | ---- | ----- | ----- |\n  | all  | hobby | model |","location":"info.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 分类
 
@@ -147,7 +147,7 @@
 
 ### 所有周边 <Site url="www.hpoi.net/hobby/all" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/all/:order?","categories":["anime"],"example":"/hpoi/items/all","parameters":{"order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/hobby/all"],"target":"/items/all"}],"name":"所有周边","maintainers":["DIYgod"],"url":"www.hpoi.net/hobby/all","description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"all.ts"}' :test='{"code":0}' />
+<Route namespace="hpoi" :data='{"path":"/items/all/:order?","categories":["anime"],"example":"/hpoi/items/all","parameters":{"order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/hobby/all"],"target":"/items/all"}],"name":"所有周边","maintainers":["DIYgod"],"url":"www.hpoi.net/hobby/all","description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"all.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
   | ------- | ---- | ------ | -------- | -------- | ------ |
@@ -155,7 +155,7 @@
 
 ### 用户动态 <Site url="www.hpoi.net" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/user/:user_id/:caty","categories":["anime"],"example":"/hpoi/user/116297/buy","parameters":{"user_id":"用户ID","caty":"类别, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["DIYgod","luyuhuang"],"description":"| 想买 | 预定     | 已入 | 关注 | 有过   |\n  | ---- | -------- | ---- | ---- | ------ |\n  | want | preorder | buy  | care | resell |","location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="hpoi" :data='{"path":"/user/:user_id/:caty","categories":["anime"],"example":"/hpoi/user/116297/buy","parameters":{"user_id":"用户ID","caty":"类别, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户动态","maintainers":["DIYgod","luyuhuang"],"description":"| 想买 | 预定     | 已入 | 关注 | 有过   |\n  | ---- | -------- | ---- | ---- | ------ |\n  | want | preorder | buy  | care | resell |","location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 想买 | 预定     | 已入 | 关注 | 有过   |
   | ---- | -------- | ---- | ---- | ------ |
@@ -163,7 +163,7 @@
 
 ### 作品周边 <Site url="www.hpoi.net" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/work/:id/:order?","categories":["anime"],"example":"/hpoi/items/work/4117491","parameters":{"id":"作品 ID","order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品周边","maintainers":["DIYgod"],"description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"work.ts"}' :test='{"code":0}' />
+<Route namespace="hpoi" :data='{"path":"/items/work/:id/:order?","categories":["anime"],"example":"/hpoi/items/work/4117491","parameters":{"id":"作品 ID","order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品周边","maintainers":["DIYgod"],"description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"work.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
   | ------- | ---- | ------ | -------- | -------- | ------ |
@@ -248,11 +248,11 @@ Sources
 
 ### Advanced Search <Site url="nhentai.net" size="sm" />
 
-<Route namespace="nhentai" :data='{"path":"/search/:keyword/:mode?","example":"/nhentai/search/language%3Ajapanese+-scat+-yaoi+-guro+-\"mosaic+censorship\"","parameters":{"keyword":"Keywords for search. You can copy the content after `q=` after searching on the original website, or you can enter it directly. See the [official website](https://nhentai.net/info/) for details","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"},"features":{"antiCrawler":true,"supportBT":true},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Advanced Search","maintainers":["MegrezZhu","hoilc"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nhentai" :data='{"path":"/search/:keyword/:mode?","example":"/nhentai/search/language%3Ajapanese+-scat+-yaoi+-guro+-\"mosaic+censorship\"","parameters":{"keyword":"Keywords for search. You can copy the content after `q=` after searching on the original website, or you can enter it directly. See the [official website](https://nhentai.net/info/) for details","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"},"features":{"antiCrawler":true,"supportBT":true},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/:key/:keyword"}],"name":"Advanced Search","maintainers":["MegrezZhu","hoilc"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Filter <Site url="nhentai.net" size="sm" />
 
-<Route namespace="nhentai" :data='{"path":"/index/:key/:keyword/:mode?","example":"/nhentai/index/language/chinese","parameters":{"key":"Filter term, can be: `parody`, `character`, `tag`, `artist`, `group`, `language` or `category`","keyword":"Filter value","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"},"features":{"antiCrawler":true,"supportBT":true},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/index/:key/:keyword"}],"name":"Filter","maintainers":["MegrezZhu","hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nhentai" :data='{"path":"/index/:key/:keyword/:mode?","example":"/nhentai/index/language/chinese","parameters":{"key":"Filter term, can be: `parody`, `character`, `tag`, `artist`, `group`, `language` or `category`","keyword":"Filter value","mode":"mode, `simple` to only show cover, `detail` to show all pages, `torrent` to include Magnet URI, need login, refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations), default to `simple`"},"features":{"antiCrawler":true,"supportBT":true},"radar":[{"source":["nhentai.net/:key/:keyword"],"target":"/index/:key/:keyword"}],"name":"Filter","maintainers":["MegrezZhu","hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## NT动漫 <Site url="www.ntdm9.com"/>
 

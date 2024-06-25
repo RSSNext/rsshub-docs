@@ -80,7 +80,7 @@ Country
 
 ### Products <Site url="gumroad.com" size="sm" />
 
-<Route namespace="gumroad" :data='{"path":"/:username/:products","categories":["shopping"],"example":"/gumroad/afkmaster/Eve10","parameters":{"username":"username, can be found in URL","products":"products name, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Products","maintainers":["Fatpandac"],"description":"`https://afkmaster.gumroad.com/l/Eve10` -> `/gumroad/afkmaster/Eve10`","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gumroad" :data='{"path":"/:username/:products","categories":["shopping"],"example":"/gumroad/afkmaster/Eve10","parameters":{"username":"username, can be found in URL","products":"products name, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Products","maintainers":["Fatpandac"],"description":"`https://afkmaster.gumroad.com/l/Eve10` -> `/gumroad/afkmaster/Eve10`","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 `https://afkmaster.gumroad.com/l/Eve10` -> `/gumroad/afkmaster/Eve10`
 
@@ -233,7 +233,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 一小时风云榜 <Site url="guangdiu.com/rank" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/rank","categories":["shopping"],"example":"/guangdiu/rank","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guangdiu.com/rank"]}],"name":"一小时风云榜","maintainers":["fatpandac"],"url":"guangdiu.com/rank","location":"rank.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="guangdiu" :data='{"path":"/rank","categories":["shopping"],"example":"/guangdiu/rank","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guangdiu.com/rank"]}],"name":"一小时风云榜","maintainers":["fatpandac"],"url":"guangdiu.com/rank","location":"rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 京东 <Site url="item.jd.com"/>
 

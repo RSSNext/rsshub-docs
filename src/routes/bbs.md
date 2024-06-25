@@ -166,11 +166,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分区帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/post/:tid/:authorId?","categories":["bbs"],"example":"/nga/post/18449558","parameters":{"tid":"帖子 id, 可在帖子 URL 找到","authorId":"作者 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["xyqfer","syrinka"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nga" :data='{"path":"/post/:tid/:authorId?","categories":["bbs"],"example":"/nga/post/18449558","parameters":{"tid":"帖子 id, 可在帖子 URL 找到","authorId":"作者 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["xyqfer","syrinka"],"location":"post.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Pikabu <Site url="pikabu.ru"/>
 
@@ -434,7 +434,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Zone <Site url="zone.huoxian.cn" size="sm" />
 
-<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":0}' />
 
 ## 集思录 <Site url="jisilu.cn"/>
 

@@ -127,7 +127,7 @@ News from the official site of men's professional tennis.
 
 ### 文章 <Site url="clickme.net" size="sm" />
 
-<Route namespace="clickme" :data='{"path":"/:site/:grouping/:name","categories":["other"],"example":"/clickme/default/category/beauty","parameters":{"site":"站点，`default`为普通站，`r18`为成人站，其它值默认为普通站","grouping":"分组方式，`category`为分类，`tag`为标签，其他值默认为分类","name":"分类名或标签名，分类名为英文，可以在分类 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="clickme" :data='{"path":"/:site/:grouping/:name","categories":["other"],"example":"/clickme/default/category/beauty","parameters":{"site":"站点，`default`为普通站，`r18`为成人站，其它值默认为普通站","grouping":"分组方式，`category`为分类，`tag`为标签，其他值默认为分类","name":"分类名或标签名，分类名为英文，可以在分类 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## CuriousCat <Site url="curiouscat.live"/>
 
@@ -333,7 +333,7 @@ News from the official site of men's professional tennis.
 
 ### Insights <Site url="kpmg.com/xx/en/home/insights.html" size="sm" />
 
-<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kpmg" :data='{"path":"/insights/:lang?","example":"/kpmg/insights","parameters":{"lang":"Language, either `en` or `zh`"},"radar":[{"source":["kpmg.com/xx/en/home/insights.html"],"target":"/insights/en"},{"source":["kpmg.com/cn/zh/home/insights.html"],"target":"/insights/zh"}],"name":"Insights","maintainers":["LogicJake"],"url":"kpmg.com/xx/en/home/insights.html","zh":{"name":"洞察"},"location":"insights.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Layoffs.fyi <Site url="layoffs.fyi"/>
 
@@ -826,7 +826,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 发现用户 <Site url="afdian.net" size="sm" />
 
-<Route namespace="afdian" :data='{"path":"/explore/:type/:category?","categories":["other"],"example":"/afdian/explore/hot/所有","parameters":{"type":"分类","category":"目录类型，默认为 `所有`"},"name":"发现用户","maintainers":["sanmmm"],"description":"分类\n\n    | 推荐 | 最热 |\n    | ---- | ---- |\n    | rec  | hot  |\n  \n    目录类型\n  \n    | 所有 | 绘画 | 视频 | 写作 | 游戏 | 音乐 | 播客 | 摄影 | 技术 | Vtuber | 舞蹈 | 体育 | 旅游 | 美食 | 时尚 | 数码 | 动画 | 其他 |\n    | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 所有 | 绘画 | 视频 | 写作 | 游戏 | 音乐 | 播客 | 摄影 | 技术 | Vtuber | 舞蹈 | 体育 | 旅游 | 美食 | 时尚 | 数码 | 动画 | 其他 |","location":"explore.ts"}' :test='{"code":0}' />
+<Route namespace="afdian" :data='{"path":"/explore/:type/:category?","categories":["other"],"example":"/afdian/explore/hot/所有","parameters":{"type":"分类","category":"目录类型，默认为 `所有`"},"name":"发现用户","maintainers":["sanmmm"],"description":"分类\n\n    | 推荐 | 最热 |\n    | ---- | ---- |\n    | rec  | hot  |\n  \n    目录类型\n  \n    | 所有 | 绘画 | 视频 | 写作 | 游戏 | 音乐 | 播客 | 摄影 | 技术 | Vtuber | 舞蹈 | 体育 | 旅游 | 美食 | 时尚 | 数码 | 动画 | 其他 |\n    | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 所有 | 绘画 | 视频 | 写作 | 游戏 | 音乐 | 播客 | 摄影 | 技术 | Vtuber | 舞蹈 | 体育 | 旅游 | 美食 | 时尚 | 数码 | 动画 | 其他 |","location":"explore.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 分类
 
@@ -874,7 +874,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 研究成果 <Site url="www.research.ke.com/researchResults" size="sm" />
 
-<Route namespace="ke" :data='{"path":"/researchResults","categories":["other"],"example":"/ke/researchResults","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.research.ke.com/researchResults"]}],"name":"研究成果","maintainers":["shaomingbo"],"url":"www.research.ke.com/researchResults","location":"results.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ke" :data='{"path":"/researchResults","categories":["other"],"example":"/ke/researchResults","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.research.ke.com/researchResults"]}],"name":"研究成果","maintainers":["shaomingbo"],"url":"www.research.ke.com/researchResults","location":"results.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 笔趣阁 <Site url="xbiquwx.la"/>
 
@@ -952,7 +952,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 日榜 <Site url="data.guduodata.com/" size="sm" />
 
-<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":0}' />
+<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 观海新闻 <Site url="guanhai.com.cn"/>
 
@@ -1070,7 +1070,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 快递订单追踪 <Site url="kuaidi100.com" size="sm" />
 
-<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kuaidi100" :data='{"path":"/track/:number/:id/:phone?","categories":["other"],"example":"/kuaidi100/track/shunfeng/SF1007896781640/0383","parameters":{"number":"快递公司代号","id":"订单号","phone":"手机号后四位（仅顺丰）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快递订单追踪","maintainers":["NeverBehave"],"description":"快递公司代号如果不能确定，可通过下方快递列表获得。\n\n  :::warning\n  1.  构造链接前请确认所有参数正确：错误`快递公司 - 订单号`组合将会缓存信息一小段时间防止产生无用查询\n  2.  正常查询的订单在未签收状态下不会被缓存：请控制查询频率\n  3.  订单完成后请尽快取消订阅，避免资源浪费\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 快递公司代号如果不能确定，可通过下方快递列表获得。
 

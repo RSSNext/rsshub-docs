@@ -68,11 +68,11 @@ Return results from 2020
 
 ### Essays <Site url="caareviews.org/reviews/essay" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/essay","categories":["journal"],"example":"/caareviews/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/essay"]}],"name":"Essays","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/essay","location":"essay.ts"}' :test='{"code":0}' />
+<Route namespace="caareviews" :data='{"path":"/essay","categories":["journal"],"example":"/caareviews/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/essay"]}],"name":"Essays","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Exhibition Reviews <Site url="caareviews.org/reviews/exhibition" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":0}' />
+<Route namespace="caareviews" :data='{"path":"/exhibition","categories":["journal"],"example":"/caareviews/exhibition","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/exhibition"]}],"name":"Exhibition Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/exhibition","location":"exhibition.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Cool Papers <Site url="papers.cool"/>
 

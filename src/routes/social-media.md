@@ -483,7 +483,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### 运动日记 <Site url="gotokeep.com" size="sm" />
 
-<Route namespace="keep" :data='{"path":"/user/:id","categories":["social-media"],"example":"/keep/user/556b02c1ab59390afea671ea","parameters":{"id":"Keep 用户 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gotokeep.com/users/:id"]}],"name":"运动日记","maintainers":["Dectinc","DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="keep" :data='{"path":"/user/:id","categories":["social-media"],"example":"/keep/user/556b02c1ab59390afea671ea","parameters":{"id":"Keep 用户 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gotokeep.com/users/:id"]}],"name":"运动日记","maintainers":["Dectinc","DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Lemmy 
 
@@ -1259,7 +1259,7 @@ Chart
 
 ### 用户作品评论动态 <Site url="qq.com" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/kg/reply/:playId","categories":["social-media"],"example":"/qq/kg/reply/OhXHMdO1VxLWQOOm","parameters":{"playId":"音频页 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户作品评论动态","maintainers":["zhangxiang012"],"location":"kg/reply.ts"}' :test='{"code":0}' />
+<Route namespace="qq" :data='{"path":"/kg/reply/:playId","categories":["social-media"],"example":"/qq/kg/reply/OhXHMdO1VxLWQOOm","parameters":{"playId":"音频页 ID, 可在对应页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户作品评论动态","maintainers":["zhangxiang012"],"location":"kg/reply.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 用户作品列表 <Site url="qq.com" size="sm" />
 
