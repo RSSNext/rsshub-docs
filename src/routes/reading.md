@@ -16,7 +16,7 @@
 
 ### chapter <Site url="syosetu.org" size="sm" />
 
-<Route namespace="hameln" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hameln/chapter/264928","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["syosetu.org/novel/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)","location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hameln" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hameln/chapter/264928","parameters":{"id":"Novel id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["syosetu.org/novel/:id"]}],"name":"chapter","maintainers":["huangliangshusheng"],"description":"Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)","location":"chapter.ts"}' :test='{"code":0}' />
 
 Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)
 
@@ -44,7 +44,7 @@ Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)
 
 ### Latest Magazine <Site url="magazinelib.com" size="sm" />
 
-<Route namespace="magazinelib" :data='{"path":"/latest-magazine/:query?","categories":["reading"],"example":"/magazinelib/latest-magazine/new+yorker","parameters":{"query":"query, search page querystring"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Latest Magazine","maintainers":["EthanWng97"],"description":"For instance, when doing search at [https://magazinelib.com](https://magazinelib.com) and you get url `https://magazinelib.com/?s=new+yorker`, the query is `new+yorker`","location":"latest-magazine.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="magazinelib" :data='{"path":"/latest-magazine/:query?","categories":["reading"],"example":"/magazinelib/latest-magazine/new+yorker","parameters":{"query":"query, search page querystring"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Latest Magazine","maintainers":["EthanWng97"],"description":"For instance, when doing search at [https://magazinelib.com](https://magazinelib.com) and you get url `https://magazinelib.com/?s=new+yorker`, the query is `new+yorker`","location":"latest-magazine.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 For instance, when doing search at [https://magazinelib.com](https://magazinelib.com) and you get url `https://magazinelib.com/?s=new+yorker`, the query is `new+yorker`
 
@@ -82,11 +82,11 @@ For instance, when doing search at [https://magazinelib.com](https://magazinelib
 
 ### 归档 <Site url="sobooks.net" size="sm" />
 
-<Route namespace="sobooks" :data='{"path":"/date/:date?","categories":["reading"],"example":"/sobooks/date/2020-11","parameters":{"date":"日期，见例子，默认为当前年月"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sobooks.net/:category"],"target":"/:category"}],"name":"归档","maintainers":["nczitzk"],"location":"date.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sobooks" :data='{"path":"/date/:date?","categories":["reading"],"example":"/sobooks/date/2020-11","parameters":{"date":"日期，见例子，默认为当前年月"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sobooks.net/:category"],"target":"/:category"}],"name":"归档","maintainers":["nczitzk"],"location":"date.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 首页 <Site url="sobooks.net" size="sm" />
 
-<Route namespace="sobooks" :data='{"path":"/:category?","categories":["reading"],"example":"/sobooks","parameters":{"category":"分类, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sobooks.net/:category"],"target":"/:category"}],"name":"首页","maintainers":["nczitzk"],"description":"| 分类     | 分类名           |\n  | -------- | ---------------- |\n  | 小说文学 | xiaoshuowenxue   |\n  | 历史传记 | lishizhuanji     |\n  | 人文社科 | renwensheke      |\n  | 励志成功 | lizhichenggong   |\n  | 经济管理 | jingjiguanli     |\n  | 学习教育 | xuexijiaoyu      |\n  | 生活时尚 | shenghuoshishang |\n  | 英文原版 | yingwenyuanban   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sobooks" :data='{"path":"/:category?","categories":["reading"],"example":"/sobooks","parameters":{"category":"分类, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sobooks.net/:category"],"target":"/:category"}],"name":"首页","maintainers":["nczitzk"],"description":"| 分类     | 分类名           |\n  | -------- | ---------------- |\n  | 小说文学 | xiaoshuowenxue   |\n  | 历史传记 | lishizhuanji     |\n  | 人文社科 | renwensheke      |\n  | 励志成功 | lizhichenggong   |\n  | 经济管理 | jingjiguanli     |\n  | 学习教育 | xuexijiaoyu      |\n  | 生活时尚 | shenghuoshishang |\n  | 英文原版 | yingwenyuanban   |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 分类     | 分类名           |
   | -------- | ---------------- |
@@ -202,7 +202,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 章节 <Site url="hbooker.com" size="sm" />
 
-<Route namespace="hbooker" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hbooker/chapter/100113279","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbooker.com/book/:id"]}],"name":"章节","maintainers":["keocheung"],"location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hbooker" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/hbooker/chapter/100113279","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbooker.com/book/:id"]}],"name":"章节","maintainers":["keocheung"],"location":"chapter.ts"}' :test='{"code":0}' />
 
 ## 晋江文学城 <Site url="jjwxc.net"/>
 

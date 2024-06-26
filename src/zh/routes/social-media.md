@@ -87,7 +87,7 @@
 
 ### 分区视频排行榜 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/partion/ranking/:tid/:days?/:disableEmbed?","categories":["social-media"],"example":"/bilibili/partion/ranking/171/3","parameters":{"tid":"分区 id, 见上方表格","days":"缺省为 7, 指最近多少天内的热度排序","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频排行榜","maintainers":["lengthmin"],"location":"partion-ranking.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/partion/ranking/:tid/:days?/:disableEmbed?","categories":["social-media"],"example":"/bilibili/partion/ranking/171/3","parameters":{"tid":"分区 id, 见上方表格","days":"缺省为 7, 指最近多少天内的热度排序","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频排行榜","maintainers":["lengthmin"],"location":"partion-ranking.ts"}' :test='{"code":0}' />
 
 ### 分区视频 <Site url="www.bilibili.com" size="sm" />
 
@@ -217,7 +217,7 @@
 
 ### 会员购新品上架 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/mall/new/:category?","categories":["social-media"],"example":"/bilibili/mall/new/1","parameters":{"category":"分类，默认全部，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"会员购新品上架","maintainers":["DIYgod"],"description":"| 全部 | 手办 | 魔力赏 | 周边 | 游戏 |\n  | ---- | ---- | ------ | ---- | ---- |\n  | 0    | 1    | 7      | 3    | 6    |","location":"mall-new.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/mall/new/:category?","categories":["social-media"],"example":"/bilibili/mall/new/1","parameters":{"category":"分类，默认全部，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"会员购新品上架","maintainers":["DIYgod"],"description":"| 全部 | 手办 | 魔力赏 | 周边 | 游戏 |\n  | ---- | ---- | ------ | ---- | ---- |\n  | 0    | 1    | 7      | 3    | 6    |","location":"mall-new.ts"}' :test='{"code":0}' />
 
 | 全部 | 手办 | 魔力赏 | 周边 | 游戏 |
   | ---- | ---- | ------ | ---- | ---- |
@@ -235,7 +235,7 @@
 
 ### 漫画更新 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/manga/update/:comicid","categories":["social-media"],"example":"/bilibili/manga/update/26009","parameters":{"comicid":"漫画 id, 可在 URL 中找到, 支持带有`mc`前缀"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["manga.bilibili.com/detail/:comicid"]}],"name":"漫画更新","maintainers":["hoilc"],"location":"manga-update.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/manga/update/:comicid","categories":["social-media"],"example":"/bilibili/manga/update/26009","parameters":{"comicid":"漫画 id, 可在 URL 中找到, 支持带有`mc`前缀"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["manga.bilibili.com/detail/:comicid"]}],"name":"漫画更新","maintainers":["hoilc"],"location":"manga-update.ts"}' :test='{"code":0}' />
 
 ### 排行榜 <Site url="www.bilibili.com" size="sm" />
 
@@ -255,7 +255,7 @@
 
 ### 视频选集列表 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/video/page/:bvid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/video/page/BV1i7411M7N9","parameters":{"bvid":"可在视频页 URL 中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频选集列表","maintainers":["sxzz"],"location":"page.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/video/page/:bvid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/video/page/BV1i7411M7N9","parameters":{"bvid":"可在视频页 URL 中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频选集列表","maintainers":["sxzz"],"location":"page.ts"}' :test='{"code":0}' />
 
 ### 视频评论 <Site url="www.bilibili.com" size="sm" />
 
@@ -335,7 +335,7 @@
 
 ### Post <Site url="bsky.app" size="sm" />
 
-<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
 
 ## Cara <Site url="cara.app"/>
 
@@ -552,7 +552,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User <Site url="www.lofter.com" size="sm" />
 
-<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media","popular"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media","popular"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## Mastodon <Site url="mastodon.social"/>
 
@@ -567,13 +567,13 @@ These feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for us
 
 ### Instance timeline (local) <Site url="mastodon.social" size="sm" />
 
-<Route namespace="mastodon" :data='{"path":"/timeline/:site/:only_media?","categories":["social-media"],"example":"/mastodon/timeline/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (local)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-local.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mastodon" :data='{"path":"/timeline/:site/:only_media?","categories":["social-media"],"example":"/mastodon/timeline/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (local)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-local.ts"}' :test='{"code":0}' />
 
 If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
 
 ### Instance timeline (federated) <Site url="mastodon.social" size="sm" />
 
-<Route namespace="mastodon" :data='{"path":"/remote/:site/:only_media?","categories":["social-media"],"example":"/mastodon/remote/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (federated)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-remote.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mastodon" :data='{"path":"/remote/:site/:only_media?","categories":["social-media"],"example":"/mastodon/remote/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (federated)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-remote.ts"}' :test='{"code":0}' />
 
 If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
 
@@ -583,7 +583,7 @@ If the instance address is not `mastodon.social` or `pawoo.net`, then the route 
 
 ### User timeline <Site url="mastodon.social" size="sm" />
 
-<Route namespace="mastodon" :data='{"path":"/acct/:acct/statuses/:only_media?","categories":["social-media"],"example":"/mastodon/acct/CatWhitney@mastodon.social/statuses","parameters":{"acct":"Webfinger account URI, like `user@host`","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["notofoe"],"description":"Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.\nIf the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.\nHowever, you can still specify these route-specific configurations if you need to override them.","location":"acct.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="mastodon" :data='{"path":"/acct/:acct/statuses/:only_media?","categories":["social-media"],"example":"/mastodon/acct/CatWhitney@mastodon.social/statuses","parameters":{"acct":"Webfinger account URI, like `user@host`","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["notofoe"],"description":"Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.\nIf the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.\nHowever, you can still specify these route-specific configurations if you need to override them.","location":"acct.ts"}' :test='{"code":0}' />
 
 Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.
 If the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.
@@ -593,7 +593,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Featured Notes <Site url="misskey.io" size="sm" />
 
-<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media"],"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media"],"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":0}' />
 
 ## pixiv <Site url="www.pixiv.net"/>
 
@@ -957,7 +957,7 @@ Chart
 
 ### 博主 <Site url="douyin.com" size="sm" />
 
-<Route namespace="douyin" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao","parameters":{"uid":"uid，可在用户页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/user/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["Max-Tortoise","Rongronggg9"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyin" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media"],"example":"/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao","parameters":{"uid":"uid，可在用户页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/user/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["Max-Tortoise","Rongronggg9"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 豆瓣 <Site url="www.douban.com"/>
 
@@ -971,7 +971,7 @@ Chart
 
 ### 北美票房榜 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/ustop","categories":["social-media"],"example":"/douban/movie/ustop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北美票房榜","maintainers":["DIYgod"],"location":"other/ustop.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/ustop","categories":["social-media"],"example":"/douban/movie/ustop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北美票房榜","maintainers":["DIYgod"],"location":"other/ustop.ts"}' :test='{"code":0}' />
 
 ### 豆瓣书店 <Site url="www.douban.com" size="sm" />
 
@@ -979,11 +979,11 @@ Chart
 
 ### 豆瓣电影人 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/celebrity/:id/:sort?","categories":["social-media"],"example":"/douban/celebrity/1274261","parameters":{"id":"电影人 id","sort":"排序方式，缺省为 `time`（时间排序），可为 `vote` （评价排序）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影人","maintainers":["minimalistrojan"],"location":"other/celebrity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/celebrity/:id/:sort?","categories":["social-media"],"example":"/douban/celebrity/1274261","parameters":{"id":"电影人 id","sort":"排序方式，缺省为 `time`（时间排序），可为 `vote` （评价排序）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影人","maintainers":["minimalistrojan"],"location":"other/celebrity.ts"}' :test='{"code":0}' />
 
 ### 豆瓣电影分类 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/classification/:sort?/:score?/:tags?","categories":["social-media"],"example":"/douban/movie/classification/R/7.5/Netflix,2020","parameters":{"sort":"排序方式，默认为U","score":"最低评分，默认不限制","tags":"分类标签，多个标签之间用英文逗号分隔，常见的标签到豆瓣电影的分类页面查看，支持自定义标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影分类","maintainers":["zzwab"],"description":"排序方式可选值如下\n\n| 近期热门 | 标记最多 | 评分最高 | 最近上映 |\n| -------- | -------- | -------- | -------- |\n| U        | T        | S        | R        |","location":"other/classification.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/classification/:sort?/:score?/:tags?","categories":["social-media"],"example":"/douban/movie/classification/R/7.5/Netflix,2020","parameters":{"sort":"排序方式，默认为U","score":"最低评分，默认不限制","tags":"分类标签，多个标签之间用英文逗号分隔，常见的标签到豆瓣电影的分类页面查看，支持自定义标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣电影分类","maintainers":["zzwab"],"description":"排序方式可选值如下\n\n| 近期热门 | 标记最多 | 评分最高 | 最近上映 |\n| -------- | -------- | -------- | -------- |\n| U        | T        | S        | R        |","location":"other/classification.ts"}' :test='{"code":0}' />
 
 排序方式可选值如下
 
@@ -997,7 +997,7 @@ Chart
 
 ### 豆瓣豆列 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/doulist/:id","categories":["social-media"],"example":"/douban/doulist/37716774","parameters":{"id":"豆列id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣豆列","maintainers":["LogicJake","honue"],"location":"other/doulist.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/doulist/:id","categories":["social-media"],"example":"/douban/doulist/37716774","parameters":{"id":"豆列id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣豆列","maintainers":["LogicJake","honue"],"location":"other/doulist.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
@@ -1013,7 +1013,7 @@ Chart
 
 ### 豆瓣榜单与集合 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":0}' />
 
 | 榜单 / 集合        | 路由                          |
   | ------------------ | ----------------------------- |
@@ -1067,7 +1067,7 @@ Chart
 
 ### 话题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake"],"location":"other/topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake"],"location":"other/topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 即将上映的电影 <Site url="www.douban.com" size="sm" />
 
@@ -1123,7 +1123,7 @@ Chart
 
 ### 一周口碑榜 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":0}' />
 
 | 一周口碑电影榜      | 华语口碑剧集榜            |
   | ------------------- | ------------------------- |
@@ -1131,7 +1131,7 @@ Chart
 
 ### 用户想看 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":0}' />
 
 对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式
 
@@ -1141,7 +1141,7 @@ Chart
 
 ### 正在上映的电影 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":["/movie/playing","/movie/playing/:score"],"categories":["social-media"],"example":"/douban/movie/playing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"正在上映的电影","maintainers":["DIYgod"],"location":"other/playing.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":["/movie/playing","/movie/playing/:score"],"categories":["social-media"],"example":"/douban/movie/playing","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"正在上映的电影","maintainers":["DIYgod"],"location":"other/playing.ts"}' :test='{"code":0}' />
 
 ### 正在上映的电影 <Site url="www.douban.com" size="sm" />
 
@@ -1149,7 +1149,7 @@ Chart
 
 ### 最新增加的音乐 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/music/latest/:area?","categories":["social-media"],"example":"/douban/music/latest/chinese","parameters":{"area":"区域类型，默认全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新增加的音乐","maintainers":["fengkx","xyqfer"],"description":"| 华语    | 欧美    | 日韩        |\n  | ------- | ------- | ----------- |\n  | chinese | western | japankorean |","location":"other/latest-music.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/music/latest/:area?","categories":["social-media"],"example":"/douban/music/latest/chinese","parameters":{"area":"区域类型，默认全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新增加的音乐","maintainers":["fengkx","xyqfer"],"description":"| 华语    | 欧美    | 日韩        |\n  | ------- | ------- | ----------- |\n  | chinese | western | japankorean |","location":"other/latest-music.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 华语    | 欧美    | 日韩        |
   | ------- | ------- | ----------- |

@@ -144,33 +144,33 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 最热 / 最新帖子 <Site url="bbs.loongarch.org/" size="sm" />
 
-<Route namespace="loongarch" :data='{"path":"/post/:type?","categories":["bbs"],"example":"/loongarch/post/newest","parameters":{"type":"top 或 newest"},"radar":[{"source":["bbs.loongarch.org"]}],"name":"最热 / 最新帖子","maintainers":["ladeng07","3401797899"],"url":"bbs.loongarch.org/","location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="loongarch" :data='{"path":"/post/:type?","categories":["bbs"],"example":"/loongarch/post/newest","parameters":{"type":"top 或 newest"},"radar":[{"source":["bbs.loongarch.org"]}],"name":"最热 / 最新帖子","maintainers":["ladeng07","3401797899"],"url":"bbs.loongarch.org/","location":"post.ts"}' :test='{"code":0}' />
 
 ## Meteor <Site url="meteor.today"/>
 
 ### 看板列表 <Site url="meteor.today/" size="sm" />
 
-<Route namespace="meteor" :data='{"path":"/boards","categories":["bbs"],"example":"/meteor/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["meteor.today/"]}],"name":"看板列表","maintainers":["TonyRL"],"url":"meteor.today/","location":"boards.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="meteor" :data='{"path":"/boards","categories":["bbs"],"example":"/meteor/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["meteor.today/"]}],"name":"看板列表","maintainers":["TonyRL"],"url":"meteor.today/","location":"boards.ts"}' :test='{"code":1,"message":"expected [ …(307) ] to not include &#39;https://meteor.today/board/%E5%BD%B0%…&#39;"}' />
 
 ### 看板 <Site url="meteor.today" size="sm" />
 
-<Route namespace="meteor" :data='{"path":"/:board?","categories":["bbs"],"example":"/meteor/all","parameters":{"board":"看板 ID 或簡稱，可在 URL 或下方路由找到，預設為 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板","maintainers":["TonyRL"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="meteor" :data='{"path":"/:board?","categories":["bbs"],"example":"/meteor/all","parameters":{"board":"看板 ID 或簡稱，可在 URL 或下方路由找到，預設為 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板","maintainers":["TonyRL"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## MIUI <Site url="miui.com"/>
 
 ### 小米社区用户发帖 <Site url="miui.com" size="sm" />
 
-<Route namespace="miui" :data='{"path":"/community/user/:uid","categories":["bbs"],"example":"/miui/community/user/1200057564","parameters":{"uid":"小米用户 UID，可于网页版用户主页链接中 `uid` 项获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.vip.miui.com/page/info/mio/mio/homePage"]}],"name":"小米社区用户发帖","maintainers":["abc1763613206"],"location":"community/user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="miui" :data='{"path":"/community/user/:uid","categories":["bbs"],"example":"/miui/community/user/1200057564","parameters":{"uid":"小米用户 UID，可于网页版用户主页链接中 `uid` 项获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.vip.miui.com/page/info/mio/mio/homePage"]}],"name":"小米社区用户发帖","maintainers":["abc1763613206"],"location":"community/user.ts"}' :test='{"code":0}' />
 
 ## NGA <Site url="bbs.nga.cn"/>
 
 ### 分区帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nga" :data='{"path":"/forum/:fid/:recommend?","categories":["bbs"],"example":"/nga/forum/489","parameters":{"fid":"分区 id, 可在分区主页 URL 找到, 没有 fid 时 stid 同样适用","recommend":"是否只显示精华主题, 留空为否, 任意值为是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区帖子","maintainers":["xyqfer"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 帖子 <Site url="bbs.nga.cn" size="sm" />
 
-<Route namespace="nga" :data='{"path":"/post/:tid/:authorId?","categories":["bbs"],"example":"/nga/post/18449558","parameters":{"tid":"帖子 id, 可在帖子 URL 找到","authorId":"作者 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["xyqfer","syrinka"],"location":"post.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="nga" :data='{"path":"/post/:tid/:authorId?","categories":["bbs"],"example":"/nga/post/18449558","parameters":{"tid":"帖子 id, 可在帖子 URL 找到","authorId":"作者 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"帖子","maintainers":["xyqfer","syrinka"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Pikabu <Site url="pikabu.ru"/>
 
@@ -254,7 +254,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 看板列表 <Site url="irs.zuvio.com.tw" size="sm" />
 
-<Route namespace="zuvio" :data='{"path":"/student5/boards","categories":["bbs"],"example":"/zuvio/student5/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板列表","maintainers":["TonyRL"],"location":"boards.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zuvio" :data='{"path":"/student5/boards","categories":["bbs"],"example":"/zuvio/student5/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板列表","maintainers":["TonyRL"],"location":"boards.ts"}' :test='{"code":0}' />
 
 ### 校園話題 <Site url="irs.zuvio.com.tw" size="sm" />
 
@@ -364,7 +364,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 鱼吧帖子 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":0}' />
 
 | 回复时间排序 | 发布时间排序 |
   | ------------ | ------------ |
@@ -372,7 +372,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 鱼吧跟帖 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/post/:id","categories":["bbs"],"example":"/douyu/post/631737151576473201","parameters":{"id":"帖子 id，可在帖子页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/p/:id","yuba.douyu.com/"]}],"name":"鱼吧跟帖","maintainers":["nczitzk"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyu" :data='{"path":"/post/:id","categories":["bbs"],"example":"/douyu/post/631737151576473201","parameters":{"id":"帖子 id，可在帖子页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/p/:id","yuba.douyu.com/"]}],"name":"鱼吧跟帖","maintainers":["nczitzk"],"location":"post.ts"}' :test='{"code":0}' />
 
 ## 恩山无线论坛 <Site url="right.com.cn"/>
 
@@ -558,7 +558,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛 <Site url="xsijishe.com" size="sm" />
 
-<Route namespace="xsijishe" :data='{"path":"/forum/:fid","categories":["bbs"],"example":"/xsijishe/forum/51","parameters":{"fid":"子论坛 id"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛","maintainers":["akynazh"],"description":":::tip 关于子论坛 id 的获取方法\n  `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。\n  :::","location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xsijishe" :data='{"path":"/forum/:fid","categories":["bbs"],"example":"/xsijishe/forum/51","parameters":{"fid":"子论坛 id"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛","maintainers":["akynazh"],"description":":::tip 关于子论坛 id 的获取方法\n  `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。\n  :::","location":"forum.ts"}' :test='undefined' />
 
 :::tip 关于子论坛 id 的获取方法
   `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。

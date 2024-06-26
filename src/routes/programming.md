@@ -158,7 +158,7 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 ### Latest contests <Site url="www.codeforces.com/contests" size="sm" />
 
-<Route namespace="codeforces" :data='{"path":"/contests","categories":["programming"],"example":"/codeforces/contests","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.codeforces.com/contests"]}],"name":"Latest contests","maintainers":["Fatpandac"],"url":"www.codeforces.com/contests","location":"contests.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="codeforces" :data='{"path":"/contests","categories":["programming"],"example":"/codeforces/contests","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.codeforces.com/contests"]}],"name":"Latest contests","maintainers":["Fatpandac"],"url":"www.codeforces.com/contests","location":"contests.ts"}' :test='{"code":0}' />
 
 ### Recent actions <Site url="codeforces.com/recent-actions" size="sm" />
 
@@ -293,7 +293,7 @@ GitHub provides some official RSS feeds:
 
 ### Wiki History <Site url="github.com" size="sm" />
 
-<Route namespace="github" :data='{"path":"/wiki/:user/:repo/:page?","categories":["programming"],"example":"/github/wiki/flutter/flutter/Roadmap","parameters":{"user":"User / Org name","repo":"Repo name","page":"Page slug, can be found in URL, empty means Home"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/:user/:repo/wiki/:page/_history","github.com/:user/:repo/wiki/:page","github.com/:user/:repo/wiki/_history","github.com/:user/:repo/wiki"],"target":"/wiki/:user/:repo/:page"}],"name":"Wiki History","maintainers":["TonyRL"],"location":"wiki.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="github" :data='{"path":"/wiki/:user/:repo/:page?","categories":["programming"],"example":"/github/wiki/flutter/flutter/Roadmap","parameters":{"user":"User / Org name","repo":"Repo name","page":"Page slug, can be found in URL, empty means Home"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/:user/:repo/wiki/:page/_history","github.com/:user/:repo/wiki/:page","github.com/:user/:repo/wiki/_history","github.com/:user/:repo/wiki"],"target":"/wiki/:user/:repo/:page"}],"name":"Wiki History","maintainers":["TonyRL"],"location":"wiki.ts"}' :test='{"code":0}' />
 
 ## Gitpod <Site url="gitpod.io"/>
 
@@ -303,7 +303,7 @@ GitHub provides some official RSS feeds:
 
 ### Changelog <Site url="gitpod.io/changelog" size="sm" />
 
-<Route namespace="gitpod" :data='{"path":"/changelog","categories":["programming"],"example":"/gitpod/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitpod.io/changelog","gitpod.io/"]}],"name":"Changelog","maintainers":["TonyRL"],"url":"gitpod.io/changelog","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gitpod" :data='{"path":"/changelog","categories":["programming"],"example":"/gitpod/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitpod.io/changelog","gitpod.io/"]}],"name":"Changelog","maintainers":["TonyRL"],"url":"gitpod.io/changelog","location":"changelog.ts"}' :test='{"code":0}' />
 
 ## GoCN <Site url="gocn.vip"/>
 
@@ -341,7 +341,7 @@ GitHub provides some official RSS feeds:
 
 ### 用户 <Site url="ycombinator.com" size="sm" />
 
-<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":0}' />
 
 订阅特定用户的内容
 
@@ -349,11 +349,11 @@ GitHub provides some official RSS feeds:
 
 ### 搜索 <Site url="hacking8.com" size="sm" />
 
-<Route namespace="hacking8" :data='{"path":"/search/:keyword?","categories":["programming"],"example":"/hacking8/search/rsshub","parameters":{"keyword":"关键字，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"],"target":"/:category?"}],"name":"搜索","maintainers":["nczitzk"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hacking8" :data='{"path":"/search/:keyword?","categories":["programming"],"example":"/hacking8/search/rsshub","parameters":{"keyword":"关键字，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"],"target":"/:category?"}],"name":"搜索","maintainers":["nczitzk"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 信息流 <Site url="hacking8.com" size="sm" />
 
-<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |
   | ----- | -------- | --------------- | --- |
@@ -363,7 +363,7 @@ GitHub provides some official RSS feeds:
 
 ### Profile <Site url="hackmd.io" size="sm" />
 
-<Route namespace="hackmd" :data='{"path":"/profile/:path","categories":["programming"],"example":"/hackmd/profile/hackmd","parameters":{"path":"userpath or teampath"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Profile","maintainers":["Yukaii","kaiix"],"location":"profile.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hackmd" :data='{"path":"/profile/:path","categories":["programming"],"example":"/hackmd/profile/hackmd","parameters":{"path":"userpath or teampath"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Profile","maintainers":["Yukaii","kaiix"],"location":"profile.ts"}' :test='{"code":0}' />
 
 ## HelloGitHub <Site url="hellogithub.com"/>
 
@@ -465,7 +465,7 @@ GitHub provides some official RSS feeds:
 
 ### DevPress 官方社区 <Site url="community.modelscope.cn/" size="sm" />
 
-<Route namespace="modelscope" :data='{"path":"/community","categories":["programming"],"example":"/modelscope/community","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["community.modelscope.cn/"]}],"name":"DevPress 官方社区","maintainers":["TonyRL"],"url":"community.modelscope.cn/","location":"community.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="modelscope" :data='{"path":"/community","categories":["programming"],"example":"/modelscope/community","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["community.modelscope.cn/"]}],"name":"DevPress 官方社区","maintainers":["TonyRL"],"url":"community.modelscope.cn/","location":"community.ts"}' :test='{"code":0}' />
 
 ### 创空间 <Site url="modelscope.cn/studios" size="sm" />
 
@@ -473,7 +473,7 @@ GitHub provides some official RSS feeds:
 
 ### 模型库 <Site url="modelscope.cn/models" size="sm" />
 
-<Route namespace="modelscope" :data='{"path":"/models","categories":["programming"],"example":"/modelscope/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["modelscope.cn/models"]}],"name":"模型库","maintainers":["TonyRL"],"url":"modelscope.cn/models","location":"models.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="modelscope" :data='{"path":"/models","categories":["programming"],"example":"/modelscope/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["modelscope.cn/models"]}],"name":"模型库","maintainers":["TonyRL"],"url":"modelscope.cn/models","location":"models.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 数据集 <Site url="modelscope.cn/datasets" size="sm" />
 
@@ -1030,7 +1030,7 @@ GitHub provides some official RSS feeds:
 
 ### 合辑 <Site url="modb.pro" size="sm" />
 
-<Route namespace="modb" :data='{"path":"/topic/:id","categories":["programming"],"example":"/modb/topic/44158","parameters":{"id":"合辑序号"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"合辑","maintainers":["yueneiqi"],"location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="modb" :data='{"path":"/topic/:id","categories":["programming"],"example":"/modb/topic/44158","parameters":{"id":"合辑序号"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"合辑","maintainers":["yueneiqi"],"location":"topic.ts"}' :test='{"code":0}' />
 
 ## 前端早早聊 <Site url="www.zaozao.run"/>
 

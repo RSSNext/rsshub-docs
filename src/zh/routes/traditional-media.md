@@ -130,7 +130,7 @@ Channels:
 
 ### FT 中文网 <Site url="ftchinese.com" size="sm" />
 
-<Route namespace="ftchinese" :data='{"path":"/:language/:channel?","categories":["traditional-media"],"example":"/ftchinese/simplified/hotstoryby7day","parameters":{"language":"语言，简体 `simplified`，繁体 `traditional`","channel":"频道，缺省为每日更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FT 中文网","maintainers":["HenryQW","xyqfer"],"description":":::tip\n  -   不支持付费文章。\n  :::\n\n  通过提取文章全文，以提供比官方源更佳的阅读体验。\n\n  支持所有频道，频道名称见 [官方频道 RSS](http://www.ftchinese.com/channel/rss.html).\n\n  -   频道为单一路径，如 `http://www.ftchinese.com/rss/news` 则为 `/ftchinese/simplified/news`.\n  -   频道包含多重路径，如 `http://www.ftchinese.com/rss/column/007000002` 则替换 `/` 为 `-` `/ftchinese/simplified/column-007000002`.","location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ftchinese" :data='{"path":"/:language/:channel?","categories":["traditional-media"],"example":"/ftchinese/simplified/hotstoryby7day","parameters":{"language":"语言，简体 `simplified`，繁体 `traditional`","channel":"频道，缺省为每日更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FT 中文网","maintainers":["HenryQW","xyqfer"],"description":":::tip\n  -   不支持付费文章。\n  :::\n\n  通过提取文章全文，以提供比官方源更佳的阅读体验。\n\n  支持所有频道，频道名称见 [官方频道 RSS](http://www.ftchinese.com/channel/rss.html).\n\n  -   频道为单一路径，如 `http://www.ftchinese.com/rss/news` 则为 `/ftchinese/simplified/news`.\n  -   频道包含多重路径，如 `http://www.ftchinese.com/rss/column/007000002` 则替换 `/` 为 `-` `/ftchinese/simplified/column-007000002`.","location":"channel.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   -   不支持付费文章。
@@ -209,7 +209,7 @@ Provides a way to get an specific rss feed by date and category over the officia
 
 ### The New Yorker <Site url="newyorker.com" size="sm" />
 
-<Route namespace="newyorker" :data='{"path":"/:category/:subCategory?","categories":["traditional-media"],"example":"/newyorker/everything","parameters":{"category":"rss category. can be found at `https://www.newyorker.com/about/feeds`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["newyorker.com/feed/:category/:subCategory?"]}],"name":"The New Yorker","maintainers":["EthanWng97"],"location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="newyorker" :data='{"path":"/:category/:subCategory?","categories":["traditional-media"],"example":"/newyorker/everything","parameters":{"category":"rss category. can be found at `https://www.newyorker.com/about/feeds`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["newyorker.com/feed/:category/:subCategory?"]}],"name":"The New Yorker","maintainers":["EthanWng97"],"location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## NHK <Site url="www3.nhk.or.jp"/>
 
@@ -315,7 +315,7 @@ You can use `sophi=true` query parameter to invoke the **experimental** method, 
 
 ### News <Site url="rfa.org" size="sm" />
 
-<Route namespace="rfa" :data='{"path":"/:language?/:channel?/:subChannel?","categories":["traditional-media"],"example":"/rfa/english","parameters":{"language":"language, English by default","channel":"channel","subChannel":"subchannel, where applicable"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["zphw"],"description":"Delivers a better experience by supporting parameter specification.\n\nParameters can be obtained from the official website, for instance:\n\n`https://www.rfa.org/cantonese/news` corresponds to `/rfa/cantonese/news`\n\n`https://www.rfa.org/cantonese/news/htm` corresponds to `/rfa/cantonese/news/htm`","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="rfa" :data='{"path":"/:language?/:channel?/:subChannel?","categories":["traditional-media"],"example":"/rfa/english","parameters":{"language":"language, English by default","channel":"channel","subChannel":"subchannel, where applicable"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["zphw"],"description":"Delivers a better experience by supporting parameter specification.\n\nParameters can be obtained from the official website, for instance:\n\n`https://www.rfa.org/cantonese/news` corresponds to `/rfa/cantonese/news`\n\n`https://www.rfa.org/cantonese/news/htm` corresponds to `/rfa/cantonese/news/htm`","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Delivers a better experience by supporting parameter specification.
 
@@ -930,7 +930,7 @@ Column 列表：
 
 ### 最新报道 <Site url="china.kyodonews.net" size="sm" />
 
-<Route namespace="kyodonews" :data='{"path":"/:language?/:keyword?","categories":["traditional-media"],"example":"/kyodonews","parameters":{"language":"语言: `china` = 简体中文 (默认), `tchina` = 繁體中文","keyword":"关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新报道","maintainers":["Rongronggg9"],"description":"`keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kyodonews" :data='{"path":"/:language?/:keyword?","categories":["traditional-media"],"example":"/kyodonews","parameters":{"language":"语言: `china` = 简体中文 (默认), `tchina` = 繁體中文","keyword":"关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新报道","maintainers":["Rongronggg9"],"description":"`keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 `keyword` 为关键词，由于共同网有许多关键词并不在主页列出，此处不一一列举，可从关键词页的 URL 的最后一级路径中提取。如 `日中关系` 的关键词页 URL 为 `https://china.kyodonews.net/news/japan-china_relationship`, 则将 `japan-china_relationship` 填入 `keyword`。特别地，当填入 `rss` 时，将从共同网官方 RSS 中抓取文章；略去时，将从首页抓取最新报道 (注意：首页更新可能比官方 RSS 稍慢)。
 
@@ -1043,7 +1043,7 @@ Column 列表：
 
 ### 分类 <Site url="huanqiu.com/" size="sm" />
 
-<Route namespace="huanqiu" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/huanqiu/news/china","parameters":{"category":"类别，可以使用二级域名作为参数，默认为：china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huanqiu.com/"]}],"name":"分类","maintainers":["yuxinliu-alex"],"url":"huanqiu.com/","description":"| 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |\n  | -------- | -------- | ---- | ------ | ------- |\n  | china    | world    | mil  | taiwai | opinion |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="huanqiu" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/huanqiu/news/china","parameters":{"category":"类别，可以使用二级域名作为参数，默认为：china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huanqiu.com/"]}],"name":"分类","maintainers":["yuxinliu-alex"],"url":"huanqiu.com/","description":"| 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |\n  | -------- | -------- | ---- | ------ | ------- |\n  | china    | world    | mil  | taiwai | opinion |","location":"index.ts"}' :test='{"code":0}' />
 
 | 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |
   | -------- | -------- | ---- | ------ | ------- |
@@ -1063,7 +1063,7 @@ Column 列表：
 
 ### 学习时报 <Site url="paper.cntheory.com" size="sm" />
 
-<Route namespace="cntheory" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/cntheory/paper","parameters":{"id":"板块，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学习时报","maintainers":["nczitzk"],"description":"如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。","location":"paper.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cntheory" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/cntheory/paper","parameters":{"id":"板块，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学习时报","maintainers":["nczitzk"],"description":"如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。","location":"paper.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。
 
@@ -1111,7 +1111,7 @@ Column 列表：
 
 ### 轉角國際 - 首頁 <Site url="udn.com" size="sm" />
 
-<Route namespace="udn" :data='{"path":"/global/:category?","categories":["traditional-media"],"example":"/udn/global","parameters":{"category":"分类，见下表，默认为首頁"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/global_vision/index/:category","global.udn.com/"]}],"name":"轉角國際 - 首頁","maintainers":["nczitzk"],"description":"| 首頁 | 最新文章 | 熱門文章 |\n  | ---- | -------- | -------- |\n  |      | new      | hot      |","location":"global/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="udn" :data='{"path":"/global/:category?","categories":["traditional-media"],"example":"/udn/global","parameters":{"category":"分类，见下表，默认为首頁"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/global_vision/index/:category","global.udn.com/"]}],"name":"轉角國際 - 首頁","maintainers":["nczitzk"],"description":"| 首頁 | 最新文章 | 熱門文章 |\n  | ---- | -------- | -------- |\n  |      | new      | hot      |","location":"global/index.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://global.udn.com/global_vision/…&#39;"}' />
 
 | 首頁 | 最新文章 | 熱門文章 |
   | ---- | -------- | -------- |
@@ -1119,7 +1119,7 @@ Column 列表：
 
 ### 轉角國際 - 標籤 <Site url="udn.com" size="sm" />
 
-<Route namespace="udn" :data='{"path":"/global/tag/:tag?","categories":["traditional-media"],"example":"/udn/global/tag/過去24小時","parameters":{"tag":"标签，可在对应标签页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/search/tagging/1020/:tag","global.udn.com/"]}],"name":"轉角國際 - 標籤","maintainers":["emdoe","nczitzk"],"description":"| 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |\n  | ------------ | -------- | -------- | -------- |","location":"global/tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="udn" :data='{"path":"/global/tag/:tag?","categories":["traditional-media"],"example":"/udn/global/tag/過去24小時","parameters":{"tag":"标签，可在对应标签页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/search/tagging/1020/:tag","global.udn.com/"]}],"name":"轉角國際 - 標籤","maintainers":["emdoe","nczitzk"],"description":"| 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |\n  | ------------ | -------- | -------- | -------- |","location":"global/tag.ts"}' :test='{"code":0}' />
 
 | 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |
   | ------------ | -------- | -------- | -------- |
@@ -1475,7 +1475,7 @@ Column 列表：
 
 ### 新闻 <Site url="tvb.com" size="sm" />
 
-<Route namespace="tvb" :data='{"path":"/news/:category?/:language?","categories":["traditional-media"],"example":"/tvb/news","parameters":{"category":"分类，见下表，默认为要聞","language":"语言，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tvb.com/:language/:category","tvb.com/"]}],"name":"新闻","maintainers":["nczitzk"],"description":"分类\n\n  | 要聞  | 快訊    | 港澳  | 兩岸         | 國際  | 財經    | 體育   | 法庭       | 天氣    |\n  | ----- | ------- | ----- | ------------ | ----- | ------- | ------ | ---------- | ------- |\n  | focus | instant | local | greaterchina | world | finance | sports | parliament | weather |\n\n  语言\n\n  | 繁 | 简 |\n  | -- | -- |\n  | tc | sc |","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tvb" :data='{"path":"/news/:category?/:language?","categories":["traditional-media"],"example":"/tvb/news","parameters":{"category":"分类，见下表，默认为要聞","language":"语言，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tvb.com/:language/:category","tvb.com/"]}],"name":"新闻","maintainers":["nczitzk"],"description":"分类\n\n  | 要聞  | 快訊    | 港澳  | 兩岸         | 國際  | 財經    | 體育   | 法庭       | 天氣    |\n  | ----- | ------- | ----- | ------------ | ----- | ------- | ------ | ---------- | ------- |\n  | focus | instant | local | greaterchina | world | finance | sports | parliament | weather |\n\n  语言\n\n  | 繁 | 简 |\n  | -- | -- |\n  | tc | sc |","location":"news.ts"}' :test='{"code":0}' />
 
 分类
 
