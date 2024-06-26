@@ -239,11 +239,7 @@
 
 ### 排行榜 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/ranking/:rid?/:day?/:arc_type?/:disableEmbed?","name":"排行榜","maintainers":["DIYgod"],"categories":["social-media","popular"],"example":"/bilibili/ranking/0/3/1","parameters":{"rid":"排行榜分区 id, 默认 0","day":"时间跨度, 可为 1 3 7 30","arc_type":"投稿时间, 可为 0(全部投稿) 1(近期投稿) , 默认 1","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"description":"| 全站 | 动画 | 国创相关 | 音乐 | 舞蹈 | 游戏 | 科技 | 数码 | 生活 | 鬼畜 | 时尚 | 娱乐 | 影视 |\n| ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 0    | 1    | 168      | 3    | 129  | 4    | 36   | 188  | 160  | 119  | 155  | 5    | 181  |","location":"ranking.ts"}' :test='{"code":0}' />
-
-| 全站 | 动画 | 国创相关 | 音乐 | 舞蹈 | 游戏 | 科技 | 数码 | 生活 | 鬼畜 | 时尚 | 娱乐 | 影视 |
-| ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 0    | 1    | 168      | 3    | 129  | 4    | 36   | 188  | 160  | 119  | 155  | 5    | 181  |
+<Route namespace="bilibili" :data='{"path":"/ranking/:rid?/:day?/:arc_type?/:disableEmbed?","name":"排行榜","maintainers":["DIYgod"],"categories":["social-media","popular"],"example":"/bilibili/ranking/0/3/1","parameters":{"rid":{"description":"排行榜分区 id","default":"0","options":[{"label":"全站","value":"0"},{"label":"动画","value":"1"},{"label":"国创相关","value":"168"},{"label":"音乐","value":"3"},{"label":"舞蹈","value":"129"},{"label":"游戏","value":"4"},{"label":"科技","value":"36"},{"label":"数码","value":"188"},{"label":"生活","value":"160"},{"label":"鬼畜","value":"119"},{"label":"时尚","value":"155"},{"label":"娱乐","value":"5"},{"label":"影视","value":"181"}]},"day":{"description":"时间跨度","options":[{"value":"1","label":"1日"},{"value":"3","label":"3日"},{"value":"7","label":"7日"},{"value":"30","label":"30日"}]},"arc_type":{"description":"投稿时间","default":"1","options":[{"value":"0","label":"全部投稿"},{"value":"1","label":"近期投稿"}]},"disableEmbed":{"description":"默认为开启内嵌视频, 任意值为关闭"}},"location":"ranking.ts"}' :test='{"code":0}' />
 
 ### 热搜 <Site url="www.bilibili.com/" size="sm" />
 
@@ -607,11 +603,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Keyword <Site url="www.pixiv.net" size="sm" />
 
-<Route namespace="pixiv" :data='{"path":"/search/:keyword/:order?/:mode?","categories":["social-media","popular"],"example":"/pixiv/search/Nezuko/popular/2","parameters":{"keyword":"keyword","order":"rank mode, empty or other for time order, popular for popular order","mode":"filte R18 content"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod"],"description":"| only not R18 | only R18 | no filter      |\n  | ------------ | -------- | -------------- |\n  | safe         | r18      | empty or other |","location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-| only not R18 | only R18 | no filter      |
-  | ------------ | -------- | -------------- |
-  | safe         | r18      | empty or other |
+<Route namespace="pixiv" :data='{"path":"/search/:keyword/:order?/:mode?","categories":["social-media","popular"],"example":"/pixiv/search/Nezuko/popular","parameters":{"keyword":"keyword","order":{"description":"rank mode, empty or other for time order, popular for popular order","default":"date","options":[{"label":"time order","value":"date"},{"label":"popular order","value":"popular"}]},"mode":{"description":"filte R18 content","default":"no","options":[{"label":"only not R18","value":"safe"},{"label":"only R18","value":"r18"},{"label":"no filter","value":"no"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Rankings <Site url="www.pixiv.net" size="sm" />
 
@@ -1001,7 +993,7 @@ Chart
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":"缺省 最新，essence 最热，elite 精华"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":{"description":"类型","options":[{"label":"最新","value":""},{"label":"最热","value":"essence"},{"label":"精华","value":"elite"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 豆瓣招聘 <Site url="www.douban.com" size="sm" />
 
