@@ -411,12 +411,6 @@
 
 <Route namespace="fansly" :data='{"path":"/user/:username","categories":["social-media"],"example":"/fansly/user/AeriGoMoo","parameters":{"username":"User ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/:username/posts","fansly.com/:username/media"]}],"name":"User Timeline","maintainers":["TonyRL"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
-## Fediverse <Site url="fediverse.observer"/>
-
-### Timeline <Site url="fediverse.observer" size="sm" />
-
-<Route namespace="fediverse" :data='{"path":"/timeline/:account","categories":["social-media","popular"],"example":"/fediverse/timeline/Mastodon@mastodon.social","parameters":{"account":"username@domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Timeline","maintainers":["DIYgod"],"location":"timeline.ts"}' :test='undefined' />
-
 ## GETTR <Site url="gettr.com"/>
 
 ### User timeline <Site url="gettr.com" size="sm" />
