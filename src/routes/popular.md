@@ -53,6 +53,12 @@
   The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)
   :::
 
+## Fediverse <Site url="fediverse.observer"/>
+
+### Timeline <Site url="fediverse.observer" size="sm" />
+
+<Route namespace="fediverse" :data='{"path":"/timeline/:account","categories":["social-media","popular"],"example":"/fediverse/timeline/Mastodon@mastodon.social","parameters":{"account":"username@domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Timeline","maintainers":["DIYgod"],"location":"timeline.ts"}' :test='undefined' />
+
 ## GitHub <Site url="github.com"/>
 
 :::tip
