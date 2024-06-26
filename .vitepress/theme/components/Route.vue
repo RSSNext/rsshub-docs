@@ -39,10 +39,19 @@
       <p>🔗 Parameters: </p>
       <ul>
         <li v-for="(item, index) in paramMatch" :key="index" class="params">
-          <code>{{ item.replace(/:|\?|\+|\*/g, '') }}</code>,{{ ' ' }}
-          <!-- TODO: Handle below translations based on last character in the item -->
-          required - {{ ' ' }}
-          <span v-html="renderMarkdown(data.parameters?.[item.replace(/:|\?|\+|\*/g, '')] || '')"/>
+          <code>{{ item.name.replace(/:|\?|\+|\*/g, '') }}</code>
+          <ul :style="{fontSize: '13px', lineHeight: 1.5}">
+            <li><strong>{{ item.optional ? 'Optional' : 'Required'}}</strong></li>
+            <li v-if="item.default"><strong>Default:</strong> {{ item.default }}</li>
+            <li v-if="item.options?.length">
+              <strong>Options:</strong> <select v-if="item.options?.length" :style="{marginRight: '8px'}">
+                <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
+                  {{ option.value }}: {{ option.label }}
+                </option>
+              </select>
+            </li>
+            <li><strong>Description:</strong> <span v-html="renderMarkdown(item.description || 'N/A')"/></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -82,7 +91,21 @@ const props = defineProps<{
 }>();
 
 const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example) : null;
-const paramMatch = props.data.path.match?.(/(?<=:).*?(?=\/|$)/g);
+const path = typeof props.data.path === "string" ? props.data.path : props.data.path[0];
+const paramMatch = path.match?.(/(?<=:).*?(?=\/|$)/g)?.map((item) => {
+  const name = item.replace(/:|\?|\+|\*/g, '');
+  let parameter = props.data.parameters?.[name];
+  if (typeof parameter === "string") {
+    parameter = {
+      description: parameter,
+    }
+  }
+  return {
+    name,
+    optional: item.endsWith('?'),
+    ...parameter,
+  }
+});
 
 const renderMarkdown = (item, inline = true) => {
     const md = new MarkdownIt({

@@ -195,3 +195,9 @@
 img {
   display: inline-block;
 }
+
+select {
+  -webkit-appearance: auto;
+  border: 1px solid #e2e8f0;
+  padding: 2px 4px;
+}
