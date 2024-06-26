@@ -1,6 +1,571 @@
 # 💬 Social Media
 
-## Bilibili <Site url="www.bilibili.com"/>
+## Bluesky (bsky) <Site url="bsky.app"/>
+
+### Keywords <Site url="bsky.app" size="sm" />
+
+<Route namespace="bsky" :data='{"path":"/keyword/:keyword","categories":["social-media"],"example":"/bsky/keyword/hello","parameters":{"keyword":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keywords","maintainers":["untitaker"],"location":"keyword.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### Post <Site url="bsky.app" size="sm" />
+
+<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
+
+## Cara <Site url="cara.app"/>
+
+### Likes <Site url="cara.app" size="sm" />
+
+<Route namespace="cara" :data='{"path":["/likes/:user"],"categories":["social-media"],"example":"/cara/likes/fengz","parameters":{"user":"username"},"name":"Likes","maintainers":["KarasuShin"],"radar":[{"source":["cara.app/:user","cara.app/:user/*"],"target":"/likes/:user"}],"location":"likes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Portfolio <Site url="cara.app" size="sm" />
+
+<Route namespace="cara" :data='{"path":["/portfolio/:user"],"categories":["social-media"],"example":"/cara/portfolio/fengz","parameters":{"user":"username"},"name":"Portfolio","maintainers":["KarasuShin"],"radar":[{"source":["cara.app/:user","cara.app/:user/*"],"target":"/portfolio/:user"}],"location":"portfolio.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Timeline <Site url="cara.app" size="sm" />
+
+<Route namespace="cara" :data='{"path":["/timeline/:user"],"categories":["social-media"],"example":"/cara/timeline/fengz","parameters":{"user":"username"},"name":"Timeline","maintainers":["KarasuShin"],"radar":[{"source":["cara.app/:user","cara.app/:user/*"],"target":"/timeline/:user"}],"location":"timeline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Crossbell <Site url="crossbell.io"/>
+
+### Feeds of following <Site url="crossbell.io" size="sm" />
+
+<Route namespace="crossbell" :data='{"path":"/feeds/following/:characterId","categories":["social-media"],"example":"/crossbell/feeds/following/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds of following","maintainers":["DIYgod"],"location":"feeds/following.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Notes of character <Site url="crossbell.io/*" size="sm" />
+
+<Route namespace="crossbell" :data='{"path":"/notes/character/:characterId","categories":["social-media"],"example":"/crossbell/notes/character/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of character","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/character.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Notes <Site url="crossbell.io/*" size="sm" />
+
+<Route namespace="crossbell" :data='{"path":"/notes","categories":["social-media"],"example":"/crossbell/notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"]}],"name":"Notes","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Notes of source <Site url="crossbell.io/*" size="sm" />
+
+<Route namespace="crossbell" :data='{"path":"/notes/source/:source","categories":["social-media"],"example":"/crossbell/notes/source/xlog","parameters":{"source":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of source","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/source.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Curius <Site url="curius.app"/>
+
+### User <Site url="curius.app" size="sm" />
+
+<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Daily.dev <Site url="daily.dev"/>
+
+### Most Discussed <Site url="daily.dev/popular" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/discussed","example":"/daily/discussed","radar":[{"source":["daily.dev/popular"]}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"discussed.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Most upvoted <Site url="daily.dev/popular" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/upvoted","example":"/daily/upvoted","radar":[{"source":["daily.dev/popular"]}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"upvoted.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Popular <Site url="daily.dev/popular" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/","example":"/daily","radar":[{"source":["daily.dev/popular"]}],"name":"Popular","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### User Posts <Site url="daily.dev" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/user/:userId","example":"/daily/user/kramer","radar":[{"source":["daily.dev/:userId/posts","daily.dev/:userId"]}],"name":"User Posts","maintainers":["TonyRL"],"url":"daily.dev","location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Discord <Site url="discord.com"/>
+
+### Channel Messages <Site url="discord.com" size="sm" />
+
+<Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
+
+## fanbox <Site url="www.fanbox.cc"/>
+
+### Creator <Site url="www.fanbox.cc" size="sm" />
+
+<Route namespace="fanbox" :data='{"path":"/:creator","categories":["social-media"],"example":"/fanbox/official","parameters":{"creator":"fanbox user name"},"maintainers":["KarasuShin"],"name":"Creator","features":{"requireConfig":[{"name":"FANBOX_SESSION_ID","description":"Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID","optional":true}]},"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Fansly <Site url="fansly.com"/>
+
+### Hashtag <Site url="fansly.com" size="sm" />
+
+<Route namespace="fansly" :data='{"path":"/tag/:tag","categories":["social-media"],"example":"/fansly/tag/free","parameters":{"tag":"Hashtag"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/explore/tag/:tag"]}],"name":"Hashtag","maintainers":["TonyRL"],"location":"tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### User Timeline <Site url="fansly.com" size="sm" />
+
+<Route namespace="fansly" :data='{"path":"/user/:username","categories":["social-media"],"example":"/fansly/user/AeriGoMoo","parameters":{"username":"User ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/:username/posts","fansly.com/:username/media"]}],"name":"User Timeline","maintainers":["TonyRL"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Fediverse <Site url="fediverse.observer"/>
+
+### Timeline <Site url="fediverse.observer" size="sm" />
+
+<Route namespace="fediverse" :data='{"path":"/timeline/:account","categories":["social-media","popular"],"example":"/fediverse/timeline/Mastodon@mastodon.social","parameters":{"account":"username@domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Timeline","maintainers":["DIYgod"],"location":"timeline.ts"}' :test='undefined' />
+
+## GETTR <Site url="gettr.com"/>
+
+### User timeline <Site url="gettr.com" size="sm" />
+
+<Route namespace="gettr" :data='{"path":"/user/:id","categories":["social-media"],"example":"/gettr/user/jasonmillerindc","parameters":{"id":"User id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gettr.com/user/:id"]}],"name":"User timeline","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Instagram <Site url="www.instagram.com"/>
+
+:::tip
+It's highly recommended to deploy with Redis cache enabled.
+:::
+
+### User Profile / Hashtag - Private API <Site url="www.instagram.com" size="sm" />
+
+<Route namespace="instagram" :data='{"path":"/:category/:key","categories":["social-media","popular"],"example":"/instagram/user/stefaniejoosten","parameters":{"category":"Feed category, see table above","key":"Username / Hashtag name"},"features":{"requireConfig":[{"name":"IG_PROXY","optional":true,"description":""},{"name":"IG_USERNAME","description":"Instagram username"},{"name":"IG_PASSWORD","description":"Instagram password, due to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported."}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag - Private API","maintainers":["oppilate","DIYgod"],"location":"private-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### User Profile / Hashtag <Site url="www.instagram.com" size="sm" />
+
+<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+:::tip
+You may need to setup cookie for a less restrictive rate limit and private profiles.
+:::
+
+
+| User timeline | Hashtag |
+| ------------- | ------- |
+| user          | tags    |
+
+## Instagram <Site url="picnob.com"/>
+
+:::tip
+It's highly recommended to deploy with Redis cache enabled.
+:::
+
+### User Profile - Picnob <Site url="picnob.com" size="sm" />
+
+<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["picnob.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+## Instagram <Site url="www.picuki.com"/>
+
+:::tip
+It's highly recommended to deploy with Redis cache enabled.
+:::
+
+### User Profile - Picuki <Site url="www.picuki.com" size="sm" />
+
+<Route namespace="picuki" :data='{"path":"/profile/:id/:functionalFlag?","categories":["social-media"],"example":"/picuki/profile/stefaniejoosten","parameters":{"id":"Instagram id","functionalFlag":"functional flag, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.picuki.com/profile/:id"],"target":"/profile/:id"}],"name":"User Profile - Picuki","maintainers":["hoilc","Rongronggg9","devinmugen"],"description":"| functionalFlag | Video embedding                         | Fetching Instagram Stories |\n  | -------------- | --------------------------------------- | -------------------------- |\n  | 0              | off, only show video poster as an image | off                        |\n  | 1 (default)    | on                                      | off                        |\n  | 10             | on                                      | on                         |\n\n  :::warning\n  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.\n  Though, every Story expires after 24 hours, so it may be not so serious.\n  :::","location":"profile.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+| functionalFlag | Video embedding                         | Fetching Instagram Stories |
+  | -------------- | --------------------------------------- | -------------------------- |
+  | 0              | off, only show video poster as an image | off                        |
+  | 1 (default)    | on                                      | off                        |
+  | 10             | on                                      | on                         |
+
+  :::warning
+  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.
+  Though, every Story expires after 24 hours, so it may be not so serious.
+  :::
+
+## Keep <Site url="gotokeep.com"/>
+
+### 运动日记 <Site url="gotokeep.com" size="sm" />
+
+<Route namespace="keep" :data='{"path":"/user/:id","categories":["social-media"],"example":"/keep/user/556b02c1ab59390afea671ea","parameters":{"id":"Keep 用户 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gotokeep.com/users/:id"]}],"name":"运动日记","maintainers":["Dectinc","DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Lemmy 
+
+### Community 
+
+<Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":"Sort by, defaut to Active"},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## LinkedIn 领英 <Site url="linkedin.com"/>
+
+### Jobs <Site url="linkedin.com" size="sm" />
+
+<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  #### `routeParams` additional query parameters\n\n  ##### `f_WT` list\n\n  | Onsite | Remote | Hybrid |\n  | ------ | ------- | ------ |\n  |    1   |    2    |   3    |\n\n  ##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n  ##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+#### `job_types` list
+
+  | Full Time | Part Time | Contractor | All |
+  | --------- | --------- | ---------- | --- |
+  | F         | P         | C          | all |
+
+  #### `exp_levels` list
+
+  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
+  | --------- | ----------- | --------- | ---------------- | -------- | --- |
+  | 1         | 2           | 3         | 4                | 5        | all |
+
+  #### `routeParams` additional query parameters
+
+  ##### `f_WT` list
+
+  | Onsite | Remote | Hybrid |
+  | ------ | ------- | ------ |
+  |    1   |    2    |   3    |
+
+  ##### `geoId`
+
+  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.
+
+  For example:
+  91000012 is the ID of East Asia.
+
+  ##### `f_TPR`
+
+  Time posted range. Here are some possible values:
+
+  *   `r86400`: Past 24 hours
+  *   `r604800`: Past week
+  *   `r2592000`: Past month
+
+  For example:
+
+  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
+  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
+  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`
+
+  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
+
+## Lofter <Site url="www.lofter.com"/>
+
+### Tag <Site url="www.lofter.com" size="sm" />
+
+<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+| new  | date | week | month | total |
+  | ---- | ---- | ---- | ----- | ----- |
+  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |
+
+### User <Site url="www.lofter.com" size="sm" />
+
+<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media","popular"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
+
+## Mastodon <Site url="mastodon.social"/>
+
+:::tip
+Official user RSS:
+
+-   RSS: `https://**:instance**/users/**:username**.rss` ([Example](https://pawoo.net/users/pawoo_support.rss))
+-   Atom: ~~`https://**:instance**/users/**:username**.atom`~~ (Only for pawoo.net, [example](https://pawoo.net/users/pawoo_support.atom))
+
+These feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for user timeline based on the Mastodon API, but to use that, you may need to create application on a Mastodon instance, and configure your RSSHub instance. Check the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.
+:::
+
+### Instance timeline (local) <Site url="mastodon.social" size="sm" />
+
+<Route namespace="mastodon" :data='{"path":"/timeline/:site/:only_media?","categories":["social-media"],"example":"/mastodon/timeline/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (local)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-local.ts"}' :test='{"code":0}' />
+
+If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
+
+### Instance timeline (federated) <Site url="mastodon.social" size="sm" />
+
+<Route namespace="mastodon" :data='{"path":"/remote/:site/:only_media?","categories":["social-media"],"example":"/mastodon/remote/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (federated)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-remote.ts"}' :test='{"code":0}' />
+
+If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
+
+### Unknown <Site url="mastodon.social" size="sm" />
+
+<Route namespace="mastodon" :data='{"path":"/account_id/:site/:account_id/statuses/:only_media?","name":"Unknown","maintainers":["notofoe"],"location":"account-id.ts"}' :test='undefined' />
+
+### User timeline <Site url="mastodon.social" size="sm" />
+
+<Route namespace="mastodon" :data='{"path":"/acct/:acct/statuses/:only_media?","categories":["social-media"],"example":"/mastodon/acct/CatWhitney@mastodon.social/statuses","parameters":{"acct":"Webfinger account URI, like `user@host`","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["notofoe"],"description":"Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.\nIf the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.\nHowever, you can still specify these route-specific configurations if you need to override them.","location":"acct.ts"}' :test='{"code":0}' />
+
+Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.
+If the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.
+However, you can still specify these route-specific configurations if you need to override them.
+
+## Misskey <Site url="misskey.io"/>
+
+### Featured Notes <Site url="misskey.io" size="sm" />
+
+<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media"],"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":0}' />
+
+## pixiv <Site url="www.pixiv.net"/>
+
+### Following timeline <Site url="www.pixiv.net/bookmark_new_illust.php" size="sm" />
+
+<Route namespace="pixiv" :data='{"path":"/user/illustfollows","categories":["social-media"],"example":"/pixiv/user/illustfollows","parameters":{},"features":{"requireConfig":[{"name":"PIXIV_REFRESHTOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/bookmark_new_illust.php"]}],"name":"Following timeline","maintainers":["ClarkeCheng"],"url":"www.pixiv.net/bookmark_new_illust.php","description":":::warning\n  Only for self-hosted\n  :::","location":"illustfollow.ts"}' :test='undefined' />
+
+:::warning
+  Only for self-hosted
+  :::
+
+### Keyword <Site url="www.pixiv.net" size="sm" />
+
+<Route namespace="pixiv" :data='{"path":"/search/:keyword/:order?/:mode?","categories":["social-media","popular"],"example":"/pixiv/search/Nezuko/popular","parameters":{"keyword":"keyword","order":{"description":"rank mode, empty or other for time order, popular for popular order","default":"date","options":[{"label":"time order","value":"date"},{"label":"popular order","value":"popular"}]},"mode":{"description":"filte R18 content","default":"no","options":[{"label":"only not R18","value":"safe"},{"label":"only R18","value":"r18"},{"label":"no filter","value":"no"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### Rankings <Site url="www.pixiv.net" size="sm" />
+
+<Route namespace="pixiv" :data='{"path":"/ranking/:mode/:date?","categories":["social-media","popular"],"example":"/pixiv/ranking/week","parameters":{"mode":{"description":"rank type","options":[{"value":"day","label":"daily rank"},{"value":"week","label":"weekly rank"},{"value":"month","label":"monthly rank"},{"value":"day_male","label":"male rank"},{"value":"day_felame","label":"female rank"},{"value":"day_ai","label":"AI-generated work Rankings"},{"value":"week_original","label":"original rank"},{"value":"week_rookie","label":"rookie user rank"},{"value":"day_r18","label":"R-18 daily rank"},{"value":"day_r18_ai","label":"R-18 AI-generated work"},{"value":"day_male_r18","label":"R-18 male rank"},{"value":"day_female_r18","label":"R-18 female rank"},{"value":"week_r18","label":"R-18 weekly rank"},{"value":"week_r18g","label":"R-18G rank"}]},"date":"format: `2018-4-25`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Rankings","maintainers":["EYHN"],"location":"ranking.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### User Bookmark <Site url="www.pixiv.net" size="sm" />
+
+<Route namespace="pixiv" :data='{"path":"/user/bookmarks/:id","categories":["social-media"],"example":"/pixiv/user/bookmarks/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id/bookmarks/artworks"]}],"name":"User Bookmark","maintainers":["EYHN"],"location":"bookmarks.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### User Novels <Site url="www.pixiv.net" size="sm" />
+
+<Route namespace="pixiv" :data='{"path":"/user/novels/:id","categories":["social-media"],"example":"/pixiv/user/novels/27104704","parameters":{"id":"User id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id/novels"]}],"name":"User Novels","maintainers":["TonyRL"],"location":"novels.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### User Activity <Site url="www.pixiv.net" size="sm" />
+
+<Route namespace="pixiv" :data='{"path":"/user/:id","categories":["social-media","popular"],"example":"/pixiv/user/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id"]}],"name":"User Activity","maintainers":["DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+## Plurk <Site url="plurk.com"/>
+
+### Anonymous <Site url="plurk.com/anonymous" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/anonymous","categories":["social-media"],"example":"/plurk/anonymous","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/anonymous"]}],"name":"Anonymous","maintainers":["TonyRL"],"url":"plurk.com/anonymous","location":"anonymous.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Hotlinks <Site url="plurk.com/hotlinks" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/hotlinks","categories":["social-media"],"example":"/plurk/hotlinks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/hotlinks"]}],"name":"Hotlinks","maintainers":["TonyRL"],"url":"plurk.com/hotlinks","location":"hotlinks.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Plurk News <Site url="plurk.com/news" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/news/:lang?","categories":["social-media"],"example":"/plurk/news/:lang?","parameters":{"lang":"Language, see the table above, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/news"],"target":"/news"}],"name":"Plurk News","maintainers":["TonyRL"],"url":"plurk.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Search <Site url="plurk.com" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/search/:keyword","categories":["social-media"],"example":"/plurk/search/FGO","parameters":{"keyword":"Search keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Top <Site url="plurk.com" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+| Top Replurks | Top Favorites | Top Responded |
+  | ------------ | ------------- | ------------- |
+  | topReplurks  | topFavorites  | topResponded  |
+
+  | English | 中文（繁體） |
+  | ------- | ------------ |
+  | en      | zh           |
+
+### Topic <Site url="plurk.com" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/topic/:topic","categories":["social-media"],"example":"/plurk/topic/standwithukraine","parameters":{"topic":"Topic ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/topic/:topic"]}],"name":"Topic","maintainers":["TonyRL"],"location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### User <Site url="plurk.com" size="sm" />
+
+<Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media"],"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Rattibha <Site url="rattibha.com"/>
+
+### User Threads <Site url="rattibha.com" size="sm" />
+
+<Route namespace="rattibha" :data='{"path":"/user/:user","categories":["social-media"],"example":"/rattibha/user/elonmusk","parameters":{"user":"Twitter username, without @"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rattibha.com/:user"]}],"name":"User Threads","maintainers":["yshalsager"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Telegram <Site url="t.me"/>
+
+### Channel <Site url="t.me" size="sm" />
+
+<Route namespace="telegram" :data='{"path":"/channel/:username/:routeParams?","categories":["social-media","popular"],"example":"/telegram/channel/awesomeDIYgod/searchQuery=twitter","parameters":{"username":"channel username","routeParams":"extra parameters, see the table below\n| Key                    | Description                                                           | Accepts                                            | Defaults to  |\n| ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n| showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n| showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n| showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n| showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n| showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n| showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n| showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n| showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n| showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n| includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n| includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n| includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n| includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n| searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\nSpecify different option values than default values can meet different needs, URL\n\n```\nhttps://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n```\n\ngenerates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don&#39;t care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\nFor backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["t.me/s/:username"],"target":"/channel/:username"}],"name":"Channel","maintainers":["DIYgod","Rongronggg9"],"description":"\n  :::tip\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::","location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+
+  :::tip
+  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.
+  :::
+
+### Sticker Pack <Site url="t.me" size="sm" />
+
+<Route namespace="telegram" :data='{"path":"/stickerpack/:name","categories":["social-media"],"example":"/telegram/stickerpack/DIYgod","parameters":{"name":"Sticker Pack name, available in the sharing URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Sticker Pack","maintainers":["DIYgod"],"location":"stickerpack.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### Telegram Blog <Site url="telegram.org/blog" size="sm" />
+
+<Route namespace="telegram" :data='{"path":"/blog","categories":["social-media"],"example":"/telegram/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["telegram.org/blog"]}],"name":"Telegram Blog","maintainers":["fengkx"],"url":"telegram.org/blog","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+## Threads <Site url="threads.net"/>
+
+### User timeline <Site url="threads.net" size="sm" />
+
+<Route namespace="threads" :data='{"path":"/:user/:routeParams?","categories":["social-media"],"example":"/threads/zuck","parameters":{"user":"Username","routeParams":"Extra parameters, see the table below"},"name":"User timeline","maintainers":["ninboy"],"description":"Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads\n\n  | Key                            | Description                                                                                                                  | Accepts                | Defaults to |\n  | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |\n  | `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |\n  | `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |\n  | `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |\n  | `showEmojiForQuotesAndReply`   | Use \"🔁\" instead of \"QT\", \"↩️\" instead of \"Re\"                                                                               | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |\n\n  Specify different option values than default values to improve readability. The URL\n\n  ```\n  https://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1\n  ```","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads
+
+  | Key                            | Description                                                                                                                  | Accepts                | Defaults to |
+  | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |
+  | `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |
+  | `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |
+  | `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |
+  | `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |
+  | `showEmojiForQuotesAndReply`   | Use "🔁" instead of "QT", "↩️" instead of "Re"                                                                               | `0`/`1`/`true`/`false` | `true`      |
+  | `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |
+  | `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |
+
+  Specify different option values than default values to improve readability. The URL
+
+  ```
+  https://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1
+  ```
+
+## TikTok <Site url="tiktok.com"/>
+
+### User <Site url="tiktok.com" size="sm" />
+
+<Route namespace="tiktok" :data='{"path":"/user/:user/:iframe?","categories":["social-media"],"example":"/tiktok/user/@linustech/true","parameters":{"user":"User ID, including @","iframe":"Use the official iframe to embed the video, which allows you to view the video if the default option does not work. Default to `false`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tiktok.com/:user"],"target":"/user/:user"}],"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+## Vimeo <Site url="vimeo.com"/>
+
+### Category <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/category/:category/:staffpicks?","categories":["social-media"],"example":"/vimeo/category/documentary/staffpicks","parameters":{"category":"Category name can get from url like `documentary` in [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) ","staffpicks":"type `staffpicks` to sort with staffpicks"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["MisteryMonster"],"location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Channel <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/channel/:channel","categories":["social-media"],"example":"/vimeo/channel/bestoftheyear","parameters":{"channel":"channel name can get from url like `bestoftheyear` in  [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) ."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vimeo.com/channels/:channel","vimeo.com/channels/:channel/videos","vimeo.com/channels/:channel/videos/:sort/:format"]}],"name":"Channel","maintainers":["MisteryMonster"],"location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### User Profile <Site url="vimeo.com" size="sm" />
+
+<Route namespace="vimeo" :data='{"path":"/user/:username/:cat?","categories":["social-media"],"example":"/vimeo/user/filmsupply/picks","parameters":{"username":"In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`","cat":"deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won&#39;t show up"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile","maintainers":["MisteryMonster"],"description":":::tip Special category name attention\n  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.\n  :::","location":"usr-videos.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+:::tip Special category name attention
+  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
+  :::
+
+## X (Twitter) <Site url="x.com"/>
+
+Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets
+
+| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |
+| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |
+| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |
+| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |
+| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |
+| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |
+| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |
+| `showEmojiForRetweetAndReply`  | Use "🔁" instead of "RT", "↩️" & "💬" instead of "Re"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |
+| `showSymbolForRetweetAndReply` | Use " RT " instead of "", " Re " instead of ""                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |
+| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |
+| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |
+| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |
+| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |
+| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |
+| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |
+| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |
+| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |
+| `excludeReplies`               | Exclude replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |
+| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |
+| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |
+| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |
+
+Specify different option values than default values to improve readability. The URL
+
+```
+https://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150
+```
+
+generates
+
+<img loading="lazy" src="/img/readable-twitter.png" alt="Readable Twitter RSS of Durov" />
+
+Currently supports two authentication methods:
+
+- Using `TWITTER_COOKIE` (recommended): Configure the cookies of logged-in Twitter Web, at least including the fields auth_token and ct0. RSSHub will use this information to directly access Twitter's web API to obtain data.
+
+- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure the Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.
+
+
+### Home timeline <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod"],"radar":[{"source":["x.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
+
+### Keyword <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media","popular"],"example":"/twitter/keyword/RSSHub","parameters":{"keyword":"keyword","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/search"]}],"location":"keyword.ts"}' :test='undefined' />
+
+### List timeline <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["x.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
+
+### Trends <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/trends/:woeid?","categories":["social-media"],"example":"/twitter/trends/23424856","parameters":{"woeid":"Yahoo! Where On Earth ID. default to woeid=1 (World Wide)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trends","maintainers":["sakamossan"],"location":"trends.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+
+### Tweet Details <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/tweet/:id/status/:status/:original?","categories":["social-media"],"example":"/twitter/tweet/DIYgod/status/1650844643997646852","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","status":"tweet ID","original":"extra parameters, data type of return, if the value is not `0`/`false` and `config.isPackage` is `true`, return the original data of twitter"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tweet Details","maintainers":["LarchLiu","Rongronggg9"],"location":"tweet.ts"}' :test='undefined' />
+
+### User likes <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='undefined' />
+
+### User media <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/media/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/media/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User media","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id/media"],"target":"/media/:id"}],"location":"media.ts"}' :test='undefined' />
+
+### User timeline <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/user/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/user/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTHENTICATION_SECRET","description":"TOTP 2FA secret, please see above for details.","optional":true},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id"],"target":"/user/:id"}],"location":"user.ts"}' :test='undefined' />
+
+## YouTube <Site url="youtube.com"/>
+
+### Channel with id <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/channel/:id/:embed?","categories":["social-media"],"example":"/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ","parameters":{"id":"YouTube channel id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/channel/:id"],"target":"/channel/:id"}],"name":"Channel with id","maintainers":["DIYgod"],"description":":::tip\nYouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).\n:::","location":"channel.ts"}' :test='undefined' />
+
+:::tip
+YouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).
+:::
+
+### Community <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/community/:handle","categories":["social-media"],"example":"/youtube/community/@JFlaMusic","parameters":{"handle":"YouTube handles or channel id"},"name":"Community","maintainers":["TonyRL"],"location":"community.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+### Custom URL <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/c/:username/:embed?","categories":["social-media"],"example":"/youtube/c/YouTubeCreators","parameters":{"username":"YouTube custom URL","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/c/:id"],"target":"/c/:id"}],"name":"Custom URL","maintainers":["TonyRL"],"location":"custom.ts"}' :test='undefined' />
+
+### Channel with username <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/user/:username/:embed?","categories":["social-media","popular"],"example":"/youtube/user/@JFlaMusic","parameters":{"username":"YouTuber username with @","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/user/:username"],"target":"/user/:username"}],"name":"Channel with username","maintainers":["DIYgod"],"location":"user.ts"}' :test='undefined' />
+
+### Music Charts <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n  | Top artists | Top songs | Top music videos | Trending       |\n  | ----------- | --------- | ---------------- | -------------- |\n  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n  | ar        | au        | at      | be      | bo      | br     | ca     |\n\n  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n  | cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n  | eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n  | hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n  | Uruguay | Zimbabwe |\n  | ------- | -------- |\n  | uy      | zw       |","location":"charts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+
+Chart
+
+  | Top artists | Top songs | Top music videos | Trending       |
+  | ----------- | --------- | ---------------- | -------------- |
+  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |
+
+  Country Code
+
+  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |
+  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |
+  | ar        | au        | at      | be      | bo      | br     | ca     |
+
+  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |
+  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |
+  | cl    | co       | cr         | cz      | dk      | do                 | ec      |
+
+  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |
+  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |
+  | eg    | sv          | ee      | fi      | fr     | de      | gt        |
+
+  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |
+  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |
+  | hn       | hu      | is      | in    | id        | ie      | il     | it    |
+
+  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |
+  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |
+  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |
+
+  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |
+  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |
+  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |
+
+  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |
+  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |
+  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |
+
+  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |
+  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |
+  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |
+
+  | Uruguay | Zimbabwe |
+  | ------- | -------- |
+  | uy      | zw       |
+
+### Playlist <Site url="youtube.com" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/playlist/:id/:embed?","categories":["social-media"],"example":"/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z","parameters":{"id":"YouTube playlist id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Playlist","maintainers":["HenryQW"],"location":"playlist.ts"}' :test='undefined' />
+
+### Subscriptions <Site url="www.youtube.com/feed/subscriptions" size="sm" />
+
+<Route namespace="youtube" :data='{"path":"/subscriptions/:embed?","categories":["social-media"],"example":"/youtube/subscriptions","parameters":{"embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":""},{"name":"YOUTUBE_CLIENT_ID","description":""},{"name":"YOUTUBE_CLIENT_SECRET","description":""},{"name":"YOUTUBE_REFRESH_TOKEN","description":""}]},"radar":[{"source":["www.youtube.com/feed/subscriptions","www.youtube.com/feed/channels"],"target":"/subscriptions"}],"name":"Subscriptions","maintainers":["TonyRL"],"url":"www.youtube.com/feed/subscriptions","location":"subscriptions.ts"}' :test='undefined' />
+
+## 哔哩哔哩 bilibili <Site url="www.bilibili.com"/>
 
 ### B 站每周必看 <Site url="www.bilibili.com" size="sm" />
 
@@ -20,22 +585,7 @@
 
 ### UP 主动态 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/dynamic/:uid/:routeParams?","categories":["social-media","popular"],"example":"/bilibili/user/dynamic/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/dynamic/:uid"}],"name":"UP 主动态","maintainers":["DIYgod","zytomorrow","CaoMeiYouRen","JimenezLi"],"description":"| 键           | 含义                              | 接受的值       | 默认值 |\n  | ------------ | --------------------------------- | -------------- | ------ |\n  | showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n  | disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n  | useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n  | directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n  用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`\n\n  :::tip 动态的专栏显示全文\n  动态的专栏显示全文请使用通用参数里的 `mode=fulltext`\n\n  举例: bilibili 专栏全文输出 /bilibili/user/dynamic/2267573/?mode=fulltext\n  :::","location":"dynamic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-| 键           | 含义                              | 接受的值       | 默认值 |
-  | ------------ | --------------------------------- | -------------- | ------ |
-  | showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |
-  | disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |
-  | useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |
-  | directLink   | 使用内容直链                      | 0/1/true/false | false  |
-
-  用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`
-
-  :::tip 动态的专栏显示全文
-  动态的专栏显示全文请使用通用参数里的 `mode=fulltext`
-
-  举例: bilibili 专栏全文输出 /bilibili/user/dynamic/2267573/?mode=fulltext
-  :::
+<Route namespace="bilibili" :data='{"path":"/user/dynamic/:uid/:routeParams?","categories":["social-media","popular"],"example":"/bilibili/user/dynamic/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","routeParams":"\n| 键           | 含义                              | 接受的值       | 默认值 |\n| ------------ | --------------------------------- | -------------- | ------ |\n| showEmoji    | 显示或隐藏表情图片                | 0/1/true/false | false  |\n| disableEmbed | 关闭内嵌视频                      | 0/1/true/false | false  |\n| useAvid      | 视频链接使用 AV 号 (默认为 BV 号) | 0/1/true/false | false  |\n| directLink   | 使用内容直链                      | 0/1/true/false | false  |\n\n用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/dynamic/:uid"}],"name":"UP 主动态","maintainers":["DIYgod","zytomorrow","CaoMeiYouRen","JimenezLi"],"location":"dynamic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### UP 主非默认收藏夹 <Site url="www.bilibili.com" size="sm" />
 
@@ -75,11 +625,7 @@
 
 ### UP 主投稿 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/video/:uid/:disableEmbed?","categories":["social-media","popular"],"example":"/bilibili/user/video/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/video/:uid"}],"name":"UP 主投稿","maintainers":["DIYgod"],"description":":::tip 动态的专栏显示全文\n  可以使用 [UP 主动态](#bilibili-up-zhu-dong-tai)路由作为代替绕过反爬限制\n  :::","location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-:::tip 动态的专栏显示全文
-  可以使用 [UP 主动态](#bilibili-up-zhu-dong-tai)路由作为代替绕过反爬限制
-  :::
+<Route namespace="bilibili" :data='{"path":"/user/video/:uid/:disableEmbed?","categories":["social-media","popular"],"example":"/bilibili/user/video/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/video/:uid"}],"name":"UP 主投稿","maintainers":["DIYgod"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 番剧 <Site url="www.bilibili.com" size="sm" />
 
@@ -322,610 +868,6 @@
 ### 综合热门 <Site url="www.bilibili.com" size="sm" />
 
 <Route namespace="bilibili" :data='{"path":"/popular/all","categories":["social-media"],"example":"/bilibili/popular/all","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"综合热门","maintainers":["ziminliu"],"location":"popular.ts"}' :test='{"code":0}' />
-
-## Bluesky (bsky) <Site url="bsky.app"/>
-
-### Keywords <Site url="bsky.app" size="sm" />
-
-<Route namespace="bsky" :data='{"path":"/keyword/:keyword","categories":["social-media"],"example":"/bsky/keyword/hello","parameters":{"keyword":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keywords","maintainers":["untitaker"],"location":"keyword.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### Post <Site url="bsky.app" size="sm" />
-
-<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
-
-## Cara <Site url="cara.app"/>
-
-### Likes <Site url="cara.app" size="sm" />
-
-<Route namespace="cara" :data='{"path":["/likes/:user"],"categories":["social-media"],"example":"/cara/likes/fengz","parameters":{"user":"username"},"name":"Likes","maintainers":["KarasuShin"],"radar":[{"source":["cara.app/:user","cara.app/:user/*"],"target":"/likes/:user"}],"location":"likes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Portfolio <Site url="cara.app" size="sm" />
-
-<Route namespace="cara" :data='{"path":["/portfolio/:user"],"categories":["social-media"],"example":"/cara/portfolio/fengz","parameters":{"user":"username"},"name":"Portfolio","maintainers":["KarasuShin"],"radar":[{"source":["cara.app/:user","cara.app/:user/*"],"target":"/portfolio/:user"}],"location":"portfolio.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Timeline <Site url="cara.app" size="sm" />
-
-<Route namespace="cara" :data='{"path":["/timeline/:user"],"categories":["social-media"],"example":"/cara/timeline/fengz","parameters":{"user":"username"},"name":"Timeline","maintainers":["KarasuShin"],"radar":[{"source":["cara.app/:user","cara.app/:user/*"],"target":"/timeline/:user"}],"location":"timeline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Crossbell <Site url="crossbell.io"/>
-
-### Feeds of following <Site url="crossbell.io" size="sm" />
-
-<Route namespace="crossbell" :data='{"path":"/feeds/following/:characterId","categories":["social-media"],"example":"/crossbell/feeds/following/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds of following","maintainers":["DIYgod"],"location":"feeds/following.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Notes of character <Site url="crossbell.io/*" size="sm" />
-
-<Route namespace="crossbell" :data='{"path":"/notes/character/:characterId","categories":["social-media"],"example":"/crossbell/notes/character/10","parameters":{"characterId":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of character","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/character.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Notes <Site url="crossbell.io/*" size="sm" />
-
-<Route namespace="crossbell" :data='{"path":"/notes","categories":["social-media"],"example":"/crossbell/notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"]}],"name":"Notes","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Notes of source <Site url="crossbell.io/*" size="sm" />
-
-<Route namespace="crossbell" :data='{"path":"/notes/source/:source","categories":["social-media"],"example":"/crossbell/notes/source/xlog","parameters":{"source":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["crossbell.io/*"],"target":"/notes"}],"name":"Notes of source","maintainers":["DIYgod"],"url":"crossbell.io/*","location":"notes/source.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Curius <Site url="curius.app"/>
-
-### User <Site url="curius.app" size="sm" />
-
-<Route namespace="curius" :data='{"path":"/links/:name","categories":["social-media"],"example":"/curius/links/yuu-yuu","parameters":{"name":"Username, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["curius.app/:name"]}],"name":"User","maintainers":["Ovler-Young"],"location":"links.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Daily.dev <Site url="daily.dev"/>
-
-### Most Discussed <Site url="daily.dev/popular" size="sm" />
-
-<Route namespace="daily" :data='{"path":"/discussed","example":"/daily/discussed","radar":[{"source":["daily.dev/popular"]}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"discussed.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Most upvoted <Site url="daily.dev/popular" size="sm" />
-
-<Route namespace="daily" :data='{"path":"/upvoted","example":"/daily/upvoted","radar":[{"source":["daily.dev/popular"]}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"upvoted.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Popular <Site url="daily.dev/popular" size="sm" />
-
-<Route namespace="daily" :data='{"path":"/","example":"/daily","radar":[{"source":["daily.dev/popular"]}],"name":"Popular","maintainers":["Rjnishant530"],"url":"daily.dev/popular","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### User Posts <Site url="daily.dev" size="sm" />
-
-<Route namespace="daily" :data='{"path":"/user/:userId","example":"/daily/user/kramer","radar":[{"source":["daily.dev/:userId/posts","daily.dev/:userId"]}],"name":"User Posts","maintainers":["TonyRL"],"url":"daily.dev","location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Discord <Site url="discord.com"/>
-
-### Channel Messages <Site url="discord.com" size="sm" />
-
-<Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
-
-## fanbox <Site url="www.fanbox.cc"/>
-
-### Creator <Site url="www.fanbox.cc" size="sm" />
-
-<Route namespace="fanbox" :data='{"path":"/:creator","categories":["social-media"],"example":"/fanbox/official","parameters":{"creator":"fanbox user name"},"maintainers":["KarasuShin"],"name":"Creator","features":{"requireConfig":[{"name":"FANBOX_SESSION_ID","description":"Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID","optional":true}]},"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Fansly <Site url="fansly.com"/>
-
-### Hashtag <Site url="fansly.com" size="sm" />
-
-<Route namespace="fansly" :data='{"path":"/tag/:tag","categories":["social-media"],"example":"/fansly/tag/free","parameters":{"tag":"Hashtag"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/explore/tag/:tag"]}],"name":"Hashtag","maintainers":["TonyRL"],"location":"tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### User Timeline <Site url="fansly.com" size="sm" />
-
-<Route namespace="fansly" :data='{"path":"/user/:username","categories":["social-media"],"example":"/fansly/user/AeriGoMoo","parameters":{"username":"User ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fansly.com/:username/posts","fansly.com/:username/media"]}],"name":"User Timeline","maintainers":["TonyRL"],"location":"post.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Fediverse <Site url="fediverse.observer"/>
-
-### Timeline <Site url="fediverse.observer" size="sm" />
-
-<Route namespace="fediverse" :data='{"path":"/timeline/:account","categories":["social-media","popular"],"example":"/fediverse/timeline/Mastodon@mastodon.social","parameters":{"account":"username@domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Timeline","maintainers":["DIYgod"],"location":"timeline.ts"}' :test='undefined' />
-
-## GETTR <Site url="gettr.com"/>
-
-### User timeline <Site url="gettr.com" size="sm" />
-
-<Route namespace="gettr" :data='{"path":"/user/:id","categories":["social-media"],"example":"/gettr/user/jasonmillerindc","parameters":{"id":"User id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gettr.com/user/:id"]}],"name":"User timeline","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Instagram <Site url="www.instagram.com"/>
-
-:::tip
-It's highly recommended to deploy with Redis cache enabled.
-:::
-
-### User Profile / Hashtag - Private API <Site url="www.instagram.com" size="sm" />
-
-<Route namespace="instagram" :data='{"path":"/:category/:key","categories":["social-media","popular"],"example":"/instagram/user/stefaniejoosten","parameters":{"category":"Feed category, see table above","key":"Username / Hashtag name"},"features":{"requireConfig":[{"name":"IG_PROXY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag - Private API","maintainers":["oppilate","DIYgod"],"description":":::warning\nDue to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.\n:::","location":"private-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-:::warning
-Due to [Instagram Private API](https://github.com/dilame/instagram-private-api) restrictions, you have to setup your credentials on the server. 2FA is not supported. See [deployment guide](https://docs.rsshub.app/deploy/) for more.
-:::
-
-### User Profile / Hashtag <Site url="www.instagram.com" size="sm" />
-
-<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-:::tip
-You may need to setup cookie for a less restrictive rate limit and private profiles.
-:::
-
-
-| User timeline | Hashtag |
-| ------------- | ------- |
-| user          | tags    |
-
-## Instagram <Site url="picnob.com"/>
-
-:::tip
-It's highly recommended to deploy with Redis cache enabled.
-:::
-
-### User Profile - Picnob <Site url="picnob.com" size="sm" />
-
-<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["picnob.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-## Instagram <Site url="www.picuki.com"/>
-
-:::tip
-It's highly recommended to deploy with Redis cache enabled.
-:::
-
-### User Profile - Picuki <Site url="www.picuki.com" size="sm" />
-
-<Route namespace="picuki" :data='{"path":"/profile/:id/:functionalFlag?","categories":["social-media"],"example":"/picuki/profile/stefaniejoosten","parameters":{"id":"Instagram id","functionalFlag":"functional flag, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.picuki.com/profile/:id"],"target":"/profile/:id"}],"name":"User Profile - Picuki","maintainers":["hoilc","Rongronggg9","devinmugen"],"description":"| functionalFlag | Video embedding                         | Fetching Instagram Stories |\n  | -------------- | --------------------------------------- | -------------------------- |\n  | 0              | off, only show video poster as an image | off                        |\n  | 1 (default)    | on                                      | off                        |\n  | 10             | on                                      | on                         |\n\n  :::warning\n  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.\n  Though, every Story expires after 24 hours, so it may be not so serious.\n  :::","location":"profile.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-| functionalFlag | Video embedding                         | Fetching Instagram Stories |
-  | -------------- | --------------------------------------- | -------------------------- |
-  | 0              | off, only show video poster as an image | off                        |
-  | 1 (default)    | on                                      | off                        |
-  | 10             | on                                      | on                         |
-
-  :::warning
-  Instagram Stories do not have a reliable guid. It is possible that your RSS reader show the same story more than once.
-  Though, every Story expires after 24 hours, so it may be not so serious.
-  :::
-
-## Keep <Site url="gotokeep.com"/>
-
-### 运动日记 <Site url="gotokeep.com" size="sm" />
-
-<Route namespace="keep" :data='{"path":"/user/:id","categories":["social-media"],"example":"/keep/user/556b02c1ab59390afea671ea","parameters":{"id":"Keep 用户 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gotokeep.com/users/:id"]}],"name":"运动日记","maintainers":["Dectinc","DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Lemmy 
-
-### Community 
-
-<Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":"Sort by, defaut to Active"},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## LinkedIn 领英 <Site url="linkedin.com"/>
-
-### Jobs <Site url="linkedin.com" size="sm" />
-
-<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media"],"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  #### `routeParams` additional query parameters\n\n  ##### `f_WT` list\n\n  | Onsite | Remote | Hybrid |\n  | ------ | ------- | ------ |\n  |    1   |    2    |   3    |\n\n  ##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n  ##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-#### `job_types` list
-
-  | Full Time | Part Time | Contractor | All |
-  | --------- | --------- | ---------- | --- |
-  | F         | P         | C          | all |
-
-  #### `exp_levels` list
-
-  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
-  | --------- | ----------- | --------- | ---------------- | -------- | --- |
-  | 1         | 2           | 3         | 4                | 5        | all |
-
-  #### `routeParams` additional query parameters
-
-  ##### `f_WT` list
-
-  | Onsite | Remote | Hybrid |
-  | ------ | ------- | ------ |
-  |    1   |    2    |   3    |
-
-  ##### `geoId`
-
-  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.
-
-  For example:
-  91000012 is the ID of East Asia.
-
-  ##### `f_TPR`
-
-  Time posted range. Here are some possible values:
-
-  *   `r86400`: Past 24 hours
-  *   `r604800`: Past week
-  *   `r2592000`: Past month
-
-  For example:
-
-  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
-  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
-  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`
-
-  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
-
-## Lofter <Site url="www.lofter.com"/>
-
-### Tag <Site url="www.lofter.com" size="sm" />
-
-<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-| new  | date | week | month | total |
-  | ---- | ---- | ---- | ----- | ----- |
-  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |
-
-### User <Site url="www.lofter.com" size="sm" />
-
-<Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media","popular"],"example":"/lofter/user/i","parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
-
-## Mastodon <Site url="mastodon.social"/>
-
-:::tip
-Official user RSS:
-
--   RSS: `https://**:instance**/users/**:username**.rss` ([Example](https://pawoo.net/users/pawoo_support.rss))
--   Atom: ~~`https://**:instance**/users/**:username**.atom`~~ (Only for pawoo.net, [example](https://pawoo.net/users/pawoo_support.atom))
-
-These feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for user timeline based on the Mastodon API, but to use that, you may need to create application on a Mastodon instance, and configure your RSSHub instance. Check the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.
-:::
-
-### Instance timeline (local) <Site url="mastodon.social" size="sm" />
-
-<Route namespace="mastodon" :data='{"path":"/timeline/:site/:only_media?","categories":["social-media"],"example":"/mastodon/timeline/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (local)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-local.ts"}' :test='{"code":0}' />
-
-If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
-
-### Instance timeline (federated) <Site url="mastodon.social" size="sm" />
-
-<Route namespace="mastodon" :data='{"path":"/remote/:site/:only_media?","categories":["social-media"],"example":"/mastodon/remote/pawoo.net/true","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Instance timeline (federated)","maintainers":["hoilc"],"description":"If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.","location":"timeline-remote.ts"}' :test='{"code":0}' />
-
-If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
-
-### Unknown <Site url="mastodon.social" size="sm" />
-
-<Route namespace="mastodon" :data='{"path":"/account_id/:site/:account_id/statuses/:only_media?","name":"Unknown","maintainers":["notofoe"],"location":"account-id.ts"}' :test='undefined' />
-
-### User timeline <Site url="mastodon.social" size="sm" />
-
-<Route namespace="mastodon" :data='{"path":"/acct/:acct/statuses/:only_media?","categories":["social-media"],"example":"/mastodon/acct/CatWhitney@mastodon.social/statuses","parameters":{"acct":"Webfinger account URI, like `user@host`","only_media":"whether only display media content, default to false, any value to true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["notofoe"],"description":"Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.\nIf the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.\nHowever, you can still specify these route-specific configurations if you need to override them.","location":"acct.ts"}' :test='{"code":0}' />
-
-Started from Mastodon v4.0.0, the use of the `search` API in the route no longer requires a user token.
-If the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.
-However, you can still specify these route-specific configurations if you need to override them.
-
-## Misskey <Site url="misskey.io"/>
-
-### Featured Notes <Site url="misskey.io" size="sm" />
-
-<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media"],"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":0}' />
-
-## pixiv <Site url="www.pixiv.net"/>
-
-### Following timeline <Site url="www.pixiv.net/bookmark_new_illust.php" size="sm" />
-
-<Route namespace="pixiv" :data='{"path":"/user/illustfollows","categories":["social-media"],"example":"/pixiv/user/illustfollows","parameters":{},"features":{"requireConfig":[{"name":"PIXIV_REFRESHTOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/bookmark_new_illust.php"]}],"name":"Following timeline","maintainers":["ClarkeCheng"],"url":"www.pixiv.net/bookmark_new_illust.php","description":":::warning\n  Only for self-hosted\n  :::","location":"illustfollow.ts"}' :test='undefined' />
-
-:::warning
-  Only for self-hosted
-  :::
-
-### Keyword <Site url="www.pixiv.net" size="sm" />
-
-<Route namespace="pixiv" :data='{"path":"/search/:keyword/:order?/:mode?","categories":["social-media","popular"],"example":"/pixiv/search/Nezuko/popular","parameters":{"keyword":"keyword","order":{"description":"rank mode, empty or other for time order, popular for popular order","default":"date","options":[{"label":"time order","value":"date"},{"label":"popular order","value":"popular"}]},"mode":{"description":"filte R18 content","default":"no","options":[{"label":"only not R18","value":"safe"},{"label":"only R18","value":"r18"},{"label":"no filter","value":"no"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod"],"location":"search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### Rankings <Site url="www.pixiv.net" size="sm" />
-
-<Route namespace="pixiv" :data='{"path":"/ranking/:mode/:date?","categories":["social-media","popular"],"example":"/pixiv/ranking/week","parameters":{"mode":"rank type","date":"format: `2018-4-25`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Rankings","maintainers":["EYHN"],"description":"| daily rank | weekly rank | monthly rank | male rank | female rank | AI-generated work Rankings | original rank  | rookie user rank |\n  | ---------- | ----------- | ------------ | --------- | ----------- | -------------------------- | -------------- | ---------------- |\n  | day        | week        | month        | day_male | day_female | day_ai                    | week_original | week_rookie     |\n\n  | R-18 daily rank | R-18 AI-generated work | R-18 male rank | R-18 female rank | R-18 weekly rank | R-18G rank |\n  | --------------- | ---------------------- | -------------- | ---------------- | ---------------- | ---------- |\n  | day_r18        | day_r18_ai           | day_male_r18 | day_female_r18 | week_r18        | week_r18g |","location":"ranking.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-| daily rank | weekly rank | monthly rank | male rank | female rank | AI-generated work Rankings | original rank  | rookie user rank |
-  | ---------- | ----------- | ------------ | --------- | ----------- | -------------------------- | -------------- | ---------------- |
-  | day        | week        | month        | day_male | day_female | day_ai                    | week_original | week_rookie     |
-
-  | R-18 daily rank | R-18 AI-generated work | R-18 male rank | R-18 female rank | R-18 weekly rank | R-18G rank |
-  | --------------- | ---------------------- | -------------- | ---------------- | ---------------- | ---------- |
-  | day_r18        | day_r18_ai           | day_male_r18 | day_female_r18 | week_r18        | week_r18g |
-
-### User Bookmark <Site url="www.pixiv.net" size="sm" />
-
-<Route namespace="pixiv" :data='{"path":"/user/bookmarks/:id","categories":["social-media"],"example":"/pixiv/user/bookmarks/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id/bookmarks/artworks"]}],"name":"User Bookmark","maintainers":["EYHN"],"location":"bookmarks.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### User Novels <Site url="www.pixiv.net" size="sm" />
-
-<Route namespace="pixiv" :data='{"path":"/user/novels/:id","categories":["social-media"],"example":"/pixiv/user/novels/27104704","parameters":{"id":"User id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id/novels"]}],"name":"User Novels","maintainers":["TonyRL"],"location":"novels.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### User Activity <Site url="www.pixiv.net" size="sm" />
-
-<Route namespace="pixiv" :data='{"path":"/user/:id","categories":["social-media","popular"],"example":"/pixiv/user/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id"]}],"name":"User Activity","maintainers":["DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-## Plurk <Site url="plurk.com"/>
-
-### Anonymous <Site url="plurk.com/anonymous" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/anonymous","categories":["social-media"],"example":"/plurk/anonymous","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/anonymous"]}],"name":"Anonymous","maintainers":["TonyRL"],"url":"plurk.com/anonymous","location":"anonymous.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Hotlinks <Site url="plurk.com/hotlinks" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/hotlinks","categories":["social-media"],"example":"/plurk/hotlinks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/hotlinks"]}],"name":"Hotlinks","maintainers":["TonyRL"],"url":"plurk.com/hotlinks","location":"hotlinks.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Plurk News <Site url="plurk.com/news" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/news/:lang?","categories":["social-media"],"example":"/plurk/news/:lang?","parameters":{"lang":"Language, see the table above, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/news"],"target":"/news"}],"name":"Plurk News","maintainers":["TonyRL"],"url":"plurk.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Search <Site url="plurk.com" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/search/:keyword","categories":["social-media"],"example":"/plurk/search/FGO","parameters":{"keyword":"Search keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Top <Site url="plurk.com" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-| Top Replurks | Top Favorites | Top Responded |
-  | ------------ | ------------- | ------------- |
-  | topReplurks  | topFavorites  | topResponded  |
-
-  | English | 中文（繁體） |
-  | ------- | ------------ |
-  | en      | zh           |
-
-### Topic <Site url="plurk.com" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/topic/:topic","categories":["social-media"],"example":"/plurk/topic/standwithukraine","parameters":{"topic":"Topic ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/topic/:topic"]}],"name":"Topic","maintainers":["TonyRL"],"location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### User <Site url="plurk.com" size="sm" />
-
-<Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media"],"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Rattibha <Site url="rattibha.com"/>
-
-### User Threads <Site url="rattibha.com" size="sm" />
-
-<Route namespace="rattibha" :data='{"path":"/user/:user","categories":["social-media"],"example":"/rattibha/user/elonmusk","parameters":{"user":"Twitter username, without @"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rattibha.com/:user"]}],"name":"User Threads","maintainers":["yshalsager"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Telegram <Site url="t.me"/>
-
-### Channel <Site url="t.me" size="sm" />
-
-<Route namespace="telegram" :data='{"path":"/channel/:username/:routeParams?","categories":["social-media","popular"],"example":"/telegram/channel/awesomeDIYgod/searchQuery=twitter","parameters":{"username":"channel username","routeParams":"extra parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["t.me/s/:username"],"target":"/channel/:username"}],"name":"Channel","maintainers":["DIYgod","Rongronggg9"],"description":"\n  | Key                    | Description                                                           | Accepts                                            | Defaults to  |\n  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |\n  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |\n  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |\n  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |\n  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |\n  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |\n  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |\n  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |\n  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |\n  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |\n  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |\n  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |\n  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |\n  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |\n  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |\n\n  Specify different option values than default values can meet different needs, URL\n\n  ```\n  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0\n  ```\n\n  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don&#39;t care about (service messages and unsupported messages), for people who prefer pure subscriptions.\n\n  :::tip\n  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .\n\n  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.\n  :::","location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-
-  | Key                    | Description                                                           | Accepts                                            | Defaults to  |
-  | ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ------------ |
-  | showLinkPreview        | Show the link preview from Telegram                                   | 0/1/true/false                                     | true         |
-  | showViaBot             | For messages sent via bot, show the bot                               | 0/1/true/false                                     | true         |
-  | showReplyTo            | For reply messages, show the target of the reply                      | 0/1/true/false                                     | true         |
-  | showFwdFrom            | For forwarded messages, show the forwarding source                    | 0/1/true/false                                     | true         |
-  | showFwdFromAuthor      | For forwarded messages, show the author of the forwarding source      | 0/1/true/false                                     | true         |
-  | showInlineButtons      | Show inline buttons                                                   | 0/1/true/false                                     | false        |
-  | showMediaTagInTitle    | Show media tags in the title                                          | 0/1/true/false                                     | true         |
-  | showMediaTagAsEmoji    | Show media tags as emoji                                              | 0/1/true/false                                     | true         |
-  | showHashtagAsHyperlink | Show hashtags as hyperlinks (`https://t.me/s/channel?q=%23hashtag`) | 0/1/true/false                                     | true         |
-  | includeFwd             | Include forwarded messages                                            | 0/1/true/false                                     | true         |
-  | includeReply           | Include reply messages                                                | 0/1/true/false                                     | true         |
-  | includeServiceMsg      | Include service messages (e.g. message pinned, channel photo updated) | 0/1/true/false                                     | true         |
-  | includeUnsupportedMsg  | Include messages unsupported by t.me                                  | 0/1/true/false                                     | false        |
-  | searchQuery            | search query                                                          | keywords; replace `#hashtag` with `%23hashtag` | (no keyword) |
-
-  Specify different option values than default values can meet different needs, URL
-
-  ```
-  https://rsshub.app/telegram/channel/NewlearnerChannel/showLinkPreview=0&showViaBot=0&showReplyTo=0&showFwdFrom=0&showFwdFromAuthor=0&showInlineButtons=0&showMediaTagInTitle=1&showMediaTagAsEmoji=1&includeFwd=0&includeReply=1&includeServiceMsg=0&includeUnsupportedMsg=0
-  ```
-
-  generates an RSS without any link previews and annoying metadata, with emoji media tags in the title, without forwarded messages (but with reply messages), and without messages you don't care about (service messages and unsupported messages), for people who prefer pure subscriptions.
-
-  :::tip
-  For backward compatibility reasons, invalid `routeParams` will be treated as `searchQuery` .
-
-  Due to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`.
-  :::
-
-### Sticker Pack <Site url="t.me" size="sm" />
-
-<Route namespace="telegram" :data='{"path":"/stickerpack/:name","categories":["social-media"],"example":"/telegram/stickerpack/DIYgod","parameters":{"name":"Sticker Pack name, available in the sharing URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Sticker Pack","maintainers":["DIYgod"],"location":"stickerpack.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### Telegram Blog <Site url="telegram.org/blog" size="sm" />
-
-<Route namespace="telegram" :data='{"path":"/blog","categories":["social-media"],"example":"/telegram/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["telegram.org/blog"]}],"name":"Telegram Blog","maintainers":["fengkx"],"url":"telegram.org/blog","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-## Threads <Site url="threads.net"/>
-
-### User timeline <Site url="threads.net" size="sm" />
-
-<Route namespace="threads" :data='{"path":"/:user/:routeParams?","categories":["social-media"],"example":"/threads/zuck","parameters":{"user":"Username","routeParams":"Extra parameters, see the table below"},"name":"User timeline","maintainers":["ninboy"],"description":"Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads\n\n  | Key                            | Description                                                                                                                  | Accepts                | Defaults to |\n  | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |\n  | `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |\n  | `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |\n  | `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |\n  | `showEmojiForQuotesAndReply`   | Use \"🔁\" instead of \"QT\", \"↩️\" instead of \"Re\"                                                                               | `0`/`1`/`true`/`false` | `true`      |\n  | `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |\n  | `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |\n\n  Specify different option values than default values to improve readability. The URL\n\n  ```\n  https://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1\n  ```","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-Specify options (in the format of query string) in parameter `routeParams` to control some extra features for threads
-
-  | Key                            | Description                                                                                                                  | Accepts                | Defaults to |
-  | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ----------- |
-  | `showAuthorInTitle`            | Show author name in title                                                                                                    | `0`/`1`/`true`/`false` | `true`      |
-  | `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                   | `0`/`1`/`true`/`false` | `true`      |
-  | `showQuotedAuthorAvatarInDesc` | Show avatar of quoted author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`     |
-  | `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)        | `0`/`1`/`true`/`false` | `falseP`    |
-  | `showEmojiForQuotesAndReply`   | Use "🔁" instead of "QT", "↩️" instead of "Re"                                                                               | `0`/`1`/`true`/`false` | `true`      |
-  | `showQuotedInTitle`            | Show quoted tweet in title                                                                                                   | `0`/`1`/`true`/`false` | `true`      |
-  | `replies`                      | Show replies                                                                                                                 | `0`/`1`/`true`/`false` | `true`      |
-
-  Specify different option values than default values to improve readability. The URL
-
-  ```
-  https://rsshub.app/threads/zuck/showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForQuotesAndReply=1&showQuotedInTitle=1
-  ```
-
-## TikTok <Site url="tiktok.com"/>
-
-### User <Site url="tiktok.com" size="sm" />
-
-<Route namespace="tiktok" :data='{"path":"/user/:user/:iframe?","categories":["social-media"],"example":"/tiktok/user/@linustech/true","parameters":{"user":"User ID, including @","iframe":"Use the official iframe to embed the video, which allows you to view the video if the default option does not work. Default to `false`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tiktok.com/:user"],"target":"/user/:user"}],"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-## Vimeo <Site url="vimeo.com"/>
-
-### Category <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/category/:category/:staffpicks?","categories":["social-media"],"example":"/vimeo/category/documentary/staffpicks","parameters":{"category":"Category name can get from url like `documentary` in [https://vimeo.com/categories/documentary/videos](https://vimeo.com/categories/documentary/videos) ","staffpicks":"type `staffpicks` to sort with staffpicks"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["MisteryMonster"],"location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Channel <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/channel/:channel","categories":["social-media"],"example":"/vimeo/channel/bestoftheyear","parameters":{"channel":"channel name can get from url like `bestoftheyear` in  [https://vimeo.com/channels/bestoftheyear/videos](https://vimeo.com/channels/bestoftheyear/videos) ."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vimeo.com/channels/:channel","vimeo.com/channels/:channel/videos","vimeo.com/channels/:channel/videos/:sort/:format"]}],"name":"Channel","maintainers":["MisteryMonster"],"location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### User Profile <Site url="vimeo.com" size="sm" />
-
-<Route namespace="vimeo" :data='{"path":"/user/:username/:cat?","categories":["social-media"],"example":"/vimeo/user/filmsupply/picks","parameters":{"username":"In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`","cat":"deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won&#39;t show up"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile","maintainers":["MisteryMonster"],"description":":::tip Special category name attention\n  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.\n  :::","location":"usr-videos.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-:::tip Special category name attention
-  Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
-  :::
-
-## X (Twitter) <Site url="x.com"/>
-
-Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets
-
-| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |
-| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |
-| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |
-| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |
-| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |
-| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |
-| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |
-| `showEmojiForRetweetAndReply`  | Use "🔁" instead of "RT", "↩️" & "💬" instead of "Re"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |
-| `showSymbolForRetweetAndReply` | Use " RT " instead of "", " Re " instead of ""                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |
-| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |
-| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |
-| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |
-| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |
-| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |
-| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |
-| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |
-| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |
-| `excludeReplies`               | Exclude replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |
-| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |
-| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |
-| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |
-
-Specify different option values than default values to improve readability. The URL
-
-```
-https://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150
-```
-
-generates
-
-<img loading="lazy" src="/img/readable-twitter.png" alt="Readable Twitter RSS of Durov" />
-
-Currently supports two authentication methods:
-
-- Using `TWITTER_COOKIE` (recommended): Configure the cookies of logged-in Twitter Web, at least including the fields auth_token and ct0. RSSHub will use this information to directly access Twitter's web API to obtain data.
-
-- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure the Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.
-
-
-### Home timeline <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod"],"radar":[{"source":["x.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
-
-### Keyword <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media","popular"],"example":"/twitter/keyword/RSSHub","parameters":{"keyword":"keyword","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Keyword","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/search"]}],"location":"keyword.ts"}' :test='undefined' />
-
-### List timeline <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["x.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
-
-### Trends <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/trends/:woeid?","categories":["social-media"],"example":"/twitter/trends/23424856","parameters":{"woeid":"Yahoo! Where On Earth ID. default to woeid=1 (World Wide)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trends","maintainers":["sakamossan"],"location":"trends.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
-
-### Tweet Details <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/tweet/:id/status/:status/:original?","categories":["social-media"],"example":"/twitter/tweet/DIYgod/status/1650844643997646852","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","status":"tweet ID","original":"extra parameters, data type of return, if the value is not `0`/`false` and `config.isPackage` is `true`, return the original data of twitter"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tweet Details","maintainers":["LarchLiu","Rongronggg9"],"location":"tweet.ts"}' :test='undefined' />
-
-### User likes <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/likes/:id/:routeParams?","categories":["social-media"],"example":"/twitter/likes/DIYgod","parameters":{"id":"username","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User likes","maintainers":["xyqfer"],"location":"likes.ts"}' :test='undefined' />
-
-### User media <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/media/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/media/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User media","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id/media"],"target":"/media/:id"}],"location":"media.ts"}' :test='undefined' />
-
-### User timeline <Site url="x.com" size="sm" />
-
-<Route namespace="twitter" :data='{"path":"/user/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/user/DIYgod","parameters":{"id":"username; in particular, if starts with `+`, it will be recognized as a [unique ID](https://github.com/DIYgod/RSSHub/issues/12221), e.g. `+44196397`","routeParams":"extra parameters, see the table above; particularly when `routeParams=exclude_replies`, replies are excluded; `routeParams=exclude_rts` excludes retweets,`routeParams=exclude_rts_replies` exclude replies and retweets; for default include all."},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTHENTICATION_SECRET","description":"TOTP 2FA secret, please see above for details.","optional":true},{"name":"TWITTER_COOKIE","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["DIYgod","yindaheng98","Rongronggg9"],"radar":[{"source":["x.com/:id"],"target":"/user/:id"}],"location":"user.ts"}' :test='undefined' />
-
-## YouTube <Site url="youtube.com"/>
-
-### Channel with id <Site url="youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/channel/:id/:embed?","categories":["social-media"],"example":"/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ","parameters":{"id":"YouTube channel id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/channel/:id"],"target":"/channel/:id"}],"name":"Channel with id","maintainers":["DIYgod"],"description":":::tip\nYouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).\n:::","location":"channel.ts"}' :test='undefined' />
-
-:::tip
-YouTube provides official RSS feeds for channels, for instance [https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ](https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ).
-:::
-
-### Community <Site url="youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/community/:handle","categories":["social-media"],"example":"/youtube/community/@JFlaMusic","parameters":{"handle":"YouTube handles or channel id"},"name":"Community","maintainers":["TonyRL"],"location":"community.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-### Custom URL <Site url="youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/c/:username/:embed?","categories":["social-media"],"example":"/youtube/c/YouTubeCreators","parameters":{"username":"YouTube custom URL","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/c/:id"],"target":"/c/:id"}],"name":"Custom URL","maintainers":["TonyRL"],"location":"custom.ts"}' :test='undefined' />
-
-### Channel with username <Site url="youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/user/:username/:embed?","categories":["social-media","popular"],"example":"/youtube/user/@JFlaMusic","parameters":{"username":"YouTuber username with @","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.youtube.com/user/:username"],"target":"/user/:username"}],"name":"Channel with username","maintainers":["DIYgod"],"location":"user.ts"}' :test='undefined' />
-
-### Music Charts <Site url="youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n  | Top artists | Top songs | Top music videos | Trending       |\n  | ----------- | --------- | ---------------- | -------------- |\n  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n  | ar        | au        | at      | be      | bo      | br     | ca     |\n\n  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n  | cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n  | eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n  | hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n  | Uruguay | Zimbabwe |\n  | ------- | -------- |\n  | uy      | zw       |","location":"charts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
-
-Chart
-
-  | Top artists | Top songs | Top music videos | Trending       |
-  | ----------- | --------- | ---------------- | -------------- |
-  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |
-
-  Country Code
-
-  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |
-  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |
-  | ar        | au        | at      | be      | bo      | br     | ca     |
-
-  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |
-  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |
-  | cl    | co       | cr         | cz      | dk      | do                 | ec      |
-
-  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |
-  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |
-  | eg    | sv          | ee      | fi      | fr     | de      | gt        |
-
-  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |
-  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |
-  | hn       | hu      | is      | in    | id        | ie      | il     | it    |
-
-  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |
-  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |
-  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |
-
-  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |
-  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |
-  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |
-
-  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |
-  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |
-  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |
-
-  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |
-  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |
-  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |
-
-  | Uruguay | Zimbabwe |
-  | ------- | -------- |
-  | uy      | zw       |
-
-### Playlist <Site url="youtube.com" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/playlist/:id/:embed?","categories":["social-media"],"example":"/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z","parameters":{"id":"YouTube playlist id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Playlist","maintainers":["HenryQW"],"location":"playlist.ts"}' :test='undefined' />
-
-### Subscriptions <Site url="www.youtube.com/feed/subscriptions" size="sm" />
-
-<Route namespace="youtube" :data='{"path":"/subscriptions/:embed?","categories":["social-media"],"example":"/youtube/subscriptions","parameters":{"embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":""},{"name":"YOUTUBE_CLIENT_ID","description":""},{"name":"YOUTUBE_CLIENT_SECRET","description":""},{"name":"YOUTUBE_REFRESH_TOKEN","description":""}]},"radar":[{"source":["www.youtube.com/feed/subscriptions","www.youtube.com/feed/channels"],"target":"/subscriptions"}],"name":"Subscriptions","maintainers":["TonyRL"],"url":"www.youtube.com/feed/subscriptions","location":"subscriptions.ts"}' :test='undefined' />
 
 ## 唱吧 <Site url="changba.com"/>
 
@@ -1302,14 +1244,10 @@ Chart
 
 ### 博主 <Site url="weibo.com" size="sm" />
 
-<Route namespace="weibo" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media","popular"],"example":"/weibo/user/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid","www.weibo.com/u/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["DIYgod","iplusx","Rongronggg9"],"description":":::warning\n  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证。如需要订阅该部分博主，可配置 Cookie 后订阅。\n\n  未提供 Cookie 的情况下偶尔会触发反爬限制，提供 Cookie 可缓解该情况。\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="weibo" :data='{"path":"/user/:uid/:routeParams?","categories":["social-media","popular"],"example":"/weibo/user/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid","www.weibo.com/u/:uid"],"target":"/user/:uid"}],"name":"博主","maintainers":["DIYgod","iplusx","Rongronggg9"],"description":":::warning\n  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证\n  :::","location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::warning
-  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证。如需要订阅该部分博主，可配置 Cookie 后订阅。
-
-  未提供 Cookie 的情况下偶尔会触发反爬限制，提供 Cookie 可缓解该情况。
-
-  微博用户 Cookie 的配置可参照部署文档
+  部分博主仅登录可见，未提供 Cookie 的情况下不支持订阅，可以通过打开 `https://m.weibo.cn/u/:uid` 验证
   :::
 
 ### 超话 <Site url="weibo.com" size="sm" />
@@ -1350,7 +1288,7 @@ Chart
 
 ### 用户收藏动态 <Site url="weibo.com/" size="sm" />
 
-<Route namespace="weibo" :data='{"path":"/user_bookmarks/:uid/:routeParams?","categories":["social-media"],"example":"/weibo/user_bookmarks/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["weibo.com/"],"target":"/user_bookmarks/:uid"}],"name":"用户收藏动态","maintainers":["cztchoice"],"url":"weibo.com/","description":":::warning\n  此方案必须使用用户`Cookie`进行抓取，只可以获取本人的收藏动态\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"user-bookmarks.ts"}' :test='undefined' />
+<Route namespace="weibo" :data='{"path":"/user_bookmarks/:uid/:routeParams?","categories":["social-media"],"example":"/weibo/user_bookmarks/1195230310","parameters":{"uid":"用户 id, 博主主页打开控制台执行 `$CONFIG.oid` 获取","routeParams":"额外参数；请参阅上面的说明和表格；特别地，当 `routeParams=1` 时开启微博视频显示"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["weibo.com/"],"target":"/user_bookmarks/:uid"}],"name":"用户收藏动态","maintainers":["cztchoice"],"url":"weibo.com/","description":":::warning\n  此方案必须使用用户`Cookie`进行抓取，只可以获取本人的收藏动态\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"user-bookmarks.ts"}' :test='undefined' />
 
 :::warning
   此方案必须使用用户`Cookie`进行抓取，只可以获取本人的收藏动态
@@ -1366,7 +1304,7 @@ Chart
 
 ### 自定义分组 <Site url="weibo.com" size="sm" />
 
-<Route namespace="weibo" :data='{"path":"/group/:gid/:gname?/:routeParams?","categories":["social-media"],"example":"/weibo/group/4541216424989965","parameters":{"gid":"分组id, 在网页版分组地址栏末尾`?gid=`处获取","gname":"分组显示名称; 默认为: `微博分组`","routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"自定义分组","maintainers":["monologconnor","Rongronggg9"],"description":":::warning\n  由于微博官方未提供自定义分组相关 api, 此方案必须使用用户`Cookie`进行抓取\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"group.ts"}' :test='undefined' />
+<Route namespace="weibo" :data='{"path":"/group/:gid/:gname?/:routeParams?","categories":["social-media"],"example":"/weibo/group/4541216424989965","parameters":{"gid":"分组id, 在网页版分组地址栏末尾`?gid=`处获取","gname":"分组显示名称; 默认为: `微博分组`","routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"自定义分组","maintainers":["monologconnor","Rongronggg9"],"description":":::warning\n  由于微博官方未提供自定义分组相关 api, 此方案必须使用用户`Cookie`进行抓取\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"group.ts"}' :test='undefined' />
 
 :::warning
   由于微博官方未提供自定义分组相关 api, 此方案必须使用用户`Cookie`进行抓取
@@ -1378,7 +1316,7 @@ Chart
 
 ### 最新关注时间线 <Site url="weibo.com/" size="sm" />
 
-<Route namespace="weibo" :data='{"path":"/friends/:routeParams?","categories":["social-media"],"example":"/weibo/friends","parameters":{"routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["weibo.com/"],"target":"/friends"}],"name":"最新关注时间线","maintainers":["CaoMeiYouRen"],"url":"weibo.com/","description":":::warning\n  此方案必须使用用户`Cookie`进行抓取\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"friends.ts"}' :test='undefined' />
+<Route namespace="weibo" :data='{"path":"/friends/:routeParams?","categories":["social-media"],"example":"/weibo/friends","parameters":{"routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":[{"name":"WEIBO_COOKIES","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["weibo.com/"],"target":"/friends"}],"name":"最新关注时间线","maintainers":["CaoMeiYouRen"],"url":"weibo.com/","description":":::warning\n  此方案必须使用用户`Cookie`进行抓取\n\n  因微博 cookies 的过期与更新方案未经验证，部署一次 Cookie 的有效时长未知\n\n  微博用户 Cookie 的配置可参照部署文档\n  :::","location":"friends.ts"}' :test='undefined' />
 
 :::warning
   此方案必须使用用户`Cookie`进行抓取
