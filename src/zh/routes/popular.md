@@ -41,7 +41,7 @@
 
 ### 排行榜 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/ranking/:rid?/:day?/:arc_type?/:disableEmbed?","name":"排行榜","maintainers":["DIYgod"],"categories":["social-media","popular"],"example":"/bilibili/ranking/0/3/1","parameters":{"rid":{"description":"排行榜分区 id","default":"0","options":[{"label":"全站","value":"0"},{"label":"动画","value":"1"},{"label":"国创相关","value":"168"},{"label":"音乐","value":"3"},{"label":"舞蹈","value":"129"},{"label":"游戏","value":"4"},{"label":"科技","value":"36"},{"label":"数码","value":"188"},{"label":"生活","value":"160"},{"label":"鬼畜","value":"119"},{"label":"时尚","value":"155"},{"label":"娱乐","value":"5"},{"label":"影视","value":"181"}]},"day":{"description":"时间跨度","options":[{"value":"1","label":"1日"},{"value":"3","label":"3日"},{"value":"7","label":"7日"},{"value":"30","label":"30日"}]},"arc_type":{"description":"投稿时间","default":"1","options":[{"value":"0","label":"全部投稿"},{"value":"1","label":"近期投稿"}]},"disableEmbed":{"description":"默认为开启内嵌视频, 任意值为关闭"}},"location":"ranking.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/ranking/:rid?/:day?/:arc_type?/:disableEmbed?","name":"排行榜","maintainers":["DIYgod"],"categories":["social-media","popular"],"example":"/bilibili/ranking/0/3/1","parameters":{"rid":{"description":"排行榜分区 id","default":"0","options":[{"label":"全站","value":"0"},{"label":"动画","value":"1"},{"label":"国创相关","value":"168"},{"label":"音乐","value":"3"},{"label":"舞蹈","value":"129"},{"label":"游戏","value":"4"},{"label":"科技","value":"36"},{"label":"数码","value":"188"},{"label":"生活","value":"160"},{"label":"鬼畜","value":"119"},{"label":"时尚","value":"155"},{"label":"娱乐","value":"5"},{"label":"影视","value":"181"}]},"day":{"description":"时间跨度","default":"3","options":[{"value":"1","label":"1日"},{"value":"3","label":"3日"},{"value":"7","label":"7日"},{"value":"30","label":"30日"}]},"arc_type":{"description":"投稿时间","default":"1","options":[{"value":"0","label":"全部投稿"},{"value":"1","label":"近期投稿"}]},"disableEmbed":{"description":"默认为开启内嵌视频, 任意值为关闭"}},"location":"ranking.ts"}' :test='{"code":0}' />
 
 ## Docker Hub <Site url="hub.docker.com"/>
 
@@ -52,6 +52,12 @@
 :::warning
   The owner of the official image fills in the library, for example: [https://rsshub.app/dockerhub/build/library/mysql](https://rsshub.app/dockerhub/build/library/mysql)
   :::
+
+## Fediverse <Site url="fediverse.observer"/>
+
+### Timeline <Site url="fediverse.observer" size="sm" />
+
+<Route namespace="fediverse" :data='{"path":"/timeline/:account","categories":["social-media","popular"],"example":"/fediverse/timeline/Mastodon@mastodon.social","parameters":{"account":"username@domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Timeline","maintainers":["DIYgod"],"location":"timeline.ts"}' :test='undefined' />
 
 ## GitHub <Site url="github.com"/>
 
@@ -287,7 +293,7 @@ Currently supports two authentication methods:
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":{"description":"类型","options":[{"label":"最新","value":""},{"label":"最热","value":"essence"},{"label":"精华","value":"elite"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douban" :data='{"path":"/group/:groupid/:type?","categories":["social-media","popular"],"example":"/douban/group/648102","parameters":{"groupid":"豆瓣小组的 id","type":{"description":"类型","default":"latest","options":[{"label":"最新","value":"latest"},{"label":"最热","value":"essence"},{"label":"精华","value":"elite"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/group/:groupid"],"target":"/group/:groupid"}],"name":"豆瓣小组","maintainers":["DIYgod"],"location":"other/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 微博绿洲 <Site url="weibo.com"/>
 
