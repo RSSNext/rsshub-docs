@@ -66,7 +66,7 @@
 
 ### 最近发表 <Site url="hicairo.com/" size="sm" />
 
-<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## Ian Spriggss <Site url="ianspriggs.com"/>
 
@@ -94,7 +94,7 @@
 
 ### List <Site url="medium.com" size="sm" />
 
-<Route namespace="medium" :data='{"path":"/list/:user/:catalogId","categories":["blog"],"example":"/medium/list/imsingee/f2d8d48096a9","parameters":{"user":"Username","catalogId":"List ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List","maintainers":["ImSingee"],"description":"The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.\n\n  :::warning\n  To access private lists, only self-hosting is supported.\n  :::","location":"list.ts"}' :test='{"code":0}' />
+<Route namespace="medium" :data='{"path":"/list/:user/:catalogId","categories":["blog"],"example":"/medium/list/imsingee/f2d8d48096a9","parameters":{"user":"Username","catalogId":"List ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List","maintainers":["ImSingee"],"description":"The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.\n\n  :::warning\n  To access private lists, only self-hosting is supported.\n  :::","location":"list.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 The List ID is the last part of the URL after `-`, for example, the username in [https://medium.com/@imsingee/list/collection-7e67004f23f9](https://medium.com/@imsingee/list/collection-7e67004f23f9) is `imsingee`, and the ID is `7e67004f23f9`.
 
@@ -158,7 +158,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Engineering <Site url="www.uber.com/blog/pittsburgh/engineering" size="sm" />
 
-<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Wojciech Muła <Site url="0x80.pl"/>
 
@@ -280,7 +280,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="zhujiceping.com/" size="sm" />
 
-<Route namespace="zhujiceping" :data='{"path":"/","categories":["blog"],"example":"/zhujiceping","radar":[{"source":["zhujiceping.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"zhujiceping.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="zhujiceping" :data='{"path":"/","categories":["blog"],"example":"/zhujiceping","radar":[{"source":["zhujiceping.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"zhujiceping.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 虎皮椒 <Site url="www.xunhupay.com"/>
 
@@ -292,7 +292,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
@@ -364,7 +364,7 @@ TAIWAN KADOKAWA
 
 ### 博客 <Site url="zjuvag.org" size="sm" />
 
-<Route namespace="zjuvag" :data='{"path":"/blog","categories":["blog"],"example":"/zjuvag/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["KaiyoungYu"],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="zjuvag" :data='{"path":"/blog","categories":["blog"],"example":"/zjuvag/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["KaiyoungYu"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 支流科技 <Site url="apiseven.com"/>
 
@@ -380,7 +380,7 @@ TAIWAN KADOKAWA
 
 ### 文章 <Site url="zhubai.love" size="sm" />
 
-<Route namespace="zhubai" :data='{"path":"/posts/:id","categories":["blog"],"example":"/zhubai/posts/via","parameters":{"id":"`id` 为竹白主页 url 中的三级域名，如 via.zhubai.love 的 `id` 为 `via`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["naixy28"],"description":":::tip\n  在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`20`\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="zhubai" :data='{"path":"/posts/:id","categories":["blog"],"example":"/zhubai/posts/via","parameters":{"id":"`id` 为竹白主页 url 中的三级域名，如 via.zhubai.love 的 `id` 为 `via`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["naixy28"],"description":":::tip\n  在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`20`\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`20`
@@ -390,5 +390,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
 

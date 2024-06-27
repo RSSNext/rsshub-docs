@@ -52,7 +52,7 @@
 
 ### 直播分区 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/live/area/:areaID/:order","categories":["live"],"example":"/bilibili/live/area/207/online","parameters":{"areaID":"分区 ID 分区增删较多, 可通过 [分区列表](https://api.live.bilibili.com/room/v1/Area/getList) 查询","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播分区","maintainers":["Qixingchen"],"description":":::warning\n  由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项\n  :::","location":"live-area.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/live/area/:areaID/:order","categories":["live"],"example":"/bilibili/live/area/207/online","parameters":{"areaID":"分区 ID 分区增删较多, 可通过 [分区列表](https://api.live.bilibili.com/room/v1/Area/getList) 查询","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播分区","maintainers":["Qixingchen"],"description":":::warning\n  由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项\n  :::","location":"live-area.ts"}' :test='{"code":0}' />
 
 :::warning
   由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项
@@ -60,11 +60,11 @@
 
 ### 直播开播 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/live/room/:roomID","categories":["live"],"example":"/bilibili/live/room/3","parameters":{"roomID":"房间号, 可在直播间 URL 中找到, 长短号均可"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.bilibili.com/:roomID"]}],"name":"直播开播","maintainers":["Qixingchen"],"location":"live-room.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/live/room/:roomID","categories":["live"],"example":"/bilibili/live/room/3","parameters":{"roomID":"房间号, 可在直播间 URL 中找到, 长短号均可"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.bilibili.com/:roomID"]}],"name":"直播开播","maintainers":["Qixingchen"],"location":"live-room.ts"}' :test='{"code":0}' />
 
 ### 直播搜索 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/live/search/:key/:order","categories":["live"],"example":"/bilibili/live/search/dota/online","parameters":{"key":"搜索关键字","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播搜索","maintainers":["Qixingchen"],"location":"live-search.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/live/search/:key/:order","categories":["live"],"example":"/bilibili/live/search/dota/online","parameters":{"key":"搜索关键字","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播搜索","maintainers":["Qixingchen"],"location":"live-search.ts"}' :test='{"code":0}' />
 
 ## 抖音直播 <Site url="douyin.com"/>
 
@@ -84,13 +84,13 @@
 
 ### 直播间开播 <Site url="douyin.com" size="sm" />
 
-<Route namespace="douyin" :data='{"path":"/live/:rid","categories":["live"],"example":"/douyin/live/685317364746","parameters":{"rid":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.douyin.com/:rid"]}],"name":"直播间开播","maintainers":["TonyRL"],"location":"live.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="douyin" :data='{"path":"/live/:rid","categories":["live"],"example":"/douyin/live/685317364746","parameters":{"rid":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.douyin.com/:rid"]}],"name":"直播间开播","maintainers":["TonyRL"],"location":"live.ts"}' :test='{"code":0}' />
 
 ## 斗鱼直播 <Site url="www.douyu.com"/>
 
 ### 直播间开播 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/room/:id","categories":["live"],"example":"/douyu/room/24422","parameters":{"id":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douyu.com/:id","www.douyu.com/"]}],"name":"直播间开播","maintainers":["DIYgod","ChaosTong"],"location":"room.ts"}' :test='{"code":0}' />
+<Route namespace="douyu" :data='{"path":"/room/:id","categories":["live"],"example":"/douyu/room/24422","parameters":{"id":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douyu.com/:id","www.douyu.com/"]}],"name":"直播间开播","maintainers":["DIYgod","ChaosTong"],"location":"room.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 浪 Play 直播 <Site url="lang.live"/>
 
