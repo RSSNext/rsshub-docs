@@ -1030,6 +1030,12 @@ GitHub provides some official RSS feeds:
 
 <Route namespace="luogu" :data='{"path":"/user/feed/:uid","categories":["programming"],"example":"/luogu/user/feed/1","parameters":{"uid":"用户 UID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luogu.com.cn/user/:uid"]}],"name":"用户动态","maintainers":["solstice23"],"location":"user-feed.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## 美团 <Site url="meituan.com"/>
+
+### 技术团队博客 <Site url="tech.meituan.com" size="sm" />
+
+<Route namespace="meituan" :data='{"path":"/tech","categories":["programming"],"example":"/meituan/tech","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tech.meituan.com"]}],"name":"技术团队博客","url":"tech.meituan.com","maintainers":["ktKongTong"],"location":"tech.ts"}' :test='undefined' />
+
 ## 墨天轮 <Site url="modb.pro"/>
 
 ### 合辑 <Site url="modb.pro" size="sm" />
