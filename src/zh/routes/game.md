@@ -119,6 +119,16 @@ Categories
   | 日本語             | ja-jp |
   | 繁體中文           | zh-tw |
 
+## Blue Archive <Site url="bluearchive.jp"/>
+
+### News <Site url="bluearchive.jp" size="sm" />
+
+<Route namespace="bluearchive" :data='{"path":"/news/:server/:type?","name":"News","categories":["game"],"maintainers":["equt"],"example":"/bluearchive/news/jp","parameters":{"server":"game server (ISO 3166 two-letter country code, case-insensitive), only `JP` is supported for now","type":"news type, checkout the table below for details"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"| 全て | メンテナンス | お知らせ | イベント |\n| :--: | :--: | :--: | :--: |\n| 0 | 1 | 2 | 3 |","location":"news.ts"}' :test='undefined' />
+
+| 全て | メンテナンス | お知らせ | イベント |
+| :--: | :--: | :--: | :--: |
+| 0 | 1 | 2 | 3 |
+
 ## Dorohedoro <Site url="dorohedoro.net"/>
 
 ### News <Site url="dorohedoro.net/news" size="sm" />
