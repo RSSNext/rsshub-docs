@@ -383,6 +383,12 @@ Language
   | [Важная информация](https://lrepacks.net/informaciya/)                          | [informaciya](https://rsshub.app/lrepacks/informaciya)                                       |
   :::
 
+## Raycast <Site url="raycast.com"/>
+
+### Changelog <Site url="raycast.com" size="sm" />
+
+<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='undefined' />
+
 ## RemNote <Site url="remnote.com"/>
 
 ### Changelog <Site url="remnote.com/changelog" size="sm" />
