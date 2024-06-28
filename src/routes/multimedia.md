@@ -204,6 +204,16 @@
 
 <Route namespace="apple" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/apple/podcast/id1559695855","parameters":{"id":"播客id，可以在 Apple 播客app 内分享的播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["podcasts.apple.com/cn/podcast/:id"]}],"name":"播客","maintainers":["Acring"],"url":"https://www.apple.com.cn/apple-podcasts/","location":"podcast.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## ASMR Online <Site url="asmr-200.com"/>
+
+### 最新资源 <Site url="asmr-200.com" size="sm" />
+
+<Route namespace="asmr-200" :data='{"path":"/works/:order?/:subtitle?/:sort?","categories":["multimedia"],"example":"/works","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"parameters":{"order":"排序字段，默认按照资源的收录日期来排序，详见下表","sort":"排序方式，可选 `asc` 和 `desc` ，默认倒序","subtitle":"筛选带字幕音频，可选 `0` 和 `1` ，默认关闭"},"radar":[{"source":["asmr-200.com"],"target":"asmr-200/works"}],"name":"最新资源","maintainers":["hualiong"],"url":"asmr-200.com","description":"| 发售日期 | 收录日期 | 销量 | 价格 | 评价 | 随机 | RJ号 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| release | create_date | dl_count | price | rate_average_2dp | random | id |","location":"index.ts"}' :test='undefined' />
+
+| 发售日期 | 收录日期 | 销量 | 价格 | 评价 | 随机 | RJ号 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| release | create_date | dl_count | price | rate_average_2dp | random | id |
+
 ## BT 之家 1LOU 站 <Site url="1lou.me"/>
 
 ### 通用 <Site url="1lou.me" size="sm" />
