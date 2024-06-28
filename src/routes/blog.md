@@ -66,7 +66,7 @@
 
 ### 最近发表 <Site url="hicairo.com/" size="sm" />
 
-<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Ian Spriggss <Site url="ianspriggs.com"/>
 
@@ -88,7 +88,7 @@
 
 ### Recently <Site url="macmenubar.com" size="sm" />
 
-<Route namespace="macmenubar" :data='{"path":"/recently/:category?","categories":["blog"],"example":"/macmenubar/recently/developer-apps,system-tools","parameters":{"category":"Category path name, seperate by comma, default is all categories. Category path name can be found in url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Recently","maintainers":["5upernova-heng"],"location":"recently.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="macmenubar" :data='{"path":"/recently/:category?","categories":["blog"],"example":"/macmenubar/recently/developer-apps,system-tools","parameters":{"category":"Category path name, seperate by comma, default is all categories. Category path name can be found in url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Recently","maintainers":["5upernova-heng"],"location":"recently.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Medium <Site url="medium.com"/>
 
@@ -298,7 +298,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 罗磊的独立博客 <Site url="luolei.org" size="sm" />
 
-<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="luolei" :data='{"path":"/","name":"罗磊的独立博客","url":"luolei.org","maintainers":["nczitzk"],"example":"/luolei","description":"","categories":["blog"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luolei.org"],"target":"/"}],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 免費資源網路社群 <Site url="free.com.tw"/>
 
@@ -324,7 +324,7 @@ TAIWAN KADOKAWA
 
 ### 文章 <Site url="luxiangdong.com/" size="sm" />
 
-<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="luxiangdong" :data='{"path":"/archive","categories":["blog"],"example":"/luxiangdong/archive","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["luxiangdong.com/"]}],"name":"文章","maintainers":["Levix"],"url":"luxiangdong.com/","location":"archive.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 新语丝 <Site url="xys.org"/>
 
@@ -390,5 +390,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 

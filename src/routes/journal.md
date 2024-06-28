@@ -255,7 +255,7 @@ Return results from 2020
 
 ### Blogs <Site url="science.org" size="sm" />
 
-<Route namespace="science" :data='{"path":"/blogs/:name?","categories":["journal"],"example":"/science/blogs/pipeline","parameters":{"name":"Short name for the blog, get this from the url. Defaults to pipeline"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/blogs/:name"],"target":"/blogs/:name"}],"name":"Blogs","maintainers":["TomHodson"],"description":"To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor&#39;s blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.","location":"blogs.ts"}' :test='{"code":0}' />
+<Route namespace="science" :data='{"path":"/blogs/:name?","categories":["journal"],"example":"/science/blogs/pipeline","parameters":{"name":"Short name for the blog, get this from the url. Defaults to pipeline"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["science.org/blogs/:name"],"target":"/blogs/:name"}],"name":"Blogs","maintainers":["TomHodson"],"description":"To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor&#39;s blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.","location":"blogs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 To subscribe to [IN THE PIPELINE by Derek Lowe’s](https://science.org/blogs/pipeline) or the [science editor's blog](https://science.org/blogs/editors-blog), use the name parameter `pipeline` or `editors-blog`.
 
@@ -345,13 +345,13 @@ Sorting
 
 ### Current Issue <Site url="journals.uchicago.edu" size="sm" />
 
-<Route namespace="uchicago" :data='{"path":"/journals/current/:journal","categories":["journal"],"example":"/uchicago/journals/current/jpe","parameters":{"journal":"Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["journals.uchicago.edu/toc/:journal/current","journals.uchicago.edu/journal/:journal"]}],"name":"Current Issue","maintainers":["TonyRL"],"location":"current.ts"}' :test='{"code":0}' />
+<Route namespace="uchicago" :data='{"path":"/journals/current/:journal","categories":["journal"],"example":"/uchicago/journals/current/jpe","parameters":{"journal":"Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["journals.uchicago.edu/toc/:journal/current","journals.uchicago.edu/journal/:journal"]}],"name":"Current Issue","maintainers":["TonyRL"],"location":"current.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## USENIX <Site url="usenix.org"/>
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 

@@ -171,7 +171,7 @@ Type
 
 ### Magazine <Site url="magnumphotos.com/" size="sm" />
 
-<Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture"],"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture"],"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## NASA Astronomy Picture of the Day <Site url="apod.nasa.gov"/>
 
