@@ -1517,7 +1517,7 @@ Member ID
 
 ### 分类 <Site url="utgd.net" size="sm" />
 
-<Route namespace="utgd" :data='{"path":"/:category?","categories":["new-media"],"example":"/utgd/method","parameters":{"category":"分类，可在对应分类页的 URL 中找到，默认为方法"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/category/s/:category","utgd.net/"],"target":"/:category"}],"name":"分类","maintainers":["nczitzk"],"description":"| 方法   | 观点    |\n  | ------ | ------- |\n  | method | opinion |","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="utgd" :data='{"path":"/category/:category?","categories":["new-media"],"example":"/utgd/category/method","parameters":{"category":"分类，可在对应分类页的 URL 中找到，默认为方法"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/category/s/:category","utgd.net/"],"target":"/category/:category"}],"name":"分类","maintainers":["nczitzk"],"description":"| 方法   | 观点    |\n  | ------ | ------- |\n  | method | opinion |","location":"category.ts"}' :test='undefined' />
 
 | 方法   | 观点    |
   | ------ | ------- |
