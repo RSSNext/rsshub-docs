@@ -290,7 +290,7 @@ export const route: Route = {
 };
 ```
 
-### Getting data from HMTL
+### Getting data from HTML
 
 After obtaining the user input, we need to initiate a request to the webpage to retrieve the required information. In most cases, it is necessary to use `ofetch` (a custom [ofetch](https://github.com/unjs/ofetch) wrapper function) in `@/utils/ofetch` to send HTTP requests. For more information, please refer to the [ofetch documentation](https://github.com/unjs/ofetch).
 
@@ -407,6 +407,7 @@ Here's the updated code:
 
 ```ts{31-45}
 import ofetch from '@/utils/ofetch';
+import cache from '@/utils/cache';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
@@ -533,6 +534,7 @@ import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
+import cache from '@/utils/cache';
 
 export const route: Route = {
     // ...
