@@ -28,7 +28,7 @@
 
 ### Tutorials <Site url="howtoforge.com/" size="sm" />
 
-<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="howtoforge" :data='{"path":"/","categories":["study"],"example":"/howtoforge","radar":[{"source":["howtoforge.com/"]}],"name":"Tutorials","maintainers":["cnkmmk"],"url":"howtoforge.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## MindMeister <Site url="mindmeister.com"/>
 
@@ -92,7 +92,7 @@
 
 ### Viz of the day <Site url="public.tableau.com" size="sm" />
 
-<Route namespace="tableau" :data='{"path":"/viz-of-the-day","categories":["study"],"example":"/tableau/viz-of-the-day","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Viz of the day","maintainers":[],"location":"viz-of-the-day.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tableau" :data='{"path":"/viz-of-the-day","categories":["study"],"example":"/tableau/viz-of-the-day","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Viz of the day","maintainers":[],"location":"viz-of-the-day.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## X-MOL <Site url="x-mol.com"/>
 
@@ -120,13 +120,13 @@
 
 ### 公告 <Site url="rsks.hunanpea.com" size="sm" />
 
-<Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":0}' />
 
 ## 山东省教育招生考试院 <Site url="sdzk.cn"/>
 
 ### 新闻 <Site url="sdzk.cn" size="sm" />
 
-<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sdzk" :data='{"path":"/:bcid?/:cid?","categories":["study"],"example":"/sdzk","parameters":{"bcid":"板块 id，可在对应板块页 URL 中找到，默认为 `1`，即信息与政策","cid":"栏目 id，可在对应板块页 URL 中找到，默认为 `16`，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["nczitzk"],"description":":::tip\n  若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。\n\n  若订阅 [通知公告](https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1&CID=16`。截取 `BCID=1` 与 `CID=16` 作为参数，此时路由为 [`/sdzk/1/16`](https://rsshub.app/sdzk/1/16)。\n  :::","location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   若订阅 [信息与政策](https://www.sdzk.cn/NewsList.aspx?BCID=1)，网址为 `https://www.sdzk.cn/NewsList.aspx?BCID=1`。截取 `BCID=1` 作为参数，此时路由为 [`/sdzk/1`](https://rsshub.app/sdzk/1)。
@@ -152,7 +152,7 @@
 
 ### 自学考试通知公告 <Site url="www.shmeea.edu.cn/page/04000/index.html" size="sm" />
 
-<Route namespace="shmeea" :data='{"path":"/self-study","categories":["study"],"example":"/shmeea/self-study","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shmeea.edu.cn/page/04000/index.html","www.shmeea.edu.cn/"]}],"name":"自学考试通知公告","maintainers":["h2ws"],"url":"www.shmeea.edu.cn/page/04000/index.html","location":"self-study.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="shmeea" :data='{"path":"/self-study","categories":["study"],"example":"/shmeea/self-study","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shmeea.edu.cn/page/04000/index.html","www.shmeea.edu.cn/"]}],"name":"自学考试通知公告","maintainers":["h2ws"],"url":"www.shmeea.edu.cn/page/04000/index.html","location":"self-study.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 网易公开课 <Site url="163.com"/>
 
@@ -216,7 +216,7 @@
 
 ### 各学位授予单位学位证书上网进度 <Site url="chinadegrees.com.cn" size="sm" />
 
-<Route namespace="chinadegrees" :data='{"path":"/:province?","categories":["study"],"example":"/chinadegrees/11","parameters":{"province":"省市代号，见下表，亦可在 [这里](http://www.chinadegrees.com.cn/help/provinceSwqk.html) 找到，默认为 `11`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"各学位授予单位学位证书上网进度","description":"| 省市             | 代号 |\n    | ---------------- | ---- |\n    | 北京市           | 11   |\n    | 天津市           | 12   |\n    | 河北省           | 13   |\n    | 山西省           | 14   |\n    | 内蒙古自治区     | 15   |\n    | 辽宁省           | 21   |\n    | 吉林省           | 22   |\n    | 黑龙江省         | 23   |\n    | 上海市           | 31   |\n    | 江苏省           | 32   |\n    | 浙江省           | 33   |\n    | 安徽省           | 34   |\n    | 福建省           | 35   |\n    | 江西省           | 36   |\n    | 山东省           | 37   |\n    | 河南省           | 41   |\n    | 湖北省           | 42   |\n    | 湖南省           | 43   |\n    | 广东省           | 44   |\n    | 广西壮族自治区   | 45   |\n    | 海南省           | 46   |\n    | 重庆市           | 50   |\n    | 四川省           | 51   |\n    | 贵州省           | 52   |\n    | 云南省           | 53   |\n    | 西藏自治区       | 54   |\n    | 陕西省           | 61   |\n    | 甘肃省           | 62   |\n    | 青海省           | 63   |\n    | 宁夏回族自治区   | 64   |\n    | 新疆维吾尔自治区 | 65   |\n    | 台湾             | 71   |","maintainers":["TonyRL"],"location":"province.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="chinadegrees" :data='{"path":"/:province?","categories":["study"],"example":"/chinadegrees/11","parameters":{"province":"省市代号，见下表，亦可在 [这里](http://www.chinadegrees.com.cn/help/provinceSwqk.html) 找到，默认为 `11`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"各学位授予单位学位证书上网进度","description":"| 省市             | 代号 |\n    | ---------------- | ---- |\n    | 北京市           | 11   |\n    | 天津市           | 12   |\n    | 河北省           | 13   |\n    | 山西省           | 14   |\n    | 内蒙古自治区     | 15   |\n    | 辽宁省           | 21   |\n    | 吉林省           | 22   |\n    | 黑龙江省         | 23   |\n    | 上海市           | 31   |\n    | 江苏省           | 32   |\n    | 浙江省           | 33   |\n    | 安徽省           | 34   |\n    | 福建省           | 35   |\n    | 江西省           | 36   |\n    | 山东省           | 37   |\n    | 河南省           | 41   |\n    | 湖北省           | 42   |\n    | 湖南省           | 43   |\n    | 广东省           | 44   |\n    | 广西壮族自治区   | 45   |\n    | 海南省           | 46   |\n    | 重庆市           | 50   |\n    | 四川省           | 51   |\n    | 贵州省           | 52   |\n    | 云南省           | 53   |\n    | 西藏自治区       | 54   |\n    | 陕西省           | 61   |\n    | 甘肃省           | 62   |\n    | 青海省           | 63   |\n    | 宁夏回族自治区   | 64   |\n    | 新疆维吾尔自治区 | 65   |\n    | 台湾             | 71   |","maintainers":["TonyRL"],"location":"province.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 省市             | 代号 |
     | ---------------- | ---- |

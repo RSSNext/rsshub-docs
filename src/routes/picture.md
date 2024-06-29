@@ -46,7 +46,7 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 
 ### MMDArchive 标签查询 <Site url="mmda.booru.org" size="sm" />
 
-<Route namespace="booru" :data='{"path":"/mmda/tags/:tags?","categories":["picture"],"example":"/booru/mmda/tags/full_body%20blue_eyes","parameters":{"tags":"标签，多个标签使用 `%20` 连接，如需根据作者查询则在 `user:` 后接上作者名，如：`user:xxxx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mmda.booru.org/index.php"]}],"name":"MMDArchive 标签查询","maintainers":["N78Wy"],"description":"For example:\n\n  -   默认查询 (什么 tag 都不加)：`/booru/mmda/tags`\n  -   默认查询单个 tag：`/booru/mmda/tags/full_body`\n  -   默认查询多个 tag：`/booru/mmda/tags/full_body%20blue_eyes`\n  -   默认查询根据作者查询：`/booru/mmda/tags/user:xxxx`","location":"mmda.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="booru" :data='{"path":"/mmda/tags/:tags?","categories":["picture"],"example":"/booru/mmda/tags/full_body%20blue_eyes","parameters":{"tags":"标签，多个标签使用 `%20` 连接，如需根据作者查询则在 `user:` 后接上作者名，如：`user:xxxx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mmda.booru.org/index.php"]}],"name":"MMDArchive 标签查询","maintainers":["N78Wy"],"description":"For example:\n\n  -   默认查询 (什么 tag 都不加)：`/booru/mmda/tags`\n  -   默认查询单个 tag：`/booru/mmda/tags/full_body`\n  -   默认查询多个 tag：`/booru/mmda/tags/full_body%20blue_eyes`\n  -   默认查询根据作者查询：`/booru/mmda/tags/user:xxxx`","location":"mmda.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 For example:
 
@@ -171,7 +171,7 @@ Type
 
 ### Magazine <Site url="magnumphotos.com/" size="sm" />
 
-<Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture"],"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture"],"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## NASA Astronomy Picture of the Day <Site url="apod.nasa.gov"/>
 
@@ -271,5 +271,5 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### 频道 <Site url="qipamaijia.com/" size="sm" />
 
-<Route namespace="qipamaijia" :data='{"path":"/:cate?","categories":["picture"],"example":"/qipamaijia/fuli","parameters":{"cate":"频道名，可在对应网址中找到，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qipamaijia.com/","qipamaijia.com/:cate"],"target":"/:cate"}],"name":"频道","maintainers":["Fatpandac","nczitzk"],"url":"qipamaijia.com/","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qipamaijia" :data='{"path":"/:cate?","categories":["picture"],"example":"/qipamaijia/fuli","parameters":{"cate":"频道名，可在对应网址中找到，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qipamaijia.com/","qipamaijia.com/:cate"],"target":"/:cate"}],"name":"频道","maintainers":["Fatpandac","nczitzk"],"url":"qipamaijia.com/","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
