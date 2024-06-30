@@ -122,6 +122,11 @@ const instances = [{
     location: '🇬🇧',
     maintainer: 'HenryQW',
     maintainerUrl: 'https://github.com/HenryQW',
+  }, {
+    url: 'https://rss.peachyjoy.top',
+    location: '🇺🇸',
+    maintainer: 'milletbig',
+    maintainerUrl: 'https://github.com/milletbig',
   }
 ]
 
