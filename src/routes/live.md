@@ -84,7 +84,7 @@
 
 ### 直播间开播 <Site url="douyin.com" size="sm" />
 
-<Route namespace="douyin" :data='{"path":"/live/:rid","categories":["live"],"example":"/douyin/live/685317364746","parameters":{"rid":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.douyin.com/:rid"]}],"name":"直播间开播","maintainers":["TonyRL"],"location":"live.ts"}' :test='{"code":0}' />
+<Route namespace="douyin" :data='{"path":"/live/:rid","categories":["live"],"example":"/douyin/live/685317364746","parameters":{"rid":"直播间 id, 可在主播直播间页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["live.douyin.com/:rid"]}],"name":"直播间开播","maintainers":["TonyRL"],"location":"live.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 斗鱼直播 <Site url="www.douyu.com"/>
 

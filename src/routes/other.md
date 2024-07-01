@@ -115,7 +115,7 @@ News from the official site of men's professional tennis.
 
 ### 搜索 <Site url="cn.bing.com/" size="sm" />
 
-<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="bing" :data='{"path":"/search/:keyword","categories":["other"],"example":"/bing/search/rss","parameters":{"keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.bing.com/"],"target":""}],"name":"搜索","maintainers":["CaoMeiYouRen"],"url":"cn.bing.com/","location":"search.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## biodiscover.com 生物探索 <Site url="www.biodiscover.com"/>
 
@@ -127,7 +127,7 @@ News from the official site of men's professional tennis.
 
 ### 文章 <Site url="clickme.net" size="sm" />
 
-<Route namespace="clickme" :data='{"path":"/:site/:grouping/:name","categories":["other"],"example":"/clickme/default/category/beauty","parameters":{"site":"站点，`default`为普通站，`r18`为成人站，其它值默认为普通站","grouping":"分组方式，`category`为分类，`tag`为标签，其他值默认为分类","name":"分类名或标签名，分类名为英文，可以在分类 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="clickme" :data='{"path":"/:site/:grouping/:name","categories":["other"],"example":"/clickme/default/category/beauty","parameters":{"site":"站点，`default`为普通站，`r18`为成人站，其它值默认为普通站","grouping":"分组方式，`category`为分类，`tag`为标签，其他值默认为分类","name":"分类名或标签名，分类名为英文，可以在分类 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["hoilc"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## CuriousCat <Site url="curiouscat.live"/>
 
@@ -301,7 +301,7 @@ News from the official site of men's professional tennis.
 
 ### Projects <Site url="instructables.com/projects" size="sm" />
 
-<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":0}' />
+<Route namespace="instructables" :data='{"path":"/projects/:category?","categories":["other"],"example":"/instructables/projects/circuits","parameters":{"category":"Category, empty by default, can be found in URL or see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instructables.com/projects"],"target":"/projects"}],"name":"Projects","maintainers":["wolfg1969"],"url":"instructables.com/projects","description":"| All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |\n  | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |\n  |     | circuits | workshop | craft | cooking | living | outside | teachers |","location":"projects.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | All | Circuits | Workshop | Craft | Cooking | Living | Outside | Teachers |
   | --- | -------- | -------- | ----- | ------- | ------ | ------- | -------- |
@@ -496,7 +496,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Today Popular <Site url="www.producthunt.com/" size="sm" />
 
-<Route namespace="producthunt" :data='{"path":"/today","categories":["other"],"example":"/producthunt/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.producthunt.com/"]}],"name":"Today Popular","maintainers":["miaoyafeng","Fatpandac"],"url":"www.producthunt.com/","location":"today.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="producthunt" :data='{"path":"/today","categories":["other"],"example":"/producthunt/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.producthunt.com/"]}],"name":"Today Popular","maintainers":["miaoyafeng","Fatpandac"],"url":"www.producthunt.com/","location":"today.ts"}' :test='{"code":0}' />
 
 ## PubMed <Site url="pubmed.ncbi.nlm.nih.gov"/>
 
@@ -508,13 +508,13 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Sustainability <Site url="strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html" size="sm" />
 
-<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="pwc" :data='{"path":"/strategyand/sustainability","categories":["other"],"example":"/pwc/strategyand/sustainability","radar":[{"source":["strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","strategyand.pwc.com/"]}],"name":"Sustainability","maintainers":["mintyfrankie"],"url":"strategyand.pwc.com/at/en/functions/sustainability-strategy/publications.html","location":"sustainability.ts"}' :test='{"code":0}' />
 
 ## Panda <Site url="usepanda.com"/>
 
 ### Feeds <Site url="usepanda.com" size="sm" />
 
-<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":0}' />
 
 | Channel | feedId                   |
   | ------- | ------------------------ |
@@ -745,7 +745,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 449372135276 to be less than 311040000000"}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 420579918627 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -952,7 +952,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 日榜 <Site url="data.guduodata.com/" size="sm" />
 
-<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":0}' />
+<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 观海新闻 <Site url="guanhai.com.cn"/>
 
@@ -1421,7 +1421,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 分析师园地 <Site url="cfachina.org" size="sm" />
 
-<Route namespace="cfachina" :data='{"path":"/servicesupport/analygarden/:program?","categories":["other"],"example":"/cfachina/servicesupport/analygarden","parameters":{"program":"分类，见下表，留空为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cfachina.org/servicesupport/analygarden/:program?","cfachina.org/"]}],"name":"分析师园地","maintainers":["TonyRL"],"description":"| 有色金属类 | 黑色金属类 | 能源化工类 | 贵金属类 | 农产品类 | 金融类 | 指数类 |\n  | ---------- | ---------- | ---------- | -------- | -------- | ------ | ------ |\n  | ysjsl      | hsjsl      | nyhgl      | gjsl     | ncpl     | jrl    | zsl    |","location":"analygarden.ts"}' :test='{"code":0}' />
+<Route namespace="cfachina" :data='{"path":"/servicesupport/analygarden/:program?","categories":["other"],"example":"/cfachina/servicesupport/analygarden","parameters":{"program":"分类，见下表，留空为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cfachina.org/servicesupport/analygarden/:program?","cfachina.org/"]}],"name":"分析师园地","maintainers":["TonyRL"],"description":"| 有色金属类 | 黑色金属类 | 能源化工类 | 贵金属类 | 农产品类 | 金融类 | 指数类 |\n  | ---------- | ---------- | ---------- | -------- | -------- | ------ | ------ |\n  | ysjsl      | hsjsl      | nyhgl      | gjsl     | ncpl     | jrl    | zsl    |","location":"analygarden.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 有色金属类 | 黑色金属类 | 能源化工类 | 贵金属类 | 农产品类 | 金融类 | 指数类 |
   | ---------- | ---------- | ---------- | -------- | -------- | ------ | ------ |

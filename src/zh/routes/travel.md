@@ -14,7 +14,7 @@
 
 ### Exhibitions <Site url="www.brooklynmuseum.org" size="sm" />
 
-<Route namespace="brooklynmuseum" :data='{"path":"/exhibitions/:state?","categories":["travel"],"example":"/brooklynmuseum/exhibitions","parameters":{"state":"展览进行的状态：`current` 对应展览当前正在进行，`past` 对应过去的展览，`upcoming` 对应即将举办的展览，默认为 `current`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Exhibitions","maintainers":[],"location":"exhibitions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="brooklynmuseum" :data='{"path":"/exhibitions/:state?","categories":["travel"],"example":"/brooklynmuseum/exhibitions","parameters":{"state":"展览进行的状态：`current` 对应展览当前正在进行，`past` 对应过去的展览，`upcoming` 对应即将举办的展览，默认为 `current`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Exhibitions","maintainers":[],"location":"exhibitions.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## National Geographic <Site url="www.nationalgeographic.com"/>
 

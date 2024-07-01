@@ -82,7 +82,7 @@
 
 ### Essay <Site url="kunchengblog.com/essay" size="sm" />
 
-<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## MacMenuBar <Site url="macmenubar.com"/>
 
@@ -264,7 +264,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 每日精选文章 <Site url="playpcesor.com/" size="sm" />
 
-<Route namespace="playpcesor" :data='{"path":"/","categories":["blog"],"example":"/playpcesor","radar":[{"source":["playpcesor.com/"]}],"name":"每日精选文章","maintainers":["cnkmmk"],"url":"playpcesor.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="playpcesor" :data='{"path":"/","categories":["blog"],"example":"/playpcesor","radar":[{"source":["playpcesor.com/"]}],"name":"每日精选文章","maintainers":["cnkmmk"],"url":"playpcesor.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## 纷享销客 CRM <Site url="fxiaoke.com"/>
 
@@ -292,7 +292,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
@@ -352,7 +352,7 @@ TAIWAN KADOKAWA
 
 ### 博客 <Site url="cloudnative.to" size="sm" />
 
-<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 赵容部落 <Site url="zrblog.net"/>
 

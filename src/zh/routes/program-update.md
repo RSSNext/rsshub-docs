@@ -111,7 +111,7 @@ Alpine Linux packages update
 
 ### Programs <Site url="appstorrent.ru/programs/" size="sm" />
 
-<Route namespace="appstorrent" :data='{"path":"/programs","categories":["program-update"],"example":"/appstorrent/programs","name":"Programs","maintainers":["xzzpig"],"url":"appstorrent.ru/programs/","location":"programs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="appstorrent" :data='{"path":"/programs","categories":["program-update"],"example":"/appstorrent/programs","name":"Programs","maintainers":["xzzpig"],"url":"appstorrent.ru/programs/","location":"programs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## ASUS <Site url="asus.com.cn"/>
 
@@ -209,7 +209,7 @@ Language
 
 ### Script Feedback <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":0}' />
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
@@ -226,7 +226,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -301,7 +301,7 @@ Language
 
 ### New firmware <Site url="miui.com" size="sm" />
 
-<Route namespace="miui" :data='{"path":"/firmware/:device/:type?/:region?","categories":["program-update"],"example":"/miui/firmware/aries","parameters":{"device":"the device `codename` eg. `aries` for Mi 2S","type":"type","region":"Region, default to `cn`"},"name":"New firmware","maintainers":["Indexyz"],"description":"  | stable  | development |\n    | ------- | ----------- |\n    | release | dev         |\n  \n    | region | region |\n    | ------ | ------ |\n    | China  | cn     |\n    | Global | global |","location":"firmware/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="miui" :data='{"path":"/firmware/:device/:type?/:region?","categories":["program-update"],"example":"/miui/firmware/aries","parameters":{"device":"the device `codename` eg. `aries` for Mi 2S","type":"type","region":"Region, default to `cn`"},"name":"New firmware","maintainers":["Indexyz"],"description":"  | stable  | development |\n    | ------- | ----------- |\n    | release | dev         |\n  \n    | region | region |\n    | ------ | ------ |\n    | China  | cn     |\n    | Global | global |","location":"firmware/index.ts"}' :test='{"code":0}' />
 
   | stable  | development |
     | ------- | ----------- |
@@ -347,19 +347,19 @@ Language
 
 ### Release Notes <Site url="postman.com/downloads/release-notes" size="sm" />
 
-<Route namespace="postman" :data='{"path":"/release-notes","categories":["program-update"],"example":"/postman/release-notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["postman.com/downloads/release-notes","postman.com/"]}],"name":"Release Notes","maintainers":["nczitzk"],"url":"postman.com/downloads/release-notes","location":"release-notes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="postman" :data='{"path":"/release-notes","categories":["program-update"],"example":"/postman/release-notes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["postman.com/downloads/release-notes","postman.com/"]}],"name":"Release Notes","maintainers":["nczitzk"],"url":"postman.com/downloads/release-notes","location":"release-notes.ts"}' :test='{"code":0}' />
 
 ## PuTTY <Site url="www.chiark.greenend.org.uk"/>
 
 ### Change Log <Site url="www.chiark.greenend.org.uk/~sgtatham/putty/changes.html" size="sm" />
 
-<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="putty" :data='{"path":"/changes","categories":["program-update"],"example":"/putty/changes","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","www.chiark.greenend.org.uk/"]}],"name":"Change Log","maintainers":["nczitzk"],"url":"www.chiark.greenend.org.uk/~sgtatham/putty/changes.html","location":"changes.ts"}' :test='{"code":1,"message":"expected 344047617597 to be less than 311040000000"}' />
 
 ## qBittorrent <Site url="qbittorrent.org"/>
 
 ### News <Site url="qbittorrent.org/news.php" size="sm" />
 
-<Route namespace="qbittorrent" :data='{"path":"/news","categories":["program-update"],"example":"/qbittorrent/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbittorrent.org/news.php","qbittorrent.org/"]}],"name":"News","maintainers":["TonyRL"],"url":"qbittorrent.org/news.php","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="qbittorrent" :data='{"path":"/news","categories":["program-update"],"example":"/qbittorrent/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbittorrent.org/news.php","qbittorrent.org/"]}],"name":"News","maintainers":["TonyRL"],"url":"qbittorrent.org/news.php","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## REPACK скачать <Site url="lrepacks.net"/>
 
@@ -387,7 +387,7 @@ Language
 
 ### Changelog <Site url="raycast.com" size="sm" />
 
-<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='{"code":0}' />
 
 ## RemNote <Site url="remnote.com"/>
 
@@ -399,7 +399,7 @@ Language
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
 
-<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update","popular"],"example":"/rsshub/routes/en","parameters":{"lang":{"description":"Language","options":[{"label":"Chinese","value":"zh"},{"label":"English","value":"en"}],"default":"en"}},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update","popular"],"example":"/rsshub/routes/en","parameters":{"lang":{"description":"Language","options":[{"label":"Chinese","value":"zh"},{"label":"English","value":"en"}],"default":"en"}},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ &#39;bsky\"/keyword/:keyword\"&#39;, …(134) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
 
 ### Unknown <Site url="docs.rsshub.app" size="sm" />
 
