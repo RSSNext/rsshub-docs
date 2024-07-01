@@ -483,19 +483,19 @@ Language
 
 ### 国家统计局 通用 <Site url="www.stats.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/stats/*","name":"国家统计局 通用","url":"www.stats.gov.cn","categories":["government"],"maintainers":["bigfei","nczitzk"],"example":"/stats/sj/zxfb","radar":[{"title":"国家统计局 通用","source":["www.stats.gov.cn/*path"],"target":"/gov/stats/*path"}],"description":"::: tip\n    路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。\n\n    若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/)\n    则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。\n    此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)\n\n    若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/)\n    则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/`\n    后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)\n    :::","location":"stats/index.ts"}' :test='{"code":1,"message":"expected 404 to be 200 // Object.is equality"}' />
+<Route namespace="gov" :data='{"path":"/stats/*","name":"国家统计局 通用","url":"www.stats.gov.cn","categories":["government"],"maintainers":["bigfei","nczitzk"],"example":"/stats/sj/zxfb","radar":[{"title":"国家统计局 通用","source":["www.stats.gov.cn/*path"],"target":"/gov/stats/*path"}],"description":"::: tip\n路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。\n\n若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/)\n则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。\n此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)\n\n若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/)\n则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/`\n后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)\n:::","location":"stats/index.ts"}' :test='{"code":1,"message":"expected 404 to be 200 // Object.is equality"}' />
 
 ::: tip
-    路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。
+路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。
 
-    若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/)
-    则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。
-    此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)
+若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/)
+则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。
+此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)
 
-    若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/)
-    则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/`
-    后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)
-    :::
+若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/)
+则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/`
+后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)
+:::
 
 ### 国务院政策文件库 <Site url="sh.gov.cn" size="sm" />
 
