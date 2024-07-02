@@ -1049,6 +1049,12 @@ Column 列表：
   | -------- | -------- | ---- | ------ | ------- |
   | china    | world    | mil  | taiwai | opinion |
 
+## 鏡週刊 Mirror Media <Site url="mirrormedia.mg"/>
+
+### 首页 <Site url="mirrormedia.mg" size="sm" />
+
+<Route namespace="mirrormedia" :data='{"path":"/","categories":["traditional-media"],"example":"/mirrormedia","parameters":{},"name":"首页","maintainers":["dzx-dzx"],"radar":[{"source":["mirrormedia.mg"]}],"location":"index.ts"}' :test='undefined' />
+
 ## 客家電視台 <Site url="hakkatv.org.tw"/>
 
 ### 新聞首頁 <Site url="hakkatv.org.tw/news" size="sm" />
