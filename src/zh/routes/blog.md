@@ -82,7 +82,7 @@
 
 ### Essay <Site url="kunchengblog.com/essay" size="sm" />
 
-<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="kunchengblog" :data='{"path":"/essay","categories":["blog"],"example":"/kunchengblog/essay","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kunchengblog.com/essay"]}],"name":"Essay","maintainers":["nczitzk"],"url":"kunchengblog.com/essay","location":"essay.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## MacMenuBar <Site url="macmenubar.com"/>
 
@@ -158,7 +158,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Engineering <Site url="www.uber.com/blog/pittsburgh/engineering" size="sm" />
 
-<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":0}' />
 
 ## Wojciech Muła <Site url="0x80.pl"/>
 
@@ -264,7 +264,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 每日精选文章 <Site url="playpcesor.com/" size="sm" />
 
-<Route namespace="playpcesor" :data='{"path":"/","categories":["blog"],"example":"/playpcesor","radar":[{"source":["playpcesor.com/"]}],"name":"每日精选文章","maintainers":["cnkmmk"],"url":"playpcesor.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="playpcesor" :data='{"path":"/","categories":["blog"],"example":"/playpcesor","radar":[{"source":["playpcesor.com/"]}],"name":"每日精选文章","maintainers":["cnkmmk"],"url":"playpcesor.com/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 纷享销客 CRM <Site url="fxiaoke.com"/>
 
@@ -390,5 +390,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
 

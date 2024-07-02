@@ -501,11 +501,11 @@ javaType:
 
 ### PlayStation Monthly Games <Site url="www.playstation.com/en-sg/ps-plus/whats-new" size="sm" />
 
-<Route namespace="ps" :data='{"path":"/monthly-games","categories":["game"],"example":"/ps/monthly-games","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.playstation.com/en-sg/ps-plus/whats-new"]}],"name":"PlayStation Monthly Games","maintainers":["justjustCC"],"url":"www.playstation.com/en-sg/ps-plus/whats-new","location":"monthly-games.ts"}' :test='{"code":0}' />
+<Route namespace="ps" :data='{"path":"/monthly-games","categories":["game"],"example":"/ps/monthly-games","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.playstation.com/en-sg/ps-plus/whats-new"]}],"name":"PlayStation Monthly Games","maintainers":["justjustCC"],"url":"www.playstation.com/en-sg/ps-plus/whats-new","location":"monthly-games.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### PlayStation Network user trophy <Site url="www.playstation.com" size="sm" />
 
-<Route namespace="ps" :data='{"path":"/trophy/:id","categories":["game"],"example":"/ps/trophy/DIYgod_","parameters":{"id":"User ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"PlayStation Network user trophy","maintainers":["DIYgod"],"location":"trophy.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="ps" :data='{"path":"/trophy/:id","categories":["game"],"example":"/ps/trophy/DIYgod_","parameters":{"id":"User ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"PlayStation Network user trophy","maintainers":["DIYgod"],"location":"trophy.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## SEGA <Site url="pjsekai.sega.jp"/>
 
@@ -617,7 +617,7 @@ Helpful route parameters:
 
 ### 游戏论坛 <Site url="taptap.com" size="sm" />
 
-<Route namespace="taptap" :data='{"path":"/topic/:id/:type?/:sort?/:lang?","categories":["game"],"example":"/taptap/topic/142793/official","parameters":{"id":"游戏 ID，游戏主页 URL 中获取","type":"论坛版块，默认显示所有帖子，论坛版块 URL 中 `type` 参数，见下表，默认为 `feed`","sort":"排序，见下表，默认为 `created`","lang":"语言，`zh-CN`或`zh-TW`，默认为`zh-CN`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taptap.com/app/:id/topic","taptap.com/app/:id"],"target":"/topic/:id"}],"name":"游戏论坛","maintainers":["hoilc","TonyRL"],"description":"| 全部 | 精华  | 官方     | 影片  |\n  | ---- | ----- | -------- | ----- |\n  | feed | elite | official | video |\n\n  | 发布时间 | 回复时间  |\n  | -------- | --------- |\n  | created  | commented |","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="taptap" :data='{"path":"/topic/:id/:type?/:sort?/:lang?","categories":["game"],"example":"/taptap/topic/142793/official","parameters":{"id":"游戏 ID，游戏主页 URL 中获取","type":"论坛版块，默认显示所有帖子，论坛版块 URL 中 `type` 参数，见下表，默认为 `feed`","sort":"排序，见下表，默认为 `created`","lang":"语言，`zh-CN`或`zh-TW`，默认为`zh-CN`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taptap.com/app/:id/topic","taptap.com/app/:id"],"target":"/topic/:id"}],"name":"游戏论坛","maintainers":["hoilc","TonyRL"],"description":"| 全部 | 精华  | 官方     | 影片  |\n  | ---- | ----- | -------- | ----- |\n  | feed | elite | official | video |\n\n  | 发布时间 | 回复时间  |\n  | -------- | --------- |\n  | created  | commented |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 全部 | 精华  | 官方     | 影片  |
   | ---- | ----- | -------- | ----- |
@@ -678,7 +678,7 @@ Tip: use proxy if necessary.
 
 ### 首页 <Site url="www.iyingdi.com/" size="sm" />
 
-<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lfsyd" :data='{"path":"/home","categories":["game"],"example":"/lfsyd/home","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iyingdi.com/"]}],"name":"首页","maintainers":["auto-bot-ty"],"url":"www.iyingdi.com/","location":"home.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 首页（旧版） <Site url="www.iyingdi.com/" size="sm" />
 
@@ -899,7 +899,7 @@ Tip: use proxy if necessary.
 
 ### 明日方舟 - 游戏内公告 <Site url="www.hypergryph.com" size="sm" />
 
-<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"arknights/announce.ts"}' :test='{"code":1,"message":"expected -6910025280 to be greater than -432000000"}' />
+<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"arknights/announce.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 平台
 

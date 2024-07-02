@@ -206,7 +206,7 @@ Category ID
 
 ### Summary <Site url="seekingalpha.com" size="sm" />
 
-<Route namespace="seekingalpha" :data='{"path":"/:symbol/:category?","categories":["finance"],"example":"/seekingalpha/TSM/transcripts","parameters":{"symbol":"Stock symbol","category":"Category, see below, `news` by default"},"features":{"antiCrawler":true},"radar":[{"source":["seekingalpha.com/symbol/:symbol/:category","seekingalpha.com/symbol/:symbol/earnings/:category"],"target":"/:symbol/:category"}],"name":"Summary","maintainers":["TonyRL"],"description":"| Analysis | News | Transcripts | Press Releases | Related Analysis |\n  | -------- | ---- | ----------- | -------------- | ---------------- |\n  | analysis | news | transcripts | press-releases | related-analysis |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="seekingalpha" :data='{"path":"/:symbol/:category?","categories":["finance"],"example":"/seekingalpha/TSM/transcripts","parameters":{"symbol":"Stock symbol","category":"Category, see below, `news` by default"},"features":{"antiCrawler":true},"radar":[{"source":["seekingalpha.com/symbol/:symbol/:category","seekingalpha.com/symbol/:symbol/earnings/:category"],"target":"/:symbol/:category"}],"name":"Summary","maintainers":["TonyRL"],"description":"| Analysis | News | Transcripts | Press Releases | Related Analysis |\n  | -------- | ---- | ----------- | -------------- | ---------------- |\n  | analysis | news | transcripts | press-releases | related-analysis |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Analysis | News | Transcripts | Press Releases | Related Analysis |
   | -------- | ---- | ----------- | -------------- | ---------------- |
@@ -268,7 +268,7 @@ Language:
 
 ### 栏目 <Site url="bse.cn/" size="sm" />
 
-<Route namespace="bse" :data='{"path":"/:category?/:keyword?","categories":["finance"],"example":"/bse","parameters":{"category":"分类，见下表，默认为本所要闻","keyword":"关键字，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bse.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"url":"bse.cn/","description":"| 本所要闻        | 人才招聘 | 采购信息 | 业务通知   |\n  | --------------- | -------- | -------- | ---------- |\n  | important_news | recruit  | purchase | news_list |\n\n  | 法律法规  | 公开征求意见    | 部门规章         | 发行融资   |\n  | --------- | --------------- | ---------------- | ---------- |\n  | law_list | public_opinion | regulation_list | fxrz_list |\n\n  | 持续监管   | 交易管理   | 市场管理   | 上市委会议公告  |\n  | ---------- | ---------- | ---------- | --------------- |\n  | cxjg_list | jygl_list | scgl_list | meeting_notice |\n\n  | 上市委会议结果公告 | 上市委会议变更公告 | 并购重组委会议公告 |\n  | ------------------ | ------------------ | ------------------ |\n  | meeting_result    | meeting_change    | bgcz_notice       |\n\n  | 并购重组委会议结果公告 | 并购重组委会议变更公告 | 终止审核           | 注册结果      |\n  | ---------------------- | ---------------------- | ------------------ | ------------- |\n  | bgcz_result           | bgcz_change           | termination_audit | audit_result |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bse" :data='{"path":"/:category?/:keyword?","categories":["finance"],"example":"/bse","parameters":{"category":"分类，见下表，默认为本所要闻","keyword":"关键字，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bse.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"url":"bse.cn/","description":"| 本所要闻        | 人才招聘 | 采购信息 | 业务通知   |\n  | --------------- | -------- | -------- | ---------- |\n  | important_news | recruit  | purchase | news_list |\n\n  | 法律法规  | 公开征求意见    | 部门规章         | 发行融资   |\n  | --------- | --------------- | ---------------- | ---------- |\n  | law_list | public_opinion | regulation_list | fxrz_list |\n\n  | 持续监管   | 交易管理   | 市场管理   | 上市委会议公告  |\n  | ---------- | ---------- | ---------- | --------------- |\n  | cxjg_list | jygl_list | scgl_list | meeting_notice |\n\n  | 上市委会议结果公告 | 上市委会议变更公告 | 并购重组委会议公告 |\n  | ------------------ | ------------------ | ------------------ |\n  | meeting_result    | meeting_change    | bgcz_notice       |\n\n  | 并购重组委会议结果公告 | 并购重组委会议变更公告 | 终止审核           | 注册结果      |\n  | ---------------------- | ---------------------- | ------------------ | ------------- |\n  | bgcz_result           | bgcz_change           | termination_audit | audit_result |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 本所要闻        | 人才招聘 | 采购信息 | 业务通知   |
   | --------------- | -------- | -------- | ---------- |
@@ -457,7 +457,7 @@ Language:
 
 ### 个人主页 <Site url="laohu8.com" size="sm" />
 
-<Route namespace="laohu8" :data='{"path":"/personal/:id","categories":["finance"],"example":"/laohu8/personal/3527667596890271","parameters":{"id":"用户 ID，见网址链接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["laohu8.com/personal/:id"]}],"name":"个人主页","maintainers":["Fatpandac"],"location":"personal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="laohu8" :data='{"path":"/personal/:id","categories":["finance"],"example":"/laohu8/personal/3527667596890271","parameters":{"id":"用户 ID，见网址链接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["laohu8.com/personal/:id"]}],"name":"个人主页","maintainers":["Fatpandac"],"location":"personal.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 律动 BlockBeats <Site url="www.theblockbeats.info"/>
 
@@ -514,7 +514,7 @@ Language:
 
 ### 排行榜 <Site url="qianzhan.com/analyst" size="sm" />
 
-<Route namespace="qianzhan" :data='{"path":"/analyst/rank/:type?","categories":["finance"],"example":"/qianzhan/analyst/rank/week","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qianzhan.com/analyst","qianzhan.com/"],"target":"/analyst/rank"}],"name":"排行榜","maintainers":["moke8"],"url":"qianzhan.com/analyst","description":"| 周排行 | 月排行 |\n  | ------ | ------ |\n  | week   | month  |","location":"rank.ts"}' :test='{"code":0}' />
+<Route namespace="qianzhan" :data='{"path":"/analyst/rank/:type?","categories":["finance"],"example":"/qianzhan/analyst/rank/week","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qianzhan.com/analyst","qianzhan.com/"],"target":"/analyst/rank"}],"name":"排行榜","maintainers":["moke8"],"url":"qianzhan.com/analyst","description":"| 周排行 | 月排行 |\n  | ------ | ------ |\n  | week   | month  |","location":"rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 周排行 | 月排行 |
   | ------ | ------ |
@@ -522,7 +522,7 @@ Language:
 
 ### 文章列表 <Site url="qianzhan.com" size="sm" />
 
-<Route namespace="qianzhan" :data='{"path":"/analyst/column/:type?","categories":["finance"],"example":"/qianzhan/analyst/column/all","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章列表","maintainers":["moke8"],"description":"| 全部 | 研究员专栏 | 规划师专栏 | 观察家专栏 |\n  | ---- | ---------- | ---------- | ---------- |\n  | all  | 220        | 627        | 329        |","location":"column.ts"}' :test='{"code":0}' />
+<Route namespace="qianzhan" :data='{"path":"/analyst/column/:type?","categories":["finance"],"example":"/qianzhan/analyst/column/all","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章列表","maintainers":["moke8"],"description":"| 全部 | 研究员专栏 | 规划师专栏 | 观察家专栏 |\n  | ---- | ---------- | ---------- | ---------- |\n  | all  | 220        | 627        | 329        |","location":"column.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 全部 | 研究员专栏 | 规划师专栏 | 观察家专栏 |
   | ---- | ---------- | ---------- | ---------- |
@@ -560,7 +560,7 @@ Language:
 
 ### 科创板项目动态 <Site url="kcb.sse.com.cn/home" size="sm" />
 
-<Route namespace="sse" :data='{"path":"/renewal","categories":["finance"],"example":"/sse/renewal","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kcb.sse.com.cn/home","kcb.sse.com.cn/"]}],"name":"科创板项目动态","maintainers":["Jeason0228"],"url":"kcb.sse.com.cn/home","location":"renewal.ts"}' :test='{"code":0}' />
+<Route namespace="sse" :data='{"path":"/renewal","categories":["finance"],"example":"/sse/renewal","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kcb.sse.com.cn/home","kcb.sse.com.cn/"]}],"name":"科创板项目动态","maintainers":["Jeason0228"],"url":"kcb.sse.com.cn/home","location":"renewal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 可转换公司债券公告 <Site url="bond.sse.com.cn" size="sm" />
 

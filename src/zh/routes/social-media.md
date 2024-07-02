@@ -8,7 +8,7 @@
 
 ### Post <Site url="bsky.app" size="sm" />
 
-<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
+<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Cara <Site url="cara.app"/>
 
@@ -112,7 +112,7 @@ It's highly recommended to deploy with Redis cache enabled.
 
 ### User Profile / Hashtag <Site url="www.instagram.com" size="sm" />
 
-<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="instagram" :data='{"path":"/2/:category/:key","categories":["social-media"],"example":"/instagram/2/user/stefaniejoosten","parameters":{"category":"Feed category, see table below","key":"Username / Hashtag name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Profile / Hashtag","maintainers":["TonyRL"],"description":":::tip\nYou may need to setup cookie for a less restrictive rate limit and private profiles.\n:::\n\n\n| User timeline | Hashtag |\n| ------------- | ------- |\n| user          | tags    |","location":"web-api/index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
 You may need to setup cookie for a less restrictive rate limit and private profiles.
@@ -304,23 +304,23 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Anonymous <Site url="plurk.com/anonymous" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/anonymous","categories":["social-media"],"example":"/plurk/anonymous","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/anonymous"]}],"name":"Anonymous","maintainers":["TonyRL"],"url":"plurk.com/anonymous","location":"anonymous.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/anonymous","categories":["social-media"],"example":"/plurk/anonymous","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/anonymous"]}],"name":"Anonymous","maintainers":["TonyRL"],"url":"plurk.com/anonymous","location":"anonymous.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Hotlinks <Site url="plurk.com/hotlinks" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/hotlinks","categories":["social-media"],"example":"/plurk/hotlinks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/hotlinks"]}],"name":"Hotlinks","maintainers":["TonyRL"],"url":"plurk.com/hotlinks","location":"hotlinks.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/hotlinks","categories":["social-media"],"example":"/plurk/hotlinks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/hotlinks"]}],"name":"Hotlinks","maintainers":["TonyRL"],"url":"plurk.com/hotlinks","location":"hotlinks.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Plurk News <Site url="plurk.com/news" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/news/:lang?","categories":["social-media"],"example":"/plurk/news/:lang?","parameters":{"lang":"Language, see the table above, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/news"],"target":"/news"}],"name":"Plurk News","maintainers":["TonyRL"],"url":"plurk.com/news","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/news/:lang?","categories":["social-media"],"example":"/plurk/news/:lang?","parameters":{"lang":"Language, see the table above, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["plurk.com/news"],"target":"/news"}],"name":"Plurk News","maintainers":["TonyRL"],"url":"plurk.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Search <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/search/:keyword","categories":["social-media"],"example":"/plurk/search/FGO","parameters":{"keyword":"Search keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/search/:keyword","categories":["social-media"],"example":"/plurk/search/FGO","parameters":{"keyword":"Search keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Top <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media"],"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Top Replurks | Top Favorites | Top Responded |
   | ------------ | ------------- | ------------- |
@@ -336,7 +336,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### User <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media"],"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media"],"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Rattibha <Site url="rattibha.com"/>
 
@@ -577,7 +577,7 @@ Chart
 
 ### UP 主专栏 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/article/:uid","categories":["social-media"],"example":"/bilibili/user/article/334958638","parameters":{"uid":"用户 id, 可在 UP 主主页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"]}],"name":"UP 主专栏","maintainers":["lengthmin","Qixingchen"],"location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="bilibili" :data='{"path":"/user/article/:uid","categories":["social-media"],"example":"/bilibili/user/article/334958638","parameters":{"uid":"用户 id, 可在 UP 主主页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"]}],"name":"UP 主专栏","maintainers":["lengthmin","Qixingchen"],"location":"article.ts"}' :test='{"code":0}' />
 
 ### UP 主投币视频 <Site url="www.bilibili.com" size="sm" />
 
@@ -609,7 +609,7 @@ Chart
 
 ### UP 主点赞视频 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/like/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/like/208259","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/like/:uid"}],"name":"UP 主点赞视频","maintainers":["ygguorun"],"location":"like.ts"}' :test='{"code":1,"message":"expected 1719792826721 to be less than 311040000000"}' />
+<Route namespace="bilibili" :data='{"path":"/user/like/:uid/:disableEmbed?","categories":["social-media"],"example":"/bilibili/user/like/208259","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/like/:uid"}],"name":"UP 主点赞视频","maintainers":["ygguorun"],"location":"like.ts"}' :test='{"code":1,"message":"expected 1719879138471 to be less than 311040000000"}' />
 
 ### UP 主频道的视频列表 <Site url="www.bilibili.com" size="sm" />
 
@@ -625,7 +625,7 @@ Chart
 
 ### UP 主投稿 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/video/:uid/:disableEmbed?","categories":["social-media","popular"],"example":"/bilibili/user/video/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/video/:uid"}],"name":"UP 主投稿","maintainers":["DIYgod"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bilibili" :data='{"path":"/user/video/:uid/:disableEmbed?","categories":["social-media","popular"],"example":"/bilibili/user/video/2267573","parameters":{"uid":"用户 id, 可在 UP 主主页中找到","disableEmbed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"],"target":"/user/video/:uid"}],"name":"UP 主投稿","maintainers":["DIYgod"],"location":"video.ts"}' :test='{"code":0}' />
 
 ### 番剧 <Site url="www.bilibili.com" size="sm" />
 
@@ -893,7 +893,7 @@ Chart
 
 ### 标签 <Site url="douyin.com" size="sm" />
 
-<Route namespace="douyin" :data='{"path":"/hashtag/:cid/:routeParams?","categories":["social-media"],"example":"/douyin/hashtag/1592824105719812","parameters":{"cid":"标签 ID，可在标签页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/hashtag/:cid"],"target":"/hashtag/:cid"}],"name":"标签","maintainers":["TonyRL"],"location":"hashtag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="douyin" :data='{"path":"/hashtag/:cid/:routeParams?","categories":["social-media"],"example":"/douyin/hashtag/1592824105719812","parameters":{"cid":"标签 ID，可在标签页面 URL 中找到","routeParams":"额外参数，query string 格式，请参阅上面的表格"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["douyin.com/hashtag/:cid"],"target":"/hashtag/:cid"}],"name":"标签","maintainers":["TonyRL"],"location":"hashtag.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 博主 <Site url="douyin.com" size="sm" />
 

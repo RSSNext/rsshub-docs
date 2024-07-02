@@ -154,7 +154,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 卷 <Site url="linovelib.com" size="sm" />
 
-<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="linovelib" :data='{"path":"/volume/:id","categories":["reading"],"example":"/linovelib/volume/8","parameters":{"id":"小说 ID，可在小说页 URL 中找到"},"radar":[{"source":["www.linovelib.com/novel/:id/catalog"]}],"name":"卷","maintainers":["rkscv"],"location":"volume.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 小说更新 <Site url="linovelib.com" size="sm" />
 
@@ -240,23 +240,23 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 讨论区 <Site url="book.qidian.com" size="sm" />
 
-<Route namespace="qidian" :data='{"path":"/forum/:id","categories":["reading"],"example":"/qidian/forum/1010400217","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.qidian.com/info/:id"]}],"name":"讨论区","maintainers":["fuzy112"],"location":"forum.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="qidian" :data='{"path":"/forum/:id","categories":["reading"],"example":"/qidian/forum/1010400217","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.qidian.com/info/:id"]}],"name":"讨论区","maintainers":["fuzy112"],"location":"forum.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 限时免费下期预告 <Site url="www.qidian.com/free" size="sm" />
 
-<Route namespace="qidian" :data='{"path":"/free-next/:type?","categories":["reading"],"example":"/qidian/free-next","parameters":{"type":"默认不填为起点中文网，填 mm 为起点女生网"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.qidian.com/free"],"target":"/free"}],"name":"限时免费下期预告","maintainers":["LogicJake"],"url":"www.qidian.com/free","location":"free-next.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="qidian" :data='{"path":"/free-next/:type?","categories":["reading"],"example":"/qidian/free-next","parameters":{"type":"默认不填为起点中文网，填 mm 为起点女生网"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.qidian.com/free"],"target":"/free"}],"name":"限时免费下期预告","maintainers":["LogicJake"],"url":"www.qidian.com/free","location":"free-next.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 限时免费 <Site url="www.qidian.com/free" size="sm" />
 
-<Route namespace="qidian" :data='{"path":"/free/:type?","categories":["reading"],"example":"/qidian/free","parameters":{"type":"默认不填为起点中文网，填 mm 为起点女生网"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.qidian.com/free"],"target":"/free"}],"name":"限时免费","maintainers":["LogicJake"],"url":"www.qidian.com/free","location":"free.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="qidian" :data='{"path":"/free/:type?","categories":["reading"],"example":"/qidian/free","parameters":{"type":"默认不填为起点中文网，填 mm 为起点女生网"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.qidian.com/free"],"target":"/free"}],"name":"限时免费","maintainers":["LogicJake"],"url":"www.qidian.com/free","location":"free.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 章节 <Site url="book.qidian.com" size="sm" />
 
-<Route namespace="qidian" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/qidian/chapter/1010400217","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.qidian.com/info/:id"]}],"name":"章节","maintainers":["fuzy112"],"location":"chapter.ts"}' :test='{"code":0}' />
+<Route namespace="qidian" :data='{"path":"/chapter/:id","categories":["reading"],"example":"/qidian/chapter/1010400217","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.qidian.com/info/:id"]}],"name":"章节","maintainers":["fuzy112"],"location":"chapter.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 作者 <Site url="book.qidian.com" size="sm" />
 
-<Route namespace="qidian" :data='{"path":"/author/:id","categories":["reading"],"example":"/qidian/author/9639927","parameters":{"id":"作者 id, 可在作者页面 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["my.qidian.com/author/:id"]}],"name":"作者","maintainers":["miles170"],"location":"author.ts"}' :test='{"code":0}' />
+<Route namespace="qidian" :data='{"path":"/author/:id","categories":["reading"],"example":"/qidian/author/9639927","parameters":{"id":"作者 id, 可在作者页面 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["my.qidian.com/author/:id"]}],"name":"作者","maintainers":["miles170"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 轻小说文库 <Site url="www.wenku8.net"/>
 
