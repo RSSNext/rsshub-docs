@@ -154,6 +154,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="paulgraham" :data='{"path":["/articles","/essays","/"],"categories":["blog"],"example":"/paulgraham/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["paulgraham.com/articles.html"]}],"name":"Essays","maintainers":["Maecenas","nczitzk"],"url":"paulgraham.com/articles.html","location":"article.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
+## React <Site url="react.dev"/>
+
+### Blog <Site url="react.dev" size="sm" />
+
+<Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='undefined' />
+
 ## Uber 优步 <Site url="www.uber.com"/>
 
 ### Engineering <Site url="www.uber.com/blog/pittsburgh/engineering" size="sm" />
