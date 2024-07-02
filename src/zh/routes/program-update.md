@@ -330,6 +330,20 @@ Language
 
 <Route namespace="notateslaapp" :data='{"path":"/ota","categories":["program-update"],"example":"/notateslaapp/ota","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notateslaapp.com/software-updates/history","notateslaapp.com/software-updates","notateslaapp.com/"]}],"name":"Tesla Software Updates","maintainers":["mrbruce516"],"url":"notateslaapp.com/software-updates/history","location":"update.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
+## Notion <Site url="notion.so"/>
+
+:::warning
+Need to set up Notion integration, please refer to [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations) for details.
+:::
+
+:::tip Recommendation
+It is recommended to use with clipping tools such as Notion Web Clipper.
+:::
+
+### Release <Site url="notion.so/releases" size="sm" />
+
+<Route namespace="notion" :data='{"name":"Release","path":"/release","url":"notion.so/releases","example":"/notion/release","categories":["program-update"],"maintainers":["equt"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"release.ts"}' :test='undefined' />
+
 ## NPM <Site url="npmjs.com"/>
 
 ### Package <Site url="npmjs.com" size="sm" />
