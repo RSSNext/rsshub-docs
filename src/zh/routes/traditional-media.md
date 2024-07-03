@@ -209,7 +209,7 @@ Provides a way to get an specific rss feed by date and category over the officia
 
 ### The New Yorker <Site url="newyorker.com" size="sm" />
 
-<Route namespace="newyorker" :data='{"path":"/:category/:subCategory?","categories":["traditional-media"],"example":"/newyorker/everything","parameters":{"category":"rss category. can be found at `https://www.newyorker.com/about/feeds`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["newyorker.com/feed/:category/:subCategory?"]}],"name":"The New Yorker","maintainers":["EthanWng97"],"location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="newyorker" :data='{"path":"/:category/:subCategory?","categories":["traditional-media"],"example":"/newyorker/everything","parameters":{"category":"rss category. can be found at `https://www.newyorker.com/about/feeds`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["newyorker.com/feed/:category/:subCategory?"]}],"name":"The New Yorker","maintainers":["EthanWng97"],"location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## NHK <Site url="www3.nhk.or.jp"/>
 
@@ -480,7 +480,7 @@ Categories for International site:
 
 ### News <Site url="nytimes.com/" size="sm" />
 
-<Route namespace="nytimes" :data='{"path":"/:lang?","categories":["traditional-media"],"example":"/nytimes/dual","parameters":{"lang":"language, default to Chinese"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nytimes.com/"],"target":""}],"name":"News","maintainers":["HenryQW"],"url":"nytimes.com/","description":"By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.\n\n  | Default to Chinese | Chinese-English | English | Chinese-English (Traditional Chinese) | Traditional Chinese |\n  | ------------------ | --------------- | ------- | ------------------------------------- | ------------------- |\n  | (empty)            | dual            | en      | dual-traditionalchinese               | traditionalchinese  |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="nytimes" :data='{"path":"/:lang?","categories":["traditional-media"],"example":"/nytimes/dual","parameters":{"lang":"language, default to Chinese"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nytimes.com/"],"target":""}],"name":"News","maintainers":["HenryQW"],"url":"nytimes.com/","description":"By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.\n\n  | Default to Chinese | Chinese-English | English | Chinese-English (Traditional Chinese) | Traditional Chinese |\n  | ------------------ | --------------- | ------- | ------------------------------------- | ------------------- |\n  | (empty)            | dual            | en      | dual-traditionalchinese               | traditionalchinese  |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.
 
@@ -498,7 +498,7 @@ By extracting the full text of articles, we provide a better reading experience 
 
 ### Hot News <Site url="taiwannews.com.tw" size="sm" />
 
-<Route namespace="taiwannews" :data='{"path":"/hot/:lang?","categories":["traditional-media"],"example":"/taiwannews/hot","parameters":{"lang":"Language, `en` or `zh`, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taiwannews.com.tw/:lang/index"],"target":"/hot/:lang"}],"name":"Hot News","maintainers":["TonyRL"],"location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="taiwannews" :data='{"path":"/hot/:lang?","categories":["traditional-media"],"example":"/taiwannews/hot","parameters":{"lang":"Language, `en` or `zh`, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taiwannews.com.tw/:lang/index"],"target":"/hot/:lang"}],"name":"Hot News","maintainers":["TonyRL"],"location":"hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## The Atlantic <Site url="www.theatlantic.com"/>
 
@@ -1053,7 +1053,7 @@ Column 列表：
 
 ### 首页 <Site url="mirrormedia.mg" size="sm" />
 
-<Route namespace="mirrormedia" :data='{"path":"/","categories":["traditional-media"],"example":"/mirrormedia","parameters":{},"name":"首页","maintainers":["dzx-dzx"],"radar":[{"source":["mirrormedia.mg"]}],"location":"index.ts"}' :test='undefined' />
+<Route namespace="mirrormedia" :data='{"path":"/","categories":["traditional-media"],"example":"/mirrormedia","parameters":{},"name":"首页","maintainers":["dzx-dzx"],"radar":[{"source":["mirrormedia.mg"]}],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 客家電視台 <Site url="hakkatv.org.tw"/>
 
@@ -1447,7 +1447,7 @@ Column 列表：
 
 ### 主頻道 <Site url="cw.com.tw" size="sm" />
 
-<Route namespace="cw" :data='{"path":"/master/:channel","categories":["traditional-media"],"example":"/cw/master/8","parameters":{"channel":"主頻道 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主頻道","maintainers":["TonyRL"],"description":"| 主頻道名稱 | 主頻道 ID |\n  | ---------- | --------- |\n  | 財經       | 8         |\n  | 產業       | 7         |\n  | 國際       | 9         |\n  | 管理       | 10        |\n  | 環境       | 12        |\n  | 教育       | 13        |\n  | 人物       | 14        |\n  | 政治社會   | 77        |\n  | 調查排行   | 15        |\n  | 健康關係   | 79        |\n  | 時尚品味   | 11        |\n  | 運動生活   | 103       |\n  | 重磅外媒   | 16        |","location":"master.ts"}' :test='{"code":0}' />
+<Route namespace="cw" :data='{"path":"/master/:channel","categories":["traditional-media"],"example":"/cw/master/8","parameters":{"channel":"主頻道 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主頻道","maintainers":["TonyRL"],"description":"| 主頻道名稱 | 主頻道 ID |\n  | ---------- | --------- |\n  | 財經       | 8         |\n  | 產業       | 7         |\n  | 國際       | 9         |\n  | 管理       | 10        |\n  | 環境       | 12        |\n  | 教育       | 13        |\n  | 人物       | 14        |\n  | 政治社會   | 77        |\n  | 調查排行   | 15        |\n  | 健康關係   | 79        |\n  | 時尚品味   | 11        |\n  | 運動生活   | 103       |\n  | 重磅外媒   | 16        |","location":"master.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 主頻道名稱 | 主頻道 ID |
   | ---------- | --------- |
@@ -1467,15 +1467,15 @@ Column 列表：
 
 ### 子頻道 <Site url="cw.com.tw" size="sm" />
 
-<Route namespace="cw" :data='{"path":"/sub/:channel","categories":["traditional-media"],"example":"/cw/sub/615","parameters":{"channel":"子頻道 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"子頻道","maintainers":["TonyRL"],"location":"sub.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cw" :data='{"path":"/sub/:channel","categories":["traditional-media"],"example":"/cw/sub/615","parameters":{"channel":"子頻道 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"子頻道","maintainers":["TonyRL"],"location":"sub.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 最新上線 <Site url="cw.com.tw/today" size="sm" />
 
-<Route namespace="cw" :data='{"path":"/today","categories":["traditional-media"],"example":"/cw/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cw.com.tw/today","cw.com.tw/"]}],"name":"最新上線","maintainers":["TonyRL"],"url":"cw.com.tw/today","location":"today.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cw" :data='{"path":"/today","categories":["traditional-media"],"example":"/cw/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cw.com.tw/today","cw.com.tw/"]}],"name":"最新上線","maintainers":["TonyRL"],"url":"cw.com.tw/today","location":"today.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### 作者 <Site url="cw.com.tw" size="sm" />
 
-<Route namespace="cw" :data='{"path":"/author/:channel","categories":["traditional-media"],"example":"/cw/author/57","parameters":{"channel":"作者 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cw.com.tw/author/:channel"]}],"name":"作者","maintainers":["TonyRL"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="cw" :data='{"path":"/author/:channel","categories":["traditional-media"],"example":"/cw/author/57","parameters":{"channel":"作者 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cw.com.tw/author/:channel"]}],"name":"作者","maintainers":["TonyRL"],"location":"author.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 无线新闻 <Site url="tvb.com"/>
 

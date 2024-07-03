@@ -56,7 +56,7 @@
 
 ### 用户博客 <Site url="hashnode.dev/" size="sm" />
 
-<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
   username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
@@ -158,13 +158,13 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Blog <Site url="react.dev" size="sm" />
 
-<Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='undefined' />
+<Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Uber 优步 <Site url="www.uber.com"/>
 
 ### Engineering <Site url="www.uber.com/blog/pittsburgh/engineering" size="sm" />
 
-<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Wojciech Muła <Site url="0x80.pl"/>
 
@@ -298,7 +298,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 

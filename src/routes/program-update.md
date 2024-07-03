@@ -43,7 +43,7 @@ Alpine Linux is a security-oriented, lightweight Linux distribution based on mus
 
 ### Packages <Site url="alpinelinux.org" size="sm" />
 
-<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='{"code":0}' />
 
 Alpine Linux packages update
 
@@ -101,7 +101,7 @@ Alpine Linux packages update
 
 ### Price Drop <Site url="apps.apple.com/" size="sm" />
 
-<Route namespace="appstore" :data='{"path":"/price/:country/:type/:id","categories":["program-update"],"example":"/appstore/price/us/mac/id1152443474","parameters":{"country":"App Store Country, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `us`","type":"App type，either `iOS` or `mac`","id":"App Store app id, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `id1152443474`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/"]}],"name":"Price Drop","maintainers":["HenryQW"],"url":"apps.apple.com/","location":"price.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="appstore" :data='{"path":"/price/:country/:type/:id","categories":["program-update"],"example":"/appstore/price/us/mac/id1152443474","parameters":{"country":"App Store Country, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `us`","type":"App type，either `iOS` or `mac`","id":"App Store app id, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `id1152443474`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/"]}],"name":"Price Drop","maintainers":["HenryQW"],"url":"apps.apple.com/","location":"price.ts"}' :test='{"code":0}' />
 
 ### 每日精品限免 / 促销应用（鲜面连线 by AppSo） <Site url="app.so/xianmian" size="sm" />
 
@@ -127,7 +127,7 @@ Alpine Linux packages update
 
 ### BlueStacks 5 Release Notes <Site url="bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5" size="sm" />
 
-<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":0}' />
+<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## Brave <Site url="brave.com"/>
 
@@ -239,7 +239,7 @@ Language
 
 ### Script Version History <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":0}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Infuse <Site url="firecore.com"/>
 
@@ -322,7 +322,7 @@ Language
 
 ### Blog <Site url="nextjs.org" size="sm" />
 
-<Route namespace="nextjs" :data='{"path":"/blog","name":"Blog","categories":["program-update"],"maintainers":["equt"],"example":"/nextjs/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='undefined' />
+<Route namespace="nextjs" :data='{"path":"/blog","name":"Blog","categories":["program-update"],"maintainers":["equt"],"example":"/nextjs/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Not a Tesla App <Site url="notateslaapp.com"/>
 
@@ -342,7 +342,7 @@ It is recommended to use with clipping tools such as Notion Web Clipper.
 
 ### Release <Site url="notion.so/releases" size="sm" />
 
-<Route namespace="notion" :data='{"name":"Release","path":"/release","url":"notion.so/releases","example":"/notion/release","categories":["program-update"],"maintainers":["equt"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"release.ts"}' :test='undefined' />
+<Route namespace="notion" :data='{"name":"Release","path":"/release","url":"notion.so/releases","example":"/notion/release","categories":["program-update"],"maintainers":["equt"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"release.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## NPM <Site url="npmjs.com"/>
 
@@ -467,7 +467,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Dev Release Changelog <Site url="support.typora.io/" size="sm" />
 
-<Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://typora.io/releases/dev#1.8.3-…&#39;"}' />
+<Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Typst <Site url="typst.com"/>
 
@@ -483,7 +483,7 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(16) ] to not include &#39;https://hub.docker.com/r/myoung34/git…&#39;"}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(18) ] to not include &#39;https://hub.docker.com/r/myoung34/git…&#39;"}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 

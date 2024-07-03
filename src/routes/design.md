@@ -20,7 +20,7 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 
 ### User Works <Site url="www.behance.net" size="sm" />
 
-<Route namespace="behance" :data='{"path":"/:user/:type?","categories":["design"],"example":"/behance/mishapetrick","parameters":{"user":"username","type":"type, `projects` or `appreciated`, `projects` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Works","maintainers":["MisteryMonster"],"description":"Behance user&#39;s profile URL, like [https://www.behance.net/mishapetrick](https://www.behance.net/mishapetrick) the username will be `mishapetrick`。","location":"user.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="behance" :data='{"path":"/:user/:type?","categories":["design"],"example":"/behance/mishapetrick","parameters":{"user":"username","type":"type, `projects` or `appreciated`, `projects` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Works","maintainers":["MisteryMonster"],"description":"Behance user&#39;s profile URL, like [https://www.behance.net/mishapetrick](https://www.behance.net/mishapetrick) the username will be `mishapetrick`。","location":"user.ts"}' :test='{"code":0}' />
 
 Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://www.behance.net/mishapetrick) the username will be `mishapetrick`。
 
