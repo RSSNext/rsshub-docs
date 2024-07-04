@@ -10,7 +10,7 @@
 
 ### Press Release <Site url="dh.gov.hk/" size="sm" />
 
-<Route namespace="hongkong" :data='{"path":"/dh/:language?","categories":["government"],"example":"/hongkong/dh","parameters":{"language":"Language, see below, tc_chi by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dh.gov.hk/"]}],"name":"Press Release","maintainers":["nczitzk"],"url":"dh.gov.hk/","description":"Language\n\n  | English | 中文简体 | 中文繁體 |\n  | ------- | -------- | -------- |\n  | english | chs      | tc_chi  |","location":"dh.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hongkong" :data='{"path":"/dh/:language?","categories":["government"],"example":"/hongkong/dh","parameters":{"language":"Language, see below, tc_chi by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dh.gov.hk/"]}],"name":"Press Release","maintainers":["nczitzk"],"url":"dh.gov.hk/","description":"Language\n\n  | English | 中文简体 | 中文繁體 |\n  | ------- | -------- | -------- |\n  | english | chs      | tc_chi  |","location":"dh.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 Language
 
@@ -118,7 +118,7 @@ Language
 
 ### 最新消息 <Site url="www.ssm.gov.mo/" size="sm" />
 
-<Route namespace="ssm" :data='{"path":"/news","categories":["government"],"example":"/ssm/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ssm.gov.mo/","www.ssm.gov.mo/portal"]}],"name":"最新消息","maintainers":["Fatpandac"],"url":"www.ssm.gov.mo/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ssm" :data='{"path":"/news","categories":["government"],"example":"/ssm/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ssm.gov.mo/","www.ssm.gov.mo/portal"]}],"name":"最新消息","maintainers":["Fatpandac"],"url":"www.ssm.gov.mo/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 北京价格 <Site url="beijingprice.cn"/>
 
@@ -1038,7 +1038,7 @@ Language
 
 ### 最新文件 <Site url="www.gov.cn/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/zhengce/wenjian/:pcodeJiguan?","categories":["government"],"example":"/gov/zhengce/wenjian","parameters":{"pcodeJiguan":"文种分类。国令、国发、国函、国发明电、国办发、国办函、国办发明电、其他"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gov.cn/"],"target":"/zhengce/wenjian"}],"name":"最新文件","maintainers":["ciaranchen"],"url":"www.gov.cn/","location":"zhengce/wenjian.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="gov" :data='{"path":"/zhengce/wenjian/:pcodeJiguan?","categories":["government"],"example":"/gov/zhengce/wenjian","parameters":{"pcodeJiguan":"文种分类。国令、国发、国函、国发明电、国办发、国办函、国办发明电、其他"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gov.cn/"],"target":"/zhengce/wenjian"}],"name":"最新文件","maintainers":["ciaranchen"],"url":"www.gov.cn/","location":"zhengce/wenjian.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 上海业余无线电协会 <Site url="www.sara.org.cn"/>
 

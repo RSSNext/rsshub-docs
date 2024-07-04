@@ -56,7 +56,7 @@
 
 ### 用户博客 <Site url="hashnode.dev/" size="sm" />
 
-<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hashnode" :data='{"path":"/blog/:username","categories":["blog"],"example":"/hashnode/blog/inklings","parameters":{"username":"博主名称，用户头像 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hashnode.dev/"]}],"name":"用户博客","maintainers":["hnrainll"],"url":"hashnode.dev/","description":":::tip\n  username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n  :::","location":"blog.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
@@ -164,7 +164,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Engineering <Site url="www.uber.com/blog/pittsburgh/engineering" size="sm" />
 
-<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="uber" :data='{"path":"/blog/:maxPage?","categories":["blog"],"example":"/uber/blog","parameters":{"maxPage":"max number of pages to retrieve, default to 1 page at most"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.uber.com/blog/pittsburgh/engineering"],"target":"/blog"}],"name":"Engineering","maintainers":["hulb"],"url":"www.uber.com/blog/pittsburgh/engineering","location":"blog.ts"}' :test='{"code":0}' />
 
 ## Wojciech Muła <Site url="0x80.pl"/>
 
@@ -298,7 +298,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="lala.im/" size="sm" />
 
-<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ## 罗磊的独立博客 <Site url="luolei.org"/>
 
@@ -364,13 +364,13 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="zrblog.net/" size="sm" />
 
-<Route namespace="zrblog" :data='{"path":"/","categories":["blog"],"example":"/zrblog","radar":[{"source":["zrblog.net/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"zrblog.net/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zrblog" :data='{"path":"/","categories":["blog"],"example":"/zrblog","radar":[{"source":["zrblog.net/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"zrblog.net/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## 浙江大学可视分析小组 <Site url="zjuvag.org"/>
 
 ### 博客 <Site url="zjuvag.org" size="sm" />
 
-<Route namespace="zjuvag" :data='{"path":"/blog","categories":["blog"],"example":"/zjuvag/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["KaiyoungYu"],"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zjuvag" :data='{"path":"/blog","categories":["blog"],"example":"/zjuvag/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["KaiyoungYu"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 支流科技 <Site url="apiseven.com"/>
 
@@ -396,5 +396,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 

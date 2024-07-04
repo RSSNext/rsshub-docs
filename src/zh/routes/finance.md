@@ -4,11 +4,11 @@
 
 ### Latest Article <Site url="ainvest.com/news" size="sm" />
 
-<Route namespace="ainvest" :data='{"path":"/article","categories":["finance"],"example":"/ainvest/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest Article","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"article.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ainvest" :data='{"path":"/article","categories":["finance"],"example":"/ainvest/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest Article","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"article.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### Latest News <Site url="ainvest.com/news" size="sm" />
 
-<Route namespace="ainvest" :data='{"path":"/news","categories":["finance"],"example":"/ainvest/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest News","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ainvest" :data='{"path":"/news","categories":["finance"],"example":"/ainvest/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ainvest.com/news"]}],"name":"Latest News","maintainers":["TonyRL"],"url":"ainvest.com/news","location":"news.ts"}' :test='{"code":0}' />
 
 ## BigQuant <Site url="bigquant.com"/>
 
@@ -206,7 +206,7 @@ Category ID
 
 ### Summary <Site url="seekingalpha.com" size="sm" />
 
-<Route namespace="seekingalpha" :data='{"path":"/:symbol/:category?","categories":["finance"],"example":"/seekingalpha/TSM/transcripts","parameters":{"symbol":"Stock symbol","category":"Category, see below, `news` by default"},"features":{"antiCrawler":true},"radar":[{"source":["seekingalpha.com/symbol/:symbol/:category","seekingalpha.com/symbol/:symbol/earnings/:category"],"target":"/:symbol/:category"}],"name":"Summary","maintainers":["TonyRL"],"description":"| Analysis | News | Transcripts | Press Releases | Related Analysis |\n  | -------- | ---- | ----------- | -------------- | ---------------- |\n  | analysis | news | transcripts | press-releases | related-analysis |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="seekingalpha" :data='{"path":"/:symbol/:category?","categories":["finance"],"example":"/seekingalpha/TSM/transcripts","parameters":{"symbol":"Stock symbol","category":"Category, see below, `news` by default"},"features":{"antiCrawler":true},"radar":[{"source":["seekingalpha.com/symbol/:symbol/:category","seekingalpha.com/symbol/:symbol/earnings/:category"],"target":"/:symbol/:category"}],"name":"Summary","maintainers":["TonyRL"],"description":"| Analysis | News | Transcripts | Press Releases | Related Analysis |\n  | -------- | ---- | ----------- | -------------- | ---------------- |\n  | analysis | news | transcripts | press-releases | related-analysis |","location":"index.ts"}' :test='{"code":0}' />
 
 | Analysis | News | Transcripts | Press Releases | Related Analysis |
   | -------- | ---- | ----------- | -------------- | ---------------- |
@@ -560,7 +560,7 @@ Language:
 
 ### 科创板项目动态 <Site url="kcb.sse.com.cn/home" size="sm" />
 
-<Route namespace="sse" :data='{"path":"/renewal","categories":["finance"],"example":"/sse/renewal","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kcb.sse.com.cn/home","kcb.sse.com.cn/"]}],"name":"科创板项目动态","maintainers":["Jeason0228"],"url":"kcb.sse.com.cn/home","location":"renewal.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sse" :data='{"path":"/renewal","categories":["finance"],"example":"/sse/renewal","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kcb.sse.com.cn/home","kcb.sse.com.cn/"]}],"name":"科创板项目动态","maintainers":["Jeason0228"],"url":"kcb.sse.com.cn/home","location":"renewal.ts"}' :test='{"code":0}' />
 
 ### 可转换公司债券公告 <Site url="bond.sse.com.cn" size="sm" />
 
@@ -673,7 +673,7 @@ Language:
 
 ### 频道 <Site url="www.ulapia.com" size="sm" />
 
-<Route namespace="ulapia" :data='{"path":"/reports/:category?","categories":["finance"],"example":"/ulapia/reports/stock_research","parameters":{"category":"频道类型，默认为券商晨报（今日晨报）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["Fatpandac"],"description":"|     个股研报    |      行业研报      |      策略研报      |     宏观研报    |    新股研报   | 券商晨报（今日晨报） |\n  | :-------------: | :----------------: | :----------------: | :-------------: | :-----------: | :------------------: |\n  | stock_research | industry_research | strategy_research | macro_research | ipo_research |    brokerage_news   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ulapia" :data='{"path":"/reports/:category?","categories":["finance"],"example":"/ulapia/reports/stock_research","parameters":{"category":"频道类型，默认为券商晨报（今日晨报）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["Fatpandac"],"description":"|     个股研报    |      行业研报      |      策略研报      |     宏观研报    |    新股研报   | 券商晨报（今日晨报） |\n  | :-------------: | :----------------: | :----------------: | :-------------: | :-----------: | :------------------: |\n  | stock_research | industry_research | strategy_research | macro_research | ipo_research |    brokerage_news   |","location":"index.ts"}' :test='{"code":0}' />
 
 |     个股研报    |      行业研报      |      策略研报      |     宏观研报    |    新股研报   | 券商晨报（今日晨报） |
   | :-------------: | :----------------: | :----------------: | :-------------: | :-----------: | :------------------: |
@@ -681,7 +681,7 @@ Language:
 
 ### 最新研报 <Site url="www.ulapia.com/" size="sm" />
 
-<Route namespace="ulapia" :data='{"path":"/research/latest","categories":["finance"],"example":"/ulapia/research/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ulapia.com/"]}],"name":"最新研报","maintainers":[],"url":"www.ulapia.com/","location":"research.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ulapia" :data='{"path":"/research/latest","categories":["finance"],"example":"/ulapia/research/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ulapia.com/"]}],"name":"最新研报","maintainers":[],"url":"www.ulapia.com/","location":"research.ts"}' :test='{"code":0}' />
 
 ## 雪球 <Site url="danjuanapp.com"/>
 

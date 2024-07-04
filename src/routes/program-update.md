@@ -51,7 +51,7 @@ Alpine Linux packages update
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":0}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -61,7 +61,7 @@ Alpine Linux packages update
 
 ### SDK Platform Tools release notes <Site url="developer.android.com/studio/releases/platform-tools" size="sm" />
 
-<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ## APKPure <Site url="apkpure.com"/>
 
@@ -101,7 +101,7 @@ Alpine Linux packages update
 
 ### Price Drop <Site url="apps.apple.com/" size="sm" />
 
-<Route namespace="appstore" :data='{"path":"/price/:country/:type/:id","categories":["program-update"],"example":"/appstore/price/us/mac/id1152443474","parameters":{"country":"App Store Country, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `us`","type":"App type，either `iOS` or `mac`","id":"App Store app id, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `id1152443474`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/"]}],"name":"Price Drop","maintainers":["HenryQW"],"url":"apps.apple.com/","location":"price.ts"}' :test='{"code":0}' />
+<Route namespace="appstore" :data='{"path":"/price/:country/:type/:id","categories":["program-update"],"example":"/appstore/price/us/mac/id1152443474","parameters":{"country":"App Store Country, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `us`","type":"App type，either `iOS` or `mac`","id":"App Store app id, obtain from the app URL https://apps.apple.com/us/app/id1152443474, in this case, `id1152443474`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apps.apple.com/"]}],"name":"Price Drop","maintainers":["HenryQW"],"url":"apps.apple.com/","location":"price.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 每日精品限免 / 促销应用（鲜面连线 by AppSo） <Site url="app.so/xianmian" size="sm" />
 
@@ -407,7 +407,7 @@ It is recommended to use with clipping tools such as Notion Web Clipper.
 
 ### Changelog <Site url="raycast.com" size="sm" />
 
-<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='{"code":0}' />
 
 ## RemNote <Site url="remnote.com"/>
 
@@ -449,7 +449,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Desktop releases and release notes <Site url="tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/" size="sm" />
 
-<Route namespace="tradingview" :data='{"path":"/desktop","categories":["program-update"],"example":"/tradingview/desktop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/"]}],"name":"Desktop releases and release notes","maintainers":["nczitzk"],"url":"tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/","location":"desktop.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="tradingview" :data='{"path":"/desktop","categories":["program-update"],"example":"/tradingview/desktop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/"]}],"name":"Desktop releases and release notes","maintainers":["nczitzk"],"url":"tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/","location":"desktop.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
 
 ### Unknown <Site url="tradingview.com" size="sm" />
 
@@ -463,11 +463,11 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Changelog <Site url="support.typora.io/" size="sm" />
 
-<Route namespace="typora" :data='{"path":"/changelog","categories":["program-update"],"example":"/typora/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"]}],"name":"Changelog","maintainers":["cnzgray"],"url":"support.typora.io/","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="typora" :data='{"path":"/changelog","categories":["program-update"],"example":"/typora/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"]}],"name":"Changelog","maintainers":["cnzgray"],"url":"support.typora.io/","location":"changelog.ts"}' :test='{"code":0}' />
 
 ### Dev Release Changelog <Site url="support.typora.io/" size="sm" />
 
-<Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://typora.io/releases/dev#1.8.3-…&#39;"}' />
 
 ## Typst <Site url="typst.com"/>
 
@@ -477,13 +477,13 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### Universe <Site url="typst.com" size="sm" />
 
-<Route namespace="typst" :data='{"path":"/universe","categories":["program-update"],"example":"/typst/universe","radar":[{"source":["typst.app/universe"],"target":"/universe"}],"name":"Universe","maintainers":["HPDell"],"location":"universe.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="typst" :data='{"path":"/universe","categories":["program-update"],"example":"/typst/universe","radar":[{"source":["typst.app/universe"],"target":"/universe"}],"name":"Universe","maintainers":["HPDell"],"location":"universe.ts"}' :test='{"code":0}' />
 
 ## Unraid <Site url="unraid.net"/>
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"expected [ …(18) ] to not include &#39;https://hub.docker.com/r/myoung34/git…&#39;"}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":0}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 
@@ -513,7 +513,7 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### Version History <Site url="zotero.org/" size="sm" />
 
-<Route namespace="zotero" :data='{"path":"/versions","categories":["program-update"],"example":"/zotero/versions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zotero.org/","zotero.org/support/changelog"]}],"name":"Version History","maintainers":["jasongzy"],"url":"zotero.org/","location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zotero" :data='{"path":"/versions","categories":["program-update"],"example":"/zotero/versions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zotero.org/","zotero.org/support/changelog"]}],"name":"Version History","maintainers":["jasongzy"],"url":"zotero.org/","location":"versions.ts"}' :test='{"code":0}' />
 
 ## 哔哩哔哩 bilibili <Site url="www.bilibili.com"/>
 
