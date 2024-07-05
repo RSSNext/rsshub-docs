@@ -1597,6 +1597,12 @@ Column 列表：
 
   `https://www.ntdtv.com/b5/prog1201` 对应 `/ntdtv/b5/prog1201`
 
+## 新华网 <Site url="xinhuanet.com"/>
+
+### 客户端 <Site url="app.xinhuanet.com" size="sm" />
+
+<Route namespace="xinhuanet" :data='{"path":"/app","name":"客户端","url":"app.xinhuanet.com","maintainers":["nczitzk"],"example":"/xinhuanet/app","description":"","categories":["traditional-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["app.xinhuanet.com"],"target":"/app"}],"location":"app.ts"}' :test='undefined' />
+
 ## 新快报 <Site url="xkb.com.cn"/>
 
 ### 新闻 <Site url="xkb.com.cn" size="sm" />
