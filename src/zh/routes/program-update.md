@@ -43,7 +43,7 @@ Alpine Linux is a security-oriented, lightweight Linux distribution based on mus
 
 ### Packages <Site url="alpinelinux.org" size="sm" />
 
-<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='{"code":0}' />
+<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Alpine Linux packages update
 
@@ -51,7 +51,7 @@ Alpine Linux packages update
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":0}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -61,7 +61,7 @@ Alpine Linux packages update
 
 ### SDK Platform Tools release notes <Site url="developer.android.com/studio/releases/platform-tools" size="sm" />
 
-<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="android" :data='{"path":"/platform-tools-releases","categories":["program-update"],"example":"/android/platform-tools-releases","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.android.com/studio/releases/platform-tools","developer.android.com/"]}],"name":"SDK Platform Tools release notes","maintainers":["nczitzk"],"url":"developer.android.com/studio/releases/platform-tools","location":"platform-tools-releases.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## APKPure <Site url="apkpure.com"/>
 
@@ -209,11 +209,11 @@ Language
 
 ### Script Feedback <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/feedback","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/feedback","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/feedback"]}],"name":"Script Feedback","maintainers":["miles170"],"location":"feedback.ts"}' :test='{"code":0}' />
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -226,7 +226,7 @@ Language
 
 ### Script Update <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="greasyfork" :data='{"path":["/:language/:domain?","/scripts/sort/:sort/:language?"],"categories":["program-update"],"example":"/greasyfork/en/google.com","parameters":{"language":"language, located on the top right corner of Greasy Fork&#39;s search page, set to `all` for including all languages","domain":"the script&#39;s target domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language","greasyfork.org/:language/scripts/by-site/:domain?"]}],"name":"Script Update","maintainers":["imlonghao","miles170"],"description":"| Sort            | Description    |\n| --------------- | -------------- |\n| today           | Daily installs |\n| total_installs | Total installs |\n| ratings         | Ratings        |\n| created         | Created date   |\n| updated         | Updated date   |\n| name            | Name           |","location":"scripts.ts"}' :test='{"code":0}' />
 
 | Sort            | Description    |
 | --------------- | -------------- |
@@ -239,7 +239,7 @@ Language
 
 ### Script Version History <Site url="greasyfork.org" size="sm" />
 
-<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":0}' />
 
 ## Infuse <Site url="firecore.com"/>
 
@@ -449,7 +449,7 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Desktop releases and release notes <Site url="tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/" size="sm" />
 
-<Route namespace="tradingview" :data='{"path":"/desktop","categories":["program-update"],"example":"/tradingview/desktop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/"]}],"name":"Desktop releases and release notes","maintainers":["nczitzk"],"url":"tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/","location":"desktop.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="tradingview" :data='{"path":"/desktop","categories":["program-update"],"example":"/tradingview/desktop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/"]}],"name":"Desktop releases and release notes","maintainers":["nczitzk"],"url":"tradingview.com/support/solutions/43000673888-tradingview-desktop-releases-and-release-notes/","location":"desktop.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="tradingview.com" size="sm" />
 
@@ -463,11 +463,11 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
 ### Changelog <Site url="support.typora.io/" size="sm" />
 
-<Route namespace="typora" :data='{"path":"/changelog","categories":["program-update"],"example":"/typora/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"]}],"name":"Changelog","maintainers":["cnzgray"],"url":"support.typora.io/","location":"changelog.ts"}' :test='{"code":0}' />
+<Route namespace="typora" :data='{"path":"/changelog","categories":["program-update"],"example":"/typora/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"]}],"name":"Changelog","maintainers":["cnzgray"],"url":"support.typora.io/","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Dev Release Changelog <Site url="support.typora.io/" size="sm" />
 
-<Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"expected [ …(2) ] to not include &#39;https://typora.io/releases/dev#1.8.3-…&#39;"}' />
+<Route namespace="typora" :data='{"path":"/changelog/dev","categories":["program-update"],"example":"/typora/changelog/dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.typora.io/"],"target":"/changelog"}],"name":"Dev Release Changelog","maintainers":["nczitzk"],"url":"support.typora.io/","location":"changelog-dev.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Typst <Site url="typst.com"/>
 
@@ -477,13 +477,13 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### Universe <Site url="typst.com" size="sm" />
 
-<Route namespace="typst" :data='{"path":"/universe","categories":["program-update"],"example":"/typst/universe","radar":[{"source":["typst.app/universe"],"target":"/universe"}],"name":"Universe","maintainers":["HPDell"],"location":"universe.ts"}' :test='{"code":0}' />
+<Route namespace="typst" :data='{"path":"/universe","categories":["program-update"],"example":"/typst/universe","radar":[{"source":["typst.app/universe"],"target":"/universe"}],"name":"Universe","maintainers":["HPDell"],"location":"universe.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Unraid <Site url="unraid.net"/>
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":0}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 
@@ -513,7 +513,7 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### Version History <Site url="zotero.org/" size="sm" />
 
-<Route namespace="zotero" :data='{"path":"/versions","categories":["program-update"],"example":"/zotero/versions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zotero.org/","zotero.org/support/changelog"]}],"name":"Version History","maintainers":["jasongzy"],"url":"zotero.org/","location":"versions.ts"}' :test='{"code":0}' />
+<Route namespace="zotero" :data='{"path":"/versions","categories":["program-update"],"example":"/zotero/versions","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zotero.org/","zotero.org/support/changelog"]}],"name":"Version History","maintainers":["jasongzy"],"url":"zotero.org/","location":"versions.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 哔哩哔哩 bilibili <Site url="www.bilibili.com"/>
 
