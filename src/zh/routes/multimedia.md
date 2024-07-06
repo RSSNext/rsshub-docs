@@ -861,7 +861,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="m.ajmide.com" size="sm" />
 
-<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia"],"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia"],"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## 阿里云盘 <Site url="www.alipan.com"/>
 
@@ -961,11 +961,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 影视资源下载列表 <Site url="2bt0.com" size="sm" />
 
-<Route namespace="bt0" :data='{"path":"/mv/:number/:domain?","categories":["multimedia"],"example":"/bt0/mv/35575567/2","parameters":{"number":"影视详情id, 网页路径为`/mv/{id}.html`其中的id部分, 一般为8位纯数字","domain":"数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/mv/"]}],"name":"影视资源下载列表","maintainers":["miemieYaho"],"location":"mv.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bt0" :data='{"path":"/mv/:number/:domain?","categories":["multimedia"],"example":"/bt0/mv/35575567/2","parameters":{"number":"影视详情id, 网页路径为`/mv/{id}.html`其中的id部分, 一般为8位纯数字","domain":"数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/mv/"]}],"name":"影视资源下载列表","maintainers":["miemieYaho"],"location":"mv.ts"}' :test='{"code":0}' />
 
 ### 最新资源列表 <Site url="2bt0.com" size="sm" />
 
-<Route namespace="bt0" :data='{"path":"/tlist/:sc/:domain?","categories":["multimedia"],"example":"/bt0/tlist/1","parameters":{"sc":"分类(1-5), 1:电影, 2:电视剧, 3:近日热门, 4:本周热门, 5:本月热门","domain":"数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/tlist/"]}],"name":"最新资源列表","maintainers":["miemieYaho"],"location":"tlist.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bt0" :data='{"path":"/tlist/:sc/:domain?","categories":["multimedia"],"example":"/bt0/tlist/1","parameters":{"sc":"分类(1-5), 1:电影, 2:电视剧, 3:近日热门, 4:本周热门, 5:本月热门","domain":"数字1-9, 比如1表示请求域名为 1bt0.com, 默认为 2"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["2bt0.com/tlist/"]}],"name":"最新资源列表","maintainers":["miemieYaho"],"location":"tlist.ts"}' :test='{"code":0}' />
 
 ## 草榴社区 <Site url="t66y.com"/>
 
@@ -1294,7 +1294,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 专辑 <Site url="radio.cn" size="sm" />
 
-<Route namespace="radio" :data='{"path":"/album/:id","categories":["multimedia"],"example":"/radio/album/15682090498666","parameters":{"id":"专辑 id，可在对应专辑页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"description":"如果订阅 [中国相声榜](https://www.radio.cn/pc-portal/sanji/detail.html?columnId=15682090498666)，其 URL 为 `https://www.radio.cn/pc-portal/sanji/detail.html?columnId=15682090498666`，可以得到 `columnId` 为 `15682090498666`\n\n  所以对应路由为 [`/radio/album/15682090498666`](https://rsshub.app/radio/album/15682090498666)\n\n  :::tip\n  部分专辑不适用该路由，此时可以尝试 [节目](#yun-ting-jie-mu) 路由\n  :::","location":"album.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="radio" :data='{"path":"/album/:id","categories":["multimedia"],"example":"/radio/album/15682090498666","parameters":{"id":"专辑 id，可在对应专辑页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"description":"如果订阅 [中国相声榜](https://www.radio.cn/pc-portal/sanji/detail.html?columnId=15682090498666)，其 URL 为 `https://www.radio.cn/pc-portal/sanji/detail.html?columnId=15682090498666`，可以得到 `columnId` 为 `15682090498666`\n\n  所以对应路由为 [`/radio/album/15682090498666`](https://rsshub.app/radio/album/15682090498666)\n\n  :::tip\n  部分专辑不适用该路由，此时可以尝试 [节目](#yun-ting-jie-mu) 路由\n  :::","location":"album.ts"}' :test='{"code":0}' />
 
 如果订阅 [中国相声榜](https://www.radio.cn/pc-portal/sanji/detail.html?columnId=15682090498666)，其 URL 为 `https://www.radio.cn/pc-portal/sanji/detail.html?columnId=15682090498666`，可以得到 `columnId` 为 `15682090498666`
 
