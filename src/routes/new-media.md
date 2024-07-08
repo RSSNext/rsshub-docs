@@ -75,7 +75,7 @@
 
 ### Categories <Site url="aeon.aeon.co" size="sm" />
 
-<Route namespace="aeon" :data='{"path":"/category/:category","categories":["new-media"],"example":"/aeon/category/philosophy","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aeon.aeon.co/:category"]}],"name":"Categories","maintainers":["emdoe"],"description":"Supported categories: Philosophy, Science, Psychology, Society, and Culture.","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="aeon" :data='{"path":"/category/:category","categories":["new-media"],"example":"/aeon/category/philosophy","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aeon.aeon.co/:category"]}],"name":"Categories","maintainers":["emdoe"],"description":"Supported categories: Philosophy, Science, Psychology, Society, and Culture.","location":"category.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Supported categories: Philosophy, Science, Psychology, Society, and Culture.
 
@@ -93,7 +93,7 @@ Supported types: Essays, Videos, and Audio.
 
 ### 共和報 <Site url="agorahub.github.io/pen0" size="sm" />
 
-<Route namespace="agora0" :data='{"path":"/pen0","categories":["new-media"],"example":"/agora0/pen0","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agorahub.github.io/pen0"]}],"name":"共和報","maintainers":["TonyRL"],"url":"agorahub.github.io/pen0","location":"pen0.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="agora0" :data='{"path":"/pen0","categories":["new-media"],"example":"/agora0/pen0","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agorahub.github.io/pen0"]}],"name":"共和報","maintainers":["TonyRL"],"url":"agorahub.github.io/pen0","location":"pen0.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 零博客 <Site url="agorahub.github.io" size="sm" />
 
@@ -135,7 +135,7 @@ Supported types: Essays, Videos, and Audio.
 
 ### Military - Military News 军事 - 军事新闻 <Site url="military.china.com/news" size="sm" />
 
-<Route namespace="china" :data='{"path":"/news/military","categories":["new-media"],"example":"/china/news/military","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["military.china.com/news"]}],"name":"Military - Military News 军事 - 军事新闻","maintainers":["jiaaoMario"],"url":"military.china.com/news","location":"news/military/news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="china" :data='{"path":"/news/military","categories":["new-media"],"example":"/china/news/military","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["military.china.com/news"]}],"name":"Military - Military News 军事 - 军事新闻","maintainers":["jiaaoMario"],"url":"military.china.com/news","location":"news/military/news.ts"}' :test='{"code":0}' />
 
 ### News and current affairs 时事新闻 <Site url="finance.china.com" size="sm" />
 
@@ -151,7 +151,7 @@ Category of news
 
 ### Characters <Site url="chub.ai" size="sm" />
 
-<Route namespace="chub" :data='{"path":"/characters","categories":["new-media"],"example":"/chub/characters","name":"Characters","maintainers":["flameleaf"],"location":"characters.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="chub" :data='{"path":"/characters","categories":["new-media"],"example":"/chub/characters","name":"Characters","maintainers":["flameleaf"],"location":"characters.ts"}' :test='{"code":0}' />
 
 ## cnBeta.COM <Site url="cnbeta.com.tw"/>
 
@@ -451,7 +451,7 @@ Topics
 
 ### Topic <Site url="hbr.org" size="sm" />
 
-<Route namespace="hbr" :data='{"path":"/topic/:topic?/:type?","categories":["new-media"],"example":"/hbr/topic/leadership","parameters":{"topic":"Topic, can be found in URL, Leadership by default","type":"Type, see below, Latest by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbr.org/topic/:topic?","hbr.org/"]}],"name":"Topic","maintainers":["nczitzk"],"description":"| LATEST | POPULAR | FROM THE STORE | FOR YOU |\n  | ------ | ------- | -------------- | ------- |\n  | Latest | Popular | From the Store | For You |\n\n  :::tip\n  Click here to view [All Topics](https://hbr.org/topics)\n  :::","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hbr" :data='{"path":"/topic/:topic?/:type?","categories":["new-media"],"example":"/hbr/topic/leadership","parameters":{"topic":"Topic, can be found in URL, Leadership by default","type":"Type, see below, Latest by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbr.org/topic/:topic?","hbr.org/"]}],"name":"Topic","maintainers":["nczitzk"],"description":"| LATEST | POPULAR | FROM THE STORE | FOR YOU |\n  | ------ | ------- | -------------- | ------- |\n  | Latest | Popular | From the Store | For You |\n\n  :::tip\n  Click here to view [All Topics](https://hbr.org/topics)\n  :::","location":"topic.ts"}' :test='{"code":0}' />
 
 | LATEST | POPULAR | FROM THE STORE | FOR YOU |
   | ------ | ------- | -------------- | ------- |
@@ -465,7 +465,7 @@ Topics
 
 ### HKEPC 电脑领域 <Site url="hkepc.com/" size="sm" />
 
-<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |
   | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |
@@ -584,7 +584,7 @@ informed AI RSS feeds:
 
 ### TODAY - Channel <Site url="today.line.me" size="sm" />
 
-<Route namespace="line" :data='{"path":"/today/:edition/publisher/:id","categories":["new-media"],"example":"/line/today/th/publisher/101048","parameters":{"edition":"Edition, see table above","id":"Channel ID, can be found in URL"},"radar":[{"source":["today.line.me/:edition/v2/publisher/:id"]}],"name":"TODAY - Channel","maintainers":["TonyRL"],"location":"publisher.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="line" :data='{"path":"/today/:edition/publisher/:id","categories":["new-media"],"example":"/line/today/th/publisher/101048","parameters":{"edition":"Edition, see table above","id":"Channel ID, can be found in URL"},"radar":[{"source":["today.line.me/:edition/v2/publisher/:id"]}],"name":"TODAY - Channel","maintainers":["TonyRL"],"location":"publisher.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 ### TODAY <Site url="today.line.me/" size="sm" />
 
@@ -1592,7 +1592,7 @@ Member ID
 
 ### 今日热榜 <Site url="hot.zyw.asia" size="sm" />
 
-<Route namespace="zyw" :data='{"path":"/hot/:site?","categories":["new-media"],"example":"/zyw/hot","parameters":{"site":"站点，见下表，默认为空，即全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"今日热榜","maintainers":["nczitzk"],"description":":::tip\n  全部站点请见 [此处](https://hot.zyw.asia/#/list)\n  :::\n\n  | 哔哩哔哩 | 微博 | 知乎 | 36 氪 | 百度 | 少数派 | IT 之家 | 澎湃新闻 | 今日头条 | 百度贴吧 | 稀土掘金 | 腾讯新闻 |\n  | -------- | ---- | ---- | ----- | ---- | ------ | ------- | -------- | -------- | -------- | -------- | -------- |","location":"hot.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="zyw" :data='{"path":"/hot/:site?","categories":["new-media"],"example":"/zyw/hot","parameters":{"site":"站点，见下表，默认为空，即全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"今日热榜","maintainers":["nczitzk"],"description":":::tip\n  全部站点请见 [此处](https://hot.zyw.asia/#/list)\n  :::\n\n  | 哔哩哔哩 | 微博 | 知乎 | 36 氪 | 百度 | 少数派 | IT 之家 | 澎湃新闻 | 今日头条 | 百度贴吧 | 稀土掘金 | 腾讯新闻 |\n  | -------- | ---- | ---- | ----- | ---- | ------ | ------- | -------- | -------- | -------- | -------- | -------- |","location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 :::tip
   全部站点请见 [此处](https://hot.zyw.asia/#/list)
@@ -1658,7 +1658,7 @@ Member ID
 
 ### 焦点资讯 <Site url="bendibao.com/" size="sm" />
 
-<Route namespace="bendibao" :data='{"path":"/news/:city","categories":["new-media"],"example":"/bendibao/news/bj","parameters":{"city":"城市缩写，可在该城市页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bendibao.com/"]}],"name":"焦点资讯","maintainers":["nczitzk"],"url":"bendibao.com/","description":"| 城市名 | 缩写 |\n  | ------ | ---- |\n  | 北京   | bj   |\n  | 上海   | sh   |\n  | 广州   | gz   |\n  | 深圳   | sz   |\n\n  更多城市请参见 [这里](http://www.bendibao.com/city.htm)\n\n  > **香港特别行政区** 和 **澳门特别行政区** 的本地宝城市页面不更新资讯。","location":"news.ts"}' :test='{"code":1,"message":"expected NaN to be greater than -432000000"}' />
+<Route namespace="bendibao" :data='{"path":"/news/:city","categories":["new-media"],"example":"/bendibao/news/bj","parameters":{"city":"城市缩写，可在该城市页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bendibao.com/"]}],"name":"焦点资讯","maintainers":["nczitzk"],"url":"bendibao.com/","description":"| 城市名 | 缩写 |\n  | ------ | ---- |\n  | 北京   | bj   |\n  | 上海   | sh   |\n  | 广州   | gz   |\n  | 深圳   | sz   |\n\n  更多城市请参见 [这里](http://www.bendibao.com/city.htm)\n\n  > **香港特别行政区** 和 **澳门特别行政区** 的本地宝城市页面不更新资讯。","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 城市名 | 缩写 |
   | ------ | ---- |
@@ -1832,7 +1832,7 @@ Member ID
 
 ### 分类 <Site url="agirls.aotter.net" size="sm" />
 
-<Route namespace="agirls" :data='{"path":"/:category?","categories":["new-media"],"example":"/agirls/app","parameters":{"category":"分类，默认为最新文章，可在对应主题页的 URL 中找到，下表仅列出部分"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agirls.aotter.net/posts/:category"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |\n  | -------- | -------- | -------- | ----------- | ---------- | -------- |\n  | app      | phone    | computer | accessories | tutorial   | techlife |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="agirls" :data='{"path":"/:category?","categories":["new-media"],"example":"/agirls/app","parameters":{"category":"分类，默认为最新文章，可在对应主题页的 URL 中找到，下表仅列出部分"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agirls.aotter.net/posts/:category"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |\n  | -------- | -------- | -------- | ----------- | ---------- | -------- |\n  | app      | phone    | computer | accessories | tutorial   | techlife |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |
   | -------- | -------- | -------- | ----------- | ---------- | -------- |
@@ -2056,7 +2056,7 @@ Type 栏目：
 
 ### 个人主页文章 <Site url="guancha.cn" size="sm" />
 
-<Route namespace="guancha" :data='{"path":"/personalpage/:uid","categories":["new-media"],"example":"/guancha/personalpage/243983","parameters":{"uid":"用户id， 可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"个人主页文章","maintainers":["Jeason0228"],"location":"personalpage.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="guancha" :data='{"path":"/personalpage/:uid","categories":["new-media"],"example":"/guancha/personalpage/243983","parameters":{"uid":"用户id， 可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"个人主页文章","maintainers":["Jeason0228"],"location":"personalpage.ts"}' :test='{"code":1,"message":"expected -13072162388 to be greater than -432000000"}' />
 
 ### 观学院 <Site url="guancha.cn/" size="sm" />
 
@@ -2118,7 +2118,7 @@ Type 栏目：
 
 ### 跟踪 <Site url="houxu.app/memory" size="sm" />
 
-<Route namespace="houxu" :data='{"path":"/memory","categories":["new-media"],"example":"/houxu/memory","radar":[{"source":["houxu.app/memory","houxu.app/"]}],"name":"跟踪","maintainers":["nczitzk"],"url":"houxu.app/memory","location":"memory.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="houxu" :data='{"path":"/memory","categories":["new-media"],"example":"/houxu/memory","radar":[{"source":["houxu.app/memory","houxu.app/"]}],"name":"跟踪","maintainers":["nczitzk"],"url":"houxu.app/memory","location":"memory.ts"}' :test='{"code":0}' />
 
 ### 热点 <Site url="houxu.app/" size="sm" />
 
@@ -2210,7 +2210,7 @@ Type 栏目：
 
 ### 标签 <Site url="gcores.com" size="sm" />
 
-<Route namespace="gcores" :data='{"path":"/tag/:tag/:category?","categories":["new-media"],"example":"/gcores/tag/42/articles","parameters":{"tag":"标签名，可在选定标签分类页面的 URL 中找到，如视觉动物——42","category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/categories/:tag","gcores.com/"],"target":"/tag/:tag"}],"name":"标签","maintainers":["StevenRCE0"],"description":"分类名同上。","location":"tag.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gcores" :data='{"path":"/tag/:tag/:category?","categories":["new-media"],"example":"/gcores/tag/42/articles","parameters":{"tag":"标签名，可在选定标签分类页面的 URL 中找到，如视觉动物——42","category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/categories/:tag","gcores.com/"],"target":"/tag/:tag"}],"name":"标签","maintainers":["StevenRCE0"],"description":"分类名同上。","location":"tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 分类名同上。
 
@@ -2356,7 +2356,7 @@ Type 栏目：
 
 ### 业界资讯 <Site url="leiphone.com/" size="sm" />
 
-<Route namespace="leiphone" :data='{"path":"/newsflash","categories":["new-media"],"example":"/leiphone/newsflash","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["leiphone.com/"]}],"name":"业界资讯","maintainers":[],"url":"leiphone.com/","location":"newsflash.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="leiphone" :data='{"path":"/newsflash","categories":["new-media"],"example":"/leiphone/newsflash","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["leiphone.com/"]}],"name":"业界资讯","maintainers":[],"url":"leiphone.com/","location":"newsflash.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 链新闻 ABMedia <Site url="www.abmedia.io"/>
 
@@ -3165,7 +3165,7 @@ Type 栏目：
 
 ### 科技 - 科学探索 <Site url="finance.sina.com.cn" size="sm" />
 
-<Route namespace="sina" :data='{"path":"/discovery/:type","categories":["new-media"],"example":"/sina/discovery/zx","parameters":{"type":"订阅分区类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科技 - 科学探索","maintainers":["LogicJake"],"description":"| 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | zx   | twhk     | dwzw     | zrdl     | lskg     | smyx     | shbk     | kjqy     |","location":"discovery.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="sina" :data='{"path":"/discovery/:type","categories":["new-media"],"example":"/sina/discovery/zx","parameters":{"type":"订阅分区类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科技 - 科学探索","maintainers":["LogicJake"],"description":"| 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | zx   | twhk     | dwzw     | zrdl     | lskg     | smyx     | shbk     | kjqy     |","location":"discovery.ts"}' :test='{"code":0}' />
 
 | 最新 | 天文航空 | 动物植物 | 自然地理 | 历史考古 | 生命医学 | 生活百科 | 科技前沿 |
   | ---- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -3476,7 +3476,7 @@ Type 栏目：
 
 ### 标签 <Site url="byteclicks.com/" size="sm" />
 
-<Route namespace="byteclicks" :data='{"path":"/tag/:tag","categories":["new-media"],"example":"/byteclicks/tag/人工智能","parameters":{"tag":"标签，可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["byteclicks.com/tag/:tag"]}],"name":"标签","maintainers":["TonyRL"],"url":"byteclicks.com/","location":"tag.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="byteclicks" :data='{"path":"/tag/:tag","categories":["new-media"],"example":"/byteclicks/tag/人工智能","parameters":{"tag":"标签，可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["byteclicks.com/tag/:tag"]}],"name":"标签","maintainers":["TonyRL"],"url":"byteclicks.com/","location":"tag.ts"}' :test='{"code":0}' />
 
 ## 自由微信 <Site url="freewechat.com"/>
 
