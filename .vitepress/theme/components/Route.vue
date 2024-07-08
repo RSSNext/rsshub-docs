@@ -40,17 +40,17 @@
       <ul>
         <li v-for="(item, index) in paramMatch" :key="index" class="params">
           <code>{{ item.name.replace(/:|\?|\+|\*/g, '') }}</code>
-          <ul :style="{fontSize: '13px', lineHeight: 1.5}">
-            <li><strong>{{ item.optional ? 'Optional' : 'Required'}}</strong></li>
+            <ul :style="{fontSize: '13px', lineHeight: 1.5}">
+            <li><strong>{{ item.optional ? 'Optional' : 'Required' }}</strong></li>
             <li v-if="item.default"><strong>Default:</strong> {{ item.default }}</li>
             <li v-if="item.options?.length">
               <strong>Options:</strong> <select v-if="item.options?.length" :style="{marginRight: '8px'}">
-                <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
-                  {{ option.value }}: {{ option.label }}
-                </option>
+              <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
+                {{ option.value }}: {{ option.label }}
+              </option>
               </select>
             </li>
-            <li><strong>Description:</strong> <span v-html="renderMarkdown(item.description || 'N/A')"/></li>
+            <li><strong>Description:</strong> <span v-html="item.description?.includes('|') ? renderMarkdown(item.description, false) : renderMarkdown(item.description || 'N/A')"/></li>
           </ul>
         </li>
       </ul>
