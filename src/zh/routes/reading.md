@@ -58,6 +58,36 @@ For instance, when doing search at [https://magazinelib.com](https://magazinelib
 
 <Route namespace="penguin-random-house" :data='{"path":"/the-read-down","categories":["reading"],"example":"/penguin-random-house/the-read-down","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["penguinrandomhouse.com/the-read-down"]}],"name":"Book Lists","maintainers":["StevenRCE0"],"url":"penguinrandomhouse.com/the-read-down","location":"thereaddown.ts"}' :test='undefined' />
 
+## Readwise <Site url="readwise.io"/>
+
+### Reader Document List <Site url="readwise.io" size="sm" />
+
+<Route namespace="readwise" :data='{"path":"/list/:routeParams?","categories":["reading"],"example":"/readwise/list/location=new&category=article","parameters":{"routeParams":"Parameter combinations, see the description above."},"features":{"requireConfig":[{"name":"READWISE_ACCESS_TOKEN","optional":false,"description":"Visit `https://readwise.io/access_token` to get your access token."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["read.readwise.io"],"target":"/list"}],"name":"Reader Document List","maintainers":["xbot"],"description":"Specify options (in the format of query string) in parameter `routeParams` to filter documents.\n\n| Parameter                  | Description                                                                            |   Values                                                                                    |  Default                             |\n| -------------------------- | -------------------------------------------------------------------------------------- |   ----------------------------------------------------------------------------------------- |  ----------------------------------- |\n| `location`               | The document&#39;s location.                                                               |   `new`/`later`/`shortlist`/`archive`/`feed`                                      |                                      |\n| `category`               | The document&#39;s category.                                                               |   `article`/`email`/`rss`/`highlight`/`note`/`pdf`/`epub`/`tweet`/`video` |                                      |\n| `updatedAfter`           | Fetch only documents updated after this date.                                          |   string (formatted as ISO 8601 date)                                                       ||\n| `tag`                    | The document&#39;s tag, can be specified once or multiple times.                           |||\n| `tagStrategy`            | If multiple tags are specified, should the documents match all of them or any of them. |   `any`/`all`                                                                           |  `any`                             |\n\nCustomise parameter values to fetch specific documents, for example:\n\n```\nhttps://rsshub.app/readwise/list/location=new&category=article\n```\n\nfetches articles in the Inbox.\n\n```\nhttps://rsshub.app/readwise/list/category=article&tag=shortlist&tag=AI&tagStrategy=all\n```\n\nfetches articles tagged both by `shortlist` and `AI`. ","location":"list.ts"}' :test='undefined' />
+
+Specify options (in the format of query string) in parameter `routeParams` to filter documents.
+
+| Parameter                  | Description                                                                            |   Values                                                                                    |  Default                             |
+| -------------------------- | -------------------------------------------------------------------------------------- |   ----------------------------------------------------------------------------------------- |  ----------------------------------- |
+| `location`               | The document's location.                                                               |   `new`/`later`/`shortlist`/`archive`/`feed`                                      |                                      |
+| `category`               | The document's category.                                                               |   `article`/`email`/`rss`/`highlight`/`note`/`pdf`/`epub`/`tweet`/`video` |                                      |
+| `updatedAfter`           | Fetch only documents updated after this date.                                          |   string (formatted as ISO 8601 date)                                                       ||
+| `tag`                    | The document's tag, can be specified once or multiple times.                           |||
+| `tagStrategy`            | If multiple tags are specified, should the documents match all of them or any of them. |   `any`/`all`                                                                           |  `any`                             |
+
+Customise parameter values to fetch specific documents, for example:
+
+```
+https://rsshub.app/readwise/list/location=new&category=article
+```
+
+fetches articles in the Inbox.
+
+```
+https://rsshub.app/readwise/list/category=article&tag=shortlist&tag=AI&tagStrategy=all
+```
+
+fetches articles tagged both by `shortlist` and `AI`. 
+
 ## SF 轻小说 <Site url="book.sfacg.com"/>
 
 ### 章节 <Site url="book.sfacg.com" size="sm" />
