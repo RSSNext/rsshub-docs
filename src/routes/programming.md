@@ -679,6 +679,12 @@ GitHub provides some official RSS feeds:
   | Web Design         | web-design         |
   | Workflow           | workflow           |
 
+## ThoughtWorks <Site url="www.thoughtworks.com/zh-cn/insights/blog"/>
+
+### Inside Blog <Site url="www.thoughtworks.com/zh-cn/insights/blog" size="sm" />
+
+<Route namespace="thoughtworks" :data='{"path":"/blog","categories":["programming"],"example":"/thoughtworks/blog","radar":[{"source":["www.thoughtworks.com/zh-cn/insights/blog"]}],"name":"Inside Blog","maintainers":["Hyvi"],"location":"index.ts"}' :test='undefined' />
+
 ## web.dev <Site url="web.dev"/>
 
 ### Articles <Site url="web.dev" size="sm" />
