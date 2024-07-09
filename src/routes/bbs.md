@@ -558,7 +558,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛 <Site url="xsijishe.com" size="sm" />
 
-<Route namespace="xsijishe" :data='{"path":"/forum/:fid","categories":["bbs"],"example":"/xsijishe/forum/51","parameters":{"fid":"子论坛 id"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛","maintainers":["akynazh"],"description":":::tip 关于子论坛 id 的获取方法\n  `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。\n  :::","location":"forum.ts"}' :test='undefined' />
+<Route namespace="xsijishe" :data='{"path":"/forum/:fid","categories":["bbs"],"example":"/xsijishe/forum/51","parameters":{"fid":"子论坛 id"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛","maintainers":["akynazh"],"description":":::tip 关于子论坛 id 的获取方法\n  `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。\n  :::","location":"forum.ts"}' :test='undefined' />
 
 :::tip 关于子论坛 id 的获取方法
   `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。
@@ -566,7 +566,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 排行榜 <Site url="xsijishe.com" size="sm" />
 
-<Route namespace="xsijishe" :data='{"path":"/rank/:type","categories":["bbs"],"example":"/xsijishe/rank/weekly","parameters":{"type":"排行榜类型: weekly | monthly"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["akynazh"],"location":"rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="xsijishe" :data='{"path":"/rank/:type","categories":["bbs"],"example":"/xsijishe/rank/weekly","parameters":{"type":"排行榜类型: weekly | monthly"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["akynazh"],"location":"rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 通信人家园 <Site url="txrjy.com"/>
 
