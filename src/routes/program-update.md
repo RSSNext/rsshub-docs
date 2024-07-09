@@ -43,7 +43,7 @@ Alpine Linux is a security-oriented, lightweight Linux distribution based on mus
 
 ### Packages <Site url="alpinelinux.org" size="sm" />
 
-<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='{"code":0}' />
+<Route namespace="alpinelinux" :data='{"name":"Packages","categories":["program-update"],"maintainers":["CaoMeiYouRen"],"path":"/pkgs/:name/:routeParams?","parameters":{"name":"Packages name","routeParams":"Filters of packages type. E.g. branch=edge&repo=main&arch=armv7&maintainer=Jakub%20Jirutka"},"example":"/alpinelinux/pkgs/nodejs","description":"Alpine Linux packages update","radar":[{"source":["https://pkgs.alpinelinux.org/packages"]}],"zh":{"name":"软件包","description":"Alpine Linux 软件包更新"},"location":"pkgs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Alpine Linux packages update
 
@@ -51,7 +51,7 @@ Alpine Linux packages update
 
 ### Kindle Software Updates <Site url="amazon.com" size="sm" />
 
-<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":0}' />
+<Route namespace="amazon" :data='{"path":"/kindle/software-updates","categories":["program-update"],"example":"/amazon/kindle/software-updates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Kindle Software Updates","maintainers":["EthanWng97"],"location":"kindle-software-updates.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="amazon.com" size="sm" />
 
@@ -111,7 +111,7 @@ Alpine Linux packages update
 
 ### Programs <Site url="appstorrent.ru/programs/" size="sm" />
 
-<Route namespace="appstorrent" :data='{"path":"/programs","categories":["program-update"],"example":"/appstorrent/programs","name":"Programs","maintainers":["xzzpig"],"url":"appstorrent.ru/programs/","location":"programs.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="appstorrent" :data='{"path":"/programs","categories":["program-update"],"example":"/appstorrent/programs","name":"Programs","maintainers":["xzzpig"],"url":"appstorrent.ru/programs/","location":"programs.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## ASUS <Site url="asus.com.cn"/>
 
@@ -127,7 +127,7 @@ Alpine Linux packages update
 
 ### BlueStacks 5 Release Notes <Site url="bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5" size="sm" />
 
-<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bluestacks" :data='{"path":"/release/5","categories":["program-update"],"example":"/bluestacks/release/5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","bluestacks.com/"]}],"name":"BlueStacks 5 Release Notes","maintainers":["TonyRL"],"url":"bluestacks.com/hc/en-us/articles/360056960211-Release-Notes-BlueStacks-5","location":"release.ts"}' :test='{"code":0}' />
 
 ## Brave <Site url="brave.com"/>
 
@@ -173,7 +173,7 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Changelog <Site url="cn.eagle.cool" size="sm" />
 
-<Route namespace="eagle" :data='{"path":"/changelog/:language?","categories":["program-update"],"example":"/eagle/changelog/en","parameters":{"language":"Language, see list, default to be `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Changelog","maintainers":["tigercubden"],"description":"Language\n\n  | Simplified Chinese | Traditional Chinese | English |\n  | ------------------ | ------------------- | ------- |\n  | cn                 | tw                  | en      |","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="eagle" :data='{"path":"/changelog/:language?","categories":["program-update"],"example":"/eagle/changelog/en","parameters":{"language":"Language, see list, default to be `cn`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Changelog","maintainers":["tigercubden"],"description":"Language\n\n  | Simplified Chinese | Traditional Chinese | English |\n  | ------------------ | ------------------- | ------- |\n  | cn                 | tw                  | en      |","location":"changelog.ts"}' :test='{"code":0}' />
 
 Language
 
@@ -407,19 +407,19 @@ It is recommended to use with clipping tools such as Notion Web Clipper.
 
 ### Changelog <Site url="raycast.com" size="sm" />
 
-<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='{"code":0}' />
+<Route namespace="raycast" :data='{"path":"/changelog","name":"Changelog","categories":["program-update"],"example":"/raycast/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["equt"],"location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## RemNote <Site url="remnote.com"/>
 
 ### Changelog <Site url="remnote.com/changelog" size="sm" />
 
-<Route namespace="remnote" :data='{"path":"/changelog","categories":["program-update"],"example":"/remnote/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["remnote.com/changelog","remnote.com/"]}],"name":"Changelog","maintainers":["TonyRL","amakerlife"],"url":"remnote.com/changelog","location":"changelog.ts"}' :test='{"code":0}' />
+<Route namespace="remnote" :data='{"path":"/changelog","categories":["program-update"],"example":"/remnote/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["remnote.com/changelog","remnote.com/"]}],"name":"Changelog","maintainers":["TonyRL","amakerlife"],"url":"remnote.com/changelog","location":"changelog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## RSSHub <Site url="docs.rsshub.app"/>
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
 
-<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update","popular"],"example":"/rsshub/routes/en","parameters":{"lang":{"description":"Language","options":[{"label":"Chinese","value":"zh"},{"label":"English","value":"en"}],"default":"en"}},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"expected [ &#39;bsky\"/keyword/:keyword\"&#39;, …(134) ] to not include &#39;douban[\"/movie/playing\",\"/movie/playi…&#39;"}' />
+<Route namespace="rsshub" :data='{"path":"/routes/:lang?","categories":["program-update","popular"],"example":"/rsshub/routes/en","parameters":{"lang":{"description":"Language","options":[{"label":"Chinese","value":"zh"},{"label":"English","value":"en"}],"default":"en"}},"radar":[{"source":["docs.rsshub.app/*"],"target":"/routes"}],"name":"New routes","maintainers":["DIYgod"],"url":"docs.rsshub.app/*","location":"routes.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### Unknown <Site url="docs.rsshub.app" size="sm" />
 
@@ -483,7 +483,7 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### Community Apps <Site url="unraid.net/community/apps" size="sm" />
 
-<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="unraid" :data='{"path":"/community-apps","categories":["program-update"],"example":"/unraid/community-apps","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["unraid.net/community/apps"]}],"name":"Community Apps","maintainers":["KTachibanaM"],"url":"unraid.net/community/apps","location":"community-apps.ts"}' :test='{"code":0}' />
 
 ## WizTree <Site url="diskanalyzer.com"/>
 
@@ -519,7 +519,7 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### 更新情报 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/app/:id?","categories":["program-update"],"example":"/bilibili/app/android","parameters":{"id":"客户端 id，见下表，默认为安卓版"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新情报","maintainers":["nczitzk"],"description":"| 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |\n| ------- | --------- | ---------- | ------ | ---------------- |\n| android | iphone    | ipad       | win    | android_tv_yst |","location":"app.ts"}' :test='{"code":1,"message":"expected [ &#39;https://app.bilibili.com/&#39; ] to not include &#39;https://app.bilibili.com/&#39;"}' />
+<Route namespace="bilibili" :data='{"path":"/app/:id?","categories":["program-update"],"example":"/bilibili/app/android","parameters":{"id":"客户端 id，见下表，默认为安卓版"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"更新情报","maintainers":["nczitzk"],"description":"| 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |\n| ------- | --------- | ---------- | ------ | ---------------- |\n| android | iphone    | ipad       | win    | android_tv_yst |","location":"app.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 安卓版  | iPhone 版 | iPad HD 版 | UWP 版 | TV 版            |
 | ------- | --------- | ---------- | ------ | ---------------- |
@@ -541,5 +541,5 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ### 全部文章 <Site url="www.iplaysoft.com" size="sm" />
 
-<Route namespace="iplaysoft" :data='{"path":"/","categories":["program-update"],"example":"/iplaysoft","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iplaysoft.com"]}],"name":"全部文章","maintainers":["williamgateszhao"],"location":"index.ts"}' :test='undefined' />
+<Route namespace="iplaysoft" :data='{"path":"/","categories":["program-update"],"example":"/iplaysoft","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iplaysoft.com"]}],"name":"全部文章","maintainers":["williamgateszhao"],"location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 

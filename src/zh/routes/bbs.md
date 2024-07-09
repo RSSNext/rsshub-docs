@@ -94,13 +94,13 @@
 
 ### 板塊帖子 <Site url="www.dcard.tw" size="sm" />
 
-<Route namespace="dcard" :data='{"path":"/:section/:type?","categories":["bbs"],"example":"/dcard/funny/popular","parameters":{"section":"板塊名稱，URL 中獲得","type":"排序，popular 熱門；latest 最新，默認為 latest"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板塊帖子","maintainers":["HenryQW"],"location":"section.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="dcard" :data='{"path":"/:section/:type?","categories":["bbs"],"example":"/dcard/funny/popular","parameters":{"section":"板塊名稱，URL 中獲得","type":"排序，popular 熱門；latest 最新，默認為 latest"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"板塊帖子","maintainers":["HenryQW"],"location":"section.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Deepin <Site url="bbs.deepin.org"/>
 
 ### BBS Home Page <Site url="bbs.deepin.org" size="sm" />
 
-<Route namespace="deepin" :data='{"path":"/homepage/:user_id","categories":["bbs"],"example":"/deepin/homepage/78326","parameters":{"user_id":"user id"},"name":"BBS Home Page","maintainers":["tensor-tech"],"radar":[{"source":["bbs.deepin.org/user/:user_id"],"target":"/homepage/:user_id"}],"location":"homepage.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="deepin" :data='{"path":"/homepage/:user_id","categories":["bbs"],"example":"/deepin/homepage/78326","parameters":{"user_id":"user id"},"name":"BBS Home Page","maintainers":["tensor-tech"],"radar":[{"source":["bbs.deepin.org/user/:user_id"],"target":"/homepage/:user_id"}],"location":"homepage.ts"}' :test='{"code":0}' />
 
 ## Discourse 
 
@@ -134,7 +134,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 社区 <Site url="learnku.com" size="sm" />
 
-<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="learnku" :data='{"path":"/:community/:category?","categories":["bbs"],"example":"/learnku/laravel/qa","parameters":{"community":"社区 标识，可在 <https://learnku.com/communities> 找到","category":"分类，如果不传 `category` 则获取全部分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["learnku.com/:community"],"target":"/:community"}],"name":"社区","maintainers":["kayw-geek"],"description":"| 招聘 | 翻译         | 问答 | 链接  |\n| ---- | ------------ | ---- | ----- |\n| jobs | translations | qa   | links |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 招聘 | 翻译         | 问答 | 链接  |
 | ---- | ------------ | ---- | ----- |
@@ -254,7 +254,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 看板列表 <Site url="irs.zuvio.com.tw" size="sm" />
 
-<Route namespace="zuvio" :data='{"path":"/student5/boards","categories":["bbs"],"example":"/zuvio/student5/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板列表","maintainers":["TonyRL"],"location":"boards.ts"}' :test='{"code":0}' />
+<Route namespace="zuvio" :data='{"path":"/student5/boards","categories":["bbs"],"example":"/zuvio/student5/boards","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看板列表","maintainers":["TonyRL"],"location":"boards.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 校園話題 <Site url="irs.zuvio.com.tw" size="sm" />
 
@@ -544,7 +544,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 发现 <Site url="pincong.rocks" size="sm" />
 
-<Route namespace="pincong" :data='{"path":"/category/:category?/:sort?","categories":["bbs"],"example":"/pincong/category/1/new","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部","sort":"排序方式，参数可见下表，默认为推荐"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"发现","maintainers":["zphw"],"description":"| 最新 | 推荐      | 热门 |\n| ---- | --------- | ---- |\n| new  | recommend | hot  |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pincong" :data='{"path":"/category/:category?/:sort?","categories":["bbs"],"example":"/pincong/category/1/new","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部","sort":"排序方式，参数可见下表，默认为推荐"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"发现","maintainers":["zphw"],"description":"| 最新 | 推荐      | 热门 |\n| ---- | --------- | ---- |\n| new  | recommend | hot  |","location":"index.ts"}' :test='{"code":0}' />
 
 | 最新 | 推荐      | 热门 |
 | ---- | --------- | ---- |
@@ -552,7 +552,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 精选 <Site url="pincong.rocks" size="sm" />
 
-<Route namespace="pincong" :data='{"path":"/hot/:category?","categories":["bbs"],"example":"/pincong/hot","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"精选","maintainers":["zphw"],"location":"hot.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="pincong" :data='{"path":"/hot/:category?","categories":["bbs"],"example":"/pincong/hot","parameters":{"category":"分类，与官网分类 URL `category-` 后的数字对应，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"精选","maintainers":["zphw"],"location":"hot.ts"}' :test='{"code":1,"message":"expected [ …(10) ] to not include &#39;https://pincong.rocks/question/31762&#39;"}' />
 
 ## 司机社 <Site url="xsijishe.com"/>
 

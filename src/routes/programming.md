@@ -10,7 +10,7 @@
 
 ### Topics <Site url="alistapart.com/articles/" size="sm" />
 
-<Route namespace="alistapart" :data='{"path":"/:topic","categories":["programming"],"example":"/alistapart/application-development","parameters":{"topic":"Any Topic or from the table below. Defaults to All Articles"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["alistapart.com/blog/topic/:topic"]}],"name":"Topics","maintainers":["Rjnishant530"],"url":"alistapart.com/articles/","description":"You have the option to utilize the main heading or use individual categories as topics for the path.\n\n  | **Code**                    | *code*                    |\n  | --------------------------- | ------------------------- |\n  | **Application Development** | *application-development* |\n  | **Browsers**                | *browsers*                |\n  | **CSS**                     | *css*                     |\n  | **HTML**                    | *html*                    |\n  | **JavaScript**              | *javascript*              |\n  | **The Server Side**         | *the-server-side*         |\n\n  | **Content**          | *content*          |\n  | -------------------- | ------------------ |\n  | **Community**        | *community*        |\n  | **Content Strategy** | *content-strategy* |\n  | **Writing**          | *writing*          |\n\n  | **Design**                 | *design*               |\n  | -------------------------- | ---------------------- |\n  | **Brand Identity**         | *brand-identity*       |\n  | **Graphic Design**         | *graphic-design*       |\n  | **Layout & Grids**         | *layout-grids*         |\n  | **Mobile/Multidevice**     | *mobile-multidevice*   |\n  | **Responsive Design**      | *responsive-design*    |\n  | **Typography & Web Fonts** | *typography-web-fonts* |\n\n  | **Industry & Business** | *industry-business* |\n  | ----------------------- | ------------------- |\n  | **Business**            | *business*          |\n  | **Career**              | *career*            |\n  | **Industry**            | *industry*          |\n  | **State of the Web**    | *state-of-the-web*  |\n\n  | **Process**            | *process*            |\n  | ---------------------- | -------------------- |\n  | **Creativity**         | *creativity*         |\n  | **Project Management** | *project-management* |\n  | **Web Strategy**       | *web-strategy*       |\n  | **Workflow & Tools**   | *workflow-tools*     |\n\n  | **User Experience**          | *user-experience*          |\n  | ---------------------------- | -------------------------- |\n  | **Accessibility**            | *accessibility*            |\n  | **Information Architecture** | *information-architecture* |\n  | **Interaction Design**       | *interaction-design*       |\n  | **Usability**                | *usability*                |\n  | **User Research**            | *user-research*            |","location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="alistapart" :data='{"path":"/:topic","categories":["programming"],"example":"/alistapart/application-development","parameters":{"topic":"Any Topic or from the table below. Defaults to All Articles"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["alistapart.com/blog/topic/:topic"]}],"name":"Topics","maintainers":["Rjnishant530"],"url":"alistapart.com/articles/","description":"You have the option to utilize the main heading or use individual categories as topics for the path.\n\n  | **Code**                    | *code*                    |\n  | --------------------------- | ------------------------- |\n  | **Application Development** | *application-development* |\n  | **Browsers**                | *browsers*                |\n  | **CSS**                     | *css*                     |\n  | **HTML**                    | *html*                    |\n  | **JavaScript**              | *javascript*              |\n  | **The Server Side**         | *the-server-side*         |\n\n  | **Content**          | *content*          |\n  | -------------------- | ------------------ |\n  | **Community**        | *community*        |\n  | **Content Strategy** | *content-strategy* |\n  | **Writing**          | *writing*          |\n\n  | **Design**                 | *design*               |\n  | -------------------------- | ---------------------- |\n  | **Brand Identity**         | *brand-identity*       |\n  | **Graphic Design**         | *graphic-design*       |\n  | **Layout & Grids**         | *layout-grids*         |\n  | **Mobile/Multidevice**     | *mobile-multidevice*   |\n  | **Responsive Design**      | *responsive-design*    |\n  | **Typography & Web Fonts** | *typography-web-fonts* |\n\n  | **Industry & Business** | *industry-business* |\n  | ----------------------- | ------------------- |\n  | **Business**            | *business*          |\n  | **Career**              | *career*            |\n  | **Industry**            | *industry*          |\n  | **State of the Web**    | *state-of-the-web*  |\n\n  | **Process**            | *process*            |\n  | ---------------------- | -------------------- |\n  | **Creativity**         | *creativity*         |\n  | **Project Management** | *project-management* |\n  | **Web Strategy**       | *web-strategy*       |\n  | **Workflow & Tools**   | *workflow-tools*     |\n\n  | **User Experience**          | *user-experience*          |\n  | ---------------------------- | -------------------------- |\n  | **Accessibility**            | *accessibility*            |\n  | **Information Architecture** | *information-architecture* |\n  | **Interaction Design**       | *interaction-design*       |\n  | **Usability**                | *usability*                |\n  | **User Research**            | *user-research*            |","location":"topic.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 You have the option to utilize the main heading or use individual categories as topics for the path.
 
@@ -112,7 +112,7 @@ Rated Range
 
 ### News <Site url="bbcnewslabs.co.uk/" size="sm" />
 
-<Route namespace="bbcnewslabs" :data='{"path":"/news","categories":["programming"],"example":"/bbcnewslabs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bbcnewslabs.co.uk/"]}],"name":"News","maintainers":["elxy"],"url":"bbcnewslabs.co.uk/","location":"news.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="bbcnewslabs" :data='{"path":"/news","categories":["programming"],"example":"/bbcnewslabs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bbcnewslabs.co.uk/"]}],"name":"News","maintainers":["elxy"],"url":"bbcnewslabs.co.uk/","location":"news.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Bitbucket <Site url="bitbucket.com"/>
 
@@ -144,7 +144,7 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 ### Category <Site url="cncf.io" size="sm" />
 
-<Route namespace="cncf" :data='{"path":"/:cate?","categories":["programming"],"example":"/cncf","parameters":{"cate":"blog by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"description":"| Blog | News | Announcements | Reports |\n  | ---- | ---- | ------------- | ------- |\n  | blog | news | announcements | reports |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="cncf" :data='{"path":"/:cate?","categories":["programming"],"example":"/cncf","parameters":{"cate":"blog by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"description":"| Blog | News | Announcements | Reports |\n  | ---- | ---- | ------------- | ------- |\n  | blog | news | announcements | reports |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Blog | News | Announcements | Reports |
   | ---- | ---- | ------------- | ------- |
@@ -168,7 +168,7 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 ### 最新文章 <Site url="dbaplus.cn/" size="sm" />
 
-<Route namespace="dbaplus" :data='{"path":"/","categories":["programming"],"example":"/dbaplus","radar":[{"source":["dbaplus.cn/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"dbaplus.cn/","location":"rss.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="dbaplus" :data='{"path":"/","categories":["programming"],"example":"/dbaplus","radar":[{"source":["dbaplus.cn/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"dbaplus.cn/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## deeplearning.ai <Site url="www.deeplearning.ai"/>
 
@@ -341,7 +341,7 @@ GitHub provides some official RSS feeds:
 
 ### 用户 <Site url="ycombinator.com" size="sm" />
 
-<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming"],"example":"/hackernews/threads/comments_list/dang","parameters":{"section":"内容分区，见上表，默认为 `index`","type":"链接类型，见上表，默认为 `sources`","user":"设定用户，只在 `threads` 和 `submitted` 分区有效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"用户","maintainers":["nczitzk","xie-dongping"],"description":"订阅特定用户的内容","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 订阅特定用户的内容
 
@@ -353,7 +353,7 @@ GitHub provides some official RSS feeds:
 
 ### 信息流 <Site url="hacking8.com" size="sm" />
 
-<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |
   | ----- | -------- | --------------- | --- |
@@ -409,7 +409,7 @@ GitHub provides some official RSS feeds:
 
 ### 漏洞 <Site url="hitcon.org" size="sm" />
 
-<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='{"code":0}' />
 
 | 缺省   | all  | closed | disclosed | patching |
   | ------ | ---- | ------ | --------- | -------- |
@@ -473,7 +473,7 @@ GitHub provides some official RSS feeds:
 
 ### 模型库 <Site url="modelscope.cn/models" size="sm" />
 
-<Route namespace="modelscope" :data='{"path":"/models","categories":["programming"],"example":"/modelscope/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["modelscope.cn/models"]}],"name":"模型库","maintainers":["TonyRL"],"url":"modelscope.cn/models","location":"models.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="modelscope" :data='{"path":"/models","categories":["programming"],"example":"/modelscope/models","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["modelscope.cn/models"]}],"name":"模型库","maintainers":["TonyRL"],"url":"modelscope.cn/models","location":"models.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 数据集 <Site url="modelscope.cn/datasets" size="sm" />
 
@@ -713,7 +713,7 @@ GitHub provides some official RSS feeds:
 
 ### 开发者社区 - 主题 <Site url="developer.aliyun.com" size="sm" />
 
-<Route namespace="aliyun" :data='{"path":"/developer/group/:type","categories":["programming"],"example":"/aliyun/developer/group/alitech","parameters":{"type":"对应技术领域分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.aliyun.com/group/:type"]}],"name":"开发者社区 - 主题","maintainers":["umm233"],"location":"developer/group.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="aliyun" :data='{"path":"/developer/group/:type","categories":["programming"],"example":"/aliyun/developer/group/alitech","parameters":{"type":"对应技术领域分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.aliyun.com/group/:type"]}],"name":"开发者社区 - 主题","maintainers":["umm233"],"location":"developer/group.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 数据库内核月报 <Site url="mysql.taobao.org/monthly" size="sm" />
 
@@ -741,7 +741,7 @@ GitHub provides some official RSS feeds:
 
 ### 作者 <Site url="secrss.com" size="sm" />
 
-<Route namespace="secrss" :data='{"path":"/author/:author","categories":["programming"],"example":"/secrss/author/网络安全威胁和漏洞信息共享平台","parameters":{"author":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者","maintainers":["XinRoom","SunBK201"],"location":"author.ts"}' :test='{"code":0}' />
+<Route namespace="secrss" :data='{"path":"/author/:author","categories":["programming"],"example":"/secrss/author/网络安全威胁和漏洞信息共享平台","parameters":{"author":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者","maintainers":["XinRoom","SunBK201"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 北京智源人工智能研究院 <Site url="hub.baai.ac.cn"/>
 
@@ -958,11 +958,11 @@ GitHub provides some official RSS feeds:
 
 ### 全站发布的课程 <Site url="lanqiao.cn" size="sm" />
 
-<Route namespace="lanqiao" :data='{"path":"/courses/:sort/:tag","categories":["programming"],"example":"/lanqiao/courses/latest/all","parameters":{"sort":"排序规则 sort, 默认(`default`)、最新(`latest`)、最热(`hotest`)","tag":"课程标签 `tag`，可在该页面找到：https://www.lanqiao.cn/courses/"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"全站发布的课程","maintainers":["huhuhang"],"location":"courses.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lanqiao" :data='{"path":"/courses/:sort/:tag","categories":["programming"],"example":"/lanqiao/courses/latest/all","parameters":{"sort":"排序规则 sort, 默认(`default`)、最新(`latest`)、最热(`hotest`)","tag":"课程标签 `tag`，可在该页面找到：https://www.lanqiao.cn/courses/"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"全站发布的课程","maintainers":["huhuhang"],"location":"courses.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 作者发布的课程 <Site url="lanqiao.cn" size="sm" />
 
-<Route namespace="lanqiao" :data='{"path":"/author/:uid","categories":["programming"],"example":"/lanqiao/author/1701267","parameters":{"uid":"作者 `uid` 可在作者主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lanqiao.cn/users/:uid"]}],"name":"作者发布的课程","maintainers":["huhuhang"],"location":"author.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="lanqiao" :data='{"path":"/author/:uid","categories":["programming"],"example":"/lanqiao/author/1701267","parameters":{"uid":"作者 `uid` 可在作者主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lanqiao.cn/users/:uid"]}],"name":"作者发布的课程","maintainers":["huhuhang"],"location":"author.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 连享会 <Site url="www.lianxh.cn"/>
 

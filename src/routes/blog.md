@@ -158,7 +158,7 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ### Blog <Site url="react.dev" size="sm" />
 
-<Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Uber 优步 <Site url="www.uber.com"/>
 
@@ -260,7 +260,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 分类 <Site url="dayanzai.me" size="sm" />
 
-<Route namespace="dayanzai" :data='{"path":"/:category/:fulltext?","categories":["blog"],"example":"/dayanzai/windows","parameters":{"category":"分类","fulltext":"是否获取全文，需要获取则传入参数`y`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dayanzai.me/:category","dayanzai.me/:category/*"],"target":"/:category"}],"name":"分类","maintainers":[],"description":"| 微软应用 | 安卓应用 | 教程资源 | 其他资源 |\n  | -------- | -------- | -------- | -------- |\n  | windows  | android  | tutorial | other    |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="dayanzai" :data='{"path":"/:category/:fulltext?","categories":["blog"],"example":"/dayanzai/windows","parameters":{"category":"分类","fulltext":"是否获取全文，需要获取则传入参数`y`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dayanzai.me/:category","dayanzai.me/:category/*"],"target":"/:category"}],"name":"分类","maintainers":[],"description":"| 微软应用 | 安卓应用 | 教程资源 | 其他资源 |\n  | -------- | -------- | -------- | -------- |\n  | windows  | android  | tutorial | other    |","location":"index.ts"}' :test='{"code":0}' />
 
 | 微软应用 | 安卓应用 | 教程资源 | 其他资源 |
   | -------- | -------- | -------- | -------- |

@@ -671,7 +671,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 ### User <Site url="www.mixcloud.com" size="sm" />
 
-<Route namespace="mixcloud" :data='{"path":"/:username/:type?","categories":["multimedia"],"example":"/mixcloud/dholbach/uploads","parameters":{"username":"Username, can be found in URL","type":"Type, see below, uploads by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/:type?"]},{"source":["www.mixcloud.com/:username/:type?"]}],"name":"User","maintainers":["Misaka13514"],"description":"| Shows   | Reposts | Favorites | History | Stream |\n  | ------- | ------- | --------- | ------- | ------ |\n  | uploads | reposts | favorites | listens | stream |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="mixcloud" :data='{"path":"/:username/:type?","categories":["multimedia"],"example":"/mixcloud/dholbach/uploads","parameters":{"username":"Username, can be found in URL","type":"Type, see below, uploads by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/:type?"]},{"source":["www.mixcloud.com/:username/:type?"]}],"name":"User","maintainers":["Misaka13514"],"description":"| Shows   | Reposts | Favorites | History | Stream |\n  | ------- | ------- | --------- | ------- | ------ |\n  | uploads | reposts | favorites | listens | stream |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 | Shows   | Reposts | Favorites | History | Stream |
   | ------- | ------- | --------- | ------- | ------ |
@@ -881,7 +881,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 用户视频 <Site url="iq.com" size="sm" />
 
-<Route namespace="iqiyi" :data='{"path":"/user/video/:uid","categories":["multimedia"],"example":"/iqiyi/user/video/2289191062","parameters":{"uid":"用户名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqiyi.com/u/:uid/*"]}],"name":"用户视频","maintainers":["talengu","JimenezLi"],"location":"video.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="iqiyi" :data='{"path":"/user/video/:uid","categories":["multimedia"],"example":"/iqiyi/user/video/2289191062","parameters":{"uid":"用户名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["iqiyi.com/u/:uid/*"]}],"name":"用户视频","maintainers":["talengu","JimenezLi"],"location":"video.ts"}' :test='{"code":0}' />
 
 ## 哔嘀影视 <Site url="52bdys.com"/>
 
@@ -1023,7 +1023,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 最新资源 <Site url="moduzy.net" size="sm" />
 
-<Route namespace="moduzy" :data='{"path":"/:type/:hours?","categories":["multimedia"],"example":"/moduzy/2","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"parameters":{"type":"类别ID，具体见下表，为 0 代表全部类别","hours":"获取截止到几小时前的数据，默认不限"},"radar":[{"source":["moduzy.cc","moduzy.net","moduzy.com","moduzy1.com","moduzy2.com","moduzy3.com","moduzy4.com","moduzy5.com","moduzy6.com","moduzy7.com","moduzy8.com","moduzy9.com","moduzy10.com"]}],"name":"最新资源","maintainers":["hualiong"],"url":"moduzy.net","description":"\n:::warning\n不建议订阅**全部类别**和**国产动漫**，因为该类型每天的更新量会大幅超过单次抓取的最大上限20条而被截断（**温馨提醒**：该资源网以**动漫资源**为主，部分影视类别可能会没有资源）\n:::\n\n| 类别 | ID | 类别 | ID | 类别 | ID | 类别 | ID |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 国产动漫 | 1 | 日韩动漫 | 2 | 欧美动漫 | 3 | 港台动漫 | 4 |\n| 动漫电影 | 5 | 里番动漫 | 6 | 动作片 | 10 | 喜剧片 | 11 |\n| 爱情片 | 12 | 科幻片 | 13 | 恐怖片 | 14 | 剧情片 | 15 |\n| 战争片 | 16 | 惊悚片 | 17 | 家庭片 | 18 | 古装片 | 19 |\n| 历史片 | 20 | 悬疑片 | 21 | 犯罪片 | 22 | 灾难片 | 23 |\n| 记录片 | 24 | 短片 | 25 | 国产剧 | 26 | 香港剧 | 27 |\n| 韩国剧 | 28 | 欧美剧 | 29 | 台湾剧 | 30 | 日本剧 | 31 |\n| 海外剧 | 32 | 泰国剧 | 33 | 大陆综艺 | 34 | 港台综艺 | 35 |\n| 日韩综艺 | 36 | 欧美综艺 | 37 | 全部类别 | 0 |  |  |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="moduzy" :data='{"path":"/:type/:hours?","categories":["multimedia"],"example":"/moduzy/2","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"parameters":{"type":"类别ID，具体见下表，为 0 代表全部类别","hours":"获取截止到几小时前的数据，默认不限"},"radar":[{"source":["moduzy.cc","moduzy.net","moduzy.com","moduzy1.com","moduzy2.com","moduzy3.com","moduzy4.com","moduzy5.com","moduzy6.com","moduzy7.com","moduzy8.com","moduzy9.com","moduzy10.com"]}],"name":"最新资源","maintainers":["hualiong"],"url":"moduzy.net","description":"\n:::warning\n不建议订阅**全部类别**和**国产动漫**，因为该类型每天的更新量会大幅超过单次抓取的最大上限20条而被截断（**温馨提醒**：该资源网以**动漫资源**为主，部分影视类别可能会没有资源）\n:::\n\n| 类别 | ID | 类别 | ID | 类别 | ID | 类别 | ID |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 国产动漫 | 1 | 日韩动漫 | 2 | 欧美动漫 | 3 | 港台动漫 | 4 |\n| 动漫电影 | 5 | 里番动漫 | 6 | 动作片 | 10 | 喜剧片 | 11 |\n| 爱情片 | 12 | 科幻片 | 13 | 恐怖片 | 14 | 剧情片 | 15 |\n| 战争片 | 16 | 惊悚片 | 17 | 家庭片 | 18 | 古装片 | 19 |\n| 历史片 | 20 | 悬疑片 | 21 | 犯罪片 | 22 | 灾难片 | 23 |\n| 记录片 | 24 | 短片 | 25 | 国产剧 | 26 | 香港剧 | 27 |\n| 韩国剧 | 28 | 欧美剧 | 29 | 台湾剧 | 30 | 日本剧 | 31 |\n| 海外剧 | 32 | 泰国剧 | 33 | 大陆综艺 | 34 | 港台综艺 | 35 |\n| 日韩综艺 | 36 | 欧美综艺 | 37 | 全部类别 | 0 |  |  |","location":"index.ts"}' :test='{"code":0}' />
 
 
 :::warning
@@ -1070,13 +1070,13 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="qingting.fm" size="sm" />
 
-<Route namespace="qingting" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/qingting/podcast/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"supportPodcast":true,"requireConfig":[{"name":"QINGTING_ID","optional":true,"description":"用户id， 部分专辑需要会员身份，用户id可以通过从网页端登录蜻蜓fm后使用开发者工具，在控制台中运行JSON.parse(localStorage.getItem(\"user\")).qingting_id获取"}]},"radar":[{"source":["qingting.fm/channels/:id"]}],"name":"播客","maintainers":["RookieZoe","huyyi"],"description":"获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。","location":"podcast.ts"}' :test='{"code":0}' />
+<Route namespace="qingting" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/qingting/podcast/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"supportPodcast":true,"requireConfig":[{"name":"QINGTING_ID","optional":true,"description":"用户id， 部分专辑需要会员身份，用户id可以通过从网页端登录蜻蜓fm后使用开发者工具，在控制台中运行JSON.parse(localStorage.getItem(\"user\")).qingting_id获取"}]},"radar":[{"source":["qingting.fm/channels/:id"]}],"name":"播客","maintainers":["RookieZoe","huyyi"],"description":"获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。","location":"podcast.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。
 
 ### 专辑 <Site url="qingting.fm" size="sm" />
 
-<Route namespace="qingting" :data='{"path":"/channel/:id","categories":["multimedia"],"example":"/qingting/channel/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"location":"channel.ts"}' :test='{"code":0}' />
+<Route namespace="qingting" :data='{"path":"/channel/:id","categories":["multimedia"],"example":"/qingting/channel/293411","parameters":{"id":"专辑id, 可在专辑页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专辑","maintainers":["nczitzk"],"location":"channel.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 秋爸日字 <Site url="qq88.info"/>
 
@@ -1282,7 +1282,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 直播 <Site url="radio.cn" size="sm" />
 
-<Route namespace="radio" :data='{"path":"/zhibo/:id","categories":["multimedia"],"example":"/radio/zhibo/1395528","parameters":{"id":"直播 id，可在对应点播页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"直播","maintainers":["nczitzk"],"description":"如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`\n\n  所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)\n\n  :::tip\n  查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)\n  :::","location":"zhibo.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="radio" :data='{"path":"/zhibo/:id","categories":["multimedia"],"example":"/radio/zhibo/1395528","parameters":{"id":"直播 id，可在对应点播页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"直播","maintainers":["nczitzk"],"description":"如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`\n\n  所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)\n\n  :::tip\n  查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)\n  :::","location":"zhibo.ts"}' :test='{"code":0}' />
 
 如果订阅 [新闻和报纸摘要](http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528)，其 URL 为 `http://www.radio.cn/pc-portal/sanji/zhibo_2.html?name=1395528`，可以得到 `name` 为 `1395528`
 

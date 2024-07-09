@@ -80,7 +80,7 @@ Country
 
 ### Products <Site url="gumroad.com" size="sm" />
 
-<Route namespace="gumroad" :data='{"path":"/:username/:products","categories":["shopping"],"example":"/gumroad/afkmaster/Eve10","parameters":{"username":"username, can be found in URL","products":"products name, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Products","maintainers":["Fatpandac"],"description":"`https://afkmaster.gumroad.com/l/Eve10` -> `/gumroad/afkmaster/Eve10`","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="gumroad" :data='{"path":"/:username/:products","categories":["shopping"],"example":"/gumroad/afkmaster/Eve10","parameters":{"username":"username, can be found in URL","products":"products name, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Products","maintainers":["Fatpandac"],"description":"`https://afkmaster.gumroad.com/l/Eve10` -> `/gumroad/afkmaster/Eve10`","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 `https://afkmaster.gumroad.com/l/Eve10` -> `/gumroad/afkmaster/Eve10`
 
@@ -120,7 +120,7 @@ Country
 
 ### Activity <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 Category
 
@@ -149,7 +149,7 @@ Category
 
 ### 圖片 <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/:category?/:language?","categories":["shopping"],"example":"/myfigurecollection/potd","parameters":{"category":"分类，默认为每日圖片","language":"语言，见上表，默认为空，即 `en`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"]}],"name":"圖片","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"| 每日圖片 | 每週圖片 | 每月圖片 |\n  | -------- | -------- | -------- |\n  | potd     | potw     | potm     |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="myfigurecollection" :data='{"path":"/:category?/:language?","categories":["shopping"],"example":"/myfigurecollection/potd","parameters":{"category":"分类，默认为每日圖片","language":"语言，见上表，默认为空，即 `en`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"]}],"name":"圖片","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"| 每日圖片 | 每週圖片 | 每月圖片 |\n  | -------- | -------- | -------- |\n  | potd     | potw     | potm     |","location":"index.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
 
 | 每日圖片 | 每週圖片 | 每月圖片 |
   | -------- | -------- | -------- |
@@ -177,7 +177,7 @@ Category
 
 ### Store <Site url="shopback.com.tw" size="sm" />
 
-<Route namespace="shopback" :data='{"path":"/:store","categories":["shopping"],"example":"/shopback/shopee-mart","parameters":{"store":"Store, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["shopback.com.tw/:category","shopback.com.tw/"]}],"name":"Store","maintainers":["nczitzk"],"location":"store.ts"}' :test='{"code":0}' />
+<Route namespace="shopback" :data='{"path":"/:store","categories":["shopping"],"example":"/shopback/shopee-mart","parameters":{"store":"Store, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["shopback.com.tw/:category","shopback.com.tw/"]}],"name":"Store","maintainers":["nczitzk"],"location":"store.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Snow Peak <Site url="snowpeak.com"/>
 
@@ -203,7 +203,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 票务更新 <Site url="search.damai.cn" size="sm" />
 
-<Route namespace="damai" :data='{"path":"/activity/:city/:category/:subcategory/:keyword?","categories":["shopping"],"example":"/damai/activity/上海/音乐会/全部/柴可夫斯基","parameters":{"city":"城市，如果不需要限制，请填入`全部`","category":"分类，如果不需要限制，请填入`全部`","subcategory":"子分类，如果不需要限制，请填入`全部`","keyword":"搜索关键字，置空为不限制"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"票务更新","maintainers":["hoilc"],"description":"城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)","location":"activity.ts"}' :test='{"code":0}' />
+<Route namespace="damai" :data='{"path":"/activity/:city/:category/:subcategory/:keyword?","categories":["shopping"],"example":"/damai/activity/上海/音乐会/全部/柴可夫斯基","parameters":{"city":"城市，如果不需要限制，请填入`全部`","category":"分类，如果不需要限制，请填入`全部`","subcategory":"子分类，如果不需要限制，请填入`全部`","keyword":"搜索关键字，置空为不限制"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"票务更新","maintainers":["hoilc"],"description":"城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)","location":"activity.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)
 
@@ -229,11 +229,11 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 九块九 <Site url="guangdiu.com" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/cheaps/:query?","categories":["shopping"],"example":"/guangdiu/cheaps/k=clothes","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"九块九","maintainers":["fatpandac"],"location":"cheaps.ts"}' :test='{"code":0}' />
+<Route namespace="guangdiu" :data='{"path":"/cheaps/:query?","categories":["shopping"],"example":"/guangdiu/cheaps/k=clothes","parameters":{"query":"链接参数，对应网址问号后的内容"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"九块九","maintainers":["fatpandac"],"location":"cheaps.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 一小时风云榜 <Site url="guangdiu.com/rank" size="sm" />
 
-<Route namespace="guangdiu" :data='{"path":"/rank","categories":["shopping"],"example":"/guangdiu/rank","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guangdiu.com/rank"]}],"name":"一小时风云榜","maintainers":["fatpandac"],"url":"guangdiu.com/rank","location":"rank.ts"}' :test='{"code":1,"message":"expected 503 to be 200 // Object.is equality"}' />
+<Route namespace="guangdiu" :data='{"path":"/rank","categories":["shopping"],"example":"/guangdiu/rank","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guangdiu.com/rank"]}],"name":"一小时风云榜","maintainers":["fatpandac"],"url":"guangdiu.com/rank","location":"rank.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 京东 <Site url="item.jd.com"/>
 
@@ -534,7 +534,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 厂牌 - 演出更新 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/brand/:id","categories":["shopping"],"example":"/showstart/brand/34707","parameters":{"id":"厂牌 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.showstart.com/host/:id"]}],"name":"厂牌 - 演出更新","maintainers":["lchtao26"],"description":":::tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)\n:::","location":"brand.ts"}' :test='{"code":0}' />
+<Route namespace="showstart" :data='{"path":"/brand/:id","categories":["shopping"],"example":"/showstart/brand/34707","parameters":{"id":"厂牌 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.showstart.com/host/:id"]}],"name":"厂牌 - 演出更新","maintainers":["lchtao26"],"description":":::tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)\n:::","location":"brand.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
 厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)
@@ -542,7 +542,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 演出更新 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/event/:cityCode/:showStyle?","categories":["shopping"],"example":"/showstart/event/571/3","parameters":{"cityCode":"演出城市 (编号)","showStyle":"演出风格 (编号)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出更新","maintainers":["lchtao26"],"description":":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::","location":"event.ts"}' :test='{"code":0}' />
+<Route namespace="showstart" :data='{"path":"/event/:cityCode/:showStyle?","categories":["shopping"],"example":"/showstart/event/571/3","parameters":{"cityCode":"演出城市 (编号)","showStyle":"演出风格 (编号)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出更新","maintainers":["lchtao26"],"description":":::tip\n-   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n-   演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n:::","location":"event.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 :::tip
 -   演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)
@@ -552,7 +552,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 演出搜索 <Site url="www.showstart.com" size="sm" />
 
-<Route namespace="showstart" :data='{"path":"/search/:type/:keyword?","categories":["shopping"],"example":"/showstart/search/live","parameters":{"type":"类别","keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出搜索","maintainers":["lchtao26"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="showstart" :data='{"path":"/search/:type/:keyword?","categories":["shopping"],"example":"/showstart/search/live","parameters":{"type":"类别","keyword":"搜索关键词"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出搜索","maintainers":["lchtao26"],"location":"search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### 音乐人 - 演出更新 <Site url="www.showstart.com" size="sm" />
 

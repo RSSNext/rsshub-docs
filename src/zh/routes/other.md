@@ -538,7 +538,7 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 ### Feeds <Site url="usepanda.com" size="sm" />
 
-<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="usepanda" :data='{"path":"/feeds/:id","categories":["other"],"example":"/usepanda/feeds/5718e53e7a84fb1901e059cc","parameters":{"id":"Feed ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["lyrl"],"description":"| Channel | feedId                   |\n  | ------- | ------------------------ |\n  | Github  | 5718e53e7a84fb1901e059cc |","location":"index.ts"}' :test='{"code":0}' />
 
 | Channel | feedId                   |
   | ------- | ------------------------ |
@@ -655,11 +655,11 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### App reviews <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":0}' />
+<Route namespace="shopify" :data='{"path":"/apps/:handle/reviews/:page?","example":"/shopify/apps/flow/reviews","parameters":{"handle":"例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"},"name":"App reviews","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/:handle"]}],"location":"apps/[handle].reviews.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ### App store search <Site url="shopify.com" size="sm" />
 
-<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='{"code":0}' />
+<Route namespace="shopify" :data='{"path":"/apps/search/:q","example":"/shopify/apps/search/flow","parameters":{"q":"需要搜索的 App"},"name":"App store search","maintainers":["PrintNow"],"radar":[{"source":["apps.shopify.com/search"]}],"location":"apps/search.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## Stratechery by Ben Thompson <Site url="blog.stratechery.com"/>
 
@@ -745,7 +745,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
 
-<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="urbandictionary" :data='{"path":"/random","categories":["other"],"example":"/urbandictionary/random","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["urbandictionary.com/random.php","urbandictionary.com/"]}],"name":"Random words","maintainers":["TonyRL"],"url":"urbandictionary.com/random.php","location":"random.ts"}' :test='{"code":1,"message":"expected 409525050451 to be less than 311040000000"}' />
 
 ## v1tx <Site url="v1tx.com"/>
 
@@ -952,7 +952,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 日榜 <Site url="data.guduodata.com/" size="sm" />
 
-<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":0}' />
+<Route namespace="guduodata" :data='{"path":"/daily","categories":["other"],"example":"/guduodata/daily","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.guduodata.com/"]}],"name":"日榜","maintainers":["Gem1ni"],"url":"data.guduodata.com/","location":"daily.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
 
 ## 观海新闻 <Site url="guanhai.com.cn"/>
 
@@ -1380,7 +1380,7 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 ### 外汇牌价 <Site url="boc.cn/sourcedb/whpj" size="sm" />
 
-<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":1,"message":"Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\"."}' />
+<Route namespace="boc" :data='{"path":"/whpj/:format?","categories":["other"],"example":"/boc/whpj/zs?filter_title=%E8%8B%B1%E9%95%91","parameters":{"format":"输出的标题格式，默认为标题 + 所有价格。短格式仅包含货币名称。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["boc.cn/sourcedb/whpj","boc.cn/"],"target":"/whpj"}],"name":"外汇牌价","maintainers":["LogicJake","HenryQW"],"url":"boc.cn/sourcedb/whpj","description":"| 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |\n  | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | short  | zs         | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |","location":"whpj.ts"}' :test='{"code":0}' />
 
 | 短格式 | 中行折算价 | 现汇买卖 | 现钞买卖 | 现汇买入 | 现汇卖出 | 现钞买入 | 现钞卖出 |
   | ------ | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
