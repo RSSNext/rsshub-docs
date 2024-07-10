@@ -144,6 +144,12 @@
 
 <Route namespace="shmeea" :data='{"path":"/self-study","categories":["study"],"example":"/shmeea/self-study","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shmeea.edu.cn/page/04000/index.html","www.shmeea.edu.cn/"]}],"name":"自学考试通知公告","maintainers":["h2ws"],"url":"www.shmeea.edu.cn/page/04000/index.html","location":"self-study.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.1/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
+## 实用日本语鉴定考试（J.TEST） <Site url="www.j-test.com"/>
+
+### 公告 <Site url="www.j-test.com" size="sm" />
+
+<Route namespace="j-test" :data='{"path":"/news","name":"公告","url":"www.j-test.com","maintainers":["kuhahku"],"example":"/j-test/news","parameters":{},"categories":["study"],"features":{"supportRadar":true},"radar":[{"source":["www.j-test.com"],"target":"/news"}],"description":"","location":"news.ts"}' :test='undefined' />
+
 ## 网易公开课 <Site url="163.com"/>
 
 :::tip
