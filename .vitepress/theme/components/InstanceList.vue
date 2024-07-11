@@ -128,8 +128,8 @@ const instances = [{
     maintainer: 'milletbig',
     maintainerUrl: 'https://github.com/milletbig',
   }, {
-    url: 'https://rsshub.speednet.icu/',
-    location: 'HK',
+    url: 'https://rsshub.speednet.icu',
+    location: '🇭🇰',
     maintainer: 'freeintweb',
     maintainerUrl: 'https://github.com/freeintweb',
   }
