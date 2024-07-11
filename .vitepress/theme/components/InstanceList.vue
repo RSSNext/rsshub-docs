@@ -127,6 +127,11 @@ const instances = [{
     location: '🇺🇸',
     maintainer: 'milletbig',
     maintainerUrl: 'https://github.com/milletbig',
+  }, {
+    url: 'https://rsshub.speednet.icu/',
+    location: 'HK',
+    maintainer: 'freeintweb',
+    maintainerUrl: 'https://github.com/freeintweb',
   }
 ]
 
