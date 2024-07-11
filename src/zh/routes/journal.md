@@ -46,7 +46,7 @@ The URL of the journal [Annual Review of Analytical Chemistry](https://www.annua
 
 ### The ACM Conference on Computer and Communications Security <Site url="sigsac.org/ccs.html" size="sm" />
 
-<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":0}' />
+<Route namespace="sigsac" :data='{"path":"/ccs","categories":["journal"],"example":"/sigsac/ccs","radar":[{"source":["sigsac.org/ccs.html","sigsac.org/"]}],"name":"The ACM Conference on Computer and Communications Security","maintainers":["ZeddYu"],"url":"sigsac.org/ccs.html","description":"Return results from 2020","location":"ccs.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.1/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 Return results from 2020
 
@@ -64,7 +64,7 @@ Return results from 2020
 
 ### Book Reviews <Site url="caareviews.org/reviews/book" size="sm" />
 
-<Route namespace="caareviews" :data='{"path":"/book","categories":["journal"],"example":"/caareviews/book","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/book"]}],"name":"Book Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/book","location":"book.ts"}' :test='{"code":0}' />
+<Route namespace="caareviews" :data='{"path":"/book","categories":["journal"],"example":"/caareviews/book","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caareviews.org/reviews/book"]}],"name":"Book Reviews","maintainers":["Fatpandac"],"url":"caareviews.org/reviews/book","location":"book.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.1/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 ### Essays <Site url="caareviews.org/reviews/essay" size="sm" />
 
@@ -339,7 +339,7 @@ Sorting
 
 ### Trending Papers on arXiv <Site url="trendingpapers.com" size="sm" />
 
-<Route namespace="trendingpapers" :data='{"path":"/papers/:category?/:time?/:cited?","categories":["journal"],"example":"/trendingpapers/papers","parameters":{"category":"Category of papers, can be found in URL. `All categories` by default.","time":"Time like `24 hours` to specify the duration of ranking, can be found in URL. `Since beginning` by default.","cited":"Cited or uncited papers, can be found in URL. `Cited and uncited papers` by default."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trending Papers on arXiv","maintainers":["CookiePieWw"],"location":"papers.ts"}' :test='{"code":0}' />
+<Route namespace="trendingpapers" :data='{"path":"/papers/:category?/:time?/:cited?","categories":["journal"],"example":"/trendingpapers/papers","parameters":{"category":"Category of papers, can be found in URL. `All categories` by default.","time":"Time like `24 hours` to specify the duration of ranking, can be found in URL. `Since beginning` by default.","cited":"Cited or uncited papers, can be found in URL. `Cited and uncited papers` by default."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Trending Papers on arXiv","maintainers":["CookiePieWw"],"location":"papers.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.1/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 ## The University of Chicago Press: Journals <Site url="journals.uchicago.edu"/>
 
@@ -351,7 +351,7 @@ Sorting
 
 ### ;login: <Site url="usenix.org" size="sm" />
 
-<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":0}' />
+<Route namespace="usenix" :data='{"path":"/loginonline","categories":["journal"],"example":"/usenix/loginonline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["usenix.org/publications/loginonline","usenix.org/publications","usenix.org/"]}],"name":";login:","maintainers":["wu-yufei"],"location":"loginonline.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.1/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 ### Security Symposia <Site url="usenix.org/conferences/all" size="sm" />
 
