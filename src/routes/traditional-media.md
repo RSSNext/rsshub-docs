@@ -1051,6 +1051,14 @@ Column 列表：
 
 ## 鏡週刊 Mirror Media <Site url="mirrormedia.mg"/>
 
+### 分类 <Site url="mirrormedia.mg" size="sm" />
+
+<Route namespace="mirrormedia" :data='{"path":["/category/:category","/section/:section"],"categories":["traditional-media"],"example":"/mirrormedia/category/political","parameters":{"category":"分类名","section":"子板名"},"name":"分类","maintainers":["dzx-dzx"],"radar":[{"source":["mirrormedia.mg/category/:category","mirrormedia.mg/section/:section"]}],"location":"category.ts"}' :test='undefined' />
+
+### 分类 <Site url="mirrormedia.mg" size="sm" />
+
+<Route namespace="mirrormedia" :data='{"path":["/category/:category","/section/:section"],"categories":["traditional-media"],"example":"/mirrormedia/category/political","parameters":{"category":"分类名","section":"子板名"},"name":"分类","maintainers":["dzx-dzx"],"radar":[{"source":["mirrormedia.mg/category/:category","mirrormedia.mg/section/:section"]}],"location":"category.ts"}' :test='undefined' />
+
 ### 首页 <Site url="mirrormedia.mg" size="sm" />
 
 <Route namespace="mirrormedia" :data='{"path":"/","categories":["traditional-media"],"example":"/mirrormedia","parameters":{},"name":"首页","maintainers":["dzx-dzx"],"radar":[{"source":["mirrormedia.mg"]}],"location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
