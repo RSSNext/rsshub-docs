@@ -195,7 +195,7 @@ Type
 
 ### Search <Site url="pixabay.com" size="sm" />
 
-<Route namespace="pixabay" :data='{"path":"/search/:q/:order?","categories":["picture"],"example":"/pixabay/search/cat","parameters":{"q":"Search term","order":"Order, `popular` or `latest`, `latest` by default"},"features":{"requireConfig":[{"name":"PIXABAY_KEY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pixabay.com/:searchType/search/:q"],"target":"/search/:q"}],"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="pixabay" :data='{"path":"/search/:q/:order?","categories":["picture"],"example":"/pixabay/search/cat","parameters":{"q":"Search term","order":"Order, `popular` or `latest`, `latest` by default"},"features":{"requireConfig":[{"name":"PIXABAY_KEY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pixabay.com/:searchType/search/:q"],"target":"/search/:q"}],"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 ## wallhaven <Site url="wallhaven.cc"/>
 

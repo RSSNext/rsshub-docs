@@ -200,7 +200,7 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
 
-<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
+<Route namespace="pianyivps" :data='{"path":"/","categories":["blog"],"example":"/pianyivps","radar":[{"source":["pianyivps.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"pianyivps.com/","location":"rss.ts"}' :test='{"code":0}' />
 
 ## 博客园 <Site url="www.cnblogs.com"/>
 
@@ -342,7 +342,7 @@ TAIWAN KADOKAWA
 
 ### 最新发表 <Site url="ygkkk.blogspot.com/" size="sm" />
 
-<Route namespace="ygkkk" :data='{"path":"/","categories":["blog"],"example":"/ygkkk","radar":[{"source":["ygkkk.blogspot.com/"]}],"name":"最新发表","maintainers":["cnkmmk"],"url":"ygkkk.blogspot.com/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="ygkkk" :data='{"path":"/","categories":["blog"],"example":"/ygkkk","radar":[{"source":["ygkkk.blogspot.com/"]}],"name":"最新发表","maintainers":["cnkmmk"],"url":"ygkkk.blogspot.com/","location":"rss.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 ## 雨苁博客 <Site url="ddosi.org"/>
 
@@ -370,7 +370,7 @@ TAIWAN KADOKAWA
 
 ### 博客 <Site url="zjuvag.org" size="sm" />
 
-<Route namespace="zjuvag" :data='{"path":"/blog","categories":["blog"],"example":"/zjuvag/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["KaiyoungYu"],"location":"blog.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
+<Route namespace="zjuvag" :data='{"path":"/blog","categories":["blog"],"example":"/zjuvag/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["KaiyoungYu"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 支流科技 <Site url="apiseven.com"/>
 
@@ -396,5 +396,5 @@ TAIWAN KADOKAWA
 
 ### 最新文章 <Site url="ippa.top/" size="sm" />
 
-<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="ippa" :data='{"path":"/","categories":["blog"],"example":"/ippa","radar":[{"source":["ippa.top/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"ippa.top/","location":"rss.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
