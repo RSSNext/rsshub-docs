@@ -176,6 +176,12 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 <Route namespace="deeplearning" :data='{"path":"/thebatch","categories":["programming"],"example":"/deeplearning/thebatch","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.deeplearning.ai/thebatch","www.deeplearning.ai/"]}],"name":"TheBatch 周报","maintainers":["nczitzk","juvenn"],"url":"www.deeplearning.ai/thebatch","location":"thebatch.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.2/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
+## DuckDB Foundation <Site url="duckdb.org"/>
+
+### 新闻 <Site url="duckdb.org" size="sm" />
+
+<Route namespace="duckdb" :data='{"path":"/news","categories":["programming"],"example":"/duckdb/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["mocusez"],"location":"news.ts"}' :test='undefined' />
+
 ## gihyo.jp <Site url="gihyo.jp"/>
 
 ### Series <Site url="gihyo.jp" size="sm" />
