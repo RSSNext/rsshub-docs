@@ -10,8 +10,8 @@ sidebar_position: 2
 
 -   **Be consistent!**
 -   Avoid using deprecated features.
--   Avoid modifying `yarn.lock` and `package.json`, unless you are adding a new dependency.
--   Conbine repetitive code into functions.
+-   Avoid modifying `yarn.lock` and `package.json`, unless you add a new dependency.
+-   Combine repetitive code into functions.
 -   Prefer higher ECMAScript Standard features over lower ones.
 -   Sort the entries alphabetically (uppercase first) to make it easier to find an entry.
 -   Use HTTPS instead of HTTP whenever possible.
@@ -67,7 +67,7 @@ sidebar_position: 2
 
 :::danger
 
-The v2 Route Standard is deprecated. All new routes should be following the [Create Route](/joinus/new-rss/start-code).
+The v2 Route Standard is deprecated. All new routes should follow the [Create Route](/joinus/new-rss/start-code).
 
 :::
 
@@ -113,7 +113,7 @@ To register a route, the `router.ts` file should export a method that provides a
 The `maintainer.ts` file should export an object that provides maintainer information related to the route, including:
 
 -   Key: Corresponding route path
--   Value: Array of string, including all maintainers' GitHub ID.
+-   Value: Array of strings, including all maintainers' GitHub ID.
 
 To generate a list of maintainers, use the following command: `pnpm run build`, which will create the list under `assets/build/`.
 
@@ -166,6 +166,6 @@ const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'
 
 :::danger
 
-The v1 Route Standard is deprecated. All new routes should be following the [Create Route](/joinus/new-rss/start-code).
+The v1 Route Standard is deprecated. All new routes should follow the [Create Route](/joinus/new-rss/start-code).
 
 :::
