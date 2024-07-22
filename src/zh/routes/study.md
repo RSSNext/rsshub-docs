@@ -110,7 +110,7 @@
 
 ### 公告 <Site url="rsks.hunanpea.com" size="sm" />
 
-<Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":0}' />
+<Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":1,"message":"Error: Test timed out in 10000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.3/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:573:17)\n    at processTimers (node:internal/timers:514:7)"}' />
 
 ## 山东省教育招生考试院 <Site url="sdzk.cn"/>
 
