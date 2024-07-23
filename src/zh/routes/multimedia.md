@@ -798,7 +798,7 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
 ### Artist Albums <Site url="open.spotify.com" size="sm" />
 
-<Route namespace="spotify" :data='{"path":"/artist/:id","categories":["multimedia"],"example":"/spotify/artist/6k9TBCxyr4bXwZ8Y21Kwn1","parameters":{"id":"Artist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/artist/:id"]}],"name":"Artist Albums","maintainers":["outloudvi"],"location":"artist.ts"}' :test='undefined' />
+<Route namespace="spotify" :data='{"path":"/artist/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/artist/6k9TBCxyr4bXwZ8Y21Kwn1","parameters":{"id":"Artist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/artist/:id"]}],"name":"Artist Albums","maintainers":["outloudvi"],"location":"artist.ts"}' :test='undefined' />
 
 ### Personal Top Artists <Site url="open.spotify.com/" size="sm" />
 
@@ -806,7 +806,7 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
 ### Playlist <Site url="open.spotify.com" size="sm" />
 
-<Route namespace="spotify" :data='{"path":"/playlist/:id","categories":["multimedia"],"example":"/spotify/playlist/4UBVy1LttvodwivPUuwJk2","parameters":{"id":"Playlist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/playlist/:id"]}],"name":"Playlist","maintainers":["outloudvi"],"location":"playlist.ts"}' :test='undefined' />
+<Route namespace="spotify" :data='{"path":"/playlist/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/playlist/4UBVy1LttvodwivPUuwJk2","parameters":{"id":"Playlist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/playlist/:id"]}],"name":"Playlist","maintainers":["outloudvi"],"location":"playlist.ts"}' :test='undefined' />
 
 ### Personal Saved Tracks <Site url="open.spotify.com/collection/tracks" size="sm" />
 
