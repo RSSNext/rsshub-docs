@@ -232,6 +232,10 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ## V2EX <Site url="v2ex.com"/>
 
+### XNA <Site url="v2ex.com" size="sm" />
+
+<Route namespace="v2ex" :data='{"path":"/xna","categories":["bbs","blog"],"view":0,"example":"/v2ex/xna","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"XNA","maintainers":["luckyscript"],"location":"xna.ts"}' :test='undefined' />
+
 ### 标签 <Site url="v2ex.com" size="sm" />
 
 <Route namespace="v2ex" :data='{"path":"/tab/:tabid","categories":["bbs","popular"],"view":0,"example":"/v2ex/tab/hot","parameters":{"tabid":"tab标签ID,在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"标签","maintainers":["liyefox"],"location":"tab.ts"}' :test='{"code":0}' />
