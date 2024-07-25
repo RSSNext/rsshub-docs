@@ -140,6 +140,12 @@ Bugzilla instances hosted by organizations.
 
 Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache.ooo`](https://bz.apache.org/ooo), [`apache.SpamAssassin`](https://bz.apache.org/SpamAssassin), [`kernel`](https://bugzilla.kernel.org), [`mozilla`](https://bugzilla.mozilla.org), [`webkit`](https://bugs.webkit.org).
 
+## chlinlearn的技术博客 <Site url="daily-blog.chlinlearn.top"/>
+
+### 值得一读技术博客 <Site url="daily-blog.chlinlearn.top" size="sm" />
+
+<Route namespace="chlinlearn" :data='{"path":"/daily-blog","name":"值得一读技术博客","maintainers":["huyyi"],"categories":["programming"],"example":"/chlinlearn/daily-blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["daily-blog.chlinlearn.top/blogs/*"],"target":"/chlinlearn/daily-blog"}],"location":"daily-blog.ts"}' :test='undefined' />
+
 ## CNCF <Site url="cncf.io"/>
 
 ### Category <Site url="cncf.io" size="sm" />
