@@ -3520,3 +3520,11 @@ Type 栏目：
 
 <Route namespace="freewechat" :data='{"path":"/profile/:id","categories":["new-media"],"example":"/freewechat/profile/MzI5NTUxNzk3OA==","parameters":{"id":"公众号 ID，可在URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["freewechat.com/profile/:id"]}],"name":"公众号","maintainers":["TonyRL"],"location":"profile.ts"}' :test='{"code":0}' />
 
+## Автоцентр.ua <Site url="autocentre.ua"/>
+
+Автоцентр.ua: автоновини - Автомобільний сайт N1 в Україні
+
+### Автомобільний сайт N1 в Україні <Site url="autocentre.ua" size="sm" />
+
+<Route namespace="autocentre" :data='{"path":"/","name":"Автомобільний сайт N1 в Україні","categories":["new-media"],"maintainers":["driversti"],"example":"/autocentre","location":"index.ts"}' :test='undefined' />
+
