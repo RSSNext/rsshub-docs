@@ -1148,6 +1148,12 @@ Language
   - zhongdianchanpinyuebao（重点产品月报）
   - zhongdianchanpinzoushi（重点产品走势）
 
+## 中国金融期货交易所 <Site url="cffex.com.cn"/>
+
+### 交易所公告 <Site url="www.cffex.com.cn" size="sm" />
+
+<Route namespace="cffex" :data='{"path":"/announcement","name":"交易所公告","url":"www.cffex.com.cn","maintainers":["ChenXiangcheng1"],"example":"/cffex/announcement","parameters":{},"description":"","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cffex.com.cn"],"target":"/announcement"}],"location":"announcement.ts"}' :test='undefined' />
+
 ## 中国无线电协会业余无线电分会 <Site url="www.crac.org.cn"/>
 
 ### 最新资讯 <Site url="www.crac.org.cn" size="sm" />
