@@ -1579,6 +1579,16 @@ Column 列表：
     | ESG 主页 | ESG 趋势政策 | ESG 投资  | ESG 企业  | ESG 社会  |
   </details>
 
+## 新京报 <Site url="www.bjnews.com.cn"/>
+
+### 分类 <Site url="www.bjnews.com.cn" size="sm" />
+
+<Route namespace="bjnews" :data='{"path":"/cat/:cat","categories":["traditional-media"],"example":"/bjnews/cat/depth","parameters":{"cat":"分类, 可从URL中找到"},"features":{},"radar":[{"source":["www.bjnews.com.cn/:cat"]}],"name":"分类","maintainers":["dzx-dzx"],"url":"www.bjnews.com.cn","location":"cat.ts"}' :test='undefined' />
+
+### 分类 <Site url="www.bjnews.com.cn" size="sm" />
+
+<Route namespace="bjnews" :data='{"path":"/column/:column","categories":["traditional-media"],"example":"/bjnews/column/204","parameters":{"column":"栏目ID, 可从手机版网页URL中找到"},"features":{},"radar":[{"source":["m.bjnews.com.cn/column/:column.htm"]}],"name":"分类","maintainers":["dzx-dzx"],"url":"www.bjnews.com.cn","location":"column.ts"}' :test='undefined' />
+
 ## 新蓝网（浙江广播电视集团） <Site url="cztv.com"/>
 
 ### 浙江新闻联播 - 每日合集 <Site url="cztv.com/videos/zjxwlb" size="sm" />
