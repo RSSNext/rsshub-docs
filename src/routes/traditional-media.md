@@ -591,7 +591,7 @@ Free articles only.
 
 ### 风电 <Site url="www.bjx.com.cn" size="sm" />
 
-<Route namespace="bjx" :data='{"path":"/fd/:type","categories":["traditional-media"],"example":"/bjx/fd/yw","parameters":{"type":"文章分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"风电","maintainers":["hualiong"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |","location":"fd.ts"}' :test='{"code":0}' />
+<Route namespace="bjx" :data='{"path":"/fd/:type","categories":["traditional-media"],"example":"/bjx/fd/yw","parameters":{"type":"文章分类，详见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"风电","maintainers":["hualiong"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |","location":"fd.ts"}' :test='{"code":0}' />
 
 `:type` 类型可选如下
 
