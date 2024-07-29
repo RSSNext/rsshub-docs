@@ -127,6 +127,11 @@ const instances = [{
     location: '🇭🇰',
     maintainer: 'freeintweb',
     maintainerUrl: 'https://github.com/freeintweb',
+  }, {
+    url: 'https://rss.mhdy.site',
+    location: '🇺🇸',
+    maintainer: '魔皇地狱',
+    maintainerUrl: 'https://github.com/mhdy2233'
   }
 ]
 
