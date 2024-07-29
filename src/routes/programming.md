@@ -932,6 +932,10 @@ Get the activities of a user on GitHub, based on the GitHub official RSS feed
 
 > 掘金小册需要付费订阅，RSS 仅做更新提醒，不含付费内容.
 
+### 用户动态 <Site url="juejin.cn" size="sm" />
+
+<Route namespace="juejin" :data='{"path":"/dynamic/:id","categories":["programming"],"example":"/juejin/dynamic/3051900006845944","parameters":{"id":"用户 id, 可在用户页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["juejin.cn/user/:id"]}],"name":"用户动态","maintainers":["CaoMeiYouRen"],"location":"dynamic.ts"}' :test='undefined' />
+
 ### 用户文章 <Site url="juejin.cn" size="sm" />
 
 <Route namespace="juejin" :data='{"path":"/posts/:id","categories":["programming"],"example":"/juejin/posts/3051900006845944","parameters":{"id":"用户 id, 可在用户页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["juejin.cn/user/:id","juejin.cn/user/:id/posts"]}],"name":"用户文章","maintainers":["Maecenas"],"location":"posts.ts"}' :test='{"code":0}' />
