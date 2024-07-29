@@ -1353,6 +1353,10 @@ Chart
 
 ## 知乎 <Site url="www.zhihu.com"/>
 
+:::tip
+自2024年7月，未登录状态下大部分路由[无法获取全文](https://github.com/DIYgod/RSSHub/issues/16260)。若有需要请在登陆知乎后寻找并添加包含`z_c0`的Cookies至环境变量`ZHIHU_COOKIES`。
+:::
+
 ### xhu - 用户动态 <Site url="www.zhihu.com" size="sm" />
 
 <Route namespace="zhihu" :data='{"path":"/xhu/people/activities/:hexId","categories":["social-media"],"example":"/zhihu/xhu/people/activities/246e6cf44e94cefbf4b959cb5042bc91","parameters":{"hexId":"用户的 16 进制 id，获取方式见下方说明"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/people/:id"],"target":"/people/activities/:id"}],"name":"xhu - 用户动态","maintainers":["JimenezLi"],"description":"[xhu](https://github.com/REToys/xhu)\n\n  :::tip\n  用户的 16 进制 id 获取方式：\n\n  1.  可以通过 RSSHub Radar 扩展获取；\n  2.  或者在用户主页打开 F12 控制台，执行以下代码：`console.log(/\"id\":\"([0-9a-f]*?)\",\"urlToken\"/.exec(document.getElementById(&#39;js-initialData&#39;).innerHTML)[1]);` 即可获取用户的 16 进制 id。\n  :::","location":"xhu/activities.ts"}' :test='{"code":0}' />

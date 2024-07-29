@@ -413,6 +413,10 @@ Currently supports two authentication methods:
 
 ## 知乎 <Site url="www.zhihu.com"/>
 
+:::tip
+自2024年7月，未登录状态下大部分路由[无法获取全文](https://github.com/DIYgod/RSSHub/issues/16260)。若有需要请在登陆知乎后寻找并添加包含`z_c0`的Cookies至环境变量`ZHIHU_COOKIES`。
+:::
+
 ### 用户动态 <Site url="www.zhihu.com" size="sm" />
 
 <Route namespace="zhihu" :data='{"path":"/people/activities/:id","categories":["social-media","popular"],"view":0,"example":"/zhihu/people/activities/diygod","parameters":{"id":"作者 id，可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zhihu.com/people/:id"]}],"name":"用户动态","maintainers":["DIYgod"],"location":"activities.ts"}' :test='{"code":0}' />
