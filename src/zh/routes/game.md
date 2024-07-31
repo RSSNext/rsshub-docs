@@ -678,6 +678,12 @@ Tip: use proxy if necessary.
 
 <Route namespace="xboxfan" :data='{"path":"/news","categories":["game"],"example":"/xboxfan/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xboxfan.com/"]}],"name":"资讯","maintainers":["XXY233"],"url":"xboxfan.com/","location":"news.ts"}' :test='{"code":0}' />
 
+## 库洛游戏 <Site url="www.kurogames.com"/>
+
+### 鸣潮 — 游戏公告、新闻与活动 <Site url="www.kurogames.com" size="sm" />
+
+<Route namespace="kurogames" :data='{"path":"/wutheringwaves/news","categories":["game"],"example":"/kurogames/wutheringwaves/news","name":"鸣潮 — 游戏公告、新闻与活动","radar":[{"source":["mc.kurogames.com/m/main/news","mc.kurogames.com/main"]}],"maintainers":["enpitsulin"],"description":"","location":"wutheringwaves/news.ts"}' :test='undefined' />
+
 ## 旅法师营地 <Site url="www.iyingdi.com"/>
 
 ### Unknown <Site url="www.iyingdi.com" size="sm" />
