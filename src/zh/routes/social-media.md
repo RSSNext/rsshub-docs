@@ -70,7 +70,7 @@
 
 ### Channel Messages <Site url="discord.com" size="sm" />
 
-<Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
+<Route namespace="discord" :data='{"path":"/channel/:channelId","categories":["social-media"],"example":"/discord/channel/950465850056536084","parameters":{"channelId":"Channel ID"},"features":{"requireConfig":[{"name":"DISCORD_AUTHORIZATION","description":"Discord authorization header from the browser"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["discord.com/channels/:guildId/:channelId/:messageID","discord.com/channels/:guildId/:channelId"]}],"name":"Channel Messages","maintainers":["TonyRL"],"location":"channel.ts"}' :test='undefined' />
 
 ## fanbox <Site url="www.fanbox.cc"/>
 
