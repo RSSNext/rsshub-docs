@@ -136,7 +136,7 @@ After matching `user` in the source path with `DIYgod`, and matching `repo` w
 
 If you need to debug new rules, it is recommended that you install a browser extension. You can download extension suitable for your browser at [RSSHub Radar README](https://github.com/DIYgod/RSSHub-Radar?tab=readme-ov-file#install).
 
-Then go to settings page of extension set your local instance's address http://localhost1200 as your "RSSHub instance", then click "Update Now", new rules will take effect.
+Then go to settings page of extension set your local instance's address http://localhost:1200 as your "RSSHub instance", then click "Update Now", new rules will take effect.
 
 ## Writing Route Handler Function
 
