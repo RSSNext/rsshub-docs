@@ -1,5 +1,11 @@
 # 📚 Reading
 
+## 51Read <Site url="m.51read.org"/>
+
+### 章节 <Site url="m.51read.org" size="sm" />
+
+<Route namespace="51read" :data='{"path":"/article/:id","name":"章节","url":"m.51read.org","maintainers":["lazwa34"],"example":"/51read/article/152685","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.51read.org/xiaoshuo/:id"],"target":"/article/:id"},{"source":["51read.org/xiaoshuo/:id"],"target":"/article/:id"}],"location":"article.ts"}' :test='undefined' />
+
 ## 69书吧 <Site url="69shuba.pro"/>
 
 ### 章节 <Site url="www.69shuba.pro" size="sm" />
