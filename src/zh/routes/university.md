@@ -45,6 +45,22 @@
 
 <Route namespace="ecnu" :data='{"path":"/yjs","categories":["university"],"example":"/ecnu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.kaoyan.com/ecnu/tiaoji","yz.kaoyan.com/"]}],"name":"研究生院","maintainers":["shengmaosu"],"url":"yz.kaoyan.com/ecnu/tiaoji","location":"yjs.ts"}' :test='{"code":0}' />
 
+## Ludwig Maximilian University of Munich <Site url="www.lmu.de"/>
+
+
+This namespace provides RSS feeds for various sections of the Ludwig Maximilian University of Munich (LMU) website, particularly for job openings in the academic staff section.
+
+:::tip
+For more information about LMU and their job offerings, visit their official website.
+:::
+
+
+### Job Openings <Site url="lmu.de" size="sm" />
+
+<Route namespace="lmu" :data='{"path":"/jobs","name":"Job Openings","url":"lmu.de","example":"/lmu/jobs","maintainers":["StarDxxx"],"categories":["university","study"],"radar":[{"source":["www.lmu.de/en/about-lmu/working-at-lmu/job-portal/academic-staff/"],"target":"/lmu/jobs"}],"description":"RSS feed for LMU academic staff job openings.","location":"jobs.ts"}' :test='undefined' />
+
+RSS feed for LMU academic staff job openings.
+
 ## Nanjing University of the Arts 南京艺术学院 <Site url="index.nua.edu.cn"/>
 
 ### Graduate Institute <Site url="index.nua.edu.cn" size="sm" />
