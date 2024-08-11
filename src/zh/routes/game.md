@@ -270,6 +270,12 @@ Region
   | ------- | ------ | ---- |
   | 1       | 2      | 3    |
 
+## imop <Site url="imop.com"/>
+
+### 全部消息 <Site url="imop.com" size="sm" />
+
+<Route namespace="imop" :data='{"path":"/tianshu","categories":["game"],"example":"/imop/tianshu","radar":[{"source":["t.imop.com"],"target":"/tianshu"}],"name":"全部消息","maintainers":["zhkgo"],"location":"tianshu.ts"}' :test='undefined' />
+
 ## indienova 独立游戏 <Site url="indienova.com"/>
 
 ### Unknown <Site url="indienova.com" size="sm" />
