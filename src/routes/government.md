@@ -225,7 +225,7 @@ Language
 
 ### 员工版教育培训 <Site url="njglyy.com/ygb/jypx/jypx.aspx" size="sm" />
 
-<Route namespace="njglyy" :data='{"path":"/ygbjypx","categories":["government"],"example":"/njglyy/ygbjypx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["njglyy.com/ygb/jypx/jypx.aspx","njglyy.com/"]}],"name":"员工版教育培训","maintainers":["real-jiakai"],"url":"njglyy.com/ygb/jypx/jypx.aspx","location":"ygbjypx.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1095)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.1.0_jsdom@24.1.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.1.0_jsdom@24.1.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.1.0_jsdom@24.1.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.1.0_jsdom@24.1.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.1.0_jsdom@24.1.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.1.0_jsdom@24.1.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.0/node_modules/tinypool/dist/entry/process.js:54:20)"}' />
+<Route namespace="njglyy" :data='{"path":"/ygbjypx","categories":["government"],"example":"/njglyy/ygbjypx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["njglyy.com/ygb/jypx/jypx.aspx","njglyy.com/"]}],"name":"员工版教育培训","maintainers":["real-jiakai"],"url":"njglyy.com/ygb/jypx/jypx.aspx","location":"ygbjypx.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
 
 ## 上海市人民政府 <Site url="sh.gov.cn"/>
 
@@ -654,6 +654,26 @@ Language
 | 政务公开 | 政务新闻 | 茂南动态 | 重大会议 | 公告公示 | 招录信息 | 政策解读 |
   | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
   |   zwgk   |   zwxw   |   mndt   |   zdhy   |   tzgg   |   zlxx   |   zcjd   |
+
+### 宁波市国资委-公告 <Site url="gzw.ningbo.gov.cn" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/zj/ningbogzw-notice/:colId?","categories":["government"],"example":"/gov/zj/ningbogzw-notice/1229116730","parameters":{"colId":"公告分类id、详细信息点击源网站http://gzw.ningbo.gov.cn/请求中寻找"},"radar":[{"source":["gzw.ningbo.gov.cn/col/col1229116730/index.html"],"target":"/zj/ningbogzw-notice/:colId?"}],"name":"宁波市国资委-公告","url":"gzw.ningbo.gov.cn","maintainers":["HaoyuLee"],"description":"\n| 公告类别         | colId |\n| ------------ | -- |\n| 首页-市属国企招聘信息-招聘公告     | 1229116730  |\n    ","location":"zj/ningbogzw-notice.ts"}' :test='undefined' />
+
+
+| 公告类别         | colId |
+| ------------ | -- |
+| 首页-市属国企招聘信息-招聘公告     | 1229116730  |
+    
+
+### 宁波市人力资源和社会保障局-公告 <Site url="rsj.ningbo.gov.cn" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/zj/ningborsjnotice/:colId?","categories":["government"],"example":"/gov/zj/ningborsjnotice/1229676740","parameters":{"colId":"公告分类id、详细信息点击源网站http://rsj.ningbo.gov.cn/请求中寻找"},"radar":[{"source":["rsj.ningbo.gov.cn/col/col1229676740/index.html"],"target":"/zj/ningborsjnotice/:colId?"}],"name":"宁波市人力资源和社会保障局-公告","url":"rsj.ningbo.gov.cn","maintainers":["HaoyuLee"],"description":"\n| 公告类别         | colId |\n| ------------ | -- |\n| 事业单位进人公告     | 1229676740  |\n    ","location":"zj/ningborsjnotice.ts"}' :test='undefined' />
+
+
+| 公告类别         | colId |
+| ------------ | -- |
+| 事业单位进人公告     | 1229676740  |
+    
 
 ### 拍卖信息 / 海关法规 <Site url="www.customs.gov.cn/" size="sm" />
 
@@ -1152,7 +1172,7 @@ Language
 
 ### 交易所公告 <Site url="www.cffex.com.cn" size="sm" />
 
-<Route namespace="cffex" :data='{"path":"/announcement","name":"交易所公告","url":"www.cffex.com.cn","maintainers":["ChenXiangcheng1"],"example":"/cffex/announcement","parameters":{},"description":"","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cffex.com.cn"],"target":"/announcement"}],"location":"announcement.ts"}' :test='{"code":0}' />
+<Route namespace="cffex" :data='{"path":"/announcement","name":"交易所公告","url":"www.cffex.com.cn","maintainers":["ChenXiangcheng1"],"example":"/cffex/announcement","parameters":{},"description":"","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cffex.com.cn"],"target":"/announcement"}],"location":"announcement.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
 
 ## 中国无线电协会业余无线电分会 <Site url="www.crac.org.cn"/>
 
