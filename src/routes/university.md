@@ -345,6 +345,40 @@ RSS feed for LMU academic staff job openings.
 2. 通知公告 > 公示专区页面的链接中 `onclick="javascript:onNewsList2('0203','2');return false;"`，对应的路径参数为 `0203`，完整路由为 `/buaa/jiaowu/0203`。
 :::
 
+### 图书馆 - 新书速递 <Site url="space.lib.buaa.edu.cn/mspace/newBook" size="sm" />
+
+<Route namespace="buaa" :data='{"path":"/lib/space/:path{newbook.*}","name":"图书馆 - 新书速递","url":"space.lib.buaa.edu.cn/mspace/newBook","maintainers":["OverflowCat"],"example":"/buaa/lib/space/newbook/","description":"可通过参数进行筛选：`/buaa/lib/space/newbook/key1=value1&key2=value2...`\n- `dcpCode`：学科分类代码\n  - 例：\n    - 工学：`08`\n    - 工学 > 计算机 > 计算机科学与技术：`080901`\n  - 默认值：`nolimit`\n  - 注意事项：不可与 `clsNo` 同时使用。\n- `clsNo`：中图分类号\n  - 例：\n    - 计算机科学：`TP3`\n  - 默认值：无\n  - 注意事项\n    - 不可与 `dcpCode` 同时使用。\n    - 此模式下获取不到上架日期。\n- `libCode`：图书馆代码\n  - 例：\n    - 本馆：`00000`\n  - 默认值：无\n  - 注意事项：只有本馆一个可选值。\n- `locaCode`：馆藏地代码\n  - 例：\n    - 五层西-中文新书借阅室(A-Z类)：`02503`\n  - 默认值：无\n  - 注意事项：必须与 `libCode` 同时使用。\n\n示例：\n- `buaa/lib/space/newbook` 为所有新书\n- `buaa/lib/space/newbook/clsNo=U&libCode=00000&locaCode=60001` 为沙河教2图书馆所有中图分类号为 U（交通运输）的书籍\n","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"lib/space/newbook.ts"}' :test='undefined' />
+
+可通过参数进行筛选：`/buaa/lib/space/newbook/key1=value1&key2=value2...`
+- `dcpCode`：学科分类代码
+  - 例：
+    - 工学：`08`
+    - 工学 > 计算机 > 计算机科学与技术：`080901`
+  - 默认值：`nolimit`
+  - 注意事项：不可与 `clsNo` 同时使用。
+- `clsNo`：中图分类号
+  - 例：
+    - 计算机科学：`TP3`
+  - 默认值：无
+  - 注意事项
+    - 不可与 `dcpCode` 同时使用。
+    - 此模式下获取不到上架日期。
+- `libCode`：图书馆代码
+  - 例：
+    - 本馆：`00000`
+  - 默认值：无
+  - 注意事项：只有本馆一个可选值。
+- `locaCode`：馆藏地代码
+  - 例：
+    - 五层西-中文新书借阅室(A-Z类)：`02503`
+  - 默认值：无
+  - 注意事项：必须与 `libCode` 同时使用。
+
+示例：
+- `buaa/lib/space/newbook` 为所有新书
+- `buaa/lib/space/newbook/clsNo=U&libCode=00000&locaCode=60001` 为沙河教2图书馆所有中图分类号为 U（交通运输）的书籍
+
+
 ### 新闻网 <Site url="news.buaa.edu.cn" size="sm" />
 
 <Route namespace="buaa" :data='{"path":"/news/:type","categories":["university"],"example":"/buaa/news/zhxw","parameters":{"type":"新闻版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻网","maintainers":["AlanDecode"],"description":"| 综合新闻 | 信息公告 | 学术文化    | 校园风采 | 科教在线 | 媒体北航 | 专题新闻 | 北航人物 |\n  | -------- | -------- | ----------- | -------- | -------- | -------- | -------- | -------- |\n  | zhxw     | xxgg_new | xsjwhhd_new | xyfc_new | kjzx_new | mtbh_new | ztxw     | bhrw     |","location":"news/index.ts"}' :test='{"code":0}' />
