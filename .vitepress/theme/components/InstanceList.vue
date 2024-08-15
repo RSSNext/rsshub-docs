@@ -19,7 +19,7 @@
           <span v-if="!instance.maintainer">Anonymous</span>
         </td>
         <td>
-          <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(`${instance.url}/test/cache`)}`" />
+          <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(`${instance.url}/healthz`)}`" />
         </td>
       </tr>
     </tbody>
