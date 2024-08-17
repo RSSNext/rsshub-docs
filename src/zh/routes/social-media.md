@@ -1324,13 +1324,13 @@ Chart
 
 ## 小红书 <Site url="xiaohongshu.com"/>
 
-### Unknown <Site url="xiaohongshu.com" size="sm" />
+### 用户笔记 全文 <Site url="xiaohongshu.com" size="sm" />
 
-<Route namespace="xiaohongshu" :data='{"path":"/user/:user_id/notes/fulltext","radar":[{"source":["xiaohongshu.com/user/profile/:user_id"],"target":"/user/:user_id/notes"}],"name":"Unknown","maintainers":[],"location":"notes.ts"}' :test='undefined' />
+<Route namespace="xiaohongshu" :data='{"path":"/user/:user_id/notes/fulltext","radar":[{"source":["xiaohongshu.com/user/profile/:user_id"],"target":"/user/:user_id/notes"}],"name":"用户笔记 全文","maintainers":["howerhe"],"example":"/xiaohongshu/user/52d8c541b4c4d60e6c867480/notes/fulltext","features":{"antiCrawler":true,"requirePuppeteer":true},"parameters":{"user_id":"user id, length 24 characters"},"location":"notes.ts"}' :test='undefined' />
 
-### Unknown <Site url="xiaohongshu.com" size="sm" />
+### 用户笔记 <Site url="xiaohongshu.com" size="sm" />
 
-<Route namespace="xiaohongshu" :data='{"path":"/user/:user_id/:category","name":"Unknown","maintainers":[],"location":"user.ts"}' :test='undefined' />
+<Route namespace="xiaohongshu" :data='{"path":"/user/:user_id/:category","name":"用户笔记","maintainers":["lotosbin"],"example":"/xiaohongshu/user/593032945e87e77791e03696/notes","features":{"antiCrawler":true,"requirePuppeteer":true},"parameters":{"user_id":"user id, length 24 characters","category":{"description":"category, notes or collect","options":[{"value":"notes","label":"notes"},{"value":"collect","label":"collect"}]}},"location":"user.ts"}' :test='undefined' />
 
 ### 专辑 <Site url="xiaohongshu.com" size="sm" />
 
