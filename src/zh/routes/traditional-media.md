@@ -161,6 +161,10 @@ Channels:
     | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
     | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |
 
+### 热门文章 
+
+<Route namespace="infzm" :data='{"path":"/hot","parameters":{},"categories":["traditional-media"],"example":"/infzm/hot","radar":[{"source":["infzm.com/"]}],"name":"热门文章","maintainers":["KarasuShin","ranpox","xyqfer"],"location":"hot.ts"}' :test='undefined' />
+
 ## Korean Central News Agency (KCNA) 朝鲜中央通讯社 <Site url="www.kcna.kp"/>
 
 ### News <Site url="www.kcna.kp" size="sm" />
