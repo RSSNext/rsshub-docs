@@ -393,6 +393,12 @@ Category of news
 
 <Route namespace="foresightnews" :data='{"path":"/column/:id","categories":["new-media"],"example":"/foresightnews/column/1","parameters":{"id":"专栏 id, 可在对应专栏页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["foresightnews.pro/column/detail/:id","foresightnews.pro/"]}],"name":"专栏","maintainers":["nczitzk"],"url":"foresightnews.pro/","location":"column.ts"}' :test='{"code":0}' />
 
+## GIS Reports <Site url="www.gisreportsonline.com"/>
+
+### 报告 <Site url="www.gisreportsonline.com" size="sm" />
+
+<Route namespace="gisreportsonline" :data='{"path":"/:path{.*}","categories":["new-media"],"example":"/gis/c/security-challenges/","parameters":{"path":"包含\"Reports\"页面下的路径"},"name":"报告","maintainers":["dzx-dzx"],"radar":[{"source":["www.gisreportsonline.com"]}],"location":"index.ts"}' :test='undefined' />
+
 ## Google <Site url="www.google.com"/>
 
 ### News <Site url="www.google.com" size="sm" />
