@@ -160,6 +160,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='{"code":0}' />
 
+## Towards Data Science <Site url="towardsdatascience.com"/>
+
+### Towards Data Science <Site url="towardsdatascience.com/latest" size="sm" />
+
+<Route namespace="towardsdatascience" :data='{"path":"/latest","categories":["blog"],"example":"/latest","radar":[{"source":["towardsdatascience.com/"]}],"name":"Towards Data Science","maintainers":["mintyfrankie"],"url":"towardsdatascience.com/latest","location":"latest.ts"}' :test='undefined' />
+
 ## Uber 优步 <Site url="www.uber.com"/>
 
 ### Engineering <Site url="www.uber.com/blog/pittsburgh/engineering" size="sm" />
