@@ -34,7 +34,7 @@
 
 ### 快猫星云博客 <Site url="flashcat.cloud" size="sm" />
 
-<Route namespace="flashcat" :data='{"path":"/blog","categories":["blog"],"example":"/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flashcat.cloud/blog"],"target":"/blog"}],"name":"快猫星云博客","maintainers":["chesha1"],"location":"blog.ts"}' :test='undefined' />
+<Route namespace="flashcat" :data='{"path":"/blog","categories":["blog"],"example":"/flashcat/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flashcat.cloud/blog"],"target":"/blog"}],"name":"快猫星云博客","maintainers":["chesha1"],"location":"blog.ts"}' :test='undefined' />
 
 ## FreeBuf <Site url="freebuf.com"/>
 
