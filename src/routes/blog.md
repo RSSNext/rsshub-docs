@@ -30,6 +30,12 @@
 
 <Route namespace="deltaio" :data='{"path":"/blog","categories":["blog"],"example":"/deltaio/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["delta.io/blog"]}],"name":"Blogs","maintainers":["RengarLee"],"url":"delta.io/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Flashcat <Site url="flashcat.cloud"/>
+
+### 快猫星云博客 <Site url="flashcat.cloud" size="sm" />
+
+<Route namespace="flashcat" :data='{"path":"/blog","categories":["blog"],"example":"/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flashcat.cloud/blog"],"target":"/blog"}],"name":"快猫星云博客","maintainers":["chesha1"],"location":"blog.ts"}' :test='undefined' />
+
 ## FreeBuf <Site url="freebuf.com"/>
 
 ### 文章 <Site url="freebuf.com" size="sm" />
