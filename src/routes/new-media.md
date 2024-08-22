@@ -393,6 +393,12 @@ Category of news
 
 <Route namespace="foresightnews" :data='{"path":"/column/:id","categories":["new-media"],"example":"/foresightnews/column/1","parameters":{"id":"专栏 id, 可在对应专栏页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["foresightnews.pro/column/detail/:id","foresightnews.pro/"]}],"name":"专栏","maintainers":["nczitzk"],"url":"foresightnews.pro/","location":"column.ts"}' :test='{"code":0}' />
 
+## Follow The Money <Site url="www.ftm.eu"/>
+
+### 文章 <Site url="www.ftm.eu" size="sm" />
+
+<Route namespace="ftm" :data='{"path":"/","categories":["new-media"],"example":"/ftm","parameters":{},"name":"文章","maintainers":["dzx-dzx"],"radar":[{"source":["www.ftm.eu"]}],"location":"index.ts"}' :test='undefined' />
+
 ## GIS Reports <Site url="www.gisreportsonline.com"/>
 
 ### 报告 <Site url="www.gisreportsonline.com" size="sm" />
