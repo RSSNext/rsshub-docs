@@ -247,6 +247,12 @@ News from the official site of men's professional tennis.
 
 <Route namespace="futunn" :data='{"path":["/highlights","/main","/"],"name":"Unknown","maintainers":[],"url":"news.futunn.com/main","location":"main.ts"}' :test='undefined' />
 
+## Galxe <Site url="app.galxe.com"/>
+
+### Galxe <Site url="app.galxe.com" size="sm" />
+
+<Route namespace="galxe" :data='{"path":"/quest/:alias","name":"Galxe","url":"app.galxe.com","maintainers":["cxheng315"],"example":"/galxe/quest/MissionWeb3","categories":["other"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["app.galxe.com/quest/:alias"],"target":"/quest/:alias"}],"location":"index.ts"}' :test='undefined' />
+
 ## GameApps.hk 香港手机游戏网 <Site url="gameapps.hk"/>
 
 ### Unknown <Site url="gameapps.hk/" size="sm" />
