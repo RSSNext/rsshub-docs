@@ -58,6 +58,12 @@
 
 <Route namespace="google" :data='{"path":"/research","categories":["blog"],"example":"/google/research","name":"Research Blog","maintainers":["Levix"],"radar":[{"source":["research.google"]}],"location":"research.ts"}' :test='{"code":0}' />
 
+## Goldman Sachs <Site url="goldmansachs.com"/>
+
+### Goldman Sachs Developer Blog <Site url="goldmansachs.com" size="sm" />
+
+<Route namespace="gs" :data='{"path":"/developer/blog","categories":["blog"],"example":"/gs/developer/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.gs.com/blog/posts"],"target":"/developer/blog"}],"name":"Goldman Sachs Developer Blog","zh":{"name":"高盛开发者博客"},"maintainers":["chesha1"],"location":"developer/blog.ts"}' :test='undefined' />
+
 ## hashnode <Site url="hashnode.dev"/>
 
 ### 用户博客 <Site url="hashnode.dev/" size="sm" />
