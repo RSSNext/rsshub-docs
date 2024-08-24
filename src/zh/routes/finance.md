@@ -330,11 +330,11 @@ Language:
 
 ### 研究报告 <Site url="data.eastmoney.com" size="sm" />
 
-<Route namespace="eastmoney" :data='{"path":"/report/:category","categories":["finance"],"example":"/eastmoney/report/strategyreport","parameters":{"category":"研报类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.eastmoney.com/report/:category"]}],"name":"研究报告","maintainers":["syzq"],"description":"| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 |\n  | -------------- | ----------- | ------------ | -------- |\n  | strategyreport | macresearch | brokerreport | industry |","location":"report/index.ts"}' :test='{"code":0}' />
+<Route namespace="eastmoney" :data='{"path":"/report/:category","categories":["finance"],"example":"/eastmoney/report/strategyreport","parameters":{"category":"研报类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.eastmoney.com/report/:category"]}],"name":"研究报告","maintainers":["syzq"],"description":"| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 | 个股研报 |\n  | -------------- | ----------- | ------------ | -------- | -------- |\n  | strategyreport | macresearch | brokerreport | industry | stock    |","location":"report/index.ts"}' :test='{"code":0}' />
 
-| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 |
-  | -------------- | ----------- | ------------ | -------- |
-  | strategyreport | macresearch | brokerreport | industry |
+| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 | 个股研报 |
+  | -------------- | ----------- | ------------ | -------- | -------- |
+  | strategyreport | macresearch | brokerreport | industry | stock    |
 
 ## 法布财经 <Site url="fastbull.cn"/>
 
