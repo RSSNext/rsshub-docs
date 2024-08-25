@@ -90,6 +90,14 @@
   | ------------ | ---------- |
   | portraits    | characters |
 
+## imhcg的信息站 <Site url="infos.imhcg.cn"/>
+
+包含多种技术和新闻信息的网站
+
+### Engineering blogs <Site url="https://infos.imhcg.cn/" size="sm" />
+
+<Route namespace="imhcg" :data='{"path":"/","categories":["blog"],"view":5,"example":"/","parameters":{},"radar":[{"source":["infos.imhcg.cn"]}],"name":"Engineering blogs","maintainers":["ZiHao256"],"url":"https://infos.imhcg.cn/","location":"blog.ts"}' :test='undefined' />
+
 ## Kun Cheng <Site url="kunchengblog.com"/>
 
 ### Essay <Site url="kunchengblog.com/essay" size="sm" />
