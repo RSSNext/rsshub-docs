@@ -1004,6 +1004,12 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="cmde" :data='{"path":"/:cate{.+}?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
+## 华西医院 <Site url="www.wchscu.cn"/>
+
+### 招聘公告 <Site url="www.wchscu.cn" size="sm" />
+
+<Route namespace="wchscu" :data='{"name":"招聘公告","path":"/recruit","example":"/wchscu/recruit","url":"www.wchscu.cn","maintainers":["ViggoC"],"categories":["other"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.wchscu.cn/public/notice/recruit"]}],"location":"recruit.ts"}' :test='undefined' />
+
 ## 环球法律评论 <Site url="globallawreview.org"/>
 
 ### Unknown <Site url="globallawreview.org/Magazine/GetIssueContentList" size="sm" />
