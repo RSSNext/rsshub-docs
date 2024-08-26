@@ -2149,9 +2149,23 @@ author 列表：
   | :------: | :------: | :------: | :------: |
   |   tzgg   |   xyyw   |   mtbd   |   xshd   |
 
-## 西安电子科技大学 <Site url="jwc.xidian.edu.cn"/>
+## 西安电子科技大学 <Site url="xidian.edu.cn"/>
 
-### 教务处 <Site url="jwc.xidian.edu.cn" size="sm" />
+### 计算机科学与技术学院 <Site url="xidian.edu.cn" size="sm" />
+
+<Route namespace="xidian" :data='{"path":"/cs/:category?","categories":["university"],"example":"/xidian/cs/xyxw","parameters":{"category":"通知类别，默认为主页-学院新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院","maintainers":["ZiHao256"],"description":"| 文章来源                   | 参数          |\n| ---------------------- | ----------- |\n| ✅主页-学院新闻                | xyxw        |\n| ✅主页-通知公告                | tzgg        |\n| ✅主页-交流合作                | jlhz1       |\n| ✅主页-人事人才                | rsrc        |\n| ✅主页-本科生教育 / 本科教育-教学新闻   | bkjy_jxxw   |\n| ✅主页-研究生教育 / 研究生教育-研究生通知 | yjsjy_yjstz |\n| ✅主页-就业招聘                | jyzhaop     |","radar":[{"source":["cs.xidian.edu.cn/"]}],"location":"cs.ts"}' :test='undefined' />
+
+| 文章来源                   | 参数          |
+| ---------------------- | ----------- |
+| ✅主页-学院新闻                | xyxw        |
+| ✅主页-通知公告                | tzgg        |
+| ✅主页-交流合作                | jlhz1       |
+| ✅主页-人事人才                | rsrc        |
+| ✅主页-本科生教育 / 本科教育-教学新闻   | bkjy_jxxw   |
+| ✅主页-研究生教育 / 研究生教育-研究生通知 | yjsjy_yjstz |
+| ✅主页-就业招聘                | jyzhaop     |
+
+### 教务处 <Site url="xidian.edu.cn" size="sm" />
 
 <Route namespace="xidian" :data='{"path":"/jwc/:category?","categories":["university"],"example":"/xidian/jwc/tzgg","parameters":{"category":"通知类别，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["ShadowySpirits"],"description":"| 教学信息 | 教学研究 | 实践教学 | 质量监控 | 通知公告 |\n  | :------: | :------: | :------: | :------: | :------: |\n  |   jxxx   |   jxyj   |   sjjx   |   zljk   |   tzgg   |","location":"jwc.ts"}' :test='{"code":0}' />
 
@@ -2159,7 +2173,7 @@ author 列表：
   | :------: | :------: | :------: | :------: | :------: |
   |   jxxx   |   jxyj   |   sjjx   |   zljk   |   tzgg   |
 
-### 研究生院/卓越工程师学院 <Site url="jwc.xidian.edu.cn" size="sm" />
+### 研究生院/卓越工程师学院 <Site url="xidian.edu.cn" size="sm" />
 
 <Route namespace="xidian" :data='{"path":"/gr/:category?","categories":["university"],"example":"/xidian/gr/home_tzgg1","parameters":{"category":"通知类别，默认为主页-通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院/卓越工程师学院","maintainers":["ZiHao256"],"description":"| 文章来源          | 参数           |\n| ------------- | ------------ |\n| ✅主页-最新动态      | home_zxdt    |\n| ✅主页-通知公告      | home_tzgg1   |\n| ✅主页-讲座报告      | home_jzbg    |\n| ✅研院介绍-基本情况    | yyjs_jbqk    |\n| ✅研院介绍-机构设置    | yyjs_jbqk1   |\n| ✅研院介绍-部门领导    | yyjs_jbqk2   |\n| ✅研院介绍-服务指南    | yyjs_jbqk3   |\n| ✅研院介绍-学院联系方式  | yyjs_jbqk4   |\n| ✅招生信息         | yjsy         |\n| ✅招生信息-硕士研究生招生 | yjsy_yjszs   |\n| ✅招生信息-博士研究生招生 | yjsy_bsyjszs |\n| ✅招生信息-其他类型招生  | yjsy_qtlxzs  |\n| ✅培养管理         | pygl         |\n| ✅培养管理-学术学位    | pygl_xsxw    |\n| ✅培养管理-专业学位    | pygl_zyxw    |\n| ✅培养管理-教学管理    | pygl_jxgl    |\n| ✅培养管理-课程建设    | pygl_jxgl1   |\n| ✅培养管理-管理规定    | pygl_jxgl2   |\n| ✅培养管理-国际交流    | pygl_jxgl3   |\n| ✅培养管理-办事流程    | pygl_bslc    |\n| ✅学位授予         | xwsy         |\n| ✅学位授予-通知公告    | xwsy_tzgg    |\n| ✅学位授予-规章制度    | xwsy_gzzd    |\n| ✅学位授予-授位名单    | xwsy_swmd    |\n| ✅学位授予-资料下载    | xwsy_zlxz    |","radar":[{"source":["gr.xidian.edu.cn/"]}],"location":"gr.ts"}' :test='undefined' />
 
