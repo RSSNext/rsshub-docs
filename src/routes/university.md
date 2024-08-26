@@ -2593,6 +2593,14 @@ author 列表：
   | ------ | ------ | ------ | ------ |
   | jx     | ky     | gl     | fw     |
 
+### 化学与材料科学学院 <Site url="scms.ustc.edu.cn/" size="sm" />
+
+<Route namespace="ustc" :data='{"path":"/scms/:type?","categories":["university"],"example":"/ustc/scms/tzgg","parameters":{"type":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scms.ustc.edu.cn/:id/list.htm"],"target":"/scms"}],"name":"化学与材料科学学院","maintainers":["boxie123"],"url":"scms.ustc.edu.cn/","description":"| 院内新闻 | 通知公告 | 科研动态 | 学术活动 | 其他 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | ynxw     | tzgg     | kydt     | xshd     | 自定义id  |","location":"scms.ts"}' :test='undefined' />
+
+| 院内新闻 | 通知公告 | 科研动态 | 学术活动 | 其他 |
+  | -------- | -------- | -------- | -------- | -------- |
+  | ynxw     | tzgg     | kydt     | xshd     | 自定义id  |
+
 ### 教务处通知新闻 <Site url="www.teach.ustc.edu.cn/" size="sm" />
 
 <Route namespace="ustc" :data='{"path":"/jwc/:type?","categories":["university"],"example":"/ustc/jwc/info","parameters":{"type":"分类，默认显示所有种类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.teach.ustc.edu.cn/"],"target":"/jwc"}],"name":"教务处通知新闻","maintainers":["hang333"],"url":"www.teach.ustc.edu.cn/","description":"| 信息 | 教学     | 考试 | 交流     |\n  | ---- | -------- | ---- | -------- |\n  | info | teaching | exam | exchange |","location":"jwc.ts"}' :test='{"code":0}' />
