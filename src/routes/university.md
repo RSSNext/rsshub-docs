@@ -1088,6 +1088,35 @@ author 列表：
 由于学院官网对非大陆 IP 的访问存在限制，需自行部署。
 :::
 
+### 广州国际校区 - 媒体报道 <Site url="jw.scut.edu.cn" size="sm" />
+
+<Route namespace="scut" :data='{"path":"/gzic/media","categories":["university"],"example":"/scut/gzic/media","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州国际校区 - 媒体报道","maintainers":["gdzhht"],"description":":::warning\n由于学校网站对非大陆 IP 的访问存在限制，可能需自行部署。\n:::","location":"gzic/media.ts"}' :test='undefined' />
+
+:::warning
+由于学校网站对非大陆 IP 的访问存在限制，可能需自行部署。
+:::
+
+### 广州国际校区 - 新闻聚焦 <Site url="jw.scut.edu.cn" size="sm" />
+
+<Route namespace="scut" :data='{"path":"/gzic/news","categories":["university"],"example":"/scut/gzic/news","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州国际校区 - 新闻聚焦","maintainers":["gdzhht"],"description":":::warning\n由于学校网站对非大陆 IP 的访问存在限制，可能需自行部署。\n:::","location":"gzic/news.ts"}' :test='undefined' />
+
+:::warning
+由于学校网站对非大陆 IP 的访问存在限制，可能需自行部署。
+:::
+
+### 广州国际校区 - 通知公告 <Site url="jw.scut.edu.cn" size="sm" />
+
+<Route namespace="scut" :data='{"path":"/gzic/notice/:category?","categories":["university"],"example":"/scut/gzic/notice/swtz","parameters":{"category":"通知分类，默认为 `swtz`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"广州国际校区 - 通知公告","maintainers":["gdzhht"],"description":"| 学术预告 | 教研通知 | 海外学习 | 事务通知 |\n  | -------- | -------- | -------- | -------- |\n  | xsyg     | jytz     | hwxx     | swtz     |\n\n:::warning\n由于学校网站对非大陆 IP 的访问存在限制，可能需自行部署。\n部分通知详情页可能会被删除（返回 404），或在校园网外无法访问。\n:::","location":"gzic/notice.ts"}' :test='undefined' />
+
+| 学术预告 | 教研通知 | 海外学习 | 事务通知 |
+  | -------- | -------- | -------- | -------- |
+  | xsyg     | jytz     | hwxx     | swtz     |
+
+:::warning
+由于学校网站对非大陆 IP 的访问存在限制，可能需自行部署。
+部分通知详情页可能会被删除（返回 404），或在校园网外无法访问。
+:::
+
 ### 机械与汽车工程学院 - 通知公告 <Site url="jw.scut.edu.cn" size="sm" />
 
 <Route namespace="scut" :data='{"path":"/smae/:category?","categories":["university"],"example":"/scut/smae/yjsjw","parameters":{"category":"通知分类，默认为 `yjsjw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"机械与汽车工程学院 - 通知公告","maintainers":["Ermaotie"],"description":"| 公务信息 | 党建工作 | 人事工作 | 学生工作 | 科研实验室 | 本科生教务 | 研究生教务 |\n  | -------- | -------- | -------- | -------- | ---------- | ---------- | ---------- |\n  | gwxx     | djgz     | rsgz     | xsgz     | kysys      | bksjw      | yjsjw      |","location":"smae/notice.ts"}' :test='{"code":0}' />
