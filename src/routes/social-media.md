@@ -456,6 +456,10 @@ Currently supports two authentication methods:
 - Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure a comma-separated list of Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.
 
 
+### Home latest timeline <Site url="x.com" size="sm" />
+
+<Route namespace="twitter" :data='{"path":"/home_latest/:routeParams?","categories":["social-media"],"example":"/twitter/home_latest","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTH_TOKEN","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home latest timeline","maintainers":["DIYgod","CaoMeiYouRen"],"radar":[{"source":["x.com/home"],"target":"/home_latest"}],"location":"home-latest.ts"}' :test='undefined' />
+
 ### Home timeline <Site url="x.com" size="sm" />
 
 <Route namespace="twitter" :data='{"path":"/home/:routeParams?","categories":["social-media"],"example":"/twitter/home","features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTH_TOKEN","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home timeline","maintainers":["DIYgod","CaoMeiYouRen"],"radar":[{"source":["x.com/home"],"target":"/home"}],"location":"home.ts"}' :test='undefined' />
