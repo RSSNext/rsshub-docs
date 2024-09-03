@@ -245,6 +245,35 @@ Region
   | ------------- | --------------- |
   | category/xbox | category/xboxen |
 
+## GamerSky <Site url="gamersky.com"/>
+
+### 评测 <Site url="gamersky.com" size="sm" />
+
+<Route namespace="gamersky" :data='{"path":"/review/:type?","categories":["game"],"example":"/gamersky/review/pc","parameters":{"type":"评测类型，可选值为 `pc`、`tv`、`indie`、`web`、`mobile`、`all`，默认为 `pc`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gamersky.com/review"],"target":"/review"}],"name":"评测","maintainers":["yy4382"],"description":"|pc|tv|indie|web|mobile|all|\n|---|---|---|---|---|---|\n|单机|电视|独立游戏|网游|手游|全部评测|\n","location":"review.ts"}' :test='undefined' />
+
+|pc|tv|indie|web|mobile|all|
+|---|---|---|---|---|---|
+|单机|电视|独立游戏|网游|手游|全部评测|
+
+
+### 娱乐 <Site url="gamersky.com" size="sm" />
+
+<Route namespace="gamersky" :data='{"path":"/ent/:category?","categories":["game"],"example":"/gamersky/ent/xz","parameters":{"type":"分类类型，留空为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[],"name":"娱乐","maintainers":["LogicJake"],"description":"|\n|\n|\n","location":"ent.ts"}' :test='undefined' />
+
+|
+|
+|
+
+
+### 资讯 <Site url="gamersky.com" size="sm" />
+
+<Route namespace="gamersky" :data='{"path":"/news/:type?","categories":["game"],"example":"/gamersky/news/pc","parameters":{"type":"资讯类型，见表，默认为 `pc`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gamersky.com/news"],"target":"/news"}],"name":"资讯","maintainers":["yy4382"],"description":"|today|pc|ns|mobile|web|industry|hardware|tech|\n|---|---|---|---|---|---|---|---|\n|今日推荐|单机电玩|NS|手游|网游|业界|硬件|科技|\n","location":"news.ts"}' :test='undefined' />
+
+|today|pc|ns|mobile|web|industry|hardware|tech|
+|---|---|---|---|---|---|---|---|
+|今日推荐|单机电玩|NS|手游|网游|业界|硬件|科技|
+
+
 ## HoYoLAB <Site url="hoyolab.com"/>
 
 ### Official Announcement <Site url="hoyolab.com" size="sm" />
