@@ -463,11 +463,15 @@ Language:
 
 ### 新闻快讯 <Site url="www.theblockbeats.info" size="sm" />
 
-<Route namespace="theblockbeats" :data='{"path":"/:channel?","categories":["finance"],"example":"/theblockbeats/newsflash","parameters":{"channel":"类型，见下表，默认为快讯"},"name":"新闻快讯","maintainers":["Fatpandac","jameshih"],"radar":[{"title":"文章","source":["www.theblockbeats.info/article"],"target":"/article"},{"title":"快讯","source":["www.theblockbeats.info/newsflash"],"target":"/newsflash"}],"description":"|    快讯   |   文章  |\n  | :-------: | :-----: |\n  | newsflash | article |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="theblockbeats" :data='{"path":"/:channel?/:original?","categories":["finance"],"example":"/theblockbeats/newsflash","parameters":{"channel":"类型，见下表，默认为快讯","original":"文章类型，仅 `channel` 为 `article` 时有效，见下表，留空为全部"},"name":"新闻快讯","maintainers":["Fatpandac","jameshih"],"radar":[{"title":"文章","source":["www.theblockbeats.info/article"],"target":"/article"},{"title":"快讯","source":["www.theblockbeats.info/newsflash"],"target":"/newsflash"}],"description":"|    快讯   |   文章  |\n  | :-------: | :-----: |\n  | newsflash | article |\n\n  | 全部 | 深度 | 精选 | 热点追踪 |\n  | :--: | :--: | :--: | :---: |\n  |     | -2  | 1    |  2     |","location":"index.ts"}' :test='undefined' />
 
 |    快讯   |   文章  |
   | :-------: | :-----: |
   | newsflash | article |
+
+  | 全部 | 深度 | 精选 | 热点追踪 |
+  | :--: | :--: | :--: | :---: |
+  |     | -2  | 1    |  2     |
 
 ## 麦肯锡 <Site url="mckinsey.com.cn"/>
 

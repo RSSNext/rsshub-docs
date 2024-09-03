@@ -113,12 +113,6 @@ Supported types: Essays, Videos, and Audio.
   | ---- | ------- | ------- |
   |      | reviews | how-to  |
 
-## BlockBeats 律动 <Site url="www.theblockbeats.info"/>
-
-### 文章精选 <Site url="www.theblockbeats.info" size="sm" />
-
-<Route namespace="blockbeats" :data='{"path":"/article-choice","categories":["new-media"],"example":"/blockbeats/article-choice","name":"文章精选","maintainers":["DIYgod"],"radar":[{"source":["www.theblockbeats.info/article_choice"],"target":"/article-choice"}],"location":"article-choice.ts"}' :test='undefined' />
-
 ## C114 通信网 <Site url="c114.com.cn"/>
 
 ### 滚动新闻 <Site url="c114.com.cn/news/roll.asp" size="sm" />
