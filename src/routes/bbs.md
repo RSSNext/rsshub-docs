@@ -325,6 +325,10 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 <Route namespace="sis001" :data='{"path":"/forum/:id?","categories":["bbs"],"example":"/sis001/forum/322","parameters":{"id":"子版块 ID，可在子论坛 URL 找到，默认为 `Funny Jokes | 短篇笑话区`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"子版块","maintainers":[],"location":"forum.ts"}' :test='{"code":0}' />
 
+### 作者 <Site url="sis001.com" size="sm" />
+
+<Route namespace="sis001" :data='{"path":"/author/:id?","categories":["bbs"],"example":"/sis001/author/13131575","parameters":{"id":"作者 ID，可以在作者的个人空间地址找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作者","maintainers":["keocheung"],"location":"author.ts"}' :test='undefined' />
+
 ## 电鸭社区 <Site url="eleduck.com"/>
 
 ### 分类文章 <Site url="eleduck.com" size="sm" />
