@@ -404,6 +404,12 @@ News from the official site of men's professional tennis.
 
 如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
+## LuMa <Site url="lu.ma"/>
+
+### Events <Site url="lu.ma" size="sm" />
+
+<Route namespace="luma" :data='{"path":"/:url","name":"Events","url":"lu.ma","maintainers":["cxheng315"],"example":"/luma/yieldnest","categories":["other"],"parameters":{"url":"LuMa URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lu.ma/:url"],"target":"/:url"}],"location":"index.ts"}' :test='undefined' />
+
 ## Mozilla <Site url="monitor.firefox.com"/>
 
 ### Firefox Monitor <Site url="monitor.firefox.com/" size="sm" />
