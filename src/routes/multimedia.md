@@ -1088,6 +1088,16 @@ When `mediaType` is `tv`, `sheet` should be:
   | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |
   |      | news     | report   | m_review | t_review | new_review | recom    |
 
+## 乳首ふぇち <Site url="chikubi.jp"/>
+
+### Category <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/:category?","categories":["multimedia"],"example":"/chikubi","parameters":{"category":"分類，見下表，默認爲最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["snowagar25"],"description":"| 最新 | 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG |\n  | ------ | ---- | ----- | -- | ----- | ----- | -- |\n  | (empty) | best | video | vr | comic | voice | cg |","radar":[{"source":["chikubi.jp/:category","chikubi.jp/"],"target":"/:category"}],"location":"index.ts"}' :test='undefined' />
+
+| 最新 | 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG |
+  | ------ | ---- | ----- | -- | ----- | ----- | -- |
+  | (empty) | best | video | vr | comic | voice | cg |
+
 ## 色花堂 <Site url="sehuatang.net"/>
 
 ### Unknown <Site url="sehuatang.net" size="sm" />
