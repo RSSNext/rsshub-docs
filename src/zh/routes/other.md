@@ -233,6 +233,12 @@ News from the official site of men's professional tennis.
 
 <Route namespace="fishshell" :data='{"path":"/","radar":[{"source":["fishshell.com/"],"target":""}],"name":"Unknown","maintainers":["x2cf"],"url":"fishshell.com/","location":"index.ts"}' :test='undefined' />
 
+## Follow <Site url="app.follow.is"/>
+
+### User subscriptions <Site url="app.follow.is" size="sm" />
+
+<Route namespace="follow" :data='{"name":"User subscriptions","path":"/profile/:uid","example":"/profile/41279032429549568","radar":[{"source":["app.follow.is/profile/:uid"],"target":"/follow/profile/:uid"}],"maintainers":["KarasuShin"],"features":{"supportRadar":true},"location":"profile.ts"}' :test='undefined' />
+
 ## Futubull 富途牛牛 <Site url="news.futunn.com"/>
 
 ### Unknown <Site url="news.futunn.com/main" size="sm" />
