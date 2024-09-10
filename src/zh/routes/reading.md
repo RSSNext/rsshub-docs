@@ -342,3 +342,9 @@ p-articles provides some official RSS feeds:
 
 <Route namespace="p-articles" :data='{"path":"/contributors/:author","categories":["reading"],"example":"/p-articles/contributors/黃衍仁","parameters":{"author":"虛詞作者, 可在作者页面 URL 找到"},"name":"虛詞作者","maintainers":["Insomnia1437"],"radar":[{"source":["p-articles.com/contributors/:author"]}],"location":"contributors.ts"}' :test='undefined' />
 
+## カクヨム <Site url="kakuyomu.jp"/>
+
+### 投稿 <Site url="kakuyomu.jp" size="sm" />
+
+<Route namespace="kakuyomu" :data='{"name":"投稿","categories":["reading"],"path":"/works/:id","example":"/kakuyomu/works/1177354054894027232","parameters":{"id":"投稿 ID"},"maintainers":["KarasuShin"],"features":{"supportRadar":true},"radar":[{"source":["kakuyomu.jp/works/:id"],"target":"/works/:id"}],"location":"works.ts"}' :test='undefined' />
+
