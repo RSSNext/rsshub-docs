@@ -2332,6 +2332,28 @@ Type 栏目：
 
 <Route namespace="gcores" :data='{"path":"/collections/:collection","categories":["new-media"],"example":"/gcores/collections/64","parameters":{"collection":"专题id，可在专题页面的 URL 中找到，如 游戏开发设计心得分享 -- 64"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/collections/:collection"]}],"name":"专题文章","maintainers":["kudryavka1013"],"location":"collection.ts"}' :test='{"code":0}' />
 
+## 极客公园 <Site url="geekpark.net"/>
+
+### 栏目 <Site url="geekpark.net" size="sm" />
+
+<Route namespace="geekpark" :data='{"path":"/:column?","name":"栏目","url":"geekpark.net","maintainers":["nczitzk"],"example":"/geekpark","parameters":{"column":"栏目 id，默认为空，即首页资讯，可在对应栏目页 URL 中找到"},"description":":::tip\n  若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。\n  :::\n  \n  | 栏目                                                         | ID                                     |\n  | ------------------------------------------------------------ | -------------------------------------- |\n  | [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |\n  | [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |\n  | [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |\n  | [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |\n  | [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |\n  | [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |\n  | [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |\n  | [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |\n  ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["geekpark.net"],"target":"/"},{"source":["geekpark.net/column/:column?"]},{"title":"综合报道","source":["www.geekpark.net/column/179"],"target":"/179"},{"title":"AI新浪潮观察","source":["www.geekpark.net/column/304"],"target":"/304"},{"title":"新造车观察","source":["www.geekpark.net/column/305"],"target":"/305"},{"title":"财报解读","source":["www.geekpark.net/column/271"],"target":"/271"},{"title":"底稿对话CEO系列","source":["www.geekpark.net/column/308"],"target":"/308"},{"title":"Geek Insight 特稿系列","source":["www.geekpark.net/column/306"],"target":"/306"},{"title":"心科技","source":["www.geekpark.net/column/307"],"target":"/307"},{"title":"行业资讯","source":["www.geekpark.net/column/2"],"target":"/2"}],"location":"index.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。
+  :::
+  
+  | 栏目                                                         | ID                                     |
+  | ------------------------------------------------------------ | -------------------------------------- |
+  | [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |
+  | [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |
+  | [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |
+  | [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |
+  | [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |
+  | [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |
+  | [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |
+  | [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |
+  
+
 ## 加美财经 <Site url="caus.com"/>
 
 ### 分类 <Site url="caus.com" size="sm" />
