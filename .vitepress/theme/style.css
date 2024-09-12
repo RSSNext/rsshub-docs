@@ -192,6 +192,10 @@
   /* order: -1; */
 }
 
+.VPHomeFeatures .item:first-child {
+  width: 100%;
+}
+
 img {
   display: inline-block;
 }
