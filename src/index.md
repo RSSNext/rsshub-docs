@@ -5,19 +5,22 @@ layout: home
 hero:
   name: "RSSHub"
   text: "Everything is RSSible"
-  tagline: 🧡 Generate a RSS/Atom/JSON feed from anything.
+  tagline: The world's largest RSS network.
   image:
     src: /logo.png
     alt: RSSHub
   actions:
     - theme: brand
-      text: View Docs
+      text: Documentation
       link: /guide/
     - theme: alt
-      text: View on GitHub
+      text: GitHub
       link: https://github.com/DIYgod/RSSHub
 
 features:
+  - title: Decentralized
+    icon: 🌐
+    details: More than 5,000 instances are live, forming the largest RSS network in the world.
   - title: Thriving community
     icon: 🌿
     details: Over 900 contributors and maintainers are actively supporting RSSHub.

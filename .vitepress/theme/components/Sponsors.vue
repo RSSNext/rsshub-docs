@@ -23,7 +23,6 @@
 <style scoped>
 .sponsors-component {
   border-top: 1px solid var(--vp-c-gutter);
-  padding-top: 88px !important;
   margin: 128px 0;
   padding: 0 64px;
 }
