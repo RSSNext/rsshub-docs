@@ -21,18 +21,16 @@ features:
   - title: Decentralized
     icon: 🌐
     details: More than 5,000 instances are live, forming the largest RSS network in the world.
+  - title: Open
+    icon: 🕊️
+    details: All code is open-sourced under the MIT license and follows open standards and protocols.
   - title: Thriving community
     icon: 🌿
     details: Over 900 contributors and maintainers are actively supporting RSSHub.
   - title: Out of the box
     icon: 🥳
     details: Numerous pre-configured routes and public instances are available for immediate use.
-  - title: Open
-    icon: 🕊️
-    details: All code is open-sourced under the MIT license and follows open standards and protocols.
   - title: Extensible
     icon: 🧩
     details: Powerful APIs and ecosystem projects are supporting various scenarios.
 ---
-
-<Sponsors />

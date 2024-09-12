@@ -12,7 +12,7 @@ export const zh = defineConfig({
       { text: '开发路由', link: '/zh/joinus/' },
       { text: '部署', link: '/zh/deploy/' },
       { text: '生态系统', link: '/zh/ecosystem' },
-      { text: '赞助', link: '/zh/sponsor' },
+      { text: '贡献者', link: '/zh/contributors' },
     ],
 
     editLink: {
