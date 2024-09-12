@@ -120,6 +120,10 @@ You need to set the environment variable `DISCOURSE_CONFIG_{id}` before using it
 If you opt to enable `fulltext` feature, consider adding `limit` parameter to your query to avoid sending too many request.
 :::
 
+### Official RSS 
+
+<Route namespace="discourse" :data='{"path":"/:configId/official/:path{.+}","categories":["bbs"],"example":"/discourse/0/official/latest","parameters":{"configId":"Environment variable configuration id, see above","path":"Discourse RSS path between `domain` and `.rss`. All supported Rss path can be found in [https://meta.discourse.org/t/finding-discourse-rss-feeds/264134](https://meta.discourse.org/t/finding-discourse-rss-feeds/264134). For example: the path of [https://meta.discourse.org/top/all.rss](https://meta.discourse.org/top/all.rss) is `top/all`."},"features":{"requireConfig":[{"name":"DISCOURSE_CONFIG_*","description":"Configure the Discourse environment variables referring to [https://docs.rsshub.app/deploy/config#discourse](https://docs.rsshub.app/deploy/config#discourse)."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Official RSS","maintainers":["Raikyou","dzx-dzx"],"location":"official.ts"}' :test='undefined' />
+
 ## Elastic 中文社区 <Site url="elasticsearch.cn"/>
 
 ### 发现 <Site url="elasticsearch.cn" size="sm" />
