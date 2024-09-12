@@ -5,12 +5,8 @@
         <div class="message">RSSHub is the world's largest RSS nework, collectively brought by contributors around the globe.</div>
       </div>
       <div class="sponsors">
-        <a target="_blank" href="https://github.com/DIYgod/RSSHub/graphs/contributors">
-          <img alt="Contributors" src="https://camo.githubusercontent.com/c2b516b800e3976ee2efca1244fc373236547c15fd92000d1ef727ea86b72847/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f5253534875622f636f6e7472696275746f72732e7376673f77696474683d383930" />
-        </a>
-        <a target="_blank" href="https://github.com/DIYgod/sponsors">
-          <img alt="Sponsors" src="https://raw.githubusercontent.com/DIYgod/sponsors/main/sponsors.simple.svg" />
-        </a>
+        <img alt="Contributors" src="https://camo.githubusercontent.com/c2b516b800e3976ee2efca1244fc373236547c15fd92000d1ef727ea86b72847/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f5253534875622f636f6e7472696275746f72732e7376673f77696474683d383930" />
+        <img alt="Sponsors" src="https://raw.githubusercontent.com/DIYgod/sponsors/main/sponsors.simple.svg" />
       </div>
     </div>
   </div>
@@ -52,5 +48,6 @@
 img {
   display: block;
   margin: 0 auto;
+  pointer-events: none;
 }
 </style>
