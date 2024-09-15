@@ -3190,6 +3190,23 @@ Type 栏目：
   1.  通过浏览器搜索相关搜狐号 `果壳 site: mp.sohu.com`。
   2.  通过浏览器控制台执行 `window.globalConst.mkeyConst_mkey`，返回的即为搜狐号 ID。
 
+## 太平洋科技 <Site url="pconline.com.cn"/>
+
+
+:::tip
+太平洋科技是专业IT门户网站,为用户和经销商提供IT资讯和行情报价,涉及电脑,手机,数码产品,软件等.
+:::
+
+### 科技新闻 <Site url="pconline.com.cn" size="sm" />
+
+<Route namespace="pconline" :data='{"path":"/focus/:category?","categories":["new-media"],"example":"/pconline/focus","parameters":{"category":{"description":"科技新闻的类别，获取最新的一页，分别：all, tech, finance, life, company, character","default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pconline.com.cn/focus/","pconline.com.cn/"],"target":"/focus"}],"name":"科技新闻","maintainers":["CH563"],"description":"::: tip\n| 全部 | 科技 | 财经 | 生活 | 公司 | 人物 |\n| --- | --- | --- | --- | --- | --- |\n| all | tech | finance | life | company | character |\n:::","location":"focus.ts"}' :test='undefined' />
+
+::: tip
+| 全部 | 科技 | 财经 | 生活 | 公司 | 人物 |
+| --- | --- | --- | --- | --- | --- |
+| all | tech | finance | life | company | character |
+:::
+
 ## 唐书房 <Site url="tangshufang.com"/>
 
 ### 分类 <Site url="tangshufang.com" size="sm" />
