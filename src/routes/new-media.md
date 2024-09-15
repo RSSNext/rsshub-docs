@@ -668,6 +668,29 @@ Edition
 
 <Route namespace="macfilos" :data='{"path":"/blog","categories":["new-media"],"example":"/macfilos/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macfilos.com/blog","macfilos.com/"]}],"name":"Blog","maintainers":["nczitzk"],"url":"macfilos.com/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Malaysiakini 当今大马 <Site url="malaysiakini.com"/>
+
+Provides an easy-to-use RSS feed for Malaysiakini.com with teaser/full-text fetching.
+:::warning
+A subscription is required for fetching full articles. 
+Please refer to the deployment config for more information.
+:::
+
+### News <Site url="malaysiakini.com" size="sm" />
+
+<Route namespace="malaysiakini" :data='{"path":"/:lang/:category?","categories":["new-media"],"example":"/malaysiakini/en","parameters":{"lang":"Language, see below","category":"Category, see below, news by default"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"requireConfig":[{"name":"MALAYSIAKINI_EMAIL","optional":true,"description":"Malaysiakini Email or Username"},{"name":"MALAYSIAKINI_PASSWORD","optional":true,"description":"Malaysiakini Password"},{"name":"MALAYSIAKINI_REFRESHTOKEN","optional":true,"description":"To obtain the refresh token, log into Malaysiakini and look for the cookie `nl____refreshToken` within document.cookie in the browser console. The token is the value of the cookie."}]},"name":"News","maintainers":["quiniapiezoelectricity"],"description":"\n  | Language | English | Bahasa Malaysia | 华文     |\n  | -------- | ------ | ------- | ------ | \n  | `:lang`  | `en`    | `my`   | `zh`    |\n\n  | Category               | `:category` |\n  | ---------------------- | ------------- |\n  | News                   | `news`      |\n  | Columns                | `columns`   |\n  | From Our Readers       | `letters`   |","radar":[{"source":["malaysiakini.com/"],"target":"/en"},{"source":["malaysiakini.com/:lang"],"target":"/:lang"},{"source":["www.malaysiakini.com/:lang/latest/:category"],"target":"/:lang/:category"}],"location":"index.ts"}' :test='undefined' />
+
+
+  | Language | English | Bahasa Malaysia | 华文     |
+  | -------- | ------ | ------- | ------ | 
+  | `:lang`  | `en`    | `my`   | `zh`    |
+
+  | Category               | `:category` |
+  | ---------------------- | ------------- |
+  | News                   | `news`      |
+  | Columns                | `columns`   |
+  | From Our Readers       | `letters`   |
+
 ## Matters <Site url="matters.town"/>
 
 ### Author <Site url="matters.town" size="sm" />
