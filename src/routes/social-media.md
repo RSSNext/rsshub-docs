@@ -928,6 +928,10 @@ Chart
 
 <Route namespace="douban" :data='{"path":"/movie/ustop","categories":["social-media"],"example":"/douban/movie/ustop","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"北美票房榜","maintainers":["DIYgod"],"location":"other/ustop.ts"}' :test='{"code":0}' />
 
+### 电影即将上映 <Site url="www.douban.com" size="sm" />
+
+<Route namespace="douban" :data='{"path":"/movie/coming","categories":["social-media"],"example":"/douban/movie/coming","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"电影即将上映","maintainers":["reonokiy"],"radar":[{"title":"豆瓣电影-即将上映","source":["movie.douban.com/coming"],"target":"/movie/coming"}],"location":"movie/coming.ts"}' :test='undefined' />
+
 ### 豆瓣书店 <Site url="www.douban.com" size="sm" />
 
 <Route namespace="douban" :data='{"path":"/bookstore","categories":["social-media"],"example":"/douban/bookstore","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣书店","maintainers":["xyqfer"],"location":"other/bookstore.ts"}' :test='{"code":0}' />
