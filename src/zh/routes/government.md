@@ -1087,6 +1087,14 @@ Language
         | 按时间     | 2  |
     
 
+### 政府新闻 <Site url="sh.gov.cn" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/cn/news/:uid","categories":["government"],"example":"/gov/cn/news/bm","parameters":{"uid":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政府新闻","maintainers":["EsuRt","howfool"],"description":"| 政务部门 | 滚动新闻 | 新闻要闻 | 国务院新闻 | 国务院工作会议 | 政策文件 |\n| :------: | :------: | :------: | :--------: | :------------: | :------: |\n|    bm    |    gd    |    yw    |     gwy    |     gwyzzjg    |  zhengce |","location":"cn/news/index.ts"}' :test='undefined' />
+
+| 政务部门 | 滚动新闻 | 新闻要闻 | 国务院新闻 | 国务院工作会议 | 政策文件 |
+| :------: | :------: | :------: | :--------: | :------------: | :------: |
+|    bm    |    gd    |    yw    |     gwy    |     gwyzzjg    |  zhengce |
+
 ### 政策解读 <Site url="sh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/miit/zcjd","categories":["government"],"example":"/gov/miit/zcjd","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政策解读","maintainers":["Yoge-Code"],"location":"miit/zcjd.ts"}' :test='{"code":0}' />
@@ -1094,14 +1102,6 @@ Language
 ### 政策文件 <Site url="sh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/miit/zcwj","categories":["government"],"example":"/gov/miit/zcwj","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政策文件","maintainers":["Yoge-Code"],"location":"miit/zcwj.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 664)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
-
-### 政府新闻 <Site url="sh.gov.cn" size="sm" />
-
-<Route namespace="gov" :data='{"path":"/news/:uid","categories":["government"],"example":"/gov/news/bm","parameters":{"uid":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政府新闻","maintainers":["EsuRt"],"description":"| 政务部门 | 滚动新闻 | 新闻要闻 | 国务院新闻 | 政策文件 |\n  | :------: | :------: | :------: | :--------: | :------: |\n  |    bm    |    gd    |    yw    |     gwy    |  zhengce |","location":"news/index.ts"}' :test='{"code":0}' />
-
-| 政务部门 | 滚动新闻 | 新闻要闻 | 国务院新闻 | 政策文件 |
-  | :------: | :------: | :------: | :--------: | :------: |
-  |    bm    |    gd    |    yw    |     gwy    |  zhengce |
 
 ### 政府公开信息 <Site url="sh.gov.cn" size="sm" />
 
