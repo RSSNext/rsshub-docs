@@ -796,6 +796,12 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
   -   `jp` (Japanese), for Pornhub in Japan [https://jp.pornhub.com](https://jp.pornhub.com) etc.
 
+## SoundOn <Site url="player.soundon.fm"/>
+
+### Podcast <Site url="player.soundon.fm" size="sm" />
+
+<Route namespace="soundon" :data='{"path":"/p/:id","categories":["multimedia"],"example":"/soundon/p/33a68cdc-18ad-4192-84cc-22bd7fdc6a31","parameters":{"id":"Podcast ID"},"features":{"supportPodcast":true},"radar":[{"source":["player.soundon.fm/p/:id"]}],"name":"Podcast","maintainers":["TonyRL"],"view":4,"location":"podcast.ts"}' :test='undefined' />
+
 ## Spotify <Site url="open.spotify.com"/>
 
 ### Artist Albums <Site url="open.spotify.com" size="sm" />
