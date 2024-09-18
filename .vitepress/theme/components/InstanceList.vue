@@ -133,7 +133,7 @@ const instances = [{
     maintainer: '魔皇地狱',
     maintainerUrl: 'https://github.com/mhdy2233'
   }, {
-    url: 'https://rsshw.win/',
+    url: 'https://rsshw.win',
     location: '🇹🇼',
     maintainer: 'HaruoWang',
     maintainerUrl: 'https://github.com/HaruoWang'
