@@ -2058,6 +2058,31 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
 付费内容全文可能需要登陆获取，详情见部署页面的配置模块。
 :::
 
+### App <Site url="theinitium.com" size="sm" />
+
+<Route namespace="theinitium" :data='{"path":"/app/:category?","categories":["new-media"],"example":"/theinitium/app","parameters":{"category":"Category, see below, latest_sc by default"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"App","maintainers":["quiniapiezoelectricity"],"radar":[{"source":["app.theinitium.com/t/latest/:category"],"target":"/app/:category"}],"description":"抓取[The Initium App](https://app.theinitium.com/)的文章列表\n\n:::warning\n此路由暂不支持登陆认证\n:::\n\nCategory 栏目：\n\n| ----- | 简体中文     | 繁體中文      |\n| ----- | ----------------- | ---------------- |\n| 最新   | latest_sc | latest_tc |\n| 日报   | daily_brief_sc | daily_brief_tc |\n| 速递   | whats_new_sc | whats_new_tc |\n| 专题   | report_sc | report_tc |\n| 评论   | opinion_sc | opinion_tc |\n| 国际   | international_sc | international_tc |\n| 大陆   | mainland_sc | mainland_tc |\n| 香港   | hongkong_sc | hongkong_tc |\n| 台湾   | taiwan_sc | taiwan_tc |\n| 播客   | article_audio_sc | article_audio_tc |","location":"app.ts"}' :test='undefined' />
+
+抓取[The Initium App](https://app.theinitium.com/)的文章列表
+
+:::warning
+此路由暂不支持登陆认证
+:::
+
+Category 栏目：
+
+| ----- | 简体中文     | 繁體中文      |
+| ----- | ----------------- | ---------------- |
+| 最新   | latest_sc | latest_tc |
+| 日报   | daily_brief_sc | daily_brief_tc |
+| 速递   | whats_new_sc | whats_new_tc |
+| 专题   | report_sc | report_tc |
+| 评论   | opinion_sc | opinion_tc |
+| 国际   | international_sc | international_tc |
+| 大陆   | mainland_sc | mainland_tc |
+| 香港   | hongkong_sc | hongkong_tc |
+| 台湾   | taiwan_sc | taiwan_tc |
+| 播客   | article_audio_sc | article_audio_tc |
+
 ### 个人订阅追踪动态 <Site url="theinitium.com" size="sm" />
 
 <Route namespace="theinitium" :data='{"path":"/follow/articles/:language?","name":"个人订阅追踪动态","maintainers":["AgFlore"],"parameters":{"language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"title":"作者","source":["theinitium.com/author/:type"],"target":"/author/:type"}],"example":"/theinitium/author/ninghuilulu/zh-hans","categories":["new-media"],"description":"需填入 Web 版认证 token, 也可选择直接在环境设置中填写明文的用户名和密码","features":{"requireConfig":[{"name":"INITIUM_BEARER_TOKEN","optional":true,"description":"端传媒 Web 版认证 token。获取方式：登陆后打开端传媒站内任意页面，打开浏览器开发者工具中 “网络”(Network) 选项卡，筛选 URL 找到任一个地址为 `api.initium.com` 开头的请求，点击检查其 “消息头”，在 “请求头” 中找到Authorization字段，将其值复制填入配置即可。你的配置应该形如 `INITIUM_BEARER_TOKEN: &#39;Bearer eyJxxxx......xx_U8&#39;`。使用 token 部署的好处是避免占据登陆设备数的额度，但这个 token 一般有效期为两周，因此只可作临时测试使用。"},{"name":"INITIUM_USERNAME","optional":true,"description":"端传媒用户名 （邮箱）"},{"name":"INITIUM_PASSWORD","optional":true,"description":"端传媒密码"}]},"location":"follow.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1614)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
