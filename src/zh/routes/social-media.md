@@ -210,6 +210,10 @@ You may need to setup cookie for a less restrictive rate limit and private profi
 
 ## Lofter <Site url="www.lofter.com"/>
 
+### Collection <Site url="www.lofter.com" size="sm" />
+
+<Route namespace="lofter" :data='{"path":"/collection/:collectionID","categories":["social-media"],"example":"/lofter/collection/552041","parameters":{"collectionID":"Lofter collection ID, can be found in the share URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Collection","maintainers":["SrakhiuMeow"],"location":"collection.ts"}' :test='undefined' />
+
 ### Tag <Site url="www.lofter.com" size="sm" />
 
 <Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":0}' />
