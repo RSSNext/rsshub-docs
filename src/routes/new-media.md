@@ -3802,6 +3802,36 @@ Type 栏目：
   | [文化生活](http://www.agri.cn/video/whsh/)         | [video/whsh](https://rsshub.app/agri/video/whsh)                 |
   
 
+## 中国连锁经营协会 <Site url="ccfa.org.cn"/>
+
+### 分类 <Site url="www.ccfa.org.cn" size="sm" />
+
+<Route namespace="ccfa" :data='{"path":"/:type?","name":"分类","url":"www.ccfa.org.cn","maintainers":["nczitzk"],"example":"/ccfa/1","parameters":{"category":"分类，默认为 `1`，即协会动态，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [协会动态](https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1)，网址为 `https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1`。截取 `https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=` 到末尾的部分 `1` 作为参数填入，此时路由为 [`/ccfa/1`](https://rsshub.app/ccfa/1)。\n  :::\n\n  | 分类                                                                      | ID                                     |\n  | ------------------------------------------------------------------------- | -------------------------------------- |\n  | [协会动态](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1)       | [1](https://rsshub.app/ccfa/1)         |\n  | [行业动态](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=2)       | [2](https://rsshub.app/ccfa/2)         |\n  | [政策/报告/标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)  | [33](https://rsshub.app/ccfa/33)       |\n  | [行业统计](http://www.ccfa.org.cn/portal/cn/lsbq.jsp?type=10003)          | [10003](https://rsshub.app/ccfa/10003) |\n  | [创新案例](http://www.ccfa.org.cn/portal/cn/hybzs_list.jsp?type=10004)    | [10004](https://rsshub.app/ccfa/10004) |\n  | [党建工作](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=7)       | [7](https://rsshub.app/ccfa/7)         |\n  | [新消费论坛](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=10005) | [10005](https://rsshub.app/ccfa/10005) |\n\n  #### [政策/报告/标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)\n\n  | 分类                                                                            | ID                               |\n  | ------------------------------------------------------------------------------- | -------------------------------- |\n  | [行业报告](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)              | [33](https://rsshub.app/ccfa/33) |\n  | [行业标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=34)              | [34](https://rsshub.app/ccfa/34) |\n  | [行业政策](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=39)     | [39](https://rsshub.app/ccfa/39) |\n  | [政策权威解读](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=40) | [40](https://rsshub.app/ccfa/40) |\n    ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ccfa.org.cn/portal/cn/xiehui_list.jsp","www.ccfa.org.cn/portal/cn/hybz_list.jsp","www.ccfa.org.cn/portal/cn/lsbq.jsp","www.ccfa.org.cn/portal/cn/hybzs_list.jsp","www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp"]},{"title":"协会动态","source":["www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1"],"target":"/1"},{"title":"行业动态","source":["www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=2"],"target":"/2"},{"title":"政策/报告/标准","source":["www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33"],"target":"/33"},{"title":"行业统计","source":["www.ccfa.org.cn/portal/cn/lsbq.jsp?type=10003"],"target":"/10003"},{"title":"创新案例","source":["www.ccfa.org.cn/portal/cn/hybzs_list.jsp?type=10004"],"target":"/10004"},{"title":"党建工作","source":["www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=7"],"target":"/7"},{"title":"新消费论坛","source":["www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=10005"],"target":"/10005"},{"title":"政策/报告/标准 - 行业报告","source":["www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33"],"target":"/33"},{"title":"政策/报告/标准 - 行业标准","source":["www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=34"],"target":"/34"},{"title":"政策/报告/标准 - 行业政策","source":["www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=39"],"target":"/39"},{"title":"政策/报告/标准 - 政策权威解读","source":["www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=40"],"target":"/40"}],"location":"index.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [协会动态](https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1)，网址为 `https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1`。截取 `https://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=` 到末尾的部分 `1` 作为参数填入，此时路由为 [`/ccfa/1`](https://rsshub.app/ccfa/1)。
+  :::
+
+  | 分类                                                                      | ID                                     |
+  | ------------------------------------------------------------------------- | -------------------------------------- |
+  | [协会动态](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=1)       | [1](https://rsshub.app/ccfa/1)         |
+  | [行业动态](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=2)       | [2](https://rsshub.app/ccfa/2)         |
+  | [政策/报告/标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)  | [33](https://rsshub.app/ccfa/33)       |
+  | [行业统计](http://www.ccfa.org.cn/portal/cn/lsbq.jsp?type=10003)          | [10003](https://rsshub.app/ccfa/10003) |
+  | [创新案例](http://www.ccfa.org.cn/portal/cn/hybzs_list.jsp?type=10004)    | [10004](https://rsshub.app/ccfa/10004) |
+  | [党建工作](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=7)       | [7](https://rsshub.app/ccfa/7)         |
+  | [新消费论坛](http://www.ccfa.org.cn/portal/cn/xiehui_list.jsp?type=10005) | [10005](https://rsshub.app/ccfa/10005) |
+
+  #### [政策/报告/标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)
+
+  | 分类                                                                            | ID                               |
+  | ------------------------------------------------------------------------------- | -------------------------------- |
+  | [行业报告](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=33)              | [33](https://rsshub.app/ccfa/33) |
+  | [行业标准](http://www.ccfa.org.cn/portal/cn/hybz_list.jsp?type=34)              | [34](https://rsshub.app/ccfa/34) |
+  | [行业政策](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=39)     | [39](https://rsshub.app/ccfa/39) |
+  | [政策权威解读](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=40) | [40](https://rsshub.app/ccfa/40) |
+    
+
 ## 中国钢铁工业协会 <Site url="chinaisa.org.cn"/>
 
 ### 栏目 <Site url="chinaisa.org.cn" size="sm" />
