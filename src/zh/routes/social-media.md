@@ -1282,6 +1282,10 @@ Chart
 
 <Route namespace="weibo" :data='{"path":"/keyword/:keyword/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/weibo/keyword/RSSHub","parameters":{"keyword":"你想订阅的微博关键词","routeParams":"额外参数；请参阅上面的说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["DIYgod","Rongronggg9"],"location":"keyword.ts"}' :test='{"code":0}' />
 
+### 绿洲用户 <Site url="weibo.com" size="sm" />
+
+<Route namespace="weibo" :data='{"path":"/oasis/user/:userid","categories":["social-media"],"example":"/weibo/oasis/user/1990895721","parameters":{"userid":"用户 id, 可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid"],"target":"/user/:uid"}],"name":"绿洲用户","maintainers":["kt286"],"location":"oasis/user.ts"}' :test='{"code":0}' />
+
 ### 热搜榜 <Site url="s.weibo.com/top/summary" size="sm" />
 
 <Route namespace="weibo" :data='{"path":"/search/hot/:fulltext?","categories":["social-media","popular"],"view":1,"example":"/weibo/search/hot","parameters":{"fulltext":{"description":"\n-   使用`/weibo/search/hot`可以获取热搜条目列表；\n-   使用`/weibo/search/hot/fulltext`可以进一步获取热搜条目下的摘要信息（不含图片视频）；\n-   使用`/weibo/search/hot/fulltext?pic=true`可以获取图片缩略（但需要配合额外的手段，例如浏览器上的 Header Editor 等来修改 referer 参数为`https://weibo.com`，以规避微博的外链限制，否则图片无法显示。）\n-   使用`/weibo/search/hot/fulltext?pic=true&fullpic=true`可以获取 Original 图片（但需要配合额外的手段，例如浏览器上的 Header Editor 等来修改 referer 参数为`https://weibo.com`，以规避微博的外链限制，否则图片无法显示。）"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["s.weibo.com/top/summary"]}],"name":"热搜榜","maintainers":["xyqfer","shinemoon"],"url":"s.weibo.com/top/summary","location":"search/hot.ts"}' :test='{"code":0}' />
@@ -1297,10 +1301,6 @@ Chart
 
   微博用户 Cookie 的配置可参照部署文档
   :::
-
-### 用户 <Site url="weibo.com" size="sm" />
-
-<Route namespace="weibo" :data='{"path":"/oasis/user/:userid","categories":["social-media"],"example":"/weibo/oasis/user/1990895721","parameters":{"userid":"用户 id, 可在用户主页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.weibo.cn/u/:uid","m.weibo.cn/profile/:uid"],"target":"/user/:uid"}],"name":"用户","maintainers":["kt286"],"location":"oasis/user.ts"}' :test='{"code":0}' />
 
 ### 自定义分组 <Site url="weibo.com" size="sm" />
 
