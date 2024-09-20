@@ -2129,6 +2129,12 @@ author 列表：
 
 研究生教育通知公告
 
+### 计算机与人工智能学院 <Site url="ctt.swjtu.edu.cn" size="sm" />
+
+<Route namespace="swjtu" :data='{"path":"/scai/bks","categories":["university"],"example":"/swjtu/scai/bks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["scai.swjtu.edu.cn/"]}],"name":"计算机与人工智能学院","description":"本科生教育","maintainers":["AzureG03"],"location":"scai/bks.ts"}' :test='undefined' />
+
+本科生教育
+
 ### 交通运输与物流学院 <Site url="ctt.swjtu.edu.cn" size="sm" />
 
 <Route namespace="swjtu" :data='{"path":"/jtys/yjs","categories":["university"],"example":"/swjtu/jtys/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"交通运输与物流学院","maintainers":["qizidog"],"description":"#### 研究生通知 {#xi-nan-jiao-tong-da-xue-jiao-tong-yun-shu-yu-wu-liu-xue-yuan-yan-jiu-sheng-tong-zhi}","location":"jtys/yjs.ts"}' :test='{"code":0}' />
