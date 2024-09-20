@@ -250,6 +250,16 @@ Language
 
 <Route namespace="njglyy" :data='{"path":"/ygbjypx","categories":["government"],"example":"/njglyy/ygbjypx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["njglyy.com/ygb/jypx/jypx.aspx","njglyy.com/"]}],"name":"员工版教育培训","maintainers":["real-jiakai"],"url":"njglyy.com/ygb/jypx/jypx.aspx","location":"ygbjypx.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
 
+## 汽车召回网 <Site url="qiche365.org.cn"/>
+
+### 汽车召回 <Site url="qiche365.org.cn/index/recall/index.html" size="sm" />
+
+<Route namespace="qiche365" :data='{"path":"/recall/:channel","name":"汽车召回","example":"/qiche365/recall/1","parameters":{"channel":"频道，见下表"},"description":"| 国内召回新闻 | 国内召回公告 | 国外召回新闻 | 国外召回公告 |\n  | ------------ | ------------ | ------------ | ------------ |\n  | 1            | 2            | 3            | 4            |","categories":["government"],"maintainers":["huanfe1"],"url":"qiche365.org.cn/index/recall/index.html","location":"recall.ts"}' :test='undefined' />
+
+| 国内召回新闻 | 国内召回公告 | 国外召回新闻 | 国外召回公告 |
+  | ------------ | ------------ | ------------ | ------------ |
+  | 1            | 2            | 3            | 4            |
+
 ## 上海市人民政府 <Site url="sh.gov.cn"/>
 
 ### Immigration and Citizenship - News <Site url="sh.gov.cn" size="sm" />
