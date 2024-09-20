@@ -160,6 +160,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 <Route namespace="itc" :data='{"path":"/collection/:colType","categories":["blog"],"example":"/itc/collection/1","radar":[{"source":["open.itc.cn/"]}],"name":"合集","maintainers":["cnkmmk"],"location":"collection.ts"}' :test='{"code":0}' />
 
+## Oct0pu5 blog <Site url="Oct0pu5.cn"/>
+
+### Oct的小破站 <Site url="Oct0pu5.cn" size="sm" />
+
+<Route namespace="oct0pu5" :data='{"path":"/","categories":["blog"],"example":"/oct0pu5","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["oct0pu5.cn"],"target":"/"}],"name":"Oct的小破站","maintainers":["octopus058","wiketool"],"location":"rss.ts"}' :test='undefined' />
+
 ## Paul Graham <Site url="paulgraham.com"/>
 
 ### Essays <Site url="paulgraham.com/articles.html" size="sm" />
