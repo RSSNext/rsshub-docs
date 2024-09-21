@@ -114,7 +114,7 @@ Alpine Linux packages update
 
 ### BIOS <Site url="asus.com.cn/" size="sm" />
 
-<Route namespace="asus" :data='{"path":"/bios/:model","categories":["program-update"],"example":"/asus/bios/RT-AX88U","parameters":{"model":"Model, can be found in product page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["asus.com.cn/"]}],"name":"BIOS","maintainers":["Fatpandac"],"url":"asus.com.cn/","location":"bios.ts"}' :test='{"code":0}' />
+<Route namespace="asus" :data='{"path":"/bios/:model/:lang?","categories":["program-update"],"example":"/asus/bios/RT-AX88U/zh","parameters":{"model":"Model, can be found in product page","lang":{"description":"Language, provide access routes for other parts of the world","options":[{"label":"Chinese","value":"zh"},{"label":"English","value":"en"}],"default":"zh"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["asus.com.cn/"]}],"name":"BIOS","maintainers":["Fatpandac"],"url":"asus.com.cn/","location":"bios.ts"}' :test='undefined' />
 
 ### GPU Tweak <Site url="asus.com/campaign/GPU-Tweak-III/*" size="sm" />
 
