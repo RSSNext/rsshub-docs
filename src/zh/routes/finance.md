@@ -351,6 +351,15 @@ Language:
   | ----- | ------------ | ------- | ---- | ----- | ------ | ---- | ---- |
   | watch | announcement | explain | red  | jpush | remind | fund | hk   |
 
+### 话题 <Site url="www.cls.cn" size="sm" />
+
+<Route namespace="cls" :data='{"path":"/subject/:id?","name":"话题","url":"www.cls.cn","maintainers":["nczitzk"],"example":"/cls/subject/1103","parameters":{"category":"分类，默认为 1103，即A股盘面直播，可在对应话题页 URL 中找到"},"description":":::tip\n  若订阅 [有声早报](https://www.cls.cn/subject/1151)，网址为 `https://www.cls.cn/subject/1151`。截取 `https://www.cls.cn/subject/` 到末尾的部分 `1151` 作为参数填入，此时路由为 [`/cls/subject/1151`](https://rsshub.app/cls/subject/1151)。\n  :::\n    ","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cls.cn/subject/:id"]}],"location":"subject.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [有声早报](https://www.cls.cn/subject/1151)，网址为 `https://www.cls.cn/subject/1151`。截取 `https://www.cls.cn/subject/` 到末尾的部分 `1151` 作为参数填入，此时路由为 [`/cls/subject/1151`](https://rsshub.app/cls/subject/1151)。
+  :::
+    
+
 ### 热门文章排行榜 <Site url="cls.cn/" size="sm" />
 
 <Route namespace="cls" :data='{"path":"/hot","categories":["finance"],"example":"/cls/hot","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cls.cn/"]}],"name":"热门文章排行榜","maintainers":["5upernova-heng","nczitzk"],"url":"cls.cn/","location":"hot.ts"}' :test='{"code":0}' />
