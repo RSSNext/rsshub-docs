@@ -1661,6 +1661,14 @@ author 列表：
 | -------- | -------- | -------- | -------- | -------- |
 | announcement | academic | technology | undergraduate | postgraduate |
 
+### 计算机科学与技术学院研究生工作网站 <Site url="www.sdu.edu.cn" size="sm" />
+
+<Route namespace="sdu" :data='{"path":"/cs/yjsgz/:type?","categories":["university"],"example":"/sdu/cs/yjsgz/zytz","parameters":{"type":"默认为`zytz`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机科学与技术学院研究生工作网站","maintainers":["kukeya","wiketool"],"description":"| 重要通知 | 公示栏 |\n| -------- | -------- |\n| zytz      | gsl       |","location":"cs/yjsgz.ts"}' :test='undefined' />
+
+| 重要通知 | 公示栏 |
+| -------- | -------- |
+| zytz      | gsl       |
+
 ### 教务处 <Site url="www.sdu.edu.cn" size="sm" />
 
 <Route namespace="sdu" :data='{"path":"/wh/jwc/:column?","categories":["university"],"example":"/sdu/wh/jwc/gztz","parameters":{"column":"专栏名称，默认为工作通知（`gztz`）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["kxxt"],"description":"| 规章制度 | 专业建设 | 实践教学 | 支部风采 | 服务指南 | 教务要闻 | 工作通知 | 教务简报 | 常用下载 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | gzzd     | zyjs     | sjjx     | zbfc     | fwzn     | jwyw     | gztz     | jwjb     | cyxz     |","location":"wh/jwc.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1441)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
@@ -1676,6 +1684,14 @@ author 列表：
 | 学院动态 | 通知公告 | 学术论坛 |
   | -------- | -------- | -------- |
   | 0        | 1        | 2        |
+
+### 青岛校区学科建设与研究生教育办公室 <Site url="www.sdu.edu.cn" size="sm" />
+
+<Route namespace="sdu" :data='{"path":"/qd/xyb/:type?","categories":["university"],"example":"/sdu/qd/xyb/gztz","parameters":{"type":"默认为`gztz`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"青岛校区学科建设与研究生教育办公室","maintainers":["kukeya"],"description":"| 工作通知 | \n  | -------- |\n  | gztz     | ","location":"qd/xyb.ts"}' :test='undefined' />
+
+| 工作通知 | 
+  | -------- |
+  | gztz     | 
 
 ### 软件学院通知 <Site url="www.sdu.edu.cn" size="sm" />
 
