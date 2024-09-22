@@ -695,6 +695,12 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
   [雪国列车 (剧版)](https://nzmz.xyz/details-qEzRyY3v.html) 的下载页 URL 为 `https://v.ys99.xyz/view/qEzRyY3v.html`，即剧集 id 为 `qEzRyY3v`
   :::
 
+## Niconico <Site url="www.nicovideo.jp"/>
+
+### User Videos <Site url="www.nicovideo.jp" size="sm" />
+
+<Route namespace="nicovideo" :data='{"name":"User Videos","path":"/user/:id/video/:embed?","parameters":{"id":"User ID","embed":"Default to embed the video, set to any value to disable embedding"},"example":"/nicovideo/user/16690815/video","maintainers":["TonyRL"],"radar":[{"source":["www.nicovideo.jp/user/:id","www.nicovideo.jp/user/:id/video"],"target":"/user/:id/video"}],"location":"video.ts"}' :test='undefined' />
+
 ## Nyaa <Site url="nyaa.si"/>
 
 
