@@ -342,6 +342,18 @@ p-articles provides some official RSS feeds:
 
 <Route namespace="p-articles" :data='{"path":"/contributors/:author","categories":["reading"],"example":"/p-articles/contributors/黃衍仁","parameters":{"author":"虛詞作者, 可在作者页面 URL 找到"},"name":"虛詞作者","maintainers":["Insomnia1437"],"radar":[{"source":["p-articles.com/contributors/:author"]}],"location":"contributors.ts"}' :test='undefined' />
 
+## 意林杂志 <Site url="www.yilinzazhi.com"/>
+
+### 近期文章汇总 <Site url="www.yilinzazhi.com" size="sm" />
+
+<Route namespace="yilinzazhi" :data='{"path":"/latest","categories":["reading"],"example":"/yilinzazhi/latest","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"近期文章汇总","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","description":"最近一期的文章汇总","location":"latest.ts"}' :test='undefined' />
+
+最近一期的文章汇总
+
+### 文章列表 <Site url="www.yilinzazhi.com" size="sm" />
+
+<Route namespace="yilinzazhi" :data='{"path":"/","categories":["reading"],"example":"/yilinzazhi","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"文章列表","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","location":"index.ts"}' :test='undefined' />
+
 ## カクヨム <Site url="kakuyomu.jp"/>
 
 ### 投稿 <Site url="kakuyomu.jp" size="sm" />
