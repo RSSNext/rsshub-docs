@@ -1637,6 +1637,14 @@ author 列表：
   | -------- | -------- | ---------- | ---------- | -------- |
   | 0        | 1        | 2          | 3          | 4        |
 
+### 国际事务部 <Site url="www.sdu.edu.cn" size="sm" />
+
+<Route namespace="sdu" :data='{"path":"/gjsw/:type?","categories":["university"],"example":"/sdu/gjsw/tzgg","parameters":{"type":"默认为`tzgg`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国际事务部","maintainers":["kukeya"],"description":"| 通知公告 |  \n  | -------- | \n  | tzgg     |      ","location":"gjsw.ts"}' :test='undefined' />
+
+| 通知公告 |  
+  | -------- | 
+  | tzgg     |      
+
 ### 机械工程学院通知 <Site url="www.sdu.edu.cn" size="sm" />
 
 <Route namespace="sdu" :data='{"path":"/mech/:type?","categories":["university"],"example":"/sdu/mech/0","parameters":{"type":"默认为 `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"机械工程学院通知","maintainers":["Ji4n1ng"],"description":"| 通知公告 | 院所新闻 | 教学信息 | 学术动态 | 学院简报 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | 0        | 1        | 2        | 3        | 4        |","location":"mech.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1438)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.5.5_jsdom@25.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
@@ -1684,6 +1692,22 @@ author 列表：
 | 校园要闻 | 学生动态 | 综合新闻 | 山大视点 | 菁菁校园 | 校园简讯 | 玛珈之窗 | 热点专题 | 媒体视角 | 高教视野 | 理论学习 |
   | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
   | xyyw     | xsdt     | zhxw     | sdsd     | jjxy     | xyjx     | mjzc     | rdzt     | mtsj     | gjsy     | llxx     |
+
+### 学生在线（青岛） <Site url="www.sdu.edu.cn" size="sm" />
+
+<Route namespace="sdu" :data='{"path":"/qd/xszxqd/:type?","categories":["university"],"example":"/sdu/qd/xszxqd/xtyw","parameters":{"type":"默认为`xtyw`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"学生在线（青岛）","maintainers":["kukeya"],"description":"| 学团通知-研究生 | 学团通知-本科生 | 学团通知-团学 | 学团通知-心理 | 学团要闻\n  | -------- | -------- |-------- |-------- |-------- |\n  | xttz-yjs   | xttz-bks  |  xttz-tx  | xttz-xl  | xtyw  |","location":"qd/xszxqd.ts"}' :test='undefined' />
+
+| 学团通知-研究生 | 学团通知-本科生 | 学团通知-团学 | 学团通知-心理 | 学团要闻
+  | -------- | -------- |-------- |-------- |-------- |
+  | xttz-yjs   | xttz-bks  |  xttz-tx  | xttz-xl  | xtyw  |
+
+### 研工部 <Site url="www.sdu.edu.cn" size="sm" />
+
+<Route namespace="sdu" :data='{"path":"/ygb/:type?","categories":["university"],"example":"/sdu/ygb/zytz","parameters":{"type":"默认为`zytz`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研工部","maintainers":["kukeya"],"description":"| 重要通知 | 管理服务 | 创新实践 | \n  | -------- | -------- |-------- |\n  | zytz     | glfw     | cxsj    | ","location":"ygb.ts"}' :test='undefined' />
+
+| 重要通知 | 管理服务 | 创新实践 | 
+  | -------- | -------- |-------- |
+  | zytz     | glfw     | cxsj    | 
 
 ## 山东科技大学 <Site url="sdust.edu.cn"/>
 
