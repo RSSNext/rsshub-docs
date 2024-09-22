@@ -127,19 +127,19 @@ Channels:
 
 ### News <Site url="espn.com" size="sm" />
 
-<Route namespace="espn" :data='{"path":"/news/:sport","name":"News","maintainers":["GymRat102"],"example":"/espn/news/nba","categories":["traditional-media"],"parameters":{"sport":"sport category, can be nba, nfl, mlb, nhl etc."},"description":"Get the news feed of the sport you love on ESPN.\n| Sport                |  sport  |  Sport         |  sport  |\n|----------------------|---------|----------------|---------|\n| 🏀NBA                | nba     | 🎾Tennis       | tennis  |\n| 🏀WNBA               | wnba    | ⛳️Golf         | golf    |\n| 🏈NFL                | nfl     | 🏏Cricket      | cricket |\n| ⚾️MLB                | mlb     | ⚽️Soccer       | soccer  |\n| 🏒NHL                | nhl     | 🏎️F1           | f1      |\n| ⛹️College Basketball | ncb      | 🥊MMA          | mma     |\n| 🏟️️College Football   | ncf     | 🏈UFL          | ufl     |\n| 🏉Rugby              | rugby   | 🃏Poker        | poker   |","radar":[{"source":["espn.com/:sport*"],"target":"/news/:sport"}],"location":"news.ts"}' :test='undefined' />
+<Route namespace="espn" :data='{"path":"/news/:sport","name":"News","maintainers":["weijianduan0302"],"example":"/espn/news/nba","categories":["traditional-media"],"parameters":{"sport":"sport category, can be nba, nfl, mlb, nhl etc."},"description":"Get the news feed of the sport you love on ESPN.\n| Sport                |  sport  |  Sport         |  sport  |\n|----------------------|---------|----------------|---------|\n| 🏀 NBA                | nba     | 🎾 Tennis       | tennis  |\n| 🏀 WNBA               | wnba    | ⛳️ Golf         | golf    |\n| 🏈 NFL                | nfl     | 🏏 Cricket      | cricket |\n| ⚾️ MLB                | mlb     | ⚽️ Soccer       | soccer  |\n| 🏒 NHL                | nhl     | 🏎️ F1           | f1      |\n| ⛹️ College Basketball | ncb      | 🥊 MMA          | mma     |\n| 🏟️️ College Football   | ncf     | 🏈 UFL          | ufl     |\n| 🏉 Rugby              | rugby   | 🃏 Poker        | poker   |","radar":[{"source":["espn.com/:sport*"],"target":"/news/:sport"}],"location":"news.ts"}' :test='undefined' />
 
 Get the news feed of the sport you love on ESPN.
 | Sport                |  sport  |  Sport         |  sport  |
 |----------------------|---------|----------------|---------|
-| 🏀NBA                | nba     | 🎾Tennis       | tennis  |
-| 🏀WNBA               | wnba    | ⛳️Golf         | golf    |
-| 🏈NFL                | nfl     | 🏏Cricket      | cricket |
-| ⚾️MLB                | mlb     | ⚽️Soccer       | soccer  |
-| 🏒NHL                | nhl     | 🏎️F1           | f1      |
-| ⛹️College Basketball | ncb      | 🥊MMA          | mma     |
-| 🏟️️College Football   | ncf     | 🏈UFL          | ufl     |
-| 🏉Rugby              | rugby   | 🃏Poker        | poker   |
+| 🏀 NBA                | nba     | 🎾 Tennis       | tennis  |
+| 🏀 WNBA               | wnba    | ⛳️ Golf         | golf    |
+| 🏈 NFL                | nfl     | 🏏 Cricket      | cricket |
+| ⚾️ MLB                | mlb     | ⚽️ Soccer       | soccer  |
+| 🏒 NHL                | nhl     | 🏎️ F1           | f1      |
+| ⛹️ College Basketball | ncb      | 🥊 MMA          | mma     |
+| 🏟️️ College Football   | ncf     | 🏈 UFL          | ufl     |
+| 🏉 Rugby              | rugby   | 🃏 Poker        | poker   |
 
 ## Financial Times <Site url="ft.com"/>
 
