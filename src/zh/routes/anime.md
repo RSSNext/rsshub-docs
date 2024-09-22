@@ -47,6 +47,16 @@
 
 <Route namespace="agefans" :data='{"path":"/update","categories":["anime"],"example":"/agefans/update","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agemys.org/update","agemys.org/"]}],"name":"最近更新","maintainers":["nczitzk"],"url":"agemys.org/update","location":"update.ts"}' :test='{"code":0}' />
 
+## Anime1 <Site url="anime1.me"/>
+
+### Anime <Site url="anime1.me" size="sm" />
+
+<Route namespace="anime1" :data='{"path":"anime/:category/:name","name":"Anime","url":"anime1.me","maintainers":["cxheng315"],"example":"/anime1/anime/2024年夏季/神之塔-第二季","categories":["anime"],"parameters":{"category":"Anime1 Category","name":"Anime1 Name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["anime1.me/category/:category/:name"],"target":"/anime/:category/:name"}],"location":"anime.ts"}' :test='undefined' />
+
+### Search <Site url="anime1.me" size="sm" />
+
+<Route namespace="anime1" :data='{"path":"search/:keyword","name":"Search","url":"anime1.me","maintainers":["cxheng315"],"example":"/anime1/search/神之塔","categories":["anime"],"parameters":{"keyword":"Anime1 Search Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"search.ts"}' :test='undefined' />
+
 ## CnGal <Site url="www.cngal.org"/>
 
 ### 每周速报 <Site url="www.cngal.org/" size="sm" />
