@@ -112,9 +112,9 @@ Alpine Linux packages update
 
 ## ASUS <Site url="asus.com.cn"/>
 
-### BIOS <Site url="asus.com.cn/" size="sm" />
+### BIOS <Site url="www.asus.com" size="sm" />
 
-<Route namespace="asus" :data='{"path":"/bios/:model/:lang?","categories":["program-update"],"example":"/asus/bios/RT-AX88U/zh","parameters":{"model":"Model, can be found in product page","lang":{"description":"Language, provide access routes for other parts of the world","options":[{"label":"Chinese","value":"zh"},{"label":"English","value":"en"}],"default":"zh"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["asus.com.cn/"]}],"name":"BIOS","maintainers":["Fatpandac"],"url":"asus.com.cn/","location":"bios.ts"}' :test='{"code":0}' />
+<Route namespace="asus" :data='{"path":"/bios/:model/:lang?","categories":["program-update"],"example":"/asus/bios/RT-AX88U/zh","parameters":{"model":"Model, can be found in product page","lang":{"description":"Language, provide access routes for other parts of the world","options":[{"label":"Chinese","value":"zh"},{"label":"Global","value":"en"}],"default":"en"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.asus.com/displays-desktops/:productLine/:series/:model","www.asus.com/laptops/:productLine/:series/:model","www.asus.com/motherboards-components/:productLine/:series/:model","www.asus.com/networking-iot-servers/:productLine/:series/:model","www.asus.com/:region/displays-desktops/:productLine/:series/:model","www.asus.com/:region/laptops/:productLine/:series/:model","www.asus.com/:region/motherboards-components/:productLine/:series/:model","www.asus.com/:region/networking-iot-servers/:productLine/:series/:model","asus.com.cn/"],"target":"/bios/:model"}],"name":"BIOS","maintainers":["Fatpandac"],"url":"www.asus.com","location":"bios.ts"}' :test='{"code":0}' />
 
 ### GPU Tweak <Site url="asus.com/campaign/GPU-Tweak-III/*" size="sm" />
 
