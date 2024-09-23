@@ -196,6 +196,18 @@ Language
   | -------- | -------- | -------- | ---- | -------- | -------- | ------------------ | -------- | ---------- | -------- | ---------- | -------- | -------- | -------- | -------- | -------- | -------- |
   | 86       | 99       | 102      | 103  | 106      | 107      | 108                | 111      | 112        | 114      | 115        | 116      | 118      | 119      | 120      | 121      | 122      |
 
+## 德阳人事考试网 <Site url="www.dykszx.com"/>
+
+德阳人事考试网
+
+### 考试新闻发布 <Site url="https://www.dykszx.com/*" size="sm" />
+
+<Route namespace="dykszx" :data='{"path":"/news/:newsType?","categories":["government"],"example":"/dykszx/news","parameters":{"newsType":"考试类型。默认新闻中心(all)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dykszx.com/"],"target":"/news/all"}],"name":"考试新闻发布","maintainers":["zytomorrow"],"url":"https://www.dykszx.com/*","description":"| 新闻中心 | 公务员考试 | 事业单位 | （职）业资格、职称考试 | 其他 |\n| :------: | :------: | :------: |:------: |:------: |\n|   all   |   gwy   |  sydw | zyzc  | other |","location":"news.ts"}' :test='undefined' />
+
+| 新闻中心 | 公务员考试 | 事业单位 | （职）业资格、职称考试 | 其他 |
+| :------: | :------: | :------: |:------: |:------: |
+|   all   |   gwy   |  sydw | zyzc  | other |
+
 ## 共产党员网 <Site url="www.12371.cn"/>
 
 ### 最新发布 <Site url="www.12371.cn" size="sm" />
