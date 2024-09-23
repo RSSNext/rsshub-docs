@@ -135,11 +135,7 @@
 
 ### 角色周边 <Site url="www.hpoi.net" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/character/:id/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/character/1035374","parameters":{"id":"角色 ID","order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"角色周边","maintainers":["DIYgod"],"description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"character.ts"}' :test='{"code":0}' />
-
-| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
-  | ------- | ---- | ------ | -------- | -------- | ------ |
-  | release | add  | hits   | hits7Day | hitsDay  | rating |
+<Route namespace="hpoi" :data='{"path":"/items/character/:id/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/character/1035374","parameters":{"id":"角色 ID","order":{"description":"排序, 见下表，默认为 add","options":[{"value":"release","label":"发售"},{"value":"add","label":"入库"},{"value":"hits","label":"总热度"},{"value":"hits7Day","label":"一周热度"},{"value":"hitsDay","label":"一天热度"},{"value":"rating","label":"评价"}],"default":"add"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"角色周边","maintainers":["DIYgod"],"location":"character.ts"}' :test='{"code":0}' />
 
 ### 情报 <Site url="www.hpoi.net" size="sm" />
 
@@ -157,11 +153,7 @@
 
 ### 所有周边 <Site url="www.hpoi.net/hobby/all" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/all/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/all","parameters":{"order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/hobby/all"],"target":"/items/all"}],"name":"所有周边","maintainers":["DIYgod"],"url":"www.hpoi.net/hobby/all","description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"all.ts"}' :test='{"code":0}' />
-
-| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
-  | ------- | ---- | ------ | -------- | -------- | ------ |
-  | release | add  | hits   | hits7Day | hitsDay  | rating |
+<Route namespace="hpoi" :data='{"path":"/items/all/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/all","parameters":{"order":{"description":"排序, 见下表，默认为 add","options":[{"value":"release","label":"发售"},{"value":"add","label":"入库"},{"value":"hits","label":"总热度"},{"value":"hits7Day","label":"一周热度"},{"value":"hitsDay","label":"一天热度"},{"value":"rating","label":"评价"}],"default":"add"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hpoi.net/hobby/all"],"target":"/items/all"}],"name":"所有周边","maintainers":["DIYgod"],"url":"www.hpoi.net/hobby/all","location":"all.ts"}' :test='{"code":0}' />
 
 ### 用户动态 <Site url="www.hpoi.net" size="sm" />
 
@@ -173,11 +165,7 @@
 
 ### 作品周边 <Site url="www.hpoi.net" size="sm" />
 
-<Route namespace="hpoi" :data='{"path":"/items/work/:id/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/work/4117491","parameters":{"id":"作品 ID","order":"排序, 见下表，默认为 add"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品周边","maintainers":["DIYgod"],"description":"| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |\n  | ------- | ---- | ------ | -------- | -------- | ------ |\n  | release | add  | hits   | hits7Day | hitsDay  | rating |","location":"work.ts"}' :test='{"code":0}' />
-
-| 发售    | 入库 | 总热度 | 一周热度 | 一天热度 | 评价   |
-  | ------- | ---- | ------ | -------- | -------- | ------ |
-  | release | add  | hits   | hits7Day | hitsDay  | rating |
+<Route namespace="hpoi" :data='{"path":"/items/work/:id/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/work/4117491","parameters":{"id":"作品 ID","order":{"description":"排序, 见下表，默认为 add","options":[{"value":"release","label":"发售"},{"value":"add","label":"入库"},{"value":"hits","label":"总热度"},{"value":"hits7Day","label":"一周热度"},{"value":"hitsDay","label":"一天热度"},{"value":"rating","label":"评价"}],"default":"add"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品周边","maintainers":["DIYgod"],"location":"work.ts"}' :test='{"code":0}' />
 
 ## IDOLY PRIDE 偶像荣耀 <Site url="idolypride.jp"/>
 

@@ -778,13 +778,7 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
 ### Pornstar <Site url="pornhub.com" size="sm" />
 
-<Route namespace="pornhub" :data='{"path":"/pornstar/:username/:language?/:sort?","categories":["multimedia","popular"],"view":3,"example":"/pornhub/pornstar/june-liu","parameters":{"language":"language, see below","username":"username, part of the url e.g. `pornhub.com/pornstar/june-liu`","sort":"sorting method, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/pornstar/:username/*"],"target":"/pornstar/:username"}],"name":"Pornstar","maintainers":["I2IMk","queensferryme"],"description":"**`sort`**\n\n  | Most Recent | Most Viewed | Top Rated | Longest | Best |\n  | ----------- | ----------- | --------- | ------- | ---- |\n  | mr          | mv          | tr        | lg      |      |","location":"pornstar.ts"}' :test='{"code":0}' />
-
-**`sort`**
-
-  | Most Recent | Most Viewed | Top Rated | Longest | Best |
-  | ----------- | ----------- | --------- | ------- | ---- |
-  | mr          | mv          | tr        | lg      |      |
+<Route namespace="pornhub" :data='{"path":"/pornstar/:username/:language?/:sort?","categories":["multimedia","popular"],"view":3,"example":"/pornhub/pornstar/june-liu","parameters":{"username":"username, part of the url e.g. `pornhub.com/pornstar/june-liu`","language":"language","sort":{"description":"sorting method","default":"mv","options":[{"label":"Most Recent","value":"mr"},{"label":"Most Viewed","value":"mv"},{"label":"Top Rated","value":"tr"},{"label":"Longest","value":"lg"},{"label":"Best","value":""}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/pornstar/:username/*"],"target":"/pornstar/:username"}],"name":"Pornstar","maintainers":["I2IMk","queensferryme"],"location":"pornstar.ts"}' :test='{"code":0}' />
 
 ### Users <Site url="pornhub.com" size="sm" />
 

@@ -14,11 +14,7 @@
 
 ### Channel Video <Site url="www.twitch.tv" size="sm" />
 
-<Route namespace="twitch" :data='{"path":"/video/:login/:filter?","categories":["live","popular"],"view":3,"example":"/twitch/video/riotgames/highlights","parameters":{"login":"Twitch username","filter":"Video type, Default to all"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.twitch.tv/:login/videos"],"target":"/video/:login"}],"name":"Channel Video","maintainers":["hoilc"],"description":"| archive           | highlights                    | all        |\n| ----------------- | ----------------------------- | ---------- |\n| Recent broadcasts | Recent highlights and uploads | All videos |","location":"video.ts"}' :test='{"code":0}' />
-
-| archive           | highlights                    | all        |
-| ----------------- | ----------------------------- | ---------- |
-| Recent broadcasts | Recent highlights and uploads | All videos |
+<Route namespace="twitch" :data='{"path":"/video/:login/:filter?","categories":["live","popular"],"view":3,"example":"/twitch/video/riotgames/highlights","parameters":{"login":"Twitch username","filter":{"description":"Video type, Default to all","options":[{"value":"archive","label":"Archive"},{"value":"highlights","label":"Highlights"},{"value":"all","label":"All"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.twitch.tv/:login/videos"],"target":"/video/:login"}],"name":"Channel Video","maintainers":["hoilc"],"location":"video.ts"}' :test='{"code":0}' />
 
 ### Live <Site url="www.twitch.tv" size="sm" />
 
