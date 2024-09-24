@@ -249,9 +249,9 @@ If the instance address is not `mastodon.social` or `pawoo.net`, then the route 
 
 If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
 
-### Unknown <Site url="mastodon.social" size="sm" />
+### User timeline (by account ID) <Site url="mastodon.social" size="sm" />
 
-<Route namespace="mastodon" :data='{"path":"/account_id/:site/:account_id/statuses/:only_media?","name":"Unknown","maintainers":["notofoe"],"location":"account-id.ts"}' :test='undefined' />
+<Route namespace="mastodon" :data='{"path":"/account_id/:site/:account_id/statuses/:only_media?","categories":["social-media","popular"],"view":1,"example":"/mastodon/account_id/mas.to/109300507275095341/statuses/false","parameters":{"site":"instance address, only domain, no `http://` or `https://` protocol header","account_id":"account ID, you can get it from `https://INSTANCE/api/v1/accounts/lookup?acct=USERNAME` api","only_media":{"description":"whether only display media content, default to false, any value to true","options":[{"value":"true","label":"true"},{"value":"false","label":"false"}],"default":"false"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline (by account ID)","maintainers":["notofoe","pseudoyu"],"location":"account-id.ts"}' :test='undefined' />
 
 ### User timeline <Site url="mastodon.social" size="sm" />
 
