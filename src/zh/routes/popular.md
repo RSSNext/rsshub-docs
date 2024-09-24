@@ -204,6 +204,16 @@ Started from Mastodon v4.0.0, the use of the `search` API in the route no longer
 If the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.
 However, you can still specify these route-specific configurations if you need to override them.
 
+## Misskey <Site url="misskey.io"/>
+
+### Featured Notes <Site url="misskey.io" size="sm" />
+
+<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media","popular"],"view":1,"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":0}' />
+
+### User timeline <Site url="misskey.io" size="sm" />
+
+<Route namespace="misskey" :data='{"path":"/users/notes/:username","categories":["social-media","popular"],"view":1,"example":"/misskey/users/notes/support@misskey.io","parameters":{"username":"misskey username format, like support@misskey.io"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["siygle"],"location":"user-timeline.ts"}' :test='{"code":0}' />
+
 ## NASA <Site url="apod.nasa.gov"/>
 
 ### Astronomy Picture of the Day <Site url="apod.nasa.govundefined" size="sm" />
@@ -246,7 +256,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Pornstar <Site url="pornhub.com" size="sm" />
 
-<Route namespace="pornhub" :data='{"path":"/pornstar/:username/:language?/:sort?","categories":["multimedia","popular"],"view":3,"example":"/pornhub/pornstar/june-liu/www/mr","parameters":{"username":{"description":"username, part of the url e.g. `pornhub.com/pornstar/june-liu`"},"language":{"description":"language","options":[{"value":"www","label":"English"},{"value":"de","label":"Deutsch"},{"value":"es","label":"Español"},{"value":"fr","label":"Français"},{"value":"it","label":"Italiano"},{"value":"ja","label":"日本語"},{"value":"pt","label":"Português"},{"value":"pl","label":"Polski"},{"value":"rt","label":"Русский"},{"value":"nl","label":"Dutch"},{"value":"cs","label":"Czech"},{"value":"cn","label":"中文（简体）"}],"default":"www"},"sort":{"description":"sorting method, leave empty for `Best`","default":"mr","options":[{"label":"Most Recent","value":"mr"},{"label":"Most Viewed","value":"mv"},{"label":"Top Rated","value":"tr"},{"label":"Longest","value":"lg"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/pornstar/:username/*"],"target":"/pornstar/:username"}],"name":"Pornstar","maintainers":["I2IMk","queensferryme"],"location":"pornstar.ts"}' :test='{"code":0}' />
+<Route namespace="pornhub" :data='{"path":"/pornstar/:username/:language?/:sort?","categories":["multimedia","popular"],"view":3,"example":"/pornhub/pornstar/june-liu/www/mr","parameters":{"username":{"description":"username, part of the url e.g. `pornhub.com/pornstar/june-liu`"},"language":{"description":"language","options":[{"value":"www","label":"English"},{"value":"de","label":"Deutsch"},{"value":"es","label":"Español"},{"value":"fr","label":"Français"},{"value":"it","label":"Italiano"},{"value":"ja","label":"日本語"},{"value":"pt","label":"Português"},{"value":"pl","label":"Polski"},{"value":"rt","label":"Русский"},{"value":"nl","label":"Dutch"},{"value":"cs","label":"Czech"},{"value":"cn","label":"中文（简体）"}],"default":"www"},"sort":{"description":"sorting method, leave empty for `Best`","options":[{"label":"Most Recent","value":"mr"},{"label":"Most Viewed","value":"mv"},{"label":"Top Rated","value":"tr"},{"label":"Longest","value":"lg"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pornhub.com/pornstar/:username/*"],"target":"/pornstar/:username"}],"name":"Pornstar","maintainers":["I2IMk","queensferryme"],"location":"pornstar.ts"}' :test='{"code":0}' />
 
 ## PlayStation Store <Site url="www.playstation.com"/>
 
@@ -479,6 +489,12 @@ Currently supports two authentication methods:
 
 <Route namespace="bilibili" :data='{"path":"/readlist/:listid","categories":["social-media","popular"],"view":0,"example":"/bilibili/readlist/25611","parameters":{"listid":"文集 id, 可在专栏文集 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"专栏文集","maintainers":["hoilc"],"location":"readlist.ts"}' :test='{"code":0}' />
 
+## 唱吧 <Site url="changba.com"/>
+
+### 用户 <Site url="changba.com" size="sm" />
+
+<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media","popular"],"view":4,"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":["pseudoyu"],"location":"user.ts"}' :test='{"code":0}' />
+
 ## 豆瓣 <Site url="www.douban.com"/>
 
 ### 豆瓣小组 <Site url="www.douban.com" size="sm" />
@@ -495,7 +511,7 @@ Currently supports two authentication methods:
 
 ### 圈子 <Site url="m.okjike.com" size="sm" />
 
-<Route namespace="jike" :data='{"path":"/topic/:id/:showUid?","categories":["social-media","popular"],"view":1,"example":"/jike/topic/556688fae4b00c57d9dd46ee","parameters":{"id":"圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到","showUid":"是否在内容中显示用户信息，设置为 1 则开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/topic/:id"],"target":"/topic/:id"}],"name":"圈子","maintainers":["DIYgod","prnake"],"location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="jike" :data='{"path":"/topic/:id/:showUid?","categories":["social-media","popular"],"view":1,"example":"/jike/topic/556688fae4b00c57d9dd46ee","parameters":{"id":"圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到","showUid":{"description":"是否在内容中显示用户信息，设置为 1 则开启","options":[{"value":"1","label":"显示"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/topic/:id"],"target":"/topic/:id"}],"name":"圈子","maintainers":["DIYgod","prnake"],"location":"topic.ts"}' :test='{"code":0}' />
 
 ### 用户动态 <Site url="m.okjike.com" size="sm" />
 
@@ -507,9 +523,9 @@ Currently supports two authentication methods:
 
 <Route namespace="jjwxc" :data='{"path":"/book/:id?","categories":["reading","popular"],"view":5,"example":"/jjwxc/book/7013024","parameters":{"id":"作品 id，可在对应作品页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品章节","maintainers":["nczitzk"],"location":"book.ts"}' :test='{"code":0}' />
 
-## 起点 <Site url="book.qidian.com"/>
+## 起点 <Site url="qidian.com"/>
 
-### 作品章节 <Site url="book.qidian.com" size="sm" />
+### 作品章节 <Site url="qidian.com" size="sm" />
 
 <Route namespace="qidian" :data='{"path":"/chapter/:id","categories":["reading","popular"],"view":5,"example":"/qidian/chapter/1010400217","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.qidian.com/info/:id"]}],"name":"作品章节","maintainers":["fuzy112"],"location":"chapter.ts"}' :test='{"code":0}' />
 

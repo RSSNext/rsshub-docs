@@ -265,11 +265,11 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Featured Notes <Site url="misskey.io" size="sm" />
 
-<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media"],"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":0}' />
+<Route namespace="misskey" :data='{"path":"/notes/featured/:site","categories":["social-media","popular"],"view":1,"example":"/misskey/notes/featured/misskey.io","parameters":{"site":"instance address, domain only, without `http://` or `https://` protocol header"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Featured Notes","maintainers":["Misaka13514"],"location":"featured-notes.ts"}' :test='{"code":0}' />
 
 ### User timeline <Site url="misskey.io" size="sm" />
 
-<Route namespace="misskey" :data='{"path":"/users/notes/:username","categories":["social-media"],"example":"/misskey/users/notes/support@misskey.io","parameters":{"username":"misskey username format, like support@misskey.io"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["siygle"],"location":"user-timeline.ts"}' :test='{"code":0}' />
+<Route namespace="misskey" :data='{"path":"/users/notes/:username","categories":["social-media","popular"],"view":1,"example":"/misskey/users/notes/support@misskey.io","parameters":{"username":"misskey username format, like support@misskey.io"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["siygle"],"location":"user-timeline.ts"}' :test='{"code":0}' />
 
 ## pixiv <Site url="www.pixiv.net"/>
 
@@ -874,7 +874,7 @@ Chart
 
 ### 用户 <Site url="changba.com" size="sm" />
 
-<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media"],"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":[],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media","popular"],"view":4,"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":["pseudoyu"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## 抖音直播 <Site url="douyin.com"/>
 
@@ -1122,7 +1122,7 @@ Chart
 
 ### 圈子 <Site url="m.okjike.com" size="sm" />
 
-<Route namespace="jike" :data='{"path":"/topic/:id/:showUid?","categories":["social-media","popular"],"view":1,"example":"/jike/topic/556688fae4b00c57d9dd46ee","parameters":{"id":"圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到","showUid":"是否在内容中显示用户信息，设置为 1 则开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/topic/:id"],"target":"/topic/:id"}],"name":"圈子","maintainers":["DIYgod","prnake"],"location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="jike" :data='{"path":"/topic/:id/:showUid?","categories":["social-media","popular"],"view":1,"example":"/jike/topic/556688fae4b00c57d9dd46ee","parameters":{"id":"圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到","showUid":{"description":"是否在内容中显示用户信息，设置为 1 则开启","options":[{"value":"1","label":"显示"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.okjike.com/topic/:id"],"target":"/topic/:id"}],"name":"圈子","maintainers":["DIYgod","prnake"],"location":"topic.ts"}' :test='{"code":0}' />
 
 ### 用户动态 <Site url="m.okjike.com" size="sm" />
 
