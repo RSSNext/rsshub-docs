@@ -1,6 +1,6 @@
 # 🔬 Scientific Journal
 
-## Academia <Site url="https://www.academia.edu/"/>
+## Academia <Site url="www.academia.edu"/>
 
 ### interest <Site url="academia.edu" size="sm" />
 

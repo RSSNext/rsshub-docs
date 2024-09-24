@@ -163,9 +163,9 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 
 <Route namespace="javbus" :data='{"path":"/:path{.+}?","radar":[{"source":["www.javbus.com/:path*"],"target":"/:path"}],"name":"Works","maintainers":["MegrezZhu","CoderTonyChan","nczitzk","Felix2yu"],"categories":["multimedia","popular"],"view":3,"url":"www.javbus.com","example":"/javbus/star/rwt","parameters":{"path":{"description":"Any path of list page on javbus"}},"location":"index.ts"}' :test='{"code":0}' />
 
-## Lemmy <Site url="https://join-lemmy.org/"/>
+## Lemmy <Site url="join-lemmy.org"/>
 
-### Community <Site url="https://join-lemmy.org/" size="sm" />
+### Community <Site url="join-lemmy.org" size="sm" />
 
 <Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media","popular"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":{"description":"Sort by","options":[{"value":"Active","label":"Active"},{"value":"Hot","label":"Hot"},{"value":"New","label":"New"},{"value":"Old","label":"Old"},{"value":"TopDay","label":"TopDay"},{"value":"TopWeek","label":"TopWeek"},{"value":"TopMonth","label":"TopMonth"},{"value":"TopYear","label":"TopYear"},{"value":"TopAll","label":"TopAll"},{"value":"MostComments","label":"MostComments"},{"value":"NewComments","label":"NewComments"},{"value":"TopHour","label":"TopHour"},{"value":"TopSixHour","label":"TopSixHour"},{"value":"TopTwelveHour","label":"TopTwelveHour"},{"value":"TopThreeMonths","label":"TopThreeMonths"},{"value":"TopSixMonths","label":"TopSixMonths"},{"value":"TopNineMonths","label":"TopNineMonths"},{"value":"Controversial","label":"Controversial"},{"value":"Scaled","label":"Scaled"}],"default":"Active"}},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123","pseudoyu"],"location":"index.ts"}' :test='{"code":0}' />
 
@@ -503,11 +503,11 @@ Currently supports two authentication methods:
 
 ### 動畫瘋 - 動畫 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/ani/anime/:sn","categories":["anime","popular"],"view":3,"example":"/gamer/ani/anime/36868","parameters":{"sn":"動畫 sn，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/anime/:sn"}],"name":"動畫瘋 - 動畫","maintainers":["pseudoyu"],"location":"ani/anime.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/ani/anime/:sn","categories":["anime","popular"],"view":3,"example":"/gamer/ani/anime/36868","parameters":{"sn":"動畫 sn，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/anime/:sn"}],"name":"動畫瘋 - 動畫","maintainers":["maple3142","pseudoyu"],"location":"ani/anime.ts"}' :test='{"code":0}' />
 
 ### 動畫瘋 - 最後更新 <Site url="ani.gamer.com.tw/" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/ani/new_anime","categories":["anime","popular"],"view":3,"example":"/gamer/ani/new_anime","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/new_anime"}],"name":"動畫瘋 - 最後更新","maintainers":["pseudoyu"],"url":"ani.gamer.com.tw/","location":"ani/new-anime.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/ani/new_anime","categories":["anime","popular"],"view":3,"example":"/gamer/ani/new_anime","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/new_anime"}],"name":"動畫瘋 - 最後更新","maintainers":["maple3142","pseudoyu"],"url":"ani.gamer.com.tw/","location":"ani/new-anime.ts"}' :test='{"code":0}' />
 
 ### 熱門推薦 <Site url="acg.gamer.com.tw" size="sm" />
 
@@ -549,7 +549,7 @@ Currently supports two authentication methods:
 
 ### 用户 <Site url="changba.com" size="sm" />
 
-<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media","popular"],"view":4,"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":["pseudoyu"],"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="changba" :data='{"path":"/:userid","categories":["social-media","popular"],"view":4,"example":"/changba/skp6hhF59n48R-UpqO3izw","parameters":{"userid":"用户ID, 可在对应分享页面的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["changba.com/s/:userid"]}],"name":"用户","maintainers":["kt286","xizeyoupan","pseudoyu"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## 豆瓣 <Site url="www.douban.com"/>
 

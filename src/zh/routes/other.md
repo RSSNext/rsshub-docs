@@ -725,7 +725,7 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="surfshark" :data='{"path":"/blog/:category{.+}?","name":"Unknown","maintainers":[],"location":"blog.ts"}' :test='undefined' />
 
-## Sustainability Magazine <Site url="https://sustainabilitymag.com"/>
+## Sustainability Magazine <Site url="sustainabilitymag.com"/>
 
 ### Articles <Site url="sustainabilitymag.com/articles" size="sm" />
 

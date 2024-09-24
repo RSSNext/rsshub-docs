@@ -100,9 +100,9 @@
 
 包含多种技术和新闻信息的网站
 
-### Engineering blogs <Site url="https://infos.imhcg.cn/" size="sm" />
+### Engineering blogs <Site url="infos.imhcg.cn" size="sm" />
 
-<Route namespace="imhcg" :data='{"path":"/","categories":["blog"],"view":5,"example":"/imhcg","parameters":{},"radar":[{"source":["infos.imhcg.cn"]}],"name":"Engineering blogs","maintainers":["ZiHao256"],"url":"https://infos.imhcg.cn/","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="imhcg" :data='{"path":"/","categories":["blog"],"view":5,"example":"/imhcg","parameters":{},"radar":[{"source":["infos.imhcg.cn"]}],"name":"Engineering blogs","maintainers":["ZiHao256"],"url":"infos.imhcg.cn","location":"blog.ts"}' :test='{"code":0}' />
 
 ## Kun Cheng <Site url="kunchengblog.com"/>
 
