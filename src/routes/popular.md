@@ -1,5 +1,11 @@
 # 🌟 Popular
 
+## 500px 摄影社区 <Site url="500px.com.cn"/>
+
+### 部落影集 <Site url="500px.com.cn" size="sm" />
+
+<Route namespace="500px" :data='{"path":"/tribe/set/:id","categories":["picture","popular"],"view":2,"example":"/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001","parameters":{"id":"部落 ID"},"name":"部落影集","maintainers":["TonyRL"],"location":"tribe-set.ts"}' :test='undefined' />
+
 ## AP News <Site url="apnews.com"/>
 
 ### News <Site url="apnews.com" size="sm" />
@@ -20,6 +26,14 @@
   :::tip
   For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.app/apple/apps/update/us/id408709785).
   :::
+
+## Behance <Site url="www.behance.net"/>
+
+### User Works <Site url="www.behance.net" size="sm" />
+
+<Route namespace="behance" :data='{"path":"/:user/:type?","categories":["design","popular"],"view":2,"example":"/behance/mishapetrick","parameters":{"user":"username","type":{"description":"type","options":[{"value":"projects","label":"projects"},{"value":"appreciated","label":"appreciated"}],"default":"projects"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User Works","maintainers":["MisteryMonster"],"description":"Behance user&#39;s profile URL, like [https://www.behance.net/mishapetrick](https://www.behance.net/mishapetrick) the username will be `mishapetrick`。","location":"user.ts"}' :test='{"code":0}' />
+
+Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://www.behance.net/mishapetrick) the username will be `mishapetrick`。
 
 ## Docker Hub <Site url="hub.docker.com"/>
 
@@ -422,6 +436,26 @@ Currently supports two authentication methods:
 ### Playlist <Site url="youtube.com" size="sm" />
 
 <Route namespace="youtube" :data='{"path":"/playlist/:id/:embed?","categories":["social-media","popular"],"view":3,"example":"/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z","parameters":{"id":"YouTube playlist id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Playlist","maintainers":["HenryQW"],"location":"playlist.ts"}' :test='undefined' />
+
+## 巴哈姆特電玩資訊站 <Site url="acg.gamer.com.tw"/>
+
+### GNN 新聞 <Site url="acg.gamer.com.tw" size="sm" />
+
+<Route namespace="gamer" :data='{"path":"/gnn/:category?","categories":["anime","popular"],"view":0,"example":"/gamer/gnn/1","parameters":{"category":{"description":"版塊","options":[{"value":"1","label":"PC"},{"value":"3","label":"TV 掌機"},{"value":"4","label":"手機遊戲"},{"value":"5","label":"動漫畫"},{"value":"9","label":"主題報導"},{"value":"11","label":"活動展覽"},{"value":"13","label":"電競"},{"value":"ns","label":"Switch"},{"value":"ps5","label":"PS5"},{"value":"ps4","label":"PS4"},{"value":"xbone","label":"XboxOne"},{"value":"xbsx","label":"XboxSX"},{"value":"pc","label":"PC 單機"},{"value":"olg","label":"PC 線上"},{"value":"ios","label":"iOS"},{"value":"android","label":"Android"},{"value":"web","label":"Web"},{"value":"comic","label":"漫畫"},{"value":"anime","label":"動畫"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"GNN 新聞","maintainers":["Arracc","ladeng07","pseudoyu"],"description":"缺省為首頁","location":"gnn-index.ts"}' :test='{"code":0}' />
+
+缺省為首頁
+
+### 動畫瘋 - 動畫 <Site url="acg.gamer.com.tw" size="sm" />
+
+<Route namespace="gamer" :data='{"path":"/ani/anime/:sn","categories":["anime","popular"],"view":3,"example":"/gamer/ani/anime/36868","parameters":{"sn":"動畫 sn，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/anime/:sn"}],"name":"動畫瘋 - 動畫","maintainers":["pseudoyu"],"location":"ani/anime.ts"}' :test='{"code":0}' />
+
+### 動畫瘋 - 最後更新 <Site url="ani.gamer.com.tw/" size="sm" />
+
+<Route namespace="gamer" :data='{"path":"/ani/new_anime","categories":["anime","popular"],"view":3,"example":"/gamer/ani/new_anime","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/new_anime"}],"name":"動畫瘋 - 最後更新","maintainers":["pseudoyu"],"url":"ani.gamer.com.tw/","location":"ani/new-anime.ts"}' :test='{"code":0}' />
+
+### 熱門推薦 <Site url="acg.gamer.com.tw" size="sm" />
+
+<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime","popular"],"view":0,"example":"/gamer/hot/47157","parameters":{"bsn":"板塊 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":0}' />
 
 ## 哔哩哔哩 bilibili <Site url="www.bilibili.com"/>
 

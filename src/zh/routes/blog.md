@@ -30,6 +30,12 @@
 
 <Route namespace="deltaio" :data='{"path":"/blog","categories":["blog"],"example":"/deltaio/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["delta.io/blog"]}],"name":"Blogs","maintainers":["RengarLee"],"url":"delta.io/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Eagle <Site url="cn.eagle.cool"/>
+
+### Blog <Site url="cn.eagle.cool/blog" size="sm" />
+
+<Route namespace="eagle" :data='{"path":"/blog/:cate?/:language?","categories":["blog"],"example":"/eagle/blog/en","parameters":{"cate":"Category, get by URL, `all` by default","language":{"description":"Language","options":[{"value":"cn","label":"cn"},{"value":"tw","label":"tw"},{"value":"en","label":"en"}],"default":"en"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.eagle.cool/blog"],"target":"/blog"}],"name":"Blog","maintainers":["Fatpandac"],"url":"cn.eagle.cool/blog","location":"blog.ts"}' :test='{"code":0}' />
+
 ## Flashcat <Site url="flashcat.cloud"/>
 
 ### 快猫星云博客 <Site url="flashcat.cloud" size="sm" />

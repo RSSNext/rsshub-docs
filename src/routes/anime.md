@@ -398,27 +398,21 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### GNN 新聞 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/gnn/:category?","categories":["anime"],"example":"/gamer/gnn/1","parameters":{"category":"版块"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"GNN 新聞","maintainers":["Arracc","ladeng07"],"description":"| 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |\n  | ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |\n  | 缺省 | 1  | 3       | 4        | 5      | 9        | 11       | 13   |\n\n  | Switch | PS5 | PS4 | XboxOne | XboxSX | PC 單機 | PC 線上 | iOS | Android | Web | 漫畫  | 動畫  |\n  | ------ | --- | --- | ------- | ------ | ------- | ------- | --- | ------- | --- | ----- | ----- |\n  | ns     | ps5 | ps4 | xbone   | xbsx   | pc      | olg     | ios | android | web | comic | anime |","location":"gnn-index.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/gnn/:category?","categories":["anime","popular"],"view":0,"example":"/gamer/gnn/1","parameters":{"category":{"description":"版塊","options":[{"value":"1","label":"PC"},{"value":"3","label":"TV 掌機"},{"value":"4","label":"手機遊戲"},{"value":"5","label":"動漫畫"},{"value":"9","label":"主題報導"},{"value":"11","label":"活動展覽"},{"value":"13","label":"電競"},{"value":"ns","label":"Switch"},{"value":"ps5","label":"PS5"},{"value":"ps4","label":"PS4"},{"value":"xbone","label":"XboxOne"},{"value":"xbsx","label":"XboxSX"},{"value":"pc","label":"PC 單機"},{"value":"olg","label":"PC 線上"},{"value":"ios","label":"iOS"},{"value":"android","label":"Android"},{"value":"web","label":"Web"},{"value":"comic","label":"漫畫"},{"value":"anime","label":"動畫"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"GNN 新聞","maintainers":["Arracc","ladeng07","pseudoyu"],"description":"缺省為首頁","location":"gnn-index.ts"}' :test='{"code":0}' />
 
-| 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |
-  | ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |
-  | 缺省 | 1  | 3       | 4        | 5      | 9        | 11       | 13   |
-
-  | Switch | PS5 | PS4 | XboxOne | XboxSX | PC 單機 | PC 線上 | iOS | Android | Web | 漫畫  | 動畫  |
-  | ------ | --- | --- | ------- | ------ | ------- | ------- | --- | ------- | --- | ----- | ----- |
-  | ns     | ps5 | ps4 | xbone   | xbsx   | pc      | olg     | ios | android | web | comic | anime |
+缺省為首頁
 
 ### 動畫瘋 - 動畫 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/ani/anime/:sn","categories":["anime"],"example":"/gamer/ani/anime/36868","parameters":{"sn":"動畫 sn，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"動畫瘋 - 動畫","maintainers":[],"location":"ani/anime.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/ani/anime/:sn","categories":["anime","popular"],"view":3,"example":"/gamer/ani/anime/36868","parameters":{"sn":"動畫 sn，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/anime/:sn"}],"name":"動畫瘋 - 動畫","maintainers":["pseudoyu"],"location":"ani/anime.ts"}' :test='{"code":0}' />
 
 ### 動畫瘋 - 最後更新 <Site url="ani.gamer.com.tw/" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/ani/new_anime","categories":["anime"],"example":"/gamer/ani/new_anime","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/new_anime"}],"name":"動畫瘋 - 最後更新","maintainers":[],"url":"ani.gamer.com.tw/","location":"ani/new-anime.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/ani/new_anime","categories":["anime","popular"],"view":3,"example":"/gamer/ani/new_anime","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ani.gamer.com.tw/"],"target":"/new_anime"}],"name":"動畫瘋 - 最後更新","maintainers":["pseudoyu"],"url":"ani.gamer.com.tw/","location":"ani/new-anime.ts"}' :test='{"code":0}' />
 
 ### 熱門推薦 <Site url="acg.gamer.com.tw" size="sm" />
 
-<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime"],"example":"/gamer/hot/47157","parameters":{"bsn":"板块 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime","popular"],"view":0,"example":"/gamer/hot/47157","parameters":{"bsn":"板塊 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":0}' />
 
 ## 包子漫画 <Site url="www.baozimh.com"/>
 

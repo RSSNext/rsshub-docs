@@ -20,7 +20,7 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 
 ### 部落影集 <Site url="500px.com.cn" size="sm" />
 
-<Route namespace="500px" :data='{"path":"/tribe/set/:id","categories":["picture"],"example":"/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001","parameters":{"id":"部落 ID"},"name":"部落影集","maintainers":["TonyRL"],"location":"tribe-set.ts"}' :test='undefined' />
+<Route namespace="500px" :data='{"path":"/tribe/set/:id","categories":["picture","popular"],"view":2,"example":"/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001","parameters":{"id":"部落 ID"},"name":"部落影集","maintainers":["TonyRL"],"location":"tribe-set.ts"}' :test='undefined' />
 
 ## 8KCosplay <Site url="8kcosplay.com"/>
 
