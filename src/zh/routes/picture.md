@@ -235,13 +235,13 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ## 国家地理 <Site url="nationalgeographic.com"/>
 
-### Unknown <Site url="nationalgeographic.com" size="sm" />
+### Daily Photo <Site url="nationalgeographic.com/photo-of-the-day/*" size="sm" />
 
-<Route namespace="natgeo" :data='{"path":"/dailyselection","name":"Unknown","maintainers":["OrangeEd1t"],"location":"dailyselection.ts"}' :test='undefined' />
+<Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture","popular"],"view":2,"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"Daily Photo","maintainers":["LogicJake","OrangeEd1t","TonyRL","pseudoyu"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' :test='{"code":0}' />
 
-### 每日一图 <Site url="nationalgeographic.com/photo-of-the-day/*" size="sm" />
+### Daily Selection <Site url="nationalgeographic.com" size="sm" />
 
-<Route namespace="natgeo" :data='{"path":"/dailyphoto","categories":["picture"],"example":"/natgeo/dailyphoto","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nationalgeographic.com/photo-of-the-day/*","nationalgeographic.com/"]}],"name":"每日一图","maintainers":["LogicJake","OrangeEd1t","TonyRL"],"url":"nationalgeographic.com/photo-of-the-day/*","location":"dailyphoto.ts"}' :test='{"code":0}' />
+<Route namespace="natgeo" :data='{"path":"/dailyselection","name":"Daily Selection","categories":["picture"],"view":2,"example":"/natgeo/dailyselection","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false},"radar":[{"source":["nationalgeographic.com/"]}],"maintainers":["OrangeEd1t","pseudoyu"],"location":"dailyselection.ts"}' :test='undefined' />
 
 ## 极品性感美女 <Site url="www.jpxgmn.com"/>
 
