@@ -61,6 +61,14 @@ For more information about LMU and their job offerings, visit their official web
 
 RSS feed for LMU academic staff job openings.
 
+## ncku 
+
+### CSIE News 
+
+<Route namespace="ncku" :data='{"zh-TW":{"name":"國立成功大學資訊系公告","description":"可用分類：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs"},"name":"CSIE News","description":"Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs","path":"/csie/:catagory?","categories":["university"],"example":"/ncku/csie/normal","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.csie.ncku.edu.tw/zh-hant/news/:catagory?/","www.csie.ncku.edu.tw/en/news/:catagory?/"],"target":"/zh-hant/:catagory"}],"maintainers":["simbafs"],"location":"csie.ts"}' :test='undefined' />
+
+Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs
+
 ## Nanjing University of the Arts 南京艺术学院 <Site url="index.nua.edu.cn"/>
 
 ### Graduate Institute <Site url="index.nua.edu.cn" size="sm" />
