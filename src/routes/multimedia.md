@@ -1096,13 +1096,47 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ## 乳首ふぇち <Site url="chikubi.jp"/>
 
+:::tip
+The content of 乳首ふぇち is divided into two parts:
+
+Works: Only reposts official product descriptions.
+Posts: Contains the website author's thoughts and additional information.
+
+Sometimes a product may exist in both posts and works.
+Sometimes there might be only a single post without any reposted work, and vice versa.
+:::
+
+### AVメーカー <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/nipple-video-maker/:keyword","categories":["multimedia"],"example":"/chikubi/nipple-video-maker/nipple-video-maker-nh","parameters":{"keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"AVメーカー","maintainers":["SnowAgar25"],"radar":[{"title":"AVメーカー","source":["chikubi.jp/nipple-video-maker/:keyword"],"target":"/nipple-video-maker/:keyword"}],"location":"nipple-video-maker.ts"}' :test='undefined' />
+
 ### Category <Site url="chikubi.jp" size="sm" />
 
-<Route namespace="chikubi" :data='{"path":"/:category?","categories":["multimedia"],"example":"/chikubi","parameters":{"category":"分類，見下表，默認爲最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["snowagar25"],"description":"| 最新 | 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG |\n  | ------ | ---- | ----- | -- | ----- | ----- | -- |\n  | (empty) | best | video | vr | comic | voice | cg |","radar":[{"source":["chikubi.jp/:category","chikubi.jp/"],"target":"/:category"}],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="chikubi" :data='{"path":"/category/:keyword","categories":["multimedia"],"example":"/chikubi/category/nipple-lesbian","parameters":{"keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["SnowAgar25"],"radar":[{"title":"Category","source":["chikubi.jp/category/:keyword"],"target":"/category/:keyword"}],"location":"category.ts"}' :test='undefined' />
 
-| 最新 | 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG |
-  | ------ | ---- | ----- | -- | ----- | ----- | -- |
-  | (empty) | best | video | vr | comic | voice | cg |
+### Navigation <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/:keyword","categories":["multimedia"],"example":"/chikubi","parameters":{"keyword":"導覽列，見下表，默認爲最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Navigation","maintainers":["SnowAgar25"],"description":"| 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG・イラスト |\n  | ---- | ----- | -- | ----- | ----- | -- |\n  | best | video | vr | comic | voice | cg |","location":"navigation.ts"}' :test='undefined' />
+
+| 殿堂 | 動畫 | VR | 漫畫 | 音聲 | CG・イラスト |
+  | ---- | ----- | -- | ----- | ----- | -- |
+  | best | video | vr | comic | voice | cg |
+
+### Search <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/search/:keyword","categories":["multimedia"],"example":"/chikubi/search/ギャップ","parameters":{"keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["SnowAgar25"],"location":"search.ts"}' :test='undefined' />
+
+### Tag <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/tag/:keyword","categories":["multimedia"],"example":"/chikubi/tag/ドリームチケット","parameters":{"keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["SnowAgar25"],"radar":[{"title":"Tag","source":["chikubi.jp/tag/:keyword"],"target":"/tag/:keyword"}],"location":"tag.ts"}' :test='undefined' />
+
+### 動画カテゴリー <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/nipple-video-category/:keyword","categories":["multimedia"],"example":"/chikubi/nipple-video-category/cat-nipple-video-god","parameters":{"keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"動画カテゴリー","maintainers":["SnowAgar25"],"radar":[{"title":"動画カテゴリー","source":["chikubi.jp/nipple-video-category/:keyword"],"target":"/nipple-video-category/:keyword"}],"location":"nipple-video-category.ts"}' :test='undefined' />
+
+### 最新記事 <Site url="chikubi.jp" size="sm" />
+
+<Route namespace="chikubi" :data='{"path":"/","categories":["multimedia"],"example":"/chikubi","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新記事","maintainers":["SnowAgar25"],"radar":[{"title":"最新記事","source":["chikubi.jp/"],"target":"/"},{"title":"殿堂","source":["chikubi.jp/best-nipple-article"],"target":"/best"},{"title":"動畫","source":["chikubi.jp/nipple-video"],"target":"/video"},{"title":"VR","source":["chikubi.jp/nipple-video-category/cat-nipple-video-vr"],"target":"/vr"},{"title":"漫畫","source":["chikubi.jp/comic"],"target":"/comic"},{"title":"音聲","source":["chikubi.jp/voice"],"target":"/voice"},{"title":"CG・イラスト","source":["chikubi.jp/cg"],"target":"/cg"}],"location":"index.ts"}' :test='undefined' />
 
 ## 色花堂 <Site url="sehuatang.net"/>
 
