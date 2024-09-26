@@ -102,6 +102,10 @@
 
 <Route namespace="deepin" :data='{"path":"/homepage/:user_id","categories":["bbs"],"example":"/deepin/homepage/78326","parameters":{"user_id":"user id"},"name":"BBS Home Page","maintainers":["tensor-tech"],"radar":[{"source":["bbs.deepin.org/user/:user_id"],"target":"/homepage/:user_id"}],"location":"homepage.ts"}' :test='{"code":0}' />
 
+### 首页主题列表 <Site url="bbs.deepin.org" size="sm" />
+
+<Route namespace="deepin" :data='{"path":"/threads/:type?","categories":["bbs"],"example":"/deepin/threads/latest","parameters":{"type":{"description":"主题类型","options":[{"value":"hot","label":"最热主题"},{"value":"latest","label":"最新主题"}]}},"name":"首页主题列表","maintainers":["myml"],"radar":[{"source":["bbs.deepin.org"],"target":"/threads/latest"}],"location":"thread.ts"}' :test='undefined' />
+
 ## Discourse 
 
 :::warning
