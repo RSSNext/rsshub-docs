@@ -65,7 +65,7 @@ RSS feed for LMU academic staff job openings.
 
 ### CSIE News <Site url="ncku.edu.tw" size="sm" />
 
-<Route namespace="ncku" :data='{"zh-TW":{"name":"國立成功大學資訊系公告","description":"可用分類：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs"},"name":"CSIE News","description":"Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs","path":"/csie/:catagory?","categories":["university"],"example":"/ncku/csie/normal","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.csie.ncku.edu.tw/zh-hant/news/:catagory?/","www.csie.ncku.edu.tw/en/news/:catagory?/"],"target":"/zh-hant/:catagory"}],"maintainers":["simbafs"],"location":"csie.ts"}' :test='{"code":0}' />
+<Route namespace="ncku" :data='{"zh-TW":{"name":"國立成功大學資訊系公告","description":"可用分類：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs"},"name":"CSIE News","description":"Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs","path":"/csie/:catagory?","categories":["university"],"example":"/ncku/csie/normal","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.csie.ncku.edu.tw/zh-hant/news/"],"target":"/csie/_all"},{"source":["www.csie.ncku.edu.tw/zh-hant/news/:catagory"],"target":"/csie/:catagory"}],"maintainers":["simbafs"],"location":"csie.ts"}' :test='{"code":0}' />
 
 Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs
 
