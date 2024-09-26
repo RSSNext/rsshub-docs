@@ -503,7 +503,7 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 
 <Route namespace="cdu" :data='{"path":"/jwgg","categories":["university"],"example":"/cdu/jwgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.cdu.edu.cn/"]}],"name":"教务处通知公告","maintainers":["uuwor"],"url":"jw.cdu.edu.cn/","location":"jwgg.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 262)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
-## 电子科技大学 <Site url="gr.uestc.edu.cn"/>
+## 电子科技大学 <Site url="www.uestc.edu.cn"/>
 
 ### 计算机科学与工程学院 <Site url="scse.uestc.edu.cn/" size="sm" />
 
@@ -516,6 +516,18 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 | 重要公告  | 学生事务公告 | 教师事务公告 | 教学新闻 | 办公室 |
   | --------- | ------------ | ------------ | -------- | ------ |
   | important | student      | teacher      | teach    | office |
+
+### 清水河畔 <Site url="bbs.uestc.edu.cn" size="sm" />
+
+<Route namespace="uestc" :data='{"path":"/bbs/:types?","name":"清水河畔","maintainers":["huyyi"],"categories":["university"],"url":"bbs.uestc.edu.cn","example":"/uestc/bbs/newthread","parameters":{"types":"选择内容类型(多选`,`分割），可选值：[newreply,newthread,digest,life,hotlist]。默认为所有。"},"features":{"requireConfig":[{"name":"UESTC_BBS_COOKIE","optional":false,"description":"河畔的cookie"},{"name":"UESTC_BBS_AUTH_KEY","optional":false,"description":"河畔Header中的authorization字段"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"\n:::tip\n仅支持自建，您需要设置以下配置才能正常使用：\n-   河畔cookie: `UESTC_BBS_COOKIE`\n-   Header中的授权字段: `UESTC_BBS_AUTH_KEY`\n:::\n","radar":[{"source":["bbs.uestc.edu.cn/*"],"target":"/bbs/newthread"}],"location":"bbs.ts"}' :test='undefined' />
+
+
+:::tip
+仅支持自建，您需要设置以下配置才能正常使用：
+-   河畔cookie: `UESTC_BBS_COOKIE`
+-   Header中的授权字段: `UESTC_BBS_AUTH_KEY`
+:::
+
 
 ### 文化素质教育中心 <Site url="cqe.uestc.edu.cn/" size="sm" />
 
