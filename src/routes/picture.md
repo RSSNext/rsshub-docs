@@ -146,6 +146,18 @@ Type
 
 <Route namespace="google" :data='{"path":"/doodles/:language?","categories":["picture"],"example":"/google/doodles/zh-CN","parameters":{"language":"Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Update","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":0}' />
 
+## Konachan.com Anime Wallpapers <Site url="konachan.com"/>
+
+konachan post
+
+### Popular Recent Posts <Site url="konachan.com" size="sm" />
+
+<Route namespace="konachan" :data='{"path":"/post/popular_recent/:period?","categories":["picture"],"example":"/konachan/post/popular_recent/1d","parameters":{"period":"展示时间"},"radar":[{"source":["konachan.com/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='undefined' />
+
+| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
+  | ------- | -------- | ------- | -------- |
+  | 1d | 1w | 1m | 1y |
+
 ## MM 范 <Site url="95mm.org"/>
 
 ### 标签 <Site url="95mm.org/" size="sm" />

@@ -342,11 +342,11 @@ yande post
 
 ### posts <Site url="yande.re" size="sm" />
 
-<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["anime"],"example":"/yande/post/popular_recent/1d","parameters":{"period":"展示时间"},"radar":[{"source":["yande.re/post/"]}],"name":"posts","maintainers":["fashioncj"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | \n  | ------- | -------- | ------- | -------- | \n  | 1d | 1w | 1m ｜1y｜","location":"post.ts"}' :test='{"code":0}' />
+<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["anime"],"example":"/yande/post/popular_recent/1d","parameters":{"period":"展示时间"},"radar":[{"source":["yande.re/post/"]}],"name":"posts","maintainers":["fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | \n  | ------- | -------- | ------- | -------- | \n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
 
 | 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | 
   | ------- | -------- | ------- | -------- | 
-  | 1d | 1w | 1m ｜1y｜
+  | 1d | 1w | 1m | 1y |
 
 ## 俺の 3D エロ動画 (oreno3d) <Site url="oreno3d.com"/>
 
