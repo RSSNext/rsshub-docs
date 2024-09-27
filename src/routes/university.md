@@ -61,13 +61,32 @@ For more information about LMU and their job offerings, visit their official web
 
 RSS feed for LMU academic staff job openings.
 
-## National Cheng Kung University <Site url="ncku.edu.tw"/>
+## National Cheng Kung University <Site url="www.ncku.edu.tw"/>
 
-### CSIE News <Site url="ncku.edu.tw" size="sm" />
+### CSIE News <Site url="www.ncku.edu.tw" size="sm" />
 
 <Route namespace="ncku" :data='{"zh-TW":{"name":"國立成功大學資訊系公告","description":"可用分類：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs"},"name":"CSIE News","description":"Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs","path":"/csie/:catagory?","categories":["university"],"example":"/ncku/csie/normal","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.csie.ncku.edu.tw/zh-hant/news/"],"target":"/csie/_all"},{"source":["www.csie.ncku.edu.tw/zh-hant/news/:catagory"],"target":"/csie/:catagory"}],"maintainers":["simbafs"],"location":"csie.ts"}' :test='{"code":0}' />
 
 Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeches, awards, scholarship, jobs
+
+### Phys News <Site url="www.ncku.edu.tw" size="sm" />
+
+<Route namespace="ncku" :data='{"zh-TW":{"name":"國立成功大學物理系公告"},"name":"Phys News","description":"| 分類 | catagory |\n| 物理系 | 24 |\n| 獎助學金 | scholarship |\n| 招生與錄取報到 | admission |\n| 助教公告 | course-announcement |\n| 大學部 | bachelor-announcement |\n| 研究所 | master-announcement |\n| 畢業離校 | graduation |\n| 學生手冊與新生入學 | student-guide |\n| 榮譽榜 | honor |\n| 求才公告 | career |\n| 其他 | others |\n| 所有訊息 | _all |\n","path":"/phys/:catagory?","parameters":{"catagory":"catagory, default is _all"},"categories":["university"],"example":"/ncku/phys/_all","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["phys.ncku.edu.tw/news/"],"target":"/phys/_all"},{"source":["phys.ncku.edu.tw/news/:catagory/"],"target":"/phys/:catagory"}],"maintainers":["simbafs"],"location":"phys.ts"}' :test='undefined' />
+
+| 分類 | catagory |
+| 物理系 | 24 |
+| 獎助學金 | scholarship |
+| 招生與錄取報到 | admission |
+| 助教公告 | course-announcement |
+| 大學部 | bachelor-announcement |
+| 研究所 | master-announcement |
+| 畢業離校 | graduation |
+| 學生手冊與新生入學 | student-guide |
+| 榮譽榜 | honor |
+| 求才公告 | career |
+| 其他 | others |
+| 所有訊息 | _all |
+
 
 ## Nanjing University of the Arts 南京艺术学院 <Site url="index.nua.edu.cn"/>
 
