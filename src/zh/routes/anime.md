@@ -352,18 +352,6 @@ Sources
 
 <Route namespace="xmanhua" :data='{"path":"/:uid","categories":["anime"],"example":"/xmanhua/73xm","parameters":{"uid":"漫画 id,在浏览器中可见，例如鬼灭之刃对应的 id 为 `73xm`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xmanhua.com/:uid"]}],"name":"最新动态","maintainers":["Ye11"],"location":"index.ts"}' :test='{"code":0}' />
 
-## yande <Site url="yande.re"/>
-
-yande post
-
-### posts <Site url="yande.re" size="sm" />
-
-<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["anime"],"example":"/yande/post/popular_recent/1d","parameters":{"period":"展示时间"},"radar":[{"source":["yande.re/post/"]}],"name":"posts","maintainers":["fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | \n  | ------- | -------- | ------- | -------- | \n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
-
-| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     | 
-  | ------- | -------- | ------- | -------- | 
-  | 1d | 1w | 1m | 1y |
-
 ## 俺の 3D エロ動画 (oreno3d) <Site url="oreno3d.com"/>
 
 :::tip

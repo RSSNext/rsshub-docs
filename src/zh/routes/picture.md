@@ -267,6 +267,18 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
   The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)
   :::
 
+## yande.re <Site url="yande.re"/>
+
+yande post
+
+### Popular Recent Posts <Site url="yande.re" size="sm" />
+
+<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["picture"],"example":"/yande/post/popular_recent/1d","parameters":{"period":"展示时间"},"radar":[{"source":["yande.re/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","SettingDust","fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
+
+| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
+  | ------- | -------- | ------- | -------- |
+  | 1d | 1w | 1m | 1y |
+
 ## 北京天文馆 <Site url="bjp.org.cn"/>
 
 ### 每日一图 <Site url="bjp.org.cn/APOD/today.shtml" size="sm" />
