@@ -2467,6 +2467,16 @@ category 参数可选，范围如下:
   | -------- | ---- | -------- | ------------ | ------------ | -------- | ---------- |
   | 3157     | 3187 | 3188     | 3185         | 3186         | 3199     | 3200       |
 
+## 园岭小学 <Site url="ylxx.szftedu.cn"/>
+
+### 动态 <Site url="ylxx.szftedu.cn" size="sm" />
+
+<Route namespace="szftedu" :data='{"path":"/dongtai","categories":["university"],"example":"/szftedu/dongtai","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"动态","maintainers":["valuex"],"description":"","location":"dongtai.ts"}' :test='undefined' />
+
+### 公告 <Site url="ylxx.szftedu.cn" size="sm" />
+
+<Route namespace="szftedu" :data='{"path":"/gonggao","categories":["university"],"example":"/szftedu/gonggao","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["valuex"],"description":"","location":"gonggao.ts"}' :test='undefined' />
+
 ## 浙江中医药大学 <Site url="jwc.zcmu.edu.cn"/>
 
 ### 教务处 <Site url="jwc.zcmu.edu.cn" size="sm" />
