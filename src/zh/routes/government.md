@@ -376,14 +376,6 @@ Language
 
 ### Unknown <Site url="sh.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":["/moa/sjzxfb/:category{.+}?","/moa/zdscxx/:category{.+}?"],"name":"Unknown","maintainers":[],"location":"moa/zdscxx.ts"}' :test='undefined' />
-
-### Unknown <Site url="sh.gov.cn" size="sm" />
-
-<Route namespace="gov" :data='{"path":["/moa/sjzxfb/:category{.+}?","/moa/zdscxx/:category{.+}?"],"name":"Unknown","maintainers":[],"location":"moa/zdscxx.ts"}' :test='undefined' />
-
-### Unknown <Site url="sh.gov.cn" size="sm" />
-
 <Route namespace="gov" :data='{"path":"/mofcom/article/:suffix{.+}","name":"Unknown","maintainers":[],"location":"mofcom/article.ts"}' :test='undefined' />
 
 ### Unknown <Site url="sh.gov.cn" size="sm" />
@@ -1349,13 +1341,31 @@ Language
 
 ### 中华人民共和国农业农村部 - 新闻 <Site url="moa.gov.cn/" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/moa/:suburl{.+}","categories":["government"],"example":"/gov/moa/gk/zcjd/","radar":[{"source":["moa.gov.cn/"],"target":"/moa/:suburl"}],"parameters":{"suburl":"下级目录，请使用最下级的目录"},"name":"中华人民共和国农业农村部 - 新闻","maintainers":["Origami404","lyqluis"],"url":"moa.gov.cn/","description":"更多例子：\n  -   `农业农村部动态`的网页链接是`http://www.moa.gov.cn/xw/zwdt/`, 对应的`suburl`是`xw/zwdt`\n  -   `财务公开`的网页链接是`http://www.moa.gov.cn/gk/cwgk_1/`, 对应的`suburl`是`gk/cwgk_1`\n  -   像[政策法规](http://www.moa.gov.cn/gk/zcfg/)这种页面(`http://www.moa.gov.cn/gk/zcfg/`), 它**不是**一个合法的分类目录，它是`法律`, `行政法规`, `部门规章`等一堆栏目的集合，这时候请点开对应栏目的`更多 >>`进入栏目的最下级目录，再根据上面的规则提取`suburl`\n  -   特别地，`图片新闻`对应的`suburl`为`xw/tpxw/`, `最新公开`对应的`suburl`为`govpublic`, `数据>最新发布`对应的`suburl`为`sj/zxfb`","location":"moa/moa.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
+<Route namespace="gov" :data='{"path":"/moa/suburl/:suburl{.+}","categories":["government"],"example":"/gov/moa/suburl/gk/zcjd/","radar":[{"source":["moa.gov.cn/"],"target":"/moa/suburl/:suburl"}],"parameters":{"suburl":"下级目录，请使用最下级的目录"},"name":"中华人民共和国农业农村部 - 新闻","maintainers":["Origami404","lyqluis"],"url":"moa.gov.cn/","description":"更多例子：\n  -   `农业农村部动态`的网页链接是`http://www.moa.gov.cn/xw/zwdt/`, 对应的`suburl`是`xw/zwdt`\n  -   `财务公开`的网页链接是`http://www.moa.gov.cn/gk/cwgk_1/`, 对应的`suburl`是`gk/cwgk_1`\n  -   像[政策法规](http://www.moa.gov.cn/gk/zcfg/)这种页面(`http://www.moa.gov.cn/gk/zcfg/`), 它**不是**一个合法的分类目录，它是`法律`, `行政法规`, `部门规章`等一堆栏目的集合，这时候请点开对应栏目的`更多 >>`进入栏目的最下级目录，再根据上面的规则提取`suburl`\n  -   特别地，`图片新闻`对应的`suburl`为`xw/tpxw/`, `最新公开`对应的`suburl`为`govpublic`, `数据>最新发布`对应的`suburl`为`sj/zxfb`","location":"moa/moa.ts"}' :test='undefined' />
 
 更多例子：
   -   `农业农村部动态`的网页链接是`http://www.moa.gov.cn/xw/zwdt/`, 对应的`suburl`是`xw/zwdt`
   -   `财务公开`的网页链接是`http://www.moa.gov.cn/gk/cwgk_1/`, 对应的`suburl`是`gk/cwgk_1`
   -   像[政策法规](http://www.moa.gov.cn/gk/zcfg/)这种页面(`http://www.moa.gov.cn/gk/zcfg/`), 它**不是**一个合法的分类目录，它是`法律`, `行政法规`, `部门规章`等一堆栏目的集合，这时候请点开对应栏目的`更多 >>`进入栏目的最下级目录，再根据上面的规则提取`suburl`
   -   特别地，`图片新闻`对应的`suburl`为`xw/tpxw/`, `最新公开`对应的`suburl`为`govpublic`, `数据>最新发布`对应的`suburl`为`sj/zxfb`
+
+### 中华人民共和国农业农村部生猪专题重要政策 <Site url="www.moa.gov.cn" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/moa/szcpxx","name":"中华人民共和国农业农村部生猪专题重要政策","url":"www.moa.gov.cn","maintainers":["nczitzk"],"example":"/gov/moa/szcpxx","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.moa.gov.cn/ztzl/szcpxx/zyzc/index.htm"],"target":"/moa/szcpxx"}],"location":"moa/szcpxx.ts"}' :test='undefined' />
+
+### 中华人民共和国农业农村部数据 <Site url="www.moa.gov.cn" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/moa/zdscxx/:category{.+}?","name":"中华人民共和国农业农村部数据","url":"www.moa.gov.cn","maintainers":["nczitzk"],"example":"/gov/moa/zdscxx","parameters":{"category":"分类，默认为全部，见下表"},"description":":::tip\n  若订阅 [中华人民共和国农业农村部数据](http://zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp) 的 `价格指数` 报告主题。此时路由为 [`/gov/moa/zdscxx/价格指数`](https://rsshub.app/gov/moa/zdscxx/价格指数)。\n  \n  若订阅 `央视网` 报告来源 的 `蔬菜生产` 报告主题。此时路由为 [`/gov/moa/zdscxx/央视网/蔬菜生产`](https://rsshub.app/gov/moa/zdscxx/央视网/蔬菜生产)。\n  :::\n\n  | 价格指数 | 供需形势 | 分析报告周报 | 分析报告日报 | 日历信息 | 蔬菜生产 |\n  | -------- | -------- | ------------ | ------------ | -------- | -------- |\n    ","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"价格指数","source":["zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp"],"target":"/gov/moa/zdscxx/价格指数"},{"title":"供需形势","source":["zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp"],"target":"/gov/moa/zdscxx/供需形势"},{"title":"分析报告周报","source":["zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp"],"target":"/gov/moa/zdscxx/分析报告周报"},{"title":"分析报告日报","source":["zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp"],"target":"/gov/moa/zdscxx/分析报告日报"},{"title":"日历信息","source":["zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp"],"target":"/gov/moa/zdscxx/日历信息"},{"title":"蔬菜生产","source":["zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp"],"target":"/gov/moa/zdscxx/蔬菜生产"}],"location":"moa/zdscxx.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [中华人民共和国农业农村部数据](http://zdscxx.moa.gov.cn:8080/nyb/pc/messageList.jsp) 的 `价格指数` 报告主题。此时路由为 [`/gov/moa/zdscxx/价格指数`](https://rsshub.app/gov/moa/zdscxx/价格指数)。
+  
+  若订阅 `央视网` 报告来源 的 `蔬菜生产` 报告主题。此时路由为 [`/gov/moa/zdscxx/央视网/蔬菜生产`](https://rsshub.app/gov/moa/zdscxx/央视网/蔬菜生产)。
+  :::
+
+  | 价格指数 | 供需形势 | 分析报告周报 | 分析报告日报 | 日历信息 | 蔬菜生产 |
+  | -------- | -------- | ------------ | ------------ | -------- | -------- |
+    
 
 ### 中华人民共和国交通运输部 <Site url="sh.gov.cn" size="sm" />
 
