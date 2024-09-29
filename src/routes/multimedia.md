@@ -802,6 +802,12 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
 <Route namespace="soundon" :data='{"path":"/p/:id","categories":["multimedia"],"example":"/soundon/p/33a68cdc-18ad-4192-84cc-22bd7fdc6a31","parameters":{"id":"Podcast ID"},"features":{"supportPodcast":true},"radar":[{"source":["player.soundon.fm/p/:id"]}],"name":"Podcast","maintainers":["TonyRL"],"view":4,"location":"podcast.ts"}' :test='{"code":0}' />
 
+## SpankBang <Site url="spankbang.com"/>
+
+### New Porn Videos <Site url="spankbang.com" size="sm" />
+
+<Route namespace="spankbang" :data='{"path":"/new_videos","categories":["multimedia"],"example":"/spankbang/new_videos","name":"New Porn Videos","maintainers":["TonyRL"],"features":{"antiCrawler":true},"radar":[{"source":["spankbang.com/new_videos/","spankbang.com/"]}],"location":"new-videos.ts"}' :test='undefined' />
+
 ## Spotify <Site url="open.spotify.com"/>
 
 ### Artist Albums <Site url="open.spotify.com" size="sm" />
