@@ -657,6 +657,16 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
   See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
   :::
 
+## Javtiful <Site url="javtiful.com"/>
+
+### Actress <Site url="javtiful.com" size="sm" />
+
+<Route namespace="javtiful" :data='{"path":"/actress/:id","name":"Actress","maintainers":["huanfe1"],"example":"/javtiful/actress/akari-tsumugi","parameters":{"id":"Actress name"},"categories":["multimedia"],"radar":[{"source":["javtiful.com/actress/:id","javtiful.com/actress/:id/*"],"target":"/actress/:id"}],"location":"actress.ts"}' :test='undefined' />
+
+### Channel <Site url="javtiful.com" size="sm" />
+
+<Route namespace="javtiful" :data='{"path":"/channel/:id","name":"Channel","maintainers":["huanfe1"],"example":"/javtiful/channel/madonna","parameters":{"id":"Channel name"},"categories":["multimedia"],"radar":[{"source":["javtiful.com/channel/:id","javtiful.com/channel/:id/*"],"target":"/channel/:id"}],"location":"channel.ts"}' :test='undefined' />
+
 ## ManyVids <Site url="www.manyvids.com"/>
 
 ### Creator Videos <Site url="www.manyvids.com" size="sm" />
