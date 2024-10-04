@@ -596,6 +596,12 @@ Filter parameters:
 
 <Route namespace="researchgate" :data='{"path":"/publications/:id","radar":[{"source":["researchgate.net/profile/:username"],"target":"/publications/:username"}],"name":"Unknown","maintainers":[],"location":"publications.ts"}' :test='undefined' />
 
+## Resonac <Site url="www.resonac.com"/>
+
+### Products <Site url="www.resonac.com" size="sm" />
+
+<Route namespace="resonac" :data='{"path":"/products","categories":["other"],"example":"/resonac/products","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Products","maintainers":["valuex"],"description":"","location":"products.ts"}' :test='undefined' />
+
 ## Radio France Internationale 法国国际广播电台 <Site url="rfi.fr"/>
 
 ### Unknown <Site url="rfi.fr/*path" size="sm" />
