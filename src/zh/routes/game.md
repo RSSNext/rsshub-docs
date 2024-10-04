@@ -434,6 +434,12 @@ Region
   | ---- | ------------ | ---- | ---- | ---- |
   | na   | eu           | fr   | de   | jp   |
 
+## KISS <Site url="www.kisskiss.tv"/>
+
+### ブログ <Site url="www.kisskiss.tv" size="sm" />
+
+<Route namespace="kisskiss" :data='{"path":"/blog/:category?","categories":["game"],"example":"/blog/DLC","parameters":{"category":"category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.kisskiss.tv/kiss/diary.php"],"target":"/blog"}],"name":"ブログ","maintainers":["keocheung"],"location":"blog.ts"}' :test='undefined' />
+
 ## Liquipedia <Site url="liquipedia.net"/>
 
 ### Dota2 战队最近比赛结果 <Site url="liquipedia.net" size="sm" />
