@@ -354,6 +354,12 @@ p-articles provides some official RSS feeds:
 
 <Route namespace="yilinzazhi" :data='{"path":"/","categories":["reading"],"example":"/yilinzazhi","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"文章列表","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
 
+## 中文成人文學網 <Site url="www.xbookcn.net"/>
+
+### 短篇 <Site url="www.xbookcn.net" size="sm" />
+
+<Route namespace="xbookcn" :data='{"path":"/:label?","categories":["reading"],"example":"/xbookcn/精选作品","parameters":{"label":"按名称分类，详见https://blog.xbookcn.net/p/all.html"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"短篇","maintainers":["Lyunvy"],"location":"blog.ts"}' :test='undefined' />
+
 ## カクヨム <Site url="kakuyomu.jp"/>
 
 ### 投稿 <Site url="kakuyomu.jp" size="sm" />
