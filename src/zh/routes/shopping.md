@@ -484,7 +484,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 小米众筹 <Site url="mi.com" size="sm" />
 
-<Route namespace="mi" :data='{"path":"/crowdfunding","categories":["shopping"],"example":"/mi/crowdfunding","name":"小米众筹","maintainers":["DIYgod"],"location":"crowdfunding.ts"}' :test='{"code":0}' />
+<Route namespace="mi" :data='{"path":"/crowdfunding","categories":["shopping"],"example":"/mi/crowdfunding","name":"小米众筹","maintainers":["DIYgod","nuomi1"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.mi.com/crowdfunding/home"],"target":"/crowdfunding"}],"view":5,"location":"crowdfunding.ts"}' :test='{"code":0}' />
 
 ## 小米有品 <Site url="xiaomiyoupin.com"/>
 
