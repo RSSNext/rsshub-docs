@@ -137,6 +137,11 @@ const instances = [{
     location: '🇹🇼',
     maintainer: 'HaruoWang',
     maintainerUrl: 'https://github.com/HaruoWang'
+  }, {
+    url: 'https://rss.dk.work.gd',
+    location: '🇰🇷',
+    maintainer: 'luca',
+    maintainerUrl: 'https://github.com/LucaLq',
   }
 ]
 
