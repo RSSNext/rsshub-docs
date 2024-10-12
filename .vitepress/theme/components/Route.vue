@@ -30,7 +30,6 @@
         {{ demoUrl }}
       </a>
       <CopyButton :text="demoUrl" />
-      <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(demoUrl)}&cacheSeconds=7200`" />
     </p>
     <p class="path">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}<CopyButton :text="`/${namespace}${data.path}`" />

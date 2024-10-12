@@ -33,40 +33,15 @@ const instances = [{
     maintainer: 'Stille',
     maintainerUrl: 'https://www.ioiox.com',
   }, {
-    url: 'https://rsshub.feeded.xyz',
-    location: '🇺🇸',
-    maintainer: '胜之不易',
-    maintainerUrl: 'https://uneasy.win',
-  }, {
     url: 'https://hub.slarker.me',
     location: '🇺🇸',
     maintainer: 'Slarker',
     maintainerUrl: 'https://slarker.me',
   }, {
-    url: 'https://rsshub.liumingye.cn',
-    location: '🇭🇰',
-    maintainer: '刘明野',
-    maintainerUrl: 'https://www.liumingye.cn',
-  }, {
-    url: 'https://rsshub-instance.zeabur.app',
-    location: '🇺🇸',
-    maintainer: 'Zeabur',
-    maintainerUrl: 'https://zeabur.com',
-  }, {
-    url: 'https://rss.fatpandac.com',
-    location: '🇺🇸',
-    maintainer: 'Fatpandac',
-    maintainerUrl: 'https://fatpandac.com',
-  }, {
     url: 'https://rsshub.pseudoyu.com',
     location: '🇺🇸',
     maintainer: 'pseudoyu',
     maintainerUrl: 'https://www.pseudoyu.com',
-  }, {
-    url: 'https://rsshub.atgw.io',
-    location: '🇺🇸',
-    maintainer: 'limfoo',
-    maintainerUrl: 'https://blog.limfoo.io',
   }, {
     url: 'https://rsshub.rss.tips',
     location: '🇺🇸',
@@ -83,11 +58,6 @@ const instances = [{
     maintainer: 'untitaker',
     maintainerUrl: 'https://github.com/untitaker',
   }, {
-    url: 'https://rsshub.aierliz.xyz',
-    location: '🇺🇸',
-    maintainer: '麦当狗',
-    maintainerUrl: 'https://t.me/rsshub/281479',
-  }, {
     url: 'https://rss.owo.nz',
     location: '🇩🇪',
     maintainer: 'Vincent Yang',
@@ -102,11 +72,6 @@ const instances = [{
     location: '🇯🇵',
     maintainer: '仰止',
     maintainerUrl: 'https://yangzhi.org',
-  }, {
-    url: 'https://rsshub.viki.moe',
-    location: '🇺🇸',
-    maintainer: 'Viki',
-    maintainerUrl: 'https://github.com/vikiboss',
   }, {
     url: 'https://rss.littlebaby.lol/rsshub',
     location: '🇺🇸',
@@ -127,16 +92,6 @@ const instances = [{
     location: '🇭🇰',
     maintainer: 'freeintweb',
     maintainerUrl: 'https://github.com/freeintweb',
-  }, {
-    url: 'https://rss.mhdy.site',
-    location: '🇺🇸',
-    maintainer: '魔皇地狱',
-    maintainerUrl: 'https://github.com/mhdy2233'
-  }, {
-    url: 'https://rsshw.win',
-    location: '🇹🇼',
-    maintainer: 'HaruoWang',
-    maintainerUrl: 'https://github.com/HaruoWang'
   }
 ]
 
