@@ -101,6 +101,10 @@ Category
 
 ## UK Parliament <Site url="parliament.uk"/>
 
+### Commonlibrary <Site url="parliament.uk" size="sm" />
+
+<Route namespace="parliament.uk" :data='{"path":"/commonslibrary/type/:topic?","categories":["government"],"example":"/parliament.uk/commonslibrary/type/research-briefing","parameters":{"topic":"research by topic, string, example: [research-briefing|data-dashboard]"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Commonlibrary","maintainers":["AntiKnot"],"location":"commonslibrary.ts"}' :test='undefined' />
+
 ### House of Lords Library <Site url="parliament.uk" size="sm" />
 
 <Route namespace="parliament.uk" :data='{"path":"/lordslibrary/type/:topic?","categories":["government"],"example":"/parliament.uk/lordslibrary/type/research-briefing","parameters":{"topic":"research by topic, string, example: [research-briefing|buisness|economy]"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"House of Lords Library","maintainers":["AntiKnot"],"location":"lordslibrary.ts"}' :test='undefined' />
