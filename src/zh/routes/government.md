@@ -99,6 +99,12 @@ Category
 
 <Route namespace="whitehouse" :data='{"path":"/ostp","categories":["government"],"example":"/whitehouse/ostp","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["whitehouse.gov/ostp","whitehouse.gov/"]}],"name":"Office of Science and Technology Policy","maintainers":["LyleLee"],"url":"whitehouse.gov/ostp","location":"ostp.ts"}' :test='{"code":0}' />
 
+## UK Parliament <Site url="parliament.uk"/>
+
+### House of Lords Library <Site url="parliament.uk" size="sm" />
+
+<Route namespace="parliament.uk" :data='{"path":"/lordslibrary/type/:topic?","categories":["government"],"example":"/parliament.uk/lordslibrary/type/research-briefing","parameters":{"topic":"research by topic, string, example: [research-briefing|buisness|economy]"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"House of Lords Library","maintainers":["AntiKnot"],"location":"lordslibrary.ts"}' :test='undefined' />
+
 ## World Health Organization | WHO <Site url="who.int"/>
 
 ### Newsroom <Site url="who.int/news" size="sm" />
