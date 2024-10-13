@@ -234,6 +234,12 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 <Route namespace="fanqienovel" :data='{"path":"/page/:bookId","example":"/fanqienovel/page/6621052928482348040","parameters":{"bookId":"小说 ID，可在 URL 中找到"},"maintainers":["TonyRL"],"name":"小说更新","radar":[{"source":["fanqienovel.com/page/:bookId"]}],"location":"page.ts"}' :test='{"code":0}' />
 
+## 国门传媒在线 <Site url="gmcmonline.com"/>
+
+### 中国海关 <Site url="chinacustoms.gmcmonline.com" size="sm" />
+
+<Route namespace="gmcmonline" :data='{"path":"/chinacustoms","name":"中国海关","url":"chinacustoms.gmcmonline.com","maintainers":["nczitzk"],"example":"/gmcmonline/chinacustoms","categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chinacustoms.gmcmonline.com"],"target":"/chinacustoms"}],"location":"chinacustoms.ts"}' :test='undefined' />
+
 ## 欢乐书客 <Site url="hbooker.com"/>
 
 ### 章节 <Site url="hbooker.com" size="sm" />
