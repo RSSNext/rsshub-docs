@@ -268,6 +268,14 @@ Language
 
 <Route namespace="ipsw" :data='{"path":"/index/:ptype/:pname","categories":["program-update"],"example":"/ipsw/index/ipsws/iPad8,11","parameters":{"ptype":"Fill in ipsws or otas to get different versions of firmware","pname":"Product name, `http://rsshub.app/ipsw/index/ipsws/iPod`, if you fill in the iPad, follow the entire iPad series(ptype default to ipsws).`http://rsshub.app/ipsw/index/ipsws/iPhone11,8`, if you fill in the specific iPhone11,8, submit to the ipsws firmware information of this model"},"name":"Apple Firmware Update-IPSWs/OTAs version","maintainers":["Jeason0228"],"location":"index.ts"}' :test='{"code":0}' />
 
+## IPSW.dev <Site url="ipsw.dev"/>
+
+Download the latest beta firmware for iPhone, iPad, Mac, Apple Vision Pro, and Apple TV. Check the signing status of the beta firmware.
+
+### Apple latest beta firmware <Site url="ipsw.dev" size="sm" />
+
+<Route namespace="ipsw.dev" :data='{"path":"/index/:productID","categories":["program-update"],"example":"/ipsw.dev/index/iPhone16,1","parameters":{"productID":"Product ID"},"name":"Apple latest beta firmware","maintainers":["RieN7"],"location":"index.ts"}' :test='undefined' />
+
 ## Mozilla <Site url="monitor.firefox.com"/>
 
 ### Add-ons Update <Site url="monitor.firefox.com" size="sm" />
