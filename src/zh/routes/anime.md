@@ -111,7 +111,7 @@
 
 ### Unknown <Site url="dlsite.com" size="sm" />
 
-<Route namespace="dlsite" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
+<Route namespace="dlsite" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"z-index/index.ts"}' :test='undefined' />
 
 ## Doraemon Channel <Site url="www.dora-world.com"/>
 
