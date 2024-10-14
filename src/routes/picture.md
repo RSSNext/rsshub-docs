@@ -209,6 +209,42 @@ konachan post
 
 <Route namespace="pixabay" :data='{"path":"/search/:q/:order?","categories":["picture"],"example":"/pixabay/search/cat","parameters":{"q":"Search term","order":"Order, `popular` or `latest`, `latest` by default"},"features":{"requireConfig":[{"name":"PIXABAY_KEY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pixabay.com/:searchType/search/:q"],"target":"/search/:q"}],"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":0}' />
 
+## Skeb <Site url="skeb.jp"/>
+
+### Creator Works <Site url="skeb.jp" size="sm" />
+
+<Route namespace="skeb" :data='{"path":"/works/:username","categories":["picture"],"example":"/works/@brm2_1925","parameters":{"username":"Skeb Username with @"},"features":{"requireConfig":[{"name":"SKEB_BEARER_TOKEN","optional":false,"description":"在瀏覽器開發者工具（F12）的主控台中輸入 `localStorage.getItem(\"token\")` 獲取"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Creator Works","maintainers":["SnowAgar25"],"radar":[{"title":"Creator Works","source":["skeb.jp/:username"],"target":"/works/:username"}],"description":"Get the latest works of a specific creator on Skeb","location":"works.ts"}' :test='undefined' />
+
+Get the latest works of a specific creator on Skeb
+
+### Following Creators <Site url="skeb.jp" size="sm" />
+
+<Route namespace="skeb" :data='{"path":"/following_creators/:username","categories":["picture"],"example":"/following_creators/@brm2_1925","parameters":{"username":"Skeb Username with @"},"features":{"requireConfig":[{"name":"SKEB_BEARER_TOKEN","optional":false,"description":"在瀏覽器開發者工具（F12）的主控台中輸入 `localStorage.getItem(\"token\")` 獲取"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Following Creators","maintainers":["SnowAgar25"],"radar":[{"title":"Following Creators","source":["skeb.jp/:username"],"target":"/following_creators/:username"}],"description":"Get the list of creators the specified user is following on Skeb.","location":"following-creators.ts"}' :test='undefined' />
+
+Get the list of creators the specified user is following on Skeb.
+
+### Following Works <Site url="skeb.jp" size="sm" />
+
+<Route namespace="skeb" :data='{"path":"/following_works/:username","categories":["picture"],"example":"/following_works/@brm2_1925","parameters":{"username":"Skeb Username with @"},"features":{"requireConfig":[{"name":"SKEB_BEARER_TOKEN","optional":false,"description":"在瀏覽器開發者工具（F12）的主控台中輸入 `localStorage.getItem(\"token\")` 獲取"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Following Works","maintainers":["SnowAgar25"],"radar":[{"title":"Following Works","source":["skeb.jp/:username"],"target":"/following_works/:username"}],"description":"Get the latest works for the specified user&#39;s followings on Skeb.","location":"following-works.ts"}' :test='undefined' />
+
+Get the latest works for the specified user's followings on Skeb.
+
+### Friend Works <Site url="skeb.jp" size="sm" />
+
+<Route namespace="skeb" :data='{"path":"/friend_works/:username","categories":["picture"],"example":"/friend_works/@brm2_1925","parameters":{"username":"Skeb Username with @"},"features":{"requireConfig":[{"name":"SKEB_BEARER_TOKEN","optional":false,"description":"在瀏覽器開發者工具（F12）的主控台中輸入 `localStorage.getItem(\"token\")` 獲取"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Friend Works","maintainers":["SnowAgar25"],"radar":[{"title":"Friend Works","source":["skeb.jp/:username"],"target":"/friend_works/:username"}],"description":"Get the latest requests for the specified user&#39;s followings on Skeb.","location":"friend-works.ts"}' :test='undefined' />
+
+Get the latest requests for the specified user's followings on Skeb.
+
+### Skeb <Site url="skeb.jp" size="sm" />
+
+<Route namespace="skeb" :data='{"path":"/:category","categories":["picture"],"example":"/new_art_works","parameters":{"category":"Category, the div id of the section title on the homepage. Default is new_art_works"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Skeb","maintainers":["SnowAgar25"],"radar":[{"title":"新着作品 (Illust)","source":["skeb.jp"],"target":"/new_art_works"},{"title":"新着作品 (Voice)","source":["skeb.jp"],"target":"/new_voice_works"},{"title":"新着作品 (Novel)","source":["skeb.jp"],"target":"/new_novel_works"},{"title":"新着作品 (Video)","source":["skeb.jp"],"target":"/new_video_works"},{"title":"新着作品 (Music)","source":["skeb.jp"],"target":"/new_music_works"},{"title":"新着作品 (Advice)","source":["skeb.jp"],"target":"/new_correction_works"},{"title":"新着作品 (Comic)","source":["skeb.jp"],"target":"/new_comic_works"},{"title":"人気の作品 (Popular)","source":["skeb.jp"],"target":"/popular_works"},{"title":"人気クリエイター","source":["skeb.jp"],"target":"/popular_creators"},{"title":"新着クリエイター","source":["skeb.jp"],"target":"/new_creators"}],"location":"index.ts"}' :test='undefined' />
+
+### Search Results <Site url="skeb.jp" size="sm" />
+
+<Route namespace="skeb" :data='{"path":"/search/:keyword","categories":["picture"],"example":"/search/初音ミク","parameters":{"keyword":"Search keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search Results","maintainers":["SnowAgar25"],"description":"Get the search results for works on Skeb","location":"search.ts"}' :test='undefined' />
+
+Get the search results for works on Skeb
+
 ## Voronoi <Site url="voronoiapp.com"/>
 
 ### Author Posts <Site url="voronoiapp.com" size="sm" />
