@@ -462,7 +462,7 @@ Subscribe to the content of a specific user
 
 ### Hex-Rays News <Site url="hex-rays.com/" size="sm" />
 
-<Route namespace="hex-rays" :data='{"path":"/news","categories":["programming"],"example":"/hex-rays/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hex-rays.com/","hex-rays.com/blog"]}],"name":"Hex-Rays News","maintainers":["hellodword ","TonyRL"],"url":"hex-rays.com/","location":"index.ts"}' :test='undefined' />
+<Route namespace="hex-rays" :data='{"path":"/news","categories":["programming"],"example":"/hex-rays/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hex-rays.com/","hex-rays.com/blog"]}],"name":"Hex-Rays News","maintainers":["hellodword ","TonyRL","Mas0n"],"url":"hex-rays.com/","location":"index.ts"}' :test='undefined' />
 
 ## HITCON <Site url="hitcon.org"/>
 
