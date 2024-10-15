@@ -10,6 +10,20 @@
 
 <Route namespace="bmkg" :data='{"path":"/earthquake","categories":["forecast"],"example":"/bmkg/earthquake","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bmkg.go.id/","bmkg.go.id/gempabumi-terkini.html"]}],"name":"Recent Earthquakes","maintainers":["Shinanory"],"url":"bmkg.go.id/","location":"earthquake.ts"}' :test='{"code":1,"message":"AssertionError: expected [ Array(1) ] to not include &#39;https://www.bmkg.go.id/gempabumi-terk…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.1/node_modules/chai/chai.js:1591:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 186)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.5_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.5_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.5_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.5_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
+## Hong Kong Observatory <Site url="www.hko.gov.hk"/>
+
+来自香港天文台的全球地震记录
+
+### Current Weather Report <Site url="www.weather.gov.hk/en/wxinfo/currwx/current.htm" size="sm" />
+
+<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts"}' :test='undefined' />
+
+### 全球地震資訊網 <Site url="www.hko.gov.hk" size="sm" />
+
+<Route namespace="hko" :data='{"path":"/earthquake","name":"全球地震資訊網","maintainers":["after9"],"example":"/hko/earthquake","categories":["forecast"],"description":"来自香港天文台的全球5级以上地震记录","location":"earthquake.ts"}' :test='undefined' />
+
+来自香港天文台的全球5级以上地震记录
+
 ## Outage.Report <Site url="outage.report"/>
 
 ### Report <Site url="outage.report" size="sm" />
