@@ -252,6 +252,12 @@ Supported types: Essays, Videos, and Audio.
   </details>
     
 
+### 资讯 <Site url="www.aibase.com" size="sm" />
+
+<Route namespace="aibase" :data='{"path":"/news","name":"资讯","url":"www.aibase.com","maintainers":["zreo0"],"example":"/aibase/news","description":"获取 AI 资讯列表","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.aibase.com/zh/news"],"target":"/news"}],"location":"news.ts"}' :test='undefined' />
+
+获取 AI 资讯列表
+
 ## AppleInsider <Site url="appleinsider.com"/>
 
 ### Category <Site url="appleinsider.com" size="sm" />
