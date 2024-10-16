@@ -894,6 +894,24 @@ author 列表：
 
 <Route namespace="hdu" :data='{"path":"/cs/pg","categories":["university"],"example":"/hdu/cs/pg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["computer.hdu.edu.cn/6769/list.htm"]}],"name":"计算机学院 - 研究生通知","maintainers":["legr4ndk"],"url":"computer.hdu.edu.cn/6769/list.htm","location":"cs/pg.ts"}' :test='{"code":0}' />
 
+## 合肥工业大学 <Site url="hfut.edu.cn"/>
+
+### 合肥校区通知 <Site url="hfut.edu.cn" size="sm" />
+
+<Route namespace="hfut" :data='{"path":"/hf/notice/:type?","categories":["university"],"example":"/hfut/hf/notice/tzgg","parameters":{"type":"分类，见下表（默认为 `tzgg`)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportRadar":true,"supportScihub":false},"radar":[{"source":["news.hfut.edu.cn"]}],"name":"合肥校区通知","maintainers":["batemax"],"description":"| 通知公告(https://news.hfut.edu.cn/tzgg2.htm) | 教学科研(https://news.hfut.edu.cn/tzgg2/jxky.htm) | 其他通知(https://news.hfut.edu.cn/tzgg2/qttz.htm) |\n  | ------------ | -------------- | ------------------ |\n  | tzgg         | jxky            | qttz              |","location":"hf/notice.ts"}' :test='undefined' />
+
+| 通知公告(https://news.hfut.edu.cn/tzgg2.htm) | 教学科研(https://news.hfut.edu.cn/tzgg2/jxky.htm) | 其他通知(https://news.hfut.edu.cn/tzgg2/qttz.htm) |
+  | ------------ | -------------- | ------------------ |
+  | tzgg         | jxky            | qttz              |
+
+### 宣城校区通知 <Site url="hfut.edu.cn" size="sm" />
+
+<Route namespace="hfut" :data='{"path":"/xc/notice/:type?","categories":["university"],"example":"/hfut/xc/notice/tzgg","parameters":{"type":"分类，见下表（默认为 `tzgg`)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportRadar":true,"supportScihub":false},"radar":[{"source":["xc.hfut.edu.cn"]}],"name":"宣城校区通知","maintainers":["batemax"],"description":"| 通知公告(https://xc.hfut.edu.cn/1955/list.htm) | 院系动态-工作通知(https://xc.hfut.edu.cn/gztz/list.htm) |\n  | ------------ | -------------- |\n  | tzgg         | gztz           |","location":"xc/notice.ts"}' :test='undefined' />
+
+| 通知公告(https://xc.hfut.edu.cn/1955/list.htm) | 院系动态-工作通知(https://xc.hfut.edu.cn/gztz/list.htm) |
+  | ------------ | -------------- |
+  | tzgg         | gztz           |
+
 ## 河南财政金融学院 <Site url="www.hafu.edu.cn"/>
 
 ### 河南财政金融学院 <Site url="www.hafu.edu.cn" size="sm" />
