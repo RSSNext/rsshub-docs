@@ -31,6 +31,16 @@
   最常用的几项有“通知公告_招生”、“通知公告”、“博士招生 - 招生专题”、“硕士招生 - 招生专题”。
   :::
 
+## China Jiliang University <Site url="www.cjlu.edu.cn"/>
+
+### 研究生院 <Site url="www.cjlu.edu.cn" size="sm" />
+
+<Route namespace="cjlu" :data='{"path":"/yjsy/:cate","categories":["university"],"example":"/cjlu/yjsy/yjstz","parameters":{"cate":"订阅的类型，支持 yjstz（研究生通知）和 jstz（教师通知）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"研究生通知","source":["yjsy.cjlu.edu.cn/index/yjstz/:suffix","yjsy.cjlu.edu.cn/index/yjstz.htm"],"target":"/yjsy/yjstz"},{"title":"教师通知","source":["yjsy.cjlu.edu.cn/index/jstz/:suffix","yjsy.cjlu.edu.cn/index/jstz.htm"],"target":"/yjsy/jstz"}],"name":"研究生院","maintainers":["chrisis58"],"description":"| 研究生通知 | 教师通知 |\n  | -------- | -------- |\n  | yjstz    | jstz     |","location":"yjsy/index.ts"}' :test='undefined' />
+
+| 研究生通知 | 教师通知 |
+  | -------- | -------- |
+  | yjstz    | jstz     |
+
 ## East China Normal University 华东师范大学 <Site url="ecnu.edu.cn"/>
 
 ### ACM Online-Judge contests list <Site url="acm.ecnu.edu.cn/contest/" size="sm" />
