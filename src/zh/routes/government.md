@@ -1270,21 +1270,21 @@ Language
 
 ### 浙江省人民政府-全省政府网站统一搜索 <Site url="search.zj.gov.cn/jsearchfront/search.do" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/zj/search/:websiteid?/:word/:cateid?","categories":["government"],"example":"/gov/zj/search","parameters":{"websiteid":"搜索范围-全省、各市各区、详细信息点击源网站https://www.zj.gov.cn/请求中寻找","word":"搜索关键词-默认：人才","cateid":"信息分类-默认：658（全部）","sortType":"排序类型-默认：2（按时间）"},"radar":[{"source":["search.zj.gov.cn/jsearchfront/search.do"],"target":"/zj/search/:websiteid?/:word/:cateid?"}],"name":"浙江省人民政府-全省政府网站统一搜索","url":"search.zj.gov.cn/jsearchfront/search.do","maintainers":["HaoyuLee"],"description":"\n        | 行政区域         | websiteid |\n        | ------------ | -- |\n        | 宁波市本级     | 330201000000000  |\n\n        | 搜索关键词         | word    |\n\n        | 信息分类         | cateid    |\n\n        | 排序类型         | sortType    |\n        | ------------ | -- |\n        | 按相关度     | 1  |\n        | 按时间     | 2  |\n    ","location":"zj/search.ts"}' :test='{"code":0}' />
+<Route namespace="gov" :data='{"path":"/zj/search/:websiteid?/:word/:cateid?","categories":["government"],"example":"/gov/zj/search","parameters":{"websiteid":"搜索范围-全省、各市各区、详细信息点击源网站https://www.zj.gov.cn/请求中寻找","word":"搜索关键词-默认：人才","cateid":"信息分类-默认：658（全部）","sortType":"排序类型-默认：2（按时间）"},"radar":[{"source":["search.zj.gov.cn/jsearchfront/search.do"],"target":"/zj/search/:websiteid?/:word/:cateid?"}],"name":"浙江省人民政府-全省政府网站统一搜索","url":"search.zj.gov.cn/jsearchfront/search.do","maintainers":["HaoyuLee"],"description":"\n| 行政区域         | websiteid |\n| ------------ | -- |\n| 宁波市本级     | 330201000000000  |\n\n| 搜索关键词         | word    |\n\n| 信息分类         | cateid    |\n\n| 排序类型         | sortType    |\n| ------------ | -- |\n| 按相关度     | 1  |\n| 按时间     | 2  |\n    ","location":"zj/search.ts"}' :test='{"code":0}' />
 
 
-        | 行政区域         | websiteid |
-        | ------------ | -- |
-        | 宁波市本级     | 330201000000000  |
+| 行政区域         | websiteid |
+| ------------ | -- |
+| 宁波市本级     | 330201000000000  |
 
-        | 搜索关键词         | word    |
+| 搜索关键词         | word    |
 
-        | 信息分类         | cateid    |
+| 信息分类         | cateid    |
 
-        | 排序类型         | sortType    |
-        | ------------ | -- |
-        | 按相关度     | 1  |
-        | 按时间     | 2  |
+| 排序类型         | sortType    |
+| ------------ | -- |
+| 按相关度     | 1  |
+| 按时间     | 2  |
     
 
 ### 政府新闻 <Site url="sh.gov.cn" size="sm" />
