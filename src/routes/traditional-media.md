@@ -1718,6 +1718,17 @@ Column 列表：
   | ---- | --------------- | --------------- | --------------- | --------------- | ---------- | --------------- | --------------- | --------------- |
   | 18   | 5261            | 6030            | 13352           | 83422           | 100418     | 13074           | 12252           | 12212           |
 
+## 有線新聞 <Site url="i-cable.com"/>
+
+### 新聞 <Site url="www.i-cable.com/" size="sm" />
+
+<Route namespace="i-cable" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/i-cable/news","parameters":{"category":"分類，默認為新聞資訊"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.i-cable.com"],"target":"/news"},{"source":["www.i-cable.com/category/:category"],"target":"/news/:category"}],"name":"新聞","maintainers":["quiniapiezoelectricity"],"url":"www.i-cable.com/","description":"\n:::tip\n分類只可用分類名稱，如：新聞資訊/港聞\n:::","location":"news.ts"}' :test='undefined' />
+
+
+:::tip
+分類只可用分類名稱，如：新聞資訊/港聞
+:::
+
 ## 浙江在线 <Site url="zjol.com.cn"/>
 
 ### 浙报集团系列报刊 <Site url="zjol.com.cn" size="sm" />
