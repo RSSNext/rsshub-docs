@@ -122,6 +122,12 @@ Country
 
 <Route namespace="ikea" :data='{"path":"/cn/new","categories":["shopping"],"example":"/ikea/cn/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ikea.cn/cn/zh/new/","ikea.cn/"]}],"name":"中国 - 当季新品推荐","maintainers":["jzhangdev"],"url":"ikea.cn/cn/zh/new/","location":"cn/new.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
 
+## Ktown4u <Site url="ktown4u.com"/>
+
+### Get the products on sale <Site url="ktown4u.com" size="sm" />
+
+<Route namespace="ktown4u" :data='{"path":"/artistBrandlist/:grpNo/:grpNo2?","categories":["shopping"],"example":"/ktown4u/artistBrandlist/234590/1723449","parameters":{"grpNo":"artist id (Get in url)","grpNo2":"product category id (Get in url), empty for all categories"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":[],"target":"/artistBrandlist/:grpNo/:grpNo2"}],"name":"Get the products on sale","maintainers":["JamesWDGu"],"location":"artist-brandlist.ts"}' :test='undefined' />
+
 ## MyFigureCollection <Site url="myfigurecollection.net"/>
 
 ### Activity <Site url="zh.myfigurecollection.net/browse" size="sm" />
