@@ -2779,11 +2779,11 @@ category 参数可选，范围如下:
 
 ### 研究生院 <Site url="yjszs.nudt.edu.cn/" size="sm" />
 
-<Route namespace="nudt" :data='{"path":"/yjszs/:type?","categories":["university"],"example":"/nudt/yjszs/sszs","parameters":{"type":"分类，见下表，默认为硕士招生"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院","maintainers":["Blank0120"],"url":"yjszs.nudt.edu.cn/","description":"| 通知公告 | 硕士招生 |\n  | -------- | -------- |\n  | tzgg     | sszs     |","location":"yjszs.ts"}' :test='{"code":0}' />
+<Route namespace="nudt" :data='{"path":"/yjszs/:keyId?","categories":["university"],"example":"/nudt/yjszs/2","parameters":{"keyId":"分类，见下表，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yjszs.nudt.edu.cn"]}],"name":"研究生院","maintainers":["Blank0120"],"url":"yjszs.nudt.edu.cn/","description":"| 通知公告 | 首页 | 招生简章 | 学校政策 | 硕士招生 | 博士招生 | 院所发文 | 数据统计 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 2     | 1     | 8     | 12     | 16     | 17     | 23     | 25     |","location":"yjszs.ts"}' :test='undefined' />
 
-| 通知公告 | 硕士招生 |
-  | -------- | -------- |
-  | tzgg     | sszs     |
+| 通知公告 | 首页 | 招生简章 | 学校政策 | 硕士招生 | 博士招生 | 院所发文 | 数据统计 |
+  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+  | 2     | 1     | 8     | 12     | 16     | 17     | 23     | 25     |
 
 ## 中国海洋大学 <Site url="it.ouc.edu.cn"/>
 
