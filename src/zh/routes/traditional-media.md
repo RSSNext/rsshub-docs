@@ -507,6 +507,33 @@ URL: [https://www.nytimes.com/zh-hans/series/daily-briefing-chinese](https://www
 
 By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.
 
+## The Strait Times <Site url="straitstimes.com"/>
+
+### News <Site url="straitstimes.com" size="sm" />
+
+<Route namespace="straitstimes" :data='{"path":"/:category?/:section?","categories":["traditional-media"],"example":"/straitstimes/singapore","parameters":{"category":"Category, see below for more information","section":"Section, see below for more information"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"requireConfig":false},"name":"News","maintainers":["quiniapiezoelectricity"],"description":"\n| Category               | `:category`               |\n| ---------------------- | --------------------------- |\n| Singapore              | `singapore`               |\n| Asia                   | `asia`                    |\n| World                  | `world`                   |\n| Opinion                | `opinion`                 |\n| Life                   | `life`                    |\n| Business               | `business`                |\n| Jobs                   | `jobs`                    |\n| Parenting & Education  | `parenting-and-education` |\n| Food                   | `food`                    |\n| Tech                   | `tech`                    |\n| Sport                  | `sport`                   |\n| Podcasts               | `podcasts`                |,\n\n| Section                | `:section`                |\n| ---------------------- | --------------------------- |\n| Top Stories            | `top-stories`             |\n| Latest                 | `latest`                  |","radar":[{"source":["www.straitstimes.com/:category"],"target":"/:category"},{"source":["www.straitstimes.com"],"target":"/"}],"location":"index.ts"}' :test='undefined' />
+
+
+| Category               | `:category`               |
+| ---------------------- | --------------------------- |
+| Singapore              | `singapore`               |
+| Asia                   | `asia`                    |
+| World                  | `world`                   |
+| Opinion                | `opinion`                 |
+| Life                   | `life`                    |
+| Business               | `business`                |
+| Jobs                   | `jobs`                    |
+| Parenting & Education  | `parenting-and-education` |
+| Food                   | `food`                    |
+| Tech                   | `tech`                    |
+| Sport                  | `sport`                   |
+| Podcasts               | `podcasts`                |,
+
+| Section                | `:section`                |
+| ---------------------- | --------------------------- |
+| Top Stories            | `top-stories`             |
+| Latest                 | `latest`                  |
+
 ## Taiwan News 台灣英文新聞 <Site url="taiwannews.com.tw"/>
 
 ### Hot News <Site url="taiwannews.com.tw" size="sm" />
