@@ -185,6 +185,20 @@ konachan post
 
 <Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture"],"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='{"code":0}' />
 
+## MissKON <Site url="misskon.com"/>
+
+### Posts <Site url="misskon.com" size="sm" />
+
+<Route namespace="misskon" :data='{"path":"/posts/:routeParams?","categories":["picture"],"example":"/misskon/posts/search=video&tags_exclude=353,3100&per_page=5","parameters":{"routeParams":"Additional parameters for filtering posts, refer to [WordPress API Reference](https://developer.wordpress.org/rest-api/reference/posts/#arguments) for details."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["misskon.com/"],"target":"/posts"}],"name":"Posts","maintainers":["Urabartin"],"location":"posts.ts"}' :test='undefined' />
+
+### Tag <Site url="misskon.com" size="sm" />
+
+<Route namespace="misskon" :data='{"path":"/tag/:tag","categories":["picture"],"example":"/misskon/tag/cosplay","parameters":{"tag":"Any tag that exists in MissKon"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["misskon.com/tag/:tag/"],"target":"/tag/:tag"}],"name":"Tag","maintainers":["Urabartin"],"location":"tag.ts"}' :test='undefined' />
+
+### Top k days <Site url="misskon.com" size="sm" />
+
+<Route namespace="misskon" :data='{"path":"/top/:k","categories":["picture"],"example":"/misskon/top/60","parameters":{"k":"Top k days, can be 3, 7, 30 or 60"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"Top 3 days","source":["misskon.com/top3/"],"target":"/top/3"},{"title":"Top 7 days","source":["misskon.com/top7/"],"target":"/top/7"},{"title":"Top 30 days","source":["misskon.com/top30/"],"target":"/top/30"},{"title":"Top 60 days","source":["misskon.com/top60/"],"target":"/top/60"}],"name":"Top k days","maintainers":["Urabartin"],"location":"top.ts"}' :test='undefined' />
+
 ## NASA <Site url="apod.nasa.gov"/>
 
 ### Astronomy Picture of the Day <Site url="apod.nasa.govundefined" size="sm" />
