@@ -462,7 +462,7 @@ Currently supports two authentication methods:
 
 ### List timeline <Site url="x.com" size="sm" />
 
-<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media"],"example":"/twitter/list/ladyleet/javascript","parameters":{"id":"username","name":"list name","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_USERNAME","description":"Please see above for details."},{"name":"TWITTER_PASSWORD","description":"Please see above for details."},{"name":"TWITTER_AUTH_TOKEN","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer"],"radar":[{"source":["x.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
+<Route namespace="twitter" :data='{"path":"/list/:id/:routeParams?","categories":["social-media","popular"],"example":"/twitter/list/1502570462752219136","parameters":{"id":"list id, get from url","routeParams":"extra parameters, see the table above"},"features":{"requireConfig":[{"name":"TWITTER_AUTH_TOKEN","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"List timeline","maintainers":["DIYgod","xyqfer","pseudoyu"],"radar":[{"source":["x.com/i/lists/:id"],"target":"/list/:id"}],"location":"list.ts"}' :test='undefined' />
 
 ### Trends <Site url="x.com" size="sm" />
 
