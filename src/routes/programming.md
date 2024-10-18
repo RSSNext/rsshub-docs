@@ -484,6 +484,17 @@ Subscribe to the content of a specific user
 
 <Route namespace="huggingface" :data='{"path":"/blog-zh","categories":["programming"],"example":"/huggingface/blog-zh","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/blog/zh","huggingface.co/"]}],"name":"中文博客","maintainers":["zcf0508"],"url":"huggingface.co/blog/zh","location":"blog-zh.ts"}' :test='{"code":0}' />
 
+## InfoQ 中文 <Site url="infoq.cn"/>
+
+### Presentations <Site url="www.infoq.com" size="sm" />
+
+<Route namespace="infoq" :data='{"path":"/presentations/:conference?","name":"Presentations","url":"www.infoq.com","maintainers":["nczitzk"],"example":"/infoq/presentations","parameters":{"conference":"Conference, all by default, can be found in URL"},"description":":::tip\n  If you subscribe to [InfoQ Live Jan 2024](https://www.infoq.com/infoq-live-jan-2024/presentations/)，where the URL is `https://www.infoq.com/infoq-live-jan-2024/presentations/`, extract the part `https://www.infoq.com/` to the end, which is `/presentations/`, and use it as the parameter to fill in. Therefore, the route will be [`/infoq/presentations/infoq-live-jan-2024`](https://rsshub.app/infoq/presentations/infoq-live-jan-2024).\n  :::\n    ","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.infoq.com/presentations","www.infoq.com/:conference/presentations"]}],"location":"presentations.ts"}' :test='undefined' />
+
+:::tip
+  If you subscribe to [InfoQ Live Jan 2024](https://www.infoq.com/infoq-live-jan-2024/presentations/)，where the URL is `https://www.infoq.com/infoq-live-jan-2024/presentations/`, extract the part `https://www.infoq.com/` to the end, which is `/presentations/`, and use it as the parameter to fill in. Therefore, the route will be [`/infoq/presentations/infoq-live-jan-2024`](https://rsshub.app/infoq/presentations/infoq-live-jan-2024).
+  :::
+    
+
 ## Issue Hunt <Site url="issuehunt.io"/>
 
 ### Project Funded <Site url="issuehunt.io" size="sm" />
