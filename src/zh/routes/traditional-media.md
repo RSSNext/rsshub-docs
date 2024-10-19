@@ -759,6 +759,19 @@ Column 列表：
   | 军事           | junshi   |
   | 参考人物       | cankaorw |
 
+## 大公文匯網 <Site url="www.tkww.hk"/>
+
+### 新聞 <Site url="www.tkww.hk" size="sm" />
+
+<Route namespace="tkww" :data='{"path":"/:column{.+}?","categories":["traditional-media"],"example":"/tkww/hong_kong","parameters":{"column":"欄目，默認為 home (首頁)"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新聞","maintainers":["quiniapiezoelectricity"],"radar":[{"source":["www.tkww.hk/:column"],"target":"/:column"}],"description":"\n:::tip\n欄目可用`名稱`或對應網頁的`path`，\n如 `https://www.tkww.hk/hong_kong` 的欄目可以填`香港`或是`hong_kong`\n而 `https://www.tkww.hk/china/shanghai` 的欄目則需填`china/shanghai`\n:::","location":"index.ts"}' :test='undefined' />
+
+
+:::tip
+欄目可用`名稱`或對應網頁的`path`，
+如 `https://www.tkww.hk/hong_kong` 的欄目可以填`香港`或是`hong_kong`
+而 `https://www.tkww.hk/china/shanghai` 的欄目則需填`china/shanghai`
+:::
+
 ## 第一财经 <Site url="yicai.com"/>
 
 ### DT 财经 <Site url="yicai.com" size="sm" />
