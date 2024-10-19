@@ -1144,13 +1144,20 @@ Chart
 
 ## 酷安 <Site url="coolapk.com"/>
 
+
+:::tip
+即日起，多数路由图片防盗链。   
+需要将 `ALLOW_USER_HOTLINK_TEMPLATE` 环境变量设置为 `true` ，然后配置`image_hotlink_template` 。   
+详见 [#16715](https://github.com/DIYgod/RSSHub/issues/16715)   
+:::
+
 ### 话题 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/huati/:tag","categories":["social-media"],"example":"/coolapk/huati/iPhone","parameters":{"tag":"话题名称"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["xizeyoupan"],"location":"huati.ts"}' :test='{"code":0}' />
 
 ### 看看号 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/dyh/:dyhId","categories":["social-media"],"example":"/coolapk/dyh/1524","parameters":{"dyhId":"看看号ID"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"看看号","maintainers":["xizeyoupan"],"description":":::tip\n  仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。\n  :::","location":"dyh.ts"}' :test='{"code":0}' />
 
 :::tip
   仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。
@@ -1158,7 +1165,7 @@ Chart
 
 ### 热榜 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n  :::tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n  :::","location":"hot.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |
   | -------- | -------- | ------ | ------ | ------ | ------ |
@@ -1174,7 +1181,7 @@ Chart
 
 ### 头条 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/toutiao/:type?","categories":["social-media"],"example":"/coolapk/toutiao","parameters":{"type":"默认为history"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["xizeyoupan"],"description":"| 参数名称 | 历史头条 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | history  | latest |","location":"toutiao.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/toutiao/:type?","categories":["social-media"],"example":"/coolapk/toutiao","parameters":{"type":"默认为history"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["xizeyoupan"],"description":"| 参数名称 | 历史头条 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | history  | latest |","location":"toutiao.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 历史头条 | 最新   |
   | -------- | -------- | ------ |
@@ -1182,15 +1189,7 @@ Chart
 
 ### 图文 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":["/tuwen/:type?","/tuwen-xinxian"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":0}' />
-
-| 参数名称 | 编辑精选 | 最新   |
-  | -------- | -------- | ------ |
-  | type     | hot      | latest |
-
-### 图文 <Site url="coolapk.com" size="sm" />
-
-<Route namespace="coolapk" :data='{"path":["/tuwen/:type?","/tuwen-xinxian"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 353)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.6_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.6_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.6_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.6_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.6_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.6_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="coolapk" :data='{"path":["/tuwen/:type?"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 编辑精选 | 最新   |
   | -------- | -------- | ------ |
@@ -1198,7 +1197,7 @@ Chart
 
 ### 用户 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":0}' />
 
 ## 腾讯网 <Site url="qq.com"/>
 
