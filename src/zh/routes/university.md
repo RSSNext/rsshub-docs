@@ -2709,26 +2709,6 @@ category 参数可选，范围如下:
 | ------- | ------- | ------- |
 | 54      | 55      | 53      |
 
-### 浙江工业大学教务处 <Site url="www.jwc.zjut.edu.cn" size="sm" />
-
-<Route namespace="zjut" :data='{"path":"/jwc/:type","categories":["university"],"example":"/zjut/jwc/1839","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"浙江工业大学教务处","maintainers":["zhullyb"],"url":"www.jwc.zjut.edu.cn","radar":[{"source":["www.jwc.zjut.edu.cn/:type/list.htm"],"target":"/jwc/:type"}],"description":"| 板块 | 参数 |\n| ------- | ------- |\n| 新闻动态 | 1838 |\n| 课程思政 | 1842 |\n| 校内动态 | 2613 |\n| 学习思考 | 2614 |\n| 成果展示 | 2615 |\n| 媒体聚焦 | 2616 |\n| 制度文件 | 2617 |\n| 教学运行 | 1849 |\n| 实践竞赛 | 1850 |\n| 留学生Notice | 1851 |\n| 项目申报 | 1852 |\n| 学籍管理 | 1853 |\n| 办事指南 | 1839 |","location":"jwc/index.ts"}' :test='undefined' />
-
-| 板块 | 参数 |
-| ------- | ------- |
-| 新闻动态 | 1838 |
-| 课程思政 | 1842 |
-| 校内动态 | 2613 |
-| 学习思考 | 2614 |
-| 成果展示 | 2615 |
-| 媒体聚焦 | 2616 |
-| 制度文件 | 2617 |
-| 教学运行 | 1849 |
-| 实践竞赛 | 1850 |
-| 留学生Notice | 1851 |
-| 项目申报 | 1852 |
-| 学籍管理 | 1853 |
-| 办事指南 | 1839 |
-
 ## 中国科学院 <Site url="www.cas.cn"/>
 
 ### Unknown <Site url="www.cas.cn" size="sm" />
