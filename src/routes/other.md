@@ -243,9 +243,9 @@ News from the official site of men's professional tennis.
 
 ## GameApps.hk 香港手机游戏网 <Site url="gameapps.hk"/>
 
-### Unknown <Site url="gameapps.hk/" size="sm" />
+### 最新消息 <Site url="gameapps.hk/" size="sm" />
 
-<Route namespace="gameapps" :data='{"path":"/","radar":[{"source":["gameapps.hk/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"gameapps.hk/","location":"index.ts"}' :test='undefined' />
+<Route namespace="gameapps" :data='{"path":"/","example":"/gameapps","radar":[{"source":["gameapps.hk/"]}],"name":"最新消息","maintainers":["TonyRL"],"url":"gameapps.hk/","location":"index.ts"}' :test='undefined' />
 
 ## Google <Site url="www.google.com"/>
 
