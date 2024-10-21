@@ -30,6 +30,9 @@
         {{ demoUrl }}
       </a>
       <CopyButton :text="demoUrl" />
+      <a v-if="data.categories?.includes('popular')" :href="`follow://add?url=${encodeURIComponent(demoUrl)}`" target="_blank" style="color: #FF5C00; text-decoration: none;">
+        <Badge type="tip" style="background-color: #FF5C00; color: white;">🔖 Open in Follow</Badge>
+      </a>
     </p>
     <p class="path">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}<CopyButton :text="`/${namespace}${data.path}`" />
