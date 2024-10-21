@@ -269,7 +269,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### User timeline <Site url="misskey.io" size="sm" />
 
-<Route namespace="misskey" :data='{"path":"/users/notes/:username","categories":["social-media","popular"],"view":1,"example":"/misskey/users/notes/support@misskey.io","parameters":{"username":"misskey username format, like support@misskey.io"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["siygle"],"location":"user-timeline.ts"}' :test='{"code":0}' />
+<Route namespace="misskey" :data='{"path":"/users/notes/:username/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/misskey/users/notes/support@misskey.io","parameters":{"username":"Misskey username in the format of username@instance.domain","routeParams":"\n| Key         | Description                        | Accepted Values | Default |\n| ----------- | ---------------------------------- | --------------- | ------- |\n| withRenotes | Include renotes in the timeline    | 0/1/true/false  | false   |\n| mediaOnly   | Only return posts containing media | 0/1/true/false  | false   |\n\nNote: `withRenotes` and `mediaOnly` are mutually exclusive and cannot both be set to true.\n\nExamples:\n- /misskey/users/notes/mttb2ccp@misskey.io/withRenotes=true\n- /misskey/users/notes/mttb2ccp@misskey.io/mediaOnly=true"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User timeline","maintainers":["siygle","SnowAgar25"],"location":"user-timeline.ts"}' :test='undefined' />
 
 ## pixiv <Site url="www.pixiv.net"/>
 
