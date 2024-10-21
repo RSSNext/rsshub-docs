@@ -39,6 +39,12 @@
 
 Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://www.behance.net/mishapetrick) the username will be `mishapetrick`。
 
+## Bluesky (bsky) <Site url="bsky.app"/>
+
+### Post <Site url="bsky.app" size="sm" />
+
+<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media","popular"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
+
 ## Docker Hub <Site url="hub.docker.com"/>
 
 ### Image New Build <Site url="hub.docker.com" size="sm" />
