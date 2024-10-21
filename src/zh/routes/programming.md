@@ -749,6 +749,16 @@ Subscribe to the content of a specific user
   | Web Design         | web-design         |
   | Workflow           | workflow           |
 
+## SYCL <Site url="sycl.tech"/>
+
+### Feeds <Site url="sycl.tech" size="sm" />
+
+<Route namespace="sycl" :data='{"path":"/:feed?","categories":["programming"],"example":"/sycltech/news","parameters":{"feed":"Feed source, defaults to news, references https://feeds.sycl.tech/"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Feeds","maintainers":["mocusez"],"description":"|  Events  | News |    Research Paper     |  Videos  |\n| :----: | :--: | :-------------: | :----: |\n| events | news | research_papers | videos |","location":"feeds.ts"}' :test='undefined' />
+
+|  Events  | News |    Research Paper     |  Videos  |
+| :----: | :--: | :-------------: | :----: |
+| events | news | research_papers | videos |
+
 ## ThoughtWorks <Site url="www.thoughtworks.com/zh-cn/insights/blog"/>
 
 ### Inside Blog <Site url="www.thoughtworks.com/zh-cn/insights/blog" size="sm" />
