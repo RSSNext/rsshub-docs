@@ -33,9 +33,9 @@
     </p>
     <p class="path">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}<CopyButton :text="`/${namespace}${data.path}`" />
-      <a v-if="data.categories?.includes('popular')" :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`" target="_blank" style="color: #FF5C00; text-decoration: none;">
+      <!-- <a v-if="data.categories?.includes('popular')" :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`" target="_blank" style="color: #FF5C00; text-decoration: none;">
         <Badge type="tip" style="background-color: #FF5C00; color: white;">🔖 Open in Follow</Badge>
-      </a>
+      </a> -->
     </p>
     <div v-if="paramMatch">
       <p>🔗 Parameters: </p>
