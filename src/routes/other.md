@@ -422,12 +422,6 @@ News from the official site of men's professional tennis.
 
 <Route namespace="metacritic" :data='{"path":"/:type?/:sort?/:filter?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
-## Ming Pao 明报 <Site url="mingpao.com"/>
-
-### Unknown <Site url="mingpao.com" size="sm" />
-
-<Route namespace="mingpao" :data='{"path":"/:type?/:category?","name":"Unknown","maintainers":["TonyRL"],"location":"index.ts"}' :test='undefined' />
-
 ## MiniFlux <Site url="miniflux.app"/>
 
 ### Feed entry <Site url="miniflux.app" size="sm" />
@@ -1174,6 +1168,41 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 ### Unknown <Site url="lkong.com" size="sm" />
 
 <Route namespace="lkong" :data='{"path":"/thread/:id","radar":[{"source":["lkong.com/thread/:id","lkong.com/"]}],"name":"Unknown","maintainers":["nczitzk","ma6254"],"location":"thread.ts"}' :test='undefined' />
+
+## 明報 <Site url="mingpao.com"/>
+
+### 新聞 <Site url="mingpao.com" size="sm" />
+
+<Route namespace="mingpao" :data='{"path":"/:type?/:category?","name":"新聞","example":"/mingpao/ins/all","parameters":{"type":{"description":"新聞類型","default":"ins","options":[{"value":"ins","label":"即時新聞"},{"value":"pns","label":"每日明報"}]},"category":"頻道，見下表"},"radar":[{"title":"即時新聞","source":["news.mingpao.com/ins/:categoryName/section/:date/:category"],"target":"/mingpao/ins/:category"},{"title":"每日明報","source":["news.mingpao.com/pns/:categoryName/section/:date/:category"],"target":"/mingpao/pns/:category"}],"maintainers":["TonyRL"],"description":"| category | 即時新聞頻道 |\n| -------- | ------------ |\n| all      | 總目錄       |\n| s00001   | 港聞         |\n| s00002   | 經濟         |\n| s00003   | 地產         |\n| s00004   | 兩岸         |\n| s00005   | 國際         |\n| s00006   | 體育         |\n| s00007   | 娛樂         |\n| s00022   | 文摘         |\n| s00024   | 熱點         |\n\n| category | 每日明報頻道 |\n| -------- | ------------ |\n| s00001   | 要聞         |\n| s00002   | 港聞         |\n| s00003   | 社評         |\n| s00004   | 經濟         |\n| s00005   | 副刊         |\n| s00011   | 教育         |\n| s00012   | 觀點         |\n| s00013   | 中國         |\n| s00014   | 國際         |\n| s00015   | 體育         |\n| s00016   | 娛樂         |\n| s00017   | English      |\n| s00018   | 作家專欄     |","location":"index.ts"}' :test='undefined' />
+
+| category | 即時新聞頻道 |
+| -------- | ------------ |
+| all      | 總目錄       |
+| s00001   | 港聞         |
+| s00002   | 經濟         |
+| s00003   | 地產         |
+| s00004   | 兩岸         |
+| s00005   | 國際         |
+| s00006   | 體育         |
+| s00007   | 娛樂         |
+| s00022   | 文摘         |
+| s00024   | 熱點         |
+
+| category | 每日明報頻道 |
+| -------- | ------------ |
+| s00001   | 要聞         |
+| s00002   | 港聞         |
+| s00003   | 社評         |
+| s00004   | 經濟         |
+| s00005   | 副刊         |
+| s00011   | 教育         |
+| s00012   | 觀點         |
+| s00013   | 中國         |
+| s00014   | 國際         |
+| s00015   | 體育         |
+| s00016   | 娛樂         |
+| s00017   | English      |
+| s00018   | 作家專欄     |
 
 ## 木木博客 <Site url="liulinblog.com"/>
 
