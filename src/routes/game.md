@@ -97,6 +97,12 @@
   | [厂商](https://www.a9vg.com/list/news/Factory)     | [news/Factory](https://rsshub.app/a9vg/news/Factory)   |
   
 
+## ALICESOFT <Site url="www.alicesoft.com"/>
+
+### ニュース <Site url="www.alicesoft.com/information" size="sm" />
+
+<Route namespace="alicesoft" :data='{"url":"www.alicesoft.com/information","path":"/information/:category?/:game?","categories":["game"],"example":"/alicesoft/information/game/cat377","parameters":{"category":"Category in the URL, which can be accessed under カテゴリ一覧 on the website.","game":"Game-specific subcategory in the URL, which can be accessed under カテゴリ一覧 on the website. In this case, the category value should be `game`."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.alicesoft.com/information","www.alicesoft.com/information/:category","www.alicesoft.com/information/:category/:game"],"target":"/information/:category/:game"}],"name":"ニュース","maintainers":["keocheung"],"location":"infomation.ts"}' :test='undefined' />
+
 ## Blizzard <Site url="news.blizzard.com"/>
 
 ### News <Site url="news.blizzard.com" size="sm" />
