@@ -634,7 +634,7 @@ Currently supports two authentication methods:
 
 ### 话题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media","popular"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake","pseudoyu"],"location":"other/topic.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/topic/:id/:sort?","categories":["social-media","popular"],"example":"/douban/topic/48823","parameters":{"id":"话题id","sort":"排序方式，hot或new，默认为new"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题","maintainers":["LogicJake","pseudoyu","haowenwu"],"location":"other/topic.ts"}' :test='{"code":0}' />
 
 ## 即刻 <Site url="m.okjike.com"/>
 
