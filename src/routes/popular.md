@@ -43,7 +43,7 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### Post <Site url="bsky.app" size="sm" />
 
-<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media","popular"],"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
+<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media","popular"],"view":1,"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
 
 ## Docker Hub <Site url="hub.docker.com"/>
 
@@ -62,6 +62,12 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 ### Timeline <Site url="fediverse.observer" size="sm" />
 
 <Route namespace="fediverse" :data='{"path":"/timeline/:account","categories":["social-media","popular"],"view":1,"example":"/fediverse/timeline/Mastodon@mastodon.social","parameters":{"account":"username@domain"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Timeline","maintainers":["DIYgod","pseudoyu"],"location":"timeline.ts"}' :test='{"code":0}' />
+
+## GETTR <Site url="gettr.com"/>
+
+### User timeline <Site url="gettr.com" size="sm" />
+
+<Route namespace="gettr" :data='{"path":"/user/:id","categories":["social-media","popular"],"view":1,"example":"/gettr/user/jasonmillerindc","parameters":{"id":"User id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gettr.com/user/:id"]}],"name":"User timeline","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":0}' />
 
 ## GitHub <Site url="github.com"/>
 
@@ -178,6 +184,55 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 ### Community <Site url="join-lemmy.org" size="sm" />
 
 <Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media","popular"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":{"description":"Sort by","options":[{"value":"Active","label":"Active"},{"value":"Hot","label":"Hot"},{"value":"New","label":"New"},{"value":"Old","label":"Old"},{"value":"TopDay","label":"TopDay"},{"value":"TopWeek","label":"TopWeek"},{"value":"TopMonth","label":"TopMonth"},{"value":"TopYear","label":"TopYear"},{"value":"TopAll","label":"TopAll"},{"value":"MostComments","label":"MostComments"},{"value":"NewComments","label":"NewComments"},{"value":"TopHour","label":"TopHour"},{"value":"TopSixHour","label":"TopSixHour"},{"value":"TopTwelveHour","label":"TopTwelveHour"},{"value":"TopThreeMonths","label":"TopThreeMonths"},{"value":"TopSixMonths","label":"TopSixMonths"},{"value":"TopNineMonths","label":"TopNineMonths"},{"value":"Controversial","label":"Controversial"},{"value":"Scaled","label":"Scaled"}],"default":"Active"}},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123","pseudoyu"],"location":"index.ts"}' :test='{"code":0}' />
+
+## LinkedIn 领英 <Site url="linkedin.com"/>
+
+### Jobs <Site url="linkedin.com" size="sm" />
+
+<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media","popular"],"view":5,"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  #### `routeParams` additional query parameters\n\n  ##### `f_WT` list\n\n  | Onsite | Remote | Hybrid |\n  | ------ | ------- | ------ |\n  |    1   |    2    |   3    |\n\n  ##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n  ##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
+
+#### `job_types` list
+
+  | Full Time | Part Time | Contractor | All |
+  | --------- | --------- | ---------- | --- |
+  | F         | P         | C          | all |
+
+  #### `exp_levels` list
+
+  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
+  | --------- | ----------- | --------- | ---------------- | -------- | --- |
+  | 1         | 2           | 3         | 4                | 5        | all |
+
+  #### `routeParams` additional query parameters
+
+  ##### `f_WT` list
+
+  | Onsite | Remote | Hybrid |
+  | ------ | ------- | ------ |
+  |    1   |    2    |   3    |
+
+  ##### `geoId`
+
+  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.
+
+  For example:
+  91000012 is the ID of East Asia.
+
+  ##### `f_TPR`
+
+  Time posted range. Here are some possible values:
+
+  *   `r86400`: Past 24 hours
+  *   `r604800`: Past week
+  *   `r2592000`: Past month
+
+  For example:
+
+  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`
+  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`
+  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`
+
+  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**
 
 ## Lofter <Site url="www.lofter.com"/>
 
