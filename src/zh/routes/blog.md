@@ -400,6 +400,14 @@ TAIWAN KADOKAWA
 
 <Route namespace="cloudnative" :data='{"path":"/blog","categories":["blog"],"example":"/cloudnative/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"博客","maintainers":["aneasystone"],"location":"blog.ts"}' :test='{"code":0}' />
 
+## 云谦的博客 <Site url="sorrycc.com"/>
+
+### 文章 <Site url="sorrycc.com" size="sm" />
+
+<Route namespace="sorrycc" :data='{"name":"文章","categories":["blog"],"path":"/","example":"/sorrycc","radar":[{"source":["sorrycc.com"]}],"maintainers":["KarasuShin"],"view":0,"features":{"supportRadar":true,"requireConfig":[{"name":"SORRYCC_COOKIES","description":"登录用户的Cookie,获取方式：\n1. 登录sorrycc.com\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://sorrycc.com\n4. 复制 Cookie 中的 wordpress_logged_in_f05fca638390aed897fbe3c2fff03000 值","optional":true}]},"description":"云谦的博客，部分内容存在权限校验，访问完整内容请部署RSSHub私有实例并配置授权信息","location":"index.ts"}' :test='undefined' />
+
+云谦的博客，部分内容存在权限校验，访问完整内容请部署RSSHub私有实例并配置授权信息
+
 ## 赵容部落 <Site url="zrblog.net"/>
 
 ### 最新文章 <Site url="zrblog.net/" size="sm" />
