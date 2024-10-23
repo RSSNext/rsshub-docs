@@ -307,16 +307,6 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
   The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)
   :::
 
-### Search <Site url="wallhaven.cc/" size="sm" />
-
-<Route namespace="wallhaven" :data='{"path":["/search/:filter?/:needDetails?","/:filter?/:needDetails?"],"categories":["picture"],"example":"/wallhaven/search/categories=110&purity=110&sorting=date_added&order=desc","parameters":{"filter":"Filter, empty by default","needDetails":"Need Details, `true`/`yes` as yes, no by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallhaven.cc/"]}],"name":"Search","maintainers":["nczitzk","Fatpandac"],"url":"wallhaven.cc/","description":":::tip\n  Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:\n\n  The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)\n  :::","location":"index.ts"}' :test='{"code":0}' />
-
-:::tip
-  Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:
-
-  The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)
-  :::
-
 ## yande.re <Site url="yande.re"/>
 
 yande post

@@ -159,14 +159,6 @@ News from the official site of men's professional tennis.
 
 <Route namespace="discuz" :data='{"path":["/:ver{[7x]}/:cid{[0-9]{2}}/:link{.+}","/:ver{[7x]}/:link{.+}","/:link{.+}"],"name":"Unknown","maintainers":[],"location":"discuz.ts"}' :test='undefined' />
 
-### Unknown 
-
-<Route namespace="discuz" :data='{"path":["/:ver{[7x]}/:cid{[0-9]{2}}/:link{.+}","/:ver{[7x]}/:link{.+}","/:link{.+}"],"name":"Unknown","maintainers":[],"location":"discuz.ts"}' :test='undefined' />
-
-### Unknown 
-
-<Route namespace="discuz" :data='{"path":["/:ver{[7x]}/:cid{[0-9]{2}}/:link{.+}","/:ver{[7x]}/:link{.+}","/:link{.+}"],"name":"Unknown","maintainers":[],"location":"discuz.ts"}' :test='undefined' />
-
 ## Distill <Site url="distill.pub"/>
 
 ### Unknown <Site url="distill.pub/" size="sm" />
@@ -193,14 +185,6 @@ News from the official site of men's professional tennis.
 
 ### Unknown <Site url="www.sciencedirect.com" size="sm" />
 
-<Route namespace="elsevier" :data='{"path":["/:journal/vol/:issue","/:journal/:issue"],"radar":[{"source":["www.sciencedirect.com/journal/:journal/*"],"target":"/:journal"}],"name":"Unknown","maintainers":[],"location":"issue.ts"}' :test='undefined' />
-
-### Unknown <Site url="www.sciencedirect.com" size="sm" />
-
-<Route namespace="elsevier" :data='{"path":["/:journal/latest","/:journal"],"radar":[{"source":["www.sciencedirect.com/journal/:journal/*"],"target":"/:journal"}],"name":"Unknown","maintainers":[],"location":"journal.ts"}' :test='undefined' />
-
-### Unknown <Site url="www.sciencedirect.com" size="sm" />
-
 <Route namespace="elsevier" :data='{"path":["/:journal/latest","/:journal"],"radar":[{"source":["www.sciencedirect.com/journal/:journal/*"],"target":"/:journal"}],"name":"Unknown","maintainers":[],"location":"journal.ts"}' :test='undefined' />
 
 ## Email 
@@ -222,14 +206,6 @@ News from the official site of men's professional tennis.
 <Route namespace="fishshell" :data='{"path":"/","radar":[{"source":["fishshell.com/"],"target":""}],"name":"Unknown","maintainers":["x2cf"],"url":"fishshell.com/","location":"index.ts"}' :test='undefined' />
 
 ## Futubull 富途牛牛 <Site url="news.futunn.com"/>
-
-### Unknown <Site url="news.futunn.com/main" size="sm" />
-
-<Route namespace="futunn" :data='{"path":["/highlights","/main","/"],"name":"Unknown","maintainers":[],"url":"news.futunn.com/main","location":"main.ts"}' :test='undefined' />
-
-### Unknown <Site url="news.futunn.com/main" size="sm" />
-
-<Route namespace="futunn" :data='{"path":["/highlights","/main","/"],"name":"Unknown","maintainers":[],"url":"news.futunn.com/main","location":"main.ts"}' :test='undefined' />
 
 ### Unknown <Site url="news.futunn.com/main" size="sm" />
 
@@ -379,18 +355,6 @@ News from the official site of men's professional tennis.
 <Route namespace="linkresearcher" :data='{"path":"/:params","name":"Unknown","maintainers":["yech1990"],"location":"index.ts"}' :test='undefined' />
 
 ## LogoNews 标志情报局 <Site url="logonews.cn"/>
-
-### Unknown <Site url="logonews.cn/" size="sm" />
-
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
-
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
-
-### Unknown <Site url="logonews.cn/" size="sm" />
-
-<Route namespace="logonews" :data='{"path":["/work/tags/:tag","/tag/:tag","*"],"radar":[{"source":["logonews.cn/work/tags/:tag"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"logonews.cn/","description":"如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。","location":"index.ts"}' :test='undefined' />
-
-如 [中国 - 标志情报局](https://www.logonews.cn/tag/china) 的 URL 为 `https://www.logonews.cn/tag/china`，可得路由为 [`/logonews/tag/china`](https://rsshub.app/logonews/tag/china)。
 
 ### Unknown <Site url="logonews.cn/" size="sm" />
 
@@ -780,10 +744,6 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":0}' />
 
-### Search <Site url="u9a9.com/" size="sm" />
-
-<Route namespace="u9a9" :data='{"path":["/:preview?","/search/:keyword/:preview?"],"example":"/u9a9/search/新片速递","radar":[{"source":["u9a9.com/"],"target":""}],"name":"Search","maintainers":["TonyRL"],"url":"u9a9.com/","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1763)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
-
 ## Urban Dictionary <Site url="urbandictionary.com"/>
 
 ### Random words <Site url="urbandictionary.com/random.php" size="sm" />
@@ -954,10 +914,6 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 <Route namespace="cdzjryb" :data='{"path":"/zw/projectList","categories":["other"],"example":"/cdzjryb/zw/projectList","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zw.cdzjryb.com/lottery/accept/projectList","zw.cdzjryb.com/"]}],"name":"商品住房购房登记","maintainers":["TonyRL"],"url":"zw.cdzjryb.com/lottery/accept/projectList","location":"project-list.ts"}' :test='{"code":0}' />
 
 ## 大连理工大学 <Site url="dutdice.dlut.edu.cn"/>
-
-### Unknown <Site url="dutdice.dlut.edu.cn" size="sm" />
-
-<Route namespace="dut" :data='{"path":["/*/*","/:0?"],"name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
 ### Unknown <Site url="dutdice.dlut.edu.cn" size="sm" />
 

@@ -159,14 +159,6 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
   | ------------ | ------------ | ------------ |
   | 1            | 10           | 11           |
 
-### Unknown <Site url="aisixiang.com" size="sm" />
-
-<Route namespace="aisixiang" :data='{"path":["/ranking/:id?/:period?","/toplist/:id?/:period?"],"name":"Unknown","maintainers":["HenryQW","nczitzk"],"description":"| 文章点击排行 | 最近更新文章 | 文章推荐排行 |\n  | ------------ | ------------ | ------------ |\n  | 1            | 10           | 11           |","location":"toplist.ts"}' :test='undefined' />
-
-| 文章点击排行 | 最近更新文章 | 文章推荐排行 |
-  | ------------ | ------------ | ------------ |
-  | 1            | 10           | 11           |
-
 ### 栏目 <Site url="aisixiang.com" size="sm" />
 
 <Route namespace="aisixiang" :data='{"path":"/column/:id","categories":["reading"],"example":"/aisixiang/column/722","parameters":{"id":"栏目 ID, 可在对应栏目 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["HenryQW","nczitzk"],"location":"column.ts"}' :test='{"code":0}' />

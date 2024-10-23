@@ -56,10 +56,6 @@
 
 <Route namespace="4gamers" :data='{"path":["/","/category/:category"],"radar":[{"source":["www.4gamers.com.tw/news","www.4gamers.com.tw/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"www.4gamers.com.tw/news","location":"category.ts"}' :test='undefined' />
 
-### Unknown <Site url="www.4gamers.com.tw/news" size="sm" />
-
-<Route namespace="4gamers" :data='{"path":["/","/category/:category"],"radar":[{"source":["www.4gamers.com.tw/news","www.4gamers.com.tw/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"www.4gamers.com.tw/news","location":"category.ts"}' :test='undefined' />
-
 ### 标签 <Site url="www.4gamers.com.tw/news" size="sm" />
 
 <Route namespace="4gamers" :data='{"path":"/tag/:tag","categories":["game"],"example":"/4gamers/tag/限時免費","parameters":{"tag":"标签名，可在标签 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.4gamers.com.tw/news/tag/:tag"]}],"name":"标签","maintainers":["hoilc"],"url":"www.4gamers.com.tw/news","location":"tag.ts"}' :test='undefined' />
@@ -202,29 +198,6 @@ Region
 
   | all | topics | notices | maintenance | updates | status | developers |
   | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |
-
-### FINAL FANTASY XIV (The Lodestone) <Site url="eu.finalfantasyxiv.com" size="sm" />
-
-<Route namespace="ff14" :data='{"path":["/global/:lang/:type?","/ff14_global/:lang/:type?"],"categories":["game"],"example":"/ff14/global/na/all","parameters":{"lang":"Region","type":"Category, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FINAL FANTASY XIV (The Lodestone)","maintainers":["chengyuhui"],"description":"Region\n\n  | North Ameria | Europe | France | Germany | Japan |\n  | ------------ | ------ | ------ | ------- | ----- |\n  | na           | eu     | fr     | de      | jp    |\n\n  Category\n\n  | all | topics | notices | maintenance | updates | status | developers |\n  | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |","location":"ff14-global.ts"}' :test='{"code":0}' />
-
-Region
-
-  | North Ameria | Europe | France | Germany | Japan |
-  | ------------ | ------ | ------ | ------- | ----- |
-  | na           | eu     | fr     | de      | jp    |
-
-  Category
-
-  | all | topics | notices | maintenance | updates | status | developers |
-  | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |
-
-### 最终幻想 14 国服 <Site url="ff.web.sdo.com/web8/index.html" size="sm" />
-
-<Route namespace="ff14" :data='{"path":["/zh/:type?","/ff14_zh/:type?"],"categories":["game"],"example":"/ff14/zh/news","parameters":{"type":"分类名，预设为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ff.web.sdo.com/web8/index.html"],"target":"/zh"}],"name":"最终幻想 14 国服","maintainers":["Kiotlin","ZeroClad","15x15G"],"url":"ff.web.sdo.com/web8/index.html","description":"| 新闻 | 公告     | 活动   | 广告      | 所有 |\n  | ---- | -------- | ------ | --------- | ---- |\n  | news | announce | events | advertise | all  |","location":"ff14-zh.ts"}' :test='{"code":0}' />
-
-| 新闻 | 公告     | 活动   | 广告      | 所有 |
-  | ---- | -------- | ------ | --------- | ---- |
-  | news | announce | events | advertise | all  |
 
 ### 最终幻想 14 国服 <Site url="ff.web.sdo.com/web8/index.html" size="sm" />
 
@@ -677,27 +650,9 @@ Helpful route parameters:
   | ------------ | -------- | ------ | ------ |
   | en_US       | zh_TW   | ko_KR | ja_JP |
 
-### 游戏更新 <Site url="taptap.com" size="sm" />
-
-<Route namespace="taptap" :data='{"path":["/changelog/:id/:lang?","/intl/changelog/:id/:lang?"],"categories":["game"],"example":"/taptap/changelog/60809/en_US","parameters":{"id":"游戏 ID，游戏主页 URL 中获取","lang":"语言，默认使用 `zh_CN`，亦可使用 `en_US`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taptap.com/app/:id"],"target":"/changelog/:id"}],"name":"游戏更新","maintainers":["hoilc","ETiV"],"description":"#### 语言代码\n\n  | English (US) | 繁體中文 | 한국어 | 日本語 |\n  | ------------ | -------- | ------ | ------ |\n  | en_US       | zh_TW   | ko_KR | ja_JP |","location":"changelog.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1666)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
-
-#### 语言代码
-
-  | English (US) | 繁體中文 | 한국어 | 日本語 |
-  | ------------ | -------- | ------ | ------ |
-  | en_US       | zh_TW   | ko_KR | ja_JP |
-
 ### 游戏评价 <Site url="taptap.com" size="sm" />
 
 <Route namespace="taptap" :data='{"path":["/review/:id/:order?/:lang?","/intl/review/:id/:order?/:lang?"],"categories":["game"],"example":"/taptap/review/142793/hot","parameters":{"id":"游戏 ID，游戏主页 URL 中获取","order":"排序方式，空为默认排序，可选如下","lang":"语言，`zh-CN`或`zh-TW`，默认为`zh-CN`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taptap.com/app/:id/review","taptap.com/app/:id"],"target":"/review/:id"}],"name":"游戏评价","maintainers":["hoilc","TonyRL"],"description":"| 最新   | 最热 | 游戏时长 | 默认排序 |\n  | ------ | ---- | -------- | -------- |\n  | update | hot  | spent    | default  |","location":"review.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1667)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
-
-| 最新   | 最热 | 游戏时长 | 默认排序 |
-  | ------ | ---- | -------- | -------- |
-  | update | hot  | spent    | default  |
-
-### 游戏评价 <Site url="taptap.com" size="sm" />
-
-<Route namespace="taptap" :data='{"path":["/review/:id/:order?/:lang?","/intl/review/:id/:order?/:lang?"],"categories":["game"],"example":"/taptap/review/142793/hot","parameters":{"id":"游戏 ID，游戏主页 URL 中获取","order":"排序方式，空为默认排序，可选如下","lang":"语言，`zh-CN`或`zh-TW`，默认为`zh-CN`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taptap.com/app/:id/review","taptap.com/app/:id"],"target":"/review/:id"}],"name":"游戏评价","maintainers":["hoilc","TonyRL"],"description":"| 最新   | 最热 | 游戏时长 | 默认排序 |\n  | ------ | ---- | -------- | -------- |\n  | update | hot  | spent    | default  |","location":"review.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1668)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.8_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 最新   | 最热 | 游戏时长 | 默认排序 |
   | ------ | ---- | -------- | -------- |
