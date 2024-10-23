@@ -39,9 +39,9 @@ const instances = [{
     maintainerUrl: 'https://slarker.me',
   }, {
     url: 'https://rsshub.pseudoyu.com',
-    location: '🇺🇸',
+    location: '🇩🇪',
     maintainer: 'pseudoyu',
-    maintainerUrl: 'https://www.pseudoyu.com',
+    maintainerUrl: 'https://github.com/pseudoyu',
   }, {
     url: 'https://rsshub.rss.tips',
     location: '🇺🇸',
