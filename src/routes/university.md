@@ -2709,6 +2709,19 @@ category 参数可选，范围如下:
 | 学籍管理 | 1853 |
 | 办事指南 | 1839 |
 
+### 浙江工业大学首页 <Site url="www.zjut.edu.cn" size="sm" />
+
+<Route namespace="zjut" :data='{"path":"/www/:type","categories":["university"],"example":"/zjut/www/4528","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"浙江工业大学首页","maintainers":["zhullyb"],"url":"www.zjut.edu.cn","radar":[{"source":["www.zjut.edu.cn/:type/list.htm"],"target":"/www/:type"}],"description":"| 板块 | 参数 |\n| ------- | ------- |\n| 学术动态 | xsdt_4662 |\n| 三创·人物 | 4527 |\n| 通知公告 | 4528 |\n| 美誉工大 | 5389 |\n| 智库工大 | 5390 |\n| 校区班车 | xqbc |","location":"www/index.ts"}' :test='undefined' />
+
+| 板块 | 参数 |
+| ------- | ------- |
+| 学术动态 | xsdt_4662 |
+| 三创·人物 | 4527 |
+| 通知公告 | 4528 |
+| 美誉工大 | 5389 |
+| 智库工大 | 5390 |
+| 校区班车 | xqbc |
+
 ## 中国科学院 <Site url="www.cas.cn"/>
 
 ### Unknown <Site url="www.cas.cn" size="sm" />
