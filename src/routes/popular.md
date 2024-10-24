@@ -35,7 +35,20 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 ### Post <Site url="bsky.app" size="sm" />
 
-<Route namespace="bsky" :data='{"path":"/profile/:handle","categories":["social-media","popular"],"view":1,"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"location":"posts.ts"}' :test='{"code":0}' />
+<Route namespace="bsky" :data='{"path":"/profile/:handle/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/bsky/profile/bsky.app","parameters":{"handle":"User handle, can be found in URL","routeParams":"Filter parameter, Use filter to customize content types"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bsky.app/profile/:handle"]}],"name":"Post","maintainers":["TonyRL"],"description":"\n| Filter Value | Description |\n|--------------|-------------|\n| posts_with_replies | Includes Posts, Replies, and Reposts |\n| posts_no_replies | Includes Posts and Reposts, without Replies |\n| posts_with_media | Shows only Posts containing media |\n| posts_and_author_threads | Shows Posts and Threads, without Replies and Reposts |\n\nDefault value for filter is `posts_and_author_threads` if not specified.\n\nExample:\n- `/bsky/profile/bsky.app/filter=posts_with_replies`","location":"posts.ts"}' :test='undefined' />
+
+
+| Filter Value | Description |
+|--------------|-------------|
+| posts_with_replies | Includes Posts, Replies, and Reposts |
+| posts_no_replies | Includes Posts and Reposts, without Replies |
+| posts_with_media | Shows only Posts containing media |
+| posts_and_author_threads | Shows Posts and Threads, without Replies and Reposts |
+
+Default value for filter is `posts_and_author_threads` if not specified.
+
+Example:
+- `/bsky/profile/bsky.app/filter=posts_with_replies`
 
 ## Docker Hub <Site url="hub.docker.com"/>
 
