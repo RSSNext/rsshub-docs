@@ -175,6 +175,30 @@ Category
 
 关于 ISO 4217，请参考[维基百科](https://zh.wikipedia.org/zh-cn/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81)
 
+## Openrice開飯喇 <Site url="www.openrice.com"/>
+
+美食網站Openrice相关資訊
+
+### 香港餐廳精選優惠券 <Site url="www.openrice.com" size="sm" />
+
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/offers","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/offers","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐廳精選優惠券","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ","location":"offers.ts"}' :test='undefined' />
+
+
+  | 简体 | 繁體 | EN |
+  | ----- | ------ | ----- |
+  | zh-cn | zh | en |
+  
+
+### 香港餐厅滋讯 <Site url="www.openrice.com" size="sm" />
+
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/promos","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/promos","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐厅滋讯","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ","location":"promos.ts"}' :test='undefined' />
+
+
+  | 简体 | 繁體 | EN |
+  | ----- | ------ | ----- |
+  | zh-cn | zh | en |
+  
+
 ## Patagonia <Site url="patagonia.com"/>
 
 ### New Arrivals <Site url="patagonia.com" size="sm" />
