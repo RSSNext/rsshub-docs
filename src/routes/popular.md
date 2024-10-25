@@ -6,6 +6,37 @@
 
 <Route namespace="500px" :data='{"path":"/tribe/set/:id","categories":["picture","popular"],"view":2,"example":"/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001","parameters":{"id":"部落 ID"},"name":"部落影集","maintainers":["TonyRL"],"location":"tribe-set.ts"}' :test='undefined' />
 
+## AcFun <Site url="www.acfun.cn"/>
+
+### 番剧 <Site url="www.acfun.cn" size="sm" />
+
+<Route namespace="acfun" :data='{"path":"/bangumi/:id","categories":["anime","popular"],"view":3,"example":"/acfun/bangumi/5022158","parameters":{"id":"番剧 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"番剧","maintainers":["xyqfer"],"description":":::tip\n番剧 id 不包含开头的 aa。\n例如：`https://www.acfun.cn/bangumi/aa5022158` 的番剧 id 是 5022158，不包括开头的 aa。\n:::","location":"bangumi.ts"}' :test='{"code":0}' />
+
+:::tip
+番剧 id 不包含开头的 aa。
+例如：`https://www.acfun.cn/bangumi/aa5022158` 的番剧 id 是 5022158，不包括开头的 aa。
+:::
+
+### 文章 <Site url="www.acfun.cn" size="sm" />
+
+<Route namespace="acfun" :data='{"path":"/article/:categoryId/:sortType?/:timeRange?","categories":["anime","popular"],"view":0,"example":"/acfun/article/110","parameters":{"categoryId":{"description":"分区 ID","options":[{"value":"73","label":"生活情感"},{"value":"74","label":"动漫文化"},{"value":"75","label":"漫画文学"},{"value":"110","label":"综合"},{"value":"164","label":"游戏"},{"value":"184","label":"二次元画师"}]},"sortType":{"description":"排序","options":[{"value":"createTime","label":"最新发表"},{"value":"lastCommentTime","label":"最新动态"},{"value":"hotScore","label":"最热文章"}],"default":"createTime"},"timeRange":{"description":"时间范围，仅在排序是 `hotScore` 有效","options":[{"value":"all","label":"时间不限"},{"value":"oneDay","label":"24 小时"},{"value":"threeDay","label":"三天"},{"value":"oneWeek","label":"一周"},{"value":"oneMonth","label":"一个月"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["TonyRL"],"description":"| 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |\n  | ---------- | ---- | -------- | ---- | -------- | -------- |\n  | 184        | 110  | 73       | 164  | 74       | 75       |\n\n  | 最新发表   | 最新动态        | 最热文章 |\n  | ---------- | --------------- | -------- |\n  | createTime | lastCommentTime | hotScore |\n\n  | 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |\n  | -------- | ------- | -------- | ------- | -------- |\n  | all      | oneDay  | threeDay | oneWeek | oneMonth |","location":"article.ts"}' :test='{"code":0}' />
+
+| 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |
+  | ---------- | ---- | -------- | ---- | -------- | -------- |
+  | 184        | 110  | 73       | 164  | 74       | 75       |
+
+  | 最新发表   | 最新动态        | 最热文章 |
+  | ---------- | --------------- | -------- |
+  | createTime | lastCommentTime | hotScore |
+
+  | 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |
+  | -------- | ------- | -------- | ------- | -------- |
+  | all      | oneDay  | threeDay | oneWeek | oneMonth |
+
+### 用户投稿 <Site url="www.acfun.cn" size="sm" />
+
+<Route namespace="acfun" :data='{"path":"/user/video/:uid","radar":[{"source":["www.acfun.cn/u/:id"],"target":"/user/video/:id"}],"name":"用户投稿","parameters":{"uid":"用户 UID"},"categories":["anime","popular"],"example":"/acfun/user/video/6102","view":3,"maintainers":["wdssmq"],"location":"video.ts"}' :test='undefined' />
+
 ## AP News <Site url="apnews.com"/>
 
 ### News <Site url="apnews.com" size="sm" />
@@ -50,17 +81,53 @@ Default value for filter is `posts_and_author_threads` if not specified.
 Example:
 - `/bsky/profile/bsky.app/filter=posts_with_replies`
 
+## CnGal <Site url="www.cngal.org"/>
+
+### 每周速报 <Site url="www.cngal.org/" size="sm" />
+
+<Route namespace="cngal" :data='{"path":"/weekly","categories":["anime","popular"],"view":0,"example":"/cngal/weekly","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/","www.cngal.org/weeklynews"]}],"name":"每周速报","maintainers":["chengyuhui"],"url":"www.cngal.org/","location":"weekly.ts"}' :test='{"code":0}' />
+
+## DLsite <Site url="dlsite.com"/>
+
+### Current Release <Site url="dlsite.com" size="sm" />
+
+<Route namespace="dlsite" :data='{"path":"/new/:type","categories":["anime","popular"],"view":0,"example":"/dlsite/new/home","parameters":{"type":{"description":"类型","options":[{"value":"home","label":"「DLsite 同人」"},{"value":"comic","label":"「DLsite コミック」"},{"value":"soft","label":"「DLsite PCソフト」"},{"value":"maniax","label":"「DLsite 同人 - R18」"},{"value":"books","label":"「DLsite 成年コミック - R18」"},{"value":"pro","label":"「DLsite 美少女ゲーム」"},{"value":"girls","label":"「DLsite 乙女」"},{"value":"bl","label":"「DLsite BL」"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Current Release","maintainers":["cssxsh"],"description":"| Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |\n  | ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |\n  | home   | comic  | soft     | maniax       | books        | pro     | girls | bl |","location":"new.ts"}' :test='{"code":0}' />
+
+| Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |
+  | ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |
+  | home   | comic  | soft     | maniax       | books        | pro     | girls | bl |
+
+### Ci-en Creators' Article <Site url="dlsite.com" size="sm" />
+
+<Route namespace="dlsite" :data='{"path":"/ci-en/:id/article","categories":["anime","popular"],"view":0,"example":"/dlsite/ci-en/7400/article","parameters":{"id":"Creator id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ci-en.dlsite.com/creator/:id/article/843558","ci-en.dlsite.com/"]}],"name":"Ci-en Creators&#39; Article","maintainers":["nczitzk"],"location":"ci-en/article.ts"}' :test='{"code":0}' />
+
+### Discounted Works <Site url="dlsite.com" size="sm" />
+
+<Route namespace="dlsite" :data='{"path":"/campaign/:type/:free?","categories":["anime","popular"],"example":"/dlsite/campaign/home","parameters":{"type":{"description":"类型","options":[{"value":"home","label":"「DLsite 同人」"},{"value":"comic","label":"「DLsite コミック」"},{"value":"soft","label":"「DLsite PCソフト」"},{"value":"maniax","label":"「DLsite 同人 - R18」"},{"value":"books","label":"「DLsite 成年コミック - R18」"},{"value":"pro","label":"「DLsite 美少女ゲーム」"},{"value":"girls","label":"「DLsite 乙女」"},{"value":"bl","label":"「DLsite BL」"}]},"free":{"description":"免费","options":[{"value":"1","label":"是"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Discounted Works","maintainers":["cssxsh"],"location":"campaign.ts"}' :test='{"code":0}' />
+
 ## Docker Hub <Site url="hub.docker.com"/>
 
 ### Image New Build <Site url="hub.docker.com" size="sm" />
 
 <Route namespace="dockerhub" :data='{"path":"/build/:owner/:image/:tag?","categories":["program-update","popular"],"view":5,"example":"/dockerhub/build/diygod/rsshub/latest","parameters":{"owner":"Image owner, the owner of the official image fills in the library, for example: /dockerhub/build/library/mysql","image":"Image name","tag":{"description":"Image tag","default":"latest"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Build","maintainers":["HenryQW"],"location":"build.ts"}' :test='{"code":0}' />
 
+## Doraemon Channel <Site url="www.dora-world.com"/>
+
+### Article <Site url="www.dora-world.com" size="sm" />
+
+<Route namespace="dora-world" :data='{"path":"/article/:topic/:topicId?","categories":["anime","popular"],"view":0,"example":"/dora-world/article/contents","parameters":{"topic":"Topic name, can be found in URL. For example: the topic name of [https://www.dora-world.com/movie](https://www.dora-world.com/movie) is `movie`","topicId":"Topic id, can be found in URL. For example: the topic id of [https://www.dora-world.com/contents?t=197](https://www.dora-world.com/contents?t=197) is `197`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dora-world.com/:topic"]}],"name":"Article","maintainers":["AChangAZha"],"location":"article.ts"}' :test='undefined' />
+
 ## Epic Games Store <Site url="store.epicgames.com"/>
 
 ### Free games <Site url="store.epicgames.com" size="sm" />
 
 <Route namespace="epicgames" :data='{"path":"/freegames/:locale?/:country?","categories":["game","popular"],"view":5,"example":"/epicgames/freegames/en-US/US","parameters":{"locale":{"description":"Locale","default":"en-US"},"country":{"description":"Country","default":"US"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["store.epicgames.com/:locale/free-games"],"target":"/freegames/:locale"}],"name":"Free games","maintainers":["DIYgod","NeverBehave","Zyx-A","junfengP","nczitzk","KotaHv"],"location":"index.ts"}' :test='{"code":0}' />
+
+## Eventernote <Site url="www.eventernote.com"/>
+
+### 声优活动及演唱会 <Site url="www.eventernote.com" size="sm" />
+
+<Route namespace="eventernote" :data='{"path":"/actors/:name/:id","categories":["anime","popular"],"view":3,"example":"/eventernote/actors/三森すずこ/2634","parameters":{"name":"声优姓名","id":"声优 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.eventernote.com/actors/:name/:id/events"]}],"name":"声优活动及演唱会","maintainers":["KTachibanaM"],"location":"actors.ts"}' :test='{"code":0}' />
 
 ## Fantia <Site url="fantia.jp"/>
 
@@ -217,6 +284,12 @@ Subscribe to the content of a specific user
 ### 作品周边 <Site url="www.hpoi.net" size="sm" />
 
 <Route namespace="hpoi" :data='{"path":"/items/work/:id/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/work/4117491","parameters":{"id":"作品 ID","order":{"description":"排序","options":[{"value":"release","label":"发售"},{"value":"add","label":"入库"},{"value":"hits","label":"总热度"},{"value":"hits7Day","label":"一周热度"},{"value":"hitsDay","label":"一天热度"},{"value":"rating","label":"评价"}],"default":"add"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品周边","maintainers":["DIYgod"],"location":"work.ts"}' :test='{"code":0}' />
+
+## IDOLY PRIDE 偶像荣耀 <Site url="idolypride.jp"/>
+
+### News <Site url="idolypride.jp/news" size="sm" />
+
+<Route namespace="idolypride" :data='{"path":"/news","categories":["anime","popular"],"view":0,"example":"/idolypride/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["idolypride.jp/news"]}],"name":"News","maintainers":["Mingxia1"],"url":"idolypride.jp/news","location":"news.ts"}' :test='{"code":0}' />
 
 ## IMDb <Site url="www.imdb.com"/>
 
