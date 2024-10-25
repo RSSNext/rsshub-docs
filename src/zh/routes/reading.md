@@ -28,13 +28,13 @@ Eg: [https://syosetu.org/novel/264928](https://syosetu.org/novel/264928)
 
 ## Inoreader <Site url="inoreader.com"/>
 
+### HTML Clip <Site url="inoreader.com" size="sm" />
+
+<Route namespace="inoreader" :data='{"path":"/html_clip/:user/:tag","example":"/inoreader/html_clip/1005137674/user-favorites","categories":["reading","popular"],"view":0,"name":"HTML Clip","maintainers":["EthanWng97"],"location":"index.ts"}' :test='undefined' />
+
 ### RSS <Site url="inoreader.com" size="sm" />
 
-<Route namespace="inoreader" :data='{"path":"/rss/:user/:tag","categories":["reading"],"example":"/inoreader/rss/1005137674/user-favorites","parameters":{"user":"user id, the interger after user/ in the example URL","tag":"tag, the string after tag/ in the example URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"RSS","maintainers":["EthanWng97"],"location":"rss.ts"}' :test='{"code":0}' />
-
-### Unknown <Site url="inoreader.com" size="sm" />
-
-<Route namespace="inoreader" :data='{"path":"/html_clip/:user/:tag","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
+<Route namespace="inoreader" :data='{"path":"/rss/:user/:tag","categories":["reading","popular"],"view":0,"example":"/inoreader/rss/1005137674/user-favorites","parameters":{"user":"user id, the interger after user/ in the example URL","tag":"tag, the string after tag/ in the example URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"RSS","maintainers":["EthanWng97"],"location":"rss.ts"}' :test='{"code":0}' />
 
 ## Literotica <Site url="literotica.com"/>
 
@@ -316,7 +316,7 @@ Eg: `https://ncode.syosetu.com/n1976ey/`
 
 ### 分类 <Site url="bookfere.com" size="sm" />
 
-<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading"],"example":"/bookfere/skills","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading","popular"],"view":0,"example":"/bookfere/skills","parameters":{"category":{"description":"分类名","options":[{"value":"weekly","label":"每周一书"},{"value":"skills","label":"使用技巧"},{"value":"books","label":"图书推荐"},{"value":"news","label":"新闻速递"},{"value":"essay","label":"精选短文"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
 
 | 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |
   | -------- | -------- | -------- | -------- | -------- |
@@ -344,13 +344,13 @@ p-articles provides some official RSS feeds:
 
 ### 近期文章汇总 <Site url="www.yilinzazhi.com" size="sm" />
 
-<Route namespace="yilinzazhi" :data='{"path":"/latest","categories":["reading"],"example":"/yilinzazhi/latest","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"近期文章汇总","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","description":"最近一期的文章汇总","location":"latest.ts"}' :test='{"code":0}' />
+<Route namespace="yilinzazhi" :data='{"path":"/latest","categories":["reading","popular"],"view":0,"example":"/yilinzazhi/latest","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"近期文章汇总","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","description":"最近一期的文章汇总","location":"latest.ts"}' :test='{"code":0}' />
 
 最近一期的文章汇总
 
 ### 文章列表 <Site url="www.yilinzazhi.com" size="sm" />
 
-<Route namespace="yilinzazhi" :data='{"path":"/","categories":["reading"],"example":"/yilinzazhi","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"文章列表","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="yilinzazhi" :data='{"path":"/","categories":["reading","popular"],"view":0,"example":"/yilinzazhi","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"文章列表","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","location":"index.ts"}' :test='{"code":0}' />
 
 ## 中文成人文學網 <Site url="www.xbookcn.net"/>
 

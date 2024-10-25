@@ -306,7 +306,7 @@ Sources
 
 ### Category <Site url="www.pixivision.net" size="sm" />
 
-<Route namespace="pixivision" :data='{"path":"/:lang/:category?","categories":["anime"],"example":"/pixivision/zh-tw","parameters":{"lang":"Language","category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["SnowAgar25"],"description":":::tip\n  `https://www.pixivision.net/zh-tw/c/interview` → `/pixivision/zh-tw/interview`\n  :::","radar":[{"source":["www.pixivision.net/:lang"],"target":"/:lang"},{"source":["www.pixivision.net/:lang/c/:category"],"target":"/:lang/:category"}],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="pixivision" :data='{"path":"/:lang/:category?","categories":["anime","popular"],"view":0,"example":"/pixivision/zh-tw","parameters":{"lang":"Language","category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["SnowAgar25"],"description":":::tip\n  `https://www.pixivision.net/zh-tw/c/interview` → `/pixivision/zh-tw/interview`\n  :::","radar":[{"source":["www.pixivision.net/:lang"],"target":"/:lang"},{"source":["www.pixivision.net/:lang/c/:category"],"target":"/:lang/:category"}],"location":"index.ts"}' :test='{"code":0}' />
 
 :::tip
   `https://www.pixivision.net/zh-tw/c/interview` → `/pixivision/zh-tw/interview`

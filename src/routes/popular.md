@@ -301,6 +301,16 @@ Subscribe to the content of a specific user
   | -------------- | ------------------- | ---------------- | --------------------- |
   | top            | moviemeter          | toptv            | tvmeter               |
 
+## Inoreader <Site url="inoreader.com"/>
+
+### HTML Clip <Site url="inoreader.com" size="sm" />
+
+<Route namespace="inoreader" :data='{"path":"/html_clip/:user/:tag","example":"/inoreader/html_clip/1005137674/user-favorites","categories":["reading","popular"],"view":0,"name":"HTML Clip","maintainers":["EthanWng97"],"location":"index.ts"}' :test='undefined' />
+
+### RSS <Site url="inoreader.com" size="sm" />
+
+<Route namespace="inoreader" :data='{"path":"/rss/:user/:tag","categories":["reading","popular"],"view":0,"example":"/inoreader/rss/1005137674/user-favorites","parameters":{"user":"user id, the interger after user/ in the example URL","tag":"tag, the string after tag/ in the example URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"RSS","maintainers":["EthanWng97"],"location":"rss.ts"}' :test='{"code":0}' />
+
 ## Instagram <Site url="www.instagram.com"/>
 
 ### User Profile - Picnob <Site url="www.instagram.com" size="sm" />
@@ -520,6 +530,16 @@ However, you can still specify these route-specific configurations if you need t
 ### User Activity <Site url="www.pixiv.net" size="sm" />
 
 <Route namespace="pixiv" :data='{"path":"/user/:id","categories":["social-media","popular"],"view":2,"example":"/pixiv/user/15288095","parameters":{"id":"user id, available in user&#39;s homepage URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.pixiv.net/users/:id"]}],"name":"User Activity","maintainers":["DIYgod"],"location":"user.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1339)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+
+## pixivision <Site url="www.pixivision.net"/>
+
+### Category <Site url="www.pixivision.net" size="sm" />
+
+<Route namespace="pixivision" :data='{"path":"/:lang/:category?","categories":["anime","popular"],"view":0,"example":"/pixivision/zh-tw","parameters":{"lang":"Language","category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["SnowAgar25"],"description":":::tip\n  `https://www.pixivision.net/zh-tw/c/interview` → `/pixivision/zh-tw/interview`\n  :::","radar":[{"source":["www.pixivision.net/:lang"],"target":"/:lang"},{"source":["www.pixivision.net/:lang/c/:category"],"target":"/:lang/:category"}],"location":"index.ts"}' :test='{"code":0}' />
+
+:::tip
+  `https://www.pixivision.net/zh-tw/c/interview` → `/pixivision/zh-tw/interview`
+  :::
 
 ## Plurk <Site url="plurk.com"/>
 
@@ -1019,6 +1039,16 @@ Currently supports two authentication methods:
 
 <Route namespace="smzdm" :data='{"path":"/ranking/:rank_type/:rank_id/:hour","categories":["shopping","popular"],"view":5,"example":"/smzdm/ranking/pinlei/11/3","parameters":{"rank_type":{"description":"榜单类型","options":[{"value":"pinlei","label":"好价品类榜"},{"value":"dianshang","label":"好价电商榜"},{"value":"haitao","label":"海淘 TOP 榜"},{"value":"haowen","label":"好文排行榜"},{"value":"haowu","label":"好物排行榜"}]},"rank_id":{"description":"榜单ID","options":[{"label":"好价品类榜 - 全部","value":"11"},{"label":"好价品类榜 - 食品生鲜","value":"12"},{"label":"好价品类榜 - 电脑数码","value":"13"},{"label":"好价品类榜 - 运动户外","value":"14"},{"label":"好价品类榜 - 家用电器","value":"15"},{"label":"好价品类榜 - 白菜","value":"17"},{"label":"好价品类榜 - 服饰鞋包","value":"74"},{"label":"好价品类榜 - 日用百货","value":"75"},{"label":"好价电商榜 - 券活动","value":"24"},{"label":"好价电商榜 - 京东","value":"23"},{"label":"好价电商榜 - 天猫","value":"25"},{"label":"好价电商榜 - 亚马逊中国","value":"26"},{"label":"好价电商榜 - 国美在线","value":"27"},{"label":"好价电商榜 - 苏宁易购","value":"28"},{"label":"好价电商榜 - 网易","value":"29"},{"label":"好价电商榜 - 西集网","value":"30"},{"label":"好价电商榜 - 美国亚马逊","value":"31"},{"label":"好价电商榜 - 日本亚马逊","value":"32"},{"label":"好价电商榜 - ebay","value":"33"},{"label":"海淘 TOP 榜 - 全部","value":"39"},{"label":"海淘 TOP 榜 - 海外直邮","value":"34"},{"label":"海淘 TOP 榜 - 美国榜","value":"35"},{"label":"海淘 TOP 榜 - 欧洲榜","value":"36"},{"label":"海淘 TOP 榜 - 澳新榜","value":"37"},{"label":"海淘 TOP 榜 - 亚洲榜","value":"38"},{"label":"海淘 TOP 榜 - 晒物榜","value":"hsw"},{"label":"好文排行榜 - 原创","value":"yc"},{"label":"好文排行榜 - 资讯","value":"zx"},{"label":"好物排行榜 - 新晋榜","value":"hwall"},{"label":"好物排行榜 - 消费众测","value":"zc"},{"label":"好物排行榜 - 新锐品牌","value":"nb"},{"label":"好物排行榜 - 好物榜单","value":"hw"}]},"hour":{"description":"时间跨度","options":[{"value":"3","label":"3 小时"},{"value":"12","label":"12 小时"},{"value":"24","label":"24 小时"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["DIYgod"],"location":"ranking.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1565)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
+## 书伴 <Site url="bookfere.com"/>
+
+### 分类 <Site url="bookfere.com" size="sm" />
+
+<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading","popular"],"view":0,"example":"/bookfere/skills","parameters":{"category":{"description":"分类名","options":[{"value":"weekly","label":"每周一书"},{"value":"skills","label":"使用技巧"},{"value":"books","label":"图书推荐"},{"value":"news","label":"新闻速递"},{"value":"essay","label":"精选短文"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
+
+| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |
+  | -------- | -------- | -------- | -------- | -------- |
+  | weekly   | skills   | books    | news     | essay    |
+
 ## 听听 FM <Site url="mobile.tingtingfm.com"/>
 
 ### 节目 <Site url="mobile.tingtingfm.com" size="sm" />
@@ -1090,6 +1120,18 @@ Currently supports two authentication methods:
 ### 播客 <Site url="xiaoyuzhoufm.com/" size="sm" />
 
 <Route namespace="xiaoyuzhou" :data='{"path":"/podcast/:id","categories":["multimedia","popular"],"view":4,"example":"/xiaoyuzhou/podcast/6021f949a789fca4eff4492c","parameters":{"id":"播客 id 或单集 id，可以在小宇宙播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaoyuzhoufm.com/podcast/:id","xiaoyuzhoufm.com/episode/:id"]}],"name":"播客","maintainers":["hondajojo","jtsang4","pseudoyu"],"url":"xiaoyuzhoufm.com/","location":"podcast.ts"}' :test='{"code":0}' />
+
+## 意林杂志 <Site url="www.yilinzazhi.com"/>
+
+### 近期文章汇总 <Site url="www.yilinzazhi.com" size="sm" />
+
+<Route namespace="yilinzazhi" :data='{"path":"/latest","categories":["reading","popular"],"view":0,"example":"/yilinzazhi/latest","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"近期文章汇总","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","description":"最近一期的文章汇总","location":"latest.ts"}' :test='{"code":0}' />
+
+最近一期的文章汇总
+
+### 文章列表 <Site url="www.yilinzazhi.com" size="sm" />
+
+<Route namespace="yilinzazhi" :data='{"path":"/","categories":["reading","popular"],"view":0,"example":"/yilinzazhi","radar":[{"source":["www.yilinzazhi.com"],"target":"/"}],"name":"文章列表","maintainers":["g0ngjie"],"url":"www.yilinzazhi.com","location":"index.ts"}' :test='{"code":0}' />
 
 ## 站酷 <Site url="www.zcool.com.cn"/>
 
