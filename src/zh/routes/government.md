@@ -222,11 +222,11 @@ Language
 
 ### 最新发布 <Site url="www.12371.cn" size="sm" />
 
-<Route namespace="12371" :data='{"path":"/:category?","example":"/12371/zxfb","parameters":{"category":"新闻分类名，预设 `zxfb`"},"radar":[{"source":["www.12371.cn/:category"]}],"name":"最新发布","maintainers":["zvrr"],"url":"www.12371.cn","description":"| 最新发布 |\n    | :------: |\n    |   zxfb   |","location":"zxfb.ts"}' :test='undefined' />
+<Route namespace="12371" :data='{"path":"/:category?","example":"/12371/zxfb","parameters":{"category":"新闻分类名，预设 `zxfb`"},"radar":[{"source":["www.12371.cn/:category"]}],"name":"最新发布","maintainers":["zvrr"],"url":"www.12371.cn","description":"| 最新发布 |\n  | :------: |\n  |   zxfb   |","location":"zxfb.ts"}' :test='undefined' />
 
 | 最新发布 |
-    | :------: |
-    |   zxfb   |
+  | :------: |
+  |   zxfb   |
 
 ## 国家药品审评网站 <Site url="www.cde.org.cn"/>
 
@@ -1452,11 +1452,11 @@ Language
 
 ### 重庆市人民政府 国有资产监督管理委员会 <Site url="gzw.cq.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/chongqing/gzw/:category{.+}?","parameters":{"category":"分类，见下表，默认为通知公告"},"name":"重庆市人民政府 国有资产监督管理委员会","url":"gzw.cq.gov.cn","maintainers":["nczitzk"],"radar":[{"source":"gzw.cq.gov.cn/*category","target":"/chongqing/gzw/*category"}],"description":"| 通知公告  | 国企资讯 | 国企简介 | 国企招聘 |\n    | --------- | -------- | -------- | -------- |\n    | tzgg_191 | gqdj     | gqjj     | gqzp     |","location":"chongqing/gzw.ts"}' :test='undefined' />
+<Route namespace="gov" :data='{"path":"/chongqing/gzw/:category{.+}?","parameters":{"category":"分类，见下表，默认为通知公告"},"name":"重庆市人民政府 国有资产监督管理委员会","url":"gzw.cq.gov.cn","maintainers":["nczitzk"],"radar":[{"source":"gzw.cq.gov.cn/*category","target":"/chongqing/gzw/*category"}],"description":"| 通知公告  | 国企资讯 | 国企简介 | 国企招聘 |\n  | --------- | -------- | -------- | -------- |\n  | tzgg_191 | gqdj     | gqjj     | gqzp     |","location":"chongqing/gzw.ts"}' :test='undefined' />
 
 | 通知公告  | 国企资讯 | 国企简介 | 国企招聘 |
-    | --------- | -------- | -------- | -------- |
-    | tzgg_191 | gqdj     | gqjj     | gqzp     |
+  | --------- | -------- | -------- | -------- |
+  | tzgg_191 | gqdj     | gqjj     | gqzp     |
 
 ### 重庆市人民政府 人力社保局 - 人事考试通知 <Site url="rlsbj.cq.gov.cn/" size="sm" />
 
@@ -1500,11 +1500,11 @@ Language
 
 ### 新闻资讯 <Site url="www.sara.org.cn" size="sm" />
 
-<Route namespace="sara" :data='{"path":"/:type","categories":["government"],"example":"/sara/announcement","parameters":{"type":"dynamic | announcement | industry"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"| 协会动态 | 通知公告 |行业动态 |\n    | -------- | ------------ | -------- |\n    | dynamic | announcement | industry |","name":"新闻资讯","maintainers":["HChenZi"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="sara" :data='{"path":"/:type","categories":["government"],"example":"/sara/announcement","parameters":{"type":"dynamic | announcement | industry"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"| 协会动态 | 通知公告 |行业动态 |\n  | -------- | ------------ | -------- |\n  | dynamic | announcement | industry |","name":"新闻资讯","maintainers":["HChenZi"],"location":"index.ts"}' :test='{"code":0}' />
 
 | 协会动态 | 通知公告 |行业动态 |
-    | -------- | ------------ | -------- |
-    | dynamic | announcement | industry |
+  | -------- | ------------ | -------- |
+  | dynamic | announcement | industry |
 
 ## 深圳市医疗器械行业协会 <Site url="www.samd.org.cn"/>
 

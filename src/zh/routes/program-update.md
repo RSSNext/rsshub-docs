@@ -293,16 +293,16 @@ Download the latest beta firmware for iPhone, iPad, Mac, Apple Vision Pro, and A
 
 ### New firmware <Site url="miui.com" size="sm" />
 
-<Route namespace="miui" :data='{"path":"/firmware/:device/:type?/:region?","categories":["program-update"],"example":"/miui/firmware/aries","parameters":{"device":"the device `codename` eg. `aries` for Mi 2S","type":"type","region":"Region, default to `cn`"},"name":"New firmware","maintainers":["Indexyz"],"description":"  | stable  | development |\n    | ------- | ----------- |\n    | release | dev         |\n  \n    | region | region |\n    | ------ | ------ |\n    | China  | cn     |\n    | Global | global |","location":"firmware/index.ts"}' :test='{"code":0}' />
+<Route namespace="miui" :data='{"path":"/firmware/:device/:type?/:region?","categories":["program-update"],"example":"/miui/firmware/aries","parameters":{"device":"the device `codename` eg. `aries` for Mi 2S","type":"type","region":"Region, default to `cn`"},"name":"New firmware","maintainers":["Indexyz"],"description":"  | stable  | development |\n  | ------- | ----------- |\n  | release | dev         |\n\n  | region | region |\n  | ------ | ------ |\n  | China  | cn     |\n  | Global | global |","location":"firmware/index.ts"}' :test='{"code":0}' />
 
   | stable  | development |
-    | ------- | ----------- |
-    | release | dev         |
-  
-    | region | region |
-    | ------ | ------ |
-    | China  | cn     |
-    | Global | global |
+  | ------- | ----------- |
+  | release | dev         |
+
+  | region | region |
+  | ------ | ------ |
+  | China  | cn     |
+  | Global | global |
 
 ## Neat Download Manager <Site url="neatdownloadmanager.com"/>
 

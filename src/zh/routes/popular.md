@@ -129,24 +129,24 @@ lang:
 
 ### Bloomberg Site <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance","popular"],"view":0,"example":"/bloomberg/bbiz","parameters":{"site":{"description":"Site ID, can be found below","options":[{"value":"/","label":"News"},{"value":"bpol","label":"Politics"},{"value":"bbiz","label":"Business"},{"value":"markets","label":"Markets"},{"value":"technology","label":"Technology"},{"value":"green","label":"Green"},{"value":"wealth","label":"Wealth"},{"value":"pursuits","label":"Pursuits"},{"value":"bview","label":"Opinion"},{"value":"equality","label":"Equality"},{"value":"businessweek","label":"Businessweek"},{"value":"citylab","label":"CityLab"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n    | Site ID      | Title        |\n    | ------------ | ------------ |\n    | /            | News         |\n    | bpol         | Politics     |\n    | bbiz         | Business     |\n    | markets      | Markets      |\n    | technology   | Technology   |\n    | green        | Green        |\n    | wealth       | Wealth       |\n    | pursuits     | Pursuits     |\n    | bview        | Opinion      |\n    | equality     | Equality     |\n    | businessweek | Businessweek |\n    | citylab      | CityLab      |\n    ","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance","popular"],"view":0,"example":"/bloomberg/bbiz","parameters":{"site":{"description":"Site ID, can be found below","options":[{"value":"/","label":"News"},{"value":"bpol","label":"Politics"},{"value":"bbiz","label":"Business"},{"value":"markets","label":"Markets"},{"value":"technology","label":"Technology"},{"value":"green","label":"Green"},{"value":"wealth","label":"Wealth"},{"value":"pursuits","label":"Pursuits"},{"value":"bview","label":"Opinion"},{"value":"equality","label":"Equality"},{"value":"businessweek","label":"Businessweek"},{"value":"citylab","label":"CityLab"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n  | Site ID      | Title        |\n  | ------------ | ------------ |\n  | /            | News         |\n  | bpol         | Politics     |\n  | bbiz         | Business     |\n  | markets      | Markets      |\n  | technology   | Technology   |\n  | green        | Green        |\n  | wealth       | Wealth       |\n  | pursuits     | Pursuits     |\n  | bview        | Opinion      |\n  | equality     | Equality     |\n  | businessweek | Businessweek |\n  | citylab      | CityLab      |\n  ","location":"index.ts"}' :test='{"code":0}' />
 
 
-    | Site ID      | Title        |
-    | ------------ | ------------ |
-    | /            | News         |
-    | bpol         | Politics     |
-    | bbiz         | Business     |
-    | markets      | Markets      |
-    | technology   | Technology   |
-    | green        | Green        |
-    | wealth       | Wealth       |
-    | pursuits     | Pursuits     |
-    | bview        | Opinion      |
-    | equality     | Equality     |
-    | businessweek | Businessweek |
-    | citylab      | CityLab      |
-    
+  | Site ID      | Title        |
+  | ------------ | ------------ |
+  | /            | News         |
+  | bpol         | Politics     |
+  | bbiz         | Business     |
+  | markets      | Markets      |
+  | technology   | Technology   |
+  | green        | Green        |
+  | wealth       | Wealth       |
+  | pursuits     | Pursuits     |
+  | bview        | Opinion      |
+  | equality     | Equality     |
+  | businessweek | Businessweek |
+  | citylab      | CityLab      |
+  
 
 ## Bluesky (bsky) <Site url="bsky.app"/>
 

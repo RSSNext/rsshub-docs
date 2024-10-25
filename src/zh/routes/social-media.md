@@ -1069,11 +1069,11 @@ Chart
 
 ### 新书速递 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n  | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n  | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":0}' />
 
 | 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |
-    | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |
-    | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |
+  | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |
+  | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |
 
 ### 一周口碑榜 <Site url="www.douban.com" size="sm" />
 
@@ -1520,11 +1520,11 @@ Chart
 
 ### 星球 <Site url="zsxq.com" size="sm" />
 
-<Route namespace="zsxq" :data='{"name":"星球","categories":["social-media"],"path":"/group/:id/:scope?","example":"/zsxq/group/88855458825252","parameters":{"id":"星球id，从网页端url中获取","scope":"栏目分类，默认为\"all\"，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["wx.zsxq.com/dweb2/index/group/:id"]}],"features":{"requireConfig":[{"name":"ZSXQ_ACCESS_TOKEN","description":"知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"}]},"description":"| all  | digests | by_owner | questions | tasks |\n    | ---- | ------ | --------- | -------- | ------ |\n    | 最新 | 精华    | 只看星主    | 问答      | 作业   |","location":"group.ts"}' :test='undefined' />
+<Route namespace="zsxq" :data='{"name":"星球","categories":["social-media"],"path":"/group/:id/:scope?","example":"/zsxq/group/88855458825252","parameters":{"id":"星球id，从网页端url中获取","scope":"栏目分类，默认为\"all\"，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["wx.zsxq.com/dweb2/index/group/:id"]}],"features":{"requireConfig":[{"name":"ZSXQ_ACCESS_TOKEN","description":"知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"}]},"description":"| all  | digests | by_owner | questions | tasks |\n  | ---- | ------ | --------- | -------- | ------ |\n  | 最新 | 精华    | 只看星主    | 问答      | 作业   |","location":"group.ts"}' :test='undefined' />
 
 | all  | digests | by_owner | questions | tasks |
-    | ---- | ------ | --------- | -------- | ------ |
-    | 最新 | 精华    | 只看星主    | 问答      | 作业   |
+  | ---- | ------ | --------- | -------- | ------ |
+  | 最新 | 精华    | 只看星主    | 问答      | 作业   |
 
 ### 用户足迹 <Site url="zsxq.com" size="sm" />
 

@@ -75,24 +75,24 @@ lang:
 
 ### Bloomberg Site <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance","popular"],"view":0,"example":"/bloomberg/bbiz","parameters":{"site":{"description":"Site ID, can be found below","options":[{"value":"/","label":"News"},{"value":"bpol","label":"Politics"},{"value":"bbiz","label":"Business"},{"value":"markets","label":"Markets"},{"value":"technology","label":"Technology"},{"value":"green","label":"Green"},{"value":"wealth","label":"Wealth"},{"value":"pursuits","label":"Pursuits"},{"value":"bview","label":"Opinion"},{"value":"equality","label":"Equality"},{"value":"businessweek","label":"Businessweek"},{"value":"citylab","label":"CityLab"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n    | Site ID      | Title        |\n    | ------------ | ------------ |\n    | /            | News         |\n    | bpol         | Politics     |\n    | bbiz         | Business     |\n    | markets      | Markets      |\n    | technology   | Technology   |\n    | green        | Green        |\n    | wealth       | Wealth       |\n    | pursuits     | Pursuits     |\n    | bview        | Opinion      |\n    | equality     | Equality     |\n    | businessweek | Businessweek |\n    | citylab      | CityLab      |\n    ","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance","popular"],"view":0,"example":"/bloomberg/bbiz","parameters":{"site":{"description":"Site ID, can be found below","options":[{"value":"/","label":"News"},{"value":"bpol","label":"Politics"},{"value":"bbiz","label":"Business"},{"value":"markets","label":"Markets"},{"value":"technology","label":"Technology"},{"value":"green","label":"Green"},{"value":"wealth","label":"Wealth"},{"value":"pursuits","label":"Pursuits"},{"value":"bview","label":"Opinion"},{"value":"equality","label":"Equality"},{"value":"businessweek","label":"Businessweek"},{"value":"citylab","label":"CityLab"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n  | Site ID      | Title        |\n  | ------------ | ------------ |\n  | /            | News         |\n  | bpol         | Politics     |\n  | bbiz         | Business     |\n  | markets      | Markets      |\n  | technology   | Technology   |\n  | green        | Green        |\n  | wealth       | Wealth       |\n  | pursuits     | Pursuits     |\n  | bview        | Opinion      |\n  | equality     | Equality     |\n  | businessweek | Businessweek |\n  | citylab      | CityLab      |\n  ","location":"index.ts"}' :test='{"code":0}' />
 
 
-    | Site ID      | Title        |
-    | ------------ | ------------ |
-    | /            | News         |
-    | bpol         | Politics     |
-    | bbiz         | Business     |
-    | markets      | Markets      |
-    | technology   | Technology   |
-    | green        | Green        |
-    | wealth       | Wealth       |
-    | pursuits     | Pursuits     |
-    | bview        | Opinion      |
-    | equality     | Equality     |
-    | businessweek | Businessweek |
-    | citylab      | CityLab      |
-    
+  | Site ID      | Title        |
+  | ------------ | ------------ |
+  | /            | News         |
+  | bpol         | Politics     |
+  | bbiz         | Business     |
+  | markets      | Markets      |
+  | technology   | Technology   |
+  | green        | Green        |
+  | wealth       | Wealth       |
+  | pursuits     | Pursuits     |
+  | bview        | Opinion      |
+  | equality     | Equality     |
+  | businessweek | Businessweek |
+  | citylab      | CityLab      |
+  
 
 ## DT 财经 <Site url="dtcj.com"/>
 
@@ -1045,62 +1045,62 @@ Language:
 
 ### 栏目 <Site url="cs.com.cn" size="sm" />
 
-<Route namespace="cs" :data='{"path":"/:category{.+}?","name":"栏目","parameters":{"category":"分类，见下表，默认为首页"},"maintainers":["nczitzk"],"description":"| 要闻 | 公司 | 市场 | 基金 |\n    | ---- | ---- | ---- | ---- |\n    | xwzx | ssgs | gppd | tzjj |\n\n    | 科创 | 产经   | 期货     | 海外   |\n    | ---- | ------ | -------- | ------ |\n    | 5g   | cj2020 | zzqh2020 | hw2020 |\n\n    <details>\n      <summary>更多栏目</summary>\n\n      #### 要闻\n\n      | 财经要闻 | 观点评论 | 民生消费  |\n      | -------- | -------- | --------- |\n      | xwzx/hg  | xwzx/jr  | xwzx/msxf |\n\n      #### 公司\n\n      | 公司要闻  | 公司深度  | 公司巡礼  |\n      | --------- | --------- | --------- |\n      | ssgs/gsxw | ssgs/gssd | ssgs/gsxl |\n\n      #### 市场\n\n      | A 股市场  | 港股资讯  | 债市研究  | 海外报道  | 期货报道  |\n      | --------- | --------- | --------- | --------- | --------- |\n      | gppd/gsyj | gppd/ggzx | gppd/zqxw | gppd/hwbd | gppd/qhbd |\n\n      #### 基金\n\n      | 基金动态  | 基金视点  | 基金持仓  | 私募基金  | 基民学苑  |\n      | --------- | --------- | --------- | --------- | --------- |\n      | tzjj/jjdt | tzjj/jjks | tzjj/jjcs | tzjj/smjj | tzjj/tjdh |\n\n      #### 机构\n\n      | 券商 | 银行 | 保险 |\n      | ---- | ---- | ---- |\n      | qs   | yh   | bx   |\n\n      #### 其他\n\n      | 中证快讯 7x24 | IPO 鉴真 | 公司能见度 |\n      | ------------- | -------- | ---------- |\n      | sylm/jsbd     | yc/ipojz | yc/gsnjd   |\n    </details>","location":"index.ts"}' :test='undefined' />
+<Route namespace="cs" :data='{"path":"/:category{.+}?","name":"栏目","parameters":{"category":"分类，见下表，默认为首页"},"maintainers":["nczitzk"],"description":"| 要闻 | 公司 | 市场 | 基金 |\n  | ---- | ---- | ---- | ---- |\n  | xwzx | ssgs | gppd | tzjj |\n\n  | 科创 | 产经   | 期货     | 海外   |\n  | ---- | ------ | -------- | ------ |\n  | 5g   | cj2020 | zzqh2020 | hw2020 |\n\n<details>\n  <summary>更多栏目</summary>\n\n  #### 要闻\n\n  | 财经要闻 | 观点评论 | 民生消费  |\n  | -------- | -------- | --------- |\n  | xwzx/hg  | xwzx/jr  | xwzx/msxf |\n\n  #### 公司\n\n  | 公司要闻  | 公司深度  | 公司巡礼  |\n  | --------- | --------- | --------- |\n  | ssgs/gsxw | ssgs/gssd | ssgs/gsxl |\n\n  #### 市场\n\n  | A 股市场  | 港股资讯  | 债市研究  | 海外报道  | 期货报道  |\n  | --------- | --------- | --------- | --------- | --------- |\n  | gppd/gsyj | gppd/ggzx | gppd/zqxw | gppd/hwbd | gppd/qhbd |\n\n  #### 基金\n\n  | 基金动态  | 基金视点  | 基金持仓  | 私募基金  | 基民学苑  |\n  | --------- | --------- | --------- | --------- | --------- |\n  | tzjj/jjdt | tzjj/jjks | tzjj/jjcs | tzjj/smjj | tzjj/tjdh |\n\n  #### 机构\n\n  | 券商 | 银行 | 保险 |\n  | ---- | ---- | ---- |\n  | qs   | yh   | bx   |\n\n  #### 其他\n\n  | 中证快讯 7x24 | IPO 鉴真 | 公司能见度 |\n  | ------------- | -------- | ---------- |\n  | sylm/jsbd     | yc/ipojz | yc/gsnjd   |\n</details>","location":"index.ts"}' :test='undefined' />
 
 | 要闻 | 公司 | 市场 | 基金 |
-    | ---- | ---- | ---- | ---- |
-    | xwzx | ssgs | gppd | tzjj |
+  | ---- | ---- | ---- | ---- |
+  | xwzx | ssgs | gppd | tzjj |
 
-    | 科创 | 产经   | 期货     | 海外   |
-    | ---- | ------ | -------- | ------ |
-    | 5g   | cj2020 | zzqh2020 | hw2020 |
+  | 科创 | 产经   | 期货     | 海外   |
+  | ---- | ------ | -------- | ------ |
+  | 5g   | cj2020 | zzqh2020 | hw2020 |
 
-    <details>
-      <summary>更多栏目</summary>
+<details>
+  <summary>更多栏目</summary>
 
-      #### 要闻
+  #### 要闻
 
-      | 财经要闻 | 观点评论 | 民生消费  |
-      | -------- | -------- | --------- |
-      | xwzx/hg  | xwzx/jr  | xwzx/msxf |
+  | 财经要闻 | 观点评论 | 民生消费  |
+  | -------- | -------- | --------- |
+  | xwzx/hg  | xwzx/jr  | xwzx/msxf |
 
-      #### 公司
+  #### 公司
 
-      | 公司要闻  | 公司深度  | 公司巡礼  |
-      | --------- | --------- | --------- |
-      | ssgs/gsxw | ssgs/gssd | ssgs/gsxl |
+  | 公司要闻  | 公司深度  | 公司巡礼  |
+  | --------- | --------- | --------- |
+  | ssgs/gsxw | ssgs/gssd | ssgs/gsxl |
 
-      #### 市场
+  #### 市场
 
-      | A 股市场  | 港股资讯  | 债市研究  | 海外报道  | 期货报道  |
-      | --------- | --------- | --------- | --------- | --------- |
-      | gppd/gsyj | gppd/ggzx | gppd/zqxw | gppd/hwbd | gppd/qhbd |
+  | A 股市场  | 港股资讯  | 债市研究  | 海外报道  | 期货报道  |
+  | --------- | --------- | --------- | --------- | --------- |
+  | gppd/gsyj | gppd/ggzx | gppd/zqxw | gppd/hwbd | gppd/qhbd |
 
-      #### 基金
+  #### 基金
 
-      | 基金动态  | 基金视点  | 基金持仓  | 私募基金  | 基民学苑  |
-      | --------- | --------- | --------- | --------- | --------- |
-      | tzjj/jjdt | tzjj/jjks | tzjj/jjcs | tzjj/smjj | tzjj/tjdh |
+  | 基金动态  | 基金视点  | 基金持仓  | 私募基金  | 基民学苑  |
+  | --------- | --------- | --------- | --------- | --------- |
+  | tzjj/jjdt | tzjj/jjks | tzjj/jjcs | tzjj/smjj | tzjj/tjdh |
 
-      #### 机构
+  #### 机构
 
-      | 券商 | 银行 | 保险 |
-      | ---- | ---- | ---- |
-      | qs   | yh   | bx   |
+  | 券商 | 银行 | 保险 |
+  | ---- | ---- | ---- |
+  | qs   | yh   | bx   |
 
-      #### 其他
+  #### 其他
 
-      | 中证快讯 7x24 | IPO 鉴真 | 公司能见度 |
-      | ------------- | -------- | ---------- |
-      | sylm/jsbd     | yc/ipojz | yc/gsnjd   |
-    </details>
+  | 中证快讯 7x24 | IPO 鉴真 | 公司能见度 |
+  | ------------- | -------- | ---------- |
+  | sylm/jsbd     | yc/ipojz | yc/gsnjd   |
+</details>
 
 ### 中证视频 <Site url="cs.com.cn" size="sm" />
 
-<Route namespace="cs" :data='{"path":"/video/:category?","categories":["finance"],"example":"/cs/video/今日聚焦","parameters":{"category":"分类，见下表，默认为今日聚焦"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"中证视频","description":"| 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |\n    | -------- | -------- | -------- | -------- | ------ |","maintainers":["nczitzk"],"location":"video.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 360)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="cs" :data='{"path":"/video/:category?","categories":["finance"],"example":"/cs/video/今日聚焦","parameters":{"category":"分类，见下表，默认为今日聚焦"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"中证视频","description":"| 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |\n  | -------- | -------- | -------- | -------- | ------ |","maintainers":["nczitzk"],"location":"video.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 360)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |
-    | -------- | -------- | -------- | -------- | ------ |
+  | -------- | -------- | -------- | -------- | ------ |
 
 ## 中国投资者网 <Site url="investor.org.cn"/>
 
