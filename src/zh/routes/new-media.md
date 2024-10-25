@@ -3345,9 +3345,9 @@ Type 栏目：
 
 ## 腾讯 <Site url="tencent.com"/>
 
-### 更新 <Site url="tencent.com" size="sm" />
+### 作者 <Site url="tencent.com" size="sm" />
 
-<Route namespace="tencent" :data='{"path":"/news/author/:mid","categories":["new-media"],"example":"/tencent/news/author/5933889","parameters":{"mid":"企鹅号 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["new.qq.com/omn/author/:mid"]}],"name":"更新","maintainers":["LogicJake","miles170"],"location":"news/author.ts"}' :test='{"code":0}' />
+<Route namespace="tencent" :data='{"path":"/news/author/:mid","categories":["new-media"],"example":"/tencent/news/author/5933889","parameters":{"mid":"企鹅号 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"当前作者文章","source":["news.qq.com/omn/author/:mid"]}],"name":"作者","maintainers":["LogicJake","miles170"],"location":"news/author.ts"}' :test='{"code":0}' />
 
 ## 腾讯研究院 <Site url="tisi.org"/>
 
