@@ -361,7 +361,7 @@
 
 ### Charts <Site url="www.imdb.com/chart/top/" size="sm" />
 
-<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia"],"parameters":{"chart":"The chart to display, `top` by default"},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
+<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia","popular"],"view":5,"parameters":{"chart":{"description":"The chart to display, `top` by default","options":[{"value":"top","label":"Top 250 Movies"},{"value":"moviemeter","label":"Most Popular Movies"},{"value":"toptv","label":"Top 250 TV Shows"},{"value":"tvmeter","label":"Most Popular TV Shows"}],"default":"top"}},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
 
 | Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |
   | -------------- | ------------------- | ---------------- | --------------------- |
@@ -694,7 +694,7 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
 ### Collections <Site url="podwise.ai" size="sm" />
 
-<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia"],"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":0}' />
+<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia","popular"],"view":4,"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":0}' />
 
 ### Episodes <Site url="podwise.ai" size="sm" />
 
@@ -804,7 +804,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### TV Show Seasons <Site url="themoviedb.org" size="sm" />
 
-<Route namespace="themoviedb" :data='{"path":"/tv/:id/seasons/:lang?","categories":["multimedia"],"example":"/themoviedb/tv/70593/seasons/en-US","parameters":{"id":"TV show ID","lang":"Language"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"TV Show Seasons","maintainers":["x2cf"],"location":"seasons.ts"}' :test='{"code":0}' />
+<Route namespace="themoviedb" :data='{"path":"/tv/:id/seasons/:lang?","categories":["multimedia","popular"],"view":5,"example":"/themoviedb/tv/70593/seasons/en-US","parameters":{"id":"TV show ID","lang":"Language"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"TV Show Seasons","maintainers":["x2cf"],"location":"seasons.ts"}' :test='{"code":0}' />
 
 ### Trending <Site url="themoviedb.org" size="sm" />
 
@@ -820,7 +820,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="m.ajmide.com" size="sm" />
 
-<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia"],"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia","popular"],"view":4,"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":0}' />
 
 ## 阿里云盘 <Site url="www.alipan.com"/>
 
@@ -1024,11 +1024,11 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 今日播出 <Site url="yysub.net/tv/schedule" size="sm" />
 
-<Route namespace="yyets" :data='{"path":"/today","categories":["multimedia"],"example":"/yyets/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yysub.net/tv/schedule","yysub.net/"]}],"name":"今日播出","maintainers":["bao1991213"],"url":"yysub.net/tv/schedule","location":"today.ts"}' :test='{"code":0}' />
+<Route namespace="yyets" :data='{"path":"/today","categories":["multimedia","popular"],"view":5,"example":"/yyets/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yysub.net/tv/schedule","yysub.net/"]}],"name":"今日播出","maintainers":["bao1991213"],"url":"yysub.net/tv/schedule","location":"today.ts"}' :test='{"code":0}' />
 
 ### 影视资讯 <Site url="yysub.net" size="sm" />
 
-<Route namespace="yyets" :data='{"path":"/article/:type?","categories":["multimedia"],"example":"/yyets/article","parameters":{"type":"["},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"影视资讯","maintainers":["wb121017405"],"description":"| 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |\n  | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |\n  |      | news     | report   | m_review | t_review | new_review | recom    |","location":"article.ts"}' :test='{"code":0}' />
+<Route namespace="yyets" :data='{"path":"/article/:type?","categories":["multimedia","popular"],"view":0,"example":"/yyets/article","parameters":{"type":{"description":"类型","options":[{"value":"all","label":"全部"},{"value":"news","label":"影视资讯"},{"value":"report","label":"收视快报"},{"value":"m_review","label":"人人影评"},{"value":"t_review","label":"人人剧评"},{"value":"new_review","label":"新剧评测"},{"value":"recom","label":"片单推荐"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"影视资讯","maintainers":["wb121017405"],"description":"| 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |\n  | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |\n  |      | news     | report   | m_review | t_review | new_review | recom    |","location":"article.ts"}' :test='{"code":0}' />
 
 | 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |
   | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |
@@ -1104,7 +1104,7 @@ Sometimes there might be only a single post without any reposted work, and vice 
 
 ### 节目 <Site url="mobile.tingtingfm.com" size="sm" />
 
-<Route namespace="tingtingfm" :data='{"path":"/program/:programId","categories":["multimedia"],"example":"/tingtingfm/program/M7VJv6Jj4R","parameters":{"programId":"节目 ID，可以在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mobile.tingtingfm.com/v3/program/:programId"]}],"name":"节目","maintainers":["TonyRL"],"location":"program.ts"}' :test='{"code":0}' />
+<Route namespace="tingtingfm" :data='{"path":"/program/:programId","categories":["multimedia","popular"],"view":4,"example":"/tingtingfm/program/M7VJv6Jj4R","parameters":{"programId":"节目 ID，可以在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mobile.tingtingfm.com/v3/program/:programId"]}],"name":"节目","maintainers":["TonyRL"],"location":"program.ts"}' :test='{"code":0}' />
 
 ## 通用影视采集站视频采集接口路由 
 

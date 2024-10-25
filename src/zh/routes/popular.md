@@ -62,6 +62,66 @@ Example:
 
 <Route namespace="epicgames" :data='{"path":"/freegames/:locale?/:country?","categories":["game","popular"],"view":5,"example":"/epicgames/freegames/en-US/US","parameters":{"locale":{"description":"Locale","default":"en-US"},"country":{"description":"Country","default":"US"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["store.epicgames.com/:locale/free-games"],"target":"/freegames/:locale"}],"name":"Free games","maintainers":["DIYgod","NeverBehave","Zyx-A","junfengP","nczitzk","KotaHv"],"location":"index.ts"}' :test='{"code":0}' />
 
+## Fantia <Site url="fantia.jp"/>
+
+### Search <Site url="fantia.jp" size="sm" />
+
+<Route namespace="fantia" :data='{"path":"/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?","categories":["picture","popular"],"view":2,"example":"/fantia/search/posts/all/daily","parameters":{"type":{"description":"Type, see the table below, `posts` by default","options":[{"value":"fanclubs","label":"クリエイター"},{"value":"posts","label":"投稿"},{"value":"products","label":"商品"},{"value":"commissions","label":"コミッション"}],"default":"posts"},"caty":{"description":"Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default","options":[{"value":"all","label":"すべてのクリエイター"},{"value":"illust","label":"イラスト"},{"value":"comic","label":"漫画"},{"value":"cosplay","label":"コスプレ"},{"value":"youtuber","label":"YouTuber・配信者"},{"value":"vtuber","label":"Vtuber"},{"value":"voice","label":"音声作品・ASMR"},{"value":"voiceactor","label":"声優・歌い手"},{"value":"idol","label":"アイドル"},{"value":"anime","label":"アニメ・映像・写真"},{"value":"3d","label":"3D"},{"value":"game","label":"ゲーム制作"},{"value":"music","label":"音楽"},{"value":"novel","label":"小説"},{"value":"doll","label":"ドール"},{"value":"art","label":"アート・デザイン"},{"value":"program","label":"プログラム"},{"value":"handmade","label":"創作・ハンドメイド"},{"value":"history","label":"歴史・評論・情報"},{"value":"railroad","label":"鉄道・旅行・ミリタリー"},{"value":"shop","label":"ショップ"},{"value":"other","label":"その他"}],"default":"all"},"period":{"description":"Ranking period, see the table below, empty by default","options":[{"value":"daily","label":"デイリー"},{"value":"weekly","label":"ウィークリー"},{"value":"monthly","label":"マンスリー"},{"value":"all","label":"全期間"}],"default":""},"order":{"description":"Sorting, see the table below, `更新の新しい順` by default","options":[{"value":"updater","label":"更新の新しい順"},{"value":"update_old","label":"更新の古い順"},{"value":"newer","label":"投稿の新しい順"},{"value":"create_old","label":"投稿の古い順"},{"value":"popular","label":"お気に入り数順"}],"default":"updater"},"rating":{"description":"Rating, see the table below, `すべて` by default","options":[{"value":"all","label":"すべて"},{"value":"general","label":"一般のみ"},{"value":"adult","label":"R18 のみ"}],"default":"all"},"keyword":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["nczitzk"],"description":"Type\n\n  | クリエイター | 投稿  | 商品     | コミッション |\n  | ------------ | ----- | -------- | ------------ |\n  | fanclubs     | posts | products | commissions  |\n\n  Category\n\n  | 分类                   | 分类名     |\n  | ---------------------- | ---------- |\n  | イラスト               | illust     |\n  | 漫画                   | comic      |\n  | コスプレ               | cosplay    |\n  | YouTuber・配信者       | youtuber   |\n  | Vtuber                 | vtuber     |\n  | 音声作品・ASMR         | voice      |\n  | 声優・歌い手           | voiceactor |\n  | アイドル               | idol       |\n  | アニメ・映像・写真     | anime      |\n  | 3D                     | 3d         |\n  | ゲーム制作             | game       |\n  | 音楽                   | music      |\n  | 小説                   | novel      |\n  | ドール                 | doll       |\n  | アート・デザイン       | art        |\n  | プログラム             | program    |\n  | 創作・ハンドメイド     | handmade   |\n  | 歴史・評論・情報       | history    |\n  | 鉄道・旅行・ミリタリー | railroad   |\n  | ショップ               | shop       |\n  | その他                 | other      |\n\n  Ranking period\n\n  | デイリー | ウィークリー | マンスリー | 全期間 |\n  | -------- | ------------ | ---------- | ------ |\n  | daily    | weekly       | monthly    | all    |\n\n  Sorting\n\n  | 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n  | -------------- | ------------ | -------------- | ------------ | -------------- |\n  | updater        | update_old  | newer          | create_old  | popular        |\n\n  Rating\n\n  | すべて | 一般のみ | R18 のみ |\n  | ------ | -------- | -------- |\n  | all    | general  | adult    |","location":"search.ts"}' :test='{"code":0}' />
+
+Type
+
+  | クリエイター | 投稿  | 商品     | コミッション |
+  | ------------ | ----- | -------- | ------------ |
+  | fanclubs     | posts | products | commissions  |
+
+  Category
+
+  | 分类                   | 分类名     |
+  | ---------------------- | ---------- |
+  | イラスト               | illust     |
+  | 漫画                   | comic      |
+  | コスプレ               | cosplay    |
+  | YouTuber・配信者       | youtuber   |
+  | Vtuber                 | vtuber     |
+  | 音声作品・ASMR         | voice      |
+  | 声優・歌い手           | voiceactor |
+  | アイドル               | idol       |
+  | アニメ・映像・写真     | anime      |
+  | 3D                     | 3d         |
+  | ゲーム制作             | game       |
+  | 音楽                   | music      |
+  | 小説                   | novel      |
+  | ドール                 | doll       |
+  | アート・デザイン       | art        |
+  | プログラム             | program    |
+  | 創作・ハンドメイド     | handmade   |
+  | 歴史・評論・情報       | history    |
+  | 鉄道・旅行・ミリタリー | railroad   |
+  | ショップ               | shop       |
+  | その他                 | other      |
+
+  Ranking period
+
+  | デイリー | ウィークリー | マンスリー | 全期間 |
+  | -------- | ------------ | ---------- | ------ |
+  | daily    | weekly       | monthly    | all    |
+
+  Sorting
+
+  | 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |
+  | -------------- | ------------ | -------------- | ------------ | -------------- |
+  | updater        | update_old  | newer          | create_old  | popular        |
+
+  Rating
+
+  | すべて | 一般のみ | R18 のみ |
+  | ------ | -------- | -------- |
+  | all    | general  | adult    |
+
+### User Posts <Site url="fantia.jp" size="sm" />
+
+<Route namespace="fantia" :data='{"path":"/user/:id","categories":["picture","popular"],"view":2,"example":"/fantia/user/3498","parameters":{"id":"User id, can be found in user profile URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fantia.jp/fanclubs/:id"]}],"name":"User Posts","maintainers":["nczitzk"],"location":"user.ts"}' :test='{"code":0}' />
+
 ## Fediverse <Site url="fediverse.observer"/>
 
 ### Timeline <Site url="fediverse.observer" size="sm" />
@@ -126,6 +186,10 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
   2.  Advanced mode, visit [Google Scholar](https://scholar.google.com/schhp?hl=en&as_sdt=0,5), click the top left corner and select「Advanced Search」, fill in your conditions and submit the search. The URL should look like this: [https://scholar.google.com/scholar?as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5](https://scholar.google.com/scholar?as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5), copy everything after `https://scholar.google.com/scholar?` from the URL and use it as the query for this route. The complete URL for the above example should look like this: [https://rsshub.app/google/scholar/as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5](https://rsshub.app/google/scholar/as_q=data+visualization&as_epq=&as_oq=&as_eq=&as_occt=any&as_sauthors=&as_publication=&as_ylo=2018&as_yhi=&hl=en&as_sdt=0%2C5).
 
+### Update <Site url="www.google.com" size="sm" />
+
+<Route namespace="google" :data='{"path":"/doodles/:language?","categories":["picture","popular"],"view":2,"example":"/google/doodles/zh-CN","parameters":{"language":"Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Update","maintainers":["xyqfer"],"location":"doodles.ts"}' :test='{"code":0}' />
+
 ## GQ <Site url="gq.com"/>
 
 ### News <Site url="gq.com" size="sm" />
@@ -153,6 +217,16 @@ Subscribe to the content of a specific user
 ### 作品周边 <Site url="www.hpoi.net" size="sm" />
 
 <Route namespace="hpoi" :data='{"path":"/items/work/:id/:order?","categories":["anime","popular"],"view":2,"example":"/hpoi/items/work/4117491","parameters":{"id":"作品 ID","order":{"description":"排序","options":[{"value":"release","label":"发售"},{"value":"add","label":"入库"},{"value":"hits","label":"总热度"},{"value":"hits7Day","label":"一周热度"},{"value":"hitsDay","label":"一天热度"},{"value":"rating","label":"评价"}],"default":"add"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品周边","maintainers":["DIYgod"],"location":"work.ts"}' :test='{"code":0}' />
+
+## IMDb <Site url="www.imdb.com"/>
+
+### Charts <Site url="www.imdb.com/chart/top/" size="sm" />
+
+<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia","popular"],"view":5,"parameters":{"chart":{"description":"The chart to display, `top` by default","options":[{"value":"top","label":"Top 250 Movies"},{"value":"moviemeter","label":"Most Popular Movies"},{"value":"toptv","label":"Top 250 TV Shows"},{"value":"tvmeter","label":"Most Popular TV Shows"}],"default":"top"}},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
+
+| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |
+  | -------------- | ------------------- | ---------------- | --------------------- |
+  | top            | moviemeter          | toptv            | tvmeter               |
 
 ## Instagram <Site url="www.instagram.com"/>
 
@@ -183,6 +257,18 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 ### Works <Site url="www.javbus.com" size="sm" />
 
 <Route namespace="javbus" :data='{"path":"/:path{.+}?","radar":[{"source":["www.javbus.com/:path*"],"target":"/:path"}],"name":"Works","maintainers":["MegrezZhu","CoderTonyChan","nczitzk","Felix2yu"],"categories":["multimedia","popular"],"view":3,"url":"www.javbus.com","example":"/javbus/star/rwt","parameters":{"path":{"description":"Any path of list page on javbus"}},"location":"index.ts"}' :test='{"code":0}' />
+
+## Konachan.com Anime Wallpapers <Site url="konachan.com"/>
+
+konachan post
+
+### Popular Recent Posts <Site url="konachan.com" size="sm" />
+
+<Route namespace="konachan" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/konachan/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["konachan.com/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
+
+| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
+  | ------- | -------- | ------- | -------- |
+  | 1d | 1w | 1m | 1y |
 
 ## Lemmy <Site url="join-lemmy.org"/>
 
@@ -244,6 +330,12 @@ JavBus has multiple backup domains, these routes use default domain `https://jav
 ### User <Site url="www.lofter.com" size="sm" />
 
 <Route namespace="lofter" :data='{"path":"/user/:name?","categories":["social-media","popular"],"example":"/lofter/user/i","view":0,"parameters":{"name":"Lofter user name, can be found in the URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["hondajojo","nczitzk","LucunJi"],"location":"user.ts"}' :test='{"code":0}' />
+
+## Magnum Photos <Site url="magnumphotos.com"/>
+
+### Magazine <Site url="magnumphotos.com/" size="sm" />
+
+<Route namespace="magnumphotos" :data='{"path":"/magazine","categories":["picture","popular"],"view":2,"example":"/magnumphotos/magazine","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magnumphotos.com/"]}],"name":"Magazine","maintainers":["EthanWng97"],"url":"magnumphotos.com/","location":"magazine.ts"}' :test='{"code":0}' />
 
 ## Mastodon <Site url="mastodon.social"/>
 
@@ -336,6 +428,12 @@ However, you can still specify these route-specific configurations if you need t
   | 11       | 공예               | Crafts                  |
   | 12       | 파인아트           | Fine Art                |
 
+## Pixabay <Site url="pixabay.com"/>
+
+### Search <Site url="pixabay.com" size="sm" />
+
+<Route namespace="pixabay" :data='{"path":"/search/:q/:order?","categories":["picture","popular"],"view":2,"example":"/pixabay/search/cat","parameters":{"q":"Search term","order":{"description":"Order","options":[{"value":"popular","label":"popular"},{"value":"latest","label":"latest"}],"default":"latest"}},"features":{"requireConfig":[{"name":"PIXABAY_KEY","optional":true,"description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pixabay.com/:searchType/search/:q"],"target":"/search/:q"}],"name":"Search","maintainers":["TonyRL"],"location":"search.ts"}' :test='{"code":0}' />
+
 ## pixiv <Site url="www.pixiv.net"/>
 
 ### Keyword <Site url="www.pixiv.net" size="sm" />
@@ -371,6 +469,12 @@ However, you can still specify these route-specific configurations if you need t
 ### User <Site url="plurk.com" size="sm" />
 
 <Route namespace="plurk" :data='{"path":"/user/:user","categories":["social-media","popular"],"view":1,"example":"/plurk/user/plurkoffice","parameters":{"user":"User ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"User","maintainers":["TonyRL"],"location":"user.ts"}' :test='{"code":0}' />
+
+## Podwise <Site url="podwise.ai"/>
+
+### Collections <Site url="podwise.ai" size="sm" />
+
+<Route namespace="podwise" :data='{"path":"/explore","categories":["multimedia","popular"],"view":4,"example":"/podwise/explore","radar":[{"source":["podwise.ai","podwise.ai/explore"]}],"name":"Collections","maintainers":["lyling"],"location":"collections.ts"}' :test='{"code":0}' />
 
 ## PornHub <Site url="pornhub.com"/>
 
@@ -507,6 +611,16 @@ By extracting the full text of articles, we provide a better reading experience 
 
 <Route namespace="telegram" :data='{"path":"/blog","categories":["social-media","popular"],"view":0,"example":"/telegram/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["telegram.org/blog"]}],"name":"Telegram Blog","maintainers":["fengkx"],"url":"telegram.org/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## The Movie Database <Site url="themoviedb.org"/>
+
+:::tip
+Refer to [https://developers.themoviedb.org/3/getting-started/languages](https://developers.themoviedb.org/3/getting-started/languages) for the language parameter in the route.
+:::
+
+### TV Show Seasons <Site url="themoviedb.org" size="sm" />
+
+<Route namespace="themoviedb" :data='{"path":"/tv/:id/seasons/:lang?","categories":["multimedia","popular"],"view":5,"example":"/themoviedb/tv/70593/seasons/en-US","parameters":{"id":"TV show ID","lang":"Language"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"TV Show Seasons","maintainers":["x2cf"],"location":"seasons.ts"}' :test='{"code":0}' />
+
 ## Threads <Site url="threads.net"/>
 
 ### User timeline <Site url="threads.net" size="sm" />
@@ -546,6 +660,34 @@ By extracting the full text of articles, we provide a better reading experience 
 :::tip Special category name attention
   Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
   :::
+
+## Voronoi <Site url="voronoiapp.com"/>
+
+### Author Posts <Site url="voronoiapp.com" size="sm" />
+
+<Route namespace="voronoiapp" :data='{"url":"voronoiapp.com","categories":["picture","popular"],"view":2,"maintainers":["Cesaryuan"],"name":"Author Posts","path":"/author/:username","radar":[{"source":["www.voronoiapp.com/author/:username"],"target":"/author/:username"}],"example":"/voronoiapp/author/visualcapitalist","parameters":{"username":"The username of the author"},"location":"author.ts"}' :test='{"code":0}' />
+
+### Editor's Pick Posts <Site url="voronoiapp.com" size="sm" />
+
+<Route namespace="voronoiapp" :data='{"url":"voronoiapp.com","categories":["picture","popular"],"view":2,"maintainers":["Cesaryuan"],"name":"Editor&#39;s Pick Posts","path":"/editors-pick/:category?","radar":[{"source":["www.voronoiapp.com/posts/editors-pick"],"target":"/editors-pick"}],"example":"/voronoiapp/editors-pick","parameters":{"category":{"description":"The category of the post","default":"","options":[{"value":"","label":"All categories"},{"value":"Automotive","label":"Automotive Data Insights - Explore a range of automotive data visualizations showcasing trends, innovations, and market dynamics in the automotive industry."},{"value":"Business","label":"Business Visualization Trends - Discover business visualizations covering market analysis, corporate strategies, and economic impacts across global industries."},{"value":"Climate","label":"Climate Data Visualized - Delve into climate change data visualizations that detail weather patterns, environmental impacts, and sustainability efforts worldwide."},{"value":"Demographics","label":"Demographic Visual Insights - Explore visual demographics data showcasing population trends, societal changes, and demographic analytics across regions."},{"value":"Economy","label":"Economic Visualization Insights - View economic visualizations illustrating financial markets, economic policies, and global economic health."},{"value":"Energy","label":"Energy Industry Visual Data - Discover the dynamics of global energy consumption, renewable sources, and energy market trends through vivid visualizations."},{"value":"Entertainment","label":"Entertainment Industry Data - Explore data visualizations in the entertainment industry, covering everything from box office trends to streaming service analytics."},{"value":"Geopolitics","label":"Geopolitical Data Visualized - Understand global geopolitical shifts and international relations through comprehensive geopolitical data visualizations."},{"value":"Healthcare","label":"Healthcare Insights Visualized - Analyze healthcare data visualizations spanning disease trends, healthcare services, and public health policies."},{"value":"Innovation","label":"Innovation in Data - Dive into innovation data visualizations highlighting technology advancements, R&D investments, and patent trends."},{"value":"Maps","label":"Cartographic Visual Insights - Discover cartographic visualizations that map everything from socio-economic data to geographical phenomena."},{"value":"Markets","label":"Market Trends Visualized - Visualize market trends, financial data, and economic forecasts through comprehensive market visualizations."},{"value":"Money","label":"Financial Data Visualized - Dive into financial visualizations depicting currency trends, investment flows, and banking statistics."},{"value":"Natural Resources","label":"Natural Resources Data - Explore visualizations of natural resources, detailing extraction, consumption, and conservation data."},{"value":"Politics","label":"Political Visual Insights - Analyze political trends, election results, and legislative impacts through detailed political visualizations."},{"value":"Public Opinion","label":"Public Opinion Trends - Discover visualizations of public opinion polls, social trends, and cultural shifts across different regions."},{"value":"Real Estate","label":"Real Estate Market Insights - Explore real estate market trends, property values, and urban development through targeted data visualizations."},{"value":"Sports","label":"Sports Data Insights - Analyze sports data visualizations that showcase performance statistics, team rankings, and sports economics."},{"value":"Technology","label":"Technology Trends Visualized - Dive into technology visualizations highlighting industry trends, tech adoption rates, and innovation impacts."},{"value":"Wealth","label":"Wealth Distribution Insights - Explore wealth distribution, financial health, and economic disparities through detailed visualizations."},{"value":"Travel","label":"Travel Trends Visualized - Discover travel trends, tourism statistics, and destination analytics through engaging visualizations."},{"value":"Nature","label":"Nature and Conservation Data - Delve into visualizations of ecological data, wildlife statistics, and conservation efforts around the globe."},{"value":"Space","label":"Space Exploration Data - Explore the universe with space data visualizations covering planetary science, space missions, and astronomical discoveries."},{"value":"Diagram","label":"Diagrammatic Data Insights - Understand complex data through diagrams that simplify information across various topics and industries."},{"value":"Other","label":"Diverse Data Visualizations - Explore a variety of data visualizations that don&#39;t neatly fit into any single category but offer unique insights."}]}},"location":"editors-pick.ts"}' :test='{"code":0}' />
+
+### Home Posts <Site url="voronoiapp.com" size="sm" />
+
+<Route namespace="voronoiapp" :data='{"url":"voronoiapp.com","categories":["picture","popular"],"view":2,"maintainers":["Cesaryuan"],"name":"Home Posts","path":"/home/:category?","description":"This is the home page of Voronoi App","radar":[{"source":["www.voronoiapp.com","www.voronoiapp.com/posts/voronoi"],"target":"/home"}],"example":"/voronoiapp/home","parameters":{"category":{"description":"The category of the post","default":"","options":[{"value":"","label":"All categories"},{"value":"Automotive","label":"Automotive Data Insights - Explore a range of automotive data visualizations showcasing trends, innovations, and market dynamics in the automotive industry."},{"value":"Business","label":"Business Visualization Trends - Discover business visualizations covering market analysis, corporate strategies, and economic impacts across global industries."},{"value":"Climate","label":"Climate Data Visualized - Delve into climate change data visualizations that detail weather patterns, environmental impacts, and sustainability efforts worldwide."},{"value":"Demographics","label":"Demographic Visual Insights - Explore visual demographics data showcasing population trends, societal changes, and demographic analytics across regions."},{"value":"Economy","label":"Economic Visualization Insights - View economic visualizations illustrating financial markets, economic policies, and global economic health."},{"value":"Energy","label":"Energy Industry Visual Data - Discover the dynamics of global energy consumption, renewable sources, and energy market trends through vivid visualizations."},{"value":"Entertainment","label":"Entertainment Industry Data - Explore data visualizations in the entertainment industry, covering everything from box office trends to streaming service analytics."},{"value":"Geopolitics","label":"Geopolitical Data Visualized - Understand global geopolitical shifts and international relations through comprehensive geopolitical data visualizations."},{"value":"Healthcare","label":"Healthcare Insights Visualized - Analyze healthcare data visualizations spanning disease trends, healthcare services, and public health policies."},{"value":"Innovation","label":"Innovation in Data - Dive into innovation data visualizations highlighting technology advancements, R&D investments, and patent trends."},{"value":"Maps","label":"Cartographic Visual Insights - Discover cartographic visualizations that map everything from socio-economic data to geographical phenomena."},{"value":"Markets","label":"Market Trends Visualized - Visualize market trends, financial data, and economic forecasts through comprehensive market visualizations."},{"value":"Money","label":"Financial Data Visualized - Dive into financial visualizations depicting currency trends, investment flows, and banking statistics."},{"value":"Natural Resources","label":"Natural Resources Data - Explore visualizations of natural resources, detailing extraction, consumption, and conservation data."},{"value":"Politics","label":"Political Visual Insights - Analyze political trends, election results, and legislative impacts through detailed political visualizations."},{"value":"Public Opinion","label":"Public Opinion Trends - Discover visualizations of public opinion polls, social trends, and cultural shifts across different regions."},{"value":"Real Estate","label":"Real Estate Market Insights - Explore real estate market trends, property values, and urban development through targeted data visualizations."},{"value":"Sports","label":"Sports Data Insights - Analyze sports data visualizations that showcase performance statistics, team rankings, and sports economics."},{"value":"Technology","label":"Technology Trends Visualized - Dive into technology visualizations highlighting industry trends, tech adoption rates, and innovation impacts."},{"value":"Wealth","label":"Wealth Distribution Insights - Explore wealth distribution, financial health, and economic disparities through detailed visualizations."},{"value":"Travel","label":"Travel Trends Visualized - Discover travel trends, tourism statistics, and destination analytics through engaging visualizations."},{"value":"Nature","label":"Nature and Conservation Data - Delve into visualizations of ecological data, wildlife statistics, and conservation efforts around the globe."},{"value":"Space","label":"Space Exploration Data - Explore the universe with space data visualizations covering planetary science, space missions, and astronomical discoveries."},{"value":"Diagram","label":"Diagrammatic Data Insights - Understand complex data through diagrams that simplify information across various topics and industries."},{"value":"Other","label":"Diverse Data Visualizations - Explore a variety of data visualizations that don&#39;t neatly fit into any single category but offer unique insights."}]}},"location":"home.ts"}' :test='{"code":0}' />
+
+This is the home page of Voronoi App
+
+### Latest Posts <Site url="voronoiapp.com" size="sm" />
+
+<Route namespace="voronoiapp" :data='{"url":"voronoiapp.com","categories":["picture","popular"],"view":2,"maintainers":["Cesaryuan"],"name":"Latest Posts","path":"/latest/:category?","radar":[{"source":["www.voronoiapp.com/posts/latest"],"target":"/latest"}],"example":"/voronoiapp/latest","parameters":{"category":{"description":"The category of the post","default":"","options":[{"value":"","label":"All categories"},{"value":"Automotive","label":"Automotive Data Insights - Explore a range of automotive data visualizations showcasing trends, innovations, and market dynamics in the automotive industry."},{"value":"Business","label":"Business Visualization Trends - Discover business visualizations covering market analysis, corporate strategies, and economic impacts across global industries."},{"value":"Climate","label":"Climate Data Visualized - Delve into climate change data visualizations that detail weather patterns, environmental impacts, and sustainability efforts worldwide."},{"value":"Demographics","label":"Demographic Visual Insights - Explore visual demographics data showcasing population trends, societal changes, and demographic analytics across regions."},{"value":"Economy","label":"Economic Visualization Insights - View economic visualizations illustrating financial markets, economic policies, and global economic health."},{"value":"Energy","label":"Energy Industry Visual Data - Discover the dynamics of global energy consumption, renewable sources, and energy market trends through vivid visualizations."},{"value":"Entertainment","label":"Entertainment Industry Data - Explore data visualizations in the entertainment industry, covering everything from box office trends to streaming service analytics."},{"value":"Geopolitics","label":"Geopolitical Data Visualized - Understand global geopolitical shifts and international relations through comprehensive geopolitical data visualizations."},{"value":"Healthcare","label":"Healthcare Insights Visualized - Analyze healthcare data visualizations spanning disease trends, healthcare services, and public health policies."},{"value":"Innovation","label":"Innovation in Data - Dive into innovation data visualizations highlighting technology advancements, R&D investments, and patent trends."},{"value":"Maps","label":"Cartographic Visual Insights - Discover cartographic visualizations that map everything from socio-economic data to geographical phenomena."},{"value":"Markets","label":"Market Trends Visualized - Visualize market trends, financial data, and economic forecasts through comprehensive market visualizations."},{"value":"Money","label":"Financial Data Visualized - Dive into financial visualizations depicting currency trends, investment flows, and banking statistics."},{"value":"Natural Resources","label":"Natural Resources Data - Explore visualizations of natural resources, detailing extraction, consumption, and conservation data."},{"value":"Politics","label":"Political Visual Insights - Analyze political trends, election results, and legislative impacts through detailed political visualizations."},{"value":"Public Opinion","label":"Public Opinion Trends - Discover visualizations of public opinion polls, social trends, and cultural shifts across different regions."},{"value":"Real Estate","label":"Real Estate Market Insights - Explore real estate market trends, property values, and urban development through targeted data visualizations."},{"value":"Sports","label":"Sports Data Insights - Analyze sports data visualizations that showcase performance statistics, team rankings, and sports economics."},{"value":"Technology","label":"Technology Trends Visualized - Dive into technology visualizations highlighting industry trends, tech adoption rates, and innovation impacts."},{"value":"Wealth","label":"Wealth Distribution Insights - Explore wealth distribution, financial health, and economic disparities through detailed visualizations."},{"value":"Travel","label":"Travel Trends Visualized - Discover travel trends, tourism statistics, and destination analytics through engaging visualizations."},{"value":"Nature","label":"Nature and Conservation Data - Delve into visualizations of ecological data, wildlife statistics, and conservation efforts around the globe."},{"value":"Space","label":"Space Exploration Data - Explore the universe with space data visualizations covering planetary science, space missions, and astronomical discoveries."},{"value":"Diagram","label":"Diagrammatic Data Insights - Understand complex data through diagrams that simplify information across various topics and industries."},{"value":"Other","label":"Diverse Data Visualizations - Explore a variety of data visualizations that don&#39;t neatly fit into any single category but offer unique insights."}]}},"location":"latest.ts"}' :test='{"code":0}' />
+
+### Popular Posts <Site url="voronoiapp.com" size="sm" />
+
+<Route namespace="voronoiapp" :data='{"url":"voronoiapp.com","categories":["picture","popular"],"view":2,"maintainers":["Cesaryuan"],"name":"Popular Posts","path":"/popular/:tab?/:time_range?/:category?","radar":[{"title":"Most Liked Posts","source":["www.voronoiapp.com/posts/most-popular"],"target":"/popular/most-popular"},{"title":"Most Discussed Posts","source":["www.voronoiapp.com/posts/most-discussed"],"target":"/popular/most-discussed"},{"title":"Most Viewed Posts","source":["www.voronoiapp.com/posts/most-viewed"],"target":"/popular/most-viewed"}],"parameters":{"tab":{"description":"The tab to get the popular posts from.","default":"most-popular","options":[{"value":"most-popular","label":"Most Liked"},{"value":"most-discussed","label":"Most Discussed"},{"value":"most-viewed","label":"Most Viewed"}]},"time_range":{"description":"Time range between which the posts are popular.","default":"MONTH","options":[{"value":"WEEK","label":"Last 7 days"},{"value":"MONTH","label":"Last 30 days"},{"value":"YEAR","label":"Last 12 months"},{"value":"ALL","label":"All time"}]},"category":{"description":"The category of the post","default":"","options":[{"value":"","label":"All categories"},{"value":"Automotive","label":"Automotive Data Insights - Explore a range of automotive data visualizations showcasing trends, innovations, and market dynamics in the automotive industry."},{"value":"Business","label":"Business Visualization Trends - Discover business visualizations covering market analysis, corporate strategies, and economic impacts across global industries."},{"value":"Climate","label":"Climate Data Visualized - Delve into climate change data visualizations that detail weather patterns, environmental impacts, and sustainability efforts worldwide."},{"value":"Demographics","label":"Demographic Visual Insights - Explore visual demographics data showcasing population trends, societal changes, and demographic analytics across regions."},{"value":"Economy","label":"Economic Visualization Insights - View economic visualizations illustrating financial markets, economic policies, and global economic health."},{"value":"Energy","label":"Energy Industry Visual Data - Discover the dynamics of global energy consumption, renewable sources, and energy market trends through vivid visualizations."},{"value":"Entertainment","label":"Entertainment Industry Data - Explore data visualizations in the entertainment industry, covering everything from box office trends to streaming service analytics."},{"value":"Geopolitics","label":"Geopolitical Data Visualized - Understand global geopolitical shifts and international relations through comprehensive geopolitical data visualizations."},{"value":"Healthcare","label":"Healthcare Insights Visualized - Analyze healthcare data visualizations spanning disease trends, healthcare services, and public health policies."},{"value":"Innovation","label":"Innovation in Data - Dive into innovation data visualizations highlighting technology advancements, R&D investments, and patent trends."},{"value":"Maps","label":"Cartographic Visual Insights - Discover cartographic visualizations that map everything from socio-economic data to geographical phenomena."},{"value":"Markets","label":"Market Trends Visualized - Visualize market trends, financial data, and economic forecasts through comprehensive market visualizations."},{"value":"Money","label":"Financial Data Visualized - Dive into financial visualizations depicting currency trends, investment flows, and banking statistics."},{"value":"Natural Resources","label":"Natural Resources Data - Explore visualizations of natural resources, detailing extraction, consumption, and conservation data."},{"value":"Politics","label":"Political Visual Insights - Analyze political trends, election results, and legislative impacts through detailed political visualizations."},{"value":"Public Opinion","label":"Public Opinion Trends - Discover visualizations of public opinion polls, social trends, and cultural shifts across different regions."},{"value":"Real Estate","label":"Real Estate Market Insights - Explore real estate market trends, property values, and urban development through targeted data visualizations."},{"value":"Sports","label":"Sports Data Insights - Analyze sports data visualizations that showcase performance statistics, team rankings, and sports economics."},{"value":"Technology","label":"Technology Trends Visualized - Dive into technology visualizations highlighting industry trends, tech adoption rates, and innovation impacts."},{"value":"Wealth","label":"Wealth Distribution Insights - Explore wealth distribution, financial health, and economic disparities through detailed visualizations."},{"value":"Travel","label":"Travel Trends Visualized - Discover travel trends, tourism statistics, and destination analytics through engaging visualizations."},{"value":"Nature","label":"Nature and Conservation Data - Delve into visualizations of ecological data, wildlife statistics, and conservation efforts around the globe."},{"value":"Space","label":"Space Exploration Data - Explore the universe with space data visualizations covering planetary science, space missions, and astronomical discoveries."},{"value":"Diagram","label":"Diagrammatic Data Insights - Understand complex data through diagrams that simplify information across various topics and industries."},{"value":"Other","label":"Diverse Data Visualizations - Explore a variety of data visualizations that don&#39;t neatly fit into any single category but offer unique insights."}]}},"example":"/voronoiapp/popular/most-popular/MONTH","location":"popular.ts"}' :test='{"code":0}' />
+
+### Search Keyword Posts <Site url="voronoiapp.com" size="sm" />
+
+<Route namespace="voronoiapp" :data='{"url":"voronoiapp.com","categories":["picture","popular"],"view":2,"maintainers":["Cesaryuan"],"name":"Search Keyword Posts","path":"/search/:keyword","radar":[{"source":["www.voronoiapp.com/explore"]}],"example":"/voronoiapp/search/china","parameters":{"keyword":"The keyword to search for"},"location":"search.ts"}' :test='{"code":0}' />
 
 ## X (Twitter) <Site url="x.com"/>
 
@@ -617,6 +759,12 @@ Currently supports two authentication methods:
 
 <Route namespace="youtube" :data='{"path":"/playlist/:id/:embed?","categories":["social-media","popular"],"view":3,"example":"/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z","parameters":{"id":"YouTube playlist id","embed":"Default to embed the video, set to any value to disable embedding"},"features":{"requireConfig":[{"name":"YOUTUBE_KEY","description":" YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Playlist","maintainers":["HenryQW"],"location":"playlist.ts"}' :test='undefined' />
 
+## 阿基米德 FM <Site url="m.ajmide.com"/>
+
+### 播客 <Site url="m.ajmide.com" size="sm" />
+
+<Route namespace="ajmide" :data='{"path":"/:id","categories":["multimedia","popular"],"view":4,"example":"/ajmide/10603594","parameters":{"id":"播客 id，可以从播客页面 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"播客","maintainers":["Fatpandac"],"location":"index.ts"}' :test='{"code":0}' />
+
 ## 巴哈姆特電玩資訊站 <Site url="acg.gamer.com.tw"/>
 
 ### GNN 新聞 <Site url="acg.gamer.com.tw" size="sm" />
@@ -636,6 +784,12 @@ Currently supports two authentication methods:
 ### 熱門推薦 <Site url="acg.gamer.com.tw" size="sm" />
 
 <Route namespace="gamer" :data='{"path":"/hot/:bsn","categories":["anime","popular"],"view":0,"example":"/gamer/hot/47157","parameters":{"bsn":"板塊 id，在 URL 可以找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"熱門推薦","maintainers":["nczitzk","TonyRL"],"location":"hot.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 595)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+
+## 北京天文馆 <Site url="bjp.org.cn"/>
+
+### 每日一图 <Site url="bjp.org.cn/APOD/today.shtml" size="sm" />
+
+<Route namespace="bjp" :data='{"path":"/apod","categories":["picture","popular"],"view":2,"example":"/bjp/apod","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bjp.org.cn/APOD/today.shtml","bjp.org.cn/APOD/list.shtml","bjp.org.cn/"]}],"name":"每日一图","maintainers":["HenryQW"],"url":"bjp.org.cn/APOD/today.shtml","location":"apod.ts"}' :test='{"code":0}' />
 
 ## 哔哩哔哩 bilibili <Site url="www.bilibili.com"/>
 
@@ -758,6 +912,20 @@ Currently supports two authentication methods:
 
 <Route namespace="qidian" :data='{"path":"/chapter/:id","categories":["reading","popular"],"view":5,"example":"/qidian/chapter/1010400217","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["book.qidian.com/info/:id"]}],"name":"作品章节","maintainers":["fuzy112"],"location":"chapter.ts"}' :test='{"code":0}' />
 
+## 人人影视 <Site url="yysub.net"/>
+
+### 今日播出 <Site url="yysub.net/tv/schedule" size="sm" />
+
+<Route namespace="yyets" :data='{"path":"/today","categories":["multimedia","popular"],"view":5,"example":"/yyets/today","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yysub.net/tv/schedule","yysub.net/"]}],"name":"今日播出","maintainers":["bao1991213"],"url":"yysub.net/tv/schedule","location":"today.ts"}' :test='{"code":0}' />
+
+### 影视资讯 <Site url="yysub.net" size="sm" />
+
+<Route namespace="yyets" :data='{"path":"/article/:type?","categories":["multimedia","popular"],"view":0,"example":"/yyets/article","parameters":{"type":{"description":"类型","options":[{"value":"all","label":"全部"},{"value":"news","label":"影视资讯"},{"value":"report","label":"收视快报"},{"value":"m_review","label":"人人影评"},{"value":"t_review","label":"人人剧评"},{"value":"new_review","label":"新剧评测"},{"value":"recom","label":"片单推荐"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"影视资讯","maintainers":["wb121017405"],"description":"| 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |\n  | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |\n  |      | news     | report   | m_review | t_review | new_review | recom    |","location":"article.ts"}' :test='{"code":0}' />
+
+| 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |
+  | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |
+  |      | news     | report   | m_review | t_review | new_review | recom    |
+
 ## 少数派 sspai <Site url="sspai.com"/>
 
 ### 首页 <Site url="sspai.com/index" size="sm" />
@@ -777,6 +945,12 @@ Currently supports two authentication methods:
 ### 排行榜 <Site url="post.smzdm.com" size="sm" />
 
 <Route namespace="smzdm" :data='{"path":"/ranking/:rank_type/:rank_id/:hour","categories":["shopping","popular"],"view":5,"example":"/smzdm/ranking/pinlei/11/3","parameters":{"rank_type":{"description":"榜单类型","options":[{"value":"pinlei","label":"好价品类榜"},{"value":"dianshang","label":"好价电商榜"},{"value":"haitao","label":"海淘 TOP 榜"},{"value":"haowen","label":"好文排行榜"},{"value":"haowu","label":"好物排行榜"}]},"rank_id":{"description":"榜单ID","options":[{"label":"好价品类榜 - 全部","value":"11"},{"label":"好价品类榜 - 食品生鲜","value":"12"},{"label":"好价品类榜 - 电脑数码","value":"13"},{"label":"好价品类榜 - 运动户外","value":"14"},{"label":"好价品类榜 - 家用电器","value":"15"},{"label":"好价品类榜 - 白菜","value":"17"},{"label":"好价品类榜 - 服饰鞋包","value":"74"},{"label":"好价品类榜 - 日用百货","value":"75"},{"label":"好价电商榜 - 券活动","value":"24"},{"label":"好价电商榜 - 京东","value":"23"},{"label":"好价电商榜 - 天猫","value":"25"},{"label":"好价电商榜 - 亚马逊中国","value":"26"},{"label":"好价电商榜 - 国美在线","value":"27"},{"label":"好价电商榜 - 苏宁易购","value":"28"},{"label":"好价电商榜 - 网易","value":"29"},{"label":"好价电商榜 - 西集网","value":"30"},{"label":"好价电商榜 - 美国亚马逊","value":"31"},{"label":"好价电商榜 - 日本亚马逊","value":"32"},{"label":"好价电商榜 - ebay","value":"33"},{"label":"海淘 TOP 榜 - 全部","value":"39"},{"label":"海淘 TOP 榜 - 海外直邮","value":"34"},{"label":"海淘 TOP 榜 - 美国榜","value":"35"},{"label":"海淘 TOP 榜 - 欧洲榜","value":"36"},{"label":"海淘 TOP 榜 - 澳新榜","value":"37"},{"label":"海淘 TOP 榜 - 亚洲榜","value":"38"},{"label":"海淘 TOP 榜 - 晒物榜","value":"hsw"},{"label":"好文排行榜 - 原创","value":"yc"},{"label":"好文排行榜 - 资讯","value":"zx"},{"label":"好物排行榜 - 新晋榜","value":"hwall"},{"label":"好物排行榜 - 消费众测","value":"zc"},{"label":"好物排行榜 - 新锐品牌","value":"nb"},{"label":"好物排行榜 - 好物榜单","value":"hw"}]},"hour":{"description":"时间跨度","options":[{"value":"3","label":"3 小时"},{"value":"12","label":"12 小时"},{"value":"24","label":"24 小时"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["DIYgod"],"location":"ranking.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1565)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.7.9_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+
+## 听听 FM <Site url="mobile.tingtingfm.com"/>
+
+### 节目 <Site url="mobile.tingtingfm.com" size="sm" />
+
+<Route namespace="tingtingfm" :data='{"path":"/program/:programId","categories":["multimedia","popular"],"view":4,"example":"/tingtingfm/program/M7VJv6Jj4R","parameters":{"programId":"节目 ID，可以在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mobile.tingtingfm.com/v3/program/:programId"]}],"name":"节目","maintainers":["TonyRL"],"location":"program.ts"}' :test='{"code":0}' />
 
 ## 微博 <Site url="weibo.com"/>
 
