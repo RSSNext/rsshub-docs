@@ -314,6 +314,28 @@ However, you can still specify these route-specific configurations if you need t
 
 <Route namespace="nhk" :data='{"path":"/news/:lang?","categories":["traditional-media","popular"],"view":0,"example":"/nhk/news/en","parameters":{"lang":{"description":"Language, see below","options":[{"value":"ar","label":"العربية"},{"value":"bn","label":"বাংলা"},{"value":"my","label":"မြန်မာဘာသာစကား"},{"value":"zh","label":"中文（简体）"},{"value":"zt","label":"中文（繁體）"},{"value":"en","label":"English"},{"value":"fr","label":"Français"},{"value":"hi","label":"हिन्दी"},{"value":"id","label":"Bahasa Indonesia"},{"value":"ko","label":"코리언"},{"value":"fa","label":"فارسی"},{"value":"pt","label":"Português"},{"value":"ru","label":"Русский"},{"value":"es","label":"Español"},{"value":"sw","label":"Kiswahili"},{"value":"th","label":"ภาษาไทย"},{"value":"tr","label":"Türkçe"},{"value":"uk","label":"Українська"},{"value":"ur","label":"اردو"},{"value":"vi","label":"Tiếng Việt"}],"default":"en"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www3.nhk.or.jp/nhkworld/:lang/news/list/","www3.nhk.or.jp/nhkworld/:lang/news/"],"target":"/news/:lang"}],"name":"WORLD-JAPAN - Top Stories","maintainers":["TonyRL","pseudoyu"],"location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
 
+## Notefolio <Site url="notefolio.net"/>
+
+### Works <Site url="notefolio.net/search" size="sm" />
+
+<Route namespace="notefolio" :data='{"path":"/search/:category?/:order?/:time?/:query?","categories":["design","popular"],"view":2,"example":"/notefolio/search/1/pick/all/life","parameters":{"category":{"description":"Category, see below","options":[{"value":"all","label":"All (전체)"},{"value":"1","label":"Video / Motion Graphics (영상/모션그래픽)"},{"value":"2","label":"Graphic Design (그래픽 디자인)"},{"value":"3","label":"Branding / Editing (브랜딩/편집)"},{"value":"4","label":"UI/UX (UI/UX)"},{"value":"5","label":"Illustration (일러스트레이션)"},{"value":"6","label":"Digital Art (디지털 아트)"},{"value":"7","label":"Character Design (캐릭터 디자인)"},{"value":"8","label":"Product Package Design (제품/패키지 디자인)"},{"value":"9","label":"Photography (포토그래피)"},{"value":"10","label":"Typography (타이포그래피)"},{"value":"11","label":"Crafts (공예)"},{"value":"12","label":"Fine Art (파인아트)"}],"default":"all"},"order":{"description":"Order, `pick` as Notefolio Pick, `published` as Newest, `like` as like, `pick` by default","options":[{"value":"pick","label":"Notefolio Pick"},{"value":"published","label":"Newest"},{"value":"like","label":"Like"}],"default":"pick"},"time":{"description":"Time","options":[{"value":"all","label":"All the time"},{"value":"one-day","label":"Latest 24 hours"},{"value":"week","label":"Latest week"},{"value":"month","label":"Latest month"},{"value":"three-month","label":"Latest 3 months"}],"default":"all"},"query":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notefolio.net/search"]}],"name":"Works","maintainers":["BianTan"],"url":"notefolio.net/search","description":"| Category | Name in Korean     | Name in English         |\n  | -------- | ------------------ | ----------------------- |\n  | all      | 전체               | All                     |\n  | 1        | 영상/모션그래픽    | Video / Motion Graphics |\n  | 2        | 그래픽 디자인      | Graphic Design          |\n  | 3        | 브랜딩/편집        | Branding / Editing      |\n  | 4        | UI/UX              | UI/UX                   |\n  | 5        | 일러스트레이션     | Illustration            |\n  | 6        | 디지털 아트        | Digital Art             |\n  | 7        | 캐릭터 디자인      | Character Design        |\n  | 8        | 제품/패키지 디자인 | Product Package Design  |\n  | 9        | 포토그래피         | Photography             |\n  | 10       | 타이포그래피       | Typography              |\n  | 11       | 공예               | Crafts                  |\n  | 12       | 파인아트           | Fine Art                |","location":"search.ts"}' :test='{"code":0}' />
+
+| Category | Name in Korean     | Name in English         |
+  | -------- | ------------------ | ----------------------- |
+  | all      | 전체               | All                     |
+  | 1        | 영상/모션그래픽    | Video / Motion Graphics |
+  | 2        | 그래픽 디자인      | Graphic Design          |
+  | 3        | 브랜딩/편집        | Branding / Editing      |
+  | 4        | UI/UX              | UI/UX                   |
+  | 5        | 일러스트레이션     | Illustration            |
+  | 6        | 디지털 아트        | Digital Art             |
+  | 7        | 캐릭터 디자인      | Character Design        |
+  | 8        | 제품/패키지 디자인 | Product Package Design  |
+  | 9        | 포토그래피         | Photography             |
+  | 10       | 타이포그래피       | Typography              |
+  | 11       | 공예               | Crafts                  |
+  | 12       | 파인아트           | Fine Art                |
+
 ## pixiv <Site url="www.pixiv.net"/>
 
 ### Keyword <Site url="www.pixiv.net" size="sm" />
@@ -821,6 +843,22 @@ Currently supports two authentication methods:
 ### 播客 <Site url="xiaoyuzhoufm.com/" size="sm" />
 
 <Route namespace="xiaoyuzhou" :data='{"path":"/podcast/:id","categories":["multimedia","popular"],"view":4,"example":"/xiaoyuzhou/podcast/6021f949a789fca4eff4492c","parameters":{"id":"播客 id 或单集 id，可以在小宇宙播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xiaoyuzhoufm.com/podcast/:id","xiaoyuzhoufm.com/episode/:id"]}],"name":"播客","maintainers":["hondajojo","jtsang4","pseudoyu"],"url":"xiaoyuzhoufm.com/","location":"podcast.ts"}' :test='{"code":0}' />
+
+## 站酷 <Site url="www.zcool.com.cn"/>
+
+### 用户作品 <Site url="www.zcool.com.cn" size="sm" />
+
+<Route namespace="zcool" :data='{"path":"/user/:uid","categories":["design","popular"],"view":2,"example":"/zcool/user/baiyong","parameters":{"uid":"个性域名前缀或者用户ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zcool.com.cn/u/:id"],"target":"/user/:id"}],"name":"用户作品","description":"  例如:\n\n    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`\n\n    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`","maintainers":["junbaor"],"location":"user.ts"}' :test='{"code":0}' />
+
+  例如:
+
+    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`
+
+    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`
+
+### 作品总榜单 <Site url="www.zcool.com.cn" size="sm" />
+
+<Route namespace="zcool" :data='{"path":"/top/:type","categories":["design","popular"],"view":2,"example":"/zcool/top/design","parameters":{"type":{"description":"推荐类型","options":[{"value":"design","label":"作品榜单"},{"value":"article","label":"文章榜单"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"作品总榜单","maintainers":["yuuow"],"location":"top.ts"}' :test='{"code":0}' />
 
 ## 知乎 <Site url="www.zhihu.com"/>
 
