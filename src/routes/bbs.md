@@ -564,6 +564,12 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 <Route namespace="xsijishe" :data='{"path":"/rank/:type","categories":["bbs"],"example":"/xsijishe/rank/weekly","parameters":{"type":"排行榜类型: weekly | monthly"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["akynazh"],"location":"rank.ts"}' :test='undefined' />
 
+## 腾讯网 <Site url="qq.com"/>
+
+### 腾讯频道 <Site url="pd.qq.com/" size="sm" />
+
+<Route namespace="qq" :data='{"path":["/pd/guild/:id/:sub?/:sort?"],"categories":["bbs"],"example":"/qq/pd/guild/qrp4pkq01d/650967831/created","parameters":{"id":"频道号","sub":"子频道 ID，网页端 URL `subc` 参数的值，默认为 `hot`（全部）","sort":"排序方式，`hot`（热门），`created`（最新发布），`replied`（最新回复），默认为 `created`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pd.qq.com/"]}],"name":"腾讯频道","maintainers":["mobyw"],"url":"pd.qq.com/","location":"pd/guild.ts"}' :test='undefined' />
+
 ## 通信人家园 <Site url="txrjy.com"/>
 
 ### 论坛 频道 <Site url="txrjy.com" size="sm" />
