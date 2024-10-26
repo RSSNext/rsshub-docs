@@ -68,6 +68,19 @@ Access code is the md5 generated based on the access key + route, eg:
 
 -   Or using `key` directly, eg: `https://rsshub.app/qdaily/column/59?key=ILoveRSSHub`
 
+**Healthcheck Configuration**
+
+When `ACCESS_KEY` is enabled, the `healthcheck` endpoint also requires authentication.
+
+For Docker Compose deployments, you'll need to update the `healthcheck` configuration in your `docker-compose.yml` to include the access key or access code parameter.
+The recommended configuration is:
+
+```diff
+healthcheck:
+-  test: ["CMD", "curl", "-f", "http://localhost:1200/healthz"]
++  test: ["CMD", "curl", "-f", "http://localhost:1200/healthz?key=${ACCESS_KEY}"]
+```
+
 ## Logging Configurations
 
 `DEBUG_INFO`: display route information on the homepage for debugging purposes. When set to neither `true` nor `false`, use parameter `debug` to enable display, eg: `https://rsshub.app/?debug=value_of_DEBUG_INFO` . Default to `true`

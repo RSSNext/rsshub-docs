@@ -68,6 +68,19 @@ RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全�
 
 -   或使用访问密钥 `key` 直接访问所有路由，例如：`https://rsshub.app/qdaily/column/59?key=ILoveRSSHub`
 
+**Healthcheck 配置**
+
+当启用 `ACCESS_KEY` 时，`healthcheck` 端点也需要进行身份验证。
+
+对于 Docker Compose 部署，你需要在 `docker-compose.yml` 中更新 `healthcheck` 配置以包含访问密钥或访问码参数。
+推荐的配置如下：
+
+```diff
+healthcheck:
+-  test: ["CMD", "curl", "-f", "http://localhost:1200/healthz"]
++  test: ["CMD", "curl", "-f", "http://localhost:1200/healthz?key=${ACCESS_KEY}"]
+```
+
 ## 日志配置
 
 `DEBUG_INFO`: 是否在首页显示路由信息。值为非 `true` `false` 时，在请求中带上参数 `debug` 开启显示，例如：`https://rsshub.app/?debug=value_of_DEBUG_INFO` 。默认 `true`
