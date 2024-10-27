@@ -398,7 +398,7 @@ Remember to check `user-top-read` and `user-library-read` in the scope for `Pers
 [Bot application](https://telegram.org/blog/bot-revolution)
 
 -   `TELEGRAM_TOKEN`: Telegram bot token for stickerpack feeds
--   `TELEGRAM_SESSION`: for video and file streaming, can be acquired by running `node lib/routes/telegram/tglib/client.js`
+-   `TELEGRAM_SESSION`: for video, file streaming and some restricted channels, should create your telegram app via `https://my.telegram.org/apps`, get `api_id` and `api_hash` from there, then run `node ./lib/routes/telegram/scripts/get-telegram-session.mjs` in RSSHub root directory to get `TELEGRAM_SESSION`
 
 ### Twitter
 
