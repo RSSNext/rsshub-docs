@@ -72,7 +72,8 @@ Access code is the md5 generated based on the access key + route, eg:
 
 When `ACCESS_KEY` is enabled, the `healthcheck` endpoint also requires authentication.
 
-For Docker Compose deployments, you'll need to update the `healthcheck` configuration in your `docker-compose.yml` to include the access key or access code parameter.
+For a Docker Compose deployment, you'll need to update the `healthcheck` configuration in your `docker-compose.yml` to include the access key or access code parameter.
+
 The recommended configuration is:
 
 ```diff

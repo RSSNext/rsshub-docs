@@ -73,6 +73,7 @@ RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全�
 当启用 `ACCESS_KEY` 时，`healthcheck` 端点也需要进行身份验证。
 
 对于 Docker Compose 部署，你需要在 `docker-compose.yml` 中更新 `healthcheck` 配置以包含访问密钥或访问码参数。
+
 推荐的配置如下：
 
 ```diff
