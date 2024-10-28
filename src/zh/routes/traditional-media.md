@@ -558,6 +558,16 @@ By extracting the full text of articles, we provide a better reading experience 
 
 <Route namespace="thehindu" :data='{"path":"/topic/:topic","categories":["traditional-media"],"example":"/thehindu/topic/rains","parameters":{"topic":"Topic slug, can be found in URL."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thehindu.com/topic/:topic"]}],"name":"Topic","maintainers":["TonyRL"],"location":"topic.ts"}' :test='{"code":0}' />
 
+## The Washington Post <Site url="www.washingtonpost.com"/>
+
+### App <Site url="www.washingtonpost.com" size="sm" />
+
+<Route namespace="washingtonpost" :data='{"path":"/app/:category{.+}?","categories":["traditional-media"],"example":"/washingtonpost/app/national","parameters":{"category":"Category from the path of the URL of the corresponding site, see below"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"App","maintainers":["quiniapiezoelectricity"],"radar":[{"source":["www.washingtonpost.com/:category"],"target":"/app/:category"}],"description":":::tip\nFor example, the category for https://www.washingtonpost.com/national/investigations would be /national/investigations.\n:::","location":"app.ts"}' :test='undefined' />
+
+:::tip
+For example, the category for https://www.washingtonpost.com/national/investigations would be /national/investigations.
+:::
+
 ## The Wall Street Journal (WSJ) 华尔街日报 <Site url="cn.wsj.com"/>
 
 ### News <Site url="cn.wsj.com" size="sm" />
