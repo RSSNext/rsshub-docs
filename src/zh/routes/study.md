@@ -166,6 +166,17 @@ RSS feed for LMU academic staff job openings.
 
 <Route namespace="j-test" :data='{"path":"/news","name":"公告","url":"www.j-test.com","maintainers":["kuhahku"],"example":"/j-test/news","parameters":{},"categories":["study"],"features":{"supportRadar":true},"radar":[{"source":["www.j-test.com"],"target":"/news"}],"description":"","location":"news.ts"}' :test='undefined' />
 
+## 万维书刊网 <Site url="eshukan.com"/>
+
+### 学术资讯 <Site url="www.eshukan.com" size="sm" />
+
+<Route namespace="eshukan" :data='{"path":"/academic/:id?","name":"学术资讯","url":"www.eshukan.com","maintainers":["nczitzk"],"example":"/eshukan/academic/1","parameters":{"category":"栏目 id，默认为 `1`，即期刊动态，可在对应栏目页 URL 中找到"},"description":":::tip\n  若订阅 [期刊动态](https://www.eshukan.com/academic/index.aspx?cid=1)，网址为 `https://www.eshukan.com/academic/index.aspx?cid=1`。截取 `https://www.eshukan.com/academic/index.aspx?cid=` 到末尾的部分 `1` 作为参数填入，此时路由为 [`/eshukan/academic/1`](https://rsshub.app/eshukan/academic/1)。\n  :::\n    ","categories":["study"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.eshukan.com/academic/index.aspx"]}],"location":"academic.ts"}' :test='undefined' />
+
+:::tip
+  若订阅 [期刊动态](https://www.eshukan.com/academic/index.aspx?cid=1)，网址为 `https://www.eshukan.com/academic/index.aspx?cid=1`。截取 `https://www.eshukan.com/academic/index.aspx?cid=` 到末尾的部分 `1` 作为参数填入，此时路由为 [`/eshukan/academic/1`](https://rsshub.app/eshukan/academic/1)。
+  :::
+    
+
 ## 网易公开课 <Site url="163.com"/>
 
 :::tip
