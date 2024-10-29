@@ -2042,6 +2042,10 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
 
 <Route namespace="dedao" :data='{"path":"/:category?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
+### 得到文章 <Site url="www.igetget.com" size="sm" />
+
+<Route namespace="dedao" :data='{"path":"/articles/:id?","categories":["new-media"],"example":"/articles/9","parameters":{"id":"文章类型 ID，8 为得到头条，9 为得到精选，默认为 8"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["igetget.com"],"target":"/articles/:id"}],"name":"得到文章","maintainers":["Jacky-Chen-Pro"],"url":"www.igetget.com","location":"articles.ts"}' :test='undefined' />
+
 ### 首页 <Site url="igetget.com/" size="sm" />
 
 <Route namespace="dedao" :data='{"path":"/list/:category?","categories":["new-media"],"example":"/dedao/list/年度日更","parameters":{"category":"分类名，默认为年度日更"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["igetget.com/"]}],"name":"首页","maintainers":["nczitzk"],"url":"igetget.com/","location":"list.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}' />
