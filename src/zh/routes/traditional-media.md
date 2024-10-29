@@ -350,7 +350,7 @@ You can use `sophi=true` query parameter to invoke the **experimental** method, 
 
 ### Inverstigates <Site url="reuters.com" size="sm" />
 
-<Route namespace="reuters" :data='{"path":"/investigates","categories":["traditional-media"],"example":"/reuters/investigates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Inverstigates","maintainers":["LyleLee"],"location":"investigates.ts"}' :test='{"code":0}' />
+<Route namespace="reuters" :data='{"path":"/investigates","categories":["traditional-media","popular"],"view":0,"example":"/reuters/investigates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Inverstigates","maintainers":["LyleLee"],"location":"investigates.ts"}' :test='{"code":0}' />
 
 ## Radio Free Asia (RFA) 自由亚洲电台 <Site url="rfa.org"/>
 

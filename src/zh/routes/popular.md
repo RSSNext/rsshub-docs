@@ -753,6 +753,10 @@ You can use `sophi=true` query parameter to invoke the **experimental** method, 
 
   More could be found in the URL of the category/topic page.
 
+### Inverstigates <Site url="reuters.com" size="sm" />
+
+<Route namespace="reuters" :data='{"path":"/investigates","categories":["traditional-media","popular"],"view":0,"example":"/reuters/investigates","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Inverstigates","maintainers":["LyleLee"],"location":"investigates.ts"}' :test='{"code":0}' />
+
 ## RSSHub <Site url="docs.rsshub.app"/>
 
 ### New routes <Site url="docs.rsshub.app/*" size="sm" />
