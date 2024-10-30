@@ -420,6 +420,7 @@ It is recommended to use a non-important account, new accounts or logins from di
 
 -   `TWITTER_USERNAME`: Twitter username
 -   `TWITTER_PASSWORD`: Twitter password
+-   `TWITTER_PHONE_OR_EMAIL`: Optional, Twitter phone or email. Required if you encounter a login error (The log shows `unknown subtask: LoginEnterAlternateIdentifierSubtask`)
 -   `TWITTER_AUTHENTICATION_SECRET`: Optional, Twitter Two-factor authentication -> Authentication app -> Secret part in `otpauth://totp/Twitter:@_RSSHub?secret=xxxxxxxxxxxxxxxx&issuer=Twitter`
 
 ### Wordpress

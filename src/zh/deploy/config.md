@@ -393,6 +393,7 @@ healthcheck:
 
 -   `TWITTER_USERNAME`: Twitter 用户名
 -   `TWITTER_PASSWORD`: Twitter 密码
+-   `TWITTER_PHONE_OR_EMAIL`: 可选，Twitter 手机号码或电子邮件地址。如果遇到登录错误则此项必需（日志中显示 `unknown subtask: LoginEnterAlternateIdentifierSubtask`）
 -   `TWITTER_AUTHENTICATION_SECRET`: 可选，Twitter 两步验证 -> 认证应用 -> `otpauth://totp/Twitter:@_RSSHub?secret=xxxxxxxxxxxxxxxx&issuer=Twitter` 中的 secret 部分
 
 ### Wordpress
