@@ -90,6 +90,14 @@ Alpine Linux packages update
   For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.app/apple/apps/update/us/id408709785).
   :::
 
+## AppStare <Site url="appstare.net"/>
+
+### Comments <Site url="appstare.net/" size="sm" />
+
+<Route namespace="appstare" :data='{"path":"/comments/:country/:appid","name":"Comments","url":"appstare.net/","example":"/appstare/comments/cn/989673964","maintainers":["zhixideyu"],"parameters":{"country":"App Store country code, e.g., US, CN","appid":"Unique App Store application identifier (app id)"},"categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["appstare.net/"]}],"description":"Retrieve only the comments of the app from the past 7 days.","location":"comments.ts"}' :test='undefined' />
+
+Retrieve only the comments of the app from the past 7 days.
+
 ## App Store/Mac App Store <Site url="apps.apple.com"/>
 
 ### In-App-Purchase Price Drop Alert <Site url="apps.apple.com" size="sm" />
