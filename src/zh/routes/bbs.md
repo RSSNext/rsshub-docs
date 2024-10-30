@@ -138,6 +138,12 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
   又如 [求职招聘 30 天热门](https://elasticsearch.cn/sort_type-hot____category-12__day-30) 的 URL 为 `https://elasticsearch.cn/sort_type-hot____category-12__day-30`，则分类参数处填写 `sort_type-hot____category-12__day-30`，最后得到路由地址 [`/elasticsearch-cn/sort_type-hot____category-12__day-30`](https://rsshub.app/elasticsearch-cn/sort_type-hot____category-12__day-30)。
 
+## guozaoke <Site url="guozaoke.com"/>
+
+### 过早客 <Site url="guozaoke.com/" size="sm" />
+
+<Route namespace="guozaoke" :data='{"path":"/default","categories":["bbs"],"example":"/guozaoke/default","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"过早客","maintainers":["xiaoshame"],"url":"guozaoke.com/","location":"index.ts"}' :test='undefined' />
+
 ## LearnKu <Site url="learnku.com"/>
 
 ### 社区 <Site url="learnku.com" size="sm" />
