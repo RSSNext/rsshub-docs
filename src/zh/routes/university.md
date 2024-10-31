@@ -1795,6 +1795,59 @@ author 列表：
   | yg   | sy   |
   
 
+## 泉州师范学院 <Site url="www.qztc.edu.cn"/>
+
+### 教务处 <Site url="www.qztc.edu.cn" size="sm" />
+
+<Route namespace="qztc" :data='{"path":"/jwc/:type","categories":["university"],"example":"/qztc/jwc/jwdt","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"教务处","maintainers":["iQNRen"],"url":"www.qztc.edu.cn","radar":[{"source":["www.qztc.edu.cn/jwc/:type/list.htm"],"target":"/jwc/:type"}],"description":"| 板块 | 参数 |\n| ------- | ------- |\n| 教务动态 | jwdt |\n| 首 页 | 1020 |\n| 岗位介绍 | 1021 |\n| 管理文件 | 1022 |\n| 教学教改 | 1023 |\n| 办事指南 | 1024 |\n| 通知公告 | 1025 |\n| 下载中心 | 1026 |\n| 对外交流 | 1027 |\n| 政策文件 | 1028 |\n| 会议纪要 | 1029 |\n","location":"jwc/index.ts"}' :test='undefined' />
+
+| 板块 | 参数 |
+| ------- | ------- |
+| 教务动态 | jwdt |
+| 首 页 | 1020 |
+| 岗位介绍 | 1021 |
+| 管理文件 | 1022 |
+| 教学教改 | 1023 |
+| 办事指南 | 1024 |
+| 通知公告 | 1025 |
+| 下载中心 | 1026 |
+| 对外交流 | 1027 |
+| 政策文件 | 1028 |
+| 会议纪要 | 1029 |
+
+
+### 首页 <Site url="www.qztc.edu.cn" size="sm" />
+
+<Route namespace="qztc" :data='{"path":"/home/:type","categories":["university"],"example":"/qztc/home/2093","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["iQNRen"],"url":"www.qztc.edu.cn","radar":[{"source":["www.qztc.edu.cn/:type/list.htm"],"target":"/home/:type"}],"description":"| 板块 | 参数 |\n| ------- | ------- |\n| 泉师新闻 | 2093 |\n| 通知公告 | 2094 |\n| 采购公告 | 2095 |\n| 学术资讯 | xszx |\n| 招聘信息 | 2226 |\n","location":"home/index.ts"}' :test='undefined' />
+
+| 板块 | 参数 |
+| ------- | ------- |
+| 泉师新闻 | 2093 |
+| 通知公告 | 2094 |
+| 采购公告 | 2095 |
+| 学术资讯 | xszx |
+| 招聘信息 | 2226 |
+
+
+### 数学与计算机科学学院 软件学院 <Site url="www.qztc.edu.cn" size="sm" />
+
+<Route namespace="qztc" :data='{"path":"/sjxy/:type","categories":["university"],"example":"/qztc/sjxy/1939","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"数学与计算机科学学院 软件学院","maintainers":["iQNRen"],"url":"www.qztc.edu.cn","radar":[{"source":["www.qztc.edu.cn/sjxy/:type/list.htm"],"target":"/sjxy/:type"}],"description":"| 板块 | 参数 |\n| ------- | ------- |\n| 学院概况 | 1938 |\n| 学院动态 | 1939 |\n| 学科建设 | 1940 |\n| 教学教务 | 1941 |\n| 人才培养 | 1942 |\n| 科研工作 | 1943 |\n| 党群工作 | 1944 |\n| 团学工作 | 1945 |\n| 资料下载 | 1947 |\n| 采购信息 | 1948 |\n| 信息公开 | xxgk |\n","location":"sjxy/index.ts"}' :test='undefined' />
+
+| 板块 | 参数 |
+| ------- | ------- |
+| 学院概况 | 1938 |
+| 学院动态 | 1939 |
+| 学科建设 | 1940 |
+| 教学教务 | 1941 |
+| 人才培养 | 1942 |
+| 科研工作 | 1943 |
+| 党群工作 | 1944 |
+| 团学工作 | 1945 |
+| 资料下载 | 1947 |
+| 采购信息 | 1948 |
+| 信息公开 | xxgk |
+
+
 ## 山东大学 <Site url="www.sdu.edu.cn"/>
 
 ### 材料科学与工程学院通知 <Site url="www.sdu.edu.cn" size="sm" />
