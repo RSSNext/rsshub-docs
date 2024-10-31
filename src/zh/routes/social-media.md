@@ -894,7 +894,7 @@ Chart
 
 ### User <Site url="dianping.com" size="sm" />
 
-<Route namespace="dianping" :data='{"path":"/user/:id","categories":["social-media"],"example":"/dianping/user/808259118","parameters":{"id":"User id"},"features":{"requireConfig":[{"name":"DIANPING_COOKIE","optional":false,"description":"Cookie for Dianping"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.dianping.com/userprofile/:id"],"target":"/dianping/user/:id"}],"name":"User","maintainers":["pseudoyu"],"description":"Get user reviews, check-ins, guides.","location":"user.ts"}' :test='undefined' />
+<Route namespace="dianping" :data='{"path":"/user/:id","categories":["social-media"],"example":"/dianping/user/808259118","parameters":{"id":"User id"},"features":{"requireConfig":[{"name":"DIANPING_COOKIE","optional":false,"description":"Cookie for Dianping"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dianping.com/member/:id"],"target":"/dianping/user/:id"}],"name":"User","maintainers":["pseudoyu"],"description":"Get user reviews, check-ins, guides.","location":"user.ts"}' :test='undefined' />
 
 Get user reviews, check-ins, guides.
 
