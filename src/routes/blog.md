@@ -52,6 +52,14 @@ Cohere is a platform for building AI applications.
 
 <Route namespace="eagle" :data='{"path":"/blog/:cate?/:language?","categories":["blog"],"example":"/eagle/blog/en","parameters":{"cate":"Category, get by URL, `all` by default","language":{"description":"Language","options":[{"value":"cn","label":"cn"},{"value":"tw","label":"tw"},{"value":"en","label":"en"}],"default":"en"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cn.eagle.cool/blog"],"target":"/blog"}],"name":"Blog","maintainers":["Fatpandac"],"url":"cn.eagle.cool/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Enterprise Craftsmanship <Site url="enterprisecraftsmanship.com"/>
+
+### Archives <Site url="enterprisecraftsmanship.com/" size="sm" />
+
+<Route namespace="enterprisecraftsmanship" :data='{"path":"/archives","categories":["blog"],"example":"/enterprisecraftsmanship/archives","radar":[{"source":["enterprisecraftsmanship.com/archives/"]}],"url":"enterprisecraftsmanship.com/","name":"Archives","maintainers":["liyaozhong"],"description":"Enterprise Craftsmanship blog archives","location":"index.ts"}' :test='undefined' />
+
+Enterprise Craftsmanship blog archives
+
 ## Flashcat <Site url="flashcat.cloud"/>
 
 ### 快猫星云博客 <Site url="flashcat.cloud" size="sm" />
