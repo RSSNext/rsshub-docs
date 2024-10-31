@@ -243,6 +243,14 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 城市、分类名、子分类名，请参见[大麦网搜索页面](https://search.damai.cn/search.htm)
 
+## 大众点评 <Site url="dianping.com"/>
+
+### User <Site url="dianping.com" size="sm" />
+
+<Route namespace="dianping" :data='{"path":"/user/:id","categories":["shopping"],"example":"/dianping/user/808259118","parameters":{"id":"User id"},"features":{"requireConfig":[{"name":"DIANPING_COOKIE","optional":false,"description":"Cookie for Dianping"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dianping.com/member/:id"],"target":"/dianping/user/:id"}],"name":"User","maintainers":["pseudoyu"],"description":"Get user reviews, check-ins, guides.","location":"user.ts"}' :test='undefined' />
+
+Get user reviews, check-ins, guides.
+
 ## 多抓鱼 <Site url="duozhuayu.com"/>
 
 ### 搜索结果 <Site url="duozhuayu.com" size="sm" />
