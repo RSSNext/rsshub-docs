@@ -245,11 +245,11 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ## 大众点评 <Site url="dianping.com"/>
 
-### User <Site url="dianping.com" size="sm" />
+### 用户动态 <Site url="dianping.com" size="sm" />
 
-<Route namespace="dianping" :data='{"path":"/user/:id","categories":["shopping"],"example":"/dianping/user/808259118","parameters":{"id":"User id，打开网页端从 URL 中获取，在 `/member/:id` 中"},"features":{"requireConfig":[{"name":"DIANPING_COOKIE","optional":false,"description":"大众点评的 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dianping.com/member/:id","m.dianping.com/userprofile/:id"],"target":"/dianping/user/:id"}],"name":"User","maintainers":["pseudoyu"],"description":"Get user reviews, check-ins, guides.","location":"user.ts"}' :test='undefined' />
+<Route namespace="dianping" :data='{"path":"/user/:id","categories":["shopping"],"example":"/dianping/user/808259118","parameters":{"id":"User id，打开网页端从 URL 中获取，在 `/member/:id` 中"},"features":{"requireConfig":[{"name":"DIANPING_COOKIE","optional":false,"description":"大众点评的 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dianping.com/member/:id","m.dianping.com/userprofile/:id"],"target":"/dianping/user/:id"}],"name":"用户动态","maintainers":["pseudoyu"],"description":"获取用户点评、签到、攻略等动态。","location":"user.ts"}' :test='undefined' />
 
-Get user reviews, check-ins, guides.
+获取用户点评、签到、攻略等动态。
 
 ## 多抓鱼 <Site url="duozhuayu.com"/>
 
