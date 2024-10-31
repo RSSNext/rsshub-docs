@@ -154,6 +154,53 @@ Categories
 | :--: | :--: | :--: | :--: |
 | 0 | 1 | 2 | 3 |
 
+## Counter Strike <Site url="counter-strike.net"/>
+
+### News <Site url="www.counter-strike.net" size="sm" />
+
+<Route namespace="counter-strike" :data='{"path":"/news/:category?/:language?","name":"News","url":"www.counter-strike.net","maintainers":["nczitzk"],"example":"/counter-strike/news","parameters":{"category":"Category, `updates` or `all`, `all` by default","language":"Language, english by default, see below for more languages"},"description":":::tip\n  If you subscribe to [Updates in English](https://www.counter-strike.net/news/updates?l=english)，where the URL is `https://www.counter-strike.net/news/updates?l=english`, extract the `l`, which is `english`, and use it as the parameter to fill in. Therefore, the route will be [`/counter-strike/news/updates/english`](https://rsshub.app/counter-strike/news/updates/english).\n  :::\n\n  <details>\n    <summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n  </details>\n    ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.counter-strike.net/news/:category"]}],"location":"news.ts"}' :test='undefined' />
+
+:::tip
+  If you subscribe to [Updates in English](https://www.counter-strike.net/news/updates?l=english)，where the URL is `https://www.counter-strike.net/news/updates?l=english`, extract the `l`, which is `english`, and use it as the parameter to fill in. Therefore, the route will be [`/counter-strike/news/updates/english`](https://rsshub.app/counter-strike/news/updates/english).
+  :::
+
+  <details>
+    <summary>More languages</summary>
+
+| 语言代码                                          | 语言名称   |
+| ------------------------------------------------- | ---------- |
+| English                                           | english    |
+| Español - España (Spanish - Spain)                | spanish    |
+| Français (French)                                 | french     |
+| Italiano (Italian)                                | italian    |
+| Deutsch (German)                                  | german     |
+| Ελληνικά (Greek)                                  | greek      |
+| 한국어 (Korean)                                   | koreana    |
+| 简体中文 (Simplified Chinese)                     | schinese   |
+| 繁體中文 (Traditional Chinese)                    | tchinese   |
+| Русский (Russian)                                 | russian    |
+| ไทย (Thai)                                        | thai       |
+| 日本語 (Japanese)                                 | japanese   |
+| Português (Portuguese)                            | portuguese |
+| Português - Brasil (Portuguese - Brazil)          | brazilian  |
+| Polski (Polish)                                   | polish     |
+| Dansk (Danish)                                    | danish     |
+| Nederlands (Dutch)                                | dutch      |
+| Suomi (Finnish)                                   | finnish    |
+| Norsk (Norwegian)                                 | norwegian  |
+| Svenska (Swedish)                                 | swedish    |
+| Čeština (Czech)                                   | czech      |
+| Magyar (Hungarian)                                | hungarian  |
+| Română (Romanian)                                 | romanian   |
+| Български (Bulgarian)                             | bulgarian  |
+| Türkçe (Turkish)                                  | turkish    |
+| Українська (Ukrainian)                            | ukrainian  |
+| Tiếng Việt (Vietnamese)                           | vietnamese |
+| Español - Latinoamérica (Spanish - Latin America) | latam      |
+
+  </details>
+    
+
 ## DeadbyDaylight <Site url="deadbydaylight.com"/>
 
 
