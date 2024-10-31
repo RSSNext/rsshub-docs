@@ -225,6 +225,10 @@ See docs of the specified route and `lib/config.ts` for detailed information.
 
 -   `CIVITAI_COOKIE`: Cookie of Civitai
 
+### Dianping
+
+-   `DIANPING_COOKIE`: 大众点评登录后的 Cookie 值，获取方式：访问 `https://m.dianping.com`，登录，输入 `document.cookie` 获取
+
 ### Discord
 
 -   `DISCORD_AUTHORIZATION`: Discord authorization token, can be found in the header of XHR requests after logging in Discord web client
