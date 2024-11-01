@@ -811,11 +811,11 @@ Edition
 
 <Route namespace="macfilos" :data='{"path":"/blog","categories":["new-media"],"example":"/macfilos/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["macfilos.com/blog","macfilos.com/"]}],"name":"Blog","maintainers":["nczitzk"],"url":"macfilos.com/blog","location":"blog.ts"}' :test='{"code":0}' />
 
-## Malaysiakini 当今大马 <Site url="malaysiakini.com"/>
+## Malaysiakini <Site url="malaysiakini.com"/>
 
 Provides an easy-to-use RSS feed for Malaysiakini.com with teaser/full-text fetching.
 :::warning
-A subscription is required for fetching full articles. 
+A subscription is required for fetching full articles.
 Please refer to the deployment config for more information.
 :::
 

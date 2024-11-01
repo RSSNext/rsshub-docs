@@ -38,13 +38,19 @@
 
 <Route namespace="abskoop" :data='{"path":"/nsfw","radar":[{"source":["ahhhhfs.com/"],"target":""}],"name":"存档列表 - NSFW","maintainers":["zhenhappy"],"url":"ahhhhfs.com/","location":"nsfw.ts"}' :test='undefined' />
 
+## ACS Publications <Site url="pubs.acs.org"/>
+
+### Unknown <Site url="pubs.acs.org" size="sm" />
+
+<Route namespace="acs" :data='{"path":"/journal/:id","radar":[{"source":["pubs.acs.org/journal/:id","pubs.acs.org/"]}],"name":"Unknown","maintainers":["nczitzk"],"location":"journal.ts"}' :test='undefined' />
+
 ## AI 财经社 <Site url="www.aicaijing.com"/>
 
 ### Unknown <Site url="www.aicaijing.com" size="sm" />
 
 <Route namespace="aicaijing" :data='{"path":"/:category?/:id?","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
 
-## Aljazeera 半岛电视台 <Site url="aljazeera.com"/>
+## Aljazeera <Site url="aljazeera.com"/>
 
 ### Unknown <Site url="aljazeera.com" size="sm" />
 
@@ -153,9 +159,9 @@ News from the official site of men's professional tennis.
 
 <Route namespace="deadline" :data='{"path":"/","radar":[{"source":["deadline.com/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"deadline.com/","location":"posts.ts"}' :test='undefined' />
 
-## Discuz 
+## Discuz <Site url="https://www.discuz.vip/"/>
 
-### Unknown 
+### Unknown <Site url="https://www.discuz.vip/" size="sm" />
 
 <Route namespace="discuz" :data='{"path":["/:ver{[7x]}/:cid{[0-9]{2}}/:link{.+}","/:ver{[7x]}/:link{.+}","/:link{.+}"],"name":"Unknown","maintainers":[],"location":"discuz.ts"}' :test='undefined' />
 
@@ -327,7 +333,7 @@ News from the official site of men's professional tennis.
 
 <Route namespace="link3" :data='{"path":"/profile/:handle","name":"Link3 Profile","url":"link3.to","maintainers":["cxheng315"],"example":"/link3/profile/synfutures_defi","parameters":{"handle":"Profile handle"},"categories":["other"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["link3.to/:handle"],"target":"/:handle"}],"location":"profile.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1035)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
-## LinkedIn 领英 <Site url="linkedin.com"/>
+## LinkedIn <Site url="linkedin.com"/>
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
@@ -451,6 +457,12 @@ There is an optional query parameter called `properties=` that can be used to cu
   There is an optional query parameter called `query=` that can be used to customize the search rules for your database, such as custom sorting and filtering rules.
 
   please refer to the [Notion API documentation](https://developers.notion.com/reference/post-database-query) and execute `encodeURIComponent(JSON.stringify(custom rules))` to provide the query parameter.
+
+## OpenWrt <Site url="openwrt.org"/>
+
+### Unknown <Site url="openwrt.org" size="sm" />
+
+<Route namespace="openwrt" :data='{"path":"/releases/:brand/:model","radar":[{"source":["openwrt.org/toh/:band/:model"],"target":"/releases/:model"}],"name":"Unknown","maintainers":[],"location":"releases.ts"}' :test='undefined' />
 
 ## oshwhub 立创开源硬件平台 <Site url="oshwhub.com"/>
 
@@ -668,6 +680,12 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="sustainabilitymag" :data='{"path":"/articles","name":"Articles","url":"sustainabilitymag.com/articles","maintainers":["mintyfrankie"],"categories":["other"],"example":"/sustainabilitymag/articles","radar":[{"source":["https://sustainabilitymag.com/articles"],"target":"/sustainabilitymag/articles"}],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"articles.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1638)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
+## The Metropolitan Museum of Art <Site url="www.metmuseum.org"/>
+
+### Unknown <Site url="www.metmuseum.org" size="sm" />
+
+<Route namespace="metmuseum" :data='{"path":"/exhibitions/:state?","name":"Unknown","maintainers":[],"location":"exhibitions.ts"}' :test='undefined' />
+
 ## The News Lens 關鍵評論 <Site url="thenewslens.com"/>
 
 ### Unknown <Site url="thenewslens.com" size="sm" />
@@ -696,12 +714,6 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
   | ---------------------- | ------------ |
   | today                  | newest       |
 
-## acs <Site url="pubs.acs.org"/>
-
-### Unknown <Site url="pubs.acs.org" size="sm" />
-
-<Route namespace="acs" :data='{"path":"/journal/:id","radar":[{"source":["pubs.acs.org/journal/:id","pubs.acs.org/"]}],"name":"Unknown","maintainers":["nczitzk"],"location":"journal.ts"}' :test='undefined' />
-
 ## ui.dev <Site url="bytes.dev"/>
 
 ### Unknown <Site url="bytes.dev/archives" size="sm" />
@@ -719,18 +731,6 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 ### Unknown <Site url="jseea.cn" size="sm" />
 
 <Route namespace="jseea" :data='{"path":"/news/:type?","radar":[{"source":["jseea.cn/webfile/news/:type"],"target":"/news/:type"}],"name":"Unknown","maintainers":["schen1024"],"location":"news.ts"}' :test='undefined' />
-
-## metmuseum <Site url="www.metmuseum.org"/>
-
-### Unknown <Site url="www.metmuseum.org" size="sm" />
-
-<Route namespace="metmuseum" :data='{"path":"/exhibitions/:state?","name":"Unknown","maintainers":[],"location":"exhibitions.ts"}' :test='undefined' />
-
-## openwrt <Site url="openwrt.org"/>
-
-### Unknown <Site url="openwrt.org" size="sm" />
-
-<Route namespace="openwrt" :data='{"path":"/releases/:brand/:model","radar":[{"source":["openwrt.org/toh/:band/:model"],"target":"/releases/:model"}],"name":"Unknown","maintainers":[],"location":"releases.ts"}' :test='undefined' />
 
 ## ui.dev <Site url="bytes.dev"/>
 

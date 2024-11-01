@@ -142,8 +142,6 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ## 停水通知 <Site url="swj.dl.gov.cn"/>
 
-配合 [IFTTT](https://ifttt.com/) Applets [邮件通知](https://ifttt.com/applets/SEvmDVKY-) 使用实现自动通知效果.
-
 ### Unknown <Site url="whwater.com/IWater.shtml" size="sm" />
 
 <Route namespace="tingshuitz" :data='{"path":"/wuhan/:channelId?","radar":[{"source":["whwater.com/IWater.shtml","whwater.com/"],"target":"/wuhan"}],"name":"Unknown","maintainers":[],"url":"whwater.com/IWater.shtml","location":"wuhan.ts"}' :test='undefined' />

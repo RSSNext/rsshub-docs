@@ -146,7 +146,7 @@ Bugzilla instances hosted by organizations.
 
 Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache.ooo`](https://bz.apache.org/ooo), [`apache.SpamAssassin`](https://bz.apache.org/SpamAssassin), [`kernel`](https://bugzilla.kernel.org), [`mozilla`](https://bugzilla.mozilla.org), [`webkit`](https://bugs.webkit.org).
 
-## chlinlearn的技术博客 <Site url="daily-blog.chlinlearn.top"/>
+## chlinlearn 的技术博客 <Site url="daily-blog.chlinlearn.top"/>
 
 ### 值得一读技术博客 <Site url="daily-blog.chlinlearn.top" size="sm" />
 

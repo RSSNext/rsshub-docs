@@ -185,22 +185,6 @@ Get the news feed of the sport you love on ESPN.
 
 <Route namespace="gq" :data='{"path":"/news","categories":["traditional-media","popular"],"view":0,"example":"/gq/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gq.com/"]}],"name":"News","maintainers":["EthanWng97"],"location":"news.ts"}' :test='{"code":0}' />
 
-## infzm 
-
-### 频道 
-
-<Route namespace="infzm" :data='{"path":"/:id","parameters":{"id":"南方周末频道 id, 可在该频道的 URL 中找到（即 https://www.infzm.com/contents?term_id=:id)"},"categories":["traditional-media"],"example":"/infzm/1","radar":[{"source":["infzm.com/contents"]}],"name":"频道","maintainers":["KarasuShin","ranpox","xyqfer"],"description":"下面给出部分参考：\n\n  | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |","location":"index.ts"}' :test='{"code":0}' />
-
-下面给出部分参考：
-
-  | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |
-
-### 热门文章 
-
-<Route namespace="infzm" :data='{"path":"/hot","parameters":{},"categories":["traditional-media"],"example":"/infzm/hot","radar":[{"source":["infzm.com/"]}],"name":"热门文章","maintainers":["KarasuShin","ranpox","xyqfer"],"location":"hot.ts"}' :test='{"code":0}' />
-
 ## Korean Central News Agency (KCNA) 朝鲜中央通讯社 <Site url="www.kcna.kp"/>
 
 ### News <Site url="www.kcna.kp" size="sm" />
@@ -534,7 +518,7 @@ By extracting the full text of articles, we provide a better reading experience 
 | Top Stories            | `top-stories`             |
 | Latest                 | `latest`                  |
 
-## Taiwan News 台灣英文新聞 <Site url="taiwannews.com.tw"/>
+## Taiwan News <Site url="taiwannews.com.tw"/>
 
 ### Hot News <Site url="taiwannews.com.tw" size="sm" />
 
@@ -594,7 +578,7 @@ en_us
 
 <Route namespace="vice" :data='{"path":"/topic/:topic/:language?","categories":["traditional-media"],"example":"/vice/topic/politics/en","parameters":{"topic":"Can be found in the URL","language":"defaults to `en`, use the website to discover other codes"},"radar":[{"source":["www.vice.com/:language/topic/:topic"],"target":"/topic/:topic/:language"}],"name":"Topic","maintainers":["K33k0"],"url":"vice.com/","location":"topic.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1824)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.8.4_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
-## Voice of Mongolia 蒙古之声 <Site url="vom.mn"/>
+## Voice of Mongolia <Site url="vom.mn"/>
 
 ### News <Site url="vom.mn" size="sm" />
 
@@ -1156,6 +1140,22 @@ Column 列表：
 
 | 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |
   | ------------ | -------- | -------- | -------- |
+
+## 南方周末 <Site url="www.infzm.com"/>
+
+### 频道 <Site url="www.infzm.com" size="sm" />
+
+<Route namespace="infzm" :data='{"path":"/:id","parameters":{"id":"南方周末频道 id, 可在该频道的 URL 中找到（即 https://www.infzm.com/contents?term_id=:id)"},"categories":["traditional-media"],"example":"/infzm/1","radar":[{"source":["infzm.com/contents"]}],"name":"频道","maintainers":["KarasuShin","ranpox","xyqfer"],"description":"下面给出部分参考：\n\n  | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |","location":"index.ts"}' :test='{"code":0}' />
+
+下面给出部分参考：
+
+  | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |
+  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+  | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |
+
+### 热门文章 <Site url="www.infzm.com" size="sm" />
+
+<Route namespace="infzm" :data='{"path":"/hot","parameters":{},"categories":["traditional-media"],"example":"/infzm/hot","radar":[{"source":["infzm.com/"]}],"name":"热门文章","maintainers":["KarasuShin","ranpox","xyqfer"],"location":"hot.ts"}' :test='{"code":0}' />
 
 ## 南方都市报 <Site url="oeeee.com"/>
 
