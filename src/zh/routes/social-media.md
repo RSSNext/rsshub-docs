@@ -111,7 +111,7 @@ Example:
 
 ### User subscriptions <Site url="app.follow.is" size="sm" />
 
-<Route namespace="follow" :data='{"name":"User subscriptions","categories":["social-media"],"path":"/profile/:uid","example":"/follow/profile/41279032429549568","parameters":{"uid":"User ID or user handle"},"radar":[{"source":["app.follow.is/profile/:uid"],"target":"/profile/:uid"}],"maintainers":["KarasuShin","DIYgod"],"features":{"supportRadar":true},"view":5,"location":"profile.ts"}' :test='{"code":0}' />
+<Route namespace="follow" :data='{"name":"User subscriptions","categories":["social-media"],"path":"/profile/:uid","example":"/follow/profile/41279032429549568","parameters":{"uid":"User ID or user handle"},"radar":[{"source":["app.follow.is/profile/:uid"],"target":"/profile/:uid"}],"maintainers":["KarasuShin","DIYgod","DFobain"],"features":{"supportRadar":true},"view":5,"location":"profile.ts"}' :test='{"code":0}' />
 
 ## GETTR <Site url="gettr.com"/>
 
