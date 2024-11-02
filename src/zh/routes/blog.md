@@ -178,6 +178,14 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
   Personalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.
   :::
 
+## Niels Berglund Blog <Site url="nielsberglund.com"/>
+
+### Blog <Site url="nielsberglund.com/" size="sm" />
+
+<Route namespace="nielsberglund" :data='{"path":"/blog","categories":["blog"],"example":"/nielsberglund/blog","radar":[{"source":["nielsberglund.com/"]}],"url":"nielsberglund.com/","name":"Blog","maintainers":["liyaozhong"],"description":"Niels Berglund Blog Posts","location":"index.ts"}' :test='undefined' />
+
+Niels Berglund Blog Posts
+
 ## njuferret <Site url="njuferret.github.io"/>
 
 ### Blogs <Site url="njuferret.github.io" size="sm" />
