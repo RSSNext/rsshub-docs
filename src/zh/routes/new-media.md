@@ -552,7 +552,7 @@ Category of news
 
 ### News <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/news/:category/:locale","categories":["new-media"],"example":"/google/news/Top stories/hl=en-US&gl=US&ceid=US:en","parameters":{"category":"Category Title","locale":"locales, could be found behind `?`, including `hl`, `gl`, and `ceid` as parameters"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["zoenglinghou"],"location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="google" :data='{"path":"/news/:category/:locale","categories":["new-media"],"example":"/google/news/Top stories/hl=en-US&gl=US&ceid=US:en","parameters":{"category":"Category Title","locale":"locales, could be found behind `?`, including `hl`, `gl`, and `ceid` as parameters"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["zoenglinghou","pseudoyu"],"location":"news.ts"}' :test='{"code":0}' />
 
 ## Grist <Site url="grist.org"/>
 
