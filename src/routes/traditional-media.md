@@ -649,7 +649,7 @@ Free articles only.
 
 ## 财新博客 <Site url="caixin.com"/>
 
-> 网站部分内容需要付费订阅，RSS 仅做更新提醒，不含付费内容。
+> 网站部分内容需要付费订阅，RSS 仅做更新提醒，不含付费内容。若需要得到付费内容全文，请使用订阅账户在手机网页版登录，然后设置`CAIXIN_COOKIE`为至少包含cookie中的以下字段: `SA_USER_UID`, `SA_USER_UNIT`, `SA_USER_DEVICE_TYPE`, `USER_LOGIN_CODE`
 
 ### 财新数据通 <Site url="k.caixin.com/web" size="sm" />
 
@@ -691,9 +691,9 @@ Column 列表：
 
 ### 最新文章 <Site url="caixin.com/" size="sm" />
 
-<Route namespace="caixin" :data='{"path":"/latest","categories":["traditional-media","popular"],"view":0,"example":"/caixin/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caixin.com/"]}],"name":"最新文章","maintainers":["tpnonthealps"],"url":"caixin.com/","description":"说明：此 RSS feed 会自动抓取财新网的最新文章，但不包含 FM 及视频内容。","location":"latest.ts"}' :test='{"code":0}' />
+<Route namespace="caixin" :data='{"path":"/latest","categories":["traditional-media","popular"],"view":0,"example":"/caixin/latest","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["caixin.com/"]}],"name":"最新文章","maintainers":["tpnonthealps"],"url":"caixin.com/","description":"说明：此 RSS feed 会自动抓取财新网的最新文章，但不包含 FM 及视频内容。订阅用户可根据文档设置环境变量后，在url传入`fulltext=`以解锁全文。","location":"latest.ts"}' :test='{"code":0}' />
 
-说明：此 RSS feed 会自动抓取财新网的最新文章，但不包含 FM 及视频内容。
+说明：此 RSS feed 会自动抓取财新网的最新文章，但不包含 FM 及视频内容。订阅用户可根据文档设置环境变量后，在url传入`fulltext=`以解锁全文。
 
 ## 参考消息 <Site url="cankaoxiaoxi.com"/>
 
