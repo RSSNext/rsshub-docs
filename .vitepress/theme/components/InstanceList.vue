@@ -97,6 +97,11 @@ const instances = [{
     location: '🇯🇵',
     maintainer: 'Vania',
     maintainerUrl: 'https://note.com/vania/',
+  }, {
+    url: 'https://hub.rss.direct',
+    location: '🇸🇬',
+    maintainer: 'Eric Zhu',
+    maintainerUrl: 'https://github.com/ericyzhu',
   }
 ]
 
