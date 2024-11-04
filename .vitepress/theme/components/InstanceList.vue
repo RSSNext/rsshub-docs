@@ -96,7 +96,7 @@ const instances = [{
     url: 'https://holorx.pikapod.net/',
     location: '🇯🇵',
     maintainer: 'Vania',
-    maintainerUrl: 'https://note.com/vania/',
+    maintainerUrl: 'https://note.com/vania',
   }, {
     url: 'https://hub.rss.direct',
     location: '🇸🇬',
