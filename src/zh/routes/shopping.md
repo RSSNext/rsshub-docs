@@ -179,6 +179,20 @@ Category
 
 美食網站Openrice相关資訊
 
+### 香港餐廳排行榜 <Site url="www.openrice.com" size="sm" />
+
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/explore/chart/:category","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/explore/chart/most-bookmarked","parameters":{"lang":"语言，缺省为 zh","category":"类别，缺省为 most-bookmarked"},"name":"香港餐廳排行榜","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n\n  | 最多收藏 | 每周最高评分 | 最高浏览 | 最佳甜品餐厅 |\n  | ----- | ------ | ----- | ----- |\n  | most-bookmarked | best-rating | most-popular | best-dessert |\n  ","location":"chart.ts"}' :test='undefined' />
+
+
+  | 简体 | 繁體 | EN |
+  | ----- | ------ | ----- |
+  | zh-cn | zh | en |
+
+  | 最多收藏 | 每周最高评分 | 最高浏览 | 最佳甜品餐厅 |
+  | ----- | ------ | ----- | ----- |
+  | most-bookmarked | best-rating | most-popular | best-dessert |
+  
+
 ### 香港餐廳精選優惠券 <Site url="www.openrice.com" size="sm" />
 
 <Route namespace="openrice" :data='{"path":"/:lang/hongkong/offers","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/offers","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐廳精選優惠券","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ","location":"offers.ts"}' :test='{"code":0}' />
