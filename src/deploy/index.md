@@ -260,7 +260,7 @@ RSSHub can be configured by setting environment variables.
 
 Create a `.env` file in the root directory of your project. Add environment-specific variables on new lines in the form of `NAME=VALUE`. For example:
 
-```
+```shell
 CACHE_TYPE=redis
 CACHE_EXPIRE=600
 ```

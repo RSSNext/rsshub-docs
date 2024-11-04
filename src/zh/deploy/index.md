@@ -251,7 +251,7 @@ $ echo 'CHROMIUM_EXECUTABLE_PATH=chromium-browser' >> .env
 
 在项目根目录新建一个 `.env` 文件，每行以 `NAME=VALUE` 格式添加环境变量，例如
 
-```env
+```shell
 CACHE_TYPE=redis
 CACHE_EXPIRE=600
 ```
