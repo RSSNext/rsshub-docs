@@ -284,6 +284,16 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
   You can also search for keywords. `/search/Blog` to search for the keyword "Blog". In this case, the route would be [`/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/search/Blog`](https://rsshub.app/wordpress/https%3A%2F%2Fwordpress.org%2Fnews/search/Blog).
   :::
 
+## 宝玉 <Site url="baoyu.io"/>
+
+宝玉的博客
+
+### Blog <Site url="baoyu.io/" size="sm" />
+
+<Route namespace="baoyu" :data='{"path":"/blog","categories":["blog"],"example":"/baoyu/blog","radar":[{"source":["baoyu.io/"]}],"url":"baoyu.io/","name":"Blog","maintainers":["liyaozhong"],"description":"宝玉 - 博客文章","location":"index.ts"}' :test='undefined' />
+
+宝玉 - 博客文章
+
 ## 便宜VPS网 <Site url="pianyivps.com"/>
 
 ### 最新发布 <Site url="pianyivps.com/" size="sm" />
