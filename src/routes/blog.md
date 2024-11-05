@@ -94,6 +94,14 @@ Enterprise Craftsmanship blog archives
 
 <Route namespace="gs" :data='{"path":"/developer/blog","categories":["blog"],"example":"/gs/developer/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["developer.gs.com/blog/posts"],"target":"/developer/blog"}],"name":"Goldman Sachs Developer Blog","zh":{"name":"高盛开发者博客"},"maintainers":["chesha1"],"location":"developer/blog.ts"}' :test='{"code":0}' />
 
+## Hamel's Blog <Site url="hamel.dev"/>
+
+### Blog <Site url="hamel.dev/" size="sm" />
+
+<Route namespace="hamel" :data='{"path":"/blog","categories":["blog"],"example":"/hamel/blog","radar":[{"source":["hamel.dev/"]}],"url":"hamel.dev/","name":"Blog","maintainers":["liyaozhong"],"description":"Hamel&#39;s Blog Posts","location":"index.ts"}' :test='undefined' />
+
+Hamel's Blog Posts
+
 ## hashnode <Site url="hashnode.dev"/>
 
 ### 用户博客 <Site url="hashnode.dev/" size="sm" />
