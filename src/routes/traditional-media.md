@@ -491,6 +491,12 @@ URL: [https://www.nytimes.com/zh-hans/series/daily-briefing-chinese](https://www
 
 By extracting the full text of articles, we provide a better reading experience (full text articles) over the official one.
 
+### News <Site url="nytimes.com/" size="sm" />
+
+<Route namespace="nytimes" :data='{"path":"/rss/:cat?","categories":["traditional-media","popular"],"view":0,"example":"/nytimes/rss/HomePage","parameters":{"cat":{"description":"Category name, corresponding to the last segment of [official feed&#39;s](https://www.nytimes.com/rss) url."}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nytimes.com/"],"target":""}],"name":"News","maintainers":["HenryQW","pseudoyu","dzx-dzx"],"url":"nytimes.com/","description":"Enhance the official EN RSS feed","location":"rss.ts"}' :test='undefined' />
+
+Enhance the official EN RSS feed
+
 ## The Strait Times <Site url="straitstimes.com"/>
 
 ### News <Site url="straitstimes.com" size="sm" />
