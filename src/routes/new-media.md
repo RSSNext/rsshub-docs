@@ -2539,6 +2539,12 @@ Type 栏目：
 将榜单条目集合到一个列表中，可避免推送大量条目，更符合阅读习惯且有热度排序，推荐使用。
 :::
 
+## 今日头条 <Site url="www.toutiao.com"/>
+
+### 头条主页 <Site url="www.toutiao.com" size="sm" />
+
+<Route namespace="toutiao" :data='{"path":"/user/token/:token","categories":["new-media"],"example":"/toutiao/user/token/MS4wLjABAAAAEmbqJP2CmC8XXv1BpMvQ3sQHKAxFsq8wHxj8XVIQWja6tMcB-QEbFkzkRNgMl12M","parameters":{"token":"用户 token，可在用户主页 URL 找到"},"features":{"antiCrawler":true},"radar":[{"source":["www.toutiao.com/c/user/token/:token"]}],"name":"头条主页","maintainers":["TonyRL"],"location":"user.ts"}' :test='undefined' />
+
 ## 君合律师事务所 <Site url="junhe.com"/>
 
 ### 君合法评 <Site url="junhe.com" size="sm" />
