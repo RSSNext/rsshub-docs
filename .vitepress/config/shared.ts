@@ -89,7 +89,7 @@ export const shared = defineConfig({
       { icon: 'github', link: 'https://github.com/DIYgod/RSSHub' },
       { icon: { svg: telegramLogo }, link: 'https://t.me/rsshub' },
       { icon: { svg: telegramLogo }, link: 'https://t.me/awesomeRSSHub' },
-      { icon: 'twitter', link: 'https://twitter.com/intent/follow?screen_name=_RSSHub' },
+      { icon: 'x', link: 'https://x.com/intent/follow?screen_name=_RSSHub' },
     ],
     editLink: {
       pattern: 'https://github.com/DIYgod/RSSHub-Docs/edit/main/src/:path',
