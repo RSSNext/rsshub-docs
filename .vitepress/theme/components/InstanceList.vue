@@ -102,6 +102,11 @@ const instances = [{
     location: '🇸🇬',
     maintainer: 'Eric Zhu',
     maintainerUrl: 'https://github.com/ericyzhu',
+  }, {
+    url: 'https://rsshub.umzzz.com',
+    location: '🇭🇰',
+    maintainer: 'nesay',
+    maintainerUrl: 'https://umzzz.com',
   }
 ]
 
