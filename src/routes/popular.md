@@ -1358,6 +1358,12 @@ yande post
   | -------- | -------- | -------- | -------- | -------- |
   | weekly   | skills   | books    | news     | essay    |
 
+## 司机社 <Site url="xsijishe.com"/>
+
+### 排行榜 <Site url="xsijishe.com" size="sm" />
+
+<Route namespace="xsijishe" :data='{"path":"/rank/:type","categories":["bbs","popular"],"example":"/xsijishe/rank/weekly","parameters":{"type":{"description":"排行榜类型","options":[{"value":"weekly","label":"周榜"},{"value":"monthly","label":"月榜"}]}},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["akynazh","AiraNadih"],"location":"rank.ts"}' :test='undefined' />
+
 ## 听听 FM <Site url="mobile.tingtingfm.com"/>
 
 ### 节目 <Site url="mobile.tingtingfm.com" size="sm" />
