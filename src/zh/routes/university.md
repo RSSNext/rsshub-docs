@@ -31,6 +31,18 @@
   最常用的几项有“通知公告_招生”、“通知公告”、“博士招生 - 招生专题”、“硕士招生 - 招生专题”。
   :::
 
+## Chinese Academy of Geological Sciences <Site url="cags.cgs.gov.cn"/>
+
+### 研究生院 <Site url="cags.cgs.gov.cn" size="sm" />
+
+<Route namespace="cags" :data='{"path":"/edu/:category","categories":["university"],"example":"/cags/edu/tzgg","parameters":{"category":"通知频道，可选 tzgg/ywjx/zs_bss/zs_sss/zs_dxsxly"},"features":{"antiCrawler":false,"requireConfig":false,"requirePuppeteer":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"研究生院","maintainers":["Chikit-L"],"radar":[{"source":["edu.cags.ac.cn/"]}],"description":"\n| 通知公告 | 要闻简讯 | 博士生招生 | 硕士生招生 | 大学生夏令营 |\n| -------- | -------- | ---------- | ---------- | ------------ |\n| tzgg     | ywjx     | zs_bss     | zs_sss     | zs_dxsxly    |\n","location":"edu/index.ts"}' :test='undefined' />
+
+
+| 通知公告 | 要闻简讯 | 博士生招生 | 硕士生招生 | 大学生夏令营 |
+| -------- | -------- | ---------- | ---------- | ------------ |
+| tzgg     | ywjx     | zs_bss     | zs_sss     | zs_dxsxly    |
+
+
 ## China Jiliang University <Site url="www.cjlu.edu.cn"/>
 
 ### 研究生院 <Site url="www.cjlu.edu.cn" size="sm" />
