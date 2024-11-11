@@ -2274,9 +2274,14 @@ author 列表：
 
 <Route namespace="tongji" :data='{"path":"/bks","categories":["university"],"example":"/tongji/bks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bksy.tongji.edu.cn/"]}],"name":"本科生院通知公告","maintainers":["shiquda"],"url":"bksy.tongji.edu.cn/","location":"bks.ts"}' :test='{"code":0}' />
 
-### 经济与管理学院通知 <Site url="sem.tongji.edu.cn/semch/category/frontpage/notice" size="sm" />
+### 经济与管理学院通知 <Site url="sem.tongji.edu.cn/semch" size="sm" />
 
-<Route namespace="tongji" :data='{"path":"/sem","categories":["university"],"example":"/tongji/sem","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"经济与管理学院通知","maintainers":["sitdownkevin"],"url":"sem.tongji.edu.cn/semch/category/frontpage/notice","description":"","location":"sem/notice.ts"}' :test='{"code":0}' />
+<Route namespace="tongji" :data='{"path":"/sem/:type?","categories":["university"],"example":"/tongji/sem/notice","parameters":{"type":"通知类型，默认为 `notice`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"经济与管理学院通知","maintainers":["sitdownkevin"],"url":"sem.tongji.edu.cn/semch","description":"| 学院通知 | 招生通知 | 学术观点 | 新闻 | 活动 | 视点 | 教师与行政人员招聘 |\n| -------- | -------------- | ------------------ | ---- | ---------- | --------- | ------------------ |\n| notice   | enrollment     | academic-paper     | news | events     | focus     | collegerecruitment |\n","location":"sem/notice.ts"}' :test='undefined' />
+
+| 学院通知 | 招生通知 | 学术观点 | 新闻 | 活动 | 视点 | 教师与行政人员招聘 |
+| -------- | -------------- | ------------------ | ---- | ---------- | --------- | ------------------ |
+| notice   | enrollment     | academic-paper     | news | events     | focus     | collegerecruitment |
+
 
 ### 软件学院通知 <Site url="bksy.tongji.edu.cn" size="sm" />
 
