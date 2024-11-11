@@ -84,6 +84,12 @@ Enterprise Craftsmanship blog archives
 
 ## Google <Site url="www.google.com"/>
 
+### Developers Blog <Site url="developers.googleblog.com" size="sm" />
+
+<Route namespace="google" :data='{"path":"/developers/:locale?","name":"Developers Blog","url":"developers.googleblog.com","maintainers":["Loongphy"],"example":"/google/developers/en","parameters":{"locale":{"description":"language","default":"en","options":[{"value":"en","label":"English"},{"value":"es","label":"Español (Latam)"},{"value":"id","label":"Bahasa Indonesia"},{"value":"ja","label":"日本語"},{"value":"ko","label":"한국어"},{"value":"pt-br","label":"Português (Brasil)"},{"value":"zh-hans","label":"简体中文"}]}},"description":"Google Developers Blog","categories":["blog"],"radar":[{"source":["developers.googleblog.com"]}],"location":"developers.ts"}' :test='undefined' />
+
+Google Developers Blog
+
 ### Research Blog <Site url="www.google.com" size="sm" />
 
 <Route namespace="google" :data='{"path":"/research","categories":["blog"],"example":"/google/research","name":"Research Blog","maintainers":["Levix"],"radar":[{"source":["research.google"]}],"location":"research.ts"}' :test='{"code":0}' />
