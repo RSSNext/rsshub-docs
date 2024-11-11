@@ -2147,6 +2147,12 @@ author 列表：
   | ------ | ------ |
   | 1      | 2      |
 
+## 四川大学 <Site url="www.scu.edu.cn"/>
+
+### 匹兹堡学院通知 <Site url="scupi.scu.edu.cn/activities/notice" size="sm" />
+
+<Route namespace="scu" :data='{"path":"/scupi","categories":["university"],"example":"/scu/scupi","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"匹兹堡学院通知","maintainers":["sitdownkevin"],"url":"scupi.scu.edu.cn/activities/notice","description":"","location":"scupi/notice.ts"}' :test='undefined' />
+
 ## 四川职业技术学院 <Site url="scvtc.edu.cn"/>
 
 ### 学院公告 <Site url="scvtc.edu.cn/ggfw1/xygg.htm" size="sm" />
