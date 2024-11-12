@@ -1751,6 +1751,12 @@ Member ID
 
   更多专栏请见 [专题广场](https://utgd.net/topic)
 
+## Vertikal.net <Site url="vertikal.net"/>
+
+### News Archive <Site url="vertikal.net/en/news" size="sm" />
+
+<Route namespace="vertikal" :data='{"path":"/latest","categories":["new-media"],"example":"/vertikal/latest","radar":[{"source":["vertikal.net/en/news","vertikal.net"]}],"name":"News Archive","maintainers":["TonyRL"],"url":"vertikal.net/en/news","location":"latest.ts"}' :test='undefined' />
+
 ## Yahoo <Site url="hk.news.yahoo.com"/>
 
 ### News <Site url="news.yahoo.com/" size="sm" />
