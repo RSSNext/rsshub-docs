@@ -429,6 +429,16 @@ Categories for International site:
   | Chinese     | chinese     |
   | Portuguese  | portuguese  |
 
+## The Australian Financial Review <Site url="afr.com"/>
+
+### Latest <Site url="www.afr.com/latest" size="sm" />
+
+<Route namespace="afr" :data='{"path":"/latest","categories":["traditional-media"],"example":"/afr/latest","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.afr.com/latest","www.afr.com/"]}],"name":"Latest","maintainers":["TonyRL"],"url":"www.afr.com/latest","location":"latest.ts"}' :test='undefined' />
+
+### Navigation <Site url="www.afr.com" size="sm" />
+
+<Route namespace="afr" :data='{"path":"/navigation/:path{.+}","categories":["traditional-media"],"example":"/afr/navigation/markets","parameters":{"path":"Navigation path, can be found in the URL of the page"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.afr.com/path*"]}],"name":"Navigation","maintainers":["TonyRL"],"url":"www.afr.com","location":"navigation.ts"}' :test='undefined' />
+
 ## The Economist <Site url="economist.com"/>
 
 ### Category <Site url="economist.com" size="sm" />
