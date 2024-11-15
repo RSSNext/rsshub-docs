@@ -1370,6 +1370,21 @@ Column 列表：
 
 <Route namespace="thepaper" :data='{"path":"/featured","categories":["traditional-media"],"example":"/thepaper/featured","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thepaper.cn/"]}],"name":"首页头条","maintainers":["HenryQW","nczitzk","bigfei"],"url":"thepaper.cn/","location":"featured.ts"}' :test='{"code":0}' />
 
+## 求是网 <Site url="www.qstheory.cn"/>
+
+### 分类 <Site url="www.qstheory.cn" size="sm" />
+
+<Route namespace="qstheory" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/qstheory","parameters":{"industry":"分类，见下表"},"radar":[{"source":["www.qstheory.cn/v9zhuanqu/:category/index.htm","www.qstheory.cn/qszq/:category/index.htm","www.qstheory.cn/:category/index.htm"]}],"name":"分类","maintainers":["nczitzk"],"description":"\n| 头条    | 网评 | 视频 | 原创   | 经济    | 政治     | 文化    | 社会    | 党建 | 科教    | 生态    | 国防    | 国际          | 图书  | 学习笔记 | 理论文选 |\n| ------- | ---- | ---- | ------ | ------- | -------- | ------- | ------- | ---- | ------- | ------- | ------- | ------------- | ----- | -------- | -------- |\n| toutiao | qswp | qssp | qslgxd | economy | politics | culture | society | cpc  | science | zoology | defense | international | books | xxbj     | llwx     |","location":"index.ts"}' :test='undefined' />
+
+
+| 头条    | 网评 | 视频 | 原创   | 经济    | 政治     | 文化    | 社会    | 党建 | 科教    | 生态    | 国防    | 国际          | 图书  | 学习笔记 | 理论文选 |
+| ------- | ---- | ---- | ------ | ------- | -------- | ------- | ------- | ---- | ------- | ------- | ------- | ------------- | ----- | -------- | -------- |
+| toutiao | qswp | qssp | qslgxd | economy | politics | culture | society | cpc  | science | zoology | defense | international | books | xxbj     | llwx     |
+
+### 在线读刊 <Site url="www.qstheory.cn" size="sm" />
+
+<Route namespace="qstheory" :data='{"path":"/magazine/:magazine","categories":["traditional-media"],"example":"/qstheory/magazine/qs","parameters":{"magazine":"刊物，`qs` 为求是，`hqwglist` 为红旗文稿"},"radar":[{"source":["www.qstheory.cn/:magazine/mulu.htm"]}],"name":"在线读刊","maintainers":["TonyRL"],"location":"magazine.ts"}' :test='undefined' />
+
 ## 人民网 <Site url="people.com.cn"/>
 
 ### Unknown <Site url="people.com.cn" size="sm" />
