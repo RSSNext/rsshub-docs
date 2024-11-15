@@ -160,7 +160,7 @@ LangChain Blog Posts
 
 ### blog.logrocket <Site url="blog.logrocket.com/" size="sm" />
 
-<Route namespace="logrocket" :data='{"path":"/:type","categories":["blog"],"example":"/dev","parameters":{"type":"dev | product-management | ux-design"},"radar":[{"source":["blog.logrocket.com"]}],"name":"blog.logrocket","maintainers":["findwei"],"url":"blog.logrocket.com/","location":"index.ts"}' :test='undefined' />
+<Route namespace="logrocket" :data='{"path":"/:type","categories":["blog"],"example":"/logrocket/dev","parameters":{"type":"dev | product-management | ux-design"},"radar":[{"source":["blog.logrocket.com"]}],"name":"blog.logrocket","maintainers":["findwei"],"url":"blog.logrocket.com/","location":"index.ts"}' :test='undefined' />
 
 ## MacMenuBar <Site url="macmenubar.com"/>
 
