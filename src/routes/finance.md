@@ -450,6 +450,42 @@ Language:
   | ------------ | -------------------- | ----------------- |
   | zonghezixun3 | zhengceguiding_list | yewutongzhi_list |
 
+## 华尔街见闻 <Site url="wallstreetcn.com"/>
+
+### 财经日历 <Site url="wallstreetcn.com/calendar" size="sm" />
+
+<Route namespace="wallstreetcn" :data='{"path":"/calendar/:section?","categories":["finance"],"example":"/wallstreetcn/calendar","parameters":{"section":"`macrodatas` 或 `report`，默认为 `macrodatas`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallstreetcn.com/calendar"]}],"name":"财经日历","maintainers":["TonyRL"],"url":"wallstreetcn.com/calendar","location":"calendar.ts"}' :test='undefined' />
+
+### 实时快讯 <Site url="wallstreetcn.com" size="sm" />
+
+<Route namespace="wallstreetcn" :data='{"path":"/live/:category?/:score?","categories":["finance"],"example":"/wallstreetcn/live","parameters":{"category":"快讯分类，默认`global`，见下表","score":"快讯重要度，默认`1`全部快讯，可设置为`2`只看重要的"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallstreetcn.com/live/:category","wallstreetcn.com/"],"target":"/live/:category?"}],"name":"实时快讯","maintainers":["nczitzk"],"description":"| 要闻   | A 股    | 美股     | 港股     | 外汇  | 商品      | 理财      |\n  | ------ | ------- | -------- | -------- | ----- | --------- | --------- |\n  | global | a-stock | us-stock | hk-stock | forex | commodity | financing |","location":"live.ts"}' :test='{"code":0}' />
+
+| 要闻   | A 股    | 美股     | 港股     | 外汇  | 商品      | 理财      |
+  | ------ | ------- | -------- | -------- | ----- | --------- | --------- |
+  | global | a-stock | us-stock | hk-stock | forex | commodity | financing |
+
+### 资讯 <Site url="wallstreetcn.com" size="sm" />
+
+<Route namespace="wallstreetcn" :data='{"path":"/news/:category?","categories":["finance"],"example":"/wallstreetcn/news","radar":[{"source":["wallstreetcn.com/news/:category","wallstreetcn.com/"]}],"name":"资讯","maintainers":["nczitzk"],"description":"| id           | 分类 |\n  | ------------ | ---- |\n  | global       | 最新 |\n  | shares       | 股市 |\n  | bonds        | 债市 |\n  | commodities  | 商品 |\n  | forex        | 外汇 |\n  | enterprise   | 公司 |\n  | asset-manage | 资管 |\n  | tmt          | 科技 |\n  | estate       | 地产 |\n  | car          | 汽车 |\n  | medicine     | 医药 |","location":"news.ts"}' :test='undefined' />
+
+| id           | 分类 |
+  | ------------ | ---- |
+  | global       | 最新 |
+  | shares       | 股市 |
+  | bonds        | 债市 |
+  | commodities  | 商品 |
+  | forex        | 外汇 |
+  | enterprise   | 公司 |
+  | asset-manage | 资管 |
+  | tmt          | 科技 |
+  | estate       | 地产 |
+  | car          | 汽车 |
+  | medicine     | 医药 |
+
+### 最热文章 <Site url="wallstreetcn.com/" size="sm" />
+
+<Route namespace="wallstreetcn" :data='{"path":"/hot/:period?","categories":["finance"],"example":"/wallstreetcn/hot","parameters":{"period":"时期，可选 `day` 即 当日 或 `week` 即 当周，默认为当日"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallstreetcn.com/"]}],"name":"最热文章","maintainers":["nczitzk"],"url":"wallstreetcn.com/","location":"hot.ts"}' :test='{"code":0}' />
+
 ## 汇通网 <Site url="fx678.com"/>
 
 ### 7x24 小时快讯 <Site url="fx678.com/kx" size="sm" />
