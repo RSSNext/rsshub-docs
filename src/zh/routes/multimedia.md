@@ -615,6 +615,20 @@ JavDB 有多个备用域名，本路由默认使用永久域名 `https://javdb.c
 
 <Route namespace="javtiful" :data='{"path":"/channel/:id","name":"Channel","maintainers":["huanfe1"],"example":"/javtiful/channel/madonna","parameters":{"id":"Channel name"},"categories":["multimedia"],"radar":[{"source":["javtiful.com/channel/:id","javtiful.com/channel/:id/*"],"target":"/channel/:id"}],"location":"channel.ts"}' :test='{"code":0}' />
 
+## JavTrailers <Site url="javtrailers.com"/>
+
+### Casts <Site url="javtrailers.com/casts" size="sm" />
+
+<Route namespace="javtrailers" :data='{"path":"/casts/:cast","categories":["multimedia"],"example":"/javtrailers/casts/hibiki-otsuki","parameters":{"cast":"Cast name, can be found in the URL of the cast page"},"radar":[{"source":["javtrailers.com/casts/:category"]}],"name":"Casts","maintainers":["TonyRL"],"url":"javtrailers.com/casts","location":"casts.ts"}' :test='undefined' />
+
+### Categories <Site url="javtrailers.com/categories" size="sm" />
+
+<Route namespace="javtrailers" :data='{"path":"/categories/:category","categories":["multimedia"],"example":"/javtrailers/categories/50001755","parameters":{"category":"Category name, can be found in the URL of the category page"},"radar":[{"source":["javtrailers.com/categories/:category"]}],"name":"Categories","maintainers":["TonyRL"],"url":"javtrailers.com/categories","location":"categories.ts"}' :test='undefined' />
+
+### Studios <Site url="javtrailers.com" size="sm" />
+
+<Route namespace="javtrailers" :data='{"path":"/studios/:studio","categories":["multimedia"],"example":"/javtrailers/studios/s1-no-1-style","parameters":{"studio":"Studio name, can be found in the URL of the studio page"},"radar":[{"source":["javtrailers.com/studios/:category"]}],"name":"Studios","maintainers":["TonyRL"],"location":"studios.ts"}' :test='undefined' />
+
 ## ManyVids <Site url="www.manyvids.com"/>
 
 ### Creator Videos <Site url="www.manyvids.com" size="sm" />
