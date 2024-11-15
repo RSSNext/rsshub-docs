@@ -676,9 +676,9 @@ Chart
 
 <Route namespace="bilibili" :data='{"path":"/link/news/:product","categories":["social-media"],"example":"/bilibili/link/news/live","parameters":{"product":"公告分类, 包括 直播:live 小视频:vc 相簿:wh"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"link 公告","maintainers":["Qixingchen"],"location":"link-news.ts"}' :test='{"code":0}' />
 
-### UP 主专栏 <Site url="www.bilibili.com" size="sm" />
+### UP 主图文 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/user/article/:uid","categories":["social-media"],"example":"/bilibili/user/article/334958638","parameters":{"uid":"用户 id, 可在 UP 主主页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"]}],"name":"UP 主专栏","maintainers":["lengthmin","Qixingchen"],"location":"article.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/user/article/:uid","categories":["social-media"],"example":"/bilibili/user/article/334958638","parameters":{"uid":"用户 id, 可在 UP 主主页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["space.bilibili.com/:uid"]}],"name":"UP 主图文","maintainers":["lengthmin","Qixingchen","hyoban"],"location":"article.ts"}' :test='{"code":0}' />
 
 ### UP 主投币视频 <Site url="www.bilibili.com" size="sm" />
 
