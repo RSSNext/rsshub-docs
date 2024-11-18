@@ -10,12 +10,6 @@
   Copy the URL of the 591 filter housing page and remove the front part `https://rent.591.com.tw/?`, you will get the query parameters.
   :::
 
-## 78 动漫 <Site url="78dm.net"/>
-
-### Unknown <Site url="78dm.net" size="sm" />
-
-<Route namespace="78dm" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts"}' :test='undefined' />
-
 ## 8 视界 <Site url="8world.com"/>
 
 ### Unknown <Site url="8world.com" size="sm" />
