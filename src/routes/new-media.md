@@ -950,6 +950,12 @@ This route provides a better reading experience (full text articles) over the of
 
 <Route namespace="panewslab" :data='{"path":"/topic/:id","categories":["new-media"],"example":"/panewslab/topic/1629365774078402","parameters":{"id":"专题 id，可在地址栏 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["panewslab.com/"]}],"name":"专题","maintainers":["nczitzk"],"url":"panewslab.com/","location":"topic.ts"}' :test='{"code":0}' />
 
+## Patreon <Site url="www.patreon.com"/>
+
+### Home <Site url="www.patreon.com" size="sm" />
+
+<Route namespace="patreon" :data='{"path":"/:creator","categories":["new-media"],"example":"/patreon/straightupsisters","parameters":{"creator":"Patreon creator id, can be found in the url"},"features":{"requireConfig":[{"name":"PATREON_SESSION_ID","optional":true,"description":"The value of the session_id cookie after logging in to Patreon, required to access paid posts"}]},"radar":[{"source":["patreon.com/:creator"]}],"name":"Home","maintainers":["TonyRL"],"location":"feed.ts"}' :test='undefined' />
+
 ## PeoPo 公民新聞 <Site url="peopo.org"/>
 
 ### 新聞分類 <Site url="peopo.org" size="sm" />
