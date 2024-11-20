@@ -641,3 +641,20 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route namespace="bangumi.online" :data='{"path":"/","categories":["anime"],"example":"/bangumi.online","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bangumi.online/"]}],"name":"當季新番","maintainers":["devinmugen"],"url":"bangumi.online/","location":"online.ts"}' :test='undefined' />
 
+## アイドルマスター THE IDOLM@STER <Site url="idolmaster-official.jp"/>
+
+### ニュース News <Site url="idolmaster-official.jp/news" size="sm" />
+
+<Route namespace="idolmaster" :data='{"url":"idolmaster-official.jp/news","path":"/news/:routeParams?","categories":["anime"],"example":"/idolmaster/news/brand=MILLIONLIVE&brand=SHINYCOLORS&category=GAME&category=ANIME","parameters":{"routeParams":"The `brand` and `category` params in the path. The available values are as follows."},"description":"**Brand**\n| THE IDOLM@STER | シンデレラガールズ | ミリオンライブ！ | SideM | シャイニーカラーズ | 学園アイドルマスター | その他 |\n| -------------- | --------------- | ------------- | ----- | --------------- | ----------------- | ----- |\n| IDOLMASTER | CINDERELLAGIRLS | MILLIONLIVE | SIDEM | SHINYCOLORS | OTHER |\n\n**Category**\n| ゲーム | ライブ・イベント | アニメ | 配信番組 | ラジオ | グッズ | コラボ・キャンペーン | ミュージック | ブック・コミック | メディア | その他 |\n| ----- | ------------- | ----- | ------- | ----- | ----- | ----------------- | --------- | -------------- | ------ | ----- |\n| GAME | LIVE-EVENT | ANIME | LIVESTREAM | RADIO | GOODS | COLLABO-CAMP | CD | BOOK | MEDIA | OTHER |\n    ","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["idolmaster-official.jp/news"],"target":"/news"}],"name":"ニュース News","maintainers":["keocheung"],"location":"news.ts"}' :test='undefined' />
+
+**Brand**
+| THE IDOLM@STER | シンデレラガールズ | ミリオンライブ！ | SideM | シャイニーカラーズ | 学園アイドルマスター | その他 |
+| -------------- | --------------- | ------------- | ----- | --------------- | ----------------- | ----- |
+| IDOLMASTER | CINDERELLAGIRLS | MILLIONLIVE | SIDEM | SHINYCOLORS | OTHER |
+
+**Category**
+| ゲーム | ライブ・イベント | アニメ | 配信番組 | ラジオ | グッズ | コラボ・キャンペーン | ミュージック | ブック・コミック | メディア | その他 |
+| ----- | ------------- | ----- | ------- | ----- | ----- | ----------------- | --------- | -------------- | ------ | ----- |
+| GAME | LIVE-EVENT | ANIME | LIVESTREAM | RADIO | GOODS | COLLABO-CAMP | CD | BOOK | MEDIA | OTHER |
+    
+
