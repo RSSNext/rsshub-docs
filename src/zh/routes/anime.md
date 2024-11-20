@@ -621,6 +621,12 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 | :--: | :--: | :--: | :--: | :--: |
 | 403 | 404 | 405 | 4130 | 5815 |
 
+## 円谷ステーション <Site url="m-78.jp"/>
+
+### ニュース <Site url="m-78.jp" size="sm" />
+
+<Route namespace="m-78" :data='{"name":"ニュース","categories":["anime"],"path":"/news/:category?","example":"/m-78/news","radar":[{"source":["m-78.jp/news"],"target":"/news"},{"source":["m-78.jp/news/category/:category"],"target":"/news/:category"}],"parameters":{"category":{"description":"news category","default":"news","options":[{"value":"news","label":"ニュース"},{"value":"streaming","label":"動画配信"},{"value":"event","label":"イベント"},{"value":"onair","label":"放送"},{"value":"broadcast","label":"放送/配信"},{"value":"goods","label":"グッズ"},{"value":"ultraman-cardgame","label":"ウルトラマン カードゲーム"},{"value":"shop","label":"ショップ"},{"value":"blu-ray_dvd","label":"Blu-ray・DVD"},{"value":"digital","label":"デジタル"}]}},"maintainers":["KarasuShin"],"features":{"supportRadar":true},"view":0,"location":"news.ts"}' :test='undefined' />
+
 ## 月幕 Galgame <Site url="ymgal.games"/>
 
 ### 本月新作 <Site url="ymgal.games/" size="sm" />
