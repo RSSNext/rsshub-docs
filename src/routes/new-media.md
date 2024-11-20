@@ -1938,6 +1938,12 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
   | 哔哩哔哩 | 微博 | 知乎 | 36 氪 | 百度 | 少数派 | IT 之家 | 澎湃新闻 | 今日头条 | 百度贴吧 | 稀土掘金 | 腾讯新闻 |
   | -------- | ---- | ---- | ----- | ---- | ------ | ------- | -------- | -------- | -------- | -------- | -------- |
 
+## 「ONE · 一个」 <Site url="wufazhuce.com"/>
+
+### 「ONE · 一个」 <Site url="wufazhuce.com" size="sm" />
+
+<Route namespace="wufazhuce" :data='{"path":"/one","categories":["new-media"],"example":"/wufazhuce/one","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wufazhuce.com"],"target":"/one"}],"name":"「ONE · 一个」","maintainers":["sicheng1806"],"location":"one.ts"}' :test='undefined' />
+
 ## 阿里研究院 <Site url="aliresearch.com"/>
 
 ### 资讯 <Site url="aliresearch.com/cn/information" size="sm" />
