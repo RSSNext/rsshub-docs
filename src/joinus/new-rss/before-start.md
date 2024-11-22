@@ -8,7 +8,21 @@ In this tutorial, we will walk you through the process of creating an RSS feed f
 
 ## Install dependencies
 
-Before you start, you need to install the dependencies for RSSHub. You can do this by running the following command in the root directory of RSSHub:
+Before you start, you need to install the dependencies for RSSHub. You can do this using the [pnpm](https://pnpm.io/) package manager.
+
+### Enable pnpm
+
+Node.js has included [Corepack](https://nodejs.org/api/corepack.html) for managing package managers since v16.13. Enable pnpm by running the following:
+
+```
+corepack enable pnpm
+```
+
+Please see the [pnpm installation page](https://pnpm.io/installation) for more details on pnpm install options.   
+
+### Run pnpm
+
+ the following command in the root directory of RSSHub:
 
 ```bash
 pnpm i
