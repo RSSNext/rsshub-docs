@@ -451,11 +451,11 @@ For some URL like [https://sourceforge.net/directory/artificial-intelligence/win
 
   URL params can duplicate, such as `/sourceforge/topic=artificial-intelligence&os=windows&os=linux`.
 
-## syosetu <Site url="syosetu.com"/>
+## Syosetu <Site url="syosetu.com"/>
 
-### なろう小説 API の更新履歴 <Site url="syosetu.com" size="sm" />
+### なろう小説 API の更新履歴 <Site url="dev.syosetu.com" size="sm" />
 
-<Route namespace="syosetu" :data='{"path":"/dev","categories":["program-update"],"example":"/syosetu/dev","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"なろう小説 API の更新履歴","maintainers":["SnowAgar25"],"radar":[{"title":"なろう小説 API の更新履歴","source":["dev.syosetu.com"],"target":"/dev"}],"location":"dev.ts"}' :test='undefined' />
+<Route namespace="syosetu" :data='{"path":"/dev","categories":["program-update"],"example":"/syosetu/dev","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"なろう小説 API の更新履歴","url":"dev.syosetu.com","maintainers":["SnowAgar25"],"radar":[{"title":"なろう小説 API の更新履歴","source":["dev.syosetu.com"],"target":"/dev"}],"location":"dev.ts"}' :test='undefined' />
 
 ## TradingView <Site url="tradingview.com"/>
 
