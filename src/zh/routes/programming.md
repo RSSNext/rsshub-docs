@@ -176,6 +176,12 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 <Route namespace="codeforces" :data='{"path":"/recent-actions/:minrating?","categories":["programming"],"example":"/codeforces/recent-actions","parameters":{"minrating":"The minimum blog/comment rating required. Default: 1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["codeforces.com/recent-actions"],"target":"/recent-actions"}],"name":"Recent actions","maintainers":[],"url":"codeforces.com/recent-actions","location":"recent-actions.ts"}' :test='{"code":0}' />
 
+## Cybercrime Magazine <Site url="cybersecurityventures.com"/>
+
+### News <Site url="cybersecurityventures.com" size="sm" />
+
+<Route namespace="cybersecurityventures" :data='{"name":"News","categories":["programming"],"path":"/news/:category?","example":"/cybersecurityventures/news","radar":[{"source":["cybersecurityventures.com/today"],"target":"/news/today","title":"Today&#39;s News"},{"source":["cybersecurityventures.com/intrusion-daily-cyber-threat-alert"],"target":"/news/intrusion-daily-cyber-threat-alert","title":"Cyberattacks"},{"source":["cybersecurityventures.com/ransomware-minute"],"target":"/news/ransomware-minute","title":"Ransomware"},{"source":["cybersecurityventures.com/cryptocrime"],"target":"/news/cryptocrime","title":"Cryptocrime"},{"source":["cybersecurityventures.com/hack-blotter"],"target":"/news/hack-blotter","title":"Hack Blotter"},{"source":["cybersecurityventures.com/cybersecurity-venture-capital-vc-deals"],"target":"/news/cybersecurity-venture-capital-vc-deals","title":"VC Deal Flow"},{"source":["cybersecurityventures.com/mergers-and-acquisitions-report"],"target":"/news/mergers-and-acquisitions-report","title":"M&A Tracker"}],"parameters":{"category":{"description":"news category","default":"today","options":[{"value":"today","label":"Today&#39;s News"},{"value":"intrusion-daily-cyber-threat-alert","label":"Cyberattacks"},{"value":"ransomware-minute","label":"Ransomware"},{"value":"cryptocrime","label":"Cryptocrime"},{"value":"hack-blotter","label":"Hack Blotter"},{"value":"cybersecurity-venture-capital-vc-deals","label":"VC Deal Flow"},{"value":"mergers-and-acquisitions-report","label":"M&A Tracker"}]}},"maintainers":["KarasuShin"],"features":{"supportRadar":true},"view":0,"location":"news.ts"}' :test='undefined' />
+
 ## dbaplus社群 <Site url="dbaplus.cn"/>
 
 ### 最新文章 <Site url="dbaplus.cn/" size="sm" />
