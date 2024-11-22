@@ -145,6 +145,12 @@ Return results from 2020
 
 <Route namespace="inspirehep" :data='{"path":"/literature/:q","example":"/inspirehep/literature/Physics","parameters":{"q":"Search keyword"},"name":"Literature Search","maintainers":["TonyRL"],"radar":[{"source":["inspirehep.net/literature"]}],"location":"literature.ts"}' :test='{"code":0}' />
 
+## Link Research <Site url="www.linkresearcher.com"/>
+
+### Articles <Site url="www.linkresearcher.com" size="sm" />
+
+<Route namespace="linkresearcher" :data='{"name":"Articles","path":"/:params","example":"/linkresearcher/category=theses&columns=Nature%20导读&subject=生物","maintainers":["y9c","KarasuShin"],"view":0,"categories":["journal"],"parameters":{"params":{"description":"search parameters, support `category`, `subject`, `columns`, `query`"}},"zh":{"name":"文章"},"zh-TW":{"name":"文章"},"location":"index.ts"}' :test='undefined' />
+
 ## MDPI <Site url="www.mdpi.com"/>
 
 ### Journal <Site url="www.mdpi.com" size="sm" />
