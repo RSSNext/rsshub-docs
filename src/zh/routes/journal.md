@@ -384,6 +384,14 @@ Return results from 2020
   | -------- | -------- | -------- | -------- |
   | bqym     | wlsf     | xshd     | tzgg     |
 
+## 社科期刊网 <Site url="ajcass.com"/>
+
+中国社会科学院学术期刊方阵
+
+### 社会学研究 <Site url="ajcass.com" size="sm" />
+
+<Route namespace="ajcass" :data='{"path":"/shxyj/:year?/:issue?","categories":["journal"],"example":"/ajcass/shxyj/2024/1","parameters":{"year":"Year of the issue, `null` for the lastest","issue":"Issue number, `null` for the lastest"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"社会学研究","maintainers":["CNYoki"],"location":"shxyj.ts"}' :test='undefined' />
+
 ## 中国知网 <Site url="navi.cnki.net"/>
 
 ### 期刊 <Site url="navi.cnki.net" size="sm" />
