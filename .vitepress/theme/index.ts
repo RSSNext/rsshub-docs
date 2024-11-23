@@ -8,6 +8,7 @@ import Site from './components/Site.vue'
 import Sponsors from './components/Sponsors.vue'
 import InstanceList from './components/InstanceList.vue'
 import CopyButtonVue from './components/CopyButton.vue'
+import Banner from './components/Banner.vue'
 
 export default {
   extends: DefaultTheme,
@@ -23,5 +24,6 @@ export default {
     app.component('Sponsors', Sponsors)
     app.component('InstanceList', InstanceList)
     app.component('CopyButton', CopyButtonVue)
+    app.component('Banner', Banner)
   }
 } satisfies Theme
