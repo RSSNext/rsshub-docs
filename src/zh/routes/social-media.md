@@ -372,7 +372,7 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Novel Series <Site url="www.pixiv.net" size="sm" />
 
-<Route namespace="pixiv" :data='{"path":"/novel/series/:id","categories":["social-media"],"example":"/pixiv/novel/series/11586857","parameters":{"id":"Series id, can be found in URL"},"features":{"requireConfig":[{"name":"PIXIV_REFRESHTOKEN","optional":true,"description":"\nrefresh_token after Pixiv login, required for accessing R18 novels\nPixiv 登錄後的 refresh_token，用於獲取 R18 小說\n[https://docs.rsshub.app/deploy/config#pixiv](https://docs.rsshub.app/deploy/config#pixiv)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Novel Series","maintainers":["SnowAgar25"],"radar":[{"source":["www.pixiv.net/novel/series/:id"],"target":"/novel/series/:id"}],"location":"novel-series.ts"}' :test='{"code":0}' />
+<Route namespace="pixiv" :data='{"path":"/novel/series/:id","categories":["social-media"],"example":"/pixiv/novel/series/11586857","parameters":{"id":"Series id, can be found in URL"},"features":{"requireConfig":[{"name":"PIXIV_REFRESHTOKEN","optional":true,"description":"\nrefresh_token after Pixiv login, required for accessing R18 novels\nPixiv 登錄後的 refresh_token，用於獲取 R18 小說\n[https://docs.rsshub.app/deploy/config#pixiv](https://docs.rsshub.app/deploy/config#pixiv)"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Novel Series","maintainers":["SnowAgar25","keocheung"],"radar":[{"source":["www.pixiv.net/novel/series/:id"],"target":"/novel/series/:id"}],"location":"novel-series.ts"}' :test='{"code":0}' />
 
 ### Rankings <Site url="www.pixiv.net" size="sm" />
 
