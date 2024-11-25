@@ -214,7 +214,7 @@ When multiple works have the same points, their order may differ from syosetu's 
 
 ### Search <Site url="syosetu.com" size="sm" />
 
-<Route namespace="syosetu" :data='{"path":"/search/:sub/:query","categories":["reading"],"example":"/syosetu/search/noc/word=ハーレム&notword=&type=r&mintime=&maxtime=&minlen=30000&maxlen=&min_globalpoint=&max_globalpoint=&minlastup=&maxlastup=&minfirstup=&maxfirstup=&isgl=1&notbl=1&order=new","parameters":{"sub":"The target Syosetu subsite (yomou/noc/mnlt/mid).","query":"Search parameters in Syosetu format."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["SnowAgar25"],"location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="syosetu" :data='{"path":"/search/:sub/:query","categories":["reading"],"example":"/syosetu/search/noc/word=ハーレム&notword=&type=r&mintime=&maxtime=&minlen=30000&maxlen=&min_globalpoint=&max_globalpoint=&minlastup=&maxlastup=&minfirstup=&maxfirstup=&isgl=1&notbl=1&order=new?limit=5","parameters":{"sub":{"description":"The target Syosetu subsite.","options":[{"value":"yomou","label":"小説を読もう"},{"value":"noc","label":"ノクターン"},{"value":"mnlt","label":"ムーンライト"},{"value":"mid","label":"ミッドナイト"}]},"query":"Search parameters in Syosetu format."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["SnowAgar25"],"location":"search.ts"}' :test='{"code":0}' />
 
 ## Yen Press <Site url="yenpress.com"/>
 
