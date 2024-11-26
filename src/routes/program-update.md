@@ -168,7 +168,7 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 ### Image New Tag <Site url="hub.docker.com" size="sm" />
 
-<Route namespace="dockerhub" :data='{"path":"/tag/:owner/:image/:limits?","categories":["program-update"],"example":"/dockerhub/tag/library/mariadb","parameters":{"owner":"Image owner","image":"Image name","limits":"Tag count, 10 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Tag","maintainers":[],"description":":::warning\n  Use `library` as the `owner` for official images, such as [https://rsshub.app/dockerhub/tag/library/mysql](https://rsshub.app/dockerhub/tag/library/mysql)\n  :::","location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="dockerhub" :data='{"path":"/tag/:owner/:image/:limits?","categories":["program-update"],"example":"/dockerhub/tag/library/mariadb","parameters":{"owner":"Image owner","image":"Image name","limits":"Tag count, 10 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Image New Tag","maintainers":["pseudoyu"],"description":":::warning\n  Use `library` as the `owner` for official images, such as [https://rsshub.app/dockerhub/tag/library/mysql](https://rsshub.app/dockerhub/tag/library/mysql)\n  :::","location":"tag.ts"}' :test='{"code":0}' />
 
 :::warning
   Use `library` as the `owner` for official images, such as [https://rsshub.app/dockerhub/tag/library/mysql](https://rsshub.app/dockerhub/tag/library/mysql)
