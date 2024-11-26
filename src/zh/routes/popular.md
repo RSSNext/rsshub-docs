@@ -719,6 +719,10 @@ Get the activities of a user on GitHub, based on the GitHub official RSS feed
 
 ## Google <Site url="www.google.com"/>
 
+### News <Site url="www.google.com" size="sm" />
+
+<Route namespace="google" :data='{"path":"/news/:category/:locale","categories":["new-media","popular"],"example":"/google/news/Top stories/hl=en-US&gl=US&ceid=US:en","parameters":{"category":"Category Title","locale":"locales, could be found behind `?`, including `hl`, `gl`, and `ceid` as parameters"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["zoenglinghou","pseudoyu"],"location":"news.ts"}' :test='{"code":0}' />
+
 ### Scholar Author Citations <Site url="www.google.com" size="sm" />
 
 <Route namespace="google" :data='{"path":"/citations/:id","categories":["journal","popular"],"example":"/google/citations/mlmE4JMAAAAJ","parameters":{"id":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Scholar Author Citations","maintainers":["KellyHwong","const7"],"description":"The parameter id in the route is the id in the URL of the user&#39;s Google Scholar reference page, for example `https://scholar.google.com/citations?user=mlmE4JMAAAAJ` to `mlmE4JMAAAAJ`.\n\n  Query parameters are also supported here, for example `https://scholar.google.com/citations?user=mlmE4JMAAAAJ&sortby=pubdate` to `mlmE4JMAAAAJ&sortby=pubdate`. Please make sure that the user id (`mlmE4JMAAAAJ` in this case) should be the first parameter in the query string.","location":"citations.ts"}' :test='{"code":0}' />
@@ -749,6 +753,70 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 <Route namespace="gq" :data='{"path":"/news","categories":["traditional-media","popular"],"view":0,"example":"/gq/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gq.com/"]}],"name":"News","maintainers":["EthanWng97"],"location":"news.ts"}' :test='{"code":0}' />
 
+## Grist <Site url="grist.org"/>
+
+### Featured <Site url="grist.org/" size="sm" />
+
+<Route namespace="grist" :data='{"path":"/featured","categories":["new-media","popular"],"example":"/grist/featured","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/"]}],"name":"Featured","maintainers":["Rjnishant530"],"url":"grist.org/","location":"featured.ts"}' :test='{"code":0}' />
+
+### Latest Articles <Site url="grist.org/articles/" size="sm" />
+
+<Route namespace="grist" :data='{"path":"/","radar":[{"source":["grist.org/articles/"]}],"name":"Latest Articles","maintainers":["Rjnishant530"],"categories":["new-media","popular"],"example":"/grist","parameters":{},"url":"grist.org/articles/","location":"index.ts"}' :test='undefined' />
+
+### Series <Site url="grist.org/articles/" size="sm" />
+
+<Route namespace="grist" :data='{"path":"/series/:series","categories":["new-media","popular"],"example":"/grist/series/best-of-grist","parameters":{"series":"Find in the URL which has /series/"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/series/:series"]}],"name":"Series","maintainers":["Rjnishant530"],"url":"grist.org/articles/","location":"series.ts"}' :test='{"code":0}' />
+
+### Topic <Site url="grist.org/articles/" size="sm" />
+
+<Route namespace="grist" :data='{"path":"/topic/:topic","categories":["new-media","popular"],"example":"/grist/topic/extreme-heat","parameters":{"topic":"Any Topic from Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/:topic"]}],"name":"Topic","maintainers":["Rjnishant530"],"url":"grist.org/articles/","description":"Topics\n\n  | Topic Name               | Topic Link         |\n  | ------------------------ | ------------------ |\n  | Accountability           | accountability     |\n  | Agriculture              | agriculture        |\n  | Ask Umbra                | ask-umbra-series   |\n  | Buildings                | buildings          |\n  | Cities                   | cities             |\n  | Climate & Energy         | climate-energy     |\n  | Climate Fiction          | climate-fiction    |\n  | Climate of Courage       | climate-of-courage |\n  | COP26                    | cop26              |\n  | COP27                    | cop27              |\n  | Culture                  | culture            |\n  | Economics                | economics          |\n  | Energy                   | energy             |\n  | Equity                   | equity             |\n  | Extreme Weather          | extreme-weather    |\n  | Fix                      | fix                |\n  | Food                     | food               |\n  | Grist                    | grist              |\n  | Grist News               | grist-news         |\n  | Health                   | health             |\n  | Housing                  | housing            |\n  | Indigenous Affairs       | indigenous         |\n  | International            | international      |\n  | Labor                    | labor              |\n  | Language                 | language           |\n  | Migration                | migration          |\n  | Opinion                  | opinion            |\n  | Politics                 | politics           |\n  | Protest                  | protest            |\n  | Race                     | race               |\n  | Regulation               | regulation         |\n  | Science                  | science            |\n  | Shift Happens Newsletter | shift-happens      |\n  | Solutions                | solutions          |\n  | Spanish                  | spanish            |\n  | Sponsored                | sponsored          |\n  | Technology               | technology         |\n  | Temperature Check        | temperature-check  |\n  | Uncategorized            | article            |\n  | Updates                  | updates            |\n  | Video                    | video              |","location":"topic.ts"}' :test='{"code":0}' />
+
+Topics
+
+  | Topic Name               | Topic Link         |
+  | ------------------------ | ------------------ |
+  | Accountability           | accountability     |
+  | Agriculture              | agriculture        |
+  | Ask Umbra                | ask-umbra-series   |
+  | Buildings                | buildings          |
+  | Cities                   | cities             |
+  | Climate & Energy         | climate-energy     |
+  | Climate Fiction          | climate-fiction    |
+  | Climate of Courage       | climate-of-courage |
+  | COP26                    | cop26              |
+  | COP27                    | cop27              |
+  | Culture                  | culture            |
+  | Economics                | economics          |
+  | Energy                   | energy             |
+  | Equity                   | equity             |
+  | Extreme Weather          | extreme-weather    |
+  | Fix                      | fix                |
+  | Food                     | food               |
+  | Grist                    | grist              |
+  | Grist News               | grist-news         |
+  | Health                   | health             |
+  | Housing                  | housing            |
+  | Indigenous Affairs       | indigenous         |
+  | International            | international      |
+  | Labor                    | labor              |
+  | Language                 | language           |
+  | Migration                | migration          |
+  | Opinion                  | opinion            |
+  | Politics                 | politics           |
+  | Protest                  | protest            |
+  | Race                     | race               |
+  | Regulation               | regulation         |
+  | Science                  | science            |
+  | Shift Happens Newsletter | shift-happens      |
+  | Solutions                | solutions          |
+  | Spanish                  | spanish            |
+  | Sponsored                | sponsored          |
+  | Technology               | technology         |
+  | Temperature Check        | temperature-check  |
+  | Uncategorized            | article            |
+  | Updates                  | updates            |
+  | Video                    | video              |
+
 ## Hacker News <Site url="ycombinator.com"/>
 
 ### User <Site url="ycombinator.com" size="sm" />
@@ -756,6 +824,22 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 <Route namespace="hackernews" :data='{"path":"/:section?/:type?/:user?","categories":["programming","popular"],"view":0,"example":"/hackernews/threads/comments_list/dang","parameters":{"section":{"description":"Content section, default to `index`"},"type":{"description":"Link type, default to `sources`"},"user":{"description":"Set user, only valid in `threads` and `submitted` sections"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.ycombinator.com/:section","news.ycombinator.com/"]}],"name":"User","maintainers":["nczitzk","xie-dongping"],"description":"Subscribe to the content of a specific user","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 803)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 Subscribe to the content of a specific user
+
+## Harvard Health Publishing <Site url="www.health.harvard.edu"/>
+
+### Health Blog <Site url="www.health.harvard.edu/blog" size="sm" />
+
+<Route namespace="harvard" :data='{"path":"/health/blog","categories":["new-media","popular"],"example":"/harvard/health/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.health.harvard.edu/blog"]}],"name":"Health Blog","maintainers":["nczitzk"],"url":"www.health.harvard.edu/blog","location":"health/blog.ts"}' :test='{"code":0}' />
+
+## HKEPC <Site url="hkepc.com"/>
+
+### HKEPC 电脑领域 <Site url="hkepc.com/" size="sm" />
+
+<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 841)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+
+| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |
+  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |
+  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |
 
 ## Hpoi 手办维基 <Site url="www.hpoi.net"/>
 
@@ -786,6 +870,40 @@ Subscribe to the content of a specific user
 | Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |
   | -------------- | ------------------- | ---------------- | --------------------- |
   | top            | moviemeter          | toptv            | tvmeter               |
+
+## InfoQ 中文 <Site url="infoq.cn"/>
+
+### Presentations <Site url="www.infoq.com" size="sm" />
+
+<Route namespace="infoq" :data='{"path":"/presentations/:conference?","name":"Presentations","url":"www.infoq.com","maintainers":["nczitzk"],"example":"/infoq/presentations","parameters":{"conference":"Conference, all by default, can be found in URL"},"description":":::tip\n  If you subscribe to [InfoQ Live Jan 2024](https://www.infoq.com/infoq-live-jan-2024/presentations/)，where the URL is `https://www.infoq.com/infoq-live-jan-2024/presentations/`, extract the part `https://www.infoq.com/` to the end, which is `/presentations/`, and use it as the parameter to fill in. Therefore, the route will be [`/infoq/presentations/infoq-live-jan-2024`](https://rsshub.app/infoq/presentations/infoq-live-jan-2024).\n  :::\n    ","categories":["programming","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.infoq.com/presentations","www.infoq.com/:conference/presentations"]}],"location":"presentations.ts"}' :test='{"code":0}' />
+
+:::tip
+  If you subscribe to [InfoQ Live Jan 2024](https://www.infoq.com/infoq-live-jan-2024/presentations/)，where the URL is `https://www.infoq.com/infoq-live-jan-2024/presentations/`, extract the part `https://www.infoq.com/` to the end, which is `/presentations/`, and use it as the parameter to fill in. Therefore, the route will be [`/infoq/presentations/infoq-live-jan-2024`](https://rsshub.app/infoq/presentations/infoq-live-jan-2024).
+  :::
+    
+
+### 话题 <Site url="infoq.cn" size="sm" />
+
+<Route namespace="infoq" :data='{"path":"/topic/:id","categories":["new-media","popular"],"example":"/infoq/topic/1","parameters":{"id":"话题id，可在 [InfoQ全部话题](https://www.infoq.cn/topics) 页面找到URL里的话题id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["infoq.cn/topic/:id"]}],"name":"话题","maintainers":["brilon"],"location":"topic.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 933)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.9.3_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+
+### 推荐 <Site url="infoq.cn/" size="sm" />
+
+<Route namespace="infoq" :data='{"path":"/recommend","categories":["new-media","popular"],"example":"/infoq/recommend","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["infoq.cn/"]}],"name":"推荐","maintainers":["brilon"],"url":"infoq.cn/","location":"recommend.ts"}' :test='{"code":0}' />
+
+## Informed AI News <Site url="informedainews.com"/>
+
+
+:::tip
+informed AI RSS feeds:
+
+-   World News Daily: 'https://rsshub.app/informedainews/zh-Hans/docs/world-news-daily'
+-   Tech Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/tech-enthusiast-weekly'
+-   AI Enthusiast Weekly: 'https://rsshub.app/informedainews/zh-Hans/docs/ai-enthusiast-daily'
+:::
+
+### 知闻AI <Site url="informedainews.com" size="sm" />
+
+<Route namespace="informedainews" :data='{"path":"/zh-Hans/docs/:type","categories":["new-media","popular"],"example":"/informedainews/zh-Hans/docs/world-news-daily","parameters":{"type":"world-news-daily|tech-enthusiast-weekly|ai-enthusiast-daily"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["informedainews.com","informedainews.com/zh-Hans/docs/:type","informedainews.com/docs/:type"],"target":"/zh-Hans/docs/:type"}],"name":"知闻AI","maintainers":["guicaiyue"],"location":"docs.ts"}' :test='{"code":0}' />
 
 ## Inoreader <Site url="inoreader.com"/>
 
