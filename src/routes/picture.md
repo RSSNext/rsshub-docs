@@ -329,7 +329,7 @@ yande post
   | ------- | -------- | ------- | -------- |
   | 1d | 1w | 1m | 1y |
 
-## 北京天文馆 <Site url="bjp.org.cn"/>
+## 北京天文馆 <Site url="www.bjp.org.cn"/>
 
 ### 每日一图 <Site url="bjp.org.cn/APOD/today.shtml" size="sm" />
 
