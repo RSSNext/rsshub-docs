@@ -2083,23 +2083,49 @@ author 列表：
 | ------------ | ------------------ | -------- |
 | bmtzgg       | xsydxhdgg          | bmdt     |
 
-## 上海大学 <Site url="jwb.shu.edu.cn"/>
+## 上海大学 <Site url="www.shu.edu.cn"/>
 
-### Unknown <Site url="jwb.shu.edu.cn" size="sm" />
+上海大学相关网网站
 
-<Route namespace="shu" :data='{"path":["/jwc/:type?","/jwb/:type?"],"radar":[{"source":["www.shu.edu.cn/:type"],"target":"/:type"}],"name":"Unknown","maintainers":[],"description":"| 通知通告 | 新闻 | 政策文件 |\n  | -------- | ---- | -------- |\n  | notice   | news | policy   |","location":"jwb.ts"}' :test='undefined' />
+### 官网通知公告 <Site url="www.shu.edu.cn/" size="sm" />
 
-| 通知通告 | 新闻 | 政策文件 |
+<Route namespace="shu" :data='{"path":"/news/:type?","categories":["university"],"example":"/shu/news/tzgg","parameters":{"type":"分类，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shu.edu.cn/"],"target":"/news"}],"name":"官网通知公告","maintainers":["lonelyion","GhhG123"],"url":"www.shu.edu.cn/","description":"| 通知公告 | 重要新闻 |\n  | -------- | --------- |\n  | tzgg     | zyxw      |","location":"index.ts"}' :test='undefined' />
+
+| 通知公告 | 重要新闻 |
+  | -------- | --------- |
+  | tzgg     | zyxw      |
+
+### 国际部港澳台办公室 <Site url="global.shu.edu.cn/" size="sm" />
+
+<Route namespace="shu" :data='{"path":"/global/:type?","categories":["university"],"example":"/shu/global/tzgg","parameters":{"type":"分类，默认为通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.shu.edu.cn/"],"target":"/global"}],"name":"国际部港澳台办公室","maintainers":["GhhG123"],"url":"global.shu.edu.cn/","description":"| 通知公告 |\n  | -------- |\n  | tzgg     |","location":"global.ts"}' :test='undefined' />
+
+| 通知公告 |
+  | -------- |
+  | tzgg     |
+
+### 教务部 <Site url="www.shu.edu.cn" size="sm" />
+
+<Route namespace="shu" :data='{"path":["/jwb/:type?"],"radar":[{"source":["www.shu.edu.cn/index"],"target":"/:type?"}],"name":"教务部","maintainers":["tuxinghuan","GhhG123"],"description":"| 通知通告 | 新闻 | 政策文件(bug) |\n  | -------- | ---- | -------- |\n  | notice   | news | policy   |","location":"jwb.ts"}' :test='undefined' />
+
+| 通知通告 | 新闻 | 政策文件(bug) |
   | -------- | ---- | -------- |
   | notice   | news | policy   |
 
-### 官网信息 <Site url="jwb.shu.edu.cn" size="sm" />
+### 校园看点 <Site url="www.shu.edu.cn/" size="sm" />
 
-<Route namespace="shu" :data='{"path":"/:type?","categories":["university"],"example":"/shu/news","parameters":{"type":"消息类型,默认为`news`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shu.edu.cn/:type"],"target":"/:type"}],"name":"官网信息","maintainers":["lonelyion"],"description":"| 综合新闻 | 科研动态 | 通知公告 | 重要新闻  |\n  | -------- | -------- | -------- | --------- |\n  | news     | research | notice   | important |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1602)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.10.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.10.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.10.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.10.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.10.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.10.0_jsdom@25.0.1_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="shu" :data='{"path":"/xykd/:type?","categories":["university"],"example":"/shu/xykd/xsbg","parameters":{"type":"分类，默认为学术公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.shu.edu.cn/"],"target":"/xykd"}],"name":"校园看点","maintainers":["GhhG123"],"url":"www.shu.edu.cn/","description":"| 文化信息 | 学术报告 |\n  | -------- | --------- |\n  | whxx     | xsbg      |","location":"xykd.ts"}' :test='undefined' />
 
-| 综合新闻 | 科研动态 | 通知公告 | 重要新闻  |
-  | -------- | -------- | -------- | --------- |
-  | news     | research | notice   | important |
+| 文化信息 | 学术报告 |
+  | -------- | --------- |
+  | whxx     | xsbg      |
+
+### 研究生院 <Site url="gs.shu.edu.cn/" size="sm" />
+
+<Route namespace="shu" :data='{"path":"/gs/:type?","categories":["university"],"example":"/shu/gs/zhxw","parameters":{"type":"分类，默认为学术公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gs.shu.edu.cn/"],"target":"/gs"}],"name":"研究生院","maintainers":["GhhG123"],"url":"gs.shu.edu.cn/","description":"| 综合新闻 | 培养管理 | 国际交流 |\n  | -------- | --------- | --------- |\n  | zhxw     | pygl      | gjjl      |","location":"gs.ts"}' :test='undefined' />
+
+| 综合新闻 | 培养管理 | 国际交流 |
+  | -------- | --------- | --------- |
+  | zhxw     | pygl      | gjjl      |
 
 ## 上海交通大学 <Site url="www.sjtu.edu.cn"/>
 
