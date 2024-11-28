@@ -200,9 +200,9 @@
 
 ## Apple <Site url="apps.apple.com"/>
 
-### 播客 <Site url="www.apple.com.cn/apple-podcasts/" size="sm" />
+### 播客 <Site url="www.apple.com/apple-podcasts/" size="sm" />
 
-<Route namespace="apple" :data='{"path":"/podcast/:id","categories":["multimedia"],"example":"/apple/podcast/id1559695855","parameters":{"id":"播客id，可以在 Apple 播客app 内分享的播客的 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["podcasts.apple.com/cn/podcast/:id"]}],"name":"播客","maintainers":["Acring"],"url":"www.apple.com.cn/apple-podcasts/","location":"podcast.ts"}' :test='{"code":0}' />
+<Route namespace="apple" :data='{"path":"/podcast/:id/:region?","categories":["multimedia"],"example":"/apple/podcast/id1559695855/cn","parameters":{"id":"播客id，可以在 Apple 播客app 内分享的播客的 URL 中找到","region":"地區代碼，例如 cn、us、jp，預設為 cn"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["podcasts.apple.com/:region/podcast/:id"]}],"name":"播客","maintainers":["Acring"],"url":"www.apple.com/apple-podcasts/","location":"podcast.ts"}' :test='undefined' />
 
 ## ASMR Online <Site url="asmr-200.com"/>
 
