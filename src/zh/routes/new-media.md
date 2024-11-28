@@ -1081,7 +1081,7 @@ Supported categories: Therapeia, Eudaimonia, and Poiesis.
 
 Supported types: Ideas, Guides, and Films.
 
-## PetCity 毛孩日常 <Site url="thepetcity.com"/>
+## PetCity 毛孩日常 <Site url="thepetcity.co"/>
 
 ### 分類 <Site url="thepetcity.co/" size="sm" />
 

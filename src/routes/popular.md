@@ -1361,7 +1361,7 @@ This route provides a flexible plan with full text content to subscribe specific
 
 Supported categories: Therapeia, Eudaimonia, and Poiesis.
 
-## PetCity 毛孩日常 <Site url="thepetcity.com"/>
+## PetCity 毛孩日常 <Site url="thepetcity.co"/>
 
 ### 分類 <Site url="thepetcity.co/" size="sm" />
 
