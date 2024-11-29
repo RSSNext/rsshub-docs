@@ -915,7 +915,7 @@ informed AI RSS feeds:
 
 ### User Profile - Picnob <Site url="www.instagram.com" size="sm" />
 
-<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media","popular"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["picnob.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"view":2,"location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="picnob" :data='{"path":"/user/:id","categories":["social-media","popular"],"example":"/picnob/user/xlisa_olivex","parameters":{"id":"Instagram id"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["piokok.com/profile/:id/*"],"target":"/user/:id"}],"name":"User Profile - Picnob","maintainers":["TonyRL","micheal-death"],"view":2,"location":"user.ts"}' :test='{"code":0}' />
 
 ## JavBus <Site url="www.javbus.com"/>
 
