@@ -593,6 +593,14 @@ Category of news
   | -------- | ------------ | -------- | ------- | -------------- | ------- | ------ |
   | politics | cross-strait | business | society | science & tech | culture | sports |
 
+## FoodTalks全球食品资讯网 <Site url="www.foodtalks.cn"/>
+
+FoodTalks全球食品资讯网是一个提供食品饮料行业新闻、资讯、分析和商业资源的领先在线平台。它涵盖行业趋势、市场动态、产品创新、投融资信息以及企业新闻，连接行业内的专业人士、企业和消费者。
+
+### FoodTalks global food information network <Site url="www.foodtalks.cn" size="sm" />
+
+<Route namespace="foodtalks" :data='{"path":"/","categories":["new-media"],"example":"/foodtalks","radar":[{"source":["www.foodtalks.cn"]}],"name":"FoodTalks global food information network","maintainers":["Geraldxm"],"url":"www.foodtalks.cn","location":"index.ts"}' :test='undefined' />
+
 ## Foresight News <Site url="foresightnews.pro"/>
 
 ### 精选资讯 <Site url="foresightnews.pro/" size="sm" />
