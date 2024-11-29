@@ -1487,7 +1487,7 @@ Chart
 
 ### 微信公众号 <Site url="newrank.cn" size="sm" />
 
-<Route namespace="newrank" :data='{"path":"/wechat/:wxid","categories":["social-media"],"example":"/newrank/wechat/chijiread","parameters":{"wxid":"微信号，若微信号与新榜信息不一致，以新榜为准"},"features":{"requireConfig":[{"name":"NEWRANK_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"微信公众号","maintainers":["lessmoe"],"location":"wechat.ts"}' :test='undefined' />
+<Route namespace="newrank" :data='{"path":"/wechat/:wxid","categories":["social-media"],"example":"/newrank/wechat/chijiread","parameters":{"wxid":"微信号，若微信号与新榜信息不一致，以新榜为准"},"features":{"requireConfig":[{"name":"NEWRANK_COOKIE","description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"微信公众号","maintainers":["lessmoe","pseudoyu"],"location":"wechat.ts"}' :test='undefined' />
 
 ## 知乎 <Site url="www.zhihu.com"/>
 
