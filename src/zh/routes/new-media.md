@@ -3383,6 +3383,43 @@ Type 栏目：
 
   -   `fulltext`，全文输出，例如：`/pingwest/user/7781550877/article/fulltext`
 
+## 趣集 <Site url="ifun.cool"/>
+
+全面的找书、学习资源导航平台，它整合了电子书和科研文档的搜索功能，方便用户进行学习资料的检索和分享，为用户提供一站式的读书学习体验。
+
+### 盐选故事分类 <Site url="n.ifun.cool" size="sm" />
+
+<Route namespace="ifun" :data='{"path":"/n/category/:id?","name":"盐选故事分类","url":"n.ifun.cool","maintainers":["nczitzk"],"example":"/ifun/n/category","parameters":{"id":"分类 id，默认为空，即全部，见下表"},"description":"\n| 名称     | ID  |\n| -------- | --- |\n| 全部     |     |\n| 通告     | 1   |\n| 故事盐选 | 2   |\n| 趣集精选 | 3   |\n    ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["n.ifun.cool"],"target":"/n/category/:id?"},{"title":"全部","source":["n.ifun.cool"],"target":"/n/category"},{"title":"通告","source":["n.ifun.cool"],"target":"/n/category/1"},{"title":"盐选故事","source":["n.ifun.cool"],"target":"/n/category/2"},{"title":"趣集精选","source":["n.ifun.cool"],"target":"/n/category/3"}],"view":0,"location":"n/category.ts"}' :test='undefined' />
+
+
+| 名称     | ID  |
+| -------- | --- |
+| 全部     |     |
+| 通告     | 1   |
+| 故事盐选 | 2   |
+| 趣集精选 | 3   |
+    
+
+### 盐选故事搜索 <Site url="n.ifun.cool" size="sm" />
+
+<Route namespace="ifun" :data='{"path":"/n/search/:keywords","name":"盐选故事搜索","url":"n.ifun.cool","maintainers":["nczitzk"],"example":"/ifun/n/search/NPC","parameters":{"keywords":"搜索关键字"},"description":":::tip\n若订阅 [关键词：NPC](https://n.ifun.cool/search-result/?s=NPC)，网址为 `https://n.ifun.cool/search-result/?s=NPC`，请截取 `s` 的值 `NPC` 作为 `keywords` 参数填入，此时目标路由为 [`/ifun/n/search/NPC`](https://rsshub.app/ifun/n/search/NPC)。\n:::\n    ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["n.ifun.cool/search-result"]}],"view":0,"location":"n/search.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [关键词：NPC](https://n.ifun.cool/search-result/?s=NPC)，网址为 `https://n.ifun.cool/search-result/?s=NPC`，请截取 `s` 的值 `NPC` 作为 `keywords` 参数填入，此时目标路由为 [`/ifun/n/search/NPC`](https://rsshub.app/ifun/n/search/NPC)。
+:::
+    
+
+### 盐选故事专栏 <Site url="n.ifun.cool" size="sm" />
+
+<Route namespace="ifun" :data='{"path":"/n/tag/:name","name":"盐选故事专栏","url":"n.ifun.cool","maintainers":["nczitzk"],"example":"/ifun/n/tag/zhihu","parameters":{"name":"专栏 id，可在对应专栏页 URL 中找到"},"description":":::tip\n若订阅 [zhihu](https://n.ifun.cool/article-list/2?tagName=zhihu)，网址为 `https://n.ifun.cool/article-list/2?tagName=zhihu`，请截取 `tagName` 的值 `zhihu` 作为 `name` 参数填入，此时目标路由为 [`/ifun/n/tag/zhihu`](https://rsshub.app/ifun/n/tag/zhihu)。\n\n更多专栏请见 [盐选故事专栏](https://n.ifun.cool/tags)。\n:::\n    ","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["n.ifun.cool/article-list/1"]}],"view":0,"location":"n/tag.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [zhihu](https://n.ifun.cool/article-list/2?tagName=zhihu)，网址为 `https://n.ifun.cool/article-list/2?tagName=zhihu`，请截取 `tagName` 的值 `zhihu` 作为 `name` 参数填入，此时目标路由为 [`/ifun/n/tag/zhihu`](https://rsshub.app/ifun/n/tag/zhihu)。
+
+更多专栏请见 [盐选故事专栏](https://n.ifun.cool/tags)。
+:::
+    
+
 ## 全国港澳研究会 <Site url="cahkms.org"/>
 
 ### 分类 <Site url="cahkms.org/" size="sm" />
