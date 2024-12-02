@@ -913,6 +913,12 @@ Refer to [the list of supported currencies](https://wise.com/tools/exchange-rate
 
 <Route namespace="cbnweek" :data='{"path":"/","radar":[{"source":["cbnweek.com/"],"target":""}],"name":"Unknown","maintainers":["nczitzk"],"url":"cbnweek.com/","location":"index.ts"}' :test='undefined' />
 
+## 盯梢 <Site url="www.dingshao.cn"/>
+
+### 频道 <Site url="www.dingshao.cn" size="sm" />
+
+<Route namespace="dingshao" :data='{"path":"/share/:shortId","categories":["other"],"example":"/dingshao/share/FzFypN","parameters":{"shortId":"频道 ID"},"radar":[{"source":["www.dingshao.cn/share/:shortId"]}],"name":"频道","maintainers":["TonyRL"],"location":"share.ts"}' :test='undefined' />
+
 ## 东莞教研网 <Site url="dgjyw.com"/>
 
 ### Unknown <Site url="dgjyw.com" size="sm" />
