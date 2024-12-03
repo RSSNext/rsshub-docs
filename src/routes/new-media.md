@@ -800,6 +800,27 @@ informed AI RSS feeds:
   更多专题请见 [IT之家专题](https://www.ithome.com/zt)
   :::
 
+## Jones Lang LaSalle <Site url="joneslanglasalle.com.cn"/>
+
+JLL is a global real estate services firm in commercial property and investment management, providing services for real estate owners, occupiers and investors.
+
+### Trends & Insights <Site url="joneslanglasalle.com.cn" size="sm" />
+
+<Route namespace="joneslanglasalle" :data='{"path":"/:language?/:category{.+}?","name":"Trends & Insights","url":"joneslanglasalle.com.cn","maintainers":["nczitzk"],"example":"/joneslanglasalle/en/trends-and-insights","parameters":{"language":"Language, `zh` by default","category":"Category, `trends-and-insights` by default"},"description":":::tip\nIf you subscribe to [Trends & Insights](https://www.joneslanglasalle.com.cn/en/trends-and-insights)，where the URL is `https://www.joneslanglasalle.com.cn/en/trends-and-insights`, extract the part `https://joneslanglasalle.com.cn/` to the end. Use `zh` and `trends-and-insights` as the parameters to fill in. Therefore, the route will be [`/joneslanglasalle/trends-and-insights/en/trends-and-insights`](https://rsshub.app/joneslanglasalle/trends-and-insights/en/trends-and-insights).\n:::\n\n| Category  | ID                            |\n| --------- | ----------------------------- |\n| Latest    | trends-and-insights           |\n| Workplace | trends-and-insights/workplace |\n| Investor  | trends-and-insights/investor  |\n| Cities    | trends-and-insights/cities    |\n| Research  | trends-and-insights/research  |\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["joneslanglasalle.com.cn/:language/:category"]},{"title":"Latest","source":["joneslanglasalle.com.cn/en/trends-and-insights"],"target":"/en/trends-and-insights"},{"title":"Workplace","source":["joneslanglasalle.com.cn/en/trends-and-insights/workplace"],"target":"/en/trends-and-insights/workplace"},{"title":"Investor","source":["joneslanglasalle.com.cn/en/trends-and-insights/investor"],"target":"/en/trends-and-insights/investor"},{"title":"Cities","source":["joneslanglasalle.com.cn/en/trends-and-insights/cities"],"target":"/en/trends-and-insights/cities"},{"title":"Research","source":["joneslanglasalle.com.cn/en/trends-and-insights/research"],"target":"/en/trends-and-insights/research"},{"title":"房地产趋势与洞察","source":["joneslanglasalle.com.cn/zh/trends-and-insights"],"target":"/zh/trends-and-insights"},{"title":"办公空间","source":["joneslanglasalle.com.cn/zh/trends-and-insights/workplace"],"target":"/zh/trends-and-insights/workplace"},{"title":"投资者","source":["joneslanglasalle.com.cn/zh/trends-and-insights/investor"],"target":"/zh/trends-and-insights/investor"},{"title":"城市","source":["joneslanglasalle.com.cn/zh/trends-and-insights/cities"],"target":"/zh/trends-and-insights/cities"},{"title":"研究报告","source":["joneslanglasalle.com.cn/zh/trends-and-insights/research"],"target":"/zh/trends-and-insights/research"}],"view":0,"zh":{"path":"/:language?/:category{.+}?","name":"房地产趋势与洞察","url":"joneslanglasalle.com.cn","maintainers":["nczitzk"],"example":"/joneslanglasalle/zh/trends-and-insights","parameters":{"language":"语言，默认为 `zh`，可在对应分类页 URL 中找到","category":"分类，默认为 `trends-and-insights`，可在对应分类页 URL 中找到"},"description":":::tip\n若订阅 [房地产趋势与洞察](https://www.joneslanglasalle.com.cn/zh/trends-and-insights)，网址为 `https://www.joneslanglasalle.com.cn/zh/trends-and-insights`，请截取 `https://joneslanglasalle.com.cn/` 到末尾的部分 `zh` 和 `trends-and-insights` 作为 `language` 和 `category` 参数填入，此时目标路由为 [`/joneslanglasalle/zh/trends-and-insights`](https://rsshub.app/joneslanglasalle/zh/trends-and-insights)。\n:::\n\n| 分类名称   | 分类 ID                       |\n| ---------- | ----------------------------- |\n| 趋势及洞察 | trends-and-insights           |\n| 办公空间   | trends-and-insights/workplace |\n| 投资者     | trends-and-insights/investor  |\n| 城市       | trends-and-insights/cities    |\n| 研究报告   | trends-and-insights/research  |\n"},"location":"index.ts"}' :test='undefined' />
+
+:::tip
+If you subscribe to [Trends & Insights](https://www.joneslanglasalle.com.cn/en/trends-and-insights)，where the URL is `https://www.joneslanglasalle.com.cn/en/trends-and-insights`, extract the part `https://joneslanglasalle.com.cn/` to the end. Use `zh` and `trends-and-insights` as the parameters to fill in. Therefore, the route will be [`/joneslanglasalle/trends-and-insights/en/trends-and-insights`](https://rsshub.app/joneslanglasalle/trends-and-insights/en/trends-and-insights).
+:::
+
+| Category  | ID                            |
+| --------- | ----------------------------- |
+| Latest    | trends-and-insights           |
+| Workplace | trends-and-insights/workplace |
+| Investor  | trends-and-insights/investor  |
+| Cities    | trends-and-insights/cities    |
+| Research  | trends-and-insights/research  |
+
+
 ## KBS <Site url="world.kbs.co.kr"/>
 
 ### News <Site url="world.kbs.co.kr/" size="sm" />
