@@ -632,6 +632,33 @@ en_us
 
 <Route namespace="wired" :data='{"path":"/tag/:tag","example":"/wired/tag/facebook","parameters":{"tag":"Tag name"},"radar":[{"source":["www.wired.com/tag/:tag/"]}],"name":"Tags","maintainers":["Naiqus"],"location":"tag.ts"}' :test='{"code":0}' />
 
+## Yonhap News Agency <Site url="yna.co.kr"/>
+
+### News <Site url="yna.co.kr" size="sm" />
+
+<Route namespace="yna" :data='{"path":"/:lang?/:channel?","categories":["traditional-media"],"example":"/yna/en/national","parameters":{"lang":"Language, see below, `ko` by default","channel":"RSS Feed Channel, see below, `news` by default"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"requireConfig":false},"name":"News","maintainers":["quiniapiezoelectricity"],"description":"\n| Language  | 한국어 | English | 简体中文 | 日本語 | عربي   | Español | Français |\n| --------- | ------ | ------- | -------- | ------ | ------ | ------- | -------- |\n| `:lang` | `ko` | `en`  | `cn`   | `jp` | `ar` | `es`  | `fr`   |\n\nFor a full list of RSS Feed Channels, please refer to the RSS feed page of the corresponding language\n| RSS Feed Page                                             |\n| --------------------------------------------------------- |\n| [한국어](https://www.yna.co.kr/rss/index?site=footer_rss) |\n| [English](https://en.yna.co.kr/channel/index)             |\n| [简体中文](https://cn.yna.co.kr/channel/index)            |\n| [日本語](https://jp.yna.co.kr/channel/index)              |\n| [عربي](https://ar.yna.co.kr/channel/index)                |\n| [Español](https://sp.yna.co.kr/channel/index)             |\n| [Français](https://fr.yna.co.kr/channel/index)            |\n\n:::tip\nFor example, the path for the RSS feed url https://www.yna.co.kr/rss/economy.xml and https://cn.yna.co.kr/RSS/news.xml would be `/ko/economy` and `/cn/news` respectively. \n:::\n","location":"index.ts"}' :test='undefined' />
+
+
+| Language  | 한국어 | English | 简体中文 | 日本語 | عربي   | Español | Français |
+| --------- | ------ | ------- | -------- | ------ | ------ | ------- | -------- |
+| `:lang` | `ko` | `en`  | `cn`   | `jp` | `ar` | `es`  | `fr`   |
+
+For a full list of RSS Feed Channels, please refer to the RSS feed page of the corresponding language
+| RSS Feed Page                                             |
+| --------------------------------------------------------- |
+| [한국어](https://www.yna.co.kr/rss/index?site=footer_rss) |
+| [English](https://en.yna.co.kr/channel/index)             |
+| [简体中文](https://cn.yna.co.kr/channel/index)            |
+| [日本語](https://jp.yna.co.kr/channel/index)              |
+| [عربي](https://ar.yna.co.kr/channel/index)                |
+| [Español](https://sp.yna.co.kr/channel/index)             |
+| [Français](https://fr.yna.co.kr/channel/index)            |
+
+:::tip
+For example, the path for the RSS feed url https://www.yna.co.kr/rss/economy.xml and https://cn.yna.co.kr/RSS/news.xml would be `/ko/economy` and `/cn/news` respectively. 
+:::
+
+
 ## Yomiuri Shimbun 読売新聞 <Site url="www.yomiuri.co.jp"/>
 
 ### News <Site url="www.yomiuri.co.jp" size="sm" />
