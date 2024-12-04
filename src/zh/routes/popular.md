@@ -1600,6 +1600,10 @@ You can use `sophi=true` query parameter to invoke the **experimental** method, 
 
 <Route namespace="spotify" :data='{"path":"/playlist/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/playlist/4UBVy1LttvodwivPUuwJk2","parameters":{"id":"Playlist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/playlist/:id"]}],"name":"Playlist","maintainers":["outloudvi"],"location":"playlist.ts"}' :test='undefined' />
 
+### Show/Podcasts <Site url="open.spotify.com" size="sm" />
+
+<Route namespace="spotify" :data='{"path":"/show/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/show/5CfCWKI5pZ28U0uOzXkDHe","parameters":{"id":"Show ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/show/:id"]}],"name":"Show/Podcasts","maintainers":["caiohsramos","pseudoyu"],"location":"show.ts"}' :test='undefined' />
+
 ## Stock Edge <Site url="web.stockedge.com"/>
 
 ### Daily Updates News <Site url="web.stockedge.com/daily-updates/news" size="sm" />

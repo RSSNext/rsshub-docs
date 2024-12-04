@@ -782,9 +782,9 @@ The 'Nyaa' includes several routes to access different parts of the site:
 
 <Route namespace="spotify" :data='{"path":"/top/tracks","categories":["multimedia"],"example":"/spotify/top/tracks","parameters":{},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""},{"name":"SPOTIFY_REFRESHTOKEN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/"]}],"name":"Personal Top Tracks","maintainers":["outloudvi"],"url":"open.spotify.com/","location":"tracks-top.ts"}' :test='undefined' />
 
-### Show <Site url="open.spotify.com" size="sm" />
+### Show/Podcasts <Site url="open.spotify.com" size="sm" />
 
-<Route namespace="spotify" :data='{"path":"/show/:id","categories":["multimedia"],"example":"/spotify/show/5CfCWKI5pZ28U0uOzXkDHe","parameters":{"id":"Show ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/show/:id"]}],"name":"Show","maintainers":["caiohsramos"],"location":"show.ts"}' :test='undefined' />
+<Route namespace="spotify" :data='{"path":"/show/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/show/5CfCWKI5pZ28U0uOzXkDHe","parameters":{"id":"Show ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/show/:id"]}],"name":"Show/Podcasts","maintainers":["caiohsramos","pseudoyu"],"location":"show.ts"}' :test='undefined' />
 
 ## The Movie Database <Site url="themoviedb.org"/>
 
