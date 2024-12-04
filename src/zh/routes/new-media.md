@@ -333,6 +333,14 @@ Supported types: Essays, Videos, and Audio.
 
 获取 AI 资讯列表
 
+## Amz123 <Site url="www.amz123.com"/>
+
+跨境电商平台
+
+### AMZ123 快讯 <Site url="amz123.com/kx" size="sm" />
+
+<Route namespace="amz123" :data='{"path":"/kx","categories":["new-media"],"example":"/amz123/kx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["amz123.com/kx"],"target":"/kx"}],"name":"AMZ123 快讯","maintainers":["defp"],"url":"amz123.com/kx","view":0,"location":"kx.ts"}' :test='undefined' />
+
 ## AppleInsider <Site url="appleinsider.com"/>
 
 ### Category <Site url="appleinsider.com" size="sm" />
