@@ -71,7 +71,7 @@ lang:
 
 ### Authors <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":"/authors/:id/:slug/:source?","categories":["finance","popular"],"view":0,"example":"/bloomberg/authors/ARbTQlRLRjE/matthew-s-levine","parameters":{"id":"Author ID, can be found in URL","slug":"Author Slug, can be found in URL","source":"Data source, either `api` or `rss`,`api` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bloomberg.com/*/authors/:id/:slug","www.bloomberg.com/authors/:id/:slug"],"target":"/authors/:id/:slug"}],"name":"Authors","maintainers":["josh"],"location":"authors.ts"}' :test='{"code":0}' />
+<Route namespace="bloomberg" :data='{"path":"/authors/:id/:slug/:source?","categories":["finance","popular"],"view":0,"example":"/bloomberg/authors/ARbTQlRLRjE/matthew-s-levine","parameters":{"id":"Author ID, can be found in URL","slug":"Author Slug, can be found in URL","source":"Data source, either `api` or `rss`,`api` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.bloomberg.com/*/authors/:id/:slug","www.bloomberg.com/authors/:id/:slug"],"target":"/authors/:id/:slug"}],"name":"Authors","maintainers":["josh","pseudoyu"],"location":"authors.ts"}' :test='{"code":0}' />
 
 ### Bloomberg Site <Site url="www.bloomberg.com" size="sm" />
 
