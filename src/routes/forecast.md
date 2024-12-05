@@ -135,15 +135,13 @@ Please skip the local service area code for `name`, for example `https://outage.
 
 ### 近三天天气 <Site url="qweather.com" size="sm" />
 
-<Route namespace="qweather" :data='{"path":"/3days/:location","categories":["forecast"],"example":"/qweather/3days/广州","parameters":{"location":"N"},"features":{"requireConfig":[{"name":"HEFENG_KEY","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"近三天天气","maintainers":["Rein-Ou","la3rence"],"description":"需自行注册获取 api 的 key，并在环境变量 HEFENG_KEY 中进行配置，获取订阅近三天天气预报","location":"3days.ts"}' :test='undefined' />
+<Route namespace="qweather" :data='{"path":"/3days/:location","categories":["forecast"],"example":"/qweather/3days/广州","parameters":{"location":"N"},"features":{"requireConfig":[{"name":"HEFENG_KEY","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"近三天天气","maintainers":["Rein-Ou","la3rence"],"description":"获取订阅近三天天气预报","location":"3days.ts"}' :test='undefined' />
 
-需自行注册获取 api 的 key，并在环境变量 HEFENG_KEY 中进行配置，获取订阅近三天天气预报
+获取订阅近三天天气预报
 
 ### 实时天气 <Site url="qweather.com" size="sm" />
 
-<Route namespace="qweather" :data='{"path":"/now/:location","categories":["forecast"],"example":"/qweather/广州","parameters":{"location":"N"},"features":{"requireConfig":[{"name":"HEFENG_KEY","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"实时天气","maintainers":["Rein-Ou"],"description":"需自行注册获取 api 的 key，每小时更新一次数据","location":"now.ts"}' :test='undefined' />
-
-需自行注册获取 api 的 key，每小时更新一次数据
+<Route namespace="qweather" :data='{"path":"/now/:location","categories":["forecast"],"example":"/qweather/now/广州","parameters":{"location":"N"},"features":{"requireConfig":[{"name":"HEFENG_KEY","description":"访问 `https://www.qweather.com/` 注册开发 API Key。"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"实时天气","maintainers":["Rein-Ou"],"location":"now.ts"}' :test='undefined' />
 
 ## 上海市人民政府 <Site url="sh.gov.cn"/>
 
