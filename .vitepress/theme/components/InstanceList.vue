@@ -93,7 +93,7 @@ const instances = [{
     maintainer: 'freeintweb',
     maintainerUrl: 'https://github.com/freeintweb',
   }, {
-    url: 'https://holorx.pikapod.net/',
+    url: 'https://holoxx.f5.si/',
     location: '🇯🇵',
     maintainer: 'Vania',
     maintainerUrl: 'https://note.com/vania',
