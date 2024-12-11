@@ -1333,6 +1333,16 @@ Chart
 
 <Route namespace="coolapk" :data='{"path":"/user/:uid/dynamic","categories":["social-media"],"example":"/coolapk/user/3177668/dynamic","parameters":{"uid":"在个人界面右上分享-复制链接获取"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户","maintainers":["xizeyoupan"],"location":"user-dynamic.ts"}' :test='{"code":0}' />
 
+## 快手 <Site url="kuaishou.com"/>
+
+### Profile <Site url="kuaishou.com/profile/:principalId" size="sm" />
+
+<Route namespace="kuaishou" :data='{"name":"Profile","path":"/profile/:principalId","radar":[{"source":["kuaishou.com/profile/:principalId"],"target":"/profile/:principalId"}],"parameters":{"principalId":"用户 id, 可在主页中找到"},"example":"/kuaishou/profile/3xk46q9cdnvgife","maintainers":["GuoChen-thlg"],"url":"kuaishou.com/profile/:principalId","description":":::tip\nThe profile page of the user, which contains the user&#39;s information, videos, and other information.\n    :::","location":"profile.ts"}' :test='undefined' />
+
+:::tip
+The profile page of the user, which contains the user's information, videos, and other information.
+    :::
+
 ## 腾讯网 <Site url="qq.com"/>
 
 ### 用户作品评论动态 <Site url="qq.com" size="sm" />
