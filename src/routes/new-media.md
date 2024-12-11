@@ -2002,6 +2002,14 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
   默认抓取前 20 条，可通过 `?limit=` 改变。
   :::
 
+## 白鲸出海 <Site url="baijing.cn"/>
+
+白鲸出海
+
+### 资讯 <Site url="www.baijing.cn/article/" size="sm" />
+
+<Route namespace="baijing" :data='{"path":"/article","categories":["new-media"],"example":"/baijing/article","url":"www.baijing.cn/article/","name":"资讯","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## 白话区块链 <Site url="hellobtc.com"/>
 
 ### 科普 <Site url="hellobtc.com" size="sm" />
