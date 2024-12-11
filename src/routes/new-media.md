@@ -739,6 +739,12 @@ Topics
   | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |
   | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |
 
+## i黑马网 <Site url="www.iheima.com"/>
+
+### 推荐 <Site url="www.iheima.com" size="sm" />
+
+<Route namespace="iheima" :data='{"path":"/recommend","categories":["new-media"],"example":"/iheima/recommend","url":"www.iheima.com","name":"推荐","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## Indians in Kuwait <Site url="indiansinkuwait.com"/>
 
 ### News <Site url="indiansinkuwait.com/latest-news" size="sm" />
