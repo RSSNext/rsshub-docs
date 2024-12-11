@@ -2632,7 +2632,7 @@ Type 栏目：
 
 ### 分类 <Site url="qbitai.com" size="sm" />
 
-<Route namespace="qbitai" :data='{"path":"/category/:category","categories":["new-media","popular"],"example":"/qbitai/category/资讯","parameters":{"category":"分类名，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbitai.com/category/:category"]}],"name":"分类","maintainers":["FuryMartin"],"description":"| 资讯 | 数码     | 智能车 | 智库  | 活动    |\n| ---- | -------- | ------ | ----- | ------- |\n| 资讯 | ebandeng | auto   | zhiku | huodong |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="qbitai" :data='{"path":"/category/:category","categories":["new-media","popular"],"example":"/qbitai/category/资讯","parameters":{"category":"分类名，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["qbitai.com/category/:category"]}],"name":"分类","maintainers":["FuryMartin, Geraldxm"],"description":"| 资讯 | 数码     | 智能车 | 智库  | 活动    |\n| ---- | -------- | ------ | ----- | ------- |\n| 资讯 | ebandeng | auto   | zhiku | huodong |","location":"category.ts"}' :test='{"code":0}' />
 
 | 资讯 | 数码     | 智能车 | 智库  | 活动    |
 | ---- | -------- | ------ | ----- | ------- |
