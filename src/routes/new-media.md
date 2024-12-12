@@ -2096,6 +2096,14 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
   | 8    | 视频       |
   | 9    | 公里每小时 |
 
+## 充电头网 <Site url="www.chongdiantou.com"/>
+
+充电头网是国内最早进行消费类电源技术及其周边配件（快充、充电头、充电器、无线充、车充、车载充电器、数据线、充电线材、移动电源及电芯、USB插排）评测、拆解的专业机构。
+
+### 最新资讯 <Site url="www.chongdiantou.com" size="sm" />
+
+<Route namespace="chongdiantou" :data='{"path":"/","categories":["new-media"],"example":"/chongdiantou","radar":[{"source":["www.chongdiantou.com"]}],"name":"最新资讯","maintainers":["Geraldxm"],"url":"www.chongdiantou.com","location":"index.ts"}' :test='undefined' />
+
 ## 创业邦 <Site url="cyzone.cn"/>
 
 ### Unknown <Site url="cyzone.cn" size="sm" />
