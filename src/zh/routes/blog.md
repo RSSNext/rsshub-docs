@@ -368,6 +368,12 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
   | -------- | -------- | -------- | -------- |
   | windows  | android  | tutorial | other    |
 
+## 道宣的窝 <Site url="daoxuan.cc"/>
+
+### 推荐阅读文章 <Site url="daoxuan.cc/" size="sm" />
+
+<Route namespace="daoxuan" :data='{"path":"/","categories":["blog"],"example":"/daoxuan","radar":[{"source":["daoxuan.cc/"]}],"name":"推荐阅读文章","maintainers":["dx2331lxz"],"url":"daoxuan.cc/","location":"rss.ts"}' :test='undefined' />
+
 ## 电脑玩物 <Site url="playpcesor.com"/>
 
 ### 每日精选文章 <Site url="playpcesor.com/" size="sm" />
