@@ -109,7 +109,7 @@ const instances = [{
     maintainerUrl: 'https://umzzz.com',
   }, {
     url: 'https://rsshub.isrss.com',
-    location: KR',
+    location: 'KR',
     maintainer: 'isRSS',
     maintainerUrl: 'https://isrss.com',
   }
