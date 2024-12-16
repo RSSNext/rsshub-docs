@@ -741,6 +741,16 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
   如 [教师招聘](http://hr.uibe.edu.cn/jszp) 中的 [招聘信息](http://hr.uibe.edu.cn/jszp/zpxx) 的 URL 为 `http://hr.uibe.edu.cn/jszp/zpxx`，其路由为 [`/uibe/hr/jszp/zpxx`](https://rsshub.app/uibe/jszp/zpxx)
   :::
 
+## 广东外语外贸大学 <Site url="gdufs.edu.cn"/>
+
+### 新闻 <Site url="www.gdufs.edu.cn/gwxw/gwxw1.htm" size="sm" />
+
+<Route namespace="gdufs" :data='{"path":"/news","categories":["university"],"example":"/gdufs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gdufs.edu.cn/gwxw/gwxw1.htm","www.gdufs.edu.cn/"]}],"name":"新闻","maintainers":["gz4zzxc"],"url":"www.gdufs.edu.cn/gwxw/gwxw1.htm","location":"news.ts"}' :test='undefined' />
+
+### 新闻学院-学院新闻 <Site url="xwxy.gdufs.edu.cn/xwzx/xyxw" size="sm" />
+
+<Route namespace="gdufs" :data='{"path":"/xwxy-news","categories":["university"],"example":"/gdufs/xwxy-news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xwxy.gdufs.edu.cn/xwzx/xyxw","xwxy.gdufs.edu.cn/"]}],"name":"新闻学院-学院新闻","maintainers":["gz4zzxc"],"url":"xwxy.gdufs.edu.cn/xwzx/xyxw","location":"xwxy/xwxy-news.ts"}' :test='undefined' />
+
 ## 广西民族大学 <Site url="ai.gxmzu.edu.cn"/>
 
 ### 人工智能学院通知公告 <Site url="ai.gxmzu.edu.cn/index/tzgg.htm" size="sm" />
