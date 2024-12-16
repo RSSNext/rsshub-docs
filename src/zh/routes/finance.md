@@ -874,6 +874,14 @@ Language:
   | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
     
 
+## 挖贝网 <Site url="www.wabei.cn"/>
+
+挖贝网专注于新三板、A股和港股报道
+
+### 热门推荐 <Site url="www.wabei.cn" size="sm" />
+
+<Route namespace="wabei" :data='{"path":"/hot-recommend","categories":["finance"],"example":"/wabei/hot-recommend","url":"www.wabei.cn","name":"热门推荐","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## 乌拉邦 <Site url="www.ulapia.com"/>
 
 ### 频道 <Site url="www.ulapia.com" size="sm" />
