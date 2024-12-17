@@ -4075,6 +4075,14 @@ Type 栏目：
 
 <Route namespace="news" :data='{"path":["/xhsxw","/whxw"],"categories":["new-media"],"example":"/news/xhsxw","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cn/xhsxw.htm"]}],"name":"新华社新闻","maintainers":["nczitzk"],"url":"news.cn/xhsxw.htm","location":"xhsxw.ts"}' :test='{"code":0}' />
 
+## 新芽 <Site url="newseed.cn"/>
+
+新芽是专注于互联网创业的媒体平台，提供创业资讯、投融资信息、创业活动、创业服务等。
+
+### 最新新闻 <Site url="news.newseed.cn" size="sm" />
+
+<Route namespace="newseed" :data='{"path":"/latest","categories":["new-media"],"example":"/newseed/latest","url":"news.newseed.cn","name":"最新新闻","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## 新浪 <Site url="finance.sina.com.cn"/>
 
 ### 财经－国內 <Site url="finance.sina.com.cn/china" size="sm" />
