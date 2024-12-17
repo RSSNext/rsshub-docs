@@ -6,6 +6,14 @@
 
 <Route namespace="apache" :data='{"path":"/apisix/blog","categories":["blog"],"example":"/apache/apisix/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"APISIX 博客","maintainers":["aneasystone"],"location":"apisix/blog.ts"}' :test='{"code":0}' />
 
+## APNIC <Site url="blog.apnic.net"/>
+
+Asia-Pacific Network Information Centre
+
+### Blog <Site url="blog.apnic.net" size="sm" />
+
+<Route namespace="apnic" :data='{"path":"/blog","categories":["blog"],"example":"/apnic/blog","url":"blog.apnic.net","name":"Blog","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## Backlinko <Site url="backlinko.com"/>
 
 ### Blog <Site url="backlinko.com/blog" size="sm" />
