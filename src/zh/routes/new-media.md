@@ -1487,6 +1487,14 @@ Member ID
 
 <Route namespace="techpowerup" :data='{"path":"/","radar":[{"source":["techpowerup.com/"],"target":""}],"name":"Unknown","maintainers":["TonyRL"],"url":"techpowerup.com/","location":"index.ts"}' :test='undefined' />
 
+## TechSir <Site url="techsir.com"/>
+
+科技先生 TechSir.Com 是新酷科技创新与创业媒体
+
+### 最新资讯 <Site url="www.techsir.com" size="sm" />
+
+<Route namespace="techsir" :data='{"path":"/","categories":["new-media"],"example":"/techsir","url":"www.techsir.com","name":"最新资讯","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## The.bi <Site url="the.bi"/>
 
 ### 分类 <Site url="the.bi" size="sm" />
