@@ -387,7 +387,7 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 好文 <Site url="post.smzdm.com" size="sm" />
 
-<Route namespace="smzdm" :data='{"path":"/haowen/:day?","categories":["shopping"],"example":"/smzdm/haowen/1","parameters":{"day":"以天为时间跨度，默认为 `all`，其余可以选择 `1`，`7`，`30`，`365`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"好文","maintainers":["LogicJake"],"location":"haowen.ts"}' :test='{"code":0}' />
+<Route namespace="smzdm" :data='{"path":"/haowen/:day?","categories":["shopping"],"example":"/smzdm/haowen/1","parameters":{"day":"以天为时间跨度，默认为 `all`，其余可以选择 `1`，`7`，`30`，`365`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"好文","maintainers":["LogicJake","pseudoyu"],"location":"haowen.ts"}' :test='{"code":0}' />
 
 ### 排行榜 <Site url="post.smzdm.com" size="sm" />
 
