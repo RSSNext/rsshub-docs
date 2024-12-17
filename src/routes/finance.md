@@ -267,6 +267,24 @@ Category ID
   | -------- | ---- | ----------- | -------------- | ---------------- |
   | analysis | news | transcripts | press-releases | related-analysis |
 
+## S&P Global <Site url="www.spglobal.com"/>
+
+### Ratings <Site url="www.spglobal.com" size="sm" />
+
+<Route namespace="spglobal" :data='{"path":"/ratings/:language?","categories":["finance"],"view":5,"example":"/spglobal/ratings/en","parameters":{"language":{"description":"语言","options":[{"value":"zh","label":"中文"},{"value":"en","label":"English"},{"value":"es","label":"Español"},{"value":"pt","label":"Português"},{"value":"jp","label":"日本語"},{"value":"ru","label":"Русский"},{"value":"ar","label":"العربية"}]}},"radar":[{"source":["www.spglobal.com/ratings/:language"]}],"name":"Ratings","description":"\n| language | Description |\n| ---   | ---   |\n| zh | 中文 |\n| en | English |\n| es | Español |\n| pt | Português |\n| jp | 日本語 |\n| ru | Русский |\n| ar | العربية |\n    ","maintainers":["FYLSen"],"location":"ratings.ts"}' :test='undefined' />
+
+
+| language | Description |
+| ---   | ---   |
+| zh | 中文 |
+| en | English |
+| es | Español |
+| pt | Português |
+| jp | 日本語 |
+| ru | Русский |
+| ar | العربية |
+    
+
 ## Stock Edge <Site url="web.stockedge.com"/>
 
 ### Daily Updates News <Site url="web.stockedge.com/daily-updates/news" size="sm" />
