@@ -440,6 +440,12 @@ Language:
 
   `http://www.nifd.cn/Research?categoryGuid=7a6a826d-b525-42aa-b550-4236e524227f` 对应 `/nifd/research/7a6a826d-b525-42aa-b550-4236e524227f`
 
+## 和讯网 <Site url="hexun.com"/>
+
+### 创投行业新闻 <Site url="pe.hexun.com/news/" size="sm" />
+
+<Route namespace="hexun" :data='{"path":"/pe/news","categories":["finance"],"example":"/hexun/pe/news","url":"pe.hexun.com/news/","name":"创投行业新闻","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
 ## 华储网 <Site url="mrm.com.cn"/>
 
 ### 通知 <Site url="mrm.com.cn" size="sm" />
