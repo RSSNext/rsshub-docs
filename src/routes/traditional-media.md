@@ -37,7 +37,7 @@
 
 ### News <Site url="bbc.com" size="sm" />
 
-<Route namespace="bbc" :data='{"path":"/:site?/:channel?","name":"News","maintainers":["HenryQW","DIYgod"],"example":"/bbc/world-asia","parameters":{"site":"语言，简体或繁体中文","channel":"channel, default to `top stories`"},"categories":["traditional-media"],"description":"Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="bbc" :data='{"path":"/:site?/:channel?","name":"News","maintainers":["HenryQW","DIYgod","pseudoyu"],"example":"/bbc/world-asia","parameters":{"site":"语言，简体或繁体中文","channel":"channel, default to `top stories`"},"categories":["traditional-media"],"description":"Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.","location":"index.ts"}' :test='{"code":0}' />
 
 Provides a better reading experience (full text articles) over the official ones.
 
