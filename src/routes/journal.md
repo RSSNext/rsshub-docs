@@ -394,6 +394,14 @@ Return results from 2020
   | -------- | -------- | -------- | -------- |
   | bqym     | wlsf     | xshd     | tzgg     |
 
+## 上海大学 <Site url="www.shu.edu.cn"/>
+
+上海大学相关网网站
+
+### 《社会》杂志当期目录 <Site url="www.shu.edu.cn" size="sm" />
+
+<Route namespace="shu" :data='{"path":"/journals/society/current","categories":["journal"],"example":"/journals/society/current","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"《社会》杂志当期目录","maintainers":["CNYoki"],"location":"society.ts"}' :test='undefined' />
+
 ## 社科期刊网 <Site url="ajcass.com"/>
 
 中国社会科学院学术期刊方阵
