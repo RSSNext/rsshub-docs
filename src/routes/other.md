@@ -251,6 +251,14 @@ News from the official site of men's professional tennis.
 
 <Route namespace="hackyournews" :data='{"path":"/","radar":[{"source":["hackyournews.com/"],"target":""}],"name":"Unknown","maintainers":["ftiasch"],"url":"hackyournews.com/","location":"index.ts"}' :test='undefined' />
 
+## HiringCafe <Site url="hiring.cafe"/>
+
+HiringCafe is a platform for job seekers to find job opportunities and for employers to post job listings.
+
+### Jobs <Site url="hiring.cafe" size="sm" />
+
+<Route namespace="hiring.cafe" :data='{"path":"/jobs/:keywords","categories":["other"],"example":"/hiring.cafe/jobs/sustainability","parameters":{"keywords":"Keywords to search for"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hiring.cafe"]}],"name":"Jobs","maintainers":["mintyfrankie"],"location":"jobs.ts"}' :test='undefined' />
+
 ## HKJunkCall 資訊中心 <Site url="hkjunkcall.com"/>
 
 ### Unknown <Site url="hkjunkcall.com/" size="sm" />
