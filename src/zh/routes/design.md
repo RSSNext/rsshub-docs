@@ -96,6 +96,32 @@ Behance user's profile URL, like [https://www.behance.net/mishapetrick](https://
 
 <Route namespace="iguoguo" :data='{"path":"/html5","categories":["design"],"example":"/iguoguo/html5","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新 H5","maintainers":["yuxinliu-alex"],"location":"index.ts"}' :test='{"code":0}' />
 
+## 幾米 JIMMY S.P.A. Official Website <Site url="www.jimmyspa.com"/>
+
+### Books <Site url="www.jimmyspa.com" size="sm" />
+
+<Route namespace="jimmyspa" :data='{"path":"/books/:language","categories":["design"],"view":0,"example":"/jimmyspa/books/tw","parameters":{"language":{"description":"语言","options":[{"value":"tw","label":"臺灣正體"},{"value":"en","label":"English"},{"value":"jp","label":"日本語"}]}},"radar":[{"source":["www.jimmyspa.com/:language/Books"]}],"name":"Books","description":"\n| language | Description |\n| ---   | ---   |\n| tw | 臺灣正體 |\n| en | English |\n| jp | 日本語 |\n    ","maintainers":["FYLSen"],"location":"books.ts"}' :test='undefined' />
+
+
+| language | Description |
+| ---   | ---   |
+| tw | 臺灣正體 |
+| en | English |
+| jp | 日本語 |
+    
+
+### News <Site url="www.jimmyspa.com" size="sm" />
+
+<Route namespace="jimmyspa" :data='{"path":"/news/:language","categories":["design"],"view":2,"example":"/jimmyspa/news/tw","parameters":{"language":{"description":"语言","options":[{"value":"tw","label":"臺灣正體"},{"value":"en","label":"English"},{"value":"jp","label":"日本語"}]}},"radar":[{"source":["www.jimmyspa.com/:language/News"]}],"name":"News","description":"\n| language | Description |\n| ---   | ---   |\n| tw | 臺灣正體 |\n| en | English |\n| jp | 日本語 |\n    ","maintainers":["FYLSen"],"location":"news.ts"}' :test='undefined' />
+
+
+| language | Description |
+| ---   | ---   |
+| tw | 臺灣正體 |
+| en | English |
+| jp | 日本語 |
+    
+
 ## 站酷 <Site url="www.zcool.com.cn"/>
 
 ### 发现 <Site url="www.zcool.com.cn" size="sm" />
