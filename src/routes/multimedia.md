@@ -1151,7 +1151,7 @@ Sometimes there might be only a single post without any reposted work, and vice 
 
 ### 电台节目 <Site url="163.com" size="sm" />
 
-<Route namespace="163" :data='{"path":"/music/djradio/:id","categories":["multimedia"],"example":"/163/music/djradio/347317067","parameters":{"id":"节目 id, 可在电台节目页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"电台节目","maintainers":["magic-akari"],"location":"music/djradio.ts"}' :test='undefined' />
+<Route namespace="163" :data='{"path":"/music/djradio/:id/:info?","categories":["multimedia"],"example":"/163/music/djradio/347317067","parameters":{"id":"节目 id, 可在电台节目页 URL 中找到","info":"默认在正文尾部显示节目相关信息，任意值为不显示"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"电台节目","maintainers":["magic-akari"],"location":"music/djradio.ts"}' :test='undefined' />
 
 ### 歌手歌曲 <Site url="163.com" size="sm" />
 
