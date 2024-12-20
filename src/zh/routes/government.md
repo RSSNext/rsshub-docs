@@ -1114,6 +1114,10 @@ Language
 
 <Route namespace="gov" :data='{"path":"/beijing/jw/tzgg","categories":["government"],"example":"/gov/beijing/jw/tzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jw.beijing.gov.cn/tzgg"]}],"name":"通知公告","maintainers":["nczitzk"],"url":"jw.beijing.gov.cn/tzgg","location":"beijing/jw/tzgg.ts"}' :test='{"code":0}' />
 
+### 通知公告 <Site url="iitb.hainan.gov.cn/iitb/tzgg/list2.shtml" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/hainan/iitb/tzgg","categories":["government"],"example":"/gov/hainan/iitb/tzgg","url":"iitb.hainan.gov.cn/iitb/tzgg/list2.shtml","name":"通知公告","maintainers":["p3psi-boo"],"location":"hainan/iitb/tzgg.ts"}' :test='undefined' />
+
 ### 通用 <Site url="sh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/npc/:caty","categories":["government"],"example":"/gov/npc/c183","parameters":{"caty":"分类名，支持形如 `http://www.npc.gov.cn/npc/c2/*/` 的网站，传入 npc 之后的参数"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["npc.gov.cn/npc/c2/:caty"]}],"name":"通用","maintainers":["233yeee"],"description":"| 立法 | 监督 | 代表 | 理论 | 权威发布 | 滚动新闻 |\n  | ---- | ---- | ---- | ---- | -------- | -------- |\n  | c183 | c184 | c185 | c189 | c12435   | c10134   |","location":"npc/index.ts"}' :test='{"code":0}' />
