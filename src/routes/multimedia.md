@@ -978,6 +978,12 @@ When `mediaType` is `tv`, `sheet` should be:
   打开想跟踪的帖子，比如：`https://t66y.com/htm_data/20/1811/3286088.html` 其中 `3286088` 就是帖子 id。
   :::
 
+## 电影天堂 <Site url="www.ygdy8.net"/>
+
+### 最新电影 <Site url="www.ygdy8.net" size="sm" />
+
+<Route namespace="dytt" :data='{"path":"/","categories":["multimedia"],"example":"/dytt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ygdy8.net/index.html"]}],"name":"最新电影","maintainers":["junfengP"],"location":"index.ts"}' :test='undefined' />
+
 ## 故事 FM <Site url="storyfm.cn"/>
 
 ### 播客 <Site url="storyfm.cn/episodes-list" size="sm" />
