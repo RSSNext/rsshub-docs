@@ -78,6 +78,12 @@ You have the option to utilize the main heading or use individual categories as 
 
 > routeParms can be copied from original site URL, example: `/alternativeto/software/cpp/license=opensource&platform=windows`
 
+## Anthropic <Site url="anthropic.com"/>
+
+### News <Site url="anthropic.com/news" size="sm" />
+
+<Route namespace="anthropic" :data='{"path":"/news","categories":["programming"],"example":"/anthropic/news","parameters":{},"radar":[{"source":["anthropic.com"]}],"name":"News","maintainers":["etShaw-zh"],"url":"anthropic.com/news","location":"news.ts"}' :test='undefined' />
+
 ## AtCoder <Site url="atcoder.jp"/>
 
 ### Contests Archive <Site url="atcoder.jp" size="sm" />
