@@ -239,6 +239,12 @@ Language
 
 <Route namespace="greasyfork" :data='{"path":"/scripts/:script/versions","categories":["program-update"],"example":"/greasyfork/scripts/431691-bypass-all-shortlinks/versions","parameters":{"script":"Script id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["greasyfork.org/:language/scripts/:script/versions"]}],"name":"Script Version History","maintainers":["miles170"],"location":"versions.ts"}' :test='{"code":0}' />
 
+## Home Assistant <Site url="www.home-assistant.io"/>
+
+### HACS Repositories <Site url="www.home-assistant.io" size="sm" />
+
+<Route namespace="home-assistant" :data='{"path":"/hacs/repositories","name":"HACS Repositories","maintainers":["DIYgod"],"categories":["program-update"],"example":"/home-assistant/hacs/repositories","location":"hacs.ts"}' :test='undefined' />
+
 ## Infuse <Site url="firecore.com"/>
 
 ### Release Notes <Site url="firecore.com" size="sm" />
