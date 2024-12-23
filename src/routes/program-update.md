@@ -362,6 +362,12 @@ It is recommended to use with clipping tools such as Notion Web Clipper.
 
 <Route namespace="npm" :data='{"path":"/package/:name{(@[a-z0-9-~][a-z0-9-._~]*/)?[a-z0-9-~][a-z0-9-._~]*}","name":"Package","maintainers":["Fatpandac"],"categories":["program-update"],"example":"/npm/package/rsshub","radar":[{"source":["www.npmjs.com/package/:name"]}],"location":"package.ts"}' :test='{"code":0}' />
 
+## Obsidian <Site url="obsidian.md"/>
+
+### Obsidian Plugins <Site url="obsidian.md" size="sm" />
+
+<Route namespace="obsidian" :data='{"path":"/plugins","name":"Obsidian Plugins","maintainers":["DIYgod"],"categories":["program-update"],"example":"/obsidian/plugins","location":"plugins.ts"}' :test='undefined' />
+
 ## O&O Software <Site url="oo-software.com"/>
 
 ### Changelog <Site url="oo-software.com" size="sm" />
