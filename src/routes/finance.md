@@ -516,6 +516,58 @@ Language:
 
 <Route namespace="fx678" :data='{"path":"/kx","categories":["finance","popular"],"view":5,"example":"/fx678/kx","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fx678.com/kx"]}],"name":"7x24 小时快讯","maintainers":["occupy5","dousha"],"url":"fx678.com/kx","location":"kx.ts"}' :test='{"code":0}' />
 
+## 集思录 <Site url="jisilu.cn"/>
+
+一个以数据为本的投资社区
+
+### 分类 <Site url="www.jisilu.cn" size="sm" />
+
+<Route namespace="jisilu" :data='{"path":"/category/:id","name":"分类","url":"www.jisilu.cn","maintainers":["nczitzk"],"example":"/jisilu/category/4","parameters":{"id":"分类 id，可在对应分类页 URL 中找到"},"description":":::tip\n若订阅 [债券/可转债](https://www.jisilu.cn/category/4)，网址为 `https://www.jisilu.cn/category/4`，请截取 `https://www.jisilu.cn/category/` 到末尾的部分 `4` 作为 `id` 参数填入，此时目标路由为 [`/jisilu/category/4`](https://rsshub.app/jisilu/category/4)。\n:::\n\n| 新股 | 债券/可转债 | 套利 | 其他 | 基金 | 股票 |\n| ---- | ----------- | ---- | ---- | ---- | ---- |\n| 3    | 4           | 5    | 6    | 7    | 8    |\n","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jisilu.cn/category/:id"],"target":"/category/:id"},{"title":"新股","source":["www.jisilu.cn/category/3"],"target":"/category/3"},{"title":"债券/可转债","source":["www.jisilu.cn/category/4"],"target":"/category/4"},{"title":"套利","source":["www.jisilu.cn/category/5"],"target":"/category/5"},{"title":"其他","source":["www.jisilu.cn/category/6"],"target":"/category/6"},{"title":"基金","source":["www.jisilu.cn/category/7"],"target":"/category/7"},{"title":"股票","source":["www.jisilu.cn/category/8"],"target":"/category/8"}],"view":0,"location":"category.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [债券/可转债](https://www.jisilu.cn/category/4)，网址为 `https://www.jisilu.cn/category/4`，请截取 `https://www.jisilu.cn/category/` 到末尾的部分 `4` 作为 `id` 参数填入，此时目标路由为 [`/jisilu/category/4`](https://rsshub.app/jisilu/category/4)。
+:::
+
+| 新股 | 债券/可转债 | 套利 | 其他 | 基金 | 股票 |
+| ---- | ----------- | ---- | ---- | ---- | ---- |
+| 3    | 4           | 5    | 6    | 7    | 8    |
+
+
+### 广场 <Site url="www.jisilu.cn" size="sm" />
+
+<Route namespace="jisilu" :data='{"path":"/explore/:filter?","name":"广场","url":"www.jisilu.cn","maintainers":["nczitzk"],"example":"/jisilu/explore","parameters":{"category":"过滤器，默认为空，可在对应页 URL 中找到"},"description":":::tip\n若订阅 [债券/可转债 - 热门 - 30天](https://www.jisilu.cn/home/explore/category-4__sort_type-hot__day-30)，网址为 `https://www.jisilu.cn/home/explore/category-4__sort_type-hot__day-30`，请截取 `https://www.jisilu.cn/home/explore/` 到末尾的部分 `category-4__sort_type-hot__day-30` 作为 `filter` 参数填入，此时目标路由为 [`/jisilu/explore/category-4__sort_type-hot__day-30`](https://rsshub.app/jisilu/explore/category-4__sort_type-hot__day-30)。\n:::\n    ","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jisilu.cn/home/explore/:filter","www.jisilu.cn/home/explore","www.jisilu.cn/explore"]}],"view":0,"location":"explore.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [债券/可转债 - 热门 - 30天](https://www.jisilu.cn/home/explore/category-4__sort_type-hot__day-30)，网址为 `https://www.jisilu.cn/home/explore/category-4__sort_type-hot__day-30`，请截取 `https://www.jisilu.cn/home/explore/` 到末尾的部分 `category-4__sort_type-hot__day-30` 作为 `filter` 参数填入，此时目标路由为 [`/jisilu/explore/category-4__sort_type-hot__day-30`](https://rsshub.app/jisilu/explore/category-4__sort_type-hot__day-30)。
+:::
+    
+
+### 话题 <Site url="www.jisilu.cn" size="sm" />
+
+<Route namespace="jisilu" :data='{"path":"/topic/:id","name":"话题","url":"www.jisilu.cn","maintainers":["nczitzk"],"example":"/jisilu/topic/可转债","parameters":{"id":"话题 id，可在对应话题页 URL 中找到"},"description":":::tip\n若订阅 [可转债](https://www.jisilu.cn/topic/可转债)，网址为 `https://www.jisilu.cn/topic/可转债`，请截取 `https://www.jisilu.cn/topic/` 到末尾的部分 `可转债` 作为 `id` 参数填入，此时目标路由为 [`/jisilu/topic/可转债`](https://rsshub.app/jisilu/topic/可转债)。\n:::\n\n:::tip\n前往 [话题广场](https://www.jisilu.cn/topic) 查看更多话题。\n:::\n","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jisilu.cn/topic/:id"],"target":"/topic/:id"}],"view":0,"location":"topic.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [可转债](https://www.jisilu.cn/topic/可转债)，网址为 `https://www.jisilu.cn/topic/可转债`，请截取 `https://www.jisilu.cn/topic/` 到末尾的部分 `可转债` 作为 `id` 参数填入，此时目标路由为 [`/jisilu/topic/可转债`](https://rsshub.app/jisilu/topic/可转债)。
+:::
+
+:::tip
+前往 [话题广场](https://www.jisilu.cn/topic) 查看更多话题。
+:::
+
+
+### 用户 <Site url="www.jisilu.cn" size="sm" />
+
+<Route namespace="jisilu" :data='{"path":"/people/:id/:type?","name":"用户","url":"www.jisilu.cn","maintainers":["nczitzk"],"example":"/jisilu/people/天书","parameters":{"id":"用户 id，可在对应用户页 URL 中找到","type":"类型，可选值为 `questions` 即 `主题` 或 `answer` 即 `回复`，默认为 `questions` 即 `主题`"},"description":":::tip\n若订阅 [天书的主题](https://www.jisilu.cn/people/天书)，网址为 `https://www.jisilu.cn/people/天书`，请截取 `https://www.jisilu.cn/people/` 到末尾的部分 `天书` 作为 `id` 参数填入，此时目标路由为 [`/jisilu/people/天书`](https://rsshub.app/jisilu/people/天书)。\n:::\n\n:::tip\n前往 [用户排名](https://www.jisilu.cn/users/) 查看更多用户。\n:::\n","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.jisilu.cn/people/:id"],"target":"/people/:id"}],"view":0,"location":"people.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [天书的主题](https://www.jisilu.cn/people/天书)，网址为 `https://www.jisilu.cn/people/天书`，请截取 `https://www.jisilu.cn/people/` 到末尾的部分 `天书` 作为 `id` 参数填入，此时目标路由为 [`/jisilu/people/天书`](https://rsshub.app/jisilu/people/天书)。
+:::
+
+:::tip
+前往 [用户排名](https://www.jisilu.cn/users/) 查看更多用户。
+:::
+
+
 ## 金十数据 <Site url="jin10.com"/>
 
 ### 市场快讯 <Site url="jin10.com/" size="sm" />

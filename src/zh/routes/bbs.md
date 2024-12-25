@@ -449,30 +449,6 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 <Route namespace="huoxian" :data='{"path":"/zone","categories":["bbs"],"example":"/huoxian/zone","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Zone","maintainers":["p7e4"],"location":"zone.ts"}' :test='{"code":0}' />
 
-## 集思录 <Site url="jisilu.cn"/>
-
-### 广场 <Site url="jisilu.cn/home/explore" size="sm" />
-
-<Route namespace="jisilu" :data='{"path":"/:category?/:sort?/:day?","categories":["bbs"],"example":"/jisilu","parameters":{"category":"分类，见下表，默认为全部，可在 URL 中找到","sort":"排序，见下表，默认为最新，可在 URL 中找到","day":"几天内，见下表，默认为30天，本参数仅在排序参数设定为 `热门` 后才可生效"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jisilu.cn/home/explore","jisilu.cn/explore","jisilu.cn/"]}],"name":"广场","maintainers":["nczitzk"],"url":"jisilu.cn/home/explore","description":"分类\n\n  | 全部 | 债券 / 可转债 | 基金 | 套利 | 新股 |\n  | ---- | ------------- | ---- | ---- | ---- |\n  |      | 4             | 7    | 5    | 3    |\n\n  排序\n\n  | 最新 | 热门 | 按发表时间 |\n  | ---- | ---- | ---------- |\n  |      | hot  | add_time  |\n\n  几天内\n\n  | 30 天 | 7 天 | 当天 |\n  | ----- | ---- | ---- |\n  | 30    | 7    | 1    |","location":"index.ts"}' :test='{"code":0}' />
-
-分类
-
-  | 全部 | 债券 / 可转债 | 基金 | 套利 | 新股 |
-  | ---- | ------------- | ---- | ---- | ---- |
-  |      | 4             | 7    | 5    | 3    |
-
-  排序
-
-  | 最新 | 热门 | 按发表时间 |
-  | ---- | ---- | ---------- |
-  |      | hot  | add_time  |
-
-  几天内
-
-  | 30 天 | 7 天 | 当天 |
-  | ----- | ---- | ---- |
-  | 30    | 7    | 1    |
-
 ## 看雪 <Site url="kanxue.com"/>
 
 ### 论坛 <Site url="kanxue.com" size="sm" />
