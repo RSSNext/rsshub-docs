@@ -609,6 +609,40 @@ Language:
   | 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |
   | Layer2 | NFT  | DAO     | 百科       |      |
 
+## 金融界 <Site url="www.jrj.com.cn"/>
+
+金融界是国内领先的金融信息服务平台，日均触达千万用户，年度访问量超过3亿，受众覆盖中国主流金融机构、上市公司和活跃投资理财群体
+
+### 资讯 <Site url="www.jrj.com.cn" size="sm" />
+
+<Route namespace="jrj" :data='{"path":"/:channelNum","categories":["finance"],"example":"/jrj/103","parameters":{"channelNum":{"description":"栏目编号","options":[{"value":"102","label":"美股资讯"},{"value":"103","label":"财经资讯"},{"value":"104","label":"基金资讯"},{"value":"105","label":"观点"},{"value":"106","label":"商业资讯"},{"value":"107","label":"期货资讯"},{"value":"112","label":"信托资讯"},{"value":"113","label":"银行资讯"},{"value":"115","label":"保险资讯"},{"value":"118","label":"债券资讯"},{"value":"119","label":"康养资讯"},{"value":"503","label":"私募资讯"},{"value":"508","label":"科技资讯"},{"value":"603","label":"券商资讯"},{"value":"629","label":"ESG 资讯"},{"value":"630","label":"医疗资讯"},{"value":"632","label":"消费资讯"},{"value":"004","label":"汽车资讯"},{"value":"009","label":"房产资讯"},{"value":"010","label":"A股资讯"},{"value":"001","label":"港股资讯"},{"value":"007","label":"外汇资讯"}]}},"url":"www.jrj.com.cn","name":"资讯","description":"\n| column | Description |\n| ---   | ---   |\n| 103   | 财经资讯 |\n| 508   | 科技资讯 |\n| 106   | 商业资讯 |\n| 632   | 消费资讯 |\n| 630   | 医疗资讯 |\n| 119   | 康养资讯 |\n| 004   | 汽车资讯 |\n| 009   | 房产资讯 |\n| 629   | ESG 资讯 |\n| 001   | 港股资讯 |\n| 102   | 美股资讯 |\n| 113   | 银行资讯 |\n| 115   | 保险资讯 |\n| 104   | 基金资讯 |\n| 503   | 私募资讯 |\n| 112   | 信托资讯 |\n| 007   | 外汇资讯 |\n| 107   | 期货资讯 |\n| 118   | 债券资讯 |\n| 603   | 券商资讯 |\n| 105   | 观点 |\n    ","maintainers":["p3psi-boo"],"location":"index.ts"}' :test='undefined' />
+
+
+| column | Description |
+| ---   | ---   |
+| 103   | 财经资讯 |
+| 508   | 科技资讯 |
+| 106   | 商业资讯 |
+| 632   | 消费资讯 |
+| 630   | 医疗资讯 |
+| 119   | 康养资讯 |
+| 004   | 汽车资讯 |
+| 009   | 房产资讯 |
+| 629   | ESG 资讯 |
+| 001   | 港股资讯 |
+| 102   | 美股资讯 |
+| 113   | 银行资讯 |
+| 115   | 保险资讯 |
+| 104   | 基金资讯 |
+| 503   | 私募资讯 |
+| 112   | 信托资讯 |
+| 007   | 外汇资讯 |
+| 107   | 期货资讯 |
+| 118   | 债券资讯 |
+| 603   | 券商资讯 |
+| 105   | 观点 |
+    
+
 ## 韭研公社 <Site url="www.jiuyangongshe.com"/>
 
 ### 社群 <Site url="www.jiuyangongshe.com" size="sm" />
