@@ -233,6 +233,14 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
   | [Learning & Education](https://www.deeplearning.ai/the-batch/tag/learning-education/)   | [learning-education](https://rsshub.app/deeplearning/the-batch/learning-education)     |
     
 
+## Deepseek <Site url="api-docs.deepseek.com"/>
+
+Deepseek API 文档。
+
+### 新闻 <Site url="api-docs.deepseek.com" size="sm" />
+
+<Route namespace="deepseek" :data='{"path":"/news","categories":["programming"],"example":"/deepseek/news","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["api-docs.deepseek.com"],"target":"/news"}],"name":"新闻","maintainers":["1837634311"],"location":"news.ts"}' :test='undefined' />
+
 ## Devtrium <Site url="devtrium.com"/>
 
 ### Official Blogs <Site url="devtrium.com" size="sm" />
