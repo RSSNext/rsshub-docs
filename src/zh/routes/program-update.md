@@ -160,6 +160,12 @@ Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 
 <Route namespace="cpuid" :data='{"path":"/news","categories":["program-update"],"example":"/cpuid/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cpuid.com/news.html","cpuid.com/"]}],"name":"News","maintainers":[],"url":"cpuid.com/news.html","location":"news.ts"}' :test='{"code":0}' />
 
+## Cursor <Site url="www.cursor.com"/>
+
+### Changelog <Site url="www.cursor.com/changelog" size="sm" />
+
+<Route namespace="cursor" :data='{"path":"/changelog","categories":["program-update"],"example":"/cursor/changelog","url":"www.cursor.com/changelog","name":"Changelog","maintainers":["p3psi-boo"],"radar":[{"source":["www.cursor.com/changelog"],"target":"/cursor/changelog"}],"location":"changelog.ts"}' :test='undefined' />
+
 ## Docker Hub <Site url="hub.docker.com"/>
 
 ### Image New Build <Site url="hub.docker.com" size="sm" />
