@@ -264,6 +264,14 @@ For example, the path for the sites https://today.lorientlejour.com/section/977-
 Multiple categories seperated by '|' is also supported, e.g. /lorientlejour/977-lebanon|1-liban.
   :::
 
+## MSN <Site url="msn.com"/>
+
+### News <Site url="msn.com" size="sm" />
+
+<Route namespace="msn" :data='{"path":"/:market/:name/:id","parameters":{"market":"Market code. Find it in MSN url, e.g. zh-tw","name":"Name of the channel. Find it in MSN url, e.g. Bloomberg","id":"ID of the channel (always starts with sr-vid). Find it in MSN url, e.g. sr-vid-08gw7ky4u229xjsjvnf4n6n7v67gxm0pjmv9fr4y2x9jjmwcri4s"},"categories":["traditional-media"],"example":"/zh-tw/Bloomberg/sr-vid-08gw7ky4u229xjsjvnf4n6n7v67gxm0pjmv9fr4y2x9jjmwcri4s","description":"MSN News","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true},"radar":[{"source":["www.msn.com/:market/channel/source/:name/:id"],"target":"/:market/:name/:id"}],"name":"News","maintainers":["KTachibanaM"],"location":"index.ts"}' :test='undefined' />
+
+MSN News
+
 ## New Yorker <Site url="newyorker.com"/>
 
 ### Articles <Site url="newyorker.com" size="sm" />
