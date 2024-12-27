@@ -112,6 +112,11 @@ const instances = [{
     location: 'KR',
     maintainer: 'isRSS',
     maintainerUrl: 'https://isrss.com',
+  }, {
+    url: 'https://rsshub.thzu.xyz',
+    location: '🇭🇰',
+    maintainer: 'thzu',
+    maintainerUrl: 'https://thzu.xyz',
   }
 ]
 
