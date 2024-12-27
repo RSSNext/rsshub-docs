@@ -2025,6 +2025,18 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
 | 先进制造 | 新能源     | 区块链   | 其他      |          |
 
 
+## 爱范儿 <Site url="www.ifanr.com"/>
+
+### 分类 <Site url="www.ifanr.com" size="sm" />
+
+<Route namespace="ifanr" :data='{"path":"/category/:name","categories":["new-media"],"example":"/ifanr/category/早报","parameters":{"name":"分类名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ifanr.com/category/:name"]}],"name":"分类","maintainers":["donghongfei"],"description":"支持分类：早报、评测、糖纸众测、产品","location":"category.ts"}' :test='undefined' />
+
+支持分类：早报、评测、糖纸众测、产品
+
+### 首页 <Site url="www.ifanr.com/index" size="sm" />
+
+<Route namespace="ifanr" :data='{"path":"/index","categories":["new-media"],"view":0,"example":"/ifanr/index","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ifanr.com/index"]}],"name":"首页","maintainers":["donghongfei"],"url":"www.ifanr.com/index","location":"index.ts"}' :test='undefined' />
+
 ## 白鲸出海 <Site url="baijing.cn"/>
 
 白鲸出海
