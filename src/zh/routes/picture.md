@@ -211,11 +211,11 @@ konachan post
 
 ### NASA 中文 <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-cn","categories":["picture"],"example":"/nasa/apod-cn","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA 中文","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","description":":::tip\n  [NASA 中文](https://www.nasachina.cn/) 提供了每日天文图的中英双语图文说明，但在更新上偶尔略有一两天的延迟。\n  :::","location":"apod-cn.ts"}' :test='{"code":0}' />
+<Route namespace="nasa" :data='{"path":"/apod-cn","categories":["picture"],"example":"/nasa/apod-cn","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"NASA 中文","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","description":"::: tip\n  [NASA 中文](https://www.nasachina.cn/) 提供了每日天文图的中英双语图文说明，但在更新上偶尔略有一两天的延迟。\n:::","location":"apod-cn.ts"}' :test='{"code":0}' />
 
-:::tip
+::: tip
   [NASA 中文](https://www.nasachina.cn/) 提供了每日天文图的中英双语图文说明，但在更新上偶尔略有一两天的延迟。
-  :::
+:::
 
 ## National Geographic <Site url="nationalgeographic.com"/>
 
@@ -305,7 +305,7 @@ This is the home page of Voronoi App
 
 ## wallhaven <Site url="wallhaven.cc"/>
 
-:::tip
+::: tip
 When parameter **Need Details** is set to `true` `yes` `t` `y`, RSS will add the title, uploader, upload time, and category information of each image, which can support the filtering function of RSS reader.
 
 However, the number of requests to the site increases a lot when it is turned on, which causes the site to return `Response code 429 (Too Many Requests)`. So you need to specify a smaller `limit` parameter, i.e. add `?limit=<the number of posts for a request>` after the route, here is an example.
@@ -315,13 +315,13 @@ For example [Latest Wallpapers](https://wallhaven.cc/latest), the route turning 
 
 ### Search <Site url="wallhaven.cc/" size="sm" />
 
-<Route namespace="wallhaven" :data='{"path":["/search/:filter?/:needDetails?","/:filter?/:needDetails?"],"categories":["picture"],"example":"/wallhaven/search/categories=110&purity=110&sorting=date_added&order=desc","parameters":{"filter":"Filter, empty by default","needDetails":"Need Details, `true`/`yes` as yes, no by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallhaven.cc/"]}],"name":"Search","maintainers":["nczitzk","Fatpandac"],"url":"wallhaven.cc/","description":":::tip\n  Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:\n\n  The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)\n  :::","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="wallhaven" :data='{"path":["/search/:filter?/:needDetails?","/:filter?/:needDetails?"],"categories":["picture"],"example":"/wallhaven/search/categories=110&purity=110&sorting=date_added&order=desc","parameters":{"filter":"Filter, empty by default","needDetails":"Need Details, `true`/`yes` as yes, no by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallhaven.cc/"]}],"name":"Search","maintainers":["nczitzk","Fatpandac"],"url":"wallhaven.cc/","description":"::: tip\n  Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:\n\n  The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)\n:::","location":"index.ts"}' :test='{"code":0}' />
 
-:::tip
+::: tip
   Subscribe pages starting with `https://wallhaven.cc/search`, fill the text after `?` as `filter` in the route. The following is an example:
 
   The text after `?` is `q=id%3A711&sorting=random&ref=fp&seed=8g0dgd` for [Wallpaper Search: #landscape - wallhaven.cc](https://wallhaven.cc/search?q=id%3A711&sorting=random&ref=fp&seed=8g0dgd), so the route is [/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd](https://rsshub.app/wallhaven/q=id%3A711&sorting=random&ref=fp&seed=8g0dgd)
-  :::
+:::
 
 ## yande.re <Site url="yande.re"/>
 

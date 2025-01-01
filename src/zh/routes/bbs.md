@@ -88,7 +88,7 @@
 
 ## Dcard <Site url="www.dcard.tw"/>
 
-:::warning
+::: warning
 僅能透過台灣 IP 抓取。
 :::
 
@@ -108,7 +108,7 @@
 
 ## Discourse 
 
-:::warning
+::: warning
 You need to set the environment variable `DISCOURSE_CONFIG_{id}` before using it. Please refer to Configuration section in the Deploy page of the documentation.
 :::
 
@@ -118,9 +118,9 @@ You need to set the environment variable `DISCOURSE_CONFIG_{id}` before using it
 
 ### Notifications 
 
-<Route namespace="discourse" :data='{"path":"/:configId/notifications/:fulltext?","categories":["bbs"],"example":"/discourse/0/notifications","parameters":{"configId":"Environment variable configuration id, see above","fulltext":"Fetch the content if the notification points to a post. This is disabled by default, set it to `1` to enable it."},"features":{"requireConfig":[{"name":"DISCOURSE_CONFIG_*","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Notifications","maintainers":[],"description":":::warning\nIf you opt to enable `fulltext` feature, consider adding `limit` parameter to your query to avoid sending too many request.\n:::","location":"notifications.ts"}' :test='undefined' />
+<Route namespace="discourse" :data='{"path":"/:configId/notifications/:fulltext?","categories":["bbs"],"example":"/discourse/0/notifications","parameters":{"configId":"Environment variable configuration id, see above","fulltext":"Fetch the content if the notification points to a post. This is disabled by default, set it to `1` to enable it."},"features":{"requireConfig":[{"name":"DISCOURSE_CONFIG_*","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Notifications","maintainers":[],"description":"::: warning\nIf you opt to enable `fulltext` feature, consider adding `limit` parameter to your query to avoid sending too many request.\n:::","location":"notifications.ts"}' :test='undefined' />
 
-:::warning
+::: warning
 If you opt to enable `fulltext` feature, consider adding `limit` parameter to your query to avoid sending too many request.
 :::
 
@@ -206,9 +206,9 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### AV <Site url="stno1.playno1.com" size="sm" />
 
-<Route namespace="playno1" :data='{"path":"/av/:catid?","categories":["bbs"],"example":"/playno1/av","parameters":{"catid":"分类，见下表，默认为全部文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"AV","maintainers":["TonyRL"],"description":":::warning\n目前观测到该博客可能禁止日本 IP 访问。建议部署在日本区以外的服务器上。\n:::\n\n  | 全部文章 | AV 新聞 | AV 導覽 |\n  | -------- | ------- | ------- |\n  | 78       | 3       | 5       |","location":"av.ts"}' :test='{"code":0}' />
+<Route namespace="playno1" :data='{"path":"/av/:catid?","categories":["bbs"],"example":"/playno1/av","parameters":{"catid":"分类，见下表，默认为全部文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"AV","maintainers":["TonyRL"],"description":"::: warning\n目前观测到该博客可能禁止日本 IP 访问。建议部署在日本区以外的服务器上。\n:::\n\n  | 全部文章 | AV 新聞 | AV 導覽 |\n  | -------- | ------- | ------- |\n  | 78       | 3       | 5       |","location":"av.ts"}' :test='{"code":0}' />
 
-:::warning
+::: warning
 目前观测到该博客可能禁止日本 IP 访问。建议部署在日本区以外的服务器上。
 :::
 
@@ -311,17 +311,17 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### BBS - 板块 <Site url="yamibo.com" size="sm" />
 
-<Route namespace="yamibo" :data='{"name":"BBS - 板块","categories":["bbs"],"path":"/bbs/forum/:fid/:type?","example":"/yamibo/bbs/forum/5/404","parameters":{"fid":"板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值","type":"板块子分类，网页中选中板块分类后URL中的typeid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::","location":"bbs/forum.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="yamibo" :data='{"name":"BBS - 板块","categories":["bbs"],"path":"/bbs/forum/:fid/:type?","example":"/yamibo/bbs/forum/5/404","parameters":{"fid":"板块 id，可从URL中提取。https://bbs.yamibo.com/forum-aa-b.html中的aa部分即为fid值","type":"板块子分类，网页中选中板块分类后URL中的typeid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":"::: warning\n百合会BBS访问部分板块需要用户登录认证，请参考配置说明\n:::","location":"bbs/forum.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
-:::warning
+::: warning
 百合会BBS访问部分板块需要用户登录认证，请参考配置说明
 :::
 
 ### BBS - 讨论串 <Site url="yamibo.com" size="sm" />
 
-<Route namespace="yamibo" :data='{"name":"BBS - 讨论串","categories":["bbs"],"path":"/bbs/thread/:tid","example":"/yamibo/bbs/thread/541914","parameters":{"tid":"讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":":::warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::","location":"bbs/thread.ts"}' :test='{"code":0}' />
+<Route namespace="yamibo" :data='{"name":"BBS - 讨论串","categories":["bbs"],"path":"/bbs/thread/:tid","example":"/yamibo/bbs/thread/541914","parameters":{"tid":"讨论串 id，可从URL中提取。https://bbs.yamibo.com/forum.php?mod=viewthread&tid=xxxx中的xxx或https://bbs.yamibo.com/thread-aaa-b-c.html中的aaa部分即为tid值"},"maintainers":["KarasuShin"],"features":{"antiCrawler":true,"requireConfig":[{"optional":true,"name":"YAMIBO_SALT","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_saltkey 值"},{"optional":true,"name":"YAMIBO_AUTH","description":"百合会BBS登录后的认证信息，获取方式：1. 登录百合会BBS网页版 2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://bbs.yamibo.com 4. 复制 Cookie 中的 EeqY_2132_auth 值"}]},"description":"::: warning\n百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明\n:::","location":"bbs/thread.ts"}' :test='{"code":0}' />
 
-:::warning
+::: warning
 百合会BBS访问部分讨论串需要用户登录认证，请参考配置说明
 :::
 
@@ -406,42 +406,42 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 会员说 <Site url="www.flyert.com.cn" size="sm" />
 
-<Route namespace="flyert" :data='{"path":"/forum/:params{.+}?","name":"会员说","url":"www.flyert.com.cn","maintainers":["nczitzk"],"example":"/flyert/forum","parameters":{"params":"参数，默认为空，可在对应分类页 URL 中找到"},"description":":::tip\n  若订阅 [酒店集团优惠](https://www.flyert.com.cn/forum.php?mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19)，网址为 `https://www.flyert.com.cn/forum.php?mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19`。截取 `https://www.flyert.com.cn/forum.php?` 到末尾的部分 `mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19` **进行 UrlEncode 编码** 后作为参数填入，此时路由为 [`/flyert/forum/mod%3Dforumdisplay%26sum%3Dall%26fid%3Dall%26catid%3D322%26filter%3Dsortid%26sortid%3D144%26searchsort%3D1%26youhui_type%3D226`](https://rsshub.app/flyert/forum/mod%3Dforumdisplay%26sum%3Dall%26fid%3Dall%26catid%3D322%26filter%3Dsortid%26sortid%3D144%26searchsort%3D1%26youhui_type%3D226)。\n  :::\n    ","categories":["bbs"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.flyert.com.cn/forum.php"]}],"location":"forum.ts"}' :test='{"code":0}' />
+<Route namespace="flyert" :data='{"path":"/forum/:params{.+}?","name":"会员说","url":"www.flyert.com.cn","maintainers":["nczitzk"],"example":"/flyert/forum","parameters":{"params":"参数，默认为空，可在对应分类页 URL 中找到"},"description":"::: tip\n  若订阅 [酒店集团优惠](https://www.flyert.com.cn/forum.php?mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19)，网址为 `https://www.flyert.com.cn/forum.php?mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19`。截取 `https://www.flyert.com.cn/forum.php?` 到末尾的部分 `mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19` **进行 UrlEncode 编码** 后作为参数填入，此时路由为 [`/flyert/forum/mod%3Dforumdisplay%26sum%3Dall%26fid%3Dall%26catid%3D322%26filter%3Dsortid%26sortid%3D144%26searchsort%3D1%26youhui_type%3D226`](https://rsshub.app/flyert/forum/mod%3Dforumdisplay%26sum%3Dall%26fid%3Dall%26catid%3D322%26filter%3Dsortid%26sortid%3D144%26searchsort%3D1%26youhui_type%3D226)。\n:::\n    ","categories":["bbs"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.flyert.com.cn/forum.php"]}],"location":"forum.ts"}' :test='{"code":0}' />
 
-:::tip
+::: tip
   若订阅 [酒店集团优惠](https://www.flyert.com.cn/forum.php?mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19)，网址为 `https://www.flyert.com.cn/forum.php?mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19`。截取 `https://www.flyert.com.cn/forum.php?` 到末尾的部分 `mod=forumdisplay&sum=all&fid=all&catid=322&filter=sortid&sortid=144&searchsort=1&youhui_type=19` **进行 UrlEncode 编码** 后作为参数填入，此时路由为 [`/flyert/forum/mod%3Dforumdisplay%26sum%3Dall%26fid%3Dall%26catid%3D322%26filter%3Dsortid%26sortid%3D144%26searchsort%3D1%26youhui_type%3D226`](https://rsshub.app/flyert/forum/mod%3Dforumdisplay%26sum%3Dall%26fid%3Dall%26catid%3D322%26filter%3Dsortid%26sortid%3D144%26searchsort%3D1%26youhui_type%3D226)。
-  :::
+:::
     
 
 ## 虎扑 <Site url=".hupu.com"/>
 
 ### Unknown <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n  :::tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n  :::","location":"index.ts"}' :test='undefined' />
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n::: tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n:::","location":"index.ts"}' :test='undefined' />
 
 | NBA | CBA | 足球   |
   | --- | --- | ------ |
   | nba | cba | soccer |
 
-  :::tip
+::: tip
   电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
-  :::
+:::
 
 ### 热帖 <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":":::tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n  :::","location":"all.ts"}' :test='{"code":0}' />
+<Route namespace="hupu" :data='{"path":"/all/:id?","categories":["bbs"],"example":"/hupu/all/topic-daily","parameters":{"id":"编号，可在对应热帖版面 URL 中找到，默认为步行街每日话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"热帖","maintainers":["nczitzk"],"description":"::: tip\n  更多热帖版面参见 [论坛](https://bbs.hupu.com)\n:::","location":"all.ts"}' :test='{"code":0}' />
 
-:::tip
+::: tip
   更多热帖版面参见 [论坛](https://bbs.hupu.com)
-  :::
+:::
 
 ### 社区 <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/bbs/:id?/:order?","/bxj/:id?/:order?"],"categories":["bbs"],"example":"/hupu/bbs/topic-daily","parameters":{"id":"编号，可在对应社区 URL 中找到，默认为#步行街主干道","order":"排序方式，可选 `0` 即 最新回复 或 `1` 即 最新发布，默认为最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"社区","maintainers":["LogicJake","nczitzk"],"description":":::tip\n  更多社区参见 [社区](https://bbs.hupu.com)\n  :::","location":"bbs.ts"}' :test='{"code":0}' />
+<Route namespace="hupu" :data='{"path":["/bbs/:id?/:order?","/bxj/:id?/:order?"],"categories":["bbs"],"example":"/hupu/bbs/topic-daily","parameters":{"id":"编号，可在对应社区 URL 中找到，默认为#步行街主干道","order":"排序方式，可选 `0` 即 最新回复 或 `1` 即 最新发布，默认为最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"社区","maintainers":["LogicJake","nczitzk"],"description":"::: tip\n  更多社区参见 [社区](https://bbs.hupu.com)\n:::","location":"bbs.ts"}' :test='{"code":0}' />
 
-:::tip
+::: tip
   更多社区参见 [社区](https://bbs.hupu.com)
-  :::
+:::
 
 ## 火线 <Site url="zone.huoxian.cn"/>
 
@@ -547,11 +547,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛 <Site url="xsijishe.com" size="sm" />
 
-<Route namespace="xsijishe" :data='{"path":"/forum/:fid","categories":["bbs"],"example":"/xsijishe/forum/51","parameters":{"fid":"子论坛 id"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛","maintainers":["akynazh"],"description":":::tip 关于子论坛 id 的获取方法\n  `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。\n  :::","location":"forum.ts"}' :test='undefined' />
+<Route namespace="xsijishe" :data='{"path":"/forum/:fid","categories":["bbs"],"example":"/xsijishe/forum/51","parameters":{"fid":"子论坛 id"},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛","maintainers":["akynazh"],"description":"::: tip 关于子论坛 id 的获取方法\n  `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。\n:::","location":"forum.ts"}' :test='undefined' />
 
-:::tip 关于子论坛 id 的获取方法
+::: tip 关于子论坛 id 的获取方法
   `/xsijishe/forum/51` 对应于论坛 `https://xsijishe.com/forum-51-1.html`，这个论坛的 fid 为 51，也就是 `forum-{fid}-1` 中的 fid。
-  :::
+:::
 
 ### 排行榜 <Site url="xsijishe.com" size="sm" />
 
@@ -593,11 +593,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 标签 <Site url="blog.1point3acres.com" size="sm" />
 
-<Route namespace="1point3acres" :data='{"path":"/category/:id?/:type?/:order?","categories":["bbs"],"example":"/1point3acres/category/h1b","parameters":{"id":"标签 id，默认为全部","type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/section/:id","instant.1point3acres.com/"]}],"name":"标签","maintainers":["nczitzk"],"description":":::tip\n  更多标签可以在 [标签列表](https://instant.1point3acres.com/tags) 中找到。\n  :::\n\n  分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"category.ts"}' :test='undefined' />
+<Route namespace="1point3acres" :data='{"path":"/category/:id?/:type?/:order?","categories":["bbs"],"example":"/1point3acres/category/h1b","parameters":{"id":"标签 id，默认为全部","type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/section/:id","instant.1point3acres.com/"]}],"name":"标签","maintainers":["nczitzk"],"description":"::: tip\n  更多标签可以在 [标签列表](https://instant.1point3acres.com/tags) 中找到。\n:::\n\n  分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"category.ts"}' :test='undefined' />
 
-:::tip
+::: tip
   更多标签可以在 [标签列表](https://instant.1point3acres.com/tags) 中找到。
-  :::
+:::
 
   分类
 
@@ -650,16 +650,16 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 录取结果 <Site url="offer.1point3acres.com/" size="sm" />
 
-<Route namespace="1point3acres" :data='{"path":"/offer/:year?/:major?/:school?","categories":["bbs"],"example":"/1point3acres/offer/12/null/CMU","parameters":{"year":"录取年份  id，空为null","major":"录取专业 id，空为null","school":"录取学校 id，空为null"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["offer.1point3acres.com/"],"target":"/offer"}],"name":"录取结果","maintainers":["EthanWng97"],"url":"offer.1point3acres.com/","description":":::tip 三个 id 获取方式\n  1.  打开 [https://offer.1point3acres.com](https://offer.1point3acres.com)\n  2.  打开控制台\n  3.  切换到 Network 面板\n  4.  点击 搜索 按钮\n  5.  点击 results?ps=15&pg=1 POST 请求\n  6.  找到 Request Payload 请求参数，例如 `filters: {planyr: \"13\", planmajor: \"1\", outname_w: \"ACADIAU\"}` ，则三个 id 分别为: 13,1,ACADIAU\n  :::","location":"offer.ts"}' :test='undefined' />
+<Route namespace="1point3acres" :data='{"path":"/offer/:year?/:major?/:school?","categories":["bbs"],"example":"/1point3acres/offer/12/null/CMU","parameters":{"year":"录取年份  id，空为null","major":"录取专业 id，空为null","school":"录取学校 id，空为null"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["offer.1point3acres.com/"],"target":"/offer"}],"name":"录取结果","maintainers":["EthanWng97"],"url":"offer.1point3acres.com/","description":"::: tip 三个 id 获取方式\n  1.  打开 [https://offer.1point3acres.com](https://offer.1point3acres.com)\n  2.  打开控制台\n  3.  切换到 Network 面板\n  4.  点击 搜索 按钮\n  5.  点击 results?ps=15&pg=1 POST 请求\n  6.  找到 Request Payload 请求参数，例如 `filters: {planyr: \"13\", planmajor: \"1\", outname_w: \"ACADIAU\"}` ，则三个 id 分别为: 13,1,ACADIAU\n:::","location":"offer.ts"}' :test='undefined' />
 
-:::tip 三个 id 获取方式
+::: tip 三个 id 获取方式
   1.  打开 [https://offer.1point3acres.com](https://offer.1point3acres.com)
   2.  打开控制台
   3.  切换到 Network 面板
   4.  点击 搜索 按钮
   5.  点击 results?ps=15&pg=1 POST 请求
   6.  找到 Request Payload 请求参数，例如 `filters: {planyr: "13", planmajor: "1", outname_w: "ACADIAU"}` ，则三个 id 分别为: 13,1,ACADIAU
-  :::
+:::
 
 ### 帖子 <Site url="instant.1point3acres.com/" size="sm" />
 

@@ -48,11 +48,11 @@
 
 ### 直播分区 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/live/area/:areaID/:order","categories":["live"],"example":"/bilibili/live/area/207/online","parameters":{"areaID":"分区 ID 分区增删较多, 可通过 [分区列表](https://api.live.bilibili.com/room/v1/Area/getList) 查询","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播分区","maintainers":["Qixingchen"],"description":":::warning\n  由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项\n  :::","location":"live-area.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/live/area/:areaID/:order","categories":["live"],"example":"/bilibili/live/area/207/online","parameters":{"areaID":"分区 ID 分区增删较多, 可通过 [分区列表](https://api.live.bilibili.com/room/v1/Area/getList) 查询","order":"排序方式, live_time 开播时间, online 人气"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"直播分区","maintainers":["Qixingchen"],"description":"::: warning\n  由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项\n:::","location":"live-area.ts"}' :test='{"code":0}' />
 
-:::warning
+::: warning
   由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项
-  :::
+:::
 
 ### 直播开播 <Site url="www.bilibili.com" size="sm" />
 
@@ -64,7 +64,7 @@
 
 ## 抖音直播 <Site url="douyin.com"/>
 
-:::warning
+::: warning
 反爬严格，需要启用 puppeteer。抖音的视频 CDN 会验证 Referer，意味着许多阅读器都无法直接播放内嵌视频，以下是一些变通解决方案：
 
 1.  启用内嵌视频 (`embed=1`), 参考 [通用参数 -> 多媒体处理](/parameter#多媒体处理) 配置 `multimedia_hotlink_template` **或** `wrap_multimedia_in_iframe`。
