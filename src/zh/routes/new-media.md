@@ -2033,6 +2033,10 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
 
 支持分类：早报、评测、糖纸众测、产品
 
+### 快讯 <Site url="www.ifanr.com" size="sm" />
+
+<Route namespace="ifanr" :data='{"path":"/digest","name":"快讯","url":"www.ifanr.com","maintainers":["nczitzk"],"example":"/ifanr/digest","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ifanr.comdigest"],"target":"/digest"}],"view":0,"location":"digest.ts"}' :test='undefined' />
+
 ### 首页 <Site url="www.ifanr.com/index" size="sm" />
 
 <Route namespace="ifanr" :data='{"path":"/index","categories":["new-media"],"view":0,"example":"/ifanr/index","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ifanr.com/index"]}],"name":"首页","maintainers":["donghongfei"],"url":"www.ifanr.com/index","location":"index.ts"}' :test='{"code":0}' />
