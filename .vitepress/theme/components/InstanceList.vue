@@ -83,11 +83,6 @@ const instances = [{
     maintainer: 'HenryQW',
     maintainerUrl: 'https://github.com/HenryQW',
   }, {
-    url: 'https://rss.peachyjoy.top',
-    location: '🇺🇸',
-    maintainer: 'milletbig',
-    maintainerUrl: 'https://github.com/milletbig',
-  }, {
     url: 'https://rsshub.speednet.icu',
     location: '🇭🇰',
     maintainer: 'freeintweb',
