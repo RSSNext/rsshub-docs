@@ -408,6 +408,12 @@ Return results from 2020
   | -------- | -------- | -------- | -------- |
   | bqym     | wlsf     | xshd     | tzgg     |
 
+## 普世社会科学研究所 <Site url="www.pacilution.com"/>
+
+### 最新文章 <Site url="www.pacilution.com" size="sm" />
+
+<Route namespace="pacilution" :data='{"path":"/latest","name":"最新文章","maintainers":["PrinOrange"],"categories":["journal"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"example":"/pacilution/latest","radar":[{"source":["www.pacilution.com"]}],"location":"latest.ts"}' :test='undefined' />
+
 ## 上海大学 <Site url="www.shu.edu.cn"/>
 
 上海大学相关网网站
