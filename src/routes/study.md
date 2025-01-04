@@ -128,6 +128,20 @@ RSS feed for LMU academic staff job openings.
 
 <Route namespace="hunanpea" :data='{"path":"/rsks/:guid","categories":["study"],"example":"/hunanpea/rsks/2f1a6239-b4dc-491b-92af-7d95e0f0543e","parameters":{"guid":"分类 id，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rsks.hunanpea.com/Category/:guid/ArticlesByCategory.do"]}],"name":"公告","maintainers":["TonyRL"],"location":"rsks.ts"}' :test='{"code":0}' />
 
+## 全国翻译专业资格水平考试 (CATTI) <Site url="www.catticenter.com"/>
+
+### CATTI 考试消息 <Site url="www.catticenter.com" size="sm" />
+
+<Route namespace="catti" :data='{"path":"/news/:category","name":"CATTI 考试消息","maintainers":["PrinOrange"],"description":"\n| Category  | 标题       | 描述                |\n|-----------|------------|--------------------|\n| ggl       | 通知公告   | CATTI 考试通知和公告 |\n| ywdt      | 要闻动态   | CATTI 考试要闻动态   |\n| zxzc      | 最新政策   | CATTI 考试最新政策   |\n","categories":["study"],"parameters":{"category":"消息分类名，可在下面的描述中找到。"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"supportRadar":true},"example":"/catti/news/zxzc","radar":[{"source":["www.catticenter.com/:category"]}],"location":"news.ts"}' :test='undefined' />
+
+
+| Category  | 标题       | 描述                |
+|-----------|------------|--------------------|
+| ggl       | 通知公告   | CATTI 考试通知和公告 |
+| ywdt      | 要闻动态   | CATTI 考试要闻动态   |
+| zxzc      | 最新政策   | CATTI 考试最新政策   |
+
+
 ## 山东省教育招生考试院 <Site url="sdzk.cn"/>
 
 ### 新闻 <Site url="sdzk.cn" size="sm" />
