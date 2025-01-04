@@ -167,9 +167,9 @@ News from the official site of men's professional tennis.
 
 ## DL NEWS <Site url="dlnews.com"/>
 
-### Unknown <Site url="dlnews.com/articles/" size="sm" />
+### Latest News <Site url="dlnews.com/articles" size="sm" />
 
-<Route namespace="dlnews" :data='{"path":"/:category?","radar":[{"source":["dlnews.com/articles/:category"],"target":"/:category"}],"name":"Unknown","maintainers":["Rjnishant530"],"url":"dlnews.com/articles/","location":"category.ts"}' :test='undefined' />
+<Route namespace="dlnews" :data='{"path":"/:category?","radar":[{"source":["dlnews.com/articles/:category"],"target":"/:category"}],"url":"dlnews.com/articles","name":"Latest News","maintainers":["Rjnishant530"],"example":"/dlnews/people-culture","location":"category.ts"}' :test='undefined' />
 
 ## E-Hentai <Site url="e-hentai.org"/>
 
