@@ -401,3 +401,9 @@ RSS feed for LMU academic staff job openings.
 
 <Route namespace="neea" :data='{"path":"/global/jlpt","name":"日本语能力测试(JLPT)通知","url":"jlpt.neea.edu.cn","maintainers":["nczitzk"],"example":"/neea/global/jlpt","parameters":{},"categories":["study"],"features":{"supportRadar":true},"radar":[{"source":["jlpt.neea.edu.cn","jlpt.neea.cn"],"target":"/global/jlpt"}],"location":"jlpt.ts"}' :test='{"code":0}' />
 
+## 中国计算机职业技术资格考试 <Site url="www.ruankao.org.cn"/>
+
+### 软考最新动态 <Site url="www.ruankao.org.cn" size="sm" />
+
+<Route namespace="ruankao" :data='{"path":"/news","name":"软考最新动态","maintainers":["PrinOrange"],"categories":["study"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"supportRadar":true},"radar":[{"title":"软考新闻动态","source":["www.ruankao.org.cn/index/work","www.ruankao.org.cn"],"target":"/news"}],"example":"/ruankao/news","location":"news.ts"}' :test='undefined' />
+
