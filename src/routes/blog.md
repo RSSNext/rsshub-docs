@@ -264,6 +264,12 @@ Niels Berglund Blog Posts
 
 <Route namespace="react" :data='{"path":"/blog","name":"Blog","categories":["blog"],"maintainers":["equt"],"example":"/react/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"blog.ts"}' :test='{"code":0}' />
 
+## Substack <Site url="substack.com"/>
+
+### Substack Subscription <Site url="substack.com" size="sm" />
+
+<Route namespace="substack" :data='{"path":"/subscribe/:user","categories":["blog"],"view":1,"example":"/substack/subscribe/mangoread","parameters":{"user":"Username of the Substack"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Substack Subscription","maintainers":["pseudoyu"],"location":"subscribe.ts"}' :test='undefined' />
+
 ## The Gradient <Site url="thegradient.pub"/>
 
 ### Posts <Site url="thegradient.pub/" size="sm" />
