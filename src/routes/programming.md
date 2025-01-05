@@ -1,5 +1,15 @@
 # 💻 Programming
 
+## 30 Seconds of code <Site url="www.30secondsofcode.org"/>
+
+### Category and Subcategory <Site url="www.30secondsofcode.org" size="sm" />
+
+<Route namespace="30secondsofcode" :data='{"path":"/category/:category?/:subCategory?","categories":["programming"],"example":"/category/css/interactivity","parameters":{"category":{"description":"Main Category. For Complete list visit site \"https://www.30secondsofcode.org/collections/p/1/\"","options":[{"value":"js","label":"Javascript"},{"value":"css","label":"CSS"},{"value":"algorithm","label":"JavaScript Algorithms"},{"value":"react","label":"React"}]},"subCategory":{"description":"Filter within Category. Visit Individual Category site for subCategories"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["30secondsofcode.org/:category/:subCategory/","30secondsofcode.org/:category/"],"target":"/category/:category/:subCategory"}],"name":"Category and Subcategory","maintainers":["Rjnishant530"],"location":"category.ts"}' :test='undefined' />
+
+### New & Popular Snippets <Site url="www.30secondsofcode.org" size="sm" />
+
+<Route namespace="30secondsofcode" :data='{"path":"/latest","categories":["programming"],"example":"/latest","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["30secondsofcode.org"],"target":"/latest"}],"name":"New & Popular Snippets","maintainers":["Rjnishant530"],"location":"new-and-popular.ts"}' :test='undefined' />
+
 ## 51CTO <Site url="51cto.com"/>
 
 ### 推荐 <Site url="51cto.com/" size="sm" />
