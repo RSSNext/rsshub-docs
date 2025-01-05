@@ -65,23 +65,27 @@ Example:
 
 ### Most Discussed <Site url="app.daily.dev/discussed" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/discussed","example":"/daily/discussed","radar":[{"source":["app.daily.dev/discussed"]}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"app.daily.dev/discussed","location":"discussed.ts"}' :test='{"code":0}' />
+<Route namespace="daily" :data='{"path":"/discussed/:period?/:innerSharedContent?/:dateSort?","example":"/daily/discussed/30","view":0,"radar":[{"source":["app.daily.dev/discussed"]}],"name":"Most Discussed","maintainers":["Rjnishant530"],"url":"app.daily.dev/discussed","parameters":{"innerSharedContent":{"description":"Where to Fetch inner Shared Posts instead of original","default":"false","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]},"dateSort":{"description":"Sort posts by publication date instead of popularity","default":"true","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]},"period":{"description":"Period of Lookup","default":"7","options":[{"value":"7","label":"Last Week"},{"value":"30","label":"Last Month"},{"value":"365","label":"Last Year"}]}},"location":"discussed.ts"}' :test='undefined' />
 
 ### Most upvoted <Site url="app.daily.dev/upvoted" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/upvoted","example":"/daily/upvoted","radar":[{"source":["app.daily.dev/upvoted"]}],"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"app.daily.dev/upvoted","location":"upvoted.ts"}' :test='{"code":0}' />
+<Route namespace="daily" :data='{"path":"/upvoted/:period?/:innerSharedContent?/:dateSort?","example":"/daily/upvoted/7","view":0,"radar":[{"source":["app.daily.dev/upvoted"]}],"parameters":{"innerSharedContent":{"description":"Where to Fetch inner Shared Posts instead of original","default":"false","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]},"dateSort":{"description":"Sort posts by publication date instead of popularity","default":"true","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]},"period":{"description":"Period of Lookup","default":"7","options":[{"value":"7","label":"Last Week"},{"value":"30","label":"Last Month"},{"value":"365","label":"Last Year"}]}},"name":"Most upvoted","maintainers":["Rjnishant530"],"url":"app.daily.dev/upvoted","location":"upvoted.ts"}' :test='undefined' />
 
 ### Popular <Site url="app.daily.dev/popular" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/","example":"/daily","radar":[{"source":["app.daily.dev/popular"]}],"name":"Popular","maintainers":["Rjnishant530"],"url":"app.daily.dev/popular","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="daily" :data='{"path":"/popular/:innerSharedContent?/:dateSort?","example":"/daily/popular","view":0,"radar":[{"source":["app.daily.dev/popular"]}],"parameters":{"innerSharedContent":{"description":"Where to Fetch inner Shared Posts instead of original","default":"false","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]},"dateSort":{"description":"Sort posts by publication date instead of popularity","default":"true","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]}},"name":"Popular","maintainers":["Rjnishant530"],"url":"app.daily.dev/popular","location":"popular.ts"}' :test='undefined' />
 
 ### Source Posts <Site url="app.daily.dev" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/source/:sourceId","example":"/daily/source/hn","parameters":{"sourceId":"The source id"},"radar":[{"source":["app.daily.dev/sources/:sourceId"]}],"name":"Source Posts","maintainers":["TonyRL"],"url":"app.daily.dev","location":"source.ts"}' :test='{"code":0}' />
+<Route namespace="daily" :data='{"path":"/source/:sourceId/:innerSharedContent?","example":"/daily/source/hn","parameters":{"sourceId":"The source id","innerSharedContent":{"description":"Where to Fetch inner Shared Posts instead of original","default":"false","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]}},"radar":[{"source":["app.daily.dev/sources/:sourceId"]}],"name":"Source Posts","maintainers":["TonyRL"],"url":"app.daily.dev","location":"source.ts"}' :test='undefined' />
+
+### Squads <Site url="app.daily.dev/squads/discover" size="sm" />
+
+<Route namespace="daily" :data='{"path":"/squads/:squads/:innerSharedContent?","example":"/daily/squads/watercooler","view":0,"parameters":{"innerSharedContent":{"description":"Where to Fetch inner Shared Posts instead of original","default":"false","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]}},"radar":[{"source":["app.daily.dev/squads/:squads"]}],"name":"Squads","maintainers":["Rjnishant530"],"url":"app.daily.dev/squads/discover","location":"squads.ts"}' :test='undefined' />
 
 ### User Posts <Site url="app.daily.dev" size="sm" />
 
-<Route namespace="daily" :data='{"path":"/user/:userId","example":"/daily/user/kramer","radar":[{"source":["app.daily.dev/:userId/posts","app.daily.dev/:userId"]}],"name":"User Posts","maintainers":["TonyRL"],"url":"app.daily.dev","location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="daily" :data='{"path":"/user/:userId/:innerSharedContent?","example":"/daily/user/kramer","radar":[{"source":["app.daily.dev/:userId/posts","app.daily.dev/:userId"]}],"parameters":{"innerSharedContent":{"description":"Where to Fetch inner Shared Posts instead of original","default":"false","options":[{"value":"false","label":"False"},{"value":"true","label":"True"}]}},"name":"User Posts","maintainers":["TonyRL"],"url":"app.daily.dev","location":"user.ts"}' :test='undefined' />
 
 ## Discord <Site url="discord.com"/>
 
