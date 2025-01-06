@@ -1339,6 +1339,17 @@ Language:
     | 3686         |
   </details>
 
+## 中债资信评估有限责任公司 <Site url="chinaratings.com.cn"/>
+
+### 中债研究 <Site url="www.chinaratings.com.cn" size="sm" />
+
+<Route namespace="chinaratings" :data='{"path":"/CreditResearch/:category{.+}?","name":"中债研究","url":"www.chinaratings.com.cn","maintainers":["nczitzk"],"example":"/chinaratings/CreditResearch","parameters":{"category":"分类，默认为 `Industry/Comment`，即行业评论，可在对应分类页 URL 中找到"},"description":":::tip\n若订阅 [行业评论](https://www.chinaratings.com.cn/CreditResearch/Industry/Comment/)，网址为 `https://www.chinaratings.com.cn/CreditResearch/Industry/Comment/`，请截取 `https://www.chinaratings.com.cn/CreditResearch/` 到末尾 `/` 的部分 `Industry/Comment` 作为 `category` 参数填入，此时目标路由为 [`/chinaratings/CreditResearch/Industry/Comment`](https://rsshub.app/chinaratings/CreditResearch/Industry/Comment)。\n:::\n","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.chinaratings.com.cn/CreditResearch/:category"]}],"view":0,"location":"credit-research.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [行业评论](https://www.chinaratings.com.cn/CreditResearch/Industry/Comment/)，网址为 `https://www.chinaratings.com.cn/CreditResearch/Industry/Comment/`，请截取 `https://www.chinaratings.com.cn/CreditResearch/` 到末尾 `/` 的部分 `Industry/Comment` 作为 `category` 参数填入，此时目标路由为 [`/chinaratings/CreditResearch/Industry/Comment`](https://rsshub.app/chinaratings/CreditResearch/Industry/Comment)。
+:::
+
+
 ## 中证网 <Site url="cs.com.cn"/>
 
 ### Unknown <Site url="cs.com.cn" size="sm" />
