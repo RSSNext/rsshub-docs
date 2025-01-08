@@ -112,6 +112,11 @@ const instances = [{
     location: '🇭🇰',
     maintainer: 'thzu',
     maintainerUrl: 'https://thzu.xyz',
+  }, {
+    url: 'https://rsshub.email-once.com',
+    location: '🇭🇰',
+    maintainer: 'EmailOnce',
+    maintainerUrl: 'https://email-once.com'
   }
 ]
 
