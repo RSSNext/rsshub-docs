@@ -3180,3 +3180,9 @@ category 参数可选，范围如下:
   | -------- | ------------ |
   | notify   | academiceve  |
 
+## 重庆工商大学 <Site url="www.ctbu.edu.cn/"/>
+
+### 学校公告 <Site url="www.ctbu.edu.cn/" size="sm" />
+
+<Route namespace="ctbu" :data='{"path":"/xxgg","categories":["university"],"example":"/ctbu/xxgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ctbu.edu.cn/","www.ctbu.edu.cn/index/xxgg.htm"]}],"name":"学校公告","maintainers":["Skylwn"],"url":"www.ctbu.edu.cn/","location":"xxgg.ts"}' :test='undefined' />
+
