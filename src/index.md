@@ -34,5 +34,3 @@ features:
     icon: 🧩
     details: Powerful APIs and ecosystem projects are supporting various scenarios.
 ---
-
-<Banner />
