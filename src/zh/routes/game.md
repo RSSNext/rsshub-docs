@@ -145,6 +145,16 @@ Categories
   | 日本語             | ja-jp |
   | 繁體中文           | zh-tw |
 
+### 暴雪游戏国服新闻 <Site url="news.blizzard.com" size="sm" />
+
+<Route namespace="blizzard" :data='{"path":"/news-cn/:category?","categories":["game"],"example":"/blizzard/news-cn/ow","parameters":{"category":"游戏类别, 默认为 ow"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ow.blizzard.cn","wow.blizzard.cn","hs.blizzard.cn"],"target":"/news-cn/"}],"name":"暴雪游戏国服新闻","maintainers":["zhangpeng2k"],"description":"\n| 守望先锋 | 炉石传说 | 魔兽世界 |\n|----------|----------|---------|\n| ow       | hs       | wow     |\n","location":"news-cn.ts"}' :test='undefined' />
+
+
+| 守望先锋 | 炉石传说 | 魔兽世界 |
+|----------|----------|---------|
+| ow       | hs       | wow     |
+
+
 ## Blue Archive <Site url="bluearchive.jp"/>
 
 ### News <Site url="bluearchive.jp" size="sm" />
