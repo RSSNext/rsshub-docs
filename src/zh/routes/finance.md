@@ -783,6 +783,21 @@ Language:
 
 <Route namespace="laohu8" :data='{"path":"/personal/:id","categories":["finance","popular"],"view":0,"example":"/laohu8/personal/3527667596890271","parameters":{"id":"用户 ID，见网址链接"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["laohu8.com/personal/:id"]}],"name":"个人主页","maintainers":["Fatpandac"],"location":"personal.ts"}' :test='{"code":0}' />
 
+## 联合资信评估股份有限公司 <Site url="lhratings.com"/>
+
+### 研究报告 <Site url="www.lhratings.com" size="sm" />
+
+<Route namespace="lhratings" :data='{"path":"/research/:type?","name":"研究报告","url":"www.lhratings.com","maintainers":["nczitzk"],"example":"/lhratings/research/1","parameters":{"type":"分类，默认为 `1`，即宏观经济，可在对应分类页 URL 中找到"},"description":":::tip\n若订阅 [宏观经济](https://www.lhratings.com/research.html?type=1)，网址为 `https://www.lhratings.com/research.html?type=1`，请截取 `https://www.lhratings.com/research.html?type=` 到末尾的部分 `1` 作为 `type` 参数填入，此时目标路由为 [`/lhratings/research/1`](https://rsshub.app/lhratings/research/1)。\n:::\n\n| 宏观经济 | 债券市场 | 行业研究 | 评级理论与方法 | 国际债券市场与评级 | 评级表现 |\n| -------- | -------- | -------- | -------------- | ------------------ | -------- |\n| 1        | 2        | 3        | 4              | 5                  | 6        |\n","categories":["finance"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lhratings.com/research.html"]},{"title":"宏观经济","source":["www.lhratings.com/research.html?type=1"],"target":"/research/1"},{"title":"债券市场","source":["www.lhratings.com/research.html?type=2"],"target":"/research/2"},{"title":"行业研究","source":["www.lhratings.com/research.html?type=3"],"target":"/research/3"},{"title":"评级理论与方法","source":["www.lhratings.com/research.html?type=4"],"target":"/research/4"},{"title":"国际债券市场与评级","source":["www.lhratings.com/research.html?type=5"],"target":"/research/5"},{"title":"评级表现","source":["www.lhratings.com/research.html?type=6"],"target":"/research/6"}],"view":0,"location":"research.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [宏观经济](https://www.lhratings.com/research.html?type=1)，网址为 `https://www.lhratings.com/research.html?type=1`，请截取 `https://www.lhratings.com/research.html?type=` 到末尾的部分 `1` 作为 `type` 参数填入，此时目标路由为 [`/lhratings/research/1`](https://rsshub.app/lhratings/research/1)。
+:::
+
+| 宏观经济 | 债券市场 | 行业研究 | 评级理论与方法 | 国际债券市场与评级 | 评级表现 |
+| -------- | -------- | -------- | -------------- | ------------------ | -------- |
+| 1        | 2        | 3        | 4              | 5                  | 6        |
+
+
 ## 律动 BlockBeats <Site url="www.theblockbeats.info"/>
 
 ### 新闻快讯 <Site url="www.theblockbeats.info" size="sm" />
