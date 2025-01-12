@@ -1117,19 +1117,19 @@ Language:
 
 <Route namespace="techflowpost" :data='{"path":"/","example":"/techflowpost","radar":[{"source":["techflowpost.com/"]}],"name":"首页","categories":["finance","popular"],"view":0,"maintainers":["nczitzk"],"url":"techflowpost.com/","location":"index.ts"}' :test='{"code":0}' />
 
-## 淘股吧 <Site url="taoguba.com.cn"/>
+## 淘股吧 <Site url="tgb.cn"/>
 
-### Unknown <Site url="taoguba.com.cn" size="sm" />
+### 淘股论坛 <Site url="tgb.cn" size="sm" />
 
-<Route namespace="taoguba" :data='{"path":["/index","/:category?"],"name":"Unknown","maintainers":["nczitzk"],"description":"| 淘股论坛 | 社区总版 | 精华加油 | 网友点赞 |\n  | -------- | -------- | -------- | -------- |\n  | bbs      | zongban  | jinghua  | dianzan  |","location":"index.ts"}' :test='undefined' />
+<Route namespace="taoguba" :data='{"path":"/:category?","categories":["finance"],"example":"/taoguba","parameters":{"id":"分类，见下表，默认为社区总版"},"name":"淘股论坛","maintainers":["nczitzk"],"description":"| 淘股论坛 | 社区总版 | 精华加油 | 网友点赞 |\n  | -------- | -------- | -------- | -------- |\n  | bbs      | zongban  | jinghua  | dianzan  |","location":"index.ts"}' :test='undefined' />
 
 | 淘股论坛 | 社区总版 | 精华加油 | 网友点赞 |
   | -------- | -------- | -------- | -------- |
   | bbs      | zongban  | jinghua  | dianzan  |
 
-### 用户博客 <Site url="taoguba.com.cn" size="sm" />
+### 用户博客 <Site url="tgb.cn" size="sm" />
 
-<Route namespace="taoguba" :data='{"path":["/blog/:id","/user/:id"],"categories":["finance"],"example":"/taoguba/blog/252069","parameters":{"id":"博客 id，可在对应博客页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["taoguba.com.cn/blog/:id","taoguba.com.cn/"]}],"name":"用户博客","maintainers":["nczitzk"],"location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="taoguba" :data='{"path":"/blog/:id","categories":["finance"],"example":"/taoguba/blog/252069","parameters":{"id":"博客 id，可在对应博客页中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tgb.cn/blog/:id","tgb.cn/"]}],"name":"用户博客","maintainers":["nczitzk"],"location":"blog.ts"}' :test='{"code":0}' />
 
 ## 同花顺财经 <Site url="10jqka.com.cn"/>
 
