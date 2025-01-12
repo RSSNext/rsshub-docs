@@ -972,6 +972,19 @@ Tip: use proxy if necessary.
   | [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |
   
 
+### 英雄联盟新闻 <Site url="lol.qq.com" size="sm" />
+
+<Route namespace="qq" :data='{"path":"/lol/news/:category?","name":"英雄联盟新闻","url":"lol.qq.com","maintainers":["nczitzk"],"example":"/qq/lol/news","parameters":{"category":"分类，默认为 `23`，即综合，见下表"},"description":":::tip\n若订阅 [英雄联盟首页新闻列表 - 公告](https://lol.qq.com/news/index.shtml)，网址为 `https://lol.qq.com/news/index.shtml`，请选择 `24` 作为 `category` 参数填入，此时目标路由为 [`/qq/lol/news/24`](https://rsshub.app/qq/lol/news/24)。\n:::\n\n| 综合 | 公告 | 赛事 | 攻略 | 社区 |\n| ---- | ---- | ---- | ---- | ---- |\n| 23   | 24   | 25   | 27   | 28   |\n","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"综合","source":["lol.qq.com/news/index.shtml"],"target":"/lol/news/23"},{"title":"公告","source":["lol.qq.com/news/index.shtml"],"target":"/lol/news/24"},{"title":"赛事","source":["lol.qq.com/news/index.shtml"],"target":"/lol/news/25"},{"title":"攻略","source":["lol.qq.com/news/index.shtml"],"target":"/lol/news/27"},{"title":"社区","source":["lol.qq.com/news/index.shtml"],"target":"/lol/news/28"}],"view":0,"location":"lol/news.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [英雄联盟首页新闻列表 - 公告](https://lol.qq.com/news/index.shtml)，网址为 `https://lol.qq.com/news/index.shtml`，请选择 `24` 作为 `category` 参数填入，此时目标路由为 [`/qq/lol/news/24`](https://rsshub.app/qq/lol/news/24)。
+:::
+
+| 综合 | 公告 | 赛事 | 攻略 | 社区 |
+| ---- | ---- | ---- | ---- | ---- |
+| 23   | 24   | 25   | 27   | 28   |
+
+
 ## 腾讯 <Site url="tencent.com"/>
 
 ### 新闻中心 <Site url="tencent.com" size="sm" />
