@@ -100,7 +100,7 @@ Google Developers Blog
 
 ### Research Blog <Site url="www.google.com" size="sm" />
 
-<Route namespace="google" :data='{"path":"/research","categories":["blog"],"example":"/google/research","name":"Research Blog","maintainers":["Levix"],"radar":[{"source":["research.google"]}],"location":"research.ts"}' :test='{"code":0}' />
+<Route namespace="google" :data='{"path":"/research","categories":["blog"],"example":"/google/research","name":"Research Blog","maintainers":["Levix","cscnk52"],"radar":[{"source":["research.google"]}],"location":"research.ts"}' :test='{"code":0}' />
 
 ## Goldman Sachs <Site url="goldmansachs.com"/>
 
