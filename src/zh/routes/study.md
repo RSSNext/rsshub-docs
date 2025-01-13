@@ -376,6 +376,19 @@ RSS feed for LMU academic staff job openings.
   | kyrw    | 考研人物 |
   | jyxd    | 经验心得 |
 
+## 中国人事考试网 <Site url="www.cpta.com.cn"/>
+
+### 中国人事考试网发布 <Site url="www.cpta.com.cn" size="sm" />
+
+<Route namespace="cpta" :data='{"path":"/:category","name":"中国人事考试网发布","maintainers":["PrinOrange"],"parameters":{"category":"栏目参数，可见下表描述。"},"description":"\n| Category    | Title     | Description                         |\n|-------------|-----------|-------------------------------------|\n| notice      | 通知公告  | 中国人事考试网 考试通知公告汇总    |\n| performance | 成绩公布  | 中国人事考试网 考试成绩公布汇总    |\n","categories":["study"],"features":{"requireConfig":false,"requirePuppeteer":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"supportRadar":true,"antiCrawler":true},"radar":[{"title":"中国人事考试网通知公告","source":["www.cpta.com.cn/notice.html","www.cpta.com.cn"],"target":"/notice"},{"title":"中国人事考试网成绩发布","source":["www.cpta.com.cn/performance.html","www.cpta.com.cn"],"target":"/performance"}],"example":"/cpta/notice","location":"handler.ts"}' :test='undefined' />
+
+
+| Category    | Title     | Description                         |
+|-------------|-----------|-------------------------------------|
+| notice      | 通知公告  | 中国人事考试网 考试通知公告汇总    |
+| performance | 成绩公布  | 中国人事考试网 考试成绩公布汇总    |
+
+
 ## 中国技术经济学会 <Site url="cste.org.cn"/>
 
 ### 栏目 <Site url="cste.org.cn" size="sm" />
