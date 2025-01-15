@@ -1859,6 +1859,10 @@ author 列表：
 
 ## 清华大学 <Site url="tsinghua.edu.cn"/>
 
+### 图书馆通知公告 <Site url="tsinghua.edu.cn" size="sm" />
+
+<Route namespace="tsinghua" :data='{"path":"/lib/tzgg/:category","categories":["university"],"example":"/tsinghua/lib/tzgg/qtkx","parameters":{"category":"分类，可在对应分类页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lib.tsinghua.edu.cn/tzgg/:category"]}],"name":"图书馆通知公告","maintainers":["linsenwang"],"location":"lib/tzgg.ts"}' :test='undefined' />
+
 ### 图书馆资源动态 <Site url="lib.tsinghua.edu.cn" size="sm" />
 
 <Route namespace="tsinghua" :data='{"path":"/lib/zydt/:category?","name":"图书馆资源动态","url":"lib.tsinghua.edu.cn","maintainers":["nczitzk"],"example":"/tsinghua/lib/zydt","parameters":{"category":"分类，默认为空，即全部，可在对应分类页 URL 中找到"},"description":"::: tip\n  若订阅 [清华大学图书馆已购资源动态](https://lib.tsinghua.edu.cn/zydt/yg.htm)，网址为 `https://lib.tsinghua.edu.cn/zydt/yg.htm`。截取 `https://lib.tsinghua.edu.cn/zydt` 到末尾 `.htm` 的部分 `yg` 作为参数填入，此时路由为 [`/tsinghua/lib/zydt/yg`](https://rsshub.app/tsinghua/lib/zydt/yg)。\n:::\n\n  | 已购 | 试用 |\n  | ---- | ---- |\n  | yg   | sy   |\n  ","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lib.tsinghua.edu.cn/zydt/:category?"]},{"title":"图书馆资源动态","source":["lib.tsinghua.edu.cn/zydt"],"target":"/lib/zydt"},{"title":"图书馆已购资源动态","source":["lib.tsinghua.edu.cn/zydt/yg"],"target":"/lib/zydt/yg"},{"title":"图书馆试用资源动态","source":["lib.tsinghua.edu.cn/zydt/sy"],"target":"/lib/zydt/sy"}],"location":"lib/zydt.ts"}' :test='{"code":0}' />
