@@ -246,6 +246,12 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
   | ---- | ----------- |
   | blog | inthenews   |
 
+## Xiamen University <Site url="soe.xmu.edu.cn"/>
+
+### 科研动态 <Site url="soe.xmu.edu.cn" size="sm" />
+
+<Route namespace="xmu" :data='{"path":"/kydt","categories":["university"],"example":"/xmu/kydt","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["soe.xmu.edu.cn/kxyj/kydt.htm"]}],"name":"科研动态","maintainers":["linsenwang"],"location":"kydt.ts"}' :test='undefined' />
+
 ## 安徽建筑大学 <Site url="news.ahjzu.edu.cn"/>
 
 ### 通知公告 <Site url="news.ahjzu.edu.cn/20/list.htm" size="sm" />
