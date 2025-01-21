@@ -88,7 +88,7 @@ Enterprise Craftsmanship blog archives
 
 ### Official Blogs <Site url="geocaching.com/blog/" size="sm" />
 
-<Route namespace="geocaching" :data='{"path":"/blogs","categories":["blog"],"example":"/geocaching/blogs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["geocaching.com/blog/","geocaching.com/"]}],"name":"Official Blogs","maintainers":["HankChow"],"url":"geocaching.com/blog/","location":"blogs.ts"}' :test='{"code":0}' />
+<Route namespace="geocaching" :data='{"path":"/blogs/:language?","categories":["blog"],"example":"/geocaching/blogs/en","parameters":{"language":{"description":"language","default":"en","options":[{"value":"en","label":"English"},{"value":"de","label":"Deutsch"},{"value":"fr","label":"Français"},{"value":"es","label":"Español"},{"value":"nl","label":"Nederlands"},{"value":"cs","label":"Čeština"},{"value":"all","label":"Not Specified"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["geocaching.com/blog/","geocaching.com/"]}],"name":"Official Blogs","maintainers":["HankChow","Konano"],"url":"geocaching.com/blog/","location":"blogs.ts"}' :test='undefined' />
 
 ## Google <Site url="www.google.com"/>
 
