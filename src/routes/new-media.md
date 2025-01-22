@@ -3722,6 +3722,14 @@ Type 栏目：
 | all | tech | finance | life | company | character |
 :::
 
+## 钛媒体 <Site url="tmtpost.com"/>
+
+钛媒体是一家专注于新媒体领域的科技媒体
+
+### 快报 <Site url="www.tmtpost.com/nictation" size="sm" />
+
+<Route namespace="tmtpost" :data='{"path":"/nictation","categories":["new-media"],"example":"/tmtpost/word","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":{"source":["www.tmtpost.com"]},"name":"快报","maintainers":["defp"],"url":"www.tmtpost.com/nictation","location":"nictation.ts"}' :test='undefined' />
+
 ## 唐书房 <Site url="tangshufang.com"/>
 
 ### 分类 <Site url="tangshufang.com" size="sm" />
