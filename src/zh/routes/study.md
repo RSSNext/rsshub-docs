@@ -152,6 +152,14 @@ RSS feed for LMU academic staff job openings.
 | zxzc      | 最新政策   | CATTI 考试最新政策   |
 
 
+## 全国通信专业技术人员职业水平考试 <Site url="www.txks.org.cn"/>
+
+### 通信考试动态 <Site url="www.txks.org.cn" size="sm" />
+
+<Route namespace="txks" :data='{"path":"/news","name":"通信考试动态","description":"**注意：** 官方网站限制了国外网络请求，可能需要通过部署在中国大陆内的 RSSHub 实例访问。","maintainers":["PrinOrange"],"categories":["study"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false,"supportRadar":true},"radar":[{"title":"全国通信专业技术人员职业水平考试动态","source":["www.txks.org.cn/index/work","www.txks.org.cn"],"target":"/news"}],"example":"/txks/news","location":"news.ts"}' :test='undefined' />
+
+**注意：** 官方网站限制了国外网络请求，可能需要通过部署在中国大陆内的 RSSHub 实例访问。
+
 ## 山东省教育招生考试院 <Site url="sdzk.cn"/>
 
 ### 新闻 <Site url="sdzk.cn" size="sm" />
