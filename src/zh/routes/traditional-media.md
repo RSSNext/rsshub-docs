@@ -1661,6 +1661,16 @@ Column 列表：
   | -------- | -------- | ------ | ---------- | ---------- | -------- |
   | zjrb     | qjwb     | msb    | zjlnb      | zjfzb      | jnyb     |
 
+## 中国经济网 <Site url="www.ce.cn"/>
+
+### 地方经济 <Site url="district.ce.cn" size="sm" />
+
+<Route namespace="ce" :data='{"path":"/district/:category?","name":"地方经济","url":"district.ce.cn","maintainers":["cscnk52"],"example":"/ce/district","parameters":{"category":"栏目标识，默认为 roll（即时新闻）"},"description":"| 即时新闻 | 经济动态 | 独家视角 | 专题 | 数说地方 | 地方播报 | 专稿 | 港澳台 |\n|----------|----------|----------|------|----------|----------|------|--------|\n| roll     | jjdt     | poll     | ch   | ssdf     | dfbb     | zg   | gat    |","categories":["traditional-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"supportRadar":true},"radar":[{"source":["district.ce.cn/newarea/:category/index.shtml"],"target":"/district/:category?"},{"source":["district.ce.cn/newarea/:category"],"target":"/district/:category?"},{"source":["district.ce.cn"],"target":"/district"}],"view":0,"location":"district.ts"}' :test='undefined' />
+
+| 即时新闻 | 经济动态 | 独家视角 | 专题 | 数说地方 | 地方播报 | 专稿 | 港澳台 |
+|----------|----------|----------|------|----------|----------|------|--------|
+| roll     | jjdt     | poll     | ch   | ssdf     | dfbb     | zg   | gat    |
+
 ## 中国环球电视网 <Site url="cgtn.com"/>
 
 ### 播客 <Site url="cgtn.com" size="sm" />
