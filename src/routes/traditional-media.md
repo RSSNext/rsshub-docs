@@ -1018,6 +1018,12 @@ Column 列表：
 
   `https://hk.on.cc/hk/finance/index.html` 对应 `/oncc/zh-hant/finance`
 
+## 東森新聞 <Site url="ebc.net.tw"/>
+
+### 即時新聞 <Site url="ebc.net.tw" size="sm" />
+
+<Route namespace="ebc" :data='{"path":"/realtime/:category?","categories":["traditional-media"],"example":"/ebc/realtime/politics","parameters":{"category":"Category from the last segment of the URL of the corresponding site"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"requireConfig":false},"name":"即時新聞","maintainers":["quiniapiezoelectricity"],"description":"","radar":[{"source":["news.ebc.net.tw/realtime/:category"],"target":"/:category"}],"location":"realtime.ts"}' :test='undefined' />
+
 ## 公視新聞網 <Site url="news.pts.org.tw"/>
 
 ### Unknown <Site url="news.pts.org.tw" size="sm" />
