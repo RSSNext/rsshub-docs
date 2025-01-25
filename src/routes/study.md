@@ -407,7 +407,7 @@ RSS feed for LMU academic staff job openings.
   | -------- | -------- | -------- | -------- | -------- |
   | 16       | 18       | 19       | 20       | 21       |
 
-## 中国教育考试网 <Site url="www.neea.edu.cn"/>
+## 中国教育考试网 <Site url="www.neea.cn"/>
 
 ### 国内考试动态 <Site url="www.neea.edu.cn" size="sm" />
 
@@ -428,9 +428,9 @@ RSS feed for LMU academic staff job openings.
 |              | 全国外语水平考试（WSK）       | wsk      |
 |              | 书画等级考试（CCPT）          | ccpt     |
 
-### 日本语能力测试(JLPT)通知 <Site url="jlpt.neea.edu.cn" size="sm" />
+### 日本语能力测试JLPT通知 <Site url="jlpt.neea.cn" size="sm" />
 
-<Route namespace="neea" :data='{"path":"/global/jlpt","name":"日本语能力测试(JLPT)通知","url":"jlpt.neea.edu.cn","maintainers":["nczitzk"],"example":"/neea/global/jlpt","parameters":{},"categories":["study"],"features":{"supportRadar":true},"radar":[{"source":["jlpt.neea.edu.cn","jlpt.neea.cn"],"target":"/global/jlpt"}],"location":"jlpt.ts"}' :test='{"code":0}' />
+<Route namespace="neea" :data='{"path":"/jlpt","name":"日本语能力测试JLPT通知","url":"jlpt.neea.cn","maintainers":["nczitzk"],"example":"/neea/jlpt","categories":["study"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jlpt.neea.cn"],"target":"/jlpt"}],"view":0,"location":"jlpt.ts"}' :test='undefined' />
 
 ## 中国计算机职业技术资格考试 <Site url="www.ruankao.org.cn"/>
 
