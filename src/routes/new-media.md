@@ -2819,6 +2819,12 @@ Type 栏目：
   | ----------- | -------- | -------- |
   | 0           | 1        | 2        |
 
+## 蓝点网 <Site url="landiannews.com"/>
+
+### 资讯 <Site url="www.landiannews.com" size="sm" />
+
+<Route namespace="landiannews" :data='{"path":"/","name":"资讯","url":"www.landiannews.com","maintainers":["nczitzk"],"example":"/landiannews","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.landiannews.com"],"target":"/"}],"view":0,"location":"index.ts"}' :test='undefined' />
+
 ## 雷峰网 <Site url="leiphone.com"/>
 
 ### Unknown <Site url="leiphone.com/" size="sm" />
