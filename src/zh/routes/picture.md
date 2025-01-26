@@ -55,6 +55,26 @@ For example:
   -   默认查询多个 tag：`/booru/mmda/tags/full_body%20blue_eyes`
   -   默认查询根据作者查询：`/booru/mmda/tags/user:xxxx`
 
+## CosplayTele <Site url="cosplaytele.com"/>
+
+Cosplaytele - Fast - Security - Free
+
+### Category <Site url="cosplaytele.com/" size="sm" />
+
+<Route namespace="cosplaytele" :data='{"path":"/category/:category","categories":["picture"],"example":"/cosplaytele/category/cosplay","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cosplaytele.com/category/:category"],"target":"/category/:category"}],"name":"Category","maintainers":["AiraNadih"],"url":"cosplaytele.com/","location":"category.ts"}' :test='undefined' />
+
+### Latest <Site url="cosplaytele.com/" size="sm" />
+
+<Route namespace="cosplaytele" :data='{"path":"/","categories":["picture"],"example":"/cosplaytele","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cosplaytele.com/"],"target":""}],"name":"Latest","maintainers":["AiraNadih"],"url":"cosplaytele.com/","location":"latest.ts"}' :test='undefined' />
+
+### Popular <Site url="cosplaytele.com/" size="sm" />
+
+<Route namespace="cosplaytele" :data='{"path":"/popular/:period","categories":["picture"],"example":"/cosplaytele/popular/3","parameters":{"period":"Days"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cosplaytele.com/:period"],"target":"/popular/:period"}],"name":"Popular","maintainers":["AiraNadih"],"url":"cosplaytele.com/","location":"popular.ts"}' :test='undefined' />
+
+### Tag <Site url="cosplaytele.com/" size="sm" />
+
+<Route namespace="cosplaytele" :data='{"path":"/tag/:tag","categories":["picture"],"example":"/cosplaytele/tag/aqua","parameters":{"tag":"Tag"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cosplaytele.com/tag/:tag"],"target":"/tag/:tag"}],"name":"Tag","maintainers":["AiraNadih"],"url":"cosplaytele.com/","location":"tag.ts"}' :test='undefined' />
+
 ## E-Hentai 
 
 For RSS content, specify options in the `routeParams` parameter in query string format to control additional functionality
