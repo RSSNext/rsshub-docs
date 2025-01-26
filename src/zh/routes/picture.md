@@ -16,6 +16,26 @@ If you subscribe to [Abstract Awarded](https://1x.com/gallery/abstract/awarded),
 If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/published), you should fill in the path with the part `wildlife/published` from the page URL `https://1x.com/gallery/wildlife/published`. In this case, the route will be [`/1x/wildlife/published`](https://rsshub.app/1x/wildlife/published).
 :::
 
+## 4KUP <Site url="4kup.net"/>
+
+4KUP - Beautiful Girls Collection
+
+### Category <Site url="4kup.net/" size="sm" />
+
+<Route namespace="4kup" :data='{"path":"/category/:category","categories":["picture"],"example":"/4kup/category/coser","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["4kup.net/category/:category"],"target":"/category/:category"}],"name":"Category","maintainers":["AiraNadih"],"url":"4kup.net/","location":"category.ts"}' :test='undefined' />
+
+### Latest <Site url="4kup.net/" size="sm" />
+
+<Route namespace="4kup" :data='{"path":"/","categories":["picture"],"example":"/4kup","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["4kup.net/"],"target":""}],"name":"Latest","maintainers":["AiraNadih"],"url":"4kup.net/","location":"latest.ts"}' :test='undefined' />
+
+### Popular <Site url="4kup.net/" size="sm" />
+
+<Route namespace="4kup" :data='{"path":"/popular/:period","categories":["picture"],"example":"/4kup/popular/7","parameters":{"period":"Days"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["4kup.net/:period"],"target":"/popular/:period"}],"name":"Popular","maintainers":["AiraNadih"],"url":"4kup.net/","location":"popular.ts"}' :test='undefined' />
+
+### Tag <Site url="4kup.net/" size="sm" />
+
+<Route namespace="4kup" :data='{"path":"/tag/:tag","categories":["picture"],"example":"/4kup/tag/asian","parameters":{"tag":"Tag"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["4kup.net/tag/:tag"],"target":"/tag/:tag"}],"name":"Tag","maintainers":["AiraNadih"],"url":"4kup.net/","location":"tag.ts"}' :test='undefined' />
+
 ## 500px 摄影社区 <Site url="500px.com.cn"/>
 
 ### 部落影集 <Site url="500px.com.cn" size="sm" />
