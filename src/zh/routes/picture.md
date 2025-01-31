@@ -120,57 +120,57 @@ For RSS content, specify options in the `routeParams` parameter in query string 
 
 ### Search <Site url="fantia.jp" size="sm" />
 
-<Route namespace="fantia" :data='{"path":"/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?","categories":["picture","popular"],"view":2,"example":"/fantia/search/posts/all/daily","parameters":{"type":{"description":"Type, see the table below, `posts` by default","options":[{"value":"fanclubs","label":"クリエイター"},{"value":"posts","label":"投稿"},{"value":"products","label":"商品"},{"value":"commissions","label":"コミッション"}],"default":"posts"},"caty":{"description":"Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default","options":[{"value":"all","label":"すべてのクリエイター"},{"value":"illust","label":"イラスト"},{"value":"comic","label":"漫画"},{"value":"cosplay","label":"コスプレ"},{"value":"youtuber","label":"YouTuber・配信者"},{"value":"vtuber","label":"Vtuber"},{"value":"voice","label":"音声作品・ASMR"},{"value":"voiceactor","label":"声優・歌い手"},{"value":"idol","label":"アイドル"},{"value":"anime","label":"アニメ・映像・写真"},{"value":"3d","label":"3D"},{"value":"game","label":"ゲーム制作"},{"value":"music","label":"音楽"},{"value":"novel","label":"小説"},{"value":"doll","label":"ドール"},{"value":"art","label":"アート・デザイン"},{"value":"program","label":"プログラム"},{"value":"handmade","label":"創作・ハンドメイド"},{"value":"history","label":"歴史・評論・情報"},{"value":"railroad","label":"鉄道・旅行・ミリタリー"},{"value":"shop","label":"ショップ"},{"value":"other","label":"その他"}],"default":"all"},"period":{"description":"Ranking period, see the table below, empty by default","options":[{"value":"daily","label":"デイリー"},{"value":"weekly","label":"ウィークリー"},{"value":"monthly","label":"マンスリー"},{"value":"all","label":"全期間"}],"default":""},"order":{"description":"Sorting, see the table below, `更新の新しい順` by default","options":[{"value":"updater","label":"更新の新しい順"},{"value":"update_old","label":"更新の古い順"},{"value":"newer","label":"投稿の新しい順"},{"value":"create_old","label":"投稿の古い順"},{"value":"popular","label":"お気に入り数順"}],"default":"updater"},"rating":{"description":"Rating, see the table below, `すべて` by default","options":[{"value":"all","label":"すべて"},{"value":"general","label":"一般のみ"},{"value":"adult","label":"R18 のみ"}],"default":"all"},"keyword":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["nczitzk"],"description":"Type\n\n  | クリエイター | 投稿  | 商品     | コミッション |\n  | ------------ | ----- | -------- | ------------ |\n  | fanclubs     | posts | products | commissions  |\n\n  Category\n\n  | 分类                   | 分类名     |\n  | ---------------------- | ---------- |\n  | イラスト               | illust     |\n  | 漫画                   | comic      |\n  | コスプレ               | cosplay    |\n  | YouTuber・配信者       | youtuber   |\n  | Vtuber                 | vtuber     |\n  | 音声作品・ASMR         | voice      |\n  | 声優・歌い手           | voiceactor |\n  | アイドル               | idol       |\n  | アニメ・映像・写真     | anime      |\n  | 3D                     | 3d         |\n  | ゲーム制作             | game       |\n  | 音楽                   | music      |\n  | 小説                   | novel      |\n  | ドール                 | doll       |\n  | アート・デザイン       | art        |\n  | プログラム             | program    |\n  | 創作・ハンドメイド     | handmade   |\n  | 歴史・評論・情報       | history    |\n  | 鉄道・旅行・ミリタリー | railroad   |\n  | ショップ               | shop       |\n  | その他                 | other      |\n\n  Ranking period\n\n  | デイリー | ウィークリー | マンスリー | 全期間 |\n  | -------- | ------------ | ---------- | ------ |\n  | daily    | weekly       | monthly    | all    |\n\n  Sorting\n\n  | 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n  | -------------- | ------------ | -------------- | ------------ | -------------- |\n  | updater        | update_old  | newer          | create_old  | popular        |\n\n  Rating\n\n  | すべて | 一般のみ | R18 のみ |\n  | ------ | -------- | -------- |\n  | all    | general  | adult    |","location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="fantia" :data='{"path":"/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?","categories":["picture","popular"],"view":2,"example":"/fantia/search/posts/all/daily","parameters":{"type":{"description":"Type, see the table below, `posts` by default","options":[{"value":"fanclubs","label":"クリエイター"},{"value":"posts","label":"投稿"},{"value":"products","label":"商品"},{"value":"commissions","label":"コミッション"}],"default":"posts"},"caty":{"description":"Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default","options":[{"value":"all","label":"すべてのクリエイター"},{"value":"illust","label":"イラスト"},{"value":"comic","label":"漫画"},{"value":"cosplay","label":"コスプレ"},{"value":"youtuber","label":"YouTuber・配信者"},{"value":"vtuber","label":"Vtuber"},{"value":"voice","label":"音声作品・ASMR"},{"value":"voiceactor","label":"声優・歌い手"},{"value":"idol","label":"アイドル"},{"value":"anime","label":"アニメ・映像・写真"},{"value":"3d","label":"3D"},{"value":"game","label":"ゲーム制作"},{"value":"music","label":"音楽"},{"value":"novel","label":"小説"},{"value":"doll","label":"ドール"},{"value":"art","label":"アート・デザイン"},{"value":"program","label":"プログラム"},{"value":"handmade","label":"創作・ハンドメイド"},{"value":"history","label":"歴史・評論・情報"},{"value":"railroad","label":"鉄道・旅行・ミリタリー"},{"value":"shop","label":"ショップ"},{"value":"other","label":"その他"}],"default":"all"},"period":{"description":"Ranking period, see the table below, empty by default","options":[{"value":"daily","label":"デイリー"},{"value":"weekly","label":"ウィークリー"},{"value":"monthly","label":"マンスリー"},{"value":"all","label":"全期間"}],"default":""},"order":{"description":"Sorting, see the table below, `更新の新しい順` by default","options":[{"value":"updater","label":"更新の新しい順"},{"value":"update_old","label":"更新の古い順"},{"value":"newer","label":"投稿の新しい順"},{"value":"create_old","label":"投稿の古い順"},{"value":"popular","label":"お気に入り数順"}],"default":"updater"},"rating":{"description":"Rating, see the table below, `すべて` by default","options":[{"value":"all","label":"すべて"},{"value":"general","label":"一般のみ"},{"value":"adult","label":"R18 のみ"}],"default":"all"},"keyword":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["nczitzk"],"description":"Type\n\n| クリエイター | 投稿  | 商品     | コミッション |\n| ------------ | ----- | -------- | ------------ |\n| fanclubs     | posts | products | commissions  |\n\n  Category\n\n| 分类                   | 分类名     |\n| ---------------------- | ---------- |\n| イラスト               | illust     |\n| 漫画                   | comic      |\n| コスプレ               | cosplay    |\n| YouTuber・配信者       | youtuber   |\n| Vtuber                 | vtuber     |\n| 音声作品・ASMR         | voice      |\n| 声優・歌い手           | voiceactor |\n| アイドル               | idol       |\n| アニメ・映像・写真     | anime      |\n| 3D                     | 3d         |\n| ゲーム制作             | game       |\n| 音楽                   | music      |\n| 小説                   | novel      |\n| ドール                 | doll       |\n| アート・デザイン       | art        |\n| プログラム             | program    |\n| 創作・ハンドメイド     | handmade   |\n| 歴史・評論・情報       | history    |\n| 鉄道・旅行・ミリタリー | railroad   |\n| ショップ               | shop       |\n| その他                 | other      |\n\n  Ranking period\n\n| デイリー | ウィークリー | マンスリー | 全期間 |\n| -------- | ------------ | ---------- | ------ |\n| daily    | weekly       | monthly    | all    |\n\n  Sorting\n\n| 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n| -------------- | ------------ | -------------- | ------------ | -------------- |\n| updater        | update_old  | newer          | create_old  | popular        |\n\n  Rating\n\n| すべて | 一般のみ | R18 のみ |\n| ------ | -------- | -------- |\n| all    | general  | adult    |","location":"search.ts"}' :test='{"code":0}' />
 
 Type
 
-  | クリエイター | 投稿  | 商品     | コミッション |
-  | ------------ | ----- | -------- | ------------ |
-  | fanclubs     | posts | products | commissions  |
+| クリエイター | 投稿  | 商品     | コミッション |
+| ------------ | ----- | -------- | ------------ |
+| fanclubs     | posts | products | commissions  |
 
   Category
 
-  | 分类                   | 分类名     |
-  | ---------------------- | ---------- |
-  | イラスト               | illust     |
-  | 漫画                   | comic      |
-  | コスプレ               | cosplay    |
-  | YouTuber・配信者       | youtuber   |
-  | Vtuber                 | vtuber     |
-  | 音声作品・ASMR         | voice      |
-  | 声優・歌い手           | voiceactor |
-  | アイドル               | idol       |
-  | アニメ・映像・写真     | anime      |
-  | 3D                     | 3d         |
-  | ゲーム制作             | game       |
-  | 音楽                   | music      |
-  | 小説                   | novel      |
-  | ドール                 | doll       |
-  | アート・デザイン       | art        |
-  | プログラム             | program    |
-  | 創作・ハンドメイド     | handmade   |
-  | 歴史・評論・情報       | history    |
-  | 鉄道・旅行・ミリタリー | railroad   |
-  | ショップ               | shop       |
-  | その他                 | other      |
+| 分类                   | 分类名     |
+| ---------------------- | ---------- |
+| イラスト               | illust     |
+| 漫画                   | comic      |
+| コスプレ               | cosplay    |
+| YouTuber・配信者       | youtuber   |
+| Vtuber                 | vtuber     |
+| 音声作品・ASMR         | voice      |
+| 声優・歌い手           | voiceactor |
+| アイドル               | idol       |
+| アニメ・映像・写真     | anime      |
+| 3D                     | 3d         |
+| ゲーム制作             | game       |
+| 音楽                   | music      |
+| 小説                   | novel      |
+| ドール                 | doll       |
+| アート・デザイン       | art        |
+| プログラム             | program    |
+| 創作・ハンドメイド     | handmade   |
+| 歴史・評論・情報       | history    |
+| 鉄道・旅行・ミリタリー | railroad   |
+| ショップ               | shop       |
+| その他                 | other      |
 
   Ranking period
 
-  | デイリー | ウィークリー | マンスリー | 全期間 |
-  | -------- | ------------ | ---------- | ------ |
-  | daily    | weekly       | monthly    | all    |
+| デイリー | ウィークリー | マンスリー | 全期間 |
+| -------- | ------------ | ---------- | ------ |
+| daily    | weekly       | monthly    | all    |
 
   Sorting
 
-  | 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |
-  | -------------- | ------------ | -------------- | ------------ | -------------- |
-  | updater        | update_old  | newer          | create_old  | popular        |
+| 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |
+| -------------- | ------------ | -------------- | ------------ | -------------- |
+| updater        | update_old  | newer          | create_old  | popular        |
 
   Rating
 
-  | すべて | 一般のみ | R18 のみ |
-  | ------ | -------- | -------- |
-  | all    | general  | adult    |
+| すべて | 一般のみ | R18 のみ |
+| ------ | -------- | -------- |
+| all    | general  | adult    |
 
 ### User Posts <Site url="fantia.jp" size="sm" />
 
@@ -192,11 +192,11 @@ konachan post
 
 ### Popular Recent Posts <Site url="konachan.com" size="sm" />
 
-<Route namespace="konachan" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/konachan/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["konachan.com/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="konachan" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/konachan/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["konachan.com/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n| ------- | -------- | ------- | -------- |\n| 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
-  | ------- | -------- | ------- | -------- |
-  | 1d | 1w | 1m | 1y |
+| ------- | -------- | ------- | -------- |
+| 1d | 1w | 1m | 1y |
 
 ## MM 范 <Site url="95mm.org"/>
 
@@ -206,18 +206,18 @@ konachan post
 
 ### 分类 <Site url="95mm.org/" size="sm" />
 
-<Route namespace="95mm" :data='{"path":"/tab/:tab?","categories":["picture"],"example":"/95mm/tab/热门","parameters":{"tab":"分类，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["95mm.org/"]}],"name":"分类","maintainers":["nczitzk"],"url":"95mm.org/","description":"| 最新 | 热门 | 校花 | 森系 | 清纯 | 童颜 | 嫩模 | 少女 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"tab.ts"}' :test='undefined' />
+<Route namespace="95mm" :data='{"path":"/tab/:tab?","categories":["picture"],"example":"/95mm/tab/热门","parameters":{"tab":"分类，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["95mm.org/"]}],"name":"分类","maintainers":["nczitzk"],"url":"95mm.org/","description":"| 最新 | 热门 | 校花 | 森系 | 清纯 | 童颜 | 嫩模 | 少女 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |","location":"tab.ts"}' :test='undefined' />
 
 | 最新 | 热门 | 校花 | 森系 | 清纯 | 童颜 | 嫩模 | 少女 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 
 ### 集合 <Site url="95mm.org/" size="sm" />
 
-<Route namespace="95mm" :data='{"path":"/category/:category","categories":["picture"],"example":"/95mm/category/1","parameters":{"category":"集合，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["95mm.org/"]}],"name":"集合","maintainers":["nczitzk"],"url":"95mm.org/","description":"| 清纯唯美 | 摄影私房 | 明星写真 | 三次元 | 异域美景 | 性感妖姬 | 游戏主题 | 美女壁纸 |\n  | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- |\n  | 1        | 2        | 4        | 5      | 6        | 7        | 9        | 11       |","location":"category.ts"}' :test='undefined' />
+<Route namespace="95mm" :data='{"path":"/category/:category","categories":["picture"],"example":"/95mm/category/1","parameters":{"category":"集合，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["95mm.org/"]}],"name":"集合","maintainers":["nczitzk"],"url":"95mm.org/","description":"| 清纯唯美 | 摄影私房 | 明星写真 | 三次元 | 异域美景 | 性感妖姬 | 游戏主题 | 美女壁纸 |\n| -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- |\n| 1        | 2        | 4        | 5      | 6        | 7        | 9        | 11       |","location":"category.ts"}' :test='undefined' />
 
 | 清纯唯美 | 摄影私房 | 明星写真 | 三次元 | 异域美景 | 性感妖姬 | 游戏主题 | 美女壁纸 |
-  | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- |
-  | 1        | 2        | 4        | 5      | 6        | 7        | 9        | 11       |
+| -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- |
+| 1        | 2        | 4        | 5      | 6        | 7        | 9        | 11       |
 
 ## Magnum Photos <Site url="magnumphotos.com"/>
 
@@ -369,11 +369,11 @@ yande post
 
 ### Popular Recent Posts <Site url="yande.re" size="sm" />
 
-<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/yande/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["yande.re/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","SettingDust","fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
+<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/yande/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["yande.re/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","SettingDust","fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n| ------- | -------- | ------- | -------- |\n| 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
 
 | 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
-  | ------- | -------- | ------- | -------- |
-  | 1d | 1w | 1m | 1y |
+| ------- | -------- | ------- | -------- |
+| 1d | 1w | 1m | 1y |
 
 ## 北京天文馆 <Site url="www.bjp.org.cn"/>
 

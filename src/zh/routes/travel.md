@@ -50,29 +50,29 @@
 
 ### 信用卡 <Site url="flyert.com/" size="sm" />
 
-<Route namespace="flyert" :data='{"path":"/creditcard/:bank","categories":["travel"],"example":"/flyert/creditcard/zhongxin","parameters":{"bank":"信用卡板块各银行的拼音简称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flyert.com/"]}],"name":"信用卡","maintainers":["nicolaszf"],"url":"flyert.com/","description":"| 信用卡模块 | bank          |\n  | ---------- | ------------- |\n  | 国内信用卡 | creditcard    |\n  | 浦发银行   | pufa          |\n  | 招商银行   | zhaoshang     |\n  | 中信银行   | zhongxin      |\n  | 交通银行   | jiaotong      |\n  | 中国银行   | zhonghang     |\n  | 工商银行   | gongshang     |\n  | 广发银行   | guangfa       |\n  | 农业银行   | nongye        |\n  | 建设银行   | jianshe       |\n  | 汇丰银行   | huifeng       |\n  | 民生银行   | mingsheng     |\n  | 兴业银行   | xingye        |\n  | 花旗银行   | huaqi         |\n  | 上海银行   | shanghai      |\n  | 无卡支付   | wuka          |\n  | 投资理财   | 137           |\n  | 网站权益汇 | 145           |\n  | 境外信用卡 | intcreditcard |","location":"creditcard.ts"}' :test='{"code":0}' />
+<Route namespace="flyert" :data='{"path":"/creditcard/:bank","categories":["travel"],"example":"/flyert/creditcard/zhongxin","parameters":{"bank":"信用卡板块各银行的拼音简称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["flyert.com/"]}],"name":"信用卡","maintainers":["nicolaszf"],"url":"flyert.com/","description":"| 信用卡模块 | bank          |\n| ---------- | ------------- |\n| 国内信用卡 | creditcard    |\n| 浦发银行   | pufa          |\n| 招商银行   | zhaoshang     |\n| 中信银行   | zhongxin      |\n| 交通银行   | jiaotong      |\n| 中国银行   | zhonghang     |\n| 工商银行   | gongshang     |\n| 广发银行   | guangfa       |\n| 农业银行   | nongye        |\n| 建设银行   | jianshe       |\n| 汇丰银行   | huifeng       |\n| 民生银行   | mingsheng     |\n| 兴业银行   | xingye        |\n| 花旗银行   | huaqi         |\n| 上海银行   | shanghai      |\n| 无卡支付   | wuka          |\n| 投资理财   | 137           |\n| 网站权益汇 | 145           |\n| 境外信用卡 | intcreditcard |","location":"creditcard.ts"}' :test='{"code":0}' />
 
 | 信用卡模块 | bank          |
-  | ---------- | ------------- |
-  | 国内信用卡 | creditcard    |
-  | 浦发银行   | pufa          |
-  | 招商银行   | zhaoshang     |
-  | 中信银行   | zhongxin      |
-  | 交通银行   | jiaotong      |
-  | 中国银行   | zhonghang     |
-  | 工商银行   | gongshang     |
-  | 广发银行   | guangfa       |
-  | 农业银行   | nongye        |
-  | 建设银行   | jianshe       |
-  | 汇丰银行   | huifeng       |
-  | 民生银行   | mingsheng     |
-  | 兴业银行   | xingye        |
-  | 花旗银行   | huaqi         |
-  | 上海银行   | shanghai      |
-  | 无卡支付   | wuka          |
-  | 投资理财   | 137           |
-  | 网站权益汇 | 145           |
-  | 境外信用卡 | intcreditcard |
+| ---------- | ------------- |
+| 国内信用卡 | creditcard    |
+| 浦发银行   | pufa          |
+| 招商银行   | zhaoshang     |
+| 中信银行   | zhongxin      |
+| 交通银行   | jiaotong      |
+| 中国银行   | zhonghang     |
+| 工商银行   | gongshang     |
+| 广发银行   | guangfa       |
+| 农业银行   | nongye        |
+| 建设银行   | jianshe       |
+| 汇丰银行   | huifeng       |
+| 民生银行   | mingsheng     |
+| 兴业银行   | xingye        |
+| 花旗银行   | huaqi         |
+| 上海银行   | shanghai      |
+| 无卡支付   | wuka          |
+| 投资理财   | 137           |
+| 网站权益汇 | 145           |
+| 境外信用卡 | intcreditcard |
 
 ### 优惠信息 <Site url="flyert.com/" size="sm" />
 
@@ -100,9 +100,9 @@
 
 ### 政治外交 <Site url="www.nippon.com" size="sm" />
 
-<Route namespace="nippon" :data='{"path":"/:category?","categories":["travel"],"example":"/nippon/Politics","parameters":{"category":"默认政治，可选如下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nippon.com/nippon/:category?","www.nippon.com/cn"]}],"name":"政治外交","description":"| 政治     | 经济    | 社会    | 展览预告 | 焦点专题           | 深度报道 | 话题         | 日本信息库 | 日本一蹩      | 人物访谈 | 编辑部通告    |\n  | -------- | ------- | ------- | -------- | ------------------ | -------- | ------------ | ---------- | ------------- | -------- | ------------- |\n  | Politics | Economy | Society | Culture  | Science,Technology | In-depth | japan-topics | japan-data | japan-glances | People   | Announcements |","maintainers":["laampui"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="nippon" :data='{"path":"/:category?","categories":["travel"],"example":"/nippon/Politics","parameters":{"category":"默认政治，可选如下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nippon.com/nippon/:category?","www.nippon.com/cn"]}],"name":"政治外交","description":"| 政治     | 经济    | 社会    | 展览预告 | 焦点专题           | 深度报道 | 话题         | 日本信息库 | 日本一蹩      | 人物访谈 | 编辑部通告    |\n| -------- | ------- | ------- | -------- | ------------------ | -------- | ------------ | ---------- | ------------- | -------- | ------------- |\n| Politics | Economy | Society | Culture  | Science,Technology | In-depth | japan-topics | japan-data | japan-glances | People   | Announcements |","maintainers":["laampui"],"location":"index.ts"}' :test='{"code":0}' />
 
 | 政治     | 经济    | 社会    | 展览预告 | 焦点专题           | 深度报道 | 话题         | 日本信息库 | 日本一蹩      | 人物访谈 | 编辑部通告    |
-  | -------- | ------- | ------- | -------- | ------------------ | -------- | ------------ | ---------- | ------------- | -------- | ------------- |
-  | Politics | Economy | Society | Culture  | Science,Technology | In-depth | japan-topics | japan-data | japan-glances | People   | Announcements |
+| -------- | ------- | ------- | -------- | ------------------ | -------- | ------------ | ---------- | ------------- | -------- | ------------- |
+| Politics | Economy | Society | Culture  | Science,Technology | In-depth | japan-topics | japan-data | japan-glances | People   | Announcements |
 

@@ -4,19 +4,19 @@
 
 ### 资讯热榜 <Site url="36kr.com" size="sm" />
 
-<Route namespace="36kr" :data='{"path":"/hot-list/:category?","categories":["new-media","popular"],"example":"/36kr/hot-list","parameters":{"category":"分类，默认为24小时热榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["36kr.com/hot-list/:category","36kr.com/"],"target":"/hot-list/:category"}],"name":"资讯热榜","maintainers":["nczitzk"],"description":"| 24 小时热榜 | 资讯人气榜 | 资讯综合榜 | 资讯收藏榜 |\n  | ----------- | ---------- | ---------- | ---------- |\n  | 24          | renqi      | zonghe     | shoucang   |","location":"hot-list.ts"}' :test='undefined' />
+<Route namespace="36kr" :data='{"path":"/hot-list/:category?","categories":["new-media","popular"],"example":"/36kr/hot-list","parameters":{"category":"分类，默认为24小时热榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["36kr.com/hot-list/:category","36kr.com/"],"target":"/hot-list/:category"}],"name":"资讯热榜","maintainers":["nczitzk"],"description":"| 24 小时热榜 | 资讯人气榜 | 资讯综合榜 | 资讯收藏榜 |\n| ----------- | ---------- | ---------- | ---------- |\n| 24          | renqi      | zonghe     | shoucang   |","location":"hot-list.ts"}' :test='undefined' />
 
 | 24 小时热榜 | 资讯人气榜 | 资讯综合榜 | 资讯收藏榜 |
-  | ----------- | ---------- | ---------- | ---------- |
-  | 24          | renqi      | zonghe     | shoucang   |
+| ----------- | ---------- | ---------- | ---------- |
+| 24          | renqi      | zonghe     | shoucang   |
 
 ### 资讯, 快讯, 用户文章, 主题文章, 专题文章, 搜索文章, 搜索快讯 <Site url="36kr.com" size="sm" />
 
-<Route namespace="36kr" :data='{"path":"/:category/:subCategory?/:keyword?","categories":["new-media","popular"],"example":"/36kr/newsflashes","parameters":{"category":"分类，必填项","subCategory":"子分类，选填项，目的是为了兼容老逻辑","keyword":"关键词，选填项，仅搜索文章/快讯时有效"},"name":"资讯, 快讯, 用户文章, 主题文章, 专题文章, 搜索文章, 搜索快讯","maintainers":["nczitzk","fashioncj"],"description":"| 最新资讯频道 | 快讯 | 推荐资讯 | 生活 | 房产 | 职场 | 搜索文章 | 搜索快讯 |\n  | ------- | -------- | -------- | -------- | -------- | --------| -------- | -------- |\n  | news | newsflashes | recommend | life | estate | workplace | search/articles/关键词 | search/articles/关键词 |","location":"index.ts"}' :test='undefined' />
+<Route namespace="36kr" :data='{"path":"/:category/:subCategory?/:keyword?","categories":["new-media","popular"],"example":"/36kr/newsflashes","parameters":{"category":"分类，必填项","subCategory":"子分类，选填项，目的是为了兼容老逻辑","keyword":"关键词，选填项，仅搜索文章/快讯时有效"},"name":"资讯, 快讯, 用户文章, 主题文章, 专题文章, 搜索文章, 搜索快讯","maintainers":["nczitzk","fashioncj"],"description":"| 最新资讯频道 | 快讯 | 推荐资讯 | 生活 | 房产 | 职场 | 搜索文章 | 搜索快讯 |\n| ------- | -------- | -------- | -------- | -------- | --------| -------- | -------- |\n| news | newsflashes | recommend | life | estate | workplace | search/articles/关键词 | search/articles/关键词 |","location":"index.ts"}' :test='undefined' />
 
 | 最新资讯频道 | 快讯 | 推荐资讯 | 生活 | 房产 | 职场 | 搜索文章 | 搜索快讯 |
-  | ------- | -------- | -------- | -------- | -------- | --------| -------- | -------- |
-  | news | newsflashes | recommend | life | estate | workplace | search/articles/关键词 | search/articles/关键词 |
+| ------- | -------- | -------- | -------- | -------- | --------| -------- | -------- |
+| news | newsflashes | recommend | life | estate | workplace | search/articles/关键词 | search/articles/关键词 |
 
 ## 500px 摄影社区 <Site url="500px.com.cn"/>
 
@@ -37,19 +37,19 @@
 
 ### 文章 <Site url="www.acfun.cn" size="sm" />
 
-<Route namespace="acfun" :data='{"path":"/article/:categoryId/:sortType?/:timeRange?","categories":["anime","popular"],"view":0,"example":"/acfun/article/110","parameters":{"categoryId":{"description":"分区 ID","options":[{"value":"73","label":"生活情感"},{"value":"74","label":"动漫文化"},{"value":"75","label":"漫画文学"},{"value":"110","label":"综合"},{"value":"164","label":"游戏"},{"value":"184","label":"二次元画师"}]},"sortType":{"description":"排序","options":[{"value":"createTime","label":"最新发表"},{"value":"lastCommentTime","label":"最新动态"},{"value":"hotScore","label":"最热文章"}],"default":"createTime"},"timeRange":{"description":"时间范围，仅在排序是 `hotScore` 有效","options":[{"value":"all","label":"时间不限"},{"value":"oneDay","label":"24 小时"},{"value":"threeDay","label":"三天"},{"value":"oneWeek","label":"一周"},{"value":"oneMonth","label":"一个月"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["TonyRL"],"description":"| 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |\n  | ---------- | ---- | -------- | ---- | -------- | -------- |\n  | 184        | 110  | 73       | 164  | 74       | 75       |\n\n  | 最新发表   | 最新动态        | 最热文章 |\n  | ---------- | --------------- | -------- |\n  | createTime | lastCommentTime | hotScore |\n\n  | 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |\n  | -------- | ------- | -------- | ------- | -------- |\n  | all      | oneDay  | threeDay | oneWeek | oneMonth |","location":"article.ts"}' :test='{"code":0}' />
+<Route namespace="acfun" :data='{"path":"/article/:categoryId/:sortType?/:timeRange?","categories":["anime","popular"],"view":0,"example":"/acfun/article/110","parameters":{"categoryId":{"description":"分区 ID","options":[{"value":"73","label":"生活情感"},{"value":"74","label":"动漫文化"},{"value":"75","label":"漫画文学"},{"value":"110","label":"综合"},{"value":"164","label":"游戏"},{"value":"184","label":"二次元画师"}]},"sortType":{"description":"排序","options":[{"value":"createTime","label":"最新发表"},{"value":"lastCommentTime","label":"最新动态"},{"value":"hotScore","label":"最热文章"}],"default":"createTime"},"timeRange":{"description":"时间范围，仅在排序是 `hotScore` 有效","options":[{"value":"all","label":"时间不限"},{"value":"oneDay","label":"24 小时"},{"value":"threeDay","label":"三天"},{"value":"oneWeek","label":"一周"},{"value":"oneMonth","label":"一个月"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["TonyRL"],"description":"| 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |\n| ---------- | ---- | -------- | ---- | -------- | -------- |\n| 184        | 110  | 73       | 164  | 74       | 75       |\n\n| 最新发表   | 最新动态        | 最热文章 |\n| ---------- | --------------- | -------- |\n| createTime | lastCommentTime | hotScore |\n\n| 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |\n| -------- | ------- | -------- | ------- | -------- |\n| all      | oneDay  | threeDay | oneWeek | oneMonth |","location":"article.ts"}' :test='{"code":0}' />
 
 | 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |
-  | ---------- | ---- | -------- | ---- | -------- | -------- |
-  | 184        | 110  | 73       | 164  | 74       | 75       |
+| ---------- | ---- | -------- | ---- | -------- | -------- |
+| 184        | 110  | 73       | 164  | 74       | 75       |
 
-  | 最新发表   | 最新动态        | 最热文章 |
-  | ---------- | --------------- | -------- |
-  | createTime | lastCommentTime | hotScore |
+| 最新发表   | 最新动态        | 最热文章 |
+| ---------- | --------------- | -------- |
+| createTime | lastCommentTime | hotScore |
 
-  | 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |
-  | -------- | ------- | -------- | ------- | -------- |
-  | all      | oneDay  | threeDay | oneWeek | oneMonth |
+| 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |
+| -------- | ------- | -------- | ------- | -------- |
+| all      | oneDay  | threeDay | oneWeek | oneMonth |
 
 ### 用户投稿 <Site url="www.acfun.cn" size="sm" />
 
@@ -73,7 +73,7 @@ Supported types: Essays, Videos, and Audio.
 
 ### 标签 <Site url="top.aibase.com" size="sm" />
 
-<Route namespace="aibase" :data='{"path":"/topic/:id?/:filter?","name":"标签","url":"top.aibase.com","maintainers":["nczitzk"],"example":"/aibase/topic","parameters":{"id":"标签，默认为空，即全部产品，可在对应标签页 URL 中找到","filter":"过滤器，默认为 `id` 即最新，可选 `pv` 即热门"},"description":"::: tip\n  若订阅 [AI](https://top.aibase.com/topic/AI)，网址为 `https://top.aibase.com/topic/AI`。截取 `https://top.aibase.com/topic` 到末尾的部分 `AI` 作为参数填入，此时路由为 [`/aibase/topic/AI`](https://rsshub.app/aibase/topic/AI)。\n:::\n\n::: tip\n  此处查看 [全部标签](https://top.aibase.com/topic)\n:::\n\n  <details>\n    <summary>更多标签</summary>\n\n    | [AI](https://top.aibase.com/topic/AI)                                                               | [人工智能](https://top.aibase.com/topic/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)                       | [图像生成](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90)            | [自动化](https://top.aibase.com/topic/%E8%87%AA%E5%8A%A8%E5%8C%96)                       | [AI 助手](https://top.aibase.com/topic/AI%E5%8A%A9%E6%89%8B)                  |\n    | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |\n    | [聊天机器人](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA)            | [个性化](https://top.aibase.com/topic/%E4%B8%AA%E6%80%A7%E5%8C%96)                                  | [社交媒体](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93)            | [图像处理](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86)            | [数据分析](https://top.aibase.com/topic/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90) |\n    | [自然语言处理](https://top.aibase.com/topic/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86) | [聊天](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9)                                             | [机器学习](https://top.aibase.com/topic/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)            | [教育](https://top.aibase.com/topic/%E6%95%99%E8%82%B2)                                  | [内容创作](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C) |\n    | [生产力](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B)                                  | [设计](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1)                                             | [ChatGPT](https://top.aibase.com/topic/ChatGPT)                                          | [创意](https://top.aibase.com/topic/%E5%88%9B%E6%84%8F)                                  | [开源](https://top.aibase.com/topic/%E5%BC%80%E6%BA%90)                       |\n    | [写作](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C)                                             | [效率助手](https://top.aibase.com/topic/%E6%95%88%E7%8E%87%E5%8A%A9%E6%89%8B)                       | [学习](https://top.aibase.com/topic/%E5%AD%A6%E4%B9%A0)                                  | [插件](https://top.aibase.com/topic/%E6%8F%92%E4%BB%B6)                                  | [翻译](https://top.aibase.com/topic/%E7%BF%BB%E8%AF%91)                       |\n    | [团队协作](https://top.aibase.com/topic/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C)                       | [SEO](https://top.aibase.com/topic/SEO)                                                             | [营销](https://top.aibase.com/topic/%E8%90%A5%E9%94%80)                                  | [内容生成](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90)            | [AI 技术](https://top.aibase.com/topic/AI%E6%8A%80%E6%9C%AF)                  |\n    | [AI 工具](https://top.aibase.com/topic/AI%E5%B7%A5%E5%85%B7)                                        | [智能助手](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B)                       | [深度学习](https://top.aibase.com/topic/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)            | [多语言支持](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81) | [视频](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91)                       |\n    | [艺术](https://top.aibase.com/topic/%E8%89%BA%E6%9C%AF)                                             | [文本生成](https://top.aibase.com/topic/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)                       | [开发编程](https://top.aibase.com/topic/%E5%BC%80%E5%8F%91%E7%BC%96%E7%A8%8B)            | [协作](https://top.aibase.com/topic/%E5%8D%8F%E4%BD%9C)                                  | [语言模型](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) |\n    | [工具](https://top.aibase.com/topic/%E5%B7%A5%E5%85%B7)                                             | [销售](https://top.aibase.com/topic/%E9%94%80%E5%94%AE)                                             | [生产力工具](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7) | [AI 写作](https://top.aibase.com/topic/AI%E5%86%99%E4%BD%9C)                             | [创作](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C)                       |\n    | [工作效率](https://top.aibase.com/topic/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87)                       | [无代码](https://top.aibase.com/topic/%E6%97%A0%E4%BB%A3%E7%A0%81)                                  | [隐私保护](https://top.aibase.com/topic/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4)            | [视频编辑](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91)            | [摘要](https://top.aibase.com/topic/%E6%91%98%E8%A6%81)                       |\n    | [多语言](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80)                                  | [求职](https://top.aibase.com/topic/%E6%B1%82%E8%81%8C)                                             | [GPT](https://top.aibase.com/topic/GPT)                                                  | [音乐](https://top.aibase.com/topic/%E9%9F%B3%E4%B9%90)                                  | [视频创作](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C) |\n    | [设计工具](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7)                       | [搜索](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2)                                             | [写作工具](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7)            | [视频生成](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90)            | [招聘](https://top.aibase.com/topic/%E6%8B%9B%E8%81%98)                       |\n    | [代码生成](https://top.aibase.com/topic/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90)                       | [大型语言模型](https://top.aibase.com/topic/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) | [语音识别](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB)            | [编程](https://top.aibase.com/topic/%E7%BC%96%E7%A8%8B)                                  | [在线工具](https://top.aibase.com/topic/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7) |\n    | [API](https://top.aibase.com/topic/API)                                                             | [趣味](https://top.aibase.com/topic/%E8%B6%A3%E5%91%B3)                                             | [客户支持](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81)            | [语音合成](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90)            | [图像](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F)                       |\n    | [电子商务](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1)                       | [SEO 优化](https://top.aibase.com/topic/SEO%E4%BC%98%E5%8C%96)                                      | [AI 辅助](https://top.aibase.com/topic/AI%E8%BE%85%E5%8A%A9)                             | [AI 生成](https://top.aibase.com/topic/AI%E7%94%9F%E6%88%90)                             | [创作工具](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7) |\n    | [免费](https://top.aibase.com/topic/%E5%85%8D%E8%B4%B9)                                             | [LinkedIn](https://top.aibase.com/topic/LinkedIn)                                                   | [博客](https://top.aibase.com/topic/%E5%8D%9A%E5%AE%A2)                                  | [写作助手](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B)            | [助手](https://top.aibase.com/topic/%E5%8A%A9%E6%89%8B)                       |\n    | [智能](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD)                                             | [健康](https://top.aibase.com/topic/%E5%81%A5%E5%BA%B7)                                             | [多模态](https://top.aibase.com/topic/%E5%A4%9A%E6%A8%A1%E6%80%81)                       | [任务管理](https://top.aibase.com/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86)            | [电子邮件](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6) |\n    | [笔记](https://top.aibase.com/topic/%E7%AC%94%E8%AE%B0)                                             | [搜索引擎](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E)                       | [计算机视觉](https://top.aibase.com/topic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89) | [社区](https://top.aibase.com/topic/%E7%A4%BE%E5%8C%BA)                                  | [效率](https://top.aibase.com/topic/%E6%95%88%E7%8E%87)                       |\n    | [知识管理](https://top.aibase.com/topic/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86)                       | [LLM](https://top.aibase.com/topic/LLM)                                                             | [智能聊天](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E8%81%8A%E5%A4%A9)            | [社交](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4)                                  | [语言学习](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0) |\n    | [娱乐](https://top.aibase.com/topic/%E5%A8%B1%E4%B9%90)                                             | [简历](https://top.aibase.com/topic/%E7%AE%80%E5%8E%86)                                             | [OpenAI](https://top.aibase.com/topic/OpenAI)                                            | [客户服务](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1)            | [室内设计](https://top.aibase.com/topic/%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1) |\n  </details>\n    ","categories":["new-media","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["top.aibase.com/topic/:id"]},{"title":"AI","source":["top.aibase.com/topic/AI"],"target":"/topic/AI"},{"title":"人工智能","source":["top.aibase.com/topic/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"],"target":"/topic/人工智能"},{"title":"图像生成","source":["top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90"],"target":"/topic/图像生成"},{"title":"自动化","source":["top.aibase.com/topic/%E8%87%AA%E5%8A%A8%E5%8C%96"],"target":"/topic/自动化"},{"title":"AI助手","source":["top.aibase.com/topic/AI%E5%8A%A9%E6%89%8B"],"target":"/topic/AI助手"},{"title":"聊天机器人","source":["top.aibase.com/topic/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"],"target":"/topic/聊天机器人"},{"title":"个性化","source":["top.aibase.com/topic/%E4%B8%AA%E6%80%A7%E5%8C%96"],"target":"/topic/个性化"},{"title":"社交媒体","source":["top.aibase.com/topic/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93"],"target":"/topic/社交媒体"},{"title":"图像处理","source":["top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86"],"target":"/topic/图像处理"},{"title":"数据分析","source":["top.aibase.com/topic/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"],"target":"/topic/数据分析"},{"title":"自然语言处理","source":["top.aibase.com/topic/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86"],"target":"/topic/自然语言处理"},{"title":"聊天","source":["top.aibase.com/topic/%E8%81%8A%E5%A4%A9"],"target":"/topic/聊天"},{"title":"机器学习","source":["top.aibase.com/topic/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"],"target":"/topic/机器学习"},{"title":"教育","source":["top.aibase.com/topic/%E6%95%99%E8%82%B2"],"target":"/topic/教育"},{"title":"内容创作","source":["top.aibase.com/topic/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C"],"target":"/topic/内容创作"},{"title":"生产力","source":["top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B"],"target":"/topic/生产力"},{"title":"设计","source":["top.aibase.com/topic/%E8%AE%BE%E8%AE%A1"],"target":"/topic/设计"},{"title":"ChatGPT","source":["top.aibase.com/topic/ChatGPT"],"target":"/topic/ChatGPT"},{"title":"创意","source":["top.aibase.com/topic/%E5%88%9B%E6%84%8F"],"target":"/topic/创意"},{"title":"开源","source":["top.aibase.com/topic/%E5%BC%80%E6%BA%90"],"target":"/topic/开源"},{"title":"写作","source":["top.aibase.com/topic/%E5%86%99%E4%BD%9C"],"target":"/topic/写作"},{"title":"效率助手","source":["top.aibase.com/topic/%E6%95%88%E7%8E%87%E5%8A%A9%E6%89%8B"],"target":"/topic/效率助手"},{"title":"学习","source":["top.aibase.com/topic/%E5%AD%A6%E4%B9%A0"],"target":"/topic/学习"},{"title":"插件","source":["top.aibase.com/topic/%E6%8F%92%E4%BB%B6"],"target":"/topic/插件"},{"title":"翻译","source":["top.aibase.com/topic/%E7%BF%BB%E8%AF%91"],"target":"/topic/翻译"},{"title":"团队协作","source":["top.aibase.com/topic/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C"],"target":"/topic/团队协作"},{"title":"SEO","source":["top.aibase.com/topic/SEO"],"target":"/topic/SEO"},{"title":"营销","source":["top.aibase.com/topic/%E8%90%A5%E9%94%80"],"target":"/topic/营销"},{"title":"内容生成","source":["top.aibase.com/topic/%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90"],"target":"/topic/内容生成"},{"title":"AI技术","source":["top.aibase.com/topic/AI%E6%8A%80%E6%9C%AF"],"target":"/topic/AI技术"},{"title":"AI工具","source":["top.aibase.com/topic/AI%E5%B7%A5%E5%85%B7"],"target":"/topic/AI工具"},{"title":"智能助手","source":["top.aibase.com/topic/%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B"],"target":"/topic/智能助手"},{"title":"深度学习","source":["top.aibase.com/topic/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"],"target":"/topic/深度学习"},{"title":"多语言支持","source":["top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81"],"target":"/topic/多语言支持"},{"title":"视频","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91"],"target":"/topic/视频"},{"title":"艺术","source":["top.aibase.com/topic/%E8%89%BA%E6%9C%AF"],"target":"/topic/艺术"},{"title":"文本生成","source":["top.aibase.com/topic/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90"],"target":"/topic/文本生成"},{"title":"开发编程","source":["top.aibase.com/topic/%E5%BC%80%E5%8F%91%E7%BC%96%E7%A8%8B"],"target":"/topic/开发编程"},{"title":"协作","source":["top.aibase.com/topic/%E5%8D%8F%E4%BD%9C"],"target":"/topic/协作"},{"title":"语言模型","source":["top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"],"target":"/topic/语言模型"},{"title":"工具","source":["top.aibase.com/topic/%E5%B7%A5%E5%85%B7"],"target":"/topic/工具"},{"title":"销售","source":["top.aibase.com/topic/%E9%94%80%E5%94%AE"],"target":"/topic/销售"},{"title":"生产力工具","source":["top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7"],"target":"/topic/生产力工具"},{"title":"AI写作","source":["top.aibase.com/topic/AI%E5%86%99%E4%BD%9C"],"target":"/topic/AI写作"},{"title":"创作","source":["top.aibase.com/topic/%E5%88%9B%E4%BD%9C"],"target":"/topic/创作"},{"title":"工作效率","source":["top.aibase.com/topic/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87"],"target":"/topic/工作效率"},{"title":"无代码","source":["top.aibase.com/topic/%E6%97%A0%E4%BB%A3%E7%A0%81"],"target":"/topic/无代码"},{"title":"隐私保护","source":["top.aibase.com/topic/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4"],"target":"/topic/隐私保护"},{"title":"视频编辑","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91"],"target":"/topic/视频编辑"},{"title":"摘要","source":["top.aibase.com/topic/%E6%91%98%E8%A6%81"],"target":"/topic/摘要"},{"title":"多语言","source":["top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80"],"target":"/topic/多语言"},{"title":"求职","source":["top.aibase.com/topic/%E6%B1%82%E8%81%8C"],"target":"/topic/求职"},{"title":"GPT","source":["top.aibase.com/topic/GPT"],"target":"/topic/GPT"},{"title":"音乐","source":["top.aibase.com/topic/%E9%9F%B3%E4%B9%90"],"target":"/topic/音乐"},{"title":"视频创作","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C"],"target":"/topic/视频创作"},{"title":"设计工具","source":["top.aibase.com/topic/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7"],"target":"/topic/设计工具"},{"title":"搜索","source":["top.aibase.com/topic/%E6%90%9C%E7%B4%A2"],"target":"/topic/搜索"},{"title":"写作工具","source":["top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7"],"target":"/topic/写作工具"},{"title":"视频生成","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90"],"target":"/topic/视频生成"},{"title":"招聘","source":["top.aibase.com/topic/%E6%8B%9B%E8%81%98"],"target":"/topic/招聘"},{"title":"代码生成","source":["top.aibase.com/topic/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90"],"target":"/topic/代码生成"},{"title":"大型语言模型","source":["top.aibase.com/topic/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"],"target":"/topic/大型语言模型"},{"title":"语音识别","source":["top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB"],"target":"/topic/语音识别"},{"title":"编程","source":["top.aibase.com/topic/%E7%BC%96%E7%A8%8B"],"target":"/topic/编程"},{"title":"在线工具","source":["top.aibase.com/topic/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7"],"target":"/topic/在线工具"},{"title":"API","source":["top.aibase.com/topic/API"],"target":"/topic/API"},{"title":"趣味","source":["top.aibase.com/topic/%E8%B6%A3%E5%91%B3"],"target":"/topic/趣味"},{"title":"客户支持","source":["top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81"],"target":"/topic/客户支持"},{"title":"语音合成","source":["top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90"],"target":"/topic/语音合成"},{"title":"图像","source":["top.aibase.com/topic/%E5%9B%BE%E5%83%8F"],"target":"/topic/图像"},{"title":"电子商务","source":["top.aibase.com/topic/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1"],"target":"/topic/电子商务"},{"title":"SEO优化","source":["top.aibase.com/topic/SEO%E4%BC%98%E5%8C%96"],"target":"/topic/SEO优化"},{"title":"AI辅助","source":["top.aibase.com/topic/AI%E8%BE%85%E5%8A%A9"],"target":"/topic/AI辅助"},{"title":"AI生成","source":["top.aibase.com/topic/AI%E7%94%9F%E6%88%90"],"target":"/topic/AI生成"},{"title":"创作工具","source":["top.aibase.com/topic/%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7"],"target":"/topic/创作工具"},{"title":"免费","source":["top.aibase.com/topic/%E5%85%8D%E8%B4%B9"],"target":"/topic/免费"},{"title":"LinkedIn","source":["top.aibase.com/topic/LinkedIn"],"target":"/topic/LinkedIn"},{"title":"博客","source":["top.aibase.com/topic/%E5%8D%9A%E5%AE%A2"],"target":"/topic/博客"},{"title":"写作助手","source":["top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B"],"target":"/topic/写作助手"},{"title":"助手","source":["top.aibase.com/topic/%E5%8A%A9%E6%89%8B"],"target":"/topic/助手"},{"title":"智能","source":["top.aibase.com/topic/%E6%99%BA%E8%83%BD"],"target":"/topic/智能"},{"title":"健康","source":["top.aibase.com/topic/%E5%81%A5%E5%BA%B7"],"target":"/topic/健康"},{"title":"多模态","source":["top.aibase.com/topic/%E5%A4%9A%E6%A8%A1%E6%80%81"],"target":"/topic/多模态"},{"title":"任务管理","source":["top.aibase.com/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86"],"target":"/topic/任务管理"},{"title":"电子邮件","source":["top.aibase.com/topic/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6"],"target":"/topic/电子邮件"},{"title":"笔记","source":["top.aibase.com/topic/%E7%AC%94%E8%AE%B0"],"target":"/topic/笔记"},{"title":"搜索引擎","source":["top.aibase.com/topic/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E"],"target":"/topic/搜索引擎"},{"title":"计算机视觉","source":["top.aibase.com/topic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89"],"target":"/topic/计算机视觉"},{"title":"社区","source":["top.aibase.com/topic/%E7%A4%BE%E5%8C%BA"],"target":"/topic/社区"},{"title":"效率","source":["top.aibase.com/topic/%E6%95%88%E7%8E%87"],"target":"/topic/效率"},{"title":"知识管理","source":["top.aibase.com/topic/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86"],"target":"/topic/知识管理"},{"title":"LLM","source":["top.aibase.com/topic/LLM"],"target":"/topic/LLM"},{"title":"智能聊天","source":["top.aibase.com/topic/%E6%99%BA%E8%83%BD%E8%81%8A%E5%A4%A9"],"target":"/topic/智能聊天"},{"title":"社交","source":["top.aibase.com/topic/%E7%A4%BE%E4%BA%A4"],"target":"/topic/社交"},{"title":"语言学习","source":["top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0"],"target":"/topic/语言学习"},{"title":"娱乐","source":["top.aibase.com/topic/%E5%A8%B1%E4%B9%90"],"target":"/topic/娱乐"},{"title":"简历","source":["top.aibase.com/topic/%E7%AE%80%E5%8E%86"],"target":"/topic/简历"},{"title":"OpenAI","source":["top.aibase.com/topic/OpenAI"],"target":"/topic/OpenAI"},{"title":"客户服务","source":["top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1"],"target":"/topic/客户服务"},{"title":"室内设计","source":["top.aibase.com/topic/%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1"],"target":"/topic/室内设计"}],"location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="aibase" :data='{"path":"/topic/:id?/:filter?","name":"标签","url":"top.aibase.com","maintainers":["nczitzk"],"example":"/aibase/topic","parameters":{"id":"标签，默认为空，即全部产品，可在对应标签页 URL 中找到","filter":"过滤器，默认为 `id` 即最新，可选 `pv` 即热门"},"description":"::: tip\n  若订阅 [AI](https://top.aibase.com/topic/AI)，网址为 `https://top.aibase.com/topic/AI`。截取 `https://top.aibase.com/topic` 到末尾的部分 `AI` 作为参数填入，此时路由为 [`/aibase/topic/AI`](https://rsshub.app/aibase/topic/AI)。\n:::\n\n::: tip\n  此处查看 [全部标签](https://top.aibase.com/topic)\n:::\n\n<details>\n<summary>更多标签</summary>\n\n| [AI](https://top.aibase.com/topic/AI)                                                               | [人工智能](https://top.aibase.com/topic/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)                       | [图像生成](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90)            | [自动化](https://top.aibase.com/topic/%E8%87%AA%E5%8A%A8%E5%8C%96)                       | [AI 助手](https://top.aibase.com/topic/AI%E5%8A%A9%E6%89%8B)                  |\n| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |\n| [聊天机器人](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA)            | [个性化](https://top.aibase.com/topic/%E4%B8%AA%E6%80%A7%E5%8C%96)                                  | [社交媒体](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93)            | [图像处理](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86)            | [数据分析](https://top.aibase.com/topic/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90) |\n| [自然语言处理](https://top.aibase.com/topic/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86) | [聊天](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9)                                             | [机器学习](https://top.aibase.com/topic/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)            | [教育](https://top.aibase.com/topic/%E6%95%99%E8%82%B2)                                  | [内容创作](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C) |\n| [生产力](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B)                                  | [设计](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1)                                             | [ChatGPT](https://top.aibase.com/topic/ChatGPT)                                          | [创意](https://top.aibase.com/topic/%E5%88%9B%E6%84%8F)                                  | [开源](https://top.aibase.com/topic/%E5%BC%80%E6%BA%90)                       |\n| [写作](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C)                                             | [效率助手](https://top.aibase.com/topic/%E6%95%88%E7%8E%87%E5%8A%A9%E6%89%8B)                       | [学习](https://top.aibase.com/topic/%E5%AD%A6%E4%B9%A0)                                  | [插件](https://top.aibase.com/topic/%E6%8F%92%E4%BB%B6)                                  | [翻译](https://top.aibase.com/topic/%E7%BF%BB%E8%AF%91)                       |\n| [团队协作](https://top.aibase.com/topic/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C)                       | [SEO](https://top.aibase.com/topic/SEO)                                                             | [营销](https://top.aibase.com/topic/%E8%90%A5%E9%94%80)                                  | [内容生成](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90)            | [AI 技术](https://top.aibase.com/topic/AI%E6%8A%80%E6%9C%AF)                  |\n| [AI 工具](https://top.aibase.com/topic/AI%E5%B7%A5%E5%85%B7)                                        | [智能助手](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B)                       | [深度学习](https://top.aibase.com/topic/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)            | [多语言支持](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81) | [视频](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91)                       |\n| [艺术](https://top.aibase.com/topic/%E8%89%BA%E6%9C%AF)                                             | [文本生成](https://top.aibase.com/topic/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)                       | [开发编程](https://top.aibase.com/topic/%E5%BC%80%E5%8F%91%E7%BC%96%E7%A8%8B)            | [协作](https://top.aibase.com/topic/%E5%8D%8F%E4%BD%9C)                                  | [语言模型](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) |\n| [工具](https://top.aibase.com/topic/%E5%B7%A5%E5%85%B7)                                             | [销售](https://top.aibase.com/topic/%E9%94%80%E5%94%AE)                                             | [生产力工具](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7) | [AI 写作](https://top.aibase.com/topic/AI%E5%86%99%E4%BD%9C)                             | [创作](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C)                       |\n| [工作效率](https://top.aibase.com/topic/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87)                       | [无代码](https://top.aibase.com/topic/%E6%97%A0%E4%BB%A3%E7%A0%81)                                  | [隐私保护](https://top.aibase.com/topic/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4)            | [视频编辑](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91)            | [摘要](https://top.aibase.com/topic/%E6%91%98%E8%A6%81)                       |\n| [多语言](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80)                                  | [求职](https://top.aibase.com/topic/%E6%B1%82%E8%81%8C)                                             | [GPT](https://top.aibase.com/topic/GPT)                                                  | [音乐](https://top.aibase.com/topic/%E9%9F%B3%E4%B9%90)                                  | [视频创作](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C) |\n| [设计工具](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7)                       | [搜索](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2)                                             | [写作工具](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7)            | [视频生成](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90)            | [招聘](https://top.aibase.com/topic/%E6%8B%9B%E8%81%98)                       |\n| [代码生成](https://top.aibase.com/topic/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90)                       | [大型语言模型](https://top.aibase.com/topic/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) | [语音识别](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB)            | [编程](https://top.aibase.com/topic/%E7%BC%96%E7%A8%8B)                                  | [在线工具](https://top.aibase.com/topic/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7) |\n| [API](https://top.aibase.com/topic/API)                                                             | [趣味](https://top.aibase.com/topic/%E8%B6%A3%E5%91%B3)                                             | [客户支持](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81)            | [语音合成](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90)            | [图像](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F)                       |\n| [电子商务](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1)                       | [SEO 优化](https://top.aibase.com/topic/SEO%E4%BC%98%E5%8C%96)                                      | [AI 辅助](https://top.aibase.com/topic/AI%E8%BE%85%E5%8A%A9)                             | [AI 生成](https://top.aibase.com/topic/AI%E7%94%9F%E6%88%90)                             | [创作工具](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7) |\n| [免费](https://top.aibase.com/topic/%E5%85%8D%E8%B4%B9)                                             | [LinkedIn](https://top.aibase.com/topic/LinkedIn)                                                   | [博客](https://top.aibase.com/topic/%E5%8D%9A%E5%AE%A2)                                  | [写作助手](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B)            | [助手](https://top.aibase.com/topic/%E5%8A%A9%E6%89%8B)                       |\n| [智能](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD)                                             | [健康](https://top.aibase.com/topic/%E5%81%A5%E5%BA%B7)                                             | [多模态](https://top.aibase.com/topic/%E5%A4%9A%E6%A8%A1%E6%80%81)                       | [任务管理](https://top.aibase.com/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86)            | [电子邮件](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6) |\n| [笔记](https://top.aibase.com/topic/%E7%AC%94%E8%AE%B0)                                             | [搜索引擎](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E)                       | [计算机视觉](https://top.aibase.com/topic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89) | [社区](https://top.aibase.com/topic/%E7%A4%BE%E5%8C%BA)                                  | [效率](https://top.aibase.com/topic/%E6%95%88%E7%8E%87)                       |\n| [知识管理](https://top.aibase.com/topic/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86)                       | [LLM](https://top.aibase.com/topic/LLM)                                                             | [智能聊天](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E8%81%8A%E5%A4%A9)            | [社交](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4)                                  | [语言学习](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0) |\n| [娱乐](https://top.aibase.com/topic/%E5%A8%B1%E4%B9%90)                                             | [简历](https://top.aibase.com/topic/%E7%AE%80%E5%8E%86)                                             | [OpenAI](https://top.aibase.com/topic/OpenAI)                                            | [客户服务](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1)            | [室内设计](https://top.aibase.com/topic/%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1) |\n</details>\n    ","categories":["new-media","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["top.aibase.com/topic/:id"]},{"title":"AI","source":["top.aibase.com/topic/AI"],"target":"/topic/AI"},{"title":"人工智能","source":["top.aibase.com/topic/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"],"target":"/topic/人工智能"},{"title":"图像生成","source":["top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90"],"target":"/topic/图像生成"},{"title":"自动化","source":["top.aibase.com/topic/%E8%87%AA%E5%8A%A8%E5%8C%96"],"target":"/topic/自动化"},{"title":"AI助手","source":["top.aibase.com/topic/AI%E5%8A%A9%E6%89%8B"],"target":"/topic/AI助手"},{"title":"聊天机器人","source":["top.aibase.com/topic/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA"],"target":"/topic/聊天机器人"},{"title":"个性化","source":["top.aibase.com/topic/%E4%B8%AA%E6%80%A7%E5%8C%96"],"target":"/topic/个性化"},{"title":"社交媒体","source":["top.aibase.com/topic/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93"],"target":"/topic/社交媒体"},{"title":"图像处理","source":["top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86"],"target":"/topic/图像处理"},{"title":"数据分析","source":["top.aibase.com/topic/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"],"target":"/topic/数据分析"},{"title":"自然语言处理","source":["top.aibase.com/topic/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86"],"target":"/topic/自然语言处理"},{"title":"聊天","source":["top.aibase.com/topic/%E8%81%8A%E5%A4%A9"],"target":"/topic/聊天"},{"title":"机器学习","source":["top.aibase.com/topic/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"],"target":"/topic/机器学习"},{"title":"教育","source":["top.aibase.com/topic/%E6%95%99%E8%82%B2"],"target":"/topic/教育"},{"title":"内容创作","source":["top.aibase.com/topic/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C"],"target":"/topic/内容创作"},{"title":"生产力","source":["top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B"],"target":"/topic/生产力"},{"title":"设计","source":["top.aibase.com/topic/%E8%AE%BE%E8%AE%A1"],"target":"/topic/设计"},{"title":"ChatGPT","source":["top.aibase.com/topic/ChatGPT"],"target":"/topic/ChatGPT"},{"title":"创意","source":["top.aibase.com/topic/%E5%88%9B%E6%84%8F"],"target":"/topic/创意"},{"title":"开源","source":["top.aibase.com/topic/%E5%BC%80%E6%BA%90"],"target":"/topic/开源"},{"title":"写作","source":["top.aibase.com/topic/%E5%86%99%E4%BD%9C"],"target":"/topic/写作"},{"title":"效率助手","source":["top.aibase.com/topic/%E6%95%88%E7%8E%87%E5%8A%A9%E6%89%8B"],"target":"/topic/效率助手"},{"title":"学习","source":["top.aibase.com/topic/%E5%AD%A6%E4%B9%A0"],"target":"/topic/学习"},{"title":"插件","source":["top.aibase.com/topic/%E6%8F%92%E4%BB%B6"],"target":"/topic/插件"},{"title":"翻译","source":["top.aibase.com/topic/%E7%BF%BB%E8%AF%91"],"target":"/topic/翻译"},{"title":"团队协作","source":["top.aibase.com/topic/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C"],"target":"/topic/团队协作"},{"title":"SEO","source":["top.aibase.com/topic/SEO"],"target":"/topic/SEO"},{"title":"营销","source":["top.aibase.com/topic/%E8%90%A5%E9%94%80"],"target":"/topic/营销"},{"title":"内容生成","source":["top.aibase.com/topic/%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90"],"target":"/topic/内容生成"},{"title":"AI技术","source":["top.aibase.com/topic/AI%E6%8A%80%E6%9C%AF"],"target":"/topic/AI技术"},{"title":"AI工具","source":["top.aibase.com/topic/AI%E5%B7%A5%E5%85%B7"],"target":"/topic/AI工具"},{"title":"智能助手","source":["top.aibase.com/topic/%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B"],"target":"/topic/智能助手"},{"title":"深度学习","source":["top.aibase.com/topic/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0"],"target":"/topic/深度学习"},{"title":"多语言支持","source":["top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81"],"target":"/topic/多语言支持"},{"title":"视频","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91"],"target":"/topic/视频"},{"title":"艺术","source":["top.aibase.com/topic/%E8%89%BA%E6%9C%AF"],"target":"/topic/艺术"},{"title":"文本生成","source":["top.aibase.com/topic/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90"],"target":"/topic/文本生成"},{"title":"开发编程","source":["top.aibase.com/topic/%E5%BC%80%E5%8F%91%E7%BC%96%E7%A8%8B"],"target":"/topic/开发编程"},{"title":"协作","source":["top.aibase.com/topic/%E5%8D%8F%E4%BD%9C"],"target":"/topic/协作"},{"title":"语言模型","source":["top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"],"target":"/topic/语言模型"},{"title":"工具","source":["top.aibase.com/topic/%E5%B7%A5%E5%85%B7"],"target":"/topic/工具"},{"title":"销售","source":["top.aibase.com/topic/%E9%94%80%E5%94%AE"],"target":"/topic/销售"},{"title":"生产力工具","source":["top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7"],"target":"/topic/生产力工具"},{"title":"AI写作","source":["top.aibase.com/topic/AI%E5%86%99%E4%BD%9C"],"target":"/topic/AI写作"},{"title":"创作","source":["top.aibase.com/topic/%E5%88%9B%E4%BD%9C"],"target":"/topic/创作"},{"title":"工作效率","source":["top.aibase.com/topic/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87"],"target":"/topic/工作效率"},{"title":"无代码","source":["top.aibase.com/topic/%E6%97%A0%E4%BB%A3%E7%A0%81"],"target":"/topic/无代码"},{"title":"隐私保护","source":["top.aibase.com/topic/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4"],"target":"/topic/隐私保护"},{"title":"视频编辑","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91"],"target":"/topic/视频编辑"},{"title":"摘要","source":["top.aibase.com/topic/%E6%91%98%E8%A6%81"],"target":"/topic/摘要"},{"title":"多语言","source":["top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80"],"target":"/topic/多语言"},{"title":"求职","source":["top.aibase.com/topic/%E6%B1%82%E8%81%8C"],"target":"/topic/求职"},{"title":"GPT","source":["top.aibase.com/topic/GPT"],"target":"/topic/GPT"},{"title":"音乐","source":["top.aibase.com/topic/%E9%9F%B3%E4%B9%90"],"target":"/topic/音乐"},{"title":"视频创作","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C"],"target":"/topic/视频创作"},{"title":"设计工具","source":["top.aibase.com/topic/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7"],"target":"/topic/设计工具"},{"title":"搜索","source":["top.aibase.com/topic/%E6%90%9C%E7%B4%A2"],"target":"/topic/搜索"},{"title":"写作工具","source":["top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7"],"target":"/topic/写作工具"},{"title":"视频生成","source":["top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90"],"target":"/topic/视频生成"},{"title":"招聘","source":["top.aibase.com/topic/%E6%8B%9B%E8%81%98"],"target":"/topic/招聘"},{"title":"代码生成","source":["top.aibase.com/topic/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90"],"target":"/topic/代码生成"},{"title":"大型语言模型","source":["top.aibase.com/topic/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"],"target":"/topic/大型语言模型"},{"title":"语音识别","source":["top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB"],"target":"/topic/语音识别"},{"title":"编程","source":["top.aibase.com/topic/%E7%BC%96%E7%A8%8B"],"target":"/topic/编程"},{"title":"在线工具","source":["top.aibase.com/topic/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7"],"target":"/topic/在线工具"},{"title":"API","source":["top.aibase.com/topic/API"],"target":"/topic/API"},{"title":"趣味","source":["top.aibase.com/topic/%E8%B6%A3%E5%91%B3"],"target":"/topic/趣味"},{"title":"客户支持","source":["top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81"],"target":"/topic/客户支持"},{"title":"语音合成","source":["top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90"],"target":"/topic/语音合成"},{"title":"图像","source":["top.aibase.com/topic/%E5%9B%BE%E5%83%8F"],"target":"/topic/图像"},{"title":"电子商务","source":["top.aibase.com/topic/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1"],"target":"/topic/电子商务"},{"title":"SEO优化","source":["top.aibase.com/topic/SEO%E4%BC%98%E5%8C%96"],"target":"/topic/SEO优化"},{"title":"AI辅助","source":["top.aibase.com/topic/AI%E8%BE%85%E5%8A%A9"],"target":"/topic/AI辅助"},{"title":"AI生成","source":["top.aibase.com/topic/AI%E7%94%9F%E6%88%90"],"target":"/topic/AI生成"},{"title":"创作工具","source":["top.aibase.com/topic/%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7"],"target":"/topic/创作工具"},{"title":"免费","source":["top.aibase.com/topic/%E5%85%8D%E8%B4%B9"],"target":"/topic/免费"},{"title":"LinkedIn","source":["top.aibase.com/topic/LinkedIn"],"target":"/topic/LinkedIn"},{"title":"博客","source":["top.aibase.com/topic/%E5%8D%9A%E5%AE%A2"],"target":"/topic/博客"},{"title":"写作助手","source":["top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B"],"target":"/topic/写作助手"},{"title":"助手","source":["top.aibase.com/topic/%E5%8A%A9%E6%89%8B"],"target":"/topic/助手"},{"title":"智能","source":["top.aibase.com/topic/%E6%99%BA%E8%83%BD"],"target":"/topic/智能"},{"title":"健康","source":["top.aibase.com/topic/%E5%81%A5%E5%BA%B7"],"target":"/topic/健康"},{"title":"多模态","source":["top.aibase.com/topic/%E5%A4%9A%E6%A8%A1%E6%80%81"],"target":"/topic/多模态"},{"title":"任务管理","source":["top.aibase.com/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86"],"target":"/topic/任务管理"},{"title":"电子邮件","source":["top.aibase.com/topic/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6"],"target":"/topic/电子邮件"},{"title":"笔记","source":["top.aibase.com/topic/%E7%AC%94%E8%AE%B0"],"target":"/topic/笔记"},{"title":"搜索引擎","source":["top.aibase.com/topic/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E"],"target":"/topic/搜索引擎"},{"title":"计算机视觉","source":["top.aibase.com/topic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89"],"target":"/topic/计算机视觉"},{"title":"社区","source":["top.aibase.com/topic/%E7%A4%BE%E5%8C%BA"],"target":"/topic/社区"},{"title":"效率","source":["top.aibase.com/topic/%E6%95%88%E7%8E%87"],"target":"/topic/效率"},{"title":"知识管理","source":["top.aibase.com/topic/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86"],"target":"/topic/知识管理"},{"title":"LLM","source":["top.aibase.com/topic/LLM"],"target":"/topic/LLM"},{"title":"智能聊天","source":["top.aibase.com/topic/%E6%99%BA%E8%83%BD%E8%81%8A%E5%A4%A9"],"target":"/topic/智能聊天"},{"title":"社交","source":["top.aibase.com/topic/%E7%A4%BE%E4%BA%A4"],"target":"/topic/社交"},{"title":"语言学习","source":["top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0"],"target":"/topic/语言学习"},{"title":"娱乐","source":["top.aibase.com/topic/%E5%A8%B1%E4%B9%90"],"target":"/topic/娱乐"},{"title":"简历","source":["top.aibase.com/topic/%E7%AE%80%E5%8E%86"],"target":"/topic/简历"},{"title":"OpenAI","source":["top.aibase.com/topic/OpenAI"],"target":"/topic/OpenAI"},{"title":"客户服务","source":["top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1"],"target":"/topic/客户服务"},{"title":"室内设计","source":["top.aibase.com/topic/%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1"],"target":"/topic/室内设计"}],"location":"topic.ts"}' :test='{"code":0}' />
 
 ::: tip
   若订阅 [AI](https://top.aibase.com/topic/AI)，网址为 `https://top.aibase.com/topic/AI`。截取 `https://top.aibase.com/topic` 到末尾的部分 `AI` 作为参数填入，此时路由为 [`/aibase/topic/AI`](https://rsshub.app/aibase/topic/AI)。
@@ -83,139 +83,139 @@ Supported types: Essays, Videos, and Audio.
   此处查看 [全部标签](https://top.aibase.com/topic)
 :::
 
-  <details>
-    <summary>更多标签</summary>
+<details>
+<summary>更多标签</summary>
 
-    | [AI](https://top.aibase.com/topic/AI)                                                               | [人工智能](https://top.aibase.com/topic/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)                       | [图像生成](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90)            | [自动化](https://top.aibase.com/topic/%E8%87%AA%E5%8A%A8%E5%8C%96)                       | [AI 助手](https://top.aibase.com/topic/AI%E5%8A%A9%E6%89%8B)                  |
-    | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-    | [聊天机器人](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA)            | [个性化](https://top.aibase.com/topic/%E4%B8%AA%E6%80%A7%E5%8C%96)                                  | [社交媒体](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93)            | [图像处理](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86)            | [数据分析](https://top.aibase.com/topic/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90) |
-    | [自然语言处理](https://top.aibase.com/topic/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86) | [聊天](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9)                                             | [机器学习](https://top.aibase.com/topic/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)            | [教育](https://top.aibase.com/topic/%E6%95%99%E8%82%B2)                                  | [内容创作](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C) |
-    | [生产力](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B)                                  | [设计](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1)                                             | [ChatGPT](https://top.aibase.com/topic/ChatGPT)                                          | [创意](https://top.aibase.com/topic/%E5%88%9B%E6%84%8F)                                  | [开源](https://top.aibase.com/topic/%E5%BC%80%E6%BA%90)                       |
-    | [写作](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C)                                             | [效率助手](https://top.aibase.com/topic/%E6%95%88%E7%8E%87%E5%8A%A9%E6%89%8B)                       | [学习](https://top.aibase.com/topic/%E5%AD%A6%E4%B9%A0)                                  | [插件](https://top.aibase.com/topic/%E6%8F%92%E4%BB%B6)                                  | [翻译](https://top.aibase.com/topic/%E7%BF%BB%E8%AF%91)                       |
-    | [团队协作](https://top.aibase.com/topic/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C)                       | [SEO](https://top.aibase.com/topic/SEO)                                                             | [营销](https://top.aibase.com/topic/%E8%90%A5%E9%94%80)                                  | [内容生成](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90)            | [AI 技术](https://top.aibase.com/topic/AI%E6%8A%80%E6%9C%AF)                  |
-    | [AI 工具](https://top.aibase.com/topic/AI%E5%B7%A5%E5%85%B7)                                        | [智能助手](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B)                       | [深度学习](https://top.aibase.com/topic/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)            | [多语言支持](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81) | [视频](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91)                       |
-    | [艺术](https://top.aibase.com/topic/%E8%89%BA%E6%9C%AF)                                             | [文本生成](https://top.aibase.com/topic/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)                       | [开发编程](https://top.aibase.com/topic/%E5%BC%80%E5%8F%91%E7%BC%96%E7%A8%8B)            | [协作](https://top.aibase.com/topic/%E5%8D%8F%E4%BD%9C)                                  | [语言模型](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) |
-    | [工具](https://top.aibase.com/topic/%E5%B7%A5%E5%85%B7)                                             | [销售](https://top.aibase.com/topic/%E9%94%80%E5%94%AE)                                             | [生产力工具](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7) | [AI 写作](https://top.aibase.com/topic/AI%E5%86%99%E4%BD%9C)                             | [创作](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C)                       |
-    | [工作效率](https://top.aibase.com/topic/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87)                       | [无代码](https://top.aibase.com/topic/%E6%97%A0%E4%BB%A3%E7%A0%81)                                  | [隐私保护](https://top.aibase.com/topic/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4)            | [视频编辑](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91)            | [摘要](https://top.aibase.com/topic/%E6%91%98%E8%A6%81)                       |
-    | [多语言](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80)                                  | [求职](https://top.aibase.com/topic/%E6%B1%82%E8%81%8C)                                             | [GPT](https://top.aibase.com/topic/GPT)                                                  | [音乐](https://top.aibase.com/topic/%E9%9F%B3%E4%B9%90)                                  | [视频创作](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C) |
-    | [设计工具](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7)                       | [搜索](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2)                                             | [写作工具](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7)            | [视频生成](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90)            | [招聘](https://top.aibase.com/topic/%E6%8B%9B%E8%81%98)                       |
-    | [代码生成](https://top.aibase.com/topic/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90)                       | [大型语言模型](https://top.aibase.com/topic/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) | [语音识别](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB)            | [编程](https://top.aibase.com/topic/%E7%BC%96%E7%A8%8B)                                  | [在线工具](https://top.aibase.com/topic/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7) |
-    | [API](https://top.aibase.com/topic/API)                                                             | [趣味](https://top.aibase.com/topic/%E8%B6%A3%E5%91%B3)                                             | [客户支持](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81)            | [语音合成](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90)            | [图像](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F)                       |
-    | [电子商务](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1)                       | [SEO 优化](https://top.aibase.com/topic/SEO%E4%BC%98%E5%8C%96)                                      | [AI 辅助](https://top.aibase.com/topic/AI%E8%BE%85%E5%8A%A9)                             | [AI 生成](https://top.aibase.com/topic/AI%E7%94%9F%E6%88%90)                             | [创作工具](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7) |
-    | [免费](https://top.aibase.com/topic/%E5%85%8D%E8%B4%B9)                                             | [LinkedIn](https://top.aibase.com/topic/LinkedIn)                                                   | [博客](https://top.aibase.com/topic/%E5%8D%9A%E5%AE%A2)                                  | [写作助手](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B)            | [助手](https://top.aibase.com/topic/%E5%8A%A9%E6%89%8B)                       |
-    | [智能](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD)                                             | [健康](https://top.aibase.com/topic/%E5%81%A5%E5%BA%B7)                                             | [多模态](https://top.aibase.com/topic/%E5%A4%9A%E6%A8%A1%E6%80%81)                       | [任务管理](https://top.aibase.com/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86)            | [电子邮件](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6) |
-    | [笔记](https://top.aibase.com/topic/%E7%AC%94%E8%AE%B0)                                             | [搜索引擎](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E)                       | [计算机视觉](https://top.aibase.com/topic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89) | [社区](https://top.aibase.com/topic/%E7%A4%BE%E5%8C%BA)                                  | [效率](https://top.aibase.com/topic/%E6%95%88%E7%8E%87)                       |
-    | [知识管理](https://top.aibase.com/topic/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86)                       | [LLM](https://top.aibase.com/topic/LLM)                                                             | [智能聊天](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E8%81%8A%E5%A4%A9)            | [社交](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4)                                  | [语言学习](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0) |
-    | [娱乐](https://top.aibase.com/topic/%E5%A8%B1%E4%B9%90)                                             | [简历](https://top.aibase.com/topic/%E7%AE%80%E5%8E%86)                                             | [OpenAI](https://top.aibase.com/topic/OpenAI)                                            | [客户服务](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1)            | [室内设计](https://top.aibase.com/topic/%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1) |
-  </details>
+| [AI](https://top.aibase.com/topic/AI)                                                               | [人工智能](https://top.aibase.com/topic/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD)                       | [图像生成](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90)            | [自动化](https://top.aibase.com/topic/%E8%87%AA%E5%8A%A8%E5%8C%96)                       | [AI 助手](https://top.aibase.com/topic/AI%E5%8A%A9%E6%89%8B)                  |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| [聊天机器人](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA)            | [个性化](https://top.aibase.com/topic/%E4%B8%AA%E6%80%A7%E5%8C%96)                                  | [社交媒体](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93)            | [图像处理](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86)            | [数据分析](https://top.aibase.com/topic/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90) |
+| [自然语言处理](https://top.aibase.com/topic/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86) | [聊天](https://top.aibase.com/topic/%E8%81%8A%E5%A4%A9)                                             | [机器学习](https://top.aibase.com/topic/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0)            | [教育](https://top.aibase.com/topic/%E6%95%99%E8%82%B2)                                  | [内容创作](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C) |
+| [生产力](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B)                                  | [设计](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1)                                             | [ChatGPT](https://top.aibase.com/topic/ChatGPT)                                          | [创意](https://top.aibase.com/topic/%E5%88%9B%E6%84%8F)                                  | [开源](https://top.aibase.com/topic/%E5%BC%80%E6%BA%90)                       |
+| [写作](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C)                                             | [效率助手](https://top.aibase.com/topic/%E6%95%88%E7%8E%87%E5%8A%A9%E6%89%8B)                       | [学习](https://top.aibase.com/topic/%E5%AD%A6%E4%B9%A0)                                  | [插件](https://top.aibase.com/topic/%E6%8F%92%E4%BB%B6)                                  | [翻译](https://top.aibase.com/topic/%E7%BF%BB%E8%AF%91)                       |
+| [团队协作](https://top.aibase.com/topic/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C)                       | [SEO](https://top.aibase.com/topic/SEO)                                                             | [营销](https://top.aibase.com/topic/%E8%90%A5%E9%94%80)                                  | [内容生成](https://top.aibase.com/topic/%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90)            | [AI 技术](https://top.aibase.com/topic/AI%E6%8A%80%E6%9C%AF)                  |
+| [AI 工具](https://top.aibase.com/topic/AI%E5%B7%A5%E5%85%B7)                                        | [智能助手](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E5%8A%A9%E6%89%8B)                       | [深度学习](https://top.aibase.com/topic/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)            | [多语言支持](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81) | [视频](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91)                       |
+| [艺术](https://top.aibase.com/topic/%E8%89%BA%E6%9C%AF)                                             | [文本生成](https://top.aibase.com/topic/%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90)                       | [开发编程](https://top.aibase.com/topic/%E5%BC%80%E5%8F%91%E7%BC%96%E7%A8%8B)            | [协作](https://top.aibase.com/topic/%E5%8D%8F%E4%BD%9C)                                  | [语言模型](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) |
+| [工具](https://top.aibase.com/topic/%E5%B7%A5%E5%85%B7)                                             | [销售](https://top.aibase.com/topic/%E9%94%80%E5%94%AE)                                             | [生产力工具](https://top.aibase.com/topic/%E7%94%9F%E4%BA%A7%E5%8A%9B%E5%B7%A5%E5%85%B7) | [AI 写作](https://top.aibase.com/topic/AI%E5%86%99%E4%BD%9C)                             | [创作](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C)                       |
+| [工作效率](https://top.aibase.com/topic/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87)                       | [无代码](https://top.aibase.com/topic/%E6%97%A0%E4%BB%A3%E7%A0%81)                                  | [隐私保护](https://top.aibase.com/topic/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4)            | [视频编辑](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91)            | [摘要](https://top.aibase.com/topic/%E6%91%98%E8%A6%81)                       |
+| [多语言](https://top.aibase.com/topic/%E5%A4%9A%E8%AF%AD%E8%A8%80)                                  | [求职](https://top.aibase.com/topic/%E6%B1%82%E8%81%8C)                                             | [GPT](https://top.aibase.com/topic/GPT)                                                  | [音乐](https://top.aibase.com/topic/%E9%9F%B3%E4%B9%90)                                  | [视频创作](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C) |
+| [设计工具](https://top.aibase.com/topic/%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7)                       | [搜索](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2)                                             | [写作工具](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%B7%A5%E5%85%B7)            | [视频生成](https://top.aibase.com/topic/%E8%A7%86%E9%A2%91%E7%94%9F%E6%88%90)            | [招聘](https://top.aibase.com/topic/%E6%8B%9B%E8%81%98)                       |
+| [代码生成](https://top.aibase.com/topic/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90)                       | [大型语言模型](https://top.aibase.com/topic/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B) | [语音识别](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB)            | [编程](https://top.aibase.com/topic/%E7%BC%96%E7%A8%8B)                                  | [在线工具](https://top.aibase.com/topic/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7) |
+| [API](https://top.aibase.com/topic/API)                                                             | [趣味](https://top.aibase.com/topic/%E8%B6%A3%E5%91%B3)                                             | [客户支持](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%94%AF%E6%8C%81)            | [语音合成](https://top.aibase.com/topic/%E8%AF%AD%E9%9F%B3%E5%90%88%E6%88%90)            | [图像](https://top.aibase.com/topic/%E5%9B%BE%E5%83%8F)                       |
+| [电子商务](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1)                       | [SEO 优化](https://top.aibase.com/topic/SEO%E4%BC%98%E5%8C%96)                                      | [AI 辅助](https://top.aibase.com/topic/AI%E8%BE%85%E5%8A%A9)                             | [AI 生成](https://top.aibase.com/topic/AI%E7%94%9F%E6%88%90)                             | [创作工具](https://top.aibase.com/topic/%E5%88%9B%E4%BD%9C%E5%B7%A5%E5%85%B7) |
+| [免费](https://top.aibase.com/topic/%E5%85%8D%E8%B4%B9)                                             | [LinkedIn](https://top.aibase.com/topic/LinkedIn)                                                   | [博客](https://top.aibase.com/topic/%E5%8D%9A%E5%AE%A2)                                  | [写作助手](https://top.aibase.com/topic/%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B)            | [助手](https://top.aibase.com/topic/%E5%8A%A9%E6%89%8B)                       |
+| [智能](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD)                                             | [健康](https://top.aibase.com/topic/%E5%81%A5%E5%BA%B7)                                             | [多模态](https://top.aibase.com/topic/%E5%A4%9A%E6%A8%A1%E6%80%81)                       | [任务管理](https://top.aibase.com/topic/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86)            | [电子邮件](https://top.aibase.com/topic/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6) |
+| [笔记](https://top.aibase.com/topic/%E7%AC%94%E8%AE%B0)                                             | [搜索引擎](https://top.aibase.com/topic/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E)                       | [计算机视觉](https://top.aibase.com/topic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89) | [社区](https://top.aibase.com/topic/%E7%A4%BE%E5%8C%BA)                                  | [效率](https://top.aibase.com/topic/%E6%95%88%E7%8E%87)                       |
+| [知识管理](https://top.aibase.com/topic/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86)                       | [LLM](https://top.aibase.com/topic/LLM)                                                             | [智能聊天](https://top.aibase.com/topic/%E6%99%BA%E8%83%BD%E8%81%8A%E5%A4%A9)            | [社交](https://top.aibase.com/topic/%E7%A4%BE%E4%BA%A4)                                  | [语言学习](https://top.aibase.com/topic/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0) |
+| [娱乐](https://top.aibase.com/topic/%E5%A8%B1%E4%B9%90)                                             | [简历](https://top.aibase.com/topic/%E7%AE%80%E5%8E%86)                                             | [OpenAI](https://top.aibase.com/topic/OpenAI)                                            | [客户服务](https://top.aibase.com/topic/%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1)            | [室内设计](https://top.aibase.com/topic/%E5%AE%A4%E5%86%85%E8%AE%BE%E8%AE%A1) |
+</details>
     
 
 ### 发现 <Site url="top.aibase.com" size="sm" />
 
-<Route namespace="aibase" :data='{"path":"/discover/:id?","name":"发现","url":"top.aibase.com","maintainers":["nczitzk"],"example":"/aibase/discover","parameters":{"id":"发现分类，默认为空，即全部产品，可在对应发现分类页 URL 中找到"},"description":"::: tip\n  若订阅 [图片背景移除](https://top.aibase.com/discover/37-49)，网址为 `https://top.aibase.com/discover/37-49`。截取 `https://top.aibase.com/discover/` 到末尾的部分 `37-49` 作为参数填入，此时路由为 [`/aibase/discover/37-49`](https://rsshub.app/aibase/discover/37-49)。\n:::\n\n  <details>\n    <summary>更多分类</summary>\n\n  #### 图像处理\n\n  | 分类                                                  | ID                                                |\n  | ----------------------------------------------------- | ------------------------------------------------- |\n  | [图片背景移除](https://top.aibase.com/discover/37-49) | [37-49](https://rsshub.app/aibase/discover/37-49) |\n  | [图片无损放大](https://top.aibase.com/discover/37-50) | [37-50](https://rsshub.app/aibase/discover/37-50) |\n  | [图片AI修复](https://top.aibase.com/discover/37-51)   | [37-51](https://rsshub.app/aibase/discover/37-51) |\n  | [图像生成](https://top.aibase.com/discover/37-52)     | [37-52](https://rsshub.app/aibase/discover/37-52) |\n  | [Ai图片拓展](https://top.aibase.com/discover/37-53)   | [37-53](https://rsshub.app/aibase/discover/37-53) |\n  | [Ai漫画生成](https://top.aibase.com/discover/37-54)   | [37-54](https://rsshub.app/aibase/discover/37-54) |\n  | [Ai生成写真](https://top.aibase.com/discover/37-55)   | [37-55](https://rsshub.app/aibase/discover/37-55) |\n  | [电商图片制作](https://top.aibase.com/discover/37-83) | [37-83](https://rsshub.app/aibase/discover/37-83) |\n  | [Ai图像转视频](https://top.aibase.com/discover/37-86) | [37-86](https://rsshub.app/aibase/discover/37-86) |\n\n  #### 视频创作\n\n  | 分类                                                | ID                                                |\n  | --------------------------------------------------- | ------------------------------------------------- |\n  | [视频剪辑](https://top.aibase.com/discover/38-56)   | [38-56](https://rsshub.app/aibase/discover/38-56) |\n  | [生成视频](https://top.aibase.com/discover/38-57)   | [38-57](https://rsshub.app/aibase/discover/38-57) |\n  | [Ai动画制作](https://top.aibase.com/discover/38-58) | [38-58](https://rsshub.app/aibase/discover/38-58) |\n  | [字幕生成](https://top.aibase.com/discover/38-84)   | [38-84](https://rsshub.app/aibase/discover/38-84) |\n\n  #### 效率助手\n\n  | 分类                                                | ID                                                |\n  | --------------------------------------------------- | ------------------------------------------------- |\n  | [AI文档工具](https://top.aibase.com/discover/39-59) | [39-59](https://rsshub.app/aibase/discover/39-59) |\n  | [PPT](https://top.aibase.com/discover/39-60)        | [39-60](https://rsshub.app/aibase/discover/39-60) |\n  | [思维导图](https://top.aibase.com/discover/39-61)   | [39-61](https://rsshub.app/aibase/discover/39-61) |\n  | [表格处理](https://top.aibase.com/discover/39-62)   | [39-62](https://rsshub.app/aibase/discover/39-62) |\n  | [Ai办公助手](https://top.aibase.com/discover/39-63) | [39-63](https://rsshub.app/aibase/discover/39-63) |\n\n  #### 写作灵感\n\n  | 分类                                              | ID                                                |\n  | ------------------------------------------------- | ------------------------------------------------- |\n  | [文案写作](https://top.aibase.com/discover/40-64) | [40-64](https://rsshub.app/aibase/discover/40-64) |\n  | [论文写作](https://top.aibase.com/discover/40-88) | [40-88](https://rsshub.app/aibase/discover/40-88) |\n\n  #### 艺术灵感\n\n  | 分类                                                | ID                                                |\n  | --------------------------------------------------- | ------------------------------------------------- |\n  | [音乐创作](https://top.aibase.com/discover/41-65)   | [41-65](https://rsshub.app/aibase/discover/41-65) |\n  | [设计创作](https://top.aibase.com/discover/41-66)   | [41-66](https://rsshub.app/aibase/discover/41-66) |\n  | [Ai图标生成](https://top.aibase.com/discover/41-67) | [41-67](https://rsshub.app/aibase/discover/41-67) |\n\n  #### 趣味\n\n  | 分类                                                  | ID                                                |\n  | ----------------------------------------------------- | ------------------------------------------------- |\n  | [Ai名字生成器](https://top.aibase.com/discover/42-68) | [42-68](https://rsshub.app/aibase/discover/42-68) |\n  | [游戏娱乐](https://top.aibase.com/discover/42-71)     | [42-71](https://rsshub.app/aibase/discover/42-71) |\n  | [其他](https://top.aibase.com/discover/42-72)         | [42-72](https://rsshub.app/aibase/discover/42-72) |\n\n  #### 开发编程\n\n  | 分类                                                | ID                                                |\n  | --------------------------------------------------- | ------------------------------------------------- |\n  | [开发编程](https://top.aibase.com/discover/43-73)   | [43-73](https://rsshub.app/aibase/discover/43-73) |\n  | [Ai开放平台](https://top.aibase.com/discover/43-74) | [43-74](https://rsshub.app/aibase/discover/43-74) |\n  | [Ai算力平台](https://top.aibase.com/discover/43-75) | [43-75](https://rsshub.app/aibase/discover/43-75) |\n\n  #### 聊天机器人\n\n  | 分类                                              | ID                                                |\n  | ------------------------------------------------- | ------------------------------------------------- |\n  | [智能聊天](https://top.aibase.com/discover/44-76) | [44-76](https://rsshub.app/aibase/discover/44-76) |\n  | [智能客服](https://top.aibase.com/discover/44-77) | [44-77](https://rsshub.app/aibase/discover/44-77) |\n\n  #### 翻译\n\n  | 分类                                          | ID                                                |\n  | --------------------------------------------- | ------------------------------------------------- |\n  | [翻译](https://top.aibase.com/discover/46-79) | [46-79](https://rsshub.app/aibase/discover/46-79) |\n\n  #### 教育学习\n\n  | 分类                                              | ID                                                |\n  | ------------------------------------------------- | ------------------------------------------------- |\n  | [教育学习](https://top.aibase.com/discover/47-80) | [47-80](https://rsshub.app/aibase/discover/47-80) |\n\n  #### 智能营销\n\n  | 分类                                              | ID                                                |\n  | ------------------------------------------------- | ------------------------------------------------- |\n  | [智能营销](https://top.aibase.com/discover/48-81) | [48-81](https://rsshub.app/aibase/discover/48-81) |\n\n  #### 法律\n\n  | 分类                                            | ID                                                    |\n  | ----------------------------------------------- | ----------------------------------------------------- |\n  | [法律](https://top.aibase.com/discover/138-139) | [138-139](https://rsshub.app/aibase/discover/138-139) |\n  </details>\n    ","categories":["new-media","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["top.aibase.com/discover/:id"]},{"title":"图像处理 - 图片背景移除","source":["top.aibase.com/discover/37-49"],"target":"/discover/37-49"},{"title":"图像处理 - 图片无损放大","source":["top.aibase.com/discover/37-50"],"target":"/discover/37-50"},{"title":"图像处理 - 图片AI修复","source":["top.aibase.com/discover/37-51"],"target":"/discover/37-51"},{"title":"图像处理 - 图像生成","source":["top.aibase.com/discover/37-52"],"target":"/discover/37-52"},{"title":"图像处理 - Ai图片拓展","source":["top.aibase.com/discover/37-53"],"target":"/discover/37-53"},{"title":"图像处理 - Ai漫画生成","source":["top.aibase.com/discover/37-54"],"target":"/discover/37-54"},{"title":"图像处理 - Ai生成写真","source":["top.aibase.com/discover/37-55"],"target":"/discover/37-55"},{"title":"图像处理 - 电商图片制作","source":["top.aibase.com/discover/37-83"],"target":"/discover/37-83"},{"title":"图像处理 - Ai图像转视频","source":["top.aibase.com/discover/37-86"],"target":"/discover/37-86"},{"title":"视频创作 - 视频剪辑","source":["top.aibase.com/discover/38-56"],"target":"/discover/38-56"},{"title":"视频创作 - 生成视频","source":["top.aibase.com/discover/38-57"],"target":"/discover/38-57"},{"title":"视频创作 - Ai动画制作","source":["top.aibase.com/discover/38-58"],"target":"/discover/38-58"},{"title":"视频创作 - 字幕生成","source":["top.aibase.com/discover/38-84"],"target":"/discover/38-84"},{"title":"效率助手 - AI文档工具","source":["top.aibase.com/discover/39-59"],"target":"/discover/39-59"},{"title":"效率助手 - PPT","source":["top.aibase.com/discover/39-60"],"target":"/discover/39-60"},{"title":"效率助手 - 思维导图","source":["top.aibase.com/discover/39-61"],"target":"/discover/39-61"},{"title":"效率助手 - 表格处理","source":["top.aibase.com/discover/39-62"],"target":"/discover/39-62"},{"title":"效率助手 - Ai办公助手","source":["top.aibase.com/discover/39-63"],"target":"/discover/39-63"},{"title":"写作灵感 - 文案写作","source":["top.aibase.com/discover/40-64"],"target":"/discover/40-64"},{"title":"写作灵感 - 论文写作","source":["top.aibase.com/discover/40-88"],"target":"/discover/40-88"},{"title":"艺术灵感 - 音乐创作","source":["top.aibase.com/discover/41-65"],"target":"/discover/41-65"},{"title":"艺术灵感 - 设计创作","source":["top.aibase.com/discover/41-66"],"target":"/discover/41-66"},{"title":"艺术灵感 - Ai图标生成","source":["top.aibase.com/discover/41-67"],"target":"/discover/41-67"},{"title":"趣味 - Ai名字生成器","source":["top.aibase.com/discover/42-68"],"target":"/discover/42-68"},{"title":"趣味 - 游戏娱乐","source":["top.aibase.com/discover/42-71"],"target":"/discover/42-71"},{"title":"趣味 - 其他","source":["top.aibase.com/discover/42-72"],"target":"/discover/42-72"},{"title":"开发编程 - 开发编程","source":["top.aibase.com/discover/43-73"],"target":"/discover/43-73"},{"title":"开发编程 - Ai开放平台","source":["top.aibase.com/discover/43-74"],"target":"/discover/43-74"},{"title":"开发编程 - Ai算力平台","source":["top.aibase.com/discover/43-75"],"target":"/discover/43-75"},{"title":"聊天机器人 - 智能聊天","source":["top.aibase.com/discover/44-76"],"target":"/discover/44-76"},{"title":"聊天机器人 - 智能客服","source":["top.aibase.com/discover/44-77"],"target":"/discover/44-77"},{"title":"翻译 - 翻译","source":["top.aibase.com/discover/46-79"],"target":"/discover/46-79"},{"title":"教育学习 - 教育学习","source":["top.aibase.com/discover/47-80"],"target":"/discover/47-80"},{"title":"智能营销 - 智能营销","source":["top.aibase.com/discover/48-81"],"target":"/discover/48-81"},{"title":"法律 - 法律","source":["top.aibase.com/discover/138-139"],"target":"/discover/138-139"}],"location":"discover.ts"}' :test='{"code":0}' />
+<Route namespace="aibase" :data='{"path":"/discover/:id?","name":"发现","url":"top.aibase.com","maintainers":["nczitzk"],"example":"/aibase/discover","parameters":{"id":"发现分类，默认为空，即全部产品，可在对应发现分类页 URL 中找到"},"description":"::: tip\n  若订阅 [图片背景移除](https://top.aibase.com/discover/37-49)，网址为 `https://top.aibase.com/discover/37-49`。截取 `https://top.aibase.com/discover/` 到末尾的部分 `37-49` 作为参数填入，此时路由为 [`/aibase/discover/37-49`](https://rsshub.app/aibase/discover/37-49)。\n:::\n\n<details>\n<summary>更多分类</summary>\n\n#### 图像处理\n\n| 分类                                                  | ID                                                |\n| ----------------------------------------------------- | ------------------------------------------------- |\n| [图片背景移除](https://top.aibase.com/discover/37-49) | [37-49](https://rsshub.app/aibase/discover/37-49) |\n| [图片无损放大](https://top.aibase.com/discover/37-50) | [37-50](https://rsshub.app/aibase/discover/37-50) |\n| [图片AI修复](https://top.aibase.com/discover/37-51)   | [37-51](https://rsshub.app/aibase/discover/37-51) |\n| [图像生成](https://top.aibase.com/discover/37-52)     | [37-52](https://rsshub.app/aibase/discover/37-52) |\n| [Ai图片拓展](https://top.aibase.com/discover/37-53)   | [37-53](https://rsshub.app/aibase/discover/37-53) |\n| [Ai漫画生成](https://top.aibase.com/discover/37-54)   | [37-54](https://rsshub.app/aibase/discover/37-54) |\n| [Ai生成写真](https://top.aibase.com/discover/37-55)   | [37-55](https://rsshub.app/aibase/discover/37-55) |\n| [电商图片制作](https://top.aibase.com/discover/37-83) | [37-83](https://rsshub.app/aibase/discover/37-83) |\n| [Ai图像转视频](https://top.aibase.com/discover/37-86) | [37-86](https://rsshub.app/aibase/discover/37-86) |\n\n#### 视频创作\n\n| 分类                                                | ID                                                |\n| --------------------------------------------------- | ------------------------------------------------- |\n| [视频剪辑](https://top.aibase.com/discover/38-56)   | [38-56](https://rsshub.app/aibase/discover/38-56) |\n| [生成视频](https://top.aibase.com/discover/38-57)   | [38-57](https://rsshub.app/aibase/discover/38-57) |\n| [Ai动画制作](https://top.aibase.com/discover/38-58) | [38-58](https://rsshub.app/aibase/discover/38-58) |\n| [字幕生成](https://top.aibase.com/discover/38-84)   | [38-84](https://rsshub.app/aibase/discover/38-84) |\n\n#### 效率助手\n\n| 分类                                                | ID                                                |\n| --------------------------------------------------- | ------------------------------------------------- |\n| [AI文档工具](https://top.aibase.com/discover/39-59) | [39-59](https://rsshub.app/aibase/discover/39-59) |\n| [PPT](https://top.aibase.com/discover/39-60)        | [39-60](https://rsshub.app/aibase/discover/39-60) |\n| [思维导图](https://top.aibase.com/discover/39-61)   | [39-61](https://rsshub.app/aibase/discover/39-61) |\n| [表格处理](https://top.aibase.com/discover/39-62)   | [39-62](https://rsshub.app/aibase/discover/39-62) |\n| [Ai办公助手](https://top.aibase.com/discover/39-63) | [39-63](https://rsshub.app/aibase/discover/39-63) |\n\n#### 写作灵感\n\n| 分类                                              | ID                                                |\n| ------------------------------------------------- | ------------------------------------------------- |\n| [文案写作](https://top.aibase.com/discover/40-64) | [40-64](https://rsshub.app/aibase/discover/40-64) |\n| [论文写作](https://top.aibase.com/discover/40-88) | [40-88](https://rsshub.app/aibase/discover/40-88) |\n\n#### 艺术灵感\n\n| 分类                                                | ID                                                |\n| --------------------------------------------------- | ------------------------------------------------- |\n| [音乐创作](https://top.aibase.com/discover/41-65)   | [41-65](https://rsshub.app/aibase/discover/41-65) |\n| [设计创作](https://top.aibase.com/discover/41-66)   | [41-66](https://rsshub.app/aibase/discover/41-66) |\n| [Ai图标生成](https://top.aibase.com/discover/41-67) | [41-67](https://rsshub.app/aibase/discover/41-67) |\n\n#### 趣味\n\n| 分类                                                  | ID                                                |\n| ----------------------------------------------------- | ------------------------------------------------- |\n| [Ai名字生成器](https://top.aibase.com/discover/42-68) | [42-68](https://rsshub.app/aibase/discover/42-68) |\n| [游戏娱乐](https://top.aibase.com/discover/42-71)     | [42-71](https://rsshub.app/aibase/discover/42-71) |\n| [其他](https://top.aibase.com/discover/42-72)         | [42-72](https://rsshub.app/aibase/discover/42-72) |\n\n#### 开发编程\n\n| 分类                                                | ID                                                |\n| --------------------------------------------------- | ------------------------------------------------- |\n| [开发编程](https://top.aibase.com/discover/43-73)   | [43-73](https://rsshub.app/aibase/discover/43-73) |\n| [Ai开放平台](https://top.aibase.com/discover/43-74) | [43-74](https://rsshub.app/aibase/discover/43-74) |\n| [Ai算力平台](https://top.aibase.com/discover/43-75) | [43-75](https://rsshub.app/aibase/discover/43-75) |\n\n#### 聊天机器人\n\n| 分类                                              | ID                                                |\n| ------------------------------------------------- | ------------------------------------------------- |\n| [智能聊天](https://top.aibase.com/discover/44-76) | [44-76](https://rsshub.app/aibase/discover/44-76) |\n| [智能客服](https://top.aibase.com/discover/44-77) | [44-77](https://rsshub.app/aibase/discover/44-77) |\n\n#### 翻译\n\n| 分类                                          | ID                                                |\n| --------------------------------------------- | ------------------------------------------------- |\n| [翻译](https://top.aibase.com/discover/46-79) | [46-79](https://rsshub.app/aibase/discover/46-79) |\n\n#### 教育学习\n\n| 分类                                              | ID                                                |\n| ------------------------------------------------- | ------------------------------------------------- |\n| [教育学习](https://top.aibase.com/discover/47-80) | [47-80](https://rsshub.app/aibase/discover/47-80) |\n\n#### 智能营销\n\n| 分类                                              | ID                                                |\n| ------------------------------------------------- | ------------------------------------------------- |\n| [智能营销](https://top.aibase.com/discover/48-81) | [48-81](https://rsshub.app/aibase/discover/48-81) |\n\n#### 法律\n\n| 分类                                            | ID                                                    |\n| ----------------------------------------------- | ----------------------------------------------------- |\n| [法律](https://top.aibase.com/discover/138-139) | [138-139](https://rsshub.app/aibase/discover/138-139) |\n</details>\n    ","categories":["new-media","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["top.aibase.com/discover/:id"]},{"title":"图像处理 - 图片背景移除","source":["top.aibase.com/discover/37-49"],"target":"/discover/37-49"},{"title":"图像处理 - 图片无损放大","source":["top.aibase.com/discover/37-50"],"target":"/discover/37-50"},{"title":"图像处理 - 图片AI修复","source":["top.aibase.com/discover/37-51"],"target":"/discover/37-51"},{"title":"图像处理 - 图像生成","source":["top.aibase.com/discover/37-52"],"target":"/discover/37-52"},{"title":"图像处理 - Ai图片拓展","source":["top.aibase.com/discover/37-53"],"target":"/discover/37-53"},{"title":"图像处理 - Ai漫画生成","source":["top.aibase.com/discover/37-54"],"target":"/discover/37-54"},{"title":"图像处理 - Ai生成写真","source":["top.aibase.com/discover/37-55"],"target":"/discover/37-55"},{"title":"图像处理 - 电商图片制作","source":["top.aibase.com/discover/37-83"],"target":"/discover/37-83"},{"title":"图像处理 - Ai图像转视频","source":["top.aibase.com/discover/37-86"],"target":"/discover/37-86"},{"title":"视频创作 - 视频剪辑","source":["top.aibase.com/discover/38-56"],"target":"/discover/38-56"},{"title":"视频创作 - 生成视频","source":["top.aibase.com/discover/38-57"],"target":"/discover/38-57"},{"title":"视频创作 - Ai动画制作","source":["top.aibase.com/discover/38-58"],"target":"/discover/38-58"},{"title":"视频创作 - 字幕生成","source":["top.aibase.com/discover/38-84"],"target":"/discover/38-84"},{"title":"效率助手 - AI文档工具","source":["top.aibase.com/discover/39-59"],"target":"/discover/39-59"},{"title":"效率助手 - PPT","source":["top.aibase.com/discover/39-60"],"target":"/discover/39-60"},{"title":"效率助手 - 思维导图","source":["top.aibase.com/discover/39-61"],"target":"/discover/39-61"},{"title":"效率助手 - 表格处理","source":["top.aibase.com/discover/39-62"],"target":"/discover/39-62"},{"title":"效率助手 - Ai办公助手","source":["top.aibase.com/discover/39-63"],"target":"/discover/39-63"},{"title":"写作灵感 - 文案写作","source":["top.aibase.com/discover/40-64"],"target":"/discover/40-64"},{"title":"写作灵感 - 论文写作","source":["top.aibase.com/discover/40-88"],"target":"/discover/40-88"},{"title":"艺术灵感 - 音乐创作","source":["top.aibase.com/discover/41-65"],"target":"/discover/41-65"},{"title":"艺术灵感 - 设计创作","source":["top.aibase.com/discover/41-66"],"target":"/discover/41-66"},{"title":"艺术灵感 - Ai图标生成","source":["top.aibase.com/discover/41-67"],"target":"/discover/41-67"},{"title":"趣味 - Ai名字生成器","source":["top.aibase.com/discover/42-68"],"target":"/discover/42-68"},{"title":"趣味 - 游戏娱乐","source":["top.aibase.com/discover/42-71"],"target":"/discover/42-71"},{"title":"趣味 - 其他","source":["top.aibase.com/discover/42-72"],"target":"/discover/42-72"},{"title":"开发编程 - 开发编程","source":["top.aibase.com/discover/43-73"],"target":"/discover/43-73"},{"title":"开发编程 - Ai开放平台","source":["top.aibase.com/discover/43-74"],"target":"/discover/43-74"},{"title":"开发编程 - Ai算力平台","source":["top.aibase.com/discover/43-75"],"target":"/discover/43-75"},{"title":"聊天机器人 - 智能聊天","source":["top.aibase.com/discover/44-76"],"target":"/discover/44-76"},{"title":"聊天机器人 - 智能客服","source":["top.aibase.com/discover/44-77"],"target":"/discover/44-77"},{"title":"翻译 - 翻译","source":["top.aibase.com/discover/46-79"],"target":"/discover/46-79"},{"title":"教育学习 - 教育学习","source":["top.aibase.com/discover/47-80"],"target":"/discover/47-80"},{"title":"智能营销 - 智能营销","source":["top.aibase.com/discover/48-81"],"target":"/discover/48-81"},{"title":"法律 - 法律","source":["top.aibase.com/discover/138-139"],"target":"/discover/138-139"}],"location":"discover.ts"}' :test='{"code":0}' />
 
 ::: tip
   若订阅 [图片背景移除](https://top.aibase.com/discover/37-49)，网址为 `https://top.aibase.com/discover/37-49`。截取 `https://top.aibase.com/discover/` 到末尾的部分 `37-49` 作为参数填入，此时路由为 [`/aibase/discover/37-49`](https://rsshub.app/aibase/discover/37-49)。
 :::
 
-  <details>
-    <summary>更多分类</summary>
+<details>
+<summary>更多分类</summary>
 
-  #### 图像处理
+#### 图像处理
 
-  | 分类                                                  | ID                                                |
-  | ----------------------------------------------------- | ------------------------------------------------- |
-  | [图片背景移除](https://top.aibase.com/discover/37-49) | [37-49](https://rsshub.app/aibase/discover/37-49) |
-  | [图片无损放大](https://top.aibase.com/discover/37-50) | [37-50](https://rsshub.app/aibase/discover/37-50) |
-  | [图片AI修复](https://top.aibase.com/discover/37-51)   | [37-51](https://rsshub.app/aibase/discover/37-51) |
-  | [图像生成](https://top.aibase.com/discover/37-52)     | [37-52](https://rsshub.app/aibase/discover/37-52) |
-  | [Ai图片拓展](https://top.aibase.com/discover/37-53)   | [37-53](https://rsshub.app/aibase/discover/37-53) |
-  | [Ai漫画生成](https://top.aibase.com/discover/37-54)   | [37-54](https://rsshub.app/aibase/discover/37-54) |
-  | [Ai生成写真](https://top.aibase.com/discover/37-55)   | [37-55](https://rsshub.app/aibase/discover/37-55) |
-  | [电商图片制作](https://top.aibase.com/discover/37-83) | [37-83](https://rsshub.app/aibase/discover/37-83) |
-  | [Ai图像转视频](https://top.aibase.com/discover/37-86) | [37-86](https://rsshub.app/aibase/discover/37-86) |
+| 分类                                                  | ID                                                |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| [图片背景移除](https://top.aibase.com/discover/37-49) | [37-49](https://rsshub.app/aibase/discover/37-49) |
+| [图片无损放大](https://top.aibase.com/discover/37-50) | [37-50](https://rsshub.app/aibase/discover/37-50) |
+| [图片AI修复](https://top.aibase.com/discover/37-51)   | [37-51](https://rsshub.app/aibase/discover/37-51) |
+| [图像生成](https://top.aibase.com/discover/37-52)     | [37-52](https://rsshub.app/aibase/discover/37-52) |
+| [Ai图片拓展](https://top.aibase.com/discover/37-53)   | [37-53](https://rsshub.app/aibase/discover/37-53) |
+| [Ai漫画生成](https://top.aibase.com/discover/37-54)   | [37-54](https://rsshub.app/aibase/discover/37-54) |
+| [Ai生成写真](https://top.aibase.com/discover/37-55)   | [37-55](https://rsshub.app/aibase/discover/37-55) |
+| [电商图片制作](https://top.aibase.com/discover/37-83) | [37-83](https://rsshub.app/aibase/discover/37-83) |
+| [Ai图像转视频](https://top.aibase.com/discover/37-86) | [37-86](https://rsshub.app/aibase/discover/37-86) |
 
-  #### 视频创作
+#### 视频创作
 
-  | 分类                                                | ID                                                |
-  | --------------------------------------------------- | ------------------------------------------------- |
-  | [视频剪辑](https://top.aibase.com/discover/38-56)   | [38-56](https://rsshub.app/aibase/discover/38-56) |
-  | [生成视频](https://top.aibase.com/discover/38-57)   | [38-57](https://rsshub.app/aibase/discover/38-57) |
-  | [Ai动画制作](https://top.aibase.com/discover/38-58) | [38-58](https://rsshub.app/aibase/discover/38-58) |
-  | [字幕生成](https://top.aibase.com/discover/38-84)   | [38-84](https://rsshub.app/aibase/discover/38-84) |
+| 分类                                                | ID                                                |
+| --------------------------------------------------- | ------------------------------------------------- |
+| [视频剪辑](https://top.aibase.com/discover/38-56)   | [38-56](https://rsshub.app/aibase/discover/38-56) |
+| [生成视频](https://top.aibase.com/discover/38-57)   | [38-57](https://rsshub.app/aibase/discover/38-57) |
+| [Ai动画制作](https://top.aibase.com/discover/38-58) | [38-58](https://rsshub.app/aibase/discover/38-58) |
+| [字幕生成](https://top.aibase.com/discover/38-84)   | [38-84](https://rsshub.app/aibase/discover/38-84) |
 
-  #### 效率助手
+#### 效率助手
 
-  | 分类                                                | ID                                                |
-  | --------------------------------------------------- | ------------------------------------------------- |
-  | [AI文档工具](https://top.aibase.com/discover/39-59) | [39-59](https://rsshub.app/aibase/discover/39-59) |
-  | [PPT](https://top.aibase.com/discover/39-60)        | [39-60](https://rsshub.app/aibase/discover/39-60) |
-  | [思维导图](https://top.aibase.com/discover/39-61)   | [39-61](https://rsshub.app/aibase/discover/39-61) |
-  | [表格处理](https://top.aibase.com/discover/39-62)   | [39-62](https://rsshub.app/aibase/discover/39-62) |
-  | [Ai办公助手](https://top.aibase.com/discover/39-63) | [39-63](https://rsshub.app/aibase/discover/39-63) |
+| 分类                                                | ID                                                |
+| --------------------------------------------------- | ------------------------------------------------- |
+| [AI文档工具](https://top.aibase.com/discover/39-59) | [39-59](https://rsshub.app/aibase/discover/39-59) |
+| [PPT](https://top.aibase.com/discover/39-60)        | [39-60](https://rsshub.app/aibase/discover/39-60) |
+| [思维导图](https://top.aibase.com/discover/39-61)   | [39-61](https://rsshub.app/aibase/discover/39-61) |
+| [表格处理](https://top.aibase.com/discover/39-62)   | [39-62](https://rsshub.app/aibase/discover/39-62) |
+| [Ai办公助手](https://top.aibase.com/discover/39-63) | [39-63](https://rsshub.app/aibase/discover/39-63) |
 
-  #### 写作灵感
+#### 写作灵感
 
-  | 分类                                              | ID                                                |
-  | ------------------------------------------------- | ------------------------------------------------- |
-  | [文案写作](https://top.aibase.com/discover/40-64) | [40-64](https://rsshub.app/aibase/discover/40-64) |
-  | [论文写作](https://top.aibase.com/discover/40-88) | [40-88](https://rsshub.app/aibase/discover/40-88) |
+| 分类                                              | ID                                                |
+| ------------------------------------------------- | ------------------------------------------------- |
+| [文案写作](https://top.aibase.com/discover/40-64) | [40-64](https://rsshub.app/aibase/discover/40-64) |
+| [论文写作](https://top.aibase.com/discover/40-88) | [40-88](https://rsshub.app/aibase/discover/40-88) |
 
-  #### 艺术灵感
+#### 艺术灵感
 
-  | 分类                                                | ID                                                |
-  | --------------------------------------------------- | ------------------------------------------------- |
-  | [音乐创作](https://top.aibase.com/discover/41-65)   | [41-65](https://rsshub.app/aibase/discover/41-65) |
-  | [设计创作](https://top.aibase.com/discover/41-66)   | [41-66](https://rsshub.app/aibase/discover/41-66) |
-  | [Ai图标生成](https://top.aibase.com/discover/41-67) | [41-67](https://rsshub.app/aibase/discover/41-67) |
+| 分类                                                | ID                                                |
+| --------------------------------------------------- | ------------------------------------------------- |
+| [音乐创作](https://top.aibase.com/discover/41-65)   | [41-65](https://rsshub.app/aibase/discover/41-65) |
+| [设计创作](https://top.aibase.com/discover/41-66)   | [41-66](https://rsshub.app/aibase/discover/41-66) |
+| [Ai图标生成](https://top.aibase.com/discover/41-67) | [41-67](https://rsshub.app/aibase/discover/41-67) |
 
-  #### 趣味
+#### 趣味
 
-  | 分类                                                  | ID                                                |
-  | ----------------------------------------------------- | ------------------------------------------------- |
-  | [Ai名字生成器](https://top.aibase.com/discover/42-68) | [42-68](https://rsshub.app/aibase/discover/42-68) |
-  | [游戏娱乐](https://top.aibase.com/discover/42-71)     | [42-71](https://rsshub.app/aibase/discover/42-71) |
-  | [其他](https://top.aibase.com/discover/42-72)         | [42-72](https://rsshub.app/aibase/discover/42-72) |
+| 分类                                                  | ID                                                |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| [Ai名字生成器](https://top.aibase.com/discover/42-68) | [42-68](https://rsshub.app/aibase/discover/42-68) |
+| [游戏娱乐](https://top.aibase.com/discover/42-71)     | [42-71](https://rsshub.app/aibase/discover/42-71) |
+| [其他](https://top.aibase.com/discover/42-72)         | [42-72](https://rsshub.app/aibase/discover/42-72) |
 
-  #### 开发编程
+#### 开发编程
 
-  | 分类                                                | ID                                                |
-  | --------------------------------------------------- | ------------------------------------------------- |
-  | [开发编程](https://top.aibase.com/discover/43-73)   | [43-73](https://rsshub.app/aibase/discover/43-73) |
-  | [Ai开放平台](https://top.aibase.com/discover/43-74) | [43-74](https://rsshub.app/aibase/discover/43-74) |
-  | [Ai算力平台](https://top.aibase.com/discover/43-75) | [43-75](https://rsshub.app/aibase/discover/43-75) |
+| 分类                                                | ID                                                |
+| --------------------------------------------------- | ------------------------------------------------- |
+| [开发编程](https://top.aibase.com/discover/43-73)   | [43-73](https://rsshub.app/aibase/discover/43-73) |
+| [Ai开放平台](https://top.aibase.com/discover/43-74) | [43-74](https://rsshub.app/aibase/discover/43-74) |
+| [Ai算力平台](https://top.aibase.com/discover/43-75) | [43-75](https://rsshub.app/aibase/discover/43-75) |
 
-  #### 聊天机器人
+#### 聊天机器人
 
-  | 分类                                              | ID                                                |
-  | ------------------------------------------------- | ------------------------------------------------- |
-  | [智能聊天](https://top.aibase.com/discover/44-76) | [44-76](https://rsshub.app/aibase/discover/44-76) |
-  | [智能客服](https://top.aibase.com/discover/44-77) | [44-77](https://rsshub.app/aibase/discover/44-77) |
+| 分类                                              | ID                                                |
+| ------------------------------------------------- | ------------------------------------------------- |
+| [智能聊天](https://top.aibase.com/discover/44-76) | [44-76](https://rsshub.app/aibase/discover/44-76) |
+| [智能客服](https://top.aibase.com/discover/44-77) | [44-77](https://rsshub.app/aibase/discover/44-77) |
 
-  #### 翻译
+#### 翻译
 
-  | 分类                                          | ID                                                |
-  | --------------------------------------------- | ------------------------------------------------- |
-  | [翻译](https://top.aibase.com/discover/46-79) | [46-79](https://rsshub.app/aibase/discover/46-79) |
+| 分类                                          | ID                                                |
+| --------------------------------------------- | ------------------------------------------------- |
+| [翻译](https://top.aibase.com/discover/46-79) | [46-79](https://rsshub.app/aibase/discover/46-79) |
 
-  #### 教育学习
+#### 教育学习
 
-  | 分类                                              | ID                                                |
-  | ------------------------------------------------- | ------------------------------------------------- |
-  | [教育学习](https://top.aibase.com/discover/47-80) | [47-80](https://rsshub.app/aibase/discover/47-80) |
+| 分类                                              | ID                                                |
+| ------------------------------------------------- | ------------------------------------------------- |
+| [教育学习](https://top.aibase.com/discover/47-80) | [47-80](https://rsshub.app/aibase/discover/47-80) |
 
-  #### 智能营销
+#### 智能营销
 
-  | 分类                                              | ID                                                |
-  | ------------------------------------------------- | ------------------------------------------------- |
-  | [智能营销](https://top.aibase.com/discover/48-81) | [48-81](https://rsshub.app/aibase/discover/48-81) |
+| 分类                                              | ID                                                |
+| ------------------------------------------------- | ------------------------------------------------- |
+| [智能营销](https://top.aibase.com/discover/48-81) | [48-81](https://rsshub.app/aibase/discover/48-81) |
 
-  #### 法律
+#### 法律
 
-  | 分类                                            | ID                                                    |
-  | ----------------------------------------------- | ----------------------------------------------------- |
-  | [法律](https://top.aibase.com/discover/138-139) | [138-139](https://rsshub.app/aibase/discover/138-139) |
-  </details>
+| 分类                                            | ID                                                    |
+| ----------------------------------------------- | ----------------------------------------------------- |
+| [法律](https://top.aibase.com/discover/138-139) | [138-139](https://rsshub.app/aibase/discover/138-139) |
+</details>
     
 
 ### 资讯 <Site url="www.aibase.com" size="sm" />
@@ -251,11 +251,11 @@ Supported types: Essays, Videos, and Audio.
 
 ### Category <Site url="appleinsider.com" size="sm" />
 
-<Route namespace="appleinsider" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/appleinsider","parameters":{"category":"Category, see below, News by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["appleinsider.com/:category","appleinsider.com/"],"target":"/:category"}],"name":"Category","maintainers":["nczitzk"],"description":"| News | Reviews | How-tos |\n  | ---- | ------- | ------- |\n  |      | reviews | how-to  |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="appleinsider" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/appleinsider","parameters":{"category":"Category, see below, News by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["appleinsider.com/:category","appleinsider.com/"],"target":"/:category"}],"name":"Category","maintainers":["nczitzk"],"description":"| News | Reviews | How-tos |\n| ---- | ------- | ------- |\n|      | reviews | how-to  |","location":"index.ts"}' :test='{"code":0}' />
 
 | News | Reviews | How-tos |
-  | ---- | ------- | ------- |
-  |      | reviews | how-to  |
+| ---- | ------- | ------- |
+|      | reviews | how-to  |
 
 ## Behance <Site url="www.behance.net"/>
 
@@ -326,23 +326,23 @@ lang:
 
 ### Bloomberg Site <Site url="www.bloomberg.com" size="sm" />
 
-<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance","popular"],"view":0,"example":"/bloomberg/bbiz","parameters":{"site":{"description":"Site ID, can be found below","options":[{"value":"/","label":"News"},{"value":"bpol","label":"Politics"},{"value":"bbiz","label":"Business"},{"value":"markets","label":"Markets"},{"value":"technology","label":"Technology"},{"value":"green","label":"Green"},{"value":"wealth","label":"Wealth"},{"value":"pursuits","label":"Pursuits"},{"value":"bview","label":"Opinion"},{"value":"equality","label":"Equality"},{"value":"businessweek","label":"Businessweek"},{"value":"citylab","label":"CityLab"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n  | Site ID      | Title        |\n  | ------------ | ------------ |\n  | /            | News         |\n  | bpol         | Politics     |\n  | bbiz         | Business     |\n  | markets      | Markets      |\n  | technology   | Technology   |\n  | green        | Green        |\n  | wealth       | Wealth       |\n  | pursuits     | Pursuits     |\n  | bview        | Opinion      |\n  | equality     | Equality     |\n  | businessweek | Businessweek |\n  | citylab      | CityLab      |\n  ","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="bloomberg" :data='{"path":"/:site?","categories":["finance","popular"],"view":0,"example":"/bloomberg/bbiz","parameters":{"site":{"description":"Site ID, can be found below","options":[{"value":"/","label":"News"},{"value":"bpol","label":"Politics"},{"value":"bbiz","label":"Business"},{"value":"markets","label":"Markets"},{"value":"technology","label":"Technology"},{"value":"green","label":"Green"},{"value":"wealth","label":"Wealth"},{"value":"pursuits","label":"Pursuits"},{"value":"bview","label":"Opinion"},{"value":"equality","label":"Equality"},{"value":"businessweek","label":"Businessweek"},{"value":"citylab","label":"CityLab"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Bloomberg Site","maintainers":["bigfei"],"description":"\n| Site ID      | Title        |\n| ------------ | ------------ |\n| /            | News         |\n| bpol         | Politics     |\n| bbiz         | Business     |\n| markets      | Markets      |\n| technology   | Technology   |\n| green        | Green        |\n| wealth       | Wealth       |\n| pursuits     | Pursuits     |\n| bview        | Opinion      |\n| equality     | Equality     |\n| businessweek | Businessweek |\n| citylab      | CityLab      |\n  ","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 
-  | Site ID      | Title        |
-  | ------------ | ------------ |
-  | /            | News         |
-  | bpol         | Politics     |
-  | bbiz         | Business     |
-  | markets      | Markets      |
-  | technology   | Technology   |
-  | green        | Green        |
-  | wealth       | Wealth       |
-  | pursuits     | Pursuits     |
-  | bview        | Opinion      |
-  | equality     | Equality     |
-  | businessweek | Businessweek |
-  | citylab      | CityLab      |
+| Site ID      | Title        |
+| ------------ | ------------ |
+| /            | News         |
+| bpol         | Politics     |
+| bbiz         | Business     |
+| markets      | Markets      |
+| technology   | Technology   |
+| green        | Green        |
+| wealth       | Wealth       |
+| pursuits     | Pursuits     |
+| bview        | Opinion      |
+| equality     | Equality     |
+| businessweek | Businessweek |
+| citylab      | CityLab      |
   
 
 ## Bluesky (bsky) <Site url="bsky.app"/>
@@ -388,11 +388,11 @@ Example:
 
 ### 分类 <Site url="cnbeta.com.tw" size="sm" />
 
-<Route namespace="cnbeta" :data='{"name":"分类","path":["/category/:id"],"example":"/cnbeta/category/movie","maintainers":["nczitzk"],"parameters":{"id":"分类 id，可在对应分类页的 URL 中找到"},"radar":[{"source":["cnbeta.com.tw/category/:id"]}],"url":"cnbeta.com.tw","description":"| 影视  | 音乐  | 游戏 | 动漫  | 趣闻  | 科学    | 软件 |\n  | ----- | ----- | ---- | ----- | ----- | ------- | ---- |\n  | movie | music | game | comic | funny | science | soft |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="cnbeta" :data='{"name":"分类","path":["/category/:id"],"example":"/cnbeta/category/movie","maintainers":["nczitzk"],"parameters":{"id":"分类 id，可在对应分类页的 URL 中找到"},"radar":[{"source":["cnbeta.com.tw/category/:id"]}],"url":"cnbeta.com.tw","description":"| 影视  | 音乐  | 游戏 | 动漫  | 趣闻  | 科学    | 软件 |\n| ----- | ----- | ---- | ----- | ----- | ------- | ---- |\n| movie | music | game | comic | funny | science | soft |","location":"category.ts"}' :test='{"code":0}' />
 
 | 影视  | 音乐  | 游戏 | 动漫  | 趣闻  | 科学    | 软件 |
-  | ----- | ----- | ---- | ----- | ----- | ------- | ---- |
-  | movie | music | game | comic | funny | science | soft |
+| ----- | ----- | ---- | ----- | ----- | ------- | ---- |
+| movie | music | game | comic | funny | science | soft |
 
 ### 头条资讯 <Site url="cnbeta.com.tw" size="sm" />
 
@@ -416,11 +416,11 @@ Example:
 
 ### 測試報告 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/reviews/:type?","categories":["new-media","popular"],"example":"/dcfever/reviews/cameras","parameters":{"type":"分類，預設為 `cameras`"},"radar":[{"source":["dcfever.com/:type/reviews.php"],"target":"/reviews/:type"}],"name":"測試報告","maintainers":["TonyRL"],"description":"| 相機及鏡頭 | 手機平板 | 試車報告 |\n  | ---------- | -------- | -------- |\n  | cameras    | phones   | cars     |","location":"reviews.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(5) ] to not include &#39;https://www.dcfever.com/news/readnews…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 432)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="dcfever" :data='{"path":"/reviews/:type?","categories":["new-media","popular"],"example":"/dcfever/reviews/cameras","parameters":{"type":"分類，預設為 `cameras`"},"radar":[{"source":["dcfever.com/:type/reviews.php"],"target":"/reviews/:type"}],"name":"測試報告","maintainers":["TonyRL"],"description":"| 相機及鏡頭 | 手機平板 | 試車報告 |\n| ---------- | -------- | -------- |\n| cameras    | phones   | cars     |","location":"reviews.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(5) ] to not include &#39;https://www.dcfever.com/news/readnews…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 432)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | 相機及鏡頭 | 手機平板 | 試車報告 |
-  | ---------- | -------- | -------- |
-  | cameras    | phones   | cars     |
+| ---------- | -------- | -------- |
+| cameras    | phones   | cars     |
 
 ### 二手市集 - 物品搜尋 <Site url="dcfever.com" size="sm" />
 
@@ -428,21 +428,21 @@ Example:
 
 ### 二手市集 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/trading/:id","categories":["new-media","popular"],"example":"/dcfever/trading/1","parameters":{"id":"分類 ID，見下表"},"name":"二手市集","maintainers":["TonyRL"],"description":"[所有物品分類](https://www.dcfever.com/trading/index.php#all_cats)\n\n  | 攝影產品 | 電腦 | 手機通訊 | 影音產品 | 遊戲機、模型 | 電器傢俱 | 潮流服飾 | 手錶 | 單車及運動 | 其它 |\n  | -------- | ---- | -------- | -------- | ------------ | -------- | -------- | ---- | ---------- | ---- |\n  | 1        | 2    | 3        | 44       | 43           | 104      | 45       | 99   | 109        | 4    |","location":"trading.ts"}' :test='{"code":0}' />
+<Route namespace="dcfever" :data='{"path":"/trading/:id","categories":["new-media","popular"],"example":"/dcfever/trading/1","parameters":{"id":"分類 ID，見下表"},"name":"二手市集","maintainers":["TonyRL"],"description":"[所有物品分類](https://www.dcfever.com/trading/index.php#all_cats)\n\n| 攝影產品 | 電腦 | 手機通訊 | 影音產品 | 遊戲機、模型 | 電器傢俱 | 潮流服飾 | 手錶 | 單車及運動 | 其它 |\n| -------- | ---- | -------- | -------- | ------------ | -------- | -------- | ---- | ---------- | ---- |\n| 1        | 2    | 3        | 44       | 43           | 104      | 45       | 99   | 109        | 4    |","location":"trading.ts"}' :test='{"code":0}' />
 
 [所有物品分類](https://www.dcfever.com/trading/index.php#all_cats)
 
-  | 攝影產品 | 電腦 | 手機通訊 | 影音產品 | 遊戲機、模型 | 電器傢俱 | 潮流服飾 | 手錶 | 單車及運動 | 其它 |
-  | -------- | ---- | -------- | -------- | ------------ | -------- | -------- | ---- | ---------- | ---- |
-  | 1        | 2    | 3        | 44       | 43           | 104      | 45       | 99   | 109        | 4    |
+| 攝影產品 | 電腦 | 手機通訊 | 影音產品 | 遊戲機、模型 | 電器傢俱 | 潮流服飾 | 手錶 | 單車及運動 | 其它 |
+| -------- | ---- | -------- | -------- | ------------ | -------- | -------- | ---- | ---------- | ---- |
+| 1        | 2    | 3        | 44       | 43           | 104      | 45       | 99   | 109        | 4    |
 
 ### 新聞中心 <Site url="dcfever.com" size="sm" />
 
-<Route namespace="dcfever" :data='{"path":"/news/:type?","categories":["new-media","popular"],"example":"/dcfever/news","parameters":{"type":"分類，預設為所有新聞"},"name":"新聞中心","maintainers":["TonyRL"],"radar":[{"source":["dcfever.com/news/index.php"],"target":"/news"}],"description":"| 所有新聞 | 攝影器材 | 手機通訊 | 汽車熱話 | 攝影文化    | 影片攝錄    | 測試報告 | 生活科技 | 攝影技巧  |\n  | -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |\n  |          | camera   | mobile   | auto     | photography | videography | reviews  | gadget   | technique |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="dcfever" :data='{"path":"/news/:type?","categories":["new-media","popular"],"example":"/dcfever/news","parameters":{"type":"分類，預設為所有新聞"},"name":"新聞中心","maintainers":["TonyRL"],"radar":[{"source":["dcfever.com/news/index.php"],"target":"/news"}],"description":"| 所有新聞 | 攝影器材 | 手機通訊 | 汽車熱話 | 攝影文化    | 影片攝錄    | 測試報告 | 生活科技 | 攝影技巧  |\n| -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |\n|          | camera   | mobile   | auto     | photography | videography | reviews  | gadget   | technique |","location":"news.ts"}' :test='{"code":0}' />
 
 | 所有新聞 | 攝影器材 | 手機通訊 | 汽車熱話 | 攝影文化    | 影片攝錄    | 測試報告 | 生活科技 | 攝影技巧  |
-  | -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |
-  |          | camera   | mobile   | auto     | photography | videography | reviews  | gadget   | technique |
+| -------- | -------- | -------- | -------- | ----------- | ----------- | -------- | -------- | --------- |
+|          | camera   | mobile   | auto     | photography | videography | reviews  | gadget   | technique |
 
 ## DeepMind <Site url="deepmind.com"/>
 
@@ -460,11 +460,11 @@ Example:
 
 ### Current Release <Site url="dlsite.com" size="sm" />
 
-<Route namespace="dlsite" :data='{"path":"/new/:type","categories":["anime","popular"],"view":0,"example":"/dlsite/new/home","parameters":{"type":{"description":"类型","options":[{"value":"home","label":"「DLsite 同人」"},{"value":"comic","label":"「DLsite コミック」"},{"value":"soft","label":"「DLsite PCソフト」"},{"value":"maniax","label":"「DLsite 同人 - R18」"},{"value":"books","label":"「DLsite 成年コミック - R18」"},{"value":"pro","label":"「DLsite 美少女ゲーム」"},{"value":"girls","label":"「DLsite 乙女」"},{"value":"bl","label":"「DLsite BL」"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Current Release","maintainers":["cssxsh"],"description":"| Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |\n  | ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |\n  | home   | comic  | soft     | maniax       | books        | pro     | girls | bl |","location":"new.ts"}' :test='{"code":0}' />
+<Route namespace="dlsite" :data='{"path":"/new/:type","categories":["anime","popular"],"view":0,"example":"/dlsite/new/home","parameters":{"type":{"description":"类型","options":[{"value":"home","label":"「DLsite 同人」"},{"value":"comic","label":"「DLsite コミック」"},{"value":"soft","label":"「DLsite PCソフト」"},{"value":"maniax","label":"「DLsite 同人 - R18」"},{"value":"books","label":"「DLsite 成年コミック - R18」"},{"value":"pro","label":"「DLsite 美少女ゲーム」"},{"value":"girls","label":"「DLsite 乙女」"},{"value":"bl","label":"「DLsite BL」"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Current Release","maintainers":["cssxsh"],"description":"| Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |\n| ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |\n| home   | comic  | soft     | maniax       | books        | pro     | girls | bl |","location":"new.ts"}' :test='{"code":0}' />
 
 | Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |
-  | ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |
-  | home   | comic  | soft     | maniax       | books        | pro     | girls | bl |
+| ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |
+| home   | comic  | soft     | maniax       | books        | pro     | girls | bl |
 
 ### Ci-en Creators' Article <Site url="dlsite.com" size="sm" />
 
@@ -478,22 +478,22 @@ Example:
 
 ### News <Site url="dn.com" size="sm" />
 
-<Route namespace="dn" :data='{"path":"/:language/news/:category?","categories":["new-media","popular"],"example":"/dn/en-us/news","parameters":{"language":"Language, see below","category":"Category, see below, The Latest by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["nczitzk"],"description":"#### Language\n\n  | English | 中文  |\n  | ------- | ----- |\n  | en-us   | zh-cn |\n\n  #### Category\n\n  | English Category     | 中文分类 | Category id |\n  | -------------------- | -------- | ----------- |\n  | The Latest           | 最新     |             |\n  | Industry Information | 行业资讯 | category-1  |\n  | Knowledge            | 域名知识 | category-2  |\n  | Investment           | 域名投资 | category-3  |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="dn" :data='{"path":"/:language/news/:category?","categories":["new-media","popular"],"example":"/dn/en-us/news","parameters":{"language":"Language, see below","category":"Category, see below, The Latest by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["nczitzk"],"description":"#### Language\n\n| English | 中文  |\n| ------- | ----- |\n| en-us   | zh-cn |\n\n#### Category\n\n| English Category     | 中文分类 | Category id |\n| -------------------- | -------- | ----------- |\n| The Latest           | 最新     |             |\n| Industry Information | 行业资讯 | category-1  |\n| Knowledge            | 域名知识 | category-2  |\n| Investment           | 域名投资 | category-3  |","location":"news.ts"}' :test='{"code":0}' />
 
 #### Language
 
-  | English | 中文  |
-  | ------- | ----- |
-  | en-us   | zh-cn |
+| English | 中文  |
+| ------- | ----- |
+| en-us   | zh-cn |
 
-  #### Category
+#### Category
 
-  | English Category     | 中文分类 | Category id |
-  | -------------------- | -------- | ----------- |
-  | The Latest           | 最新     |             |
-  | Industry Information | 行业资讯 | category-1  |
-  | Knowledge            | 域名知识 | category-2  |
-  | Investment           | 域名投资 | category-3  |
+| English Category     | 中文分类 | Category id |
+| -------------------- | -------- | ----------- |
+| The Latest           | 最新     |             |
+| Industry Information | 行业资讯 | category-1  |
+| Knowledge            | 域名知识 | category-2  |
+| Investment           | 域名投资 | category-3  |
 
 ## Docker Hub <Site url="hub.docker.com"/>
 
@@ -523,57 +523,57 @@ Example:
 
 ### Search <Site url="fantia.jp" size="sm" />
 
-<Route namespace="fantia" :data='{"path":"/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?","categories":["picture","popular"],"view":2,"example":"/fantia/search/posts/all/daily","parameters":{"type":{"description":"Type, see the table below, `posts` by default","options":[{"value":"fanclubs","label":"クリエイター"},{"value":"posts","label":"投稿"},{"value":"products","label":"商品"},{"value":"commissions","label":"コミッション"}],"default":"posts"},"caty":{"description":"Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default","options":[{"value":"all","label":"すべてのクリエイター"},{"value":"illust","label":"イラスト"},{"value":"comic","label":"漫画"},{"value":"cosplay","label":"コスプレ"},{"value":"youtuber","label":"YouTuber・配信者"},{"value":"vtuber","label":"Vtuber"},{"value":"voice","label":"音声作品・ASMR"},{"value":"voiceactor","label":"声優・歌い手"},{"value":"idol","label":"アイドル"},{"value":"anime","label":"アニメ・映像・写真"},{"value":"3d","label":"3D"},{"value":"game","label":"ゲーム制作"},{"value":"music","label":"音楽"},{"value":"novel","label":"小説"},{"value":"doll","label":"ドール"},{"value":"art","label":"アート・デザイン"},{"value":"program","label":"プログラム"},{"value":"handmade","label":"創作・ハンドメイド"},{"value":"history","label":"歴史・評論・情報"},{"value":"railroad","label":"鉄道・旅行・ミリタリー"},{"value":"shop","label":"ショップ"},{"value":"other","label":"その他"}],"default":"all"},"period":{"description":"Ranking period, see the table below, empty by default","options":[{"value":"daily","label":"デイリー"},{"value":"weekly","label":"ウィークリー"},{"value":"monthly","label":"マンスリー"},{"value":"all","label":"全期間"}],"default":""},"order":{"description":"Sorting, see the table below, `更新の新しい順` by default","options":[{"value":"updater","label":"更新の新しい順"},{"value":"update_old","label":"更新の古い順"},{"value":"newer","label":"投稿の新しい順"},{"value":"create_old","label":"投稿の古い順"},{"value":"popular","label":"お気に入り数順"}],"default":"updater"},"rating":{"description":"Rating, see the table below, `すべて` by default","options":[{"value":"all","label":"すべて"},{"value":"general","label":"一般のみ"},{"value":"adult","label":"R18 のみ"}],"default":"all"},"keyword":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["nczitzk"],"description":"Type\n\n  | クリエイター | 投稿  | 商品     | コミッション |\n  | ------------ | ----- | -------- | ------------ |\n  | fanclubs     | posts | products | commissions  |\n\n  Category\n\n  | 分类                   | 分类名     |\n  | ---------------------- | ---------- |\n  | イラスト               | illust     |\n  | 漫画                   | comic      |\n  | コスプレ               | cosplay    |\n  | YouTuber・配信者       | youtuber   |\n  | Vtuber                 | vtuber     |\n  | 音声作品・ASMR         | voice      |\n  | 声優・歌い手           | voiceactor |\n  | アイドル               | idol       |\n  | アニメ・映像・写真     | anime      |\n  | 3D                     | 3d         |\n  | ゲーム制作             | game       |\n  | 音楽                   | music      |\n  | 小説                   | novel      |\n  | ドール                 | doll       |\n  | アート・デザイン       | art        |\n  | プログラム             | program    |\n  | 創作・ハンドメイド     | handmade   |\n  | 歴史・評論・情報       | history    |\n  | 鉄道・旅行・ミリタリー | railroad   |\n  | ショップ               | shop       |\n  | その他                 | other      |\n\n  Ranking period\n\n  | デイリー | ウィークリー | マンスリー | 全期間 |\n  | -------- | ------------ | ---------- | ------ |\n  | daily    | weekly       | monthly    | all    |\n\n  Sorting\n\n  | 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n  | -------------- | ------------ | -------------- | ------------ | -------------- |\n  | updater        | update_old  | newer          | create_old  | popular        |\n\n  Rating\n\n  | すべて | 一般のみ | R18 のみ |\n  | ------ | -------- | -------- |\n  | all    | general  | adult    |","location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="fantia" :data='{"path":"/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?","categories":["picture","popular"],"view":2,"example":"/fantia/search/posts/all/daily","parameters":{"type":{"description":"Type, see the table below, `posts` by default","options":[{"value":"fanclubs","label":"クリエイター"},{"value":"posts","label":"投稿"},{"value":"products","label":"商品"},{"value":"commissions","label":"コミッション"}],"default":"posts"},"caty":{"description":"Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default","options":[{"value":"all","label":"すべてのクリエイター"},{"value":"illust","label":"イラスト"},{"value":"comic","label":"漫画"},{"value":"cosplay","label":"コスプレ"},{"value":"youtuber","label":"YouTuber・配信者"},{"value":"vtuber","label":"Vtuber"},{"value":"voice","label":"音声作品・ASMR"},{"value":"voiceactor","label":"声優・歌い手"},{"value":"idol","label":"アイドル"},{"value":"anime","label":"アニメ・映像・写真"},{"value":"3d","label":"3D"},{"value":"game","label":"ゲーム制作"},{"value":"music","label":"音楽"},{"value":"novel","label":"小説"},{"value":"doll","label":"ドール"},{"value":"art","label":"アート・デザイン"},{"value":"program","label":"プログラム"},{"value":"handmade","label":"創作・ハンドメイド"},{"value":"history","label":"歴史・評論・情報"},{"value":"railroad","label":"鉄道・旅行・ミリタリー"},{"value":"shop","label":"ショップ"},{"value":"other","label":"その他"}],"default":"all"},"period":{"description":"Ranking period, see the table below, empty by default","options":[{"value":"daily","label":"デイリー"},{"value":"weekly","label":"ウィークリー"},{"value":"monthly","label":"マンスリー"},{"value":"all","label":"全期間"}],"default":""},"order":{"description":"Sorting, see the table below, `更新の新しい順` by default","options":[{"value":"updater","label":"更新の新しい順"},{"value":"update_old","label":"更新の古い順"},{"value":"newer","label":"投稿の新しい順"},{"value":"create_old","label":"投稿の古い順"},{"value":"popular","label":"お気に入り数順"}],"default":"updater"},"rating":{"description":"Rating, see the table below, `すべて` by default","options":[{"value":"all","label":"すべて"},{"value":"general","label":"一般のみ"},{"value":"adult","label":"R18 のみ"}],"default":"all"},"keyword":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["nczitzk"],"description":"Type\n\n| クリエイター | 投稿  | 商品     | コミッション |\n| ------------ | ----- | -------- | ------------ |\n| fanclubs     | posts | products | commissions  |\n\n  Category\n\n| 分类                   | 分类名     |\n| ---------------------- | ---------- |\n| イラスト               | illust     |\n| 漫画                   | comic      |\n| コスプレ               | cosplay    |\n| YouTuber・配信者       | youtuber   |\n| Vtuber                 | vtuber     |\n| 音声作品・ASMR         | voice      |\n| 声優・歌い手           | voiceactor |\n| アイドル               | idol       |\n| アニメ・映像・写真     | anime      |\n| 3D                     | 3d         |\n| ゲーム制作             | game       |\n| 音楽                   | music      |\n| 小説                   | novel      |\n| ドール                 | doll       |\n| アート・デザイン       | art        |\n| プログラム             | program    |\n| 創作・ハンドメイド     | handmade   |\n| 歴史・評論・情報       | history    |\n| 鉄道・旅行・ミリタリー | railroad   |\n| ショップ               | shop       |\n| その他                 | other      |\n\n  Ranking period\n\n| デイリー | ウィークリー | マンスリー | 全期間 |\n| -------- | ------------ | ---------- | ------ |\n| daily    | weekly       | monthly    | all    |\n\n  Sorting\n\n| 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n| -------------- | ------------ | -------------- | ------------ | -------------- |\n| updater        | update_old  | newer          | create_old  | popular        |\n\n  Rating\n\n| すべて | 一般のみ | R18 のみ |\n| ------ | -------- | -------- |\n| all    | general  | adult    |","location":"search.ts"}' :test='{"code":0}' />
 
 Type
 
-  | クリエイター | 投稿  | 商品     | コミッション |
-  | ------------ | ----- | -------- | ------------ |
-  | fanclubs     | posts | products | commissions  |
+| クリエイター | 投稿  | 商品     | コミッション |
+| ------------ | ----- | -------- | ------------ |
+| fanclubs     | posts | products | commissions  |
 
   Category
 
-  | 分类                   | 分类名     |
-  | ---------------------- | ---------- |
-  | イラスト               | illust     |
-  | 漫画                   | comic      |
-  | コスプレ               | cosplay    |
-  | YouTuber・配信者       | youtuber   |
-  | Vtuber                 | vtuber     |
-  | 音声作品・ASMR         | voice      |
-  | 声優・歌い手           | voiceactor |
-  | アイドル               | idol       |
-  | アニメ・映像・写真     | anime      |
-  | 3D                     | 3d         |
-  | ゲーム制作             | game       |
-  | 音楽                   | music      |
-  | 小説                   | novel      |
-  | ドール                 | doll       |
-  | アート・デザイン       | art        |
-  | プログラム             | program    |
-  | 創作・ハンドメイド     | handmade   |
-  | 歴史・評論・情報       | history    |
-  | 鉄道・旅行・ミリタリー | railroad   |
-  | ショップ               | shop       |
-  | その他                 | other      |
+| 分类                   | 分类名     |
+| ---------------------- | ---------- |
+| イラスト               | illust     |
+| 漫画                   | comic      |
+| コスプレ               | cosplay    |
+| YouTuber・配信者       | youtuber   |
+| Vtuber                 | vtuber     |
+| 音声作品・ASMR         | voice      |
+| 声優・歌い手           | voiceactor |
+| アイドル               | idol       |
+| アニメ・映像・写真     | anime      |
+| 3D                     | 3d         |
+| ゲーム制作             | game       |
+| 音楽                   | music      |
+| 小説                   | novel      |
+| ドール                 | doll       |
+| アート・デザイン       | art        |
+| プログラム             | program    |
+| 創作・ハンドメイド     | handmade   |
+| 歴史・評論・情報       | history    |
+| 鉄道・旅行・ミリタリー | railroad   |
+| ショップ               | shop       |
+| その他                 | other      |
 
   Ranking period
 
-  | デイリー | ウィークリー | マンスリー | 全期間 |
-  | -------- | ------------ | ---------- | ------ |
-  | daily    | weekly       | monthly    | all    |
+| デイリー | ウィークリー | マンスリー | 全期間 |
+| -------- | ------------ | ---------- | ------ |
+| daily    | weekly       | monthly    | all    |
 
   Sorting
 
-  | 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |
-  | -------------- | ------------ | -------------- | ------------ | -------------- |
-  | updater        | update_old  | newer          | create_old  | popular        |
+| 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |
+| -------------- | ------------ | -------------- | ------------ | -------------- |
+| updater        | update_old  | newer          | create_old  | popular        |
 
   Rating
 
-  | すべて | 一般のみ | R18 のみ |
-  | ------ | -------- | -------- |
-  | all    | general  | adult    |
+| すべて | 一般のみ | R18 のみ |
+| ------ | -------- | -------- |
+| all    | general  | adult    |
 
 ### User Posts <Site url="fantia.jp" size="sm" />
 
@@ -599,29 +599,29 @@ Type
 
 ### News <Site url="finviz.com/news.ashx" size="sm" />
 
-<Route namespace="finviz" :data='{"path":"/:category?","categories":["finance","popular"],"view":0,"example":"/finviz","parameters":{"category":{"description":"Category, see below, News by default","options":[{"value":"news","label":"news"},{"value":"blogs","label":"blogs"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["finviz.com/news.ashx","finviz.com/"]}],"name":"News","maintainers":["nczitzk"],"url":"finviz.com/news.ashx","description":"| News | Blogs |\n  | ---- | ---- |\n  | news | blogs |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="finviz" :data='{"path":"/:category?","categories":["finance","popular"],"view":0,"example":"/finviz","parameters":{"category":{"description":"Category, see below, News by default","options":[{"value":"news","label":"news"},{"value":"blogs","label":"blogs"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["finviz.com/news.ashx","finviz.com/"]}],"name":"News","maintainers":["nczitzk"],"url":"finviz.com/news.ashx","description":"| News | Blogs |\n| ---- | ---- |\n| news | blogs |","location":"news.ts"}' :test='{"code":0}' />
 
 | News | Blogs |
-  | ---- | ---- |
-  | news | blogs |
+| ---- | ---- |
+| news | blogs |
 
 ## Followin <Site url="followin.io"/>
 
 ### Home <Site url="followin.io" size="sm" />
 
-<Route namespace="followin" :data='{"path":"/:categoryId?/:lang?","categories":["finance","popular"],"view":0,"example":"/followin","parameters":{"categoryId":{"description":"Category ID","options":[{"value":"1","label":"For You"},{"value":"9","label":"Market"},{"value":"13","label":"Meme"},{"value":"14","label":"BRC20"},{"value":"3","label":"NFT"},{"value":"5","label":"Thread"},{"value":"6","label":"In-depth"},{"value":"8","label":"Tutorials"},{"value":"11","label":"Videos"}],"default":"1"},"lang":{"description":"Language","options":[{"value":"en","label":"English"},{"value":"zh-Hans","label":"简体中文"},{"value":"zh-Hant","label":"繁體中文"},{"value":"vi","label":"Tiếng Việt"}],"default":"en"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home","maintainers":["TonyRL"],"description":"Category ID\n\n  | For You | Market | Meme | BRC20 | NFT | Thread | In-depth | Tutorials | Videos |\n  | ------- | ------ | ---- | ----- | --- | ------ | -------- | --------- | ------ |\n  | 1       | 9      | 13   | 14    | 3   | 5      | 6        | 8         | 11     |\n\n  Language\n\n  | English | 简体中文 | 繁體中文 | Tiếng Việt |\n  | ------- | -------- | -------- | ---------- |\n  | en      | zh-Hans  | zh-Hant  | vi         |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="followin" :data='{"path":"/:categoryId?/:lang?","categories":["finance","popular"],"view":0,"example":"/followin","parameters":{"categoryId":{"description":"Category ID","options":[{"value":"1","label":"For You"},{"value":"9","label":"Market"},{"value":"13","label":"Meme"},{"value":"14","label":"BRC20"},{"value":"3","label":"NFT"},{"value":"5","label":"Thread"},{"value":"6","label":"In-depth"},{"value":"8","label":"Tutorials"},{"value":"11","label":"Videos"}],"default":"1"},"lang":{"description":"Language","options":[{"value":"en","label":"English"},{"value":"zh-Hans","label":"简体中文"},{"value":"zh-Hant","label":"繁體中文"},{"value":"vi","label":"Tiếng Việt"}],"default":"en"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Home","maintainers":["TonyRL"],"description":"Category ID\n\n| For You | Market | Meme | BRC20 | NFT | Thread | In-depth | Tutorials | Videos |\n| ------- | ------ | ---- | ----- | --- | ------ | -------- | --------- | ------ |\n| 1       | 9      | 13   | 14    | 3   | 5      | 6        | 8         | 11     |\n\n  Language\n\n| English | 简体中文 | 繁體中文 | Tiếng Việt |\n| ------- | -------- | -------- | ---------- |\n| en      | zh-Hans  | zh-Hant  | vi         |","location":"index.ts"}' :test='{"code":0}' />
 
 Category ID
 
-  | For You | Market | Meme | BRC20 | NFT | Thread | In-depth | Tutorials | Videos |
-  | ------- | ------ | ---- | ----- | --- | ------ | -------- | --------- | ------ |
-  | 1       | 9      | 13   | 14    | 3   | 5      | 6        | 8         | 11     |
+| For You | Market | Meme | BRC20 | NFT | Thread | In-depth | Tutorials | Videos |
+| ------- | ------ | ---- | ----- | --- | ------ | -------- | --------- | ------ |
+| 1       | 9      | 13   | 14    | 3   | 5      | 6        | 8         | 11     |
 
   Language
 
-  | English | 简体中文 | 繁體中文 | Tiếng Việt |
-  | ------- | -------- | -------- | ---------- |
-  | en      | zh-Hans  | zh-Hant  | vi         |
+| English | 简体中文 | 繁體中文 | Tiếng Việt |
+| ------- | -------- | -------- | ---------- |
+| en      | zh-Hans  | zh-Hant  | vi         |
 
 ### News <Site url="followin.io" size="sm" />
 
@@ -775,53 +775,53 @@ The parameter id in the route is the id in the URL of the user's Google Scholar 
 
 ### Topic <Site url="grist.org/articles/" size="sm" />
 
-<Route namespace="grist" :data='{"path":"/topic/:topic","categories":["new-media","popular"],"example":"/grist/topic/extreme-heat","parameters":{"topic":"Any Topic from Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/:topic"]}],"name":"Topic","maintainers":["Rjnishant530"],"url":"grist.org/articles/","description":"Topics\n\n  | Topic Name               | Topic Link         |\n  | ------------------------ | ------------------ |\n  | Accountability           | accountability     |\n  | Agriculture              | agriculture        |\n  | Ask Umbra                | ask-umbra-series   |\n  | Buildings                | buildings          |\n  | Cities                   | cities             |\n  | Climate & Energy         | climate-energy     |\n  | Climate Fiction          | climate-fiction    |\n  | Climate of Courage       | climate-of-courage |\n  | COP26                    | cop26              |\n  | COP27                    | cop27              |\n  | Culture                  | culture            |\n  | Economics                | economics          |\n  | Energy                   | energy             |\n  | Equity                   | equity             |\n  | Extreme Weather          | extreme-weather    |\n  | Fix                      | fix                |\n  | Food                     | food               |\n  | Grist                    | grist              |\n  | Grist News               | grist-news         |\n  | Health                   | health             |\n  | Housing                  | housing            |\n  | Indigenous Affairs       | indigenous         |\n  | International            | international      |\n  | Labor                    | labor              |\n  | Language                 | language           |\n  | Migration                | migration          |\n  | Opinion                  | opinion            |\n  | Politics                 | politics           |\n  | Protest                  | protest            |\n  | Race                     | race               |\n  | Regulation               | regulation         |\n  | Science                  | science            |\n  | Shift Happens Newsletter | shift-happens      |\n  | Solutions                | solutions          |\n  | Spanish                  | spanish            |\n  | Sponsored                | sponsored          |\n  | Technology               | technology         |\n  | Temperature Check        | temperature-check  |\n  | Uncategorized            | article            |\n  | Updates                  | updates            |\n  | Video                    | video              |","location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="grist" :data='{"path":"/topic/:topic","categories":["new-media","popular"],"example":"/grist/topic/extreme-heat","parameters":{"topic":"Any Topic from Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["grist.org/:topic"]}],"name":"Topic","maintainers":["Rjnishant530"],"url":"grist.org/articles/","description":"Topics\n\n| Topic Name               | Topic Link         |\n| ------------------------ | ------------------ |\n| Accountability           | accountability     |\n| Agriculture              | agriculture        |\n| Ask Umbra                | ask-umbra-series   |\n| Buildings                | buildings          |\n| Cities                   | cities             |\n| Climate & Energy         | climate-energy     |\n| Climate Fiction          | climate-fiction    |\n| Climate of Courage       | climate-of-courage |\n| COP26                    | cop26              |\n| COP27                    | cop27              |\n| Culture                  | culture            |\n| Economics                | economics          |\n| Energy                   | energy             |\n| Equity                   | equity             |\n| Extreme Weather          | extreme-weather    |\n| Fix                      | fix                |\n| Food                     | food               |\n| Grist                    | grist              |\n| Grist News               | grist-news         |\n| Health                   | health             |\n| Housing                  | housing            |\n| Indigenous Affairs       | indigenous         |\n| International            | international      |\n| Labor                    | labor              |\n| Language                 | language           |\n| Migration                | migration          |\n| Opinion                  | opinion            |\n| Politics                 | politics           |\n| Protest                  | protest            |\n| Race                     | race               |\n| Regulation               | regulation         |\n| Science                  | science            |\n| Shift Happens Newsletter | shift-happens      |\n| Solutions                | solutions          |\n| Spanish                  | spanish            |\n| Sponsored                | sponsored          |\n| Technology               | technology         |\n| Temperature Check        | temperature-check  |\n| Uncategorized            | article            |\n| Updates                  | updates            |\n| Video                    | video              |","location":"topic.ts"}' :test='{"code":0}' />
 
 Topics
 
-  | Topic Name               | Topic Link         |
-  | ------------------------ | ------------------ |
-  | Accountability           | accountability     |
-  | Agriculture              | agriculture        |
-  | Ask Umbra                | ask-umbra-series   |
-  | Buildings                | buildings          |
-  | Cities                   | cities             |
-  | Climate & Energy         | climate-energy     |
-  | Climate Fiction          | climate-fiction    |
-  | Climate of Courage       | climate-of-courage |
-  | COP26                    | cop26              |
-  | COP27                    | cop27              |
-  | Culture                  | culture            |
-  | Economics                | economics          |
-  | Energy                   | energy             |
-  | Equity                   | equity             |
-  | Extreme Weather          | extreme-weather    |
-  | Fix                      | fix                |
-  | Food                     | food               |
-  | Grist                    | grist              |
-  | Grist News               | grist-news         |
-  | Health                   | health             |
-  | Housing                  | housing            |
-  | Indigenous Affairs       | indigenous         |
-  | International            | international      |
-  | Labor                    | labor              |
-  | Language                 | language           |
-  | Migration                | migration          |
-  | Opinion                  | opinion            |
-  | Politics                 | politics           |
-  | Protest                  | protest            |
-  | Race                     | race               |
-  | Regulation               | regulation         |
-  | Science                  | science            |
-  | Shift Happens Newsletter | shift-happens      |
-  | Solutions                | solutions          |
-  | Spanish                  | spanish            |
-  | Sponsored                | sponsored          |
-  | Technology               | technology         |
-  | Temperature Check        | temperature-check  |
-  | Uncategorized            | article            |
-  | Updates                  | updates            |
-  | Video                    | video              |
+| Topic Name               | Topic Link         |
+| ------------------------ | ------------------ |
+| Accountability           | accountability     |
+| Agriculture              | agriculture        |
+| Ask Umbra                | ask-umbra-series   |
+| Buildings                | buildings          |
+| Cities                   | cities             |
+| Climate & Energy         | climate-energy     |
+| Climate Fiction          | climate-fiction    |
+| Climate of Courage       | climate-of-courage |
+| COP26                    | cop26              |
+| COP27                    | cop27              |
+| Culture                  | culture            |
+| Economics                | economics          |
+| Energy                   | energy             |
+| Equity                   | equity             |
+| Extreme Weather          | extreme-weather    |
+| Fix                      | fix                |
+| Food                     | food               |
+| Grist                    | grist              |
+| Grist News               | grist-news         |
+| Health                   | health             |
+| Housing                  | housing            |
+| Indigenous Affairs       | indigenous         |
+| International            | international      |
+| Labor                    | labor              |
+| Language                 | language           |
+| Migration                | migration          |
+| Opinion                  | opinion            |
+| Politics                 | politics           |
+| Protest                  | protest            |
+| Race                     | race               |
+| Regulation               | regulation         |
+| Science                  | science            |
+| Shift Happens Newsletter | shift-happens      |
+| Solutions                | solutions          |
+| Spanish                  | spanish            |
+| Sponsored                | sponsored          |
+| Technology               | technology         |
+| Temperature Check        | temperature-check  |
+| Uncategorized            | article            |
+| Updates                  | updates            |
+| Video                    | video              |
 
 ## Hacker News <Site url="ycombinator.com"/>
 
@@ -841,11 +841,11 @@ Subscribe to the content of a specific user
 
 ### Topic <Site url="hbr.org" size="sm" />
 
-<Route namespace="hbr" :data='{"path":"/topic/:topic?/:type?","categories":["new-media","popular"],"example":"/hbr/topic/Leadership/Popular","parameters":{"topic":"Topic, can be found in URL, Leadership by default","type":{"description":"Type, see below, Popular by default","options":[{"value":"Popular","label":"Popular"},{"value":"From the Store","label":"From the Store"},{"value":"For You","label":"For You"}],"default":"Popular"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbr.org/topic/:topic?","hbr.org/"]}],"name":"Topic","maintainers":["nczitzk","pseudoyu"],"description":"| POPULAR | FROM THE STORE | FOR YOU |\n  | ------- | -------------- | ------- |\n  | Popular | From the Store | For You |\n\n::: tip\n  Click here to view [All Topics](https://hbr.org/topics)\n:::","location":"topic.ts"}' :test='{"code":1,"message":"AssertionError: expected 377955387550 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:36:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 852)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="hbr" :data='{"path":"/topic/:topic?/:type?","categories":["new-media","popular"],"example":"/hbr/topic/Leadership/Popular","parameters":{"topic":"Topic, can be found in URL, Leadership by default","type":{"description":"Type, see below, Popular by default","options":[{"value":"Popular","label":"Popular"},{"value":"From the Store","label":"From the Store"},{"value":"For You","label":"For You"}],"default":"Popular"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hbr.org/topic/:topic?","hbr.org/"]}],"name":"Topic","maintainers":["nczitzk","pseudoyu"],"description":"| POPULAR | FROM THE STORE | FOR YOU |\n| ------- | -------------- | ------- |\n| Popular | From the Store | For You |\n\n::: tip\n  Click here to view [All Topics](https://hbr.org/topics)\n:::","location":"topic.ts"}' :test='{"code":1,"message":"AssertionError: expected 377955387550 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:36:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 852)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 | POPULAR | FROM THE STORE | FOR YOU |
-  | ------- | -------------- | ------- |
-  | Popular | From the Store | For You |
+| ------- | -------------- | ------- |
+| Popular | From the Store | For You |
 
 ::: tip
   Click here to view [All Topics](https://hbr.org/topics)
@@ -855,11 +855,11 @@ Subscribe to the content of a specific user
 
 ### HKEPC 电脑领域 <Site url="hkepc.com/" size="sm" />
 
-<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 880)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="hkepc" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/hkepc/news","parameters":{"category":"分类，见下表，默认为最新消息"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkepc.com/"],"target":""}],"name":"HKEPC 电脑领域","maintainers":["TonyRL"],"url":"hkepc.com/","description":"| 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |\n| ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |\n| coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 880)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 专题报导   | 新闻中心 | 新品快递 | 超频领域 | 流动数码 | 生活娱乐      | 会员消息 | 脑场新闻 | 业界资讯 | 最新消息 |
-  | ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |
-  | coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |
+| ---------- | -------- | -------- | -------- | -------- | ------------- | -------- | -------- | -------- | -------- |
+| coverStory | news     | review   | ocLab    | digital  | entertainment | member   | price    | press    | latest   |
 
 ## Hpoi 手办维基 <Site url="www.hpoi.net"/>
 
@@ -885,11 +885,11 @@ Subscribe to the content of a specific user
 
 ### Charts <Site url="www.imdb.com/chart/top/" size="sm" />
 
-<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia","popular"],"view":5,"parameters":{"chart":{"description":"The chart to display, `top` by default","options":[{"value":"top","label":"Top 250 Movies"},{"value":"moviemeter","label":"Most Popular Movies"},{"value":"toptv","label":"Top 250 TV Shows"},{"value":"tvmeter","label":"Most Popular TV Shows"}],"default":"top"}},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n  | -------------- | ------------------- | ---------------- | --------------------- |\n  | top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
+<Route namespace="imdb" :data='{"path":"/chart/:chart?","categories":["multimedia","popular"],"view":5,"parameters":{"chart":{"description":"The chart to display, `top` by default","options":[{"value":"top","label":"Top 250 Movies"},{"value":"moviemeter","label":"Most Popular Movies"},{"value":"toptv","label":"Top 250 TV Shows"},{"value":"tvmeter","label":"Most Popular TV Shows"}],"default":"top"}},"example":"/imdb/chart","radar":[{"source":["www.imdb.com/chart/:chart/"]}],"name":"Charts","maintainers":["TonyRL"],"url":"www.imdb.com/chart/top/","description":"| Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |\n| -------------- | ------------------- | ---------------- | --------------------- |\n| top            | moviemeter          | toptv            | tvmeter               |","location":"chart.ts"}' :test='{"code":0}' />
 
 | Top 250 Movies | Most Popular Movies | Top 250 TV Shows | Most Popular TV Shows |
-  | -------------- | ------------------- | ---------------- | --------------------- |
-  | top            | moviemeter          | toptv            | tvmeter               |
+| -------------- | ------------------- | ---------------- | --------------------- |
+| top            | moviemeter          | toptv            | tvmeter               |
 
 ## InfoQ 中文 <Site url="infoq.cn"/>
 
@@ -977,11 +977,11 @@ konachan post
 
 ### Popular Recent Posts <Site url="konachan.com" size="sm" />
 
-<Route namespace="konachan" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/konachan/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["konachan.com/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="konachan" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/konachan/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["konachan.com/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n| ------- | -------- | ------- | -------- |\n| 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
-  | ------- | -------- | ------- | -------- |
-  | 1d | 1w | 1m | 1y |
+| ------- | -------- | ------- | -------- |
+| 1d | 1w | 1m | 1y |
 
 ## Lemmy <Site url="join-lemmy.org"/>
 
@@ -997,48 +997,48 @@ konachan post
 
 ### TODAY <Site url="today.line.me/" size="sm" />
 
-<Route namespace="line" :data='{"path":"/today/:edition?/:tab?","categories":["new-media","popular"],"example":"/line/today","parameters":{"edition":"Edition, see below, Taiwan by default","tab":"Tag, can be found in URL, `top` by default"},"radar":[{"source":["today.line.me/"]}],"name":"TODAY","maintainers":["nczitzk"],"url":"today.line.me/","description":"Edition\n\n  | Taiwan | Thailand | Hong Kong |\n  | ------ | -------- | --------- |\n  | tw     | th       | hk        |","location":"today.ts"}' :test='{"code":0}' />
+<Route namespace="line" :data='{"path":"/today/:edition?/:tab?","categories":["new-media","popular"],"example":"/line/today","parameters":{"edition":"Edition, see below, Taiwan by default","tab":"Tag, can be found in URL, `top` by default"},"radar":[{"source":["today.line.me/"]}],"name":"TODAY","maintainers":["nczitzk"],"url":"today.line.me/","description":"Edition\n\n| Taiwan | Thailand | Hong Kong |\n| ------ | -------- | --------- |\n| tw     | th       | hk        |","location":"today.ts"}' :test='{"code":0}' />
 
 Edition
 
-  | Taiwan | Thailand | Hong Kong |
-  | ------ | -------- | --------- |
-  | tw     | th       | hk        |
+| Taiwan | Thailand | Hong Kong |
+| ------ | -------- | --------- |
+| tw     | th       | hk        |
 
 ## LinkedIn <Site url="linkedin.com"/>
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
-<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media","popular"],"view":5,"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  #### `routeParams` additional query parameters\n\n  ##### `f_WT` list\n\n  | Onsite | Remote | Hybrid |\n  | ------ | ------- | ------ |\n  |    1   |    2    |   3    |\n\n  ##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n  ##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
+<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media","popular"],"view":5,"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n| Full Time | Part Time | Contractor | All |\n| --------- | --------- | ---------- | --- |\n| F         | P         | C          | all |\n\n#### `exp_levels` list\n\n| Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n| --------- | ----------- | --------- | ---------------- | -------- | --- |\n| 1         | 2           | 3         | 4                | 5        | all |\n\n#### `routeParams` additional query parameters\n\n##### `f_WT` list\n\n| Onsite | Remote | Hybrid |\n| ------ | ------- | ------ |\n|    1   |    2    |   3    |\n\n##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
 
 #### `job_types` list
 
-  | Full Time | Part Time | Contractor | All |
-  | --------- | --------- | ---------- | --- |
-  | F         | P         | C          | all |
+| Full Time | Part Time | Contractor | All |
+| --------- | --------- | ---------- | --- |
+| F         | P         | C          | all |
 
-  #### `exp_levels` list
+#### `exp_levels` list
 
-  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
-  | --------- | ----------- | --------- | ---------------- | -------- | --- |
-  | 1         | 2           | 3         | 4                | 5        | all |
+| Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
+| --------- | ----------- | --------- | ---------------- | -------- | --- |
+| 1         | 2           | 3         | 4                | 5        | all |
 
-  #### `routeParams` additional query parameters
+#### `routeParams` additional query parameters
 
-  ##### `f_WT` list
+##### `f_WT` list
 
-  | Onsite | Remote | Hybrid |
-  | ------ | ------- | ------ |
-  |    1   |    2    |   3    |
+| Onsite | Remote | Hybrid |
+| ------ | ------- | ------ |
+|    1   |    2    |   3    |
 
-  ##### `geoId`
+##### `geoId`
 
   Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.
 
   For example:
   91000012 is the ID of East Asia.
 
-  ##### `f_TPR`
+##### `f_TPR`
 
   Time posted range. Here are some possible values:
 
@@ -1068,11 +1068,11 @@ Edition
 
 ### Tag <Site url="www.lofter.com" size="sm" />
 
-<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media","popular"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media","popular"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n| ---- | ---- | ---- | ----- | ----- |\n| 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":0}' />
 
 | new  | date | week | month | total |
-  | ---- | ---- | ---- | ----- | ----- |
-  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |
+| ---- | ---- | ---- | ----- | ----- |
+| 最新 | 日榜 | 周榜 | 月榜  | 总榜  |
 
 ### User <Site url="www.lofter.com" size="sm" />
 
@@ -1133,11 +1133,11 @@ However, you can still specify these route-specific configurations if you need t
 
 ### Latest, heat, essence <Site url="matters.town" size="sm" />
 
-<Route namespace="matters" :data='{"path":"/latest/:type?","name":"Latest, heat, essence","example":"/matters/latest/heat","parameters":{"uid":"Defaults to latest, see table below"},"maintainers":["xyqfer","Cerebrater","xosdy"],"radar":[{"source":["matters.town"]}],"description":"| 最新   | 热门 | 精华    |\n  | ------ | ---- | ------- |\n  | latest | heat | essence |","location":"latest.ts"}' :test='{"code":0}' />
+<Route namespace="matters" :data='{"path":"/latest/:type?","name":"Latest, heat, essence","example":"/matters/latest/heat","parameters":{"uid":"Defaults to latest, see table below"},"maintainers":["xyqfer","Cerebrater","xosdy"],"radar":[{"source":["matters.town"]}],"description":"| 最新   | 热门 | 精华    |\n| ------ | ---- | ------- |\n| latest | heat | essence |","location":"latest.ts"}' :test='{"code":0}' />
 
 | 最新   | 热门 | 精华    |
-  | ------ | ---- | ------- |
-  | latest | heat | essence |
+| ------ | ---- | ------- |
+| latest | heat | essence |
 
 ### Tags <Site url="matters.town" size="sm" />
 
@@ -1163,10 +1163,10 @@ However, you can still specify these route-specific configurations if you need t
 
 ### 分類 <Site url="mygopen.com" size="sm" />
 
-<Route namespace="mygopen" :data='{"path":"/:label?","categories":["new-media","popular"],"example":"/mygopen","parameters":{"label":"分類，见下表，默认为首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mygopen.com/search/label/:label","mygopen.com/"]}],"name":"分類","maintainers":["nczitzk"],"description":"| 謠言 | 詐騙 | 真實資訊 | 教學 |\n  | ---- | ---- | -------- | ---- |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="mygopen" :data='{"path":"/:label?","categories":["new-media","popular"],"example":"/mygopen","parameters":{"label":"分類，见下表，默认为首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mygopen.com/search/label/:label","mygopen.com/"]}],"name":"分類","maintainers":["nczitzk"],"description":"| 謠言 | 詐騙 | 真實資訊 | 教學 |\n| ---- | ---- | -------- | ---- |","location":"index.ts"}' :test='{"code":0}' />
 
 | 謠言 | 詐騙 | 真實資訊 | 教學 |
-  | ---- | ---- | -------- | ---- |
+| ---- | ---- | -------- | ---- |
 
 ## NASA <Site url="apod.nasa.gov"/>
 
@@ -1204,23 +1204,23 @@ This route provides a flexible plan with full text content to subscribe specific
 
 ### Works <Site url="notefolio.net/search" size="sm" />
 
-<Route namespace="notefolio" :data='{"path":"/search/:category?/:order?/:time?/:query?","categories":["design","popular"],"view":2,"example":"/notefolio/search/1/pick/all/life","parameters":{"category":{"description":"Category, see below","options":[{"value":"all","label":"All (전체)"},{"value":"1","label":"Video / Motion Graphics (영상/모션그래픽)"},{"value":"2","label":"Graphic Design (그래픽 디자인)"},{"value":"3","label":"Branding / Editing (브랜딩/편집)"},{"value":"4","label":"UI/UX (UI/UX)"},{"value":"5","label":"Illustration (일러스트레이션)"},{"value":"6","label":"Digital Art (디지털 아트)"},{"value":"7","label":"Character Design (캐릭터 디자인)"},{"value":"8","label":"Product Package Design (제품/패키지 디자인)"},{"value":"9","label":"Photography (포토그래피)"},{"value":"10","label":"Typography (타이포그래피)"},{"value":"11","label":"Crafts (공예)"},{"value":"12","label":"Fine Art (파인아트)"}],"default":"all"},"order":{"description":"Order, `pick` as Notefolio Pick, `published` as Newest, `like` as like, `pick` by default","options":[{"value":"pick","label":"Notefolio Pick"},{"value":"published","label":"Newest"},{"value":"like","label":"Like"}],"default":"pick"},"time":{"description":"Time","options":[{"value":"all","label":"All the time"},{"value":"one-day","label":"Latest 24 hours"},{"value":"week","label":"Latest week"},{"value":"month","label":"Latest month"},{"value":"three-month","label":"Latest 3 months"}],"default":"all"},"query":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notefolio.net/search"]}],"name":"Works","maintainers":["BianTan"],"url":"notefolio.net/search","description":"| Category | Name in Korean     | Name in English         |\n  | -------- | ------------------ | ----------------------- |\n  | all      | 전체               | All                     |\n  | 1        | 영상/모션그래픽    | Video / Motion Graphics |\n  | 2        | 그래픽 디자인      | Graphic Design          |\n  | 3        | 브랜딩/편집        | Branding / Editing      |\n  | 4        | UI/UX              | UI/UX                   |\n  | 5        | 일러스트레이션     | Illustration            |\n  | 6        | 디지털 아트        | Digital Art             |\n  | 7        | 캐릭터 디자인      | Character Design        |\n  | 8        | 제품/패키지 디자인 | Product Package Design  |\n  | 9        | 포토그래피         | Photography             |\n  | 10       | 타이포그래피       | Typography              |\n  | 11       | 공예               | Crafts                  |\n  | 12       | 파인아트           | Fine Art                |","location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="notefolio" :data='{"path":"/search/:category?/:order?/:time?/:query?","categories":["design","popular"],"view":2,"example":"/notefolio/search/1/pick/all/life","parameters":{"category":{"description":"Category, see below","options":[{"value":"all","label":"All (전체)"},{"value":"1","label":"Video / Motion Graphics (영상/모션그래픽)"},{"value":"2","label":"Graphic Design (그래픽 디자인)"},{"value":"3","label":"Branding / Editing (브랜딩/편집)"},{"value":"4","label":"UI/UX (UI/UX)"},{"value":"5","label":"Illustration (일러스트레이션)"},{"value":"6","label":"Digital Art (디지털 아트)"},{"value":"7","label":"Character Design (캐릭터 디자인)"},{"value":"8","label":"Product Package Design (제품/패키지 디자인)"},{"value":"9","label":"Photography (포토그래피)"},{"value":"10","label":"Typography (타이포그래피)"},{"value":"11","label":"Crafts (공예)"},{"value":"12","label":"Fine Art (파인아트)"}],"default":"all"},"order":{"description":"Order, `pick` as Notefolio Pick, `published` as Newest, `like` as like, `pick` by default","options":[{"value":"pick","label":"Notefolio Pick"},{"value":"published","label":"Newest"},{"value":"like","label":"Like"}],"default":"pick"},"time":{"description":"Time","options":[{"value":"all","label":"All the time"},{"value":"one-day","label":"Latest 24 hours"},{"value":"week","label":"Latest week"},{"value":"month","label":"Latest month"},{"value":"three-month","label":"Latest 3 months"}],"default":"all"},"query":"Keyword, empty by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["notefolio.net/search"]}],"name":"Works","maintainers":["BianTan"],"url":"notefolio.net/search","description":"| Category | Name in Korean     | Name in English         |\n| -------- | ------------------ | ----------------------- |\n| all      | 전체               | All                     |\n| 1        | 영상/모션그래픽    | Video / Motion Graphics |\n| 2        | 그래픽 디자인      | Graphic Design          |\n| 3        | 브랜딩/편집        | Branding / Editing      |\n| 4        | UI/UX              | UI/UX                   |\n| 5        | 일러스트레이션     | Illustration            |\n| 6        | 디지털 아트        | Digital Art             |\n| 7        | 캐릭터 디자인      | Character Design        |\n| 8        | 제품/패키지 디자인 | Product Package Design  |\n| 9        | 포토그래피         | Photography             |\n| 10       | 타이포그래피       | Typography              |\n| 11       | 공예               | Crafts                  |\n| 12       | 파인아트           | Fine Art                |","location":"search.ts"}' :test='{"code":0}' />
 
 | Category | Name in Korean     | Name in English         |
-  | -------- | ------------------ | ----------------------- |
-  | all      | 전체               | All                     |
-  | 1        | 영상/모션그래픽    | Video / Motion Graphics |
-  | 2        | 그래픽 디자인      | Graphic Design          |
-  | 3        | 브랜딩/편집        | Branding / Editing      |
-  | 4        | UI/UX              | UI/UX                   |
-  | 5        | 일러스트레이션     | Illustration            |
-  | 6        | 디지털 아트        | Digital Art             |
-  | 7        | 캐릭터 디자인      | Character Design        |
-  | 8        | 제품/패키지 디자인 | Product Package Design  |
-  | 9        | 포토그래피         | Photography             |
-  | 10       | 타이포그래피       | Typography              |
-  | 11       | 공예               | Crafts                  |
-  | 12       | 파인아트           | Fine Art                |
+| -------- | ------------------ | ----------------------- |
+| all      | 전체               | All                     |
+| 1        | 영상/모션그래픽    | Video / Motion Graphics |
+| 2        | 그래픽 디자인      | Graphic Design          |
+| 3        | 브랜딩/편집        | Branding / Editing      |
+| 4        | UI/UX              | UI/UX                   |
+| 5        | 일러스트레이션     | Illustration            |
+| 6        | 디지털 아트        | Digital Art             |
+| 7        | 캐릭터 디자인      | Character Design        |
+| 8        | 제품/패키지 디자인 | Product Package Design  |
+| 9        | 포토그래피         | Photography             |
+| 10       | 타이포그래피       | Typography              |
+| 11       | 공예               | Crafts                  |
+| 12       | 파인아트           | Fine Art                |
 
 ## Odaily 星球日报 <Site url="odaily.news"/>
 
@@ -1238,11 +1238,11 @@ This route provides a flexible plan with full text content to subscribe specific
 
 ### 文章 <Site url="0daily.com/" size="sm" />
 
-<Route namespace="odaily" :data='{"path":"/:id?","categories":["new-media","popular"],"example":"/odaily","parameters":{"id":"id，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["0daily.com/"]}],"name":"文章","maintainers":["nczitzk"],"url":"0daily.com/","description":"| 最新 | 新品 | DeFi | NFT | 存储 | 波卡 | 行情 | 活动 |\n  | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- |\n  | 280  | 333  | 331  | 334 | 332  | 330  | 297  | 296  |","location":"post.ts"}' :test='{"code":0}' />
+<Route namespace="odaily" :data='{"path":"/:id?","categories":["new-media","popular"],"example":"/odaily","parameters":{"id":"id，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["0daily.com/"]}],"name":"文章","maintainers":["nczitzk"],"url":"0daily.com/","description":"| 最新 | 新品 | DeFi | NFT | 存储 | 波卡 | 行情 | 活动 |\n| ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- |\n| 280  | 333  | 331  | 334 | 332  | 330  | 297  | 296  |","location":"post.ts"}' :test='{"code":0}' />
 
 | 最新 | 新品 | DeFi | NFT | 存储 | 波卡 | 行情 | 活动 |
-  | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- |
-  | 280  | 333  | 331  | 334 | 332  | 330  | 297  | 296  |
+| ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- |
+| 280  | 333  | 331  | 334 | 332  | 330  | 297  | 296  |
 
 ### 用户文章 <Site url="odaily.news" size="sm" />
 
@@ -1256,10 +1256,10 @@ This route provides a flexible plan with full text content to subscribe specific
 
 ### 深度 <Site url="panewslab.com/" size="sm" />
 
-<Route namespace="panewslab" :data='{"path":"/profundity/:category?","categories":["new-media","popular"],"example":"/panewslab/profundity","parameters":{"category":"分类，见下表，默认为精选"},"radar":[{"source":["panewslab.com/","www.panewslab.com/zh/profundity/index.html"]}],"name":"深度","maintainers":["nczitzk"],"url":"panewslab.com/","description":"| 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |\n  | ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |","location":"profundity.ts"}' :test='{"code":0}' />
+<Route namespace="panewslab" :data='{"path":"/profundity/:category?","categories":["new-media","popular"],"example":"/panewslab/profundity","parameters":{"category":"分类，见下表，默认为精选"},"radar":[{"source":["panewslab.com/","www.panewslab.com/zh/profundity/index.html"]}],"name":"深度","maintainers":["nczitzk"],"url":"panewslab.com/","description":"| 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |\n| ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |","location":"profundity.ts"}' :test='{"code":0}' />
 
 | 精选 | 链游 | 元宇宙 | NFT | DeFi | 监管 | 央行数字货币 | 波卡 | Layer 2 | DAO | 融资 | 活动 |
-  | ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |
+| ---- | ---- | ------ | --- | ---- | ---- | ------------ | ---- | ------- | --- | ---- | ---- |
 
 ### 专栏 <Site url="panewslab.com/" size="sm" />
 
@@ -1325,15 +1325,15 @@ This route provides a flexible plan with full text content to subscribe specific
 
 ### Top <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media","popular"],"view":1,"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media","popular"],"view":1,"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n| ------------ | ------------- | ------------- |\n| topReplurks  | topFavorites  | topResponded  |\n\n| English | 中文（繁體） |\n| ------- | ------------ |\n| en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
 
 | Top Replurks | Top Favorites | Top Responded |
-  | ------------ | ------------- | ------------- |
-  | topReplurks  | topFavorites  | topResponded  |
+| ------------ | ------------- | ------------- |
+| topReplurks  | topFavorites  | topResponded  |
 
-  | English | 中文（繁體） |
-  | ------- | ------------ |
-  | en      | zh           |
+| English | 中文（繁體） |
+| ------- | ------------ |
+| en      | zh           |
 
 ### Topic <Site url="plurk.com" size="sm" />
 
@@ -1385,21 +1385,21 @@ Supported categories: Therapeia, Eudaimonia, and Poiesis.
 
 ### 分類 <Site url="thepetcity.co/" size="sm" />
 
-<Route namespace="thepetcity" :data='{"path":"/:term?","categories":["new-media","popular"],"example":"/thepetcity","parameters":{"term":"見下表，留空為全部文章"},"radar":[{"title":"Pet Staff 毛孩好物","source":["thepetcity.co/category/cute-item","thepetcity.co/"],"target":"/1"},{"title":"Funny News毛孩趣聞","source":["thepetcity.co/category/funny-news","thepetcity.co/"],"target":"/2"},{"title":"Knowledge飼養大全","source":["thepetcity.co/category/knowledge","thepetcity.co/"],"target":"/3"},{"title":"Hot Spot 毛孩打卡點","source":["thepetcity.co/category/hot-spot","thepetcity.co/"],"target":"/4"},{"title":"Raise Pets 養寵物新手","source":["thepetcity.co/category/raise-cats","thepetcity.co/"],"target":"/5"},{"title":"PetCity 毛孩日常 | 飼養竉物、竉物用品、萌寵趣聞","source":["thepetcity.co/"],"target":""}],"name":"分類","maintainers":["TonyRL","bigfei"],"url":"thepetcity.co/","description":"| Column Name       | TermID |\n  | -------------------- | ------ |\n  | Knowledge飼養大全     | 3      |\n  | Funny News毛孩趣聞    | 2      |\n  | Raise Pets 養寵物新手  | 5      |\n  | Hot Spot 毛孩打卡點    | 4      |\n  | Pet Staff 毛孩好物    | 1      |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="thepetcity" :data='{"path":"/:term?","categories":["new-media","popular"],"example":"/thepetcity","parameters":{"term":"見下表，留空為全部文章"},"radar":[{"title":"Pet Staff 毛孩好物","source":["thepetcity.co/category/cute-item","thepetcity.co/"],"target":"/1"},{"title":"Funny News毛孩趣聞","source":["thepetcity.co/category/funny-news","thepetcity.co/"],"target":"/2"},{"title":"Knowledge飼養大全","source":["thepetcity.co/category/knowledge","thepetcity.co/"],"target":"/3"},{"title":"Hot Spot 毛孩打卡點","source":["thepetcity.co/category/hot-spot","thepetcity.co/"],"target":"/4"},{"title":"Raise Pets 養寵物新手","source":["thepetcity.co/category/raise-cats","thepetcity.co/"],"target":"/5"},{"title":"PetCity 毛孩日常 | 飼養竉物、竉物用品、萌寵趣聞","source":["thepetcity.co/"],"target":""}],"name":"分類","maintainers":["TonyRL","bigfei"],"url":"thepetcity.co/","description":"| Column Name       | TermID |\n| -------------------- | ------ |\n| Knowledge飼養大全     | 3      |\n| Funny News毛孩趣聞    | 2      |\n| Raise Pets 養寵物新手  | 5      |\n| Hot Spot 毛孩打卡點    | 4      |\n| Pet Staff 毛孩好物    | 1      |","location":"index.ts"}' :test='{"code":0}' />
 
 | Column Name       | TermID |
-  | -------------------- | ------ |
-  | Knowledge飼養大全     | 3      |
-  | Funny News毛孩趣聞    | 2      |
-  | Raise Pets 養寵物新手  | 5      |
-  | Hot Spot 毛孩打卡點    | 4      |
-  | Pet Staff 毛孩好物    | 1      |
+| -------------------- | ------ |
+| Knowledge飼養大全     | 3      |
+| Funny News毛孩趣聞    | 2      |
+| Raise Pets 養寵物新手  | 5      |
+| Hot Spot 毛孩打卡點    | 4      |
+| Pet Staff 毛孩好物    | 1      |
 
 ## QuestMobile <Site url="questmobile.com.cn"/>
 
 ### 行业研究报告 <Site url="questmobile.com.cn" size="sm" />
 
-<Route namespace="questmobile" :data='{"path":"/report/:industry?/:label?","categories":["new-media","popular"],"example":"/questmobile/report","parameters":{"industry":"行业，见下表，默认为 `-1`，即全部行业","label":"标签，见下表，默认为 `-1`，即全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"行业研究报告","maintainers":["nczitzk"],"description":"::: tip\n  若订阅行业 [互联网行业](https://www.questmobile.com.cn/research/reports/1/-1)，网址为 `https://www.questmobile.com.cn/research/reports/1/-1`\n  参数 industry 为 `互联网行业` 或 `1`，此时路由为 [`/questmobile/report/互联网行业`](https://rsshub.app/questmobile/report/互联网行业) 或 [`/questmobile/report/1/-1`](https://rsshub.app/questmobile/report/1/-1)。\n\n  若订阅标签 [榜单](https://www.questmobile.com.cn/research/reports/-1/11)，网址为 `https://www.questmobile.com.cn/research/reports/-1/11`\n  参数 label 为 `榜单` 或 `11`，此时路由为 [`/questmobile/report/榜单`](https://rsshub.app/questmobile/report/榜单) 或 [`/questmobile/report/-1/11`](https://rsshub.app/questmobile/report/-1/11)。\n\n  若订阅行业和标签 [品牌领域 - 互联网经济](https://www.questmobile.com.cn/research/reports/2/1)，网址为 `https://www.questmobile.com.cn/research/reports/2/1`\n  参数 industry 为 `品牌领域` 或 `2`，参数 label 为 `互联网经济` 或 `1`，此时路由为 [`/questmobile/report/品牌领域/互联网经济`](https://rsshub.app/questmobile/report/品牌领域/互联网经济) 或 [`/questmobile/report/2/1`](https://rsshub.app/questmobile/report/2/1)，甚至 [`/questmobile/report/品牌领域/1`](https://rsshub.app/questmobile/report/品牌领域/1)。\n:::\n\n  <details>\n    <summary>全部行业和标签</summary>\n\n    #### 行业\n\n    | 互联网行业 | 移动社交 | 移动视频 | 移动购物 | 系统工具 |\n    | ---------- | -------- | -------- | -------- | -------- |\n    | 1          | 1001     | 1002     | 1003     | 1004     |\n\n    | 出行服务 | 金融理财 | 生活服务 | 移动音乐 | 新闻资讯 |\n    | -------- | -------- | -------- | -------- | -------- |\n    | 1005     | 1006     | 1007     | 1008     | 1009     |\n\n    | 办公商务 | 手机游戏 | 实用工具 | 数字阅读 | 教育学习 |\n    | -------- | -------- | -------- | -------- | -------- |\n    | 1010     | 1011     | 1012     | 1013     | 1014     |\n\n    | 汽车服务 | 拍摄美化 | 智能设备 | 旅游服务 | 健康美容 |\n    | -------- | -------- | -------- | -------- | -------- |\n    | 1015     | 1016     | 1017     | 1018     | 1020     |\n\n    | 育儿母婴 | 主题美化 | 医疗服务 | 品牌领域 | 美妆品牌 |\n    | -------- | -------- | -------- | -------- | -------- |\n    | 1022     | 1023     | 1024     | 2        | 2001     |\n\n    | 母婴品牌 | 家电品牌 | 食品饮料品牌 | 汽车品牌 | 服饰箱包品牌 |\n    | -------- | -------- | ------------ | -------- | ------------ |\n    | 2002     | 2003     | 2004         | 2005     | 2006         |\n\n    #### 标签\n\n    | 互联网经济 | 圈层经济 | 粉丝经济 | 银发经济 | 儿童经济 |\n    | ---------- | -------- | -------- | -------- | -------- |\n    | 1          | 1001     | 1002     | 1004     | 1005     |\n\n    | 萌宠经济 | 她经济 | 他经济 | 泛娱乐经济 | 下沉市场经济 |\n    | -------- | ------ | ------ | ---------- | ------------ |\n    | 1007     | 1009   | 1010   | 1011       | 1012         |\n\n    | 内容经济 | 订阅经济 | 会员经济 | 居家经济 | 到家经济 |\n    | -------- | -------- | -------- | -------- | -------- |\n    | 1013     | 1014     | 1015     | 1016     | 1017     |\n\n    | 颜值经济 | 闲置经济 | 旅游经济            | 人群洞察 | 00 后 |\n    | -------- | -------- | ------------------- | -------- | ----- |\n    | 1018     | 1020     | 1622842051677753346 | 2        | 2002  |\n\n    | Z 世代 | 银发族 | 宝妈宝爸 | 萌宠人群 | 运动达人 |\n    | ------ | ------ | -------- | -------- | -------- |\n    | 2003   | 2004   | 2005     | 2007     | 2008     |\n\n    | 女性消费 | 男性消费 | 游戏人群 | 二次元 | 新中产 |\n    | -------- | -------- | -------- | ------ | ------ |\n    | 2009     | 2010     | 2012     | 2013   | 2014   |\n\n    | 下沉市场用户 | 大学生 | 数字化营销 | 广告效果 | 品牌营销 |\n    | ------------ | ------ | ---------- | -------- | -------- |\n    | 2018         | 2022   | 3          | 3001     | 3002     |\n\n    | 全域营销 | 私域流量 | 新媒体营销 | KOL 生态 | 内容营销 |\n    | -------- | -------- | ---------- | -------- | -------- |\n    | 3003     | 3004     | 3005       | 3006     | 3008     |\n\n    | 直播电商 | 短视频带货 | 娱乐营销            | 营销热点 | 双 11 电商大促 |\n    | -------- | ---------- | ------------------- | -------- | -------------- |\n    | 3009     | 3010       | 1630464311158738945 | 4        | 4001           |\n\n    | 618 电商大促 | 春节营销 | 五一假期营销 | 热点事件盘点 | 消费热点 |\n    | ------------ | -------- | ------------ | ------------ | -------- |\n    | 4002         | 4003     | 4004         | 4007         | 5        |\n\n    | 时尚品牌 | 连锁餐饮 | 新式茶饮 | 智能家电 | 国潮品牌 |\n    | -------- | -------- | -------- | -------- | -------- |\n    | 5001     | 5002     | 5003     | 5004     | 5007     |\n\n    | 白酒品牌            | 精益运营 | 媒介策略 | 用户争夺 | 精细化运营 |\n    | ------------------- | -------- | -------- | -------- | ---------- |\n    | 1622841828310093825 | 6        | 6001     | 6002     | 6003       |\n\n    | 用户分层 | 增长黑马 | 社交裂变 | 新兴领域 | 新能源汽车 |\n    | -------- | -------- | -------- | -------- | ---------- |\n    | 6004     | 6005     | 6007     | 7        | 7001       |\n\n    | 智能汽车 | 新消费 | AIoT | 产业互联网 | AIGC                |\n    | -------- | ------ | ---- | ---------- | ------------------- |\n    | 7002     | 7003   | 7004 | 7005       | 1645677998450511873 |\n\n    | OTT 应用            | 智能电视            | 全景数据 | 全景生态 | 微信小程序 |\n    | ------------------- | ------------------- | -------- | -------- | ---------- |\n    | 1676063510499528705 | 1676063630293045249 | 8        | 8001     | 8002       |\n\n    | 支付宝小程序 | 百度智能小程序 | 企业流量            | 抖音小程序          | 手机终端 |\n    | ------------ | -------------- | ------------------- | ------------------- | -------- |\n    | 8003         | 8004           | 1671052842096496642 | 1676063017220018177 | 9        |\n\n    | 智能终端 | 国产终端 | 5G 手机 | 盘点 | 季度报告 |\n    | -------- | -------- | ------- | ---- | -------- |\n    | 9001     | 9002     | 9003    | 10   | 10001    |\n  </details>","location":"report.ts"}' :test='{"code":0}' />
+<Route namespace="questmobile" :data='{"path":"/report/:industry?/:label?","categories":["new-media","popular"],"example":"/questmobile/report","parameters":{"industry":"行业，见下表，默认为 `-1`，即全部行业","label":"标签，见下表，默认为 `-1`，即全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"行业研究报告","maintainers":["nczitzk"],"description":"::: tip\n  若订阅行业 [互联网行业](https://www.questmobile.com.cn/research/reports/1/-1)，网址为 `https://www.questmobile.com.cn/research/reports/1/-1`\n  参数 industry 为 `互联网行业` 或 `1`，此时路由为 [`/questmobile/report/互联网行业`](https://rsshub.app/questmobile/report/互联网行业) 或 [`/questmobile/report/1/-1`](https://rsshub.app/questmobile/report/1/-1)。\n\n  若订阅标签 [榜单](https://www.questmobile.com.cn/research/reports/-1/11)，网址为 `https://www.questmobile.com.cn/research/reports/-1/11`\n  参数 label 为 `榜单` 或 `11`，此时路由为 [`/questmobile/report/榜单`](https://rsshub.app/questmobile/report/榜单) 或 [`/questmobile/report/-1/11`](https://rsshub.app/questmobile/report/-1/11)。\n\n  若订阅行业和标签 [品牌领域 - 互联网经济](https://www.questmobile.com.cn/research/reports/2/1)，网址为 `https://www.questmobile.com.cn/research/reports/2/1`\n  参数 industry 为 `品牌领域` 或 `2`，参数 label 为 `互联网经济` 或 `1`，此时路由为 [`/questmobile/report/品牌领域/互联网经济`](https://rsshub.app/questmobile/report/品牌领域/互联网经济) 或 [`/questmobile/report/2/1`](https://rsshub.app/questmobile/report/2/1)，甚至 [`/questmobile/report/品牌领域/1`](https://rsshub.app/questmobile/report/品牌领域/1)。\n:::\n\n<details>\n<summary>全部行业和标签</summary>\n\n#### 行业\n\n| 互联网行业 | 移动社交 | 移动视频 | 移动购物 | 系统工具 |\n| ---------- | -------- | -------- | -------- | -------- |\n| 1          | 1001     | 1002     | 1003     | 1004     |\n\n| 出行服务 | 金融理财 | 生活服务 | 移动音乐 | 新闻资讯 |\n| -------- | -------- | -------- | -------- | -------- |\n| 1005     | 1006     | 1007     | 1008     | 1009     |\n\n| 办公商务 | 手机游戏 | 实用工具 | 数字阅读 | 教育学习 |\n| -------- | -------- | -------- | -------- | -------- |\n| 1010     | 1011     | 1012     | 1013     | 1014     |\n\n| 汽车服务 | 拍摄美化 | 智能设备 | 旅游服务 | 健康美容 |\n| -------- | -------- | -------- | -------- | -------- |\n| 1015     | 1016     | 1017     | 1018     | 1020     |\n\n| 育儿母婴 | 主题美化 | 医疗服务 | 品牌领域 | 美妆品牌 |\n| -------- | -------- | -------- | -------- | -------- |\n| 1022     | 1023     | 1024     | 2        | 2001     |\n\n| 母婴品牌 | 家电品牌 | 食品饮料品牌 | 汽车品牌 | 服饰箱包品牌 |\n| -------- | -------- | ------------ | -------- | ------------ |\n| 2002     | 2003     | 2004         | 2005     | 2006         |\n\n#### 标签\n\n| 互联网经济 | 圈层经济 | 粉丝经济 | 银发经济 | 儿童经济 |\n| ---------- | -------- | -------- | -------- | -------- |\n| 1          | 1001     | 1002     | 1004     | 1005     |\n\n| 萌宠经济 | 她经济 | 他经济 | 泛娱乐经济 | 下沉市场经济 |\n| -------- | ------ | ------ | ---------- | ------------ |\n| 1007     | 1009   | 1010   | 1011       | 1012         |\n\n| 内容经济 | 订阅经济 | 会员经济 | 居家经济 | 到家经济 |\n| -------- | -------- | -------- | -------- | -------- |\n| 1013     | 1014     | 1015     | 1016     | 1017     |\n\n| 颜值经济 | 闲置经济 | 旅游经济            | 人群洞察 | 00 后 |\n| -------- | -------- | ------------------- | -------- | ----- |\n| 1018     | 1020     | 1622842051677753346 | 2        | 2002  |\n\n| Z 世代 | 银发族 | 宝妈宝爸 | 萌宠人群 | 运动达人 |\n| ------ | ------ | -------- | -------- | -------- |\n| 2003   | 2004   | 2005     | 2007     | 2008     |\n\n| 女性消费 | 男性消费 | 游戏人群 | 二次元 | 新中产 |\n| -------- | -------- | -------- | ------ | ------ |\n| 2009     | 2010     | 2012     | 2013   | 2014   |\n\n| 下沉市场用户 | 大学生 | 数字化营销 | 广告效果 | 品牌营销 |\n| ------------ | ------ | ---------- | -------- | -------- |\n| 2018         | 2022   | 3          | 3001     | 3002     |\n\n| 全域营销 | 私域流量 | 新媒体营销 | KOL 生态 | 内容营销 |\n| -------- | -------- | ---------- | -------- | -------- |\n| 3003     | 3004     | 3005       | 3006     | 3008     |\n\n| 直播电商 | 短视频带货 | 娱乐营销            | 营销热点 | 双 11 电商大促 |\n| -------- | ---------- | ------------------- | -------- | -------------- |\n| 3009     | 3010       | 1630464311158738945 | 4        | 4001           |\n\n| 618 电商大促 | 春节营销 | 五一假期营销 | 热点事件盘点 | 消费热点 |\n| ------------ | -------- | ------------ | ------------ | -------- |\n| 4002         | 4003     | 4004         | 4007         | 5        |\n\n| 时尚品牌 | 连锁餐饮 | 新式茶饮 | 智能家电 | 国潮品牌 |\n| -------- | -------- | -------- | -------- | -------- |\n| 5001     | 5002     | 5003     | 5004     | 5007     |\n\n| 白酒品牌            | 精益运营 | 媒介策略 | 用户争夺 | 精细化运营 |\n| ------------------- | -------- | -------- | -------- | ---------- |\n| 1622841828310093825 | 6        | 6001     | 6002     | 6003       |\n\n| 用户分层 | 增长黑马 | 社交裂变 | 新兴领域 | 新能源汽车 |\n| -------- | -------- | -------- | -------- | ---------- |\n| 6004     | 6005     | 6007     | 7        | 7001       |\n\n| 智能汽车 | 新消费 | AIoT | 产业互联网 | AIGC                |\n| -------- | ------ | ---- | ---------- | ------------------- |\n| 7002     | 7003   | 7004 | 7005       | 1645677998450511873 |\n\n| OTT 应用            | 智能电视            | 全景数据 | 全景生态 | 微信小程序 |\n| ------------------- | ------------------- | -------- | -------- | ---------- |\n| 1676063510499528705 | 1676063630293045249 | 8        | 8001     | 8002       |\n\n| 支付宝小程序 | 百度智能小程序 | 企业流量            | 抖音小程序          | 手机终端 |\n| ------------ | -------------- | ------------------- | ------------------- | -------- |\n| 8003         | 8004           | 1671052842096496642 | 1676063017220018177 | 9        |\n\n| 智能终端 | 国产终端 | 5G 手机 | 盘点 | 季度报告 |\n| -------- | -------- | ------- | ---- | -------- |\n| 9001     | 9002     | 9003    | 10   | 10001    |\n</details>","location":"report.ts"}' :test='{"code":0}' />
 
 ::: tip
   若订阅行业 [互联网行业](https://www.questmobile.com.cn/research/reports/1/-1)，网址为 `https://www.questmobile.com.cn/research/reports/1/-1`
@@ -1412,115 +1412,115 @@ Supported categories: Therapeia, Eudaimonia, and Poiesis.
   参数 industry 为 `品牌领域` 或 `2`，参数 label 为 `互联网经济` 或 `1`，此时路由为 [`/questmobile/report/品牌领域/互联网经济`](https://rsshub.app/questmobile/report/品牌领域/互联网经济) 或 [`/questmobile/report/2/1`](https://rsshub.app/questmobile/report/2/1)，甚至 [`/questmobile/report/品牌领域/1`](https://rsshub.app/questmobile/report/品牌领域/1)。
 :::
 
-  <details>
-    <summary>全部行业和标签</summary>
+<details>
+<summary>全部行业和标签</summary>
 
-    #### 行业
+#### 行业
 
-    | 互联网行业 | 移动社交 | 移动视频 | 移动购物 | 系统工具 |
-    | ---------- | -------- | -------- | -------- | -------- |
-    | 1          | 1001     | 1002     | 1003     | 1004     |
+| 互联网行业 | 移动社交 | 移动视频 | 移动购物 | 系统工具 |
+| ---------- | -------- | -------- | -------- | -------- |
+| 1          | 1001     | 1002     | 1003     | 1004     |
 
-    | 出行服务 | 金融理财 | 生活服务 | 移动音乐 | 新闻资讯 |
-    | -------- | -------- | -------- | -------- | -------- |
-    | 1005     | 1006     | 1007     | 1008     | 1009     |
+| 出行服务 | 金融理财 | 生活服务 | 移动音乐 | 新闻资讯 |
+| -------- | -------- | -------- | -------- | -------- |
+| 1005     | 1006     | 1007     | 1008     | 1009     |
 
-    | 办公商务 | 手机游戏 | 实用工具 | 数字阅读 | 教育学习 |
-    | -------- | -------- | -------- | -------- | -------- |
-    | 1010     | 1011     | 1012     | 1013     | 1014     |
+| 办公商务 | 手机游戏 | 实用工具 | 数字阅读 | 教育学习 |
+| -------- | -------- | -------- | -------- | -------- |
+| 1010     | 1011     | 1012     | 1013     | 1014     |
 
-    | 汽车服务 | 拍摄美化 | 智能设备 | 旅游服务 | 健康美容 |
-    | -------- | -------- | -------- | -------- | -------- |
-    | 1015     | 1016     | 1017     | 1018     | 1020     |
+| 汽车服务 | 拍摄美化 | 智能设备 | 旅游服务 | 健康美容 |
+| -------- | -------- | -------- | -------- | -------- |
+| 1015     | 1016     | 1017     | 1018     | 1020     |
 
-    | 育儿母婴 | 主题美化 | 医疗服务 | 品牌领域 | 美妆品牌 |
-    | -------- | -------- | -------- | -------- | -------- |
-    | 1022     | 1023     | 1024     | 2        | 2001     |
+| 育儿母婴 | 主题美化 | 医疗服务 | 品牌领域 | 美妆品牌 |
+| -------- | -------- | -------- | -------- | -------- |
+| 1022     | 1023     | 1024     | 2        | 2001     |
 
-    | 母婴品牌 | 家电品牌 | 食品饮料品牌 | 汽车品牌 | 服饰箱包品牌 |
-    | -------- | -------- | ------------ | -------- | ------------ |
-    | 2002     | 2003     | 2004         | 2005     | 2006         |
+| 母婴品牌 | 家电品牌 | 食品饮料品牌 | 汽车品牌 | 服饰箱包品牌 |
+| -------- | -------- | ------------ | -------- | ------------ |
+| 2002     | 2003     | 2004         | 2005     | 2006         |
 
-    #### 标签
+#### 标签
 
-    | 互联网经济 | 圈层经济 | 粉丝经济 | 银发经济 | 儿童经济 |
-    | ---------- | -------- | -------- | -------- | -------- |
-    | 1          | 1001     | 1002     | 1004     | 1005     |
+| 互联网经济 | 圈层经济 | 粉丝经济 | 银发经济 | 儿童经济 |
+| ---------- | -------- | -------- | -------- | -------- |
+| 1          | 1001     | 1002     | 1004     | 1005     |
 
-    | 萌宠经济 | 她经济 | 他经济 | 泛娱乐经济 | 下沉市场经济 |
-    | -------- | ------ | ------ | ---------- | ------------ |
-    | 1007     | 1009   | 1010   | 1011       | 1012         |
+| 萌宠经济 | 她经济 | 他经济 | 泛娱乐经济 | 下沉市场经济 |
+| -------- | ------ | ------ | ---------- | ------------ |
+| 1007     | 1009   | 1010   | 1011       | 1012         |
 
-    | 内容经济 | 订阅经济 | 会员经济 | 居家经济 | 到家经济 |
-    | -------- | -------- | -------- | -------- | -------- |
-    | 1013     | 1014     | 1015     | 1016     | 1017     |
+| 内容经济 | 订阅经济 | 会员经济 | 居家经济 | 到家经济 |
+| -------- | -------- | -------- | -------- | -------- |
+| 1013     | 1014     | 1015     | 1016     | 1017     |
 
-    | 颜值经济 | 闲置经济 | 旅游经济            | 人群洞察 | 00 后 |
-    | -------- | -------- | ------------------- | -------- | ----- |
-    | 1018     | 1020     | 1622842051677753346 | 2        | 2002  |
+| 颜值经济 | 闲置经济 | 旅游经济            | 人群洞察 | 00 后 |
+| -------- | -------- | ------------------- | -------- | ----- |
+| 1018     | 1020     | 1622842051677753346 | 2        | 2002  |
 
-    | Z 世代 | 银发族 | 宝妈宝爸 | 萌宠人群 | 运动达人 |
-    | ------ | ------ | -------- | -------- | -------- |
-    | 2003   | 2004   | 2005     | 2007     | 2008     |
+| Z 世代 | 银发族 | 宝妈宝爸 | 萌宠人群 | 运动达人 |
+| ------ | ------ | -------- | -------- | -------- |
+| 2003   | 2004   | 2005     | 2007     | 2008     |
 
-    | 女性消费 | 男性消费 | 游戏人群 | 二次元 | 新中产 |
-    | -------- | -------- | -------- | ------ | ------ |
-    | 2009     | 2010     | 2012     | 2013   | 2014   |
+| 女性消费 | 男性消费 | 游戏人群 | 二次元 | 新中产 |
+| -------- | -------- | -------- | ------ | ------ |
+| 2009     | 2010     | 2012     | 2013   | 2014   |
 
-    | 下沉市场用户 | 大学生 | 数字化营销 | 广告效果 | 品牌营销 |
-    | ------------ | ------ | ---------- | -------- | -------- |
-    | 2018         | 2022   | 3          | 3001     | 3002     |
+| 下沉市场用户 | 大学生 | 数字化营销 | 广告效果 | 品牌营销 |
+| ------------ | ------ | ---------- | -------- | -------- |
+| 2018         | 2022   | 3          | 3001     | 3002     |
 
-    | 全域营销 | 私域流量 | 新媒体营销 | KOL 生态 | 内容营销 |
-    | -------- | -------- | ---------- | -------- | -------- |
-    | 3003     | 3004     | 3005       | 3006     | 3008     |
+| 全域营销 | 私域流量 | 新媒体营销 | KOL 生态 | 内容营销 |
+| -------- | -------- | ---------- | -------- | -------- |
+| 3003     | 3004     | 3005       | 3006     | 3008     |
 
-    | 直播电商 | 短视频带货 | 娱乐营销            | 营销热点 | 双 11 电商大促 |
-    | -------- | ---------- | ------------------- | -------- | -------------- |
-    | 3009     | 3010       | 1630464311158738945 | 4        | 4001           |
+| 直播电商 | 短视频带货 | 娱乐营销            | 营销热点 | 双 11 电商大促 |
+| -------- | ---------- | ------------------- | -------- | -------------- |
+| 3009     | 3010       | 1630464311158738945 | 4        | 4001           |
 
-    | 618 电商大促 | 春节营销 | 五一假期营销 | 热点事件盘点 | 消费热点 |
-    | ------------ | -------- | ------------ | ------------ | -------- |
-    | 4002         | 4003     | 4004         | 4007         | 5        |
+| 618 电商大促 | 春节营销 | 五一假期营销 | 热点事件盘点 | 消费热点 |
+| ------------ | -------- | ------------ | ------------ | -------- |
+| 4002         | 4003     | 4004         | 4007         | 5        |
 
-    | 时尚品牌 | 连锁餐饮 | 新式茶饮 | 智能家电 | 国潮品牌 |
-    | -------- | -------- | -------- | -------- | -------- |
-    | 5001     | 5002     | 5003     | 5004     | 5007     |
+| 时尚品牌 | 连锁餐饮 | 新式茶饮 | 智能家电 | 国潮品牌 |
+| -------- | -------- | -------- | -------- | -------- |
+| 5001     | 5002     | 5003     | 5004     | 5007     |
 
-    | 白酒品牌            | 精益运营 | 媒介策略 | 用户争夺 | 精细化运营 |
-    | ------------------- | -------- | -------- | -------- | ---------- |
-    | 1622841828310093825 | 6        | 6001     | 6002     | 6003       |
+| 白酒品牌            | 精益运营 | 媒介策略 | 用户争夺 | 精细化运营 |
+| ------------------- | -------- | -------- | -------- | ---------- |
+| 1622841828310093825 | 6        | 6001     | 6002     | 6003       |
 
-    | 用户分层 | 增长黑马 | 社交裂变 | 新兴领域 | 新能源汽车 |
-    | -------- | -------- | -------- | -------- | ---------- |
-    | 6004     | 6005     | 6007     | 7        | 7001       |
+| 用户分层 | 增长黑马 | 社交裂变 | 新兴领域 | 新能源汽车 |
+| -------- | -------- | -------- | -------- | ---------- |
+| 6004     | 6005     | 6007     | 7        | 7001       |
 
-    | 智能汽车 | 新消费 | AIoT | 产业互联网 | AIGC                |
-    | -------- | ------ | ---- | ---------- | ------------------- |
-    | 7002     | 7003   | 7004 | 7005       | 1645677998450511873 |
+| 智能汽车 | 新消费 | AIoT | 产业互联网 | AIGC                |
+| -------- | ------ | ---- | ---------- | ------------------- |
+| 7002     | 7003   | 7004 | 7005       | 1645677998450511873 |
 
-    | OTT 应用            | 智能电视            | 全景数据 | 全景生态 | 微信小程序 |
-    | ------------------- | ------------------- | -------- | -------- | ---------- |
-    | 1676063510499528705 | 1676063630293045249 | 8        | 8001     | 8002       |
+| OTT 应用            | 智能电视            | 全景数据 | 全景生态 | 微信小程序 |
+| ------------------- | ------------------- | -------- | -------- | ---------- |
+| 1676063510499528705 | 1676063630293045249 | 8        | 8001     | 8002       |
 
-    | 支付宝小程序 | 百度智能小程序 | 企业流量            | 抖音小程序          | 手机终端 |
-    | ------------ | -------------- | ------------------- | ------------------- | -------- |
-    | 8003         | 8004           | 1671052842096496642 | 1676063017220018177 | 9        |
+| 支付宝小程序 | 百度智能小程序 | 企业流量            | 抖音小程序          | 手机终端 |
+| ------------ | -------------- | ------------------- | ------------------- | -------- |
+| 8003         | 8004           | 1671052842096496642 | 1676063017220018177 | 9        |
 
-    | 智能终端 | 国产终端 | 5G 手机 | 盘点 | 季度报告 |
-    | -------- | -------- | ------- | ---- | -------- |
-    | 9001     | 9002     | 9003    | 10   | 10001    |
-  </details>
+| 智能终端 | 国产终端 | 5G 手机 | 盘点 | 季度报告 |
+| -------- | -------- | ------- | ---- | -------- |
+| 9001     | 9002     | 9003    | 10   | 10001    |
+</details>
 
 ## Readhub <Site url="readhub.cn"/>
 
 ### 分类 <Site url="readhub.cn" size="sm" />
 
-<Route namespace="readhub" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/readhub","parameters":{"category":"分类，见下表，默认为热门话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["WhiteWorld","nczitzk","Fatpandac"],"description":"| 热门话题 | 科技动态 | 医疗产业 | 财经快讯           |\n  | -------- | -------- | -------- | ------------------ |\n  |          | news     | medical  | financial_express |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="readhub" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/readhub","parameters":{"category":"分类，见下表，默认为热门话题"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["WhiteWorld","nczitzk","Fatpandac"],"description":"| 热门话题 | 科技动态 | 医疗产业 | 财经快讯           |\n| -------- | -------- | -------- | ------------------ |\n|          | news     | medical  | financial_express |","location":"index.ts"}' :test='{"code":0}' />
 
 | 热门话题 | 科技动态 | 医疗产业 | 财经快讯           |
-  | -------- | -------- | -------- | ------------------ |
-  |          | news     | medical  | financial_express |
+| -------- | -------- | -------- | ------------------ |
+|          | news     | medical  | financial_express |
 
 ### 每日早报 <Site url="readhub.cn/daily" size="sm" />
 
@@ -1673,22 +1673,22 @@ Refer to [https://developers.themoviedb.org/3/getting-started/languages](https:/
 
 ### The Verge <Site url="theverge.com" size="sm" />
 
-<Route namespace="theverge" :data='{"path":"/:hub?","categories":["new-media","popular"],"example":"/theverge","parameters":{"hub":"Hub, see below, All Posts by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["theverge.com/:hub","theverge.com/"]}],"name":"The Verge","maintainers":["HenryQW","vbali"],"description":"| Hub         | Hub name            |\n  | ----------- | ------------------- |\n  |             | All Posts           |\n  | android     | Android             |\n  | apple       | Apple               |\n  | apps        | Apps & Software     |\n  | blackberry  | BlackBerry          |\n  | culture     | Culture             |\n  | gaming      | Gaming              |\n  | hd          | HD & Home           |\n  | microsoft   | Microsoft           |\n  | photography | Photography & Video |\n  | policy      | Policy & Law        |\n  | web         | Web & Social        |\n\n  Provides a better reading experience (full text articles) over the official one.","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1864)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="theverge" :data='{"path":"/:hub?","categories":["new-media","popular"],"example":"/theverge","parameters":{"hub":"Hub, see below, All Posts by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["theverge.com/:hub","theverge.com/"]}],"name":"The Verge","maintainers":["HenryQW","vbali"],"description":"| Hub         | Hub name            |\n| ----------- | ------------------- |\n|             | All Posts           |\n| android     | Android             |\n| apple       | Apple               |\n| apps        | Apps & Software     |\n| blackberry  | BlackBerry          |\n| culture     | Culture             |\n| gaming      | Gaming              |\n| hd          | HD & Home           |\n| microsoft   | Microsoft           |\n| photography | Photography & Video |\n| policy      | Policy & Law        |\n| web         | Web & Social        |\n\n  Provides a better reading experience (full text articles) over the official one.","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1864)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | Hub         | Hub name            |
-  | ----------- | ------------------- |
-  |             | All Posts           |
-  | android     | Android             |
-  | apple       | Apple               |
-  | apps        | Apps & Software     |
-  | blackberry  | BlackBerry          |
-  | culture     | Culture             |
-  | gaming      | Gaming              |
-  | hd          | HD & Home           |
-  | microsoft   | Microsoft           |
-  | photography | Photography & Video |
-  | policy      | Policy & Law        |
-  | web         | Web & Social        |
+| ----------- | ------------------- |
+|             | All Posts           |
+| android     | Android             |
+| apple       | Apple               |
+| apps        | Apps & Software     |
+| blackberry  | BlackBerry          |
+| culture     | Culture             |
+| gaming      | Gaming              |
+| hd          | HD & Home           |
+| microsoft   | Microsoft           |
+| photography | Photography & Video |
+| policy      | Policy & Law        |
+| web         | Web & Social        |
 
   Provides a better reading experience (full text articles) over the official one.
 
@@ -1712,11 +1712,11 @@ Refer to [https://developers.themoviedb.org/3/getting-started/languages](https:/
 
 ### 分类 <Site url="utgd.net" size="sm" />
 
-<Route namespace="utgd" :data='{"path":"/category/:category?","categories":["new-media","popular"],"example":"/utgd/category/method","parameters":{"category":"分类，可在对应分类页的 URL 中找到，默认为方法"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/category/s/:category","utgd.net/"],"target":"/category/:category"}],"name":"分类","maintainers":["nczitzk"],"description":"| 方法   | 观点    |\n  | ------ | ------- |\n  | method | opinion |","location":"category.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="utgd" :data='{"path":"/category/:category?","categories":["new-media","popular"],"example":"/utgd/category/method","parameters":{"category":"分类，可在对应分类页的 URL 中找到，默认为方法"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/category/s/:category","utgd.net/"],"target":"/category/:category"}],"name":"分类","maintainers":["nczitzk"],"description":"| 方法   | 观点    |\n| ------ | ------- |\n| method | opinion |","location":"category.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 方法   | 观点    |
-  | ------ | ------- |
-  | method | opinion |
+| ------ | ------- |
+| method | opinion |
 
 ### 时间线 <Site url="utgd.net/" size="sm" />
 
@@ -1724,10 +1724,10 @@ Refer to [https://developers.themoviedb.org/3/getting-started/languages](https:/
 
 ### 专题 <Site url="utgd.net/topic" size="sm" />
 
-<Route namespace="utgd" :data='{"path":"/topic/:topic?","categories":["new-media","popular"],"example":"/utgd/topic/在线阅读专栏","parameters":{"topic":"专题，默认为在线阅读专栏"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/topic","utgd.net/"],"target":"/topic/:topic"}],"name":"专题","maintainers":["nczitzk"],"url":"utgd.net/topic","description":"| 在线阅读专栏 | 卡片笔记专题 |\n  | ------------ | ------------ |\n\n  更多专栏请见 [专题广场](https://utgd.net/topic)","location":"topic.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="utgd" :data='{"path":"/topic/:topic?","categories":["new-media","popular"],"example":"/utgd/topic/在线阅读专栏","parameters":{"topic":"专题，默认为在线阅读专栏"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["utgd.net/topic","utgd.net/"],"target":"/topic/:topic"}],"name":"专题","maintainers":["nczitzk"],"url":"utgd.net/topic","description":"| 在线阅读专栏 | 卡片笔记专题 |\n| ------------ | ------------ |\n\n  更多专栏请见 [专题广场](https://utgd.net/topic)","location":"topic.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 在线阅读专栏 | 卡片笔记专题 |
-  | ------------ | ------------ |
+| ------------ | ------------ |
 
   更多专栏请见 [专题广场](https://utgd.net/topic)
 
@@ -1940,11 +1940,11 @@ yande post
 
 ### Popular Recent Posts <Site url="yande.re" size="sm" />
 
-<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/yande/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["yande.re/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","SettingDust","fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n  | ------- | -------- | ------- | -------- |\n  | 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
+<Route namespace="yande" :data='{"path":"/post/popular_recent/:period?","categories":["picture","popular"],"view":2,"example":"/yande/post/popular_recent/1d","parameters":{"period":{"description":"展示时间","options":[{"value":"1d","label":"最近 24 小时"},{"value":"1w","label":"最近一周"},{"value":"1m","label":"最近一月"},{"value":"1y","label":"最近一年"}],"default":"1d"}},"radar":[{"source":["yande.re/post"]}],"name":"Popular Recent Posts","maintainers":["magic-akari","SettingDust","fashioncj","NekoAria"],"description":"| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n| ------- | -------- | ------- | -------- |\n| 1d | 1w | 1m | 1y |","location":"post.ts"}' :test='{"code":0}' />
 
 | 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |
-  | ------- | -------- | ------- | -------- |
-  | 1d | 1w | 1m | 1y |
+| ------- | -------- | ------- | -------- |
+| 1d | 1w | 1m | 1y |
 
 ## YouTube <Site url="youtube.com"/>
 
@@ -1966,10 +1966,10 @@ yande post
 
 ### 资讯 <Site url="aliresearch.com/cn/information" size="sm" />
 
-<Route namespace="aliresearch" :data='{"path":"/information/:type?","categories":["new-media","popular"],"example":"/aliresearch/information","parameters":{"type":"类型，见下表，默认为新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aliresearch.com/cn/information","aliresearch.com/"],"target":"/information"}],"name":"资讯","maintainers":["nczitzk"],"url":"aliresearch.com/cn/information","description":"| 新闻 | 观点 | 案例 |\n  | ---- | ---- | ---- |","location":"information.ts"}' :test='{"code":0}' />
+<Route namespace="aliresearch" :data='{"path":"/information/:type?","categories":["new-media","popular"],"example":"/aliresearch/information","parameters":{"type":"类型，见下表，默认为新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aliresearch.com/cn/information","aliresearch.com/"],"target":"/information"}],"name":"资讯","maintainers":["nczitzk"],"url":"aliresearch.com/cn/information","description":"| 新闻 | 观点 | 案例 |\n| ---- | ---- | ---- |","location":"information.ts"}' :test='{"code":0}' />
 
 | 新闻 | 观点 | 案例 |
-  | ---- | ---- | ---- |
+| ---- | ---- | ---- |
 
 ## 巴哈姆特電玩資訊站 <Site url="acg.gamer.com.tw"/>
 
@@ -1995,11 +1995,11 @@ yande post
 
 ### 科普 <Site url="hellobtc.com" size="sm" />
 
-<Route namespace="hellobtc" :data='{"path":"/kepu/:channel?","categories":["new-media","popular"],"example":"/hellobtc/kepu/latest","parameters":{"channel":"类型，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科普","maintainers":["Fatpandac"],"description":"| latest | bitcoin | ethereum | defi | inter_blockchain | mining | safety | satoshi_nakomoto | public_blockchain |\n  | ------ | ------- | -------- | ---- | ----------------- | ------ | ------ | ----------------- | ------------------ |\n  | 最新   | 比特币  | 以太坊   | DeFi | 跨链              | 挖矿   | 安全   | 中本聪            | 公链               |","location":"kepu.ts"}' :test='{"code":0}' />
+<Route namespace="hellobtc" :data='{"path":"/kepu/:channel?","categories":["new-media","popular"],"example":"/hellobtc/kepu/latest","parameters":{"channel":"类型，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"科普","maintainers":["Fatpandac"],"description":"| latest | bitcoin | ethereum | defi | inter_blockchain | mining | safety | satoshi_nakomoto | public_blockchain |\n| ------ | ------- | -------- | ---- | ----------------- | ------ | ------ | ----------------- | ------------------ |\n| 最新   | 比特币  | 以太坊   | DeFi | 跨链              | 挖矿   | 安全   | 中本聪            | 公链               |","location":"kepu.ts"}' :test='{"code":0}' />
 
 | latest | bitcoin | ethereum | defi | inter_blockchain | mining | safety | satoshi_nakomoto | public_blockchain |
-  | ------ | ------- | -------- | ---- | ----------------- | ------ | ------ | ----------------- | ------------------ |
-  | 最新   | 比特币  | 以太坊   | DeFi | 跨链              | 挖矿   | 安全   | 中本聪            | 公链               |
+| ------ | ------- | -------- | ---- | ----------------- | ------ | ------ | ----------------- | ------------------ |
+| 最新   | 比特币  | 以太坊   | DeFi | 跨链              | 挖矿   | 安全   | 中本聪            | 公链               |
 
 ### 快讯 <Site url="hellobtc.com/news" size="sm" />
 
@@ -2075,18 +2075,18 @@ yande post
 
 ### 资讯 <Site url="chaping.cn" size="sm" />
 
-<Route namespace="chaping" :data='{"path":"/news/:caty?","categories":["new-media","popular"],"example":"/chaping/news/15","parameters":{"caty":"分类，默认为全部资讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"| 编号 | 分类       |\n  | ---- | ---------- |\n  | 15   | 直播       |\n  | 3    | 科技新鲜事 |\n  | 7    | 互联网槽点 |\n  | 5    | 趣味科技   |\n  | 6    | DEBUG TIME |\n  | 1    | 游戏       |\n  | 8    | 视频       |\n  | 9    | 公里每小时 |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 294)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="chaping" :data='{"path":"/news/:caty?","categories":["new-media","popular"],"example":"/chaping/news/15","parameters":{"caty":"分类，默认为全部资讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"| 编号 | 分类       |\n| ---- | ---------- |\n| 15   | 直播       |\n| 3    | 科技新鲜事 |\n| 7    | 互联网槽点 |\n| 5    | 趣味科技   |\n| 6    | DEBUG TIME |\n| 1    | 游戏       |\n| 8    | 视频       |\n| 9    | 公里每小时 |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 294)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 编号 | 分类       |
-  | ---- | ---------- |
-  | 15   | 直播       |
-  | 3    | 科技新鲜事 |
-  | 7    | 互联网槽点 |
-  | 5    | 趣味科技   |
-  | 6    | DEBUG TIME |
-  | 1    | 游戏       |
-  | 8    | 视频       |
-  | 9    | 公里每小时 |
+| ---- | ---------- |
+| 15   | 直播       |
+| 3    | 科技新鲜事 |
+| 7    | 互联网槽点 |
+| 5    | 趣味科技   |
+| 6    | DEBUG TIME |
+| 1    | 游戏       |
+| 8    | 视频       |
+| 9    | 公里每小时 |
 
 ## 唱吧 <Site url="changba.com"/>
 
@@ -2108,11 +2108,11 @@ yande post
 
 ### 分类 <Site url="startuplatte.com" size="sm" />
 
-<Route namespace="startuplatte" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/startuplatte","parameters":{"category":"分类，见下表，默认为首頁"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["startuplatte.com/category/:category","startuplatte.com/"]}],"name":"分类","maintainers":["nczitzk"],"description":"| 首頁 | 大師智慧 | 深度分析 | 新知介紹 |\n  | ---- | -------- | -------- | -------- |\n  |      | quote    | analysis | trend    |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="startuplatte" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/startuplatte","parameters":{"category":"分类，见下表，默认为首頁"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["startuplatte.com/category/:category","startuplatte.com/"]}],"name":"分类","maintainers":["nczitzk"],"description":"| 首頁 | 大師智慧 | 深度分析 | 新知介紹 |\n| ---- | -------- | -------- | -------- |\n|      | quote    | analysis | trend    |","location":"index.ts"}' :test='{"code":0}' />
 
 | 首頁 | 大師智慧 | 深度分析 | 新知介紹 |
-  | ---- | -------- | -------- | -------- |
-  |      | quote    | analysis | trend    |
+| ---- | -------- | -------- | -------- |
+|      | quote    | analysis | trend    |
 
 ## 得到 <Site url="dedao.cn"/>
 
@@ -2122,19 +2122,19 @@ yande post
 
 ### 文章 <Site url="dedao.cn" size="sm" />
 
-<Route namespace="dedao" :data='{"path":"/:category?","name":"文章","maintainers":["nczitzk","pseudoyu"],"categories":["new-media","popular"],"example":"/dedao","parameters":{"category":"分类，见下表，默认为`news`"},"description":"| 新闻 | 人物故事 | 视频 |\n  | ---- | ---- | ---- |\n  | news | figure | video |","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="dedao" :data='{"path":"/:category?","name":"文章","maintainers":["nczitzk","pseudoyu"],"categories":["new-media","popular"],"example":"/dedao","parameters":{"category":"分类，见下表，默认为`news`"},"description":"| 新闻 | 人物故事 | 视频 |\n| ---- | ---- | ---- |\n| news | figure | video |","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 新闻 | 人物故事 | 视频 |
-  | ---- | ---- | ---- |
-  | news | figure | video |
+| ---- | ---- | ---- |
+| news | figure | video |
 
 ### 用户主页 <Site url="dedao.cn" size="sm" />
 
-<Route namespace="dedao" :data='{"path":"/user/:id/:type?","categories":["new-media","popular"],"example":"/dedao/user/VkA5OqLX4RyGxmZRNBMlwBrDaJQ9og","parameters":{"id":"用户 id，可在对应用户主页 URL 中找到","type":"类型，见下表，默认为`0`，即动态"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户主页","maintainers":["nczitzk"],"description":"| 动态 | 书评 | 视频 |\n  | ---- | ---- | ---- |\n  | 0    | 7    | 12   |","location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="dedao" :data='{"path":"/user/:id/:type?","categories":["new-media","popular"],"example":"/dedao/user/VkA5OqLX4RyGxmZRNBMlwBrDaJQ9og","parameters":{"id":"用户 id，可在对应用户主页 URL 中找到","type":"类型，见下表，默认为`0`，即动态"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户主页","maintainers":["nczitzk"],"description":"| 动态 | 书评 | 视频 |\n| ---- | ---- | ---- |\n| 0    | 7    | 12   |","location":"user.ts"}' :test='{"code":0}' />
 
 | 动态 | 书评 | 视频 |
-  | ---- | ---- | ---- |
-  | 0    | 7    | 12   |
+| ---- | ---- | ---- |
+| 0    | 7    | 12   |
 
 ### 知识城邦 <Site url="dedao.cn" size="sm" />
 
@@ -2148,11 +2148,11 @@ yande post
 
 ### 分类 <Site url="agirls.aotter.net" size="sm" />
 
-<Route namespace="agirls" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/agirls/app","parameters":{"category":"分类，默认为最新文章，可在对应主题页的 URL 中找到，下表仅列出部分"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agirls.aotter.net/posts/:category"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |\n  | -------- | -------- | -------- | ----------- | ---------- | -------- |\n  | app      | phone    | computer | accessories | tutorial   | techlife |","location":"z-index.ts"}' :test='{"code":0}' />
+<Route namespace="agirls" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/agirls/app","parameters":{"category":"分类，默认为最新文章，可在对应主题页的 URL 中找到，下表仅列出部分"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["agirls.aotter.net/posts/:category"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |\n| -------- | -------- | -------- | ----------- | ---------- | -------- |\n| app      | phone    | computer | accessories | tutorial   | techlife |","location":"z-index.ts"}' :test='{"code":0}' />
 
 | App 评测 | 手机开箱 | 笔电开箱 | 3C 周边     | 教学小技巧 | 科技情报 |
-  | -------- | -------- | -------- | ----------- | ---------- | -------- |
-  | app      | phone    | computer | accessories | tutorial   | techlife |
+| -------- | -------- | -------- | ----------- | ---------- | -------- |
+| app      | phone    | computer | accessories | tutorial   | techlife |
 
 ### 精选主题 <Site url="agirls.aotter.net" size="sm" />
 
@@ -2162,42 +2162,42 @@ yande post
 
 ### 资讯 <Site url="diandong.com/news" size="sm" />
 
-<Route namespace="diandong" :data='{"path":"/news/:cate?","categories":["new-media","popular"],"example":"/diandong/news","parameters":{"cate":"分类，见下表，默认为推荐"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["diandong.com/news"],"target":"/news/:cate"}],"name":"资讯","maintainers":["Fatpandac"],"url":"diandong.com/news","description":"分类\n\n  | 推荐 | 新车 | 导购 | 试驾 | 用车 | 技术 | 政策 | 行业 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 0    | 29   | 61   | 30   | 75   | 22   | 24   | 23   |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="diandong" :data='{"path":"/news/:cate?","categories":["new-media","popular"],"example":"/diandong/news","parameters":{"cate":"分类，见下表，默认为推荐"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["diandong.com/news"],"target":"/news/:cate"}],"name":"资讯","maintainers":["Fatpandac"],"url":"diandong.com/news","description":"分类\n\n| 推荐 | 新车 | 导购 | 试驾 | 用车 | 技术 | 政策 | 行业 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 0    | 29   | 61   | 30   | 75   | 22   | 24   | 23   |","location":"news.ts"}' :test='{"code":0}' />
 
 分类
 
-  | 推荐 | 新车 | 导购 | 试驾 | 用车 | 技术 | 政策 | 行业 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | 0    | 29   | 61   | 30   | 75   | 22   | 24   | 23   |
+| 推荐 | 新车 | 导购 | 试驾 | 用车 | 技术 | 政策 | 行业 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 0    | 29   | 61   | 30   | 75   | 22   | 24   | 23   |
 
 ## 东西智库 <Site url="dx2025.com"/>
 
 ### 分类 <Site url="dx2025.com" size="sm" />
 
-<Route namespace="dx2025" :data='{"path":"/:type?/:category?","categories":["new-media","popular"],"example":"/dx2025","parameters":{"type":"内容类别，见下表，默认为空","category":"行业分类，见下表，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"内容类别\n\n  | 产业观察             | 行业报告         | 政策   | 数据 |\n  | -------------------- | ---------------- | ------ | ---- |\n  | industry-observation | industry-reports | policy | data |\n\n  行业分类\n\n  | 行业                 | 行业名称                                                          |\n  | -------------------- | ----------------------------------------------------------------- |\n  | 新一代信息技术       | next-generation-information-technology-industry-reports           |\n  | 高档数控机床和机器人 | high-grade-cnc-machine-tools-and-robots-industry-reports          |\n  | 航空航天装备         | aerospace-equipment-industry-reports                              |\n  | 海工装备及高技术船舶 | marine-engineering-equipment-and-high-tech-ships-industry-reports |\n  | 先进轨道交通装备     | advanced-rail-transportation-equipment-industry-reports           |\n  | 节能与新能源汽车     | energy-saving-and-new-energy-vehicles-industry-reports            |\n  | 电力装备             | electric-equipment-industry-reports                               |\n  | 农机装备             | agricultural-machinery-equipment-industry-reports                 |\n  | 新材料               | new-material-industry-reports                                     |\n  | 生物医药及医疗器械   | biomedicine-and-medical-devices-industry-reports                  |\n  | 现代服务业           | modern-service-industry-industry-reports                          |\n  | 制造业人才           | manufacturing-talent-industry-reports                             |","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="dx2025" :data='{"path":"/:type?/:category?","categories":["new-media","popular"],"example":"/dx2025","parameters":{"type":"内容类别，见下表，默认为空","category":"行业分类，见下表，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"内容类别\n\n| 产业观察             | 行业报告         | 政策   | 数据 |\n| -------------------- | ---------------- | ------ | ---- |\n| industry-observation | industry-reports | policy | data |\n\n  行业分类\n\n| 行业                 | 行业名称                                                          |\n| -------------------- | ----------------------------------------------------------------- |\n| 新一代信息技术       | next-generation-information-technology-industry-reports           |\n| 高档数控机床和机器人 | high-grade-cnc-machine-tools-and-robots-industry-reports          |\n| 航空航天装备         | aerospace-equipment-industry-reports                              |\n| 海工装备及高技术船舶 | marine-engineering-equipment-and-high-tech-ships-industry-reports |\n| 先进轨道交通装备     | advanced-rail-transportation-equipment-industry-reports           |\n| 节能与新能源汽车     | energy-saving-and-new-energy-vehicles-industry-reports            |\n| 电力装备             | electric-equipment-industry-reports                               |\n| 农机装备             | agricultural-machinery-equipment-industry-reports                 |\n| 新材料               | new-material-industry-reports                                     |\n| 生物医药及医疗器械   | biomedicine-and-medical-devices-industry-reports                  |\n| 现代服务业           | modern-service-industry-industry-reports                          |\n| 制造业人才           | manufacturing-talent-industry-reports                             |","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 内容类别
 
-  | 产业观察             | 行业报告         | 政策   | 数据 |
-  | -------------------- | ---------------- | ------ | ---- |
-  | industry-observation | industry-reports | policy | data |
+| 产业观察             | 行业报告         | 政策   | 数据 |
+| -------------------- | ---------------- | ------ | ---- |
+| industry-observation | industry-reports | policy | data |
 
   行业分类
 
-  | 行业                 | 行业名称                                                          |
-  | -------------------- | ----------------------------------------------------------------- |
-  | 新一代信息技术       | next-generation-information-technology-industry-reports           |
-  | 高档数控机床和机器人 | high-grade-cnc-machine-tools-and-robots-industry-reports          |
-  | 航空航天装备         | aerospace-equipment-industry-reports                              |
-  | 海工装备及高技术船舶 | marine-engineering-equipment-and-high-tech-ships-industry-reports |
-  | 先进轨道交通装备     | advanced-rail-transportation-equipment-industry-reports           |
-  | 节能与新能源汽车     | energy-saving-and-new-energy-vehicles-industry-reports            |
-  | 电力装备             | electric-equipment-industry-reports                               |
-  | 农机装备             | agricultural-machinery-equipment-industry-reports                 |
-  | 新材料               | new-material-industry-reports                                     |
-  | 生物医药及医疗器械   | biomedicine-and-medical-devices-industry-reports                  |
-  | 现代服务业           | modern-service-industry-industry-reports                          |
-  | 制造业人才           | manufacturing-talent-industry-reports                             |
+| 行业                 | 行业名称                                                          |
+| -------------------- | ----------------------------------------------------------------- |
+| 新一代信息技术       | next-generation-information-technology-industry-reports           |
+| 高档数控机床和机器人 | high-grade-cnc-machine-tools-and-robots-industry-reports          |
+| 航空航天装备         | aerospace-equipment-industry-reports                              |
+| 海工装备及高技术船舶 | marine-engineering-equipment-and-high-tech-ships-industry-reports |
+| 先进轨道交通装备     | advanced-rail-transportation-equipment-industry-reports           |
+| 节能与新能源汽车     | energy-saving-and-new-energy-vehicles-industry-reports            |
+| 电力装备             | electric-equipment-industry-reports                               |
+| 农机装备             | agricultural-machinery-equipment-industry-reports                 |
+| 新材料               | new-material-industry-reports                                     |
+| 生物医药及医疗器械   | biomedicine-and-medical-devices-industry-reports                  |
+| 现代服务业           | modern-service-industry-industry-reports                          |
+| 制造业人才           | manufacturing-talent-industry-reports                             |
 
 ## 东方财富 <Site url="data.eastmoney.com"/>
 
@@ -2211,11 +2211,11 @@ yande post
 
 ### 研究报告 <Site url="data.eastmoney.com" size="sm" />
 
-<Route namespace="eastmoney" :data='{"path":"/report/:category","categories":["finance","popular"],"view":0,"example":"/eastmoney/report/strategyreport","parameters":{"category":{"description":"研报类型","options":[{"value":"strategyreport","label":"策略报告"},{"value":"macresearch","label":"宏观研究"},{"value":"brokerreport","label":"券商晨报"},{"value":"industry","label":"行业研报"},{"value":"stock","label":"个股研报"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.eastmoney.com/report/:category"]}],"name":"研究报告","maintainers":["syzq"],"description":"| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 | 个股研报 |\n  | -------------- | ----------- | ------------ | -------- | -------- |\n  | strategyreport | macresearch | brokerreport | industry | stock    |","location":"report/index.ts"}' :test='{"code":0}' />
+<Route namespace="eastmoney" :data='{"path":"/report/:category","categories":["finance","popular"],"view":0,"example":"/eastmoney/report/strategyreport","parameters":{"category":{"description":"研报类型","options":[{"value":"strategyreport","label":"策略报告"},{"value":"macresearch","label":"宏观研究"},{"value":"brokerreport","label":"券商晨报"},{"value":"industry","label":"行业研报"},{"value":"stock","label":"个股研报"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["data.eastmoney.com/report/:category"]}],"name":"研究报告","maintainers":["syzq"],"description":"| 策略报告       | 宏观研究    | 券商晨报     | 行业研究 | 个股研报 |\n| -------------- | ----------- | ------------ | -------- | -------- |\n| strategyreport | macresearch | brokerreport | industry | stock    |","location":"report/index.ts"}' :test='{"code":0}' />
 
 | 策略报告       | 宏观研究    | 券商晨报     | 行业研究 | 个股研报 |
-  | -------------- | ----------- | ------------ | -------- | -------- |
-  | strategyreport | macresearch | brokerreport | industry | stock    |
+| -------------- | ----------- | ------------ | -------- | -------- |
+| strategyreport | macresearch | brokerreport | industry | stock    |
 
 ## 懂球帝 <Site url="m.dongqiudi.com"/>
 
@@ -2233,11 +2233,11 @@ yande post
 
 ### 新闻 <Site url="m.dongqiudi.com" size="sm" />
 
-<Route namespace="dongqiudi" :data='{"path":"/top_news/:id?","categories":["new-media","popular"],"example":"/dongqiudi/top_news/1","parameters":{"id":"类别 id，不填默认头条新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.dongqiudi.com/home/:id"],"target":"/top_news/:id"}],"name":"新闻","maintainers":["HendricksZheng"],"description":"| 头条 | 深度 | 闲情 | D 站 | 中超 | 国际 | 英超 | 西甲 | 意甲 | 德甲 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 55   | 37   | 219  | 56   | 120  | 3    | 5    | 4    | 6    |","location":"top-news.ts"}' :test='{"code":0}' />
+<Route namespace="dongqiudi" :data='{"path":"/top_news/:id?","categories":["new-media","popular"],"example":"/dongqiudi/top_news/1","parameters":{"id":"类别 id，不填默认头条新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["m.dongqiudi.com/home/:id"],"target":"/top_news/:id"}],"name":"新闻","maintainers":["HendricksZheng"],"description":"| 头条 | 深度 | 闲情 | D 站 | 中超 | 国际 | 英超 | 西甲 | 意甲 | 德甲 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 1    | 55   | 37   | 219  | 56   | 120  | 3    | 5    | 4    | 6    |","location":"top-news.ts"}' :test='{"code":0}' />
 
 | 头条 | 深度 | 闲情 | D 站 | 中超 | 国际 | 英超 | 西甲 | 意甲 | 德甲 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | 1    | 55   | 37   | 219  | 56   | 120  | 3    | 5    | 4    | 6    |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 1    | 55   | 37   | 219  | 56   | 120  | 3    | 5    | 4    | 6    |
 
 ### 早报 <Site url="www.dongqiudi.com/special/48" size="sm" />
 
@@ -2249,11 +2249,11 @@ yande post
 
 ### 专题 <Site url="m.dongqiudi.com" size="sm" />
 
-<Route namespace="dongqiudi" :data='{"path":"/special/:id","categories":["new-media","popular"],"example":"/dongqiudi/special/41","parameters":{"id":"专题 id, 可自行通过 https://www.dongqiudi.com/special/+数字匹配"},"radar":[{"source":["www.dongqiudi.com/special/:id"]}],"name":"专题","maintainers":["dxmpalb"],"description":"| 新闻大爆炸 | 懂球帝十佳球 | 懂球帝本周 MVP |\n  | ---------- | ------------ | -------------- |\n  | 41         | 52           | 53             |","location":"special.ts"}' :test='{"code":0}' />
+<Route namespace="dongqiudi" :data='{"path":"/special/:id","categories":["new-media","popular"],"example":"/dongqiudi/special/41","parameters":{"id":"专题 id, 可自行通过 https://www.dongqiudi.com/special/+数字匹配"},"radar":[{"source":["www.dongqiudi.com/special/:id"]}],"name":"专题","maintainers":["dxmpalb"],"description":"| 新闻大爆炸 | 懂球帝十佳球 | 懂球帝本周 MVP |\n| ---------- | ------------ | -------------- |\n| 41         | 52           | 53             |","location":"special.ts"}' :test='{"code":0}' />
 
 | 新闻大爆炸 | 懂球帝十佳球 | 懂球帝本周 MVP |
-  | ---------- | ------------ | -------------- |
-  | 41         | 52           | 53             |
+| ---------- | ------------ | -------------- |
+| 41         | 52           | 53             |
 
 ### 足球赛果 <Site url="m.dongqiudi.com" size="sm" />
 
@@ -2271,7 +2271,7 @@ yande post
 
 ### 用户广播 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/people/:userid/status/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/douban/people/75118396/status","parameters":{"userid":"整数型用户 id","routeParams":"额外参数；见下"},"name":"用户广播","maintainers":["alfredcai"],"description":"\n::: tip\n-   **目前只支持整数型 id**\n-   字母型的 id，可以通过头像图片链接来找到其整数型 id，图片命名规则`ul[userid]-*.jpg`或`u[userid]-*.jpg`，即取文件名中间的数字\n-   例如：用户 id: `MovieL`他的头像图片链接：`https://img1.doubanio.com/icon/ul1128221-98.jpg`他的整数型 id: `1128221`\n:::\n\n对于豆瓣用户广播内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键                         | 含义                                                           | 接受的值       | 默认值 |\n  | -------------------------- | -------------------------------------------------------------- | -------------- | ------ |\n  | readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |\n  | authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |\n  | showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |\n  | showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |\n  | showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |\n  | showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |\n  | showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |\n  | addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |\n  | showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |\n  | showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |\n  | widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n  | heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n  | sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |\n\n  指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如\n\n  [https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100](https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100)\n\n  的效果为\n\n  <img loading=\"lazy\" src=\"/img/readable-douban.png\" alt=\"豆瓣读书的可读豆瓣广播 RSS\" />","location":"people/status.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/people/:userid/status/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/douban/people/75118396/status","parameters":{"userid":"整数型用户 id","routeParams":"额外参数；见下"},"name":"用户广播","maintainers":["alfredcai"],"description":"\n::: tip\n-   **目前只支持整数型 id**\n-   字母型的 id，可以通过头像图片链接来找到其整数型 id，图片命名规则`ul[userid]-*.jpg`或`u[userid]-*.jpg`，即取文件名中间的数字\n-   例如：用户 id: `MovieL`他的头像图片链接：`https://img1.doubanio.com/icon/ul1128221-98.jpg`他的整数型 id: `1128221`\n:::\n\n对于豆瓣用户广播内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n| 键                         | 含义                                                           | 接受的值       | 默认值 |\n| -------------------------- | -------------------------------------------------------------- | -------------- | ------ |\n| readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |\n| authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |\n| showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |\n| showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |\n| showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |\n| showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |\n| showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |\n| addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |\n| showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |\n| showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |\n| widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n| heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n| sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |\n\n  指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如\n\n  [https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100](https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100)\n\n  的效果为\n\n  <img loading=\"lazy\" src=\"/img/readable-douban.png\" alt=\"豆瓣读书的可读豆瓣广播 RSS\" />","location":"people/status.ts"}' :test='{"code":0}' />
 
 
 ::: tip
@@ -2282,21 +2282,21 @@ yande post
 
 对于豆瓣用户广播内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式
 
-  | 键                         | 含义                                                           | 接受的值       | 默认值 |
-  | -------------------------- | -------------------------------------------------------------- | -------------- | ------ |
-  | readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |
-  | authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |
-  | showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |
-  | showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |
-  | showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |
-  | showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |
-  | showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |
-  | addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |
-  | showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |
-  | showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |
-  | widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
-  | heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
-  | sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |
+| 键                         | 含义                                                           | 接受的值       | 默认值 |
+| -------------------------- | -------------------------------------------------------------- | -------------- | ------ |
+| readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |
+| authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |
+| showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |
+| showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |
+| showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |
+| showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |
+| showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |
+| addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |
+| showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |
+| showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |
+| widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
+| heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
+| sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |
 
   指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如
 
@@ -2345,13 +2345,13 @@ Category 栏目：
 
 ### 专题・栏目 <Site url="theinitium.com" size="sm" />
 
-<Route namespace="theinitium" :data='{"path":"/channel/:type?/:language?","name":"专题・栏目","maintainers":["prnake","mintyfrankie"],"parameters":{"type":"栏目，缺省为最新","language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"source":["theinitium.com/channel/:type"],"target":"/channel/:type"}],"example":"/theinitium/channel/latest/zh-hans","categories":["new-media","popular"],"description":"Type 栏目：\n\n  | 最新   | 深度    | What’s New | 广场              | 科技       | 风物    | 特约     | ... |\n  | ------ | ------- | ---------- | ----------------- | ---------- | ------- | -------- | --- |\n  | latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |","location":"channel.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1849)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="theinitium" :data='{"path":"/channel/:type?/:language?","name":"专题・栏目","maintainers":["prnake","mintyfrankie"],"parameters":{"type":"栏目，缺省为最新","language":"语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体"},"radar":[{"source":["theinitium.com/channel/:type"],"target":"/channel/:type"}],"example":"/theinitium/channel/latest/zh-hans","categories":["new-media","popular"],"description":"Type 栏目：\n\n| 最新   | 深度    | What’s New | 广场              | 科技       | 风物    | 特约     | ... |\n| ------ | ------- | ---------- | ----------------- | ---------- | ------- | -------- | --- |\n| latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |","location":"channel.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1849)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 Type 栏目：
 
-  | 最新   | 深度    | What’s New | 广场              | 科技       | 风物    | 特约     | ... |
-  | ------ | ------- | ---------- | ----------------- | ---------- | ------- | -------- | --- |
-  | latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |
+| 最新   | 深度    | What’s New | 广场              | 科技       | 风物    | 特约     | ... |
+| ------ | ------- | ---------- | ----------------- | ---------- | ------- | -------- | --- |
+| latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |
 
 ### 作者 <Site url="theinitium.com" size="sm" />
 
@@ -2375,11 +2375,11 @@ Type 栏目：
 
 ### 首页 <Site url="gelonghui.com" size="sm" />
 
-<Route namespace="gelonghui" :data='{"path":"/home/:tag?","categories":["finance","popular"],"view":0,"example":"/gelonghui/home","parameters":{"tag":{"description":"分类标签，见下表，默认为 `web_home_page`","options":[{"value":"web_home_page","label":"推荐"},{"value":"stock","label":"股票"},{"value":"fund","label":"基金"},{"value":"new_stock","label":"新股"},{"value":"research","label":"研报"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["TonyRL"],"description":"| 推荐            | 股票  | 基金 | 新股       | 研报     |\n  | --------------- | ----- | ---- | ---------- | -------- |\n  | web_home_page | stock | fund | new_stock | research |","location":"home.ts"}' :test='{"code":0}' />
+<Route namespace="gelonghui" :data='{"path":"/home/:tag?","categories":["finance","popular"],"view":0,"example":"/gelonghui/home","parameters":{"tag":{"description":"分类标签，见下表，默认为 `web_home_page`","options":[{"value":"web_home_page","label":"推荐"},{"value":"stock","label":"股票"},{"value":"fund","label":"基金"},{"value":"new_stock","label":"新股"},{"value":"research","label":"研报"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["TonyRL"],"description":"| 推荐            | 股票  | 基金 | 新股       | 研报     |\n| --------------- | ----- | ---- | ---------- | -------- |\n| web_home_page | stock | fund | new_stock | research |","location":"home.ts"}' :test='{"code":0}' />
 
 | 推荐            | 股票  | 基金 | 新股       | 研报     |
-  | --------------- | ----- | ---- | ---------- | -------- |
-  | web_home_page | stock | fund | new_stock | research |
+| --------------- | ----- | ---- | ---------- | -------- |
+| web_home_page | stock | fund | new_stock | research |
 
 ### 搜索关键字 <Site url="gelonghui.com" size="sm" />
 
@@ -2401,11 +2401,11 @@ Type 栏目：
 
 ### 果壳网专栏 <Site url="guokr.com/" size="sm" />
 
-<Route namespace="guokr" :data='{"path":"/column/:channel","categories":["new-media","popular"],"example":"/guokr/column/calendar","parameters":{"channel":"专栏类别"},"radar":[{"source":["guokr.com/:channel"]}],"name":"果壳网专栏","maintainers":["DHPO","hoilc"],"url":"guokr.com/","description":"| 物种日历 | 吃货研究所 | 美丽也是技术活 |\n  | -------- | ---------- | -------------- |\n  | calendar | institute  | beauty         |","location":"channel.ts"}' :test='{"code":0}' />
+<Route namespace="guokr" :data='{"path":"/column/:channel","categories":["new-media","popular"],"example":"/guokr/column/calendar","parameters":{"channel":"专栏类别"},"radar":[{"source":["guokr.com/:channel"]}],"name":"果壳网专栏","maintainers":["DHPO","hoilc"],"url":"guokr.com/","description":"| 物种日历 | 吃货研究所 | 美丽也是技术活 |\n| -------- | ---------- | -------------- |\n| calendar | institute  | beauty         |","location":"channel.ts"}' :test='{"code":0}' />
 
 | 物种日历 | 吃货研究所 | 美丽也是技术活 |
-  | -------- | ---------- | -------------- |
-  | calendar | institute  | beauty         |
+| -------- | ---------- | -------------- |
+| calendar | institute  | beauty         |
 
 ### 科学人 <Site url="guokr.com/scientific" size="sm" />
 
@@ -2439,11 +2439,11 @@ Type 栏目：
 
 ### 用户 <Site url="huxiu.com" size="sm" />
 
-<Route namespace="huxiu" :data='{"path":["/author/:id/:type?","/member/:id/:type?"],"name":"用户","example":"/huxiu/member/2313050","categories":["new-media","popular"],"parameters":{"id":"用户 id，可在对应用户页 URL 中找到"},"maintainers":["nczitzk"],"description":"| TA 的文章 | TA 的 24 小时 |\n  | --------- | ------------- |\n  | article   | moment        |","location":"member.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="huxiu" :data='{"path":["/author/:id/:type?","/member/:id/:type?"],"name":"用户","example":"/huxiu/member/2313050","categories":["new-media","popular"],"parameters":{"id":"用户 id，可在对应用户页 URL 中找到"},"maintainers":["nczitzk"],"description":"| TA 的文章 | TA 的 24 小时 |\n| --------- | ------------- |\n| article   | moment        |","location":"member.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | TA 的文章 | TA 的 24 小时 |
-  | --------- | ------------- |
-  | article   | moment        |
+| --------- | ------------- |
+| article   | moment        |
 
 ### 源流 <Site url="huxiu.com" size="sm" />
 
@@ -2451,19 +2451,19 @@ Type 栏目：
 
 ### 资讯 <Site url="huxiu.com/article" size="sm" />
 
-<Route namespace="huxiu" :data='{"path":["/article","/channel/:id?"],"categories":["new-media","popular"],"example":"/huxiu/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["huxiu.com/article"]}],"name":"资讯","maintainers":["HenryQW","nczitzk"],"description":"| 视频 | 车与出行 | 年轻一代 | 十亿消费者 | 前沿科技 |\n  | ---- | -------- | -------- | ---------- | -------- |\n  | 10   | 21       | 106      | 103        | 105      |\n\n  | 财经 | 娱乐淘金 | 医疗健康 | 文化教育 | 出海 |\n  | ---- | -------- | -------- | -------- | ---- |\n  | 115  | 22       | 111      | 113      | 114  |\n\n  | 金融地产 | 企业服务 | 创业维艰 | 社交通讯 | 全球热点 | 生活腔调 |\n  | -------- | -------- | -------- | -------- | -------- | -------- |\n  | 102      | 110      | 2        | 112      | 107      | 4        |","url":"huxiu.com/article","location":"channel.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="huxiu" :data='{"path":["/article","/channel/:id?"],"categories":["new-media","popular"],"example":"/huxiu/article","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["huxiu.com/article"]}],"name":"资讯","maintainers":["HenryQW","nczitzk"],"description":"| 视频 | 车与出行 | 年轻一代 | 十亿消费者 | 前沿科技 |\n| ---- | -------- | -------- | ---------- | -------- |\n| 10   | 21       | 106      | 103        | 105      |\n\n| 财经 | 娱乐淘金 | 医疗健康 | 文化教育 | 出海 |\n| ---- | -------- | -------- | -------- | ---- |\n| 115  | 22       | 111      | 113      | 114  |\n\n| 金融地产 | 企业服务 | 创业维艰 | 社交通讯 | 全球热点 | 生活腔调 |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 102      | 110      | 2        | 112      | 107      | 4        |","url":"huxiu.com/article","location":"channel.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 视频 | 车与出行 | 年轻一代 | 十亿消费者 | 前沿科技 |
-  | ---- | -------- | -------- | ---------- | -------- |
-  | 10   | 21       | 106      | 103        | 105      |
+| ---- | -------- | -------- | ---------- | -------- |
+| 10   | 21       | 106      | 103        | 105      |
 
-  | 财经 | 娱乐淘金 | 医疗健康 | 文化教育 | 出海 |
-  | ---- | -------- | -------- | -------- | ---- |
-  | 115  | 22       | 111      | 113      | 114  |
+| 财经 | 娱乐淘金 | 医疗健康 | 文化教育 | 出海 |
+| ---- | -------- | -------- | -------- | ---- |
+| 115  | 22       | 111      | 113      | 114  |
 
-  | 金融地产 | 企业服务 | 创业维艰 | 社交通讯 | 全球热点 | 生活腔调 |
-  | -------- | -------- | -------- | -------- | -------- | -------- |
-  | 102      | 110      | 2        | 112      | 107      | 4        |
+| 金融地产 | 企业服务 | 创业维艰 | 社交通讯 | 全球热点 | 生活腔调 |
+| -------- | -------- | -------- | -------- | -------- | -------- |
+| 102      | 110      | 2        | 112      | 107      | 4        |
 
 ## 汇通网 <Site url="fx678.com"/>
 
@@ -2487,11 +2487,11 @@ Type 栏目：
 
 ### 分类 <Site url="gcores.com" size="sm" />
 
-<Route namespace="gcores" :data='{"path":"/category/:category","categories":["new-media","popular"],"example":"/gcores/category/news","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/:category"]}],"name":"分类","maintainers":["MoguCloud","StevenRCE0"],"description":"| 资讯 | 视频   | 电台   | 文章     |\n  | ---- | ------ | ------ | -------- |\n  | news | videos | radios | articles |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="gcores" :data='{"path":"/category/:category","categories":["new-media","popular"],"example":"/gcores/category/news","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/:category"]}],"name":"分类","maintainers":["MoguCloud","StevenRCE0"],"description":"| 资讯 | 视频   | 电台   | 文章     |\n| ---- | ------ | ------ | -------- |\n| news | videos | radios | articles |","location":"category.ts"}' :test='{"code":0}' />
 
 | 资讯 | 视频   | 电台   | 文章     |
-  | ---- | ------ | ------ | -------- |
-  | news | videos | radios | articles |
+| ---- | ------ | ------ | -------- |
+| news | videos | radios | articles |
 
 ### 专题文章 <Site url="gcores.com" size="sm" />
 
@@ -2511,22 +2511,22 @@ Type 栏目：
 
 ### 栏目 <Site url="geekpark.net" size="sm" />
 
-<Route namespace="geekpark" :data='{"path":"/:column?","name":"栏目","url":"geekpark.net","maintainers":["nczitzk"],"example":"/geekpark","parameters":{"column":"栏目 id，默认为空，即首页资讯，可在对应栏目页 URL 中找到"},"description":"::: tip\n  若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。\n:::\n\n  | 栏目                                                         | ID                                     |\n  | ------------------------------------------------------------ | -------------------------------------- |\n  | [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |\n  | [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |\n  | [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |\n  | [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |\n  | [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |\n  | [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |\n  | [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |\n  | [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |\n  ","categories":["new-media","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["geekpark.net"],"target":"/"},{"source":["geekpark.net/column/:column?"]},{"title":"综合报道","source":["www.geekpark.net/column/179"],"target":"/179"},{"title":"AI新浪潮观察","source":["www.geekpark.net/column/304"],"target":"/304"},{"title":"新造车观察","source":["www.geekpark.net/column/305"],"target":"/305"},{"title":"财报解读","source":["www.geekpark.net/column/271"],"target":"/271"},{"title":"底稿对话CEO系列","source":["www.geekpark.net/column/308"],"target":"/308"},{"title":"Geek Insight 特稿系列","source":["www.geekpark.net/column/306"],"target":"/306"},{"title":"心科技","source":["www.geekpark.net/column/307"],"target":"/307"},{"title":"行业资讯","source":["www.geekpark.net/column/2"],"target":"/2"}],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="geekpark" :data='{"path":"/:column?","name":"栏目","url":"geekpark.net","maintainers":["nczitzk"],"example":"/geekpark","parameters":{"column":"栏目 id，默认为空，即首页资讯，可在对应栏目页 URL 中找到"},"description":"::: tip\n  若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。\n:::\n\n| 栏目                                                         | ID                                     |\n| ------------------------------------------------------------ | -------------------------------------- |\n| [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |\n| [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |\n| [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |\n| [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |\n| [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |\n| [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |\n| [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |\n| [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |\n  ","categories":["new-media","popular"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["geekpark.net"],"target":"/"},{"source":["geekpark.net/column/:column?"]},{"title":"综合报道","source":["www.geekpark.net/column/179"],"target":"/179"},{"title":"AI新浪潮观察","source":["www.geekpark.net/column/304"],"target":"/304"},{"title":"新造车观察","source":["www.geekpark.net/column/305"],"target":"/305"},{"title":"财报解读","source":["www.geekpark.net/column/271"],"target":"/271"},{"title":"底稿对话CEO系列","source":["www.geekpark.net/column/308"],"target":"/308"},{"title":"Geek Insight 特稿系列","source":["www.geekpark.net/column/306"],"target":"/306"},{"title":"心科技","source":["www.geekpark.net/column/307"],"target":"/307"},{"title":"行业资讯","source":["www.geekpark.net/column/2"],"target":"/2"}],"location":"index.ts"}' :test='{"code":0}' />
 
 ::: tip
   若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。
 :::
 
-  | 栏目                                                         | ID                                     |
-  | ------------------------------------------------------------ | -------------------------------------- |
-  | [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |
-  | [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |
-  | [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |
-  | [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |
-  | [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |
-  | [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |
-  | [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |
-  | [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |
+| 栏目                                                         | ID                                     |
+| ------------------------------------------------------------ | -------------------------------------- |
+| [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |
+| [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |
+| [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |
+| [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |
+| [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |
+| [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |
+| [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |
+| [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |
   
 
 ## 简书 <Site url="www.jianshu.com"/>
@@ -2547,19 +2547,19 @@ Type 栏目：
 
 ### 志祺七七 <Site url="blog.simpleinfo.cc" size="sm" />
 
-<Route namespace="simpleinfo" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/simpleinfo","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.simpleinfo.cc/blog/:category"],"target":"/:category"}],"name":"志祺七七","maintainers":["haukeng"],"description":"| 夥伴聊聊 | 專案設計 |\n  | -------- | -------- |\n  | work     | talk     |\n\n  | 國內外新聞 | 政治百分百 | 社會觀察家 | 心理與哲學            |\n  | ---------- | ---------- | ---------- | --------------------- |\n  | news       | politics   | society    | psychology-philosophy |\n\n  | 科學大探索 | 環境與健康         | ACG 快樂聊 | 好書籍分享   | 其它主題     |\n  | ---------- | ------------------ | ---------- | ------------ | ------------ |\n  | science    | environment-health | acg        | book-sharing | other-topics |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="simpleinfo" :data='{"path":"/:category?","categories":["new-media","popular"],"example":"/simpleinfo","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.simpleinfo.cc/blog/:category"],"target":"/:category"}],"name":"志祺七七","maintainers":["haukeng"],"description":"| 夥伴聊聊 | 專案設計 |\n| -------- | -------- |\n| work     | talk     |\n\n| 國內外新聞 | 政治百分百 | 社會觀察家 | 心理與哲學            |\n| ---------- | ---------- | ---------- | --------------------- |\n| news       | politics   | society    | psychology-philosophy |\n\n| 科學大探索 | 環境與健康         | ACG 快樂聊 | 好書籍分享   | 其它主題     |\n| ---------- | ------------------ | ---------- | ------------ | ------------ |\n| science    | environment-health | acg        | book-sharing | other-topics |","location":"index.ts"}' :test='{"code":0}' />
 
 | 夥伴聊聊 | 專案設計 |
-  | -------- | -------- |
-  | work     | talk     |
+| -------- | -------- |
+| work     | talk     |
 
-  | 國內外新聞 | 政治百分百 | 社會觀察家 | 心理與哲學            |
-  | ---------- | ---------- | ---------- | --------------------- |
-  | news       | politics   | society    | psychology-philosophy |
+| 國內外新聞 | 政治百分百 | 社會觀察家 | 心理與哲學            |
+| ---------- | ---------- | ---------- | --------------------- |
+| news       | politics   | society    | psychology-philosophy |
 
-  | 科學大探索 | 環境與健康         | ACG 快樂聊 | 好書籍分享   | 其它主題     |
-  | ---------- | ------------------ | ---------- | ------------ | ------------ |
-  | science    | environment-health | acg        | book-sharing | other-topics |
+| 科學大探索 | 環境與健康         | ACG 快樂聊 | 好書籍分享   | 其它主題     |
+| ---------- | ------------------ | ---------- | ------------ | ------------ |
+| science    | environment-health | acg        | book-sharing | other-topics |
 
 ## 今日热榜 <Site url="tophub.today"/>
 
@@ -2593,20 +2593,20 @@ Type 栏目：
 
 ### 快讯 <Site url="jinse.cn" size="sm" />
 
-<Route namespace="jinse" :data='{"path":"/lives/:category?","categories":["finance","popular"],"view":5,"example":"/jinse/lives","parameters":{"category":{"description":"分类","options":[{"value":"0","label":"全部"},{"value":"1","label":"精选"},{"value":"2","label":"政策"},{"value":"3","label":"数据"},{"value":"4","label":"NFT"},{"value":"5","label":"项目"}],"default":"0"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快讯","maintainers":["nczitzk"],"description":"| 全部 | 精选 | 政策 | 数据 | NFT | 项目 |\n  | ---- | ---- | ---- | ---- | --- | ---- |\n  | 0    | 1    | 2    | 3    | 4   | 5    |","location":"lives.ts"}' :test='{"code":0}' />
+<Route namespace="jinse" :data='{"path":"/lives/:category?","categories":["finance","popular"],"view":5,"example":"/jinse/lives","parameters":{"category":{"description":"分类","options":[{"value":"0","label":"全部"},{"value":"1","label":"精选"},{"value":"2","label":"政策"},{"value":"3","label":"数据"},{"value":"4","label":"NFT"},{"value":"5","label":"项目"}],"default":"0"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"快讯","maintainers":["nczitzk"],"description":"| 全部 | 精选 | 政策 | 数据 | NFT | 项目 |\n| ---- | ---- | ---- | ---- | --- | ---- |\n| 0    | 1    | 2    | 3    | 4   | 5    |","location":"lives.ts"}' :test='{"code":0}' />
 
 | 全部 | 精选 | 政策 | 数据 | NFT | 项目 |
-  | ---- | ---- | ---- | ---- | --- | ---- |
-  | 0    | 1    | 2    | 3    | 4   | 5    |
+| ---- | ---- | ---- | ---- | --- | ---- |
+| 0    | 1    | 2    | 3    | 4   | 5    |
 
 ### 首页 <Site url="jinse.cn" size="sm" />
 
-<Route namespace="jinse" :data='{"path":"/timeline/:category?","categories":["finance","popular"],"view":0,"example":"/jinse/timeline","parameters":{"category":{"description":"分类","options":[{"value":"头条","label":"头条"},{"value":"独家","label":"独家"},{"value":"铭文","label":"铭文"},{"value":"产业","label":"产业"},{"value":"项目","label":"项目"},{"value":"政策","label":"政策"},{"value":"AI","label":"AI"},{"value":"Web 3.0","label":"Web 3.0"},{"value":"以太坊 2.0","label":"以太坊 2.0"},{"value":"DeFi","label":"DeFi"},{"value":"Layer2","label":"Layer2"},{"value":"NFT","label":"NFT"},{"value":"DAO","label":"DAO"},{"value":"百科","label":"百科"}],"default":"头条"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["nczitzk"],"description":"| 头条   | 独家 | 铭文    | 产业       | 项目 |\n  | ------ | ---- | ------- | ---------- | ---- |\n  | 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |\n  | Layer2 | NFT  | DAO     | 百科       |      |","location":"timeline.ts"}' :test='{"code":0}' />
+<Route namespace="jinse" :data='{"path":"/timeline/:category?","categories":["finance","popular"],"view":0,"example":"/jinse/timeline","parameters":{"category":{"description":"分类","options":[{"value":"头条","label":"头条"},{"value":"独家","label":"独家"},{"value":"铭文","label":"铭文"},{"value":"产业","label":"产业"},{"value":"项目","label":"项目"},{"value":"政策","label":"政策"},{"value":"AI","label":"AI"},{"value":"Web 3.0","label":"Web 3.0"},{"value":"以太坊 2.0","label":"以太坊 2.0"},{"value":"DeFi","label":"DeFi"},{"value":"Layer2","label":"Layer2"},{"value":"NFT","label":"NFT"},{"value":"DAO","label":"DAO"},{"value":"百科","label":"百科"}],"default":"头条"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["nczitzk"],"description":"| 头条   | 独家 | 铭文    | 产业       | 项目 |\n| ------ | ---- | ------- | ---------- | ---- |\n| 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |\n| Layer2 | NFT  | DAO     | 百科       |      |","location":"timeline.ts"}' :test='{"code":0}' />
 
 | 头条   | 独家 | 铭文    | 产业       | 项目 |
-  | ------ | ---- | ------- | ---------- | ---- |
-  | 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |
-  | Layer2 | NFT  | DAO     | 百科       |      |
+| ------ | ---- | ------- | ---------- | ---- |
+| 政策   | AI   | Web 3.0 | 以太坊 2.0 | DeFi |
+| Layer2 | NFT  | DAO     | 百科       |      |
 
 ## 晋江文学城 <Site url="jjwxc.net"/>
 
@@ -2644,68 +2644,68 @@ Type 栏目：
 
 ### 新闻快讯 <Site url="www.theblockbeats.info" size="sm" />
 
-<Route namespace="theblockbeats" :data='{"path":"/:channel?/:original?","categories":["finance","popular"],"view":0,"example":"/theblockbeats/newsflash","parameters":{"channel":{"description":"类型","options":[{"value":"newsflash","label":"快讯"},{"value":"article","label":"文章"}],"default":"newsflash"},"original":{"description":"文章类型，仅 `channel` 为 `article` 时有效","options":[{"value":"0","label":"全部"},{"value":"1","label":"深度"},{"value":"2","label":"精选"},{"value":"3","label":"热点追踪"}],"default":"0"}},"name":"新闻快讯","maintainers":["Fatpandac","jameshih"],"radar":[{"title":"文章","source":["www.theblockbeats.info/article"],"target":"/article"},{"title":"快讯","source":["www.theblockbeats.info/newsflash"],"target":"/newsflash"}],"description":"|    快讯   |   文章  |\n  | :-------: | :-----: |\n  | newsflash | article |\n\n  | 全部 | 深度 | 精选 | 热点追踪 |\n  | :--: | :--: | :--: | :---: |\n  |     | -2  | 1    |  2     |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="theblockbeats" :data='{"path":"/:channel?/:original?","categories":["finance","popular"],"view":0,"example":"/theblockbeats/newsflash","parameters":{"channel":{"description":"类型","options":[{"value":"newsflash","label":"快讯"},{"value":"article","label":"文章"}],"default":"newsflash"},"original":{"description":"文章类型，仅 `channel` 为 `article` 时有效","options":[{"value":"0","label":"全部"},{"value":"1","label":"深度"},{"value":"2","label":"精选"},{"value":"3","label":"热点追踪"}],"default":"0"}},"name":"新闻快讯","maintainers":["Fatpandac","jameshih"],"radar":[{"title":"文章","source":["www.theblockbeats.info/article"],"target":"/article"},{"title":"快讯","source":["www.theblockbeats.info/newsflash"],"target":"/newsflash"}],"description":"|    快讯   |   文章  |\n| :-------: | :-----: |\n| newsflash | article |\n\n| 全部 | 深度 | 精选 | 热点追踪 |\n| :--: | :--: | :--: | :---: |\n|     | -2  | 1    |  2     |","location":"index.ts"}' :test='{"code":0}' />
 
 |    快讯   |   文章  |
-  | :-------: | :-----: |
-  | newsflash | article |
+| :-------: | :-----: |
+| newsflash | article |
 
-  | 全部 | 深度 | 精选 | 热点追踪 |
-  | :--: | :--: | :--: | :---: |
-  |     | -2  | 1    |  2     |
+| 全部 | 深度 | 精选 | 热点追踪 |
+| :--: | :--: | :--: | :---: |
+|     | -2  | 1    |  2     |
 
 ## 麻省理工科技评论 <Site url="mittrchina.com"/>
 
 ### 首页 <Site url="mittrchina.com" size="sm" />
 
-<Route namespace="mittrchina" :data='{"path":"/:type?","categories":["new-media","popular"],"example":"/mittrchina/index","parameters":{"type":"类型，见下表，默认为首页资讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["EsuRt","queensferryme"],"description":"| 快讯     | 本周热文 | 首页资讯 | 视频  |\n  | -------- | -------- | -------- | ----- |\n  | breaking | hot      | index    | video |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="mittrchina" :data='{"path":"/:type?","categories":["new-media","popular"],"example":"/mittrchina/index","parameters":{"type":"类型，见下表，默认为首页资讯"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"首页","maintainers":["EsuRt","queensferryme"],"description":"| 快讯     | 本周热文 | 首页资讯 | 视频  |\n| -------- | -------- | -------- | ----- |\n| breaking | hot      | index    | video |","location":"index.ts"}' :test='{"code":0}' />
 
 | 快讯     | 本周热文 | 首页资讯 | 视频  |
-  | -------- | -------- | -------- | ----- |
-  | breaking | hot      | index    | video |
+| -------- | -------- | -------- | ----- |
+| breaking | hot      | index    | video |
 
 ## 麦肯锡 <Site url="mckinsey.com.cn"/>
 
 ### 洞见 <Site url="mckinsey.com.cn" size="sm" />
 
-<Route namespace="mckinsey" :data='{"path":"/cn/:category?","categories":["finance","popular"],"view":0,"example":"/mckinsey/cn","parameters":{"category":{"description":"分类","options":[{"value":"2","label":"汽车"},{"value":"3","label":"金融服务"},{"value":"4","label":"消费者"},{"value":"5","label":"医药"},{"value":"7","label":"数字化"},{"value":"8","label":"制造业"},{"value":"9","label":"私募"},{"value":"10","label":"技术，媒体与通信"},{"value":"12","label":"城市化与可持续发展"},{"value":"13","label":"创新"},{"value":"16","label":"人才与领导力"},{"value":"18","label":"宏观经济"},{"value":"19","label":"麦肯锡全球研究院"},{"value":"25","label":"洞见"},{"value":"37","label":"麦肯锡季刊"},{"value":"41","label":"资本项目和基础设施"},{"value":"42","label":"旅游、运输和物流"},{"value":"45","label":"全球基础材料"}],"default":"25"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"洞见","maintainers":["laampui"],"description":"| 分类 | 分类名             |\n  | ---- | ------------------ |\n  | 25   | 全部洞见           |\n  | 2    | 汽车               |\n  | 3    | 金融服务           |\n  | 4    | 消费者             |\n  | 5    | 医药               |\n  | 7    | 数字化             |\n  | 8    | 制造业             |\n  | 9    | 私募               |\n  | 10   | 技术，媒体与通信   |\n  | 12   | 城市化与可持续发展 |\n  | 13   | 创新               |\n  | 16   | 人才与领导力       |\n  | 18   | 宏观经济           |\n  | 19   | 麦肯锡全球研究院   |\n  | 37   | 麦肯锡季刊         |\n  | 41   | 资本项目和基础设施 |\n  | 42   | 旅游、运输和物流   |\n  | 45   | 全球基础材料       |","location":"cn/index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1187)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="mckinsey" :data='{"path":"/cn/:category?","categories":["finance","popular"],"view":0,"example":"/mckinsey/cn","parameters":{"category":{"description":"分类","options":[{"value":"2","label":"汽车"},{"value":"3","label":"金融服务"},{"value":"4","label":"消费者"},{"value":"5","label":"医药"},{"value":"7","label":"数字化"},{"value":"8","label":"制造业"},{"value":"9","label":"私募"},{"value":"10","label":"技术，媒体与通信"},{"value":"12","label":"城市化与可持续发展"},{"value":"13","label":"创新"},{"value":"16","label":"人才与领导力"},{"value":"18","label":"宏观经济"},{"value":"19","label":"麦肯锡全球研究院"},{"value":"25","label":"洞见"},{"value":"37","label":"麦肯锡季刊"},{"value":"41","label":"资本项目和基础设施"},{"value":"42","label":"旅游、运输和物流"},{"value":"45","label":"全球基础材料"}],"default":"25"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"洞见","maintainers":["laampui"],"description":"| 分类 | 分类名             |\n| ---- | ------------------ |\n| 25   | 全部洞见           |\n| 2    | 汽车               |\n| 3    | 金融服务           |\n| 4    | 消费者             |\n| 5    | 医药               |\n| 7    | 数字化             |\n| 8    | 制造业             |\n| 9    | 私募               |\n| 10   | 技术，媒体与通信   |\n| 12   | 城市化与可持续发展 |\n| 13   | 创新               |\n| 16   | 人才与领导力       |\n| 18   | 宏观经济           |\n| 19   | 麦肯锡全球研究院   |\n| 37   | 麦肯锡季刊         |\n| 41   | 资本项目和基础设施 |\n| 42   | 旅游、运输和物流   |\n| 45   | 全球基础材料       |","location":"cn/index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1187)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 分类 | 分类名             |
-  | ---- | ------------------ |
-  | 25   | 全部洞见           |
-  | 2    | 汽车               |
-  | 3    | 金融服务           |
-  | 4    | 消费者             |
-  | 5    | 医药               |
-  | 7    | 数字化             |
-  | 8    | 制造业             |
-  | 9    | 私募               |
-  | 10   | 技术，媒体与通信   |
-  | 12   | 城市化与可持续发展 |
-  | 13   | 创新               |
-  | 16   | 人才与领导力       |
-  | 18   | 宏观经济           |
-  | 19   | 麦肯锡全球研究院   |
-  | 37   | 麦肯锡季刊         |
-  | 41   | 资本项目和基础设施 |
-  | 42   | 旅游、运输和物流   |
-  | 45   | 全球基础材料       |
+| ---- | ------------------ |
+| 25   | 全部洞见           |
+| 2    | 汽车               |
+| 3    | 金融服务           |
+| 4    | 消费者             |
+| 5    | 医药               |
+| 7    | 数字化             |
+| 8    | 制造业             |
+| 9    | 私募               |
+| 10   | 技术，媒体与通信   |
+| 12   | 城市化与可持续发展 |
+| 13   | 创新               |
+| 16   | 人才与领导力       |
+| 18   | 宏观经济           |
+| 19   | 麦肯锡全球研究院   |
+| 37   | 麦肯锡季刊         |
+| 41   | 资本项目和基础设施 |
+| 42   | 旅游、运输和物流   |
+| 45   | 全球基础材料       |
 
 ## 慢雾科技 <Site url="slowmist.com"/>
 
 ### 动态 <Site url="slowmist.com/zh/news.html" size="sm" />
 
-<Route namespace="slowmist" :data='{"path":"/:type?","categories":["new-media","popular"],"example":"/slowmist/research","parameters":{"type":"分类，见下表，默认为公司新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["slowmist.com/zh/news.html"]}],"name":"动态","maintainers":["AtlasQuan"],"url":"slowmist.com/zh/news.html","description":"| 公司新闻 | 漏洞披露 | 技术研究 |\n  | -------- | -------- | -------- |\n  | news     | vul      | research |","location":"slowmist.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1710)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="slowmist" :data='{"path":"/:type?","categories":["new-media","popular"],"example":"/slowmist/research","parameters":{"type":"分类，见下表，默认为公司新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["slowmist.com/zh/news.html"]}],"name":"动态","maintainers":["AtlasQuan"],"url":"slowmist.com/zh/news.html","description":"| 公司新闻 | 漏洞披露 | 技术研究 |\n| -------- | -------- | -------- |\n| news     | vul      | research |","location":"slowmist.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1710)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 公司新闻 | 漏洞披露 | 技术研究 |
-  | -------- | -------- | -------- |
-  | news     | vul      | research |
+| -------- | -------- | -------- |
+| news     | vul      | research |
 
 ## 梅斯医学 MedSci <Site url="medsci.cn"/>
 
 ### 资讯 <Site url="medsci.cn" size="sm" />
 
-<Route namespace="medsci" :data='{"path":"/:sid?/:tid?","categories":["new-media","popular"],"example":"/medsci","parameters":{"sid":"科室，见下表，默认为推荐","tid":"亚专业，可在对应科室页 URL 中找到，默认为该科室的全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"::: tip\n  下表为科室对应的 sid，若想获得 tid，可以到对应科室页面 URL 中寻找 `t_id` 字段的值，下面是一个例子：\n\n  如 [肿瘤 - NSCLC](https://www.medsci.cn/department/details?s_id=5&t_id=277) 的 URL 为 `https://www.medsci.cn/department/details?s_id=5&t_id=277`，可以看到此时 `s_id` 对应 `sid` 的值为 5， `t_id` 对应 `tid` 的值为 277，所以可以得到路由 [`/medsci/5/277`](https://rsshub.app/medsci/5/277)\n:::\n\n  | 心血管 | 内分泌 | 消化 | 呼吸 | 神经科 |\n  | ------ | ------ | ---- | ---- | ------ |\n  | 2      | 6      | 4    | 12   | 17     |\n\n  | 传染科 | 精神心理 | 肾内科 | 风湿免疫 | 血液科 |\n  | ------ | -------- | ------ | -------- | ------ |\n  | 9      | 13       | 14     | 15       | 21     |\n\n  | 老年医学 | 胃肠外科 | 血管外科 | 肝胆胰外 | 骨科 |\n  | -------- | -------- | -------- | -------- | ---- |\n  | 19       | 76       | 92       | 91       | 10   |\n\n  | 普通外科 | 胸心外科 | 神经外科 | 泌尿外科 | 烧伤科 |\n  | -------- | -------- | -------- | -------- | ------ |\n  | 23       | 24       | 25       | 26       | 27     |\n\n  | 整形科 | 麻醉疼痛 | 罕见病 | 康复医学 | 药械 |\n  | ------ | -------- | ------ | -------- | ---- |\n  | 28     | 29       | 304    | 95       | 11   |\n\n  | 儿科 | 耳鼻咽喉 | 口腔科 | 眼科 | 政策人文 |\n  | ---- | -------- | ------ | ---- | -------- |\n  | 18   | 30       | 31     | 32   | 33       |\n\n  | 营养全科 | 预防公卫 | 妇产科 | 中医科 | 急重症 |\n  | -------- | -------- | ------ | ------ | ------ |\n  | 34       | 35       | 36     | 37     | 38     |\n\n  | 皮肤性病 | 影像放射 | 转化医学 | 检验病理 | 护理 |\n  | -------- | -------- | -------- | -------- | ---- |\n  | 39       | 40       | 42       | 69       | 79   |\n\n  | 糖尿病 | 冠心病 | 肝病 | 乳腺癌 |\n  | ------ | ------ | ---- | ------ |\n  | 8      | 43     | 22   | 89     |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="medsci" :data='{"path":"/:sid?/:tid?","categories":["new-media","popular"],"example":"/medsci","parameters":{"sid":"科室，见下表，默认为推荐","tid":"亚专业，可在对应科室页 URL 中找到，默认为该科室的全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"::: tip\n  下表为科室对应的 sid，若想获得 tid，可以到对应科室页面 URL 中寻找 `t_id` 字段的值，下面是一个例子：\n\n  如 [肿瘤 - NSCLC](https://www.medsci.cn/department/details?s_id=5&t_id=277) 的 URL 为 `https://www.medsci.cn/department/details?s_id=5&t_id=277`，可以看到此时 `s_id` 对应 `sid` 的值为 5， `t_id` 对应 `tid` 的值为 277，所以可以得到路由 [`/medsci/5/277`](https://rsshub.app/medsci/5/277)\n:::\n\n| 心血管 | 内分泌 | 消化 | 呼吸 | 神经科 |\n| ------ | ------ | ---- | ---- | ------ |\n| 2      | 6      | 4    | 12   | 17     |\n\n| 传染科 | 精神心理 | 肾内科 | 风湿免疫 | 血液科 |\n| ------ | -------- | ------ | -------- | ------ |\n| 9      | 13       | 14     | 15       | 21     |\n\n| 老年医学 | 胃肠外科 | 血管外科 | 肝胆胰外 | 骨科 |\n| -------- | -------- | -------- | -------- | ---- |\n| 19       | 76       | 92       | 91       | 10   |\n\n| 普通外科 | 胸心外科 | 神经外科 | 泌尿外科 | 烧伤科 |\n| -------- | -------- | -------- | -------- | ------ |\n| 23       | 24       | 25       | 26       | 27     |\n\n| 整形科 | 麻醉疼痛 | 罕见病 | 康复医学 | 药械 |\n| ------ | -------- | ------ | -------- | ---- |\n| 28     | 29       | 304    | 95       | 11   |\n\n| 儿科 | 耳鼻咽喉 | 口腔科 | 眼科 | 政策人文 |\n| ---- | -------- | ------ | ---- | -------- |\n| 18   | 30       | 31     | 32   | 33       |\n\n| 营养全科 | 预防公卫 | 妇产科 | 中医科 | 急重症 |\n| -------- | -------- | ------ | ------ | ------ |\n| 34       | 35       | 36     | 37     | 38     |\n\n| 皮肤性病 | 影像放射 | 转化医学 | 检验病理 | 护理 |\n| -------- | -------- | -------- | -------- | ---- |\n| 39       | 40       | 42       | 69       | 79   |\n\n| 糖尿病 | 冠心病 | 肝病 | 乳腺癌 |\n| ------ | ------ | ---- | ------ |\n| 8      | 43     | 22   | 89     |","location":"index.ts"}' :test='{"code":0}' />
 
 ::: tip
   下表为科室对应的 sid，若想获得 tid，可以到对应科室页面 URL 中寻找 `t_id` 字段的值，下面是一个例子：
@@ -2713,41 +2713,41 @@ Type 栏目：
   如 [肿瘤 - NSCLC](https://www.medsci.cn/department/details?s_id=5&t_id=277) 的 URL 为 `https://www.medsci.cn/department/details?s_id=5&t_id=277`，可以看到此时 `s_id` 对应 `sid` 的值为 5， `t_id` 对应 `tid` 的值为 277，所以可以得到路由 [`/medsci/5/277`](https://rsshub.app/medsci/5/277)
 :::
 
-  | 心血管 | 内分泌 | 消化 | 呼吸 | 神经科 |
-  | ------ | ------ | ---- | ---- | ------ |
-  | 2      | 6      | 4    | 12   | 17     |
+| 心血管 | 内分泌 | 消化 | 呼吸 | 神经科 |
+| ------ | ------ | ---- | ---- | ------ |
+| 2      | 6      | 4    | 12   | 17     |
 
-  | 传染科 | 精神心理 | 肾内科 | 风湿免疫 | 血液科 |
-  | ------ | -------- | ------ | -------- | ------ |
-  | 9      | 13       | 14     | 15       | 21     |
+| 传染科 | 精神心理 | 肾内科 | 风湿免疫 | 血液科 |
+| ------ | -------- | ------ | -------- | ------ |
+| 9      | 13       | 14     | 15       | 21     |
 
-  | 老年医学 | 胃肠外科 | 血管外科 | 肝胆胰外 | 骨科 |
-  | -------- | -------- | -------- | -------- | ---- |
-  | 19       | 76       | 92       | 91       | 10   |
+| 老年医学 | 胃肠外科 | 血管外科 | 肝胆胰外 | 骨科 |
+| -------- | -------- | -------- | -------- | ---- |
+| 19       | 76       | 92       | 91       | 10   |
 
-  | 普通外科 | 胸心外科 | 神经外科 | 泌尿外科 | 烧伤科 |
-  | -------- | -------- | -------- | -------- | ------ |
-  | 23       | 24       | 25       | 26       | 27     |
+| 普通外科 | 胸心外科 | 神经外科 | 泌尿外科 | 烧伤科 |
+| -------- | -------- | -------- | -------- | ------ |
+| 23       | 24       | 25       | 26       | 27     |
 
-  | 整形科 | 麻醉疼痛 | 罕见病 | 康复医学 | 药械 |
-  | ------ | -------- | ------ | -------- | ---- |
-  | 28     | 29       | 304    | 95       | 11   |
+| 整形科 | 麻醉疼痛 | 罕见病 | 康复医学 | 药械 |
+| ------ | -------- | ------ | -------- | ---- |
+| 28     | 29       | 304    | 95       | 11   |
 
-  | 儿科 | 耳鼻咽喉 | 口腔科 | 眼科 | 政策人文 |
-  | ---- | -------- | ------ | ---- | -------- |
-  | 18   | 30       | 31     | 32   | 33       |
+| 儿科 | 耳鼻咽喉 | 口腔科 | 眼科 | 政策人文 |
+| ---- | -------- | ------ | ---- | -------- |
+| 18   | 30       | 31     | 32   | 33       |
 
-  | 营养全科 | 预防公卫 | 妇产科 | 中医科 | 急重症 |
-  | -------- | -------- | ------ | ------ | ------ |
-  | 34       | 35       | 36     | 37     | 38     |
+| 营养全科 | 预防公卫 | 妇产科 | 中医科 | 急重症 |
+| -------- | -------- | ------ | ------ | ------ |
+| 34       | 35       | 36     | 37     | 38     |
 
-  | 皮肤性病 | 影像放射 | 转化医学 | 检验病理 | 护理 |
-  | -------- | -------- | -------- | -------- | ---- |
-  | 39       | 40       | 42       | 69       | 79   |
+| 皮肤性病 | 影像放射 | 转化医学 | 检验病理 | 护理 |
+| -------- | -------- | -------- | -------- | ---- |
+| 39       | 40       | 42       | 69       | 79   |
 
-  | 糖尿病 | 冠心病 | 肝病 | 乳腺癌 |
-  | ------ | ------ | ---- | ------ |
-  | 8      | 43     | 22   | 89     |
+| 糖尿病 | 冠心病 | 肝病 | 乳腺癌 |
+| ------ | ------ | ---- | ------ |
+| 8      | 43     | 22   | 89     |
 
 ## 澎湃新闻 <Site url="thepaper.cn"/>
 
@@ -2759,107 +2759,107 @@ Type 栏目：
 
 ### 栏目 <Site url="thepaper.cn" size="sm" />
 
-<Route namespace="thepaper" :data='{"path":"/list/:id","categories":["new-media","popular"],"example":"/thepaper/list/25457","parameters":{"id":"栏目 id，可在栏目页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["nczitzk","bigfei"],"description":"| 栏目 ID | 栏目名       |\n  | ------- | ------------ |\n  | 26912   | 上直播       |\n  | 26913   | 七环视频     |\n  | 26965   | 温度计       |\n  | 26908   | 一级视场     |\n  | 27260   | World 湃     |\n  | 26907   | 湃客科技     |\n  | 33168   | 纪录湃       |\n  | 26911   | 围观         |\n  | 26918   | @所有人      |\n  | 26906   | 大都会       |\n  | 26909   | 追光灯       |\n  | 26910   | 运动装       |\n  | 26914   | 健寻记       |\n  | 82188   | AI 播报      |\n  | 89035   | 眼界         |\n  | 92278   | 关键帧       |\n  | 90069   | 战疫         |\n  | 25462   | 中国政库     |\n  | 25488   | 中南海       |\n  | 97924   | 初心之路     |\n  | 25489   | 舆论场       |\n  | 25490   | 打虎记       |\n  | 25423   | 人事风向     |\n  | 25426   | 法治中国     |\n  | 25424   | 一号专案     |\n  | 25463   | 港台来信     |\n  | 25491   | 长三角政商   |\n  | 25428   | 直击现场     |\n  | 68750   | 公益湃       |\n  | 27604   | 暖闻         |\n  | 25464   | 澎湃质量报告 |\n  | 25425   | 绿政公署     |\n  | 25429   | 澎湃国际     |\n  | 25481   | 外交学人     |\n  | 25430   | 澎湃防务     |\n  | 25678   | 唐人街       |\n  | 25427   | 澎湃人物     |\n  | 25422   | 浦江头条     |\n  | 25487   | 教育家       |\n  | 25634   | 全景现场     |\n  | 25635   | 美数课       |\n  | 25600   | 快看         |\n  | 25434   | 10% 公司     |\n  | 25436   | 能见度       |\n  | 25433   | 地产界       |\n  | 25438   | 财经上下游   |\n  | 25435   | 金改实验室   |\n  | 25437   | 牛市点线面   |\n  | 119963  | IPO 最前线   |\n  | 25485   | 澎湃商学院   |\n  | 25432   | 自贸区连线   |\n  | 37978   | 进博会在线   |\n  | 36079   | 湃客         |\n  | 27392   | 政务         |\n  | 77286   | 媒体         |\n  | 27234   | 科学湃       |\n  | 119445  | 生命科学     |\n  | 119447  | 未来 2%      |\n  | 119446  | 元宇宙观察   |\n  | 119448  | 科创 101     |\n  | 119449  | 科学城邦     |\n  | 25444   | 社论         |\n  | 27224   | 澎湃评论     |\n  | 26525   | 思想湃       |\n  | 26878   | 上海书评     |\n  | 25483   | 思想市场     |\n  | 25457   | 私家历史     |\n  | 25574   | 翻书党       |\n  | 25455   | 艺术评论     |\n  | 26937   | 古代艺术     |\n  | 25450   | 文化课       |\n  | 25482   | 逝者         |\n  | 25536   | 专栏         |\n  | 26506   | 异次元       |\n  | 97313   | 海平面       |\n  | 103076  | 一问三知     |\n  | 25445   | 澎湃研究所   |\n  | 25446   | 全球智库     |\n  | 26915   | 城市漫步     |\n  | 25456   | 市政厅       |\n  | 104191  | 世界会客厅   |\n  | 25448   | 有戏         |\n  | 26609   | 文艺范       |\n  | 25942   | 身体         |\n  | 26015   | 私・奔       |\n  | 25599   | 运动家       |\n  | 25842   | 私家地理     |\n  | 80623   | 非常品       |\n  | 26862   | 楼市         |\n  | 25769   | 生活方式     |\n  | 25990   | 澎湃联播     |\n  | 26173   | 视界         |\n  | 26202   | 亲子学堂     |\n  | 26404   | 赢家         |\n  | 26490   | 汽车圈       |\n  | 115327  | IP SH        |\n  | 117340  | 酒业         |","location":"list.ts"}' :test='{"code":0}' />
+<Route namespace="thepaper" :data='{"path":"/list/:id","categories":["new-media","popular"],"example":"/thepaper/list/25457","parameters":{"id":"栏目 id，可在栏目页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["nczitzk","bigfei"],"description":"| 栏目 ID | 栏目名       |\n| ------- | ------------ |\n| 26912   | 上直播       |\n| 26913   | 七环视频     |\n| 26965   | 温度计       |\n| 26908   | 一级视场     |\n| 27260   | World 湃     |\n| 26907   | 湃客科技     |\n| 33168   | 纪录湃       |\n| 26911   | 围观         |\n| 26918   | @所有人      |\n| 26906   | 大都会       |\n| 26909   | 追光灯       |\n| 26910   | 运动装       |\n| 26914   | 健寻记       |\n| 82188   | AI 播报      |\n| 89035   | 眼界         |\n| 92278   | 关键帧       |\n| 90069   | 战疫         |\n| 25462   | 中国政库     |\n| 25488   | 中南海       |\n| 97924   | 初心之路     |\n| 25489   | 舆论场       |\n| 25490   | 打虎记       |\n| 25423   | 人事风向     |\n| 25426   | 法治中国     |\n| 25424   | 一号专案     |\n| 25463   | 港台来信     |\n| 25491   | 长三角政商   |\n| 25428   | 直击现场     |\n| 68750   | 公益湃       |\n| 27604   | 暖闻         |\n| 25464   | 澎湃质量报告 |\n| 25425   | 绿政公署     |\n| 25429   | 澎湃国际     |\n| 25481   | 外交学人     |\n| 25430   | 澎湃防务     |\n| 25678   | 唐人街       |\n| 25427   | 澎湃人物     |\n| 25422   | 浦江头条     |\n| 25487   | 教育家       |\n| 25634   | 全景现场     |\n| 25635   | 美数课       |\n| 25600   | 快看         |\n| 25434   | 10% 公司     |\n| 25436   | 能见度       |\n| 25433   | 地产界       |\n| 25438   | 财经上下游   |\n| 25435   | 金改实验室   |\n| 25437   | 牛市点线面   |\n| 119963  | IPO 最前线   |\n| 25485   | 澎湃商学院   |\n| 25432   | 自贸区连线   |\n| 37978   | 进博会在线   |\n| 36079   | 湃客         |\n| 27392   | 政务         |\n| 77286   | 媒体         |\n| 27234   | 科学湃       |\n| 119445  | 生命科学     |\n| 119447  | 未来 2%      |\n| 119446  | 元宇宙观察   |\n| 119448  | 科创 101     |\n| 119449  | 科学城邦     |\n| 25444   | 社论         |\n| 27224   | 澎湃评论     |\n| 26525   | 思想湃       |\n| 26878   | 上海书评     |\n| 25483   | 思想市场     |\n| 25457   | 私家历史     |\n| 25574   | 翻书党       |\n| 25455   | 艺术评论     |\n| 26937   | 古代艺术     |\n| 25450   | 文化课       |\n| 25482   | 逝者         |\n| 25536   | 专栏         |\n| 26506   | 异次元       |\n| 97313   | 海平面       |\n| 103076  | 一问三知     |\n| 25445   | 澎湃研究所   |\n| 25446   | 全球智库     |\n| 26915   | 城市漫步     |\n| 25456   | 市政厅       |\n| 104191  | 世界会客厅   |\n| 25448   | 有戏         |\n| 26609   | 文艺范       |\n| 25942   | 身体         |\n| 26015   | 私・奔       |\n| 25599   | 运动家       |\n| 25842   | 私家地理     |\n| 80623   | 非常品       |\n| 26862   | 楼市         |\n| 25769   | 生活方式     |\n| 25990   | 澎湃联播     |\n| 26173   | 视界         |\n| 26202   | 亲子学堂     |\n| 26404   | 赢家         |\n| 26490   | 汽车圈       |\n| 115327  | IP SH        |\n| 117340  | 酒业         |","location":"list.ts"}' :test='{"code":0}' />
 
 | 栏目 ID | 栏目名       |
-  | ------- | ------------ |
-  | 26912   | 上直播       |
-  | 26913   | 七环视频     |
-  | 26965   | 温度计       |
-  | 26908   | 一级视场     |
-  | 27260   | World 湃     |
-  | 26907   | 湃客科技     |
-  | 33168   | 纪录湃       |
-  | 26911   | 围观         |
-  | 26918   | @所有人      |
-  | 26906   | 大都会       |
-  | 26909   | 追光灯       |
-  | 26910   | 运动装       |
-  | 26914   | 健寻记       |
-  | 82188   | AI 播报      |
-  | 89035   | 眼界         |
-  | 92278   | 关键帧       |
-  | 90069   | 战疫         |
-  | 25462   | 中国政库     |
-  | 25488   | 中南海       |
-  | 97924   | 初心之路     |
-  | 25489   | 舆论场       |
-  | 25490   | 打虎记       |
-  | 25423   | 人事风向     |
-  | 25426   | 法治中国     |
-  | 25424   | 一号专案     |
-  | 25463   | 港台来信     |
-  | 25491   | 长三角政商   |
-  | 25428   | 直击现场     |
-  | 68750   | 公益湃       |
-  | 27604   | 暖闻         |
-  | 25464   | 澎湃质量报告 |
-  | 25425   | 绿政公署     |
-  | 25429   | 澎湃国际     |
-  | 25481   | 外交学人     |
-  | 25430   | 澎湃防务     |
-  | 25678   | 唐人街       |
-  | 25427   | 澎湃人物     |
-  | 25422   | 浦江头条     |
-  | 25487   | 教育家       |
-  | 25634   | 全景现场     |
-  | 25635   | 美数课       |
-  | 25600   | 快看         |
-  | 25434   | 10% 公司     |
-  | 25436   | 能见度       |
-  | 25433   | 地产界       |
-  | 25438   | 财经上下游   |
-  | 25435   | 金改实验室   |
-  | 25437   | 牛市点线面   |
-  | 119963  | IPO 最前线   |
-  | 25485   | 澎湃商学院   |
-  | 25432   | 自贸区连线   |
-  | 37978   | 进博会在线   |
-  | 36079   | 湃客         |
-  | 27392   | 政务         |
-  | 77286   | 媒体         |
-  | 27234   | 科学湃       |
-  | 119445  | 生命科学     |
-  | 119447  | 未来 2%      |
-  | 119446  | 元宇宙观察   |
-  | 119448  | 科创 101     |
-  | 119449  | 科学城邦     |
-  | 25444   | 社论         |
-  | 27224   | 澎湃评论     |
-  | 26525   | 思想湃       |
-  | 26878   | 上海书评     |
-  | 25483   | 思想市场     |
-  | 25457   | 私家历史     |
-  | 25574   | 翻书党       |
-  | 25455   | 艺术评论     |
-  | 26937   | 古代艺术     |
-  | 25450   | 文化课       |
-  | 25482   | 逝者         |
-  | 25536   | 专栏         |
-  | 26506   | 异次元       |
-  | 97313   | 海平面       |
-  | 103076  | 一问三知     |
-  | 25445   | 澎湃研究所   |
-  | 25446   | 全球智库     |
-  | 26915   | 城市漫步     |
-  | 25456   | 市政厅       |
-  | 104191  | 世界会客厅   |
-  | 25448   | 有戏         |
-  | 26609   | 文艺范       |
-  | 25942   | 身体         |
-  | 26015   | 私・奔       |
-  | 25599   | 运动家       |
-  | 25842   | 私家地理     |
-  | 80623   | 非常品       |
-  | 26862   | 楼市         |
-  | 25769   | 生活方式     |
-  | 25990   | 澎湃联播     |
-  | 26173   | 视界         |
-  | 26202   | 亲子学堂     |
-  | 26404   | 赢家         |
-  | 26490   | 汽车圈       |
-  | 115327  | IP SH        |
-  | 117340  | 酒业         |
+| ------- | ------------ |
+| 26912   | 上直播       |
+| 26913   | 七环视频     |
+| 26965   | 温度计       |
+| 26908   | 一级视场     |
+| 27260   | World 湃     |
+| 26907   | 湃客科技     |
+| 33168   | 纪录湃       |
+| 26911   | 围观         |
+| 26918   | @所有人      |
+| 26906   | 大都会       |
+| 26909   | 追光灯       |
+| 26910   | 运动装       |
+| 26914   | 健寻记       |
+| 82188   | AI 播报      |
+| 89035   | 眼界         |
+| 92278   | 关键帧       |
+| 90069   | 战疫         |
+| 25462   | 中国政库     |
+| 25488   | 中南海       |
+| 97924   | 初心之路     |
+| 25489   | 舆论场       |
+| 25490   | 打虎记       |
+| 25423   | 人事风向     |
+| 25426   | 法治中国     |
+| 25424   | 一号专案     |
+| 25463   | 港台来信     |
+| 25491   | 长三角政商   |
+| 25428   | 直击现场     |
+| 68750   | 公益湃       |
+| 27604   | 暖闻         |
+| 25464   | 澎湃质量报告 |
+| 25425   | 绿政公署     |
+| 25429   | 澎湃国际     |
+| 25481   | 外交学人     |
+| 25430   | 澎湃防务     |
+| 25678   | 唐人街       |
+| 25427   | 澎湃人物     |
+| 25422   | 浦江头条     |
+| 25487   | 教育家       |
+| 25634   | 全景现场     |
+| 25635   | 美数课       |
+| 25600   | 快看         |
+| 25434   | 10% 公司     |
+| 25436   | 能见度       |
+| 25433   | 地产界       |
+| 25438   | 财经上下游   |
+| 25435   | 金改实验室   |
+| 25437   | 牛市点线面   |
+| 119963  | IPO 最前线   |
+| 25485   | 澎湃商学院   |
+| 25432   | 自贸区连线   |
+| 37978   | 进博会在线   |
+| 36079   | 湃客         |
+| 27392   | 政务         |
+| 77286   | 媒体         |
+| 27234   | 科学湃       |
+| 119445  | 生命科学     |
+| 119447  | 未来 2%      |
+| 119446  | 元宇宙观察   |
+| 119448  | 科创 101     |
+| 119449  | 科学城邦     |
+| 25444   | 社论         |
+| 27224   | 澎湃评论     |
+| 26525   | 思想湃       |
+| 26878   | 上海书评     |
+| 25483   | 思想市场     |
+| 25457   | 私家历史     |
+| 25574   | 翻书党       |
+| 25455   | 艺术评论     |
+| 26937   | 古代艺术     |
+| 25450   | 文化课       |
+| 25482   | 逝者         |
+| 25536   | 专栏         |
+| 26506   | 异次元       |
+| 97313   | 海平面       |
+| 103076  | 一问三知     |
+| 25445   | 澎湃研究所   |
+| 25446   | 全球智库     |
+| 26915   | 城市漫步     |
+| 25456   | 市政厅       |
+| 104191  | 世界会客厅   |
+| 25448   | 有戏         |
+| 26609   | 文艺范       |
+| 25942   | 身体         |
+| 26015   | 私・奔       |
+| 25599   | 运动家       |
+| 25842   | 私家地理     |
+| 80623   | 非常品       |
+| 26862   | 楼市         |
+| 25769   | 生活方式     |
+| 25990   | 澎湃联播     |
+| 26173   | 视界         |
+| 26202   | 亲子学堂     |
+| 26404   | 赢家         |
+| 26490   | 汽车圈       |
+| 115327  | IP SH        |
+| 117340  | 酒业         |
 
 ### 明查 <Site url="factpaper.cn/" size="sm" />
 
@@ -2871,23 +2871,23 @@ Type 栏目：
 
 ### 频道 <Site url="thepaper.cn" size="sm" />
 
-<Route namespace="thepaper" :data='{"path":"/channel/:id","categories":["new-media","popular"],"example":"/thepaper/channel/25950","parameters":{"id":"频道 id，可在频道页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["xyqfer","nczitzk","bigfei"],"description":"| 频道 ID | 频道名 |\n  | ------- | ------ |\n  | 26916   | 视频   |\n  | 108856  | 战疫   |\n  | 25950   | 时事   |\n  | 25951   | 财经   |\n  | 36079   | 澎湃号 |\n  | 119908  | 科技   |\n  | 25952   | 思想   |\n  | 119489  | 智库   |\n  | 25953   | 生活   |\n  | 26161   | 问吧   |\n  | 122908  | 国际   |\n  | -21     | 体育   |\n  | -24     | 评论   |","location":"channel.ts"}' :test='{"code":0}' />
+<Route namespace="thepaper" :data='{"path":"/channel/:id","categories":["new-media","popular"],"example":"/thepaper/channel/25950","parameters":{"id":"频道 id，可在频道页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道","maintainers":["xyqfer","nczitzk","bigfei"],"description":"| 频道 ID | 频道名 |\n| ------- | ------ |\n| 26916   | 视频   |\n| 108856  | 战疫   |\n| 25950   | 时事   |\n| 25951   | 财经   |\n| 36079   | 澎湃号 |\n| 119908  | 科技   |\n| 25952   | 思想   |\n| 119489  | 智库   |\n| 25953   | 生活   |\n| 26161   | 问吧   |\n| 122908  | 国际   |\n| -21     | 体育   |\n| -24     | 评论   |","location":"channel.ts"}' :test='{"code":0}' />
 
 | 频道 ID | 频道名 |
-  | ------- | ------ |
-  | 26916   | 视频   |
-  | 108856  | 战疫   |
-  | 25950   | 时事   |
-  | 25951   | 财经   |
-  | 36079   | 澎湃号 |
-  | 119908  | 科技   |
-  | 25952   | 思想   |
-  | 119489  | 智库   |
-  | 25953   | 生活   |
-  | 26161   | 问吧   |
-  | 122908  | 国际   |
-  | -21     | 体育   |
-  | -24     | 评论   |
+| ------- | ------ |
+| 26916   | 视频   |
+| 108856  | 战疫   |
+| 25950   | 时事   |
+| 25951   | 财经   |
+| 36079   | 澎湃号 |
+| 119908  | 科技   |
+| 25952   | 思想   |
+| 119489  | 智库   |
+| 25953   | 生活   |
+| 26161   | 问吧   |
+| 122908  | 国际   |
+| -21     | 体育   |
+| -24     | 评论   |
 
 ### 首页头条 <Site url="thepaper.cn/" size="sm" />
 
@@ -2897,13 +2897,13 @@ Type 栏目：
 
 ### 话题动态 <Site url="pingwest.com" size="sm" />
 
-<Route namespace="pingwest" :data='{"path":"/tag/:tag/:type/:option?","categories":["new-media","popular"],"example":"/pingwest/tag/ChinaJoy/1","parameters":{"tag":"话题名或话题id, 可从话题页url中得到","type":"内容类型","option":"参数, 默认无"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题动态","maintainers":["sanmmm"],"description":"内容类型\n\n  | 最新 | 热门 |\n  | ---- | ---- |\n  | 1    | 2    |\n\n  参数\n\n  -   `fulltext`，全文输出，例如：`/pingwest/tag/ChinaJoy/1/fulltext`\n\n::: tip\n  该路由一次最多显示 30 条文章\n:::","location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="pingwest" :data='{"path":"/tag/:tag/:type/:option?","categories":["new-media","popular"],"example":"/pingwest/tag/ChinaJoy/1","parameters":{"tag":"话题名或话题id, 可从话题页url中得到","type":"内容类型","option":"参数, 默认无"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"话题动态","maintainers":["sanmmm"],"description":"内容类型\n\n| 最新 | 热门 |\n| ---- | ---- |\n| 1    | 2    |\n\n  参数\n\n  -   `fulltext`，全文输出，例如：`/pingwest/tag/ChinaJoy/1/fulltext`\n\n::: tip\n  该路由一次最多显示 30 条文章\n:::","location":"tag.ts"}' :test='{"code":0}' />
 
 内容类型
 
-  | 最新 | 热门 |
-  | ---- | ---- |
-  | 1    | 2    |
+| 最新 | 热门 |
+| ---- | ---- |
+| 1    | 2    |
 
   参数
 
@@ -2919,13 +2919,13 @@ Type 栏目：
 
 ### 用户 <Site url="pingwest.com" size="sm" />
 
-<Route namespace="pingwest" :data='{"path":"/user/:uid/:type?/:option?","categories":["new-media","popular"],"example":"/pingwest/user/7781550877/article","parameters":{"uid":"用户id, 可从用户主页中得到","type":"内容类型, 默认为`article`","option":"参数"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pingwest.com/user/:uid/:type","pingwest.com/"],"target":"/user/:uid/:type"}],"name":"用户","maintainers":["sanmmm"],"description":"内容类型\n\n  | 文章    | 动态  |\n  | ------- | ----- |\n  | article | state |\n\n  参数\n\n  -   `fulltext`，全文输出，例如：`/pingwest/user/7781550877/article/fulltext`","location":"user.ts"}' :test='{"code":0}' />
+<Route namespace="pingwest" :data='{"path":"/user/:uid/:type?/:option?","categories":["new-media","popular"],"example":"/pingwest/user/7781550877/article","parameters":{"uid":"用户id, 可从用户主页中得到","type":"内容类型, 默认为`article`","option":"参数"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["pingwest.com/user/:uid/:type","pingwest.com/"],"target":"/user/:uid/:type"}],"name":"用户","maintainers":["sanmmm"],"description":"内容类型\n\n| 文章    | 动态  |\n| ------- | ----- |\n| article | state |\n\n  参数\n\n  -   `fulltext`，全文输出，例如：`/pingwest/user/7781550877/article/fulltext`","location":"user.ts"}' :test='{"code":0}' />
 
 内容类型
 
-  | 文章    | 动态  |
-  | ------- | ----- |
-  | article | state |
+| 文章    | 动态  |
+| ------- | ----- |
+| article | state |
 
   参数
 
@@ -2945,11 +2945,11 @@ Type 栏目：
 
 ### 影视资讯 <Site url="yysub.net" size="sm" />
 
-<Route namespace="yyets" :data='{"path":"/article/:type?","categories":["multimedia","popular"],"view":0,"example":"/yyets/article","parameters":{"type":{"description":"类型","options":[{"value":"all","label":"全部"},{"value":"news","label":"影视资讯"},{"value":"report","label":"收视快报"},{"value":"m_review","label":"人人影评"},{"value":"t_review","label":"人人剧评"},{"value":"new_review","label":"新剧评测"},{"value":"recom","label":"片单推荐"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"影视资讯","maintainers":["wb121017405"],"description":"| 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |\n  | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |\n  |      | news     | report   | m_review | t_review | new_review | recom    |","location":"article.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2154)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="yyets" :data='{"path":"/article/:type?","categories":["multimedia","popular"],"view":0,"example":"/yyets/article","parameters":{"type":{"description":"类型","options":[{"value":"all","label":"全部"},{"value":"news","label":"影视资讯"},{"value":"report","label":"收视快报"},{"value":"m_review","label":"人人影评"},{"value":"t_review","label":"人人剧评"},{"value":"new_review","label":"新剧评测"},{"value":"recom","label":"片单推荐"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"影视资讯","maintainers":["wb121017405"],"description":"| 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |\n| ---- | -------- | -------- | --------- | --------- | ----------- | -------- |\n|      | news     | report   | m_review | t_review | new_review | recom    |","location":"article.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2154)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 全部 | 影视资讯 | 收视快报 | 人人影评  | 人人剧评  | 新剧评测    | 片单推荐 |
-  | ---- | -------- | -------- | --------- | --------- | ----------- | -------- |
-  |      | news     | report   | m_review | t_review | new_review | recom    |
+| ---- | -------- | -------- | --------- | --------- | ----------- | -------- |
+|      | news     | report   | m_review | t_review | new_review | recom    |
 
 ## 少数派 sspai <Site url="sspai.com"/>
 
@@ -3033,23 +3033,23 @@ Type 栏目：
 
 ### 新闻 <Site url="timednews.com" size="sm" />
 
-<Route namespace="timednews" :data='{"path":"/news/:type?","categories":["new-media","popular"],"example":"/timednews/news","parameters":{"type":"子分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["linbuxiao"],"description":"子分类\n\n  | 全部 | 时政           | 财经    | 科技       | 社会   | 体娱   | 国际          | 美国 | 中国 | 欧洲   | 评论     |\n  | ---- | -------------- | ------- | ---------- | ------ | ------ | ------------- | ---- | ---- | ------ | -------- |\n  | all  | currentAffairs | finance | technology | social | sports | international | usa  | cn   | europe | comments |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="timednews" :data='{"path":"/news/:type?","categories":["new-media","popular"],"example":"/timednews/news","parameters":{"type":"子分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["linbuxiao"],"description":"子分类\n\n| 全部 | 时政           | 财经    | 科技       | 社会   | 体娱   | 国际          | 美国 | 中国 | 欧洲   | 评论     |\n| ---- | -------------- | ------- | ---------- | ------ | ------ | ------------- | ---- | ---- | ------ | -------- |\n| all  | currentAffairs | finance | technology | social | sports | international | usa  | cn   | europe | comments |","location":"news.ts"}' :test='{"code":0}' />
 
 子分类
 
-  | 全部 | 时政           | 财经    | 科技       | 社会   | 体娱   | 国际          | 美国 | 中国 | 欧洲   | 评论     |
-  | ---- | -------------- | ------- | ---------- | ------ | ------ | ------------- | ---- | ---- | ------ | -------- |
-  | all  | currentAffairs | finance | technology | social | sports | international | usa  | cn   | europe | comments |
+| 全部 | 时政           | 财经    | 科技       | 社会   | 体娱   | 国际          | 美国 | 中国 | 欧洲   | 评论     |
+| ---- | -------------- | ------- | ---------- | ------ | ------ | ------------- | ---- | ---- | ------ | -------- |
+| all  | currentAffairs | finance | technology | social | sports | international | usa  | cn   | europe | comments |
 
 ## 书伴 <Site url="bookfere.com"/>
 
 ### 分类 <Site url="bookfere.com" size="sm" />
 
-<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading","popular"],"view":0,"example":"/bookfere/skills","parameters":{"category":{"description":"分类名","options":[{"value":"weekly","label":"每周一书"},{"value":"skills","label":"使用技巧"},{"value":"books","label":"图书推荐"},{"value":"news","label":"新闻速递"},{"value":"essay","label":"精选短文"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="bookfere" :data='{"path":"/:category","categories":["reading","popular"],"view":0,"example":"/bookfere/skills","parameters":{"category":{"description":"分类名","options":[{"value":"weekly","label":"每周一书"},{"value":"skills","label":"使用技巧"},{"value":"books","label":"图书推荐"},{"value":"news","label":"新闻速递"},{"value":"essay","label":"精选短文"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["OdinZhang"],"description":"| 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |\n| -------- | -------- | -------- | -------- | -------- |\n| weekly   | skills   | books    | news     | essay    |","location":"category.ts"}' :test='{"code":0}' />
 
 | 每周一书 | 使用技巧 | 图书推荐 | 新闻速递 | 精选短文 |
-  | -------- | -------- | -------- | -------- | -------- |
-  | weekly   | skills   | books    | news     | essay    |
+| -------- | -------- | -------- | -------- | -------- |
+| weekly   | skills   | books    | news     | essay    |
 
 ## 司机社 <Site url="xsijishe.com"/>
 
@@ -3172,11 +3172,11 @@ Type 栏目：
 
 ### 有知文章 <Site url="youzhiyouxing.cn/materials" size="sm" />
 
-<Route namespace="youzhiyouxing" :data='{"path":"/materials/:id?","categories":["finance","popular"],"view":0,"example":"/youzhiyouxing/materials","parameters":{"id":{"description":"分类","options":[{"value":"0","label":"全部"},{"value":"4","label":"知行小酒馆"},{"value":"2","label":"知行黑板报"},{"value":"10","label":"无人知晓"},{"value":"1","label":"孟岩专栏"},{"value":"3","label":"知行读书会"},{"value":"11","label":"你好，同路人"}],"default":"0"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["youzhiyouxing.cn/materials"],"target":"/materials"}],"name":"有知文章","maintainers":["broven","Fatpandac","nczitzk"],"url":"youzhiyouxing.cn/materials","description":"| 全部 | 知行小酒馆 | 知行黑板报 | 无人知晓 | 孟岩专栏 | 知行读书会 | 你好，同路人 |\n  | :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |\n  |   0  |      4     |      2     |    10    |     1    |      3     |      11      |","location":"materials.ts"}' :test='{"code":0}' />
+<Route namespace="youzhiyouxing" :data='{"path":"/materials/:id?","categories":["finance","popular"],"view":0,"example":"/youzhiyouxing/materials","parameters":{"id":{"description":"分类","options":[{"value":"0","label":"全部"},{"value":"4","label":"知行小酒馆"},{"value":"2","label":"知行黑板报"},{"value":"10","label":"无人知晓"},{"value":"1","label":"孟岩专栏"},{"value":"3","label":"知行读书会"},{"value":"11","label":"你好，同路人"}],"default":"0"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["youzhiyouxing.cn/materials"],"target":"/materials"}],"name":"有知文章","maintainers":["broven","Fatpandac","nczitzk"],"url":"youzhiyouxing.cn/materials","description":"| 全部 | 知行小酒馆 | 知行黑板报 | 无人知晓 | 孟岩专栏 | 知行读书会 | 你好，同路人 |\n| :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |\n|   0  |      4     |      2     |    10    |     1    |      3     |      11      |","location":"materials.ts"}' :test='{"code":0}' />
 
 | 全部 | 知行小酒馆 | 知行黑板报 | 无人知晓 | 孟岩专栏 | 知行读书会 | 你好，同路人 |
-  | :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |
-  |   0  |      4     |      2     |    10    |     1    |      3     |      11      |
+| :--: | :--------: | :--------: | :------: | :------: | :--------: | :----------: |
+|   0  |      4     |      2     |    10    |     1    |      3     |      11      |
 
 ## 站酷 <Site url="www.zcool.com.cn"/>
 
@@ -3198,43 +3198,43 @@ Type 栏目：
 
 ### 栏目 <Site url="stcn.com" size="sm" />
 
-<Route namespace="stcn" :data='{"path":"/:id?","categories":["finance","popular"],"view":0,"example":"/stcn/yw","parameters":{"id":{"description":"栏目 id","options":[{"value":"kx","label":"快讯"},{"value":"yw","label":"要闻"},{"value":"gs","label":"股市"},{"value":"company","label":"公司"},{"value":"data","label":"数据"},{"value":"fund","label":"基金"},{"value":"finance","label":"金融"},{"value":"comment","label":"评论"},{"value":"cj","label":"产经"},{"value":"ct","label":"创投"},{"value":"kcb","label":"科创板"},{"value":"xsb","label":"新三板"},{"value":"tj","label":"投教"},{"value":"zk","label":"ESG"},{"value":"gd","label":"滚动"},{"value":"gsyl","label":"股市一览"},{"value":"djjd","label":"独家解读"},{"value":"gsxw","label":"公司新闻"},{"value":"gsdt","label":"公司动态"},{"value":"djsj","label":"独家数据"},{"value":"kd","label":"看点数据"},{"value":"zj","label":"资金流向"},{"value":"sj_kcb","label":"科创板"},{"value":"hq","label":"行情总貌"},{"value":"zl","label":"专栏"},{"value":"author","label":"作者"},{"value":"cjhy","label":"行业"},{"value":"cjqc","label":"汽车"},{"value":"tjkt","label":"投教课堂"},{"value":"zczs","label":"政策知识"},{"value":"tjdt","label":"投教动态"},{"value":"zthd","label":"专题活动"}],"default":"yw"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["nczitzk"],"description":"| 快讯 | 要闻 | 股市 | 公司    | 数据 |\n  | ---- | ---- | ---- | ------- | ---- |\n  | kx   | yw   | gs   | company | data |\n\n  | 基金 | 金融    | 评论    | 产经 | 创投 |\n  | ---- | ------- | ------- | ---- | ---- |\n  | fund | finance | comment | cj   | ct   |\n\n  | 科创板 | 新三板 | 投教 | ESG | 滚动 |\n  | ------ | ------ | ---- | --- | ---- |\n  | kcb    | xsb    | tj   | zk  | gd   |\n\n  | 股市一览 | 独家解读 |\n  | -------- | -------- |\n  | gsyl     | djjd     |\n\n  | 公司新闻 | 公司动态 |\n  | -------- | -------- |\n  | gsxw     | gsdt     |\n\n  | 独家数据 | 看点数据 | 资金流向 | 科创板  | 行情总貌 |\n  | -------- | -------- | -------- | ------- | -------- |\n  | djsj     | kd       | zj       | sj_kcb | hq       |\n\n  | 专栏 | 作者   |\n  | ---- | ------ |\n  | zl   | author |\n\n  | 行业 | 汽车 |\n  | ---- | ---- |\n  | cjhy | cjqc |\n\n  | 投教课堂 | 政策知识 | 投教动态 | 专题活动 |\n  | -------- | -------- | -------- | -------- |\n  | tjkt     | zczs     | tjdt     | zthd     |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="stcn" :data='{"path":"/:id?","categories":["finance","popular"],"view":0,"example":"/stcn/yw","parameters":{"id":{"description":"栏目 id","options":[{"value":"kx","label":"快讯"},{"value":"yw","label":"要闻"},{"value":"gs","label":"股市"},{"value":"company","label":"公司"},{"value":"data","label":"数据"},{"value":"fund","label":"基金"},{"value":"finance","label":"金融"},{"value":"comment","label":"评论"},{"value":"cj","label":"产经"},{"value":"ct","label":"创投"},{"value":"kcb","label":"科创板"},{"value":"xsb","label":"新三板"},{"value":"tj","label":"投教"},{"value":"zk","label":"ESG"},{"value":"gd","label":"滚动"},{"value":"gsyl","label":"股市一览"},{"value":"djjd","label":"独家解读"},{"value":"gsxw","label":"公司新闻"},{"value":"gsdt","label":"公司动态"},{"value":"djsj","label":"独家数据"},{"value":"kd","label":"看点数据"},{"value":"zj","label":"资金流向"},{"value":"sj_kcb","label":"科创板"},{"value":"hq","label":"行情总貌"},{"value":"zl","label":"专栏"},{"value":"author","label":"作者"},{"value":"cjhy","label":"行业"},{"value":"cjqc","label":"汽车"},{"value":"tjkt","label":"投教课堂"},{"value":"zczs","label":"政策知识"},{"value":"tjdt","label":"投教动态"},{"value":"zthd","label":"专题活动"}],"default":"yw"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["nczitzk"],"description":"| 快讯 | 要闻 | 股市 | 公司    | 数据 |\n| ---- | ---- | ---- | ------- | ---- |\n| kx   | yw   | gs   | company | data |\n\n| 基金 | 金融    | 评论    | 产经 | 创投 |\n| ---- | ------- | ------- | ---- | ---- |\n| fund | finance | comment | cj   | ct   |\n\n| 科创板 | 新三板 | 投教 | ESG | 滚动 |\n| ------ | ------ | ---- | --- | ---- |\n| kcb    | xsb    | tj   | zk  | gd   |\n\n| 股市一览 | 独家解读 |\n| -------- | -------- |\n| gsyl     | djjd     |\n\n| 公司新闻 | 公司动态 |\n| -------- | -------- |\n| gsxw     | gsdt     |\n\n| 独家数据 | 看点数据 | 资金流向 | 科创板  | 行情总貌 |\n| -------- | -------- | -------- | ------- | -------- |\n| djsj     | kd       | zj       | sj_kcb | hq       |\n\n| 专栏 | 作者   |\n| ---- | ------ |\n| zl   | author |\n\n| 行业 | 汽车 |\n| ---- | ---- |\n| cjhy | cjqc |\n\n| 投教课堂 | 政策知识 | 投教动态 | 专题活动 |\n| -------- | -------- | -------- | -------- |\n| tjkt     | zczs     | tjdt     | zthd     |","location":"index.ts"}' :test='{"code":0}' />
 
 | 快讯 | 要闻 | 股市 | 公司    | 数据 |
-  | ---- | ---- | ---- | ------- | ---- |
-  | kx   | yw   | gs   | company | data |
+| ---- | ---- | ---- | ------- | ---- |
+| kx   | yw   | gs   | company | data |
 
-  | 基金 | 金融    | 评论    | 产经 | 创投 |
-  | ---- | ------- | ------- | ---- | ---- |
-  | fund | finance | comment | cj   | ct   |
+| 基金 | 金融    | 评论    | 产经 | 创投 |
+| ---- | ------- | ------- | ---- | ---- |
+| fund | finance | comment | cj   | ct   |
 
-  | 科创板 | 新三板 | 投教 | ESG | 滚动 |
-  | ------ | ------ | ---- | --- | ---- |
-  | kcb    | xsb    | tj   | zk  | gd   |
+| 科创板 | 新三板 | 投教 | ESG | 滚动 |
+| ------ | ------ | ---- | --- | ---- |
+| kcb    | xsb    | tj   | zk  | gd   |
 
-  | 股市一览 | 独家解读 |
-  | -------- | -------- |
-  | gsyl     | djjd     |
+| 股市一览 | 独家解读 |
+| -------- | -------- |
+| gsyl     | djjd     |
 
-  | 公司新闻 | 公司动态 |
-  | -------- | -------- |
-  | gsxw     | gsdt     |
+| 公司新闻 | 公司动态 |
+| -------- | -------- |
+| gsxw     | gsdt     |
 
-  | 独家数据 | 看点数据 | 资金流向 | 科创板  | 行情总貌 |
-  | -------- | -------- | -------- | ------- | -------- |
-  | djsj     | kd       | zj       | sj_kcb | hq       |
+| 独家数据 | 看点数据 | 资金流向 | 科创板  | 行情总貌 |
+| -------- | -------- | -------- | ------- | -------- |
+| djsj     | kd       | zj       | sj_kcb | hq       |
 
-  | 专栏 | 作者   |
-  | ---- | ------ |
-  | zl   | author |
+| 专栏 | 作者   |
+| ---- | ------ |
+| zl   | author |
 
-  | 行业 | 汽车 |
-  | ---- | ---- |
-  | cjhy | cjqc |
+| 行业 | 汽车 |
+| ---- | ---- |
+| cjhy | cjqc |
 
-  | 投教课堂 | 政策知识 | 投教动态 | 专题活动 |
-  | -------- | -------- | -------- | -------- |
-  | tjkt     | zczs     | tjdt     | zthd     |
+| 投教课堂 | 政策知识 | 投教动态 | 专题活动 |
+| -------- | -------- | -------- | -------- |
+| tjkt     | zczs     | tjdt     | zthd     |
 
 ## 知乎 <Site url="www.zhihu.com"/>
 
@@ -3254,22 +3254,22 @@ Type 栏目：
 
 ### 推荐 <Site url="zhitongcaijing.com" size="sm" />
 
-<Route namespace="zhitongcaijing" :data='{"path":"/:id?/:category?","categories":["finance","popular"],"view":0,"example":"/zhitongcaijing","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 recommend，即推荐","category":"分类 id，可在对应栏目子分类页 URL 中找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"推荐","maintainers":["nczitzk"],"description":"| id           | 栏目 |\n  | ------------ | ---- |\n  | recommend    | 推荐 |\n  | hkstock      | 港股 |\n  | meigu        | 美股 |\n  | agu          | 沪深 |\n  | ct           | 创投 |\n  | esg          | ESG  |\n  | aqs          | 券商 |\n  | ajj          | 基金 |\n  | focus        | 要闻 |\n  | announcement | 公告 |\n  | research     | 研究 |\n  | shares       | 新股 |\n  | bazaar       | 市场 |\n  | company      | 公司 |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2197)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="zhitongcaijing" :data='{"path":"/:id?/:category?","categories":["finance","popular"],"view":0,"example":"/zhitongcaijing","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 recommend，即推荐","category":"分类 id，可在对应栏目子分类页 URL 中找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"推荐","maintainers":["nczitzk"],"description":"| id           | 栏目 |\n| ------------ | ---- |\n| recommend    | 推荐 |\n| hkstock      | 港股 |\n| meigu        | 美股 |\n| agu          | 沪深 |\n| ct           | 创投 |\n| esg          | ESG  |\n| aqs          | 券商 |\n| ajj          | 基金 |\n| focus        | 要闻 |\n| announcement | 公告 |\n| research     | 研究 |\n| shares       | 新股 |\n| bazaar       | 市场 |\n| company      | 公司 |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2197)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | id           | 栏目 |
-  | ------------ | ---- |
-  | recommend    | 推荐 |
-  | hkstock      | 港股 |
-  | meigu        | 美股 |
-  | agu          | 沪深 |
-  | ct           | 创投 |
-  | esg          | ESG  |
-  | aqs          | 券商 |
-  | ajj          | 基金 |
-  | focus        | 要闻 |
-  | announcement | 公告 |
-  | research     | 研究 |
-  | shares       | 新股 |
-  | bazaar       | 市场 |
-  | company      | 公司 |
+| ------------ | ---- |
+| recommend    | 推荐 |
+| hkstock      | 港股 |
+| meigu        | 美股 |
+| agu          | 沪深 |
+| ct           | 创投 |
+| esg          | ESG  |
+| aqs          | 券商 |
+| ajj          | 基金 |
+| focus        | 要闻 |
+| announcement | 公告 |
+| research     | 研究 |
+| shares       | 新股 |
+| bazaar       | 市场 |
+| company      | 公司 |
 

@@ -24,55 +24,55 @@
 
 ### Topics <Site url="alistapart.com/articles/" size="sm" />
 
-<Route namespace="alistapart" :data='{"path":"/:topic","categories":["programming"],"example":"/alistapart/application-development","parameters":{"topic":"Any Topic or from the table below. Defaults to All Articles"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["alistapart.com/blog/topic/:topic"],"target":"/:topic"}],"name":"Topics","maintainers":["Rjnishant530"],"url":"alistapart.com/articles/","description":"You have the option to utilize the main heading or use individual categories as topics for the path.\n\n  | **Code**                    | *code*                    |\n  | --------------------------- | ------------------------- |\n  | **Application Development** | *application-development* |\n  | **Browsers**                | *browsers*                |\n  | **CSS**                     | *css*                     |\n  | **HTML**                    | *html*                    |\n  | **JavaScript**              | *javascript*              |\n  | **The Server Side**         | *the-server-side*         |\n\n  | **Content**          | *content*          |\n  | -------------------- | ------------------ |\n  | **Community**        | *community*        |\n  | **Content Strategy** | *content-strategy* |\n  | **Writing**          | *writing*          |\n\n  | **Design**                 | *design*               |\n  | -------------------------- | ---------------------- |\n  | **Brand Identity**         | *brand-identity*       |\n  | **Graphic Design**         | *graphic-design*       |\n  | **Layout & Grids**         | *layout-grids*         |\n  | **Mobile/Multidevice**     | *mobile-multidevice*   |\n  | **Responsive Design**      | *responsive-design*    |\n  | **Typography & Web Fonts** | *typography-web-fonts* |\n\n  | **Industry & Business** | *industry-business* |\n  | ----------------------- | ------------------- |\n  | **Business**            | *business*          |\n  | **Career**              | *career*            |\n  | **Industry**            | *industry*          |\n  | **State of the Web**    | *state-of-the-web*  |\n\n  | **Process**            | *process*            |\n  | ---------------------- | -------------------- |\n  | **Creativity**         | *creativity*         |\n  | **Project Management** | *project-management* |\n  | **Web Strategy**       | *web-strategy*       |\n  | **Workflow & Tools**   | *workflow-tools*     |\n\n  | **User Experience**          | *user-experience*          |\n  | ---------------------------- | -------------------------- |\n  | **Accessibility**            | *accessibility*            |\n  | **Information Architecture** | *information-architecture* |\n  | **Interaction Design**       | *interaction-design*       |\n  | **Usability**                | *usability*                |\n  | **User Research**            | *user-research*            |","location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="alistapart" :data='{"path":"/:topic","categories":["programming"],"example":"/alistapart/application-development","parameters":{"topic":"Any Topic or from the table below. Defaults to All Articles"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["alistapart.com/blog/topic/:topic"],"target":"/:topic"}],"name":"Topics","maintainers":["Rjnishant530"],"url":"alistapart.com/articles/","description":"You have the option to utilize the main heading or use individual categories as topics for the path.\n\n| **Code**                    | *code*                    |\n| --------------------------- | ------------------------- |\n| **Application Development** | *application-development* |\n| **Browsers**                | *browsers*                |\n| **CSS**                     | *css*                     |\n| **HTML**                    | *html*                    |\n| **JavaScript**              | *javascript*              |\n| **The Server Side**         | *the-server-side*         |\n\n| **Content**          | *content*          |\n| -------------------- | ------------------ |\n| **Community**        | *community*        |\n| **Content Strategy** | *content-strategy* |\n| **Writing**          | *writing*          |\n\n| **Design**                 | *design*               |\n| -------------------------- | ---------------------- |\n| **Brand Identity**         | *brand-identity*       |\n| **Graphic Design**         | *graphic-design*       |\n| **Layout & Grids**         | *layout-grids*         |\n| **Mobile/Multidevice**     | *mobile-multidevice*   |\n| **Responsive Design**      | *responsive-design*    |\n| **Typography & Web Fonts** | *typography-web-fonts* |\n\n| **Industry & Business** | *industry-business* |\n| ----------------------- | ------------------- |\n| **Business**            | *business*          |\n| **Career**              | *career*            |\n| **Industry**            | *industry*          |\n| **State of the Web**    | *state-of-the-web*  |\n\n| **Process**            | *process*            |\n| ---------------------- | -------------------- |\n| **Creativity**         | *creativity*         |\n| **Project Management** | *project-management* |\n| **Web Strategy**       | *web-strategy*       |\n| **Workflow & Tools**   | *workflow-tools*     |\n\n| **User Experience**          | *user-experience*          |\n| ---------------------------- | -------------------------- |\n| **Accessibility**            | *accessibility*            |\n| **Information Architecture** | *information-architecture* |\n| **Interaction Design**       | *interaction-design*       |\n| **Usability**                | *usability*                |\n| **User Research**            | *user-research*            |","location":"topic.ts"}' :test='{"code":0}' />
 
 You have the option to utilize the main heading or use individual categories as topics for the path.
 
-  | **Code**                    | *code*                    |
-  | --------------------------- | ------------------------- |
-  | **Application Development** | *application-development* |
-  | **Browsers**                | *browsers*                |
-  | **CSS**                     | *css*                     |
-  | **HTML**                    | *html*                    |
-  | **JavaScript**              | *javascript*              |
-  | **The Server Side**         | *the-server-side*         |
+| **Code**                    | *code*                    |
+| --------------------------- | ------------------------- |
+| **Application Development** | *application-development* |
+| **Browsers**                | *browsers*                |
+| **CSS**                     | *css*                     |
+| **HTML**                    | *html*                    |
+| **JavaScript**              | *javascript*              |
+| **The Server Side**         | *the-server-side*         |
 
-  | **Content**          | *content*          |
-  | -------------------- | ------------------ |
-  | **Community**        | *community*        |
-  | **Content Strategy** | *content-strategy* |
-  | **Writing**          | *writing*          |
+| **Content**          | *content*          |
+| -------------------- | ------------------ |
+| **Community**        | *community*        |
+| **Content Strategy** | *content-strategy* |
+| **Writing**          | *writing*          |
 
-  | **Design**                 | *design*               |
-  | -------------------------- | ---------------------- |
-  | **Brand Identity**         | *brand-identity*       |
-  | **Graphic Design**         | *graphic-design*       |
-  | **Layout & Grids**         | *layout-grids*         |
-  | **Mobile/Multidevice**     | *mobile-multidevice*   |
-  | **Responsive Design**      | *responsive-design*    |
-  | **Typography & Web Fonts** | *typography-web-fonts* |
+| **Design**                 | *design*               |
+| -------------------------- | ---------------------- |
+| **Brand Identity**         | *brand-identity*       |
+| **Graphic Design**         | *graphic-design*       |
+| **Layout & Grids**         | *layout-grids*         |
+| **Mobile/Multidevice**     | *mobile-multidevice*   |
+| **Responsive Design**      | *responsive-design*    |
+| **Typography & Web Fonts** | *typography-web-fonts* |
 
-  | **Industry & Business** | *industry-business* |
-  | ----------------------- | ------------------- |
-  | **Business**            | *business*          |
-  | **Career**              | *career*            |
-  | **Industry**            | *industry*          |
-  | **State of the Web**    | *state-of-the-web*  |
+| **Industry & Business** | *industry-business* |
+| ----------------------- | ------------------- |
+| **Business**            | *business*          |
+| **Career**              | *career*            |
+| **Industry**            | *industry*          |
+| **State of the Web**    | *state-of-the-web*  |
 
-  | **Process**            | *process*            |
-  | ---------------------- | -------------------- |
-  | **Creativity**         | *creativity*         |
-  | **Project Management** | *project-management* |
-  | **Web Strategy**       | *web-strategy*       |
-  | **Workflow & Tools**   | *workflow-tools*     |
+| **Process**            | *process*            |
+| ---------------------- | -------------------- |
+| **Creativity**         | *creativity*         |
+| **Project Management** | *project-management* |
+| **Web Strategy**       | *web-strategy*       |
+| **Workflow & Tools**   | *workflow-tools*     |
 
-  | **User Experience**          | *user-experience*          |
-  | ---------------------------- | -------------------------- |
-  | **Accessibility**            | *accessibility*            |
-  | **Information Architecture** | *information-architecture* |
-  | **Interaction Design**       | *interaction-design*       |
-  | **Usability**                | *usability*                |
-  | **User Research**            | *user-research*            |
+| **User Experience**          | *user-experience*          |
+| ---------------------------- | -------------------------- |
+| **Accessibility**            | *accessibility*            |
+| **Information Architecture** | *information-architecture* |
+| **Interaction Design**       | *interaction-design*       |
+| **Usability**                | *usability*                |
+| **User Research**            | *user-research*            |
 
 ## AlternativeTo <Site url="www.alternativeto.net"/>
 
@@ -98,27 +98,27 @@ You have the option to utilize the main heading or use individual categories as 
 
 ### Contests Archive <Site url="atcoder.jp" size="sm" />
 
-<Route namespace="atcoder" :data='{"path":"/contest/:language?/:rated?/:category?/:keyword?","categories":["programming"],"example":"/atcoder/contest","parameters":{"language":"Language, `jp` as Japanese or `en` as English, English by default","rated":"Rated Range, see below, all by default","category":"Category, see below, all by default","keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Contests Archive","maintainers":["nczitzk"],"description":"Rated Range\n\n  | ABC Class (Rated for ~1999) | ARC Class (Rated for ~2799) | AGC Class (Rated for ~9999) |\n  | ---------------------------- | ---------------------------- | ---------------------------- |\n  | 1                            | 2                            | 3                            |\n\n  Category\n\n  | All | AtCoder Typical Contest | PAST Archive | Unofficial(unrated) |\n  | --- | ----------------------- | ------------ | ------------------- |\n  | 0   | 6                       | 50           | 101                 |\n\n  | JOI Archive | Sponsored Tournament | Sponsored Parallel(rated) |\n  | ----------- | -------------------- | ------------------------- |\n  | 200         | 1000                 | 1001                      |\n\n  | Sponsored Parallel(unrated) | Optimization Contest |\n  | --------------------------- | -------------------- |\n  | 1002                        | 1200                 |","location":"contest.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 91)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="atcoder" :data='{"path":"/contest/:language?/:rated?/:category?/:keyword?","categories":["programming"],"example":"/atcoder/contest","parameters":{"language":"Language, `jp` as Japanese or `en` as English, English by default","rated":"Rated Range, see below, all by default","category":"Category, see below, all by default","keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Contests Archive","maintainers":["nczitzk"],"description":"Rated Range\n\n| ABC Class (Rated for ~1999) | ARC Class (Rated for ~2799) | AGC Class (Rated for ~9999) |\n| ---------------------------- | ---------------------------- | ---------------------------- |\n| 1                            | 2                            | 3                            |\n\n  Category\n\n| All | AtCoder Typical Contest | PAST Archive | Unofficial(unrated) |\n| --- | ----------------------- | ------------ | ------------------- |\n| 0   | 6                       | 50           | 101                 |\n\n| JOI Archive | Sponsored Tournament | Sponsored Parallel(rated) |\n| ----------- | -------------------- | ------------------------- |\n| 200         | 1000                 | 1001                      |\n\n| Sponsored Parallel(unrated) | Optimization Contest |\n| --------------------------- | -------------------- |\n| 1002                        | 1200                 |","location":"contest.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 91)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 Rated Range
 
-  | ABC Class (Rated for ~1999) | ARC Class (Rated for ~2799) | AGC Class (Rated for ~9999) |
-  | ---------------------------- | ---------------------------- | ---------------------------- |
-  | 1                            | 2                            | 3                            |
+| ABC Class (Rated for ~1999) | ARC Class (Rated for ~2799) | AGC Class (Rated for ~9999) |
+| ---------------------------- | ---------------------------- | ---------------------------- |
+| 1                            | 2                            | 3                            |
 
   Category
 
-  | All | AtCoder Typical Contest | PAST Archive | Unofficial(unrated) |
-  | --- | ----------------------- | ------------ | ------------------- |
-  | 0   | 6                       | 50           | 101                 |
+| All | AtCoder Typical Contest | PAST Archive | Unofficial(unrated) |
+| --- | ----------------------- | ------------ | ------------------- |
+| 0   | 6                       | 50           | 101                 |
 
-  | JOI Archive | Sponsored Tournament | Sponsored Parallel(rated) |
-  | ----------- | -------------------- | ------------------------- |
-  | 200         | 1000                 | 1001                      |
+| JOI Archive | Sponsored Tournament | Sponsored Parallel(rated) |
+| ----------- | -------------------- | ------------------------- |
+| 200         | 1000                 | 1001                      |
 
-  | Sponsored Parallel(unrated) | Optimization Contest |
-  | --------------------------- | -------------------- |
-  | 1002                        | 1200                 |
+| Sponsored Parallel(unrated) | Optimization Contest |
+| --------------------------- | -------------------- |
+| 1002                        | 1200                 |
 
 ### Posts <Site url="atcoder.jp" size="sm" />
 
@@ -172,11 +172,11 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 ### Category <Site url="cncf.io" size="sm" />
 
-<Route namespace="cncf" :data='{"path":"/:cate?","categories":["programming"],"example":"/cncf","parameters":{"cate":"blog by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"description":"| Blog | News | Announcements | Reports |\n  | ---- | ---- | ------------- | ------- |\n  | blog | news | announcements | reports |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="cncf" :data='{"path":"/:cate?","categories":["programming"],"example":"/cncf","parameters":{"cate":"blog by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Fatpandac"],"description":"| Blog | News | Announcements | Reports |\n| ---- | ---- | ------------- | ------- |\n| blog | news | announcements | reports |","location":"index.ts"}' :test='{"code":0}' />
 
 | Blog | News | Announcements | Reports |
-  | ---- | ---- | ------------- | ------- |
-  | blog | news | announcements | reports |
+| ---- | ---- | ------------- | ------- |
+| blog | news | announcements | reports |
 
 ### Unknown <Site url="cncf.io/reports" size="sm" />
 
@@ -208,39 +208,39 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 ### The Batch <Site url="www.deeplearning.ai" size="sm" />
 
-<Route namespace="deeplearning" :data='{"path":"/the-batch/:tag{.+}?","name":"The Batch","url":"www.deeplearning.ai","maintainers":["nczitzk","juvenn","TonyRL"],"example":"/deeplearning/the-batch","parameters":{"tag":"Tag, Weekly Issues by default"},"description":"::: tip\n  If you subscribe to [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)，where the URL is `https://www.deeplearning.ai/the-batch/tag/data-points/`, extract the part `https://www.deeplearning.ai/the-batch/tag` to the end, which is `data-points`, and use it as the parameter to fill in. Therefore, the route will be [`/deeplearning/the-batch/data-points`](https://rsshub.app/deeplearning/the-batch/data-points).\n\n:::\n\n  | Tag                                                                    | ID                                                                   |\n  | ---------------------------------------------------------------------- | -------------------------------------------------------------------- |\n  | [Weekly Issues](https://www.deeplearning.ai/the-batch/)                | [*null*](https://rsshub.app/deeplearning/the-batch)                  |\n  | [Andrew&#39;s Letters](https://www.deeplearning.ai/the-batch/tag/letters/) | [letters](https://rsshub.app/deeplearning/the-batch/letters)         |\n  | [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)  | [data-points](https://rsshub.app/deeplearning/the-batch/data-points) |\n  | [ML Research](https://www.deeplearning.ai/the-batch/tag/research/)     | [research](https://rsshub.app/deeplearning/the-batch/research)       |\n  | [Business](https://www.deeplearning.ai/the-batch/tag/business/)        | [business](https://rsshub.app/deeplearning/the-batch/business)       |\n  | [Science](https://www.deeplearning.ai/the-batch/tag/science/)          | [science](https://rsshub.app/deeplearning/the-batch/science)         |\n  | [AI & Society](https://www.deeplearning.ai/the-batch/tag/ai-society/)  | [ai-society](https://rsshub.app/deeplearning/the-batch/ai-society)   |\n  | [Culture](https://www.deeplearning.ai/the-batch/tag/culture/)          | [culture](https://rsshub.app/deeplearning/the-batch/culture)         |\n  | [Hardware](https://www.deeplearning.ai/the-batch/tag/hardware/)        | [hardware](https://rsshub.app/deeplearning/the-batch/hardware)       |\n  | [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)    | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)   |\n\n  #### [Letters from Andrew Ng](https://www.deeplearning.ai/the-batch/tag/letters/)\n\n  | Tag                                                                                     | ID                                                                                     |\n  | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |\n  | [All](https://www.deeplearning.ai/the-batch/tag/letters/)                               | [letters](https://rsshub.app/deeplearning/the-batch/letters)                           |\n  | [Personal Insights](https://www.deeplearning.ai/the-batch/tag/personal-insights/)       | [personal-insights](https://rsshub.app/deeplearning/the-batch/personal-insights)       |\n  | [Technical Insights](https://www.deeplearning.ai/the-batch/tag/technical-insights/)     | [technical-insights](https://rsshub.app/deeplearning/the-batch/technical-insights)     |\n  | [Business Insights](https://www.deeplearning.ai/the-batch/tag/business-insights/)       | [business-insights](https://rsshub.app/deeplearning/the-batch/business-insights)       |\n  | [Tech & Society](https://www.deeplearning.ai/the-batch/tag/tech-society/)               | [tech-society](https://rsshub.app/deeplearning/the-batch/tech-society)                 |\n  | [DeepLearning.AI News](https://www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/) | [deeplearning-ai-news](https://rsshub.app/deeplearning/the-batch/deeplearning-ai-news) |\n  | [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)                     | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)                     |\n  | [Just For Fun](https://www.deeplearning.ai/the-batch/tag/just-for-fun/)                 | [just-for-fun](https://rsshub.app/deeplearning/the-batch/just-for-fun)                 |\n  | [Learning & Education](https://www.deeplearning.ai/the-batch/tag/learning-education/)   | [learning-education](https://rsshub.app/deeplearning/the-batch/learning-education)     |\n    ","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.deeplearning.ai/the-batch","www.deeplearning.ai/the-batch/tag/:tag/"]},{"title":"Weekly Issues","source":["www.deeplearning.ai/the-batch/"],"target":"/the-batch"},{"title":"Andrew&#39;s Letters","source":["www.deeplearning.ai/the-batch/tag/letters/"],"target":"/the-batch/letters"},{"title":"Data Points","source":["www.deeplearning.ai/the-batch/tag/data-points/"],"target":"/the-batch/data-points"},{"title":"ML Research","source":["www.deeplearning.ai/the-batch/tag/research/"],"target":"/the-batch/research"},{"title":"Business","source":["www.deeplearning.ai/the-batch/tag/business/"],"target":"/the-batch/business"},{"title":"Science","source":["www.deeplearning.ai/the-batch/tag/science/"],"target":"/the-batch/science"},{"title":"AI & Society","source":["www.deeplearning.ai/the-batch/tag/ai-society/"],"target":"/the-batch/ai-society"},{"title":"Culture","source":["www.deeplearning.ai/the-batch/tag/culture/"],"target":"/the-batch/culture"},{"title":"Hardware","source":["www.deeplearning.ai/the-batch/tag/hardware/"],"target":"/the-batch/hardware"},{"title":"AI Careers","source":["www.deeplearning.ai/the-batch/tag/ai-careers/"],"target":"/the-batch/ai-careers"},{"title":"Letters from Andrew Ng - All","source":["www.deeplearning.ai/the-batch/tag/letters/"],"target":"/the-batch/letters"},{"title":"Letters from Andrew Ng - Personal Insights","source":["www.deeplearning.ai/the-batch/tag/personal-insights/"],"target":"/the-batch/personal-insights"},{"title":"Letters from Andrew Ng - Technical Insights","source":["www.deeplearning.ai/the-batch/tag/technical-insights/"],"target":"/the-batch/technical-insights"},{"title":"Letters from Andrew Ng - Business Insights","source":["www.deeplearning.ai/the-batch/tag/business-insights/"],"target":"/the-batch/business-insights"},{"title":"Letters from Andrew Ng - Tech & Society","source":["www.deeplearning.ai/the-batch/tag/tech-society/"],"target":"/the-batch/tech-society"},{"title":"Letters from Andrew Ng - DeepLearning.AI News","source":["www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/"],"target":"/the-batch/deeplearning-ai-news"},{"title":"Letters from Andrew Ng - AI Careers","source":["www.deeplearning.ai/the-batch/tag/ai-careers/"],"target":"/the-batch/ai-careers"},{"title":"Letters from Andrew Ng - Just For Fun","source":["www.deeplearning.ai/the-batch/tag/just-for-fun/"],"target":"/the-batch/just-for-fun"},{"title":"Letters from Andrew Ng - Learning & Education","source":["www.deeplearning.ai/the-batch/tag/learning-education/"],"target":"/the-batch/learning-education"}],"location":"the-batch.ts"}' :test='{"code":0}' />
+<Route namespace="deeplearning" :data='{"path":"/the-batch/:tag{.+}?","name":"The Batch","url":"www.deeplearning.ai","maintainers":["nczitzk","juvenn","TonyRL"],"example":"/deeplearning/the-batch","parameters":{"tag":"Tag, Weekly Issues by default"},"description":"::: tip\n  If you subscribe to [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)，where the URL is `https://www.deeplearning.ai/the-batch/tag/data-points/`, extract the part `https://www.deeplearning.ai/the-batch/tag` to the end, which is `data-points`, and use it as the parameter to fill in. Therefore, the route will be [`/deeplearning/the-batch/data-points`](https://rsshub.app/deeplearning/the-batch/data-points).\n\n:::\n\n| Tag                                                                    | ID                                                                   |\n| ---------------------------------------------------------------------- | -------------------------------------------------------------------- |\n| [Weekly Issues](https://www.deeplearning.ai/the-batch/)                | [*null*](https://rsshub.app/deeplearning/the-batch)                  |\n| [Andrew&#39;s Letters](https://www.deeplearning.ai/the-batch/tag/letters/) | [letters](https://rsshub.app/deeplearning/the-batch/letters)         |\n| [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)  | [data-points](https://rsshub.app/deeplearning/the-batch/data-points) |\n| [ML Research](https://www.deeplearning.ai/the-batch/tag/research/)     | [research](https://rsshub.app/deeplearning/the-batch/research)       |\n| [Business](https://www.deeplearning.ai/the-batch/tag/business/)        | [business](https://rsshub.app/deeplearning/the-batch/business)       |\n| [Science](https://www.deeplearning.ai/the-batch/tag/science/)          | [science](https://rsshub.app/deeplearning/the-batch/science)         |\n| [AI & Society](https://www.deeplearning.ai/the-batch/tag/ai-society/)  | [ai-society](https://rsshub.app/deeplearning/the-batch/ai-society)   |\n| [Culture](https://www.deeplearning.ai/the-batch/tag/culture/)          | [culture](https://rsshub.app/deeplearning/the-batch/culture)         |\n| [Hardware](https://www.deeplearning.ai/the-batch/tag/hardware/)        | [hardware](https://rsshub.app/deeplearning/the-batch/hardware)       |\n| [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)    | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)   |\n\n#### [Letters from Andrew Ng](https://www.deeplearning.ai/the-batch/tag/letters/)\n\n| Tag                                                                                     | ID                                                                                     |\n| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |\n| [All](https://www.deeplearning.ai/the-batch/tag/letters/)                               | [letters](https://rsshub.app/deeplearning/the-batch/letters)                           |\n| [Personal Insights](https://www.deeplearning.ai/the-batch/tag/personal-insights/)       | [personal-insights](https://rsshub.app/deeplearning/the-batch/personal-insights)       |\n| [Technical Insights](https://www.deeplearning.ai/the-batch/tag/technical-insights/)     | [technical-insights](https://rsshub.app/deeplearning/the-batch/technical-insights)     |\n| [Business Insights](https://www.deeplearning.ai/the-batch/tag/business-insights/)       | [business-insights](https://rsshub.app/deeplearning/the-batch/business-insights)       |\n| [Tech & Society](https://www.deeplearning.ai/the-batch/tag/tech-society/)               | [tech-society](https://rsshub.app/deeplearning/the-batch/tech-society)                 |\n| [DeepLearning.AI News](https://www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/) | [deeplearning-ai-news](https://rsshub.app/deeplearning/the-batch/deeplearning-ai-news) |\n| [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)                     | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)                     |\n| [Just For Fun](https://www.deeplearning.ai/the-batch/tag/just-for-fun/)                 | [just-for-fun](https://rsshub.app/deeplearning/the-batch/just-for-fun)                 |\n| [Learning & Education](https://www.deeplearning.ai/the-batch/tag/learning-education/)   | [learning-education](https://rsshub.app/deeplearning/the-batch/learning-education)     |\n    ","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.deeplearning.ai/the-batch","www.deeplearning.ai/the-batch/tag/:tag/"]},{"title":"Weekly Issues","source":["www.deeplearning.ai/the-batch/"],"target":"/the-batch"},{"title":"Andrew&#39;s Letters","source":["www.deeplearning.ai/the-batch/tag/letters/"],"target":"/the-batch/letters"},{"title":"Data Points","source":["www.deeplearning.ai/the-batch/tag/data-points/"],"target":"/the-batch/data-points"},{"title":"ML Research","source":["www.deeplearning.ai/the-batch/tag/research/"],"target":"/the-batch/research"},{"title":"Business","source":["www.deeplearning.ai/the-batch/tag/business/"],"target":"/the-batch/business"},{"title":"Science","source":["www.deeplearning.ai/the-batch/tag/science/"],"target":"/the-batch/science"},{"title":"AI & Society","source":["www.deeplearning.ai/the-batch/tag/ai-society/"],"target":"/the-batch/ai-society"},{"title":"Culture","source":["www.deeplearning.ai/the-batch/tag/culture/"],"target":"/the-batch/culture"},{"title":"Hardware","source":["www.deeplearning.ai/the-batch/tag/hardware/"],"target":"/the-batch/hardware"},{"title":"AI Careers","source":["www.deeplearning.ai/the-batch/tag/ai-careers/"],"target":"/the-batch/ai-careers"},{"title":"Letters from Andrew Ng - All","source":["www.deeplearning.ai/the-batch/tag/letters/"],"target":"/the-batch/letters"},{"title":"Letters from Andrew Ng - Personal Insights","source":["www.deeplearning.ai/the-batch/tag/personal-insights/"],"target":"/the-batch/personal-insights"},{"title":"Letters from Andrew Ng - Technical Insights","source":["www.deeplearning.ai/the-batch/tag/technical-insights/"],"target":"/the-batch/technical-insights"},{"title":"Letters from Andrew Ng - Business Insights","source":["www.deeplearning.ai/the-batch/tag/business-insights/"],"target":"/the-batch/business-insights"},{"title":"Letters from Andrew Ng - Tech & Society","source":["www.deeplearning.ai/the-batch/tag/tech-society/"],"target":"/the-batch/tech-society"},{"title":"Letters from Andrew Ng - DeepLearning.AI News","source":["www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/"],"target":"/the-batch/deeplearning-ai-news"},{"title":"Letters from Andrew Ng - AI Careers","source":["www.deeplearning.ai/the-batch/tag/ai-careers/"],"target":"/the-batch/ai-careers"},{"title":"Letters from Andrew Ng - Just For Fun","source":["www.deeplearning.ai/the-batch/tag/just-for-fun/"],"target":"/the-batch/just-for-fun"},{"title":"Letters from Andrew Ng - Learning & Education","source":["www.deeplearning.ai/the-batch/tag/learning-education/"],"target":"/the-batch/learning-education"}],"location":"the-batch.ts"}' :test='{"code":0}' />
 
 ::: tip
   If you subscribe to [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)，where the URL is `https://www.deeplearning.ai/the-batch/tag/data-points/`, extract the part `https://www.deeplearning.ai/the-batch/tag` to the end, which is `data-points`, and use it as the parameter to fill in. Therefore, the route will be [`/deeplearning/the-batch/data-points`](https://rsshub.app/deeplearning/the-batch/data-points).
 
 :::
 
-  | Tag                                                                    | ID                                                                   |
-  | ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
-  | [Weekly Issues](https://www.deeplearning.ai/the-batch/)                | [*null*](https://rsshub.app/deeplearning/the-batch)                  |
-  | [Andrew's Letters](https://www.deeplearning.ai/the-batch/tag/letters/) | [letters](https://rsshub.app/deeplearning/the-batch/letters)         |
-  | [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)  | [data-points](https://rsshub.app/deeplearning/the-batch/data-points) |
-  | [ML Research](https://www.deeplearning.ai/the-batch/tag/research/)     | [research](https://rsshub.app/deeplearning/the-batch/research)       |
-  | [Business](https://www.deeplearning.ai/the-batch/tag/business/)        | [business](https://rsshub.app/deeplearning/the-batch/business)       |
-  | [Science](https://www.deeplearning.ai/the-batch/tag/science/)          | [science](https://rsshub.app/deeplearning/the-batch/science)         |
-  | [AI & Society](https://www.deeplearning.ai/the-batch/tag/ai-society/)  | [ai-society](https://rsshub.app/deeplearning/the-batch/ai-society)   |
-  | [Culture](https://www.deeplearning.ai/the-batch/tag/culture/)          | [culture](https://rsshub.app/deeplearning/the-batch/culture)         |
-  | [Hardware](https://www.deeplearning.ai/the-batch/tag/hardware/)        | [hardware](https://rsshub.app/deeplearning/the-batch/hardware)       |
-  | [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)    | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)   |
+| Tag                                                                    | ID                                                                   |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [Weekly Issues](https://www.deeplearning.ai/the-batch/)                | [*null*](https://rsshub.app/deeplearning/the-batch)                  |
+| [Andrew's Letters](https://www.deeplearning.ai/the-batch/tag/letters/) | [letters](https://rsshub.app/deeplearning/the-batch/letters)         |
+| [Data Points](https://www.deeplearning.ai/the-batch/tag/data-points/)  | [data-points](https://rsshub.app/deeplearning/the-batch/data-points) |
+| [ML Research](https://www.deeplearning.ai/the-batch/tag/research/)     | [research](https://rsshub.app/deeplearning/the-batch/research)       |
+| [Business](https://www.deeplearning.ai/the-batch/tag/business/)        | [business](https://rsshub.app/deeplearning/the-batch/business)       |
+| [Science](https://www.deeplearning.ai/the-batch/tag/science/)          | [science](https://rsshub.app/deeplearning/the-batch/science)         |
+| [AI & Society](https://www.deeplearning.ai/the-batch/tag/ai-society/)  | [ai-society](https://rsshub.app/deeplearning/the-batch/ai-society)   |
+| [Culture](https://www.deeplearning.ai/the-batch/tag/culture/)          | [culture](https://rsshub.app/deeplearning/the-batch/culture)         |
+| [Hardware](https://www.deeplearning.ai/the-batch/tag/hardware/)        | [hardware](https://rsshub.app/deeplearning/the-batch/hardware)       |
+| [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)    | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)   |
 
-  #### [Letters from Andrew Ng](https://www.deeplearning.ai/the-batch/tag/letters/)
+#### [Letters from Andrew Ng](https://www.deeplearning.ai/the-batch/tag/letters/)
 
-  | Tag                                                                                     | ID                                                                                     |
-  | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-  | [All](https://www.deeplearning.ai/the-batch/tag/letters/)                               | [letters](https://rsshub.app/deeplearning/the-batch/letters)                           |
-  | [Personal Insights](https://www.deeplearning.ai/the-batch/tag/personal-insights/)       | [personal-insights](https://rsshub.app/deeplearning/the-batch/personal-insights)       |
-  | [Technical Insights](https://www.deeplearning.ai/the-batch/tag/technical-insights/)     | [technical-insights](https://rsshub.app/deeplearning/the-batch/technical-insights)     |
-  | [Business Insights](https://www.deeplearning.ai/the-batch/tag/business-insights/)       | [business-insights](https://rsshub.app/deeplearning/the-batch/business-insights)       |
-  | [Tech & Society](https://www.deeplearning.ai/the-batch/tag/tech-society/)               | [tech-society](https://rsshub.app/deeplearning/the-batch/tech-society)                 |
-  | [DeepLearning.AI News](https://www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/) | [deeplearning-ai-news](https://rsshub.app/deeplearning/the-batch/deeplearning-ai-news) |
-  | [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)                     | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)                     |
-  | [Just For Fun](https://www.deeplearning.ai/the-batch/tag/just-for-fun/)                 | [just-for-fun](https://rsshub.app/deeplearning/the-batch/just-for-fun)                 |
-  | [Learning & Education](https://www.deeplearning.ai/the-batch/tag/learning-education/)   | [learning-education](https://rsshub.app/deeplearning/the-batch/learning-education)     |
+| Tag                                                                                     | ID                                                                                     |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [All](https://www.deeplearning.ai/the-batch/tag/letters/)                               | [letters](https://rsshub.app/deeplearning/the-batch/letters)                           |
+| [Personal Insights](https://www.deeplearning.ai/the-batch/tag/personal-insights/)       | [personal-insights](https://rsshub.app/deeplearning/the-batch/personal-insights)       |
+| [Technical Insights](https://www.deeplearning.ai/the-batch/tag/technical-insights/)     | [technical-insights](https://rsshub.app/deeplearning/the-batch/technical-insights)     |
+| [Business Insights](https://www.deeplearning.ai/the-batch/tag/business-insights/)       | [business-insights](https://rsshub.app/deeplearning/the-batch/business-insights)       |
+| [Tech & Society](https://www.deeplearning.ai/the-batch/tag/tech-society/)               | [tech-society](https://rsshub.app/deeplearning/the-batch/tech-society)                 |
+| [DeepLearning.AI News](https://www.deeplearning.ai/the-batch/tag/deeplearning-ai-news/) | [deeplearning-ai-news](https://rsshub.app/deeplearning/the-batch/deeplearning-ai-news) |
+| [AI Careers](https://www.deeplearning.ai/the-batch/tag/ai-careers/)                     | [ai-careers](https://rsshub.app/deeplearning/the-batch/ai-careers)                     |
+| [Just For Fun](https://www.deeplearning.ai/the-batch/tag/just-for-fun/)                 | [just-for-fun](https://rsshub.app/deeplearning/the-batch/just-for-fun)                 |
+| [Learning & Education](https://www.deeplearning.ai/the-batch/tag/learning-education/)   | [learning-education](https://rsshub.app/deeplearning/the-batch/learning-education)     |
     
 
 ## Deepseek <Site url="api-docs.deepseek.com"/>
@@ -370,24 +370,24 @@ GitHub provides some official RSS feeds:
 
 ### Search Result <Site url="github.com" size="sm" />
 
-<Route namespace="github" :data='{"path":"/search/:query/:sort?/:order?","categories":["programming"],"example":"/github/search/RSSHub/bestmatch/desc","parameters":{"query":"search keyword","sort":"Sort options (default to bestmatch)","order":"Sort order, desc and asc (desc descending by default)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search Result","maintainers":["LogicJake"],"description":"| Sort options     | sort      |\n  | ---------------- | --------- |\n  | Best match       | bestmatch |\n  | Most stars       | stars     |\n  | Most forks       | forks     |\n  | Recently updated | updated   |","location":"search.ts"}' :test='{"code":0}' />
+<Route namespace="github" :data='{"path":"/search/:query/:sort?/:order?","categories":["programming"],"example":"/github/search/RSSHub/bestmatch/desc","parameters":{"query":"search keyword","sort":"Sort options (default to bestmatch)","order":"Sort order, desc and asc (desc descending by default)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search Result","maintainers":["LogicJake"],"description":"| Sort options     | sort      |\n| ---------------- | --------- |\n| Best match       | bestmatch |\n| Most stars       | stars     |\n| Most forks       | forks     |\n| Recently updated | updated   |","location":"search.ts"}' :test='{"code":0}' />
 
 | Sort options     | sort      |
-  | ---------------- | --------- |
-  | Best match       | bestmatch |
-  | Most stars       | stars     |
-  | Most forks       | forks     |
-  | Recently updated | updated   |
+| ---------------- | --------- |
+| Best match       | bestmatch |
+| Most stars       | stars     |
+| Most forks       | forks     |
+| Recently updated | updated   |
 
 ### Topics <Site url="github.com/topics" size="sm" />
 
-<Route namespace="github" :data='{"path":"/topics/:name/:qs?","categories":["programming"],"example":"/github/topics/framework","parameters":{"name":"Topic name, which can be found in the URL of the corresponding [Topics Page](https://github.com/topics/framework)","qs":"Query string, like `l=php&o=desc&s=stars`. Details listed as follows:"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/topics"]}],"name":"Topics","maintainers":["queensferryme"],"url":"github.com/topics","description":"| Parameter | Description      | Values                                                                                                                          |\n  | --------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |\n  | `l`       | Language         | For instance `php`, which can be found in the URL of the corresponding [Topics page](https://github.com/topics/framework?l=php) |\n  | `o`       | Sorting Order    | `asc`, `desc`                                                                                                                   |\n  | `s`       | Sorting Criteria | `stars`, `forks`, `updated`                                                                                                     |\n\n  For instance, the `/github/topics/framework/l=php&o=desc&s=stars` route will generate the RSS feed corresponding to this [page](https://github.com/topics/framework?l=php&o=desc&s=stars).","location":"topic.ts"}' :test='{"code":0}' />
+<Route namespace="github" :data='{"path":"/topics/:name/:qs?","categories":["programming"],"example":"/github/topics/framework","parameters":{"name":"Topic name, which can be found in the URL of the corresponding [Topics Page](https://github.com/topics/framework)","qs":"Query string, like `l=php&o=desc&s=stars`. Details listed as follows:"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["github.com/topics"]}],"name":"Topics","maintainers":["queensferryme"],"url":"github.com/topics","description":"| Parameter | Description      | Values                                                                                                                          |\n| --------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |\n| `l`       | Language         | For instance `php`, which can be found in the URL of the corresponding [Topics page](https://github.com/topics/framework?l=php) |\n| `o`       | Sorting Order    | `asc`, `desc`                                                                                                                   |\n| `s`       | Sorting Criteria | `stars`, `forks`, `updated`                                                                                                     |\n\n  For instance, the `/github/topics/framework/l=php&o=desc&s=stars` route will generate the RSS feed corresponding to this [page](https://github.com/topics/framework?l=php&o=desc&s=stars).","location":"topic.ts"}' :test='{"code":0}' />
 
 | Parameter | Description      | Values                                                                                                                          |
-  | --------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-  | `l`       | Language         | For instance `php`, which can be found in the URL of the corresponding [Topics page](https://github.com/topics/framework?l=php) |
-  | `o`       | Sorting Order    | `asc`, `desc`                                                                                                                   |
-  | `s`       | Sorting Criteria | `stars`, `forks`, `updated`                                                                                                     |
+| --------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `l`       | Language         | For instance `php`, which can be found in the URL of the corresponding [Topics page](https://github.com/topics/framework?l=php) |
+| `o`       | Sorting Order    | `asc`, `desc`                                                                                                                   |
+| `s`       | Sorting Criteria | `stars`, `forks`, `updated`                                                                                                     |
 
   For instance, the `/github/topics/framework/l=php&o=desc&s=stars` route will generate the RSS feed corresponding to this [page](https://github.com/topics/framework?l=php&o=desc&s=stars).
 
@@ -471,11 +471,11 @@ Subscribe to the content of a specific user
 
 ### 信息流 <Site url="hacking8.com" size="sm" />
 
-<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n  | ----- | -------- | --------------- | --- |\n  | likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 842)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="hacking8" :data='{"path":"/:category?","categories":["programming"],"example":"/hacking8","parameters":{"category":"分类，见下表，默认为最近更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hacking8.com/index/:category","hacking8.com/"]}],"name":"信息流","maintainers":["nczitzk"],"description":"| 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |\n| ----- | -------- | --------------- | --- |\n| likes | index    | vul-poc         | pdf |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 842)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 推荐  | 最近更新 | 漏洞 / PoC 监控 | PDF |
-  | ----- | -------- | --------------- | --- |
-  | likes | index    | vul-poc         | pdf |
+| ----- | -------- | --------------- | --- |
+| likes | index    | vul-poc         | pdf |
 
 ## HackMD <Site url="hackmd.io"/>
 
@@ -487,27 +487,27 @@ Subscribe to the content of a specific user
 
 ### 榜单报告 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":"/ranking/:type?","example":"/hellogithub/ranking","name":"榜单报告","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n  | -------- | -------- | ---------- |\n  | tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='{"code":0}' />
+<Route namespace="hellogithub" :data='{"path":"/ranking/:type?","example":"/hellogithub/ranking","name":"榜单报告","maintainers":["moke8","nczitzk"],"description":"| 编程语言 | 服务器   | 数据库     |\n| -------- | -------- | ---------- |\n| tiobe    | netcraft | db-engines |","location":"report.ts"}' :test='{"code":0}' />
 
 | 编程语言 | 服务器   | 数据库     |
-  | -------- | -------- | ---------- |
-  | tiobe    | netcraft | db-engines |
+| -------- | -------- | ---------- |
+| tiobe    | netcraft | db-engines |
 
 ### 开源项目 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":"/home/:sort?/:id?","categories":["programming"],"example":"/hellogithub/home","parameters":{"sort":"排序方式，见下表，默认为 `featured`，即精选","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"开源项目","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"description":"| 精选 | 全部 |\n  | ---- | ---- |\n  | featured  | all |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hellogithub" :data='{"path":"/home/:sort?/:id?","categories":["programming"],"example":"/hellogithub/home","parameters":{"sort":"排序方式，见下表，默认为 `featured`，即精选","id":"标签 id，可在对应标签页 URL 中找到，默认为全部标签"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"开源项目","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"description":"| 精选 | 全部 |\n| ---- | ---- |\n| featured  | all |","location":"index.ts"}' :test='{"code":0}' />
 
 | 精选 | 全部 |
-  | ---- | ---- |
-  | featured  | all |
+| ---- | ---- |
+| featured  | all |
 
 ### 文章 <Site url="hellogithub.com" size="sm" />
 
-<Route namespace="hellogithub" :data='{"path":"/article/:sort?","categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `last`，即最近"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"description":"| 热门 | 最近 |\n  | ---- | ---- |\n  | hot  | last |","location":"article.ts"}' :test='{"code":0}' />
+<Route namespace="hellogithub" :data='{"path":"/article/:sort?","categories":["programming"],"example":"/hellogithub/article","parameters":{"sort":"排序方式，见下表，默认为 `last`，即最近"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["moke8","nczitzk","CaoMeiYouRen"],"description":"| 热门 | 最近 |\n| ---- | ---- |\n| hot  | last |","location":"article.ts"}' :test='{"code":0}' />
 
 | 热门 | 最近 |
-  | ---- | ---- |
-  | hot  | last |
+| ---- | ---- |
+| hot  | last |
 
 ### 月刊 <Site url="hellogithub.com" size="sm" />
 
@@ -523,11 +523,11 @@ Subscribe to the content of a specific user
 
 ### 漏洞 <Site url="hitcon.org" size="sm" />
 
-<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n  | ------ | ---- | ------ | --------- | -------- |\n  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 873)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="hitcon" :data='{"name":"漏洞","categories":["programming"],"path":"/zeroday/vulnerability/:status?","example":"/hitcon/zeroday/vulnerability","parameters":{"status":"漏洞状态，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["zeroday.hitcon.org/vulnerability/:status?"]}],"features":{"requirePuppeteer":true},"description":"| 缺省   | all  | closed | disclosed | patching |\n| ------ | ---- | ------ | --------- | -------- |\n| 活動中 | 全部 | 關閉   | 公開      | 修補中   |","location":"zeroday.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 873)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 缺省   | all  | closed | disclosed | patching |
-  | ------ | ---- | ------ | --------- | -------- |
-  | 活動中 | 全部 | 關閉   | 公開      | 修補中   |
+| ------ | ---- | ------ | --------- | -------- |
+| 活動中 | 全部 | 關閉   | 公開      | 修補中   |
 
 ## Huggingface <Site url="huggingface.co"/>
 
@@ -612,50 +612,50 @@ Subscribe to the content of a specific user
 
 ### Release Notes <Site url="dev.mysql.com" size="sm" />
 
-<Route namespace="mysql" :data='{"path":"/release/:version?","categories":["programming"],"example":"/mysql/release/8.0","parameters":{"version":"Version, see below, 8.0 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["nczitzk"],"description":"| 8.0 | 5.7 | 5.6 |\n  | --- | --- | --- |","location":"release.ts"}' :test='{"code":0}' />
+<Route namespace="mysql" :data='{"path":"/release/:version?","categories":["programming"],"example":"/mysql/release/8.0","parameters":{"version":"Version, see below, 8.0 by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Release Notes","maintainers":["nczitzk"],"description":"| 8.0 | 5.7 | 5.6 |\n| --- | --- | --- |","location":"release.ts"}' :test='{"code":0}' />
 
 | 8.0 | 5.7 | 5.6 |
-  | --- | --- | --- |
+| --- | --- | --- |
 
 ## Node.js <Site url="nodejs.org"/>
 
 ### News <Site url="nodejs.org" size="sm" />
 
-<Route namespace="nodejs" :data='{"path":"/blog/:language?","categories":["programming"],"example":"/nodejs/blog","parameters":{"language":"Language, see below, en by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nodejs.org/:language/blog","nodejs.org/"]}],"name":"News","maintainers":["nczitzk"],"description":"Official RSS Source: https://nodejs.org/en/feed/blog.xml\n\n  | العربية | Catalan | Deutsch | Español | زبان فارسی |\n  | ------- | ------- | ------- | ------- | ---------- |\n  | ar      | ca      | de      | es      | fa         |\n\n  | Français | Galego | Italiano | 日本語 | 한국어 |\n  | -------- | ------ | -------- | ------ | ------ |\n  | fr       | gl     | it       | ja     | ko     |\n\n  | Português do Brasil | limba română | Русский | Türkçe | Українська |\n  | ------------------- | ------------ | ------- | ------ | ---------- |\n  | pt-br               | ro           | ru      | tr     | uk         |\n\n  | 简体中文 | 繁體中文 |\n  | -------- | -------- |\n  | zh-cn    | zh-tw    |","location":"blog.ts"}' :test='{"code":0}' />
+<Route namespace="nodejs" :data='{"path":"/blog/:language?","categories":["programming"],"example":"/nodejs/blog","parameters":{"language":"Language, see below, en by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nodejs.org/:language/blog","nodejs.org/"]}],"name":"News","maintainers":["nczitzk"],"description":"Official RSS Source: https://nodejs.org/en/feed/blog.xml\n\n| العربية | Catalan | Deutsch | Español | زبان فارسی |\n| ------- | ------- | ------- | ------- | ---------- |\n| ar      | ca      | de      | es      | fa         |\n\n| Français | Galego | Italiano | 日本語 | 한국어 |\n| -------- | ------ | -------- | ------ | ------ |\n| fr       | gl     | it       | ja     | ko     |\n\n| Português do Brasil | limba română | Русский | Türkçe | Українська |\n| ------------------- | ------------ | ------- | ------ | ---------- |\n| pt-br               | ro           | ru      | tr     | uk         |\n\n| 简体中文 | 繁體中文 |\n| -------- | -------- |\n| zh-cn    | zh-tw    |","location":"blog.ts"}' :test='{"code":0}' />
 
 Official RSS Source: https://nodejs.org/en/feed/blog.xml
 
-  | العربية | Catalan | Deutsch | Español | زبان فارسی |
-  | ------- | ------- | ------- | ------- | ---------- |
-  | ar      | ca      | de      | es      | fa         |
+| العربية | Catalan | Deutsch | Español | زبان فارسی |
+| ------- | ------- | ------- | ------- | ---------- |
+| ar      | ca      | de      | es      | fa         |
 
-  | Français | Galego | Italiano | 日本語 | 한국어 |
-  | -------- | ------ | -------- | ------ | ------ |
-  | fr       | gl     | it       | ja     | ko     |
+| Français | Galego | Italiano | 日本語 | 한국어 |
+| -------- | ------ | -------- | ------ | ------ |
+| fr       | gl     | it       | ja     | ko     |
 
-  | Português do Brasil | limba română | Русский | Türkçe | Українська |
-  | ------------------- | ------------ | ------- | ------ | ---------- |
-  | pt-br               | ro           | ru      | tr     | uk         |
+| Português do Brasil | limba română | Русский | Türkçe | Українська |
+| ------------------- | ------------ | ------- | ------ | ---------- |
+| pt-br               | ro           | ru      | tr     | uk         |
 
-  | 简体中文 | 繁體中文 |
-  | -------- | -------- |
-  | zh-cn    | zh-tw    |
+| 简体中文 | 繁體中文 |
+| -------- | -------- |
+| zh-cn    | zh-tw    |
 
 ## NOSEC 安全讯息平台 <Site url="nosec.org"/>
 
 ### Posts <Site url="nosec.org" size="sm" />
 
-<Route namespace="nosec" :data='{"path":"/:keykind?","categories":["programming"],"example":"/nosec/hole","parameters":{"keykind":"对应文章分类"},"name":"Posts","maintainers":["hellodword"],"description":"| 分类     | 标识       |\n  | :------- | :--------- |\n  | 威胁情报 | `threaten` |\n  | 安全动态 | `security` |\n  | 漏洞预警 | `hole`     |\n  | 数据泄露 | `leakage`  |\n  | 专题报告 | `speech`   |\n  | 技术分析 | `skill`    |\n  | 安全工具 | `tool`     |","radar":[{"source":["nosec.org/home/index/:keykind","nosec.org/home/index"]}],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="nosec" :data='{"path":"/:keykind?","categories":["programming"],"example":"/nosec/hole","parameters":{"keykind":"对应文章分类"},"name":"Posts","maintainers":["hellodword"],"description":"| 分类     | 标识       |\n| :------- | :--------- |\n| 威胁情报 | `threaten` |\n| 安全动态 | `security` |\n| 漏洞预警 | `hole`     |\n| 数据泄露 | `leakage`  |\n| 专题报告 | `speech`   |\n| 技术分析 | `skill`    |\n| 安全工具 | `tool`     |","radar":[{"source":["nosec.org/home/index/:keykind","nosec.org/home/index"]}],"location":"index.ts"}' :test='{"code":0}' />
 
 | 分类     | 标识       |
-  | :------- | :--------- |
-  | 威胁情报 | `threaten` |
-  | 安全动态 | `security` |
-  | 漏洞预警 | `hole`     |
-  | 数据泄露 | `leakage`  |
-  | 专题报告 | `speech`   |
-  | 技术分析 | `skill`    |
-  | 安全工具 | `tool`     |
+| :------- | :--------- |
+| 威胁情报 | `threaten` |
+| 安全动态 | `security` |
+| 漏洞预警 | `hole`     |
+| 数据泄露 | `leakage`  |
+| 专题报告 | `speech`   |
+| 技术分析 | `skill`    |
+| 安全工具 | `tool`     |
 
 ## Ollama <Site url="ollama.com"/>
 
@@ -671,11 +671,11 @@ Official RSS Source: https://nodejs.org/en/feed/blog.xml
 
 ### Blog <Site url="openai.com" size="sm" />
 
-<Route namespace="openai" :data='{"path":"/blog/:tag?","categories":["programming"],"example":"/openai/blog","parameters":{"tag":"Tag, see below, All by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Blog","maintainers":["StevenRCE0","nczitzk"],"description":"| All | Announcements | Events | Safety & Alignment | Community | Product | Culture & Careers   | Milestones | Research |\n  | --- | ------------- | ------ | ------------------ | --------- | ------- | ------------------- | ---------- | -------- |\n  |     | announcements | events | safety-alignment   | community | product | culture-and-careers | milestones | research |","location":"blog.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1402)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="openai" :data='{"path":"/blog/:tag?","categories":["programming"],"example":"/openai/blog","parameters":{"tag":"Tag, see below, All by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Blog","maintainers":["StevenRCE0","nczitzk"],"description":"| All | Announcements | Events | Safety & Alignment | Community | Product | Culture & Careers   | Milestones | Research |\n| --- | ------------- | ------ | ------------------ | --------- | ------- | ------------------- | ---------- | -------- |\n|     | announcements | events | safety-alignment   | community | product | culture-and-careers | milestones | research |","location":"blog.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1402)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | All | Announcements | Events | Safety & Alignment | Community | Product | Culture & Careers   | Milestones | Research |
-  | --- | ------------- | ------ | ------------------ | --------- | ------- | ------------------- | ---------- | -------- |
-  |     | announcements | events | safety-alignment   | community | product | culture-and-careers | milestones | research |
+| --- | ------------- | ------ | ------------------ | --------- | ------- | ------------------- | ---------- | -------- |
+|     | announcements | events | safety-alignment   | community | product | culture-and-careers | milestones | research |
 
 ### Cookbook <Site url="cookbook.openai.com/" size="sm" />
 
@@ -695,47 +695,47 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### 动作分享 <Site url="getquicker.net" size="sm" />
 
-<Route namespace="quicker" :data='{"path":"/share/:category?","categories":["programming"],"example":"/quicker/share/Recent","parameters":{"category":"分类，见下表，默认为动作库最新更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["getquicker.net/Share/:category","getquicker.net/"]}],"name":"动作分享","maintainers":["nczitzk"],"description":"| 动作库最新更新 | 动作库最多赞 | 动作库新动作 | 动作库最近赞 |\n  | -------------- | ------------ | ------------ | ------------ |\n  | Recent         | Recommended  | NewActions   | RecentLiked  |\n\n  | 子程序      | 扩展热键  | 文本指令     |\n  | ----------- | --------- | ------------ |\n  | SubPrograms | PowerKeys | TextCommands |","location":"share.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1553)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="quicker" :data='{"path":"/share/:category?","categories":["programming"],"example":"/quicker/share/Recent","parameters":{"category":"分类，见下表，默认为动作库最新更新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["getquicker.net/Share/:category","getquicker.net/"]}],"name":"动作分享","maintainers":["nczitzk"],"description":"| 动作库最新更新 | 动作库最多赞 | 动作库新动作 | 动作库最近赞 |\n| -------------- | ------------ | ------------ | ------------ |\n| Recent         | Recommended  | NewActions   | RecentLiked  |\n\n| 子程序      | 扩展热键  | 文本指令     |\n| ----------- | --------- | ------------ |\n| SubPrograms | PowerKeys | TextCommands |","location":"share.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1553)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 | 动作库最新更新 | 动作库最多赞 | 动作库新动作 | 动作库最近赞 |
-  | -------------- | ------------ | ------------ | ------------ |
-  | Recent         | Recommended  | NewActions   | RecentLiked  |
+| -------------- | ------------ | ------------ | ------------ |
+| Recent         | Recommended  | NewActions   | RecentLiked  |
 
-  | 子程序      | 扩展热键  | 文本指令     |
-  | ----------- | --------- | ------------ |
-  | SubPrograms | PowerKeys | TextCommands |
+| 子程序      | 扩展热键  | 文本指令     |
+| ----------- | --------- | ------------ |
+| SubPrograms | PowerKeys | TextCommands |
 
 ### 讨论区 <Site url="getquicker.net" size="sm" />
 
-<Route namespace="quicker" :data='{"path":"/qa/:category?/:state?","categories":["programming"],"example":"/quicker/qa","parameters":{"category":"分类，见下表，默认为全部","state":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["Cesaryuan","nczitzk"],"description":"分类\n\n  | 使用问题 | 动作开发 | BUG 反馈 | 功能建议 |\n  | -------- | -------- | -------- | -------- |\n  | 1        | 9        | 3        | 4        |\n\n  | 动作需求 | 经验创意 | 动作推荐 | 信息发布 |\n  | -------- | -------- | -------- | -------- |\n  | 6        | 2        | 7        | 5        |\n\n  | 随便聊聊 | 异常报告 | 全部 |\n  | -------- | -------- | ---- |\n  | 8        | 10       | all  |\n\n  状态\n\n  | 全部 | 精华   | 已归档  |\n  | ---- | ------ | ------- |\n  |      | digest | achived |","location":"qa.ts"}' :test='{"code":0}' />
+<Route namespace="quicker" :data='{"path":"/qa/:category?/:state?","categories":["programming"],"example":"/quicker/qa","parameters":{"category":"分类，见下表，默认为全部","state":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["Cesaryuan","nczitzk"],"description":"分类\n\n| 使用问题 | 动作开发 | BUG 反馈 | 功能建议 |\n| -------- | -------- | -------- | -------- |\n| 1        | 9        | 3        | 4        |\n\n| 动作需求 | 经验创意 | 动作推荐 | 信息发布 |\n| -------- | -------- | -------- | -------- |\n| 6        | 2        | 7        | 5        |\n\n| 随便聊聊 | 异常报告 | 全部 |\n| -------- | -------- | ---- |\n| 8        | 10       | all  |\n\n  状态\n\n| 全部 | 精华   | 已归档  |\n| ---- | ------ | ------- |\n|      | digest | achived |","location":"qa.ts"}' :test='{"code":0}' />
 
 分类
 
-  | 使用问题 | 动作开发 | BUG 反馈 | 功能建议 |
-  | -------- | -------- | -------- | -------- |
-  | 1        | 9        | 3        | 4        |
+| 使用问题 | 动作开发 | BUG 反馈 | 功能建议 |
+| -------- | -------- | -------- | -------- |
+| 1        | 9        | 3        | 4        |
 
-  | 动作需求 | 经验创意 | 动作推荐 | 信息发布 |
-  | -------- | -------- | -------- | -------- |
-  | 6        | 2        | 7        | 5        |
+| 动作需求 | 经验创意 | 动作推荐 | 信息发布 |
+| -------- | -------- | -------- | -------- |
+| 6        | 2        | 7        | 5        |
 
-  | 随便聊聊 | 异常报告 | 全部 |
-  | -------- | -------- | ---- |
-  | 8        | 10       | all  |
+| 随便聊聊 | 异常报告 | 全部 |
+| -------- | -------- | ---- |
+| 8        | 10       | all  |
 
   状态
 
-  | 全部 | 精华   | 已归档  |
-  | ---- | ------ | ------- |
-  |      | digest | achived |
+| 全部 | 精华   | 已归档  |
+| ---- | ------ | ------- |
+|      | digest | achived |
 
 ### 用户更新 <Site url="getquicker.net" size="sm" />
 
-<Route namespace="quicker" :data='{"path":"/user/:category/:id","categories":["programming"],"example":"/quicker/user/Actions/3-CL","parameters":{"category":"分类，见下表","id":"用户 id，可在对应用户页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户更新","maintainers":["Cesaryuan","nczitzk"],"description":"| 动作    | 子程序      | 动作单      |\n  | ------- | ----------- | ----------- |\n  | Actions | SubPrograms | ActionLists |","location":"user.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1554)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="quicker" :data='{"path":"/user/:category/:id","categories":["programming"],"example":"/quicker/user/Actions/3-CL","parameters":{"category":"分类，见下表","id":"用户 id，可在对应用户页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户更新","maintainers":["Cesaryuan","nczitzk"],"description":"| 动作    | 子程序      | 动作单      |\n| ------- | ----------- | ----------- |\n| Actions | SubPrograms | ActionLists |","location":"user.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1554)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 | 动作    | 子程序      | 动作单      |
-  | ------- | ----------- | ----------- |
-  | Actions | SubPrograms | ActionLists |
+| ------- | ----------- | ----------- |
+| Actions | SubPrograms | ActionLists |
 
 ## Reactiflux <Site url="reactiflux.com"/>
 
@@ -788,43 +788,43 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### Category <Site url="smashingmagazine.com/articles/" size="sm" />
 
-<Route namespace="smashingmagazine" :data='{"path":"/:category?","categories":["programming"],"example":"/smashingmagazine/react","parameters":{"category":"Find in URL or Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["smashingmagazine.com/category/:category"],"target":"/:category"}],"name":"Category","maintainers":["Rjnishant530"],"url":"smashingmagazine.com/articles/","description":"| **Category**       |                    |\n  | ------------------ | ------------------ |\n  | Accessibility      | accessibility      |\n  | Best practices     | best-practices     |\n  | Business           | business           |\n  | Career             | career             |\n  | Checklists         | checklists         |\n  | CSS                | css                |\n  | Data Visualization | data-visualization |\n  | Design             | design             |\n  | Design Patterns    | design-patterns    |\n  | Design Systems     | design-systems     |\n  | E-Commerce         | e-commerce         |\n  | Figma              | figma              |\n  | Freebies           | freebies           |\n  | HTML               | html               |\n  | Illustrator        | illustrator        |\n  | Inspiration        | inspiration        |\n  | JavaScript         | javascript         |\n  | Mobile             | mobile             |\n  | Performance        | performance        |\n  | Privacy            | privacy            |\n  | React              | react              |\n  | Responsive Design  | responsive-design  |\n  | Round-Ups          | round-ups          |\n  | SEO                | seo                |\n  | Typography         | typography         |\n  | Tools              | tools              |\n  | UI                 | ui                 |\n  | Usability          | usability          |\n  | UX                 | ux                 |\n  | Vue                | vue                |\n  | Wallpapers         | wallpapers         |\n  | Web Design         | web-design         |\n  | Workflow           | workflow           |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="smashingmagazine" :data='{"path":"/:category?","categories":["programming"],"example":"/smashingmagazine/react","parameters":{"category":"Find in URL or Table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["smashingmagazine.com/category/:category"],"target":"/:category"}],"name":"Category","maintainers":["Rjnishant530"],"url":"smashingmagazine.com/articles/","description":"| **Category**       |                    |\n| ------------------ | ------------------ |\n| Accessibility      | accessibility      |\n| Best practices     | best-practices     |\n| Business           | business           |\n| Career             | career             |\n| Checklists         | checklists         |\n| CSS                | css                |\n| Data Visualization | data-visualization |\n| Design             | design             |\n| Design Patterns    | design-patterns    |\n| Design Systems     | design-systems     |\n| E-Commerce         | e-commerce         |\n| Figma              | figma              |\n| Freebies           | freebies           |\n| HTML               | html               |\n| Illustrator        | illustrator        |\n| Inspiration        | inspiration        |\n| JavaScript         | javascript         |\n| Mobile             | mobile             |\n| Performance        | performance        |\n| Privacy            | privacy            |\n| React              | react              |\n| Responsive Design  | responsive-design  |\n| Round-Ups          | round-ups          |\n| SEO                | seo                |\n| Typography         | typography         |\n| Tools              | tools              |\n| UI                 | ui                 |\n| Usability          | usability          |\n| UX                 | ux                 |\n| Vue                | vue                |\n| Wallpapers         | wallpapers         |\n| Web Design         | web-design         |\n| Workflow           | workflow           |","location":"category.ts"}' :test='{"code":0}' />
 
 | **Category**       |                    |
-  | ------------------ | ------------------ |
-  | Accessibility      | accessibility      |
-  | Best practices     | best-practices     |
-  | Business           | business           |
-  | Career             | career             |
-  | Checklists         | checklists         |
-  | CSS                | css                |
-  | Data Visualization | data-visualization |
-  | Design             | design             |
-  | Design Patterns    | design-patterns    |
-  | Design Systems     | design-systems     |
-  | E-Commerce         | e-commerce         |
-  | Figma              | figma              |
-  | Freebies           | freebies           |
-  | HTML               | html               |
-  | Illustrator        | illustrator        |
-  | Inspiration        | inspiration        |
-  | JavaScript         | javascript         |
-  | Mobile             | mobile             |
-  | Performance        | performance        |
-  | Privacy            | privacy            |
-  | React              | react              |
-  | Responsive Design  | responsive-design  |
-  | Round-Ups          | round-ups          |
-  | SEO                | seo                |
-  | Typography         | typography         |
-  | Tools              | tools              |
-  | UI                 | ui                 |
-  | Usability          | usability          |
-  | UX                 | ux                 |
-  | Vue                | vue                |
-  | Wallpapers         | wallpapers         |
-  | Web Design         | web-design         |
-  | Workflow           | workflow           |
+| ------------------ | ------------------ |
+| Accessibility      | accessibility      |
+| Best practices     | best-practices     |
+| Business           | business           |
+| Career             | career             |
+| Checklists         | checklists         |
+| CSS                | css                |
+| Data Visualization | data-visualization |
+| Design             | design             |
+| Design Patterns    | design-patterns    |
+| Design Systems     | design-systems     |
+| E-Commerce         | e-commerce         |
+| Figma              | figma              |
+| Freebies           | freebies           |
+| HTML               | html               |
+| Illustrator        | illustrator        |
+| Inspiration        | inspiration        |
+| JavaScript         | javascript         |
+| Mobile             | mobile             |
+| Performance        | performance        |
+| Privacy            | privacy            |
+| React              | react              |
+| Responsive Design  | responsive-design  |
+| Round-Ups          | round-ups          |
+| SEO                | seo                |
+| Typography         | typography         |
+| Tools              | tools              |
+| UI                 | ui                 |
+| Usability          | usability          |
+| UX                 | ux                 |
+| Vue                | vue                |
+| Wallpapers         | wallpapers         |
+| Web Design         | web-design         |
+| Workflow           | workflow           |
 
 ## SYCL <Site url="sycl.tech"/>
 
@@ -864,15 +864,15 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### 公告 <Site url="developer.aliyun.com" size="sm" />
 
-<Route namespace="aliyun" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/aliyun/notice","parameters":{"type":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["muzea"],"description":"| 类型     | type |\n  | -------- | ---- |\n  | 全部     |      |\n  | 升级公告 | 1    |\n  | 安全公告 | 2    |\n  | 备案公告 | 3    |\n  | 其他     | 4    |","location":"notice.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 51)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="aliyun" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/aliyun/notice","parameters":{"type":"N"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["muzea"],"description":"| 类型     | type |\n| -------- | ---- |\n| 全部     |      |\n| 升级公告 | 1    |\n| 安全公告 | 2    |\n| 备案公告 | 3    |\n| 其他     | 4    |","location":"notice.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 51)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 类型     | type |
-  | -------- | ---- |
-  | 全部     |      |
-  | 升级公告 | 1    |
-  | 安全公告 | 2    |
-  | 备案公告 | 3    |
-  | 其他     | 4    |
+| -------- | ---- |
+| 全部     |      |
+| 升级公告 | 1    |
+| 安全公告 | 2    |
+| 备案公告 | 3    |
+| 其他     | 4    |
 
 ### 开发者社区 - 主题 <Site url="developer.aliyun.com" size="sm" />
 
@@ -890,11 +890,11 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### 分类订阅 <Site url="anquanke.com" size="sm" />
 
-<Route namespace="anquanke" :data='{"path":"/:category/:fulltext?","categories":["programming"],"example":"/anquanke/week","parameters":{"category":"分类订阅","fulltext":"是否获取全文，如需获取全文参数传入 `quanwen` 或 `fulltext`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类订阅","maintainers":["qwertyuiop6"],"description":"| 360 网络安全周报 | 活动     | 知识      | 资讯 | 招聘 | 工具 |\n  | ---------------- | -------- | --------- | ---- | ---- | ---- |\n  | week             | activity | knowledge | news | job  | tool |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="anquanke" :data='{"path":"/:category/:fulltext?","categories":["programming"],"example":"/anquanke/week","parameters":{"category":"分类订阅","fulltext":"是否获取全文，如需获取全文参数传入 `quanwen` 或 `fulltext`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类订阅","maintainers":["qwertyuiop6"],"description":"| 360 网络安全周报 | 活动     | 知识      | 资讯 | 招聘 | 工具 |\n| ---------------- | -------- | --------- | ---- | ---- | ---- |\n| week             | activity | knowledge | news | job  | tool |","location":"category.ts"}' :test='{"code":0}' />
 
 | 360 网络安全周报 | 活动     | 知识      | 资讯 | 招聘 | 工具 |
-  | ---------------- | -------- | --------- | ---- | ---- | ---- |
-  | week             | activity | knowledge | news | job  | tool |
+| ---------------- | -------- | --------- | ---- | ---- | ---- |
+| week             | activity | knowledge | news | job  | tool |
 
 ## 安全内参 <Site url="secrss.com"/>
 
@@ -932,78 +932,78 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### 公告 <Site url="open.dangdang.com" size="sm" />
 
-<Route namespace="dangdang" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/dangdang/notice/1","parameters":{"type":"公告分类，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["353325487"],"description":"| 类型     | type |\n  | -------- | ---- |\n  | 全部      | 0    |\n  | 其他      | 1    |\n  | 规则变更   | 2    |","location":"notice.ts"}' :test='{"code":0}' />
+<Route namespace="dangdang" :data='{"path":"/notice/:type?","categories":["programming"],"example":"/dangdang/notice/1","parameters":{"type":"公告分类，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"公告","maintainers":["353325487"],"description":"| 类型     | type |\n| -------- | ---- |\n| 全部      | 0    |\n| 其他      | 1    |\n| 规则变更   | 2    |","location":"notice.ts"}' :test='{"code":0}' />
 
 | 类型     | type |
-  | -------- | ---- |
-  | 全部      | 0    |
-  | 其他      | 1    |
-  | 规则变更   | 2    |
+| -------- | ---- |
+| 全部      | 0    |
+| 其他      | 1    |
+| 规则变更   | 2    |
 
 ## 得物 <Site url="dewu.com"/>
 
 ### 平台公告 <Site url="dewu.com" size="sm" />
 
-<Route namespace="dewu" :data='{"path":"/declaration/:categoryId?","categories":["programming"],"example":"/dewu/declaration/1010580020","parameters":{"categoryId":"公告分类, 可在页面URL获取 默认为1010580020"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"平台公告","maintainers":["blade0910"],"description":"| 类型             | type       |\n  | ---------------- | ---------- |\n  | 技术变更         | 1010580020 |\n  | 服务市场规则中心 | 1014821004 |\n  | 规则变更         | 1011202692 |\n  | 维护公告         | 1010568195 |","location":"declaration.ts"}' :test='{"code":0}' />
+<Route namespace="dewu" :data='{"path":"/declaration/:categoryId?","categories":["programming"],"example":"/dewu/declaration/1010580020","parameters":{"categoryId":"公告分类, 可在页面URL获取 默认为1010580020"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"平台公告","maintainers":["blade0910"],"description":"| 类型             | type       |\n| ---------------- | ---------- |\n| 技术变更         | 1010580020 |\n| 服务市场规则中心 | 1014821004 |\n| 规则变更         | 1011202692 |\n| 维护公告         | 1010568195 |","location":"declaration.ts"}' :test='{"code":0}' />
 
 | 类型             | type       |
-  | ---------------- | ---------- |
-  | 技术变更         | 1010580020 |
-  | 服务市场规则中心 | 1014821004 |
-  | 规则变更         | 1011202692 |
-  | 维护公告         | 1010568195 |
+| ---------------- | ---------- |
+| 技术变更         | 1010580020 |
+| 服务市场规则中心 | 1014821004 |
+| 规则变更         | 1011202692 |
+| 维护公告         | 1010568195 |
 
 ## 登链社区 <Site url="learnblockchain.cn"/>
 
 ### 文章 <Site url="learnblockchain.cn" size="sm" />
 
-<Route namespace="learnblockchain" :data='{"path":"/posts/:cid/:sort?","categories":["programming"],"example":"/learnblockchain/posts/DApp/newest","parameters":{"cid":"分类id,更多分类可以论坛的URL找到","sort":"排序方式，默认精选"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["running-grass"],"description":"| id       | 分类         |\n  | -------- | ------------ |\n  | all      | 全部         |\n  | DApp     | 去中心化应用 |\n  | chains   | 公链         |\n  | 联盟链   | 联盟链       |\n  | scaling  | Layer2       |\n  | langs    | 编程语言     |\n  | security | 安全         |\n  | dst      | 存储         |\n  | basic    | 理论研究     |\n  | other    | 其他         |\n\n  | id       | 排序方式    |\n  | -------- | ----------- |\n  | newest   | 最新        |\n  | featured | 精选 (默认) |\n  | featured | 最赞        |\n  | hottest  | 最热        |","location":"posts.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="learnblockchain" :data='{"path":"/posts/:cid/:sort?","categories":["programming"],"example":"/learnblockchain/posts/DApp/newest","parameters":{"cid":"分类id,更多分类可以论坛的URL找到","sort":"排序方式，默认精选"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["running-grass"],"description":"| id       | 分类         |\n| -------- | ------------ |\n| all      | 全部         |\n| DApp     | 去中心化应用 |\n| chains   | 公链         |\n| 联盟链   | 联盟链       |\n| scaling  | Layer2       |\n| langs    | 编程语言     |\n| security | 安全         |\n| dst      | 存储         |\n| basic    | 理论研究     |\n| other    | 其他         |\n\n| id       | 排序方式    |\n| -------- | ----------- |\n| newest   | 最新        |\n| featured | 精选 (默认) |\n| featured | 最赞        |\n| hottest  | 最热        |","location":"posts.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | id       | 分类         |
-  | -------- | ------------ |
-  | all      | 全部         |
-  | DApp     | 去中心化应用 |
-  | chains   | 公链         |
-  | 联盟链   | 联盟链       |
-  | scaling  | Layer2       |
-  | langs    | 编程语言     |
-  | security | 安全         |
-  | dst      | 存储         |
-  | basic    | 理论研究     |
-  | other    | 其他         |
+| -------- | ------------ |
+| all      | 全部         |
+| DApp     | 去中心化应用 |
+| chains   | 公链         |
+| 联盟链   | 联盟链       |
+| scaling  | Layer2       |
+| langs    | 编程语言     |
+| security | 安全         |
+| dst      | 存储         |
+| basic    | 理论研究     |
+| other    | 其他         |
 
-  | id       | 排序方式    |
-  | -------- | ----------- |
-  | newest   | 最新        |
-  | featured | 精选 (默认) |
-  | featured | 最赞        |
-  | hottest  | 最热        |
+| id       | 排序方式    |
+| -------- | ----------- |
+| newest   | 最新        |
+| featured | 精选 (默认) |
+| featured | 最赞        |
+| hottest  | 最热        |
 
 ## 抖店开放平台 <Site url="op.jinritemai.com"/>
 
 ### 平台公告 <Site url="op.jinritemai.com" size="sm" />
 
-<Route namespace="jinritemai" :data='{"path":"/docs/:dirId?","categories":["programming"],"example":"/jinritemai/docs/19","parameters":{"dirId":"公告分类, 可在页面URL获取 默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"平台公告","maintainers":["blade0910"],"description":"| 类型    | type    |\n  | --------- | ---------- |\n  | 全部公告    | 5    |\n  | 产品发布    | 19   |\n  | 规则变更    | 21   |\n  | 维护公告    | 20   |\n  | 其他公告    | 22   |","location":"docs.ts"}' :test='{"code":0}' />
+<Route namespace="jinritemai" :data='{"path":"/docs/:dirId?","categories":["programming"],"example":"/jinritemai/docs/19","parameters":{"dirId":"公告分类, 可在页面URL获取 默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"平台公告","maintainers":["blade0910"],"description":"| 类型    | type    |\n| --------- | ---------- |\n| 全部公告    | 5    |\n| 产品发布    | 19   |\n| 规则变更    | 21   |\n| 维护公告    | 20   |\n| 其他公告    | 22   |","location":"docs.ts"}' :test='{"code":0}' />
 
 | 类型    | type    |
-  | --------- | ---------- |
-  | 全部公告    | 5    |
-  | 产品发布    | 19   |
-  | 规则变更    | 21   |
-  | 维护公告    | 20   |
-  | 其他公告    | 22   |
+| --------- | ---------- |
+| 全部公告    | 5    |
+| 产品发布    | 19   |
+| 规则变更    | 21   |
+| 维护公告    | 20   |
+| 其他公告    | 22   |
 
 ## 极术社区 <Site url="www.aijishu"/>
 
 ### 频道、专栏、用户 <Site url="www.aijishu" size="sm" />
 
-<Route namespace="aijishu" :data='{"path":"/:type/:name?","categories":["programming"],"example":"/aijishu/channel/ai","parameters":{"type":"文章类型，可以取值如下","name":"名字，取自URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道、专栏、用户","maintainers":[],"description":"| type    | 说明 |\n  | ------- | ---- |\n  | channel | 频道 |\n  | blog    | 专栏 |\n  | u       | 用户 |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 33)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="aijishu" :data='{"path":"/:type/:name?","categories":["programming"],"example":"/aijishu/channel/ai","parameters":{"type":"文章类型，可以取值如下","name":"名字，取自URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道、专栏、用户","maintainers":[],"description":"| type    | 说明 |\n| ------- | ---- |\n| channel | 频道 |\n| blog    | 专栏 |\n| u       | 用户 |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 33)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | type    | 说明 |
-  | ------- | ---- |
-  | channel | 频道 |
-  | blog    | 专栏 |
-  | u       | 用户 |
+| ------- | ---- |
+| channel | 频道 |
+| blog    | 专栏 |
+| u       | 用户 |
 
 ## 技术头条 <Site url="blogread.cn"/>
 
@@ -1023,11 +1023,11 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### 沸点 <Site url="juejin.cn" size="sm" />
 
-<Route namespace="juejin" :data='{"path":"/pins/:type?","categories":["programming"],"example":"/juejin/pins/6824710202487472141","parameters":{"type":"默认为 recommend，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"沸点","maintainers":["xyqfer","laampui"],"description":"| 推荐      | 热门 | 上班摸鱼            | 内推招聘            | 一图胜千言          | 今天学到了          | 每天一道算法题      | 开发工具推荐        | 树洞一下            |\n  | --------- | ---- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |\n  | recommend | hot  | 6824710203301167112 | 6819970850532360206 | 6824710202487472141 | 6824710202562969614 | 6824710202378436621 | 6824710202000932877 | 6824710203112423437 |","location":"pins.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="juejin" :data='{"path":"/pins/:type?","categories":["programming"],"example":"/juejin/pins/6824710202487472141","parameters":{"type":"默认为 recommend，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"沸点","maintainers":["xyqfer","laampui"],"description":"| 推荐      | 热门 | 上班摸鱼            | 内推招聘            | 一图胜千言          | 今天学到了          | 每天一道算法题      | 开发工具推荐        | 树洞一下            |\n| --------- | ---- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |\n| recommend | hot  | 6824710203301167112 | 6819970850532360206 | 6824710202487472141 | 6824710202562969614 | 6824710202378436621 | 6824710202000932877 | 6824710203112423437 |","location":"pins.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 推荐      | 热门 | 上班摸鱼            | 内推招聘            | 一图胜千言          | 今天学到了          | 每天一道算法题      | 开发工具推荐        | 树洞一下            |
-  | --------- | ---- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-  | recommend | hot  | 6824710203301167112 | 6819970850532360206 | 6824710202487472141 | 6824710202562969614 | 6824710202378436621 | 6824710202000932877 | 6824710203112423437 |
+| --------- | ---- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+| recommend | hot  | 6824710203301167112 | 6819970850532360206 | 6824710202487472141 | 6824710202562969614 | 6824710202378436621 | 6824710202000932877 | 6824710203112423437 |
 
 ### 分类 <Site url="juejin.cn" size="sm" />
 
@@ -1039,27 +1039,27 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 ### 热门 <Site url="juejin.cn" size="sm" />
 
-<Route namespace="juejin" :data='{"path":"/trending/:category/:type","categories":["programming"],"example":"/juejin/trending/ios/monthly","parameters":{"category":"分类名","type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门","maintainers":["moaix"],"description":"| category | 标签     |\n  | -------- | -------- |\n  | android  | Android  |\n  | frontend | 前端     |\n  | ios      | iOS      |\n  | backend  | 后端     |\n  | design   | 设计     |\n  | product  | 产品     |\n  | freebie  | 工具资源 |\n  | article  | 阅读     |\n  | ai       | 人工智能 |\n  | devops   | 运维     |\n  | all      | 全部     |\n\n  | type       | 类型     |\n  | ---------- | -------- |\n  | weekly     | 本周最热 |\n  | monthly    | 本月最热 |\n  | historical | 历史最热 |","location":"trending.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="juejin" :data='{"path":"/trending/:category/:type","categories":["programming"],"example":"/juejin/trending/ios/monthly","parameters":{"category":"分类名","type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门","maintainers":["moaix"],"description":"| category | 标签     |\n| -------- | -------- |\n| android  | Android  |\n| frontend | 前端     |\n| ios      | iOS      |\n| backend  | 后端     |\n| design   | 设计     |\n| product  | 产品     |\n| freebie  | 工具资源 |\n| article  | 阅读     |\n| ai       | 人工智能 |\n| devops   | 运维     |\n| all      | 全部     |\n\n| type       | 类型     |\n| ---------- | -------- |\n| weekly     | 本周最热 |\n| monthly    | 本月最热 |\n| historical | 历史最热 |","location":"trending.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | category | 标签     |
-  | -------- | -------- |
-  | android  | Android  |
-  | frontend | 前端     |
-  | ios      | iOS      |
-  | backend  | 后端     |
-  | design   | 设计     |
-  | product  | 产品     |
-  | freebie  | 工具资源 |
-  | article  | 阅读     |
-  | ai       | 人工智能 |
-  | devops   | 运维     |
-  | all      | 全部     |
+| -------- | -------- |
+| android  | Android  |
+| frontend | 前端     |
+| ios      | iOS      |
+| backend  | 后端     |
+| design   | 设计     |
+| product  | 产品     |
+| freebie  | 工具资源 |
+| article  | 阅读     |
+| ai       | 人工智能 |
+| devops   | 运维     |
+| all      | 全部     |
 
-  | type       | 类型     |
-  | ---------- | -------- |
-  | weekly     | 本周最热 |
-  | monthly    | 本月最热 |
-  | historical | 历史最热 |
+| type       | 类型     |
+| ---------- | -------- |
+| weekly     | 本周最热 |
+| monthly    | 本月最热 |
+| historical | 历史最热 |
 
 ### 收藏集 <Site url="juejin.cn" size="sm" />
 
@@ -1110,7 +1110,7 @@ OSCHINA
 
 ### 专栏 <Site url="www.oschina.net" size="sm" />
 
-<Route namespace="oschina" :data='{"path":"/column/:id","name":"专栏","url":"www.oschina.net","maintainers":["nczitzk"],"example":"/oschina/column/14","parameters":{"id":"专栏 id，可在对应专栏页 URL 中找到"},"description":":::tip\n若订阅 [开源安全专栏](https://www.oschina.net/news/column?columnId=14)，网址为 `https://www.oschina.net/news/column?columnId=14`，请截取 `https://www.oschina.net/news/column?columnId=` 到末尾的部分 `14` 作为 `id` 参数填入，此时目标路由为 [`/oschina/column/14`](https://rsshub.app/oschina/column/14)。\n\n:::\n\n<details>\n  <summary>更多专栏</summary>\n\n| 名称            | ID  |\n| --------------- | --- |\n| 古典主义 Debian | 4   |\n| 自由&开源       | 5   |\n| 溯源            | 6   |\n| 开源先懂协议    | 7   |\n| 开源变局        | 8   |\n| 创造者说        | 9   |\n| 精英主义 BSD    | 10  |\n| 苹果有开源      | 11  |\n| 开源访谈        | 12  |\n| 抱团找组织      | 13  |\n| 开源安全        | 14  |\n| OSPO            | 15  |\n| 创业小辑        | 16  |\n| 星推荐          | 17  |\n| 单口开源        | 18  |\n| 编辑部观察直播  | 19  |\n| 开源商业化      | 20  |\n| ChatGPT 专题    | 21  |\n| 开源新思        | 24  |\n| 开源日报        | 25  |\n| 大模型思辨      | 26  |\n| 家里有个程序员  | 27  |\n| 开源漫谈        | 23  |\n\n</details>\n","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.oschina.net"]}],"view":0,"location":"column.ts"}' :test='{"code":0}' />
+<Route namespace="oschina" :data='{"path":"/column/:id","name":"专栏","url":"www.oschina.net","maintainers":["nczitzk"],"example":"/oschina/column/14","parameters":{"id":"专栏 id，可在对应专栏页 URL 中找到"},"description":":::tip\n若订阅 [开源安全专栏](https://www.oschina.net/news/column?columnId=14)，网址为 `https://www.oschina.net/news/column?columnId=14`，请截取 `https://www.oschina.net/news/column?columnId=` 到末尾的部分 `14` 作为 `id` 参数填入，此时目标路由为 [`/oschina/column/14`](https://rsshub.app/oschina/column/14)。\n\n:::\n\n<details>\n<summary>更多专栏</summary>\n\n| 名称            | ID  |\n| --------------- | --- |\n| 古典主义 Debian | 4   |\n| 自由&开源       | 5   |\n| 溯源            | 6   |\n| 开源先懂协议    | 7   |\n| 开源变局        | 8   |\n| 创造者说        | 9   |\n| 精英主义 BSD    | 10  |\n| 苹果有开源      | 11  |\n| 开源访谈        | 12  |\n| 抱团找组织      | 13  |\n| 开源安全        | 14  |\n| OSPO            | 15  |\n| 创业小辑        | 16  |\n| 星推荐          | 17  |\n| 单口开源        | 18  |\n| 编辑部观察直播  | 19  |\n| 开源商业化      | 20  |\n| ChatGPT 专题    | 21  |\n| 开源新思        | 24  |\n| 开源日报        | 25  |\n| 大模型思辨      | 26  |\n| 家里有个程序员  | 27  |\n| 开源漫谈        | 23  |\n\n</details>\n","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.oschina.net"]}],"view":0,"location":"column.ts"}' :test='{"code":0}' />
 
 :::tip
 若订阅 [开源安全专栏](https://www.oschina.net/news/column?columnId=14)，网址为 `https://www.oschina.net/news/column?columnId=14`，请截取 `https://www.oschina.net/news/column?columnId=` 到末尾的部分 `14` 作为 `id` 参数填入，此时目标路由为 [`/oschina/column/14`](https://rsshub.app/oschina/column/14)。
@@ -1118,7 +1118,7 @@ OSCHINA
 :::
 
 <details>
-  <summary>更多专栏</summary>
+<summary>更多专栏</summary>
 
 | 名称            | ID  |
 | --------------- | --- |
@@ -1151,11 +1151,11 @@ OSCHINA
 
 ### 资讯 <Site url="oschina.net" size="sm" />
 
-<Route namespace="oschina" :data='{"path":"/news/:category?","categories":["programming"],"example":"/oschina/news/project","parameters":{"category":"板块名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["oschina.net/news/:category"],"target":"/news/:category"}],"name":"资讯","maintainers":["tgly307","zengxs"],"description":"| [综合资讯][osc_gen] | [软件更新资讯][osc_proj] | [行业资讯][osc_ind] | [编程语言资讯][osc_pl] |\n  | ------------------- | ------------------------ | ------------------- | ---------------------- |\n  | industry            | project                  | industry-news       | programming            |\n\n  订阅 [全部板块资讯][osc_all] 可以使用 [https://rsshub.app/oschina/news](https://rsshub.app/oschina/news)\n\n  [osc_all]: https://www.oschina.net/news \"开源中国 - 全部资讯\"\n\n  [osc_gen]: https://www.oschina.net/news/industry \"开源中国 - 综合资讯\"\n\n  [osc_proj]: https://www.oschina.net/news/project \"开源中国 - 软件更新资讯\"\n\n  [osc_ind]: https://www.oschina.net/news/industry-news \"开源中国 - 行业资讯\"\n\n  [osc_pl]: https://www.oschina.net/news/programming \"开源中国 - 编程语言资讯\"","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1418)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="oschina" :data='{"path":"/news/:category?","categories":["programming"],"example":"/oschina/news/project","parameters":{"category":"板块名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["oschina.net/news/:category"],"target":"/news/:category"}],"name":"资讯","maintainers":["tgly307","zengxs"],"description":"| [综合资讯][osc_gen] | [软件更新资讯][osc_proj] | [行业资讯][osc_ind] | [编程语言资讯][osc_pl] |\n| ------------------- | ------------------------ | ------------------- | ---------------------- |\n| industry            | project                  | industry-news       | programming            |\n\n  订阅 [全部板块资讯][osc_all] 可以使用 [https://rsshub.app/oschina/news](https://rsshub.app/oschina/news)\n\n  [osc_all]: https://www.oschina.net/news \"开源中国 - 全部资讯\"\n\n  [osc_gen]: https://www.oschina.net/news/industry \"开源中国 - 综合资讯\"\n\n  [osc_proj]: https://www.oschina.net/news/project \"开源中国 - 软件更新资讯\"\n\n  [osc_ind]: https://www.oschina.net/news/industry-news \"开源中国 - 行业资讯\"\n\n  [osc_pl]: https://www.oschina.net/news/programming \"开源中国 - 编程语言资讯\"","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1418)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | [综合资讯][osc_gen] | [软件更新资讯][osc_proj] | [行业资讯][osc_ind] | [编程语言资讯][osc_pl] |
-  | ------------------- | ------------------------ | ------------------- | ---------------------- |
-  | industry            | project                  | industry-news       | programming            |
+| ------------------- | ------------------------ | ------------------- | ---------------------- |
+| industry            | project                  | industry-news       | programming            |
 
   订阅 [全部板块资讯][osc_all] 可以使用 [https://rsshub.app/oschina/news](https://rsshub.app/oschina/news)
 
@@ -1269,11 +1269,11 @@ OSCHINA
 
 ### 文章 <Site url="www.zaozao.run" size="sm" />
 
-<Route namespace="zaozao" :data='{"path":"/article/:type?","categories":["programming"],"example":"/zaozao/article/quality","parameters":{"type":"文章分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zaozao.run/article/:type"],"target":"/article/:type"}],"name":"文章","maintainers":["shaomingbo"],"description":"| 精品推荐  | 技术干货 | 职场成长 | 社区动态  | 组件物料 | 行业动态 |\n  | --------- | -------- | -------- | --------- | -------- | -------- |\n  | recommend | quality  | growth   | community | material | industry |","location":"article.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2165)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="zaozao" :data='{"path":"/article/:type?","categories":["programming"],"example":"/zaozao/article/quality","parameters":{"type":"文章分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.zaozao.run/article/:type"],"target":"/article/:type"}],"name":"文章","maintainers":["shaomingbo"],"description":"| 精品推荐  | 技术干货 | 职场成长 | 社区动态  | 组件物料 | 行业动态 |\n| --------- | -------- | -------- | --------- | -------- | -------- |\n| recommend | quality  | growth   | community | material | industry |","location":"article.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2165)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 精品推荐  | 技术干货 | 职场成长 | 社区动态  | 组件物料 | 行业动态 |
-  | --------- | -------- | -------- | --------- | -------- | -------- |
-  | recommend | quality  | growth   | community | material | industry |
+| --------- | -------- | -------- | --------- | -------- | -------- |
+| recommend | quality  | growth   | community | material | industry |
 
 ## 腾讯 <Site url="tencent.com"/>
 
@@ -1307,9 +1307,9 @@ OSCHINA
 
 ### 周刊 - JavaScript <Site url="docschina.org" size="sm" />
 
-<Route namespace="docschina" :data='{"path":"/weekly/:category?","categories":["programming"],"example":"/docschina/weekly","parameters":{"category":"周刊分类，见下表，默认为js"},"name":"周刊 - JavaScript","maintainers":["daijinru","hestudy"],"description":"| javascript | node | react |\n  | ---------- | ---- | ----- |\n  | js         | node | react |","radar":[{"source":["docschina.org/news/weekly/js/*","docschina.org/news/weekly/js","docschina.org/"],"target":"/jsweekly"}],"location":"weekly.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 476)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="docschina" :data='{"path":"/weekly/:category?","categories":["programming"],"example":"/docschina/weekly","parameters":{"category":"周刊分类，见下表，默认为js"},"name":"周刊 - JavaScript","maintainers":["daijinru","hestudy"],"description":"| javascript | node | react |\n| ---------- | ---- | ----- |\n| js         | node | react |","radar":[{"source":["docschina.org/news/weekly/js/*","docschina.org/news/weekly/js","docschina.org/"],"target":"/jsweekly"}],"location":"weekly.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 476)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | javascript | node | react |
-  | ---------- | ---- | ----- |
-  | js         | node | react |
+| ---------- | ---- | ----- |
+| js         | node | react |
 

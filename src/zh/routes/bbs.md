@@ -4,86 +4,86 @@
 
 ### 头条 <Site url="19lou.com" size="sm" />
 
-<Route namespace="19lou" :data='{"path":"/:city?","categories":["bbs"],"example":"/19lou/jiaxing","parameters":{"city":"分类，见下表，默认为 www，即杭州"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["nczitzk"],"description":"| 杭州 | 台州    | 嘉兴    | 宁波   | 湖州   |\n  | ---- | ------- | ------- | ------ | ------ |\n  | www  | taizhou | jiaxing | ningbo | huzhou |\n\n  | 绍兴     | 湖州   | 温州    | 金华   | 舟山     |\n  | -------- | ------ | ------- | ------ | -------- |\n  | shaoxing | huzhou | wenzhou | jinhua | zhoushan |\n\n  | 衢州   | 丽水   | 义乌 | 萧山     | 余杭   |\n  | ------ | ------ | ---- | -------- | ------ |\n  | quzhou | lishui | yiwu | xiaoshan | yuhang |\n\n  | 临安  | 富阳   | 桐庐   | 建德   | 淳安   |\n  | ----- | ------ | ------ | ------ | ------ |\n  | linan | fuyang | tonglu | jiande | chunan |","location":"index.ts"}' :test='undefined' />
+<Route namespace="19lou" :data='{"path":"/:city?","categories":["bbs"],"example":"/19lou/jiaxing","parameters":{"city":"分类，见下表，默认为 www，即杭州"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["nczitzk"],"description":"| 杭州 | 台州    | 嘉兴    | 宁波   | 湖州   |\n| ---- | ------- | ------- | ------ | ------ |\n| www  | taizhou | jiaxing | ningbo | huzhou |\n\n| 绍兴     | 湖州   | 温州    | 金华   | 舟山     |\n| -------- | ------ | ------- | ------ | -------- |\n| shaoxing | huzhou | wenzhou | jinhua | zhoushan |\n\n| 衢州   | 丽水   | 义乌 | 萧山     | 余杭   |\n| ------ | ------ | ---- | -------- | ------ |\n| quzhou | lishui | yiwu | xiaoshan | yuhang |\n\n| 临安  | 富阳   | 桐庐   | 建德   | 淳安   |\n| ----- | ------ | ------ | ------ | ------ |\n| linan | fuyang | tonglu | jiande | chunan |","location":"index.ts"}' :test='undefined' />
 
 | 杭州 | 台州    | 嘉兴    | 宁波   | 湖州   |
-  | ---- | ------- | ------- | ------ | ------ |
-  | www  | taizhou | jiaxing | ningbo | huzhou |
+| ---- | ------- | ------- | ------ | ------ |
+| www  | taizhou | jiaxing | ningbo | huzhou |
 
-  | 绍兴     | 湖州   | 温州    | 金华   | 舟山     |
-  | -------- | ------ | ------- | ------ | -------- |
-  | shaoxing | huzhou | wenzhou | jinhua | zhoushan |
+| 绍兴     | 湖州   | 温州    | 金华   | 舟山     |
+| -------- | ------ | ------- | ------ | -------- |
+| shaoxing | huzhou | wenzhou | jinhua | zhoushan |
 
-  | 衢州   | 丽水   | 义乌 | 萧山     | 余杭   |
-  | ------ | ------ | ---- | -------- | ------ |
-  | quzhou | lishui | yiwu | xiaoshan | yuhang |
+| 衢州   | 丽水   | 义乌 | 萧山     | 余杭   |
+| ------ | ------ | ---- | -------- | ------ |
+| quzhou | lishui | yiwu | xiaoshan | yuhang |
 
-  | 临安  | 富阳   | 桐庐   | 建德   | 淳安   |
-  | ----- | ------ | ------ | ------ | ------ |
-  | linan | fuyang | tonglu | jiande | chunan |
+| 临安  | 富阳   | 桐庐   | 建德   | 淳安   |
+| ----- | ------ | ------ | ------ | ------ |
+| linan | fuyang | tonglu | jiande | chunan |
 
 ## 8264 <Site url="8264.com"/>
 
 ### 列表 <Site url="8264.com" size="sm" />
 
-<Route namespace="8264" :data='{"path":"/list/:id?","categories":["bbs"],"example":"/8264/list/751","parameters":{"id":"列表 id，见下表，默认为 751，即热门推荐"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"列表","maintainers":["nczitzk"],"description":"| 热门推荐 | 户外知识 | 户外装备 |\n| -------- | -------- | -------- |\n| 751      | 238      | 204      |\n\n<details>\n  <summary>更多列表</summary>\n\n  #### 热门推荐\n\n  | 业界 | 国际 | 专访 | 图说 | 户外 | 登山 | 攀岩 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 489  | 733  | 746  | 902  | 914  | 934  | 935  |\n\n  #### 户外知识\n\n  | 徒步 | 露营 | 安全急救 | 领队 | 登雪山 |\n  | ---- | ---- | -------- | ---- | ------ |\n  | 242  | 950  | 931    | 920  | 915  |\n\n  | 攀岩 | 骑行 | 跑步 | 滑雪 | 水上运动 |\n  | ---- | ---- | ---- | ---- | -------- |\n  | 916  | 917  | 918  | 919  | 921    |\n\n  | 钓鱼 | 潜水 | 攀冰 | 冲浪 | 网球 |\n  | ---- | ---- | ---- | ---- | ---- |\n  | 951  | 952  | 953  | 966  | 967  |\n\n  | 绳索知识 | 高尔夫 | 马术 | 户外摄影 | 羽毛球 |\n  | -------- | ------ | ---- | -------- | ------ |\n  | 968    | 969  | 970  | 973    | 971  |\n\n  | 游泳 | 溯溪 | 健身 | 瑜伽 |\n  | ---- | ---- | ---- | ---- |\n  | 974  | 975  | 976  | 977  |\n\n  #### 户外装备\n\n  | 服装 | 冲锋衣 | 抓绒衣 | 皮肤衣 | 速干衣 |\n  | ---- | ------ | ------ | ------ | ------ |\n  | 209  | 923  | 924  | 925  | 926  |\n\n  | 羽绒服 | 软壳 | 户外鞋 | 登山鞋 | 徒步鞋 |\n  | ------ | ---- | ------ | ------ | ------ |\n  | 927  | 929  | 211  | 928  | 930  |\n\n  | 越野跑鞋 | 溯溪鞋 | 登山杖 | 帐篷 | 睡袋 |\n  | -------- | ------ | ------ | ---- | ---- |\n  | 933    | 932  | 220  | 208  | 212  |\n\n  | 炉具 | 灯具 | 水具 | 面料 | 背包 |\n  | ---- | ---- | ---- | ---- | ---- |\n  | 792  | 218  | 219  | 222  | 207  |\n\n  | 防潮垫 | 电子导航 | 冰岩绳索 | 综合装备 |\n  | ------ | -------- | -------- | -------- |\n  | 214  | 216    | 215    | 223    |\n</details>","location":"list.ts"}' :test='undefined' />
+<Route namespace="8264" :data='{"path":"/list/:id?","categories":["bbs"],"example":"/8264/list/751","parameters":{"id":"列表 id，见下表，默认为 751，即热门推荐"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"列表","maintainers":["nczitzk"],"description":"| 热门推荐 | 户外知识 | 户外装备 |\n| -------- | -------- | -------- |\n| 751      | 238      | 204      |\n\n<details>\n<summary>更多列表</summary>\n\n#### 热门推荐\n\n| 业界 | 国际 | 专访 | 图说 | 户外 | 登山 | 攀岩 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 489  | 733  | 746  | 902  | 914  | 934  | 935  |\n\n#### 户外知识\n\n| 徒步 | 露营 | 安全急救 | 领队 | 登雪山 |\n| ---- | ---- | -------- | ---- | ------ |\n| 242  | 950  | 931    | 920  | 915  |\n\n| 攀岩 | 骑行 | 跑步 | 滑雪 | 水上运动 |\n| ---- | ---- | ---- | ---- | -------- |\n| 916  | 917  | 918  | 919  | 921    |\n\n| 钓鱼 | 潜水 | 攀冰 | 冲浪 | 网球 |\n| ---- | ---- | ---- | ---- | ---- |\n| 951  | 952  | 953  | 966  | 967  |\n\n| 绳索知识 | 高尔夫 | 马术 | 户外摄影 | 羽毛球 |\n| -------- | ------ | ---- | -------- | ------ |\n| 968    | 969  | 970  | 973    | 971  |\n\n| 游泳 | 溯溪 | 健身 | 瑜伽 |\n| ---- | ---- | ---- | ---- |\n| 974  | 975  | 976  | 977  |\n\n#### 户外装备\n\n| 服装 | 冲锋衣 | 抓绒衣 | 皮肤衣 | 速干衣 |\n| ---- | ------ | ------ | ------ | ------ |\n| 209  | 923  | 924  | 925  | 926  |\n\n| 羽绒服 | 软壳 | 户外鞋 | 登山鞋 | 徒步鞋 |\n| ------ | ---- | ------ | ------ | ------ |\n| 927  | 929  | 211  | 928  | 930  |\n\n| 越野跑鞋 | 溯溪鞋 | 登山杖 | 帐篷 | 睡袋 |\n| -------- | ------ | ------ | ---- | ---- |\n| 933    | 932  | 220  | 208  | 212  |\n\n| 炉具 | 灯具 | 水具 | 面料 | 背包 |\n| ---- | ---- | ---- | ---- | ---- |\n| 792  | 218  | 219  | 222  | 207  |\n\n| 防潮垫 | 电子导航 | 冰岩绳索 | 综合装备 |\n| ------ | -------- | -------- | -------- |\n| 214  | 216    | 215    | 223    |\n</details>","location":"list.ts"}' :test='undefined' />
 
 | 热门推荐 | 户外知识 | 户外装备 |
 | -------- | -------- | -------- |
 | 751      | 238      | 204      |
 
 <details>
-  <summary>更多列表</summary>
+<summary>更多列表</summary>
 
-  #### 热门推荐
+#### 热门推荐
 
-  | 业界 | 国际 | 专访 | 图说 | 户外 | 登山 | 攀岩 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | 489  | 733  | 746  | 902  | 914  | 934  | 935  |
+| 业界 | 国际 | 专访 | 图说 | 户外 | 登山 | 攀岩 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 489  | 733  | 746  | 902  | 914  | 934  | 935  |
 
-  #### 户外知识
+#### 户外知识
 
-  | 徒步 | 露营 | 安全急救 | 领队 | 登雪山 |
-  | ---- | ---- | -------- | ---- | ------ |
-  | 242  | 950  | 931    | 920  | 915  |
+| 徒步 | 露营 | 安全急救 | 领队 | 登雪山 |
+| ---- | ---- | -------- | ---- | ------ |
+| 242  | 950  | 931    | 920  | 915  |
 
-  | 攀岩 | 骑行 | 跑步 | 滑雪 | 水上运动 |
-  | ---- | ---- | ---- | ---- | -------- |
-  | 916  | 917  | 918  | 919  | 921    |
+| 攀岩 | 骑行 | 跑步 | 滑雪 | 水上运动 |
+| ---- | ---- | ---- | ---- | -------- |
+| 916  | 917  | 918  | 919  | 921    |
 
-  | 钓鱼 | 潜水 | 攀冰 | 冲浪 | 网球 |
-  | ---- | ---- | ---- | ---- | ---- |
-  | 951  | 952  | 953  | 966  | 967  |
+| 钓鱼 | 潜水 | 攀冰 | 冲浪 | 网球 |
+| ---- | ---- | ---- | ---- | ---- |
+| 951  | 952  | 953  | 966  | 967  |
 
-  | 绳索知识 | 高尔夫 | 马术 | 户外摄影 | 羽毛球 |
-  | -------- | ------ | ---- | -------- | ------ |
-  | 968    | 969  | 970  | 973    | 971  |
+| 绳索知识 | 高尔夫 | 马术 | 户外摄影 | 羽毛球 |
+| -------- | ------ | ---- | -------- | ------ |
+| 968    | 969  | 970  | 973    | 971  |
 
-  | 游泳 | 溯溪 | 健身 | 瑜伽 |
-  | ---- | ---- | ---- | ---- |
-  | 974  | 975  | 976  | 977  |
+| 游泳 | 溯溪 | 健身 | 瑜伽 |
+| ---- | ---- | ---- | ---- |
+| 974  | 975  | 976  | 977  |
 
-  #### 户外装备
+#### 户外装备
 
-  | 服装 | 冲锋衣 | 抓绒衣 | 皮肤衣 | 速干衣 |
-  | ---- | ------ | ------ | ------ | ------ |
-  | 209  | 923  | 924  | 925  | 926  |
+| 服装 | 冲锋衣 | 抓绒衣 | 皮肤衣 | 速干衣 |
+| ---- | ------ | ------ | ------ | ------ |
+| 209  | 923  | 924  | 925  | 926  |
 
-  | 羽绒服 | 软壳 | 户外鞋 | 登山鞋 | 徒步鞋 |
-  | ------ | ---- | ------ | ------ | ------ |
-  | 927  | 929  | 211  | 928  | 930  |
+| 羽绒服 | 软壳 | 户外鞋 | 登山鞋 | 徒步鞋 |
+| ------ | ---- | ------ | ------ | ------ |
+| 927  | 929  | 211  | 928  | 930  |
 
-  | 越野跑鞋 | 溯溪鞋 | 登山杖 | 帐篷 | 睡袋 |
-  | -------- | ------ | ------ | ---- | ---- |
-  | 933    | 932  | 220  | 208  | 212  |
+| 越野跑鞋 | 溯溪鞋 | 登山杖 | 帐篷 | 睡袋 |
+| -------- | ------ | ------ | ---- | ---- |
+| 933    | 932  | 220  | 208  | 212  |
 
-  | 炉具 | 灯具 | 水具 | 面料 | 背包 |
-  | ---- | ---- | ---- | ---- | ---- |
-  | 792  | 218  | 219  | 222  | 207  |
+| 炉具 | 灯具 | 水具 | 面料 | 背包 |
+| ---- | ---- | ---- | ---- | ---- |
+| 792  | 218  | 219  | 222  | 207  |
 
-  | 防潮垫 | 电子导航 | 冰岩绳索 | 综合装备 |
-  | ------ | -------- | -------- | -------- |
-  | 214  | 216    | 215    | 223    |
+| 防潮垫 | 电子导航 | 冰岩绳索 | 综合装备 |
+| ------ | -------- | -------- | -------- |
+| 214  | 216    | 215    | 223    |
 </details>
 
 ## Dcard <Site url="www.dcard.tw"/>
@@ -206,23 +206,23 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### AV <Site url="stno1.playno1.com" size="sm" />
 
-<Route namespace="playno1" :data='{"path":"/av/:catid?","categories":["bbs"],"example":"/playno1/av","parameters":{"catid":"分类，见下表，默认为全部文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"AV","maintainers":["TonyRL"],"description":"::: warning\n目前观测到该博客可能禁止日本 IP 访问。建议部署在日本区以外的服务器上。\n:::\n\n  | 全部文章 | AV 新聞 | AV 導覽 |\n  | -------- | ------- | ------- |\n  | 78       | 3       | 5       |","location":"av.ts"}' :test='{"code":0}' />
+<Route namespace="playno1" :data='{"path":"/av/:catid?","categories":["bbs"],"example":"/playno1/av","parameters":{"catid":"分类，见下表，默认为全部文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"AV","maintainers":["TonyRL"],"description":"::: warning\n目前观测到该博客可能禁止日本 IP 访问。建议部署在日本区以外的服务器上。\n:::\n\n| 全部文章 | AV 新聞 | AV 導覽 |\n| -------- | ------- | ------- |\n| 78       | 3       | 5       |","location":"av.ts"}' :test='{"code":0}' />
 
 ::: warning
 目前观测到该博客可能禁止日本 IP 访问。建议部署在日本区以外的服务器上。
 :::
 
-  | 全部文章 | AV 新聞 | AV 導覽 |
-  | -------- | ------- | ------- |
-  | 78       | 3       | 5       |
+| 全部文章 | AV 新聞 | AV 導覽 |
+| -------- | ------- | ------- |
+| 78       | 3       | 5       |
 
 ### 情趣 <Site url="stno1.playno1.com" size="sm" />
 
-<Route namespace="playno1" :data='{"path":"/st/:catid?","categories":["bbs"],"example":"/playno1/st","parameters":{"catid":"分类，见下表，默认为全部文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["stno1.playno1.com/stno1/:catid/"],"target":"/st/:catid"}],"name":"情趣","maintainers":["TonyRL"],"description":"| 全部文章 | 情趣體驗報告 | 情趣新聞 | 情趣研究所 |\n  | -------- | ------------ | -------- | ---------- |\n  | all      | experience   | news     | graduate   |","location":"st.ts"}' :test='{"code":0}' />
+<Route namespace="playno1" :data='{"path":"/st/:catid?","categories":["bbs"],"example":"/playno1/st","parameters":{"catid":"分类，见下表，默认为全部文章"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["stno1.playno1.com/stno1/:catid/"],"target":"/st/:catid"}],"name":"情趣","maintainers":["TonyRL"],"description":"| 全部文章 | 情趣體驗報告 | 情趣新聞 | 情趣研究所 |\n| -------- | ------------ | -------- | ---------- |\n| all      | experience   | news     | graduate   |","location":"st.ts"}' :test='{"code":0}' />
 
 | 全部文章 | 情趣體驗報告 | 情趣新聞 | 情趣研究所 |
-  | -------- | ------------ | -------- | ---------- |
-  | all      | experience   | news     | graduate   |
+| -------- | ------------ | -------- | ---------- |
+| all      | experience   | news     | graduate   |
 
 ## Saraba1st <Site url="bbs.saraba1st.com"/>
 
@@ -290,14 +290,14 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 贴吧搜索 <Site url="www.baidu.com" size="sm" />
 
-<Route namespace="baidu" :data='{"path":"/tieba/search/:qw/:routeParams?","categories":["bbs"],"example":"/baidu/tieba/search/neuro","parameters":{"qw":"搜索关键词","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"贴吧搜索","maintainers":["JimenezLi"],"description":"| 键           | 含义                                                       | 接受的值      | 默认值 |\n  | ------------ | ---------------------------------------------------------- | ------------- | ------ |\n  | kw           | 在名为 kw 的贴吧中搜索                                     | 任意名称 / 无 | 无     |\n  | only_thread  | 只看主题帖，默认为 0 关闭                                  | 0/1           | 0      |\n  | rn           | 返回条目的数量                                             | 1-20          | 20     |\n  | sm           | 排序方式，0 为按时间顺序，1 为按时间倒序，2 为按相关性顺序 | 0/1/2         | 1      |\n\n  用例：`/baidu/tieba/search/neuro/kw=neurosama&only_thread=1&sm=2`","location":"tieba/search.ts"}' :test='{"code":0}' />
+<Route namespace="baidu" :data='{"path":"/tieba/search/:qw/:routeParams?","categories":["bbs"],"example":"/baidu/tieba/search/neuro","parameters":{"qw":"搜索关键词","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"贴吧搜索","maintainers":["JimenezLi"],"description":"| 键           | 含义                                                       | 接受的值      | 默认值 |\n| ------------ | ---------------------------------------------------------- | ------------- | ------ |\n| kw           | 在名为 kw 的贴吧中搜索                                     | 任意名称 / 无 | 无     |\n| only_thread  | 只看主题帖，默认为 0 关闭                                  | 0/1           | 0      |\n| rn           | 返回条目的数量                                             | 1-20          | 20     |\n| sm           | 排序方式，0 为按时间顺序，1 为按时间倒序，2 为按相关性顺序 | 0/1/2         | 1      |\n\n  用例：`/baidu/tieba/search/neuro/kw=neurosama&only_thread=1&sm=2`","location":"tieba/search.ts"}' :test='{"code":0}' />
 
 | 键           | 含义                                                       | 接受的值      | 默认值 |
-  | ------------ | ---------------------------------------------------------- | ------------- | ------ |
-  | kw           | 在名为 kw 的贴吧中搜索                                     | 任意名称 / 无 | 无     |
-  | only_thread  | 只看主题帖，默认为 0 关闭                                  | 0/1           | 0      |
-  | rn           | 返回条目的数量                                             | 1-20          | 20     |
-  | sm           | 排序方式，0 为按时间顺序，1 为按时间倒序，2 为按相关性顺序 | 0/1/2         | 1      |
+| ------------ | ---------------------------------------------------------- | ------------- | ------ |
+| kw           | 在名为 kw 的贴吧中搜索                                     | 任意名称 / 无 | 无     |
+| only_thread  | 只看主题帖，默认为 0 关闭                                  | 0/1           | 0      |
+| rn           | 返回条目的数量                                             | 1-20          | 20     |
+| sm           | 排序方式，0 为按时间顺序，1 为按时间倒序，2 为按相关性顺序 | 0/1/2         | 1      |
 
   用例：`/baidu/tieba/search/neuro/kw=neurosama&only_thread=1&sm=2`
 
@@ -343,26 +343,26 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 分类文章 <Site url="eleduck.com" size="sm" />
 
-<Route namespace="eleduck" :data='{"path":"/posts/:id?","categories":["bbs"],"example":"/eleduck/posts/4","parameters":{"id":"分类id,可以论坛的URL找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类文章","maintainers":["running-grass"],"description":"| id | 分类     |\n  | -- | -------- |\n  | 0  | 全部     |\n  | 1  | 讨论     |\n  | 2  | 分享     |\n  | 3  | 露个脸   |\n  | 4  | 访谈故事 |\n  | 5  | 招聘     |\n  | 10 | 海外移民 |\n  | 12 | 英语     |\n  | 14 | 电鸭官方 |\n  | 15 | 独立产品 |\n  | 17 | 闲话开源 |\n  | 19 | Web3     |\n  | 21 | 设计     |\n  | 22 | 人才库   |\n  | 23 | Upwork   |\n  | 24 | 经验课   |","location":"posts.ts"}' :test='{"code":0}' />
+<Route namespace="eleduck" :data='{"path":"/posts/:id?","categories":["bbs"],"example":"/eleduck/posts/4","parameters":{"id":"分类id,可以论坛的URL找到，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类文章","maintainers":["running-grass"],"description":"| id | 分类     |\n| -- | -------- |\n| 0  | 全部     |\n| 1  | 讨论     |\n| 2  | 分享     |\n| 3  | 露个脸   |\n| 4  | 访谈故事 |\n| 5  | 招聘     |\n| 10 | 海外移民 |\n| 12 | 英语     |\n| 14 | 电鸭官方 |\n| 15 | 独立产品 |\n| 17 | 闲话开源 |\n| 19 | Web3     |\n| 21 | 设计     |\n| 22 | 人才库   |\n| 23 | Upwork   |\n| 24 | 经验课   |","location":"posts.ts"}' :test='{"code":0}' />
 
 | id | 分类     |
-  | -- | -------- |
-  | 0  | 全部     |
-  | 1  | 讨论     |
-  | 2  | 分享     |
-  | 3  | 露个脸   |
-  | 4  | 访谈故事 |
-  | 5  | 招聘     |
-  | 10 | 海外移民 |
-  | 12 | 英语     |
-  | 14 | 电鸭官方 |
-  | 15 | 独立产品 |
-  | 17 | 闲话开源 |
-  | 19 | Web3     |
-  | 21 | 设计     |
-  | 22 | 人才库   |
-  | 23 | Upwork   |
-  | 24 | 经验课   |
+| -- | -------- |
+| 0  | 全部     |
+| 1  | 讨论     |
+| 2  | 分享     |
+| 3  | 露个脸   |
+| 4  | 访谈故事 |
+| 5  | 招聘     |
+| 10 | 海外移民 |
+| 12 | 英语     |
+| 14 | 电鸭官方 |
+| 15 | 独立产品 |
+| 17 | 闲话开源 |
+| 19 | Web3     |
+| 21 | 设计     |
+| 22 | 人才库   |
+| 23 | Upwork   |
+| 24 | 经验课   |
 
 ### 工作机会 <Site url="eleduck.com/categories/5" size="sm" />
 
@@ -386,11 +386,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 鱼吧帖子 <Site url="www.douyu.com" size="sm" />
 
-<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n  | ------------ | ------------ |\n  | 1            | 2            |","location":"group.ts"}' :test='{"code":0}' />
+<Route namespace="douyu" :data='{"path":"/group/:id/:sort?","categories":["bbs"],"example":"/douyu/group/1011","parameters":{"id":"鱼吧 id，可在鱼吧页 URL 中找到","sort":"排序方式，见下表，默认为发布时间排序"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuba.douyu.com/group/:id","yuba.douyu.com/group/newself/:id","yuba.douyu.com/group/newall/:id","yuba.douyu.com/"],"target":"/group/:id"}],"name":"鱼吧帖子","maintainers":["nczitzk"],"description":"| 回复时间排序 | 发布时间排序 |\n| ------------ | ------------ |\n| 1            | 2            |","location":"group.ts"}' :test='{"code":0}' />
 
 | 回复时间排序 | 发布时间排序 |
-  | ------------ | ------------ |
-  | 1            | 2            |
+| ------------ | ------------ |
+| 1            | 2            |
 
 ### 鱼吧跟帖 <Site url="www.douyu.com" size="sm" />
 
@@ -417,11 +417,11 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### Unknown <Site url=".hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n  | --- | --- | ------ |\n  | nba | cba | soccer |\n\n::: tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n:::","location":"index.ts"}' :test='undefined' />
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n| --- | --- | ------ |\n| nba | cba | soccer |\n\n::: tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n:::","location":"index.ts"}' :test='undefined' />
 
 | NBA | CBA | 足球   |
-  | --- | --- | ------ |
-  | nba | cba | soccer |
+| --- | --- | ------ |
+| nba | cba | soccer |
 
 ::: tip
   电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
@@ -453,31 +453,31 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛 <Site url="kanxue.com" size="sm" />
 
-<Route namespace="kanxue" :data='{"path":"/topic/:category?/:type?","categories":["bbs"],"example":"/kanxue/topic/android/digest","parameters":{"category":"版块, 缺省为`all`","type":"类型, 缺省为`latest`"},"name":"论坛","maintainers":["renzhexigua"],"description":"| 版块           | category  |\n  | -------------- | --------- |\n  | 智能设备       | iot       |\n  | Android 安全   | android   |\n  | iOS 安全       | ios       |\n  | HarmonyOS 安全 | harmonyos |\n  | 软件逆向       | re        |\n  | 编程技术       | coding    |\n  | 加壳脱壳       | unpack    |\n  | 密码应用       | crypto    |\n  | 二进制漏洞     | vuln      |\n  | CTF 对抗       | ctf       |\n  | Pwn            | pwn       |\n  | WEB 安全       | web       |\n  | 茶余饭后       | chat      |\n  | 极客空间       | geekzone  |\n  | 外文翻译       | translate |\n  | 全站           | all       |\n\n  | 类型     | type   |\n  | -------- | ------ |\n  | 最新主题 | latest |\n  | 精华主题 | digest |","location":"topic.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="kanxue" :data='{"path":"/topic/:category?/:type?","categories":["bbs"],"example":"/kanxue/topic/android/digest","parameters":{"category":"版块, 缺省为`all`","type":"类型, 缺省为`latest`"},"name":"论坛","maintainers":["renzhexigua"],"description":"| 版块           | category  |\n| -------------- | --------- |\n| 智能设备       | iot       |\n| Android 安全   | android   |\n| iOS 安全       | ios       |\n| HarmonyOS 安全 | harmonyos |\n| 软件逆向       | re        |\n| 编程技术       | coding    |\n| 加壳脱壳       | unpack    |\n| 密码应用       | crypto    |\n| 二进制漏洞     | vuln      |\n| CTF 对抗       | ctf       |\n| Pwn            | pwn       |\n| WEB 安全       | web       |\n| 茶余饭后       | chat      |\n| 极客空间       | geekzone  |\n| 外文翻译       | translate |\n| 全站           | all       |\n\n| 类型     | type   |\n| -------- | ------ |\n| 最新主题 | latest |\n| 精华主题 | digest |","location":"topic.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 版块           | category  |
-  | -------------- | --------- |
-  | 智能设备       | iot       |
-  | Android 安全   | android   |
-  | iOS 安全       | ios       |
-  | HarmonyOS 安全 | harmonyos |
-  | 软件逆向       | re        |
-  | 编程技术       | coding    |
-  | 加壳脱壳       | unpack    |
-  | 密码应用       | crypto    |
-  | 二进制漏洞     | vuln      |
-  | CTF 对抗       | ctf       |
-  | Pwn            | pwn       |
-  | WEB 安全       | web       |
-  | 茶余饭后       | chat      |
-  | 极客空间       | geekzone  |
-  | 外文翻译       | translate |
-  | 全站           | all       |
+| -------------- | --------- |
+| 智能设备       | iot       |
+| Android 安全   | android   |
+| iOS 安全       | ios       |
+| HarmonyOS 安全 | harmonyos |
+| 软件逆向       | re        |
+| 编程技术       | coding    |
+| 加壳脱壳       | unpack    |
+| 密码应用       | crypto    |
+| 二进制漏洞     | vuln      |
+| CTF 对抗       | ctf       |
+| Pwn            | pwn       |
+| WEB 安全       | web       |
+| 茶余饭后       | chat      |
+| 极客空间       | geekzone  |
+| 外文翻译       | translate |
+| 全站           | all       |
 
-  | 类型     | type   |
-  | -------- | ------ |
-  | 最新主题 | latest |
-  | 精华主题 | digest |
+| 类型     | type   |
+| -------- | ------ |
+| 最新主题 | latest |
+| 精华主题 | digest |
 
 ## 牛客网 <Site url="nowcoder.com"/>
 
@@ -497,29 +497,29 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 实习广场 & 社招广场 <Site url="nowcoder.com/" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/jobcenter/:recruitType?/:city?/:type?/:order?/:latest?","categories":["bbs"],"example":"/nowcoder/jobcenter/1/北京/1/1/true","parameters":{"recruitType":"招聘分类，`1` 指 实习广场，`2` 指 社招广场，默认为 `1`","city":"所在城市，可选城市见下表，若空则为 `全国`","type":"职位类型，可选职位代码见下表，若空则为 `全部`","order":"排序参数，可选排序参数代码见下表，若空则为 `默认`","latest":"是否仅查看最近一周，可选 `true` 和 `false`，默认为 `false`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/jobcenter"}],"name":"实习广场 & 社招广场","maintainers":["nczitzk"],"url":"nowcoder.com/","description":"可选城市有：北京、上海、广州、深圳、杭州、南京、成都、厦门、武汉、西安、长沙、哈尔滨、合肥、其他\n\n  职位类型代码见下表：\n\n  | 研发 | 测试 | 数据 | 算法 | 前端 | 产品 | 运营 | 其他 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 0    |\n\n  排序参数见下表：\n\n  | 最新发布 | 最快处理 | 处理率最高 |\n  | -------- | -------- | ---------- |\n  | 1        | 2        | 3          |","location":"jobcenter.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1350)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="nowcoder" :data='{"path":"/jobcenter/:recruitType?/:city?/:type?/:order?/:latest?","categories":["bbs"],"example":"/nowcoder/jobcenter/1/北京/1/1/true","parameters":{"recruitType":"招聘分类，`1` 指 实习广场，`2` 指 社招广场，默认为 `1`","city":"所在城市，可选城市见下表，若空则为 `全国`","type":"职位类型，可选职位代码见下表，若空则为 `全部`","order":"排序参数，可选排序参数代码见下表，若空则为 `默认`","latest":"是否仅查看最近一周，可选 `true` 和 `false`，默认为 `false`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nowcoder.com/"],"target":"/jobcenter"}],"name":"实习广场 & 社招广场","maintainers":["nczitzk"],"url":"nowcoder.com/","description":"可选城市有：北京、上海、广州、深圳、杭州、南京、成都、厦门、武汉、西安、长沙、哈尔滨、合肥、其他\n\n  职位类型代码见下表：\n\n| 研发 | 测试 | 数据 | 算法 | 前端 | 产品 | 运营 | 其他 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 1    | 2    | 3    | 4    | 5    | 6    | 7    | 0    |\n\n  排序参数见下表：\n\n| 最新发布 | 最快处理 | 处理率最高 |\n| -------- | -------- | ---------- |\n| 1        | 2        | 3          |","location":"jobcenter.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1350)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 可选城市有：北京、上海、广州、深圳、杭州、南京、成都、厦门、武汉、西安、长沙、哈尔滨、合肥、其他
 
   职位类型代码见下表：
 
-  | 研发 | 测试 | 数据 | 算法 | 前端 | 产品 | 运营 | 其他 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 0    |
+| 研发 | 测试 | 数据 | 算法 | 前端 | 产品 | 运营 | 其他 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 1    | 2    | 3    | 4    | 5    | 6    | 7    | 0    |
 
   排序参数见下表：
 
-  | 最新发布 | 最快处理 | 处理率最高 |
-  | -------- | -------- | ---------- |
-  | 1        | 2        | 3          |
+| 最新发布 | 最快处理 | 处理率最高 |
+| -------- | -------- | ---------- |
+| 1        | 2        | 3          |
 
 ### 讨论区 <Site url="nowcoder.com" size="sm" />
 
-<Route namespace="nowcoder" :data='{"path":"/discuss/:type/:order","categories":["bbs"],"example":"/nowcoder/discuss/2/4","parameters":{"type":"讨论区分区id 在 URL 中可以找到","order":"排序方式"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["LogicJake"],"description":"| 最新回复 | 最新发表 | 最新 | 精华 |\n  | -------- | -------- | ---- | ---- |\n  | 0        | 3        | 1    | 4    |","location":"discuss.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1348)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="nowcoder" :data='{"path":"/discuss/:type/:order","categories":["bbs"],"example":"/nowcoder/discuss/2/4","parameters":{"type":"讨论区分区id 在 URL 中可以找到","order":"排序方式"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"讨论区","maintainers":["LogicJake"],"description":"| 最新回复 | 最新发表 | 最新 | 精华 |\n| -------- | -------- | ---- | ---- |\n| 0        | 3        | 1    | 4    |","location":"discuss.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1348)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 最新回复 | 最新发表 | 最新 | 精华 |
-  | -------- | -------- | ---- | ---- |
-  | 0        | 3        | 1    | 4    |
+| -------- | -------- | ---- | ---- |
+| 0        | 3        | 1    | 4    |
 
 ### 校招日程 <Site url="nowcoder.com/" size="sm" />
 
@@ -567,21 +567,21 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 论坛 频道 <Site url="txrjy.com" size="sm" />
 
-<Route namespace="txrjy" :data='{"path":"/fornumtopic/:channel?","categories":["bbs"],"example":"/txrjy/fornumtopic","parameters":{"channel":"频道的 id，见下表，默认为最新500个主题帖"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛 频道","maintainers":["Fatpandac"],"description":"| 最新 500 个主题帖 | 最新 500 个回复帖 | 最新精华帖 | 最新精华帖 | 一周热帖 | 本月热帖 |\n  | :---------------: | :---------------: | :--------: | :--------: | :------: | :------: |\n  |         1         |         2         |      3     |      4     |     5    |     6    |","location":"fornumtopic.ts"}' :test='{"code":0}' />
+<Route namespace="txrjy" :data='{"path":"/fornumtopic/:channel?","categories":["bbs"],"example":"/txrjy/fornumtopic","parameters":{"channel":"频道的 id，见下表，默认为最新500个主题帖"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"论坛 频道","maintainers":["Fatpandac"],"description":"| 最新 500 个主题帖 | 最新 500 个回复帖 | 最新精华帖 | 最新精华帖 | 一周热帖 | 本月热帖 |\n| :---------------: | :---------------: | :--------: | :--------: | :------: | :------: |\n|         1         |         2         |      3     |      4     |     5    |     6    |","location":"fornumtopic.ts"}' :test='{"code":0}' />
 
 | 最新 500 个主题帖 | 最新 500 个回复帖 | 最新精华帖 | 最新精华帖 | 一周热帖 | 本月热帖 |
-  | :---------------: | :---------------: | :--------: | :--------: | :------: | :------: |
-  |         1         |         2         |      3     |      4     |     5    |     6    |
+| :---------------: | :---------------: | :--------: | :--------: | :------: | :------: |
+|         1         |         2         |      3     |      4     |     5    |     6    |
 
 ## 威锋 <Site url="feng.com"/>
 
 ### 社区 <Site url="feng.com" size="sm" />
 
-<Route namespace="feng" :data='{"path":"/forum/:id/:type?","categories":["bbs"],"example":"/feng/forum/1","parameters":{"id":"版块 ID，可在版块 URL 找到","type":"排序，见下表，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["feng.com/forum/photo/:id","feng.com/forum/:id"],"target":"/forum/:id"}],"name":"社区","maintainers":["TonyRL"],"description":"| 最新回复 | 最新发布 | 热门 | 精华    |\n  | -------- | -------- | ---- | ------- |\n  | newest   | all      | hot  | essence |","location":"forum.ts"}' :test='{"code":0}' />
+<Route namespace="feng" :data='{"path":"/forum/:id/:type?","categories":["bbs"],"example":"/feng/forum/1","parameters":{"id":"版块 ID，可在版块 URL 找到","type":"排序，见下表，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["feng.com/forum/photo/:id","feng.com/forum/:id"],"target":"/forum/:id"}],"name":"社区","maintainers":["TonyRL"],"description":"| 最新回复 | 最新发布 | 热门 | 精华    |\n| -------- | -------- | ---- | ------- |\n| newest   | all      | hot  | essence |","location":"forum.ts"}' :test='{"code":0}' />
 
 | 最新回复 | 最新发布 | 热门 | 精华    |
-  | -------- | -------- | ---- | ------- |
-  | newest   | all      | hot  | essence |
+| -------- | -------- | ---- | ------- |
+| newest   | all      | hot  | essence |
 
 ## 小特社区 <Site url="xiaote.com"/>
 
@@ -593,7 +593,7 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 标签 <Site url="blog.1point3acres.com" size="sm" />
 
-<Route namespace="1point3acres" :data='{"path":"/category/:id?/:type?/:order?","categories":["bbs"],"example":"/1point3acres/category/h1b","parameters":{"id":"标签 id，默认为全部","type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/section/:id","instant.1point3acres.com/"]}],"name":"标签","maintainers":["nczitzk"],"description":"::: tip\n  更多标签可以在 [标签列表](https://instant.1point3acres.com/tags) 中找到。\n:::\n\n  分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"category.ts"}' :test='undefined' />
+<Route namespace="1point3acres" :data='{"path":"/category/:id?/:type?/:order?","categories":["bbs"],"example":"/1point3acres/category/h1b","parameters":{"id":"标签 id，默认为全部","type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/section/:id","instant.1point3acres.com/"]}],"name":"标签","maintainers":["nczitzk"],"description":"::: tip\n  更多标签可以在 [标签列表](https://instant.1point3acres.com/tags) 中找到。\n:::\n\n  分类\n\n| 热门帖子 | 最新帖子 |\n| -------- | -------- |\n| hot      | new      |\n\n  排序方式\n\n| 最新回复 | 最新发布 |\n| -------- | -------- |\n|          | post     |","location":"category.ts"}' :test='undefined' />
 
 ::: tip
   更多标签可以在 [标签列表](https://instant.1point3acres.com/tags) 中找到。
@@ -601,52 +601,52 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
   分类
 
-  | 热门帖子 | 最新帖子 |
-  | -------- | -------- |
-  | hot      | new      |
+| 热门帖子 | 最新帖子 |
+| -------- | -------- |
+| hot      | new      |
 
   排序方式
 
-  | 最新回复 | 最新发布 |
-  | -------- | -------- |
-  |          | post     |
+| 最新回复 | 最新发布 |
+| -------- | -------- |
+|          | post     |
 
 ### 博客 <Site url="blog.1point3acres.com" size="sm" />
 
-<Route namespace="1point3acres" :data='{"path":"/blog/:category?","categories":["bbs"],"example":"/1point3acres/blog","parameters":{"category":"分类，见下表，可在对应分类页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.1point3acres.com/:category"]}],"name":"博客","maintainers":["nczitzk"],"description":"| 留学申请   | 找工求职 | 生活攻略  | 投资理财 | 签证移民 | 时政要闻 |\n  | ---------- | -------- | --------- | -------- | -------- | -------- |\n  | studyinusa | career   | lifestyle | invest   | visa     | news     |","location":"blog.ts"}' :test='undefined' />
+<Route namespace="1point3acres" :data='{"path":"/blog/:category?","categories":["bbs"],"example":"/1point3acres/blog","parameters":{"category":"分类，见下表，可在对应分类页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blog.1point3acres.com/:category"]}],"name":"博客","maintainers":["nczitzk"],"description":"| 留学申请   | 找工求职 | 生活攻略  | 投资理财 | 签证移民 | 时政要闻 |\n| ---------- | -------- | --------- | -------- | -------- | -------- |\n| studyinusa | career   | lifestyle | invest   | visa     | news     |","location":"blog.ts"}' :test='undefined' />
 
 | 留学申请   | 找工求职 | 生活攻略  | 投资理财 | 签证移民 | 时政要闻 |
-  | ---------- | -------- | --------- | -------- | -------- | -------- |
-  | studyinusa | career   | lifestyle | invest   | visa     | news     |
+| ---------- | -------- | --------- | -------- | -------- | -------- |
+| studyinusa | career   | lifestyle | invest   | visa     | news     |
 
 ### 分区 <Site url="blog.1point3acres.com" size="sm" />
 
-<Route namespace="1point3acres" :data='{"path":"/section/:id?/:type?/:order?","categories":["bbs"],"example":"/1point3acres/section/345","parameters":{"id":"分区 id，见下表，默认为全部","type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/section/:id","instant.1point3acres.com/"]}],"name":"分区","maintainers":["nczitzk"],"description":"分区\n\n  | 分区     | id  |\n  | -------- | --- |\n  | 留学申请 | 257 |\n  | 世界公民 | 379 |\n  | 投资理财 | 400 |\n  | 生活干货 | 31  |\n  | 职场达人 | 345 |\n  | 人际关系 | 391 |\n  | 海外求职 | 38  |\n  | 签证移民 | 265 |\n\n  分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"section.ts"}' :test='undefined' />
+<Route namespace="1point3acres" :data='{"path":"/section/:id?/:type?/:order?","categories":["bbs"],"example":"/1point3acres/section/345","parameters":{"id":"分区 id，见下表，默认为全部","type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/section/:id","instant.1point3acres.com/"]}],"name":"分区","maintainers":["nczitzk"],"description":"分区\n\n| 分区     | id  |\n| -------- | --- |\n| 留学申请 | 257 |\n| 世界公民 | 379 |\n| 投资理财 | 400 |\n| 生活干货 | 31  |\n| 职场达人 | 345 |\n| 人际关系 | 391 |\n| 海外求职 | 38  |\n| 签证移民 | 265 |\n\n  分类\n\n| 热门帖子 | 最新帖子 |\n| -------- | -------- |\n| hot      | new      |\n\n  排序方式\n\n| 最新回复 | 最新发布 |\n| -------- | -------- |\n|          | post     |","location":"section.ts"}' :test='undefined' />
 
 分区
 
-  | 分区     | id  |
-  | -------- | --- |
-  | 留学申请 | 257 |
-  | 世界公民 | 379 |
-  | 投资理财 | 400 |
-  | 生活干货 | 31  |
-  | 职场达人 | 345 |
-  | 人际关系 | 391 |
-  | 海外求职 | 38  |
-  | 签证移民 | 265 |
+| 分区     | id  |
+| -------- | --- |
+| 留学申请 | 257 |
+| 世界公民 | 379 |
+| 投资理财 | 400 |
+| 生活干货 | 31  |
+| 职场达人 | 345 |
+| 人际关系 | 391 |
+| 海外求职 | 38  |
+| 签证移民 | 265 |
 
   分类
 
-  | 热门帖子 | 最新帖子 |
-  | -------- | -------- |
-  | hot      | new      |
+| 热门帖子 | 最新帖子 |
+| -------- | -------- |
+| hot      | new      |
 
   排序方式
 
-  | 最新回复 | 最新发布 |
-  | -------- | -------- |
-  |          | post     |
+| 最新回复 | 最新发布 |
+| -------- | -------- |
+|          | post     |
 
 ### 录取结果 <Site url="offer.1point3acres.com/" size="sm" />
 
@@ -663,19 +663,19 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 ### 帖子 <Site url="instant.1point3acres.com/" size="sm" />
 
-<Route namespace="1point3acres" :data='{"path":"/thread/:type?/:order?","example":"/1point3acres/thread/hot","parameters":{"type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"name":"帖子","categories":["bbs"],"maintainers":["EthanWng97","DIYgod","nczitzk"],"url":"instant.1point3acres.com/","description":"分类\n\n  | 热门帖子 | 最新帖子 |\n  | -------- | -------- |\n  | hot      | new      |\n\n  排序方式\n\n  | 最新回复 | 最新发布 |\n  | -------- | -------- |\n  |          | post     |","location":"thread.ts"}' :test='undefined' />
+<Route namespace="1point3acres" :data='{"path":"/thread/:type?/:order?","example":"/1point3acres/thread/hot","parameters":{"type":"帖子分类, 见下表，默认为 hot，即热门帖子","order":"排序方式，见下表，默认为空，即最新回复"},"name":"帖子","categories":["bbs"],"maintainers":["EthanWng97","DIYgod","nczitzk"],"url":"instant.1point3acres.com/","description":"分类\n\n| 热门帖子 | 最新帖子 |\n| -------- | -------- |\n| hot      | new      |\n\n  排序方式\n\n| 最新回复 | 最新发布 |\n| -------- | -------- |\n|          | post     |","location":"thread.ts"}' :test='undefined' />
 
 分类
 
-  | 热门帖子 | 最新帖子 |
-  | -------- | -------- |
-  | hot      | new      |
+| 热门帖子 | 最新帖子 |
+| -------- | -------- |
+| hot      | new      |
 
   排序方式
 
-  | 最新回复 | 最新发布 |
-  | -------- | -------- |
-  |          | post     |
+| 最新回复 | 最新发布 |
+| -------- | -------- |
+|          | post     |
 
 ### 用户回帖 <Site url="blog.1point3acres.com" size="sm" />
 

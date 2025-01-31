@@ -4,29 +4,29 @@
 
 ### 分类 <Site url="0818tuan.com" size="sm" />
 
-<Route namespace="0818tuan" :data='{"path":"/:listId?","categories":["shopping"],"example":"/0818tuan","parameters":{"listId":"活动分类，见下表，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["TonyRL"],"description":"| 最新线报 | 实测活动 | 优惠券 |\n  | -------- | -------- | ------ |\n  | 1        | 2        | 3      |","location":"index.ts"}' :test='undefined' />
+<Route namespace="0818tuan" :data='{"path":"/:listId?","categories":["shopping"],"example":"/0818tuan","parameters":{"listId":"活动分类，见下表，默认为 `1`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["TonyRL"],"description":"| 最新线报 | 实测活动 | 优惠券 |\n| -------- | -------- | ------ |\n| 1        | 2        | 3      |","location":"index.ts"}' :test='undefined' />
 
 | 最新线报 | 实测活动 | 优惠券 |
-  | -------- | -------- | ------ |
-  | 1        | 2        | 3      |
+| -------- | -------- | ------ |
+| 1        | 2        | 3      |
 
 ## Arcteryx <Site url="arcteryx.com"/>
 
 ### New Arrivals <Site url="arcteryx.com" size="sm" />
 
-<Route namespace="arcteryx" :data='{"path":"/new-arrivals/:country/:gender","categories":["shopping"],"example":"/arcteryx/new-arrivals/us/mens","parameters":{"country":"country","gender":"gender"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["arcteryx.com/:country/en/c/:gender/new-arrivals"]}],"name":"New Arrivals","maintainers":["EthanWng97"],"description":"Country\n\n  | United States | Canada | United Kingdom |\n  | ------------- | ------ | -------------- |\n  | us            | ca     | gb             |\n\n  gender\n\n  | male | female |\n  | ---- | ------ |\n  | mens | womens |\n\n::: tip\n  Parameter `country` can be found within the url of `Arcteryx` website.\n:::","location":"new-arrivals.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 85)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="arcteryx" :data='{"path":"/new-arrivals/:country/:gender","categories":["shopping"],"example":"/arcteryx/new-arrivals/us/mens","parameters":{"country":"country","gender":"gender"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["arcteryx.com/:country/en/c/:gender/new-arrivals"]}],"name":"New Arrivals","maintainers":["EthanWng97"],"description":"Country\n\n| United States | Canada | United Kingdom |\n| ------------- | ------ | -------------- |\n| us            | ca     | gb             |\n\n  gender\n\n| male | female |\n| ---- | ------ |\n| mens | womens |\n\n::: tip\n  Parameter `country` can be found within the url of `Arcteryx` website.\n:::","location":"new-arrivals.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 85)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 Country
 
-  | United States | Canada | United Kingdom |
-  | ------------- | ------ | -------------- |
-  | us            | ca     | gb             |
+| United States | Canada | United Kingdom |
+| ------------- | ------ | -------------- |
+| us            | ca     | gb             |
 
   gender
 
-  | male | female |
-  | ---- | ------ |
-  | mens | womens |
+| male | female |
+| ---- | ------ |
+| mens | womens |
 
 ::: tip
   Parameter `country` can be found within the url of `Arcteryx` website.
@@ -34,19 +34,19 @@ Country
 
 ### Outlet <Site url="arcteryx.com" size="sm" />
 
-<Route namespace="arcteryx" :data='{"path":"/outlet/:country/:gender","categories":["shopping"],"example":"/arcteryx/outlet/us/mens","parameters":{"country":"country","gender":"gender"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["outlet.arcteryx.com/:country/en/c/:gender"]}],"name":"Outlet","maintainers":["EthanWng97"],"description":"Country\n\n  | United States | Canada | United Kingdom |\n  | ------------- | ------ | -------------- |\n  | us            | ca     | gb             |\n\n  gender\n\n  | male | female |\n  | ---- | ------ |\n  | mens | womens |\n\n::: tip\n  Parameter `country` can be found within the url of `Arcteryx` website.\n:::","location":"outlet.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 86)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="arcteryx" :data='{"path":"/outlet/:country/:gender","categories":["shopping"],"example":"/arcteryx/outlet/us/mens","parameters":{"country":"country","gender":"gender"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["outlet.arcteryx.com/:country/en/c/:gender"]}],"name":"Outlet","maintainers":["EthanWng97"],"description":"Country\n\n| United States | Canada | United Kingdom |\n| ------------- | ------ | -------------- |\n| us            | ca     | gb             |\n\n  gender\n\n| male | female |\n| ---- | ------ |\n| mens | womens |\n\n::: tip\n  Parameter `country` can be found within the url of `Arcteryx` website.\n:::","location":"outlet.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 86)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 Country
 
-  | United States | Canada | United Kingdom |
-  | ------------- | ------ | -------------- |
-  | us            | ca     | gb             |
+| United States | Canada | United Kingdom |
+| ------------- | ------ | -------------- |
+| us            | ca     | gb             |
 
   gender
 
-  | male | female |
-  | ---- | ------ |
-  | mens | womens |
+| male | female |
+| ---- | ------ |
+| mens | womens |
 
 ::: tip
   Parameter `country` can be found within the url of `Arcteryx` website.
@@ -132,40 +132,40 @@ Country
 
 ### Activity <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n  | Figures | Goods | Media |\n  | ------- | ----- | ----- |\n  | 0       | 1     | 2     |\n\n  Language\n\n  | Id | Language   |\n  | -- | ---------- |\n  |    | en         |\n  | de | Deutsch    |\n  | es | Español    |\n  | fi | Suomeksi   |\n  | fr | Français   |\n  | it | Italiano   |\n  | ja | 日本語     |\n  | nl | Nederlands |\n  | no | Norsk      |\n  | pl | Polski     |\n  | pt | Português  |\n  | ru | Русский    |\n  | sv | Svenska    |\n  | zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1244)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="myfigurecollection" :data='{"path":"/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?","categories":["shopping"],"example":"/myfigurecollection/activity","parameters":{"category":"Category, Figures by default","language":"Language, as above, `en` by default","latestAdditions":"Latest Additions, on as `1` by default, off as `0`","latestEdits":"Changes, on as `1` by default, off as `0`","latestAlerts":"Alerts, on as `1` by default, off as `0`","latestPictures":"Pictures, on as `1` by default, off as `0`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"],"target":"/:category?/:language?"}],"name":"Activity","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"Category\n\n| Figures | Goods | Media |\n| ------- | ----- | ----- |\n| 0       | 1     | 2     |\n\n  Language\n\n| Id | Language   |\n| -- | ---------- |\n|    | en         |\n| de | Deutsch    |\n| es | Español    |\n| fi | Suomeksi   |\n| fr | Français   |\n| it | Italiano   |\n| ja | 日本語     |\n| nl | Nederlands |\n| no | Norsk      |\n| pl | Polski     |\n| pt | Português  |\n| ru | Русский    |\n| sv | Svenska    |\n| zh | 中文       |","location":"activity.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1244)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 Category
 
-  | Figures | Goods | Media |
-  | ------- | ----- | ----- |
-  | 0       | 1     | 2     |
+| Figures | Goods | Media |
+| ------- | ----- | ----- |
+| 0       | 1     | 2     |
 
   Language
 
-  | Id | Language   |
-  | -- | ---------- |
-  |    | en         |
-  | de | Deutsch    |
-  | es | Español    |
-  | fi | Suomeksi   |
-  | fr | Français   |
-  | it | Italiano   |
-  | ja | 日本語     |
-  | nl | Nederlands |
-  | no | Norsk      |
-  | pl | Polski     |
-  | pt | Português  |
-  | ru | Русский    |
-  | sv | Svenska    |
-  | zh | 中文       |
+| Id | Language   |
+| -- | ---------- |
+|    | en         |
+| de | Deutsch    |
+| es | Español    |
+| fi | Suomeksi   |
+| fr | Français   |
+| it | Italiano   |
+| ja | 日本語     |
+| nl | Nederlands |
+| no | Norsk      |
+| pl | Polski     |
+| pt | Português  |
+| ru | Русский    |
+| sv | Svenska    |
+| zh | 中文       |
 
 ### 圖片 <Site url="zh.myfigurecollection.net/browse" size="sm" />
 
-<Route namespace="myfigurecollection" :data='{"path":"/:category?/:language?","categories":["shopping"],"example":"/myfigurecollection/potd","parameters":{"category":"分类，默认为每日圖片","language":"语言，见上表，默认为空，即 `en`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"]}],"name":"圖片","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"| 每日圖片 | 每週圖片 | 每月圖片 |\n  | -------- | -------- | -------- |\n  | potd     | potw     | potm     |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1245)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="myfigurecollection" :data='{"path":"/:category?/:language?","categories":["shopping"],"example":"/myfigurecollection/potd","parameters":{"category":"分类，默认为每日圖片","language":"语言，见上表，默认为空，即 `en`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zh.myfigurecollection.net/browse","zh.myfigurecollection.net/"]}],"name":"圖片","maintainers":["nczitzk"],"url":"zh.myfigurecollection.net/browse","description":"| 每日圖片 | 每週圖片 | 每月圖片 |\n| -------- | -------- | -------- |\n| potd     | potw     | potm     |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1245)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 每日圖片 | 每週圖片 | 每月圖片 |
-  | -------- | -------- | -------- |
-  | potd     | potw     | potm     |
+| -------- | -------- | -------- |
+| potd     | potw     | potm     |
 
 ## MyMusicSheet <Site url="mymusicsheet.com"/>
 
@@ -181,63 +181,63 @@ Category
 
 ### OpenRice 開飯熱店 - 年度餐廳投票 <Site url="www.openrice.com" size="sm" />
 
-<Route namespace="openrice" :data='{"path":"/:lang/hongkong/voting/top/:categoryKey","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/voting/top/chinese","parameters":{"lang":"语言，缺省为 zh","categoryKey":"类别，缺省为 chinese"},"name":"OpenRice 開飯熱店 - 年度餐廳投票","description":"\n  lang: 语言，见下方列表\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n\n  categoryKey: 部分类别，见下方列表 (更多的类别可以在页面的link中对照获取)\n  | 中菜館 | 上海菜 | 粵菜 | 川菜 | 港式 | 粥粉麵店 | 廚師發辦 | 韓國菜 | 泰國菜 | 越南菜 |\n  | -------- | -------- | -------- |  -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | chinese | shanghainese | guangdong | sichuan | hkstyle | congee_noodles | omakase | korean | thai | vietnamese |\n  ","location":"voting.ts"}' :test='{"code":0}' />
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/voting/top/:categoryKey","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/voting/top/chinese","parameters":{"lang":"语言，缺省为 zh","categoryKey":"类别，缺省为 chinese"},"name":"OpenRice 開飯熱店 - 年度餐廳投票","description":"\n  lang: 语言，见下方列表\n| 简体 | 繁體 | EN |\n| ----- | ------ | ----- |\n| zh-cn | zh | en |\n\n  categoryKey: 部分类别，见下方列表 (更多的类别可以在页面的link中对照获取)\n| 中菜館 | 上海菜 | 粵菜 | 川菜 | 港式 | 粥粉麵店 | 廚師發辦 | 韓國菜 | 泰國菜 | 越南菜 |\n| -------- | -------- | -------- |  -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| chinese | shanghainese | guangdong | sichuan | hkstyle | congee_noodles | omakase | korean | thai | vietnamese |\n  ","location":"voting.ts"}' :test='{"code":0}' />
 
 
   lang: 语言，见下方列表
-  | 简体 | 繁體 | EN |
-  | ----- | ------ | ----- |
-  | zh-cn | zh | en |
+| 简体 | 繁體 | EN |
+| ----- | ------ | ----- |
+| zh-cn | zh | en |
 
   categoryKey: 部分类别，见下方列表 (更多的类别可以在页面的link中对照获取)
-  | 中菜館 | 上海菜 | 粵菜 | 川菜 | 港式 | 粥粉麵店 | 廚師發辦 | 韓國菜 | 泰國菜 | 越南菜 |
-  | -------- | -------- | -------- |  -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-  | chinese | shanghainese | guangdong | sichuan | hkstyle | congee_noodles | omakase | korean | thai | vietnamese |
+| 中菜館 | 上海菜 | 粵菜 | 川菜 | 港式 | 粥粉麵店 | 廚師發辦 | 韓國菜 | 泰國菜 | 越南菜 |
+| -------- | -------- | -------- |  -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| chinese | shanghainese | guangdong | sichuan | hkstyle | congee_noodles | omakase | korean | thai | vietnamese |
   
 
 ### 香港餐廳排行榜 <Site url="www.openrice.com" size="sm" />
 
-<Route namespace="openrice" :data='{"path":"/:lang/hongkong/explore/chart/:category","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/explore/chart/most-bookmarked","parameters":{"lang":"语言，缺省为 zh","category":"类别，缺省为 most-bookmarked"},"name":"香港餐廳排行榜","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n\n  | 最多收藏 | 每周最高评分 | 最高浏览 | 最佳甜品餐厅 |\n  | ----- | ------ | ----- | ----- |\n  | most-bookmarked | best-rating | most-popular | best-dessert |\n  ","location":"chart.ts"}' :test='{"code":0}' />
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/explore/chart/:category","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/explore/chart/most-bookmarked","parameters":{"lang":"语言，缺省为 zh","category":"类别，缺省为 most-bookmarked"},"name":"香港餐廳排行榜","description":"\n| 简体 | 繁體 | EN |\n| ----- | ------ | ----- |\n| zh-cn | zh | en |\n\n| 最多收藏 | 每周最高评分 | 最高浏览 | 最佳甜品餐厅 |\n| ----- | ------ | ----- | ----- |\n| most-bookmarked | best-rating | most-popular | best-dessert |\n  ","location":"chart.ts"}' :test='{"code":0}' />
 
 
-  | 简体 | 繁體 | EN |
-  | ----- | ------ | ----- |
-  | zh-cn | zh | en |
+| 简体 | 繁體 | EN |
+| ----- | ------ | ----- |
+| zh-cn | zh | en |
 
-  | 最多收藏 | 每周最高评分 | 最高浏览 | 最佳甜品餐厅 |
-  | ----- | ------ | ----- | ----- |
-  | most-bookmarked | best-rating | most-popular | best-dessert |
+| 最多收藏 | 每周最高评分 | 最高浏览 | 最佳甜品餐厅 |
+| ----- | ------ | ----- | ----- |
+| most-bookmarked | best-rating | most-popular | best-dessert |
   
 
 ### 香港餐廳精選優惠券 <Site url="www.openrice.com" size="sm" />
 
-<Route namespace="openrice" :data='{"path":"/:lang/hongkong/offers","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/offers","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐廳精選優惠券","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ","location":"offers.ts"}' :test='{"code":0}' />
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/offers","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/offers","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐廳精選優惠券","description":"\n| 简体 | 繁體 | EN |\n| ----- | ------ | ----- |\n| zh-cn | zh | en |\n  ","location":"offers.ts"}' :test='{"code":0}' />
 
 
-  | 简体 | 繁體 | EN |
-  | ----- | ------ | ----- |
-  | zh-cn | zh | en |
+| 简体 | 繁體 | EN |
+| ----- | ------ | ----- |
+| zh-cn | zh | en |
   
 
 ### 香港餐厅滋讯 <Site url="www.openrice.com" size="sm" />
 
-<Route namespace="openrice" :data='{"path":"/:lang/hongkong/promos","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/promos","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐厅滋讯","description":"\n  | 简体 | 繁體 | EN |\n  | ----- | ------ | ----- |\n  | zh-cn | zh | en |\n  ","location":"promos.ts"}' :test='{"code":0}' />
+<Route namespace="openrice" :data='{"path":"/:lang/hongkong/promos","maintainers":["after9"],"categories":["shopping"],"example":"/openrice/zh/hongkong/promos","parameters":{"lang":"语言，缺省为 zh"},"name":"香港餐厅滋讯","description":"\n| 简体 | 繁體 | EN |\n| ----- | ------ | ----- |\n| zh-cn | zh | en |\n  ","location":"promos.ts"}' :test='{"code":0}' />
 
 
-  | 简体 | 繁體 | EN |
-  | ----- | ------ | ----- |
-  | zh-cn | zh | en |
+| 简体 | 繁體 | EN |
+| ----- | ------ | ----- |
+| zh-cn | zh | en |
   
 
 ## Patagonia <Site url="patagonia.com"/>
 
 ### New Arrivals <Site url="patagonia.com" size="sm" />
 
-<Route namespace="patagonia" :data='{"path":"/new-arrivals/:category","categories":["shopping"],"example":"/patagonia/new-arrivals/mens","parameters":{"category":"category, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"New Arrivals","maintainers":[],"description":"| Men&#39;s | Women&#39;s | Kids&#39; & Baby | Packs & Gear |\n  | ----- | ------- | ------------ | ------------ |\n  | mens  | womens  | kids         | luggage      |","location":"new-arrivals.ts"}' :test='{"code":0}' />
+<Route namespace="patagonia" :data='{"path":"/new-arrivals/:category","categories":["shopping"],"example":"/patagonia/new-arrivals/mens","parameters":{"category":"category, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"New Arrivals","maintainers":[],"description":"| Men&#39;s | Women&#39;s | Kids&#39; & Baby | Packs & Gear |\n| ----- | ------- | ------------ | ------------ |\n| mens  | womens  | kids         | luggage      |","location":"new-arrivals.ts"}' :test='{"code":0}' />
 
 | Men's | Women's | Kids' & Baby | Packs & Gear |
-  | ----- | ------- | ------------ | ------------ |
-  | mens  | womens  | kids         | luggage      |
+| ----- | ------- | ------------ | ------------ |
+| mens  | womens  | kids         | luggage      |
 
 ## ShopBack <Site url="shopback.com.tw"/>
 
@@ -323,37 +323,37 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 众筹 <Site url="modian.com" size="sm" />
 
-<Route namespace="modian" :data='{"path":"/zhongchou/:category?/:sort?/:status?","categories":["shopping"],"example":"/modian/zhongchou","parameters":{"category":"分类，见下表，默认为全部","sort":"排序，见下表，默认为最新上线","status":"状态，见下表，默认为全部"},"name":"众筹","maintainers":["nczitzk"],"description":"分类\n\n  | 全部 | 游戏  | 动漫   | 出版       | 桌游       |\n  | ---- | ----- | ------ | ---------- | ---------- |\n  | all  | games | comics | publishing | tablegames |\n\n  | 卡牌  | 潮玩模型 | 影视       | 音乐  | 活动       |\n  | ----- | -------- | ---------- | ----- | ---------- |\n  | cards | toys     | film-video | music | activities |\n\n  | 设计   | 科技       | 食品 | 爱心通道 | 动物救助 |\n  | ------ | ---------- | ---- | -------- | -------- |\n  | design | technology | food | charity  | animals  |\n\n  | 个人愿望 | 其他   |\n  | -------- | ------ |\n  | wishes   | others |\n\n  排序\n\n  | 最新上线  | 金额最高   | 评论最多     |\n  | --------- | ---------- | ------------ |\n  | top_time | top_money | top_comment |\n\n  状态\n\n  | 全部 | 创意 | 预热    | 众筹中 | 众筹成功 |\n  | ---- | ---- | ------- | ------ | -------- |\n  | all  | idea | preheat | going  | success  |","radar":[{"source":["zhongchou.modian.com/:category/:sort/:status"]}],"location":"zhongchou.ts"}' :test='{"code":1,"message":"AssertionError: expected -2113113572 to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1231)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="modian" :data='{"path":"/zhongchou/:category?/:sort?/:status?","categories":["shopping"],"example":"/modian/zhongchou","parameters":{"category":"分类，见下表，默认为全部","sort":"排序，见下表，默认为最新上线","status":"状态，见下表，默认为全部"},"name":"众筹","maintainers":["nczitzk"],"description":"分类\n\n| 全部 | 游戏  | 动漫   | 出版       | 桌游       |\n| ---- | ----- | ------ | ---------- | ---------- |\n| all  | games | comics | publishing | tablegames |\n\n| 卡牌  | 潮玩模型 | 影视       | 音乐  | 活动       |\n| ----- | -------- | ---------- | ----- | ---------- |\n| cards | toys     | film-video | music | activities |\n\n| 设计   | 科技       | 食品 | 爱心通道 | 动物救助 |\n| ------ | ---------- | ---- | -------- | -------- |\n| design | technology | food | charity  | animals  |\n\n| 个人愿望 | 其他   |\n| -------- | ------ |\n| wishes   | others |\n\n  排序\n\n| 最新上线  | 金额最高   | 评论最多     |\n| --------- | ---------- | ------------ |\n| top_time | top_money | top_comment |\n\n  状态\n\n| 全部 | 创意 | 预热    | 众筹中 | 众筹成功 |\n| ---- | ---- | ------- | ------ | -------- |\n| all  | idea | preheat | going  | success  |","radar":[{"source":["zhongchou.modian.com/:category/:sort/:status"]}],"location":"zhongchou.ts"}' :test='{"code":1,"message":"AssertionError: expected -2113113572 to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1231)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 分类
 
-  | 全部 | 游戏  | 动漫   | 出版       | 桌游       |
-  | ---- | ----- | ------ | ---------- | ---------- |
-  | all  | games | comics | publishing | tablegames |
+| 全部 | 游戏  | 动漫   | 出版       | 桌游       |
+| ---- | ----- | ------ | ---------- | ---------- |
+| all  | games | comics | publishing | tablegames |
 
-  | 卡牌  | 潮玩模型 | 影视       | 音乐  | 活动       |
-  | ----- | -------- | ---------- | ----- | ---------- |
-  | cards | toys     | film-video | music | activities |
+| 卡牌  | 潮玩模型 | 影视       | 音乐  | 活动       |
+| ----- | -------- | ---------- | ----- | ---------- |
+| cards | toys     | film-video | music | activities |
 
-  | 设计   | 科技       | 食品 | 爱心通道 | 动物救助 |
-  | ------ | ---------- | ---- | -------- | -------- |
-  | design | technology | food | charity  | animals  |
+| 设计   | 科技       | 食品 | 爱心通道 | 动物救助 |
+| ------ | ---------- | ---- | -------- | -------- |
+| design | technology | food | charity  | animals  |
 
-  | 个人愿望 | 其他   |
-  | -------- | ------ |
-  | wishes   | others |
+| 个人愿望 | 其他   |
+| -------- | ------ |
+| wishes   | others |
 
   排序
 
-  | 最新上线  | 金额最高   | 评论最多     |
-  | --------- | ---------- | ------------ |
-  | top_time | top_money | top_comment |
+| 最新上线  | 金额最高   | 评论最多     |
+| --------- | ---------- | ------------ |
+| top_time | top_money | top_comment |
 
   状态
 
-  | 全部 | 创意 | 预热    | 众筹中 | 众筹成功 |
-  | ---- | ---- | ------- | ------ | -------- |
-  | all  | idea | preheat | going  | success  |
+| 全部 | 创意 | 预热    | 众筹中 | 众筹成功 |
+| ---- | ---- | ------- | ------ | -------- |
+| all  | idea | preheat | going  | success  |
 
 ## 上海文化广场 <Site url="www.shcstheatre.com"/>
 
@@ -379,11 +379,11 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 好文分类 <Site url="post.smzdm.com" size="sm" />
 
-<Route namespace="smzdm" :data='{"path":"/haowen/fenlei/:name/:sort?","categories":["shopping"],"example":"/smzdm/haowen/fenlei/shenghuodianqi","parameters":{"name":"分类名，可在 URL 中查看","sort":"排序方式，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["post.smzdm.com/fenlei/:name"],"target":"/haowen/fenlei/:name"}],"name":"好文分类","maintainers":["LogicJake"],"description":"| 最新 | 周排行 | 月排行 |\n  | ---- | ------ | ------ |\n  | 0    | 7      | 30     |","location":"haowen-fenlei.ts"}' :test='{"code":0}' />
+<Route namespace="smzdm" :data='{"path":"/haowen/fenlei/:name/:sort?","categories":["shopping"],"example":"/smzdm/haowen/fenlei/shenghuodianqi","parameters":{"name":"分类名，可在 URL 中查看","sort":"排序方式，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["post.smzdm.com/fenlei/:name"],"target":"/haowen/fenlei/:name"}],"name":"好文分类","maintainers":["LogicJake"],"description":"| 最新 | 周排行 | 月排行 |\n| ---- | ------ | ------ |\n| 0    | 7      | 30     |","location":"haowen-fenlei.ts"}' :test='{"code":0}' />
 
 | 最新 | 周排行 | 月排行 |
-  | ---- | ------ | ------ |
-  | 0    | 7      | 30     |
+| ---- | ------ | ------ |
+| 0    | 7      | 30     |
 
 ### 好文 <Site url="post.smzdm.com" size="sm" />
 
@@ -409,11 +409,11 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 众筹项目 <Site url="izhongchou.taobao.com" size="sm" />
 
-<Route namespace="taobao" :data='{"path":"/zhongchou/:type?","categories":["shopping"],"example":"/taobao/zhongchou/all","parameters":{"type":"类型, 默认为 `all` 全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"众筹项目","maintainers":["xyqfer","Fatpandac"],"description":"| 全部 | 科技 | 食品        | 动漫 | 设计   | 公益 | 娱乐 | 影音  | 书籍 | 游戏 | 其他  |\n  | ---- | ---- | ----------- | ---- | ------ | ---- | ---- | ----- | ---- | ---- | ----- |\n  | all  | tech | agriculture | acg  | design | love | tele | music | book | game | other |","location":"zhongchou.ts"}' :test='{"code":0}' />
+<Route namespace="taobao" :data='{"path":"/zhongchou/:type?","categories":["shopping"],"example":"/taobao/zhongchou/all","parameters":{"type":"类型, 默认为 `all` 全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"众筹项目","maintainers":["xyqfer","Fatpandac"],"description":"| 全部 | 科技 | 食品        | 动漫 | 设计   | 公益 | 娱乐 | 影音  | 书籍 | 游戏 | 其他  |\n| ---- | ---- | ----------- | ---- | ------ | ---- | ---- | ----- | ---- | ---- | ----- |\n| all  | tech | agriculture | acg  | design | love | tele | music | book | game | other |","location":"zhongchou.ts"}' :test='{"code":0}' />
 
 | 全部 | 科技 | 食品        | 动漫 | 设计   | 公益 | 娱乐 | 影音  | 书籍 | 游戏 | 其他  |
-  | ---- | ---- | ----------- | ---- | ------ | ---- | ---- | ----- | ---- | ---- | ----- |
-  | all  | tech | agriculture | acg  | design | love | tele | music | book | game | other |
+| ---- | ---- | ----------- | ---- | ------ | ---- | ---- | ----- | ---- | ---- | ----- |
+| all  | tech | agriculture | acg  | design | love | tele | music | book | game | other |
 
 ## 特斯拉中国 <Site url="tesla.cn"/>
 
@@ -423,83 +423,83 @@ For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3
 
 ### 权益中心 <Site url="tesla.cn" size="sm" />
 
-<Route namespace="tesla" :data='{"path":"/cx/:category?/:city?","categories":["shopping"],"example":"/tesla/cx/生活方式/北京","parameters":{"category":"分类，见下表，默认为空，即全部","city":"城市，默认为空，即全国"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"权益中心","maintainers":["simonsmh","nczitzk"],"description":"| 充电免停 | 酒店 | 美食 | 生活方式 |\n  | -------- | ---- | ---- | -------- |\n\n::: tip\n  分类为 **充电免停** 时，城市参数不起作用\n:::\n\n<details>\n  <summary>可选城市</summary>\n\n  | 成都 | 深圳 | 洛阳 | 北京 | 南京 | 绍兴 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 西安 | 上海 | 阿坝藏族羌族自治州 | 重庆 | 郑州 | 天津 |\n  | ---- | ---- | ------------------ | ---- | ---- | ---- |\n\n  | 晋中 | 三亚 | 湖州 | 苏州 | 扬州 | 秦皇岛 |\n  | ---- | ---- | ---- | ---- | ---- | ------ |\n\n  | 长沙 | 武汉 | 安阳 | 温州 | 瑞安 | 石家庄 |\n  | ---- | ---- | ---- | ---- | ---- | ------ |\n\n  | 佛山 | 广州 | 杭州 | 烟台 | 沧州 | 张家港 |\n  | ---- | ---- | ---- | ---- | ---- | ------ |\n\n  | 金华 | 临沧 | 大理 | 南昌 | 贵阳 | 信阳 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 张家口 | 铜仁 | 沈阳 | 合肥 | 黔东 | 高邮 |\n  | ------ | ---- | ---- | ---- | ---- | ---- |\n\n  | 三河 | 安顺 | 莆田 | 阳江 | 南宁 | 台州 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 余姚 | 淄博 | 三明 | 中山 | 宁波 | 厦门 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 永康 | 慈溪 | 台山 | 福州 | 无锡 | 宜昌 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 泉州 | 肇庆 | 太仓 | 珠海 | 邢台 | 衡水 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 温岭 | 宜兴 | 东莞 | 威海 | 南通 | 舟山 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 都匀 | 长治 | 江阴 | 云浮 | 常州 | 唐山 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 平湖 | 商丘 | 保定 | 泰州 | 青岛 | 龙口 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 泰安 | 岳阳 | 惠州 | 徐州 | 哈尔滨 | 潍坊 |\n  | ---- | ---- | ---- | ---- | ------ | ---- |\n\n  | 大同 | 嘉兴 | 毕节 | 临汾 | 江门 | 诸暨 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 儋州 | 衢州 | 大连 | 昆山 | 靖江 | 常熟 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 罗定 | 丽江 | 晋江 | 乐清 | 茂名 | 福清 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 廊坊 | 兰溪 | 汕尾 | 滨州 | 昆明 | 玉环 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 绵阳 | 漳州 | 德州 | 聊城 | 龙岩 | 临沂 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |\n\n  | 新沂 | 桐乡 | 迪庆藏族自治州 | 汕头 | 潮州 | 驻马店 |\n  | ---- | ---- | -------------- | ---- | ---- | ------ |\n\n  | 曲阜 | 郴州 | 济源 | 兴义 |\n  | ---- | ---- | ---- | ---- |\n</details>","location":"cx.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1838)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="tesla" :data='{"path":"/cx/:category?/:city?","categories":["shopping"],"example":"/tesla/cx/生活方式/北京","parameters":{"category":"分类，见下表，默认为空，即全部","city":"城市，默认为空，即全国"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"权益中心","maintainers":["simonsmh","nczitzk"],"description":"| 充电免停 | 酒店 | 美食 | 生活方式 |\n| -------- | ---- | ---- | -------- |\n\n::: tip\n  分类为 **充电免停** 时，城市参数不起作用\n:::\n\n<details>\n<summary>可选城市</summary>\n\n| 成都 | 深圳 | 洛阳 | 北京 | 南京 | 绍兴 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 西安 | 上海 | 阿坝藏族羌族自治州 | 重庆 | 郑州 | 天津 |\n| ---- | ---- | ------------------ | ---- | ---- | ---- |\n\n| 晋中 | 三亚 | 湖州 | 苏州 | 扬州 | 秦皇岛 |\n| ---- | ---- | ---- | ---- | ---- | ------ |\n\n| 长沙 | 武汉 | 安阳 | 温州 | 瑞安 | 石家庄 |\n| ---- | ---- | ---- | ---- | ---- | ------ |\n\n| 佛山 | 广州 | 杭州 | 烟台 | 沧州 | 张家港 |\n| ---- | ---- | ---- | ---- | ---- | ------ |\n\n| 金华 | 临沧 | 大理 | 南昌 | 贵阳 | 信阳 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 张家口 | 铜仁 | 沈阳 | 合肥 | 黔东 | 高邮 |\n| ------ | ---- | ---- | ---- | ---- | ---- |\n\n| 三河 | 安顺 | 莆田 | 阳江 | 南宁 | 台州 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 余姚 | 淄博 | 三明 | 中山 | 宁波 | 厦门 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 永康 | 慈溪 | 台山 | 福州 | 无锡 | 宜昌 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 泉州 | 肇庆 | 太仓 | 珠海 | 邢台 | 衡水 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 温岭 | 宜兴 | 东莞 | 威海 | 南通 | 舟山 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 都匀 | 长治 | 江阴 | 云浮 | 常州 | 唐山 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 平湖 | 商丘 | 保定 | 泰州 | 青岛 | 龙口 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 泰安 | 岳阳 | 惠州 | 徐州 | 哈尔滨 | 潍坊 |\n| ---- | ---- | ---- | ---- | ------ | ---- |\n\n| 大同 | 嘉兴 | 毕节 | 临汾 | 江门 | 诸暨 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 儋州 | 衢州 | 大连 | 昆山 | 靖江 | 常熟 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 罗定 | 丽江 | 晋江 | 乐清 | 茂名 | 福清 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 廊坊 | 兰溪 | 汕尾 | 滨州 | 昆明 | 玉环 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 绵阳 | 漳州 | 德州 | 聊城 | 龙岩 | 临沂 |\n| ---- | ---- | ---- | ---- | ---- | ---- |\n\n| 新沂 | 桐乡 | 迪庆藏族自治州 | 汕头 | 潮州 | 驻马店 |\n| ---- | ---- | -------------- | ---- | ---- | ------ |\n\n| 曲阜 | 郴州 | 济源 | 兴义 |\n| ---- | ---- | ---- | ---- |\n</details>","location":"cx.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1838)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 充电免停 | 酒店 | 美食 | 生活方式 |
-  | -------- | ---- | ---- | -------- |
+| -------- | ---- | ---- | -------- |
 
 ::: tip
   分类为 **充电免停** 时，城市参数不起作用
 :::
 
 <details>
-  <summary>可选城市</summary>
+<summary>可选城市</summary>
 
-  | 成都 | 深圳 | 洛阳 | 北京 | 南京 | 绍兴 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 成都 | 深圳 | 洛阳 | 北京 | 南京 | 绍兴 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 西安 | 上海 | 阿坝藏族羌族自治州 | 重庆 | 郑州 | 天津 |
-  | ---- | ---- | ------------------ | ---- | ---- | ---- |
+| 西安 | 上海 | 阿坝藏族羌族自治州 | 重庆 | 郑州 | 天津 |
+| ---- | ---- | ------------------ | ---- | ---- | ---- |
 
-  | 晋中 | 三亚 | 湖州 | 苏州 | 扬州 | 秦皇岛 |
-  | ---- | ---- | ---- | ---- | ---- | ------ |
+| 晋中 | 三亚 | 湖州 | 苏州 | 扬州 | 秦皇岛 |
+| ---- | ---- | ---- | ---- | ---- | ------ |
 
-  | 长沙 | 武汉 | 安阳 | 温州 | 瑞安 | 石家庄 |
-  | ---- | ---- | ---- | ---- | ---- | ------ |
+| 长沙 | 武汉 | 安阳 | 温州 | 瑞安 | 石家庄 |
+| ---- | ---- | ---- | ---- | ---- | ------ |
 
-  | 佛山 | 广州 | 杭州 | 烟台 | 沧州 | 张家港 |
-  | ---- | ---- | ---- | ---- | ---- | ------ |
+| 佛山 | 广州 | 杭州 | 烟台 | 沧州 | 张家港 |
+| ---- | ---- | ---- | ---- | ---- | ------ |
 
-  | 金华 | 临沧 | 大理 | 南昌 | 贵阳 | 信阳 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 金华 | 临沧 | 大理 | 南昌 | 贵阳 | 信阳 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 张家口 | 铜仁 | 沈阳 | 合肥 | 黔东 | 高邮 |
-  | ------ | ---- | ---- | ---- | ---- | ---- |
+| 张家口 | 铜仁 | 沈阳 | 合肥 | 黔东 | 高邮 |
+| ------ | ---- | ---- | ---- | ---- | ---- |
 
-  | 三河 | 安顺 | 莆田 | 阳江 | 南宁 | 台州 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 三河 | 安顺 | 莆田 | 阳江 | 南宁 | 台州 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 余姚 | 淄博 | 三明 | 中山 | 宁波 | 厦门 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 余姚 | 淄博 | 三明 | 中山 | 宁波 | 厦门 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 永康 | 慈溪 | 台山 | 福州 | 无锡 | 宜昌 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 永康 | 慈溪 | 台山 | 福州 | 无锡 | 宜昌 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 泉州 | 肇庆 | 太仓 | 珠海 | 邢台 | 衡水 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 泉州 | 肇庆 | 太仓 | 珠海 | 邢台 | 衡水 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 温岭 | 宜兴 | 东莞 | 威海 | 南通 | 舟山 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 温岭 | 宜兴 | 东莞 | 威海 | 南通 | 舟山 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 都匀 | 长治 | 江阴 | 云浮 | 常州 | 唐山 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 都匀 | 长治 | 江阴 | 云浮 | 常州 | 唐山 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 平湖 | 商丘 | 保定 | 泰州 | 青岛 | 龙口 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 平湖 | 商丘 | 保定 | 泰州 | 青岛 | 龙口 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 泰安 | 岳阳 | 惠州 | 徐州 | 哈尔滨 | 潍坊 |
-  | ---- | ---- | ---- | ---- | ------ | ---- |
+| 泰安 | 岳阳 | 惠州 | 徐州 | 哈尔滨 | 潍坊 |
+| ---- | ---- | ---- | ---- | ------ | ---- |
 
-  | 大同 | 嘉兴 | 毕节 | 临汾 | 江门 | 诸暨 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 大同 | 嘉兴 | 毕节 | 临汾 | 江门 | 诸暨 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 儋州 | 衢州 | 大连 | 昆山 | 靖江 | 常熟 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 儋州 | 衢州 | 大连 | 昆山 | 靖江 | 常熟 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 罗定 | 丽江 | 晋江 | 乐清 | 茂名 | 福清 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 罗定 | 丽江 | 晋江 | 乐清 | 茂名 | 福清 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 廊坊 | 兰溪 | 汕尾 | 滨州 | 昆明 | 玉环 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 廊坊 | 兰溪 | 汕尾 | 滨州 | 昆明 | 玉环 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 绵阳 | 漳州 | 德州 | 聊城 | 龙岩 | 临沂 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 绵阳 | 漳州 | 德州 | 聊城 | 龙岩 | 临沂 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
-  | 新沂 | 桐乡 | 迪庆藏族自治州 | 汕头 | 潮州 | 驻马店 |
-  | ---- | ---- | -------------- | ---- | ---- | ------ |
+| 新沂 | 桐乡 | 迪庆藏族自治州 | 汕头 | 潮州 | 驻马店 |
+| ---- | ---- | -------------- | ---- | ---- | ------ |
 
-  | 曲阜 | 郴州 | 济源 | 兴义 |
-  | ---- | ---- | ---- | ---- |
+| 曲阜 | 郴州 | 济源 | 兴义 |
+| ---- | ---- | ---- | ---- |
 </details>
 
 ## 线报酷 <Site url="new.xianbao.fun"/>

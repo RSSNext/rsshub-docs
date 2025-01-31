@@ -147,13 +147,13 @@ RSS Feed Channels in other languages are also available, for example: `rss-chi-a
 
 ### Full Article RSS <Site url="ekantipur.com" size="sm" />
 
-<Route namespace="ekantipur" :data='{"path":"/:channel?","categories":["traditional-media"],"example":"/ekantipur/news","parameters":{"channel":"Find it in the ekantipur.com menu or pick from the list below:"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ekantipur.com/:channel"],"target":"/:channel"}],"name":"Full Article RSS","maintainers":["maniche04"],"description":"Channels:\n\n  | समाचार | अर्थ / वाणिज्य | विचार     | खेलकुद   | उपत्यका     | मनोरञ्जन         | फोटोफिचर          | फिचर     | विश्व    | ब्लग   |\n  | ---- | -------- | ------- | ------ | -------- | ------------- | -------------- | ------- | ----- | ---- |\n  | news | business | opinion | sports | national | entertainment | photo_feature | feature | world | blog |","location":"issue.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 563)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="ekantipur" :data='{"path":"/:channel?","categories":["traditional-media"],"example":"/ekantipur/news","parameters":{"channel":"Find it in the ekantipur.com menu or pick from the list below:"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ekantipur.com/:channel"],"target":"/:channel"}],"name":"Full Article RSS","maintainers":["maniche04"],"description":"Channels:\n\n| समाचार | अर्थ / वाणिज्य | विचार     | खेलकुद   | उपत्यका     | मनोरञ्जन         | फोटोफिचर          | फिचर     | विश्व    | ब्लग   |\n| ---- | -------- | ------- | ------ | -------- | ------------- | -------------- | ------- | ----- | ---- |\n| news | business | opinion | sports | national | entertainment | photo_feature | feature | world | blog |","location":"issue.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 563)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 Channels:
 
-  | समाचार | अर्थ / वाणिज्य | विचार     | खेलकुद   | उपत्यका     | मनोरञ्जन         | फोटोफिचर          | फिचर     | विश्व    | ब्लग   |
-  | ---- | -------- | ------- | ------ | -------- | ------------- | -------------- | ------- | ----- | ---- |
-  | news | business | opinion | sports | national | entertainment | photo_feature | feature | world | blog |
+| समाचार | अर्थ / वाणिज्य | विचार     | खेलकुद   | उपत्यका     | मनोरञ्जन         | फोटोफिचर          | फिचर     | विश्व    | ब्लग   |
+| ---- | -------- | ------- | ------ | -------- | ------------- | -------------- | ------- | ----- | ---- |
+| news | business | opinion | sports | national | entertainment | photo_feature | feature | world | blog |
 
 ## ESPN <Site url="espn.com"/>
 
@@ -211,45 +211,45 @@ Get the news feed of the sport you love on ESPN.
 
 ### News <Site url="www.kcna.kp" size="sm" />
 
-<Route namespace="kcna" :data='{"path":"/:lang/:category?","categories":["traditional-media"],"example":"/kcna/en","parameters":{"lang":"Language, refer to the table below","category":"Category, refer to the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.kcna.kp/:lang","www.kcna.kp/:lang/category/articles/q/1ee9bdb7186944f765208f34ecfb5407.kcmsf","www.kcna.kp/:lang/category/articles.kcmsf"],"target":"/:lang"}],"name":"News","maintainers":["Rongronggg9"],"description":"| Language | 조선어 | English | 中国语 | Русский | Español | 日本語 |\n  | -------- | ------ | ------- | ------ | ------- | ------- | ------ |\n  | `:lang`  | `kp`   | `en`    | `cn`   | `ru`    | `es`    | `jp`   |\n\n  | Category                                                         | `:category`                        |\n  | ---------------------------------------------------------------- | ---------------------------------- |\n  | WPK General Secretary **Kim Jong Un**&#39;s Revolutionary Activities | `54c0ca4ca013a92cc9cf95bd4004c61a` |\n  | Latest News (default)                                            | `1ee9bdb7186944f765208f34ecfb5407` |\n  | Top News                                                         | `5394b80bdae203fadef02522cfb578c0` |\n  | Home News                                                        | `b2b3bcc1b0a4406ab0c36e45d5db58db` |\n  | Documents                                                        | `a8754921399857ebdbb97a98a1e741f5` |\n  | World                                                            | `593143484cf15d48ce85c26139582395` |\n  | Society-Life                                                     | `93102e5a735d03979bc58a3a7aefb75a` |\n  | External                                                         | `0f98b4623a3ef82aeea78df45c423fd0` |\n  | News Commentary                                                  | `12c03a49f7dbe829bceea8ac77088c21` |","location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="kcna" :data='{"path":"/:lang/:category?","categories":["traditional-media"],"example":"/kcna/en","parameters":{"lang":"Language, refer to the table below","category":"Category, refer to the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.kcna.kp/:lang","www.kcna.kp/:lang/category/articles/q/1ee9bdb7186944f765208f34ecfb5407.kcmsf","www.kcna.kp/:lang/category/articles.kcmsf"],"target":"/:lang"}],"name":"News","maintainers":["Rongronggg9"],"description":"| Language | 조선어 | English | 中国语 | Русский | Español | 日本語 |\n| -------- | ------ | ------- | ------ | ------- | ------- | ------ |\n| `:lang`  | `kp`   | `en`    | `cn`   | `ru`    | `es`    | `jp`   |\n\n| Category                                                         | `:category`                        |\n| ---------------------------------------------------------------- | ---------------------------------- |\n| WPK General Secretary **Kim Jong Un**&#39;s Revolutionary Activities | `54c0ca4ca013a92cc9cf95bd4004c61a` |\n| Latest News (default)                                            | `1ee9bdb7186944f765208f34ecfb5407` |\n| Top News                                                         | `5394b80bdae203fadef02522cfb578c0` |\n| Home News                                                        | `b2b3bcc1b0a4406ab0c36e45d5db58db` |\n| Documents                                                        | `a8754921399857ebdbb97a98a1e741f5` |\n| World                                                            | `593143484cf15d48ce85c26139582395` |\n| Society-Life                                                     | `93102e5a735d03979bc58a3a7aefb75a` |\n| External                                                         | `0f98b4623a3ef82aeea78df45c423fd0` |\n| News Commentary                                                  | `12c03a49f7dbe829bceea8ac77088c21` |","location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | Language | 조선어 | English | 中国语 | Русский | Español | 日本語 |
-  | -------- | ------ | ------- | ------ | ------- | ------- | ------ |
-  | `:lang`  | `kp`   | `en`    | `cn`   | `ru`    | `es`    | `jp`   |
+| -------- | ------ | ------- | ------ | ------- | ------- | ------ |
+| `:lang`  | `kp`   | `en`    | `cn`   | `ru`    | `es`    | `jp`   |
 
-  | Category                                                         | `:category`                        |
-  | ---------------------------------------------------------------- | ---------------------------------- |
-  | WPK General Secretary **Kim Jong Un**'s Revolutionary Activities | `54c0ca4ca013a92cc9cf95bd4004c61a` |
-  | Latest News (default)                                            | `1ee9bdb7186944f765208f34ecfb5407` |
-  | Top News                                                         | `5394b80bdae203fadef02522cfb578c0` |
-  | Home News                                                        | `b2b3bcc1b0a4406ab0c36e45d5db58db` |
-  | Documents                                                        | `a8754921399857ebdbb97a98a1e741f5` |
-  | World                                                            | `593143484cf15d48ce85c26139582395` |
-  | Society-Life                                                     | `93102e5a735d03979bc58a3a7aefb75a` |
-  | External                                                         | `0f98b4623a3ef82aeea78df45c423fd0` |
-  | News Commentary                                                  | `12c03a49f7dbe829bceea8ac77088c21` |
+| Category                                                         | `:category`                        |
+| ---------------------------------------------------------------- | ---------------------------------- |
+| WPK General Secretary **Kim Jong Un**'s Revolutionary Activities | `54c0ca4ca013a92cc9cf95bd4004c61a` |
+| Latest News (default)                                            | `1ee9bdb7186944f765208f34ecfb5407` |
+| Top News                                                         | `5394b80bdae203fadef02522cfb578c0` |
+| Home News                                                        | `b2b3bcc1b0a4406ab0c36e45d5db58db` |
+| Documents                                                        | `a8754921399857ebdbb97a98a1e741f5` |
+| World                                                            | `593143484cf15d48ce85c26139582395` |
+| Society-Life                                                     | `93102e5a735d03979bc58a3a7aefb75a` |
+| External                                                         | `0f98b4623a3ef82aeea78df45c423fd0` |
+| News Commentary                                                  | `12c03a49f7dbe829bceea8ac77088c21` |
 
 ## La Jornada <Site url="jornada.com.mx"/>
 
 ### News <Site url="jornada.com.mx" size="sm" />
 
-<Route namespace="jornada" :data='{"path":"/:date?/:category?","categories":["traditional-media"],"example":"/jornada/2022-10-12/capital","parameters":{"date":"Date string, must be in format of `YYYY-MM-DD`. You can get today&#39;s news using `today`","category":"Category, refer to the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["Thealf154"],"description":"Provides a way to get an specific rss feed by date and category over the official one.\n\n  | Category             | `:category` |\n  | -------------------- | ----------- |\n  | Capital              | capital     |\n  | Cartones             | cartones    |\n  | Ciencia y Tecnología | ciencia     |\n  | Cultura              | cultura     |\n  | Deportes             | deportes    |\n  | Economía             | economia    |\n  | Estados              | estados     |\n  | Mundo                | mundo       |\n  | Opinión              | opinion     |\n  | Política             | politica    |\n  | Sociedad             | sociedad    |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="jornada" :data='{"path":"/:date?/:category?","categories":["traditional-media"],"example":"/jornada/2022-10-12/capital","parameters":{"date":"Date string, must be in format of `YYYY-MM-DD`. You can get today&#39;s news using `today`","category":"Category, refer to the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["Thealf154"],"description":"Provides a way to get an specific rss feed by date and category over the official one.\n\n| Category             | `:category` |\n| -------------------- | ----------- |\n| Capital              | capital     |\n| Cartones             | cartones    |\n| Ciencia y Tecnología | ciencia     |\n| Cultura              | cultura     |\n| Deportes             | deportes    |\n| Economía             | economia    |\n| Estados              | estados     |\n| Mundo                | mundo       |\n| Opinión              | opinion     |\n| Política             | politica    |\n| Sociedad             | sociedad    |","location":"index.ts"}' :test='{"code":0}' />
 
 Provides a way to get an specific rss feed by date and category over the official one.
 
-  | Category             | `:category` |
-  | -------------------- | ----------- |
-  | Capital              | capital     |
-  | Cartones             | cartones    |
-  | Ciencia y Tecnología | ciencia     |
-  | Cultura              | cultura     |
-  | Deportes             | deportes    |
-  | Economía             | economia    |
-  | Estados              | estados     |
-  | Mundo                | mundo       |
-  | Opinión              | opinion     |
-  | Política             | politica    |
-  | Sociedad             | sociedad    |
+| Category             | `:category` |
+| -------------------- | ----------- |
+| Capital              | capital     |
+| Cartones             | cartones    |
+| Ciencia y Tecnología | ciencia     |
+| Cultura              | cultura     |
+| Deportes             | deportes    |
+| Economía             | economia    |
+| Estados              | estados     |
+| Mundo                | mundo       |
+| Opinión              | opinion     |
+| Política             | politica    |
+| Sociedad             | sociedad    |
 
 ## L'Orient-Le Jour/L'Orient Today <Site url="lorientlejour.com"/>
 
@@ -292,7 +292,7 @@ MSN News
 
 ### 新聞 <Site url="news.now.com/" size="sm" />
 
-<Route namespace="now" :data='{"path":"/news/:category?/:id?","categories":["traditional-media"],"example":"/now/news","parameters":{"category":"分类，见下表，默认为首页","id":"编号，可在对应专题/节目页 URL 中找到 topicId"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.now.com/"]}],"name":"新聞","maintainers":["nczitzk"],"url":"news.now.com/","description":"::: tip\n  **编号** 仅对事件追蹤、評論節目、新聞專題三个分类起作用，例子如下：\n\n  对于 [事件追蹤](https://news.now.com/home/tracker) 中的 [塔利班奪權](https://news.now.com/home/tracker/detail?catCode=123&topicId=1056) 话题，其网址为 `https://news.now.com/home/tracker/detail?catCode=123&topicId=1056`，其中 `topicId` 为 1056，则对应路由为 [`/now/news/tracker/1056`](https://rsshub.app/now/news/tracker/1056)\n:::\n\n  | 首頁 | 港聞  | 兩岸國際      | 娛樂          |\n  | ---- | ----- | ------------- | ------------- |\n  |      | local | international | entertainment |\n\n  | 生活 | 科技       | 財經    | 體育   |\n  | ---- | ---------- | ------- | ------ |\n  | life | technology | finance | sports |\n\n  | 事件追蹤 | 評論節目 | 新聞專題 |\n  | -------- | -------- | -------- |\n  | tracker  | feature  | opinion  |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="now" :data='{"path":"/news/:category?/:id?","categories":["traditional-media"],"example":"/now/news","parameters":{"category":"分类，见下表，默认为首页","id":"编号，可在对应专题/节目页 URL 中找到 topicId"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.now.com/"]}],"name":"新聞","maintainers":["nczitzk"],"url":"news.now.com/","description":"::: tip\n  **编号** 仅对事件追蹤、評論節目、新聞專題三个分类起作用，例子如下：\n\n  对于 [事件追蹤](https://news.now.com/home/tracker) 中的 [塔利班奪權](https://news.now.com/home/tracker/detail?catCode=123&topicId=1056) 话题，其网址为 `https://news.now.com/home/tracker/detail?catCode=123&topicId=1056`，其中 `topicId` 为 1056，则对应路由为 [`/now/news/tracker/1056`](https://rsshub.app/now/news/tracker/1056)\n:::\n\n| 首頁 | 港聞  | 兩岸國際      | 娛樂          |\n| ---- | ----- | ------------- | ------------- |\n|      | local | international | entertainment |\n\n| 生活 | 科技       | 財經    | 體育   |\n| ---- | ---------- | ------- | ------ |\n| life | technology | finance | sports |\n\n| 事件追蹤 | 評論節目 | 新聞專題 |\n| -------- | -------- | -------- |\n| tracker  | feature  | opinion  |","location":"news.ts"}' :test='{"code":0}' />
 
 ::: tip
   **编号** 仅对事件追蹤、評論節目、新聞專題三个分类起作用，例子如下：
@@ -300,17 +300,17 @@ MSN News
   对于 [事件追蹤](https://news.now.com/home/tracker) 中的 [塔利班奪權](https://news.now.com/home/tracker/detail?catCode=123&topicId=1056) 话题，其网址为 `https://news.now.com/home/tracker/detail?catCode=123&topicId=1056`，其中 `topicId` 为 1056，则对应路由为 [`/now/news/tracker/1056`](https://rsshub.app/now/news/tracker/1056)
 :::
 
-  | 首頁 | 港聞  | 兩岸國際      | 娛樂          |
-  | ---- | ----- | ------------- | ------------- |
-  |      | local | international | entertainment |
+| 首頁 | 港聞  | 兩岸國際      | 娛樂          |
+| ---- | ----- | ------------- | ------------- |
+|      | local | international | entertainment |
 
-  | 生活 | 科技       | 財經    | 體育   |
-  | ---- | ---------- | ------- | ------ |
-  | life | technology | finance | sports |
+| 生活 | 科技       | 財經    | 體育   |
+| ---- | ---------- | ------- | ------ |
+| life | technology | finance | sports |
 
-  | 事件追蹤 | 評論節目 | 新聞專題 |
-  | -------- | -------- | -------- |
-  | tracker  | feature  | opinion  |
+| 事件追蹤 | 評論節目 | 新聞專題 |
+| -------- | -------- | -------- |
+| tracker  | feature  | opinion  |
 
 ## National Public Radio <Site url="npr.org"/>
 
@@ -384,21 +384,21 @@ Parameters can be obtained from the official website, for instance:
 
 ### News <Site url="rodong.rep.kp/cn/index.php" size="sm" />
 
-<Route namespace="rodong" :data='{"path":"/news/:language?","categories":["traditional-media"],"example":"/rodong/news","parameters":{"language":"Language, see below, `ko` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rodong.rep.kp/cn/index.php","rodong.rep.kp/en/index.php","rodong.rep.kp/ko/index.php","rodong.rep.kp/cn","rodong.rep.kp/en","rodong.rep.kp/ko"],"target":"/news"}],"name":"News","maintainers":["TonyRL"],"url":"rodong.rep.kp/cn/index.php","description":"| 조선어 | English | 中文 |\n  | ------ | ------- | ---- |\n  | ko     | en      | cn   |","location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="rodong" :data='{"path":"/news/:language?","categories":["traditional-media"],"example":"/rodong/news","parameters":{"language":"Language, see below, `ko` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rodong.rep.kp/cn/index.php","rodong.rep.kp/en/index.php","rodong.rep.kp/ko/index.php","rodong.rep.kp/cn","rodong.rep.kp/en","rodong.rep.kp/ko"],"target":"/news"}],"name":"News","maintainers":["TonyRL"],"url":"rodong.rep.kp/cn/index.php","description":"| 조선어 | English | 中文 |\n| ------ | ------- | ---- |\n| ko     | en      | cn   |","location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 조선어 | English | 中文 |
-  | ------ | ------- | ---- |
-  | ko     | en      | cn   |
+| ------ | ------- | ---- |
+| ko     | en      | cn   |
 
 ## Russian News Agency TASS <Site url="tass.com"/>
 
 ### News <Site url="tass.com" size="sm" />
 
-<Route namespace="tass" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/tass/politics","parameters":{"category":"Category, can be found in URL, `politics` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tass.com/:category"],"target":"/:category"}],"name":"News","maintainers":["TonyRL"],"description":"| Russian Politics & Diplomacy | World | Business & Economy | Military & Defense | Science & Space | Emergencies | Society & Culture | Press Review | Sports |\n  | ---------------------------- | ----- | ------------------ | ------------------ | --------------- | ----------- | ----------------- | ------------ | ------ |\n  | politics                     | world | economy            | defense            | science         | emergencies | society           | pressreview  | sports |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="tass" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/tass/politics","parameters":{"category":"Category, can be found in URL, `politics` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tass.com/:category"],"target":"/:category"}],"name":"News","maintainers":["TonyRL"],"description":"| Russian Politics & Diplomacy | World | Business & Economy | Military & Defense | Science & Space | Emergencies | Society & Culture | Press Review | Sports |\n| ---------------------------- | ----- | ------------------ | ------------------ | --------------- | ----------- | ----------------- | ------------ | ------ |\n| politics                     | world | economy            | defense            | science         | emergencies | society           | pressreview  | sports |","location":"news.ts"}' :test='{"code":0}' />
 
 | Russian Politics & Diplomacy | World | Business & Economy | Military & Defense | Science & Space | Emergencies | Society & Culture | Press Review | Sports |
-  | ---------------------------- | ----- | ------------------ | ------------------ | --------------- | ----------- | ----------------- | ------------ | ------ |
-  | politics                     | world | economy            | defense            | science         | emergencies | society           | pressreview  | sports |
+| ---------------------------- | ----- | ------------------ | ------------------ | --------------- | ----------- | ----------------- | ------------ | ------ |
+| politics                     | world | economy            | defense            | science         | emergencies | society           | pressreview  | sports |
 
 ## Solidot <Site url="www.solidot.org"/>
 
@@ -410,54 +410,54 @@ Parameters can be obtained from the official website, for instance:
 
 ### Category <Site url="sputniknews.cn" size="sm" />
 
-<Route namespace="sputniknews" :data='{"path":"/:category?/:language?","categories":["traditional-media"],"example":"/sputniknews","parameters":{"category":"Category, can be found in URL, `news` by default","language":"Language, see below, English by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["nczitzk"],"description":"Categories for International site:\n\n  | WORLD | COVID-19 | BUSINESS | SPORT | TECH | OPINION |\n  | ----- | -------- | -------- | ----- | ---- | ------- |\n  | world | covid-19 | business | sport | tech | opinion |\n\n  Categories for Chinese site:\n\n  | 新闻 | 中国  | 俄罗斯 | 国际            | 俄中关系                 | 评论    |\n  | ---- | ----- | ------ | --------------- | ------------------------ | ------- |\n  | news | china | russia | category_guoji | russia_china_relations | opinion |\n\n  Language\n\n  | Language    | Id          |\n  | ----------- | ----------- |\n  | English     | english     |\n  | Spanish     | spanish     |\n  | German      | german      |\n  | French      | french      |\n  | Greek       | greek       |\n  | Italian     | italian     |\n  | Czech       | czech       |\n  | Polish      | polish      |\n  | Serbian     | serbian     |\n  | Latvian     | latvian     |\n  | Lithuanian  | lithuanian  |\n  | Moldavian   | moldavian   |\n  | Belarusian  | belarusian  |\n  | Armenian    | armenian    |\n  | Abkhaz      | abkhaz      |\n  | Ssetian     | ssetian     |\n  | Georgian    | georgian    |\n  | Azerbaijani | azerbaijani |\n  | Arabic      | arabic      |\n  | Turkish     | turkish     |\n  | Persian     | persian     |\n  | Dari        | dari        |\n  | Kazakh      | kazakh      |\n  | Kyrgyz      | kyrgyz      |\n  | Uzbek       | uzbek       |\n  | Tajik       | tajik       |\n  | Vietnamese  | vietnamese  |\n  | Japanese    | japanese    |\n  | Chinese     | chinese     |\n  | Portuguese  | portuguese  |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="sputniknews" :data='{"path":"/:category?/:language?","categories":["traditional-media"],"example":"/sputniknews","parameters":{"category":"Category, can be found in URL, `news` by default","language":"Language, see below, English by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["nczitzk"],"description":"Categories for International site:\n\n| WORLD | COVID-19 | BUSINESS | SPORT | TECH | OPINION |\n| ----- | -------- | -------- | ----- | ---- | ------- |\n| world | covid-19 | business | sport | tech | opinion |\n\n  Categories for Chinese site:\n\n| 新闻 | 中国  | 俄罗斯 | 国际            | 俄中关系                 | 评论    |\n| ---- | ----- | ------ | --------------- | ------------------------ | ------- |\n| news | china | russia | category_guoji | russia_china_relations | opinion |\n\n  Language\n\n| Language    | Id          |\n| ----------- | ----------- |\n| English     | english     |\n| Spanish     | spanish     |\n| German      | german      |\n| French      | french      |\n| Greek       | greek       |\n| Italian     | italian     |\n| Czech       | czech       |\n| Polish      | polish      |\n| Serbian     | serbian     |\n| Latvian     | latvian     |\n| Lithuanian  | lithuanian  |\n| Moldavian   | moldavian   |\n| Belarusian  | belarusian  |\n| Armenian    | armenian    |\n| Abkhaz      | abkhaz      |\n| Ssetian     | ssetian     |\n| Georgian    | georgian    |\n| Azerbaijani | azerbaijani |\n| Arabic      | arabic      |\n| Turkish     | turkish     |\n| Persian     | persian     |\n| Dari        | dari        |\n| Kazakh      | kazakh      |\n| Kyrgyz      | kyrgyz      |\n| Uzbek       | uzbek       |\n| Tajik       | tajik       |\n| Vietnamese  | vietnamese  |\n| Japanese    | japanese    |\n| Chinese     | chinese     |\n| Portuguese  | portuguese  |","location":"index.ts"}' :test='{"code":0}' />
 
 Categories for International site:
 
-  | WORLD | COVID-19 | BUSINESS | SPORT | TECH | OPINION |
-  | ----- | -------- | -------- | ----- | ---- | ------- |
-  | world | covid-19 | business | sport | tech | opinion |
+| WORLD | COVID-19 | BUSINESS | SPORT | TECH | OPINION |
+| ----- | -------- | -------- | ----- | ---- | ------- |
+| world | covid-19 | business | sport | tech | opinion |
 
   Categories for Chinese site:
 
-  | 新闻 | 中国  | 俄罗斯 | 国际            | 俄中关系                 | 评论    |
-  | ---- | ----- | ------ | --------------- | ------------------------ | ------- |
-  | news | china | russia | category_guoji | russia_china_relations | opinion |
+| 新闻 | 中国  | 俄罗斯 | 国际            | 俄中关系                 | 评论    |
+| ---- | ----- | ------ | --------------- | ------------------------ | ------- |
+| news | china | russia | category_guoji | russia_china_relations | opinion |
 
   Language
 
-  | Language    | Id          |
-  | ----------- | ----------- |
-  | English     | english     |
-  | Spanish     | spanish     |
-  | German      | german      |
-  | French      | french      |
-  | Greek       | greek       |
-  | Italian     | italian     |
-  | Czech       | czech       |
-  | Polish      | polish      |
-  | Serbian     | serbian     |
-  | Latvian     | latvian     |
-  | Lithuanian  | lithuanian  |
-  | Moldavian   | moldavian   |
-  | Belarusian  | belarusian  |
-  | Armenian    | armenian    |
-  | Abkhaz      | abkhaz      |
-  | Ssetian     | ssetian     |
-  | Georgian    | georgian    |
-  | Azerbaijani | azerbaijani |
-  | Arabic      | arabic      |
-  | Turkish     | turkish     |
-  | Persian     | persian     |
-  | Dari        | dari        |
-  | Kazakh      | kazakh      |
-  | Kyrgyz      | kyrgyz      |
-  | Uzbek       | uzbek       |
-  | Tajik       | tajik       |
-  | Vietnamese  | vietnamese  |
-  | Japanese    | japanese    |
-  | Chinese     | chinese     |
-  | Portuguese  | portuguese  |
+| Language    | Id          |
+| ----------- | ----------- |
+| English     | english     |
+| Spanish     | spanish     |
+| German      | german      |
+| French      | french      |
+| Greek       | greek       |
+| Italian     | italian     |
+| Czech       | czech       |
+| Polish      | polish      |
+| Serbian     | serbian     |
+| Latvian     | latvian     |
+| Lithuanian  | lithuanian  |
+| Moldavian   | moldavian   |
+| Belarusian  | belarusian  |
+| Armenian    | armenian    |
+| Abkhaz      | abkhaz      |
+| Ssetian     | ssetian     |
+| Georgian    | georgian    |
+| Azerbaijani | azerbaijani |
+| Arabic      | arabic      |
+| Turkish     | turkish     |
+| Persian     | persian     |
+| Dari        | dari        |
+| Kazakh      | kazakh      |
+| Kyrgyz      | kyrgyz      |
+| Uzbek       | uzbek       |
+| Tajik       | tajik       |
+| Vietnamese  | vietnamese  |
+| Japanese    | japanese    |
+| Chinese     | chinese     |
+| Portuguese  | portuguese  |
 
 ## The Australian Financial Review <Site url="afr.com"/>
 
@@ -503,11 +503,11 @@ For example, the category for the page https://www.koreaherald.com/Business and 
 
 ### News <Site url="nikkei.com" size="sm" />
 
-<Route namespace="nikkei" :data='{"path":"/news/:category/:article_type?","categories":["traditional-media"],"example":"/nikkei/news/news","parameters":{"category":"Category, see table below","article_type":"Only includes free articles, set `free` to enable, disabled by default"},"radar":[{"source":["www.nikkei.com/:category/archive","www.nikkei.com/:category"],"target":"/:category"}],"name":"News","maintainers":["Arracc","ladeng07"],"description":"| 総合 | オピニオン | 経済    | 政治     | 金融      | マーケット | ビジネス | マネーのまなび | テック     | 国際          | スポーツ | 社会・調査 | 地域  | 文化    | ライフスタイル |\n  | ---- | ---------- | ------- | -------- | --------- | ---------- | -------- | -------------- | ---------- | ------------- | -------- | ---------- | ----- | ------- | -------------- |\n  | news | opinion    | economy | politics | financial | business   | 不支持   | 不支持         | technology | international | sports   | society    | local | culture | lifestyle      |","location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="nikkei" :data='{"path":"/news/:category/:article_type?","categories":["traditional-media"],"example":"/nikkei/news/news","parameters":{"category":"Category, see table below","article_type":"Only includes free articles, set `free` to enable, disabled by default"},"radar":[{"source":["www.nikkei.com/:category/archive","www.nikkei.com/:category"],"target":"/:category"}],"name":"News","maintainers":["Arracc","ladeng07"],"description":"| 総合 | オピニオン | 経済    | 政治     | 金融      | マーケット | ビジネス | マネーのまなび | テック     | 国際          | スポーツ | 社会・調査 | 地域  | 文化    | ライフスタイル |\n| ---- | ---------- | ------- | -------- | --------- | ---------- | -------- | -------------- | ---------- | ------------- | -------- | ---------- | ----- | ------- | -------------- |\n| news | opinion    | economy | politics | financial | business   | 不支持   | 不支持         | technology | international | sports   | society    | local | culture | lifestyle      |","location":"news.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 総合 | オピニオン | 経済    | 政治     | 金融      | マーケット | ビジネス | マネーのまなび | テック     | 国際          | スポーツ | 社会・調査 | 地域  | 文化    | ライフスタイル |
-  | ---- | ---------- | ------- | -------- | --------- | ---------- | -------- | -------------- | ---------- | ------------- | -------- | ---------- | ----- | ------- | -------------- |
-  | news | opinion    | economy | politics | financial | business   | 不支持   | 不支持         | technology | international | sports   | society    | local | culture | lifestyle      |
+| ---- | ---------- | ------- | -------- | --------- | ---------- | -------- | -------------- | ---------- | ------------- | -------- | ---------- | ----- | ------- | -------------- |
+| news | opinion    | economy | politics | financial | business   | 不支持   | 不支持         | technology | international | sports   | society    | local | culture | lifestyle      |
 
 ### Nikkei Asia Latest News <Site url="asia.nikkei.com" size="sm" />
 
@@ -586,11 +586,11 @@ Enhance the official EN RSS feed
 
 ### News <Site url="www.theatlantic.com" size="sm" />
 
-<Route namespace="theatlantic" :data='{"path":"/:category","categories":["traditional-media"],"example":"/theatlantic/latest","parameters":{"category":"category, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.theatlantic.com/:category"]}],"name":"News","maintainers":["EthanWng97","pseudoyu"],"description":"| Popular      | Latest | Politics | Technology | Business |\n  | ------------ | ------ | -------- | ---------- | -------- |\n  | most-popular | latest | politics | technology | business |\n\n  More categories (except photo) can be found within the navigation bar at [https://www.theatlantic.com](https://www.theatlantic.com)","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="theatlantic" :data='{"path":"/:category","categories":["traditional-media"],"example":"/theatlantic/latest","parameters":{"category":"category, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.theatlantic.com/:category"]}],"name":"News","maintainers":["EthanWng97","pseudoyu"],"description":"| Popular      | Latest | Politics | Technology | Business |\n| ------------ | ------ | -------- | ---------- | -------- |\n| most-popular | latest | politics | technology | business |\n\n  More categories (except photo) can be found within the navigation bar at [https://www.theatlantic.com](https://www.theatlantic.com)","location":"news.ts"}' :test='{"code":0}' />
 
 | Popular      | Latest | Politics | Technology | Business |
-  | ------------ | ------ | -------- | ---------- | -------- |
-  | most-popular | latest | politics | technology | business |
+| ------------ | ------ | -------- | ---------- | -------- |
+| most-popular | latest | politics | technology | business |
 
   More categories (except photo) can be found within the navigation bar at [https://www.theatlantic.com](https://www.theatlantic.com)
 
@@ -614,19 +614,19 @@ For example, the category for https://www.washingtonpost.com/national/investigat
 
 ### News <Site url="cn.wsj.com" size="sm" />
 
-<Route namespace="wsj" :data='{"path":"/:lang/:category?","categories":["traditional-media"],"example":"/wsj/en-us/opinion","parameters":{"lang":"Language, `en-us`, `zh-cn`, `zh-tw`","category":"Category. See below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["oppilate"],"description":"en_us\n\n  | World | U.S. | Politics | Economy | Business | Tech       | Markets | Opinion | Books & Arts | Real Estate | Life & Work | Sytle               | Sports |\n  | ----- | ---- | -------- | ------- | -------- | ---------- | ------- | ------- | ------------ | ----------- | ----------- | ------------------- | ------ |\n  | world | us   | politics | economy | business | technology | markets | opinion | books-arts   | realestate  | life-work   | style-entertainment | sports |\n\n  zh-cn / zh-tw\n\n  | 国际  | 中国  | 金融市场 | 经济    | 商业     | 科技       | 派        | 专栏与观点 |\n  | ----- | ----- | -------- | ------- | -------- | ---------- | --------- | ---------- |\n  | world | china | markets  | economy | business | technology | life-arts | opinion    |\n\n  Provide full article RSS for WSJ topics.","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2062)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="wsj" :data='{"path":"/:lang/:category?","categories":["traditional-media"],"example":"/wsj/en-us/opinion","parameters":{"lang":"Language, `en-us`, `zh-cn`, `zh-tw`","category":"Category. See below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["oppilate"],"description":"en_us\n\n| World | U.S. | Politics | Economy | Business | Tech       | Markets | Opinion | Books & Arts | Real Estate | Life & Work | Sytle               | Sports |\n| ----- | ---- | -------- | ------- | -------- | ---------- | ------- | ------- | ------------ | ----------- | ----------- | ------------------- | ------ |\n| world | us   | politics | economy | business | technology | markets | opinion | books-arts   | realestate  | life-work   | style-entertainment | sports |\n\n  zh-cn / zh-tw\n\n| 国际  | 中国  | 金融市场 | 经济    | 商业     | 科技       | 派        | 专栏与观点 |\n| ----- | ----- | -------- | ------- | -------- | ---------- | --------- | ---------- |\n| world | china | markets  | economy | business | technology | life-arts | opinion    |\n\n  Provide full article RSS for WSJ topics.","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2062)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 en_us
 
-  | World | U.S. | Politics | Economy | Business | Tech       | Markets | Opinion | Books & Arts | Real Estate | Life & Work | Sytle               | Sports |
-  | ----- | ---- | -------- | ------- | -------- | ---------- | ------- | ------- | ------------ | ----------- | ----------- | ------------------- | ------ |
-  | world | us   | politics | economy | business | technology | markets | opinion | books-arts   | realestate  | life-work   | style-entertainment | sports |
+| World | U.S. | Politics | Economy | Business | Tech       | Markets | Opinion | Books & Arts | Real Estate | Life & Work | Sytle               | Sports |
+| ----- | ---- | -------- | ------- | -------- | ---------- | ------- | ------- | ------------ | ----------- | ----------- | ------------------- | ------ |
+| world | us   | politics | economy | business | technology | markets | opinion | books-arts   | realestate  | life-work   | style-entertainment | sports |
 
   zh-cn / zh-tw
 
-  | 国际  | 中国  | 金融市场 | 经济    | 商业     | 科技       | 派        | 专栏与观点 |
-  | ----- | ----- | -------- | ------- | -------- | ---------- | --------- | ---------- |
-  | world | china | markets  | economy | business | technology | life-arts | opinion    |
+| 国际  | 中国  | 金融市场 | 经济    | 商业     | 科技       | 派        | 专栏与观点 |
+| ----- | ----- | -------- | ------- | -------- | ---------- | --------- | ---------- |
+| world | china | markets  | economy | business | technology | life-arts | opinion    |
 
   Provide full article RSS for WSJ topics.
 
@@ -640,11 +640,11 @@ en_us
 
 ### News <Site url="vom.mn" size="sm" />
 
-<Route namespace="vom" :data='{"path":"/featured/:lang?","categories":["traditional-media"],"example":"/vom/featured","parameters":{"lang":"Language, see the table below, `mn` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vom.mn/:lang","vom.mn/"],"target":"/featured/:lang"}],"name":"News","maintainers":["TonyRL"],"description":"| English | 日本語 | Монгол | Русский | 简体中文 |\n  | ------- | ------ | ------ | ------- | -------- |\n  | en      | ja     | mn     | ru      | zh       |","location":"featured.ts"}' :test='{"code":1,"message":"AssertionError: expected [ &#39;http://www.vom.mn/mn/p/53267&#39; ] to not include &#39;http://www.vom.mn/mn/p/53267&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1990)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="vom" :data='{"path":"/featured/:lang?","categories":["traditional-media"],"example":"/vom/featured","parameters":{"lang":"Language, see the table below, `mn` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vom.mn/:lang","vom.mn/"],"target":"/featured/:lang"}],"name":"News","maintainers":["TonyRL"],"description":"| English | 日本語 | Монгол | Русский | 简体中文 |\n| ------- | ------ | ------ | ------- | -------- |\n| en      | ja     | mn     | ru      | zh       |","location":"featured.ts"}' :test='{"code":1,"message":"AssertionError: expected [ &#39;http://www.vom.mn/mn/p/53267&#39; ] to not include &#39;http://www.vom.mn/mn/p/53267&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1990)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | English | 日本語 | Монгол | Русский | 简体中文 |
-  | ------- | ------ | ------ | ------- | -------- |
-  | en      | ja     | mn     | ru      | zh       |
+| ------- | ------ | ------ | ------- | -------- |
+| en      | ja     | mn     | ru      | zh       |
 
 ## WIRED <Site url="www.wired.com"/>
 
@@ -683,50 +683,50 @@ For example, the path for the RSS feed url https://www.yna.co.kr/rss/economy.xml
 
 ### News <Site url="www.yomiuri.co.jp" size="sm" />
 
-<Route namespace="yomiuri" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/yomiuri/news","parameters":{"category":"Category, `news` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.yomiuri.co.jp/:category?"]}],"name":"News","maintainers":["Arracc"],"description":"Free articles only.\n\n  | Category       | Parameter |\n  | -------------- | --------- |\n  | 新着・速報     | news      |\n  | 社会           | national  |\n  | 政治           | politics  |\n  | 経済           | economy   |\n  | スポーツ       | sports    |\n  | 国際           | world     |\n  | 地域           | local     |\n  | 科学・ＩＴ     | science   |\n  | エンタメ・文化 | culture   |\n  | ライフ         | life      |\n  | 医療・健康     | medical   |\n  | 教育・就活     | kyoiku    |\n  | 選挙・世論調査 | election  |\n  | 囲碁・将棋     | igoshougi |\n  | 社説           | editorial |\n  | 皇室           | koushitsu |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at listOnTimeout (node:internal/timers:555:9)\n    at processTimers (node:internal/timers:529:7)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2143)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="yomiuri" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/yomiuri/news","parameters":{"category":"Category, `news` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.yomiuri.co.jp/:category?"]}],"name":"News","maintainers":["Arracc"],"description":"Free articles only.\n\n| Category       | Parameter |\n| -------------- | --------- |\n| 新着・速報     | news      |\n| 社会           | national  |\n| 政治           | politics  |\n| 経済           | economy   |\n| スポーツ       | sports    |\n| 国際           | world     |\n| 地域           | local     |\n| 科学・ＩＴ     | science   |\n| エンタメ・文化 | culture   |\n| ライフ         | life      |\n| 医療・健康     | medical   |\n| 教育・就活     | kyoiku    |\n| 選挙・世論調査 | election  |\n| 囲碁・将棋     | igoshougi |\n| 社説           | editorial |\n| 皇室           | koushitsu |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at listOnTimeout (node:internal/timers:555:9)\n    at processTimers (node:internal/timers:529:7)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2143)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 Free articles only.
 
-  | Category       | Parameter |
-  | -------------- | --------- |
-  | 新着・速報     | news      |
-  | 社会           | national  |
-  | 政治           | politics  |
-  | 経済           | economy   |
-  | スポーツ       | sports    |
-  | 国際           | world     |
-  | 地域           | local     |
-  | 科学・ＩＴ     | science   |
-  | エンタメ・文化 | culture   |
-  | ライフ         | life      |
-  | 医療・健康     | medical   |
-  | 教育・就活     | kyoiku    |
-  | 選挙・世論調査 | election  |
-  | 囲碁・将棋     | igoshougi |
-  | 社説           | editorial |
-  | 皇室           | koushitsu |
+| Category       | Parameter |
+| -------------- | --------- |
+| 新着・速報     | news      |
+| 社会           | national  |
+| 政治           | politics  |
+| 経済           | economy   |
+| スポーツ       | sports    |
+| 国際           | world     |
+| 地域           | local     |
+| 科学・ＩＴ     | science   |
+| エンタメ・文化 | culture   |
+| ライフ         | life      |
+| 医療・健康     | medical   |
+| 教育・就活     | kyoiku    |
+| 選挙・世論調査 | election  |
+| 囲碁・将棋     | igoshougi |
+| 社説           | editorial |
+| 皇室           | koushitsu |
 
 ## 北极星电力网 <Site url="www.bjx.com.cn"/>
 
 ### 风电 <Site url="www.bjx.com.cn" size="sm" />
 
-<Route namespace="bjx" :data='{"path":"/fd/:type","categories":["traditional-media"],"example":"/bjx/fd/yw","parameters":{"type":"文章分类，详见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"风电","maintainers":["hualiong"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |","location":"fd.ts"}' :test='{"code":0}' />
+<Route namespace="bjx" :data='{"path":"/fd/:type","categories":["traditional-media"],"example":"/bjx/fd/yw","parameters":{"type":"文章分类，详见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"风电","maintainers":["hualiong"],"description":"`:type` 类型可选如下\n\n| 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |","location":"fd.ts"}' :test='{"code":0}' />
 
 `:type` 类型可选如下
 
-  | 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |
+| 要闻 | 政策 | 数据 | 市场 | 企业 | 招标 | 技术 | 报道 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | yw   | zc   | sj   | sc   | mq   | zb   | js   | bd   |
 
 ### 光伏 <Site url="www.bjx.com.cn" size="sm" />
 
-<Route namespace="bjx" :data='{"path":"/gf/:type","categories":["traditional-media"],"example":"/bjx/gf/sc","parameters":{"type":"分类，北极星光伏最后的`type`字段"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"光伏","maintainers":["Sxuet"],"description":"`:type` 类型可选如下\n\n  | 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |\n  | ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |\n  | yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |","location":"types.ts"}' :test='{"code":0}' />
+<Route namespace="bjx" :data='{"path":"/gf/:type","categories":["traditional-media"],"example":"/bjx/gf/sc","parameters":{"type":"分类，北极星光伏最后的`type`字段"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"光伏","maintainers":["Sxuet"],"description":"`:type` 类型可选如下\n\n| 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |\n| ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |\n| yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |","location":"types.ts"}' :test='{"code":0}' />
 
 `:type` 类型可选如下
 
-  | 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |
-  | ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |
-  | yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |
+| 要闻 | 政策 | 市场行情 | 企业动态 | 独家观点 | 项目工程 | 招标采购 | 财经 | 国际行情 | 价格趋势 | 技术跟踪 |
+| ---- | ---- | -------- | -------- | -------- | -------- | -------- | ---- | -------- | -------- | -------- |
+| yw   | zc   | sc       | mq       | dj       | xm       | zb       | cj   | gj       | sj       | js       |
 
 ### 环保要闻 <Site url="huanbao.bjx.com.cn/yw" size="sm" />
 
@@ -754,25 +754,25 @@ Free articles only.
 
 ### 新闻分类 <Site url="caixin.com" size="sm" />
 
-<Route namespace="caixin" :data='{"path":"/:column/:category","categories":["traditional-media"],"example":"/caixin/finance/regulation","parameters":{"column":"栏目名","category":"栏目下的子分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"新闻分类","maintainers":["idealclover"],"description":"Column 列表：\n\n  | 经济    | 金融    | 政经  | 环科    | 世界          | 观点网  | 文化    | 周刊   |\n  | ------- | ------- | ----- | ------- | ------------- | ------- | ------- | ------ |\n  | economy | finance | china | science | international | opinion | culture | weekly |\n\n  以金融板块为例的 category 列表：（其余 column 以类似方式寻找）\n\n  | 监管       | 银行 | 证券基金 | 信托保险         | 投资       | 创新       | 市场   |\n  | ---------- | ---- | -------- | ---------------- | ---------- | ---------- | ------ |\n  | regulation | bank | stock    | insurance_trust | investment | innovation | market |\n\n  Category 列表：\n\n  | 封面报道   | 开卷  | 社论      | 时事             | 编辑寄语     | 经济    | 金融    | 商业     | 环境与科技              | 民生    | 副刊   |\n  | ---------- | ----- | --------- | ---------------- | ------------ | ------- | ------- | -------- | ----------------------- | ------- | ------ |\n  | coverstory | first | editorial | current_affairs | editor_desk | economy | finance | business | environment_technology | cwcivil | column |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="caixin" :data='{"path":"/:column/:category","categories":["traditional-media"],"example":"/caixin/finance/regulation","parameters":{"column":"栏目名","category":"栏目下的子分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"新闻分类","maintainers":["idealclover"],"description":"Column 列表：\n\n| 经济    | 金融    | 政经  | 环科    | 世界          | 观点网  | 文化    | 周刊   |\n| ------- | ------- | ----- | ------- | ------------- | ------- | ------- | ------ |\n| economy | finance | china | science | international | opinion | culture | weekly |\n\n  以金融板块为例的 category 列表：（其余 column 以类似方式寻找）\n\n| 监管       | 银行 | 证券基金 | 信托保险         | 投资       | 创新       | 市场   |\n| ---------- | ---- | -------- | ---------------- | ---------- | ---------- | ------ |\n| regulation | bank | stock    | insurance_trust | investment | innovation | market |\n\n  Category 列表：\n\n| 封面报道   | 开卷  | 社论      | 时事             | 编辑寄语     | 经济    | 金融    | 商业     | 环境与科技              | 民生    | 副刊   |\n| ---------- | ----- | --------- | ---------------- | ------------ | ------- | ------- | -------- | ----------------------- | ------- | ------ |\n| coverstory | first | editorial | current_affairs | editor_desk | economy | finance | business | environment_technology | cwcivil | column |","location":"category.ts"}' :test='{"code":0}' />
 
 Column 列表：
 
-  | 经济    | 金融    | 政经  | 环科    | 世界          | 观点网  | 文化    | 周刊   |
-  | ------- | ------- | ----- | ------- | ------------- | ------- | ------- | ------ |
-  | economy | finance | china | science | international | opinion | culture | weekly |
+| 经济    | 金融    | 政经  | 环科    | 世界          | 观点网  | 文化    | 周刊   |
+| ------- | ------- | ----- | ------- | ------------- | ------- | ------- | ------ |
+| economy | finance | china | science | international | opinion | culture | weekly |
 
   以金融板块为例的 category 列表：（其余 column 以类似方式寻找）
 
-  | 监管       | 银行 | 证券基金 | 信托保险         | 投资       | 创新       | 市场   |
-  | ---------- | ---- | -------- | ---------------- | ---------- | ---------- | ------ |
-  | regulation | bank | stock    | insurance_trust | investment | innovation | market |
+| 监管       | 银行 | 证券基金 | 信托保险         | 投资       | 创新       | 市场   |
+| ---------- | ---- | -------- | ---------------- | ---------- | ---------- | ------ |
+| regulation | bank | stock    | insurance_trust | investment | innovation | market |
 
   Category 列表：
 
-  | 封面报道   | 开卷  | 社论      | 时事             | 编辑寄语     | 经济    | 金融    | 商业     | 环境与科技              | 民生    | 副刊   |
-  | ---------- | ----- | --------- | ---------------- | ------------ | ------- | ------- | -------- | ----------------------- | ------- | ------ |
-  | coverstory | first | editorial | current_affairs | editor_desk | economy | finance | business | environment_technology | cwcivil | column |
+| 封面报道   | 开卷  | 社论      | 时事             | 编辑寄语     | 经济    | 金融    | 商业     | 环境与科技              | 民生    | 副刊   |
+| ---------- | ----- | --------- | ---------------- | ------------ | ------- | ------- | -------- | ----------------------- | ------- | ------ |
+| coverstory | first | editorial | current_affairs | editor_desk | economy | finance | business | environment_technology | cwcivil | column |
 
 ### 最新文章 <Site url="caixin.com/" size="sm" />
 
@@ -784,29 +784,29 @@ Column 列表：
 
 ### 栏目 <Site url="cankaoxiaoxi.com" size="sm" />
 
-<Route namespace="cankaoxiaoxi" :data='{"path":["/column/:id?","/:id?"],"categories":["traditional-media"],"example":"/cankaoxiaoxi/column/diyi","parameters":{"id":"栏目 id，默认为 `diyi`，即第一关注"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["yuxinliu-alex","nczitzk"],"description":"| 栏目           | id       |\n  | -------------- | -------- |\n  | 第一关注       | diyi     |\n  | 中国           | zhongguo |\n  | 国际           | gj       |\n  | 观点           | guandian |\n  | 锐参考         | ruick    |\n  | 体育健康       | tiyujk   |\n  | 科技应用       | kejiyy   |\n  | 文化旅游       | wenhualy |\n  | 参考漫谈       | cankaomt |\n  | 研究动态       | yjdt     |\n  | 海外智库       | hwzk     |\n  | 业界信息・观点 | yjxx     |\n  | 海外看中国城市 | hwkzgcs  |\n  | 译名趣谈       | ymymqt   |\n  | 译名发布       | ymymfb   |\n  | 双语汇         | ymsyh    |\n  | 参考视频       | video    |\n  | 军事           | junshi   |\n  | 参考人物       | cankaorw |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="cankaoxiaoxi" :data='{"path":["/column/:id?","/:id?"],"categories":["traditional-media"],"example":"/cankaoxiaoxi/column/diyi","parameters":{"id":"栏目 id，默认为 `diyi`，即第一关注"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["yuxinliu-alex","nczitzk"],"description":"| 栏目           | id       |\n| -------------- | -------- |\n| 第一关注       | diyi     |\n| 中国           | zhongguo |\n| 国际           | gj       |\n| 观点           | guandian |\n| 锐参考         | ruick    |\n| 体育健康       | tiyujk   |\n| 科技应用       | kejiyy   |\n| 文化旅游       | wenhualy |\n| 参考漫谈       | cankaomt |\n| 研究动态       | yjdt     |\n| 海外智库       | hwzk     |\n| 业界信息・观点 | yjxx     |\n| 海外看中国城市 | hwkzgcs  |\n| 译名趣谈       | ymymqt   |\n| 译名发布       | ymymfb   |\n| 双语汇         | ymsyh    |\n| 参考视频       | video    |\n| 军事           | junshi   |\n| 参考人物       | cankaorw |","location":"index.ts"}' :test='{"code":0}' />
 
 | 栏目           | id       |
-  | -------------- | -------- |
-  | 第一关注       | diyi     |
-  | 中国           | zhongguo |
-  | 国际           | gj       |
-  | 观点           | guandian |
-  | 锐参考         | ruick    |
-  | 体育健康       | tiyujk   |
-  | 科技应用       | kejiyy   |
-  | 文化旅游       | wenhualy |
-  | 参考漫谈       | cankaomt |
-  | 研究动态       | yjdt     |
-  | 海外智库       | hwzk     |
-  | 业界信息・观点 | yjxx     |
-  | 海外看中国城市 | hwkzgcs  |
-  | 译名趣谈       | ymymqt   |
-  | 译名发布       | ymymfb   |
-  | 双语汇         | ymsyh    |
-  | 参考视频       | video    |
-  | 军事           | junshi   |
-  | 参考人物       | cankaorw |
+| -------------- | -------- |
+| 第一关注       | diyi     |
+| 中国           | zhongguo |
+| 国际           | gj       |
+| 观点           | guandian |
+| 锐参考         | ruick    |
+| 体育健康       | tiyujk   |
+| 科技应用       | kejiyy   |
+| 文化旅游       | wenhualy |
+| 参考漫谈       | cankaomt |
+| 研究动态       | yjdt     |
+| 海外智库       | hwzk     |
+| 业界信息・观点 | yjxx     |
+| 海外看中国城市 | hwkzgcs  |
+| 译名趣谈       | ymymqt   |
+| 译名发布       | ymymfb   |
+| 双语汇         | ymsyh    |
+| 参考视频       | video    |
+| 军事           | junshi   |
+| 参考人物       | cankaorw |
 
 ## 大公文匯網 <Site url="www.tkww.hk"/>
 
@@ -825,49 +825,49 @@ Column 列表：
 
 ### DT 财经 <Site url="yicai.com" size="sm" />
 
-<Route namespace="yicai" :data='{"path":"/dt/:column?/:category?","categories":["traditional-media"],"example":"/yicai/dt/article","parameters":{"column":"栏目，见下表，默认为文章","category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"DT 财经","maintainers":["nczitzk"],"description":"#### [文章](https://dt.yicai.com/article)\n\n  | 分类     | ID         |\n  | -------- | ---------- |\n  | 全部     | article/0  |\n  | 新流行   | article/31 |\n  | 新趋势   | article/32 |\n  | 商业黑马 | article/33 |\n  | 新品     | article/34 |\n  | 营销     | article/35 |\n  | 大公司   | article/36 |\n  | 城市生活 | article/38 |\n\n  #### [报告](https://dt.yicai.com/report)\n\n  | 分类       | ID        |\n  | ---------- | --------- |\n  | 全部       | report/0  |\n  | 人群观念   | report/9  |\n  | 人群行为   | report/22 |\n  | 美妆个护   | report/23 |\n  | 3C 数码    | report/24 |\n  | 营销趋势   | report/25 |\n  | 服饰鞋包   | report/27 |\n  | 互联网     | report/28 |\n  | 城市与居住 | report/29 |\n  | 消费趋势   | report/30 |\n  | 生活趋势   | report/37 |\n\n  #### [可视化](https://dt.yicai.com/visualization)\n\n  | 分类     | ID               |\n  | -------- | ---------------- |\n  | 全部     | visualization/0  |\n  | 新流行   | visualization/39 |\n  | 新趋势   | visualization/40 |\n  | 商业黑马 | visualization/41 |\n  | 新品     | visualization/42 |\n  | 营销     | visualization/43 |\n  | 大公司   | visualization/44 |\n  | 城市生活 | visualization/45 |","location":"dt.ts"}' :test='{"code":0}' />
+<Route namespace="yicai" :data='{"path":"/dt/:column?/:category?","categories":["traditional-media"],"example":"/yicai/dt/article","parameters":{"column":"栏目，见下表，默认为文章","category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"DT 财经","maintainers":["nczitzk"],"description":"#### [文章](https://dt.yicai.com/article)\n\n| 分类     | ID         |\n| -------- | ---------- |\n| 全部     | article/0  |\n| 新流行   | article/31 |\n| 新趋势   | article/32 |\n| 商业黑马 | article/33 |\n| 新品     | article/34 |\n| 营销     | article/35 |\n| 大公司   | article/36 |\n| 城市生活 | article/38 |\n\n#### [报告](https://dt.yicai.com/report)\n\n| 分类       | ID        |\n| ---------- | --------- |\n| 全部       | report/0  |\n| 人群观念   | report/9  |\n| 人群行为   | report/22 |\n| 美妆个护   | report/23 |\n| 3C 数码    | report/24 |\n| 营销趋势   | report/25 |\n| 服饰鞋包   | report/27 |\n| 互联网     | report/28 |\n| 城市与居住 | report/29 |\n| 消费趋势   | report/30 |\n| 生活趋势   | report/37 |\n\n#### [可视化](https://dt.yicai.com/visualization)\n\n| 分类     | ID               |\n| -------- | ---------------- |\n| 全部     | visualization/0  |\n| 新流行   | visualization/39 |\n| 新趋势   | visualization/40 |\n| 商业黑马 | visualization/41 |\n| 新品     | visualization/42 |\n| 营销     | visualization/43 |\n| 大公司   | visualization/44 |\n| 城市生活 | visualization/45 |","location":"dt.ts"}' :test='{"code":0}' />
 
 #### [文章](https://dt.yicai.com/article)
 
-  | 分类     | ID         |
-  | -------- | ---------- |
-  | 全部     | article/0  |
-  | 新流行   | article/31 |
-  | 新趋势   | article/32 |
-  | 商业黑马 | article/33 |
-  | 新品     | article/34 |
-  | 营销     | article/35 |
-  | 大公司   | article/36 |
-  | 城市生活 | article/38 |
+| 分类     | ID         |
+| -------- | ---------- |
+| 全部     | article/0  |
+| 新流行   | article/31 |
+| 新趋势   | article/32 |
+| 商业黑马 | article/33 |
+| 新品     | article/34 |
+| 营销     | article/35 |
+| 大公司   | article/36 |
+| 城市生活 | article/38 |
 
-  #### [报告](https://dt.yicai.com/report)
+#### [报告](https://dt.yicai.com/report)
 
-  | 分类       | ID        |
-  | ---------- | --------- |
-  | 全部       | report/0  |
-  | 人群观念   | report/9  |
-  | 人群行为   | report/22 |
-  | 美妆个护   | report/23 |
-  | 3C 数码    | report/24 |
-  | 营销趋势   | report/25 |
-  | 服饰鞋包   | report/27 |
-  | 互联网     | report/28 |
-  | 城市与居住 | report/29 |
-  | 消费趋势   | report/30 |
-  | 生活趋势   | report/37 |
+| 分类       | ID        |
+| ---------- | --------- |
+| 全部       | report/0  |
+| 人群观念   | report/9  |
+| 人群行为   | report/22 |
+| 美妆个护   | report/23 |
+| 3C 数码    | report/24 |
+| 营销趋势   | report/25 |
+| 服饰鞋包   | report/27 |
+| 互联网     | report/28 |
+| 城市与居住 | report/29 |
+| 消费趋势   | report/30 |
+| 生活趋势   | report/37 |
 
-  #### [可视化](https://dt.yicai.com/visualization)
+#### [可视化](https://dt.yicai.com/visualization)
 
-  | 分类     | ID               |
-  | -------- | ---------------- |
-  | 全部     | visualization/0  |
-  | 新流行   | visualization/39 |
-  | 新趋势   | visualization/40 |
-  | 商业黑马 | visualization/41 |
-  | 新品     | visualization/42 |
-  | 营销     | visualization/43 |
-  | 大公司   | visualization/44 |
-  | 城市生活 | visualization/45 |
+| 分类     | ID               |
+| -------- | ---------------- |
+| 全部     | visualization/0  |
+| 新流行   | visualization/39 |
+| 新趋势   | visualization/40 |
+| 商业黑马 | visualization/41 |
+| 新品     | visualization/42 |
+| 营销     | visualization/43 |
+| 大公司   | visualization/44 |
+| 城市生活 | visualization/45 |
 
 ### VIP 频道 <Site url="yicai.com" size="sm" />
 
@@ -887,45 +887,45 @@ Column 列表：
 
 ### 视听 <Site url="yicai.com" size="sm" />
 
-<Route namespace="yicai" :data='{"path":"/video/:id?","categories":["traditional-media"],"example":"/yicai/video","parameters":{"id":"分类 id，见下表，可在对应分类页中找到，默认为视听"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yicai.com/video/:id","yicai.com/video"],"target":"/video/:id"}],"name":"视听","maintainers":["nczitzk"],"description":"| Id                   | 名称                         |\n  | -------------------- | ---------------------------- |\n  | youliao              | 有料                         |\n  | appshipin            | 此刻                         |\n  | yicaisudi            | 速递                         |\n  | caishang             | 财商                         |\n  | shiji                | 史记                         |\n  | jinrigushi           | 今日股市                     |\n  | tangulunjin          | 谈股论金                     |\n  | gongsiyuhangye       | 公司与行业                   |\n  | cjyxx                | 财经夜行线                   |\n  | 6thtradingday        | 第六交易日                   |\n  | cjfw                 | 财经风味                     |\n  | chuangshidai         | 创时代                       |\n  | weilaiyaoqinghan     | 未来邀请函                   |\n  | tounaofengbao        | 头脑风暴                     |\n  | zhongguojingyingzhe  | 中国经营者                   |\n  | shichanglingjuli     | 市场零距离                   |\n  | huanqiucaijing       | 环球财经视界                 |\n  | zgjcqyjglsxftl       | 中国杰出企业家管理思想访谈录 |\n  | jiemacaishang        | 解码财商                     |\n  | sxpl                 | 首席评论                     |\n  | zhongguojingjiluntan | 中国经济论坛                 |\n  | opinionleader        | 意见领袖                     |\n  | xinjinrong           | 解码新金融                   |\n  | diyidichan           | 第一地产                     |\n  | zhichedaren          | 智车达人                     |\n  | chuangtoufengyun     | 创投风云                     |\n  | chunxiangrensheng    | 醇享人生                     |\n  | diyishengyin         | 第一声音                     |\n  | sanliangboqianjin    | 财智双全                     |\n  | weilaiyaoqinghan     | 未来邀请函                   |\n  | zjdy                 | 主角 ▪ 大医                 |\n  | leye                 | 乐业之城                     |\n  | sanrenxing           | 价值三人行                   |\n  | yuandongli           | 中国源动力                   |\n  | pioneerzone          | 直击引领区                   |","location":"video.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(21) ] to not include &#39;https://www.yicai.com/video/102458171…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2136)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="yicai" :data='{"path":"/video/:id?","categories":["traditional-media"],"example":"/yicai/video","parameters":{"id":"分类 id，见下表，可在对应分类页中找到，默认为视听"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yicai.com/video/:id","yicai.com/video"],"target":"/video/:id"}],"name":"视听","maintainers":["nczitzk"],"description":"| Id                   | 名称                         |\n| -------------------- | ---------------------------- |\n| youliao              | 有料                         |\n| appshipin            | 此刻                         |\n| yicaisudi            | 速递                         |\n| caishang             | 财商                         |\n| shiji                | 史记                         |\n| jinrigushi           | 今日股市                     |\n| tangulunjin          | 谈股论金                     |\n| gongsiyuhangye       | 公司与行业                   |\n| cjyxx                | 财经夜行线                   |\n| 6thtradingday        | 第六交易日                   |\n| cjfw                 | 财经风味                     |\n| chuangshidai         | 创时代                       |\n| weilaiyaoqinghan     | 未来邀请函                   |\n| tounaofengbao        | 头脑风暴                     |\n| zhongguojingyingzhe  | 中国经营者                   |\n| shichanglingjuli     | 市场零距离                   |\n| huanqiucaijing       | 环球财经视界                 |\n| zgjcqyjglsxftl       | 中国杰出企业家管理思想访谈录 |\n| jiemacaishang        | 解码财商                     |\n| sxpl                 | 首席评论                     |\n| zhongguojingjiluntan | 中国经济论坛                 |\n| opinionleader        | 意见领袖                     |\n| xinjinrong           | 解码新金融                   |\n| diyidichan           | 第一地产                     |\n| zhichedaren          | 智车达人                     |\n| chuangtoufengyun     | 创投风云                     |\n| chunxiangrensheng    | 醇享人生                     |\n| diyishengyin         | 第一声音                     |\n| sanliangboqianjin    | 财智双全                     |\n| weilaiyaoqinghan     | 未来邀请函                   |\n| zjdy                 | 主角 ▪ 大医                 |\n| leye                 | 乐业之城                     |\n| sanrenxing           | 价值三人行                   |\n| yuandongli           | 中国源动力                   |\n| pioneerzone          | 直击引领区                   |","location":"video.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(21) ] to not include &#39;https://www.yicai.com/video/102458171…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2136)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | Id                   | 名称                         |
-  | -------------------- | ---------------------------- |
-  | youliao              | 有料                         |
-  | appshipin            | 此刻                         |
-  | yicaisudi            | 速递                         |
-  | caishang             | 财商                         |
-  | shiji                | 史记                         |
-  | jinrigushi           | 今日股市                     |
-  | tangulunjin          | 谈股论金                     |
-  | gongsiyuhangye       | 公司与行业                   |
-  | cjyxx                | 财经夜行线                   |
-  | 6thtradingday        | 第六交易日                   |
-  | cjfw                 | 财经风味                     |
-  | chuangshidai         | 创时代                       |
-  | weilaiyaoqinghan     | 未来邀请函                   |
-  | tounaofengbao        | 头脑风暴                     |
-  | zhongguojingyingzhe  | 中国经营者                   |
-  | shichanglingjuli     | 市场零距离                   |
-  | huanqiucaijing       | 环球财经视界                 |
-  | zgjcqyjglsxftl       | 中国杰出企业家管理思想访谈录 |
-  | jiemacaishang        | 解码财商                     |
-  | sxpl                 | 首席评论                     |
-  | zhongguojingjiluntan | 中国经济论坛                 |
-  | opinionleader        | 意见领袖                     |
-  | xinjinrong           | 解码新金融                   |
-  | diyidichan           | 第一地产                     |
-  | zhichedaren          | 智车达人                     |
-  | chuangtoufengyun     | 创投风云                     |
-  | chunxiangrensheng    | 醇享人生                     |
-  | diyishengyin         | 第一声音                     |
-  | sanliangboqianjin    | 财智双全                     |
-  | weilaiyaoqinghan     | 未来邀请函                   |
-  | zjdy                 | 主角 ▪ 大医                 |
-  | leye                 | 乐业之城                     |
-  | sanrenxing           | 价值三人行                   |
-  | yuandongli           | 中国源动力                   |
-  | pioneerzone          | 直击引领区                   |
+| -------------------- | ---------------------------- |
+| youliao              | 有料                         |
+| appshipin            | 此刻                         |
+| yicaisudi            | 速递                         |
+| caishang             | 财商                         |
+| shiji                | 史记                         |
+| jinrigushi           | 今日股市                     |
+| tangulunjin          | 谈股论金                     |
+| gongsiyuhangye       | 公司与行业                   |
+| cjyxx                | 财经夜行线                   |
+| 6thtradingday        | 第六交易日                   |
+| cjfw                 | 财经风味                     |
+| chuangshidai         | 创时代                       |
+| weilaiyaoqinghan     | 未来邀请函                   |
+| tounaofengbao        | 头脑风暴                     |
+| zhongguojingyingzhe  | 中国经营者                   |
+| shichanglingjuli     | 市场零距离                   |
+| huanqiucaijing       | 环球财经视界                 |
+| zgjcqyjglsxftl       | 中国杰出企业家管理思想访谈录 |
+| jiemacaishang        | 解码财商                     |
+| sxpl                 | 首席评论                     |
+| zhongguojingjiluntan | 中国经济论坛                 |
+| opinionleader        | 意见领袖                     |
+| xinjinrong           | 解码新金融                   |
+| diyidichan           | 第一地产                     |
+| zhichedaren          | 智车达人                     |
+| chuangtoufengyun     | 创投风云                     |
+| chunxiangrensheng    | 醇享人生                     |
+| diyishengyin         | 第一声音                     |
+| sanliangboqianjin    | 财智双全                     |
+| weilaiyaoqinghan     | 未来邀请函                   |
+| zjdy                 | 主角 ▪ 大医                 |
+| leye                 | 乐业之城                     |
+| sanrenxing           | 价值三人行                   |
+| yuandongli           | 中国源动力                   |
+| pioneerzone          | 直击引领区                   |
 
 ### 头条 <Site url="yicai.com/" size="sm" />
 
@@ -933,35 +933,35 @@ Column 列表：
 
 ### 新闻 <Site url="yicai.com" size="sm" />
 
-<Route namespace="yicai" :data='{"path":"/news/:id?","categories":["traditional-media"],"example":"/yicai/news","parameters":{"id":"分类 id，见下表，可在对应分类页中找到，默认为新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yicai.com/news/:id","yicai.com/news"],"target":"/news/:id"}],"name":"新闻","maintainers":["nczitzk"],"description":"| Id                       | 名称       |\n  | ------------------------ | ---------- |\n  | gushi                    | A 股       |\n  | kechuangban              | 科创板     |\n  | hongguan                 | 大政       |\n  | jinrong                  | 金融       |\n  | quanqiushichang          | 海外市场   |\n  | gongsi                   | 产经       |\n  | shijie                   | 全球       |\n  | kechuang                 | 科技       |\n  | quyu                     | 区域       |\n  | comment                  | 评论       |\n  | dafengwenhua             | 商业人文   |\n  | books                    | 阅读周刊   |\n  | loushi                   | 地产       |\n  | automobile               | 汽车       |\n  | china_financial_herald | 对话陆家嘴 |\n  | fashion                  | 时尚       |\n  | ad                       | 商业资讯   |\n  | info                     | 资讯       |\n  | jzfxb                    | 价值风向标 |\n  | shuducaijing             | 数读财经   |\n  | shujujiepan              | 数据解盘   |\n  | shudushenghuo            | 数读生活   |\n  | cbndata                  | CBNData    |\n  | dtcj                     | DT 财经    |\n  | xfsz                     | 消费数知   |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="yicai" :data='{"path":"/news/:id?","categories":["traditional-media"],"example":"/yicai/news","parameters":{"id":"分类 id，见下表，可在对应分类页中找到，默认为新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yicai.com/news/:id","yicai.com/news"],"target":"/news/:id"}],"name":"新闻","maintainers":["nczitzk"],"description":"| Id                       | 名称       |\n| ------------------------ | ---------- |\n| gushi                    | A 股       |\n| kechuangban              | 科创板     |\n| hongguan                 | 大政       |\n| jinrong                  | 金融       |\n| quanqiushichang          | 海外市场   |\n| gongsi                   | 产经       |\n| shijie                   | 全球       |\n| kechuang                 | 科技       |\n| quyu                     | 区域       |\n| comment                  | 评论       |\n| dafengwenhua             | 商业人文   |\n| books                    | 阅读周刊   |\n| loushi                   | 地产       |\n| automobile               | 汽车       |\n| china_financial_herald | 对话陆家嘴 |\n| fashion                  | 时尚       |\n| ad                       | 商业资讯   |\n| info                     | 资讯       |\n| jzfxb                    | 价值风向标 |\n| shuducaijing             | 数读财经   |\n| shujujiepan              | 数据解盘   |\n| shudushenghuo            | 数读生活   |\n| cbndata                  | CBNData    |\n| dtcj                     | DT 财经    |\n| xfsz                     | 消费数知   |","location":"news.ts"}' :test='{"code":0}' />
 
 | Id                       | 名称       |
-  | ------------------------ | ---------- |
-  | gushi                    | A 股       |
-  | kechuangban              | 科创板     |
-  | hongguan                 | 大政       |
-  | jinrong                  | 金融       |
-  | quanqiushichang          | 海外市场   |
-  | gongsi                   | 产经       |
-  | shijie                   | 全球       |
-  | kechuang                 | 科技       |
-  | quyu                     | 区域       |
-  | comment                  | 评论       |
-  | dafengwenhua             | 商业人文   |
-  | books                    | 阅读周刊   |
-  | loushi                   | 地产       |
-  | automobile               | 汽车       |
-  | china_financial_herald | 对话陆家嘴 |
-  | fashion                  | 时尚       |
-  | ad                       | 商业资讯   |
-  | info                     | 资讯       |
-  | jzfxb                    | 价值风向标 |
-  | shuducaijing             | 数读财经   |
-  | shujujiepan              | 数据解盘   |
-  | shudushenghuo            | 数读生活   |
-  | cbndata                  | CBNData    |
-  | dtcj                     | DT 财经    |
-  | xfsz                     | 消费数知   |
+| ------------------------ | ---------- |
+| gushi                    | A 股       |
+| kechuangban              | 科创板     |
+| hongguan                 | 大政       |
+| jinrong                  | 金融       |
+| quanqiushichang          | 海外市场   |
+| gongsi                   | 产经       |
+| shijie                   | 全球       |
+| kechuang                 | 科技       |
+| quyu                     | 区域       |
+| comment                  | 评论       |
+| dafengwenhua             | 商业人文   |
+| books                    | 阅读周刊   |
+| loushi                   | 地产       |
+| automobile               | 汽车       |
+| china_financial_herald | 对话陆家嘴 |
+| fashion                  | 时尚       |
+| ad                       | 商业资讯   |
+| info                     | 资讯       |
+| jzfxb                    | 价值风向标 |
+| shuducaijing             | 数读财经   |
+| shujujiepan              | 数据解盘   |
+| shudushenghuo            | 数读生活   |
+| cbndata                  | CBNData    |
+| dtcj                     | DT 财经    |
+| xfsz                     | 消费数知   |
 
 ### 一财号 <Site url="yicai.com" size="sm" />
 
@@ -979,16 +979,16 @@ Column 列表：
 
 ### 24 小时热闻 <Site url="mini.eastday.com/" size="sm" />
 
-<Route namespace="eastday" :data='{"path":"/24/:category?","categories":["traditional-media"],"example":"/eastday/24","parameters":{"category":"分类，见下表，默认为社会"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mini.eastday.com/"],"target":"/24"}],"name":"24 小时热闻","maintainers":["nczitzk"],"url":"mini.eastday.com/","description":"| 推荐 | 社会 | 娱乐 | 国际 | 军事 |\n  | ---- | ---- | ---- | ---- | ---- |\n\n  | 养生 | 汽车 | 体育 | 财经 | 游戏 |\n  | ---- | ---- | ---- | ---- | ---- |\n\n  | 科技 | 国内 | 宠物 | 情感 | 人文 | 教育 |\n  | ---- | ---- | ---- | ---- | ---- | ---- |","location":"24.ts"}' :test='{"code":0}' />
+<Route namespace="eastday" :data='{"path":"/24/:category?","categories":["traditional-media"],"example":"/eastday/24","parameters":{"category":"分类，见下表，默认为社会"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mini.eastday.com/"],"target":"/24"}],"name":"24 小时热闻","maintainers":["nczitzk"],"url":"mini.eastday.com/","description":"| 推荐 | 社会 | 娱乐 | 国际 | 军事 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 养生 | 汽车 | 体育 | 财经 | 游戏 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 科技 | 国内 | 宠物 | 情感 | 人文 | 教育 |\n| ---- | ---- | ---- | ---- | ---- | ---- |","location":"24.ts"}' :test='{"code":0}' />
 
 | 推荐 | 社会 | 娱乐 | 国际 | 军事 |
-  | ---- | ---- | ---- | ---- | ---- |
+| ---- | ---- | ---- | ---- | ---- |
 
-  | 养生 | 汽车 | 体育 | 财经 | 游戏 |
-  | ---- | ---- | ---- | ---- | ---- |
+| 养生 | 汽车 | 体育 | 财经 | 游戏 |
+| ---- | ---- | ---- | ---- | ---- |
 
-  | 科技 | 国内 | 宠物 | 情感 | 人文 | 教育 |
-  | ---- | ---- | ---- | ---- | ---- | ---- |
+| 科技 | 国内 | 宠物 | 情感 | 人文 | 教育 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 
 ### 上海新闻 <Site url="sh.eastday.com/" size="sm" />
 
@@ -1002,11 +1002,11 @@ Column 列表：
 
 ### Money18 <Site url="hk.on.cc" size="sm" />
 
-<Route namespace="oncc" :data='{"path":"/money18/:id?","categories":["traditional-media"],"example":"/oncc/money18/exp","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 exp，即新聞總覽"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Money18","maintainers":["nczitzk"],"description":"| 新聞總覽 | 全日焦點 | 板塊新聞 | 國際金融 | 大行報告 | A 股新聞 | 地產新聞 | 投資理財  | 新股 IPO | 科技財情 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------- | -------- | -------- |\n  | exp      | fov      | industry | int      | recagent | ntlgroup | pro      | weainvest | ipo      | tech     |","location":"money18.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1400)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="oncc" :data='{"path":"/money18/:id?","categories":["traditional-media"],"example":"/oncc/money18/exp","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 exp，即新聞總覽"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Money18","maintainers":["nczitzk"],"description":"| 新聞總覽 | 全日焦點 | 板塊新聞 | 國際金融 | 大行報告 | A 股新聞 | 地產新聞 | 投資理財  | 新股 IPO | 科技財情 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------- | -------- | -------- |\n| exp      | fov      | industry | int      | recagent | ntlgroup | pro      | weainvest | ipo      | tech     |","location":"money18.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1400)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 新聞總覽 | 全日焦點 | 板塊新聞 | 國際金融 | 大行報告 | A 股新聞 | 地產新聞 | 投資理財  | 新股 IPO | 科技財情 |
-  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------- | -------- | -------- |
-  | exp      | fov      | industry | int      | recagent | ntlgroup | pro      | weainvest | ipo      | tech     |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | --------- | -------- | -------- |
+| exp      | fov      | industry | int      | recagent | ntlgroup | pro      | weainvest | ipo      | tech     |
 
 ### 即時新聞 <Site url="hk.on.cc" size="sm" />
 
@@ -1054,7 +1054,7 @@ Column 列表：
 
 ### 客户端 <Site url="gzdaily.cn" size="sm" />
 
-<Route namespace="gzdaily" :data='{"path":"/app/:column?","categories":["traditional-media"],"example":"/gzdaily/app/74","parameters":{"column":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"客户端","maintainers":["TimWu007"],"description":"::: tip\n  在北京时间深夜可能无法获取内容。\n:::\n\n  常用栏目 ID：\n\n  | 栏目名 | ID   |\n  | ------ | ---- |\n  | 首页   | 74   |\n  | 时局   | 374  |\n  | 广州   | 371  |\n  | 大湾区 | 397  |\n  | 城区   | 2980 |","location":"app.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 839)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="gzdaily" :data='{"path":"/app/:column?","categories":["traditional-media"],"example":"/gzdaily/app/74","parameters":{"column":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"客户端","maintainers":["TimWu007"],"description":"::: tip\n  在北京时间深夜可能无法获取内容。\n:::\n\n  常用栏目 ID：\n\n| 栏目名 | ID   |\n| ------ | ---- |\n| 首页   | 74   |\n| 时局   | 374  |\n| 广州   | 371  |\n| 大湾区 | 397  |\n| 城区   | 2980 |","location":"app.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 839)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 ::: tip
   在北京时间深夜可能无法获取内容。
@@ -1062,13 +1062,13 @@ Column 列表：
 
   常用栏目 ID：
 
-  | 栏目名 | ID   |
-  | ------ | ---- |
-  | 首页   | 74   |
-  | 时局   | 374  |
-  | 广州   | 371  |
-  | 大湾区 | 397  |
-  | 城区   | 2980 |
+| 栏目名 | ID   |
+| ------ | ---- |
+| 首页   | 74   |
+| 时局   | 374  |
+| 广州   | 371  |
+| 大湾区 | 397  |
+| 城区   | 2980 |
 
 ## 河北网络广播电视台 <Site url="web.cmc.hebtv.com"/>
 
@@ -1080,40 +1080,40 @@ Column 列表：
 
 ### 电子刊物 <Site url="voc.com.cn/" size="sm" />
 
-<Route namespace="hnrb" :data='{"path":"/:id?","categories":["traditional-media"],"example":"/hnrb","parameters":{"id":"编号，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["voc.com.cn/"],"target":"/:id"}],"name":"电子刊物","maintainers":["nczitzk"],"url":"voc.com.cn/","description":"| 版                   | 编号 |\n  | -------------------- | ---- |\n  | 全部                 |      |\n  | 第 01 版：头版       | 1    |\n  | 第 02 版：要闻       | 2    |\n  | 第 03 版：要闻       | 3    |\n  | 第 04 版：深度       | 4    |\n  | 第 05 版：市州       | 5    |\n  | 第 06 版：理论・学习 | 6    |\n  | 第 07 版：观察       | 7    |\n  | 第 08 版：时事       | 8    |\n  | 第 09 版：中缝       | 9    |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(26) ] to not include &#39;https://hnrb.voc.com.cn/hnrb_epaper/h…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 885)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="hnrb" :data='{"path":"/:id?","categories":["traditional-media"],"example":"/hnrb","parameters":{"id":"编号，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["voc.com.cn/"],"target":"/:id"}],"name":"电子刊物","maintainers":["nczitzk"],"url":"voc.com.cn/","description":"| 版                   | 编号 |\n| -------------------- | ---- |\n| 全部                 |      |\n| 第 01 版：头版       | 1    |\n| 第 02 版：要闻       | 2    |\n| 第 03 版：要闻       | 3    |\n| 第 04 版：深度       | 4    |\n| 第 05 版：市州       | 5    |\n| 第 06 版：理论・学习 | 6    |\n| 第 07 版：观察       | 7    |\n| 第 08 版：时事       | 8    |\n| 第 09 版：中缝       | 9    |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(26) ] to not include &#39;https://hnrb.voc.com.cn/hnrb_epaper/h…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 885)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | 版                   | 编号 |
-  | -------------------- | ---- |
-  | 全部                 |      |
-  | 第 01 版：头版       | 1    |
-  | 第 02 版：要闻       | 2    |
-  | 第 03 版：要闻       | 3    |
-  | 第 04 版：深度       | 4    |
-  | 第 05 版：市州       | 5    |
-  | 第 06 版：理论・学习 | 6    |
-  | 第 07 版：观察       | 7    |
-  | 第 08 版：时事       | 8    |
-  | 第 09 版：中缝       | 9    |
+| -------------------- | ---- |
+| 全部                 |      |
+| 第 01 版：头版       | 1    |
+| 第 02 版：要闻       | 2    |
+| 第 03 版：要闻       | 3    |
+| 第 04 版：深度       | 4    |
+| 第 05 版：市州       | 5    |
+| 第 06 版：理论・学习 | 6    |
+| 第 07 版：观察       | 7    |
+| 第 08 版：时事       | 8    |
+| 第 09 版：中缝       | 9    |
 
 ## 華視 <Site url="news.cts.com.tw"/>
 
 ### 新聞 <Site url="news.cts.com.tw" size="sm" />
 
-<Route namespace="cts" :data='{"path":"/:category","categories":["traditional-media"],"example":"/cts/real","parameters":{"category":"类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cts.com.tw/:category/index.html"]}],"name":"新聞","maintainers":["miles170"],"description":"| 即時 | 氣象    | 政治     | 國際          | 社會    | 運動   | 生活 | 財經  | 台語      | 地方  | 產業 | 綜合    | 藝文 | 娛樂      |\n  | ---- | ------- | -------- | ------------- | ------- | ------ | ---- | ----- | --------- | ----- | ---- | ------- | ---- | --------- |\n  | real | weather | politics | international | society | sports | life | money | taiwanese | local | pr   | general | arts | entertain |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 399)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="cts" :data='{"path":"/:category","categories":["traditional-media"],"example":"/cts/real","parameters":{"category":"类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cts.com.tw/:category/index.html"]}],"name":"新聞","maintainers":["miles170"],"description":"| 即時 | 氣象    | 政治     | 國際          | 社會    | 運動   | 生活 | 財經  | 台語      | 地方  | 產業 | 綜合    | 藝文 | 娛樂      |\n| ---- | ------- | -------- | ------------- | ------- | ------ | ---- | ----- | --------- | ----- | ---- | ------- | ---- | --------- |\n| real | weather | politics | international | society | sports | life | money | taiwanese | local | pr   | general | arts | entertain |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 399)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 即時 | 氣象    | 政治     | 國際          | 社會    | 運動   | 生活 | 財經  | 台語      | 地方  | 產業 | 綜合    | 藝文 | 娛樂      |
-  | ---- | ------- | -------- | ------------- | ------- | ------ | ---- | ----- | --------- | ----- | ---- | ------- | ---- | --------- |
-  | real | weather | politics | international | society | sports | life | money | taiwanese | local | pr   | general | arts | entertain |
+| ---- | ------- | -------- | ------------- | ------- | ------ | ---- | ----- | --------- | ----- | ---- | ------- | ---- | --------- |
+| real | weather | politics | international | society | sports | life | money | taiwanese | local | pr   | general | arts | entertain |
 
 ## 环球网 <Site url="huanqiu.com"/>
 
 ### 分类 <Site url="huanqiu.com/" size="sm" />
 
-<Route namespace="huanqiu" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/huanqiu/news/china","parameters":{"category":"类别，可以使用二级域名作为参数，默认为：china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huanqiu.com/"]}],"name":"分类","maintainers":["yuxinliu-alex"],"url":"huanqiu.com/","description":"| 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |\n  | -------- | -------- | ---- | ------ | ------- |\n  | china    | world    | mil  | taiwai | opinion |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="huanqiu" :data='{"path":"/news/:category?","categories":["traditional-media"],"example":"/huanqiu/news/china","parameters":{"category":"类别，可以使用二级域名作为参数，默认为：china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huanqiu.com/"]}],"name":"分类","maintainers":["yuxinliu-alex"],"url":"huanqiu.com/","description":"| 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |\n| -------- | -------- | ---- | ------ | ------- |\n| china    | world    | mil  | taiwai | opinion |","location":"index.ts"}' :test='{"code":0}' />
 
 | 国内新闻 | 国际新闻 | 军事 | 台海   | 评论    |
-  | -------- | -------- | ---- | ------ | ------- |
-  | china    | world    | mil  | taiwai | opinion |
+| -------- | -------- | ---- | ------ | ------- |
+| china    | world    | mil  | taiwai | opinion |
 
 ## 鏡週刊 Mirror Media <Site url="mirrormedia.mg"/>
 
@@ -1129,11 +1129,11 @@ Column 列表：
 
 ### 新聞首頁 <Site url="hakkatv.org.tw/news" size="sm" />
 
-<Route namespace="hakkatv" :data='{"path":"/news/:type?","categories":["traditional-media"],"example":"/hakkatv/news","parameters":{"type":"新聞，見下表，留空為全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hakkatv.org.tw/news"],"target":"/news"}],"name":"新聞首頁","maintainers":["TonyRL"],"url":"hakkatv.org.tw/news","description":"| 客家焦點 | 政經要聞  | 民生醫療 | 地方風采 | 國際萬象      |\n  | -------- | --------- | -------- | -------- | ------------- |\n  | hakka    | political | medical  | local    | international |","location":"type.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(2) ] to not include &#39;https://www.hakkatv.org.tw/news-detai…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 846)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="hakkatv" :data='{"path":"/news/:type?","categories":["traditional-media"],"example":"/hakkatv/news","parameters":{"type":"新聞，見下表，留空為全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hakkatv.org.tw/news"],"target":"/news"}],"name":"新聞首頁","maintainers":["TonyRL"],"url":"hakkatv.org.tw/news","description":"| 客家焦點 | 政經要聞  | 民生醫療 | 地方風采 | 國際萬象      |\n| -------- | --------- | -------- | -------- | ------------- |\n| hakka    | political | medical  | local    | international |","location":"type.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(2) ] to not include &#39;https://www.hakkatv.org.tw/news-detai…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 846)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | 客家焦點 | 政經要聞  | 民生醫療 | 地方風采 | 國際萬象      |
-  | -------- | --------- | -------- | -------- | ------------- |
-  | hakka    | political | medical  | local    | international |
+| -------- | --------- | -------- | -------- | ------------- |
+| hakka    | political | medical  | local    | international |
 
 ## 理论网 <Site url="paper.cntheory.com"/>
 
@@ -1155,11 +1155,11 @@ Column 列表：
 
 ### 即时新闻 <Site url="www.zaobao.com" size="sm" />
 
-<Route namespace="zaobao" :data='{"path":"/realtime/:section?","categories":["traditional-media"],"example":"/zaobao/realtime/china","parameters":{"section":"分类，缺省为 china"},"name":"即时新闻","maintainers":["shunf4"],"description":"| 中国  | 新加坡    | 国际  | 财经     |\n  | ----- | --------- | ----- | -------- |\n  | china | singapore | world | zfinance |","location":"realtime.ts"}' :test='{"code":0}' />
+<Route namespace="zaobao" :data='{"path":"/realtime/:section?","categories":["traditional-media"],"example":"/zaobao/realtime/china","parameters":{"section":"分类，缺省为 china"},"name":"即时新闻","maintainers":["shunf4"],"description":"| 中国  | 新加坡    | 国际  | 财经     |\n| ----- | --------- | ----- | -------- |\n| china | singapore | world | zfinance |","location":"realtime.ts"}' :test='{"code":0}' />
 
 | 中国  | 新加坡    | 国际  | 财经     |
-  | ----- | --------- | ----- | -------- |
-  | china | singapore | world | zfinance |
+| ----- | --------- | ----- | -------- |
+| china | singapore | world | zfinance |
 
 ### 其他栏目 <Site url="www.zaobao.com" size="sm" />
 
@@ -1169,48 +1169,48 @@ Column 列表：
 
 ### 新闻 <Site url="www.zaobao.com" size="sm" />
 
-<Route namespace="zaobao" :data='{"path":"/znews/:section?","categories":["traditional-media"],"example":"/zaobao/znews/china","parameters":{"section":"分类，缺省为 china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["shunf4"],"description":"| 中国  | 新加坡    | 东南亚 | 国际  | 体育   |\n  | ----- | --------- | ------ | ----- | ------ |\n  | china | singapore | sea    | world | sports |","location":"znews.ts"}' :test='{"code":0}' />
+<Route namespace="zaobao" :data='{"path":"/znews/:section?","categories":["traditional-media"],"example":"/zaobao/znews/china","parameters":{"section":"分类，缺省为 china"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["shunf4"],"description":"| 中国  | 新加坡    | 东南亚 | 国际  | 体育   |\n| ----- | --------- | ------ | ----- | ------ |\n| china | singapore | sea    | world | sports |","location":"znews.ts"}' :test='{"code":0}' />
 
 | 中国  | 新加坡    | 东南亚 | 国际  | 体育   |
-  | ----- | --------- | ------ | ----- | ------ |
-  | china | singapore | sea    | world | sports |
+| ----- | --------- | ------ | ----- | ------ |
+| china | singapore | sea    | world | sports |
 
 ## 聯合新聞網 <Site url="udn.com"/>
 
 ### 即時新聞 <Site url="udn.com" size="sm" />
 
-<Route namespace="udn" :data='{"path":"/news/breakingnews/:id","categories":["traditional-media"],"example":"/udn/news/breakingnews/99","parameters":{"id":"类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["udn.com/news/breaknews/1/:id","udn.com/"]}],"name":"即時新聞","maintainers":["miles170"],"description":"| 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 11   | 12   | 13   | 99     |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |\n  | 精選 | 要聞 | 社會 | 地方 | 兩岸 | 國際 | 財經 | 運動 | 娛樂 | 生活 | 股市 | 文教 | 數位 | 不分類 |","location":"breaking-news.ts"}' :test='{"code":0}' />
+<Route namespace="udn" :data='{"path":"/news/breakingnews/:id","categories":["traditional-media"],"example":"/udn/news/breakingnews/99","parameters":{"id":"类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["udn.com/news/breaknews/1/:id","udn.com/"]}],"name":"即時新聞","maintainers":["miles170"],"description":"| 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 11   | 12   | 13   | 99     |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |\n| 精選 | 要聞 | 社會 | 地方 | 兩岸 | 國際 | 財經 | 運動 | 娛樂 | 生活 | 股市 | 文教 | 數位 | 不分類 |","location":"breaking-news.ts"}' :test='{"code":0}' />
 
 | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 11   | 12   | 13   | 99     |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |
-  | 精選 | 要聞 | 社會 | 地方 | 兩岸 | 國際 | 財經 | 運動 | 娛樂 | 生活 | 股市 | 文教 | 數位 | 不分類 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ |
+| 精選 | 要聞 | 社會 | 地方 | 兩岸 | 國際 | 財經 | 運動 | 娛樂 | 生活 | 股市 | 文教 | 數位 | 不分類 |
 
 ### 轉角國際 - 首頁 <Site url="udn.com" size="sm" />
 
-<Route namespace="udn" :data='{"path":"/global/:category?","categories":["traditional-media"],"example":"/udn/global","parameters":{"category":"分类，见下表，默认为首頁"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/global_vision/index/:category","global.udn.com/"]}],"name":"轉角國際 - 首頁","maintainers":["nczitzk"],"description":"| 首頁 | 最新文章 | 熱門文章 |\n  | ---- | -------- | -------- |\n  |      | new      | hot      |","location":"global/index.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(2) ] to not include &#39;https://global.udn.com/global_vision/…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1934)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="udn" :data='{"path":"/global/:category?","categories":["traditional-media"],"example":"/udn/global","parameters":{"category":"分类，见下表，默认为首頁"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/global_vision/index/:category","global.udn.com/"]}],"name":"轉角國際 - 首頁","maintainers":["nczitzk"],"description":"| 首頁 | 最新文章 | 熱門文章 |\n| ---- | -------- | -------- |\n|      | new      | hot      |","location":"global/index.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(2) ] to not include &#39;https://global.udn.com/global_vision/…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1934)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | 首頁 | 最新文章 | 熱門文章 |
-  | ---- | -------- | -------- |
-  |      | new      | hot      |
+| ---- | -------- | -------- |
+|      | new      | hot      |
 
 ### 轉角國際 - 標籤 <Site url="udn.com" size="sm" />
 
-<Route namespace="udn" :data='{"path":"/global/tag/:tag?","categories":["traditional-media"],"example":"/udn/global/tag/過去24小時","parameters":{"tag":"标签，可在对应标签页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/search/tagging/1020/:tag","global.udn.com/"]}],"name":"轉角國際 - 標籤","maintainers":["emdoe","nczitzk"],"description":"| 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |\n  | ------------ | -------- | -------- | -------- |","location":"global/tag.ts"}' :test='{"code":0}' />
+<Route namespace="udn" :data='{"path":"/global/tag/:tag?","categories":["traditional-media"],"example":"/udn/global/tag/過去24小時","parameters":{"tag":"标签，可在对应标签页 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["global.udn.com/search/tagging/1020/:tag","global.udn.com/"]}],"name":"轉角國際 - 標籤","maintainers":["emdoe","nczitzk"],"description":"| 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |\n| ------------ | -------- | -------- | -------- |","location":"global/tag.ts"}' :test='{"code":0}' />
 
 | 過去 24 小時 | 鏡頭背後 | 深度專欄 | 重磅廣播 |
-  | ------------ | -------- | -------- | -------- |
+| ------------ | -------- | -------- | -------- |
 
 ## 南方周末 <Site url="www.infzm.com"/>
 
 ### 频道 <Site url="www.infzm.com" size="sm" />
 
-<Route namespace="infzm" :data='{"path":"/:id","parameters":{"id":"南方周末频道 id, 可在该频道的 URL 中找到（即 https://www.infzm.com/contents?term_id=:id)"},"categories":["traditional-media"],"example":"/infzm/1","radar":[{"source":["infzm.com/contents"]}],"name":"频道","maintainers":["KarasuShin","ranpox","xyqfer"],"description":"下面给出部分参考：\n\n  | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="infzm" :data='{"path":"/:id","parameters":{"id":"南方周末频道 id, 可在该频道的 URL 中找到（即 https://www.infzm.com/contents?term_id=:id)"},"categories":["traditional-media"],"example":"/infzm/1","radar":[{"source":["infzm.com/contents"]}],"name":"频道","maintainers":["KarasuShin","ranpox","xyqfer"],"description":"下面给出部分参考：\n\n| 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |","location":"index.ts"}' :test='{"code":0}' />
 
 下面给出部分参考：
 
-  | 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |
+| 推荐 | 新闻 | 观点 | 文化 | 人物 | 影像 | 专题 | 生活 | 视频 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 1    | 2    | 3    | 4    | 7    | 8    | 6    | 5    | 131  |
 
 ### 热门文章 <Site url="www.infzm.com" size="sm" />
 
@@ -1288,11 +1288,11 @@ Column 列表：
 
 ### 领导留言板 <Site url="liuyan.people.com.cn/" size="sm" />
 
-<Route namespace="people" :data='{"path":"/liuyan/:id/:state?","categories":["traditional-media"],"example":"/people/liuyan/539","parameters":{"id":"编号，可在对应人物页 URL 中找到","state":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["liuyan.people.com.cn/"]}],"name":"领导留言板","maintainers":["nczitzk"],"url":"liuyan.people.com.cn/","description":"| 全部 | 待回复 | 办理中 | 已办理 |\n  | ---- | ------ | ------ | ------ |\n  | 1    | 2      | 3      | 4      |","location":"liuyan.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1454)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="people" :data='{"path":"/liuyan/:id/:state?","categories":["traditional-media"],"example":"/people/liuyan/539","parameters":{"id":"编号，可在对应人物页 URL 中找到","state":"状态，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["liuyan.people.com.cn/"]}],"name":"领导留言板","maintainers":["nczitzk"],"url":"liuyan.people.com.cn/","description":"| 全部 | 待回复 | 办理中 | 已办理 |\n| ---- | ------ | ------ | ------ |\n| 1    | 2      | 3      | 4      |","location":"liuyan.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1454)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 全部 | 待回复 | 办理中 | 已办理 |
-  | ---- | ------ | ------ | ------ |
-  | 1    | 2      | 3      | 4      |
+| ---- | ------ | ------ | ------ |
+| 1    | 2      | 3      | 4      |
 
 ### 习近平系列重要讲话 <Site url="people.com.cn/" size="sm" />
 
@@ -1302,19 +1302,19 @@ Column 列表：
 
 ### 新聞 <Site url="setn.com/ViewAll.aspx" size="sm" />
 
-<Route namespace="setn" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/setn","parameters":{"category":"分类，见下表，默认为即時"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["setn.com/ViewAll.aspx","setn.com/"],"target":""}],"name":"新聞","maintainers":["nczitzk"],"url":"setn.com/ViewAll.aspx","description":"| 即時 | 熱門 | 娛樂 | 政治 | 社會 |\n  | ---- | ---- | ---- | ---- | ---- |\n\n  | 國際 | 兩岸 | 生活 | 健康 | 旅遊 |\n  | ---- | ---- | ---- | ---- | ---- |\n\n  | 運動 | 地方 | 財經 | 富房網 | 名家 |\n  | ---- | ---- | ---- | ------ | ---- |\n\n  | 新奇 | 科技 | 汽車 | 寵物 | 女孩 | HOT 焦點 |\n  | ---- | ---- | ---- | ---- | ---- | -------- |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="setn" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/setn","parameters":{"category":"分类，见下表，默认为即時"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["setn.com/ViewAll.aspx","setn.com/"],"target":""}],"name":"新聞","maintainers":["nczitzk"],"url":"setn.com/ViewAll.aspx","description":"| 即時 | 熱門 | 娛樂 | 政治 | 社會 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 國際 | 兩岸 | 生活 | 健康 | 旅遊 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 運動 | 地方 | 財經 | 富房網 | 名家 |\n| ---- | ---- | ---- | ------ | ---- |\n\n| 新奇 | 科技 | 汽車 | 寵物 | 女孩 | HOT 焦點 |\n| ---- | ---- | ---- | ---- | ---- | -------- |","location":"index.ts"}' :test='{"code":0}' />
 
 | 即時 | 熱門 | 娛樂 | 政治 | 社會 |
-  | ---- | ---- | ---- | ---- | ---- |
+| ---- | ---- | ---- | ---- | ---- |
 
-  | 國際 | 兩岸 | 生活 | 健康 | 旅遊 |
-  | ---- | ---- | ---- | ---- | ---- |
+| 國際 | 兩岸 | 生活 | 健康 | 旅遊 |
+| ---- | ---- | ---- | ---- | ---- |
 
-  | 運動 | 地方 | 財經 | 富房網 | 名家 |
-  | ---- | ---- | ---- | ------ | ---- |
+| 運動 | 地方 | 財經 | 富房網 | 名家 |
+| ---- | ---- | ---- | ------ | ---- |
 
-  | 新奇 | 科技 | 汽車 | 寵物 | 女孩 | HOT 焦點 |
-  | ---- | ---- | ---- | ---- | ---- | -------- |
+| 新奇 | 科技 | 汽車 | 寵物 | 女孩 | HOT 焦點 |
+| ---- | ---- | ---- | ---- | ---- | -------- |
 
 ## 厦门网 <Site url="epaper.xmnn.cn"/>
 
@@ -1324,17 +1324,17 @@ Column 列表：
 
 ### 数字媒体 <Site url="epaper.xmnn.cn" size="sm" />
 
-<Route namespace="xmnn" :data='{"path":"/epaper/:id?","categories":["traditional-media"],"example":"/xmnn/epaper/xmrb","parameters":{"id":"报纸 id，见下表，默认为 `xmrb`，即厦门日报"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["epaper.xmnn.cn/:id"],"target":"/epaper/:id"}],"name":"数字媒体","maintainers":["nczitzk"],"description":"| 厦门日报 | 厦门晚报 | 海西晨报 | 城市捷报 |\n  | -------- | -------- | -------- | -------- |\n  | xmrb     | xmwb     | hxcb     | csjb     |","location":"epaper.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="xmnn" :data='{"path":"/epaper/:id?","categories":["traditional-media"],"example":"/xmnn/epaper/xmrb","parameters":{"id":"报纸 id，见下表，默认为 `xmrb`，即厦门日报"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["epaper.xmnn.cn/:id"],"target":"/epaper/:id"}],"name":"数字媒体","maintainers":["nczitzk"],"description":"| 厦门日报 | 厦门晚报 | 海西晨报 | 城市捷报 |\n| -------- | -------- | -------- | -------- |\n| xmrb     | xmwb     | hxcb     | csjb     |","location":"epaper.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 厦门日报 | 厦门晚报 | 海西晨报 | 城市捷报 |
-  | -------- | -------- | -------- | -------- |
-  | xmrb     | xmwb     | hxcb     | csjb     |
+| -------- | -------- | -------- | -------- |
+| xmrb     | xmwb     | hxcb     | csjb     |
 
 ## 四川广播电视台 <Site url="sctv.com"/>
 
 ### 电视回放 <Site url="sctv.com" size="sm" />
 
-<Route namespace="sctv" :data='{"path":"/programme/:id?/:limit?/:isFull?","categories":["traditional-media"],"example":"/sctv/programme/1","parameters":{"id":"节目 id，可在对应节目页中找到，默认为 `1`，即四川新闻联播","limit":"期数，默认为 15，即单次获取最新 15 期","isFull":"是否仅获取完整视频，填写 true/yes 表示是、false/no 表示否，默认是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"电视回放","maintainers":["nczitzk"],"description":"::: tip\n  参数 **是否仅获取完整视频** 设置为 `true` `yes` `t` `y` 等值后，路由仅返回当期节目的完整视频，而不会返回节目所提供的节选视频。\n\n  查看更多电视节目请前往 [电视回放](https://www.sctv.com/column/list)\n:::\n\n  | 节目                   | id      |\n  | ---------------------- | ------- |\n  | 四川新闻联播           | 1       |\n  | 早安四川               | 2       |\n  | 今日视点               | 3       |\n  | 龙门阵摆四川           | 10523   |\n  | 非常话题               | 1014756 |\n  | 新闻现场               | 8385    |\n  | 黄金三十分             | 8386    |\n  | 全媒直播间             | 8434    |\n  | 晚报十点半             | 8435    |\n  | 现场快报               | 8436    |\n  | 四川乡村新闻           | 3673    |\n  | 四川文旅报道           | 8174    |\n  | 乡村会客厅             | 3674    |\n  | 金字招牌               | 3675    |\n  | 问您所 “？”            | 3677    |\n  | 蜀你最能               | 3679    |\n  | 美丽乡村印象           | 3678    |\n  | 美丽乡村               | 3676    |\n  | 乡村大篷车             | 3680    |\n  | 华西论健               | 3681    |\n  | 乡村聚乐部             | 3682    |\n  | 医保近距离             | 6403    |\n  | 音你而来               | 7263    |\n  | 吃八方                 | 7343    |\n  | 世界那么大             | 7344    |\n  | 风云川商               | 7345    |\n  | 麻辣烫                 | 7346    |\n  | 财经快报               | 7473    |\n  | 医生来了               | 7873    |\n  | 安逸的旅途             | 8383    |\n  | 运动 +                 | 8433    |\n  | 好戏连台               | 9733    |\n  | 防癌大讲堂             | 1018673 |\n  | 消费新观察             | 1017153 |\n  | 天天耍大牌             | 1014753 |\n  | 廉洁四川               | 1014754 |\n  | 看世界                 | 1014755 |\n  | 金熊猫说教育（资讯版） | 1014757 |\n  | 她说                   | 1014759 |\n  | 嗨宝贝                 | 1014762 |\n  | 萌眼看世界             | 1014764 |\n  | 乡村大讲堂             | 1014765 |\n  | 四川党建               | 1014766 |\n  | 健康四川               | 1014767 |\n  | 技能四川               | 12023   |","location":"programme.ts"}' :test='{"code":0}' />
+<Route namespace="sctv" :data='{"path":"/programme/:id?/:limit?/:isFull?","categories":["traditional-media"],"example":"/sctv/programme/1","parameters":{"id":"节目 id，可在对应节目页中找到，默认为 `1`，即四川新闻联播","limit":"期数，默认为 15，即单次获取最新 15 期","isFull":"是否仅获取完整视频，填写 true/yes 表示是、false/no 表示否，默认是"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"电视回放","maintainers":["nczitzk"],"description":"::: tip\n  参数 **是否仅获取完整视频** 设置为 `true` `yes` `t` `y` 等值后，路由仅返回当期节目的完整视频，而不会返回节目所提供的节选视频。\n\n  查看更多电视节目请前往 [电视回放](https://www.sctv.com/column/list)\n:::\n\n| 节目                   | id      |\n| ---------------------- | ------- |\n| 四川新闻联播           | 1       |\n| 早安四川               | 2       |\n| 今日视点               | 3       |\n| 龙门阵摆四川           | 10523   |\n| 非常话题               | 1014756 |\n| 新闻现场               | 8385    |\n| 黄金三十分             | 8386    |\n| 全媒直播间             | 8434    |\n| 晚报十点半             | 8435    |\n| 现场快报               | 8436    |\n| 四川乡村新闻           | 3673    |\n| 四川文旅报道           | 8174    |\n| 乡村会客厅             | 3674    |\n| 金字招牌               | 3675    |\n| 问您所 “？”            | 3677    |\n| 蜀你最能               | 3679    |\n| 美丽乡村印象           | 3678    |\n| 美丽乡村               | 3676    |\n| 乡村大篷车             | 3680    |\n| 华西论健               | 3681    |\n| 乡村聚乐部             | 3682    |\n| 医保近距离             | 6403    |\n| 音你而来               | 7263    |\n| 吃八方                 | 7343    |\n| 世界那么大             | 7344    |\n| 风云川商               | 7345    |\n| 麻辣烫                 | 7346    |\n| 财经快报               | 7473    |\n| 医生来了               | 7873    |\n| 安逸的旅途             | 8383    |\n| 运动 +                 | 8433    |\n| 好戏连台               | 9733    |\n| 防癌大讲堂             | 1018673 |\n| 消费新观察             | 1017153 |\n| 天天耍大牌             | 1014753 |\n| 廉洁四川               | 1014754 |\n| 看世界                 | 1014755 |\n| 金熊猫说教育（资讯版） | 1014757 |\n| 她说                   | 1014759 |\n| 嗨宝贝                 | 1014762 |\n| 萌眼看世界             | 1014764 |\n| 乡村大讲堂             | 1014765 |\n| 四川党建               | 1014766 |\n| 健康四川               | 1014767 |\n| 技能四川               | 12023   |","location":"programme.ts"}' :test='{"code":0}' />
 
 ::: tip
   参数 **是否仅获取完整视频** 设置为 `true` `yes` `t` `y` 等值后，路由仅返回当期节目的完整视频，而不会返回节目所提供的节选视频。
@@ -1342,53 +1342,53 @@ Column 列表：
   查看更多电视节目请前往 [电视回放](https://www.sctv.com/column/list)
 :::
 
-  | 节目                   | id      |
-  | ---------------------- | ------- |
-  | 四川新闻联播           | 1       |
-  | 早安四川               | 2       |
-  | 今日视点               | 3       |
-  | 龙门阵摆四川           | 10523   |
-  | 非常话题               | 1014756 |
-  | 新闻现场               | 8385    |
-  | 黄金三十分             | 8386    |
-  | 全媒直播间             | 8434    |
-  | 晚报十点半             | 8435    |
-  | 现场快报               | 8436    |
-  | 四川乡村新闻           | 3673    |
-  | 四川文旅报道           | 8174    |
-  | 乡村会客厅             | 3674    |
-  | 金字招牌               | 3675    |
-  | 问您所 “？”            | 3677    |
-  | 蜀你最能               | 3679    |
-  | 美丽乡村印象           | 3678    |
-  | 美丽乡村               | 3676    |
-  | 乡村大篷车             | 3680    |
-  | 华西论健               | 3681    |
-  | 乡村聚乐部             | 3682    |
-  | 医保近距离             | 6403    |
-  | 音你而来               | 7263    |
-  | 吃八方                 | 7343    |
-  | 世界那么大             | 7344    |
-  | 风云川商               | 7345    |
-  | 麻辣烫                 | 7346    |
-  | 财经快报               | 7473    |
-  | 医生来了               | 7873    |
-  | 安逸的旅途             | 8383    |
-  | 运动 +                 | 8433    |
-  | 好戏连台               | 9733    |
-  | 防癌大讲堂             | 1018673 |
-  | 消费新观察             | 1017153 |
-  | 天天耍大牌             | 1014753 |
-  | 廉洁四川               | 1014754 |
-  | 看世界                 | 1014755 |
-  | 金熊猫说教育（资讯版） | 1014757 |
-  | 她说                   | 1014759 |
-  | 嗨宝贝                 | 1014762 |
-  | 萌眼看世界             | 1014764 |
-  | 乡村大讲堂             | 1014765 |
-  | 四川党建               | 1014766 |
-  | 健康四川               | 1014767 |
-  | 技能四川               | 12023   |
+| 节目                   | id      |
+| ---------------------- | ------- |
+| 四川新闻联播           | 1       |
+| 早安四川               | 2       |
+| 今日视点               | 3       |
+| 龙门阵摆四川           | 10523   |
+| 非常话题               | 1014756 |
+| 新闻现场               | 8385    |
+| 黄金三十分             | 8386    |
+| 全媒直播间             | 8434    |
+| 晚报十点半             | 8435    |
+| 现场快报               | 8436    |
+| 四川乡村新闻           | 3673    |
+| 四川文旅报道           | 8174    |
+| 乡村会客厅             | 3674    |
+| 金字招牌               | 3675    |
+| 问您所 “？”            | 3677    |
+| 蜀你最能               | 3679    |
+| 美丽乡村印象           | 3678    |
+| 美丽乡村               | 3676    |
+| 乡村大篷车             | 3680    |
+| 华西论健               | 3681    |
+| 乡村聚乐部             | 3682    |
+| 医保近距离             | 6403    |
+| 音你而来               | 7263    |
+| 吃八方                 | 7343    |
+| 世界那么大             | 7344    |
+| 风云川商               | 7345    |
+| 麻辣烫                 | 7346    |
+| 财经快报               | 7473    |
+| 医生来了               | 7873    |
+| 安逸的旅途             | 8383    |
+| 运动 +                 | 8433    |
+| 好戏连台               | 9733    |
+| 防癌大讲堂             | 1018673 |
+| 消费新观察             | 1017153 |
+| 天天耍大牌             | 1014753 |
+| 廉洁四川               | 1014754 |
+| 看世界                 | 1014755 |
+| 金熊猫说教育（资讯版） | 1014757 |
+| 她说                   | 1014759 |
+| 嗨宝贝                 | 1014762 |
+| 萌眼看世界             | 1014764 |
+| 乡村大讲堂             | 1014765 |
+| 四川党建               | 1014766 |
+| 健康四川               | 1014767 |
+| 技能四川               | 12023   |
 
 ## 台視新聞網 <Site url="news.ttv.com.tw"/>
 
@@ -1400,23 +1400,23 @@ Column 列表：
 
 ### 主頻道 <Site url="cw.com.tw" size="sm" />
 
-<Route namespace="cw" :data='{"path":"/master/:channel","categories":["traditional-media"],"example":"/cw/master/8","parameters":{"channel":"主頻道 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主頻道","maintainers":["TonyRL"],"description":"| 主頻道名稱 | 主頻道 ID |\n  | ---------- | --------- |\n  | 財經       | 8         |\n  | 產業       | 7         |\n  | 國際       | 9         |\n  | 管理       | 10        |\n  | 環境       | 12        |\n  | 教育       | 13        |\n  | 人物       | 14        |\n  | 政治社會   | 77        |\n  | 調查排行   | 15        |\n  | 健康關係   | 79        |\n  | 時尚品味   | 11        |\n  | 運動生活   | 103       |\n  | 重磅外媒   | 16        |","location":"master.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 405)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="cw" :data='{"path":"/master/:channel","categories":["traditional-media"],"example":"/cw/master/8","parameters":{"channel":"主頻道 ID，可在 URL 中找到"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"主頻道","maintainers":["TonyRL"],"description":"| 主頻道名稱 | 主頻道 ID |\n| ---------- | --------- |\n| 財經       | 8         |\n| 產業       | 7         |\n| 國際       | 9         |\n| 管理       | 10        |\n| 環境       | 12        |\n| 教育       | 13        |\n| 人物       | 14        |\n| 政治社會   | 77        |\n| 調查排行   | 15        |\n| 健康關係   | 79        |\n| 時尚品味   | 11        |\n| 運動生活   | 103       |\n| 重磅外媒   | 16        |","location":"master.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 405)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 主頻道名稱 | 主頻道 ID |
-  | ---------- | --------- |
-  | 財經       | 8         |
-  | 產業       | 7         |
-  | 國際       | 9         |
-  | 管理       | 10        |
-  | 環境       | 12        |
-  | 教育       | 13        |
-  | 人物       | 14        |
-  | 政治社會   | 77        |
-  | 調查排行   | 15        |
-  | 健康關係   | 79        |
-  | 時尚品味   | 11        |
-  | 運動生活   | 103       |
-  | 重磅外媒   | 16        |
+| ---------- | --------- |
+| 財經       | 8         |
+| 產業       | 7         |
+| 國際       | 9         |
+| 管理       | 10        |
+| 環境       | 12        |
+| 教育       | 13        |
+| 人物       | 14        |
+| 政治社會   | 77        |
+| 調查排行   | 15        |
+| 健康關係   | 79        |
+| 時尚品味   | 11        |
+| 運動生活   | 103       |
+| 重磅外媒   | 16        |
 
 ### 子頻道 <Site url="cw.com.tw" size="sm" />
 
@@ -1434,19 +1434,19 @@ Column 列表：
 
 ### 新闻 <Site url="tvb.com" size="sm" />
 
-<Route namespace="tvb" :data='{"path":"/news/:category?/:language?","categories":["traditional-media"],"example":"/tvb/news","parameters":{"category":"分类，见下表，默认为要聞","language":"语言，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tvb.com/:language/:category","tvb.com/"]}],"name":"新闻","maintainers":["nczitzk"],"description":"分类\n\n  | 要聞  | 快訊    | 港澳  | 兩岸         | 國際  | 財經    | 體育   | 法庭       | 天氣    |\n  | ----- | ------- | ----- | ------------ | ----- | ------- | ------ | ---------- | ------- |\n  | focus | instant | local | greaterchina | world | finance | sports | parliament | weather |\n\n  语言\n\n  | 繁 | 简 |\n  | -- | -- |\n  | tc | sc |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="tvb" :data='{"path":"/news/:category?/:language?","categories":["traditional-media"],"example":"/tvb/news","parameters":{"category":"分类，见下表，默认为要聞","language":"语言，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tvb.com/:language/:category","tvb.com/"]}],"name":"新闻","maintainers":["nczitzk"],"description":"分类\n\n| 要聞  | 快訊    | 港澳  | 兩岸         | 國際  | 財經    | 體育   | 法庭       | 天氣    |\n| ----- | ------- | ----- | ------------ | ----- | ------- | ------ | ---------- | ------- |\n| focus | instant | local | greaterchina | world | finance | sports | parliament | weather |\n\n  语言\n\n| 繁 | 简 |\n| -- | -- |\n| tc | sc |","location":"news.ts"}' :test='{"code":0}' />
 
 分类
 
-  | 要聞  | 快訊    | 港澳  | 兩岸         | 國際  | 財經    | 體育   | 法庭       | 天氣    |
-  | ----- | ------- | ----- | ------------ | ----- | ------- | ------ | ---------- | ------- |
-  | focus | instant | local | greaterchina | world | finance | sports | parliament | weather |
+| 要聞  | 快訊    | 港澳  | 兩岸         | 國際  | 財經    | 體育   | 法庭       | 天氣    |
+| ----- | ------- | ----- | ------------ | ----- | ------- | ------ | ---------- | ------- |
+| focus | instant | local | greaterchina | world | finance | sports | parliament | weather |
 
   语言
 
-  | 繁 | 简 |
-  | -- | -- |
-  | tc | sc |
+| 繁 | 简 |
+| -- | -- |
+| tc | sc |
 
 ## 希望之声 <Site url="soundofhope.org"/>
 
@@ -1462,14 +1462,14 @@ Column 列表：
 
 ### 新闻 <Site url="www.hket.com/" size="sm" />
 
-<Route namespace="hket" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/hket/sran001","parameters":{"category":"分类，默认为全部新闻，可在 URL 中找到，部分见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["china.hket.com/:category/*"],"target":"/:category"},{"source":["inews.hket.com/:category/*"],"target":"/:category"},{"source":["topick.hket.com/:category/*"],"target":"/:category"},{"source":["wealth.hket.com/:category/*"],"target":"/:category"},{"source":["www.hket.com/"],"target":"/"}],"name":"新闻","maintainers":["TonyRL"],"url":"www.hket.com/","description":"香港经济日报已有提供简单 RSS，详细可前往官方网站： [https://www.hket.com/rss](https://www.hket.com/rss)\n\n此路由主要补全官方 RSS 全文输出及完善分类输出。\n\n  <details>\n    <summary>分类</summary>\n\n| sran001  | sran008  | sran010  | sran011  | sran012  | srat006  |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 全部新闻 | 财经地产 | 科技信息 | 国际新闻 | 商业新闻 | 香港新闻 |\n\n| sran009  | sran009-1 | sran009-2 | sran009-3  | sran009-4 | sran009-5 | sran009-6 |\n| -------- | --------- | --------- | ---------- | --------- | --------- | --------- |\n| 即时财经 | 股市      | 新股 IPO  | 新经济追踪 | 当炒股    | 宏观解读  | Hot Talk  |\n\n| sran011-1 | sran011-2    | sran011-3    |\n| --------- | ------------ | ------------ |\n| 环球政治  | 环球经济金融 | 环球社会热点 |\n\n| sran016    | sran016-1  | sran016-2  | sran016-3  | sran016-4  | sran016-5      |\n| ---------- | ---------- | ---------- | ---------- | ---------- | -------------- |\n| 大湾区主页 | 大湾区发展 | 大湾区工作 | 大湾区买楼 | 大湾区消费 | 大湾区投资理财 |\n\n| srac002  | srac003  | srac004  | srac005  |\n| -------- | -------- | -------- | -------- |\n| 即时中国 | 经济脉搏 | 国情动向 | 社会热点 |\n\n| srat001 | srat008 | srat055  | srat069  | srat070   |\n| ------- | ------- | -------- | -------- | --------- |\n| 话题    | 观点    | 休闲消费 | 娱乐新闻 | TOPick TV |\n\n| srat052  | srat052-1 | srat052-2  | srat052-3 |\n| -------- | --------- | ---------- | --------- |\n| 健康主页 | 食用安全  | 医生诊症室 | 保健美颜  |\n\n| srat053  | srat053-1 | srat053-2 | srat053-3 | srat053-4  |\n| -------- | --------- | --------- | --------- | ---------- |\n| 亲子主页 | 儿童健康  | 育儿经    | 教育      | 亲子好去处 |\n\n| srat053-6   | srat053-61 | srat053-62 | srat053-63 | srat053-64 |\n| ----------- | ---------- | ---------- | ---------- | ---------- |\n| Band 1 学堂 | 幼稚园     | 中小学     | 尖子教室   | 海外升学   |\n\n| srat072-1  | srat072-2  | srat072-3        | srat072-4         |\n| ---------- | ---------- | ---------------- | ----------------- |\n| 健康身心活 | 抗癌新方向 | 「糖」「心」解密 | 风湿不再 你我自在 |\n\n| sraw007  | sraw009  | sraw010  | sraw011  | sraw012  | sraw014  | sraw018  | sraw019  |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 全部博客 | Bloggers | 收息攻略 | 精明消费 | 退休规划 | 个人增值 | 财富管理 | 绿色金融 |\n\n| sraw015  | sraw015-07 | sraw015-08 | sraw015-09 | sraw015-10 |\n| -------- | ---------- | ---------- | ---------- | ---------- |\n| 移民百科 | 海外置业   | 移民攻略   | 移民点滴   | 海外理财   |\n\n| sraw020  | sraw020-1    | sraw020-2 | sraw020-3 | sraw020-4 |\n| -------- | ------------ | --------- | --------- | --------- |\n| ESG 主页 | ESG 趋势政策 | ESG 投资  | ESG 企业  | ESG 社会  |\n  </details>","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hket" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/hket/sran001","parameters":{"category":"分类，默认为全部新闻，可在 URL 中找到，部分见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["china.hket.com/:category/*"],"target":"/:category"},{"source":["inews.hket.com/:category/*"],"target":"/:category"},{"source":["topick.hket.com/:category/*"],"target":"/:category"},{"source":["wealth.hket.com/:category/*"],"target":"/:category"},{"source":["www.hket.com/"],"target":"/"}],"name":"新闻","maintainers":["TonyRL"],"url":"www.hket.com/","description":"香港经济日报已有提供简单 RSS，详细可前往官方网站： [https://www.hket.com/rss](https://www.hket.com/rss)\n\n此路由主要补全官方 RSS 全文输出及完善分类输出。\n\n<details>\n<summary>分类</summary>\n\n| sran001  | sran008  | sran010  | sran011  | sran012  | srat006  |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 全部新闻 | 财经地产 | 科技信息 | 国际新闻 | 商业新闻 | 香港新闻 |\n\n| sran009  | sran009-1 | sran009-2 | sran009-3  | sran009-4 | sran009-5 | sran009-6 |\n| -------- | --------- | --------- | ---------- | --------- | --------- | --------- |\n| 即时财经 | 股市      | 新股 IPO  | 新经济追踪 | 当炒股    | 宏观解读  | Hot Talk  |\n\n| sran011-1 | sran011-2    | sran011-3    |\n| --------- | ------------ | ------------ |\n| 环球政治  | 环球经济金融 | 环球社会热点 |\n\n| sran016    | sran016-1  | sran016-2  | sran016-3  | sran016-4  | sran016-5      |\n| ---------- | ---------- | ---------- | ---------- | ---------- | -------------- |\n| 大湾区主页 | 大湾区发展 | 大湾区工作 | 大湾区买楼 | 大湾区消费 | 大湾区投资理财 |\n\n| srac002  | srac003  | srac004  | srac005  |\n| -------- | -------- | -------- | -------- |\n| 即时中国 | 经济脉搏 | 国情动向 | 社会热点 |\n\n| srat001 | srat008 | srat055  | srat069  | srat070   |\n| ------- | ------- | -------- | -------- | --------- |\n| 话题    | 观点    | 休闲消费 | 娱乐新闻 | TOPick TV |\n\n| srat052  | srat052-1 | srat052-2  | srat052-3 |\n| -------- | --------- | ---------- | --------- |\n| 健康主页 | 食用安全  | 医生诊症室 | 保健美颜  |\n\n| srat053  | srat053-1 | srat053-2 | srat053-3 | srat053-4  |\n| -------- | --------- | --------- | --------- | ---------- |\n| 亲子主页 | 儿童健康  | 育儿经    | 教育      | 亲子好去处 |\n\n| srat053-6   | srat053-61 | srat053-62 | srat053-63 | srat053-64 |\n| ----------- | ---------- | ---------- | ---------- | ---------- |\n| Band 1 学堂 | 幼稚园     | 中小学     | 尖子教室   | 海外升学   |\n\n| srat072-1  | srat072-2  | srat072-3        | srat072-4         |\n| ---------- | ---------- | ---------------- | ----------------- |\n| 健康身心活 | 抗癌新方向 | 「糖」「心」解密 | 风湿不再 你我自在 |\n\n| sraw007  | sraw009  | sraw010  | sraw011  | sraw012  | sraw014  | sraw018  | sraw019  |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 全部博客 | Bloggers | 收息攻略 | 精明消费 | 退休规划 | 个人增值 | 财富管理 | 绿色金融 |\n\n| sraw015  | sraw015-07 | sraw015-08 | sraw015-09 | sraw015-10 |\n| -------- | ---------- | ---------- | ---------- | ---------- |\n| 移民百科 | 海外置业   | 移民攻略   | 移民点滴   | 海外理财   |\n\n| sraw020  | sraw020-1    | sraw020-2 | sraw020-3 | sraw020-4 |\n| -------- | ------------ | --------- | --------- | --------- |\n| ESG 主页 | ESG 趋势政策 | ESG 投资  | ESG 企业  | ESG 社会  |\n</details>","location":"index.ts"}' :test='{"code":0}' />
 
 香港经济日报已有提供简单 RSS，详细可前往官方网站： [https://www.hket.com/rss](https://www.hket.com/rss)
 
 此路由主要补全官方 RSS 全文输出及完善分类输出。
 
-  <details>
-    <summary>分类</summary>
+<details>
+<summary>分类</summary>
 
 | sran001  | sran008  | sran010  | sran011  | sran012  | srat006  |
 | -------- | -------- | -------- | -------- | -------- | -------- |
@@ -1522,7 +1522,7 @@ Column 列表：
 | sraw020  | sraw020-1    | sraw020-2 | sraw020-3 | sraw020-4 |
 | -------- | ------------ | --------- | --------- | --------- |
 | ESG 主页 | ESG 趋势政策 | ESG 投资  | ESG 企业  | ESG 社会  |
-  </details>
+</details>
 
 ## 新京报 <Site url="www.bjnews.com.cn"/>
 
@@ -1570,41 +1570,41 @@ Column 列表：
 
 ### 新闻 <Site url="xkb.com.cn" size="sm" />
 
-<Route namespace="xkb" :data='{"path":"/:channel","categories":["traditional-media"],"example":"/xkb/350","parameters":{"channel":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["TimWu007"],"description":"常用栏目 ID：\n\n  | 栏目名 | ID  |\n  | ------ | --- |\n  | 首页   | 350 |\n  | 重点   | 359 |\n  | 广州   | 353 |\n  | 湾区   | 360 |\n  | 天下   | 355 |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="xkb" :data='{"path":"/:channel","categories":["traditional-media"],"example":"/xkb/350","parameters":{"channel":"栏目 ID，点击对应栏目后在地址栏找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["TimWu007"],"description":"常用栏目 ID：\n\n| 栏目名 | ID  |\n| ------ | --- |\n| 首页   | 350 |\n| 重点   | 359 |\n| 广州   | 353 |\n| 湾区   | 360 |\n| 天下   | 355 |","location":"index.ts"}' :test='{"code":0}' />
 
 常用栏目 ID：
 
-  | 栏目名 | ID  |
-  | ------ | --- |
-  | 首页   | 350 |
-  | 重点   | 359 |
-  | 广州   | 353 |
-  | 湾区   | 360 |
-  | 天下   | 355 |
+| 栏目名 | ID  |
+| ------ | --- |
+| 首页   | 350 |
+| 重点   | 359 |
+| 广州   | 353 |
+| 湾区   | 360 |
+| 天下   | 355 |
 
 ## 信报财经新闻 <Site url="hkej.com"/>
 
 ### 即时新闻 <Site url="hkej.com/" size="sm" />
 
-<Route namespace="hkej" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/hkej/index","parameters":{"category":"分类，默认为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkej.com/"]}],"name":"即时新闻","maintainers":["TonyRL"],"url":"hkej.com/","description":"| index    | stock    | hongkong | china    | international | property | current  |\n  | -------- | -------- | -------- | -------- | ------------- | -------- | -------- |\n  | 全部新闻 | 港股直击 | 香港财经 | 中国财经 | 国际财经      | 地产新闻 | 时事脉搏 |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="hkej" :data='{"path":"/:category?","categories":["traditional-media"],"example":"/hkej/index","parameters":{"category":"分类，默认为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hkej.com/"]}],"name":"即时新闻","maintainers":["TonyRL"],"url":"hkej.com/","description":"| index    | stock    | hongkong | china    | international | property | current  |\n| -------- | -------- | -------- | -------- | ------------- | -------- | -------- |\n| 全部新闻 | 港股直击 | 香港财经 | 中国财经 | 国际财经      | 地产新闻 | 时事脉搏 |","location":"index.ts"}' :test='{"code":0}' />
 
 | index    | stock    | hongkong | china    | international | property | current  |
-  | -------- | -------- | -------- | -------- | ------------- | -------- | -------- |
-  | 全部新闻 | 港股直击 | 香港财经 | 中国财经 | 国际财经      | 地产新闻 | 时事脉搏 |
+| -------- | -------- | -------- | -------- | ------------- | -------- | -------- |
+| 全部新闻 | 港股直击 | 香港财经 | 中国财经 | 国际财经      | 地产新闻 | 时事脉搏 |
 
 ## 央视新闻 <Site url="news.cctv.com"/>
 
 ### 栏目 <Site url="news.cctv.com" size="sm" />
 
-<Route namespace="cctv" :data='{"path":"/lm/:id?","categories":["traditional-media"],"example":"/cctv/lm/xwzk","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 `xwzk` 即 新闻周刊"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cctv.com/:category"],"target":"/:category"}],"name":"栏目","maintainers":["nczitzk"],"description":"| 焦点访谈 | 等着我 | 今日说法 | 开讲啦 |\n  | -------- | ------ | -------- | ------ |\n  | jdft     | dzw    | jrsf     | kjl    |\n\n  | 正大综艺 | 经济半小时 | 第一动画乐园 |\n  | -------- | ---------- | ------------ |\n  | zdzy     | jjbxs      | dydhly       |\n\n::: tip\n  更多栏目请看 [这里](https://tv.cctv.com/lm)\n:::","location":"lm.ts"}' :test='{"code":0}' />
+<Route namespace="cctv" :data='{"path":"/lm/:id?","categories":["traditional-media"],"example":"/cctv/lm/xwzk","parameters":{"id":"栏目 id，可在对应栏目页 URL 中找到，默认为 `xwzk` 即 新闻周刊"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cctv.com/:category"],"target":"/:category"}],"name":"栏目","maintainers":["nczitzk"],"description":"| 焦点访谈 | 等着我 | 今日说法 | 开讲啦 |\n| -------- | ------ | -------- | ------ |\n| jdft     | dzw    | jrsf     | kjl    |\n\n| 正大综艺 | 经济半小时 | 第一动画乐园 |\n| -------- | ---------- | ------------ |\n| zdzy     | jjbxs      | dydhly       |\n\n::: tip\n  更多栏目请看 [这里](https://tv.cctv.com/lm)\n:::","location":"lm.ts"}' :test='{"code":0}' />
 
 | 焦点访谈 | 等着我 | 今日说法 | 开讲啦 |
-  | -------- | ------ | -------- | ------ |
-  | jdft     | dzw    | jrsf     | kjl    |
+| -------- | ------ | -------- | ------ |
+| jdft     | dzw    | jrsf     | kjl    |
 
-  | 正大综艺 | 经济半小时 | 第一动画乐园 |
-  | -------- | ---------- | ------------ |
-  | zdzy     | jjbxs      | dydhly       |
+| 正大综艺 | 经济半小时 | 第一动画乐园 |
+| -------- | ---------- | ------------ |
+| zdzy     | jjbxs      | dydhly       |
 
 ::: tip
   更多栏目请看 [这里](https://tv.cctv.com/lm)
@@ -1622,29 +1622,29 @@ Column 列表：
 
 ### 专题 <Site url="news.cctv.com" size="sm" />
 
-<Route namespace="cctv" :data='{"path":"/:category","categories":["traditional-media"],"example":"/cctv/world","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cctv.com/:category"]}],"name":"专题","maintainers":["idealclover","xyqfer"],"description":"| 新闻 | 国内  | 国际  | 社会    | 法治 | 文娱 | 科技 | 生活 | 教育 | 每周质量报告 | 新闻 1+1  |\n  | ---- | ----- | ----- | ------- | ---- | ---- | ---- | ---- | ---- | ------------ | --------- |\n  | news | china | world | society | law  | ent  | tech | life | edu  | mzzlbg       | xinwen1j1 |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="cctv" :data='{"path":"/:category","categories":["traditional-media"],"example":"/cctv/world","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.cctv.com/:category"]}],"name":"专题","maintainers":["idealclover","xyqfer"],"description":"| 新闻 | 国内  | 国际  | 社会    | 法治 | 文娱 | 科技 | 生活 | 教育 | 每周质量报告 | 新闻 1+1  |\n| ---- | ----- | ----- | ------- | ---- | ---- | ---- | ---- | ---- | ------------ | --------- |\n| news | china | world | society | law  | ent  | tech | life | edu  | mzzlbg       | xinwen1j1 |","location":"category.ts"}' :test='{"code":0}' />
 
 | 新闻 | 国内  | 国际  | 社会    | 法治 | 文娱 | 科技 | 生活 | 教育 | 每周质量报告 | 新闻 1+1  |
-  | ---- | ----- | ----- | ------- | ---- | ---- | ---- | ---- | ---- | ------------ | --------- |
-  | news | china | world | society | law  | ent  | tech | life | edu  | mzzlbg       | xinwen1j1 |
+| ---- | ----- | ----- | ------- | ---- | ---- | ---- | ---- | ---- | ------------ | --------- |
+| news | china | world | society | law  | ent  | tech | life | edu  | mzzlbg       | xinwen1j1 |
 
 ## 羊城晚报金羊网 <Site url="xwlb.com.cn"/>
 
 ### 新闻 <Site url="xwlb.com.cn" size="sm" />
 
-<Route namespace="ycwb" :data='{"path":"/:node","categories":["traditional-media"],"example":"/ycwb/1","parameters":{"node":"栏目 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["TimWu007"],"description":"注：小部分栏目的 URL 会给出 nodeid。如未给出，可打开某条新闻链接后，查看网页源代码，搜索 nodeid 的值。\n\n  常用栏目节点：\n\n  | 首页 | 中国 | 国际 | 体育 | 要闻 | 珠江评论 | 民生观察 | 房产 | 金羊教育 | 金羊财富 | 金羊文化 | 金羊健康 | 金羊汽车 |\n  | ---- | ---- | ---- | ---- | ---- | -------- | -------- | ---- | -------- | -------- | -------- | -------- | -------- |\n  | 1    | 14   | 15   | 16   | 22   | 1875     | 21773    | 222  | 5725     | 633      | 5281     | 21692    | 223      |\n\n  | 广州 | 广州 - 广州要闻 | 广州 - 社会百态 | 广州 - 深读广州 | 广州 - 生活服务 | 今日大湾区 | 广东 - 政经热闻 | 广东 - 民生视点 | 广东 - 滚动新闻 |\n  | ---- | --------------- | --------------- | --------------- | --------------- | ---------- | --------------- | --------------- | --------------- |\n  | 18   | 5261            | 6030            | 13352           | 83422           | 100418     | 13074           | 12252           | 12212           |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="ycwb" :data='{"path":"/:node","categories":["traditional-media"],"example":"/ycwb/1","parameters":{"node":"栏目 id"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻","maintainers":["TimWu007"],"description":"注：小部分栏目的 URL 会给出 nodeid。如未给出，可打开某条新闻链接后，查看网页源代码，搜索 nodeid 的值。\n\n  常用栏目节点：\n\n| 首页 | 中国 | 国际 | 体育 | 要闻 | 珠江评论 | 民生观察 | 房产 | 金羊教育 | 金羊财富 | 金羊文化 | 金羊健康 | 金羊汽车 |\n| ---- | ---- | ---- | ---- | ---- | -------- | -------- | ---- | -------- | -------- | -------- | -------- | -------- |\n| 1    | 14   | 15   | 16   | 22   | 1875     | 21773    | 222  | 5725     | 633      | 5281     | 21692    | 223      |\n\n| 广州 | 广州 - 广州要闻 | 广州 - 社会百态 | 广州 - 深读广州 | 广州 - 生活服务 | 今日大湾区 | 广东 - 政经热闻 | 广东 - 民生视点 | 广东 - 滚动新闻 |\n| ---- | --------------- | --------------- | --------------- | --------------- | ---------- | --------------- | --------------- | --------------- |\n| 18   | 5261            | 6030            | 13352           | 83422           | 100418     | 13074           | 12252           | 12212           |","location":"index.ts"}' :test='{"code":0}' />
 
 注：小部分栏目的 URL 会给出 nodeid。如未给出，可打开某条新闻链接后，查看网页源代码，搜索 nodeid 的值。
 
   常用栏目节点：
 
-  | 首页 | 中国 | 国际 | 体育 | 要闻 | 珠江评论 | 民生观察 | 房产 | 金羊教育 | 金羊财富 | 金羊文化 | 金羊健康 | 金羊汽车 |
-  | ---- | ---- | ---- | ---- | ---- | -------- | -------- | ---- | -------- | -------- | -------- | -------- | -------- |
-  | 1    | 14   | 15   | 16   | 22   | 1875     | 21773    | 222  | 5725     | 633      | 5281     | 21692    | 223      |
+| 首页 | 中国 | 国际 | 体育 | 要闻 | 珠江评论 | 民生观察 | 房产 | 金羊教育 | 金羊财富 | 金羊文化 | 金羊健康 | 金羊汽车 |
+| ---- | ---- | ---- | ---- | ---- | -------- | -------- | ---- | -------- | -------- | -------- | -------- | -------- |
+| 1    | 14   | 15   | 16   | 22   | 1875     | 21773    | 222  | 5725     | 633      | 5281     | 21692    | 223      |
 
-  | 广州 | 广州 - 广州要闻 | 广州 - 社会百态 | 广州 - 深读广州 | 广州 - 生活服务 | 今日大湾区 | 广东 - 政经热闻 | 广东 - 民生视点 | 广东 - 滚动新闻 |
-  | ---- | --------------- | --------------- | --------------- | --------------- | ---------- | --------------- | --------------- | --------------- |
-  | 18   | 5261            | 6030            | 13352           | 83422           | 100418     | 13074           | 12252           | 12212           |
+| 广州 | 广州 - 广州要闻 | 广州 - 社会百态 | 广州 - 深读广州 | 广州 - 生活服务 | 今日大湾区 | 广东 - 政经热闻 | 广东 - 民生视点 | 广东 - 滚动新闻 |
+| ---- | --------------- | --------------- | --------------- | --------------- | ---------- | --------------- | --------------- | --------------- |
+| 18   | 5261            | 6030            | 13352           | 83422           | 100418     | 13074           | 12252           | 12212           |
 
 ## 有線新聞 <Site url="i-cable.com"/>
 
@@ -1661,11 +1661,11 @@ Column 列表：
 
 ### 浙报集团系列报刊 <Site url="zjol.com.cn" size="sm" />
 
-<Route namespace="zjol" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/zjol/paper/zjrb","parameters":{"id":"报纸 id，见下表，默认为 `zjrb`，即浙江日报"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"浙报集团系列报刊","maintainers":["nczitzk"],"description":"| 浙江日报 | 钱江晚报 | 美术报 | 浙江老年报 | 浙江法制报 | 江南游报 |\n  | -------- | -------- | ------ | ---------- | ---------- | -------- |\n  | zjrb     | qjwb     | msb    | zjlnb      | zjfzb      | jnyb     |","location":"paper.ts"}' :test='{"code":0}' />
+<Route namespace="zjol" :data='{"path":"/paper/:id?","categories":["traditional-media"],"example":"/zjol/paper/zjrb","parameters":{"id":"报纸 id，见下表，默认为 `zjrb`，即浙江日报"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"浙报集团系列报刊","maintainers":["nczitzk"],"description":"| 浙江日报 | 钱江晚报 | 美术报 | 浙江老年报 | 浙江法制报 | 江南游报 |\n| -------- | -------- | ------ | ---------- | ---------- | -------- |\n| zjrb     | qjwb     | msb    | zjlnb      | zjfzb      | jnyb     |","location":"paper.ts"}' :test='{"code":0}' />
 
 | 浙江日报 | 钱江晚报 | 美术报 | 浙江老年报 | 浙江法制报 | 江南游报 |
-  | -------- | -------- | ------ | ---------- | ---------- | -------- |
-  | zjrb     | qjwb     | msb    | zjlnb      | zjfzb      | jnyb     |
+| -------- | -------- | ------ | ---------- | ---------- | -------- |
+| zjrb     | qjwb     | msb    | zjlnb      | zjfzb      | jnyb     |
 
 ## 中国经济网 <Site url="www.ce.cn"/>
 
@@ -1690,11 +1690,11 @@ Column 列表：
 
 ### 分类 <Site url="cna.com.tw" size="sm" />
 
-<Route namespace="cna" :data='{"path":"/:id?","categories":["traditional-media"],"example":"/cna/aall","parameters":{"id":"分类 id 或新闻专题 id。分类 id 见下表，新闻专题 id 為 https://www.cna.com.tw/list/newstopic.aspx 中，連結的數字部份。此參數默认为 aall"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"| 即時 | 政治 | 國際 | 兩岸 | 產經 | 證券 | 科技 | 生活 | 社會 | 地方 | 文化 | 運動 | 娛樂 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | aall | aipl | aopl | acn  | aie  | asc  | ait  | ahel | asoc | aloc | acul | aspt | amov |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="cna" :data='{"path":"/:id?","categories":["traditional-media"],"example":"/cna/aall","parameters":{"id":"分类 id 或新闻专题 id。分类 id 见下表，新闻专题 id 為 https://www.cna.com.tw/list/newstopic.aspx 中，連結的數字部份。此參數默认为 aall"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["nczitzk"],"description":"| 即時 | 政治 | 國際 | 兩岸 | 產經 | 證券 | 科技 | 生活 | 社會 | 地方 | 文化 | 運動 | 娛樂 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| aall | aipl | aopl | acn  | aie  | asc  | ait  | ahel | asoc | aloc | acul | aspt | amov |","location":"index.ts"}' :test='{"code":0}' />
 
 | 即時 | 政治 | 國際 | 兩岸 | 產經 | 證券 | 科技 | 生活 | 社會 | 地方 | 文化 | 運動 | 娛樂 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | aall | aipl | aopl | acn  | aie  | asc  | ait  | ahel | asoc | aloc | acul | aspt | amov |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| aall | aipl | aopl | acn  | aie  | asc  | ait  | ahel | asoc | aloc | acul | aspt | amov |
 
 ### 分类 (网页爬虫方法) <Site url="cna.com.tw" size="sm" />
 
@@ -1704,39 +1704,39 @@ Column 列表：
 
 ### 栏目 <Site url="inewsweek.cn" size="sm" />
 
-<Route namespace="inewsweek" :data='{"path":"/:channel","categories":["traditional-media"],"example":"/inewsweek/survey","parameters":{"channel":"栏目"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["inewsweek.cn/:channel","inewsweek.cn/"]}],"name":"栏目","maintainers":["changren-wcr"],"description":"提取文章全文。\n\n  | 封面  | 时政     | 社会    | 经济    | 国际  | 调查   | 人物   |\n  | ----- | -------- | ------- | ------- | ----- | ------ | ------ |\n  | cover | politics | society | finance | world | survey | people |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="inewsweek" :data='{"path":"/:channel","categories":["traditional-media"],"example":"/inewsweek/survey","parameters":{"channel":"栏目"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["inewsweek.cn/:channel","inewsweek.cn/"]}],"name":"栏目","maintainers":["changren-wcr"],"description":"提取文章全文。\n\n| 封面  | 时政     | 社会    | 经济    | 国际  | 调查   | 人物   |\n| ----- | -------- | ------- | ------- | ----- | ------ | ------ |\n| cover | politics | society | finance | world | survey | people |","location":"index.ts"}' :test='{"code":0}' />
 
 提取文章全文。
 
-  | 封面  | 时政     | 社会    | 经济    | 国际  | 调查   | 人物   |
-  | ----- | -------- | ------- | ------- | ----- | ------ | ------ |
-  | cover | politics | society | finance | world | survey | people |
+| 封面  | 时政     | 社会    | 经济    | 国际  | 调查   | 人物   |
+| ----- | -------- | ------- | ------- | ----- | ------ | ------ |
+| cover | politics | society | finance | world | survey | people |
 
 ## 中央日报 <Site url="joins.com"/>
 
 ### 中央日报中文版 <Site url="chinese.joins.com" size="sm" />
 
-<Route namespace="joins" :data='{"path":"/chinese/:category?","name":"中央日报中文版","url":"chinese.joins.com","maintainers":["nczitzk"],"example":"/chinese","parameters":{"category":"分类，默认为空，可在对应分类页 URL 中找到 `sc_section_code`"},"description":"::: tip\n  若订阅 [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)，网址为 `https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1`。截取 `sc_section_code` 的值作为参数填入，此时路由为 [`/joins/chinese/S1N1`](https://rsshub.app/joins/chinese/S1N1)。\n:::\n\n  | 分类                                                                                       | `sc_section_code`                             |\n  | ------------------------------------------------------------------------------------------ | ----------------------------------------------- |\n  | [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)               | [S1N1](https://rsshub.app/joins/chinese/S1N1)   |\n  | [国际](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N2)               | [S1N2](https://rsshub.app/joins/chinese/S1N2)   |\n  | [北韩](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N3)               | [S1N3](https://rsshub.app/joins/chinese/S1N3)   |\n  | [政治·社会](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N4)          | [S1N4](https://rsshub.app/joins/chinese/S1N4)   |\n  | [中国观察](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N5)           | [S1N5](https://rsshub.app/joins/chinese/S1N5)   |\n  | [社论](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N26)              | [S1N26](https://rsshub.app/joins/chinese/S1N26) |\n  | [专栏·观点](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N11)         | [S1N11](https://rsshub.app/joins/chinese/S1N11) |\n  | [军事·科技](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N6)          | [S1N6](https://rsshub.app/joins/chinese/S1N6)   |\n  | [娱乐体育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N7)           | [S1N7](https://rsshub.app/joins/chinese/S1N7)   |\n  | [教育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N8)               | [S1N8](https://rsshub.app/joins/chinese/S1N8)   |\n  | [旅游美食](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N9)           | [S1N9](https://rsshub.app/joins/chinese/S1N9)   |\n  | [时尚](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N10)              | [S1N10](https://rsshub.app/joins/chinese/S1N10) |\n  | [图集](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N12&view_type=tm) | [S1N12](https://rsshub.app/joins/chinese/S1N12) |\n\n  ","categories":["traditional-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chinese.joins.com/news/articleList.html"]},{"title":"财经","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N1"},{"title":"国际","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N2"},{"title":"北韩","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N3"},{"title":"政治·社会","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N4"},{"title":"中国观察","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N5"},{"title":"社论","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N26"},{"title":"专栏·观点","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N11"},{"title":"军事·科技","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N6"},{"title":"娱乐体育","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N7"},{"title":"教育","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N8"},{"title":"旅游美食","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N9"},{"title":"时尚","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N10"},{"title":"图集","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N12"}],"location":"chinese.ts"}' :test='{"code":1,"message":"AssertionError: expected 404 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1063)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="joins" :data='{"path":"/chinese/:category?","name":"中央日报中文版","url":"chinese.joins.com","maintainers":["nczitzk"],"example":"/chinese","parameters":{"category":"分类，默认为空，可在对应分类页 URL 中找到 `sc_section_code`"},"description":"::: tip\n  若订阅 [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)，网址为 `https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1`。截取 `sc_section_code` 的值作为参数填入，此时路由为 [`/joins/chinese/S1N1`](https://rsshub.app/joins/chinese/S1N1)。\n:::\n\n| 分类                                                                                       | `sc_section_code`                             |\n| ------------------------------------------------------------------------------------------ | ----------------------------------------------- |\n| [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)               | [S1N1](https://rsshub.app/joins/chinese/S1N1)   |\n| [国际](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N2)               | [S1N2](https://rsshub.app/joins/chinese/S1N2)   |\n| [北韩](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N3)               | [S1N3](https://rsshub.app/joins/chinese/S1N3)   |\n| [政治·社会](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N4)          | [S1N4](https://rsshub.app/joins/chinese/S1N4)   |\n| [中国观察](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N5)           | [S1N5](https://rsshub.app/joins/chinese/S1N5)   |\n| [社论](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N26)              | [S1N26](https://rsshub.app/joins/chinese/S1N26) |\n| [专栏·观点](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N11)         | [S1N11](https://rsshub.app/joins/chinese/S1N11) |\n| [军事·科技](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N6)          | [S1N6](https://rsshub.app/joins/chinese/S1N6)   |\n| [娱乐体育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N7)           | [S1N7](https://rsshub.app/joins/chinese/S1N7)   |\n| [教育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N8)               | [S1N8](https://rsshub.app/joins/chinese/S1N8)   |\n| [旅游美食](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N9)           | [S1N9](https://rsshub.app/joins/chinese/S1N9)   |\n| [时尚](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N10)              | [S1N10](https://rsshub.app/joins/chinese/S1N10) |\n| [图集](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N12&view_type=tm) | [S1N12](https://rsshub.app/joins/chinese/S1N12) |\n\n  ","categories":["traditional-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["chinese.joins.com/news/articleList.html"]},{"title":"财经","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N1"},{"title":"国际","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N2"},{"title":"北韩","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N3"},{"title":"政治·社会","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N4"},{"title":"中国观察","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N5"},{"title":"社论","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N26"},{"title":"专栏·观点","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N11"},{"title":"军事·科技","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N6"},{"title":"娱乐体育","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N7"},{"title":"教育","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N8"},{"title":"旅游美食","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N9"},{"title":"时尚","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N10"},{"title":"图集","source":["chinese.joins.com/news/articleList.html"],"target":"/chinese/S1N12"}],"location":"chinese.ts"}' :test='{"code":1,"message":"AssertionError: expected 404 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1063)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 ::: tip
   若订阅 [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)，网址为 `https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1`。截取 `sc_section_code` 的值作为参数填入，此时路由为 [`/joins/chinese/S1N1`](https://rsshub.app/joins/chinese/S1N1)。
 :::
 
-  | 分类                                                                                       | `sc_section_code`                             |
-  | ------------------------------------------------------------------------------------------ | ----------------------------------------------- |
-  | [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)               | [S1N1](https://rsshub.app/joins/chinese/S1N1)   |
-  | [国际](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N2)               | [S1N2](https://rsshub.app/joins/chinese/S1N2)   |
-  | [北韩](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N3)               | [S1N3](https://rsshub.app/joins/chinese/S1N3)   |
-  | [政治·社会](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N4)          | [S1N4](https://rsshub.app/joins/chinese/S1N4)   |
-  | [中国观察](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N5)           | [S1N5](https://rsshub.app/joins/chinese/S1N5)   |
-  | [社论](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N26)              | [S1N26](https://rsshub.app/joins/chinese/S1N26) |
-  | [专栏·观点](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N11)         | [S1N11](https://rsshub.app/joins/chinese/S1N11) |
-  | [军事·科技](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N6)          | [S1N6](https://rsshub.app/joins/chinese/S1N6)   |
-  | [娱乐体育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N7)           | [S1N7](https://rsshub.app/joins/chinese/S1N7)   |
-  | [教育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N8)               | [S1N8](https://rsshub.app/joins/chinese/S1N8)   |
-  | [旅游美食](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N9)           | [S1N9](https://rsshub.app/joins/chinese/S1N9)   |
-  | [时尚](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N10)              | [S1N10](https://rsshub.app/joins/chinese/S1N10) |
-  | [图集](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N12&view_type=tm) | [S1N12](https://rsshub.app/joins/chinese/S1N12) |
+| 分类                                                                                       | `sc_section_code`                             |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| [财经](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N1)               | [S1N1](https://rsshub.app/joins/chinese/S1N1)   |
+| [国际](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N2)               | [S1N2](https://rsshub.app/joins/chinese/S1N2)   |
+| [北韩](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N3)               | [S1N3](https://rsshub.app/joins/chinese/S1N3)   |
+| [政治·社会](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N4)          | [S1N4](https://rsshub.app/joins/chinese/S1N4)   |
+| [中国观察](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N5)           | [S1N5](https://rsshub.app/joins/chinese/S1N5)   |
+| [社论](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N26)              | [S1N26](https://rsshub.app/joins/chinese/S1N26) |
+| [专栏·观点](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N11)         | [S1N11](https://rsshub.app/joins/chinese/S1N11) |
+| [军事·科技](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N6)          | [S1N6](https://rsshub.app/joins/chinese/S1N6)   |
+| [娱乐体育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N7)           | [S1N7](https://rsshub.app/joins/chinese/S1N7)   |
+| [教育](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N8)               | [S1N8](https://rsshub.app/joins/chinese/S1N8)   |
+| [旅游美食](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N9)           | [S1N9](https://rsshub.app/joins/chinese/S1N9)   |
+| [时尚](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N10)              | [S1N10](https://rsshub.app/joins/chinese/S1N10) |
+| [图集](https://chinese.joins.com/news/articleList.html?sc_section_code=S1N12&view_type=tm) | [S1N12](https://rsshub.app/joins/chinese/S1N12) |
 
   
 

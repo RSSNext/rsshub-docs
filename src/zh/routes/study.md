@@ -4,13 +4,13 @@
 
 ### Seminar Series <Site url="www.aiea.org" size="sm" />
 
-<Route namespace="aiea" :data='{"path":"/seminars/:period","categories":["study"],"example":"/aiea/seminars/upcoming","parameters":{"period":"Time frame"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Seminar Series","maintainers":["zxx-457"],"description":"| Time frame |\n  | ---------- |\n  | upcoming   |\n  | past       |\n  | both       |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 32)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="aiea" :data='{"path":"/seminars/:period","categories":["study"],"example":"/aiea/seminars/upcoming","parameters":{"period":"Time frame"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Seminar Series","maintainers":["zxx-457"],"description":"| Time frame |\n| ---------- |\n| upcoming   |\n| past       |\n| both       |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 32)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | Time frame |
-  | ---------- |
-  | upcoming   |
-  | past       |
-  | both       |
+| ---------- |
+| upcoming   |
+| past       |
+| both       |
 
 ## Chinese Social Science Net <Site url="iolaw.cssn.cn"/>
 
@@ -50,37 +50,37 @@ RSS feed for LMU academic staff job openings.
 
 ### Public Maps <Site url="mindmeister.com" size="sm" />
 
-<Route namespace="mindmeister" :data='{"path":"/:category?/:language?","categories":["study"],"example":"/mindmeister/mind-map-examples","parameters":{"category":"Categories, see the table below, `mind-map-examples` by default","language":"Languages, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Public Maps","maintainers":["TonyRL"],"description":"| Categories    | parameter         |\n  | ------------- | ----------------- |\n  | Featured Map  | mind-map-examples |\n  | Business      | business          |\n  | Design        | design            |\n  | Education     | education         |\n  | Entertainment | entertainment     |\n  | Life          | life              |\n  | Marketing     | marketing         |\n  | Productivity  | productivity      |\n  | Summaries     | summaries         |\n  | Technology    | technology        |\n  | Other         | other             |\n\n  | Languages  | parameter |\n  | ---------- | --------- |\n  | English    | en        |\n  | Deutsch    | de        |\n  | Français   | fr        |\n  | Español    | es        |\n  | Português  | pt        |\n  | Nederlands | nl        |\n  | Dansk      | da        |\n  | Русский    | ru        |\n  | 日本語     | ja        |\n  | Italiano   | it        |\n  | 简体中文   | zh        |\n  | 한국어     | ko        |\n  | Other      | other     |","location":"example.ts"}' :test='{"code":0}' />
+<Route namespace="mindmeister" :data='{"path":"/:category?/:language?","categories":["study"],"example":"/mindmeister/mind-map-examples","parameters":{"category":"Categories, see the table below, `mind-map-examples` by default","language":"Languages, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Public Maps","maintainers":["TonyRL"],"description":"| Categories    | parameter         |\n| ------------- | ----------------- |\n| Featured Map  | mind-map-examples |\n| Business      | business          |\n| Design        | design            |\n| Education     | education         |\n| Entertainment | entertainment     |\n| Life          | life              |\n| Marketing     | marketing         |\n| Productivity  | productivity      |\n| Summaries     | summaries         |\n| Technology    | technology        |\n| Other         | other             |\n\n| Languages  | parameter |\n| ---------- | --------- |\n| English    | en        |\n| Deutsch    | de        |\n| Français   | fr        |\n| Español    | es        |\n| Português  | pt        |\n| Nederlands | nl        |\n| Dansk      | da        |\n| Русский    | ru        |\n| 日本語     | ja        |\n| Italiano   | it        |\n| 简体中文   | zh        |\n| 한국어     | ko        |\n| Other      | other     |","location":"example.ts"}' :test='{"code":0}' />
 
 | Categories    | parameter         |
-  | ------------- | ----------------- |
-  | Featured Map  | mind-map-examples |
-  | Business      | business          |
-  | Design        | design            |
-  | Education     | education         |
-  | Entertainment | entertainment     |
-  | Life          | life              |
-  | Marketing     | marketing         |
-  | Productivity  | productivity      |
-  | Summaries     | summaries         |
-  | Technology    | technology        |
-  | Other         | other             |
+| ------------- | ----------------- |
+| Featured Map  | mind-map-examples |
+| Business      | business          |
+| Design        | design            |
+| Education     | education         |
+| Entertainment | entertainment     |
+| Life          | life              |
+| Marketing     | marketing         |
+| Productivity  | productivity      |
+| Summaries     | summaries         |
+| Technology    | technology        |
+| Other         | other             |
 
-  | Languages  | parameter |
-  | ---------- | --------- |
-  | English    | en        |
-  | Deutsch    | de        |
-  | Français   | fr        |
-  | Español    | es        |
-  | Português  | pt        |
-  | Nederlands | nl        |
-  | Dansk      | da        |
-  | Русский    | ru        |
-  | 日本語     | ja        |
-  | Italiano   | it        |
-  | 简体中文   | zh        |
-  | 한국어     | ko        |
-  | Other      | other     |
+| Languages  | parameter |
+| ---------- | --------- |
+| English    | en        |
+| Deutsch    | de        |
+| Français   | fr        |
+| Español    | es        |
+| Português  | pt        |
+| Nederlands | nl        |
+| Dansk      | da        |
+| Русский    | ru        |
+| 日本語     | ja        |
+| Italiano   | it        |
+| 简体中文   | zh        |
+| 한국어     | ko        |
+| Other      | other     |
 
 ## ORCID <Site url="orcid.org"/>
 
@@ -120,11 +120,11 @@ RSS feed for LMU academic staff job openings.
 
 ### 分类 <Site url="fjksbm.com" size="sm" />
 
-<Route namespace="fjksbm" :data='{"path":"/:category?","categories":["study"],"example":"/fjksbm","parameters":{"category":"分类，见下表，默认为网络报名进行中"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fjksbm.com/portal/:category?","fjksbm.com/portal"]}],"name":"分类","maintainers":["nczitzk"],"description":"| 已发布公告 (方案)，即将开始 | 网络报名进行中 | 网络报名结束等待打印准考证 | 正在打印准考证 | 考试结束，等待发布成绩 | 已发布成绩 | 新闻动态 | 政策法规 |\n  | --------------------------- | -------------- | -------------------------- | -------------- | ---------------------- | ---------- | -------- | -------- |\n  | 0                           | 1              | 2                          | 3              | 4                      | 5          | news     | policy   |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="fjksbm" :data='{"path":"/:category?","categories":["study"],"example":"/fjksbm","parameters":{"category":"分类，见下表，默认为网络报名进行中"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["fjksbm.com/portal/:category?","fjksbm.com/portal"]}],"name":"分类","maintainers":["nczitzk"],"description":"| 已发布公告 (方案)，即将开始 | 网络报名进行中 | 网络报名结束等待打印准考证 | 正在打印准考证 | 考试结束，等待发布成绩 | 已发布成绩 | 新闻动态 | 政策法规 |\n| --------------------------- | -------------- | -------------------------- | -------------- | ---------------------- | ---------- | -------- | -------- |\n| 0                           | 1              | 2                          | 3              | 4                      | 5          | news     | policy   |","location":"index.ts"}' :test='{"code":0}' />
 
 | 已发布公告 (方案)，即将开始 | 网络报名进行中 | 网络报名结束等待打印准考证 | 正在打印准考证 | 考试结束，等待发布成绩 | 已发布成绩 | 新闻动态 | 政策法规 |
-  | --------------------------- | -------------- | -------------------------- | -------------- | ---------------------- | ---------- | -------- | -------- |
-  | 0                           | 1              | 2                          | 3              | 4                      | 5          | news     | policy   |
+| --------------------------- | -------------- | -------------------------- | -------------- | ---------------------- | ---------- | -------- | -------- |
+| 0                           | 1              | 2                          | 3              | 4                      | 5          | news     | policy   |
 
 ## 国家哲学社会科学文献中心 <Site url="ncpssd.cn"/>
 
@@ -223,11 +223,11 @@ RSS feed for LMU academic staff job openings.
 
 ### 知识库 <Site url="yuque.com" size="sm" />
 
-<Route namespace="yuque" :data='{"path":"/:name/:book","categories":["study"],"example":"/yuque/ruanyf/weekly","parameters":{"name":"用戶名","book":"知识库 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuque.com/:name/:book"]}],"name":"知识库","maintainers":["aha2mao","ltaoo"],"description":"| Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |\n  | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |\n  | [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |","location":"book.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="yuque" :data='{"path":"/:name/:book","categories":["study"],"example":"/yuque/ruanyf/weekly","parameters":{"name":"用戶名","book":"知识库 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuque.com/:name/:book"]}],"name":"知识库","maintainers":["aha2mao","ltaoo"],"description":"| Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |\n| -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |\n| [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |","location":"book.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | Node.js 专栏                                             | 阮一峰每周分享                                                 | 语雀使用手册                                             |
-  | -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |
-  | [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |
+| -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |
+| [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |
 
 ## 中国人工智能学会 <Site url="caai.cn"/>
 
@@ -239,11 +239,11 @@ RSS feed for LMU academic staff job openings.
 
 ### 栏目 <Site url="cste.org.cn" size="sm" />
 
-<Route namespace="camchina" :data='{"path":"/:id?","categories":["study"],"example":"/camchina","parameters":{"id":"分类，见下表，默认为 1，即新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cste.org.cn/categories/:id","cste.org.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"description":"| 新闻 | 通告栏 |\n  | ---- | ------ |\n  | 1    | 2      |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="camchina" :data='{"path":"/:id?","categories":["study"],"example":"/camchina","parameters":{"id":"分类，见下表，默认为 1，即新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cste.org.cn/categories/:id","cste.org.cn/"]}],"name":"栏目","maintainers":["nczitzk"],"description":"| 新闻 | 通告栏 |\n| ---- | ------ |\n| 1    | 2      |","location":"index.ts"}' :test='{"code":0}' />
 
 | 新闻 | 通告栏 |
-  | ---- | ------ |
-  | 1    | 2      |
+| ---- | ------ |
+| 1    | 2      |
 
 ## 中国计算机学会 <Site url="ccf.org.cn"/>
 
@@ -253,114 +253,114 @@ RSS feed for LMU academic staff job openings.
 
 ### 计算机视觉专委会 - 学术动态 - 分类 <Site url="ccf.org.cn" size="sm" />
 
-<Route namespace="ccf" :data='{"path":"/ccfcv/:channel/:category","categories":["study"],"example":"/ccf/ccfcv/xsdt/xsqy","parameters":{"channel":"频道，仅支持 `xsdt`","category":"分类，见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机视觉专委会 - 学术动态 - 分类","maintainers":["elxy"],"description":"| 学术前沿 | 热点征文 | 学术会议 |\n  | -------- | -------- | -------- |\n  | xsqy     | rdzw     | xshy     |","location":"ccfcv/index.ts"}' :test='{"code":0}' />
+<Route namespace="ccf" :data='{"path":"/ccfcv/:channel/:category","categories":["study"],"example":"/ccf/ccfcv/xsdt/xsqy","parameters":{"channel":"频道，仅支持 `xsdt`","category":"分类，见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"计算机视觉专委会 - 学术动态 - 分类","maintainers":["elxy"],"description":"| 学术前沿 | 热点征文 | 学术会议 |\n| -------- | -------- | -------- |\n| xsqy     | rdzw     | xshy     |","location":"ccfcv/index.ts"}' :test='{"code":0}' />
 
 | 学术前沿 | 热点征文 | 学术会议 |
-  | -------- | -------- | -------- |
-  | xsqy     | rdzw     | xshy     |
+| -------- | -------- | -------- |
+| xsqy     | rdzw     | xshy     |
 
 ### 新闻 <Site url="ccf.org.cn" size="sm" />
 
-<Route namespace="ccf" :data='{"path":"/news/:category?","categories":["study"],"example":"/ccf/news","parameters":{"category":"分类，见下表，默认为 CCF 新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ccf.org.cn/:category","ccf.org.cn/"],"target":"/news/:category"}],"name":"新闻","maintainers":["nczitzk"],"description":"| CCF 新闻    | CCF 聚焦 | ACM 信息  |\n  | ----------- | -------- | --------- |\n  | Media_list | Focus    | ACM_News |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="ccf" :data='{"path":"/news/:category?","categories":["study"],"example":"/ccf/news","parameters":{"category":"分类，见下表，默认为 CCF 新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ccf.org.cn/:category","ccf.org.cn/"],"target":"/news/:category"}],"name":"新闻","maintainers":["nczitzk"],"description":"| CCF 新闻    | CCF 聚焦 | ACM 信息  |\n| ----------- | -------- | --------- |\n| Media_list | Focus    | ACM_News |","location":"news.ts"}' :test='{"code":0}' />
 
 | CCF 新闻    | CCF 聚焦 | ACM 信息  |
-  | ----------- | -------- | --------- |
-  | Media_list | Focus    | ACM_News |
+| ----------- | -------- | --------- |
+| Media_list | Focus    | ACM_News |
 
 ## 中华人民共和国学位证书查询 <Site url="chinadegrees.com.cn"/>
 
 ### 各学位授予单位学位证书上网进度 <Site url="chinadegrees.com.cn" size="sm" />
 
-<Route namespace="chinadegrees" :data='{"path":"/:province?","categories":["study"],"example":"/chinadegrees/11","parameters":{"province":"省市代号，见下表，亦可在 [这里](http://www.chinadegrees.com.cn/help/provinceSwqk.html) 找到，默认为 `11`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"各学位授予单位学位证书上网进度","description":"| 省市             | 代号 |\n  | ---------------- | ---- |\n  | 北京市           | 11   |\n  | 天津市           | 12   |\n  | 河北省           | 13   |\n  | 山西省           | 14   |\n  | 内蒙古自治区     | 15   |\n  | 辽宁省           | 21   |\n  | 吉林省           | 22   |\n  | 黑龙江省         | 23   |\n  | 上海市           | 31   |\n  | 江苏省           | 32   |\n  | 浙江省           | 33   |\n  | 安徽省           | 34   |\n  | 福建省           | 35   |\n  | 江西省           | 36   |\n  | 山东省           | 37   |\n  | 河南省           | 41   |\n  | 湖北省           | 42   |\n  | 湖南省           | 43   |\n  | 广东省           | 44   |\n  | 广西壮族自治区   | 45   |\n  | 海南省           | 46   |\n  | 重庆市           | 50   |\n  | 四川省           | 51   |\n  | 贵州省           | 52   |\n  | 云南省           | 53   |\n  | 西藏自治区       | 54   |\n  | 陕西省           | 61   |\n  | 甘肃省           | 62   |\n  | 青海省           | 63   |\n  | 宁夏回族自治区   | 64   |\n  | 新疆维吾尔自治区 | 65   |\n  | 台湾             | 71   |","maintainers":["TonyRL"],"location":"province.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 308)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="chinadegrees" :data='{"path":"/:province?","categories":["study"],"example":"/chinadegrees/11","parameters":{"province":"省市代号，见下表，亦可在 [这里](http://www.chinadegrees.com.cn/help/provinceSwqk.html) 找到，默认为 `11`"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"各学位授予单位学位证书上网进度","description":"| 省市             | 代号 |\n| ---------------- | ---- |\n| 北京市           | 11   |\n| 天津市           | 12   |\n| 河北省           | 13   |\n| 山西省           | 14   |\n| 内蒙古自治区     | 15   |\n| 辽宁省           | 21   |\n| 吉林省           | 22   |\n| 黑龙江省         | 23   |\n| 上海市           | 31   |\n| 江苏省           | 32   |\n| 浙江省           | 33   |\n| 安徽省           | 34   |\n| 福建省           | 35   |\n| 江西省           | 36   |\n| 山东省           | 37   |\n| 河南省           | 41   |\n| 湖北省           | 42   |\n| 湖南省           | 43   |\n| 广东省           | 44   |\n| 广西壮族自治区   | 45   |\n| 海南省           | 46   |\n| 重庆市           | 50   |\n| 四川省           | 51   |\n| 贵州省           | 52   |\n| 云南省           | 53   |\n| 西藏自治区       | 54   |\n| 陕西省           | 61   |\n| 甘肃省           | 62   |\n| 青海省           | 63   |\n| 宁夏回族自治区   | 64   |\n| 新疆维吾尔自治区 | 65   |\n| 台湾             | 71   |","maintainers":["TonyRL"],"location":"province.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 308)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 省市             | 代号 |
-  | ---------------- | ---- |
-  | 北京市           | 11   |
-  | 天津市           | 12   |
-  | 河北省           | 13   |
-  | 山西省           | 14   |
-  | 内蒙古自治区     | 15   |
-  | 辽宁省           | 21   |
-  | 吉林省           | 22   |
-  | 黑龙江省         | 23   |
-  | 上海市           | 31   |
-  | 江苏省           | 32   |
-  | 浙江省           | 33   |
-  | 安徽省           | 34   |
-  | 福建省           | 35   |
-  | 江西省           | 36   |
-  | 山东省           | 37   |
-  | 河南省           | 41   |
-  | 湖北省           | 42   |
-  | 湖南省           | 43   |
-  | 广东省           | 44   |
-  | 广西壮族自治区   | 45   |
-  | 海南省           | 46   |
-  | 重庆市           | 50   |
-  | 四川省           | 51   |
-  | 贵州省           | 52   |
-  | 云南省           | 53   |
-  | 西藏自治区       | 54   |
-  | 陕西省           | 61   |
-  | 甘肃省           | 62   |
-  | 青海省           | 63   |
-  | 宁夏回族自治区   | 64   |
-  | 新疆维吾尔自治区 | 65   |
-  | 台湾             | 71   |
+| ---------------- | ---- |
+| 北京市           | 11   |
+| 天津市           | 12   |
+| 河北省           | 13   |
+| 山西省           | 14   |
+| 内蒙古自治区     | 15   |
+| 辽宁省           | 21   |
+| 吉林省           | 22   |
+| 黑龙江省         | 23   |
+| 上海市           | 31   |
+| 江苏省           | 32   |
+| 浙江省           | 33   |
+| 安徽省           | 34   |
+| 福建省           | 35   |
+| 江西省           | 36   |
+| 山东省           | 37   |
+| 河南省           | 41   |
+| 湖北省           | 42   |
+| 湖南省           | 43   |
+| 广东省           | 44   |
+| 广西壮族自治区   | 45   |
+| 海南省           | 46   |
+| 重庆市           | 50   |
+| 四川省           | 51   |
+| 贵州省           | 52   |
+| 云南省           | 53   |
+| 西藏自治区       | 54   |
+| 陕西省           | 61   |
+| 甘肃省           | 62   |
+| 青海省           | 63   |
+| 宁夏回族自治区   | 64   |
+| 新疆维吾尔自治区 | 65   |
+| 台湾             | 71   |
 
 ## 中国智库网 <Site url="www.chinathinktanks.org.cn"/>
 
 ### 观点与实践 <Site url="www.chinathinktanks.org.cn" size="sm" />
 
-<Route namespace="chinathinktanks" :data='{"path":"/:id","categories":["study"],"example":"/chinathinktanks/57","parameters":{"id":"见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"观点与实践","maintainers":["Aeliu"],"description":"| `:id` | 专题名称 |\n  | ----- | -------- |\n  | 2     | 党的建设 |\n  | 3     | 社会     |\n  | 4     | 生态     |\n  | 5     | 政治     |\n  | 6     | 经济     |\n  | 7     | 文化     |\n  | 9     | 热点专题 |\n  | 10    | 国际关系 |\n  | 13    | 国外智库 |\n  | 46    | 智库报告 |\n  | 57    | 智库要闻 |\n  | 126   | 世界经济 |\n  | 127   | 宏观经济 |\n  | 128   | 区域经济 |\n  | 129   | 产业企业 |\n  | 130   | 三农问题 |\n  | 131   | 财政金融 |\n  | 132   | 科技创新 |\n  | 133   | 民主     |\n  | 134   | 法治     |\n  | 135   | 行政     |\n  | 136   | 国家治理 |\n  | 137   | 社会事业 |\n  | 138   | 社会保障 |\n  | 139   | 民族宗教 |\n  | 140   | 人口就业 |\n  | 141   | 社会治理 |\n  | 142   | 文化产业 |\n  | 143   | 公共文化 |\n  | 144   | 文化体制 |\n  | 145   | 文化思想 |\n  | 146   | 资源     |\n  | 147   | 能源     |\n  | 148   | 环境     |\n  | 149   | 生态文明 |\n  | 150   | 思想建设 |\n  | 151   | 作风建设 |\n  | 152   | 组织建设 |\n  | 153   | 制度建设 |\n  | 154   | 反腐倡廉 |\n  | 155   | 中国外交 |\n  | 156   | 全球治理 |\n  | 157   | 大国关系 |\n  | 158   | 地区政治 |\n  | 181   | 执政能力 |","location":"viewpoint.ts"}' :test='{"code":0}' />
+<Route namespace="chinathinktanks" :data='{"path":"/:id","categories":["study"],"example":"/chinathinktanks/57","parameters":{"id":"见下表，亦可在网站 url 里找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"观点与实践","maintainers":["Aeliu"],"description":"| `:id` | 专题名称 |\n| ----- | -------- |\n| 2     | 党的建设 |\n| 3     | 社会     |\n| 4     | 生态     |\n| 5     | 政治     |\n| 6     | 经济     |\n| 7     | 文化     |\n| 9     | 热点专题 |\n| 10    | 国际关系 |\n| 13    | 国外智库 |\n| 46    | 智库报告 |\n| 57    | 智库要闻 |\n| 126   | 世界经济 |\n| 127   | 宏观经济 |\n| 128   | 区域经济 |\n| 129   | 产业企业 |\n| 130   | 三农问题 |\n| 131   | 财政金融 |\n| 132   | 科技创新 |\n| 133   | 民主     |\n| 134   | 法治     |\n| 135   | 行政     |\n| 136   | 国家治理 |\n| 137   | 社会事业 |\n| 138   | 社会保障 |\n| 139   | 民族宗教 |\n| 140   | 人口就业 |\n| 141   | 社会治理 |\n| 142   | 文化产业 |\n| 143   | 公共文化 |\n| 144   | 文化体制 |\n| 145   | 文化思想 |\n| 146   | 资源     |\n| 147   | 能源     |\n| 148   | 环境     |\n| 149   | 生态文明 |\n| 150   | 思想建设 |\n| 151   | 作风建设 |\n| 152   | 组织建设 |\n| 153   | 制度建设 |\n| 154   | 反腐倡廉 |\n| 155   | 中国外交 |\n| 156   | 全球治理 |\n| 157   | 大国关系 |\n| 158   | 地区政治 |\n| 181   | 执政能力 |","location":"viewpoint.ts"}' :test='{"code":0}' />
 
 | `:id` | 专题名称 |
-  | ----- | -------- |
-  | 2     | 党的建设 |
-  | 3     | 社会     |
-  | 4     | 生态     |
-  | 5     | 政治     |
-  | 6     | 经济     |
-  | 7     | 文化     |
-  | 9     | 热点专题 |
-  | 10    | 国际关系 |
-  | 13    | 国外智库 |
-  | 46    | 智库报告 |
-  | 57    | 智库要闻 |
-  | 126   | 世界经济 |
-  | 127   | 宏观经济 |
-  | 128   | 区域经济 |
-  | 129   | 产业企业 |
-  | 130   | 三农问题 |
-  | 131   | 财政金融 |
-  | 132   | 科技创新 |
-  | 133   | 民主     |
-  | 134   | 法治     |
-  | 135   | 行政     |
-  | 136   | 国家治理 |
-  | 137   | 社会事业 |
-  | 138   | 社会保障 |
-  | 139   | 民族宗教 |
-  | 140   | 人口就业 |
-  | 141   | 社会治理 |
-  | 142   | 文化产业 |
-  | 143   | 公共文化 |
-  | 144   | 文化体制 |
-  | 145   | 文化思想 |
-  | 146   | 资源     |
-  | 147   | 能源     |
-  | 148   | 环境     |
-  | 149   | 生态文明 |
-  | 150   | 思想建设 |
-  | 151   | 作风建设 |
-  | 152   | 组织建设 |
-  | 153   | 制度建设 |
-  | 154   | 反腐倡廉 |
-  | 155   | 中国外交 |
-  | 156   | 全球治理 |
-  | 157   | 大国关系 |
-  | 158   | 地区政治 |
-  | 181   | 执政能力 |
+| ----- | -------- |
+| 2     | 党的建设 |
+| 3     | 社会     |
+| 4     | 生态     |
+| 5     | 政治     |
+| 6     | 经济     |
+| 7     | 文化     |
+| 9     | 热点专题 |
+| 10    | 国际关系 |
+| 13    | 国外智库 |
+| 46    | 智库报告 |
+| 57    | 智库要闻 |
+| 126   | 世界经济 |
+| 127   | 宏观经济 |
+| 128   | 区域经济 |
+| 129   | 产业企业 |
+| 130   | 三农问题 |
+| 131   | 财政金融 |
+| 132   | 科技创新 |
+| 133   | 民主     |
+| 134   | 法治     |
+| 135   | 行政     |
+| 136   | 国家治理 |
+| 137   | 社会事业 |
+| 138   | 社会保障 |
+| 139   | 民族宗教 |
+| 140   | 人口就业 |
+| 141   | 社会治理 |
+| 142   | 文化产业 |
+| 143   | 公共文化 |
+| 144   | 文化体制 |
+| 145   | 文化思想 |
+| 146   | 资源     |
+| 147   | 能源     |
+| 148   | 环境     |
+| 149   | 生态文明 |
+| 150   | 思想建设 |
+| 151   | 作风建设 |
+| 152   | 组织建设 |
+| 153   | 制度建设 |
+| 154   | 反腐倡廉 |
+| 155   | 中国外交 |
+| 156   | 全球治理 |
+| 157   | 大国关系 |
+| 158   | 地区政治 |
+| 181   | 执政能力 |
 
 ## 中国研究生招生信息网 <Site url="yz.chsi.com.cn"/>
 
@@ -374,15 +374,15 @@ RSS feed for LMU academic staff job openings.
 
 ### 考研资讯 <Site url="yz.chsi.com.cn" size="sm" />
 
-<Route namespace="chsi" :data='{"path":"/kyzx/:type","categories":["study"],"example":"/chsi/kyzx/fstj","parameters":{"type":" type 见下表，亦可在网站 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/:type"]}],"name":"考研资讯","maintainers":["yanbot-team"],"description":"| `:type` | 专题名称 |\n  | ------- | -------- |\n  | fstj    | 复试调剂 |\n  | kydt    | 考研动态 |\n  | zcdh    | 政策导航 |\n  | kyrw    | 考研人物 |\n  | jyxd    | 经验心得 |","location":"kyzx.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 319)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="chsi" :data='{"path":"/kyzx/:type","categories":["study"],"example":"/chsi/kyzx/fstj","parameters":{"type":" type 见下表，亦可在网站 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.chsi.com.cn/kyzx/:type"]}],"name":"考研资讯","maintainers":["yanbot-team"],"description":"| `:type` | 专题名称 |\n| ------- | -------- |\n| fstj    | 复试调剂 |\n| kydt    | 考研动态 |\n| zcdh    | 政策导航 |\n| kyrw    | 考研人物 |\n| jyxd    | 经验心得 |","location":"kyzx.ts"}' :test='{"code":1,"message":"AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 319)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 | `:type` | 专题名称 |
-  | ------- | -------- |
-  | fstj    | 复试调剂 |
-  | kydt    | 考研动态 |
-  | zcdh    | 政策导航 |
-  | kyrw    | 考研人物 |
-  | jyxd    | 经验心得 |
+| ------- | -------- |
+| fstj    | 复试调剂 |
+| kydt    | 考研动态 |
+| zcdh    | 政策导航 |
+| kyrw    | 考研人物 |
+| jyxd    | 经验心得 |
 
 ## 中国人事考试网 <Site url="www.cpta.com.cn"/>
 
@@ -401,11 +401,11 @@ RSS feed for LMU academic staff job openings.
 
 ### 栏目 <Site url="cste.org.cn" size="sm" />
 
-<Route namespace="cste" :data='{"path":"/:id?","categories":["study"],"example":"/cste","parameters":{"id":"分类，见下表，默认为 16，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["nczitzk"],"description":"| 通知公告 | 学会新闻 | 科协简讯 | 学科动态 | 往事钩沉 |\n  | -------- | -------- | -------- | -------- | -------- |\n  | 16       | 18       | 19       | 20       | 21       |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 394)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="cste" :data='{"path":"/:id?","categories":["study"],"example":"/cste","parameters":{"id":"分类，见下表，默认为 16，即通知公告"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"栏目","maintainers":["nczitzk"],"description":"| 通知公告 | 学会新闻 | 科协简讯 | 学科动态 | 往事钩沉 |\n| -------- | -------- | -------- | -------- | -------- |\n| 16       | 18       | 19       | 20       | 21       |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 394)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 通知公告 | 学会新闻 | 科协简讯 | 学科动态 | 往事钩沉 |
-  | -------- | -------- | -------- | -------- | -------- |
-  | 16       | 18       | 19       | 20       | 21       |
+| -------- | -------- | -------- | -------- | -------- |
+| 16       | 18       | 19       | 20       | 21       |
 
 ## 中国教育考试网 <Site url="www.neea.cn"/>
 

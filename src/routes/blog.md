@@ -136,11 +136,11 @@ Hamel's Blog Posts
 
 ### Category <Site url="ianspriggs.com" size="sm" />
 
-<Route namespace="ianspriggs" :data='{"path":"/:category?","categories":["blog"],"example":"/ianspriggs/portraits","parameters":{"category":"Category, see below, 3D PORTRAITS by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["nczitzk"],"description":"| 3D PORTRAITS | CHARACTERS |\n  | ------------ | ---------- |\n  | portraits    | characters |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="ianspriggs" :data='{"path":"/:category?","categories":["blog"],"example":"/ianspriggs/portraits","parameters":{"category":"Category, see below, 3D PORTRAITS by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["nczitzk"],"description":"| 3D PORTRAITS | CHARACTERS |\n| ------------ | ---------- |\n| portraits    | characters |","location":"index.ts"}' :test='{"code":0}' />
 
 | 3D PORTRAITS | CHARACTERS |
-  | ------------ | ---------- |
-  | portraits    | characters |
+| ------------ | ---------- |
+| portraits    | characters |
 
 ## imhcg的信息站 <Site url="infos.imhcg.cn"/>
 
@@ -374,11 +374,11 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 分类 <Site url="dayanzai.me" size="sm" />
 
-<Route namespace="dayanzai" :data='{"path":"/:category/:fulltext?","categories":["blog"],"example":"/dayanzai/windows","parameters":{"category":"分类","fulltext":"是否获取全文，需要获取则传入参数`y`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dayanzai.me/:category","dayanzai.me/:category/*"],"target":"/:category"}],"name":"分类","maintainers":[],"description":"| 微软应用 | 安卓应用 | 教程资源 | 其他资源 |\n  | -------- | -------- | -------- | -------- |\n  | windows  | android  | tutorial | other    |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="dayanzai" :data='{"path":"/:category/:fulltext?","categories":["blog"],"example":"/dayanzai/windows","parameters":{"category":"分类","fulltext":"是否获取全文，需要获取则传入参数`y`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["dayanzai.me/:category","dayanzai.me/:category/*"],"target":"/:category"}],"name":"分类","maintainers":[],"description":"| 微软应用 | 安卓应用 | 教程资源 | 其他资源 |\n| -------- | -------- | -------- | -------- |\n| windows  | android  | tutorial | other    |","location":"index.ts"}' :test='{"code":0}' />
 
 | 微软应用 | 安卓应用 | 教程资源 | 其他资源 |
-  | -------- | -------- | -------- | -------- |
-  | windows  | android  | tutorial | other    |
+| -------- | -------- | -------- | -------- |
+| windows  | android  | tutorial | other    |
 
 ## 道宣的窝 <Site url="daoxuan.cc"/>
 
@@ -396,11 +396,11 @@ If you subscribe to [WordPress News](https://wordpress.org/news/)，where the UR
 
 ### 文章 <Site url="fxiaoke.com" size="sm" />
 
-<Route namespace="fxiaoke" :data='{"path":"/crm/:type","categories":["blog"],"example":"/fxiaoke/crm/news","parameters":{"type":"文章类型, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["akynazh"],"description":"| 全部文章 | 文章干货 | CRM 知识 | 纷享动态        | 签约喜报  |\n  | -------- | -------- | -------- | --------------- | --------- |\n  | news     | blog     | articles | about-influence | customers |","location":"crm.ts"}' :test='{"code":0}' />
+<Route namespace="fxiaoke" :data='{"path":"/crm/:type","categories":["blog"],"example":"/fxiaoke/crm/news","parameters":{"type":"文章类型, 见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["akynazh"],"description":"| 全部文章 | 文章干货 | CRM 知识 | 纷享动态        | 签约喜报  |\n| -------- | -------- | -------- | --------------- | --------- |\n| news     | blog     | articles | about-influence | customers |","location":"crm.ts"}' :test='{"code":0}' />
 
 | 全部文章 | 文章干货 | CRM 知识 | 纷享动态        | 签约喜报  |
-  | -------- | -------- | -------- | --------------- | --------- |
-  | news     | blog     | articles | about-influence | customers |
+| -------- | -------- | -------- | --------------- | --------- |
+| news     | blog     | articles | about-influence | customers |
 
 ## 国外主机测评 <Site url="zhujiceping.com"/>
 

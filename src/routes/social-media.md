@@ -252,36 +252,36 @@ You may need to setup cookie for a less restrictive rate limit and private profi
 
 ### Jobs <Site url="linkedin.com" size="sm" />
 
-<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media","popular"],"view":5,"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n  | Full Time | Part Time | Contractor | All |\n  | --------- | --------- | ---------- | --- |\n  | F         | P         | C          | all |\n\n  #### `exp_levels` list\n\n  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n  | --------- | ----------- | --------- | ---------------- | -------- | --- |\n  | 1         | 2           | 3         | 4                | 5        | all |\n\n  #### `routeParams` additional query parameters\n\n  ##### `f_WT` list\n\n  | Onsite | Remote | Hybrid |\n  | ------ | ------- | ------ |\n  |    1   |    2    |   3    |\n\n  ##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n  ##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
+<Route namespace="linkedin" :data='{"path":"/jobs/:job_types/:exp_levels/:keywords?/:routeParams?","categories":["social-media","popular"],"view":5,"example":"/linkedin/jobs/C-P/1/software engineer","parameters":{"job_types":"See the following table for details, use &#39;-&#39; as delimiter","exp_levels":"See the following table for details, use &#39;-&#39; as delimiter","keywords":"keywords","routeParams":"additional query parameters, see the table below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.linkedin.com/jobs/search"]}],"name":"Jobs","maintainers":["BrandNewLifeJackie26","zhoukuncheng"],"description":"#### `job_types` list\n\n| Full Time | Part Time | Contractor | All |\n| --------- | --------- | ---------- | --- |\n| F         | P         | C          | all |\n\n#### `exp_levels` list\n\n| Intership | Entry Level | Associate | Mid-Senior Level | Director | All |\n| --------- | ----------- | --------- | ---------------- | -------- | --- |\n| 1         | 2           | 3         | 4                | 5        | all |\n\n#### `routeParams` additional query parameters\n\n##### `f_WT` list\n\n| Onsite | Remote | Hybrid |\n| ------ | ------- | ------ |\n|    1   |    2    |   3    |\n\n##### `geoId`\n\n  Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.\n\n  For example:\n  91000012 is the ID of East Asia.\n\n##### `f_TPR`\n\n  Time posted range. Here are some possible values:\n\n  *   `r86400`: Past 24 hours\n  *   `r604800`: Past week\n  *   `r2592000`: Past month\n\n  For example:\n\n  1.  If we want to search software engineer jobs of all levels and all job types, use `/linkedin/jobs/all/all/software engineer`\n  2.  If we want to search all entry level contractor/part time software engineer jobs, use `/linkedin/jobs/P-C/2/software engineer`\n  3.  If we want to search remote mid-senior level software engineer jobs in APAC posted within the last month, use `/linkedin/jobs/F/4/software%20engineer/f_WT=2&geoId=91000003&f_TPR=r2592000`\n\n  **To make it easier, the recommended way is to start a search on [LinkedIn](https://www.linkedin.com/jobs/search) and use [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) to load the specific feed.**","location":"jobs.ts"}' :test='{"code":0}' />
 
 #### `job_types` list
 
-  | Full Time | Part Time | Contractor | All |
-  | --------- | --------- | ---------- | --- |
-  | F         | P         | C          | all |
+| Full Time | Part Time | Contractor | All |
+| --------- | --------- | ---------- | --- |
+| F         | P         | C          | all |
 
-  #### `exp_levels` list
+#### `exp_levels` list
 
-  | Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
-  | --------- | ----------- | --------- | ---------------- | -------- | --- |
-  | 1         | 2           | 3         | 4                | 5        | all |
+| Intership | Entry Level | Associate | Mid-Senior Level | Director | All |
+| --------- | ----------- | --------- | ---------------- | -------- | --- |
+| 1         | 2           | 3         | 4                | 5        | all |
 
-  #### `routeParams` additional query parameters
+#### `routeParams` additional query parameters
 
-  ##### `f_WT` list
+##### `f_WT` list
 
-  | Onsite | Remote | Hybrid |
-  | ------ | ------- | ------ |
-  |    1   |    2    |   3    |
+| Onsite | Remote | Hybrid |
+| ------ | ------- | ------ |
+|    1   |    2    |   3    |
 
-  ##### `geoId`
+##### `geoId`
 
   Geographic location ID. You can find this ID in the URL of a LinkedIn job search page that is filtered by location.
 
   For example:
   91000012 is the ID of East Asia.
 
-  ##### `f_TPR`
+##### `f_TPR`
 
   Time posted range. Here are some possible values:
 
@@ -305,11 +305,11 @@ You may need to setup cookie for a less restrictive rate limit and private profi
 
 ### Tag <Site url="www.lofter.com" size="sm" />
 
-<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media","popular"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n  | ---- | ---- | ---- | ----- | ----- |\n  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":0}' />
+<Route namespace="lofter" :data='{"path":"/tag/:name?/:type?","categories":["social-media","popular"],"example":"/lofter/tag/cosplay/date","parameters":{"name":"tag name, such as `名侦探柯南`, `摄影` by default","type":"ranking type, see below, new by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Tag","maintainers":["hoilc","nczitzk","LucunJi"],"description":"| new  | date | week | month | total |\n| ---- | ---- | ---- | ----- | ----- |\n| 最新 | 日榜 | 周榜 | 月榜  | 总榜  |","location":"tag.ts"}' :test='{"code":0}' />
 
 | new  | date | week | month | total |
-  | ---- | ---- | ---- | ----- | ----- |
-  | 最新 | 日榜 | 周榜 | 月榜  | 总榜  |
+| ---- | ---- | ---- | ----- | ----- |
+| 最新 | 日榜 | 周榜 | 月榜  | 总榜  |
 
 ### User <Site url="www.lofter.com" size="sm" />
 
@@ -428,15 +428,15 @@ Example:
 
 ### Top <Site url="plurk.com" size="sm" />
 
-<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media","popular"],"view":1,"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n  | ------------ | ------------- | ------------- |\n  | topReplurks  | topFavorites  | topResponded  |\n\n  | English | 中文（繁體） |\n  | ------- | ------------ |\n  | en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
+<Route namespace="plurk" :data='{"path":"/top/:category?/:lang?","categories":["social-media","popular"],"view":1,"example":"/plurk/top/topReplurks","parameters":{"category":"Category, see the table below, `topReplurks` by default","lang":"Language, see the table below, `en` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Top","maintainers":["TonyRL"],"description":"| Top Replurks | Top Favorites | Top Responded |\n| ------------ | ------------- | ------------- |\n| topReplurks  | topFavorites  | topResponded  |\n\n| English | 中文（繁體） |\n| ------- | ------------ |\n| en      | zh           |","location":"top.ts"}' :test='{"code":0}' />
 
 | Top Replurks | Top Favorites | Top Responded |
-  | ------------ | ------------- | ------------- |
-  | topReplurks  | topFavorites  | topResponded  |
+| ------------ | ------------- | ------------- |
+| topReplurks  | topFavorites  | topResponded  |
 
-  | English | 中文（繁體） |
-  | ------- | ------------ |
-  | en      | zh           |
+| English | 中文（繁體） |
+| ------- | ------------ |
+| en      | zh           |
 
 ### Topic <Site url="plurk.com" size="sm" />
 
@@ -617,51 +617,51 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 
 ### Music Charts <Site url="youtube.com" size="sm" />
 
-<Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n  | Top artists | Top songs | Top music videos | Trending       |\n  | ----------- | --------- | ---------------- | -------------- |\n  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n  | ar        | au        | at      | be      | bo      | br     | ca     |\n\n  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n  | cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n  | eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n  | hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n  | Uruguay | Zimbabwe |\n  | ------- | -------- |\n  | uy      | zw       |","location":"charts.ts"}' :test='{"code":0}' />
+<Route namespace="youtube" :data='{"path":"/charts/:category?/:country?/:embed?","categories":["social-media"],"example":"/youtube/charts","parameters":{"category":"Chart, see table below, default to `TopVideos`","country":"Country Code, see table below, default to global","embed":"Default to embed the video, set to any value to disable embedding"},"name":"Music Charts","maintainers":["TonyRL"],"description":"Chart\n\n| Top artists | Top songs | Top music videos | Trending       |\n| ----------- | --------- | ---------------- | -------------- |\n| TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\n  Country Code\n\n| Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n| --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n| ar        | au        | at      | be      | bo      | br     | ca     |\n\n| Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n| ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n| cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n| Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n| ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n| eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n| Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n| -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n| hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n| Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n| ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n| jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n| Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n| ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n| ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n| Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n| ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n| ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n| Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n| -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n| tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n| Uruguay | Zimbabwe |\n| ------- | -------- |\n| uy      | zw       |","location":"charts.ts"}' :test='{"code":0}' />
 
 Chart
 
-  | Top artists | Top songs | Top music videos | Trending       |
-  | ----------- | --------- | ---------------- | -------------- |
-  | TopArtists  | TopSongs  | TopVideos        | TrendingVideos |
+| Top artists | Top songs | Top music videos | Trending       |
+| ----------- | --------- | ---------------- | -------------- |
+| TopArtists  | TopSongs  | TopVideos        | TrendingVideos |
 
   Country Code
 
-  | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |
-  | --------- | --------- | ------- | ------- | ------- | ------ | ------ |
-  | ar        | au        | at      | be      | bo      | br     | ca     |
+| Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |
+| --------- | --------- | ------- | ------- | ------- | ------ | ------ |
+| ar        | au        | at      | be      | bo      | br     | ca     |
 
-  | Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |
-  | ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |
-  | cl    | co       | cr         | cz      | dk      | do                 | ec      |
+| Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |
+| ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |
+| cl    | co       | cr         | cz      | dk      | do                 | ec      |
 
-  | Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |
-  | ----- | ----------- | ------- | ------- | ------ | ------- | --------- |
-  | eg    | sv          | ee      | fi      | fr     | de      | gt        |
+| Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |
+| ----- | ----------- | ------- | ------- | ------ | ------- | --------- |
+| eg    | sv          | ee      | fi      | fr     | de      | gt        |
 
-  | Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |
-  | -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |
-  | hn       | hu      | is      | in    | id        | ie      | il     | it    |
+| Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |
+| -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |
+| hn       | hu      | is      | in    | id        | ie      | il     | it    |
 
-  | Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |
-  | ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |
-  | jp    | ke    | lu         | mx     | nl          | nz          | ni        |
+| Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |
+| ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |
+| jp    | ke    | lu         | mx     | nl          | nz          | ni        |
 
-  | Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |
-  | ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |
-  | ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |
+| Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |
+| ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |
+| ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |
 
-  | Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |
-  | ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |
-  | ru     | sa           | rs     | za           | kr          | es    | se     | ch          |
+| Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |
+| ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |
+| ru     | sa           | rs     | za           | kr          | es    | se     | ch          |
 
-  | Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |
-  | -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |
-  | tz       | tr     | ug     | ua      | ae                   | gb             | us            |
+| Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |
+| -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |
+| tz       | tr     | ug     | ua      | ae                   | gb             | us            |
 
-  | Uruguay | Zimbabwe |
-  | ------- | -------- |
-  | uy      | zw       |
+| Uruguay | Zimbabwe |
+| ------- | -------- |
+| uy      | zw       |
 
 ### Playlist <Site url="youtube.com" size="sm" />
 
@@ -743,121 +743,121 @@ Chart
 
 ### 分区视频 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/partion/:tid/:embed?","categories":["social-media"],"example":"/bilibili/partion/33","parameters":{"tid":"分区 id","embed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频","maintainers":["DIYgod"],"description":"动画\n\n  | MAD·AMV | MMD·3D | 短片・手书・配音 | 特摄 | 综合 |\n  | ------- | ------ | ---------------- | ---- | ---- |\n  | 24      | 25     | 47               | 86   | 27   |\n\n  番剧\n\n  | 连载动画 | 完结动画 | 资讯 | 官方延伸 |\n  | -------- | -------- | ---- | -------- |\n  | 33       | 32       | 51   | 152      |\n\n  国创\n\n  | 国产动画 | 国产原创相关 | 布袋戏 | 动态漫・广播剧 | 资讯 |\n  | -------- | ------------ | ------ | -------------- | ---- |\n  | 153      | 168          | 169    | 195            | 170  |\n\n  音乐\n\n  | 原创音乐 | 翻唱 | VOCALOID·UTAU | 电音 | 演奏 | MV  | 音乐现场 | 音乐综合 | ~~OP/ED/OST~~ |\n  | -------- | ---- | ------------- | ---- | ---- | --- | -------- | -------- | ------------- |\n  | 28       | 31   | 30            | 194  | 59   | 193 | 29       | 130      | 54            |\n\n  舞蹈\n\n  | 宅舞 | 街舞 | 明星舞蹈 | 中国舞 | 舞蹈综合 | 舞蹈教程 |\n  | ---- | ---- | -------- | ------ | -------- | -------- |\n  | 20   | 198  | 199      | 200    | 154      | 156      |\n\n  游戏\n\n  | 单机游戏 | 电子竞技 | 手机游戏 | 网络游戏 | 桌游棋牌 | GMV | 音游 | Mugen |\n  | -------- | -------- | -------- | -------- | -------- | --- | ---- | ----- |\n  | 17       | 171      | 172      | 65       | 173      | 121 | 136  | 19    |\n\n  知识\n\n  | 科学科普 | 社科人文 | 财经 | 校园学习 | 职业职场 | 野生技术协会 |\n  | -------- | -------- | ---- | -------- | -------- | ------------ |\n  | 201      | 124      | 207  | 208      | 209      | 122          |\n\n  ~~科技~~\n\n  | ~~演讲・公开课~~ | ~~星海~~ | ~~机械~~ | ~~汽车~~ |\n  | ---------------- | -------- | -------- | -------- |\n  | 39               | 96       | 98       | 176      |\n\n  数码\n\n  | 手机平板 | 电脑装机 | 摄影摄像 | 影音智能 |\n  | -------- | -------- | -------- | -------- |\n  | 95       | 189      | 190      | 191      |\n\n  生活\n\n  | 搞笑 | 日常 | 美食圈 | 动物圈 | 手工 | 绘画 | 运动 | 汽车 | 其他 | ~~ASMR~~ |\n  | ---- | ---- | ------ | ------ | ---- | ---- | ---- | ---- | ---- | -------- |\n  | 138  | 21   | 76     | 75     | 161  | 162  | 163  | 176  | 174  | 175      |\n\n  鬼畜\n\n  | 鬼畜调教 | 音 MAD | 人力 VOCALOID | 教程演示 |\n  | -------- | ------ | ------------- | -------- |\n  | 22       | 26     | 126           | 127      |\n\n  时尚\n\n  | 美妆 | 服饰 | 健身 | T 台 | 风向标 |\n  | ---- | ---- | ---- | ---- | ------ |\n  | 157  | 158  | 164  | 159  | 192    |\n\n  ~~广告~~\n\n  | ~~广告~~ |\n  | -------- |\n  | 166      |\n\n  资讯\n\n  | 热点 | 环球 | 社会 | 综合 |\n  | ---- | ---- | ---- | ---- |\n  | 203  | 204  | 205  | 206  |\n\n  娱乐\n\n  | 综艺 | 明星 | Korea 相关 |\n  | ---- | ---- | ---------- |\n  | 71   | 137  | 131        |\n\n  影视\n\n  | 影视杂谈 | 影视剪辑 | 短片 | 预告・资讯 |\n  | -------- | -------- | ---- | ---------- |\n  | 182      | 183      | 85   | 184        |\n\n  纪录片\n\n  | 全部 | 人文・历史 | 科学・探索・自然 | 军事 | 社会・美食・旅行 |\n  | ---- | ---------- | ---------------- | ---- | ---------------- |\n  | 177  | 37         | 178              | 179  | 180              |\n\n  电影\n\n  | 全部 | 华语电影 | 欧美电影 | 日本电影 | 其他国家 |\n  | ---- | -------- | -------- | -------- | -------- |\n  | 23   | 147      | 145      | 146      | 83       |\n\n  电视剧\n\n  | 全部 | 国产剧 | 海外剧 |\n  | ---- | ------ | ------ |\n  | 11   | 185    | 187    |","location":"partion.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/partion/:tid/:embed?","categories":["social-media"],"example":"/bilibili/partion/33","parameters":{"tid":"分区 id","embed":"默认为开启内嵌视频, 任意值为关闭"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分区视频","maintainers":["DIYgod"],"description":"动画\n\n| MAD·AMV | MMD·3D | 短片・手书・配音 | 特摄 | 综合 |\n| ------- | ------ | ---------------- | ---- | ---- |\n| 24      | 25     | 47               | 86   | 27   |\n\n  番剧\n\n| 连载动画 | 完结动画 | 资讯 | 官方延伸 |\n| -------- | -------- | ---- | -------- |\n| 33       | 32       | 51   | 152      |\n\n  国创\n\n| 国产动画 | 国产原创相关 | 布袋戏 | 动态漫・广播剧 | 资讯 |\n| -------- | ------------ | ------ | -------------- | ---- |\n| 153      | 168          | 169    | 195            | 170  |\n\n  音乐\n\n| 原创音乐 | 翻唱 | VOCALOID·UTAU | 电音 | 演奏 | MV  | 音乐现场 | 音乐综合 | ~~OP/ED/OST~~ |\n| -------- | ---- | ------------- | ---- | ---- | --- | -------- | -------- | ------------- |\n| 28       | 31   | 30            | 194  | 59   | 193 | 29       | 130      | 54            |\n\n  舞蹈\n\n| 宅舞 | 街舞 | 明星舞蹈 | 中国舞 | 舞蹈综合 | 舞蹈教程 |\n| ---- | ---- | -------- | ------ | -------- | -------- |\n| 20   | 198  | 199      | 200    | 154      | 156      |\n\n  游戏\n\n| 单机游戏 | 电子竞技 | 手机游戏 | 网络游戏 | 桌游棋牌 | GMV | 音游 | Mugen |\n| -------- | -------- | -------- | -------- | -------- | --- | ---- | ----- |\n| 17       | 171      | 172      | 65       | 173      | 121 | 136  | 19    |\n\n  知识\n\n| 科学科普 | 社科人文 | 财经 | 校园学习 | 职业职场 | 野生技术协会 |\n| -------- | -------- | ---- | -------- | -------- | ------------ |\n| 201      | 124      | 207  | 208      | 209      | 122          |\n\n  ~~科技~~\n\n| ~~演讲・公开课~~ | ~~星海~~ | ~~机械~~ | ~~汽车~~ |\n| ---------------- | -------- | -------- | -------- |\n| 39               | 96       | 98       | 176      |\n\n  数码\n\n| 手机平板 | 电脑装机 | 摄影摄像 | 影音智能 |\n| -------- | -------- | -------- | -------- |\n| 95       | 189      | 190      | 191      |\n\n  生活\n\n| 搞笑 | 日常 | 美食圈 | 动物圈 | 手工 | 绘画 | 运动 | 汽车 | 其他 | ~~ASMR~~ |\n| ---- | ---- | ------ | ------ | ---- | ---- | ---- | ---- | ---- | -------- |\n| 138  | 21   | 76     | 75     | 161  | 162  | 163  | 176  | 174  | 175      |\n\n  鬼畜\n\n| 鬼畜调教 | 音 MAD | 人力 VOCALOID | 教程演示 |\n| -------- | ------ | ------------- | -------- |\n| 22       | 26     | 126           | 127      |\n\n  时尚\n\n| 美妆 | 服饰 | 健身 | T 台 | 风向标 |\n| ---- | ---- | ---- | ---- | ------ |\n| 157  | 158  | 164  | 159  | 192    |\n\n  ~~广告~~\n\n| ~~广告~~ |\n| -------- |\n| 166      |\n\n  资讯\n\n| 热点 | 环球 | 社会 | 综合 |\n| ---- | ---- | ---- | ---- |\n| 203  | 204  | 205  | 206  |\n\n  娱乐\n\n| 综艺 | 明星 | Korea 相关 |\n| ---- | ---- | ---------- |\n| 71   | 137  | 131        |\n\n  影视\n\n| 影视杂谈 | 影视剪辑 | 短片 | 预告・资讯 |\n| -------- | -------- | ---- | ---------- |\n| 182      | 183      | 85   | 184        |\n\n  纪录片\n\n| 全部 | 人文・历史 | 科学・探索・自然 | 军事 | 社会・美食・旅行 |\n| ---- | ---------- | ---------------- | ---- | ---------------- |\n| 177  | 37         | 178              | 179  | 180              |\n\n  电影\n\n| 全部 | 华语电影 | 欧美电影 | 日本电影 | 其他国家 |\n| ---- | -------- | -------- | -------- | -------- |\n| 23   | 147      | 145      | 146      | 83       |\n\n  电视剧\n\n| 全部 | 国产剧 | 海外剧 |\n| ---- | ------ | ------ |\n| 11   | 185    | 187    |","location":"partion.ts"}' :test='{"code":0}' />
 
 动画
 
-  | MAD·AMV | MMD·3D | 短片・手书・配音 | 特摄 | 综合 |
-  | ------- | ------ | ---------------- | ---- | ---- |
-  | 24      | 25     | 47               | 86   | 27   |
+| MAD·AMV | MMD·3D | 短片・手书・配音 | 特摄 | 综合 |
+| ------- | ------ | ---------------- | ---- | ---- |
+| 24      | 25     | 47               | 86   | 27   |
 
   番剧
 
-  | 连载动画 | 完结动画 | 资讯 | 官方延伸 |
-  | -------- | -------- | ---- | -------- |
-  | 33       | 32       | 51   | 152      |
+| 连载动画 | 完结动画 | 资讯 | 官方延伸 |
+| -------- | -------- | ---- | -------- |
+| 33       | 32       | 51   | 152      |
 
   国创
 
-  | 国产动画 | 国产原创相关 | 布袋戏 | 动态漫・广播剧 | 资讯 |
-  | -------- | ------------ | ------ | -------------- | ---- |
-  | 153      | 168          | 169    | 195            | 170  |
+| 国产动画 | 国产原创相关 | 布袋戏 | 动态漫・广播剧 | 资讯 |
+| -------- | ------------ | ------ | -------------- | ---- |
+| 153      | 168          | 169    | 195            | 170  |
 
   音乐
 
-  | 原创音乐 | 翻唱 | VOCALOID·UTAU | 电音 | 演奏 | MV  | 音乐现场 | 音乐综合 | ~~OP/ED/OST~~ |
-  | -------- | ---- | ------------- | ---- | ---- | --- | -------- | -------- | ------------- |
-  | 28       | 31   | 30            | 194  | 59   | 193 | 29       | 130      | 54            |
+| 原创音乐 | 翻唱 | VOCALOID·UTAU | 电音 | 演奏 | MV  | 音乐现场 | 音乐综合 | ~~OP/ED/OST~~ |
+| -------- | ---- | ------------- | ---- | ---- | --- | -------- | -------- | ------------- |
+| 28       | 31   | 30            | 194  | 59   | 193 | 29       | 130      | 54            |
 
   舞蹈
 
-  | 宅舞 | 街舞 | 明星舞蹈 | 中国舞 | 舞蹈综合 | 舞蹈教程 |
-  | ---- | ---- | -------- | ------ | -------- | -------- |
-  | 20   | 198  | 199      | 200    | 154      | 156      |
+| 宅舞 | 街舞 | 明星舞蹈 | 中国舞 | 舞蹈综合 | 舞蹈教程 |
+| ---- | ---- | -------- | ------ | -------- | -------- |
+| 20   | 198  | 199      | 200    | 154      | 156      |
 
   游戏
 
-  | 单机游戏 | 电子竞技 | 手机游戏 | 网络游戏 | 桌游棋牌 | GMV | 音游 | Mugen |
-  | -------- | -------- | -------- | -------- | -------- | --- | ---- | ----- |
-  | 17       | 171      | 172      | 65       | 173      | 121 | 136  | 19    |
+| 单机游戏 | 电子竞技 | 手机游戏 | 网络游戏 | 桌游棋牌 | GMV | 音游 | Mugen |
+| -------- | -------- | -------- | -------- | -------- | --- | ---- | ----- |
+| 17       | 171      | 172      | 65       | 173      | 121 | 136  | 19    |
 
   知识
 
-  | 科学科普 | 社科人文 | 财经 | 校园学习 | 职业职场 | 野生技术协会 |
-  | -------- | -------- | ---- | -------- | -------- | ------------ |
-  | 201      | 124      | 207  | 208      | 209      | 122          |
+| 科学科普 | 社科人文 | 财经 | 校园学习 | 职业职场 | 野生技术协会 |
+| -------- | -------- | ---- | -------- | -------- | ------------ |
+| 201      | 124      | 207  | 208      | 209      | 122          |
 
   ~~科技~~
 
-  | ~~演讲・公开课~~ | ~~星海~~ | ~~机械~~ | ~~汽车~~ |
-  | ---------------- | -------- | -------- | -------- |
-  | 39               | 96       | 98       | 176      |
+| ~~演讲・公开课~~ | ~~星海~~ | ~~机械~~ | ~~汽车~~ |
+| ---------------- | -------- | -------- | -------- |
+| 39               | 96       | 98       | 176      |
 
   数码
 
-  | 手机平板 | 电脑装机 | 摄影摄像 | 影音智能 |
-  | -------- | -------- | -------- | -------- |
-  | 95       | 189      | 190      | 191      |
+| 手机平板 | 电脑装机 | 摄影摄像 | 影音智能 |
+| -------- | -------- | -------- | -------- |
+| 95       | 189      | 190      | 191      |
 
   生活
 
-  | 搞笑 | 日常 | 美食圈 | 动物圈 | 手工 | 绘画 | 运动 | 汽车 | 其他 | ~~ASMR~~ |
-  | ---- | ---- | ------ | ------ | ---- | ---- | ---- | ---- | ---- | -------- |
-  | 138  | 21   | 76     | 75     | 161  | 162  | 163  | 176  | 174  | 175      |
+| 搞笑 | 日常 | 美食圈 | 动物圈 | 手工 | 绘画 | 运动 | 汽车 | 其他 | ~~ASMR~~ |
+| ---- | ---- | ------ | ------ | ---- | ---- | ---- | ---- | ---- | -------- |
+| 138  | 21   | 76     | 75     | 161  | 162  | 163  | 176  | 174  | 175      |
 
   鬼畜
 
-  | 鬼畜调教 | 音 MAD | 人力 VOCALOID | 教程演示 |
-  | -------- | ------ | ------------- | -------- |
-  | 22       | 26     | 126           | 127      |
+| 鬼畜调教 | 音 MAD | 人力 VOCALOID | 教程演示 |
+| -------- | ------ | ------------- | -------- |
+| 22       | 26     | 126           | 127      |
 
   时尚
 
-  | 美妆 | 服饰 | 健身 | T 台 | 风向标 |
-  | ---- | ---- | ---- | ---- | ------ |
-  | 157  | 158  | 164  | 159  | 192    |
+| 美妆 | 服饰 | 健身 | T 台 | 风向标 |
+| ---- | ---- | ---- | ---- | ------ |
+| 157  | 158  | 164  | 159  | 192    |
 
   ~~广告~~
 
-  | ~~广告~~ |
-  | -------- |
-  | 166      |
+| ~~广告~~ |
+| -------- |
+| 166      |
 
   资讯
 
-  | 热点 | 环球 | 社会 | 综合 |
-  | ---- | ---- | ---- | ---- |
-  | 203  | 204  | 205  | 206  |
+| 热点 | 环球 | 社会 | 综合 |
+| ---- | ---- | ---- | ---- |
+| 203  | 204  | 205  | 206  |
 
   娱乐
 
-  | 综艺 | 明星 | Korea 相关 |
-  | ---- | ---- | ---------- |
-  | 71   | 137  | 131        |
+| 综艺 | 明星 | Korea 相关 |
+| ---- | ---- | ---------- |
+| 71   | 137  | 131        |
 
   影视
 
-  | 影视杂谈 | 影视剪辑 | 短片 | 预告・资讯 |
-  | -------- | -------- | ---- | ---------- |
-  | 182      | 183      | 85   | 184        |
+| 影视杂谈 | 影视剪辑 | 短片 | 预告・资讯 |
+| -------- | -------- | ---- | ---------- |
+| 182      | 183      | 85   | 184        |
 
   纪录片
 
-  | 全部 | 人文・历史 | 科学・探索・自然 | 军事 | 社会・美食・旅行 |
-  | ---- | ---------- | ---------------- | ---- | ---------------- |
-  | 177  | 37         | 178              | 179  | 180              |
+| 全部 | 人文・历史 | 科学・探索・自然 | 军事 | 社会・美食・旅行 |
+| ---- | ---------- | ---------------- | ---- | ---------------- |
+| 177  | 37         | 178              | 179  | 180              |
 
   电影
 
-  | 全部 | 华语电影 | 欧美电影 | 日本电影 | 其他国家 |
-  | ---- | -------- | -------- | -------- | -------- |
-  | 23   | 147      | 145      | 146      | 83       |
+| 全部 | 华语电影 | 欧美电影 | 日本电影 | 其他国家 |
+| ---- | -------- | -------- | -------- | -------- |
+| 23   | 147      | 145      | 146      | 83       |
 
   电视剧
 
-  | 全部 | 国产剧 | 海外剧 |
-  | ---- | ------ | ------ |
-  | 11   | 185    | 187    |
+| 全部 | 国产剧 | 海外剧 |
+| ---- | ------ | ------ |
+| 11   | 185    | 187    |
 
 ### 歌单 <Site url="www.bilibili.com" size="sm" />
 
@@ -869,11 +869,11 @@ Chart
 
 ### 会员购新品上架 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/mall/new/:category?","categories":["social-media"],"example":"/bilibili/mall/new/1","parameters":{"category":"分类，默认全部，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"会员购新品上架","maintainers":["DIYgod"],"description":"| 全部 | 手办 | 魔力赏 | 周边 | 游戏 |\n  | ---- | ---- | ------ | ---- | ---- |\n  | 0    | 1    | 7      | 3    | 6    |","location":"mall-new.ts"}' :test='{"code":0}' />
+<Route namespace="bilibili" :data='{"path":"/mall/new/:category?","categories":["social-media"],"example":"/bilibili/mall/new/1","parameters":{"category":"分类，默认全部，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"会员购新品上架","maintainers":["DIYgod"],"description":"| 全部 | 手办 | 魔力赏 | 周边 | 游戏 |\n| ---- | ---- | ------ | ---- | ---- |\n| 0    | 1    | 7      | 3    | 6    |","location":"mall-new.ts"}' :test='{"code":0}' />
 
 | 全部 | 手办 | 魔力赏 | 周边 | 游戏 |
-  | ---- | ---- | ------ | ---- | ---- |
-  | 0    | 1    | 7      | 3    | 6    |
+| ---- | ---- | ------ | ---- | ---- |
+| 0    | 1    | 7      | 3    | 6    |
 
 ### 会员购票务 <Site url="show.bilibili.com/platform" size="sm" />
 
@@ -915,13 +915,13 @@ Chart
 
 ### 视频搜索 <Site url="www.bilibili.com" size="sm" />
 
-<Route namespace="bilibili" :data='{"path":"/vsearch/:kw/:order?/:embed?/:tid?","categories":["social-media"],"example":"/bilibili/vsearch/RSSHub","parameters":{"kw":"检索关键字","order":"排序方式, 综合:totalrank 最多点击:click 最新发布:pubdate(缺省) 最多弹幕:dm 最多收藏:stow","embed":"默认为开启内嵌视频, 任意值为关闭","tid":"分区 id"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频搜索","maintainers":["pcrtool","DIYgod"],"description":"分区 id 的取值请参考下表：\n\n  | 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |\n  | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |\n  | 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |","location":"vsearch.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 157)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="bilibili" :data='{"path":"/vsearch/:kw/:order?/:embed?/:tid?","categories":["social-media"],"example":"/bilibili/vsearch/RSSHub","parameters":{"kw":"检索关键字","order":"排序方式, 综合:totalrank 最多点击:click 最新发布:pubdate(缺省) 最多弹幕:dm 最多收藏:stow","embed":"默认为开启内嵌视频, 任意值为关闭","tid":"分区 id"},"features":{"requireConfig":[{"name":"BILIBILI_COOKIE_*","optional":true,"description":"如果没有此配置，那么必须开启 puppeteer 支持；BILIBILI_COOKIE_{uid}: 用于用户关注动态系列路由，对应 uid 的 b 站用户登录后的 Cookie 值，`{uid}` 替换为 uid，如 `BILIBILI_COOKIE_2267573`，获取方式：\n1.  打开 [https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8](https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&type=8)\n2.  打开控制台，切换到 Network 面板，刷新\n3.  点击 dynamic_new 请求，找到 Cookie\n4.  视频和专栏，UP 主粉丝及关注只要求 `SESSDATA` 字段，动态需复制整段 Cookie"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"视频搜索","maintainers":["pcrtool","DIYgod"],"description":"分区 id 的取值请参考下表：\n\n| 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |\n| -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |\n| 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |","location":"vsearch.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 157)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 分区 id 的取值请参考下表：
 
-  | 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |
-  | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |
-  | 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |
+| 全部分区 | 动画 | 番剧 | 国创 | 音乐 | 舞蹈 | 游戏 | 知识 | 科技 | 运动 | 汽车 | 生活 | 美食 | 动物圈 | 鬼畜 | 时尚 | 资讯 | 娱乐 | 影视 | 纪录片 | 电影 | 电视剧 |
+| -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ---- | ---- | ---- | ---- | ------ | ---- | ------ |
+| 0        | 1    | 13   | 167  | 3    | 129  | 4    | 36   | 188  | 234  | 223  | 160  | 211  | 217    | 119  | 155  | 202  | 5    | 181  | 177    | 23   | 11     |
 
 ### 用户关注专栏 <Site url="www.bilibili.com" size="sm" />
 
@@ -1055,42 +1055,42 @@ Chart
 
 ### 豆瓣招聘 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/jobs/:type","categories":["social-media"],"example":"/douban/jobs/campus","parameters":{"type":"招聘类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣招聘","maintainers":["Fatpandac"],"description":"| 社会招聘 | 校园招聘 | 实习生招聘 |\n  | :------: | :------: | :--------: |\n  |  social  |  campus  |   intern   |","location":"other/jobs.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/jobs/:type","categories":["social-media"],"example":"/douban/jobs/campus","parameters":{"type":"招聘类型，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣招聘","maintainers":["Fatpandac"],"description":"| 社会招聘 | 校园招聘 | 实习生招聘 |\n| :------: | :------: | :--------: |\n|  social  |  campus  |   intern   |","location":"other/jobs.ts"}' :test='{"code":0}' />
 
 | 社会招聘 | 校园招聘 | 实习生招聘 |
-  | :------: | :------: | :--------: |
-  |  social  |  campus  |   intern   |
+| :------: | :------: | :--------: |
+|  social  |  campus  |   intern   |
 
 ### 豆瓣榜单与集合 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n  | ------------------ | ----------------------------- |\n  | 实时热门书影音     | subject_real_time_hotest   |\n  | 影院热映           | movie_showing                |\n  | 实时热门电影       | movie_real_time_hotest     |\n  | 实时热门电视       | tv_real_time_hotest        |\n  | 一周口碑电影榜     | movie_weekly_best           |\n  | 华语口碑剧集榜     | tv_chinese_best_weekly     |\n  | 全球口碑剧集榜     | tv_global_best_weekly      |\n  | 国内口碑综艺榜     | show_chinese_best_weekly   |\n  | 国外口碑综艺榜     | show_global_best_weekly    |\n  | 热播新剧国产剧     | tv_domestic                  |\n  | 热播新剧欧美剧     | tv_american                  |\n  | 热播新剧日剧       | tv_japanese                  |\n  | 热播新剧韩剧       | tv_korean                    |\n  | 热播新剧动画       | tv_animation                 |\n  | 虚构类小说热门榜   | book_fiction_hot_weekly    |\n  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n  | 热门单曲榜         | music_single                 |\n  | 华语新碟榜         | music_chinese                |\n  | ...                | ...                           |\n\n  | 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/list/:type?/:routeParams?","categories":["social-media"],"example":"/douban/list/subject_real_time_hotest","parameters":{"type":"榜单类型，见下表。默认为实时热门书影音","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.douban.com/subject_collection/:type"],"target":"/list/:type"}],"name":"豆瓣榜单与集合","maintainers":["5upernova-heng","honue"],"description":"| 榜单 / 集合        | 路由                          |\n| ------------------ | ----------------------------- |\n| 实时热门书影音     | subject_real_time_hotest   |\n| 影院热映           | movie_showing                |\n| 实时热门电影       | movie_real_time_hotest     |\n| 实时热门电视       | tv_real_time_hotest        |\n| 一周口碑电影榜     | movie_weekly_best           |\n| 华语口碑剧集榜     | tv_chinese_best_weekly     |\n| 全球口碑剧集榜     | tv_global_best_weekly      |\n| 国内口碑综艺榜     | show_chinese_best_weekly   |\n| 国外口碑综艺榜     | show_global_best_weekly    |\n| 热播新剧国产剧     | tv_domestic                  |\n| 热播新剧欧美剧     | tv_american                  |\n| 热播新剧日剧       | tv_japanese                  |\n| 热播新剧韩剧       | tv_korean                    |\n| 热播新剧动画       | tv_animation                 |\n| 虚构类小说热门榜   | book_fiction_hot_weekly    |\n| 非虚构类小说热门榜 | book_nonfiction_hot_weekly |\n| 热门单曲榜         | music_single                 |\n| 华语新碟榜         | music_chinese                |\n| ...                | ...                           |\n\n| 额外参数 | 含义                   | 接受的值 | 默认值 |\n| -------- | ---------------------- | -------- | ------ |\n| playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n| score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/list/tv_korean/playable=1&score=8`\n\n  > 上面的榜单 / 集合并没有列举完整。\n  >\n  > 如何找到榜单对应的路由参数：\n  > 在豆瓣手机 APP 中，对应地榜单页面右上角，点击分享链接。链接路径 `subject_collection` 后的路径就是路由参数 `type`。\n  > 如：小说热门榜的分享链接为：`https://m.douban.com/subject_collection/ECDIHUN4A`，其对应本 RSS 路由的 `type` 为 `ECDIHUN4A`，对应的订阅链接路由：[`/douban/list/ECDIHUN4A`](https://rsshub.app/douban/list/ECDIHUN4A)","location":"other/list.ts"}' :test='{"code":0}' />
 
 | 榜单 / 集合        | 路由                          |
-  | ------------------ | ----------------------------- |
-  | 实时热门书影音     | subject_real_time_hotest   |
-  | 影院热映           | movie_showing                |
-  | 实时热门电影       | movie_real_time_hotest     |
-  | 实时热门电视       | tv_real_time_hotest        |
-  | 一周口碑电影榜     | movie_weekly_best           |
-  | 华语口碑剧集榜     | tv_chinese_best_weekly     |
-  | 全球口碑剧集榜     | tv_global_best_weekly      |
-  | 国内口碑综艺榜     | show_chinese_best_weekly   |
-  | 国外口碑综艺榜     | show_global_best_weekly    |
-  | 热播新剧国产剧     | tv_domestic                  |
-  | 热播新剧欧美剧     | tv_american                  |
-  | 热播新剧日剧       | tv_japanese                  |
-  | 热播新剧韩剧       | tv_korean                    |
-  | 热播新剧动画       | tv_animation                 |
-  | 虚构类小说热门榜   | book_fiction_hot_weekly    |
-  | 非虚构类小说热门榜 | book_nonfiction_hot_weekly |
-  | 热门单曲榜         | music_single                 |
-  | 华语新碟榜         | music_chinese                |
-  | ...                | ...                           |
+| ------------------ | ----------------------------- |
+| 实时热门书影音     | subject_real_time_hotest   |
+| 影院热映           | movie_showing                |
+| 实时热门电影       | movie_real_time_hotest     |
+| 实时热门电视       | tv_real_time_hotest        |
+| 一周口碑电影榜     | movie_weekly_best           |
+| 华语口碑剧集榜     | tv_chinese_best_weekly     |
+| 全球口碑剧集榜     | tv_global_best_weekly      |
+| 国内口碑综艺榜     | show_chinese_best_weekly   |
+| 国外口碑综艺榜     | show_global_best_weekly    |
+| 热播新剧国产剧     | tv_domestic                  |
+| 热播新剧欧美剧     | tv_american                  |
+| 热播新剧日剧       | tv_japanese                  |
+| 热播新剧韩剧       | tv_korean                    |
+| 热播新剧动画       | tv_animation                 |
+| 虚构类小说热门榜   | book_fiction_hot_weekly    |
+| 非虚构类小说热门榜 | book_nonfiction_hot_weekly |
+| 热门单曲榜         | music_single                 |
+| 华语新碟榜         | music_chinese                |
+| ...                | ...                           |
 
-  | 额外参数 | 含义                   | 接受的值 | 默认值 |
-  | -------- | ---------------------- | -------- | ------ |
-  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |
-  | score    | 筛选评分               | 0-10     | 0      |
+| 额外参数 | 含义                   | 接受的值 | 默认值 |
+| -------- | ---------------------- | -------- | ------ |
+| playable | 仅看有可播放片源的影片 | 0/1      | 0      |
+| score    | 筛选评分               | 0-10     | 0      |
 
   用例：`/douban/list/tv_korean/playable=1&score=8`
 
@@ -1102,12 +1102,12 @@ Chart
 
 ### 豆瓣每月推荐片单 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n  | -------- | ---------------------- | -------- | ------ |\n  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n  | score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n::: tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n:::","location":"other/recommended.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/recommended/:type?/:routeParams?","categories":["social-media"],"example":"/douban/recommended/tv","parameters":{"type":"片单类型剧集/电影，tv或movie，默认为tv","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"豆瓣每月推荐片单","maintainers":["honue"],"description":"| 额外参数 | 含义                   | 接受的值 | 默认值 |\n| -------- | ---------------------- | -------- | ------ |\n| playable | 仅看有可播放片源的影片 | 0/1      | 0      |\n| score    | 筛选评分               | 0-10     | 0      |\n\n  用例：`/douban/recommended/tv/playable=0&score=8`\n\n::: tip\n  整合了 /douban/list/ 路由，省去每月手动更新 id 参数，因为当月推荐剧集片单中，会有还未播出 / 开评分剧集、海外平台播出剧集，请自行考虑是否使用额外参数。\n:::","location":"other/recommended.ts"}' :test='{"code":0}' />
 
 | 额外参数 | 含义                   | 接受的值 | 默认值 |
-  | -------- | ---------------------- | -------- | ------ |
-  | playable | 仅看有可播放片源的影片 | 0/1      | 0      |
-  | score    | 筛选评分               | 0-10     | 0      |
+| -------- | ---------------------- | -------- | ------ |
+| playable | 仅看有可播放片源的影片 | 0/1      | 0      |
+| score    | 筛选评分               | 0-10     | 0      |
 
   用例：`/douban/recommended/tv/playable=0&score=8`
 
@@ -1129,27 +1129,27 @@ Chart
 
 ### 频道书影音 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/channel/:id/subject/:nav","categories":["social-media"],"example":"/douban/channel/30168934/subject/0","parameters":{"id":"频道id","nav":"书影音分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道书影音","maintainers":["umm233"],"description":"| 电影 | 电视剧 | 图书 | 唱片 |\n  | ---- | ------ | ---- | ---- |\n  | 0    | 1      | 2    | 3    |","location":"channel/subject.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/channel/:id/subject/:nav","categories":["social-media"],"example":"/douban/channel/30168934/subject/0","parameters":{"id":"频道id","nav":"书影音分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道书影音","maintainers":["umm233"],"description":"| 电影 | 电视剧 | 图书 | 唱片 |\n| ---- | ------ | ---- | ---- |\n| 0    | 1      | 2    | 3    |","location":"channel/subject.ts"}' :test='{"code":0}' />
 
 | 电影 | 电视剧 | 图书 | 唱片 |
-  | ---- | ------ | ---- | ---- |
-  | 0    | 1      | 2    | 3    |
+| ---- | ------ | ---- | ---- |
+| 0    | 1      | 2    | 3    |
 
 ### 频道专题 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n  | ------- | ---- | ---- |\n  | default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"AssertionError: expected 352539583416 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:36:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 491)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="douban" :data='{"path":"/channel/:id/:nav?","categories":["social-media"],"example":"/douban/channel/30168934/hot","parameters":{"id":"频道id","nav":"专题分类，可选，默认为 default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"频道专题","maintainers":["umm233"],"description":"| 默认    | 热门 | 最新 |\n| ------- | ---- | ---- |\n| default | hot  | new  |","location":"channel/topic.ts"}' :test='{"code":1,"message":"AssertionError: expected 352539583416 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:36:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 491)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 | 默认    | 热门 | 最新 |
-  | ------- | ---- | ---- |
-  | default | hot  | new  |
+| ------- | ---- | ---- |
+| default | hot  | new  |
 
 ### 热门图书排行 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/rank/:type?","categories":["social-media"],"example":"/douban/book/rank/fiction","parameters":{"type":"图书类型，默认合并列表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门图书排行","maintainers":["xyqfer","queensferryme"],"description":"| 全部 | 虚构    | 非虚构     |\n  | ---- | ------- | ---------- |\n  |      | fiction | nonfiction |","location":"book/rank.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/book/rank/:type?","categories":["social-media"],"example":"/douban/book/rank/fiction","parameters":{"type":"图书类型，默认合并列表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门图书排行","maintainers":["xyqfer","queensferryme"],"description":"| 全部 | 虚构    | 非虚构     |\n| ---- | ------- | ---------- |\n|      | fiction | nonfiction |","location":"book/rank.ts"}' :test='{"code":0}' />
 
 | 全部 | 虚构    | 非虚构     |
-  | ---- | ------- | ---------- |
-  |      | fiction | nonfiction |
+| ---- | ------- | ---------- |
+|      | fiction | nonfiction |
 
 ### 热门同城活动 <Site url="www.douban.com" size="sm" />
 
@@ -1165,23 +1165,23 @@ Chart
 
 ### 新书速递 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n  | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n  | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/book/latest/:type?","categories":["social-media"],"example":"/douban/book/latest/fiction","parameters":{"type":"专题分类，可选，默认为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新书速递","maintainers":["fengkx","lyqluis"],"description":"| 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |\n| ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |\n| prose_poetry | fiction | history  | biography | science  | art      | business | comics   |","location":"book/latest.ts"}' :test='{"code":0}' />
 
 | 文学         | 小说    | 历史文化 | 社会纪实  | 科学新知 | 艺术设计 | 商业经管 | 绘本漫画 |
-  | ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |
-  | prose_poetry | fiction | history  | biography | science  | art      | business | comics   |
+| ------------ | ------- | -------- | --------- | -------- | -------- | -------- | -------- |
+| prose_poetry | fiction | history  | biography | science  | art      | business | comics   |
 
 ### 一周口碑榜 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n  | ------------------- | ------------------------- |\n  | movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/movie/weekly/:type?","categories":["social-media"],"example":"/douban/movie/weekly","parameters":{"type":"分类，可在榜单页 URL 中找到，默认为一周口碑电影榜"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"一周口碑榜","maintainers":["numm233","nczitzk"],"description":"| 一周口碑电影榜      | 华语口碑剧集榜            |\n| ------------------- | ------------------------- |\n| movie_weekly_best | tv_chinese_best_weekly |","location":"other/weekly-best.ts"}' :test='{"code":0}' />
 
 | 一周口碑电影榜      | 华语口碑剧集榜            |
-  | ------------------- | ------------------------- |
-  | movie_weekly_best | tv_chinese_best_weekly |
+| ------------------- | ------------------------- |
+| movie_weekly_best | tv_chinese_best_weekly |
 
 ### 用户广播 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/people/:userid/status/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/douban/people/75118396/status","parameters":{"userid":"整数型用户 id","routeParams":"额外参数；见下"},"name":"用户广播","maintainers":["alfredcai"],"description":"\n::: tip\n-   **目前只支持整数型 id**\n-   字母型的 id，可以通过头像图片链接来找到其整数型 id，图片命名规则`ul[userid]-*.jpg`或`u[userid]-*.jpg`，即取文件名中间的数字\n-   例如：用户 id: `MovieL`他的头像图片链接：`https://img1.doubanio.com/icon/ul1128221-98.jpg`他的整数型 id: `1128221`\n:::\n\n对于豆瓣用户广播内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键                         | 含义                                                           | 接受的值       | 默认值 |\n  | -------------------------- | -------------------------------------------------------------- | -------------- | ------ |\n  | readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |\n  | authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |\n  | showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |\n  | showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |\n  | showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |\n  | showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |\n  | showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |\n  | addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |\n  | showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |\n  | showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |\n  | widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n  | heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n  | sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |\n\n  指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如\n\n  [https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100](https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100)\n\n  的效果为\n\n  <img loading=\"lazy\" src=\"/img/readable-douban.png\" alt=\"豆瓣读书的可读豆瓣广播 RSS\" />","location":"people/status.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/people/:userid/status/:routeParams?","categories":["social-media","popular"],"view":1,"example":"/douban/people/75118396/status","parameters":{"userid":"整数型用户 id","routeParams":"额外参数；见下"},"name":"用户广播","maintainers":["alfredcai"],"description":"\n::: tip\n-   **目前只支持整数型 id**\n-   字母型的 id，可以通过头像图片链接来找到其整数型 id，图片命名规则`ul[userid]-*.jpg`或`u[userid]-*.jpg`，即取文件名中间的数字\n-   例如：用户 id: `MovieL`他的头像图片链接：`https://img1.doubanio.com/icon/ul1128221-98.jpg`他的整数型 id: `1128221`\n:::\n\n对于豆瓣用户广播内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n| 键                         | 含义                                                           | 接受的值       | 默认值 |\n| -------------------------- | -------------------------------------------------------------- | -------------- | ------ |\n| readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |\n| authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |\n| showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |\n| showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |\n| showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |\n| showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |\n| showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |\n| addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |\n| showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |\n| showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |\n| widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n| heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |\n| sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |\n\n  指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如\n\n  [https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100](https://rsshub.app/douban/people/113894409/status/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=1&showRetweetTextInTitle=1&addLinkForPics=1&showTimestampInDescription=1&showComments=1&widthOfPics=100)\n\n  的效果为\n\n  <img loading=\"lazy\" src=\"/img/readable-douban.png\" alt=\"豆瓣读书的可读豆瓣广播 RSS\" />","location":"people/status.ts"}' :test='{"code":0}' />
 
 
 ::: tip
@@ -1192,21 +1192,21 @@ Chart
 
 对于豆瓣用户广播内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式
 
-  | 键                         | 含义                                                           | 接受的值       | 默认值 |
-  | -------------------------- | -------------------------------------------------------------- | -------------- | ------ |
-  | readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |
-  | authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |
-  | showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |
-  | showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |
-  | showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |
-  | showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |
-  | showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |
-  | addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |
-  | showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |
-  | showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |
-  | widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
-  | heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
-  | sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |
+| 键                         | 含义                                                           | 接受的值       | 默认值 |
+| -------------------------- | -------------------------------------------------------------- | -------------- | ------ |
+| readable                   | 是否开启细节排版可读性优化                                     | 0/1/true/false | false  |
+| authorNameBold             | 是否加粗作者名字                                               | 0/1/true/false | false  |
+| showAuthorInTitle          | 是否在标题处显示作者                                           | 0/1/true/false | true   |
+| showAuthorInDesc           | 是否在正文处显示作者                                           | 0/1/true/false | false  |
+| showAuthorAvatarInDesc     | 是否在正文处显示作者头像（若阅读器会提取正文图片，不建议开启） | 0/1/true/false | false  |
+| showEmojiForRetweet        | 显示 “🔁” 取代 “Fw”（转发）                                    | 0/1/true/false | false  |
+| showRetweetTextInTitle     | 在标题出显示转发评论（置为 false 则在标题只显示被转发的广播）  | 0/1/true/false | false  |
+| addLinkForPics             | 为图片添加可点击的链接                                         | 0/1/true/false | false  |
+| showTimestampInDescription | 在正文处显示广播的时间戳                                       | 0/1/true/false | false  |
+| showComments               | 在正文处显示评论                                               | 0/1/true/false | false  |
+| widthOfPics                | 广播配图宽（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
+| heightOfPics               | 广播配图高（生效取决于阅读器）                                 | 不指定 / 数字  | 不指定 |
+| sizeOfAuthorAvatar         | 作者头像大小                                                   | 数字           | 48     |
 
   指定更多与默认值不同的参数选项可以改善 RSS 的可读性，如
 
@@ -1218,13 +1218,13 @@ Chart
 
 ### 用户想看 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n  | 键         | 含义       | 接受的值 | 默认值 |\n  | ---------- | ---------- | -------- | ------ |\n  | pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":0}' />
+<Route namespace="douban" :data='{"path":"/people/:userid/wish/:routeParams?","categories":["social-media"],"example":"/douban/people/exherb/wish","parameters":{"userid":"用户id","routeParams":"额外参数；见下"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"用户想看","maintainers":["exherb"],"description":"对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式\n\n| 键         | 含义       | 接受的值 | 默认值 |\n| ---------- | ---------- | -------- | ------ |\n| pagesCount | 查询页面数 |          | 1      |","location":"people/wish.ts"}' :test='{"code":0}' />
 
 对于豆瓣用户想看的内容，在 `routeParams` 参数中以 query string 格式设置如下选项可以控制输出的样式
 
-  | 键         | 含义       | 接受的值 | 默认值 |
-  | ---------- | ---------- | -------- | ------ |
-  | pagesCount | 查询页面数 |          | 1      |
+| 键         | 含义       | 接受的值 | 默认值 |
+| ---------- | ---------- | -------- | ------ |
+| pagesCount | 查询页面数 |          | 1      |
 
 ### 正在上映的电影 <Site url="www.douban.com" size="sm" />
 
@@ -1232,11 +1232,11 @@ Chart
 
 ### 最新增加的音乐 <Site url="www.douban.com" size="sm" />
 
-<Route namespace="douban" :data='{"path":"/music/latest/:area?","categories":["social-media"],"example":"/douban/music/latest/chinese","parameters":{"area":"区域类型，默认全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新增加的音乐","maintainers":["fengkx","xyqfer"],"description":"| 华语    | 欧美    | 日韩        |\n  | ------- | ------- | ----------- |\n  | chinese | western | japankorean |","location":"other/latest-music.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 504)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="douban" :data='{"path":"/music/latest/:area?","categories":["social-media"],"example":"/douban/music/latest/chinese","parameters":{"area":"区域类型，默认全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"最新增加的音乐","maintainers":["fengkx","xyqfer"],"description":"| 华语    | 欧美    | 日韩        |\n| ------- | ------- | ----------- |\n| chinese | western | japankorean |","location":"other/latest-music.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 504)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 华语    | 欧美    | 日韩        |
-  | ------- | ------- | ----------- |
-  | chinese | western | japankorean |
+| ------- | ------- | ----------- |
+| chinese | western | japankorean |
 
 ### 最新回应过的日记 <Site url="www.douban.com" size="sm" />
 
@@ -1303,15 +1303,15 @@ Chart
 
 ### 热榜 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n  | -------- | -------- | ------ | ------ | ------ | ------ |\n  | type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n  | 参数名称 | 日榜  | 周榜   |\n  | -------- | ----- | ------ |\n  | period   | daily | weekly |\n\n::: tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n:::","location":"hot.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/hot/:type?/:period?","categories":["social-media"],"example":"/coolapk/hot","parameters":{"type":"默认为`jrrm`","period":"默认为`daily`"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热榜","maintainers":["xizeyoupan"],"description":"| 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |\n| -------- | -------- | ------ | ------ | ------ | ------ |\n| type     | jrrm     | dzb    | plb    | scb    | ktb    |\n\n| 参数名称 | 日榜  | 周榜   |\n| -------- | ----- | ------ |\n| period   | daily | weekly |\n\n::: tip\n  今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。\n:::","location":"hot.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 今日热门 | 点赞榜 | 评论榜 | 收藏榜 | 酷图榜 |
-  | -------- | -------- | ------ | ------ | ------ | ------ |
-  | type     | jrrm     | dzb    | plb    | scb    | ktb    |
+| -------- | -------- | ------ | ------ | ------ | ------ |
+| type     | jrrm     | dzb    | plb    | scb    | ktb    |
 
-  | 参数名称 | 日榜  | 周榜   |
-  | -------- | ----- | ------ |
-  | period   | daily | weekly |
+| 参数名称 | 日榜  | 周榜   |
+| -------- | ----- | ------ |
+| period   | daily | weekly |
 
 ::: tip
   今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。
@@ -1319,19 +1319,19 @@ Chart
 
 ### 头条 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":"/toutiao/:type?","categories":["social-media"],"example":"/coolapk/toutiao","parameters":{"type":"默认为history"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["xizeyoupan"],"description":"| 参数名称 | 历史头条 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | history  | latest |","location":"toutiao.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":"/toutiao/:type?","categories":["social-media"],"example":"/coolapk/toutiao","parameters":{"type":"默认为history"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"头条","maintainers":["xizeyoupan"],"description":"| 参数名称 | 历史头条 | 最新   |\n| -------- | -------- | ------ |\n| type     | history  | latest |","location":"toutiao.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 历史头条 | 最新   |
-  | -------- | -------- | ------ |
-  | type     | history  | latest |
+| -------- | -------- | ------ |
+| type     | history  | latest |
 
 ### 图文 <Site url="coolapk.com" size="sm" />
 
-<Route namespace="coolapk" :data='{"path":["/tuwen/:type?"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n  | -------- | -------- | ------ |\n  | type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":0}' />
+<Route namespace="coolapk" :data='{"path":["/tuwen/:type?"],"categories":["social-media"],"example":"/coolapk/tuwen","parameters":{"type":"默认为hot"},"features":{"requireConfig":[{"name":"ALLOW_USER_HOTLINK_TEMPLATE","optional":true,"description":"设置为`true`并添加`image_hotlink_template`参数来代理图片"}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"图文","maintainers":["xizeyoupan"],"description":"| 参数名称 | 编辑精选 | 最新   |\n| -------- | -------- | ------ |\n| type     | hot      | latest |","location":"tuwen.ts"}' :test='{"code":0}' />
 
 | 参数名称 | 编辑精选 | 最新   |
-  | -------- | -------- | ------ |
-  | type     | hot      | latest |
+| -------- | -------- | ------ |
+| type     | hot      | latest |
 
 ### 用户 <Site url="coolapk.com" size="sm" />
 
@@ -1626,11 +1626,11 @@ The profile page of the user, which contains the user's information, videos, and
 
 ### 星球 <Site url="zsxq.com" size="sm" />
 
-<Route namespace="zsxq" :data='{"name":"星球","categories":["social-media"],"path":"/group/:id/:scope?","example":"/zsxq/group/88855458825252","parameters":{"id":"星球id，从网页端url中获取","scope":"栏目分类，默认为\"all\"，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["wx.zsxq.com/dweb2/index/group/:id"]}],"features":{"requireConfig":[{"name":"ZSXQ_ACCESS_TOKEN","description":"知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"}]},"description":"| all  | digests | by_owner | questions | tasks |\n  | ---- | ------ | --------- | -------- | ------ |\n  | 最新 | 精华    | 只看星主    | 问答      | 作业   |","location":"group.ts"}' :test='undefined' />
+<Route namespace="zsxq" :data='{"name":"星球","categories":["social-media"],"path":"/group/:id/:scope?","example":"/zsxq/group/88855458825252","parameters":{"id":"星球id，从网页端url中获取","scope":"栏目分类，默认为\"all\"，见下表"},"maintainers":["KarasuShin"],"radar":[{"source":["wx.zsxq.com/dweb2/index/group/:id"]}],"features":{"requireConfig":[{"name":"ZSXQ_ACCESS_TOKEN","description":"知识星球访问令牌,获取方式：\n1. 登录知识星球网页版\n2. 打开浏览器开发者工具，切换到 Application 面板\n3. 点击侧边栏中的Storage -> Cookies -> https://wx.zsxq.com\n4. 复制 Cookie 中的 zsxq_access_token 值"}]},"description":"| all  | digests | by_owner | questions | tasks |\n| ---- | ------ | --------- | -------- | ------ |\n| 最新 | 精华    | 只看星主    | 问答      | 作业   |","location":"group.ts"}' :test='undefined' />
 
 | all  | digests | by_owner | questions | tasks |
-  | ---- | ------ | --------- | -------- | ------ |
-  | 最新 | 精华    | 只看星主    | 问答      | 作业   |
+| ---- | ------ | --------- | -------- | ------ |
+| 最新 | 精华    | 只看星主    | 问答      | 作业   |
 
 ### 用户足迹 <Site url="zsxq.com" size="sm" />
 

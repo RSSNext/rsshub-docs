@@ -13,19 +13,19 @@
 
 ### 文章 <Site url="www.acfun.cn" size="sm" />
 
-<Route namespace="acfun" :data='{"path":"/article/:categoryId/:sortType?/:timeRange?","categories":["anime","popular"],"view":0,"example":"/acfun/article/110","parameters":{"categoryId":{"description":"分区 ID","options":[{"value":"73","label":"生活情感"},{"value":"74","label":"动漫文化"},{"value":"75","label":"漫画文学"},{"value":"110","label":"综合"},{"value":"164","label":"游戏"},{"value":"184","label":"二次元画师"}]},"sortType":{"description":"排序","options":[{"value":"createTime","label":"最新发表"},{"value":"lastCommentTime","label":"最新动态"},{"value":"hotScore","label":"最热文章"}],"default":"createTime"},"timeRange":{"description":"时间范围，仅在排序是 `hotScore` 有效","options":[{"value":"all","label":"时间不限"},{"value":"oneDay","label":"24 小时"},{"value":"threeDay","label":"三天"},{"value":"oneWeek","label":"一周"},{"value":"oneMonth","label":"一个月"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["TonyRL"],"description":"| 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |\n  | ---------- | ---- | -------- | ---- | -------- | -------- |\n  | 184        | 110  | 73       | 164  | 74       | 75       |\n\n  | 最新发表   | 最新动态        | 最热文章 |\n  | ---------- | --------------- | -------- |\n  | createTime | lastCommentTime | hotScore |\n\n  | 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |\n  | -------- | ------- | -------- | ------- | -------- |\n  | all      | oneDay  | threeDay | oneWeek | oneMonth |","location":"article.ts"}' :test='{"code":0}' />
+<Route namespace="acfun" :data='{"path":"/article/:categoryId/:sortType?/:timeRange?","categories":["anime","popular"],"view":0,"example":"/acfun/article/110","parameters":{"categoryId":{"description":"分区 ID","options":[{"value":"73","label":"生活情感"},{"value":"74","label":"动漫文化"},{"value":"75","label":"漫画文学"},{"value":"110","label":"综合"},{"value":"164","label":"游戏"},{"value":"184","label":"二次元画师"}]},"sortType":{"description":"排序","options":[{"value":"createTime","label":"最新发表"},{"value":"lastCommentTime","label":"最新动态"},{"value":"hotScore","label":"最热文章"}],"default":"createTime"},"timeRange":{"description":"时间范围，仅在排序是 `hotScore` 有效","options":[{"value":"all","label":"时间不限"},{"value":"oneDay","label":"24 小时"},{"value":"threeDay","label":"三天"},{"value":"oneWeek","label":"一周"},{"value":"oneMonth","label":"一个月"}],"default":"all"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["TonyRL"],"description":"| 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |\n| ---------- | ---- | -------- | ---- | -------- | -------- |\n| 184        | 110  | 73       | 164  | 74       | 75       |\n\n| 最新发表   | 最新动态        | 最热文章 |\n| ---------- | --------------- | -------- |\n| createTime | lastCommentTime | hotScore |\n\n| 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |\n| -------- | ------- | -------- | ------- | -------- |\n| all      | oneDay  | threeDay | oneWeek | oneMonth |","location":"article.ts"}' :test='{"code":0}' />
 
 | 二次元画师 | 综合 | 生活情感 | 游戏 | 动漫文化 | 漫画文学 |
-  | ---------- | ---- | -------- | ---- | -------- | -------- |
-  | 184        | 110  | 73       | 164  | 74       | 75       |
+| ---------- | ---- | -------- | ---- | -------- | -------- |
+| 184        | 110  | 73       | 164  | 74       | 75       |
 
-  | 最新发表   | 最新动态        | 最热文章 |
-  | ---------- | --------------- | -------- |
-  | createTime | lastCommentTime | hotScore |
+| 最新发表   | 最新动态        | 最热文章 |
+| ---------- | --------------- | -------- |
+| createTime | lastCommentTime | hotScore |
 
-  | 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |
-  | -------- | ------- | -------- | ------- | -------- |
-  | all      | oneDay  | threeDay | oneWeek | oneMonth |
+| 时间不限 | 24 小时 | 三天     | 一周    | 一个月   |
+| -------- | ------- | -------- | ------- | -------- |
+| all      | oneDay  | threeDay | oneWeek | oneMonth |
 
 ### 用户投稿 <Site url="www.acfun.cn" size="sm" />
 
@@ -133,11 +133,11 @@
 
 ### Current Release <Site url="dlsite.com" size="sm" />
 
-<Route namespace="dlsite" :data='{"path":"/new/:type","categories":["anime","popular"],"view":0,"example":"/dlsite/new/home","parameters":{"type":{"description":"类型","options":[{"value":"home","label":"「DLsite 同人」"},{"value":"comic","label":"「DLsite コミック」"},{"value":"soft","label":"「DLsite PCソフト」"},{"value":"maniax","label":"「DLsite 同人 - R18」"},{"value":"books","label":"「DLsite 成年コミック - R18」"},{"value":"pro","label":"「DLsite 美少女ゲーム」"},{"value":"girls","label":"「DLsite 乙女」"},{"value":"bl","label":"「DLsite BL」"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Current Release","maintainers":["cssxsh"],"description":"| Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |\n  | ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |\n  | home   | comic  | soft     | maniax       | books        | pro     | girls | bl |","location":"new.ts"}' :test='{"code":0}' />
+<Route namespace="dlsite" :data='{"path":"/new/:type","categories":["anime","popular"],"view":0,"example":"/dlsite/new/home","parameters":{"type":{"description":"类型","options":[{"value":"home","label":"「DLsite 同人」"},{"value":"comic","label":"「DLsite コミック」"},{"value":"soft","label":"「DLsite PCソフト」"},{"value":"maniax","label":"「DLsite 同人 - R18」"},{"value":"books","label":"「DLsite 成年コミック - R18」"},{"value":"pro","label":"「DLsite 美少女ゲーム」"},{"value":"girls","label":"「DLsite 乙女」"},{"value":"bl","label":"「DLsite BL」"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Current Release","maintainers":["cssxsh"],"description":"| Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |\n| ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |\n| home   | comic  | soft     | maniax       | books        | pro     | girls | bl |","location":"new.ts"}' :test='{"code":0}' />
 
 | Doujin | Comics | PC Games | Doujin (R18) | Adult Comics | H Games | Otome | BL |
-  | ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |
-  | home   | comic  | soft     | maniax       | books        | pro     | girls | bl |
+| ------ | ------ | -------- | ------------ | ------------ | ------- | ----- | -- |
+| home   | comic  | soft     | maniax       | books        | pro     | girls | bl |
 
 ### Ci-en Creators' Article <Site url="dlsite.com" size="sm" />
 
@@ -219,13 +219,13 @@
 
 ### Posts <Site url="kemono.su" size="sm" />
 
-<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n::: tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n:::","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n| Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n| ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n| posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n::: tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n:::","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 Sources
 
-  | Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |
-  | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |
-  | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |
+| Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |
+| ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |
+| posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |
 
 ::: tip
   When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.
@@ -236,27 +236,27 @@ Sources
 
 ### Categories Topics <Site url="www.lovelive-anime.jp" size="sm" />
 
-<Route namespace="lovelive-anime" :data='{"path":"/topics/:abbr/:category?/:option?","categories":["anime"],"example":"/lovelive-anime/topics/otonokizaka","parameters":{"abbr":"The path to the Love Live series of sub-projects on the official website is detailed in the table below","category":"The official website lists the Topics category, `category` is `detail` when crawling the full text, other categories see the following table for details","option":"Crawl full text when `option` is `detail`."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Categories Topics","maintainers":["axojhf"],"description":"| Sub-project Name (not full name) | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n  | -------------------------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ---------------------------------------- |\n  | `abbr`parameter                  | otonokizaka | uranohoshi           | nijigasaki                                 | yuigaoka              | yohane       | musical                                  |\n\n  | Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | その他 | キャンペーン |\n  | ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n  | `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | other  | campaign     |","location":"topics.ts"}' :test='undefined' />
+<Route namespace="lovelive-anime" :data='{"path":"/topics/:abbr/:category?/:option?","categories":["anime"],"example":"/lovelive-anime/topics/otonokizaka","parameters":{"abbr":"The path to the Love Live series of sub-projects on the official website is detailed in the table below","category":"The official website lists the Topics category, `category` is `detail` when crawling the full text, other categories see the following table for details","option":"Crawl full text when `option` is `detail`."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Categories Topics","maintainers":["axojhf"],"description":"| Sub-project Name (not full name) | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ---------------------------------------- |\n| `abbr`parameter                  | otonokizaka | uranohoshi           | nijigasaki                                 | yuigaoka              | yohane       | musical                                  |\n\n| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | その他 | キャンペーン |\n| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | other  | campaign     |","location":"topics.ts"}' :test='undefined' />
 
 | Sub-project Name (not full name) | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |
-  | -------------------------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ---------------------------------------- |
-  | `abbr`parameter                  | otonokizaka | uranohoshi           | nijigasaki                                 | yuigaoka              | yohane       | musical                                  |
+| -------------------------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ---------------------------------------- |
+| `abbr`parameter                  | otonokizaka | uranohoshi           | nijigasaki                                 | yuigaoka              | yohane       | musical                                  |
 
-  | Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | その他 | キャンペーン |
-  | ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |
-  | `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | other  | campaign     |
+| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | その他 | キャンペーン |
+| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |
+| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | other  | campaign     |
 
 ### News <Site url="www.lovelive-anime.jp/" size="sm" />
 
-<Route namespace="lovelive-anime" :data='{"path":"/news/:abbr?/:category?/:option?","categories":["anime"],"example":"/lovelive-anime/news","parameters":{"abbr":"The path to the Love Live series of sub-projects on the official website is detailed in the table below, `abbr` is `detail` when crawling the full text","category":"The official website lists the Topics category, `category` is `detail` when crawling the full text, other categories see the following table for details","option":"Crawl full text when `option` is `detail`."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lovelive-anime.jp/","www.lovelive-anime.jp/news/"],"target":"/news"}],"name":"News","maintainers":["axojhf","zhaoweizhong"],"url":"www.lovelive-anime.jp/","description":"| Sub-project Name | All Projects | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 蓮ノ空女学院 | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n  | -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ | ---------------------------------------- |\n  | `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora | yohane       | musical                                  |\n\n  | Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |\n  | ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n  | `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |","location":"news.ts"}' :test='undefined' />
+<Route namespace="lovelive-anime" :data='{"path":"/news/:abbr?/:category?/:option?","categories":["anime"],"example":"/lovelive-anime/news","parameters":{"abbr":"The path to the Love Live series of sub-projects on the official website is detailed in the table below, `abbr` is `detail` when crawling the full text","category":"The official website lists the Topics category, `category` is `detail` when crawling the full text, other categories see the following table for details","option":"Crawl full text when `option` is `detail`."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.lovelive-anime.jp/","www.lovelive-anime.jp/news/"],"target":"/news"}],"name":"News","maintainers":["axojhf","zhaoweizhong"],"url":"www.lovelive-anime.jp/","description":"| Sub-project Name | All Projects | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 蓮ノ空女学院 | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |\n| -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ | ---------------------------------------- |\n| `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora | yohane       | musical                                  |\n\n| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |\n| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |\n| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |","location":"news.ts"}' :test='undefined' />
 
 | Sub-project Name | All Projects | Lovelive!   | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | 蓮ノ空女学院 | 幻日のヨハネ | ラブライブ！スクールアイドルミュージカル |
-  | -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ | ---------------------------------------- |
-  | `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora | yohane       | musical                                  |
+| -------------------------------- | -------------- | ----------- | -------------------- | ------------------------------------------ | --------------------- | ------------ | ------------ | ---------------------------------------- |
+| `abbr`parameter                  | <u>*No parameter*</u> | lovelive |     sunshine        | nijigasaki                                 | superstar              | hasunosora | yohane       | musical                                  |
 
-  | Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |
-  | ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |
-  | `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |
+| Category Name       | 全てのニュース        | 音楽商品 | アニメ映像商品 | キャスト映像商品 | 劇場    | アニメ放送 / 配信 | キャスト配信 / ラジオ | ライブ / イベント | ブック | グッズ | ゲーム | メディア | ご当地情報 | キャンペーン | その他 |
+| ------------------- | --------------------- | -------- | -------------- | ---------------- | ------- | ----------------- | --------------------- | ----------------- | ------ | ------ | ------ | -------- | ---------- | ------ | ------------ |
+| `category`parameter | <u>*No parameter*</u> | music    | anime_movie   | cast_movie      | theater | onair             | radio                 | event             | books  | goods  | game   | media    | local      | campaign  | other   |
 
 ### Schedule <Site url="www.lovelive-anime.jp" size="sm" />
 
@@ -320,11 +320,11 @@ Sources
 
 ### Game Store - Review <Site url="apps.qoo-app.com" size="sm" />
 
-<Route namespace="qoo-app" :data='{"path":"/apps/:lang?/comment/:id","categories":["anime"],"example":"/qoo-app/apps/en/comment/7675","parameters":{"lang":"Language, see the table below, empty means `中文`","id":"Game ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Game Store - Review","maintainers":["TonyRL"],"description":"| 中文 | English | 한국어 | Español | 日本語 | ไทย | Tiếng Việt |\n  | ---- | ------- | ------ | ------- | ------ | --- | ---------- |\n  |      | en      | ko     | es      | ja     | th  | vi         |","location":"apps/comment.ts"}' :test='undefined' />
+<Route namespace="qoo-app" :data='{"path":"/apps/:lang?/comment/:id","categories":["anime"],"example":"/qoo-app/apps/en/comment/7675","parameters":{"lang":"Language, see the table below, empty means `中文`","id":"Game ID, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Game Store - Review","maintainers":["TonyRL"],"description":"| 中文 | English | 한국어 | Español | 日本語 | ไทย | Tiếng Việt |\n| ---- | ------- | ------ | ------- | ------ | --- | ---------- |\n|      | en      | ko     | es      | ja     | th  | vi         |","location":"apps/comment.ts"}' :test='undefined' />
 
 | 中文 | English | 한국어 | Español | 日本語 | ไทย | Tiếng Việt |
-  | ---- | ------- | ------ | ------- | ------ | --- | ---------- |
-  |      | en      | ko     | es      | ja     | th  | vi         |
+| ---- | ------- | ------ | ------- | ------ | --- | ---------- |
+|      | en      | ko     | es      | ja     | th  | vi         |
 
 ### Game Store - Notes <Site url="apps.qoo-app.com" size="sm" />
 
@@ -336,11 +336,11 @@ Sources
 
 ### News <Site url="apps.qoo-app.com" size="sm" />
 
-<Route namespace="qoo-app" :data='{"path":"/news/:lang?","categories":["anime"],"example":"/qoo-app/news/en","parameters":{"lang":"Language, see the table below, empty means `中文`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["TonyRL"],"description":"| 中文 | English |\n  | ---- | ------- |\n  |      | en      |","location":"news.ts"}' :test='undefined' />
+<Route namespace="qoo-app" :data='{"path":"/news/:lang?","categories":["anime"],"example":"/qoo-app/news/en","parameters":{"lang":"Language, see the table below, empty means `中文`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["TonyRL"],"description":"| 中文 | English |\n| ---- | ------- |\n|      | en      |","location":"news.ts"}' :test='undefined' />
 
 | 中文 | English |
-  | ---- | ------- |
-  |      | en      |
+| ---- | ------- |
+|      | en      |
 
 ### Note Comments <Site url="apps.qoo-app.com" size="sm" />
 
@@ -407,11 +407,11 @@ Sources
 
 ### 分类文章 <Site url="vcb-s.com/" size="sm" />
 
-<Route namespace="vcb-s" :data='{"path":"/category/:cate","categories":["anime"],"example":"/vcb-s/category/works","parameters":{"cate":"分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vcb-s.com/archives/category/:cate"]}],"name":"分类文章","maintainers":["cxfksword"],"url":"vcb-s.com/","description":"| 作品项目 | 科普系列 | 计划与日志 |\n  | -------- | -------- | ---------- |\n  | works    | kb       | planlog    |","location":"category.ts"}' :test='undefined' />
+<Route namespace="vcb-s" :data='{"path":"/category/:cate","categories":["anime"],"example":"/vcb-s/category/works","parameters":{"cate":"分类"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["vcb-s.com/archives/category/:cate"]}],"name":"分类文章","maintainers":["cxfksword"],"url":"vcb-s.com/","description":"| 作品项目 | 科普系列 | 计划与日志 |\n| -------- | -------- | ---------- |\n| works    | kb       | planlog    |","location":"category.ts"}' :test='undefined' />
 
 | 作品项目 | 科普系列 | 计划与日志 |
-  | -------- | -------- | ---------- |
-  | works    | kb       | planlog    |
+| -------- | -------- | ---------- |
+| works    | kb       | planlog    |
 
 ## X 漫画 <Site url="xmanhua.com"/>
 
@@ -427,11 +427,11 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### Author Search <Site url="oreno3d.com" size="sm" />
 
-<Route namespace="oreno3d" :data='{"path":["/authors/:authorid/:sort/:pagelimit?","/characters/:characterid/:sort/:pagelimit?","/origins/:originid/:sort/:pagelimit?","/search/:keyword/:sort/:pagelimit?","/tags/:tagid/:sort/:pagelimit?"],"categories":["anime"],"example":"/oreno3d/authors/3189/latest/1","parameters":{"authorid":"Author id, can be found in URL","sort":"Sort method, see the table above","pagelimit":"The maximum number of pages to be crawled, the default is 1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Author Search","maintainers":["xueli_sherryli"],"description":"| favorites | hot | latest | popularity |\n  | --------- | --- | ------ | ---------- |\n  | favorites | hot | latest | popularity |","location":"main.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="oreno3d" :data='{"path":["/authors/:authorid/:sort/:pagelimit?","/characters/:characterid/:sort/:pagelimit?","/origins/:originid/:sort/:pagelimit?","/search/:keyword/:sort/:pagelimit?","/tags/:tagid/:sort/:pagelimit?"],"categories":["anime"],"example":"/oreno3d/authors/3189/latest/1","parameters":{"authorid":"Author id, can be found in URL","sort":"Sort method, see the table above","pagelimit":"The maximum number of pages to be crawled, the default is 1"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Author Search","maintainers":["xueli_sherryli"],"description":"| favorites | hot | latest | popularity |\n| --------- | --- | ------ | ---------- |\n| favorites | hot | latest | popularity |","location":"main.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | favorites | hot | latest | popularity |
-  | --------- | --- | ------ | ---------- |
-  | favorites | hot | latest | popularity |
+| --------- | --- | ------ | ---------- |
+| favorites | hot | latest | popularity |
 
 ## 巴哈姆特電玩資訊站 <Site url="acg.gamer.com.tw"/>
 
@@ -463,11 +463,11 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 新闻站 <Site url="news.dmzj.com/" size="sm" />
 
-<Route namespace="dmzj" :data='{"path":"/news/:category?","categories":["anime"],"example":"/dmzj/news/donghuaqingbao","parameters":{"category":"类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.dmzj.com/"],"target":"/news"}],"name":"新闻站","maintainers":["vzz64"],"url":"news.dmzj.com/","description":"| 漫画情报      | 轻小说情报          | 动漫周边       | 声优情报        | 音乐资讯    | 游戏资讯   | 美图欣赏      | 漫展情报       | 大杂烩  |\n  | ------------- | ------------------- | -------------- | --------------- | ----------- | ---------- | ------------- | -------------- | ------- |\n  | manhuaqingbao | qingxiaoshuoqingbao | manhuazhoubian | shengyouqingbao | yinyuezixun | youxizixun | meituxinshang | manzhanqingbao | dazahui |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="dmzj" :data='{"path":"/news/:category?","categories":["anime"],"example":"/dmzj/news/donghuaqingbao","parameters":{"category":"类别"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.dmzj.com/"],"target":"/news"}],"name":"新闻站","maintainers":["vzz64"],"url":"news.dmzj.com/","description":"| 漫画情报      | 轻小说情报          | 动漫周边       | 声优情报        | 音乐资讯    | 游戏资讯   | 美图欣赏      | 漫展情报       | 大杂烩  |\n| ------------- | ------------------- | -------------- | --------------- | ----------- | ---------- | ------------- | -------------- | ------- |\n| manhuaqingbao | qingxiaoshuoqingbao | manhuazhoubian | shengyouqingbao | yinyuezixun | youxizixun | meituxinshang | manzhanqingbao | dazahui |","location":"news.ts"}' :test='{"code":0}' />
 
 | 漫画情报      | 轻小说情报          | 动漫周边       | 声优情报        | 音乐资讯    | 游戏资讯   | 美图欣赏      | 漫展情报       | 大杂烩  |
-  | ------------- | ------------------- | -------------- | --------------- | ----------- | ---------- | ------------- | -------------- | ------- |
-  | manhuaqingbao | qingxiaoshuoqingbao | manhuazhoubian | shengyouqingbao | yinyuezixun | youxizixun | meituxinshang | manzhanqingbao | dazahui |
+| ------------- | ------------------- | -------------- | --------------- | ----------- | ---------- | ------------- | -------------- | ------- |
+| manhuaqingbao | qingxiaoshuoqingbao | manhuazhoubian | shengyouqingbao | yinyuezixun | youxizixun | meituxinshang | manzhanqingbao | dazahui |
 
 ## 動漫狂 <Site url="cartoonmad.com"/>
 
@@ -491,12 +491,12 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 资讯 <Site url="005.tv" size="sm" />
 
-<Route namespace="005" :data='{"path":"/:category?","name":"资讯","url":"005.tv","maintainers":["nczitzk"],"example":"/005/zx","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为二次元资讯"},"description":"\n  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |\n  | ---------- | ------ | -------- | -------- |\n  | zx         | zwh    | dtts     | zh       |\n    ","categories":["anime"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["005.tv/:category"]},{"title":"二次元资讯","source":["005.tv/zx/"],"target":"/005/zx"},{"title":"慢慢说","source":["005.tv/zwh/"],"target":"/005/zwh"},{"title":"道听途说","source":["005.tv/dtts/"],"target":"/005/dtts"},{"title":"展会资讯","source":["005.tv/zh/"],"target":"/005/zh"}],"location":"index.ts"}' :test='undefined' />
+<Route namespace="005" :data='{"path":"/:category?","name":"资讯","url":"005.tv","maintainers":["nczitzk"],"example":"/005/zx","parameters":{"category":"分类，可在对应分类页 URL 中找到，默认为二次元资讯"},"description":"\n| 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |\n| ---------- | ------ | -------- | -------- |\n| zx         | zwh    | dtts     | zh       |\n    ","categories":["anime"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["005.tv/:category"]},{"title":"二次元资讯","source":["005.tv/zx/"],"target":"/005/zx"},{"title":"慢慢说","source":["005.tv/zwh/"],"target":"/005/zwh"},{"title":"道听途说","source":["005.tv/dtts/"],"target":"/005/dtts"},{"title":"展会资讯","source":["005.tv/zh/"],"target":"/005/zh"}],"location":"index.ts"}' :test='undefined' />
 
 
-  | 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |
-  | ---------- | ------ | -------- | -------- |
-  | zx         | zwh    | dtts     | zh       |
+| 二次元资讯 | 慢慢说 | 道听途说 | 展会资讯 |
+| ---------- | ------ | -------- | -------- |
+| zx         | zwh    | dtts     | zh       |
     
 
 ## 禁漫天堂 <Site url="18comic.org"/>
@@ -507,30 +507,30 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 成人 A 漫 <Site url="jmcomic.group/" size="sm" />
 
-<Route namespace="18comic" :data='{"path":"/:category?/:time?/:order?/:keyword?","categories":["anime"],"example":"/18comic","parameters":{"category":"分类，见下表，默认为 `all` 即全部","time":"时间范围，见下表，默认为 `a` 即全部","order":"排列顺序，见下表，默认为 `mr` 即最新","keyword":"关键字，见下表，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jmcomic.group/"]}],"name":"成人 A 漫","maintainers":["nczitzk"],"url":"jmcomic.group/","description":"分类\n\n  | 全部 | 其他漫畫 | 同人   | 韓漫   | 美漫   | 短篇  | 单本   |\n  | ---- | -------- | ------ | ------ | ------ | ----- | ------ |\n  | all  | another  | doujin | hanman | meiman | short | single |\n\n  时间范围\n\n  | 全部 | 今天 | 这周 | 本月 |\n  | ---- | ---- | ---- | ---- |\n  | a    | t    | w    | m    |\n\n  排列顺序\n\n  | 最新 | 最多点阅的 | 最多图片 | 最高评分 | 最多评论 | 最多爱心 |\n  | ---- | ---------- | -------- | -------- | -------- | -------- |\n  | mr   | mv         | mp       | tr       | md       | tf       |\n\n  关键字（供参考）\n\n  | YAOI | 女性向 | NTR | 非 H | 3D | 獵奇 |\n  | ---- | ------ | --- | ---- | -- | ---- |","location":"index.ts"}' :test='undefined' />
+<Route namespace="18comic" :data='{"path":"/:category?/:time?/:order?/:keyword?","categories":["anime"],"example":"/18comic","parameters":{"category":"分类，见下表，默认为 `all` 即全部","time":"时间范围，见下表，默认为 `a` 即全部","order":"排列顺序，见下表，默认为 `mr` 即最新","keyword":"关键字，见下表，默认为空"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jmcomic.group/"]}],"name":"成人 A 漫","maintainers":["nczitzk"],"url":"jmcomic.group/","description":"分类\n\n| 全部 | 其他漫畫 | 同人   | 韓漫   | 美漫   | 短篇  | 单本   |\n| ---- | -------- | ------ | ------ | ------ | ----- | ------ |\n| all  | another  | doujin | hanman | meiman | short | single |\n\n  时间范围\n\n| 全部 | 今天 | 这周 | 本月 |\n| ---- | ---- | ---- | ---- |\n| a    | t    | w    | m    |\n\n  排列顺序\n\n| 最新 | 最多点阅的 | 最多图片 | 最高评分 | 最多评论 | 最多爱心 |\n| ---- | ---------- | -------- | -------- | -------- | -------- |\n| mr   | mv         | mp       | tr       | md       | tf       |\n\n  关键字（供参考）\n\n| YAOI | 女性向 | NTR | 非 H | 3D | 獵奇 |\n| ---- | ------ | --- | ---- | -- | ---- |","location":"index.ts"}' :test='undefined' />
 
 分类
 
-  | 全部 | 其他漫畫 | 同人   | 韓漫   | 美漫   | 短篇  | 单本   |
-  | ---- | -------- | ------ | ------ | ------ | ----- | ------ |
-  | all  | another  | doujin | hanman | meiman | short | single |
+| 全部 | 其他漫畫 | 同人   | 韓漫   | 美漫   | 短篇  | 单本   |
+| ---- | -------- | ------ | ------ | ------ | ----- | ------ |
+| all  | another  | doujin | hanman | meiman | short | single |
 
   时间范围
 
-  | 全部 | 今天 | 这周 | 本月 |
-  | ---- | ---- | ---- | ---- |
-  | a    | t    | w    | m    |
+| 全部 | 今天 | 这周 | 本月 |
+| ---- | ---- | ---- | ---- |
+| a    | t    | w    | m    |
 
   排列顺序
 
-  | 最新 | 最多点阅的 | 最多图片 | 最高评分 | 最多评论 | 最多爱心 |
-  | ---- | ---------- | -------- | -------- | -------- | -------- |
-  | mr   | mv         | mp       | tr       | md       | tf       |
+| 最新 | 最多点阅的 | 最多图片 | 最高评分 | 最多评论 | 最多爱心 |
+| ---- | ---------- | -------- | -------- | -------- | -------- |
+| mr   | mv         | mp       | tr       | md       | tf       |
 
   关键字（供参考）
 
-  | YAOI | 女性向 | NTR | 非 H | 3D | 獵奇 |
-  | ---- | ------ | --- | ---- | -- | ---- |
+| YAOI | 女性向 | NTR | 非 H | 3D | 獵奇 |
+| ---- | ------ | --- | ---- | -- | ---- |
 
 ### 搜索 <Site url="jmcomic.group/" size="sm" />
 
@@ -542,13 +542,13 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 文庫 <Site url="jmcomic.group/" size="sm" />
 
-<Route namespace="18comic" :data='{"path":"/blogs/:category?","categories":["anime"],"example":"/18comic/blogs","parameters":{"category":"分类，见下表，默认为空即全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jmcomic.group/"]}],"name":"文庫","maintainers":["nczitzk"],"url":"jmcomic.group/","description":"分类\n\n  | 全部 | 紳夜食堂 | 遊戲文庫 | JG GAMES | 模型山下 |\n  | ---- | -------- | -------- | -------- | -------- |\n  |      | dinner   | raiders  | jg       | figure   |","location":"blogs.ts"}' :test='undefined' />
+<Route namespace="18comic" :data='{"path":"/blogs/:category?","categories":["anime"],"example":"/18comic/blogs","parameters":{"category":"分类，见下表，默认为空即全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jmcomic.group/"]}],"name":"文庫","maintainers":["nczitzk"],"url":"jmcomic.group/","description":"分类\n\n| 全部 | 紳夜食堂 | 遊戲文庫 | JG GAMES | 模型山下 |\n| ---- | -------- | -------- | -------- | -------- |\n|      | dinner   | raiders  | jg       | figure   |","location":"blogs.ts"}' :test='undefined' />
 
 分类
 
-  | 全部 | 紳夜食堂 | 遊戲文庫 | JG GAMES | 模型山下 |
-  | ---- | -------- | -------- | -------- | -------- |
-  |      | dinner   | raiders  | jg       | figure   |
+| 全部 | 紳夜食堂 | 遊戲文庫 | JG GAMES | 模型山下 |
+| ---- | -------- | -------- | -------- | -------- |
+|      | dinner   | raiders  | jg       | figure   |
 
 ### 专辑 <Site url="jmcomic.group/" size="sm" />
 
@@ -601,11 +601,11 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 排行榜 <Site url="qq.com" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/ac/rank/:type?/:time?","categories":["anime"],"example":"/qq/ac/rank","parameters":{"type":"分类，见下表，默认为月票榜","time":"时间，`cur` 为当周、`prev` 为上周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ac.qq.com/Rank/comicRank/type/:type","ac.qq.com/"]}],"name":"排行榜","maintainers":["nczitzk"],"description":"| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n  | mt     | rise   | new    | pay    | top    | male   | female |\n\n::: tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n:::","location":"ac/rank.ts"}' :test='{"code":0}' />
+<Route namespace="qq" :data='{"path":"/ac/rank/:type?/:time?","categories":["anime"],"example":"/qq/ac/rank","parameters":{"type":"分类，见下表，默认为月票榜","time":"时间，`cur` 为当周、`prev` 为上周"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ac.qq.com/Rank/comicRank/type/:type","ac.qq.com/"]}],"name":"排行榜","maintainers":["nczitzk"],"description":"| 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |\n| ------ | ------ | ------ | ------ | ------ | ------ | ------ |\n| mt     | rise   | new    | pay    | top    | male   | female |\n\n::: tip\n  `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。\n:::","location":"ac/rank.ts"}' :test='{"code":0}' />
 
 | 月票榜 | 飙升榜 | 新作榜 | 畅销榜 | TOP100 | 男生榜 | 女生榜 |
-  | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-  | mt     | rise   | new    | pay    | top    | male   | female |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| mt     | rise   | new    | pay    | top    | male   | female |
 
 ::: tip
   `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。
@@ -635,11 +635,11 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ### 文章 <Site url="ymgal.games" size="sm" />
 
-<Route namespace="ymgal" :data='{"path":"/article/:type?","categories":["anime"],"example":"/ymgal/article","parameters":{"type":"文章类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["SunBK201"],"description":"| 全部文章 | 资讯 | 专栏   |\n  | -------- | ---- | ------ |\n  | all      | news | column |","location":"article.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="ymgal" :data='{"path":"/article/:type?","categories":["anime"],"example":"/ymgal/article","parameters":{"type":"文章类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文章","maintainers":["SunBK201"],"description":"| 全部文章 | 资讯 | 专栏   |\n| -------- | ---- | ------ |\n| all      | news | column |","location":"article.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | 全部文章 | 资讯 | 专栏   |
-  | -------- | ---- | ------ |
-  | all      | news | column |
+| -------- | ---- | ------ |
+| all      | news | column |
 
 ## アニメ新番組 <Site url="bangumi.online"/>
 

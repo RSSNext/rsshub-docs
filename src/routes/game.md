@@ -4,11 +4,11 @@
 
 ### 新闻中心 <Site url="3dmgame.com" size="sm" />
 
-<Route namespace="3dmgame" :data='{"path":"/news/:category?","categories":["game"],"example":"/3dmgame/news","parameters":{"category":"分类名或 ID，见下表，默认为新闻推荐，ID 可从分类 URL 中找到，如 Steam 为 `22221`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["3dmgame.com/news/:category?","3dmgame.com/news"]}],"name":"新闻中心","maintainers":["zhboner","lyqluis"],"description":"| 新闻推荐 | 游戏新闻 | 动漫影视 | 智能数码 | 时事焦点    |\n  | -------- | -------- | -------- | -------- | ----------- |\n  |          | game     | acg      | next     | news_36_1 |","location":"news-center.ts"}' :test='undefined' />
+<Route namespace="3dmgame" :data='{"path":"/news/:category?","categories":["game"],"example":"/3dmgame/news","parameters":{"category":"分类名或 ID，见下表，默认为新闻推荐，ID 可从分类 URL 中找到，如 Steam 为 `22221`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["3dmgame.com/news/:category?","3dmgame.com/news"]}],"name":"新闻中心","maintainers":["zhboner","lyqluis"],"description":"| 新闻推荐 | 游戏新闻 | 动漫影视 | 智能数码 | 时事焦点    |\n| -------- | -------- | -------- | -------- | ----------- |\n|          | game     | acg      | next     | news_36_1 |","location":"news-center.ts"}' :test='undefined' />
 
 | 新闻推荐 | 游戏新闻 | 动漫影视 | 智能数码 | 时事焦点    |
-  | -------- | -------- | -------- | -------- | ----------- |
-  |          | game     | acg      | next     | news_36_1 |
+| -------- | -------- | -------- | -------- | ----------- |
+|          | game     | acg      | next     | news_36_1 |
 
 ### 游戏资讯 <Site url="3dmgame.com" size="sm" />
 
@@ -18,37 +18,37 @@
 
 ### 3k-Switch游戏库 <Site url="www.3kns.com/" size="sm" />
 
-<Route namespace="3kns" :data='{"path":"/:filters?/:order?","categories":["game"],"example":"/3kns/category=all&lang=all","parameters":{"filters":"过滤器，可用参数见下表","order":"排序，按高分排序:desc;按低分排序:asc"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"3k-Switch游戏库","maintainers":["xzzpig"],"url":"www.3kns.com/","description":"游戏类型(category)\n\n  | 不限 | 角色扮演 | 动作冒险 | 策略游戏 | 模拟经营 | 即时战略 | 格斗类 | 射击游戏 | 休闲益智 | 体育运动 | 街机格斗 | 无双类 | 其他游戏 | 赛车竞速 |\n  | ---- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- | ------ | -------- | -------- |\n  | all  | 1        | 2        | 3        | 4        | 5        | 6      | 7        | 8        | 9        | 10       | 11     | 12       | 13       |\n\n  游戏语言(language)\n\n  | 不限 | 中文 | 英语 | 日语 | 其他 | 中文汉化 | 德语 |\n  | ---- | ---- | ---- | ---- | ---- | -------- | ---- |\n  | all  | 1    | 2    | 3    | 4    | 5        | 6    |\n\n  游戏标签(tag)\n\n  | 不限 | 热门 | 多人聚会 | 僵尸 | 体感 | 大作 | 音乐 | 三国 | RPG | 格斗 | 闯关 | 横版 | 科幻 | 棋牌 | 运输 | 无双 | 卡通动漫 | 日系 | 养成 | 恐怖 | 运动 | 乙女 | 街机 | 飞行模拟 | 解谜 | 海战 | 战争 | 跑酷 | 即时策略 | 射击 | 经营 | 益智 | 沙盒 | 模拟 | 冒险 | 竞速 | 休闲 | 动作 | 生存 | 独立 | 拼图 | 魔改 xci | 卡牌 | 塔防 |\n  | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- |\n  | all  | 1    | 2        | 3    | 4    | 5    | 6    | 7    | 8   | 9    | 10   | 11   | 12   | 13   | 14   | 15   | 16       | 17   | 18   | 19   | 20   | 21   | 22   | 23       | 24   | 25   | 26   | 27   | 28       | 29   | 30   | 31   | 32   | 33   | 34   | 35   | 36   | 37   | 38   | 39   | 40   | 41       | 42   | 43   |\n\n  发售时间(pubDate)\n\n  | 不限 | 2017 年 | 2018 年 | 2019 年 | 2020 年 | 2021 年 | 2022 年 | 2023 年 | 2024 年 |\n  | ---- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |\n  | all  | 1       | 2       | 3       | 4       | 5       | 6       | 7       | 8       |\n\n  游戏集合(collection)\n\n  | 不限 | 舞力全开 | 马里奥 | 生化危机 | 炼金工房 | 最终幻想 | 塞尔达 | 宝可梦 | 勇者斗恶龙 | 模拟器 | 秋之回忆 | 第一方 | 体感健身 | 开放世界 | 儿童乐园 |\n  | ---- | -------- | ------ | -------- | -------- | -------- | ------ | ------ | ---------- | ------ | -------- | ------ | -------- | -------- | -------- |\n  | all  | 1        | 2      | 3        | 4        | 5        | 6      | 7      | 8          | 9      | 10       | 11     | 12       | 13       | 14       |","location":"index.ts"}' :test='undefined' />
+<Route namespace="3kns" :data='{"path":"/:filters?/:order?","categories":["game"],"example":"/3kns/category=all&lang=all","parameters":{"filters":"过滤器，可用参数见下表","order":"排序，按高分排序:desc;按低分排序:asc"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"3k-Switch游戏库","maintainers":["xzzpig"],"url":"www.3kns.com/","description":"游戏类型(category)\n\n| 不限 | 角色扮演 | 动作冒险 | 策略游戏 | 模拟经营 | 即时战略 | 格斗类 | 射击游戏 | 休闲益智 | 体育运动 | 街机格斗 | 无双类 | 其他游戏 | 赛车竞速 |\n| ---- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- | ------ | -------- | -------- |\n| all  | 1        | 2        | 3        | 4        | 5        | 6      | 7        | 8        | 9        | 10       | 11     | 12       | 13       |\n\n  游戏语言(language)\n\n| 不限 | 中文 | 英语 | 日语 | 其他 | 中文汉化 | 德语 |\n| ---- | ---- | ---- | ---- | ---- | -------- | ---- |\n| all  | 1    | 2    | 3    | 4    | 5        | 6    |\n\n  游戏标签(tag)\n\n| 不限 | 热门 | 多人聚会 | 僵尸 | 体感 | 大作 | 音乐 | 三国 | RPG | 格斗 | 闯关 | 横版 | 科幻 | 棋牌 | 运输 | 无双 | 卡通动漫 | 日系 | 养成 | 恐怖 | 运动 | 乙女 | 街机 | 飞行模拟 | 解谜 | 海战 | 战争 | 跑酷 | 即时策略 | 射击 | 经营 | 益智 | 沙盒 | 模拟 | 冒险 | 竞速 | 休闲 | 动作 | 生存 | 独立 | 拼图 | 魔改 xci | 卡牌 | 塔防 |\n| ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- |\n| all  | 1    | 2        | 3    | 4    | 5    | 6    | 7    | 8   | 9    | 10   | 11   | 12   | 13   | 14   | 15   | 16       | 17   | 18   | 19   | 20   | 21   | 22   | 23       | 24   | 25   | 26   | 27   | 28       | 29   | 30   | 31   | 32   | 33   | 34   | 35   | 36   | 37   | 38   | 39   | 40   | 41       | 42   | 43   |\n\n  发售时间(pubDate)\n\n| 不限 | 2017 年 | 2018 年 | 2019 年 | 2020 年 | 2021 年 | 2022 年 | 2023 年 | 2024 年 |\n| ---- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |\n| all  | 1       | 2       | 3       | 4       | 5       | 6       | 7       | 8       |\n\n  游戏集合(collection)\n\n| 不限 | 舞力全开 | 马里奥 | 生化危机 | 炼金工房 | 最终幻想 | 塞尔达 | 宝可梦 | 勇者斗恶龙 | 模拟器 | 秋之回忆 | 第一方 | 体感健身 | 开放世界 | 儿童乐园 |\n| ---- | -------- | ------ | -------- | -------- | -------- | ------ | ------ | ---------- | ------ | -------- | ------ | -------- | -------- | -------- |\n| all  | 1        | 2      | 3        | 4        | 5        | 6      | 7      | 8          | 9      | 10       | 11     | 12       | 13       | 14       |","location":"index.ts"}' :test='undefined' />
 
 游戏类型(category)
 
-  | 不限 | 角色扮演 | 动作冒险 | 策略游戏 | 模拟经营 | 即时战略 | 格斗类 | 射击游戏 | 休闲益智 | 体育运动 | 街机格斗 | 无双类 | 其他游戏 | 赛车竞速 |
-  | ---- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- | ------ | -------- | -------- |
-  | all  | 1        | 2        | 3        | 4        | 5        | 6      | 7        | 8        | 9        | 10       | 11     | 12       | 13       |
+| 不限 | 角色扮演 | 动作冒险 | 策略游戏 | 模拟经营 | 即时战略 | 格斗类 | 射击游戏 | 休闲益智 | 体育运动 | 街机格斗 | 无双类 | 其他游戏 | 赛车竞速 |
+| ---- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- | ------ | -------- | -------- |
+| all  | 1        | 2        | 3        | 4        | 5        | 6      | 7        | 8        | 9        | 10       | 11     | 12       | 13       |
 
   游戏语言(language)
 
-  | 不限 | 中文 | 英语 | 日语 | 其他 | 中文汉化 | 德语 |
-  | ---- | ---- | ---- | ---- | ---- | -------- | ---- |
-  | all  | 1    | 2    | 3    | 4    | 5        | 6    |
+| 不限 | 中文 | 英语 | 日语 | 其他 | 中文汉化 | 德语 |
+| ---- | ---- | ---- | ---- | ---- | -------- | ---- |
+| all  | 1    | 2    | 3    | 4    | 5        | 6    |
 
   游戏标签(tag)
 
-  | 不限 | 热门 | 多人聚会 | 僵尸 | 体感 | 大作 | 音乐 | 三国 | RPG | 格斗 | 闯关 | 横版 | 科幻 | 棋牌 | 运输 | 无双 | 卡通动漫 | 日系 | 养成 | 恐怖 | 运动 | 乙女 | 街机 | 飞行模拟 | 解谜 | 海战 | 战争 | 跑酷 | 即时策略 | 射击 | 经营 | 益智 | 沙盒 | 模拟 | 冒险 | 竞速 | 休闲 | 动作 | 生存 | 独立 | 拼图 | 魔改 xci | 卡牌 | 塔防 |
-  | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- |
-  | all  | 1    | 2        | 3    | 4    | 5    | 6    | 7    | 8   | 9    | 10   | 11   | 12   | 13   | 14   | 15   | 16       | 17   | 18   | 19   | 20   | 21   | 22   | 23       | 24   | 25   | 26   | 27   | 28       | 29   | 30   | 31   | 32   | 33   | 34   | 35   | 36   | 37   | 38   | 39   | 40   | 41       | 42   | 43   |
+| 不限 | 热门 | 多人聚会 | 僵尸 | 体感 | 大作 | 音乐 | 三国 | RPG | 格斗 | 闯关 | 横版 | 科幻 | 棋牌 | 运输 | 无双 | 卡通动漫 | 日系 | 养成 | 恐怖 | 运动 | 乙女 | 街机 | 飞行模拟 | 解谜 | 海战 | 战争 | 跑酷 | 即时策略 | 射击 | 经营 | 益智 | 沙盒 | 模拟 | 冒险 | 竞速 | 休闲 | 动作 | 生存 | 独立 | 拼图 | 魔改 xci | 卡牌 | 塔防 |
+| ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | --- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -------- | ---- | ---- |
+| all  | 1    | 2        | 3    | 4    | 5    | 6    | 7    | 8   | 9    | 10   | 11   | 12   | 13   | 14   | 15   | 16       | 17   | 18   | 19   | 20   | 21   | 22   | 23       | 24   | 25   | 26   | 27   | 28       | 29   | 30   | 31   | 32   | 33   | 34   | 35   | 36   | 37   | 38   | 39   | 40   | 41       | 42   | 43   |
 
   发售时间(pubDate)
 
-  | 不限 | 2017 年 | 2018 年 | 2019 年 | 2020 年 | 2021 年 | 2022 年 | 2023 年 | 2024 年 |
-  | ---- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
-  | all  | 1       | 2       | 3       | 4       | 5       | 6       | 7       | 8       |
+| 不限 | 2017 年 | 2018 年 | 2019 年 | 2020 年 | 2021 年 | 2022 年 | 2023 年 | 2024 年 |
+| ---- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
+| all  | 1       | 2       | 3       | 4       | 5       | 6       | 7       | 8       |
 
   游戏集合(collection)
 
-  | 不限 | 舞力全开 | 马里奥 | 生化危机 | 炼金工房 | 最终幻想 | 塞尔达 | 宝可梦 | 勇者斗恶龙 | 模拟器 | 秋之回忆 | 第一方 | 体感健身 | 开放世界 | 儿童乐园 |
-  | ---- | -------- | ------ | -------- | -------- | -------- | ------ | ------ | ---------- | ------ | -------- | ------ | -------- | -------- | -------- |
-  | all  | 1        | 2      | 3        | 4        | 5        | 6      | 7      | 8          | 9      | 10       | 11     | 12       | 13       | 14       |
+| 不限 | 舞力全开 | 马里奥 | 生化危机 | 炼金工房 | 最终幻想 | 塞尔达 | 宝可梦 | 勇者斗恶龙 | 模拟器 | 秋之回忆 | 第一方 | 体感健身 | 开放世界 | 儿童乐园 |
+| ---- | -------- | ------ | -------- | -------- | -------- | ------ | ------ | ---------- | ------ | -------- | ------ | -------- | -------- | -------- |
+| all  | 1        | 2      | 3        | 4        | 5        | 6      | 7      | 8          | 9      | 10       | 11     | 12       | 13       | 14       |
 
 ## 4Gamers <Site url="www.4gamers.com.tw"/>
 
@@ -74,23 +74,23 @@
 
 ### 新闻 <Site url="a9vg.com" size="sm" />
 
-<Route namespace="a9vg" :data='{"path":"/:category{.+}?","name":"新闻","url":"a9vg.com","maintainers":["monnerHenster","nczitzk"],"example":"/a9vg/news","parameters":{"category":"分类，默认为 ，可在对应分类页 URL 中找到, Category, by default"},"description":"::: tip\n  若订阅 [PS4](http://www.a9vg.com/list/news/PS4)，网址为 `http://www.a9vg.com/list/news/PS4`。截取 `http://www.a9vg.com/list` 到末尾的部分 `news/PS4` 作为参数填入，此时路由为 [`/a9vg/news/PS4`](https://rsshub.app/a9vg/news/PS4)。\n:::\n\n  | 分类                                               | ID                                                     |\n  | -------------------------------------------------- | ------------------------------------------------------ |\n  | [All](https://www.a9vg.com/list/news/All)          | [news/All](https://rsshub.app/a9vg/news/All)           |\n  | [PS4](https://www.a9vg.com/list/news/PS4)          | [news/PS4](https://rsshub.app/a9vg/news/PS4)           |\n  | [PS5](https://www.a9vg.com/list/news/PS5)          | [news/PS5](https://rsshub.app/a9vg/news/PS5)           |\n  | [Switch](https://www.a9vg.com/list/news/Switch)    | [news/Switch](https://rsshub.app/a9vg/news/Switch)     |\n  | [Xbox One](https://www.a9vg.com/list/news/XboxOne) | [news/XboxOne](https://rsshub.app/a9vg/news/XboxOne)   |\n  | [XSX](https://www.a9vg.com/list/news/XSX)          | [news/XSX](https://rsshub.app/a9vg/news/XSX)           |\n  | [PC](https://www.a9vg.com/list/news/PC)            | [news/PC](https://rsshub.app/a9vg/news/PC)             |\n  | [业界](https://www.a9vg.com/list/news/Industry)    | [news/Industry](https://rsshub.app/a9vg/news/Industry) |\n  | [厂商](https://www.a9vg.com/list/news/Factory)     | [news/Factory](https://rsshub.app/a9vg/news/Factory)   |\n  ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.a9vg.com/list/:category"]},{"title":"All","source":["www.a9vg.com/list/news/All"],"target":"/news/All"},{"title":"PS4","source":["www.a9vg.com/list/news/PS4"],"target":"/news/PS4"},{"title":"PS5","source":["www.a9vg.com/list/news/PS5"],"target":"/news/PS5"},{"title":"Switch","source":["www.a9vg.com/list/news/Switch"],"target":"/news/Switch"},{"title":"Xbox One","source":["www.a9vg.com/list/news/XboxOne"],"target":"/news/XboxOne"},{"title":"XSX","source":["www.a9vg.com/list/news/XSX"],"target":"/news/XSX"},{"title":"PC","source":["www.a9vg.com/list/news/PC"],"target":"/news/PC"},{"title":"业界","source":["www.a9vg.com/list/news/Industry"],"target":"/news/Industry"},{"title":"厂商","source":["www.a9vg.com/list/news/Factory"],"target":"/news/Factory"}],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="a9vg" :data='{"path":"/:category{.+}?","name":"新闻","url":"a9vg.com","maintainers":["monnerHenster","nczitzk"],"example":"/a9vg/news","parameters":{"category":"分类，默认为 ，可在对应分类页 URL 中找到, Category, by default"},"description":"::: tip\n  若订阅 [PS4](http://www.a9vg.com/list/news/PS4)，网址为 `http://www.a9vg.com/list/news/PS4`。截取 `http://www.a9vg.com/list` 到末尾的部分 `news/PS4` 作为参数填入，此时路由为 [`/a9vg/news/PS4`](https://rsshub.app/a9vg/news/PS4)。\n:::\n\n| 分类                                               | ID                                                     |\n| -------------------------------------------------- | ------------------------------------------------------ |\n| [All](https://www.a9vg.com/list/news/All)          | [news/All](https://rsshub.app/a9vg/news/All)           |\n| [PS4](https://www.a9vg.com/list/news/PS4)          | [news/PS4](https://rsshub.app/a9vg/news/PS4)           |\n| [PS5](https://www.a9vg.com/list/news/PS5)          | [news/PS5](https://rsshub.app/a9vg/news/PS5)           |\n| [Switch](https://www.a9vg.com/list/news/Switch)    | [news/Switch](https://rsshub.app/a9vg/news/Switch)     |\n| [Xbox One](https://www.a9vg.com/list/news/XboxOne) | [news/XboxOne](https://rsshub.app/a9vg/news/XboxOne)   |\n| [XSX](https://www.a9vg.com/list/news/XSX)          | [news/XSX](https://rsshub.app/a9vg/news/XSX)           |\n| [PC](https://www.a9vg.com/list/news/PC)            | [news/PC](https://rsshub.app/a9vg/news/PC)             |\n| [业界](https://www.a9vg.com/list/news/Industry)    | [news/Industry](https://rsshub.app/a9vg/news/Industry) |\n| [厂商](https://www.a9vg.com/list/news/Factory)     | [news/Factory](https://rsshub.app/a9vg/news/Factory)   |\n  ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.a9vg.com/list/:category"]},{"title":"All","source":["www.a9vg.com/list/news/All"],"target":"/news/All"},{"title":"PS4","source":["www.a9vg.com/list/news/PS4"],"target":"/news/PS4"},{"title":"PS5","source":["www.a9vg.com/list/news/PS5"],"target":"/news/PS5"},{"title":"Switch","source":["www.a9vg.com/list/news/Switch"],"target":"/news/Switch"},{"title":"Xbox One","source":["www.a9vg.com/list/news/XboxOne"],"target":"/news/XboxOne"},{"title":"XSX","source":["www.a9vg.com/list/news/XSX"],"target":"/news/XSX"},{"title":"PC","source":["www.a9vg.com/list/news/PC"],"target":"/news/PC"},{"title":"业界","source":["www.a9vg.com/list/news/Industry"],"target":"/news/Industry"},{"title":"厂商","source":["www.a9vg.com/list/news/Factory"],"target":"/news/Factory"}],"location":"index.ts"}' :test='{"code":0}' />
 
 ::: tip
   若订阅 [PS4](http://www.a9vg.com/list/news/PS4)，网址为 `http://www.a9vg.com/list/news/PS4`。截取 `http://www.a9vg.com/list` 到末尾的部分 `news/PS4` 作为参数填入，此时路由为 [`/a9vg/news/PS4`](https://rsshub.app/a9vg/news/PS4)。
 :::
 
-  | 分类                                               | ID                                                     |
-  | -------------------------------------------------- | ------------------------------------------------------ |
-  | [All](https://www.a9vg.com/list/news/All)          | [news/All](https://rsshub.app/a9vg/news/All)           |
-  | [PS4](https://www.a9vg.com/list/news/PS4)          | [news/PS4](https://rsshub.app/a9vg/news/PS4)           |
-  | [PS5](https://www.a9vg.com/list/news/PS5)          | [news/PS5](https://rsshub.app/a9vg/news/PS5)           |
-  | [Switch](https://www.a9vg.com/list/news/Switch)    | [news/Switch](https://rsshub.app/a9vg/news/Switch)     |
-  | [Xbox One](https://www.a9vg.com/list/news/XboxOne) | [news/XboxOne](https://rsshub.app/a9vg/news/XboxOne)   |
-  | [XSX](https://www.a9vg.com/list/news/XSX)          | [news/XSX](https://rsshub.app/a9vg/news/XSX)           |
-  | [PC](https://www.a9vg.com/list/news/PC)            | [news/PC](https://rsshub.app/a9vg/news/PC)             |
-  | [业界](https://www.a9vg.com/list/news/Industry)    | [news/Industry](https://rsshub.app/a9vg/news/Industry) |
-  | [厂商](https://www.a9vg.com/list/news/Factory)     | [news/Factory](https://rsshub.app/a9vg/news/Factory)   |
+| 分类                                               | ID                                                     |
+| -------------------------------------------------- | ------------------------------------------------------ |
+| [All](https://www.a9vg.com/list/news/All)          | [news/All](https://rsshub.app/a9vg/news/All)           |
+| [PS4](https://www.a9vg.com/list/news/PS4)          | [news/PS4](https://rsshub.app/a9vg/news/PS4)           |
+| [PS5](https://www.a9vg.com/list/news/PS5)          | [news/PS5](https://rsshub.app/a9vg/news/PS5)           |
+| [Switch](https://www.a9vg.com/list/news/Switch)    | [news/Switch](https://rsshub.app/a9vg/news/Switch)     |
+| [Xbox One](https://www.a9vg.com/list/news/XboxOne) | [news/XboxOne](https://rsshub.app/a9vg/news/XboxOne)   |
+| [XSX](https://www.a9vg.com/list/news/XSX)          | [news/XSX](https://rsshub.app/a9vg/news/XSX)           |
+| [PC](https://www.a9vg.com/list/news/PC)            | [news/PC](https://rsshub.app/a9vg/news/PC)             |
+| [业界](https://www.a9vg.com/list/news/Industry)    | [news/Industry](https://rsshub.app/a9vg/news/Industry) |
+| [厂商](https://www.a9vg.com/list/news/Factory)     | [news/Factory](https://rsshub.app/a9vg/news/Factory)   |
   
 
 ## ALICESOFT <Site url="www.alicesoft.com"/>
@@ -103,47 +103,47 @@
 
 ### News <Site url="news.blizzard.com" size="sm" />
 
-<Route namespace="blizzard" :data='{"path":"/news/:language?/:category?","categories":["game"],"example":"/blizzard/news","parameters":{"language":"Language code, see below, en-US by default","category":"Category, see below, All News by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["nczitzk"],"description":"Categories\n\n  | Category               | Slug                |\n  | ---------------------- | ------------------- |\n  | All News               |                     |\n  | Diablo II: Resurrected | diablo2             |\n  | Diablo III             | diablo3             |\n  | Diablo IV              | diablo4             |\n  | Diablo Immortal        | diablo-immortal     |\n  | Hearthstone            | hearthstone         |\n  | Heroes of the Storm    | heroes-of-the-storm |\n  | Overwatch 2            | overwatch           |\n  | StarCraft: Remastered  | starcraft           |\n  | StarCraft II           | starcraft2          |\n  | World of Warcraft      | world-of-warcraft   |\n  | Warcraft 3: Reforged   | warcraft3           |\n  | Warcraft Rumble        | warcraft-rumble     |\n  | Battle.net             | battlenet           |\n  | BlizzCon               | blizzcon            |\n  | Inside Blizzard        | blizzard            |\n\n  Language codes\n\n  | Language           | Code  |\n  | ------------------ | ----- |\n  | Deutsch            | de-de |\n  | English (US)       | en-us |\n  | English (EU)       | en-gb |\n  | Español (EU)       | es-es |\n  | Español (Latino)   | es-mx |\n  | Français           | fr-fr |\n  | Italiano           | it-it |\n  | Português (Brasil) | pt-br |\n  | Polski             | pl-pl |\n  | Русский            | ru-ru |\n  | 한국어             | ko-kr |\n  | ภาษาไทย            | th-th |\n  | 日本語             | ja-jp |\n  | 繁體中文           | zh-tw |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="blizzard" :data='{"path":"/news/:language?/:category?","categories":["game"],"example":"/blizzard/news","parameters":{"language":"Language code, see below, en-US by default","category":"Category, see below, All News by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["nczitzk"],"description":"Categories\n\n| Category               | Slug                |\n| ---------------------- | ------------------- |\n| All News               |                     |\n| Diablo II: Resurrected | diablo2             |\n| Diablo III             | diablo3             |\n| Diablo IV              | diablo4             |\n| Diablo Immortal        | diablo-immortal     |\n| Hearthstone            | hearthstone         |\n| Heroes of the Storm    | heroes-of-the-storm |\n| Overwatch 2            | overwatch           |\n| StarCraft: Remastered  | starcraft           |\n| StarCraft II           | starcraft2          |\n| World of Warcraft      | world-of-warcraft   |\n| Warcraft 3: Reforged   | warcraft3           |\n| Warcraft Rumble        | warcraft-rumble     |\n| Battle.net             | battlenet           |\n| BlizzCon               | blizzcon            |\n| Inside Blizzard        | blizzard            |\n\n  Language codes\n\n| Language           | Code  |\n| ------------------ | ----- |\n| Deutsch            | de-de |\n| English (US)       | en-us |\n| English (EU)       | en-gb |\n| Español (EU)       | es-es |\n| Español (Latino)   | es-mx |\n| Français           | fr-fr |\n| Italiano           | it-it |\n| Português (Brasil) | pt-br |\n| Polski             | pl-pl |\n| Русский            | ru-ru |\n| 한국어             | ko-kr |\n| ภาษาไทย            | th-th |\n| 日本語             | ja-jp |\n| 繁體中文           | zh-tw |","location":"news.ts"}' :test='{"code":0}' />
 
 Categories
 
-  | Category               | Slug                |
-  | ---------------------- | ------------------- |
-  | All News               |                     |
-  | Diablo II: Resurrected | diablo2             |
-  | Diablo III             | diablo3             |
-  | Diablo IV              | diablo4             |
-  | Diablo Immortal        | diablo-immortal     |
-  | Hearthstone            | hearthstone         |
-  | Heroes of the Storm    | heroes-of-the-storm |
-  | Overwatch 2            | overwatch           |
-  | StarCraft: Remastered  | starcraft           |
-  | StarCraft II           | starcraft2          |
-  | World of Warcraft      | world-of-warcraft   |
-  | Warcraft 3: Reforged   | warcraft3           |
-  | Warcraft Rumble        | warcraft-rumble     |
-  | Battle.net             | battlenet           |
-  | BlizzCon               | blizzcon            |
-  | Inside Blizzard        | blizzard            |
+| Category               | Slug                |
+| ---------------------- | ------------------- |
+| All News               |                     |
+| Diablo II: Resurrected | diablo2             |
+| Diablo III             | diablo3             |
+| Diablo IV              | diablo4             |
+| Diablo Immortal        | diablo-immortal     |
+| Hearthstone            | hearthstone         |
+| Heroes of the Storm    | heroes-of-the-storm |
+| Overwatch 2            | overwatch           |
+| StarCraft: Remastered  | starcraft           |
+| StarCraft II           | starcraft2          |
+| World of Warcraft      | world-of-warcraft   |
+| Warcraft 3: Reforged   | warcraft3           |
+| Warcraft Rumble        | warcraft-rumble     |
+| Battle.net             | battlenet           |
+| BlizzCon               | blizzcon            |
+| Inside Blizzard        | blizzard            |
 
   Language codes
 
-  | Language           | Code  |
-  | ------------------ | ----- |
-  | Deutsch            | de-de |
-  | English (US)       | en-us |
-  | English (EU)       | en-gb |
-  | Español (EU)       | es-es |
-  | Español (Latino)   | es-mx |
-  | Français           | fr-fr |
-  | Italiano           | it-it |
-  | Português (Brasil) | pt-br |
-  | Polski             | pl-pl |
-  | Русский            | ru-ru |
-  | 한국어             | ko-kr |
-  | ภาษาไทย            | th-th |
-  | 日本語             | ja-jp |
-  | 繁體中文           | zh-tw |
+| Language           | Code  |
+| ------------------ | ----- |
+| Deutsch            | de-de |
+| English (US)       | en-us |
+| English (EU)       | en-gb |
+| Español (EU)       | es-es |
+| Español (Latino)   | es-mx |
+| Français           | fr-fr |
+| Italiano           | it-it |
+| Português (Brasil) | pt-br |
+| Polski             | pl-pl |
+| Русский            | ru-ru |
+| 한국어             | ko-kr |
+| ภาษาไทย            | th-th |
+| 日本語             | ja-jp |
+| 繁體中文           | zh-tw |
 
 ### 暴雪游戏国服新闻 <Site url="news.blizzard.com" size="sm" />
 
@@ -169,14 +169,14 @@ Categories
 
 ### News <Site url="www.counter-strike.net" size="sm" />
 
-<Route namespace="counter-strike" :data='{"path":"/news/:category?/:language?","name":"News","url":"www.counter-strike.net","maintainers":["nczitzk"],"example":"/counter-strike/news","parameters":{"category":"Category, `updates` or `all`, `all` by default","language":"Language, english by default, see below for more languages"},"description":"::: tip\n  If you subscribe to [Updates in English](https://www.counter-strike.net/news/updates?l=english)，where the URL is `https://www.counter-strike.net/news/updates?l=english`, extract the `l`, which is `english`, and use it as the parameter to fill in. Therefore, the route will be [`/counter-strike/news/updates/english`](https://rsshub.app/counter-strike/news/updates/english).\n:::\n\n  <details>\n    <summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n  </details>\n    ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.counter-strike.net/news/:category"]}],"location":"news.ts"}' :test='undefined' />
+<Route namespace="counter-strike" :data='{"path":"/news/:category?/:language?","name":"News","url":"www.counter-strike.net","maintainers":["nczitzk"],"example":"/counter-strike/news","parameters":{"category":"Category, `updates` or `all`, `all` by default","language":"Language, english by default, see below for more languages"},"description":"::: tip\n  If you subscribe to [Updates in English](https://www.counter-strike.net/news/updates?l=english)，where the URL is `https://www.counter-strike.net/news/updates?l=english`, extract the `l`, which is `english`, and use it as the parameter to fill in. Therefore, the route will be [`/counter-strike/news/updates/english`](https://rsshub.app/counter-strike/news/updates/english).\n:::\n\n<details>\n<summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n</details>\n    ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.counter-strike.net/news/:category"]}],"location":"news.ts"}' :test='undefined' />
 
 ::: tip
   If you subscribe to [Updates in English](https://www.counter-strike.net/news/updates?l=english)，where the URL is `https://www.counter-strike.net/news/updates?l=english`, extract the `l`, which is `english`, and use it as the parameter to fill in. Therefore, the route will be [`/counter-strike/news/updates/english`](https://rsshub.app/counter-strike/news/updates/english).
 :::
 
-  <details>
-    <summary>More languages</summary>
+<details>
+<summary>More languages</summary>
 
 | 语言代码                                          | 语言名称   |
 | ------------------------------------------------- | ---------- |
@@ -209,7 +209,7 @@ Categories
 | Tiếng Việt (Vietnamese)                           | vietnamese |
 | Español - Latinoamérica (Spanish - Latin America) | latam      |
 
-  </details>
+</details>
     
 
 ## DeadbyDaylight <Site url="deadbydaylight.com"/>
@@ -244,66 +244,66 @@ Categories
 
 ### FINAL FANTASY XIV (The Lodestone) <Site url="eu.finalfantasyxiv.com" size="sm" />
 
-<Route namespace="ff14" :data='{"path":["/global/:lang/:type?","/ff14_global/:lang/:type?"],"categories":["game"],"example":"/ff14/global/na/all","parameters":{"lang":"Region","type":"Category, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FINAL FANTASY XIV (The Lodestone)","maintainers":["chengyuhui"],"description":"Region\n\n  | North Ameria | Europe | France | Germany | Japan |\n  | ------------ | ------ | ------ | ------- | ----- |\n  | na           | eu     | fr     | de      | jp    |\n\n  Category\n\n  | all | topics | notices | maintenance | updates | status | developers |\n  | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |","location":"ff14-global.ts"}' :test='{"code":0}' />
+<Route namespace="ff14" :data='{"path":["/global/:lang/:type?","/ff14_global/:lang/:type?"],"categories":["game"],"example":"/ff14/global/na/all","parameters":{"lang":"Region","type":"Category, `all` by default"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"FINAL FANTASY XIV (The Lodestone)","maintainers":["chengyuhui"],"description":"Region\n\n| North Ameria | Europe | France | Germany | Japan |\n| ------------ | ------ | ------ | ------- | ----- |\n| na           | eu     | fr     | de      | jp    |\n\n  Category\n\n| all | topics | notices | maintenance | updates | status | developers |\n| --- | ------ | ------- | ----------- | ------- | ------ | ---------- |","location":"ff14-global.ts"}' :test='{"code":0}' />
 
 Region
 
-  | North Ameria | Europe | France | Germany | Japan |
-  | ------------ | ------ | ------ | ------- | ----- |
-  | na           | eu     | fr     | de      | jp    |
+| North Ameria | Europe | France | Germany | Japan |
+| ------------ | ------ | ------ | ------- | ----- |
+| na           | eu     | fr     | de      | jp    |
 
   Category
 
-  | all | topics | notices | maintenance | updates | status | developers |
-  | --- | ------ | ------- | ----------- | ------- | ------ | ---------- |
+| all | topics | notices | maintenance | updates | status | developers |
+| --- | ------ | ------- | ----------- | ------- | ------ | ---------- |
 
 ### 最终幻想 14 国服 <Site url="ff.web.sdo.com/web8/index.html" size="sm" />
 
-<Route namespace="ff14" :data='{"path":["/zh/:type?","/ff14_zh/:type?"],"categories":["game"],"example":"/ff14/zh/news","parameters":{"type":"分类名，预设为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ff.web.sdo.com/web8/index.html"],"target":"/zh"}],"name":"最终幻想 14 国服","maintainers":["Kiotlin","ZeroClad","15x15G"],"url":"ff.web.sdo.com/web8/index.html","description":"| 新闻 | 公告     | 活动   | 广告      | 所有 |\n  | ---- | -------- | ------ | --------- | ---- |\n  | news | announce | events | advertise | all  |","location":"ff14-zh.ts"}' :test='{"code":0}' />
+<Route namespace="ff14" :data='{"path":["/zh/:type?","/ff14_zh/:type?"],"categories":["game"],"example":"/ff14/zh/news","parameters":{"type":"分类名，预设为 `all`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ff.web.sdo.com/web8/index.html"],"target":"/zh"}],"name":"最终幻想 14 国服","maintainers":["Kiotlin","ZeroClad","15x15G"],"url":"ff.web.sdo.com/web8/index.html","description":"| 新闻 | 公告     | 活动   | 广告      | 所有 |\n| ---- | -------- | ------ | --------- | ---- |\n| news | announce | events | advertise | all  |","location":"ff14-zh.ts"}' :test='{"code":0}' />
 
 | 新闻 | 公告     | 活动   | 广告      | 所有 |
-  | ---- | -------- | ------ | --------- | ---- |
-  | news | announce | events | advertise | all  |
+| ---- | -------- | ------ | --------- | ---- |
+| news | announce | events | advertise | all  |
 
 ## Fortnite <Site url="fortnite.com"/>
 
 ### News <Site url="fortnite.com" size="sm" />
 
-<Route namespace="fortnite" :data='{"path":"/news/:options?","categories":["game"],"example":"/fortnite/news","parameters":{"options":"Params"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["lyqluis"],"description":"-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n  | English (default) | Spanish | Japanese | French | Korean | Polish |\n  | ----------------- | ------- | -------- | ------ | ------ | ------ |\n  | en-US             | es-ES   | ja       | fr     | ko     | pl     |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 623)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="fortnite" :data='{"path":"/news/:options?","categories":["game"],"example":"/fortnite/news","parameters":{"options":"Params"},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["lyqluis"],"description":"-   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n| English (default) | Spanish | Japanese | French | Korean | Polish |\n| ----------------- | ------- | -------- | ------ | ------ | ------ |\n| en-US             | es-ES   | ja       | fr     | ko     | pl     |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 623)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 -   `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)
 
-  | English (default) | Spanish | Japanese | French | Korean | Polish |
-  | ----------------- | ------- | -------- | ------ | ------ | ------ |
-  | en-US             | es-ES   | ja       | fr     | ko     | pl     |
+| English (default) | Spanish | Japanese | French | Korean | Polish |
+| ----------------- | ------- | -------- | ------ | ------ | ------ |
+| en-US             | es-ES   | ja       | fr     | ko     | pl     |
 
 ## Gamer Secret <Site url="gamersecret.com"/>
 
 ### Category <Site url="gamersecret.com" size="sm" />
 
-<Route namespace="gamersecret" :data='{"path":"/:type?/:category?","categories":["game"],"example":"/gamersecret","parameters":{"type":"Type, see below, Latest News by default","category":"Category, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gamersecret.com/:type","gamersecret.com/:type/:category","gamersecret.com/"]}],"name":"Category","maintainers":["nczitzk"],"description":"| Latest News | PC | Playstation | Nintendo | Xbox | Moblie |\n  | ----------- | -- | ----------- | -------- | ---- | ------ |\n  | latest-news | pc | playstation | nintendo | xbox | moblie |\n\n  Or\n\n  | GENERAL          | GENERAL EN         | MOBILE          | MOBILE EN         |\n  | ---------------- | ------------------ | --------------- | ----------------- |\n  | category/general | category/generalen | category/mobile | category/mobileen |\n\n  | NINTENDO          | NINTENDO EN         | PC          | PC EN         |\n  | ----------------- | ------------------- | ----------- | ------------- |\n  | category/nintendo | category/nintendoen | category/pc | category/pcen |\n\n  | PLAYSTATION          | PLAYSTATION EN         | REVIEWS          |\n  | -------------------- | ---------------------- | ---------------- |\n  | category/playstation | category/playstationen | category/reviews |\n\n  | XBOX          | XBOX EN         |\n  | ------------- | --------------- |\n  | category/xbox | category/xboxen |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 663)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="gamersecret" :data='{"path":"/:type?/:category?","categories":["game"],"example":"/gamersecret","parameters":{"type":"Type, see below, Latest News by default","category":"Category, see below"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gamersecret.com/:type","gamersecret.com/:type/:category","gamersecret.com/"]}],"name":"Category","maintainers":["nczitzk"],"description":"| Latest News | PC | Playstation | Nintendo | Xbox | Moblie |\n| ----------- | -- | ----------- | -------- | ---- | ------ |\n| latest-news | pc | playstation | nintendo | xbox | moblie |\n\n  Or\n\n| GENERAL          | GENERAL EN         | MOBILE          | MOBILE EN         |\n| ---------------- | ------------------ | --------------- | ----------------- |\n| category/general | category/generalen | category/mobile | category/mobileen |\n\n| NINTENDO          | NINTENDO EN         | PC          | PC EN         |\n| ----------------- | ------------------- | ----------- | ------------- |\n| category/nintendo | category/nintendoen | category/pc | category/pcen |\n\n| PLAYSTATION          | PLAYSTATION EN         | REVIEWS          |\n| -------------------- | ---------------------- | ---------------- |\n| category/playstation | category/playstationen | category/reviews |\n\n| XBOX          | XBOX EN         |\n| ------------- | --------------- |\n| category/xbox | category/xboxen |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 663)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | Latest News | PC | Playstation | Nintendo | Xbox | Moblie |
-  | ----------- | -- | ----------- | -------- | ---- | ------ |
-  | latest-news | pc | playstation | nintendo | xbox | moblie |
+| ----------- | -- | ----------- | -------- | ---- | ------ |
+| latest-news | pc | playstation | nintendo | xbox | moblie |
 
   Or
 
-  | GENERAL          | GENERAL EN         | MOBILE          | MOBILE EN         |
-  | ---------------- | ------------------ | --------------- | ----------------- |
-  | category/general | category/generalen | category/mobile | category/mobileen |
+| GENERAL          | GENERAL EN         | MOBILE          | MOBILE EN         |
+| ---------------- | ------------------ | --------------- | ----------------- |
+| category/general | category/generalen | category/mobile | category/mobileen |
 
-  | NINTENDO          | NINTENDO EN         | PC          | PC EN         |
-  | ----------------- | ------------------- | ----------- | ------------- |
-  | category/nintendo | category/nintendoen | category/pc | category/pcen |
+| NINTENDO          | NINTENDO EN         | PC          | PC EN         |
+| ----------------- | ------------------- | ----------- | ------------- |
+| category/nintendo | category/nintendoen | category/pc | category/pcen |
 
-  | PLAYSTATION          | PLAYSTATION EN         | REVIEWS          |
-  | -------------------- | ---------------------- | ---------------- |
-  | category/playstation | category/playstationen | category/reviews |
+| PLAYSTATION          | PLAYSTATION EN         | REVIEWS          |
+| -------------------- | ---------------------- | ---------------- |
+| category/playstation | category/playstationen | category/reviews |
 
-  | XBOX          | XBOX EN         |
-  | ------------- | --------------- |
-  | category/xbox | category/xboxen |
+| XBOX          | XBOX EN         |
+| ------------- | --------------- |
+| category/xbox | category/xboxen |
 
 ## GamerSky <Site url="gamersky.com"/>
 
@@ -338,32 +338,32 @@ Region
 
 ### Official Announcement <Site url="hoyolab.com" size="sm" />
 
-<Route namespace="hoyolab" :data='{"path":"/news/:language/:gids/:type","categories":["game"],"example":"/hoyolab/news/zh-cn/2/2","parameters":{"language":"Language","gids":"Game ID","type":"Announcement type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Official Announcement","maintainers":["ZenoTian"],"description":"| Language         | Code  |\n  | ---------------- | ----- |\n  | 简体中文         | zh-cn |\n  | 繁體中文         | zh-tw |\n  | 日本語           | ja-jp |\n  | 한국어           | ko-kr |\n  | English (US)     | en-us |\n  | Español (EU)     | es-es |\n  | Français         | fr-fr |\n  | Deutsch          | de-de |\n  | Русский          | ru-ru |\n  | Português        | pt-pt |\n  | Español (Latino) | es-mx |\n  | Indonesia        | id-id |\n  | Tiếng Việt       | vi-vn |\n  | ภาษาไทย          | th-th |\n\n  | Honkai Impact 3rd | Genshin Impact | Tears of Themis | HoYoLAB | Honkai: Star Rail | Zenless Zone Zero |\n  | ----------------- | -------------- | --------------- | ------- | ----------------- | ----------------- |\n  | 1                 | 2              | 4               | 5       | 6                 | 8                 |\n\n  | Notices | Events | Info |\n  | ------- | ------ | ---- |\n  | 1       | 2      | 3    |","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="hoyolab" :data='{"path":"/news/:language/:gids/:type","categories":["game"],"example":"/hoyolab/news/zh-cn/2/2","parameters":{"language":"Language","gids":"Game ID","type":"Announcement type"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Official Announcement","maintainers":["ZenoTian"],"description":"| Language         | Code  |\n| ---------------- | ----- |\n| 简体中文         | zh-cn |\n| 繁體中文         | zh-tw |\n| 日本語           | ja-jp |\n| 한국어           | ko-kr |\n| English (US)     | en-us |\n| Español (EU)     | es-es |\n| Français         | fr-fr |\n| Deutsch          | de-de |\n| Русский          | ru-ru |\n| Português        | pt-pt |\n| Español (Latino) | es-mx |\n| Indonesia        | id-id |\n| Tiếng Việt       | vi-vn |\n| ภาษาไทย          | th-th |\n\n| Honkai Impact 3rd | Genshin Impact | Tears of Themis | HoYoLAB | Honkai: Star Rail | Zenless Zone Zero |\n| ----------------- | -------------- | --------------- | ------- | ----------------- | ----------------- |\n| 1                 | 2              | 4               | 5       | 6                 | 8                 |\n\n| Notices | Events | Info |\n| ------- | ------ | ---- |\n| 1       | 2      | 3    |","location":"news.ts"}' :test='{"code":0}' />
 
 | Language         | Code  |
-  | ---------------- | ----- |
-  | 简体中文         | zh-cn |
-  | 繁體中文         | zh-tw |
-  | 日本語           | ja-jp |
-  | 한국어           | ko-kr |
-  | English (US)     | en-us |
-  | Español (EU)     | es-es |
-  | Français         | fr-fr |
-  | Deutsch          | de-de |
-  | Русский          | ru-ru |
-  | Português        | pt-pt |
-  | Español (Latino) | es-mx |
-  | Indonesia        | id-id |
-  | Tiếng Việt       | vi-vn |
-  | ภาษาไทย          | th-th |
+| ---------------- | ----- |
+| 简体中文         | zh-cn |
+| 繁體中文         | zh-tw |
+| 日本語           | ja-jp |
+| 한국어           | ko-kr |
+| English (US)     | en-us |
+| Español (EU)     | es-es |
+| Français         | fr-fr |
+| Deutsch          | de-de |
+| Русский          | ru-ru |
+| Português        | pt-pt |
+| Español (Latino) | es-mx |
+| Indonesia        | id-id |
+| Tiếng Việt       | vi-vn |
+| ภาษาไทย          | th-th |
 
-  | Honkai Impact 3rd | Genshin Impact | Tears of Themis | HoYoLAB | Honkai: Star Rail | Zenless Zone Zero |
-  | ----------------- | -------------- | --------------- | ------- | ----------------- | ----------------- |
-  | 1                 | 2              | 4               | 5       | 6                 | 8                 |
+| Honkai Impact 3rd | Genshin Impact | Tears of Themis | HoYoLAB | Honkai: Star Rail | Zenless Zone Zero |
+| ----------------- | -------------- | --------------- | ------- | ----------------- | ----------------- |
+| 1                 | 2              | 4               | 5       | 6                 | 8                 |
 
-  | Notices | Events | Info |
-  | ------- | ------ | ---- |
-  | 1       | 2      | 3    |
+| Notices | Events | Info |
+| ------- | ------ | ---- |
+| 1       | 2      | 3    |
 
 ## imop <Site url="imop.com"/>
 
@@ -387,47 +387,47 @@ Region
 
 ### 专题 <Site url="indienova.com" size="sm" />
 
-<Route namespace="indienova" :data='{"path":"/column/:columnId","categories":["game"],"example":"/indienova/column/52","parameters":{"columnId":"专题 ID，可在 URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/column/:columnId"]}],"name":"专题","maintainers":["TonyRL"],"description":"<details>\n    <summary>专题 ID</summary>\n\n    游戏推荐\n\n    | itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |\n    | --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |\n    | 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |\n\n    游戏评论\n\n    | 游必有方 Podcast | 独立游戏潮（RED） |\n    | ---------------- | ----------------- |\n    | 6                | 3                 |\n\n    游戏开发\n\n    | 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |\n    | ------------ | -------------- | ------------ |\n    | 15           | 14             | 7            |\n\n    游戏设计\n\n    | 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |\n    | ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |\n    | 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |\n\n    游戏文化\n\n    | NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |\n    | --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |\n    | 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |\n\n    Game Jam\n\n    | Ludum Dare | Global Game Jam |\n    | ---------- | --------------- |\n    | 31         | 13              |\n  </details>","location":"column.ts"}' :test='{"code":0}' />
+<Route namespace="indienova" :data='{"path":"/column/:columnId","categories":["game"],"example":"/indienova/column/52","parameters":{"columnId":"专题 ID，可在 URL中找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["indienova.com/column/:columnId"]}],"name":"专题","maintainers":["TonyRL"],"description":"<details>\n<summary>专题 ID</summary>\n\n    游戏推荐\n\n| itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |\n| --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |\n| 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |\n\n    游戏评论\n\n| 游必有方 Podcast | 独立游戏潮（RED） |\n| ---------------- | ----------------- |\n| 6                | 3                 |\n\n    游戏开发\n\n| 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |\n| ------------ | -------------- | ------------ |\n| 15           | 14             | 7            |\n\n    游戏设计\n\n| 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |\n| ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |\n| 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |\n\n    游戏文化\n\n| NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |\n| --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |\n| 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |\n\n    Game Jam\n\n| Ludum Dare | Global Game Jam |\n| ---------- | --------------- |\n| 31         | 13              |\n</details>","location":"column.ts"}' :test='{"code":0}' />
 
 <details>
-    <summary>专题 ID</summary>
+<summary>专题 ID</summary>
 
     游戏推荐
 
-    | itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |
-    | --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |
-    | 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |
+| itch 一周游戏汇 | 一周值得关注的发售作品 | 诺娃速递 | 周末游戏视频集锦 | 每月媒体评分 | 年度最佳游戏 | Indie Focus 近期新游 | indienova Picks 精选 |
+| --------------- | ---------------------- | -------- | ---------------- | ------------ | ------------ | -------------------- | -------------------- |
+| 52              | 29                     | 41       | 43               | 45           | 39           | 1                    | 8                    |
 
     游戏评论
 
-    | 游必有方 Podcast | 独立游戏潮（RED） |
-    | ---------------- | ----------------- |
-    | 6                | 3                 |
+| 游必有方 Podcast | 独立游戏潮（RED） |
+| ---------------- | ----------------- |
+| 6                | 3                 |
 
     游戏开发
 
-    | 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |
-    | ------------ | -------------- | ------------ |
-    | 15           | 14             | 7            |
+| 游戏设计模式 | Roguelike 开发 | GMS 中文教程 |
+| ------------ | -------------- | ------------ |
+| 15           | 14             | 7            |
 
     游戏设计
 
-    | 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |
-    | ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |
-    | 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |
+| 游戏与所有 | 让人眼前一亮的游戏设计 | 游戏音乐分析 | 游戏情感设计 | 游戏相关书籍 | 游戏设计课程笔记 | 游戏设计工具 | 游戏设计灵感 | 设计师谈设计 | 游戏研究方法 | 功能游戏 | 游戏设计专业院校 | 像素课堂 |
+| ---------- | ---------------------- | ------------ | ------------ | ------------ | ---------------- | ------------ | ------------ | ------------ | ------------ | -------- | ---------------- | -------- |
+| 10         | 33                     | 17           | 4            | 22           | 11               | 24           | 26           | 27           | 28           | 38       | 9                | 19       |
 
     游戏文化
 
-    | NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |
-    | --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |
-    | 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |
+| NOVA 海外独立游戏见闻 | 工作室访谈 | indie Figure 游戏人 | 游戏艺术家 | 独立游戏音乐欣赏 | 游戏瑰宝 | 电脑 RPG 游戏史 | ALT. CTRL. GAMING |
+| --------------------- | ---------- | ------------------- | ---------- | ---------------- | -------- | --------------- | ----------------- |
+| 53                    | 23         | 5                   | 44         | 18               | 21       | 16              | 2                 |
 
     Game Jam
 
-    | Ludum Dare | Global Game Jam |
-    | ---------- | --------------- |
-    | 31         | 13              |
-  </details>
+| Ludum Dare | Global Game Jam |
+| ---------- | --------------- |
+| 31         | 13              |
+</details>
 
 ## itch.io <Site url="itch.io"/>
 
@@ -453,23 +453,23 @@ Region
 
 ### 游戏折扣 <Site url="switch.jumpvg.com" size="sm" />
 
-<Route namespace="jump" :data='{"path":"/discount/:platform/:filter?/:countries?","categories":["game"],"example":"/jump/discount/ps5/all","parameters":{"platform":"平台:switch,ps4,ps5,xbox,steam,epic","filter":"过滤参数,all-全部，jx-精选，sd-史低，dl-独立，vip-会员","countries":"地区，具体支持较多，可自信查看地区简写"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏折扣","maintainers":["zytomorrow"],"description":"| switch | ps4  | ps5  | xbox   | steam | epic   |\n  | ------ | ---- | ---- | ------ | ----- | ------ |\n  | 可用   | 可用 | 可用 | 不可用 | 可用  | 不可用 |\n\n  | filter | switch | ps4 | ps5 | steam |\n  | ------ | ------ | --- | --- | ----- |\n  | all    | ✔     | ✔  | ✔  | ✔    |\n  | jx     | ✔     | ✔  | ❌  | ✔    |\n  | sd     | ✔     | ✔  | ✔  | ✔    |\n  | dl     | ❌     | ✔  | ❌  | ✔    |\n  | vip    | ❌     | ❌  | ✔  | ❌    |\n\n  | 北美 | 欧洲（英语） | 法国 | 德国 | 日本 |\n  | ---- | ------------ | ---- | ---- | ---- |\n  | na   | eu           | fr   | de   | jp   |","location":"discount.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="jump" :data='{"path":"/discount/:platform/:filter?/:countries?","categories":["game"],"example":"/jump/discount/ps5/all","parameters":{"platform":"平台:switch,ps4,ps5,xbox,steam,epic","filter":"过滤参数,all-全部，jx-精选，sd-史低，dl-独立，vip-会员","countries":"地区，具体支持较多，可自信查看地区简写"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏折扣","maintainers":["zytomorrow"],"description":"| switch | ps4  | ps5  | xbox   | steam | epic   |\n| ------ | ---- | ---- | ------ | ----- | ------ |\n| 可用   | 可用 | 可用 | 不可用 | 可用  | 不可用 |\n\n| filter | switch | ps4 | ps5 | steam |\n| ------ | ------ | --- | --- | ----- |\n| all    | ✔     | ✔  | ✔  | ✔    |\n| jx     | ✔     | ✔  | ❌  | ✔    |\n| sd     | ✔     | ✔  | ✔  | ✔    |\n| dl     | ❌     | ✔  | ❌  | ✔    |\n| vip    | ❌     | ❌  | ✔  | ❌    |\n\n| 北美 | 欧洲（英语） | 法国 | 德国 | 日本 |\n| ---- | ------------ | ---- | ---- | ---- |\n| na   | eu           | fr   | de   | jp   |","location":"discount.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:66:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
 | switch | ps4  | ps5  | xbox   | steam | epic   |
-  | ------ | ---- | ---- | ------ | ----- | ------ |
-  | 可用   | 可用 | 可用 | 不可用 | 可用  | 不可用 |
+| ------ | ---- | ---- | ------ | ----- | ------ |
+| 可用   | 可用 | 可用 | 不可用 | 可用  | 不可用 |
 
-  | filter | switch | ps4 | ps5 | steam |
-  | ------ | ------ | --- | --- | ----- |
-  | all    | ✔     | ✔  | ✔  | ✔    |
-  | jx     | ✔     | ✔  | ❌  | ✔    |
-  | sd     | ✔     | ✔  | ✔  | ✔    |
-  | dl     | ❌     | ✔  | ❌  | ✔    |
-  | vip    | ❌     | ❌  | ✔  | ❌    |
+| filter | switch | ps4 | ps5 | steam |
+| ------ | ------ | --- | --- | ----- |
+| all    | ✔     | ✔  | ✔  | ✔    |
+| jx     | ✔     | ✔  | ❌  | ✔    |
+| sd     | ✔     | ✔  | ✔  | ✔    |
+| dl     | ❌     | ✔  | ❌  | ✔    |
+| vip    | ❌     | ❌  | ✔  | ❌    |
 
-  | 北美 | 欧洲（英语） | 法国 | 德国 | 日本 |
-  | ---- | ------------ | ---- | ---- | ---- |
-  | na   | eu           | fr   | de   | jp   |
+| 北美 | 欧洲（英语） | 法国 | 德国 | 日本 |
+| ---- | ------------ | ---- | ---- | ---- |
+| na   | eu           | fr   | de   | jp   |
 
 ## KISS <Site url="www.kisskiss.tv"/>
 
@@ -661,13 +661,13 @@ Now all beatmapsets that don't provided at least one beatmap with star rating hi
 
 ### 最新公告 <Site url="priconne-redive.jp/news" size="sm" />
 
-<Route namespace="priconne-redive" :data='{"path":"/news/:server?","categories":["game"],"example":"/priconne-redive/news","parameters":{"server":"服务器，默认日服"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["priconne-redive.jp/news"],"target":"/news/jp"},{"source":["princessconnect.so-net.tw/news"],"target":"/news/zh-tw"},{"source":["game.bilibili.com/pcr/news.html"],"target":"/news/zh-cn"}],"name":"最新公告","maintainers":["SayaSS","frankcwl"],"url":"priconne-redive.jp/news","description":"服务器\n\n  | 国服  | 台服  | 日服  |\n  | ----- | ----- | ---- |\n  | zh-cn | zh-tw | jp   |","location":"news.ts"}' :test='undefined' />
+<Route namespace="priconne-redive" :data='{"path":"/news/:server?","categories":["game"],"example":"/priconne-redive/news","parameters":{"server":"服务器，默认日服"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["priconne-redive.jp/news"],"target":"/news/jp"},{"source":["princessconnect.so-net.tw/news"],"target":"/news/zh-tw"},{"source":["game.bilibili.com/pcr/news.html"],"target":"/news/zh-cn"}],"name":"最新公告","maintainers":["SayaSS","frankcwl"],"url":"priconne-redive.jp/news","description":"服务器\n\n| 国服  | 台服  | 日服  |\n| ----- | ----- | ---- |\n| zh-cn | zh-tw | jp   |","location":"news.ts"}' :test='undefined' />
 
 服务器
 
-  | 国服  | 台服  | 日服  |
-  | ----- | ----- | ---- |
-  | zh-cn | zh-tw | jp   |
+| 国服  | 台服  | 日服  |
+| ----- | ----- | ---- |
+| zh-cn | zh-tw | jp   |
 
 ## PlayStation Store <Site url="www.playstation.com"/>
 
@@ -759,13 +759,13 @@ Helpful route parameters:
 
 ### Game's Changelog <Site url="www.taptap.io" size="sm" />
 
-<Route namespace="taptap" :data='{"path":"/intl/changelog/:id/:lang?","categories":["game"],"example":"/taptap/intl/changelog/191001/zh_TW","parameters":{"id":"Game&#39;s App ID, you may find it from the URL of the Game","lang":"Language, checkout the table below for possible values, default is `en_US`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.taptap.io/app/:id"],"target":"/intl/changelog/:id"}],"name":"Game&#39;s Changelog","maintainers":["hoilc","ETiV"],"description":"Language Code\n\n  | English (US) | 繁體中文 | 한국어 | 日本語 |\n  | ------------ | -------- | ------ | ------ |\n  | en_US       | zh_TW   | ko_KR | ja_JP |","location":"changelog-intl.ts"}' :test='{"code":0}' />
+<Route namespace="taptap" :data='{"path":"/intl/changelog/:id/:lang?","categories":["game"],"example":"/taptap/intl/changelog/191001/zh_TW","parameters":{"id":"Game&#39;s App ID, you may find it from the URL of the Game","lang":"Language, checkout the table below for possible values, default is `en_US`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.taptap.io/app/:id"],"target":"/intl/changelog/:id"}],"name":"Game&#39;s Changelog","maintainers":["hoilc","ETiV"],"description":"Language Code\n\n| English (US) | 繁體中文 | 한국어 | 日本語 |\n| ------------ | -------- | ------ | ------ |\n| en_US       | zh_TW   | ko_KR | ja_JP |","location":"changelog-intl.ts"}' :test='{"code":0}' />
 
 Language Code
 
-  | English (US) | 繁體中文 | 한국어 | 日本語 |
-  | ------------ | -------- | ------ | ------ |
-  | en_US       | zh_TW   | ko_KR | ja_JP |
+| English (US) | 繁體中文 | 한국어 | 日本語 |
+| ------------ | -------- | ------ | ------ |
+| en_US       | zh_TW   | ko_KR | ja_JP |
 
 ### Ratings & Reviews <Site url="www.taptap.io" size="sm" />
 
@@ -828,11 +828,11 @@ Tip: use proxy if necessary.
 
 ### 文章列表 <Site url="tgbus.com" size="sm" />
 
-<Route namespace="tgbus" :data='{"path":"/list/:category","parameters":{"category":"列表分类，见下表"},"categories":["game"],"example":"/tgbus/list/news","radar":[{"source":["www.tgbus.com/list/:category/"],"target":"/list/:category"}],"name":"文章列表","maintainers":["Xzonn"],"description":"| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n  | -------- | -------- | -------- | ------------ | -------- |\n  | news     | review   | video    | special      | hardware |","location":"list.ts"}' :test='{"code":0}' />
+<Route namespace="tgbus" :data='{"path":"/list/:category","parameters":{"category":"列表分类，见下表"},"categories":["game"],"example":"/tgbus/list/news","radar":[{"source":["www.tgbus.com/list/:category/"],"target":"/list/:category"}],"name":"文章列表","maintainers":["Xzonn"],"description":"| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n| -------- | -------- | -------- | ------------ | -------- |\n| news     | review   | video    | special      | hardware |","location":"list.ts"}' :test='{"code":0}' />
 
 | 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |
-  | -------- | -------- | -------- | ------------ | -------- |
-  | news     | review   | video    | special      | hardware |
+| -------- | -------- | -------- | ------------ | -------- |
+| news     | review   | video    | special      | hardware |
 
 ## 二柄 APP <Site url="diershoubing.com"/>
 
@@ -886,13 +886,13 @@ Tip: use proxy if necessary.
 
 ### 崩坏：星穹铁道 <Site url="sr.mihoyo.com/news" size="sm" />
 
-<Route namespace="mihoyo" :data='{"path":"/sr/:location?/:category?","categories":["game"],"example":"/mihoyo/sr","parameters":{"location":"区域，可选 `zh-cn`（国服，简中）或 `zh-tw`（国际服，繁中）","category":"分类，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sr.mihoyo.com/news"],"target":"/sr"}],"name":"崩坏：星穹铁道","maintainers":["shinanory"],"url":"sr.mihoyo.com/news","description":"#### 新闻 {#mi-ha-you-beng-huai-xing-qiong-tie-dao-xin-wen}\n\n  | 最新     | 新闻 | 公告   | 活动     |\n  | -------- | ---- | ------ | -------- |\n  | news-all | news | notice | activity |","location":"sr/news.ts"}' :test='{"code":0}' />
+<Route namespace="mihoyo" :data='{"path":"/sr/:location?/:category?","categories":["game"],"example":"/mihoyo/sr","parameters":{"location":"区域，可选 `zh-cn`（国服，简中）或 `zh-tw`（国际服，繁中）","category":"分类，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sr.mihoyo.com/news"],"target":"/sr"}],"name":"崩坏：星穹铁道","maintainers":["shinanory"],"url":"sr.mihoyo.com/news","description":"#### 新闻 {#mi-ha-you-beng-huai-xing-qiong-tie-dao-xin-wen}\n\n| 最新     | 新闻 | 公告   | 活动     |\n| -------- | ---- | ------ | -------- |\n| news-all | news | notice | activity |","location":"sr/news.ts"}' :test='{"code":0}' />
 
 #### 新闻 {#mi-ha-you-beng-huai-xing-qiong-tie-dao-xin-wen}
 
-  | 最新     | 新闻 | 公告   | 活动     |
-  | -------- | ---- | ------ | -------- |
-  | news-all | news | notice | activity |
+| 最新     | 新闻 | 公告   | 活动     |
+| -------- | ---- | ------ | -------- |
+| news-all | news | notice | activity |
 
 ### 米游社 - 用户关注 <Site url="genshin.hoyoverse.com" size="sm" />
 
@@ -900,62 +900,62 @@ Tip: use proxy if necessary.
 
 ### 米游社 - 同人榜 <Site url="genshin.hoyoverse.com" size="sm" />
 
-<Route namespace="mihoyo" :data='{"path":"/bbs/img-ranking/:game/:routeParams?","categories":["game"],"example":"/mihoyo/bbs/img-ranking/ys/forumType=tongren&cateType=illustration&rankingType=daily","parameters":{"game":"游戏缩写","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["miyoushe.com/:game/imgRanking/:forum_id/:ranking_id/:cate_id"],"target":"/bbs/img-ranking/:game"}],"name":"米游社 - 同人榜","maintainers":["CaoMeiYouRen"],"description":"| 键          | 含义                                  | 接受的值                                                             | 默认值       |\n  | ----------- | ------------------------------------- | -------------------------------------------------------------------- | ------------ |\n  | forumType   | 主榜类型（仅原神、大别野有 cos 主榜） | tongren/cos                                                          | tongren      |\n  | cateType    | 子榜类型（仅崩坏三、原神有子榜）      | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |\n  | rankingType | 排行榜类型（崩坏二没有日榜）          | daily/weekly/monthly                                                 | daily        |\n  | lastId      | 当前页 id（用于分页）                 | 数字                                                                 | 1            |\n\n  游戏缩写\n\n  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 | 绝区零 |\n  | ------ | ---- | ------ | ---------- | -------- | ------ | ------ |\n  | bh3    | ys   | bh2    | wd         | sr       | dby    | zzz    |\n\n  主榜类型\n\n  | 同人榜  | COS 榜 |\n  | ------- | ------ |\n  | tongren | cos    |\n\n  子榜类型\n\n  崩坏三 子榜\n\n  | 插画         | 漫画  | COS |\n  | ------------ | ----- | --- |\n  | illustration | comic | cos |\n\n  原神 子榜\n\n  | 插画         | 漫画  | Q 版 | 手工   |\n  | ------------ | ----- | ---- | ------ |\n  | illustration | comic | qute | manual |\n\n  排行榜类型\n\n  | 日榜  | 周榜   | 月榜    |\n  | ----- | ------ | ------- |\n  | daily | weekly | monthly |","location":"bbs/img-ranking.ts"}' :test='{"code":0}' />
+<Route namespace="mihoyo" :data='{"path":"/bbs/img-ranking/:game/:routeParams?","categories":["game"],"example":"/mihoyo/bbs/img-ranking/ys/forumType=tongren&cateType=illustration&rankingType=daily","parameters":{"game":"游戏缩写","routeParams":"额外参数；请参阅以下说明和表格"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["miyoushe.com/:game/imgRanking/:forum_id/:ranking_id/:cate_id"],"target":"/bbs/img-ranking/:game"}],"name":"米游社 - 同人榜","maintainers":["CaoMeiYouRen"],"description":"| 键          | 含义                                  | 接受的值                                                             | 默认值       |\n| ----------- | ------------------------------------- | -------------------------------------------------------------------- | ------------ |\n| forumType   | 主榜类型（仅原神、大别野有 cos 主榜） | tongren/cos                                                          | tongren      |\n| cateType    | 子榜类型（仅崩坏三、原神有子榜）      | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |\n| rankingType | 排行榜类型（崩坏二没有日榜）          | daily/weekly/monthly                                                 | daily        |\n| lastId      | 当前页 id（用于分页）                 | 数字                                                                 | 1            |\n\n  游戏缩写\n\n| 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 | 绝区零 |\n| ------ | ---- | ------ | ---------- | -------- | ------ | ------ |\n| bh3    | ys   | bh2    | wd         | sr       | dby    | zzz    |\n\n  主榜类型\n\n| 同人榜  | COS 榜 |\n| ------- | ------ |\n| tongren | cos    |\n\n  子榜类型\n\n  崩坏三 子榜\n\n| 插画         | 漫画  | COS |\n| ------------ | ----- | --- |\n| illustration | comic | cos |\n\n  原神 子榜\n\n| 插画         | 漫画  | Q 版 | 手工   |\n| ------------ | ----- | ---- | ------ |\n| illustration | comic | qute | manual |\n\n  排行榜类型\n\n| 日榜  | 周榜   | 月榜    |\n| ----- | ------ | ------- |\n| daily | weekly | monthly |","location":"bbs/img-ranking.ts"}' :test='{"code":0}' />
 
 | 键          | 含义                                  | 接受的值                                                             | 默认值       |
-  | ----------- | ------------------------------------- | -------------------------------------------------------------------- | ------------ |
-  | forumType   | 主榜类型（仅原神、大别野有 cos 主榜） | tongren/cos                                                          | tongren      |
-  | cateType    | 子榜类型（仅崩坏三、原神有子榜）      | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |
-  | rankingType | 排行榜类型（崩坏二没有日榜）          | daily/weekly/monthly                                                 | daily        |
-  | lastId      | 当前页 id（用于分页）                 | 数字                                                                 | 1            |
+| ----------- | ------------------------------------- | -------------------------------------------------------------------- | ------------ |
+| forumType   | 主榜类型（仅原神、大别野有 cos 主榜） | tongren/cos                                                          | tongren      |
+| cateType    | 子榜类型（仅崩坏三、原神有子榜）      | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |
+| rankingType | 排行榜类型（崩坏二没有日榜）          | daily/weekly/monthly                                                 | daily        |
+| lastId      | 当前页 id（用于分页）                 | 数字                                                                 | 1            |
 
   游戏缩写
 
-  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 | 绝区零 |
-  | ------ | ---- | ------ | ---------- | -------- | ------ | ------ |
-  | bh3    | ys   | bh2    | wd         | sr       | dby    | zzz    |
+| 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 | 绝区零 |
+| ------ | ---- | ------ | ---------- | -------- | ------ | ------ |
+| bh3    | ys   | bh2    | wd         | sr       | dby    | zzz    |
 
   主榜类型
 
-  | 同人榜  | COS 榜 |
-  | ------- | ------ |
-  | tongren | cos    |
+| 同人榜  | COS 榜 |
+| ------- | ------ |
+| tongren | cos    |
 
   子榜类型
 
   崩坏三 子榜
 
-  | 插画         | 漫画  | COS |
-  | ------------ | ----- | --- |
-  | illustration | comic | cos |
+| 插画         | 漫画  | COS |
+| ------------ | ----- | --- |
+| illustration | comic | cos |
 
   原神 子榜
 
-  | 插画         | 漫画  | Q 版 | 手工   |
-  | ------------ | ----- | ---- | ------ |
-  | illustration | comic | qute | manual |
+| 插画         | 漫画  | Q 版 | 手工   |
+| ------------ | ----- | ---- | ------ |
+| illustration | comic | qute | manual |
 
   排行榜类型
 
-  | 日榜  | 周榜   | 月榜    |
-  | ----- | ------ | ------- |
-  | daily | weekly | monthly |
+| 日榜  | 周榜   | 月榜    |
+| ----- | ------ | ------- |
+| daily | weekly | monthly |
 
 ### 米游社 - 官方公告 <Site url="genshin.hoyoverse.com" size="sm" />
 
-<Route namespace="mihoyo" :data='{"path":"/bbs/official/:gids/:type?/:page_size?/:last_id?","categories":["game"],"example":"/mihoyo/bbs/official/2/3/20/","parameters":{"gids":"游戏id","type":"公告类型，默认为 2(即 活动)","page_size":"分页大小，默认为 20 ","last_id":"跳过的公告数，例如指定为 40 就是从第 40 条公告开始，可用于分页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"米游社 - 官方公告","maintainers":["CaoMeiYouRen"],"description":"游戏 id\n\n  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 绝区零 |\n  | ------ | ---- | ------ | ---------- | -------- | ------ |\n  | 1      | 2    | 3      | 4          | 6        | 8      |\n\n  公告类型\n\n  | 公告 | 活动 | 资讯 |\n  | ---- | ---- | ---- |\n  | 1    | 2    | 3    |","location":"bbs/official.ts"}' :test='{"code":1,"message":"AssertionError: expected 301 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1203)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="mihoyo" :data='{"path":"/bbs/official/:gids/:type?/:page_size?/:last_id?","categories":["game"],"example":"/mihoyo/bbs/official/2/3/20/","parameters":{"gids":"游戏id","type":"公告类型，默认为 2(即 活动)","page_size":"分页大小，默认为 20 ","last_id":"跳过的公告数，例如指定为 40 就是从第 40 条公告开始，可用于分页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"米游社 - 官方公告","maintainers":["CaoMeiYouRen"],"description":"游戏 id\n\n| 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 绝区零 |\n| ------ | ---- | ------ | ---------- | -------- | ------ |\n| 1      | 2    | 3      | 4          | 6        | 8      |\n\n  公告类型\n\n| 公告 | 活动 | 资讯 |\n| ---- | ---- | ---- |\n| 1    | 2    | 3    |","location":"bbs/official.ts"}' :test='{"code":1,"message":"AssertionError: expected 301 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1203)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 游戏 id
 
-  | 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 绝区零 |
-  | ------ | ---- | ------ | ---------- | -------- | ------ |
-  | 1      | 2    | 3      | 4          | 6        | 8      |
+| 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 绝区零 |
+| ------ | ---- | ------ | ---------- | -------- | ------ |
+| 1      | 2    | 3      | 4          | 6        | 8      |
 
   公告类型
 
-  | 公告 | 活动 | 资讯 |
-  | ---- | ---- | ---- |
-  | 1    | 2    | 3    |
+| 公告 | 活动 | 资讯 |
+| ---- | ---- | ---- |
+| 1    | 2    | 3    |
 
 ### 米游社 - 用户关注动态 <Site url="genshin.hoyoverse.com" size="sm" />
 
@@ -971,13 +971,13 @@ Tip: use proxy if necessary.
 
 ### 原神 <Site url="genshin.hoyoverse.com" size="sm" />
 
-<Route namespace="mihoyo" :data='{"path":"/ys/:location?/:category?","categories":["game"],"example":"/mihoyo/ys","parameters":{"location":"区域，可选 `main`（简中）或 `zh-tw`（繁中）","category":"分类，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["genshin.hoyoverse.com/:location/news"],"target":"/ys/:location"}],"name":"原神","maintainers":["nczitzk"],"description":"#### 新闻 {#mi-ha-you-yuan-shen-xin-wen}\n\n  | 最新   | 新闻 | 公告   | 活动     |\n  | ------ | ---- | ------ | -------- |\n  | latest | news | notice | activity |","location":"ys/news.ts"}' :test='{"code":0}' />
+<Route namespace="mihoyo" :data='{"path":"/ys/:location?/:category?","categories":["game"],"example":"/mihoyo/ys","parameters":{"location":"区域，可选 `main`（简中）或 `zh-tw`（繁中）","category":"分类，见下表，默认为最新"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["genshin.hoyoverse.com/:location/news"],"target":"/ys/:location"}],"name":"原神","maintainers":["nczitzk"],"description":"#### 新闻 {#mi-ha-you-yuan-shen-xin-wen}\n\n| 最新   | 新闻 | 公告   | 活动     |\n| ------ | ---- | ------ | -------- |\n| latest | news | notice | activity |","location":"ys/news.ts"}' :test='{"code":0}' />
 
 #### 新闻 {#mi-ha-you-yuan-shen-xin-wen}
 
-  | 最新   | 新闻 | 公告   | 活动     |
-  | ------ | ---- | ------ | -------- |
-  | latest | news | notice | activity |
+| 最新   | 新闻 | 公告   | 活动     |
+| ------ | ---- | ------ | -------- |
+| latest | news | notice | activity |
 
 ## 其乐 <Site url="keylol.com"/>
 
@@ -994,41 +994,41 @@ Tip: use proxy if necessary.
 
 ### 文章 <Site url="www.gamer520.com/" size="sm" />
 
-<Route namespace="gamer520" :data='{"path":"/:category?/:order?","categories":["game"],"example":"/gamer520/switchyouxi","parameters":{"category":"分类，见下表","order":"排序，发布日期: date; 修改日期: modified"},"features":{"antiCrawler":true},"name":"文章","maintainers":["xzzpig"],"url":"www.gamer520.com/","description":"分类\n\n  | 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |\n  | ---- | --------------- | ---------- | ------- | ----------- | ------- |\n  | all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 662)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="gamer520" :data='{"path":"/:category?/:order?","categories":["game"],"example":"/gamer520/switchyouxi","parameters":{"category":"分类，见下表","order":"排序，发布日期: date; 修改日期: modified"},"features":{"antiCrawler":true},"name":"文章","maintainers":["xzzpig"],"url":"www.gamer520.com/","description":"分类\n\n| 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |\n| ---- | --------------- | ---------- | ------- | ----------- | ------- |\n| all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |","location":"index.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 662)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 分类
 
-  | 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |
-  | ---- | --------------- | ---------- | ------- | ----------- | ------- |
-  | all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |
+| 所有 | Switch 游戏下载 | 金手指     | 3A 巨作 | switch 主题 | PC 游戏 |
+| ---- | --------------- | ---------- | ------- | ----------- | ------- |
+| all  | switchyouxi     | jinshouzhi | 3ajuzuo | zhuti       | pcgame  |
 
 ## 少女前线 <Site url="sunborngame.com"/>
 
 ### 情报局 <Site url="sunborngame.com" size="sm" />
 
-<Route namespace="gf-cn" :data='{"path":"/news/:category?","categories":["game"],"example":"/gf-cn/news","parameters":{"category":"分类，见下表，默认为新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sunborngame.com/:category","sunborngame.com/"]}],"name":"情报局","maintainers":["nczitzk"],"description":"| 新闻 | 公告 |\n  | ---- | ---- |\n  | 1    | 3    |","location":"news.ts"}' :test='undefined' />
+<Route namespace="gf-cn" :data='{"path":"/news/:category?","categories":["game"],"example":"/gf-cn/news","parameters":{"category":"分类，见下表，默认为新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sunborngame.com/:category","sunborngame.com/"]}],"name":"情报局","maintainers":["nczitzk"],"description":"| 新闻 | 公告 |\n| ---- | ---- |\n| 1    | 3    |","location":"news.ts"}' :test='undefined' />
 
 | 新闻 | 公告 |
-  | ---- | ---- |
-  | 1    | 3    |
+| ---- | ---- |
+| 1    | 3    |
 
 ## 腾讯网 <Site url="qq.com"/>
 
 ### 穿越火线 CFHD 专区资讯中心 <Site url="cfhd.cf.qq.com" size="sm" />
 
-<Route namespace="qq" :data='{"path":"/cfhd/news/:category?","name":"穿越火线 CFHD 专区资讯中心","url":"cfhd.cf.qq.com","maintainers":["nczitzk"],"example":"/qq/cfhd/news","parameters":{"category":"分类，默认为 60847，即最新，可在对应分类页 URL 中找到"},"description":"::: tip\n  若订阅 [穿越火线 CFHD 专区资讯中心 - 最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml)，网址为 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml`。截取 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/` 到末尾 `/m22510/list_1.shtml` 的部分 `60847` 作为参数填入，此时路由为 [`/qq/cfhd/news/60847`](https://rsshub.app/qq/cfhd/news/60847)。\n:::\n\n  | 分类                                                                                                  | ID                                            |\n  | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |\n  | [最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml) | [60847](https://rsshub.app/qq/cfhd/news/60847) |\n  | [公告](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml) | [59625](https://rsshub.app/qq/cfhd/news/59625) |\n  | [版本](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml) | [60850](https://rsshub.app/qq/cfhd/news/60850) |\n  | [赛事](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml) | [59626](https://rsshub.app/qq/cfhd/news/59626) |\n  | [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |\n  ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"穿越火线 CFHD 专区资讯中心 - 最新","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml"],"target":"/cfhd/news/60847"},{"title":"穿越火线 CFHD 专区资讯中心 - 公告","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml"],"target":"/cfhd/news/59625"},{"title":"穿越火线 CFHD 专区资讯中心 - 版本","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml"],"target":"/cfhd/news/60850"},{"title":"穿越火线 CFHD 专区资讯中心 - 赛事","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml"],"target":"/cfhd/news/59626"},{"title":"穿越火线 CFHD 专区资讯中心 - 杂谈","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml"],"target":"/cfhd/news/59624"}],"location":"cfhd/index.ts"}' :test='{"code":0}' />
+<Route namespace="qq" :data='{"path":"/cfhd/news/:category?","name":"穿越火线 CFHD 专区资讯中心","url":"cfhd.cf.qq.com","maintainers":["nczitzk"],"example":"/qq/cfhd/news","parameters":{"category":"分类，默认为 60847，即最新，可在对应分类页 URL 中找到"},"description":"::: tip\n  若订阅 [穿越火线 CFHD 专区资讯中心 - 最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml)，网址为 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml`。截取 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/` 到末尾 `/m22510/list_1.shtml` 的部分 `60847` 作为参数填入，此时路由为 [`/qq/cfhd/news/60847`](https://rsshub.app/qq/cfhd/news/60847)。\n:::\n\n| 分类                                                                                                  | ID                                            |\n| ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |\n| [最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml) | [60847](https://rsshub.app/qq/cfhd/news/60847) |\n| [公告](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml) | [59625](https://rsshub.app/qq/cfhd/news/59625) |\n| [版本](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml) | [60850](https://rsshub.app/qq/cfhd/news/60850) |\n| [赛事](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml) | [59626](https://rsshub.app/qq/cfhd/news/59626) |\n| [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |\n  ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"穿越火线 CFHD 专区资讯中心 - 最新","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml"],"target":"/cfhd/news/60847"},{"title":"穿越火线 CFHD 专区资讯中心 - 公告","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml"],"target":"/cfhd/news/59625"},{"title":"穿越火线 CFHD 专区资讯中心 - 版本","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml"],"target":"/cfhd/news/60850"},{"title":"穿越火线 CFHD 专区资讯中心 - 赛事","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml"],"target":"/cfhd/news/59626"},{"title":"穿越火线 CFHD 专区资讯中心 - 杂谈","source":["cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml"],"target":"/cfhd/news/59624"}],"location":"cfhd/index.ts"}' :test='{"code":0}' />
 
 ::: tip
   若订阅 [穿越火线 CFHD 专区资讯中心 - 最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml)，网址为 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml`。截取 `https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/` 到末尾 `/m22510/list_1.shtml` 的部分 `60847` 作为参数填入，此时路由为 [`/qq/cfhd/news/60847`](https://rsshub.app/qq/cfhd/news/60847)。
 :::
 
-  | 分类                                                                                                  | ID                                            |
-  | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-  | [最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml) | [60847](https://rsshub.app/qq/cfhd/news/60847) |
-  | [公告](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml) | [59625](https://rsshub.app/qq/cfhd/news/59625) |
-  | [版本](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml) | [60850](https://rsshub.app/qq/cfhd/news/60850) |
-  | [赛事](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml) | [59626](https://rsshub.app/qq/cfhd/news/59626) |
-  | [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |
+| 分类                                                                                                  | ID                                            |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [最新](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60847/m22510/list_1.shtml) | [60847](https://rsshub.app/qq/cfhd/news/60847) |
+| [公告](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59625/m22510/list_1.shtml) | [59625](https://rsshub.app/qq/cfhd/news/59625) |
+| [版本](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/60850/m22510/list_1.shtml) | [60850](https://rsshub.app/qq/cfhd/news/60850) |
+| [赛事](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59626/m22510/list_1.shtml) | [59626](https://rsshub.app/qq/cfhd/news/59626) |
+| [杂谈](https://cfhd.cf.qq.com/webplat/info/news_version3/37427/59139/59140/59624/m22510/list_1.shtml) | [59624](https://rsshub.app/qq/cfhd/news/59624) |
   
 
 ### 英雄联盟新闻 <Site url="lol.qq.com" size="sm" />
@@ -1048,21 +1048,21 @@ Tip: use proxy if necessary.
 
 ### 新闻中心 <Site url="tencent.com" size="sm" />
 
-<Route namespace="tencent" :data='{"path":"/pvp/newsindex/:type","categories":["game"],"example":"/tencent/pvp/newsindex/all","parameters":{"type":"栏目分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻中心","maintainers":["Jeason0228","HenryQW"],"description":"| 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |\n  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n  | all  | rm   | xw   | gg   | hd   | ss   | yh   |","location":"pvp/newsindex.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(12) ] to not include &#39;https://pvp.qq.com/web201706/newsdeta…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1836)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
+<Route namespace="tencent" :data='{"path":"/pvp/newsindex/:type","categories":["game"],"example":"/tencent/pvp/newsindex/all","parameters":{"type":"栏目分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"新闻中心","maintainers":["Jeason0228","HenryQW"],"description":"| 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| all  | rm   | xw   | gg   | hd   | ss   | yh   |","location":"pvp/newsindex.ts"}' :test='{"code":1,"message":"AssertionError: expected [ …(12) ] to not include &#39;https://pvp.qq.com/web201706/newsdeta…&#39;\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:1143:17)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@2.0.5/node_modules/@vitest/expect/dist/index.js:920:17)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@5.1.2/node_modules/chai/chai.js:1610:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:65:27)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1836)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)"}' />
 
 | 全部 | 热门 | 新闻 | 公告 | 活动 | 赛事 | 优化 |
-  | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-  | all  | rm   | xw   | gg   | hd   | ss   | yh   |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| all  | rm   | xw   | gg   | hd   | ss   | yh   |
 
 ## 完美世界电竞 <Site url="wmpvp.com"/>
 
 ### 资讯列表 <Site url="wmpvp.com" size="sm" />
 
-<Route namespace="wmpvp" :data='{"path":"/news/:type","categories":["game"],"example":"/wmpvp/news/1","parameters":{"type":"资讯分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯列表","maintainers":["tssujt"],"description":"| DOTA2 | CS2 |\n  | ----- | --- |\n  | 1     | 2   |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="wmpvp" :data='{"path":"/news/:type","categories":["game"],"example":"/wmpvp/news/1","parameters":{"type":"资讯分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯列表","maintainers":["tssujt"],"description":"| DOTA2 | CS2 |\n| ----- | --- |\n| 1     | 2   |","location":"index.ts"}' :test='{"code":0}' />
 
 | DOTA2 | CS2 |
-  | ----- | --- |
-  | 1     | 2   |
+| ----- | --- |
+| 1     | 2   |
 
 ## 网易公开课 <Site url="163.com"/>
 
@@ -1086,11 +1086,11 @@ Tip: use proxy if necessary.
 
 ### 游戏折扣 <Site url="xiaoheihe.cn" size="sm" />
 
-<Route namespace="xiaoheihe" :data='{"path":"/discount/:platform","categories":["game"],"example":"/xiaoheihe/discount/pc","parameters":{"platform":"平台分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏折扣","maintainers":["tssujt"],"description":"| PC  | Switch  | PSN   | Xbox |\n  | ----- | ------ | ----- | ----- |\n  | pc    | switch | psn   | xbox  |","location":"discount.ts"}' :test='{"code":0}' />
+<Route namespace="xiaoheihe" :data='{"path":"/discount/:platform","categories":["game"],"example":"/xiaoheihe/discount/pc","parameters":{"platform":"平台分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏折扣","maintainers":["tssujt"],"description":"| PC  | Switch  | PSN   | Xbox |\n| ----- | ------ | ----- | ----- |\n| pc    | switch | psn   | xbox  |","location":"discount.ts"}' :test='{"code":0}' />
 
 | PC  | Switch  | PSN   | Xbox |
-  | ----- | ------ | ----- | ----- |
-  | pc    | switch | psn   | xbox  |
+| ----- | ------ | ----- | ----- |
+| pc    | switch | psn   | xbox  |
 
 ### 游戏新闻 <Site url="xiaoheihe.cn" size="sm" />
 
@@ -1100,38 +1100,38 @@ Tip: use proxy if necessary.
 
 ### 台服新闻 <Site url="lol.garena.tw" size="sm" />
 
-<Route namespace="loltw" :data='{"path":"/news/:category?","categories":["game"],"example":"/loltw/news","parameters":{"category":"新闻分类，置空为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"台服新闻","maintainers":["hoilc"],"description":"| 活动  | 资讯 | 系统   | 电竞   | 版本资讯 | 战棋资讯 |\n  | ----- | ---- | ------ | ------ | -------- | -------- |\n  | event | info | system | esport | patch    | TFTpatch |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1153)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="loltw" :data='{"path":"/news/:category?","categories":["game"],"example":"/loltw/news","parameters":{"category":"新闻分类，置空为全部新闻"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"台服新闻","maintainers":["hoilc"],"description":"| 活动  | 资讯 | 系统   | 电竞   | 版本资讯 | 战棋资讯 |\n| ----- | ---- | ------ | ------ | -------- | -------- |\n| event | info | system | esport | patch    | TFTpatch |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 1153)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 活动  | 资讯 | 系统   | 电竞   | 版本资讯 | 战棋资讯 |
-  | ----- | ---- | ------ | ------ | -------- | -------- |
-  | event | info | system | esport | patch    | TFTpatch |
+| ----- | ---- | ------ | ------ | -------- | -------- |
+| event | info | system | esport | patch    | TFTpatch |
 
 ## 鹰角网络 <Site url="www.hypergryph.com"/>
 
 ### 明日方舟 - 游戏内公告 <Site url="www.hypergryph.com" size="sm" />
 
-<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n  |  安卓服 | iOS 服 |   B 服   |\n  | :-----: | :----: | :------: |\n  | Android |   IOS  | Bilibili |\n\n  分组\n\n  | 全部 | 系统公告 | 活动公告 |\n  | :--: | :------: | :------: |\n  |  ALL |  SYSTEM  | ACTIVITY |","location":"arknights/announce.ts"}' :test='{"code":1,"message":"AssertionError: expected -28423162643 to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 946)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
+<Route namespace="hypergryph" :data='{"path":"/arknights/announce/:platform?/:group?","categories":["game"],"example":"/hypergryph/arknights/announce","parameters":{"platform":"平台，默认为 Android","group":"分组，默认为 ALL"},"name":"明日方舟 - 游戏内公告","maintainers":["swwind"],"description":"平台\n\n|  安卓服 | iOS 服 |   B 服   |\n| :-----: | :----: | :------: |\n| Android |   IOS  | Bilibili |\n\n  分组\n\n| 全部 | 系统公告 | 活动公告 |\n| :--: | :------: | :------: |\n|  ALL |  SYSTEM  | ACTIVITY |","location":"arknights/announce.ts"}' :test='{"code":1,"message":"AssertionError: expected -28423162643 to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:35:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:61:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 946)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)"}' />
 
 平台
 
-  |  安卓服 | iOS 服 |   B 服   |
-  | :-----: | :----: | :------: |
-  | Android |   IOS  | Bilibili |
+|  安卓服 | iOS 服 |   B 服   |
+| :-----: | :----: | :------: |
+| Android |   IOS  | Bilibili |
 
   分组
 
-  | 全部 | 系统公告 | 活动公告 |
-  | :--: | :------: | :------: |
-  |  ALL |  SYSTEM  | ACTIVITY |
+| 全部 | 系统公告 | 活动公告 |
+| :--: | :------: | :------: |
+|  ALL |  SYSTEM  | ACTIVITY |
 
 ### 明日方舟 - 游戏公告与新闻 <Site url="ak-conf.hypergryph.com/news" size="sm" />
 
-<Route namespace="hypergryph" :data='{"path":"/arknights/news/:group?","categories":["game"],"example":"/hypergryph/arknights/news","parameters":{"group":"分组，默认为 `ALL`"},"radar":[{"source":["ak-conf.hypergryph.com/news"]}],"name":"明日方舟 - 游戏公告与新闻","maintainers":["Astrian"],"url":"ak-conf.hypergryph.com/news","description":"\n  | 全部 | 最新   | 公告         | 活动     | 新闻 |\n  | ---- | ------ | ------------ | -------- | ---- |\n  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |","location":"arknights/news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 949)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="hypergryph" :data='{"path":"/arknights/news/:group?","categories":["game"],"example":"/hypergryph/arknights/news","parameters":{"group":"分组，默认为 `ALL`"},"radar":[{"source":["ak-conf.hypergryph.com/news"]}],"name":"明日方舟 - 游戏公告与新闻","maintainers":["Astrian"],"url":"ak-conf.hypergryph.com/news","description":"\n| 全部 | 最新   | 公告         | 活动     | 新闻 |\n| ---- | ------ | ------------ | -------- | ---- |\n| ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |","location":"arknights/news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 949)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 
-  | 全部 | 最新   | 公告         | 活动     | 新闻 |
-  | ---- | ------ | ------------ | -------- | ---- |
-  | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |
+| 全部 | 最新   | 公告         | 活动     | 新闻 |
+| ---- | ------ | ------------ | -------- | ---- |
+| ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |
 
 ### 期刊 <Site url="aneot.arktca.com" size="sm" />
 
@@ -1147,13 +1147,13 @@ Tip: use proxy if necessary.
 
 ### 游戏星辰 <Site url="www.2023game.com/" size="sm" />
 
-<Route namespace="2023game" :data='{"path":"/:category?/:tab?","categories":["game"],"example":"/2023game/sgame/topicList","parameters":{"category":"分类，见下表","tab":"标签, 所有:all;最新:topicList;热门:jhcpb"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏星辰","maintainers":["xzzpig"],"url":"www.2023game.com/","description":"分类\n\n  | PS4游戏 | switch游戏 | 3DS游戏 | PSV游戏 | Xbox360 | PS3游戏 | 世嘉MD/SS | PSP游戏 | PC周边 | 怀旧掌机 | 怀旧主机 | PS4教程 | PS4金手指 | switch金手指 | switch教程 | switch补丁 | switch主题 | switch存档 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  | ps4 | sgame | 3ds | psv | jiaocheng | ps3yx | zhuji.md | zhangji.psp | pcgame | zhangji | zhuji | ps4.psjc | ps41.ps4pkg | nsaita.cundang | nsaita.pojie | nsaita.buding | nsaita.zhutie | nsaita.zhuti |","location":"index.ts"}' :test='undefined' />
+<Route namespace="2023game" :data='{"path":"/:category?/:tab?","categories":["game"],"example":"/2023game/sgame/topicList","parameters":{"category":"分类，见下表","tab":"标签, 所有:all;最新:topicList;热门:jhcpb"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游戏星辰","maintainers":["xzzpig"],"url":"www.2023game.com/","description":"分类\n\n| PS4游戏 | switch游戏 | 3DS游戏 | PSV游戏 | Xbox360 | PS3游戏 | 世嘉MD/SS | PSP游戏 | PC周边 | 怀旧掌机 | 怀旧主机 | PS4教程 | PS4金手指 | switch金手指 | switch教程 | switch补丁 | switch主题 | switch存档 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| ps4 | sgame | 3ds | psv | jiaocheng | ps3yx | zhuji.md | zhangji.psp | pcgame | zhangji | zhuji | ps4.psjc | ps41.ps4pkg | nsaita.cundang | nsaita.pojie | nsaita.buding | nsaita.zhutie | nsaita.zhuti |","location":"index.ts"}' :test='undefined' />
 
 分类
 
-  | PS4游戏 | switch游戏 | 3DS游戏 | PSV游戏 | Xbox360 | PS3游戏 | 世嘉MD/SS | PSP游戏 | PC周边 | 怀旧掌机 | 怀旧主机 | PS4教程 | PS4金手指 | switch金手指 | switch教程 | switch补丁 | switch主题 | switch存档 |
-  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-  | ps4 | sgame | 3ds | psv | jiaocheng | ps3yx | zhuji.md | zhangji.psp | pcgame | zhangji | zhuji | ps4.psjc | ps41.ps4pkg | nsaita.cundang | nsaita.pojie | nsaita.buding | nsaita.zhutie | nsaita.zhuti |
+| PS4游戏 | switch游戏 | 3DS游戏 | PSV游戏 | Xbox360 | PS3游戏 | 世嘉MD/SS | PSP游戏 | PC周边 | 怀旧掌机 | 怀旧主机 | PS4教程 | PS4金手指 | switch金手指 | switch教程 | switch补丁 | switch主题 | switch存档 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| ps4 | sgame | 3ds | psv | jiaocheng | ps3yx | zhuji.md | zhangji.psp | pcgame | zhangji | zhuji | ps4.psjc | ps41.ps4pkg | nsaita.cundang | nsaita.pojie | nsaita.buding | nsaita.zhutie | nsaita.zhuti |
 
 ## 游侠网 <Site url="ali213.net"/>
 
@@ -1205,41 +1205,41 @@ Tip: use proxy if necessary.
 
 ### 资讯 <Site url="yxdown.com" size="sm" />
 
-<Route namespace="yxdown" :data='{"path":"/news/:category?","categories":["game"],"example":"/yxdown/news","parameters":{"category":"分类，见下表，默认为资讯首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"| 资讯首页 | 业界动态 | 视频预告 | 新作发布 | 游戏资讯 | 游戏评测 | 网络游戏 | 手机游戏 |\n  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n  |          | dongtai  | yugao    | xinzuo   | zixun    | pingce   | wangluo  | shouyou  |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2150)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="yxdown" :data='{"path":"/news/:category?","categories":["game"],"example":"/yxdown/news","parameters":{"category":"分类，见下表，默认为资讯首页"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"资讯","maintainers":["nczitzk"],"description":"| 资讯首页 | 业界动态 | 视频预告 | 新作发布 | 游戏资讯 | 游戏评测 | 网络游戏 | 手机游戏 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n|          | dongtai  | yugao    | xinzuo   | zixun    | pingce   | wangluo  | shouyou  |","location":"news.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2150)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 资讯首页 | 业界动态 | 视频预告 | 新作发布 | 游戏资讯 | 游戏评测 | 网络游戏 | 手机游戏 |
-  | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-  |          | dongtai  | yugao    | xinzuo   | zixun    | pingce   | wangluo  | shouyou  |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+|          | dongtai  | yugao    | xinzuo   | zixun    | pingce   | wangluo  | shouyou  |
 
 ## 游戏打折情报 <Site url="yxdzqb.com"/>
 
 ### 游戏折扣 <Site url="yxdzqb.com/" size="sm" />
 
-<Route namespace="yxdzqb" :data='{"path":"/:type","categories":["game"],"example":"/yxdzqb/popular_cn","parameters":{"type":"折扣类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yxdzqb.com/"]}],"name":"游戏折扣","maintainers":["LogicJake","nczitzk"],"url":"yxdzqb.com/","description":"| Steam 最新折扣 | Steam 热门游戏折扣 | Steam 热门中文游戏折扣 | Steam 历史低价 | Steam 中文游戏历史低价 |\n  | -------------- | ------------------ | ---------------------- | -------------- | ---------------------- |\n  | discount       | popular            | popular_cn            | low            | low_cn                |","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="yxdzqb" :data='{"path":"/:type","categories":["game"],"example":"/yxdzqb/popular_cn","parameters":{"type":"折扣类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yxdzqb.com/"]}],"name":"游戏折扣","maintainers":["LogicJake","nczitzk"],"url":"yxdzqb.com/","description":"| Steam 最新折扣 | Steam 热门游戏折扣 | Steam 热门中文游戏折扣 | Steam 历史低价 | Steam 中文游戏历史低价 |\n| -------------- | ------------------ | ---------------------- | -------------- | ---------------------- |\n| discount       | popular            | popular_cn            | low            | low_cn                |","location":"index.ts"}' :test='{"code":0}' />
 
 | Steam 最新折扣 | Steam 热门游戏折扣 | Steam 热门中文游戏折扣 | Steam 历史低价 | Steam 中文游戏历史低价 |
-  | -------------- | ------------------ | ---------------------- | -------------- | ---------------------- |
-  | discount       | popular            | popular_cn            | low            | low_cn                |
+| -------------- | ------------------ | ---------------------- | -------------- | ---------------------- |
+| discount       | popular            | popular_cn            | low            | low_cn                |
 
 ## 游戏日报 <Site url="news.yxrb.net"/>
 
 ### 分类 <Site url="news.yxrb.net" size="sm" />
 
-<Route namespace="yxrb" :data='{"path":"/:category?","categories":["game"],"example":"/yxrb/info","parameters":{"category":"分类，见下表，预设为 `info`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.yxrb.net/:category","news.yxrb.net/"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| 资讯 | 访谈    | 服务    | 游理游据 |\n  | ---- | ------- | ------- | -------- |\n  | info | talking | service | comments |","location":"home.ts"}' :test='{"code":0}' />
+<Route namespace="yxrb" :data='{"path":"/:category?","categories":["game"],"example":"/yxrb/info","parameters":{"category":"分类，见下表，预设为 `info`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["news.yxrb.net/:category","news.yxrb.net/"],"target":"/:category"}],"name":"分类","maintainers":["TonyRL"],"description":"| 资讯 | 访谈    | 服务    | 游理游据 |\n| ---- | ------- | ------- | -------- |\n| info | talking | service | comments |","location":"home.ts"}' :test='{"code":0}' />
 
 | 资讯 | 访谈    | 服务    | 游理游据 |
-  | ---- | ------- | ------- | -------- |
-  | info | talking | service | comments |
+| ---- | ------- | ------- | -------- |
+| info | talking | service | comments |
 
 ## 游研社 <Site url="yystv.cn"/>
 
 ### 游研社 - 分类文章 <Site url="yystv.cn" size="sm" />
 
-<Route namespace="yystv" :data='{"path":"/category/:category","categories":["game"],"example":"/yystv/category/recommend","parameters":{"category":"专栏类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游研社 - 分类文章","maintainers":["LightStrawberry"],"description":"| 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 |\n  | --------- | ------- | ------ | ------- | ---- | -------- |\n  | recommend | history | big    | culture | news | retro    |","location":"category.ts"}' :test='{"code":1,"message":"AssertionError: expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:43:30)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2156)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
+<Route namespace="yystv" :data='{"path":"/category/:category","categories":["game"],"example":"/yystv/category/recommend","parameters":{"category":"专栏类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"游研社 - 分类文章","maintainers":["LightStrawberry"],"description":"| 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 |\n| --------- | ------- | ------ | ------- | ---- | -------- |\n| recommend | history | big    | culture | news | retro    |","location":"category.ts"}' :test='{"code":1,"message":"AssertionError: expected &#39;RSSHub&#39; not to be &#39;RSSHub&#39; // Object.is equality\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:43:30)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:80:17\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:960:11)\n    at async Promise.all (index 2156)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1102:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1116:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1173:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.0.5/node_modules/@vitest/runner/dist/index.js:1182:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:130:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:94:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/runBaseTests.CyvqmuC9.js:116:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/chunks/base.CC5R_kgU.js:31:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/workers/forks.js:25:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.0.5_@types+node@22.12.0_jsdom@26.0.0_bufferutil@4.0.8_utf-8-validate@5.0.10_/node_modules/vitest/dist/worker.js:115:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.1/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
 | 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 |
-  | --------- | ------- | ------ | ------- | ---- | -------- |
-  | recommend | history | big    | culture | news | retro    |
+| --------- | ------- | ------ | ------- | ---- | -------- |
+| recommend | history | big    | culture | news | retro    |
 
 ### 游研社 - 全部文章 <Site url="yystv.cn/docs" size="sm" />
 
@@ -1263,9 +1263,9 @@ Tip: use proxy if necessary.
 
 ### Category <Site url="famitsu.com" size="sm" />
 
-<Route namespace="famitsu" :data='{"path":"/category/:category?","categories":["game"],"example":"/famitsu/category/new-article","parameters":{"category":"Category, see table below, `new-article` by default"},"radar":[{"source":["www.famitsu.com/category/:category/page/1"]}],"name":"Category","maintainers":["TonyRL"],"description":"| 新着        | Switch | PS5 | PS4 | PC ゲーム | ニュース | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |\n  | ----------- | ------ | --- | --- | --------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |\n  | new-article | switch | ps5 | ps4 | pc-game   | news     | videos | special-article | interview    | event-report   | review   | indie-game       |","location":"category.ts"}' :test='{"code":0}' />
+<Route namespace="famitsu" :data='{"path":"/category/:category?","categories":["game"],"example":"/famitsu/category/new-article","parameters":{"category":"Category, see table below, `new-article` by default"},"radar":[{"source":["www.famitsu.com/category/:category/page/1"]}],"name":"Category","maintainers":["TonyRL"],"description":"| 新着        | Switch | PS5 | PS4 | PC ゲーム | ニュース | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |\n| ----------- | ------ | --- | --- | --------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |\n| new-article | switch | ps5 | ps4 | pc-game   | news     | videos | special-article | interview    | event-report   | review   | indie-game       |","location":"category.ts"}' :test='{"code":0}' />
 
 | 新着        | Switch | PS5 | PS4 | PC ゲーム | ニュース | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |
-  | ----------- | ------ | --- | --- | --------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |
-  | new-article | switch | ps5 | ps4 | pc-game   | news     | videos | special-article | interview    | event-report   | review   | indie-game       |
+| ----------- | ------ | --- | --- | --------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |
+| new-article | switch | ps5 | ps4 | pc-game   | news     | videos | special-article | interview    | event-report   | review   | indie-game       |
 
