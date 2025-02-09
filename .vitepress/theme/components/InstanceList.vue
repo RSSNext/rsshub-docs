@@ -121,7 +121,7 @@ const instances = [{
     url: 'https://rss.datuan.dev',
     location: '🇻🇳',
     maintainer: 'Tuấn Dev',
-    maintainerUrl: 'https://datuan.dev'
+    maintainerUrl: 'https://duonganhtuan.com'
   }
 ]
 
