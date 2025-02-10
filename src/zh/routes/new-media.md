@@ -2823,9 +2823,17 @@ Type 栏目：
 
 ## 蓝点网 <Site url="landiannews.com"/>
 
-### 资讯 <Site url="www.landiannews.com" size="sm" />
+### 标签 <Site url="www.landiannews.com" size="sm" />
 
-<Route namespace="landiannews" :data='{"path":"/","name":"资讯","url":"www.landiannews.com","maintainers":["nczitzk"],"example":"/landiannews","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.landiannews.com"],"target":"/"}],"view":0,"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="landiannews" :data='{"path":"/tag/:slug","name":"标签","url":"www.landiannews.com","maintainers":["cscnk52"],"example":"/landiannews/tag/linux-kernel","parameters":{"slug":"标签名称"},"categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.landiannews.com/archives/tag/:slug"],"target":"/tag/:slug"}],"view":0,"location":"tag.ts"}' :test='undefined' />
+
+### 分类 <Site url="www.landiannews.com" size="sm" />
+
+<Route namespace="landiannews" :data='{"path":"/category/:slug","name":"分类","url":"www.landiannews.com","maintainers":["cscnk52"],"example":"/landiannews/category/sells","parameters":{"slug":"分类名称"},"categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.landiannews.com/:slug"],"target":"/category/:slug"}],"view":0,"location":"category.ts"}' :test='undefined' />
+
+### 首页 <Site url="www.landiannews.com" size="sm" />
+
+<Route namespace="landiannews" :data='{"path":"/","name":"首页","url":"www.landiannews.com","maintainers":["nczitzk","cscnk52"],"example":"/landiannews","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.landiannews.com"],"target":"/"}],"view":0,"location":"index.ts"}' :test='{"code":0}' />
 
 ## 雷峰网 <Site url="leiphone.com"/>
 
