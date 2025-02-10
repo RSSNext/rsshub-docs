@@ -461,6 +461,20 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 | -------- | -------- | ----------- | -------- | -------- | -------- | -------- | -------- |
 | zhxw     | xxgg_new | xsjwhhd_new | xyfc_new | kjzx_new | mtbh_new | ztxw     | bhrw     |
 
+## 北京化工大学 <Site url="buct.edu.cn"/>
+
+### 教务处 <Site url="buct.edu.cn/" size="sm" />
+
+<Route namespace="buct" :data='{"path":"/jwc","categories":["university"],"example":"/buct/jwc","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["jiaowuchu.buct.edu.cn/610/list.htm","jiaowuchu.buct.edu.cn/611/main.htm"],"target":"/jwc"}],"name":"教务处","maintainers":["Epic-Creeper"],"url":"buct.edu.cn/","location":"jwc.ts"}' :test='undefined' />
+
+### 信息学院 <Site url="buct.edu.cn/" size="sm" />
+
+<Route namespace="buct" :data='{"path":"/cist","categories":["university"],"example":"/buct/cist","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cist.buct.edu.cn/xygg/list.htm","cist.buct.edu.cn/xygg/main.htm"],"target":"/cist"}],"name":"信息学院","maintainers":["Epic-Creeper"],"url":"buct.edu.cn/","location":"cist.ts"}' :test='undefined' />
+
+### 研究生院 <Site url="buct.edu.cn/" size="sm" />
+
+<Route namespace="buct" :data='{"path":"/gr/:type","categories":["university"],"example":"/buct/gr/jzml","parameters":{"type":{"description":"信息类型，可选值：tzgg（通知公告），jzml（简章目录），xgzc（相关政策）","options":[{"value":"tzgg","label":"通知公告"},{"value":"jzml","label":"简章目录"},{"value":"xgzc","label":"相关政策"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["graduate.buct.edu.cn/1392/list.htm"],"target":"/gr/tzgg"},{"source":["graduate.buct.edu.cn/jzml/list.htm"],"target":"/gr/jzml"},{"source":["graduate.buct.edu.cn/1393/list.htm"],"target":"/gr/xgzc"}],"name":"研究生院","maintainers":["Epic-Creeper"],"url":"buct.edu.cn/","location":"gr.ts"}' :test='undefined' />
+
 ## 北京邮电大学 <Site url="bupt.edu.cn"/>
 
 ### 教务处 <Site url="jwc.bupt.edu.cn" size="sm" />
