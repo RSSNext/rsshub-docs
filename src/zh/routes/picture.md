@@ -16,6 +16,18 @@ If you subscribe to [Abstract Awarded](https://1x.com/gallery/abstract/awarded),
 If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/published), you should fill in the path with the part `wildlife/published` from the page URL `https://1x.com/gallery/wildlife/published`. In this case, the route will be [`/1x/wildlife/published`](https://rsshub.app/1x/wildlife/published).
 :::
 
+## 4KHD <Site url="www.4khd.net"/>
+
+4KHD - HD Beautiful Girls
+
+### Category <Site url="www.4khd.com/" size="sm" />
+
+<Route namespace="4khd" :data='{"path":"/category/:category","categories":["picture"],"example":"/4khd/category/cosplay","parameters":{"category":"Category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.4khd.com/pages/:category"],"target":"/category/:category"}],"name":"Category","maintainers":["AiraNadih"],"url":"www.4khd.com/","location":"category.ts"}' :test='undefined' />
+
+### Latest <Site url="www.4khd.com/" size="sm" />
+
+<Route namespace="4khd" :data='{"path":"/","categories":["picture"],"example":"/4khd","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.4khd.com/"],"target":""}],"name":"Latest","maintainers":["AiraNadih"],"url":"www.4khd.com/","location":"latest.ts"}' :test='undefined' />
+
 ## 4KUP <Site url="4kup.net"/>
 
 4KUP - Beautiful Girls Collection
