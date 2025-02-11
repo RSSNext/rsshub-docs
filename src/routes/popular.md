@@ -2475,12 +2475,6 @@ Type 栏目：
 
 机核 GCORES
 
-### 标签 <Site url="gcores.com" size="sm" />
-
-<Route namespace="gcores" :data='{"path":"/tag/:tag/:category?","categories":["new-media","popular"],"example":"/gcores/tag/42/articles","parameters":{"tag":"标签名，可在选定标签分类页面的 URL 中找到，如视觉动物——42","category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/categories/:tag","gcores.com/"],"target":"/tag/:tag"}],"name":"标签","maintainers":["StevenRCE0"],"description":"分类名同上。","location":"tag.ts"}' :test='{"code":0}' />
-
-分类名同上。
-
 ### 播客 <Site url="gcores.com/radios" size="sm" />
 
 <Route namespace="gcores" :data='{"path":"/radios/:category?","categories":["new-media","popular"],"example":"/gcores/radios/45","parameters":{"category":"分类名，默认为全部，可在分类页面的 URL 中找到，如 Gadio News -- 45"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["gcores.com/categories/:category"],"target":"/radios/:category"}],"name":"播客","maintainers":["eternasuno"],"url":"gcores.com/radios","location":"radio.ts"}' :test='{"code":0}' />

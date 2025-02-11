@@ -850,6 +850,19 @@ Tip: use proxy if necessary.
 
 机核 GCORES
 
+### 标签 <Site url="www.gcores.com" size="sm" />
+
+<Route namespace="gcores" :data='{"path":"/tags/:id/:tab?","name":"标签","url":"www.gcores.com","maintainers":["StevenRCE0","nczitzk"],"example":"/gcores/tags/1/articles","parameters":{"id":{"description":"标签 ID，可在对应标签页 URL 中找到"},"tab":{"description":"类型，默认为空，即全部，可在对应标签页 URL 中找到","options":[{"label":"全部","value":""},{"label":"播客","value":"radios"},{"label":"文章","value":"articles"},{"label":"资讯","value":"news"},{"label":"视频","value":"videos"}]}},"description":":::tip\n若订阅 [美国 - 文章](https://www.gcores.com/tags/1/originals?tab=articles)，网址为 `https://www.gcores.com/tags/1/originals?tab=articles`，请截取 `https://www.gcores.com/tags/` 到末尾 `/originals` 的部分 `1` 作为 `id` 参数填入，截取 `articles` 作为 `tab` 参数填入，此时目标路由为 [`/gcores/tags/1/articles`](https://rsshub.app/gcores/tags/1/articles)。\n:::\n\n| 全部 | 播客   | 文章     | 资讯 | 视频   |\n| ---- | ------ | -------- | ---- | ------ |\n|      | radios | articles | news | videos |\n","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/tags/:id/originals"]},{"title":"全部","source":["www.gcores.com/tags/:id/originals"],"target":"/gcores/tags/:id"},{"title":"播客","source":["www.gcores.com/tags/:id/originals"],"target":"/gcores/tags/:id/radios"},{"title":"文章","source":["www.gcores.com/tags/:id/originals"],"target":"/gcores/tags/:id/articles"},{"title":"资讯","source":["www.gcores.com/tags/:id/originals"],"target":"/gcores/tags/:id/news"},{"title":"视频","source":["www.gcores.com/tags/:id/originals"],"target":"/gcores/tags/:id/videos"}],"view":0,"location":"tags.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [美国 - 文章](https://www.gcores.com/tags/1/originals?tab=articles)，网址为 `https://www.gcores.com/tags/1/originals?tab=articles`，请截取 `https://www.gcores.com/tags/` 到末尾 `/originals` 的部分 `1` 作为 `id` 参数填入，截取 `articles` 作为 `tab` 参数填入，此时目标路由为 [`/gcores/tags/1/articles`](https://rsshub.app/gcores/tags/1/articles)。
+:::
+
+| 全部 | 播客   | 文章     | 资讯 | 视频   |
+| ---- | ------ | -------- | ---- | ------ |
+|      | radios | articles | news | videos |
+
+
 ### 文章 <Site url="www.gcores.com" size="sm" />
 
 <Route namespace="gcores" :data='{"path":"/articles","name":"文章","url":"www.gcores.com","maintainers":["nczitzk"],"example":"/gcores/articles","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/articles"],"target":"/gcores/articles"}],"view":0,"location":"articles.ts"}' :test='{"code":0}' />
