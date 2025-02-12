@@ -587,7 +587,15 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 
 ## 异次元软件世界 <Site url="www.iplaysoft.com"/>
 
-### 全部文章 <Site url="www.iplaysoft.com" size="sm" />
+### 标签 <Site url="www.iplaysoft.com" size="sm" />
 
-<Route namespace="iplaysoft" :data='{"path":"/","categories":["program-update"],"example":"/iplaysoft","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iplaysoft.com"]}],"name":"全部文章","maintainers":["williamgateszhao"],"location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="iplaysoft" :data='{"path":"/tag/:slug","name":"标签","url":"www.iplaysoft.com","maintainers":["cscnk52"],"example":"/iplaysoft/tag/windows","parameters":{"slug":"标签名称"},"categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iplaysoft.com/tag/:slug"],"target":"/tag/:slug"}],"view":0,"location":"tag.ts"}' :test='undefined' />
+
+### 分类 <Site url="www.iplaysoft.com" size="sm" />
+
+<Route namespace="iplaysoft" :data='{"path":"/category/:slug","name":"分类","url":"www.iplaysoft.com","maintainers":["cscnk52"],"example":"/iplaysoft/category/system","parameters":{"slug":"分类名称"},"categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iplaysoft.com/category/:slug"],"target":"/category/:slug"}],"view":0,"location":"category.ts"}' :test='undefined' />
+
+### 首页 <Site url="www.iplaysoft.com" size="sm" />
+
+<Route namespace="iplaysoft" :data='{"path":"/","name":"首页","url":"www.iplaysoft.com","maintainers":["williamgateszhao","cscnk52"],"example":"/iplaysoft","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.iplaysoft.com"],"target":"/"}],"view":0,"location":"index.ts"}' :test='{"code":0}' />
 
