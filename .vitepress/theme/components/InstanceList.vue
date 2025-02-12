@@ -117,6 +117,11 @@ const instances = [{
     location: '🇭🇰',
     maintainer: 'EmailOnce',
     maintainerUrl: 'https://email-once.com'
+  }, {
+    url: 'https://rss.datuan.dev',
+    location: '🇻🇳',
+    maintainer: 'Tuấn Dev',
+    maintainerUrl: 'https://duonganhtuan.com'
   }
 ]
 
