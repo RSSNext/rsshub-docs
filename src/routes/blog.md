@@ -176,6 +176,14 @@ LangChain Blog Posts
 
 <Route namespace="macmenubar" :data='{"path":"/recently/:category?","categories":["blog"],"example":"/macmenubar/recently/developer-apps,system-tools","parameters":{"category":"Category path name, seperate by comma, default is all categories. Category path name can be found in url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Recently","maintainers":["5upernova-heng"],"location":"recently.ts"}' :test='{"code":0}' />
 
+## Mashiro's Baumkuchen <Site url="mashiro.best"/>
+
+Muen's blog posts
+
+### Blog <Site url="mashiro.best" size="sm" />
+
+<Route namespace="mashiro" :data='{"path":"/:lang","categories":["blog"],"example":"/mashiro/en","parameters":{"lang":"the language of the site. Can be either `en` or `zh-cn`. Default: `en`"},"radar":[{"source":["mashiro.best/","mashiro.best/:lang/"]}],"name":"Blog","maintainers":["MuenYu"],"location":"index.ts"}' :test='undefined' />
+
 ## Medium <Site url="medium.com"/>
 
 ### List <Site url="medium.com" size="sm" />
