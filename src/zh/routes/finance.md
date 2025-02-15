@@ -873,6 +873,12 @@ Language:
 | 8 | 其他 |
     
 
+## 欧易 OKX <Site url="www.okx.com/zh-hans"/>
+
+### 公告 <Site url="www.okx.com/zh-hans" size="sm" />
+
+<Route namespace="okx" :data='{"path":"/:section?","categories":["finance"],"example":"/okx/new-listings","parameters":{"section":{"description":"公告版块","default":"latest-announcements","options":[{"value":"latest-announcements","label":"最新公告"},{"value":"new-listings","label":"新币种上线"},{"value":"delistings","label":"币对下线"},{"value":"trading-updates","label":"交易规则更新"},{"value":"deposit-withdrawal-suspension-resumption","label":"充提暂停/恢复公告"},{"value":"p2p-trading","label":"C2C 公告"},{"value":"web3","label":"Web3"},{"value":"earn","label":"赚币"},{"value":"jumpstart","label":"Jumpstart"},{"value":"api","label":"API公告"},{"value":"okb-buy-back-burn","label":"OKB销毁"},{"value":"others","label":"其他"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.okx.com/zh-hans/help/section/:section"],"target":"/:section"}],"name":"公告","maintainers":["lxl66566"],"location":"index.ts"}' :test='undefined' />
+
 ## 前瞻网 <Site url="qianzhan.com"/>
 
 ### 排行榜 <Site url="qianzhan.com/analyst" size="sm" />
