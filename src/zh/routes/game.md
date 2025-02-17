@@ -863,6 +863,10 @@ Tip: use proxy if necessary.
 |      | radios | articles | news | videos |
 
 
+### 视频 <Site url="www.gcores.com" size="sm" />
+
+<Route namespace="gcores" :data='{"path":"/videos","name":"视频","url":"www.gcores.com","maintainers":["nczitzk"],"example":"/gcores/videos","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/videos"],"target":"/gcores/videos"}],"view":3,"location":"videos.ts"}' :test='undefined' />
+
 ### 文章 <Site url="www.gcores.com" size="sm" />
 
 <Route namespace="gcores" :data='{"path":"/articles","name":"文章","url":"www.gcores.com","maintainers":["nczitzk"],"example":"/gcores/articles","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/articles"],"target":"/gcores/articles"}],"view":0,"location":"articles.ts"}' :test='{"code":0}' />
