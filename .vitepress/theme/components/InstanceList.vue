@@ -73,7 +73,7 @@ const instances = [{
     maintainer: '仰止',
     maintainerUrl: 'https://yangzhi.org',
   }, {
-    url: 'https://rss.littlebaby.lol/rsshub',
+    url: 'https://rss.littlebaby.life/rsshub',
     location: '🇺🇸',
     maintainer: 'yuanhong',
     maintainerUrl: 'https://github.com/yuanhong078',
