@@ -3073,7 +3073,7 @@ Type 栏目：
 
 ### 排行榜 <Site url="xsijishe.com" size="sm" />
 
-<Route namespace="xsijishe" :data='{"path":"/rank/:type","categories":["bbs","popular"],"example":"/xsijishe/rank/weekly","parameters":{"type":{"description":"排行榜类型","options":[{"value":"weekly","label":"周榜"},{"value":"monthly","label":"月榜"}]}},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["akynazh","AiraNadih"],"location":"rank.ts"}' :test='undefined' />
+<Route namespace="xsijishe" :data='{"path":"/rank/:type","categories":["bbs","popular"],"example":"/xsijishe/rank/weekly","parameters":{"type":{"description":"排行榜类型","options":[{"value":"weekly","label":"周榜"},{"value":"monthly","label":"月榜"}]}},"features":{"requireConfig":[{"name":"XSIJISHE_COOKIE","description":""},{"name":"XSIJISHE_USER_AGENT","description":""}],"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"排行榜","maintainers":["akynazh","AiraNadih"],"location":"rank.ts"}' :test='undefined' />
 
 ## 搜狐号 <Site url="sohu.com"/>
 
