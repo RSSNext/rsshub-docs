@@ -560,6 +560,16 @@ Subscribe to the content of a specific user
 
 <Route namespace="issuehunt" :data='{"path":"/funded/:username/:repo","categories":["programming"],"example":"/issuehunt/funded/DIYgod/RSSHub","parameters":{"username":"Github user/org","repo":"Repository name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Project Funded","maintainers":["running-grass"],"location":"funded.ts"}' :test='{"code":0}' />
 
+## Josh W Comeau <Site url="www.joshwcomeau.com"/>
+
+### Articles and Tutorials <Site url="www.joshwcomeau.com" size="sm" />
+
+<Route namespace="joshwcomeau" :data='{"path":"/latest/:category?","categories":["programming"],"example":"/joshwcomeau/latest/css","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"parameters":{"category":{"description":"Category","options":[{"value":"css","label":"CSS"},{"value":"react","label":"React"},{"value":"animation","label":"Animation"},{"value":"javascript","label":"JavaScript"},{"value":"career","label":"Career"},{"value":"blog","label":"Blog"}]}},"radar":[{"source":["joshwcomeau.com/"],"target":"/latest"},{"source":["joshwcomeau.com/:category"],"target":"/latest/:category"}],"name":"Articles and Tutorials","maintainers":["Rjnishant530"],"location":"latest.ts"}' :test='undefined' />
+
+### Popular Content <Site url="www.joshwcomeau.com" size="sm" />
+
+<Route namespace="joshwcomeau" :data='{"path":"/popular","categories":["programming"],"example":"/joshwcomeau/popular","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["joshwcomeau.com/"],"target":"/popular"}],"name":"Popular Content","maintainers":["Rjnishant530"],"location":"popular.ts"}' :test='undefined' />
+
 ## Kong API 网关平台 <Site url="konghq.com"/>
 
 [Kong](https://konghq.com/) 是一家开源的 API 网关服务商，此处收集其官网的最新博客文章。
