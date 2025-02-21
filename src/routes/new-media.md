@@ -2669,10 +2669,6 @@ Type 栏目：
 | ---- | ------ | ------ | -------- |
 | news | videos | radios | articles |
 
-### 专题文章 <Site url="gcores.com" size="sm" />
-
-<Route namespace="gcores" :data='{"path":"/collections/:collection","categories":["new-media","popular"],"example":"/gcores/collections/64","parameters":{"collection":"专题id，可在专题页面的 URL 中找到，如 游戏开发设计心得分享 -- 64"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/collections/:collection"]}],"name":"专题文章","maintainers":["kudryavka1013"],"location":"collection.ts"}' :test='{"code":0}' />
-
 ## 极客公园 <Site url="geekpark.net"/>
 
 ### 栏目 <Site url="geekpark.net" size="sm" />

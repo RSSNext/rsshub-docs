@@ -871,6 +871,19 @@ Tip: use proxy if necessary.
 
 <Route namespace="gcores" :data='{"path":"/articles","name":"文章","url":"www.gcores.com","maintainers":["nczitzk"],"example":"/gcores/articles","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/articles"],"target":"/gcores/articles"}],"view":0,"location":"articles.ts"}' :test='{"code":0}' />
 
+### 专题 <Site url="www.gcores.com" size="sm" />
+
+<Route namespace="gcores" :data='{"path":"/collections/:id/:tab?","name":"专题","url":"www.gcores.com","maintainers":["kudryavka1013","nczitzk"],"example":"/gcores/collections/64/articles","parameters":{"id":{"description":"专题 ID，可在对应专题页 URL 中找到"},"tab":{"description":"类型，默认为空，即全部，可在对应专题页 URL 中找到","options":[{"label":"全部","value":""},{"label":"播客","value":"radios"},{"label":"文章","value":"articles"},{"label":"资讯","value":"news"},{"label":"视频","value":"videos"}]}},"description":":::tip\n若订阅 [文章 - 文章](https://www.gcores.com/collections/64?tab=articles)，网址为 `https://www.gcores.com/collections/64?tab=articles`，请截取 `https://www.gcores.com/collections/` 到末尾的部分 `64` 作为 `id` 参数填入，截取 `articles` 作为 `tab` 参数填入，此时目标路由为 [`/gcores/collections/64/articles`](https://rsshub.app/gcores/collections/64/articles)。\n:::\n\n| 全部 | 播客   | 文章     | 资讯 | 视频   |\n| ---- | ------ | -------- | ---- | ------ |\n|      | radios | articles | news | videos |\n","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/collections/:id"]},{"title":"全部","source":["www.gcores.com/collections/:id"],"target":"/collections/:id"},{"title":"播客","source":["www.gcores.com/collections/:id"],"target":"/collections/:id/radios"},{"title":"文章","source":["www.gcores.com/collections/:id"],"target":"/collections/:id/articles"},{"title":"资讯","source":["www.gcores.com/collections/:id"],"target":"/collections/:id/news"},{"title":"视频","source":["www.gcores.com/collections/:id"],"target":"/collections/:id/videos"}],"view":0,"location":"collections.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [文章 - 文章](https://www.gcores.com/collections/64?tab=articles)，网址为 `https://www.gcores.com/collections/64?tab=articles`，请截取 `https://www.gcores.com/collections/` 到末尾的部分 `64` 作为 `id` 参数填入，截取 `articles` 作为 `tab` 参数填入，此时目标路由为 [`/gcores/collections/64/articles`](https://rsshub.app/gcores/collections/64/articles)。
+:::
+
+| 全部 | 播客   | 文章     | 资讯 | 视频   |
+| ---- | ------ | -------- | ---- | ------ |
+|      | radios | articles | news | videos |
+
+
 ### 资讯 <Site url="www.gcores.com" size="sm" />
 
 <Route namespace="gcores" :data='{"path":"/news","name":"资讯","url":"www.gcores.com","maintainers":["nczitzk"],"example":"/gcores/news","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/news"],"target":"/gcores/news"}],"view":0,"location":"news.ts"}' :test='{"code":0}' />
