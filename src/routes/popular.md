@@ -2503,14 +2503,6 @@ Type 栏目：
 
 <Route namespace="gcores" :data='{"path":"/radios/:category?","categories":["new-media","popular"],"example":"/gcores/radios/45","parameters":{"category":"分类名，默认为全部，可在分类页面的 URL 中找到，如 Gadio News -- 45"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["gcores.com/categories/:category"],"target":"/radios/:category"}],"name":"播客","maintainers":["eternasuno"],"url":"gcores.com/radios","location":"radio.ts"}' :test='{"code":0}' />
 
-### 分类 <Site url="gcores.com" size="sm" />
-
-<Route namespace="gcores" :data='{"path":"/category/:category","categories":["new-media","popular"],"example":"/gcores/category/news","parameters":{"category":"分类名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gcores.com/:category"]}],"name":"分类","maintainers":["MoguCloud","StevenRCE0"],"description":"| 资讯 | 视频   | 电台   | 文章     |\n| ---- | ------ | ------ | -------- |\n| news | videos | radios | articles |","location":"category.ts"}' :test='{"code":0}' />
-
-| 资讯 | 视频   | 电台   | 文章     |
-| ---- | ------ | ------ | -------- |
-| news | videos | radios | articles |
-
 ## 即刻 <Site url="m.okjike.com"/>
 
 ### 圈子 <Site url="m.okjike.com" size="sm" />
