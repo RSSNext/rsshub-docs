@@ -34,6 +34,12 @@ Ceph is an open source distributed storage system designed to evolve with data.
 
 <Route namespace="cmpxchg8b" :data='{"path":"/articles","categories":["blog"],"example":"/cmpxchg8b/articles","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lock.cmpxchg8b.com/articles"]}],"name":"Articles","maintainers":["yuguorui"],"url":"lock.cmpxchg8b.com/articles","location":"articles.ts"}' :test='{"code":0}' />
 
+## Carnegie Mellon University <Site url="www.cmu.edu"/>
+
+### Andy Pavlo Blog <Site url="www.cmu.edu" size="sm" />
+
+<Route namespace="cmu" :data='{"path":"/andypavlo/blog","categories":["blog"],"example":"/cmu/andypavlo/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Andy Pavlo Blog","maintainers":["mocusez"],"location":"andypavlo/blog.ts"}' :test='undefined' />
+
 ## Cohere <Site url="cohere.com"/>
 
 ### Blog <Site url="cohere.com/blog" size="sm" />
