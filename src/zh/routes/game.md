@@ -483,6 +483,12 @@ Region
 
 <Route namespace="last-origin" :data='{"path":"/news","name":"News","url":"www.last-origin.com","maintainers":["gudezhi"],"example":"/last-origin/news","parameters":{},"categories":["game"],"features":{"supportRadar":true},"radar":[{"source":["www.last-origin.com/news.html","www.last-origin.com"],"target":"/news"}],"description":"","location":"news.ts"}' :test='undefined' />
 
+## League of Legends <Site url="leagueoflegends.com"/>
+
+### Patch Notes <Site url="leagueoflegends.com" size="sm" />
+
+<Route namespace="leagueoflegends" :data='{"path":"/patch-notes","categories":["game"],"example":"/leagueoflegends/patch-notes","radar":[{"source":["www.leagueoflegends.com/en-us/news/tags/patch-notes/","www.leagueoflegends.com/en-us/news/game-updates/:postSlug"]}],"name":"Patch Notes","maintainers":["noahm"],"location":"patch-notes.ts"}' :test='undefined' />
+
 ## Liquipedia <Site url="liquipedia.net"/>
 
 ### Dota2 战队最近比赛结果 <Site url="liquipedia.net" size="sm" />
