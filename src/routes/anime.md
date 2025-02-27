@@ -232,6 +232,12 @@ Sources
   There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.
 :::
 
+## Komiic <Site url="komiic.com"/>
+
+### 漫画更新 <Site url="komiic.com" size="sm" />
+
+<Route namespace="komiic" :data='{"path":"/comic/:id","categories":["anime"],"example":"/komiic/comic/533","parameters":{"id":"漫画 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["komiic.com/comic/:id"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["NekoAria"],"location":"comic.ts"}' :test='undefined' />
+
 ## Love Live! Official Website <Site url="www.lovelive-anime.jp"/>
 
 ### Categories Topics <Site url="www.lovelive-anime.jp" size="sm" />
