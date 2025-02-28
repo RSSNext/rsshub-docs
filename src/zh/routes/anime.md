@@ -670,3 +670,17 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 | GAME | LIVE-EVENT | ANIME | LIVESTREAM | RADIO | GOODS | COLLABO-CAMP | CD | BOOK | MEDIA | OTHER |
     
 
+## とらのあな <Site url="toranoana.jp"/>
+
+### Category <Site url="toranoana.jp" size="sm" />
+
+<Route namespace="toranoana" :data='{"path":"/news/:category?","categories":["anime"],"example":"/toranoana/news/toragen","parameters":{"category":"category"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["Tsuyumi25"],"radar":[{"title":"総合新着記事","source":["news.toranoana.jp"],"target":"/news"},{"title":"女性向け","source":["news.toranoana.jp/joshi"],"target":"/news/joshi"},{"title":"イラスト展","source":["news.toranoana.jp/exhibitions"],"target":"/news/exhibition"},{"source":["news.toranoana.jp/category/:category"],"target":"/news/:category"}],"description":"\n::: warning TIP\n[総合新着記事](https://news.toranoana.jp)→`/toranoana/news`  \n[女性向け](https://news.toranoana.jp/joshi)→`/toranoana/news/joshi`  \n[イラスト展](https://news.toranoana.jp/exhibitions)→`/toranoana/news/exhibition`  \n[`https://news.toranoana.jp/category/media`](https://news.toranoana.jp/category/media)→`/toranoana/news/media`\n:::","location":"news.ts"}' :test='undefined' />
+
+
+::: warning TIP
+[総合新着記事](https://news.toranoana.jp)→`/toranoana/news`  
+[女性向け](https://news.toranoana.jp/joshi)→`/toranoana/news/joshi`  
+[イラスト展](https://news.toranoana.jp/exhibitions)→`/toranoana/news/exhibition`  
+[`https://news.toranoana.jp/category/media`](https://news.toranoana.jp/category/media)→`/toranoana/news/media`
+:::
+
