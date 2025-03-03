@@ -425,6 +425,14 @@ Category ID
 
 <Route namespace="stockedge" :data='{"path":"/daily-updates/news","categories":["finance","popular"],"view":5,"example":"/stockedge/daily-updates/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["web.stockedge.com/daily-updates/news"]}],"name":"Daily Updates News","maintainers":["Rjnishant530"],"url":"web.stockedge.com/daily-updates/news","location":"daily-news.ts"}' :test='{"code":0}' />
 
+## TheBlock <Site url="theblock.co"/>
+
+### Category <Site url="theblock.co" size="sm" />
+
+<Route namespace="theblock" :data='{"path":"/category/:category","categories":["finance"],"example":"/theblock/category/crypto-ecosystems","parameters":{"category":"`category` is the category of theblock"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["pseudoyu"],"radar":[{"source":["theblock.co/category/:category"],"target":"/category/:category"}],"description":"Get latest news from TheBlock by category. Note that due to website limitations, only article summaries may be available.","location":"index.ts"}' :test='undefined' />
+
+Get latest news from TheBlock by category. Note that due to website limitations, only article summaries may be available.
+
 ## TokenInsight <Site url="tokeninsight.com"/>
 
 ::: tip
