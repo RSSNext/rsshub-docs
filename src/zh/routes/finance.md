@@ -222,6 +222,14 @@ lang:
 | citylab      | CityLab      |
   
 
+## CryptoSlate <Site url="cryptoslate.com"/>
+
+### CryptoSlate News <Site url="cryptoslate.com" size="sm" />
+
+<Route namespace="cryptoslate" :data='{"path":"/","categories":["finance"],"example":"/cryptoslate","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"CryptoSlate News","maintainers":["pseudoyu"],"radar":[{"source":["cryptoslate.com/"],"target":"/"}],"description":"Get latest news from CryptoSlate.","location":"index.ts"}' :test='undefined' />
+
+Get latest news from CryptoSlate.
+
 ## Decrypt <Site url="decrypt.co"/>
 
 ### Decrypt News <Site url="decrypt.co" size="sm" />
