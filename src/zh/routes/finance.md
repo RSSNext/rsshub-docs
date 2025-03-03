@@ -195,6 +195,14 @@ lang:
 | ar-SA | العربية |
 
 
+## Blockworks <Site url="blockworks.co"/>
+
+### Blockworks News <Site url="blockworks.co" size="sm" />
+
+<Route namespace="blockworks" :data='{"path":"/","categories":["finance"],"example":"/blockworks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blockworks.co/"],"target":"/"}],"name":"Blockworks News","maintainers":["pseudoyu"],"description":"Blockworks news with full text support.","location":"index.ts"}' :test='undefined' />
+
+Blockworks news with full text support.
+
 ## Bloomberg <Site url="www.bloomberg.com"/>
 
 ### Authors <Site url="www.bloomberg.com" size="sm" />
