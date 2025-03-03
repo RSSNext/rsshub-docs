@@ -222,6 +222,14 @@ lang:
 | citylab      | CityLab      |
   
 
+## Cointelegraph <Site url="cointelegraph.com"/>
+
+### Cointelegraph News <Site url="cointelegraph.com" size="sm" />
+
+<Route namespace="cointelegraph" :data='{"path":"/","categories":["finance"],"example":"/cointelegraph","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Cointelegraph News","maintainers":["pseudoyu"],"radar":[{"source":["cointelegraph.com/"],"target":"/"}],"description":"Get latest news from Cointelegraph with full text.","location":"index.ts"}' :test='undefined' />
+
+Get latest news from Cointelegraph with full text.
+
 ## CryptoSlate <Site url="cryptoslate.com"/>
 
 ### CryptoSlate News <Site url="cryptoslate.com" size="sm" />
