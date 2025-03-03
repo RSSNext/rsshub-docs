@@ -222,6 +222,14 @@ lang:
 | citylab      | CityLab      |
   
 
+## Decrypt <Site url="decrypt.co"/>
+
+### Decrypt News <Site url="decrypt.co" size="sm" />
+
+<Route namespace="decrypt" :data='{"path":"/","categories":["finance"],"example":"/decrypt","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Decrypt News","maintainers":["pseudoyu"],"radar":[{"source":["decrypt.co/"],"target":"/"}],"description":"Get latest news from Decrypt.","location":"index.ts"}' :test='undefined' />
+
+Get latest news from Decrypt.
+
 ## DT 财经 <Site url="dtcj.com"/>
 
 ### 数据侠专栏 <Site url="dtcj.com" size="sm" />
