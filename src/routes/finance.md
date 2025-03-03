@@ -222,6 +222,16 @@ lang:
 | citylab      | CityLab      |
   
 
+## CoinDesk <Site url="coindesk.com"/>
+
+CoinDesk is a news site specializing in bitcoin and digital currencies, delivering news, analysis, and information about the blockchain ecosystem.
+
+### CoinDesk News <Site url="coindesk.com" size="sm" />
+
+<Route namespace="coindesk" :data='{"path":"/news","categories":["finance"],"example":"/coindesk/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"CoinDesk News","maintainers":["pseudoyu"],"radar":[{"source":["coindesk.com/"],"target":"/news"}],"description":"Get latest news from CoinDesk with full text.","location":"news.ts"}' :test='undefined' />
+
+Get latest news from CoinDesk with full text.
+
 ## Cointelegraph <Site url="cointelegraph.com"/>
 
 ### Cointelegraph News <Site url="cointelegraph.com" size="sm" />

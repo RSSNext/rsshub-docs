@@ -413,7 +413,9 @@ Category of news
 完整的主题列表参见 [主题列表](https://www.cnbeta.com.tw/topics.htm)
 :::
 
-## CoinDesk Consensus Magazine <Site url="coindesk.com"/>
+## CoinDesk <Site url="coindesk.com"/>
+
+CoinDesk is a news site specializing in bitcoin and digital currencies, delivering news, analysis, and information about the blockchain ecosystem.
 
 ### 新闻周刊 <Site url="coindesk.com/" size="sm" />
 
