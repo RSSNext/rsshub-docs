@@ -252,6 +252,14 @@ You may need to setup cookie for a less restrictive rate limit and private profi
 
 <Route namespace="lemmy" :data='{"path":"/:community/:sort?","categories":["social-media","popular"],"example":"/lemmy/technology@lemmy.world/Hot","parameters":{"community":"Lemmmy community, for example technology@lemmy.world","sort":{"description":"Sort by","options":[{"value":"Active","label":"Active"},{"value":"Hot","label":"Hot"},{"value":"New","label":"New"},{"value":"Old","label":"Old"},{"value":"TopDay","label":"TopDay"},{"value":"TopWeek","label":"TopWeek"},{"value":"TopMonth","label":"TopMonth"},{"value":"TopYear","label":"TopYear"},{"value":"TopAll","label":"TopAll"},{"value":"MostComments","label":"MostComments"},{"value":"NewComments","label":"NewComments"},{"value":"TopHour","label":"TopHour"},{"value":"TopSixHour","label":"TopSixHour"},{"value":"TopTwelveHour","label":"TopTwelveHour"},{"value":"TopThreeMonths","label":"TopThreeMonths"},{"value":"TopSixMonths","label":"TopSixMonths"},{"value":"TopNineMonths","label":"TopNineMonths"},{"value":"Controversial","label":"Controversial"},{"value":"Scaled","label":"Scaled"}],"default":"Active"}},"features":{"requireConfig":[{"name":"ALLOW_USER_SUPPLY_UNSAFE_DOMAIN","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Community","maintainers":["wb14123","pseudoyu"],"location":"index.ts"}' :test='{"code":0}' />
 
+## LikeShop <Site url="likeshop.me"/>
+
+### Posts <Site url="likeshop.me" size="sm" />
+
+<Route namespace="likeshop" :data='{"path":"/:site","categories":["social-media"],"example":"/likeshop/bloombergpursuits","parameters":{"site":"the site attached to likeshop.me/"},"radar":[{"source":["likeshop.me/"]}],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Posts","maintainers":["nickyfoto"],"description":"LikeShop link in bio takes your audience from Instagram and TikTok to your website in one easy step.","location":"index.ts"}' :test='undefined' />
+
+LikeShop link in bio takes your audience from Instagram and TikTok to your website in one easy step.
+
 ## LinkedIn <Site url="linkedin.com"/>
 
 ### Jobs <Site url="linkedin.com" size="sm" />
