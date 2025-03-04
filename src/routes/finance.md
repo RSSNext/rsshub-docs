@@ -197,9 +197,9 @@ lang:
 
 ## Blockworks <Site url="blockworks.co"/>
 
-### Blockworks News <Site url="blockworks.co" size="sm" />
+### News <Site url="blockworks.co" size="sm" />
 
-<Route namespace="blockworks" :data='{"path":"/","categories":["finance"],"example":"/blockworks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blockworks.co/"],"target":"/"}],"name":"Blockworks News","maintainers":["pseudoyu"],"description":"Blockworks news with full text support.","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="blockworks" :data='{"path":"/","categories":["finance"],"example":"/blockworks","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["blockworks.co/"],"target":"/"}],"name":"News","maintainers":["pseudoyu"],"description":"Blockworks news with full text support.","location":"index.ts"}' :test='{"code":0}' />
 
 Blockworks news with full text support.
 
