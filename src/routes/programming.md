@@ -90,9 +90,9 @@ You have the option to utilize the main heading or use individual categories as 
 
 ## Anthropic <Site url="anthropic.com"/>
 
-### News <Site url="anthropic.com/news" size="sm" />
+### News <Site url="www.anthropic.com/news" size="sm" />
 
-<Route namespace="anthropic" :data='{"path":"/news","categories":["programming"],"example":"/anthropic/news","parameters":{},"radar":[{"source":["anthropic.com"]}],"name":"News","maintainers":["etShaw-zh"],"url":"anthropic.com/news","location":"news.ts"}' :test='{"code":0}' />
+<Route namespace="anthropic" :data='{"path":"/news","categories":["programming"],"example":"/anthropic/news","parameters":{},"radar":[{"source":["www.anthropic.com/news","www.anthropic.com"]}],"name":"News","maintainers":["etShaw-zh"],"url":"www.anthropic.com/news","location":"news.ts"}' :test='{"code":0}' />
 
 ## AtCoder <Site url="atcoder.jp"/>
 
