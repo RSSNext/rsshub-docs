@@ -242,9 +242,9 @@ Get latest news from CoinDesk with full text.
 
 ## Cointelegraph <Site url="cointelegraph.com"/>
 
-### Cointelegraph News <Site url="cointelegraph.com" size="sm" />
+### News <Site url="cointelegraph.com" size="sm" />
 
-<Route namespace="cointelegraph" :data='{"path":"/","categories":["finance"],"example":"/cointelegraph","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Cointelegraph News","maintainers":["pseudoyu"],"radar":[{"source":["cointelegraph.com/"],"target":"/"}],"description":"Get latest news from Cointelegraph with full text.","location":"index.ts"}' :test='{"code":0}' />
+<Route namespace="cointelegraph" :data='{"path":"/","categories":["finance"],"example":"/cointelegraph","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"News","maintainers":["pseudoyu"],"radar":[{"source":["cointelegraph.com/"],"target":"/"}],"description":"Get latest news from Cointelegraph with full text.","location":"index.ts"}' :test='{"code":0}' />
 
 Get latest news from Cointelegraph with full text.
 
