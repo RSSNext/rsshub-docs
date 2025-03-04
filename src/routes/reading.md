@@ -12,6 +12,26 @@
 
 <Route namespace="69shu" :data='{"path":"/article/:id","name":"章节","url":"www.69shuba.cx","maintainers":["eternasuno"],"example":"/69shu/article/47117","parameters":{"id":"小说 id, 可在对应小说页 URL 中找到"},"categories":["reading"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.69shuba.cx/book/:id.htm"],"target":"/article/:id"}],"location":"article.ts"}' :test='undefined' />
 
+## Asianfanfics <Site url="asianfanfics.com"/>
+
+### asianfanfics标签 <Site url="asianfanfics.com" size="sm" />
+
+<Route namespace="asianfanfics" :data='{"path":"/tag/:tag/:type","categories":["reading"],"example":"/asianfanfics/tag/milklove/N","parameters":{"tag":"标签","type":"排序类型"},"name":"asianfanfics标签","maintainers":["KazooTTT"],"radar":[{"source":["www.asianfanfics.com/browse/tag/:tag/:type"],"target":"/tag/:tag/:type"}],"description":"匹配asianfanfics标签，支持排序类型：\n- L: Latest 最近更新\n- N: Newest 最近发布\n- O: Oldest 最早发布\n- C: Completed 已完成\n- OS: One Shots 短篇\n","location":"tag.ts"}' :test='undefined' />
+
+匹配asianfanfics标签，支持排序类型：
+- L: Latest 最近更新
+- N: Newest 最近发布
+- O: Oldest 最早发布
+- C: Completed 已完成
+- OS: One Shots 短篇
+
+
+### asianfanfics关键词 <Site url="asianfanfics.com" size="sm" />
+
+<Route namespace="asianfanfics" :data='{"path":"/text-search/:keyword","categories":["reading"],"example":"/asianfanfics/text-search/milklove","parameters":{"keyword":"关键词"},"name":"asianfanfics关键词","maintainers":["KazooTTT"],"radar":[{"source":["www.asianfanfics.com/browse/text_search?q=:keyword"],"target":"/text-search/:keyword"}],"description":"匹配asianfanfics搜索关键词","location":"text-search.ts"}' :test='undefined' />
+
+匹配asianfanfics搜索关键词
+
 ## Free Computer Books <Site url="freecomputerbooks.com"/>
 
 ### Book List <Site url="freecomputerbooks.com" size="sm" />
