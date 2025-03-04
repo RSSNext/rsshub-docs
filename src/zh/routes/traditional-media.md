@@ -173,6 +173,12 @@ Get the news feed of the sport you love on ESPN.
 | 🏟️️ College Football   | ncf     | 🏈 UFL          | ufl     |
 | 🏉 Rugby              | rugby   | 🃏 Poker        | poker   |
 
+## Foreign Affairs <Site url="www.foreignaffairs.com"/>
+
+### RSS <Site url="www.foreignaffairs.com" size="sm" />
+
+<Route namespace="foreignaffairs" :data='{"path":"/rss","categories":["traditional-media"],"example":"/foreignaffairs/rss","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"RSS","maintainers":["dzx-dzx"],"location":"rss.ts"}' :test='undefined' />
+
 ## Financial Times <Site url="ft.com"/>
 
 ### myFT personal RSS <Site url="ft.com" size="sm" />

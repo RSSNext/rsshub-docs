@@ -14,9 +14,9 @@
 
 ## Asianfanfics <Site url="asianfanfics.com"/>
 
-### asianfanfics标签 <Site url="asianfanfics.com" size="sm" />
+### 标签 <Site url="asianfanfics.com" size="sm" />
 
-<Route namespace="asianfanfics" :data='{"path":"/tag/:tag/:type","categories":["reading"],"example":"/asianfanfics/tag/milklove/N","parameters":{"tag":"标签","type":"排序类型"},"name":"asianfanfics标签","maintainers":["KazooTTT"],"radar":[{"source":["www.asianfanfics.com/browse/tag/:tag/:type"],"target":"/tag/:tag/:type"}],"description":"匹配asianfanfics标签，支持排序类型：\n- L: Latest 最近更新\n- N: Newest 最近发布\n- O: Oldest 最早发布\n- C: Completed 已完成\n- OS: One Shots 短篇\n","location":"tag.ts"}' :test='undefined' />
+<Route namespace="asianfanfics" :data='{"path":"/tag/:tag/:type","categories":["reading"],"example":"/asianfanfics/tag/milklove/N","parameters":{"tag":"标签","type":"排序类型"},"name":"标签","maintainers":["KazooTTT"],"radar":[{"source":["www.asianfanfics.com/browse/tag/:tag/:type"],"target":"/tag/:tag/:type"}],"description":"匹配asianfanfics标签，支持排序类型：\n- L: Latest 最近更新\n- N: Newest 最近发布\n- O: Oldest 最早发布\n- C: Completed 已完成\n- OS: One Shots 短篇\n","location":"tag.ts"}' :test='undefined' />
 
 匹配asianfanfics标签，支持排序类型：
 - L: Latest 最近更新
@@ -26,9 +26,9 @@
 - OS: One Shots 短篇
 
 
-### asianfanfics关键词 <Site url="asianfanfics.com" size="sm" />
+### 关键词 <Site url="asianfanfics.com" size="sm" />
 
-<Route namespace="asianfanfics" :data='{"path":"/text-search/:keyword","categories":["reading"],"example":"/asianfanfics/text-search/milklove","parameters":{"keyword":"关键词"},"name":"asianfanfics关键词","maintainers":["KazooTTT"],"radar":[{"source":["www.asianfanfics.com/browse/text_search?q=:keyword"],"target":"/text-search/:keyword"}],"description":"匹配asianfanfics搜索关键词","location":"text-search.ts"}' :test='undefined' />
+<Route namespace="asianfanfics" :data='{"path":"/text-search/:keyword","categories":["reading"],"example":"/asianfanfics/text-search/milklove","parameters":{"keyword":"关键词"},"name":"关键词","maintainers":["KazooTTT"],"radar":[{"source":["www.asianfanfics.com/browse/text_search?q=:keyword"],"target":"/text-search/:keyword"}],"description":"匹配asianfanfics搜索关键词","location":"text-search.ts"}' :test='undefined' />
 
 匹配asianfanfics搜索关键词
 
