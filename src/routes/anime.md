@@ -670,6 +670,22 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 | GAME | LIVE-EVENT | ANIME | LIVESTREAM | RADIO | GOODS | COLLABO-CAMP | CD | BOOK | MEDIA | OTHER |
     
 
+## コラボカフェ <Site url="collabo-cafe.com"/>
+
+コラボカフェ - アニメ・漫画・ゲームのコラボ情報一覧まとめ
+
+### 标签 <Site url="collabo-cafe.com" size="sm" />
+
+<Route namespace="collabo-cafe" :data='{"path":"/tag/:tag","categories":["anime"],"example":"/collabo-cafe/tag/ikebukuro","parameters":{"tag":"Tag, refer to the original website (開催地域別)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"标签","maintainers":["cokemine"],"location":"tag.ts"}' :test='undefined' />
+
+### 分类 <Site url="collabo-cafe.com" size="sm" />
+
+<Route namespace="collabo-cafe" :data='{"path":"/category/:category","categories":["anime"],"example":"/collabo-cafe/category/cafe","parameters":{"category":"Category, refer to the original website (ジャンル別)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"分类","maintainers":["cokemine"],"location":"category.ts"}' :test='undefined' />
+
+### 全部文章 <Site url="collabo-cafe.com" size="sm" />
+
+<Route namespace="collabo-cafe" :data='{"path":"/","categories":["anime"],"example":"/collabo-cafe/","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"全部文章","maintainers":["cokemine"],"location":"index.ts"}' :test='undefined' />
+
 ## とらのあな <Site url="toranoana.jp"/>
 
 ### Category <Site url="toranoana.jp" size="sm" />
