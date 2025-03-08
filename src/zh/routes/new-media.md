@@ -2898,6 +2898,12 @@ Type 栏目：
 | ---- | -------- | ------ | ----- | ------- |
 | 资讯 | ebandeng | auto   | zhiku | huodong |
 
+## 龙腾网 <Site url="ltaaa.cn"/>
+
+### 网站翻译 <Site url="www.ltaaa.cn" size="sm" />
+
+<Route namespace="ltaaa" :data='{"path":"/article","name":"网站翻译","url":"www.ltaaa.cn","maintainers":["nczitzk"],"example":"/ltaaa/article","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ltaaa.cn/article"],"target":"/article"}],"view":0,"location":"article.ts"}' :test='undefined' />
+
 ## 隆众资讯 <Site url="oilchem.net"/>
 
 ### 资讯 <Site url="oilchem.net" size="sm" />
