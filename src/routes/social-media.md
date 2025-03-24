@@ -262,7 +262,7 @@ You may need to setup cookie for a less restrictive rate limit and private profi
 
 ### Lens Profile <Site url="www.lens.xyz" size="sm" />
 
-<Route namespace="lens" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/lens/profile/lens/stani","parameters":{"handle":"Lens handle"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hey.xyz/u/:handle"],"target":"/profile/:handle"}],"name":"Lens Profile","maintainers":["DIYgod"],"location":"profile.ts"}' :test='undefined' />
+<Route namespace="lens" :data='{"path":"/profile/:handle","categories":["social-media"],"example":"/lens/profile/stani","parameters":{"handle":"Lens handle"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hey.xyz/u/:handle"],"target":"/profile/:handle"}],"name":"Lens Profile","maintainers":["DIYgod"],"location":"profile.ts"}' :test='undefined' />
 
 ## LikeShop <Site url="likeshop.me"/>
 
