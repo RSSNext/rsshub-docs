@@ -128,6 +128,12 @@ Country
 
 <Route namespace="ktown4u" :data='{"path":"/artistBrandlist/:grpNo/:grpNo2?","categories":["shopping"],"example":"/ktown4u/artistBrandlist/234590/1723449","parameters":{"grpNo":"artist id (Get in url)","grpNo2":"product category id (Get in url), empty for all categories"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":[],"target":"/artistBrandlist/:grpNo/:grpNo2"}],"name":"Get the products on sale","maintainers":["JamesWDGu"],"location":"artist-brandlist.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:44:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
 
+## Mercari <Site url="jp.mercari.com"/>
+
+### 关键词 <Site url="jp.mercari.com" size="sm" />
+
+<Route namespace="mercari" :data='{"path":"/:sort/:order/:status/:keyword","categories":["shopping"],"parameters":{"sort":{"description":"排序方式","default":"default","options":[{"value":"default","label":"默认排序"},{"value":"create_time","label":"发布时间"},{"value":"score","label":"评分"},{"value":"like","label":"点赞"},{"value":"price","label":"价格"}]},"order":{"description":"排序顺序","default":"desc","options":[{"value":"desc","label":"降序"},{"value":"asc","label":"升序"}]},"status":{"description":"商品状态","default":"default","options":[{"value":"default","label":"全部"},{"value":"onsale","label":"在售"},{"value":"soldout","label":"已售"}]},"keyword":{"description":"关键词"}},"example":"/mercari/create_time/desc/default/ふもふも","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["yana9i"],"url":"jp.mercari.com","location":"keyword.ts"}' :test='undefined' />
+
 ## MyFigureCollection <Site url="myfigurecollection.net"/>
 
 ### Activity <Site url="zh.myfigurecollection.net/browse" size="sm" />
