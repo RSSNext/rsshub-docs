@@ -1602,7 +1602,11 @@ You can use `sophi=true` query parameter to invoke the **experimental** method, 
 
 ### Playlist <Site url="open.spotify.com" size="sm" />
 
-<Route namespace="spotify" :data='{"path":"/playlist/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/playlist/4UBVy1LttvodwivPUuwJk2","parameters":{"id":"Playlist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["open.spotify.com/playlist/:id"]}],"name":"Playlist","maintainers":["outloudvi"],"location":"playlist.ts"}' :test='undefined' />
+<Route namespace="spotify" :data='{"path":"/playlist/:id","categories":["multimedia","popular"],"view":4,"example":"/spotify/playlist/4UBVy1LttvodwivPUuwJk2","parameters":{"id":"Playlist ID"},"features":{"requireConfig":[{"name":"SPOTIFY_CLIENT_ID","description":""},{"name":"SPOTIFY_CLIENT_SECRET","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"::: warning\nDue to [limitations by Spotify](https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api), this endpoint is unable to access \"Algorithmic and Spotify-owned editorial playlists\".\n:::","radar":[{"source":["open.spotify.com/playlist/:id"]}],"name":"Playlist","maintainers":["outloudvi"],"location":"playlist.ts"}' :test='undefined' />
+
+::: warning
+Due to [limitations by Spotify](https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api), this endpoint is unable to access "Algorithmic and Spotify-owned editorial playlists".
+:::
 
 ### Show/Podcasts <Site url="open.spotify.com" size="sm" />
 
