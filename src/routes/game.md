@@ -277,6 +277,12 @@ Region
 | ----------------- | ------- | -------- | ------ | ------ | ------ |
 | en-US             | es-ES   | ja       | fr     | ko     | pl     |
 
+## GameKee | 游戏百科攻略 <Site url="www.gamekee.com"/>
+
+### 游戏情报 <Site url="gamekee.com/news" size="sm" />
+
+<Route namespace="gamekee" :data='{"path":"/news","categories":["game"],"example":"/gamekee/news","radar":[{"source":["gamekee.com","gamekee.com/news"],"target":"/news"}],"name":"游戏情报","maintainers":["ueiu"],"url":"gamekee.com/news","location":"news.ts"}' :test='undefined' />
+
 ## Gamer Secret <Site url="gamersecret.com"/>
 
 ### Category <Site url="gamersecret.com" size="sm" />
