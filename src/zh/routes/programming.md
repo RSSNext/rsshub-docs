@@ -747,6 +747,12 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 | ------- | ----------- | ----------- |
 | Actions | SubPrograms | ActionLists |
 
+## Raspberry Pi <Site url="raspberrypi.com"/>
+
+### Official Magazine <Site url="magazine.raspberrypi.com" size="sm" />
+
+<Route namespace="raspberrypi" :data='{"path":"/magazine","name":"Official Magazine","url":"magazine.raspberrypi.com","maintainers":["nczitzk"],"example":"/raspberrypi/magazine","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["magazine.raspberrypi.com"],"target":"/raspberrypi/magazine"}],"view":0,"location":"magazine.ts"}' :test='undefined' />
+
 ## Reactiflux <Site url="reactiflux.com"/>
 
 ### Transcripts <Site url="reactiflux.com/transcripts" size="sm" />
