@@ -236,6 +236,14 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 | :--: | :----------: |
 | news | notification |
 
+## Università di Padova <Site url="unipd.it"/>
+
+### Il Bo Live - News <Site url="ilbolive.unipd.it/it/news" size="sm" />
+
+<Route namespace="unipd" :data='{"path":"/ilbolive/news","name":"Il Bo Live - News","url":"ilbolive.unipd.it/it/news","maintainers":["Gexi0619"],"example":"/unipd/ilbolive/news","parameters":{},"description":"Il Bo Live - News","categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ilbolive.unipd.it/it/news"],"target":"/ilbolive/news"}],"location":"ilbolive/news.ts"}' :test='undefined' />
+
+Il Bo Live - News
+
 ## University of Washington <Site url="gixnetwork.org"/>
 
 ### Global Innovation Exchange News <Site url="gixnetwork.org" size="sm" />
