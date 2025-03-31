@@ -291,7 +291,7 @@ If you subscribe to [All male photo albums](https://kpopping.com/kpics/gender-ma
 
 ### Cheng Kung University Mirror <Site url="apod.nasa.govundefined" size="sm" />
 
-<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:44:18)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"}' />
+<Route namespace="nasa" :data='{"path":"/apod-ncku","categories":["picture"],"example":"/nasa/apod-ncku","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["apod.nasa.govundefined"]}],"name":"Cheng Kung University Mirror","maintainers":["nczitzk","williamgateszhao"],"url":"apod.nasa.govundefined","location":"apod-ncku.ts"}' :test='{"code":0}' />
 
 ### NASA 中文 <Site url="apod.nasa.govundefined" size="sm" />
 
