@@ -1393,6 +1393,10 @@ Language
 </details>
     
 
+### 政务服务公开 <Site url="hangzhou.gov.cn/col/col1256349/index.html" size="sm" />
+
+<Route namespace="gov" :data='{"path":"/hangzhou/zwfw","categories":["government"],"example":"/gov/hangzhou/zwfw","features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hangzhou.gov.cn/col/col1256349/index.html"]}],"name":"政务服务公开","maintainers":["flynncao"],"url":"hangzhou.gov.cn/col/col1256349/index.html","location":"hangzhou/zwfw.ts"}' :test='undefined' />
+
 ### 政策解读 <Site url="sh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/miit/zcjd","categories":["government"],"example":"/gov/miit/zcjd","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政策解读","maintainers":["Yoge-Code"],"location":"miit/zcjd.ts"}' :test='{"code":0}' />
