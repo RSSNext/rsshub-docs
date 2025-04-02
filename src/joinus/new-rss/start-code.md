@@ -55,7 +55,7 @@ Once you have created a namespace for the route, the next step is to create a ro
 For example, if you are making an RSS feed for [GitHub Repo Issues](/routes/programming#repo-issues), and assume that you want users to enter the GitHub username and repo name, if they do not enter the repo name, they will return to RSSHub. You can register your new RSS route in /lib/routes/github/issue.ts, the file needs to return an object that conforms to the Route type through route. The definition of Route is at [/lib/types.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/types.ts)
 
 - path: The route path, using [Hono routing](https://hono.dev/api/routing) syntax
-- name: The human-readable name of the route, which will be used as the title of the document
+- name: The human-readable name of the route, which will be used as the title of the document and should be **different from the name of the namespace**
 - url: The website URL without protocol that corresponds
 - maintainers: The GitHub handle of the people responsible for maintaining this route
 - example: An example URL of the route
