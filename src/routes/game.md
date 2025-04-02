@@ -706,6 +706,28 @@ Now all beatmapsets that don't provided at least one beatmap with star rating hi
 
 <Route namespace="ps" :data='{"path":"/trophy/:id","categories":["game"],"example":"/ps/trophy/DIYgod_","parameters":{"id":"User ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"PlayStation Network user trophy","maintainers":["DIYgod"],"location":"trophy.ts"}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:533:5\n    at runTest (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:1056:11)\n    at async Promise.all (index 1564)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:1191:13)\n    at runSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:1205:15)\n    at runFiles (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:1262:5)\n    at startTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:1271:3)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.1.9_@types+node@22.13.15_jsdom@26.0.0_bufferutil@4.0.9_utf-8-validate@5.0.10__msw@2.4.3_typescript@5.8.2_/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:126:11\n    at withEnv (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.1.9_@types+node@22.13.15_jsdom@26.0.0_bufferutil@4.0.9_utf-8-validate@5.0.10__msw@2.4.3_typescript@5.8.2_/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:90:5)\n    at run (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.1.9_@types+node@22.13.15_jsdom@26.0.0_bufferutil@4.0.9_utf-8-validate@5.0.10__msw@2.4.3_typescript@5.8.2_/node_modules/vitest/dist/chunks/runBaseTests.3qpJUEJM.js:112:3)\n    at runBaseTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.1.9_@types+node@22.13.15_jsdom@26.0.0_bufferutil@4.0.9_utf-8-validate@5.0.10__msw@2.4.3_typescript@5.8.2_/node_modules/vitest/dist/chunks/base.BZZh4cSm.js:29:3)\n    at ForksBaseWorker.executeTests (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.1.9_@types+node@22.13.15_jsdom@26.0.0_bufferutil@4.0.9_utf-8-validate@5.0.10__msw@2.4.3_typescript@5.8.2_/node_modules/vitest/dist/workers/forks.js:27:7)\n    at execute (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@2.1.9_@types+node@22.13.15_jsdom@26.0.0_bufferutil@4.0.9_utf-8-validate@5.0.10__msw@2.4.3_typescript@5.8.2_/node_modules/vitest/dist/worker.js:127:5)\n    at onMessage (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/tinypool@1.0.2/node_modules/tinypool/dist/entry/process.js:55:20)"}' />
 
+## PSN 中文站 <Site url="psnine.com"/>
+
+### 节点 <Site url="psnine.com" size="sm" />
+
+<Route namespace="psnine" :data='{"path":"/node/:id?/:order?","parameters":{"id":"节点 id，见下表，默认为 news","order":"排序，`date` 即最新，默认为 `obdate` 即综合排序"},"categories":["game"],"example":"/psnine/node/news","name":"节点","maintainers":["betta-cyber","nczitzk"],"radar":[{"source":["psnine.com/node/:id"]}],"location":"node.ts"}' :test='undefined' />
+
+### 首页 <Site url="psnine.com" size="sm" />
+
+<Route namespace="psnine" :data='{"path":"/","categories":["game"],"example":"/psnine","name":"首页","maintainers":["betta-cyber"],"radar":[{"source":["psnine.com"]}],"location":"index.ts"}' :test='undefined' />
+
+### 数折 <Site url="psnine.com" size="sm" />
+
+<Route namespace="psnine" :data='{"path":"/shuzhe","categories":["game"],"example":"/psnine/shuzhe","name":"数折","maintainers":["betta-cyber"],"radar":[{"source":["psnine.com/dd","psnine.com"]}],"location":"shuzhe.ts"}' :test='undefined' />
+
+### 闲游 <Site url="psnine.com" size="sm" />
+
+<Route namespace="psnine" :data='{"path":"/trade","categories":["game"],"example":"/psnine/trade","name":"闲游","maintainers":["betta-cyber"],"radar":[{"source":["psnine.com/trade","psnine.com"]}],"location":"trade.ts"}' :test='undefined' />
+
+### 游戏 <Site url="psnine.com" size="sm" />
+
+<Route namespace="psnine" :data='{"path":"/game","categories":["game"],"example":"/psnine/game","name":"游戏","maintainers":["betta-cyber"],"radar":[{"source":["psnine.com/psngame","psnine.com"]}],"location":"game.ts"}' :test='undefined' />
+
 ## SEGA <Site url="pjsekai.sega.jp"/>
 
 ### maimai DX Japanese Ver. News <Site url="info-maimai.sega.jp/" size="sm" />
