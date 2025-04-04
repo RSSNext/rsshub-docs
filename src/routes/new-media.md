@@ -510,6 +510,17 @@ CoinDesk is a news site specializing in bitcoin and digital currencies, deliveri
 
 <Route namespace="deepmind" :data='{"path":"/blog","categories":["new-media","popular"],"example":"/deepmind/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["deepmind.com/blog","deepmind.com/"]}],"name":"Blog","maintainers":["nczitzk","TonyRL"],"url":"deepmind.com/blog","location":"blog.ts"}' :test='{"code":0}' />
 
+## Diario Frutícola <Site url="diariofruticola.cl"/>
+
+### Filtro <Site url="diariofruticola.cl" size="sm" />
+
+<Route namespace="diariofruticola" :data='{"path":"/filtro/:filter{.+}","name":"Filtro","url":"diariofruticola.cl","maintainers":["nczitzk"],"example":"/diariofruticola/filtro/cerezas/71","parameters":{"filter":{"description":"Filter"}},"description":":::tip\nIf you subscribe to [Cerezas](https://www.diariofruticola.cl/filtro/cerezas/71/)，where the URL is `https://www.diariofruticola.cl/filtro/cerezas/71/`, extract the part `https://diariofruticola.cl/filtro` to the end, which is `/`, and use it as the parameter to fill in. Therefore, the route will be [`/diariofruticola/filtro/cerezas/71`](https://rsshub.app/diariofruticola/filtro/cerezas/71).\n:::\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["diariofruticola.cl/filtro/:filter"]}],"view":0,"location":"filtro.ts"}' :test='undefined' />
+
+:::tip
+If you subscribe to [Cerezas](https://www.diariofruticola.cl/filtro/cerezas/71/)，where the URL is `https://www.diariofruticola.cl/filtro/cerezas/71/`, extract the part `https://diariofruticola.cl/filtro` to the end, which is `/`, and use it as the parameter to fill in. Therefore, the route will be [`/diariofruticola/filtro/cerezas/71`](https://rsshub.app/diariofruticola/filtro/cerezas/71).
+:::
+
+
 ## Digital Camera World <Site url="digitalcameraworld.com"/>
 
 ### News <Site url="digitalcameraworld.com" size="sm" />
