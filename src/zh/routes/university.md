@@ -2601,6 +2601,45 @@ category 参数可选，范围如下:
 | ------ | ---------- | -------- | ---------- | ---------- | ------ | ------ | ------------ | -------- | ---------- | ------------------ | -------- | ------------ |
 | lib    | youth      | cie      | gs         | jcc        | jiaowu | news   | nic          | yjshy    | nxy        | cmee               | xshd     | sm           |
 
+## 西北师范大学 <Site url="www.nwnu.edu.cn"/>
+
+### 计算机科学与工程学院 <Site url="www.nwnu.edu.cn" size="sm" />
+
+<Route namespace="nwnu" :data='{"path":"/college/csse/:column","name":"计算机科学与工程学院","maintainers":["PrinOrange"],"categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"example":"/college/csse/2435","radar":[{"source":["jsj.nwnu.edu.cn/:column/list"],"target":"/college/csse/:column"}],"description":"\n| column | 标题       | 描述                                          |\n| ------ | ---------- | --------------------------------------------- |\n| 2435   | 学院新闻   | 计算机科学与工程 学院新闻                     |\n| 2436   | 通知公告   | 计算机科学与工程 通知公告                     |\n| 2437   | 学术动态   | 计算机科学与工程 学术动态                     |\n| 2446   | 研究生招生 | 计算机科学与工程学院 研究生招生动态及相关新闻 |\n| 8411   | 评估动态   | 计算机科学与工程学院 院系学科评估动态         |","location":"routes/college/csse.ts"}' :test='undefined' />
+
+
+| column | 标题       | 描述                                          |
+| ------ | ---------- | --------------------------------------------- |
+| 2435   | 学院新闻   | 计算机科学与工程 学院新闻                     |
+| 2436   | 通知公告   | 计算机科学与工程 通知公告                     |
+| 2437   | 学术动态   | 计算机科学与工程 学术动态                     |
+| 2446   | 研究生招生 | 计算机科学与工程学院 研究生招生动态及相关新闻 |
+| 8411   | 评估动态   | 计算机科学与工程学院 院系学科评估动态         |
+
+### 教务处 <Site url="www.nwnu.edu.cn" size="sm" />
+
+<Route namespace="nwnu" :data='{"path":"/department/academic-affairs/:column","name":"教务处","maintainers":["PrinOrange"],"categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportRadar":true,"supportPodcast":false,"supportScihub":false},"example":"/department/academic-affairs/tzgg","radar":[{"source":["jwc.nwnu.edu.cn/:column/list.htm"],"target":"/department/academic-affairs/:column"}],"description":"\n| column | 标题     | 描述                     |\n| ------ | -------- | ------------------------ |\n| tzgg   | 通知公告 | 西北师范大学教务通知公告 |\n| jwkx   | 教务快讯 | 西北师范大学教务快讯     |","location":"routes/department/academic-affairs.ts"}' :test='undefined' />
+
+
+| column | 标题     | 描述                     |
+| ------ | -------- | ------------------------ |
+| tzgg   | 通知公告 | 西北师范大学教务通知公告 |
+| jwkx   | 教务快讯 | 西北师范大学教务快讯     |
+
+### 研究生院 <Site url="www.nwnu.edu.cn" size="sm" />
+
+<Route namespace="nwnu" :data='{"path":"/department/postgraduate/:column","name":"研究生院","maintainers":["PrinOrange"],"categories":["university"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportRadar":true,"supportPodcast":false,"supportScihub":false},"example":"/department/postgraduate/2701","radar":[{"source":["yjsy.nwnu.edu.cn/:column/list.htm"],"target":"/department/postgraduate/:column"}],"description":"\n| column | 标题                           | 描述                                               |\n| ------ | ------------------------------ | -------------------------------------------------- |\n| 2701   | 招生工作（包括硕士、博士招生） | 研究生院招生信息（包含硕士招生和博士招生两个栏目） |\n| 2712   | 博士招生                       | 研究生院博士研究生招生信息                         |\n| 2713   | 硕士招生                       | 研究生院硕士研究生招生信息                         |\n| 2702   | 培养工作                       | 培养工作栏目信息汇总                               |\n| 2703   | 学科建设                       | 研究生院学科建设信息汇总                           |\n| 2704   | 学位工作                       | 研究生院学位工作栏目信息汇总                       |","location":"routes/department/postgraduate.ts"}' :test='undefined' />
+
+
+| column | 标题                           | 描述                                               |
+| ------ | ------------------------------ | -------------------------------------------------- |
+| 2701   | 招生工作（包括硕士、博士招生） | 研究生院招生信息（包含硕士招生和博士招生两个栏目） |
+| 2712   | 博士招生                       | 研究生院博士研究生招生信息                         |
+| 2713   | 硕士招生                       | 研究生院硕士研究生招生信息                         |
+| 2702   | 培养工作                       | 培养工作栏目信息汇总                               |
+| 2703   | 学科建设                       | 研究生院学科建设信息汇总                           |
+| 2704   | 学位工作                       | 研究生院学位工作栏目信息汇总                       |
+
 ## 西南交通大学 <Site url="www.swjtu.edu.cn"/>
 
 ### 地球科学与工程学院 <Site url="www.swjtu.edu.cn" size="sm" />
