@@ -273,7 +273,7 @@ Deepseek API 文档。
 
 ### 仓库提交 <Site url="gitcode.com" size="sm" />
 
-<Route namespace="gitcode" :data='{"path":"/commits/:owner/:repo/:branch?","categories":["programming"],"example":"/gitcode/commits-api/openharmony-sig/flutter_flutter","parameters":{"owner":"用户名/组织名","repo":"仓库名","branch":"分支名，可选，默认为主分支"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitcode.com/:owner/:repo/commits","gitcode.com/:owner/:repo/commits/:branch"]}],"name":"仓库提交","maintainers":["JiZhi-Error"],"location":"repos/commits.ts"}' :test='undefined' />
+<Route namespace="gitcode" :data='{"path":"/commits/:owner/:repo/:branch?","categories":["programming"],"example":"/gitcode/commits/openharmony-sig/flutter_flutter","parameters":{"owner":"用户名/组织名","repo":"仓库名","branch":"分支名，可选，默认为主分支"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitcode.com/:owner/:repo/commits","gitcode.com/:owner/:repo/commits/:branch"]}],"name":"仓库提交","maintainers":["JiZhi-Error"],"location":"repos/commits.ts"}' :test='undefined' />
 
 ## Gitee <Site url="gitee.com"/>
 
