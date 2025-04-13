@@ -18,10 +18,11 @@
         <Badge type="tip">🔍 Support Radar</Badge>
       </a>
     </p>
-    <p class="author">
+    <p class="author" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
       👨‍💻 Author: {{ ' ' }}
-      <a v-for="(uid, index) in data.maintainers" :key="index" :href="`https://github.com/${uid}`" target="_blank">
-        @{{ uid }}{{' '}}
+      <a v-for="(uid, index) in data.maintainers" :key="index" :href="`https://github.com/${uid}`" target="_blank" style="display: inline-flex; align-items: center; margin-right: 6px;">
+        <img :src="`https://avatars.githubusercontent.com/${uid}`" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px;" />
+        {{ uid }}{{' '}}
       </a>
     </p>
     <p v-if="demoUrl" class="example">
