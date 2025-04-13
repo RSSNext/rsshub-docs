@@ -2618,6 +2618,14 @@ Type 栏目：
 
 <Route namespace="guancha" :data='{"path":"/headline","categories":["new-media"],"example":"/guancha/headline","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["guancha.cn/GuanChaZheTouTiao","guancha.cn/"]}],"name":"头条","maintainers":["nczitzk"],"url":"guancha.cn/GuanChaZheTouTiao","location":"headline.ts"}' :test='{"code":0}' />
 
+## 广告门 <Site url="adquan.com"/>
+
+一个行业的跌宕起伏
+
+### 最新文章 <Site url="www.adquan.com" size="sm" />
+
+<Route namespace="adquan" :data='{"path":"/","name":"最新文章","url":"www.adquan.com","maintainers":["nczitzk"],"example":"/adquan","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.adquan.com"],"target":"/"}],"view":0,"location":"index.ts"}' :test='undefined' />
+
 ## 国家高端智库 / 综合开发研究院 <Site url="cdi.com.cn"/>
 
 ### 栏目 <Site url="cdi.com.cn" size="sm" />
