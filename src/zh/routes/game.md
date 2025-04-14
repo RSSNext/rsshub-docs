@@ -978,11 +978,26 @@ Tip: use proxy if necessary.
 
 <Route namespace="gcores" :data='{"path":"/news","name":"资讯","url":"www.gcores.com","maintainers":["nczitzk"],"example":"/gcores/news","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gcores.com/news"],"target":"/gcores/news"}],"view":0,"location":"news.ts"}' :test='{"code":0}' />
 
-## 库洛游戏 <Site url="www.kurogames.com"/>
+## 库洛游戏 | Kuro Games <Site url="www.kurogames.com"/>
 
 ### 鸣潮 — 游戏公告、新闻与活动 <Site url="www.kurogames.com" size="sm" />
 
-<Route namespace="kurogames" :data='{"path":"/wutheringwaves/news","categories":["game"],"example":"/kurogames/wutheringwaves/news","name":"鸣潮 — 游戏公告、新闻与活动","radar":[{"source":["mc.kurogames.com/m/main/news","mc.kurogames.com/main"]}],"maintainers":["enpitsulin"],"description":"","location":"wutheringwaves/news.ts"}' :test='{"code":0}' />
+<Route namespace="kurogames" :data='{"path":"/wutheringwaves/news/:language?","categories":["game"],"example":"/kurogames/wutheringwaves/news","parameters":{"language":"The language to use for the content. Default: `zh`."},"name":"鸣潮 — 游戏公告、新闻与活动","radar":[{"source":["mc.kurogames.com/m/main/news","mc.kurogames.com/main"]},{"title":"Wuthering Waves — Game announcements, news and events","source":["wutheringwaves.kurogames.com/en/main/news","wutheringwaves.kurogames.com/en/main"]}],"maintainers":["goestav","enpitsulin"],"description":"\nLanguage codes for the `language` parameter:\n\n| Language | Code         |\n|----------|--------------|\n| English  | en           |\n| 日本語    | jp           |\n| 한국어     | kr           |\n| 简体中文   | zh (default) |\n| 繁體中文   | zh-tw        |\n| Español  | es           |\n| Français | fr           |\n| Deutsch  | de           |\n    ","location":"wutheringwaves/news.ts"}' :test='undefined' />
+
+
+Language codes for the `language` parameter:
+
+| Language | Code         |
+|----------|--------------|
+| English  | en           |
+| 日本語    | jp           |
+| 한국어     | kr           |
+| 简体中文   | zh (default) |
+| 繁體中文   | zh-tw        |
+| Español  | es           |
+| Français | fr           |
+| Deutsch  | de           |
+    
 
 ## 旅法师营地 <Site url="www.iyingdi.com"/>
 
