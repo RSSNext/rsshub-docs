@@ -52,6 +52,8 @@ RSSHub 有一个缓存模块，该缓存在短时间后过期。您可以通过�
 
 ## API
 
+[lib/middleware/cache/index.ts](https://github.com/DIYgod/RSSHub/tree/master/lib/utils/cache)
+
 ### cache.tryGet(key, getValueFunc \[, maxAge \[, refresh ]])
 
 #### 参数
@@ -62,10 +64,6 @@ RSSHub 有一个缓存模块，该缓存在短时间后过期。您可以通过�
 | getValueFunc | `function` \| `string` | *（必填）* 当发生缓存未命中时返回要缓存的数据的函数。                                      |
 | maxAge       | `number`               | *（可选）* 缓存的最大过期时间（以秒为单位）。如果没有指定，将使用 `CACHE_CONTENT_EXPIRE`。 |
 | refresh      | `boolean`              | *（可选）* 是否在缓存命中时更新缓存过期时间。默认为 `true`。                               |
-
-#### 定义在
-
-[lib/middleware/cache/index.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/middleware/cache/index.ts#L58)
 
 :::tip
 

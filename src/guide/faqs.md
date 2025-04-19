@@ -4,6 +4,10 @@
 
 **A:** When a request is received, RSSHub fetches the corresponding data from the original site, the resulting contents will be outputted in RSS format. Caching is implemented to avoid requesting original sites for content. And of course, we throw in a little magic 🎩.
 
+**Q: How does RSSHub Radar work?**
+
+**A:** When entering a new page, RSSHub Radar first [searches](https://github.com/DIYgod/RSSHub-Radar/blob/2f63cfe6eedec8c9e116dcfde3325089e6cda371/src/lib/rss.ts#L67) for the page's built-in RSS through the page's link tags, then looks for applicable RSSHub routes for the current page and website based on remotely updated [rules](https://github.com/DIYgod/RSSHub-Radar/blob/2f63cfe6eedec8c9e116dcfde3325089e6cda371/src/lib/radar-rules.ts); and adds a little bit of magic.
+
 **Q: Can I use the demo instance？**
 
 **A:** [rsshub.app](https://rsshub.app) is the demo instance provided, running the latest build of RSSHub from master branch, the cache is set 120 minutes and it's free to use. However, if you see an badge <Badge type="danger">🚨 Strict anti-crawling</Badge> for route, this means popular websites such as Facebook etc. may pose a request quota on individual IP address, which means it can get unreliable from time to time for the demo instance. You are encouraged to [host your own RSSHub instance](/deploy/) to get a better usability.

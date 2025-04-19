@@ -1,16 +1,12 @@
 # 常见问题
 
-**Q: RSS 是什么？RSS 如何使用？可以推荐一下好用的 RSS 阅读器么？**
-
-**A:** [我有特别的 RSS 使用技巧](https://diygod.cc/ohmyrss/)
-
 **Q: RSSHub 是如何工作的？**
 
 **A:** 请求路由时，RSSHub 会按照给定规则请求源站数据，然后以 RSS 格式输出；如果在设定缓存时间内重新请求路由，则会直接返回缓存内容，不请求源站；再加一点点魔法。
 
 **Q: RSSHub Radar 是如何工作的？**
 
-**A:** 进入新页面时， RSSHub Radar 先根据页面 link 标签[寻找](https://github.com/DIYgod/RSSHub-Radar/blob/master/src/js/content/utils.ts#L25)页面自带 RSS，再根据远程更新的[规则](https://github.com/DIYgod/RSSHub/blob/master/assets/radar-rules.js)寻找适用当前页面和当前网站的 RSSHub 路由；再加一点点魔法。
+**A:** 进入新页面时， RSSHub Radar 先根据页面 link 标签[寻找](https://github.com/DIYgod/RSSHub-Radar/blob/2f63cfe6eedec8c9e116dcfde3325089e6cda371/src/lib/rss.ts#L67)页面自带 RSS，再根据远程更新的[规则](https://github.com/DIYgod/RSSHub-Radar/blob/2f63cfe6eedec8c9e116dcfde3325089e6cda371/src/lib/radar-rules.ts)寻找适用当前页面和当前网站的 RSSHub 路由；再加一点点魔法。
 
 **Q: 演示地址可以用么？**
 

@@ -50,6 +50,8 @@ Any assignments to variables that are declared outside of the `tryGet()` functio
 
 ## API
 
+[lib/middleware/cache/index.ts](https://github.com/DIYgod/RSSHub/tree/master/lib/utils/cache)
+
 ### cache.tryGet(key, getValueFunc [, maxAge [, refresh ]])
 
 #### Parameters
@@ -60,10 +62,6 @@ Any assignments to variables that are declared outside of the `tryGet()` functio
 | getValueFunc | `function` \| `string` | *(Required)* A function that returns data to be cached when a cache miss occurs.
 | maxAge | `number` | *(Optional)* The maximum age of the cache in seconds. If not specified, `CACHE_CONTENT_EXPIRE` will be used. |
 | refresh | `boolean` | *(Optional)* Whether to renew the cache expiration time when the cache is hit. `true` by default. |
-
-#### Defined in
-
-[lib/middleware/cache/index.ts](https://github.com/DIYgod/RSSHub/blob/master/lib/middleware/cache/index.ts#L58)
 
 :::tip
 
