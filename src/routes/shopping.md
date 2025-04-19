@@ -636,6 +636,12 @@ Categories:
 
 <Route namespace="showstart" :data='{"path":"/search/:type/:keyword?","categories":["shopping"],"example":"/showstart/search/live","parameters":{"keyword":"搜索关键词","type":{"description":"类别","options":[{"value":"event","label":"演出"},{"value":"artist","label":"音乐人"},{"value":"site","label":"场地"},{"value":"brand","label":"厂牌"},{"value":"city","label":"城市"},{"value":"style","label":"风格"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"演出搜索","maintainers":["lchtao26"],"location":"search.ts"}' :test='{"code":0}' />
 
+## 原價屋 <Site url="www.coolpc.com.tw"/>
+
+### 促銷&開箱 <Site url="www.coolpc.com.tw/" size="sm" />
+
+<Route namespace="coolpc" :data='{"path":"/news","categories":["shopping"],"example":"/coolpc/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.coolpc.com.tw/"]}],"name":"促銷&開箱","maintainers":["david90103"],"url":"www.coolpc.com.tw/","location":"news.ts"}' :test='undefined' />
+
 ## 中国养猪网 <Site url="zhujia.zhuwang.cc"/>
 
 ### 全国今日生猪价格 <Site url="zhujia.zhuwang.cc/" size="sm" />
