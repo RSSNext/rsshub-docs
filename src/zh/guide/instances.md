@@ -10,6 +10,12 @@
 | --- | --- | --- | --- |
 | [rsshub.app](https://rsshub.app) | 🇺🇸 | [DIYgod](https://diygod.cc) | ![](https://img.shields.io/website.svg?label=&url=https://rsshub.app/test/cache) |
 
+## Folo
+
+[Folo](https://github.com/RSSNext/Folo) 提供了许多用户共享的实例，支持一键切换和使用，但无法在外部阅读器中使用。你也可以将自己的实例分享到 Folo 中以赚取代币。
+
+![img](https://i.imgur.com/HZKrUSd.png)
+
 ## Public
 
 <InstanceList />

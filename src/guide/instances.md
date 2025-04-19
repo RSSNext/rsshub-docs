@@ -10,6 +10,12 @@ If you are willing to contribute your own instance for others to use, please edi
 | --- | --- | --- | --- |
 | [rsshub.app](https://rsshub.app) | 🇺🇸 | [DIYgod](https://diygod.cc) | ![](https://img.shields.io/website.svg?label=&url=https://rsshub.app/test/cache) |
 
+## Folo
+
+[Folo](https://github.com/RSSNext/Folo) offers numerous user-shared instances that you can switch between and use with just one click. However, these instances are not compatible with external readers. Additionally, you can share your own instances on Folo to earn tokens.
+
+![img](https://i.imgur.com/HZKrUSd.png)
+
 ## Public
 
 <InstanceList />

@@ -83,20 +83,10 @@ const instances = [{
     maintainer: 'HenryQW',
     maintainerUrl: 'https://github.com/HenryQW',
   }, {
-    url: 'https://rsshub.speednet.icu',
-    location: '🇭🇰',
-    maintainer: 'freeintweb',
-    maintainerUrl: 'https://github.com/freeintweb',
-  }, {
     url: 'https://holoxx.f5.si/',
     location: '🇯🇵',
     maintainer: 'Vania',
     maintainerUrl: 'https://note.com/vania',
-  }, {
-    url: 'https://hub.rss.direct',
-    location: '🇸🇬',
-    maintainer: 'Eric Zhu',
-    maintainerUrl: 'https://github.com/ericyzhu',
   }, {
     url: 'https://rsshub.umzzz.com',
     location: '🇭🇰',
@@ -107,11 +97,6 @@ const instances = [{
     location: '🇰🇷',
     maintainer: 'isRSS',
     maintainerUrl: 'https://isrss.com',
-  }, {
-    url: 'https://rsshub.thzu.xyz',
-    location: '🇭🇰',
-    maintainer: 'thzu',
-    maintainerUrl: 'https://thzu.xyz',
   }, {
     url: 'https://rsshub.email-once.com',
     location: '🇭🇰',

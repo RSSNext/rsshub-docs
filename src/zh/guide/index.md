@@ -80,7 +80,7 @@ RSSHub 还提供了一个 Radar 功能，用于将网站地址映射到 RSSHub �
 
 你需要借助支持此功能的浏览器插件、手机应用、RSS 阅读器等工具来使用 Radar 功能，具体使用方法请参考对应工具的文档
 
+- RSS 阅读器: [Folo](https://github.com/RSSNext/Folo)
 - 浏览器插件: [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)
 - iOS 应用: [RSSBud](https://github.com/Cay-Zhang/RSSBud)
 - Android 应用: [RSSAid](https://github.com/LeetaoGoooo/RSSAid)
-- RSS 阅读器: Coming soon

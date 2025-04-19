@@ -82,10 +82,7 @@ You can use the API of the instance to obtain the Radar rules supported by the c
 
 You need to use supported browser extensions, mobile apps, RSS readers, or other tools to use the Radar feature. Please refer to the documentation of the corresponding tool for specific usage instructions.
 
+- RSS Reader: [Folo](https://github.com/RSSNext/Folo)
 - Browser extension: [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)
-
 - iOS app: [RSSBud](https://github.com/Cay-Zhang/RSSBud)
-
 - Android app: [RSSAid](https://github.com/LeetaoGoooo/RSSAid)
-
-- RSS Reader: Coming soon
