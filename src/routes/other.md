@@ -38,6 +38,12 @@
 
 <Route namespace="acs" :data='{"path":"/journal/:id","radar":[{"source":["pubs.acs.org/journal/:id","pubs.acs.org/"]}],"name":"Unknown","maintainers":["nczitzk"],"location":"journal.ts"}' :test='undefined' />
 
+## AFL-CIO <Site url="aflcio.org"/>
+
+### Blog <Site url="aflcio.org" size="sm" />
+
+<Route namespace="aflcio" :data='{"path":"/blog","name":"Blog","url":"aflcio.org","maintainers":["nczitzk"],"example":"/aflcio/blog","categories":["other"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["aflcio.org/blog"],"target":"/blog"}],"view":0,"location":"blog.ts"}' :test='undefined' />
+
 ## AI 财经社 <Site url="www.aicaijing.com"/>
 
 ### Unknown <Site url="www.aicaijing.com" size="sm" />
