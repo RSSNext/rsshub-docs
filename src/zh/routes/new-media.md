@@ -1,5 +1,28 @@
 # 📱 新媒体
 
+## 10000万联网 <Site url="10000link.com"/>
+
+### 新闻 <Site url="info.10000link.com" size="sm" />
+
+<Route namespace="10000link" :data='{"path":"/info/:category?/:id?","name":"新闻","url":"info.10000link.com","maintainers":["nczitzk"],"example":"/10000link/info/newslists/My01","parameters":{"category":{"description":"分类，默认为 `newslists`，可在对应分类页 URL 中找到","options":[{"label":"新闻","value":"newslists"},{"label":"物流","value":"newslogistics"},{"label":"供应链金融风控","value":"newsRisk"},{"label":"区块链","value":"newsBlockChain"},{"label":"B2B","value":"newsBTwoB"},{"label":"跨境电商","value":"newsCrossborder"},{"label":"投融资","value":"newsInvestment"},{"label":"供应链管理","value":"newsManagement"},{"label":"供应链创新","value":"newsInnovation"},{"label":"数据","value":"newslists/A02"},{"label":"政策","value":"newslists/A03"},{"label":"规划","value":"newslists/A04"},{"label":"案例","value":"newslists/GL03"},{"label":"职场","value":"newslists/ZC"},{"label":"供应链票据","value":"newsBill"}]},"id":{"description":"ID，默认为空，可在对应分类页 URL 中找到"}},"description":":::tip\n若订阅 [天下大势](https://info.10000link.com/newslists.aspx?chid=My01)，网址为 `https://info.10000link.com/newslists.aspx?chid=My01`，请截取 `https://info.10000link.com/` 到末尾 `.aspx` 的部分 `newslists` 作为 `category` 参数填入，而 `My01` 作为 `id` 参数填入，此时目标路由为 [`/10000link/info/newslists/My01`](https://rsshub.app/10000link/info/newslists/My01)。\n:::\n\n| 金融科技      | 物流          | 供应链金融风控 | 区块链         | B2B       |\n| ------------- | ------------- | -------------- | -------------- | --------- |\n| newsFinancial | newslogistics | newsRisk       | newsBlockChain | newsBTwoB |\n\n| 跨境电商        | 投融资         | 供应链管理     | 供应链创新     | 数据          |\n| --------------- | -------------- | -------------- | -------------- | ------------- |\n| newsCrossborder | newsInvestment | newsManagement | newsInnovation | newslists/A02 |\n\n| 政策          | 规划          | 案例           | 职场         | 供应链票据 |\n| ------------- | ------------- | -------------- | ------------ | ---------- |\n| newslists/A03 | newslists/A04 | newslists/GL03 | newslists/ZC | newsBill   |\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["info.10000link.com/:category"]}],"view":0,"location":"info.ts"}' :test='undefined' />
+
+:::tip
+若订阅 [天下大势](https://info.10000link.com/newslists.aspx?chid=My01)，网址为 `https://info.10000link.com/newslists.aspx?chid=My01`，请截取 `https://info.10000link.com/` 到末尾 `.aspx` 的部分 `newslists` 作为 `category` 参数填入，而 `My01` 作为 `id` 参数填入，此时目标路由为 [`/10000link/info/newslists/My01`](https://rsshub.app/10000link/info/newslists/My01)。
+:::
+
+| 金融科技      | 物流          | 供应链金融风控 | 区块链         | B2B       |
+| ------------- | ------------- | -------------- | -------------- | --------- |
+| newsFinancial | newslogistics | newsRisk       | newsBlockChain | newsBTwoB |
+
+| 跨境电商        | 投融资         | 供应链管理     | 供应链创新     | 数据          |
+| --------------- | -------------- | -------------- | -------------- | ------------- |
+| newsCrossborder | newsInvestment | newsManagement | newsInnovation | newslists/A02 |
+
+| 政策          | 规划          | 案例           | 职场         | 供应链票据 |
+| ------------- | ------------- | -------------- | ------------ | ---------- |
+| newslists/A03 | newslists/A04 | newslists/GL03 | newslists/ZC | newsBill   |
+
+
 ## 199it 
 
 ### 资讯 <Site url="199it.com" size="sm" />
