@@ -720,6 +720,20 @@ JSON Path only supports format like `a.b.c`. if you need to access arrays, like 
 
 <Route namespace="metmuseum" :data='{"path":"/exhibitions/:state?","name":"Unknown","maintainers":[],"location":"exhibitions.ts"}' :test='undefined' />
 
+## Taiwan FactCheck Center <Site url="tfc-taiwan.org.tw"/>
+
+### 分類 <Site url="tfc-taiwan.org.tw/category/rumor-mill/" size="sm" />
+
+<Route namespace="tfc-taiwan" :data='{"name":"分類","maintainers":["TonyRL"],"example":"/tfc-taiwan/category/weekly-top-ten-rumors","path":"/category/:category","parameters":{"category":"分類，見下表，預設為 `weekly-top-ten-rumors`"},"url":"tfc-taiwan.org.tw/category/rumor-mill/","description":"| 謠言風向球 | 議題觀察室        | TOP10                 | 名家專欄       | 國際視野             |\n| ---------- | ----------------- | --------------------- | -------------- | -------------------- |\n| rumor-mill | issue-observatory | weekly-top-ten-rumors | expert-columns | research-and-updates |","location":"category.ts"}' :test='undefined' />
+
+| 謠言風向球 | 議題觀察室        | TOP10                 | 名家專欄       | 國際視野             |
+| ---------- | ----------------- | --------------------- | -------------- | -------------------- |
+| rumor-mill | issue-observatory | weekly-top-ten-rumors | expert-columns | research-and-updates |
+
+### 最新查核報告 <Site url="tfc-taiwan.org.tw/latest-news/" size="sm" />
+
+<Route namespace="tfc-taiwan" :data='{"name":"最新查核報告","maintainers":["TonyRL"],"example":"/tfc-taiwan","path":"/","url":"tfc-taiwan.org.tw/latest-news/","location":"index.ts"}' :test='undefined' />
+
 ## The News Lens 關鍵評論 <Site url="thenewslens.com"/>
 
 ### Unknown <Site url="thenewslens.com" size="sm" />
@@ -1424,24 +1438,6 @@ Examples:
 ### 資費公告 <Site url="www.taiwanmobile.com/cs/public/servAnn/queryList.htm?type=1" size="sm" />
 
 <Route namespace="taiwanmobile" :data='{"path":"/rate-plans","categories":["other"],"example":"/taiwanmobile/rate-plans","radar":[{"source":["taiwanmobile.com/cs/public/servAnn/queryList.htm"]}],"name":"資費公告","maintainers":["Tsuyumi25"],"url":"www.taiwanmobile.com/cs/public/servAnn/queryList.htm?type=1","location":"rate-plans.ts"}' :test='{"code":0}' />
-
-## 台灣事實查核中心 <Site url="tfc-taiwan.org.tw"/>
-
-### 專題 / 重點專區 <Site url="tfc-taiwan.org.tw/articles/report" size="sm" />
-
-<Route namespace="tfc-taiwan" :data='{"name":"專題 / 重點專區","maintainers":["TonyRL"],"example":"/tfc-taiwan/category/242","path":"/:type/:id{.+}","parameters":{"type":"分類，見下表，預設為 `report`"},"url":"tfc-taiwan.org.tw/articles/report","description":"| 專題     | 重點專區 |\n| -------- | -------- |\n| category | topic    |","location":"topic.ts"}' :test='undefined' />
-
-| 專題     | 重點專區 |
-| -------- | -------- |
-| category | topic    |
-
-### 最新相關資訊 / 最新查核報告 <Site url="tfc-taiwan.org.tw/articles/report" size="sm" />
-
-<Route namespace="tfc-taiwan" :data='{"name":"最新相關資訊 / 最新查核報告","maintainers":["TonyRL"],"example":"/tfc-taiwan","path":"/:type?","parameters":{"type":"分類，見下表，預設為 `report`"},"url":"tfc-taiwan.org.tw/articles/report","description":"| 最新相關資訊 | 最新查核報告 |\n| ------------ | ------------ |\n| info         | report       |","location":"index.ts"}' :test='undefined' />
-
-| 最新相關資訊 | 最新查核報告 |
-| ------------ | ------------ |
-| info         | report       |
 
 ## 太原师范学院 <Site url="tynu.edu.cn"/>
 
