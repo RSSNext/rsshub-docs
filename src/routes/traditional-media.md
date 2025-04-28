@@ -136,11 +136,11 @@ For the site https://www.dw.com/de/deutschland/s-12321 the language code would b
 
 ### RSS <Site url="dw.com" size="sm" />
 
-<Route namespace="dw" :data='{"path":"/rss/:channel?","categories":["traditional-media"],"example":"/dw/rss/rss-en-all","parameters":{"category":"RSS Feed Channel, see below, `rss-en-all` by default"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"requireConfig":false},"name":"RSS","maintainers":["quiniapiezoelectricity"],"description":"\nFor a full list of RSS Feed Channels in English, please refer to [DW RSS Feeds](https://corporate.dw.com/en/rss-feeds/a-68693346).\nRSS Feed Channels in other languages are also available, for example: `rss-chi-all` renders the RSS feed in Chinese and `rss-de-all` for the RSS Feed in German \n","location":"rss.ts"}' :test='{"code":0}' />
+<Route namespace="dw" :data='{"path":"/rss/:channel?","categories":["traditional-media"],"example":"/dw/rss/rss-en-all","parameters":{"category":"RSS Feed Channel, see below, `rss-en-all` by default"},"features":{"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"requireConfig":false},"name":"RSS","maintainers":["quiniapiezoelectricity"],"description":"\nFor a full list of RSS Feed Channels in English, please refer to [DW RSS Feeds](https://corporate.dw.com/en/rss-feeds/a-68693346).\nRSS Feed Channels in other languages are also available, for example: `rss-chi-all` renders the RSS feed in Chinese and `rss-de-all` for the RSS Feed in German\n","location":"rss.ts"}' :test='{"code":0}' />
 
 
 For a full list of RSS Feed Channels in English, please refer to [DW RSS Feeds](https://corporate.dw.com/en/rss-feeds/a-68693346).
-RSS Feed Channels in other languages are also available, for example: `rss-chi-all` renders the RSS feed in Chinese and `rss-de-all` for the RSS Feed in German 
+RSS Feed Channels in other languages are also available, for example: `rss-chi-all` renders the RSS feed in Chinese and `rss-de-all` for the RSS Feed in German
 
 
 ## Ekantipur / कान्तिपुर (Nepal) <Site url="ekantipur.com"/>
