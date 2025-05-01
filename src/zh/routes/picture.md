@@ -16,7 +16,7 @@ If you subscribe to [Abstract Awarded](https://1x.com/gallery/abstract/awarded),
 If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/published), you should fill in the path with the part `wildlife/published` from the page URL `https://1x.com/gallery/wildlife/published`. In this case, the route will be [`/1x/wildlife/published`](https://rsshub.app/1x/wildlife/published).
 :::
 
-## 4KHD <Site url="www.4khd.net"/>
+## 4KHD <Site url="www.4khd.com"/>
 
 4KHD - HD Beautiful Girls
 
