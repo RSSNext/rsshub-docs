@@ -177,6 +177,10 @@ NSFW WARNING!!! It contains adult content. Hanime1 provides adult anime
 
 <Route namespace="hanime1" :data='{"path":"/previews/:date?","name":"每月新番","maintainers":["kjasn"],"example":"/hanime1/previews/202504","categories":["anime"],"parameters":{"date":{"description":"日期格式为 `YYYYMM`，默认值当月"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hanime1.me/previews/:date","hanime1.me/previews"],"target":"/previews/:date"}],"location":"previews.ts"}' :test='undefined' />
 
+### 搜索结果 <Site url="hanime1.me" size="sm" />
+
+<Route namespace="hanime1" :data='{"path":"/search/:params","name":"搜索结果","maintainers":["kjasn"],"example":"/hanime1/search/tags%5B%5D=%E7%B4%94%E6%84%9B&","categories":["anime"],"parameters":{"params":{"description":"\n搜索内容:\n- 关键字(query)，即搜索框输入的内容，例如： `姐`\n- 影片类型(genre)，默认为`全部`，可选类型有：\n  - 全部\n  - 裏番\n  - 泡麵番\n  - Motion+Anime\n  - 3D動畫\n  - 同人作品\n  - MMD\n  - Cosplay\n- 标签(tags[])，具体可选标签请查看原网址，不一一列举。例如： `tags[]=純愛&tags[]=中文字幕`\n- 标签模糊匹配（broad），可选有 `on` 和`off`，默认为`off`\n- 排序(sort)，默认`最新上市`，可选排序有：\n  - 最新上市\n  - 最新上傳\n  - 本日排行\n  - 本週排行\n  - 本月排行\n  - 觀看次數\n  - 讚好比例\n  - 他們在看\n- 发布时间，年份和月份(year, month)，例如： `year=2025&month=5`，默认为`全部时间`\n\n**Tips**: 如果你不确定标签或类型的具体名字，可以直接去原网址选好筛选条件后，把网址中的参数复制过来使用。例如： `https://hanime1.me/search?query=&genre=裏番&broad=on&sort=最新上市&tags[]=純愛&tags[]=中文字幕`，`/search?`后面的部分就是参数了,最后得到类似这样的路由 `https://rsshub.app/hanime1/search/query=&genre=裏番&broad=on&sort=最新上市&tags[]=純愛&tags[]=中文字幕`\n"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"search.ts"}' :test='undefined' />
+
 ## Hpoi 手办维基 <Site url="www.hpoi.net"/>
 
 ### 角色周边 <Site url="www.hpoi.net" size="sm" />
