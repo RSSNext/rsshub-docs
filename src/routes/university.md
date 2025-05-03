@@ -2040,9 +2040,9 @@ author 列表：
 
 ### 计算机科学与技术学院通知 <Site url="www.sdu.edu.cn" size="sm" />
 
-<Route namespace="sdu" :data='{"path":"/cs/index/:type?","categories":["university"],"example":"/sdu/cs/index/announcement","parameters":{"type":"默认为 `announcement`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cs.sdu.edu.cn/","www.cs.sdu.edu.cn/xygg.htm"],"target":"/cs/index/announcement"},{"source":["www.cs.sdu.edu.cn/xsbg.htm"],"target":"/cs/index/academic"},{"source":["www.cs.sdu.edu.cn/kjjx.htm"],"target":"/cs/index/technology"},{"source":["www.cs.sdu.edu.cn/bkjy.htm"],"target":"/cs/index/undergraduate"},{"source":["www.cs.sdu.edu.cn/yjsjy.htm"],"target":"/cs/index/postgraduate"}],"name":"计算机科学与技术学院通知","maintainers":["Ji4n1ng","wiketool"],"description":"| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 | \n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |","location":"cs/index.ts"}' :test='{"code":0}' />
+<Route namespace="sdu" :data='{"path":"/cs/index/:type?","categories":["university"],"example":"/sdu/cs/index/announcement","parameters":{"type":"默认为 `announcement`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cs.sdu.edu.cn/","www.cs.sdu.edu.cn/xygg.htm"],"target":"/cs/index/announcement"},{"source":["www.cs.sdu.edu.cn/xsbg.htm"],"target":"/cs/index/academic"},{"source":["www.cs.sdu.edu.cn/kjjx.htm"],"target":"/cs/index/technology"},{"source":["www.cs.sdu.edu.cn/bkjy.htm"],"target":"/cs/index/undergraduate"},{"source":["www.cs.sdu.edu.cn/yjsjy.htm"],"target":"/cs/index/postgraduate"}],"name":"计算机科学与技术学院通知","maintainers":["Ji4n1ng","wiketool"],"description":"| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 |\n| -------- | -------- | -------- | -------- | -------- |\n| announcement | academic | technology | undergraduate | postgraduate |","location":"cs/index.ts"}' :test='{"code":0}' />
 
-| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 | 
+| 学院公告 | 学术报告 | 科技简讯 | 本科教育 | 研究生教育 |
 | -------- | -------- | -------- | -------- | -------- |
 | announcement | academic | technology | undergraduate | postgraduate |
 
