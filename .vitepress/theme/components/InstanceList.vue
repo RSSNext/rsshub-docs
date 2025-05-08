@@ -112,6 +112,11 @@ const instances = [{
     location: '🇸🇬',
     maintainer: 'Aethersailor',
     maintainerUrl: 'https://github.com/Aethersailor'
+  }, {
+    url: 'https://rsshub2.asailor.org',
+    location: '🇺🇸',
+    maintainer: 'Aethersailor',
+    maintainerUrl: 'https://github.com/Aethersailor'
   }
 ]
 
