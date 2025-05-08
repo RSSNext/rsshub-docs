@@ -537,6 +537,10 @@ Subscribe to the content of a specific user
 
 ## Huggingface <Site url="huggingface.co"/>
 
+### Community Articles <Site url="huggingface.co/blog/community" size="sm" />
+
+<Route namespace="huggingface" :data='{"path":"/blog-community/:sort?","categories":["programming"],"example":"/huggingface/blog-community","parameters":{"sort":{"description":"Sort by trending or recent","default":"trending","options":[{"value":"trending","label":"Trending"},{"value":"recent","label":"Recent"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/blog/community","huggingface.co/"]}],"name":"Community Articles","maintainers":["yuguorui"],"url":"huggingface.co/blog/community","location":"blog-community.ts"}' :test='undefined' />
+
 ### Daily Papers <Site url="huggingface.co/papers" size="sm" />
 
 <Route namespace="huggingface" :data='{"path":"/daily-papers","categories":["programming"],"example":"/huggingface/daily-papers","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["huggingface.co/papers","huggingface.co/"]}],"name":"Daily Papers","maintainers":["zeyugao"],"url":"huggingface.co/papers","location":"daily-papers.ts"}' :test='{"code":0}' />
