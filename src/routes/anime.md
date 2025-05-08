@@ -667,6 +667,12 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 | -------- | ---- | ------ |
 | all      | news | column |
 
+## 再漫画 <Site url="manhua.zaimanhua.com"/>
+
+### 最近更新 <Site url="manhua.zaimanhua.com" size="sm" />
+
+<Route namespace="zaimanhua" :data='{"path":"/update","categories":["anime"],"example":"/zaimanhua/update","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["manhua.zaimanhua.com/update"],"target":"/update"}],"name":"最近更新","maintainers":["kjasn"],"location":"update.ts"}' :test='undefined' />
+
 ## アニメ新番組 <Site url="bangumi.online"/>
 
 ### 當季新番 <Site url="bangumi.online/" size="sm" />
