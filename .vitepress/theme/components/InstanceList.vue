@@ -112,6 +112,11 @@ const instances = [{
     location: '🇸🇬',
     maintainer: 'Aethersailor',
     maintainerUrl: 'https://github.com/Aethersailor'
+  }, {
+    url: 'https://rss.4040940.xyz',
+    location: 'DE',
+    maintainer: 'TingyuShare',
+    maintainerUrl: 'https://github.com/TingyuShare'
   }
 ]
 
