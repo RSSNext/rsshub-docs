@@ -113,12 +113,19 @@ const instances = [{
     maintainer: 'Aethersailor',
     maintainerUrl: 'https://github.com/Aethersailor'
   }, {
+    url: 'https://rsshub2.asailor.org',
+    location: '🇺🇸',
+    maintainer: 'Aethersailor',
+    maintainerUrl: 'https://github.com/Aethersailor'
+  }, {
     url: 'https://rss.4040940.xyz',
-    location: 'DE',
+    location: '🇩🇪',
     maintainer: 'TingyuShare',
-    maintainerUrl: 'https://github.com/TingyuShare'
+    maintainerUrl: 'https://github.com/TingyuShare',
   }
 ]
+
+// You can copy the location country flag from https://emojipedia.org/flags
 
 const getHost = (url: string) => new URL(url).host
 </script>
