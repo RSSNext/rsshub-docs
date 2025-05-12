@@ -669,6 +669,10 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ## 再漫画 <Site url="manhua.zaimanhua.com"/>
 
+### 漫画更新 <Site url="manhua.zaimanhua.com" size="sm" />
+
+<Route namespace="zaimanhua" :data='{"path":"/comic/:id","categories":["anime"],"parameters":{"id":"漫画ID"},"example":"/zaimanhua/comic/14488","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["manhua.zaimanhua.com/details","manhua.zaimanhua.com/details/:id"],"target":"/comic/:id"}],"name":"漫画更新","maintainers":["kjasn"],"location":"comic.ts"}' :test='undefined' />
+
 ### 最近更新 <Site url="manhua.zaimanhua.com" size="sm" />
 
 <Route namespace="zaimanhua" :data='{"path":"/update","categories":["anime"],"example":"/zaimanhua/update","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["manhua.zaimanhua.com/update"],"target":"/update"}],"name":"最近更新","maintainers":["kjasn"],"location":"update.ts"}' :test='{"code":0}' />
