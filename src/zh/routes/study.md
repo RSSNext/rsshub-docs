@@ -12,6 +12,20 @@
 | past       |
 | both       |
 
+## BBC <Site url="bbc.com"/>
+
+### Learning English <Site url="bbc.com" size="sm" />
+
+<Route namespace="bbc" :data='{"name":"Learning English","maintainers":["Blank0120"],"categories":["study"],"path":"/learningenglish/:channel?","example":"/bbc/learningenglish/take-away-english","parameters":{"channel":"channel, default to `take-away-english`"},"description":"| 随身英语 | 地道英语 | 媒体英语 | 英语大破解 | 一分钟英语 |\n| -------- | -------- | -------- | -------- | -------- |\n| take-away-english | authentic-real-english | media-english | lingohack | english-in-a-minute |\n\n| 短语动词 | 今日短语 | 你问我答 | 白领英语 | 亲子英语故事 |\n| -------- | -------- | -------- | -------- | -------- |\n| phrasal-verbs | todays-phrase | q-and-a | english-at-work | storytellers |","location":"learningenglish.ts"}' :test='undefined' />
+
+| 随身英语 | 地道英语 | 媒体英语 | 英语大破解 | 一分钟英语 |
+| -------- | -------- | -------- | -------- | -------- |
+| take-away-english | authentic-real-english | media-english | lingohack | english-in-a-minute |
+
+| 短语动词 | 今日短语 | 你问我答 | 白领英语 | 亲子英语故事 |
+| -------- | -------- | -------- | -------- | -------- |
+| phrasal-verbs | todays-phrase | q-and-a | english-at-work | storytellers |
+
 ## Chinese Social Science Net <Site url="iolaw.cssn.cn"/>
 
 ### Institute of Law <Site url="iolaw.cssn.cn" size="sm" />
