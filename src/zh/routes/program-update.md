@@ -129,6 +129,79 @@ If you subscribe to [TOP for the last 6 months (Only new) - Xiaomi Smart Band 9]
   The parameters can be extracted from the Release page URL: `https://install.appcenter.ms/users/:user/apps/:app/distribution_groups/:distribution_group`
 :::
 
+## AppSales <Site url="app-sales.net"/>
+
+Most recent discounted and temporarily free Android apps and games on Google Play
+
+### Category <Site url="app-sales.net" size="sm" />
+
+<Route namespace="app-sales" :data='{"path":"/:category?/:country?","name":"Category","url":"app-sales.net","maintainers":["nczitzk"],"example":"/app-sales/highlights","parameters":{"category":{"description":"Category, `highlights` as Highlights by default","options":[{"label":"Highlights","value":"highlights"},{"label":"Active Sales","value":"activesales"},{"label":"Now Free","value":"nowfree"}]},"country":{"description":"Country ID, `us` as United States by default","options":[{"label":"United States","value":"us"},{"label":"Austria","value":"at"},{"label":"Australia","value":"au"},{"label":"Brazil","value":"br"},{"label":"Canada","value":"ca"},{"label":"France","value":"fr"},{"label":"Germany","value":"de"},{"label":"India","value":"in"},{"label":"Italy","value":"it"},{"label":"Netherlands","value":"nl"},{"label":"Poland","value":"pl"},{"label":"Russia","value":"ru"},{"label":"Spain","value":"es"},{"label":"Sweden","value":"se"},{"label":"Great Britain","value":"gb"}]}},"description":":::tip\nTo subscribe to [Highlights](https://www.app-sales.net/highlights/), where the source URL is `https://www.app-sales.net/highlights/`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/app-sales/highlights`](https://rsshub.app/app-sales/highlights).\n:::\n\n| Highlights | Active Sales | Now Free |\n| ---------- | ------------ | -------- |\n| highlights | activesales  | nowfree  |\n\n<details>\n  <summary>More countries</summary>\n\n| Currency | Country       | ID  |\n| -------- | ------------- | --- |\n| USD      | United States | us  |\n| EUR      | Austria       | at  |\n| AUD      | Australia     | au  |\n| BRL      | Brazil        | br  |\n| CAD      | Canada        | ca  |\n| EUR      | France        | fr  |\n| EUR      | Germany       | de  |\n| INR      | India         | in  |\n| EUR      | Italy         | it  |\n| EUR      | Netherlands   | nl  |\n| PLN      | Poland        | pl  |\n| RUB      | Russia        | ru  |\n| EUR      | Spain         | es  |\n| SEK      | Sweden        | se  |\n| GBP      | Great Britain | gb  |\n\n</details>\n","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["app-sales.net/:category"]},{"title":"Highlights","source":["app-sales.net/highlights"],"target":"/highlights"},{"title":"Active Sales","source":["app-sales.net/activesales"],"target":"/activesales"},{"title":"Now Free","source":["app-sales.net/nowfree"],"target":"/nowfree"}],"view":0,"location":"index.ts"}' :test='undefined' />
+
+:::tip
+To subscribe to [Highlights](https://www.app-sales.net/highlights/), where the source URL is `https://www.app-sales.net/highlights/`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/app-sales/highlights`](https://rsshub.app/app-sales/highlights).
+:::
+
+| Highlights | Active Sales | Now Free |
+| ---------- | ------------ | -------- |
+| highlights | activesales  | nowfree  |
+
+<details>
+  <summary>More countries</summary>
+
+| Currency | Country       | ID  |
+| -------- | ------------- | --- |
+| USD      | United States | us  |
+| EUR      | Austria       | at  |
+| AUD      | Australia     | au  |
+| BRL      | Brazil        | br  |
+| CAD      | Canada        | ca  |
+| EUR      | France        | fr  |
+| EUR      | Germany       | de  |
+| INR      | India         | in  |
+| EUR      | Italy         | it  |
+| EUR      | Netherlands   | nl  |
+| PLN      | Poland        | pl  |
+| RUB      | Russia        | ru  |
+| EUR      | Spain         | es  |
+| SEK      | Sweden        | se  |
+| GBP      | Great Britain | gb  |
+
+</details>
+
+
+### Watchlist Charts <Site url="app-sales.net" size="sm" />
+
+<Route namespace="app-sales" :data='{"path":"/mostwanted/:time?/:country?","name":"Watchlist Charts","url":"app-sales.net","maintainers":["nczitzk"],"example":"/app-sales/mostwanted","parameters":{"time":{"description":"Time, `24h` as Last 24h by default","options":[{"label":"Last 24h","value":"24h"},{"label":"Last Week","value":"week"},{"label":"All Time","value":"alltime"}]},"country":{"description":"Country ID, `us` as United States by default","options":[{"label":"United States","value":"us"},{"label":"Austria","value":"at"},{"label":"Australia","value":"au"},{"label":"Brazil","value":"br"},{"label":"Canada","value":"ca"},{"label":"France","value":"fr"},{"label":"Germany","value":"de"},{"label":"India","value":"in"},{"label":"Italy","value":"it"},{"label":"Netherlands","value":"nl"},{"label":"Poland","value":"pl"},{"label":"Russia","value":"ru"},{"label":"Spain","value":"es"},{"label":"Sweden","value":"se"},{"label":"Great Britain","value":"gb"}]}},"description":"\n| Last 24h | Last Week | All Time |\n| -------- | --------- | -------- |\n| 24h      | week      | alltime  |\n\n<details>\n  <summary>More countries</summary>\n\n| Currency | Country       | ID  |\n| -------- | ------------- | --- |\n| USD      | United States | us  |\n| EUR      | Austria       | at  |\n| AUD      | Australia     | au  |\n| BRL      | Brazil        | br  |\n| CAD      | Canada        | ca  |\n| EUR      | France        | fr  |\n| EUR      | Germany       | de  |\n| INR      | India         | in  |\n| EUR      | Italy         | it  |\n| EUR      | Netherlands   | nl  |\n| PLN      | Poland        | pl  |\n| RUB      | Russia        | ru  |\n| EUR      | Spain         | es  |\n| SEK      | Sweden        | se  |\n| GBP      | Great Britain | gb  |\n\n</details>\n","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["app-sales.net/mostwanted"],"target":"/mostwanted"},{"title":"Watchlist Charts - Last 24h","source":["app-sales.net/mostwanted"],"target":"/mostwanted/24h"},{"title":"Watchlist Charts - Last Week","source":["app-sales.net/mostwanted"],"target":"/mostwanted/week"},{"title":"Watchlist Charts - All Time","source":["app-sales.net/mostwanted"],"target":"/mostwanted/alltime"}],"view":0,"location":"mostwanted.ts"}' :test='undefined' />
+
+
+| Last 24h | Last Week | All Time |
+| -------- | --------- | -------- |
+| 24h      | week      | alltime  |
+
+<details>
+  <summary>More countries</summary>
+
+| Currency | Country       | ID  |
+| -------- | ------------- | --- |
+| USD      | United States | us  |
+| EUR      | Austria       | at  |
+| AUD      | Australia     | au  |
+| BRL      | Brazil        | br  |
+| CAD      | Canada        | ca  |
+| EUR      | France        | fr  |
+| EUR      | Germany       | de  |
+| INR      | India         | in  |
+| EUR      | Italy         | it  |
+| EUR      | Netherlands   | nl  |
+| PLN      | Poland        | pl  |
+| RUB      | Russia        | ru  |
+| EUR      | Spain         | es  |
+| SEK      | Sweden        | se  |
+| GBP      | Great Britain | gb  |
+
+</details>
+
+
 ## Apple <Site url="apps.apple.com"/>
 
 ### App Update <Site url="apps.apple.com" size="sm" />
