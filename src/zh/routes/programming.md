@@ -862,6 +862,12 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 | :----: | :--: | :-------------: | :----: |
 | events | news | research_papers | videos |
 
+## TailwindCSS <Site url="tailwindcss.com"/>
+
+### Blog <Site url="tailwindcss.com" size="sm" />
+
+<Route namespace="tailwindcss" :data='{"path":"/blog","categories":["programming"],"example":"/tailwindcss/blog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Blog","maintainers":["goestav"],"location":"blog.ts"}' :test='undefined' />
+
 ## ThoughtWorks <Site url="www.thoughtworks.com/zh-cn/insights/blog"/>
 
 ### Inside Blog <Site url="www.thoughtworks.com/zh-cn/insights/blog" size="sm" />
