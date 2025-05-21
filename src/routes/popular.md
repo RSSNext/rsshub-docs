@@ -408,7 +408,7 @@ Example:
 
 ### 每周速报 <Site url="www.cngal.org/" size="sm" />
 
-<Route namespace="cngal" :data='{"path":"/weekly","categories":["anime","popular"],"view":0,"example":"/cngal/weekly","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/","www.cngal.org/weeklynews"]}],"name":"每周速报","maintainers":["chengyuhui"],"url":"www.cngal.org/","location":"weekly.ts"}' :test='{"code":0}' />
+<Route namespace="cngal" :data='{"path":"/weekly","categories":["anime","popular"],"view":0,"example":"/cngal/weekly","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cngal.org/","www.cngal.org/weeklynews"]}],"name":"每周速报","maintainers":["kmod-midori"],"url":"www.cngal.org/","location":"weekly.ts"}' :test='{"code":0}' />
 
 ## DCFever <Site url="dcfever.com"/>
 
