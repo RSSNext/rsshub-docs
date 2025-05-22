@@ -213,6 +213,15 @@ To subscribe to [Highlights](https://www.app-sales.net/highlights/), where the s
   For example, the URL of [GarageBand](https://apps.apple.com/us/app/messages/id408709785) in the App Store is `https://apps.apple.com/us/app/messages/id408709785`. In this case, the `App Store Country` parameter for the route is `us`, and the `App id` parameter is `id1146560473`. So the route should be [`/apple/apps/update/us/id408709785`](https://rsshub.app/apple/apps/update/us/id408709785).
 :::
 
+### Security releases <Site url="support.apple.com" size="sm" />
+
+<Route namespace="apple" :data='{"path":"/security-releases/:language?","name":"Security releases","url":"support.apple.com","maintainers":["nczitzk"],"example":"/apple/security-releases","parameters":{"language":{"description":"Language, `en-us` by default"}},"description":":::tip\nTo subscribe to [Apple security releases](https://support.apple.com/en-us/100100), where the source URL is `https://support.apple.com/en-us/100100`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/apple/security-releases/en-us`](https://rsshub.app/apple/security-releases/en-us).\n:::\n","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["support.apple.com/:language/100100"]}],"view":0,"zh":{"path":"/security-releases/:language?","name":"安全性发布","url":"support.apple.com","maintainers":["nczitzk"],"example":"/apple/security-releases","parameters":{"language":{"description":"语言，默认为 `en-us`，可在对应页 URL 中找到"}},"description":":::tip\n若订阅 [Apple 安全性发布](https://support.apple.com/zh-cn/100100)，网址为 `https://support.apple.com/zh-cn/100100`，请截取 `https://support.apple.com/` 到末尾 `/100100` 的部分 `zh-cn` 作为 `language` 参数填入，此时目标路由为 [`/apple/security-releases/zh-cn`](https://rsshub.app/apple/security-releases/zh-cn)。\n:::\n"},"location":"security-releases.ts"}' :test='undefined' />
+
+:::tip
+To subscribe to [Apple security releases](https://support.apple.com/en-us/100100), where the source URL is `https://support.apple.com/en-us/100100`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/apple/security-releases/en-us`](https://rsshub.app/apple/security-releases/en-us).
+:::
+
+
 ## AppStare <Site url="appstare.net"/>
 
 ### Comments <Site url="appstare.net/" size="sm" />
