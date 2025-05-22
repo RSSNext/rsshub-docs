@@ -880,6 +880,14 @@ OpenAI Cookbook 提供了大量使用 OpenAI API 的实用指南和示例代码,
 
 <Route namespace="transformer-circuits" :data='{"path":"/","categories":["programming"],"example":"/transformer-circuits","parameters":{},"radar":[{"source":["transformer-circuits.pub/"],"target":"/"}],"name":"Articles","maintainers":["shinmohuang"],"location":"index.ts"}' :test='undefined' />
 
+## Visual Studio <Site url="visualstudio.com"/>
+
+### Code Blog <Site url="code.visualstudio.com" size="sm" />
+
+<Route namespace="visualstudio" :data='{"path":"/code/blog","categories":["programming"],"example":"/visualstudio/code/blog","url":"code.visualstudio.com","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["code.visualstudio.com/"],"target":"/code/blog"}],"name":"Code Blog","maintainers":["cscnk52"],"description":"Provides a better reading experience (full articles) over the official ones.","view":5,"location":"code-blog.ts"}' :test='undefined' />
+
+Provides a better reading experience (full articles) over the official ones.
+
 ## Warp <Site url="warp.dev"/>
 
 ### Blog <Site url="warp.dev" size="sm" />
