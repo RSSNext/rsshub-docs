@@ -914,6 +914,14 @@ Provides a better reading experience (full articles) over the official ones.
     The `seriesName` can be extracted from the Series page URL: `https://web.dev/series/:seriesName`
 :::
 
+## Zed <Site url="zed.dev"/>
+
+### Blog <Site url="zed.dev" size="sm" />
+
+<Route namespace="zed" :data='{"path":"/blog","categories":["programming"],"example":"/zed/blog","url":"zed.dev","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["zed.dev"],"target":"/blog"}],"name":"Blog","maintainers":["cscnk52"],"description":"Provides a better reading experience (full articles) over the official ones.","view":5,"location":"blog.ts"}' :test='undefined' />
+
+Provides a better reading experience (full articles) over the official ones.
+
 ## 阿里云 <Site url="developer.aliyun.com"/>
 
 ### 公告 <Site url="developer.aliyun.com" size="sm" />
