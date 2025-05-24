@@ -768,6 +768,48 @@ Language Parameter:
 
 The Latest reviews from a Steam Curator.
 
+### News <Site url="steamcommunity.com" size="sm" />
+
+<Route namespace="steam" :data='{"path":"/news/:appid/:language?","name":"News","url":"steamcommunity.com","maintainers":["keocheung"],"example":"/news/958260/english","parameters":{"appid":"Game App ID, all digits, can be found in the URL","language":"Language, english by default, see below for more languages"},"description":"\n<details>\n<summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n</details>\n    ","categories":["game"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"title":"News","source":["steamcommunity.com/app/:appid","steamcommunity.com/app/:appid/allnews","steamcommunity.com/app/:appid/announcements","steamcommunity.com/app/:appid/news"],"target":"/news/:appid"}],"location":"news.ts"}' :test='undefined' />
+
+
+<details>
+<summary>More languages</summary>
+
+| 语言代码                                          | 语言名称   |
+| ------------------------------------------------- | ---------- |
+| English                                           | english    |
+| Español - España (Spanish - Spain)                | spanish    |
+| Français (French)                                 | french     |
+| Italiano (Italian)                                | italian    |
+| Deutsch (German)                                  | german     |
+| Ελληνικά (Greek)                                  | greek      |
+| 한국어 (Korean)                                   | koreana    |
+| 简体中文 (Simplified Chinese)                     | schinese   |
+| 繁體中文 (Traditional Chinese)                    | tchinese   |
+| Русский (Russian)                                 | russian    |
+| ไทย (Thai)                                        | thai       |
+| 日本語 (Japanese)                                 | japanese   |
+| Português (Portuguese)                            | portuguese |
+| Português - Brasil (Portuguese - Brazil)          | brazilian  |
+| Polski (Polish)                                   | polish     |
+| Dansk (Danish)                                    | danish     |
+| Nederlands (Dutch)                                | dutch      |
+| Suomi (Finnish)                                   | finnish    |
+| Norsk (Norwegian)                                 | norwegian  |
+| Svenska (Swedish)                                 | swedish    |
+| Čeština (Czech)                                   | czech      |
+| Magyar (Hungarian)                                | hungarian  |
+| Română (Romanian)                                 | romanian   |
+| Български (Bulgarian)                             | bulgarian  |
+| Türkçe (Turkish)                                  | turkish    |
+| Українська (Ukrainian)                            | ukrainian  |
+| Tiếng Việt (Vietnamese)                           | vietnamese |
+| Español - Latinoamérica (Spanish - Latin America) | latam      |
+
+</details>
+    
+
 ### Steam Community Hub Feeds <Site url="store.steampowered.com" size="sm" />
 
 <Route namespace="steam" :data='{"path":"/appcommunityfeed/:appid/:routeParams?","categories":["game"],"example":"/steam/appcommunityfeed/730","parameters":{"appid":"Steam appid, can be found on the community hub page or store page URL.","routeParams":"Query parameters."},"radar":[{"title":"Community Hub","source":["steamcommunity.com/app/:appid"],"target":"/appcommunityfeed/:appid"},{"title":"Community Hub","source":["store.steampowered.com/app/:appid/*/"],"target":"/appcommunityfeed/:appid"}],"description":"Query Parameters:\n\n| Name                   | Type   | Description             |\n| ---------------------- | ------ | ----------------------- |\n| p                      | string | p                       |\n| rgSections[]           | string | rgSections              |\n| filterLanguage         | string | Filter Language         |\n| languageTag            | string | Language Tag            |\n| nMaxInappropriateScore | string | Max Inappropriate Score |\n\nExample:\n- `/appcommunityfeed/730/p=1&rgSections[]=2&rgSections[]=4&filterLanguage=english&languageTag=english&nMaxInappropriateScore=1` for CS2 Screenshot and Artwork contents.\n- `/appcommunityfeed/730/rgSections[]=6` for CS2 Workshop contents only.\n- `/appcommunityfeed/570/rgSections[]=3&rgSections[]=9` for Dota2 Video and Guides contents.\n\n::: tip\nIt can also access community hub contents that require a logged-in account.\n:::\n","name":"Steam Community Hub Feeds","maintainers":["NyaaaDoge"],"location":"appcommunityfeed.ts"}' :test='{"code":0}' />
