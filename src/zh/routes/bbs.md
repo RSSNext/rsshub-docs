@@ -697,6 +697,30 @@ If you opt to enable `fulltext` feature, consider adding `limit` parameter to yo
 
 <Route namespace="1point3acres" :data='{"path":"/user/:id/threads","categories":["bbs"],"example":"/1point3acres/user/1/threads","parameters":{"id":"用户 id，可在 Instant 版网站的个人主页 URL 找到"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["instant.1point3acres.com/profile/:id","instant.1point3acres.com/"]}],"name":"用户主题帖","maintainers":["Maecenas"],"location":"user/thread.ts"}' :test='undefined' />
 
+## 猿料 <Site url="yuanliao.info"/>
+
+uTools 官方社区
+
+### 主题 <Site url="yuanliao.info" size="sm" />
+
+<Route namespace="yuanliao" :data='{"path":"/:tag?","name":"主题","url":"yuanliao.info","maintainers":["nczitzk"],"example":"/yuanliao","parameters":{"tag":{"description":"标签，默认为全部，可在对应标签页 URL 中找到","options":[{"label":"问题反馈","value":"bug-report"},{"label":"Windows","value":"windows"},{"label":"macOS","value":"macos"},{"label":"Linux","value":"linux"},{"label":"意见建议","value":"suggestions"},{"label":"插件发布","value":"plugins"},{"label":"插件需求","value":"plugin-needs"},{"label":"开发者","value":"developers"}]}},"description":":::tip\n订阅 [问题反馈](https://yuanliao.info/t/bug-report)，其源网址为 `https://yuanliao.info/t/bug-report`，请参考该 URL 指定部分构成参数，此时路由为 [`/yuanliao/bug-report`](https://rsshub.app/yuanliao/bug-report)。\n:::\n\n| 标签                                             | id                                                       |\n| ------------------------------------------------ | -------------------------------------------------------- |\n| [问题反馈](https://yuanliao.info/t/bug-report)   | [bug-report](https://rsshub.app/yuanliao/bug-report)     |\n| [Windows](https://yuanliao.info/t/windows)       | [windows](https://rsshub.app/yuanliao/windows)           |\n| [macOS](https://yuanliao.info/t/macos)           | [macos](https://rsshub.app/yuanliao/macos)               |\n| [Linux](https://yuanliao.info/t/linux)           | [linux](https://rsshub.app/yuanliao/linux)               |\n| [意见建议](https://yuanliao.info/t/suggestions)  | [suggestions](https://rsshub.app/yuanliao/suggestions)   |\n| [插件发布](https://yuanliao.info/t/plugins)      | [plugins](https://rsshub.app/yuanliao/plugins)           |\n| [插件需求](https://yuanliao.info/t/plugin-needs) | [plugin-needs](https://rsshub.app/yuanliao/plugin-needs) |\n| [开发者](https://yuanliao.info/t/developers)     | [developers](https://rsshub.app/yuanliao/developers)     |\n","categories":["bbs"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yuanliao.info","yuanliao.info/t/:tag"]},{"title":"问题反馈","source":["yuanliao.info/t/bug-report"],"target":"/bug-report"},{"title":"Windows","source":["yuanliao.info/t/windows"],"target":"/windows"},{"title":"macOS","source":["yuanliao.info/t/macos"],"target":"/macos"},{"title":"Linux","source":["yuanliao.info/t/linux"],"target":"/linux"},{"title":"意见建议","source":["yuanliao.info/t/suggestions"],"target":"/suggestions"},{"title":"插件发布","source":["yuanliao.info/t/plugins"],"target":"/plugins"},{"title":"插件需求","source":["yuanliao.info/t/plugin-needs"],"target":"/plugin-needs"},{"title":"开发者","source":["yuanliao.info/t/developers"],"target":"/developers"}],"view":0,"location":"index.ts"}' :test='undefined' />
+
+:::tip
+订阅 [问题反馈](https://yuanliao.info/t/bug-report)，其源网址为 `https://yuanliao.info/t/bug-report`，请参考该 URL 指定部分构成参数，此时路由为 [`/yuanliao/bug-report`](https://rsshub.app/yuanliao/bug-report)。
+:::
+
+| 标签                                             | id                                                       |
+| ------------------------------------------------ | -------------------------------------------------------- |
+| [问题反馈](https://yuanliao.info/t/bug-report)   | [bug-report](https://rsshub.app/yuanliao/bug-report)     |
+| [Windows](https://yuanliao.info/t/windows)       | [windows](https://rsshub.app/yuanliao/windows)           |
+| [macOS](https://yuanliao.info/t/macos)           | [macos](https://rsshub.app/yuanliao/macos)               |
+| [Linux](https://yuanliao.info/t/linux)           | [linux](https://rsshub.app/yuanliao/linux)               |
+| [意见建议](https://yuanliao.info/t/suggestions)  | [suggestions](https://rsshub.app/yuanliao/suggestions)   |
+| [插件发布](https://yuanliao.info/t/plugins)      | [plugins](https://rsshub.app/yuanliao/plugins)           |
+| [插件需求](https://yuanliao.info/t/plugin-needs) | [plugin-needs](https://rsshub.app/yuanliao/plugin-needs) |
+| [开发者](https://yuanliao.info/t/developers)     | [developers](https://rsshub.app/yuanliao/developers)     |
+
+
 ## 直播吧 <Site url="zhibo8.cc"/>
 
 ### Unknown <Site url="zhibo8.cc" size="sm" />
