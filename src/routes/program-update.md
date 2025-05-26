@@ -705,6 +705,12 @@ Compose papers faster: Focus on your text and let Typst take care of layout and 
 | ------- | --------- | ---------- | ------ | ---------------- |
 | android | iphone    | ipad       | win    | android_tv_yst |
 
+## 联想 <Site url="lenovo.com.cn"/>
+
+### 驱动 <Site url="lenovo.com.cn" size="sm" />
+
+<Route namespace="lenovo" :data='{"path":"/drive/:selName","categories":["program-update"],"example":"/lenovo/drive/PF3WRD2G","parameters":{"selName":"产品序列号"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["lenovo.com.cn"],"target":"/drive/:selName"}],"name":"驱动","maintainers":["cscnk52"],"location":"drive.ts"}' :test='undefined' />
+
 ## 腾讯 <Site url="tencent.com"/>
 
 ### 更新日志 <Site url="tencent.com" size="sm" />
