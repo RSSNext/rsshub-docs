@@ -239,7 +239,7 @@ NSFW WARNING!!! It contains adult content. Hanime1 provides adult anime
 
 ### Posts <Site url="kemono.su" size="sm" />
 
-<Route namespace="kemono" :data='{"path":"/:source?/:id?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/:source/user/:id","kemono.su/"]}],"name":"Posts","maintainers":["nczitzk"],"description":"Sources\n\n| Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n| ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n| posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n::: tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n:::","location":"index.ts"}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:44:18)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"}' />
+<Route namespace="kemono" :data='{"path":"/:source?/:id?/:type?","categories":["anime"],"example":"/kemono","parameters":{"source":"Source, see below, Posts by default","id":"User id, can be found in URL","type":"Content type: announcements or fancards"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kemono.su/"],"target":"/kemono"},{"source":["kemono.su/:source/user/:id"],"target":"/kemono/:source/:id"},{"source":["kemono.su/:source/user/:id/announcements"],"target":"/kemono/:source/:id/announcements"},{"source":["kemono.su/:source/user/:id/fancards"],"target":"/kemono/:source/:id/fancards"}],"name":"Posts","maintainers":["nczitzk","AiraNadih"],"description":"Sources\n\n| Posts | Patreon | Pixiv Fanbox | Gumroad | SubscribeStar | DLsite | Discord | Fantia |\n| ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |\n| posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |\n\n::: tip\n  When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.\n  There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.\n  \n  Support for announcements and fancards:\n  - Use `/:source/:id/announcements` to get announcements\n  - Use `/:source/:id/fancards` to get fancards\n:::","location":"index.ts"}' :test='undefined' />
 
 Sources
 
@@ -250,6 +250,10 @@ Sources
 ::: tip
   When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.
   There is an optinal parameter **limit** which controls the number of posts to fetch, default value is 25.
+  
+  Support for announcements and fancards:
+  - Use `/:source/:id/announcements` to get announcements
+  - Use `/:source/:id/fancards` to get fancards
 :::
 
 ## Komiic <Site url="komiic.com"/>
