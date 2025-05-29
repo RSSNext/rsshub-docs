@@ -3242,11 +3242,7 @@ Type 栏目：
 
 ### 知乎热榜 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media","popular"],"example":"/zhihu/hot","view":0,"parameters":{"category":{"description":"分类","default":"total","options":[{"value":"total","label":"全站"},{"value":"focus","label":"国际"},{"value":"science","label":"科学"},{"value":"car","label":"汽车"},{"value":"zvideo","label":"视频"},{"value":"fashion","label":"时尚"},{"value":"depth","label":"时事"},{"value":"digital","label":"数码"},{"value":"sport","label":"体育"},{"value":"school","label":"校园"},{"value":"film","label":"影视"}]}},"features":{"requireConfig":[{"name":"ZHIHU_COOKIES","description":""}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎热榜","maintainers":["nczitzk","pseudoyu"],"description":"::: warning\n  需要登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。\n:::","location":"hot.ts"}' :test='undefined' />
-
-::: warning
-  需要登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
-:::
+<Route namespace="zhihu" :data='{"path":"/hot","categories":["social-media","popular"],"example":"/zhihu/hot","view":0,"features":{"requireConfig":[{"name":"ZHIHU_COOKIES","description":"","optional":true}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎热榜","maintainers":["nczitzk","pseudoyu","DIYgod"],"location":"hot.ts"}' :test='undefined' />
 
 ## 智通财经网 <Site url="zhitongcaijing.com"/>
 
