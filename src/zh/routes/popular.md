@@ -3242,7 +3242,7 @@ Type 栏目：
 
 ### 知乎热榜 <Site url="www.zhihu.com" size="sm" />
 
-<Route namespace="zhihu" :data='{"path":"/hot","categories":["social-media","popular"],"example":"/zhihu/hot","view":0,"features":{"requireConfig":[{"name":"ZHIHU_COOKIES","description":"","optional":true}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎热榜","maintainers":["nczitzk","pseudoyu","DIYgod"],"location":"hot.ts"}' :test='undefined' />
+<Route namespace="zhihu" :data='{"path":"/hot/:category?","categories":["social-media","popular"],"example":"/zhihu/hot","view":0,"features":{"requireConfig":[{"name":"ZHIHU_COOKIES","description":"","optional":true}],"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"知乎热榜","maintainers":["nczitzk","pseudoyu","DIYgod"],"location":"hot.ts"}' :test='undefined' />
 
 ## 智通财经网 <Site url="zhitongcaijing.com"/>
 
