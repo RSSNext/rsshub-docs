@@ -122,6 +122,11 @@ const instances = [{
     location: '🇩🇪',
     maintainer: 'TingyuShare',
     maintainerUrl: 'https://github.com/TingyuShare',
+  }, {
+    url: 'https://rsshub.qnury.es',
+    location: '🇺🇸',
+    maintainer: 'Qnurye',
+    maintainerUrl: 'https://qnury.es',
   }
 ]
 
