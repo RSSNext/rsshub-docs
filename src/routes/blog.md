@@ -450,6 +450,12 @@ Cohere is a platform for building AI applications.
   username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
 :::
 
+## Hedwig <Site url="hedwig.pub"/>
+
+### Posts <Site url="hedwig.pub" size="sm" />
+
+<Route namespace="hedwig" :data='{"path":"/posts/:site","categories":["blog"],"example":"/posts/walnut","parameters":{"site":"站点名，原则上只要是 `{site}.hedwig.pub` 都可以匹配"},"features":{"supportRadar":false},"name":"Posts","url":"hedwig.pub","maintainers":["zwithz","GetToSet"],"view":0,"location":"posts.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## HiFeng'Blog <Site url="hicairo.com"/>
 
 ### 最近发表 <Site url="hicairo.com/" size="sm" />
