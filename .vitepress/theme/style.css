@@ -157,6 +157,8 @@
   --vp-code-color: var(--vp-c-text-1);
   --vp-button-brand-bg: var(--vp-c-brand-2);
   --vp-button-brand-hover-bg: var(--vp-c-brand-1);
+  --vp-badge-info-text: white;
+  --vp-badge-info-bg: var(--vp-c-brand-1);
 }
 
 .dark {

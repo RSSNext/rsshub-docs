@@ -1,8 +1,10 @@
 <template>
   <div :id="namespace + JSON.stringify(data.path)" class="routeBlock">
     <p class="badges">
+      <a v-if="data?.heat" :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`" target="_blank">
+        <Badge type="info">🔥 {{ data?.heat }}</Badge>
+      </a>
       <Badge v-if="!test" type="warning">🟡 Missing Test</Badge>
-      <Badge v-if="test?.code" type="danger" :title="test?.message">🔴 Failed Test</Badge>
       <Badge v-if="test && !test?.code" type="tip">🟢 Passed Test</Badge>
       <a v-if="data.features?.antiCrawler" href="/guide/faqs" target="_blank">
         <Badge type="danger">🚨 Strict Anti-crawling</Badge>
@@ -31,6 +33,16 @@
         {{ demoUrl }}
       </a>
       <CopyButton :text="demoUrl" />
+    </p>
+    <p v-if="data.topFeeds?.length">
+      <span>🔥 Top Feeds on Folo: </span>
+      <ul>
+        <li v-for="(item, index) in data.topFeeds" :key="index">
+          <a :href="`https://app.follow.is/share/feeds/${item.id}`" target="_blank">
+            {{ item.title }}
+          </a>
+        </li>
+      </ul>
     </p>
     <p class="path" style="display: flex; align-items: center; gap: 8px;">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}
@@ -115,7 +127,14 @@ import CopyButton from './CopyButton.vue';
 
 const props = defineProps<{
   namespace: string,
-  data: Route,
+  data: Route & { heat?: number, topFeeds?: {
+    id: string,
+    url: string,
+    title: string,
+    description: string | null,
+    siteUrl: string | null,
+    image: string | null,
+  }[] },
   test?: {
     code: number,
     message?: string,
