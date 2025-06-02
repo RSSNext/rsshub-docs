@@ -1338,6 +1338,12 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 | 维护公告    | 20   |
 | 其他公告    | 22   |
 
+## Meta <Site url="www.meta.com"/>
+
+### AI Blog <Site url="ai.meta.com/blog/" size="sm" />
+
+<Route namespace="meta" :data='{"path":"/ai/blog","categories":["programming"],"example":"/meta/ai/blog","name":"AI Blog","maintainers":["TonyRL"],"url":"ai.meta.com/blog/","radar":[{"source":["ai.meta.com/blog/","ai.meta.com"]}],"location":"ai-blog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Sketis | Website of Dr. Makarius Wenzel <Site url="sketis.net"/>
 
 ### Isabelle Development Blogs <Site url="isabelle-dev.sketis.net" size="sm" />
