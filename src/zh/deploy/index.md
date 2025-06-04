@@ -34,8 +34,10 @@ sidebar: auto
 支持以下架构：
 
 - `linux/amd64`
-- `linux/arm/v7`
+
 - `linux/arm64`
+
+~~- `linux/arm/v7`~~ （自 `2025-04-22` 起不再支持）
 
 有以下几种 tags：
 

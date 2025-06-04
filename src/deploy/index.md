@@ -36,9 +36,9 @@ Supported architectures include:
 
 - `linux/amd64`
 
-- `linux/arm/v7`
-
 - `linux/arm64`
+
+~~- `linux/arm/v7`~~ (Dropped support since `2025-04-22`)
 
 There are several tags available:
 
