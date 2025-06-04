@@ -428,7 +428,19 @@ Get the latest works of a specific creator on Skeb
 
 ### Images with tag <Site url="everia.club" size="sm" />
 
-<Route namespace="everia" :data='{"path":"/tag/:tag","categories":["picture"],"example":"/everia/tag/hinatazaka46-日向坂46","parameters":{"tag":"Tag of the image stream"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["everia.club/tag/:tag"],"target":"/tag/:tag"}],"name":"Images with tag","maintainers":["KTachibanaM"],"location":"tag.ts","heat":1,"topFeeds":[{"type":"feed","id":"153059637668516864","url":"rsshub://everia/tag/gravure","title":"gravure - EVERIA.CLUB","description":"gravure - EVERIA.CLUB - Powered by RSSHub","siteUrl":"https://everia.club/tag/gravure","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
+<Route namespace="everia" :data='{"path":"/tag/:tag","categories":["picture"],"example":"/everia/tag/hinatazaka46-日向坂46","parameters":{"tag":"Tag of the image stream"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["everia.club/tag/:tag"],"target":"/tag/:tag"}],"name":"Images with tag","maintainers":["KTachibanaM","AiraNadih"],"location":"tag.ts","heat":1,"topFeeds":[{"type":"feed","id":"153059637668516864","url":"rsshub://everia/tag/gravure","title":"gravure - EVERIA.CLUB","description":"gravure - EVERIA.CLUB - Powered by RSSHub","siteUrl":"https://everia.club/tag/gravure","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
+
+### Images with category <Site url="everia.club" size="sm" />
+
+<Route namespace="everia" :data='{"path":"/category/:category","categories":["picture"],"example":"/everia/category/cosplay","parameters":{"category":"Category of the image stream"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["everia.club/category/:category"],"target":"/category/:category"}],"name":"Images with category","maintainers":["KTachibanaM","AiraNadih"],"location":"category.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### Latest <Site url="everia.club" size="sm" />
+
+<Route namespace="everia" :data='{"path":"/","categories":["picture"],"example":"/everia","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["everia.club/"],"target":""}],"name":"Latest","maintainers":["KTachibanaM","AiraNadih"],"location":"latest.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### Search <Site url="everia.club" size="sm" />
+
+<Route namespace="everia" :data='{"path":"/search/:keyword","categories":["picture"],"example":"/everia/search/日向坂46","parameters":{"keyword":"Keyword"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["KTachibanaM","AiraNadih"],"location":"search.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ## 8KCosplay <Site url="8kcosplay.com"/>
 
