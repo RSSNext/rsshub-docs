@@ -153,6 +153,10 @@ It is recommended to use with clipping tools such as Notion Web Clipper.
 Need to configure `CIVITAI_COOKIE` to obtain image information of NSFW models.
 :::
 
+### User Article <Site url="civitai.com" size="sm" />
+
+<Route namespace="civitai" :data='{"path":"/user/:username/articles","categories":["program-update"],"example":"/civitai/user/Chenkin/articles","parameters":{"username":"Username"},"radar":[{"source":["civitai.com/user/:username","civitai.com/user/:username/articles"]}],"name":"User Article","maintainers":["TonyRL"],"location":"user.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Obsidian <Site url="obsidian.md"/>
 
 ### Obsidian Plugins <Site url="obsidian.md" size="sm" />
