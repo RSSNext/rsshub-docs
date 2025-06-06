@@ -844,12 +844,6 @@ News from the official site of men's professional tennis.
 | ------ | ------ | -------- | -------- | -------- | -------- | -------- | -------- |
 | short  | zs     | xh       | xc       | xhmr     | xhmc     | xcmr     | xcmc     |
 
-## MangaDex <Site url="mangadex.org"/>
-
-### Unknown <Site url="mangadex.org" size="sm" />
-
-<Route namespace="mangadex" :data='{"path":"/:id/:lang?","radar":[{"source":["mangadex.org/title/:id/*","mangadex.org/title/:id"],"target":"/:id"}],"name":"Unknown","maintainers":["vzz64"],"location":"index.ts","heat":1,"topFeeds":[{"type":"feed","id":"62039850046572545","url":"rsshub://mangadex/64ed4d14-9e00-4b63-8799-547a508f5344/en","title":"Parallel Paradise - MangaDex","description":"One day at school, Youta sees someone strange entering his school. Out of nowhere this being appears next to him and makes him fall from the 3rd floor. He lands in a strange world, where beings like dragons exist! Youta meets a young paladin, and discovers that he is the only man inhabiting that planet, and that its inhabitants are extremely &#39;weak&#39; to his presence. Could this be paradise? - Powered by RSSHub","siteUrl":"https://mangadex.org/title/64ed4d14-9e00-4b63-8799-547a508f5344","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
-
 ## QuestN <Site url="app.questn.com"/>
 
 ### Events <Site url="app.questn.com" size="sm" />
