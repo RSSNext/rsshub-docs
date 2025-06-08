@@ -1678,6 +1678,14 @@ The profile page of the user, which contains the user's information, videos, and
 
 LikeShop link in bio takes your audience from Instagram and TikTok to your website in one easy step.
 
+## SmartLink <Site url="smartlink.bio"/>
+
+### Posts <Site url="smartlink.bio" size="sm" />
+
+<Route namespace="smartlink" :data='{"path":"/:site","categories":["social-media"],"example":"/smartlink/bloombergpursuits","parameters":{"site":"the site attached to smartlink.bio/"},"radar":[{"source":["smartlink.bio/"]}],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Posts","maintainers":["nickyfoto"],"description":"smartlink.bio link in bio takes your audience from Instagram and TikTok to your website in one easy step.","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+smartlink.bio link in bio takes your audience from Instagram and TikTok to your website in one easy step.
+
 ## TikTok <Site url="tiktok.com"/>
 
 ### User <Site url="tiktok.com" size="sm" />
