@@ -1438,6 +1438,12 @@ Now all beatmapsets that don't provided at least one beatmap with star rating hi
 
 <Route namespace="osu" :data='{"path":"/packs/:type?","categories":["game"],"example":"/osu/packs","parameters":{"type":"pack type, default to `standard`, can choose from `featured`, `tournament`, `loved`, `chart`, `theme` and `artist`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Beatmap Packs","maintainers":["JimenezLi"],"location":"beatmaps/packs.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Warhammer Community <Site url="www.warhammer-community.com/en-gb/"/>
+
+### News <Site url="www.warhammer-community.com/en-gb/all-news-and-features/" size="sm" />
+
+<Route namespace="warhammer-community" :data='{"path":"/news","categories":["game"],"example":"/warhammer-community/news","radar":[{"source":["www.warhammer-community.com/en-gb/all-news-and-features/","www.warhammer-community.com/en-gb/"]}],"name":"News","maintainers":["TonyRL"],"url":"www.warhammer-community.com/en-gb/all-news-and-features/","location":"news.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 游讯网 <Site url="yxdown.com"/>
 
 ### 资讯 <Site url="yxdown.com" size="sm" />
