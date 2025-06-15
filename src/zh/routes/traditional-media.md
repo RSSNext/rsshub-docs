@@ -1736,6 +1736,16 @@ Channels:
 | ------ | ------- | ---- |
 | ko     | en      | cn   |
 
+## Sankei Shimbun 産経新聞 <Site url="sankei.com"/>
+
+### News <Site url="sankei.com" size="sm" />
+
+<Route namespace="sankei" :data='{"path":"/news/:category","categories":["traditional-media"],"example":"/sankei/news/flash","parameters":{"category":"Category name (as it will appear in URLs). For example, for \"Breaking News\" https://www.sankei.com/flash/, the category name would be \"flash\"."},"radar":[{"source":["www.sankei.com/:category"],"target":"/news/:category"}],"name":"News","maintainers":["yuikisaito"],"location":"news.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### Topic <Site url="sankei.com" size="sm" />
+
+<Route namespace="sankei" :data='{"path":["/topics/:topic"],"categories":["traditional-media"],"example":"/sankei/topics/etc_100","parameters":{"topic":"Topic name (format included in URL). For example, for \"Expo 2025 Osaka, Kansai, Japan Special Feature\" https://www.sankei.com/tag/topic/etc_100, the value would be etc_100."},"radar":[{"source":["www.sankei.com/tag/topic/:topic"],"target":"/topics/:topic"}],"name":"Topic","maintainers":["yuikisaito"],"location":"topics.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 四川广播电视台 <Site url="sctv.com"/>
 
 ### 电视回放 <Site url="sctv.com" size="sm" />
