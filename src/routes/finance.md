@@ -1691,6 +1691,14 @@ Get latest news from Decrypt.
 | ---- | ----------- | -------- |
 | 3    | 1           | 4        |
 
+## HyperDash <Site url="hyperdash.info"/>
+
+### Top Traders <Site url="hyperdash.info" size="sm" />
+
+<Route namespace="hyperdash" :data='{"path":"/top-traders","categories":["finance"],"example":"/hyperdash/top-traders","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hyperdash.info/"]}],"name":"Top Traders","maintainers":["pseudoyu"],"description":"Get the latest top traders data from HyperDash","location":"top-traders.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+Get the latest top traders data from HyperDash
+
 ## JPMorgan Chase <Site url="www.jpmorganchase.com"/>
 
 ### Research Topics <Site url="www.jpmorganchase.com/institute/all-topics" size="sm" />
