@@ -1826,7 +1826,7 @@ Channels:
 
 ### Series <Site url="tver.jp" size="sm" />
 
-<Route namespace="tver" :data='{"path":"/series/:id","categories":["traditional-media"],"example":"/tver/series/srx2o7o3c8","parameters":{"category":"Series ID (as it appears in URLs). For example, in https://tver.jp/series/srx2o7o3c8, the ID is \"srx2o7o3c8\"."},"radar":[{"source":["tver.jp/series/:id"],"target":"/series/:id"}],"name":"Series","maintainers":["yuikisaito"],"location":"series.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+<Route namespace="tver" :data='{"path":"/series/:id","categories":["traditional-media"],"example":"/tver/series/srx2o7o3c8","parameters":{"id":"Series ID (as it appears in URLs). For example, in https://tver.jp/series/srx2o7o3c8, the ID is \"srx2o7o3c8\"."},"radar":[{"source":["tver.jp/series/:id"],"target":"/series/:id"}],"name":"Series","maintainers":["yuikisaito"],"location":"series.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ## VICE <Site url="vice.com"/>
 
