@@ -1391,6 +1391,10 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 ## Windsurf <Site url="windsurf.com"/>
 
+### Blog <Site url="windsurf.com" size="sm" />
+
+<Route namespace="windsurf" :data='{"path":"/blog","name":"Blog","url":"windsurf.com","maintainers":["nczitzk"],"example":"/windsurf/blog","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["windsurf.com/blog"],"target":"/blog"}],"view":0,"location":"blog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ### Changelog <Site url="windsurf.com" size="sm" />
 
 <Route namespace="windsurf" :data='{"path":"/changelog","name":"Changelog","url":"windsurf.com","maintainers":["nczitzk"],"example":"/windsurf/changelog","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["windsurf.com/changelog"],"target":"/changelog"}],"view":0,"location":"changelog.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
