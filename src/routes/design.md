@@ -252,6 +252,20 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
   This route requires API key, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.
 :::
 
+## MakerWorld <Site url="makerworld.com"/>
+
+### Contests <Site url="makerworld.com" size="sm" />
+
+<Route namespace="makerworld" :data='{"path":"/contests","categories":["design"],"example":"/makerworld/contests","name":"Contests","maintainers":["TonyRL"],"radar":[{"source":["makerworld.com/:lang/contests"]}],"location":"contest.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### Trending Models <Site url="makerworld.com" size="sm" />
+
+<Route namespace="makerworld" :data='{"path":"/trending","categories":["design"],"example":"/makerworld/trending","name":"Trending Models","maintainers":["TonyRL"],"radar":[{"source":["makerworld.com/:lang"]}],"location":"trending.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### User Uploads <Site url="makerworld.com" size="sm" />
+
+<Route namespace="makerworld" :data='{"path":"/user/:handle/upload","categories":["design"],"example":"/makerworld/@Wcad00/upload","parameters":{"handle":"User handle"},"name":"User Uploads","maintainers":["TonyRL"],"radar":[{"source":["makerworld.com/:lang/:handle/upload","makerworld.com/:lang/:handle"]}],"location":"user-upload.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Shopping Design <Site url="www.shoppingdesign.com.tw"/>
 
 ### 文章列表 <Site url="www.shoppingdesign.com.tw/post" size="sm" />
