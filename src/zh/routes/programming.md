@@ -1300,6 +1300,12 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 <Route namespace="bbcnewslabs" :data='{"path":"/news","categories":["programming"],"example":"/bbcnewslabs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bbcnewslabs.co.uk/"]}],"name":"News","maintainers":["elxy"],"url":"bbcnewslabs.co.uk/","location":"news.ts","heat":0,"topFeeds":[]}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:44:18)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"}' />
 
+## Cockroach Labs <Site url="cockroachlabs.com"/>
+
+### Blogs <Site url="cockroachlabs.com" size="sm" />
+
+<Route namespace="cockroachlabs" :data='{"name":"Blogs","maintainers":["CookiePieWw"],"categories":["programming"],"path":"/blog/:category?","example":"/cockroachlabs/blog/engineering","parameters":{"category":"Blog category, e.g., engineering. Subscribe all recent articles if empty."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cockroachlabs.com/blog/:category","cockroachlabs.com/blog"],"target":"/blog"}],"location":"blog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## dbaplus社群 <Site url="dbaplus.cn"/>
 
 ### 最新文章 <Site url="dbaplus.cn/" size="sm" />
