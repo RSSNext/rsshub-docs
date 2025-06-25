@@ -1825,6 +1825,19 @@ Category
   -   `-m` for the draft which Speaker of Parliament considered as a monetary draft (ประธานสภาผู้แทนราษฎรวินิจฉัยว่า เป็นร่างการเงิน), or
   -   `-nm` for non-monetary one (ประธานสภาผู้แทนราษฎรวินิจฉัยว่า ไม่เป็นร่างการเงิน).
 
+## 国家市场监督管理总局 <Site url="www.samrdprc.org.cn"/>
+
+### 召回信息 <Site url="www.samrdprc.org.cn" size="sm" />
+
+<Route namespace="samrdprc" :data='{"path":"/news/:type1/:type2","categories":["government"],"example":"/samrdprc/news/xfpzh/xfpgnzh","parameters":{"type1":"召回类型ID1，见下表","type2":"召回类型ID2，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"description":"\n| 类型中文 | 召回类型ID1 | 召回类型ID2 |\n| --- | --- | --- |\n| 消费品召回 | xfpzh | xfpgnzh |\n| 汽车召回 | qczh | gnzhqc |\n","name":"召回信息","maintainers":["a180285"],"radar":[{"source":["www.samrdprc.org.cn/:type1/:type2"],"target":"/news/:type1/:type2"}],"location":"news.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+
+| 类型中文 | 召回类型ID1 | 召回类型ID2 |
+| --- | --- | --- |
+| 消费品召回 | xfpzh | xfpgnzh |
+| 汽车召回 | qczh | gnzhqc |
+
+
 ## 澳门卫生局 <Site url="www.ssm.gov.mo"/>
 
 ### 最新消息 <Site url="www.ssm.gov.mo/" size="sm" />
