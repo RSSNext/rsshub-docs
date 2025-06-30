@@ -1170,6 +1170,10 @@ Fetches the latest announcements from Black Forest Labs (bfl.ai). Provides full 
 | ------- | ------- | --------- | ------- | ------ |
 | uploads | reposts | favorites | listens | stream |
 
+### Playlist <Site url="www.mixcloud.com" size="sm" />
+
+<Route namespace="mixcloud" :data='{"path":"/:username/playlists/:playlist","categories":["multimedia"],"example":"/mixcloud/dholbach/playlists/ecclectic-dance","parameters":{"username":"Username, can be found in URL","playlist":"Playlist slug, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/playlists/:playlist"]},{"source":["www.mixcloud.com/:username/playlists/:playlist"]}],"name":"Playlist","maintainers":["Misaka13514"],"location":"user-playlist.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 爱奇艺 <Site url="iq.com"/>
 
 ### 剧集 <Site url="iq.com" size="sm" />
