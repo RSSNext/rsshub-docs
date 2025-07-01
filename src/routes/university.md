@@ -1986,6 +1986,12 @@ You can filter news by category through the category parameter. For more informa
 | -------- | -------- | -------- | -------- | -------- |
 | xyxw     | tzgg     | jwxx     | jyxx     | xgsw     |
 
+### 网络空间安全学院 - 通知公告 <Site url="cse.seu.edu.cn" size="sm" />
+
+<Route namespace="seu" :data='{"path":"/cyber/tzgg","categories":["university"],"example":"/seu/cyber/tzgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cyber.seu.edu.cn/tzgg/list.htm","cyber.seu.edu.cn/"]}],"name":"网络空间安全学院 - 通知公告","maintainers":["shrugginG"],"description":"东南大学网络空间安全学院通知公告","location":"cyber/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+东南大学网络空间安全学院通知公告
+
 ### 信息科学与工程学院学术活动 <Site url="radio.seu.edu.cn/_s29/15986/list.psp" size="sm" />
 
 <Route namespace="seu" :data='{"path":"/radio/academic","categories":["university"],"example":"/seu/radio/academic","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["radio.seu.edu.cn/_s29/15986/list.psp","radio.seu.edu.cn/"]}],"name":"信息科学与工程学院学术活动","maintainers":["HenryQW"],"url":"radio.seu.edu.cn/_s29/15986/list.psp","location":"radio/academic.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
