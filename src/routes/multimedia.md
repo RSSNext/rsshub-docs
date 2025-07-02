@@ -1253,6 +1253,12 @@ The 'Nyaa' includes several routes to access different parts of the site:
   目前，你可以选择的域名有 `btbtt10-20.com` 共 10 个，或 `88btbbt.com`，该站也提供了专用网址查询工具。详见 [此贴](https://www.btbtt20.com/thread-index-fid-2-tid-4550191.htm)
 :::
 
+## FANTUBE <Site url="www.fantube.tokyo"/>
+
+### User Posts <Site url="www.fantube.tokyo" size="sm" />
+
+<Route namespace="fantube" :data='{"path":"/r18/creator/:identifier","categories":["multimedia"],"example":"/fantube/r18/creator/miyuu","parameters":{"identifier":"User handle"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.fantube.tokyo/r18/creator/:identifier"]}],"name":"User Posts","maintainers":["TonyRL"],"location":"creator.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 追新番 <Site url="fanxinzhui.com"/>
 
 ### 最近更新 <Site url="fanxinzhui.com/lastest" size="sm" />
