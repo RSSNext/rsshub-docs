@@ -542,6 +542,12 @@ Muen's blog posts
 
 云谦的博客，部分内容存在权限校验，访问完整内容请部署RSSHub私有实例并配置授权信息
 
+## Stanford <Site url="hazyresearch.stanford.edu/blog"/>
+
+### Hazy Research Blog <Site url="hazyresearch.stanford.edu/blog" size="sm" />
+
+<Route namespace="stanford" :data='{"path":["/hazyresearch/blog"],"categories":["blog"],"example":"/stanford/hazyresearch/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hazyresearch.stanford.edu/blog"]}],"name":"Hazy Research Blog","maintainers":["dvorak0"],"url":"hazyresearch.stanford.edu/blog","location":"blog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 虎皮椒 <Site url="www.xunhupay.com"/>
 
 ### 文章 <Site url="www.xunhupay.com/blog" size="sm" />
