@@ -2762,6 +2762,16 @@ RSS feed for LMU academic staff job openings.
 | ---------- | ---------- | ---------- | ---------- | ------ | -------------- |
 | sjjxk      | jxyxk      | jyjgk      | xjglk      | ksk    | jcjsglk        |
 
+## 南开大学 <Site url="yzb.nankai.edu.cn"/>
+
+### 研究生招生网 <Site url="yzb.nankai.edu.cn" size="sm" />
+
+<Route namespace="nankai" :data='{"path":"/yzb/:type?","categories":["university"],"example":"/nankai/yzb/5509","parameters":{"type":"栏目名（若为空则默认为“硕士招生”）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yzb.nankai.edu.cn","yzb.nankai.edu.cn/:type/list.htm"],"target":"/yzb/:type?"}],"name":"研究生招生网","maintainers":["sddzhyc"],"description":"| 硕士招生 | 博士招生 | 港澳台研究生最新信息 |\n| -------- | -------- | -------- |\n| 5509     | 2552    | 2562   |","url":"yzb.nankai.edu.cn","location":"yzb.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 硕士招生 | 博士招生 | 港澳台研究生最新信息 |
+| -------- | -------- | -------- |
+| 5509     | 2552    | 2562   |
+
 ## 华北水利水电大学 <Site url="ncwu.edu.cn"/>
 
 ### 学校通知 <Site url="ncwu.edu.cn/xxtz.htm" size="sm" />
