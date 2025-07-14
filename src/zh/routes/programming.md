@@ -1421,6 +1421,12 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 | :----: | :--: | :-------------: | :----: |
 | events | news | research_papers | videos |
 
+## 淘宝网 <Site url="taobao.com"/>
+
+### 数据库内核月报 <Site url="mysql.taobao.org" size="sm" />
+
+<Route namespace="taobao" :data='{"path":"/mysql/monthly","name":"数据库内核月报","url":"mysql.taobao.org","maintainers":["nczitzk"],"example":"/taobao/mysql/monthly","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mysql.taobao.org/monthly/"],"target":"/mysql/monthly"}],"view":0,"location":"mysql.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Transformer Circuits <Site url="transformer-circuits.pub"/>
 
 ### Articles <Site url="transformer-circuits.pub" size="sm" />
