@@ -1416,6 +1416,14 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 <Route namespace="issuehunt" :data='{"path":"/funded/:username/:repo","categories":["programming"],"example":"/issuehunt/funded/DIYgod/RSSHub","parameters":{"username":"Github user/org","repo":"Repository name"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Project Funded","maintainers":["running-grass"],"location":"funded.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Kiro <Site url="kiro.dev"/>
+
+The AI IDE for prototype to production
+
+### Blog <Site url="kiro.dev" size="sm" />
+
+<Route namespace="kiro" :data='{"path":"/blog","name":"Blog","url":"kiro.dev","maintainers":["nczitzk"],"example":"/kiro/blog","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kiro.dev","kiro.dev/blog/"],"target":"/blog"}],"view":0,"location":"blog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Sketis | Website of Dr. Makarius Wenzel <Site url="sketis.net"/>
 
 ### Isabelle Development Blogs <Site url="isabelle-dev.sketis.net" size="sm" />
