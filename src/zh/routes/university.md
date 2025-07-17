@@ -1867,6 +1867,10 @@ author 列表：
 | -------- | -------- | ---------- | -------- | ---------- | -------- | ---------- | ---------- | -------- |
 | 13291    | 13292    | 13293      | 13294    | 13295      | 13296    | 13297      | 13298      | 13299    |
 
+### 通知公告 <Site url="yzb.nankai.edu.cn" size="sm" />
+
+<Route namespace="nankai" :data='{"path":"/notice","categories":["university"],"example":"/nankai/notice","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nankai.edu.cn","www.nankai.edu.cn/157/list.htm"]}],"name":"通知公告","maintainers":["vicguo0724"],"location":"notice.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## National Cheng Kung University <Site url="www.ncku.edu.tw"/>
 
 ### CSIE News <Site url="www.ncku.edu.tw" size="sm" />
