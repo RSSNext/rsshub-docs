@@ -755,6 +755,12 @@ To subscribe to [Potplayer Update History](https://t1.daumcdn.net/potplayer/PotP
 3.  Find the last request named `https://ifi-audio.com/wp-admin/admin-ajax.php` in the Network panel, find out the val and id in the Payload panel, and fill in the url
 :::
 
+## Kovid's software projects <Site url="sw.kovidgoyal.net"/>
+
+### Changelog <Site url="sw.kovidgoyal.net/kitty/changelog/" size="sm" />
+
+<Route namespace="kovidgoyal" :data='{"path":"/kitty/changelog","categories":["program-update"],"example":"/kovidgoyal/kitty/changelog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["sw.kovidgoyal.net/kitty/changelog/"],"target":"/kitty/changelog"}],"name":"Changelog","maintainers":["xbot"],"url":"sw.kovidgoyal.net/kitty/changelog/","location":"kitty/changelog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Microsoft <Site url="microsoft.com"/>
 
 ### Addons Update <Site url="microsoft.com" size="sm" />
