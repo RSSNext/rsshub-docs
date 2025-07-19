@@ -252,6 +252,12 @@ If you subscribe to [Wildlife Published](https://1x.com/gallery/wildlife/publish
 | jp | 日本語 |
     
 
+## Apple <Site url="apple.com"/>
+
+### Design updates <Site url="developer.apple.com/design/whats-new/" size="sm" />
+
+<Route namespace="apple" :data='{"categories":["design"],"example":"/apple/design","maintainers":["jean-jacket"],"name":"Design updates","path":"/design","url":"developer.apple.com/design/whats-new/","location":"design.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Google <Site url="www.google.com"/>
 
 ### Google Fonts <Site url="www.google.com" size="sm" />
