@@ -566,6 +566,27 @@ Cohere is a platform for building AI applications.
 
 云谦的博客，部分内容存在权限校验，访问完整内容请部署RSSHub私有实例并配置授权信息
 
+## Tumblr <Site url="tumblr.com"/>
+
+Register an application on `https://www.tumblr.com/oauth/apps`.
+
+- `TUMBLR_CLIENT_ID`: The key is labelled as `OAuth consumer Key` in the info page of the registered application.
+- `TUMBLR_CLIENT_SECRET`: The key is labelled as `OAuth consumer Secret` in the info page of the registered application.
+- `TUMBLR_REFRESH_TOKEN`: Navigate to `https://www.tumblr.com/oauth2/authorize?client_id=${CLIENT_ID}&response_type=code&scope=basic%20offline_access&state=mystate` in your browser and login. After doing so, you'll be redirected to the URL you defined when registering the application. Look for the `code` parameter in the URL. You can then call `curl -F grant_type=authorization_code -F "code=${CODE}" -F "client_id=${CLIENT_ID}" -F "client_secret=${CLIENT_SECRET}" "https://api.tumblr.com/v2/oauth2/token"`
+
+Two login methods are currently supported:
+
+- `TUMBLR_CLIENT_ID`: The key never expires, however blogs that are "dashboard only" cannot be accessed.
+- `TUMBLR_CLIENT_ID` + `TUMBLR_CLIENT_SECRET` + `TUMBLR_REFRESH_TOKEN`: The refresh token will expire and will need to be regenerated, "dashboard only" blogs can be accessed.
+
+### Posts <Site url="tumblr.com" size="sm" />
+
+<Route namespace="tumblr" :data='{"path":"/posts/:blog","categories":["blog"],"example":"/tumblr/posts/biketouring-nearby","parameters":{"blog":"Blog identifier (see `https://www.tumblr.com/docs/en/api/v2#blog-identifiers`)"},"radar":[],"features":{"requireConfig":[{"name":"TUMBLR_CLIENT_ID","description":"Please see above for details."},{"name":"TUMBLR_CLIENT_SECRET","description":"Please see above for details."},{"name":"TUMBLR_REFRESH_TOKEN","description":"Please see above for details."}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Posts","maintainers":["Rakambda"],"description":"::: tip\nTumblr provides official RSS feeds for non \"dashboard only\" blogs, for instance [https://biketouring-nearby.tumblr.com](https://biketouring-nearby.tumblr.com/rss).\n:::","location":"posts.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+::: tip
+Tumblr provides official RSS feeds for non "dashboard only" blogs, for instance [https://biketouring-nearby.tumblr.com](https://biketouring-nearby.tumblr.com/rss).
+:::
+
 ## 虎皮椒 <Site url="www.xunhupay.com"/>
 
 ### 文章 <Site url="www.xunhupay.com/blog" size="sm" />
