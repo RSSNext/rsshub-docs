@@ -1937,6 +1937,15 @@ For other Yahoo News, this route's RSS provides the author field. You can use RS
 
 <Route namespace="techcrunch" :data='{"path":"/news","categories":["new-media"],"example":"/techcrunch/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["techcrunch.com/"]}],"name":"News","maintainers":["EthanWng97"],"url":"techcrunch.com/","location":"news.ts","heat":143,"topFeeds":[{"type":"feed","id":"41572238273905682","url":"rsshub://techcrunch/news","title":"TechCrunch","description":"Reporting on the business of technology, startups, venture capital funding, and Silicon Valley. - Powered by RSSHub","siteUrl":"https://techcrunch.com/","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
+### Category <Site url="techcrunch.com" size="sm" />
+
+<Route namespace="techcrunch" :data='{"path":"/category/:categoryId","categories":["new-media"],"example":"/techcrunch/category/577047203","parameters":{"categoryId":"分类id"},"name":"Category","maintainers":["MilliumOrion"],"description":"Use the category ID to retrieve a list of articles, category ID.  \nFrom the page source of `https://techcrunch.com/category/***`, locate the `{category_id}`  \nExample:  \n`html` -> `head` -> `<link rel=\"alternate\" title=\"JSON\" type=\"application/json\" href=\"https://techcrunch.com/wp-json/wp/v2/categories/{category_id}\">`","location":"category.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+Use the category ID to retrieve a list of articles, category ID.  
+From the page source of `https://techcrunch.com/category/***`, locate the `{category_id}`  
+Example:  
+`html` -> `head` -> `<link rel="alternate" title="JSON" type="application/json" href="https://techcrunch.com/wp-json/wp/v2/categories/{category_id}">`
+
 ## 新片场 <Site url="xinpianchang.com"/>
 
 ### 发现 <Site url="xinpianchang.com" size="sm" />
