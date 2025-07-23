@@ -1674,6 +1674,16 @@ Blockworks news with full text support.
 | ---------------------- | ---------------------- | ------------------ | ------------- |
 | bgcz_result           | bgcz_change           | termination_audit | audit_result |
 
+## Capitalmind <Site url="capitalmind.in"/>
+
+### Insights <Site url="capitalmind.in" size="sm" />
+
+<Route namespace="capitalmind" :data='{"path":"/insights","example":"/capitalmind/insights","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["capitalmind.in/insights"],"target":"/insights"}],"name":"Insights","maintainers":["Rjnishant530"],"location":"insights.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### Podcasts <Site url="capitalmind.in" size="sm" />
+
+<Route namespace="capitalmind" :data='{"path":"/podcasts","example":"/capitalmind/podcasts","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["capitalmind.in/podcasts"],"target":"/podcasts"}],"name":"Podcasts","maintainers":["Rjnishant530"],"location":"podcasts.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Cointelegraph <Site url="cointelegraph.com"/>
 
 ### News <Site url="cointelegraph.com" size="sm" />
