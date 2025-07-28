@@ -1112,7 +1112,7 @@ When `mediaType` is `tv`, `sheet` should be:
 
 ### 播客 <Site url="qingting.fm" size="sm" />
 
-<Route namespace="qingting" :data='{"path":"/podcast/:id/:pageSize?","categories":["multimedia"],"example":"/qingting/podcast/293411/30","parameters":{"id":"专辑id, 可在专辑页 URL 中找到","pageSize":"每页返回的节目数量，默认为50"},"features":{"supportPodcast":true,"requireConfig":[{"name":"QINGTING_ID","optional":true,"description":"用户id， 部分专辑需要会员身份，用户id可以通过从网页端登录蜻蜓fm后使用开发者工具，在控制台中运行JSON.parse(localStorage.getItem(\"user\")).qingting_id获取"}]},"radar":[{"source":["qingting.fm/channels/:id"]}],"name":"播客","maintainers":["RookieZoe","huyyi","pseudoyu"],"description":"获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。","location":"podcast.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+<Route namespace="qingting" :data='{"path":"/podcast/:id/:pageSize?","categories":["multimedia"],"example":"/qingting/podcast/293411/30","parameters":{"id":"专辑id, 可在专辑页 URL 中找到","pageSize":"每页返回的节目数量，默认为30"},"features":{"supportPodcast":true,"requireConfig":[{"name":"QINGTING_ID","optional":true,"description":"用户id， 部分专辑需要会员身份，用户id可以通过从网页端登录蜻蜓fm后使用开发者工具，在控制台中运行JSON.parse(localStorage.getItem(\"user\")).qingting_id获取"}]},"radar":[{"source":["qingting.fm/channels/:id"]}],"name":"播客","maintainers":["RookieZoe","huyyi","pseudoyu"],"description":"获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。","location":"podcast.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 获取的播放 URL 有效期只有 1 天，需要开启播客 APP 的自动下载功能。
 
