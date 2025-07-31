@@ -755,6 +755,14 @@ To subscribe to [Potplayer Update History](https://t1.daumcdn.net/potplayer/PotP
 3.  Find the last request named `https://ifi-audio.com/wp-admin/admin-ajax.php` in the Network panel, find out the val and id in the Payload panel, and fill in the url
 :::
 
+## Kiro <Site url="kiro.dev"/>
+
+The AI IDE for prototype to production
+
+### Changelog <Site url="kiro.dev" size="sm" />
+
+<Route namespace="kiro" :data='{"path":"/changelog","name":"Changelog","url":"kiro.dev","maintainers":["nczitzk"],"example":"/kiro/changelog","categories":["program-update"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["kiro.dev","kiro.dev/changelog/"],"target":"/changelog"}],"view":0,"location":"changelog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Kovid's software projects <Site url="sw.kovidgoyal.net"/>
 
 ### Changelog <Site url="sw.kovidgoyal.net/kitty/changelog/" size="sm" />
