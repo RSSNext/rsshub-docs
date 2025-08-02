@@ -117,6 +117,11 @@ const instances = [{
     location: '🇩🇪',
     maintainer: 'TingyuShare',
     maintainerUrl: 'https://github.com/TingyuShare',
+  }, {
+    url: 'https://rsshub.cups.moe',
+    location: '🇺🇸',
+    maintainer: 'FunnyCups',
+    maintainerUrl: 'https://www.cups.moe'
   }
 ]
 
