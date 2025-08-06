@@ -249,6 +249,12 @@
 
 <Route namespace="cqgas" :data='{"path":"/tqtz","categories":["forecast"],"example":"/cqgas/tqtz","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["cqgas.cn/"]}],"name":"停气检修通知","maintainers":["Mai19930513"],"url":"cqgas.cn/","location":"tqtz.ts","heat":1,"topFeeds":[{"type":"feed","id":"66381483312011264","url":"rsshub://cqgas/tqtz","title":"重庆燃气——停气检修通知","description":"重庆燃气——停气检修通知 - Powered by RSSHub","siteUrl":"http://www.cqgas.cn/portal/article/page?cateId=1082&pageNo=1","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
+## 深圳台风网 <Site url="121.com.cn"/>
+
+### 深圳天气直播 <Site url="tf.121.com.cn" size="sm" />
+
+<Route namespace="121" :data='{"path":"/weatherLive","name":"深圳天气直播","url":"tf.121.com.cn","maintainers":["nczitzk"],"example":"/121/weatherLive","categories":["forecast"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["tf.121.com.cn","tf.121.com.cn/web/weatherLive"],"target":"/weatherLive"}],"view":5,"location":"weather-live.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Outage.Report <Site url="outage.report"/>
 
 ### Report <Site url="outage.report" size="sm" />
