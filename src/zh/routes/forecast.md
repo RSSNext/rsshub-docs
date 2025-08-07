@@ -106,7 +106,7 @@
 
 <Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":3,"topFeeds":[{"type":"feed","id":"69176555091531776","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Wed, 06 Aug 2025 13:02:00 GMT - Powered by RSSHub","siteUrl":"https://www.weather.gov.hk/en/wxinfo/currwx/current.htm","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
-## 上海市人民政府 <Site url="sh.gov.cn"/>
+## 深圳市罗湖区人民政府 <Site url="www.szlh.gov.cn"/>
 
 ### 突发性天气提示 <Site url="www.tqyb.com.cn/gz/weatherAlarm/suddenWeather/" size="sm" />
 

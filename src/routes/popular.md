@@ -313,17 +313,17 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 | -------- | -------- |
 | people   | org      |
 
-## 上海市人民政府 <Site url="sh.gov.cn"/>
+## 深圳市罗湖区人民政府 <Site url="www.szlh.gov.cn"/>
 
 ### 最新政策 <Site url="www.gov.cn/zhengce/zuixin.htm" size="sm" />
 
 <Route namespace="gov" :data='{"path":["/zhengce/zuixin","/zhengce/:category{.+}?"],"categories":["government","popular"],"example":"/gov/zhengce/zuixin","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.gov.cn/zhengce/zuixin.htm","www.gov.cn/"]}],"name":"最新政策","maintainers":["SettingDust","nczitzk"],"url":"www.gov.cn/zhengce/zuixin.htm","location":"zhengce/index.ts","heat":2115,"topFeeds":[{"type":"feed","id":"55178154410946580","url":"rsshub://gov/zhengce/zuixin","title":"中国政府网 - 最新政策","description":"中共中央和国务院最近发布的政策 - Powered by RSSHub","siteUrl":"https://www.gov.cn/zhengce/zuixin/","image":"https://www.gov.cn/images/gtrs_logo_rt.png","errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"56146683948269585","url":"https://rsshub.rssforever.com/gov/zhengce/zuixin","title":"中国政府网 - 最新政策","description":"中共中央和国务院最近发布的政策 - Powered by RSSHub","siteUrl":"https://www.gov.cn/zhengce/zuixin/","image":"https://www.gov.cn/images/gtrs_logo_rt.png","errorMessage":"[GET] \"https://rsshub.rssforever.com/gov/zhengce/zuixin\": <no response> fetch failed","errorAt":"2025-08-06T14:00:31.943Z","ownerUserId":null}]}' :test='{"code":0}' />
 
-### 国务院政策文件库 <Site url="sh.gov.cn" size="sm" />
+### 国务院政策文件库 <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/zhengce/zhengceku/:department","categories":["government","popular"],"example":"/gov/zhengce/zhengceku/bmwj","parameters":{"department":"库名"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"国务院政策文件库","maintainers":["zxx-457"],"location":"zhengce/zhengceku.ts","heat":1817,"topFeeds":[{"type":"feed","id":"55787153161933874","url":"rsshub://gov/zhengce/zhengceku/bmwj","title":"- 政府文件库","description":"政府文件库, 当页的所有列表 - Powered by RSSHub","siteUrl":"http://www.gov.cn/zhengce/zhengceku/bmwj/","image":"https://www.gov.cn/images/gtrs_logo_rt.png","errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"59849964818439168","url":"https://rsshub.rssforever.com/gov/zhengce/zhengceku/bmwj","title":"- 政府文件库","description":"政府文件库, 当页的所有列表 - Powered by RSSHub","siteUrl":"http://www.gov.cn/zhengce/zhengceku/bmwj/","image":"https://www.gov.cn/images/gtrs_logo_rt.png","errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
-### 政策解读 <Site url="sh.gov.cn" size="sm" />
+### 政策解读 <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/miit/zcjd","categories":["government","popular"],"example":"/gov/miit/zcjd","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"政策解读","maintainers":["Yoge-Code"],"location":"miit/zcjd.ts","heat":1589,"topFeeds":[{"type":"feed","id":"57123212956073984","url":"rsshub://gov/miit/zcjd","title":"政策解读 - 中华人民共和国工业和信息化部","description":"政策解读 - 中华人民共和国工业和信息化部 - Powered by RSSHub","siteUrl":"https://www.miit.gov.cn/zwgk/zcjd/index.html","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"74409455476126720","url":"https://rsshub.rssforever.com/gov/miit/zcjd","title":"政策解读 - 中华人民共和国工业和信息化部","description":"政策解读 - 中华人民共和国工业和信息化部 - Powered by RSSHub","siteUrl":"https://www.miit.gov.cn/zwgk/zcjd/index.html","image":null,"errorMessage":"[GET] \"https://rsshub.rssforever.com/gov/miit/zcjd\": <no response> fetch failed","errorAt":"2025-08-06T13:07:41.658Z","ownerUserId":null}]}' :test='{"code":0}' />
 
@@ -335,7 +335,7 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 
 <Route namespace="gov" :data='{"path":"/nea/sjzz/ghs","categories":["government","popular"],"example":"/gov/nea/sjzz/ghs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["nea.gov.cn/sjzz/ghs/"],"target":"/nea/sjzz/ghs"}],"name":"发展规划司","maintainers":["nczitzk","pseudoyu"],"url":"www.nea.gov.cn/sjzz/ghs/","location":"nea/ghs.ts","heat":1466,"topFeeds":[{"type":"feed","id":"61217794276645888","url":"rsshub://gov/nea/sjzz/ghs","title":"国家能源局 - 发展规划司工作进展","description":"国家能源局 - 发展规划司工作进展 - Powered by RSSHub","siteUrl":"https://www.nea.gov.cn/sjzz/ghs/","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
-### 新闻动态 <Site url="sh.gov.cn" size="sm" />
+### 新闻动态 <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/ndrc/xwdt/:category{.+}?","name":"新闻动态","example":"/gov/ndrc/xwdt","parameters":{"category":"分类，见下表，默认为新闻发布"},"maintainers":["nczitzk"],"categories":["government","popular"],"radar":[{"title":"中华人民共和国国家发展和改革委员会 - 新闻动态","source":["ndrc.gov.cn/xwdt/:category*"]}],"description":"| 新闻发布 | 通知通告 | 委领导动态 | 司局动态 | 地方动态 |\n| -------- | -------- | ---------- | -------- | -------- |\n| xwfb     | tzgg     | wlddt      | sjdt     | dfdt     |","location":"ndrc/xwdt.ts","heat":1242,"topFeeds":[{"type":"feed","id":"60266822888425476","url":"rsshub://gov/ndrc/xwdt","title":"新闻发布-国家发展和改革委员会","description":"新闻发布-国家发展和改革委员会 - Powered by RSSHub","siteUrl":"https://www.ndrc.gov.cn/xwdt/xwfb","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"76948303329996800","url":"rsshub://gov/ndrc/xwdt/xwfb","title":"新闻发布-国家发展和改革委员会","description":"新闻发布-国家发展和改革委员会 - Powered by RSSHub","siteUrl":"https://www.ndrc.gov.cn/xwdt/xwfb","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
@@ -359,11 +359,11 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)
 :::
 
-### 文件公示 <Site url="sh.gov.cn" size="sm" />
+### 文件公示 <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/miit/wjgs","categories":["government","popular"],"example":"/gov/miit/wjgs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"文件公示","maintainers":["Yoge-Code"],"location":"miit/wjgs.ts","heat":1224,"topFeeds":[{"type":"feed","id":"61219763349776384","url":"rsshub://gov/miit/wjgs","title":"文件公示 - 中华人民共和国工业和信息化部","description":"文件公示 - 中华人民共和国工业和信息化部 - Powered by RSSHub","siteUrl":"https://www.miit.gov.cn/zwgk/wjgs/index.html","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":["/fmprc/:category?","/mfa/wjdt/:category?"],"name":"Unknown","maintainers":["nicolaszf","nczitzk"],"description":"| 分类       | category |\n| ---------- | -------- |\n| 领导人活动 | gjldrhd  |\n| 外事日程   | wsrc     |\n| 部领导活动 | wjbxw    |\n| 业务动态   | sjxw     |\n| 发言人表态 | fyrbt    |\n| 吹风会     | cfhsl    |\n| 大使任免   | dsrm     |\n| 驻外报道   | zwbd     |\n| 政策解读   | zcjd     |","location":"mfa/wjdt.ts","heat":1210,"topFeeds":[{"type":"feed","id":"60721620594665472","url":"rsshub://gov/fmprc/fyrbt","title":"例行记者会_中华人民共和国外交部","description":"例行记者会_中华人民共和国外交部 - Powered by RSSHub","siteUrl":"https://www.mfa.gov.cn/web/wjdt_674879/fyrbt_674889","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"103088350778989568","url":"rsshub://gov/fmprc/cfhsl","title":"吹风会_中华人民共和国外交部","description":"吹风会_中华人民共和国外交部 - Powered by RSSHub","siteUrl":"https://www.mfa.gov.cn/web/wjdt_674879/cfhsl_674891","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
 
@@ -505,7 +505,7 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 </details>
     
 
-### 通用 <Site url="sh.gov.cn" size="sm" />
+### 通用 <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/npc/:caty","categories":["government","popular"],"example":"/gov/npc/c183","parameters":{"caty":"分类名，支持形如 `http://www.npc.gov.cn/npc/c2/*/` 的网站，传入 npc 之后的参数"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["npc.gov.cn/npc/c2/:caty"]}],"name":"通用","maintainers":["233yeee"],"description":"| 立法 | 监督 | 代表 | 理论 | 权威发布 | 滚动新闻 |\n| ---- | ---- | ---- | ---- | -------- | -------- |\n| c183 | c184 | c185 | c189 | c12435   | c10134   |","location":"npc/index.ts","heat":1111,"topFeeds":[{"type":"feed","id":"76238928708564992","url":"rsshub://gov/npc/c12435","title":"权威发布_中国人大网","description":"权威发布_中国人大网 - Powered by RSSHub","siteUrl":"http://www.npc.gov.cn/npc/c2/c12435/","image":null,"errorMessage":"Cannot read properties of null (reading &#39;1&#39;)\nCannot read properties of null (reading &#39;1&#39;)\n","errorAt":"2025-05-14T05:08:07.130Z","ownerUserId":null},{"type":"feed","id":"62717033472135175","url":"rsshub://gov/npc/c183","title":"立法_中国人大网","description":"立法_中国人大网 - Powered by RSSHub","siteUrl":"http://www.npc.gov.cn/npc/c2/c183/","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
@@ -513,39 +513,39 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 | ---- | ---- | ---- | ---- | -------- | -------- |
 | c183 | c184 | c185 | c189 | c12435   | c10134   |
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/nsfc/*","name":"Unknown","maintainers":[],"location":"nsfc/index.ts","heat":19,"topFeeds":[{"type":"feed","id":"63261228706922499","url":"rsshub://gov/nsfc/news/tzgg","title":"国家自然科学基金委员会 - 基金要闻 - 指南通告","description":"指南通告 - Powered by RSSHub","siteUrl":"https://www.nsfc.gov.cn/publish/portal0/tab442/","image":null,"errorMessage":"404 Not Found\n[GET] \"https://www.nsfc.gov.cn/publish/portal0/tab442/\": <no response> fetch failed\n","errorAt":"2025-08-06T12:35:13.098Z","ownerUserId":null},{"type":"feed","id":"65380269087729741","url":"rsshub://gov/nsfc/news/kpkx","title":"国家自然科学基金委员会 - 基金要闻 - 科普快讯","description":"科普快讯 - Powered by RSSHub","siteUrl":"https://www.nsfc.gov.cn/publish/portal0/tab446/","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/suzhou/fg/:category{.+}?","name":"Unknown","maintainers":[],"location":"suzhou/fg.ts","heat":4,"topFeeds":[{"type":"feed","id":"78065770510741509","url":"https://rsshub.rssforever.com/gov/suzhou/fg/szfgw/ggl/nav_list?filterout=%E6%88%90%E5%93%81%E6%B2%B9%7C%E5%85%AC%E4%BA%A4%7C%E5%A4%A9%E7%84%B6%E6%B0%94%7C%E7%B2%AE%E9%A3%9F%7C%E9%A2%84%E7%AE%97%7C%E5%86%B3%E7%AE%97%7C%E7%BB%A9%E6%95%88%7C%E5%B7%A5%E4%BD%9C%E6%8A%A5%E8%A1%A8","title":"苏州市发展和改革委员会 - 通知公告","description":"苏州市发展和改革委员会 - 通知公告 - Powered by RSSHub","siteUrl":"https://fg.suzhou.gov.cn/szfgw/ggl/nav_list.shtml","image":"https://fg.suzhou.gov.cn/szfgw/xhtml/images/logo.png","errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/nopss/*","name":"Unknown","maintainers":[],"location":"nopss/index.ts","heat":3,"topFeeds":[{"type":"feed","id":"68892056440478838","url":"rsshub://gov/nopss/GB/219469/431028","title":"閲嶅ぇ椤圭洰- 鍏ㄥ浗鍝插绀句細绉戝宸ヤ綔鍔炲叕瀹�","description":"閲嶅ぇ椤圭洰- 鍏ㄥ浗鍝插绀句細绉戝宸ヤ綔鍔炲叕瀹� - Powered by RSSHub","siteUrl":"http://www.nopss.gov.cn/GB/219469/431028","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"68892056440478839","url":"rsshub://gov/nopss/GB/219469/431027","title":"骞村害椤圭洰- 鍏ㄥ浗鍝插绀句細绉戝宸ヤ綔鍔炲叕瀹�","description":"骞村害椤圭洰- 鍏ㄥ浗鍝插绀句細绉戝宸ヤ綔鍔炲叕瀹� - Powered by RSSHub","siteUrl":"http://www.nopss.gov.cn/GB/219469/431027","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/mgs/*","name":"Unknown","maintainers":[],"location":"mgs/mgs.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/mmht/*","name":"Unknown","maintainers":[],"location":"mmht/mmht.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/mofcom/article/:suffix{.+}","name":"Unknown","maintainers":[],"location":"mofcom/article.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### 中华人民共和国交通运输部 <Site url="sh.gov.cn" size="sm" />
+### 中华人民共和国交通运输部 <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/mot/:category{.+}?","name":"中华人民共和国交通运输部","maintainers":["ladeng07"],"location":"mot/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/nifdc/:path{.+}?","name":"Unknown","maintainers":[],"location":"nifdc/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/nmpa/*","name":"Unknown","maintainers":[],"location":"nmpa/generic.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
@@ -553,19 +553,19 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 
 <Route namespace="gov" :data='{"path":"/pbc/zcyj","radar":[{"source":["pbc.gov.cn/redianzhuanti/118742/4122386/4122510/index.html"]}],"name":"Unknown","maintainers":["Fatpandac"],"url":"pbc.gov.cn/redianzhuanti/118742/4122386/4122510/index.html","location":"pbc/zcyj.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/sasac/:path{.+}","name":"Unknown","maintainers":[],"location":"sasac/generic.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/sdb/*","name":"Unknown","maintainers":[],"location":"sdb/sdb.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":["/sh/yjj/*","/shanghai/yjj/*"],"name":"Unknown","maintainers":[],"location":"sh/yjj/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### Unknown <Site url="sh.gov.cn" size="sm" />
+### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/xinyi/*","name":"Unknown","maintainers":[],"location":"xinyi/xinyi.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
