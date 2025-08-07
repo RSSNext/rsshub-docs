@@ -5415,3 +5415,13 @@ If you subscribe to [All male articles](https://kpopping.com/news/gender-male/ca
 
 <Route namespace="techsir" :data='{"path":"/","categories":["new-media"],"example":"/techsir","url":"www.techsir.com","name":"最新资讯","maintainers":["p3psi-boo"],"location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## The Wire Hindi <Site url="thewirehindi.com"/>
+
+### Category <Site url="thewirehindi.com/" size="sm" />
+
+<Route namespace="thewirehindi" :data='{"path":"/category/:category","categories":["new-media"],"example":"/thewirehindi/category/bharat","parameters":{"category":{"description":"Category name","options":[{"value":"interview","label":"इंटरव्यू"},{"value":"audio","label":"ऑडियो"},{"value":"kala-sahitya","label":"कला-साहित्य"},{"value":"campus","label":"कैंपस"},{"value":"covid-19","label":"कोविड-19"},{"value":"jan-ki-baat","label":"जन की बात"},{"value":"duniya","label":"दुनिया"},{"value":"north-east","label":"नॉर्थ ईस्ट"},{"value":"prasangik","label":"प्रासंगिक"},{"value":"bharat","label":"भारत"},{"value":"media","label":"मीडिया"},{"value":"media-bol","label":"मीडिया बोल"},{"value":"rajneeti","label":"राजनीति"},{"value":"vichar","label":"विचार"},{"value":"vigyan","label":"विज्ञान"},{"value":"vishesh","label":"विशेष"},{"value":"video","label":"वीडियो"},{"value":"samaj","label":"समाज"},{"value":"ham-bhi-bharat","label":"हम भी भारत"},{"value":"hamare-bare-mein","label":"हमारे बारे में"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thewirehindi.com/category/*"]}],"name":"Category","maintainers":["Rjnishant530"],"url":"thewirehindi.com/","location":"category.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### Latest News <Site url="thewirehindi.com/" size="sm" />
+
+<Route namespace="thewirehindi" :data='{"path":"/","categories":["new-media"],"example":"/thewirehindi","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thewirehindi.com/"]}],"name":"Latest News","maintainers":["Rjnishant530"],"url":"thewirehindi.com/","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
