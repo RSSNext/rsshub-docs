@@ -1171,6 +1171,17 @@ Filter parameters:
 
 <Route namespace="dgjyw" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
+## Digital Policy Alert <Site url="digitalpolicyalert.org"/>
+
+### Activity Tracker <Site url="digitalpolicyalert.org" size="sm" />
+
+<Route namespace="digitalpolicyalert" :data='{"path":"/activity-tracker/:filters?","name":"Activity Tracker","url":"digitalpolicyalert.org","maintainers":["nczitzk"],"example":"/digitalpolicyalert/activity-tracker","parameters":{"filter":{"description":"Filter, all by default"}},"description":":::tip\nTo subscribe to [Activity Tracker - International trade](https://digitalpolicyalert.org/activity-tracker?policy=1), where the source URL is `https://digitalpolicyalert.org/activity-tracker?policy=1`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/digitalpolicyalert/activity-tracker/policy=1`](https://rsshub.app/digitalpolicyalert/activity-tracker/policy=1).\n:::\n","categories":["other"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["digitalpolicyalert.org"]}],"view":0,"location":"activity-tracker.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+:::tip
+To subscribe to [Activity Tracker - International trade](https://digitalpolicyalert.org/activity-tracker?policy=1), where the source URL is `https://digitalpolicyalert.org/activity-tracker?policy=1`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/digitalpolicyalert/activity-tracker/policy=1`](https://rsshub.app/digitalpolicyalert/activity-tracker/policy=1).
+:::
+
+
 ## Distill <Site url="distill.pub"/>
 
 ### Unknown <Site url="distill.pub/" size="sm" />
