@@ -469,6 +469,15 @@ category 参数可选，范围如下:
 | -------- | -------- | ------------------ |
 | 1        | 2        | 3                  |
 
+### 外国语学院 <Site url="www.sis.zju.edu.cn" size="sm" />
+
+<Route namespace="zju" :data='{"path":"/sis/:type","categories":["university"],"example":"/zju/sis/0","parameters":{"type":"分类，见下表"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"外国语学院","description":"| 重要公告 | 最新通知 | 教育教学 | 科学研究 | 新闻动态 | 联系我们 | 党政管理 | 组织人事 | 科学研究 | 本科教育 | 研究生教育 | 学生思政 | 校友联络 | 对外交流 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7            | 8            | 9       | 10       | 11       | 12       | 13       |\n","maintainers":["Alex222222222222"],"url":"www.sis.zju.edu.cn","location":"sis/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 重要公告 | 最新通知 | 教育教学 | 科学研究 | 新闻动态 | 联系我们 | 党政管理 | 组织人事 | 科学研究 | 本科教育 | 研究生教育 | 学生思政 | 校友联络 | 对外交流 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7            | 8            | 9       | 10       | 11       | 12       | 13       |
+
+
 ## 哈尔滨工业大学 <Site url="jwc.hit.edu.cn"/>
 
 ::: warning
