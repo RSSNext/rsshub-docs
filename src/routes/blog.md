@@ -550,6 +550,14 @@ Weather forecasts, climate data, and meteorological news from meteoblue
 
 Weather news and articles from meteoblue
 
+## Massachusetts Institute of Technology <Site url="mit.edu"/>
+
+### HAN Lab Blog <Site url="mit.edu" size="sm" />
+
+<Route namespace="mit" :data='{"path":"/hanlab/blog","categories":["blog"],"example":"/mit/hanlab/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["hanlab.mit.edu/blog"]}],"name":"HAN Lab Blog","maintainers":["johan456789"],"description":"MIT HAN Lab pioneers research in efficient AI, advancing algorithms and hardware to make generative models faster, smarter, and more accessible.","location":"hanlab.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+MIT HAN Lab pioneers research in efficient AI, advancing algorithms and hardware to make generative models faster, smarter, and more accessible.
+
 ## njuferret <Site url="njuferret.github.io"/>
 
 ### Blogs <Site url="njuferret.github.io" size="sm" />
