@@ -1292,6 +1292,27 @@ To subscribe to [Latest](https://musify.club/en), where the source URL is `https
 
 <Route namespace="musikguru" :data='{"path":"/news","name":"News","url":"musikguru.de","maintainers":["nczitzk"],"example":"/musikguru/news","categories":["multimedia"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["musikguru.de/news"],"target":"news"}],"view":0,"location":"news.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## NIO <Site url="nio.com"/>
+
+### NIO Radio <Site url="nio.com" size="sm" />
+
+<Route namespace="nio" :data='{"path":"/nioradio/:albumid","categories":["multimedia"],"description":"\n:::tip\n**如何获取电台 ID？**\n打开蔚来 APP 后，点击“此地”→“NIO Radio”，找到自己想要转换为播客的专辑，分享后在生成的链接中找到`container_id=`后方的数字即可。\n常见电台 ID：\n| 电台名称          | 电台 ID |\n| :------------ | :---- |\n| 资讯充电站（早间版）    | 5     |\n| 资讯充电站（晚间版）    | 23    |\n| E 次元财经报       | 148   |\n| 塞萌不塞车         | 661   |\n| 乐行记           | 11    |\n| Weekend Dance | 547   |\n:::","example":"/nio/nioradio/5","parameters":{"albumid":"电台专辑 ID"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"name":"NIO Radio","maintainers":["marcosteam"],"location":"nioradio.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+
+:::tip
+**如何获取电台 ID？**
+打开蔚来 APP 后，点击“此地”→“NIO Radio”，找到自己想要转换为播客的专辑，分享后在生成的链接中找到`container_id=`后方的数字即可。
+常见电台 ID：
+| 电台名称          | 电台 ID |
+| :------------ | :---- |
+| 资讯充电站（早间版）    | 5     |
+| 资讯充电站（晚间版）    | 23    |
+| E 次元财经报       | 148   |
+| 塞萌不塞车         | 661   |
+| 乐行记           | 11    |
+| Weekend Dance | 547   |
+:::
+
 ## OTOBANANA <Site url="otobanana.com"/>
 
 ### Cast 音声投稿 <Site url="otobanana.com" size="sm" />
