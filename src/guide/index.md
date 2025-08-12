@@ -86,3 +86,4 @@ You need to use supported browser extensions, mobile apps, RSS readers, or other
 - Browser extension: [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)
 - iOS app: [RSSBud](https://github.com/Cay-Zhang/RSSBud)
 - Android app: [RSSAid](https://github.com/LeetaoGoooo/RSSAid)
+- Dify Plugin: [RSSHub Dify Plugin](https://github.com/stvlynn/RSSHub-Dify-Plugin)
