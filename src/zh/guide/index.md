@@ -84,3 +84,4 @@ RSSHub 还提供了一个 Radar 功能，用于将网站地址映射到 RSSHub �
 - 浏览器插件: [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)
 - iOS 应用: [RSSBud](https://github.com/Cay-Zhang/RSSBud)
 - Android 应用: [RSSAid](https://github.com/LeetaoGoooo/RSSAid)
+- Dify 插件: [RSSHub Dify Plugin](https://github.com/stvlynn/RSSHub-Dify-Plugin)
