@@ -2683,6 +2683,16 @@ China University of Political Science and Law Academic Affairs Office Notices
 
 <Route namespace="ctbu" :data='{"path":"/xxgg","categories":["university"],"example":"/ctbu/xxgg","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ctbu.edu.cn/","www.ctbu.edu.cn/index/xxgg.htm"]}],"name":"学校公告","maintainers":["Skylwn"],"url":"www.ctbu.edu.cn/","location":"xxgg.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## 东莞理工学院 <Site url="www.dgut.edu.cn"/>
+
+### 教务部通知公告 <Site url="www.dgut.edu.cn" size="sm" />
+
+<Route namespace="dgut" :data='{"path":"/jwb/:type?","categories":["university"],"example":"/dgut/jwb/jwtz","parameters":{"type":"哪种通知，默认为教务通知"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"maintainers":["1200522928"],"radar":[{"source":["jwb.dgut.edu.cn/tzgg/"],"target":""}],"name":"教务部通知公告","description":"| 教学动态 | 教务通知 | 教研通知 | 实践通知 | 产业学院 |  通识教育  |\"杨振宁\"班|招生信息 |采购公告 |\n| ------- | -------  | ---------| --------| --------| ----------|---------|------- |--------|\n| jxdt    | jwtz     | jytz     |   sjtz  |   cyxy  |   tsjy    | yznb    |  zsxx  | cggg   |","location":"jwb.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 教学动态 | 教务通知 | 教研通知 | 实践通知 | 产业学院 |  通识教育  |"杨振宁"班|招生信息 |采购公告 |
+| ------- | -------  | ---------| --------| --------| ----------|---------|------- |--------|
+| jxdt    | jwtz     | jytz     |   sjtz  |   cyxy  |   tsjy    | yznb    |  zsxx  | cggg   |
+
 ## 东华大学 <Site url="www.dhu.edu.cn"/>
 
 ### 教务处通知 <Site url="www.dhu.edu.cn" size="sm" />
