@@ -1846,6 +1846,20 @@ Category
   -   `-m` for the draft which Speaker of Parliament considered as a monetary draft (ประธานสภาผู้แทนราษฎรวินิจฉัยว่า เป็นร่างการเงิน), or
   -   `-nm` for non-monetary one (ประธานสภาผู้แทนราษฎรวินิจฉัยว่า ไม่เป็นร่างการเงิน).
 
+## 四川省人力资源和社会保障厅人事考试专栏 <Site url="www.scpta.com.cn"/>
+
+### 通知公告 <Site url="www.scpta.com.cn" size="sm" />
+
+<Route namespace="scpta" :data='{"path":"/news/:category","categories":["government"],"example":"/scpta/news/33","parameters":{"category":{"description":"分类ID，默认为`33`(工作动态)","default":"33"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.scpta.com.cn/front/News/List"],"target":"/news"}],"name":"通知公告","maintainers":["Yeye-0426"],"description":"| 分类                 | category_id |\n|----------------------|-------------|\n| 工作动态             | 33          |\n| 公务员考试           | 56          |\n| 专业技术人员资格考试 | 57          |\n| 事业单位考试         | 67          |\n| 其它                 | 72          |","location":"news.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 分类                 | category_id |
+|----------------------|-------------|
+| 工作动态             | 33          |
+| 公务员考试           | 56          |
+| 专业技术人员资格考试 | 57          |
+| 事业单位考试         | 67          |
+| 其它                 | 72          |
+
 ## 澳门卫生局 <Site url="www.ssm.gov.mo"/>
 
 ### 最新消息 <Site url="www.ssm.gov.mo/" size="sm" />
