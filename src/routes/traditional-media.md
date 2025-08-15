@@ -1724,6 +1724,12 @@ Channels:
 
 如订阅 **第 A1 版：国内大局**，路由为 [`/cntheory/paper/国内大局`](https://rsshub.app/cntheory/paper/国内大局)。
 
+## 康健 <Site url="commonhealth.com.tw"/>
+
+### 最新內容 <Site url="commonhealth.com.tw" size="sm" />
+
+<Route namespace="commonhealth" :data='{"path":"/","name":"最新內容","url":"commonhealth.com.tw","maintainers":["johan456789"],"example":"/commonhealth","categories":["traditional-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.commonhealth.com.tw/"],"target":"/"}],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 新蓝网（浙江广播电视集团） <Site url="cztv.com"/>
 
 ### 浙江新闻联播 - 每日合集 <Site url="cztv.com/videos/zjxwlb" size="sm" />
