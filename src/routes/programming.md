@@ -1414,6 +1414,23 @@ Supported site identifiers: [`apache`](https://bz.apache.org/bugzilla), [`apache
 
 <Route namespace="gitcode" :data='{"path":"/commits/:owner/:repo/:branch?","categories":["programming"],"example":"/gitcode/commits/openharmony-sig/flutter_flutter","parameters":{"owner":"用户名/组织名","repo":"仓库名","branch":"分支名，可选，默认为主分支"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitcode.com/:owner/:repo/commits","gitcode.com/:owner/:repo/commits/:branch"]}],"name":"仓库提交","maintainers":["JiZhi-Error"],"location":"repos/commits.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Gitstar Ranking <Site url="gitstar-ranking.com"/>
+
+### Ranking <Site url="gitstar-ranking.com" size="sm" />
+
+<Route namespace="gitstar-ranking" :data='{"path":"/:category?","name":"Ranking","url":"gitstar-ranking.com","maintainers":["nczitzk"],"example":"/gitstar-ranking/repositories","parameters":{"category":{"description":"Category, Repositories by default","options":[{"label":"Users","value":"users"},{"label":"Organizations","value":"organizations"},{"label":"Repositories","value":"repositories"}]}},"description":":::tip\nTo subscribe to [Repositories](https://gitstar-ranking.com/repositories), where the source URL is `https://gitstar-ranking.com/repositories`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/gitstar-ranking/repositories`](https://rsshub.app/gitstar-ranking/repositories).\n:::\n\n| Category                                                   | ID                                                                |\n| ---------------------------------------------------------- | ----------------------------------------------------------------- |\n| [Users](https://gitstar-ranking.com/users)                 | [users](https://rsshub.app/gitstar-ranking/users)                 |\n| [Organizations](https://gitstar-ranking.com/organizations) | [organizations](https://rsshub.app/gitstar-ranking/organizations) |\n| [Repositories](https://gitstar-ranking.com/repositories)   | [repositories](https://rsshub.app/gitstar-ranking/repositories)   |\n","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["gitstar-ranking.com/:category"],"target":"/:category"},{"title":"Users","source":["gitstar-ranking.com/users"],"target":"/users"},{"title":"Organizations","source":["gitstar-ranking.com/organizations"],"target":"/organizations"},{"title":"Repositories","source":["gitstar-ranking.com/repositories"],"target":"/repositories"}],"view":0,"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+:::tip
+To subscribe to [Repositories](https://gitstar-ranking.com/repositories), where the source URL is `https://gitstar-ranking.com/repositories`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/gitstar-ranking/repositories`](https://rsshub.app/gitstar-ranking/repositories).
+:::
+
+| Category                                                   | ID                                                                |
+| ---------------------------------------------------------- | ----------------------------------------------------------------- |
+| [Users](https://gitstar-ranking.com/users)                 | [users](https://rsshub.app/gitstar-ranking/users)                 |
+| [Organizations](https://gitstar-ranking.com/organizations) | [organizations](https://rsshub.app/gitstar-ranking/organizations) |
+| [Repositories](https://gitstar-ranking.com/repositories)   | [repositories](https://rsshub.app/gitstar-ranking/repositories)   |
+
+
 ## GoCN <Site url="gocn.vip"/>
 
 ### 招聘 <Site url="gocn.vip/" size="sm" />
