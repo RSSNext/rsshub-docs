@@ -137,7 +137,7 @@ Remember to remove all build artifacts in `assets/build/` before committing.
 
 ### Rendering Templates
 
-When rendering custom content with HTML, such as `item.description`, using [art-template](https://aui.github.io/art-template/) for layout is mandatory.
+When rendering custom content with HTML, such as `item.description`, using [art-template](https://web.archive.org/web/20241011185323/http://aui.github.io/art-template/docs/syntax.html) for layout is mandatory.
 
 All templates should be placed in the namespace's `templates` folder with the `.art` file extension.
 
