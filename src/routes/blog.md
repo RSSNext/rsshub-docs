@@ -526,6 +526,24 @@ Cohere is a platform for building AI applications.
 
 <Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Hudson River Trading <Site url="hudsonrivertrading.com"/>
+
+HRT (Hudson River Trading) is a quantitative trading firm that uses advanced algorithms and technology to trade across global financial markets.
+
+### Tech Blog <Site url="hudsonrivertrading.com" size="sm" />
+
+<Route namespace="hudsonrivertrading" :data='{"path":"/blog/:section?","categories":["blog"],"example":"/hudsonrivertrading/blog","parameters":{"section":{"description":"Optional section filter","options":[{"label":"Algorithm","value":"algo"},{"label":"Engineering","value":"engineers"},{"label":"Intern Spotlight","value":"interns"},{"label":"Hardware, Systems & More","value":"more"}]}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.hudsonrivertrading.com/hrtbeat/"]}],"name":"Tech Blog","maintainers":["johan456789"],"description":"HRT (Hudson River Trading) Tech Blog\n\n| Route | Section |\n| ----- | ------- |\n| /hudsonrivertrading/blog | All Posts |\n| /hudsonrivertrading/blog/algo | Algorithm |\n| /hudsonrivertrading/blog/engineers | Engineering |\n| /hudsonrivertrading/blog/interns | Intern Spotlight |\n| /hudsonrivertrading/blog/more | Hardware, Systems & More |","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+HRT (Hudson River Trading) Tech Blog
+
+| Route | Section |
+| ----- | ------- |
+| /hudsonrivertrading/blog | All Posts |
+| /hudsonrivertrading/blog/algo | Algorithm |
+| /hudsonrivertrading/blog/engineers | Engineering |
+| /hudsonrivertrading/blog/interns | Intern Spotlight |
+| /hudsonrivertrading/blog/more | Hardware, Systems & More |
+
 ## Ian Spriggss <Site url="ianspriggs.com"/>
 
 ### Category <Site url="ianspriggs.com" size="sm" />
