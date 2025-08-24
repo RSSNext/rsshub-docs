@@ -651,6 +651,12 @@ Category
 
 <Route namespace="snowpeak" :data='{"path":"/us/new-arrivals","categories":["shopping"],"example":"/snowpeak/us/new-arrivals","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["snowpeak.com/collections/new-arrivals","snowpeak.com/"]}],"name":"New Arrivals(USA)","maintainers":["EthanWng97"],"url":"snowpeak.com/collections/new-arrivals","location":"us-new-arrivals.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Gadget Flow <Site url="thegadgetflow.com"/>
+
+### Category <Site url="thegadgetflow.com" size="sm" />
+
+<Route namespace="thegadgetflow" :data='{"path":"/:category?","categories":["shopping"],"example":"/thegadgetflow/cool-gadgets-gifts","parameters":{"category":"category name, can be found in url"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thegadgetflow.com/categories/:category"],"target":"/:category"}],"name":"Category","maintainers":["EthanWng97"],"location":"rss.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Zagg <Site url="zagg.com"/>
 
 ### New Arrivals <Site url="zagg.com" size="sm" />
