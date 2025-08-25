@@ -5096,6 +5096,22 @@ This route provides a better reading experience (full text articles) over the of
 | [政策权威解读](http://www.ccfa.org.cn/portal/cn/fangyizhuanqu_list.jsp?type=40) | [40](https://rsshub.app/ccfa/40) |
     
 
+## 全球化智库 <Site url="ccg.org.cn"/>
+
+### 动态 <Site url="www.ccg.org.cn" size="sm" />
+
+<Route namespace="ccg" :data='{"path":"/:category?","name":"动态","url":"www.ccg.org.cn","maintainers":["nczitzk"],"example":"/ccg/news","parameters":{"category":{"description":"分类，默认为 `news`，即新闻动态，可在对应分类页 URL 中找到","options":[{"label":"新闻动态","value":"news"},{"label":"媒体报道","value":"mtbd"}]}},"description":":::tip\n订阅 [新闻动态](http://www.ccg.org.cn/news)，其源网址为 `http://www.ccg.org.cn/news`，请参考该 URL 指定部分构成参数，此时路由为 [`/ccg/news`](https://rsshub.app/ccg/news)。\n:::\n\n| 分类                                   | ID                                  |\n| -------------------------------------- | ----------------------------------- |\n| [新闻动态](http://www.ccg.org.cn/news) | [news](https://rsshub.app/ccg/news) |\n| [媒体报道](http://www.ccg.org.cn/mtbd) | [mtbd](https://rsshub.app/ccg/mtbd) |\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.ccg.org.cn/category"],"target":"/:category"},{"title":"新闻动态","source":["www.ccg.org.cn/news"],"target":"/news"},{"title":"媒体报道","source":["www.ccg.org.cn/mtbd"],"target":"/mtbd"}],"view":0,"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+:::tip
+订阅 [新闻动态](http://www.ccg.org.cn/news)，其源网址为 `http://www.ccg.org.cn/news`，请参考该 URL 指定部分构成参数，此时路由为 [`/ccg/news`](https://rsshub.app/ccg/news)。
+:::
+
+| 分类                                   | ID                                  |
+| -------------------------------------- | ----------------------------------- |
+| [新闻动态](http://www.ccg.org.cn/news) | [news](https://rsshub.app/ccg/news) |
+| [媒体报道](http://www.ccg.org.cn/mtbd) | [mtbd](https://rsshub.app/ccg/mtbd) |
+
+
 ## 链捕手 ChainCatcher <Site url="chaincatcher.com"/>
 
 ### Unknown <Site url="chaincatcher.com/" size="sm" />
