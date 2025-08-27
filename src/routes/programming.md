@@ -138,27 +138,7 @@ Get the activities of a user on GitHub, based on the GitHub official RSS feed
 
 ### 热门 <Site url="juejin.cn" size="sm" />
 
-<Route namespace="juejin" :data='{"path":"/trending/:category/:type","categories":["programming","popular"],"example":"/juejin/trending/ios/monthly","parameters":{"category":"分类名","type":"类型"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门","maintainers":["moaix"],"description":"| category | 标签     |\n| -------- | -------- |\n| android  | Android  |\n| frontend | 前端     |\n| ios      | iOS      |\n| backend  | 后端     |\n| design   | 设计     |\n| product  | 产品     |\n| freebie  | 工具资源 |\n| article  | 阅读     |\n| ai       | 人工智能 |\n| devops   | 运维     |\n| all      | 全部     |\n\n| type       | 类型     |\n| ---------- | -------- |\n| weekly     | 本周最热 |\n| monthly    | 本月最热 |\n| historical | 历史最热 |","location":"trending.ts","heat":6826,"topFeeds":[{"type":"feed","id":"41459996870678548","url":"https://rsshub.bestblogs.dev/juejin/trending/all/weekly","title":"掘金本周最热","description":"掘金本周最热 - Powered by RSSHub","siteUrl":"https://juejin.im/recommended?sort=weekly_hottest","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"55215029121101832","url":"rsshub://juejin/trending/frontend/weekly","title":"掘金前端本周最热","description":"掘金前端本周最热 - Powered by RSSHub","siteUrl":"https://juejin.im/frontend?sort=weekly_hottest","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:44:18)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"}' />
-
-| category | 标签     |
-| -------- | -------- |
-| android  | Android  |
-| frontend | 前端     |
-| ios      | iOS      |
-| backend  | 后端     |
-| design   | 设计     |
-| product  | 产品     |
-| freebie  | 工具资源 |
-| article  | 阅读     |
-| ai       | 人工智能 |
-| devops   | 运维     |
-| all      | 全部     |
-
-| type       | 类型     |
-| ---------- | -------- |
-| weekly     | 本周最热 |
-| monthly    | 本月最热 |
-| historical | 历史最热 |
+<Route namespace="juejin" :data='{"path":"/trending/:category/:type","categories":["programming","popular"],"example":"/juejin/trending/ios/monthly","parameters":{"category":{"description":"分类名","options":[{"value":"android","label":"Android"},{"value":"frontend","label":"前端"},{"value":"ios","label":"iOS"},{"value":"backend","label":"后端"},{"value":"design","label":"设计"},{"value":"product","label":"产品"},{"value":"freebie","label":"工具资源"},{"value":"article","label":"阅读"},{"value":"ai","label":"人工智能"},{"value":"devops","label":"运维"},{"value":"all","label":"全部"}],"default":"all"},"type":{"description":"类型","options":[{"value":"weekly","label":"本周最热"},{"value":"monthly","label":"本月最热"},{"value":"historical","label":"历史最热"}],"default":"weekly"}},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"热门","maintainers":["moaix"],"location":"trending.ts","heat":6826,"topFeeds":[{"type":"feed","id":"41459996870678548","url":"https://rsshub.bestblogs.dev/juejin/trending/all/weekly","title":"掘金本周最热","description":"掘金本周最热 - Powered by RSSHub","siteUrl":"https://juejin.im/recommended?sort=weekly_hottest","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"55215029121101832","url":"rsshub://juejin/trending/frontend/weekly","title":"掘金前端本周最热","description":"掘金前端本周最热 - Powered by RSSHub","siteUrl":"https://juejin.im/frontend?sort=weekly_hottest","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":1,"message":"Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at Timeout.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@2.1.9/node_modules/@vitest/runner/dist/index.js:44:18)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"}' />
 
 ### 用户动态 <Site url="juejin.cn" size="sm" />
 
