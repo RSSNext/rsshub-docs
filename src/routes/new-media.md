@@ -5487,6 +5487,12 @@ If you subscribe to [All male articles](https://kpopping.com/news/gender-male/ca
 
 <Route namespace="thewirehindi" :data='{"path":"/","categories":["new-media"],"example":"/thewirehindi","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thewirehindi.com/"]}],"name":"Latest News","maintainers":["Rjnishant530"],"url":"thewirehindi.com/","location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## TrendForce <Site url="trendforce.com"/>
+
+### News <Site url="www.trendforce.com" size="sm" />
+
+<Route namespace="trendforce" :data='{"path":"/news","name":"News","url":"www.trendforce.com","maintainers":["nczitzk"],"example":"/trendforce/news","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.trendforce.com/news/"],"target":"/news"}],"view":0,"location":"new.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 未知文明 <Site url="xwenming.com"/>
 
 ### 分类 <Site url="www.xwenming.com" size="sm" />
