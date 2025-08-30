@@ -1212,6 +1212,12 @@ Filter parameters:
 
 <Route namespace="easynomad" :data='{"path":"/","categories":["other"],"view":5,"example":"/easynomad","radar":[{"source":["easynomad.cn"]}],"name":"远程工作列表","maintainers":["jiangsong216"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"location":"joblist.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Eventbrite <Site url="eventbrite.com"/>
+
+### Events <Site url="eventbrite.com" size="sm" />
+
+<Route namespace="eventbrite" :data='{"path":"/:region/:eventType?/:includePromoted?","categories":["other"],"example":"/eventbrite/canada--toronto/all-events","parameters":{"eventType":"category of events for filtering","region":"Region or scope of events"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["eventbrite.com/d/:region/:eventType"],"target":"/:region/:eventType"},{"source":["eventbrite.ca/d/:region/:eventType"],"target":"/:region/:eventType"}],"name":"Events","maintainers":["elibroftw"],"location":"events.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## U.S. Food and Drug Administration <Site url="fda.gov"/>
 
 ### Unknown <Site url="fda.gov/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates" size="sm" />
