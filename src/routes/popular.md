@@ -537,10 +537,6 @@ YouTube provides official RSS feeds for channels, for instance [https://www.yout
 
 <Route namespace="gov" :data='{"path":"/mofcom/article/:suffix{.+}","name":"Unknown","maintainers":[],"location":"mofcom/article.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-### 中华人民共和国交通运输部 <Site url="www.szlh.gov.cn" size="sm" />
-
-<Route namespace="gov" :data='{"path":"/mot/:category{.+}?","name":"中华人民共和国交通运输部","maintainers":["ladeng07"],"location":"mot/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
-
 ### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
 <Route namespace="gov" :data='{"path":"/nifdc/:path{.+}?","name":"Unknown","maintainers":[],"location":"nifdc/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />

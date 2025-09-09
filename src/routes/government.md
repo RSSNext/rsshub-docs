@@ -1126,9 +1126,14 @@
 | ---- | ---- | -------- | ------ | ---- | ---- | ---- | -------- |
 |      | 02   | 01       | 06     | 05   | 04   | 03   | 99       |
 
-### 中华人民共和国交通运输部 <Site url="www.szlh.gov.cn" size="sm" />
+### 中华人民共和国交通运输部 <Site url="www.mot.gov.cn" size="sm" />
 
-<Route namespace="gov" :data='{"path":"/mot/:category{.+}?","name":"中华人民共和国交通运输部","maintainers":["ladeng07"],"location":"mot/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+<Route namespace="gov" :data='{"path":"/mot/:category{.+}?","name":"中华人民共和国交通运输部","url":"www.mot.gov.cn","maintainers":["ladeng07","nczitzk"],"example":"/gov/mot/jiaotongyaowen","parameters":{"category":{"description":"分类，默认为 `jiaotongyaowen`，即交通要闻，可在对应分类页 URL 中找到","options":[{"label":"交通要闻","value":"jiaotongyaowen"},{"label":"时政要闻","value":"shizhengyaowen"},{"label":"重要会议","value":"zhongyaohuiyi"}]}},"description":":::tip\n若订阅 [重要会议](https://www.mot.gov.cn/zhongyaohuiyi/)，网址为 `https://www.mot.gov.cn/zhongyaohuiyi/`，请截取 `https://www.mot.gov.cn/` 到末尾 `/` 的部分 `zhongyaohuiyi` 作为 `category` 参数填入，此时目标路由为 [`/gov/mot/zhongyaohuiyi`](https://rsshub.app/gov/mot/zhongyaohuiyi)。\n:::\n","categories":["government"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.mot.gov.cn/:category"]},{"title":"交通要闻","source":["www.mot.gov.cn/jiaotongyaowen/"],"target":"/mot/jiaotongyaowen"},{"title":"时政要闻","source":["www.mot.gov.cn/shizhengyaowen/"],"target":"/mot/shizhengyaowen"},{"title":"重要会议","source":["www.mot.gov.cn/zhongyaohuiyi/"],"target":"/mot/zhongyaohuiyi"}],"view":0,"location":"mot/index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+:::tip
+若订阅 [重要会议](https://www.mot.gov.cn/zhongyaohuiyi/)，网址为 `https://www.mot.gov.cn/zhongyaohuiyi/`，请截取 `https://www.mot.gov.cn/` 到末尾 `/` 的部分 `zhongyaohuiyi` 作为 `category` 参数填入，此时目标路由为 [`/gov/mot/zhongyaohuiyi`](https://rsshub.app/gov/mot/zhongyaohuiyi)。
+:::
+
 
 ### Unknown <Site url="www.szlh.gov.cn" size="sm" />
 
