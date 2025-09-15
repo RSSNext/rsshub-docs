@@ -672,6 +672,14 @@ category 参数可选，范围如下:
 | -------- | -------- | -------- | -------- | ---------- | -------- | ---------- | ---------- | -------- | -------- |
 | zxdt     | xygg     | xszc     | kyxx     | bksjx      | dtyd     | yjszs      | yjsjx      | jyxx     | gjjl     |
 
+### 研究生院 <Site url="graduate.nankai.edu.cn" size="sm" />
+
+<Route namespace="nankai" :data='{"path":"/graduate/:type?","categories":["university"],"example":"/nankai/graduate/zxdt","parameters":{"type":"栏目编号（若为空则默认为\"zxdt\"）"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["graduate.nankai.edu.cn","graduate.nankai.edu.cn/:type/list.htm"],"target":"/graduate/:type?"}],"name":"研究生院","maintainers":["ladeng07"],"description":"| 最新动态 | 综合信息 | 招生工作 | 培养管理 | 国际交流 | 学科建设 | 学位管理 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| zxdt     | 82       | 83       | 84       | 85       | 86       | 87       |","url":"graduate.nankai.edu.cn","location":"graduate-notice.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 最新动态 | 综合信息 | 招生工作 | 培养管理 | 国际交流 | 学科建设 | 学位管理 |
+| -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| zxdt     | 82       | 83       | 84       | 85       | 86       | 87       |
+
 ## 电子科技大学 <Site url="www.uestc.edu.cn"/>
 
 ### 教务处 <Site url="www.jwc.uestc.edu.cn/" size="sm" />
