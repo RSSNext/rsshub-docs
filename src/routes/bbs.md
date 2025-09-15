@@ -88,17 +88,13 @@
   更多热帖版面参见 [论坛](https://bbs.hupu.com)
 :::
 
-### Unknown <Site url=".hupu.com" size="sm" />
+### 手机虎扑网 <Site url="m.hupu.com" size="sm" />
 
-<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"name":"Unknown","maintainers":["nczitzk"],"description":"| NBA | CBA | 足球   |\n| --- | --- | ------ |\n| nba | cba | soccer |\n\n::: tip\n  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n:::","location":"index.ts","heat":241,"topFeeds":[{"type":"feed","id":"54771679943372802","url":"rsshub://hupu/soccer","title":"虎扑 - 足球","description":"虎扑 - 足球 - Powered by RSSHub","siteUrl":"https://m.hupu.com/soccer","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"55638905236324352","url":"http://921402.xyz:1200/hupu/nba","title":"虎扑 - NBA","description":"虎扑 - NBA - Powered by RSSHub","siteUrl":"https://m.hupu.com/nba","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
-
-| NBA | CBA | 足球   |
-| --- | --- | ------ |
-| nba | cba | soccer |
+<Route namespace="hupu" :data='{"path":["/dept/:category?","/:category?"],"name":"手机虎扑网","url":"m.hupu.com","maintainers":["nczitzk","hyoban"],"example":"hupu/nba","parameters":{"category":{"description":"分类，可选值：nba、cba、soccer，默认为空（首页）","default":"","options":[{"label":"NBA","value":"nba"},{"label":"CBA","value":"cba"},{"label":"足球","value":"soccer"},{"label":"首页","value":""}]}},"description":"::: tip\n电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。\n    :::","categories":["bbs"],"radar":[{"source":["m.hupu.com/:category","m.hupu.com/"],"target":"/:category"}],"location":"index.ts","heat":241,"topFeeds":[{"type":"feed","id":"54771679943372802","url":"rsshub://hupu/soccer","title":"虎扑 - 足球","description":"虎扑 - 足球 - Powered by RSSHub","siteUrl":"https://m.hupu.com/soccer","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null},{"type":"feed","id":"55638905236324352","url":"http://921402.xyz:1200/hupu/nba","title":"虎扑 - NBA","description":"虎扑 - NBA - Powered by RSSHub","siteUrl":"https://m.hupu.com/nba","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='undefined' />
 
 ::: tip
-  电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
-:::
+电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
+    :::
 
 ### 社区 <Site url=".hupu.com" size="sm" />
 
