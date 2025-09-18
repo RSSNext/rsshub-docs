@@ -1719,12 +1719,6 @@ There is an optional query parameter called `properties=` that can be used to cu
 
 <Route namespace="stratechery" :data='{"path":"/","name":"Unknown","maintainers":["chazeon"],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-## Surfshark <Site url="surfshark.com"/>
-
-### Unknown <Site url="surfshark.com" size="sm" />
-
-<Route namespace="surfshark" :data='{"path":"/blog/:category{.+}?","name":"Unknown","maintainers":[],"location":"blog.ts","heat":0,"topFeeds":[]}' :test='undefined' />
-
 ## Sustainability Magazine <Site url="sustainabilitymag.com"/>
 
 ### Articles <Site url="sustainabilitymag.com/articles" size="sm" />
