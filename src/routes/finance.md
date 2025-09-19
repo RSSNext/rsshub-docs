@@ -1714,6 +1714,14 @@ Get latest news from CryptoSlate.
 
 Get latest news from Decrypt.
 
+## 中央汇金投资有限责任公司 <Site url="www.huijin-inv.cn"/>
+
+### 资讯中心 <Site url="www.huijin-inv.cn" size="sm" />
+
+<Route namespace="huijin-inv" :data='{"path":"/news","categories":["finance"],"example":"/huijin-inv/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.huijin-inv.cn/"]}],"name":"资讯中心","maintainers":["la3rence"],"description":"中央汇金投资有限责任公司 - 资讯中心","location":"news.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+中央汇金投资有限责任公司 - 资讯中心
+
 ## JPMorgan Chase <Site url="www.jpmorganchase.com"/>
 
 ### Research Topics <Site url="www.jpmorganchase.com/institute/all-topics" size="sm" />
