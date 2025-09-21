@@ -1704,6 +1704,12 @@ The profile page of the user, which contains the user's information, videos, and
 
 <Route namespace="rattibha" :data='{"path":"/user/:user","categories":["social-media"],"example":"/rattibha/user/elonmusk","parameters":{"user":"Twitter username, without @"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["rattibha.com/:user"]}],"name":"User Threads","maintainers":["yshalsager"],"location":"user.ts","heat":1,"topFeeds":[{"type":"feed","id":"147096924904794112","url":"rsshub://rattibha/user/elonmusk","title":"سلاسل تغريدات elonmusk","description":"سلاسل تغريدات elonmusk - Powered by RSSHub","siteUrl":"https://rattibha.com/elonmusk","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
+## CrushNinja <Site url="www.crush.ninja"/>
+
+### 匿名投稿頁面 <Site url="www.crush.ninja" size="sm" />
+
+<Route namespace="crush" :data='{"path":"/pages/:id","name":"匿名投稿頁面","url":"www.crush.ninja","maintainers":["Tsuyumi25"],"example":"/crush/pages/141719909033861","parameters":{"id":{"description":"頁面 ID 或代稱，例如 `141719909033861` 或 `awkward87poland`"}},"radar":[{"source":["www.crush.ninja/:locale/pages/:id"],"target":"/pages/:id"}],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Curius <Site url="curius.app"/>
 
 ### User <Site url="curius.app" size="sm" />
