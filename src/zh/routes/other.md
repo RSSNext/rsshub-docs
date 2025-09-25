@@ -1527,6 +1527,12 @@ filters, copy the part of the URL after the `?`.
 5. Support simultaneously specifying subscription source information and category information; it will output subscription sources that meet the selected categories' criteria. Consider an example: by using `/miniflux/subscription/feeds=1,archdaily&category=art,7`, if the Subscription Source ID is 1 or the Subscription Source Name is ArchDaily indeed falls under Category 'art' or has a Category ID of 7, then output that subscription source information.
     
 
+## Naturalism.org <Site url="naturalism.org"/>
+
+### What's New <Site url="naturalism.org" size="sm" />
+
+<Route namespace="naturalism" :data='{"path":"/","categories":["other"],"example":"/naturalism","radar":[{"source":["naturalism.org"]}],"name":"What&#39;s New","maintainers":["TonyRL"],"url":"naturalism.org","location":"new.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 东北师范大学 <Site url="sohac.nenu.edu.cn"/>
 
 ### Unknown <Site url="sohac.nenu.edu.cn" size="sm" />
