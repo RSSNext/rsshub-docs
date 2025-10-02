@@ -503,6 +503,10 @@ Categories:
 
 <Route namespace="mercari" :data='{"path":"/:sort/:order/:status/:keyword","categories":["shopping"],"parameters":{"sort":{"description":"排序方式","default":"default","options":[{"value":"default","label":"默认排序"},{"value":"create_time","label":"发布时间"},{"value":"score","label":"评分"},{"value":"like","label":"点赞"},{"value":"price","label":"价格"}]},"order":{"description":"排序顺序","default":"desc","options":[{"value":"desc","label":"降序"},{"value":"asc","label":"升序"}]},"status":{"description":"商品状态","default":"default","options":[{"value":"default","label":"全部"},{"value":"onsale","label":"在售"},{"value":"soldout","label":"已售"}]},"keyword":{"description":"关键词"}},"example":"/mercari/create_time/desc/default/ふもふも","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"关键词","maintainers":["yana9i"],"url":"jp.mercari.com","location":"keyword.ts","heat":1,"topFeeds":[{"type":"feed","id":"176911000000763904","url":"rsshub://mercari/default/desc/default/%E6%97%A5%E6%97%A5%E6%A8%B9%E6%B6%89","title":"日日樹涉 の検索結果","description":"Search results for keyword: 日日樹涉 - Powered by RSSHub","siteUrl":"https://jp.mercari.com/search?sort=SORT_DEFAULT&order=ORDER_DESC&status=&keyword=%E6%97%A5%E6%97%A5%E6%A8%B9%E6%B6%89","image":null,"errorMessage":null,"errorAt":null,"ownerUserId":null}]}' :test='{"code":0}' />
 
+### Search <Site url="jp.mercari.com" size="sm" />
+
+<Route namespace="mercari" :data='{"path":"/search/:query","categories":["shopping"],"example":"/mercari/search/keyword=シャツ&7bd3eacc-ae45-4d73-bc57-a611c9432014=340258ac-e220-4722-8c35-7f73b7382831","parameters":{"query":"Search parameters in URL query string format."},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Search","maintainers":["yana9i, Tsuyumi25"],"url":"jp.mercari.com","location":"search.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Gadget Flow <Site url="thegadgetflow.com"/>
 
 ### Category <Site url="thegadgetflow.com" size="sm" />
