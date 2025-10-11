@@ -53,11 +53,6 @@ const instances = [{
     maintainer: 'KTachibanaM',
     maintainerUrl: 'https://github.com/KTachibanaM',
   }, {
-    url: 'https://rsshub.woodland.cafe',
-    location: '🇩🇪',
-    maintainer: 'untitaker',
-    maintainerUrl: 'https://github.com/untitaker',
-  }, {
     url: 'https://rss.owo.nz',
     location: '🇩🇪',
     maintainer: 'Vincent Yang',
