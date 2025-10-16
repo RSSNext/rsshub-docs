@@ -2804,6 +2804,12 @@ China University of Political Science and Law Academic Affairs Office Notices
 | -------- | -------- |
 | yjstz    | jstz     |
 
+## 长沙理工大学 <Site url="www.csust.edu.cn"/>
+
+### 通告公示 <Site url="www.csust.edu.cn/tggs.htm" size="sm" />
+
+<Route namespace="csust" :data='{"path":"/tggs","categories":["university"],"example":"/csust/tggs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.csust.edu.cn/tggs.htm","www.csust.edu.cn/"]}],"name":"通告公示","maintainers":["powerfullz"],"url":"www.csust.edu.cn/tggs.htm","location":"tggs.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 重庆工商大学 <Site url="www.ctbu.edu.cn/"/>
 
 ### 学校公告 <Site url="www.ctbu.edu.cn/" size="sm" />
