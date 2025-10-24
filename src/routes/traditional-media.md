@@ -904,7 +904,7 @@ See the [official RSS page](https://www.scmp.com/rss) to get the ID of each cate
 
   `https://www.ntdtv.com/b5/prog1201` 对应 `/ntdtv/b5/prog1201`
 
-## ABC News <Site url="abc.net.au"/>
+## ABC News (Australian Broadcasting Corporation) <Site url="abc.net.au"/>
 
 ### Channel & Topic <Site url="abc.net.au" size="sm" />
 
