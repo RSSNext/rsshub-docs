@@ -834,11 +834,11 @@ Categories
 | ---- | ------ | ------------ | -------- | ---- |
 | ALL  | LATEST | ANNOUNCEMENT | ACTIVITY | NEWS |
 
-### 期刊 <Site url="aneot.arktca.com" size="sm" />
+### 回归线 <Site url="aneot.arktca.com" size="sm" />
 
-<Route namespace="hypergryph" :data='{"path":"/arknights/arktca","categories":["game"],"example":"/hypergryph/arknights/arktca","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"期刊","url":"aneot.arktca.com","maintainers":["Bendancom"],"radar":[{"source":["aneot.arktca.com"]}],"description":"期刊《回归线》 | 泰拉创作者联合会","location":"arknights/arktca.ts","heat":2,"topFeeds":[{"id":"60889229904376832","type":"feed","url":"rsshub://hypergryph/arknights/arktca","title":"回归线","description":"期刊《回归线》 | 泰拉创作者联合会 - Powered by RSSHub","image":"https://aneot.arktca.com/logo.svg"}]}' :test='{"code":0}' />
+<Route namespace="hypergryph" :data='{"path":"/arknights/arktca","categories":["game"],"example":"/hypergryph/arknights/arktca","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"回归线","url":"aneot.arktca.com","maintainers":["Bendancom"],"radar":[{"source":["aneot.arktca.com"]}],"description":"明日方舟期刊《回归线》 | 泰拉创作者联合会","location":"arknights/arktca.ts","heat":2,"topFeeds":[{"id":"60889229904376832","type":"feed","url":"rsshub://hypergryph/arknights/arktca","title":"回归线","description":"期刊《回归线》 | 泰拉创作者联合会 - Powered by RSSHub","image":"https://aneot.arktca.com/logo.svg"}]}' :test='{"code":0}' />
 
-期刊《回归线》 | 泰拉创作者联合会
+明日方舟期刊《回归线》 | 泰拉创作者联合会
 
 ### アークナイツ (日服新闻) <Site url="ak.arknights.jp/news" size="sm" />
 
