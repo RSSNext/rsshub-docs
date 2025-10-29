@@ -660,13 +660,13 @@ Category
 | -------- | -------- | -------- |
 | potd     | potw     | potm     |
 
-## MyMusicSheet <Site url="mymusicsheet.com"/>
+## mymusic5 (MyMusicSheet) <Site url="mymusicfive.com"/>
 
-### User Sheets <Site url="mymusicsheet.com" size="sm" />
+### User Sheets <Site url="mymusicfive.com" size="sm" />
 
-<Route namespace="mymusicsheet" :data='{"path":"/user/sheets/:username/:iso?/:freeOnly?","categories":["shopping"],"example":"/mymusicsheet/user/sheets/HalcyonMusic/USD/1","parameters":{"username":"用户名，可在URL中找到","iso":"用于显示价格的ISO 4217货币代码, 支持常见代码, 默认为人民币, 即`CNY`","freeOnly":"只返回免费谱, 任意值为开启"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mymusicsheet.com/:username/*","mymusicsheet.com/:username"],"target":"/user/sheets/:username"}],"name":"User Sheets","maintainers":["Freddd13"],"description":"关于 ISO 4217，请参考[维基百科](https://zh.wikipedia.org/zh-cn/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81)","location":"usersheets.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+<Route namespace="mymusicsheet" :data='{"path":"/user/sheets/:username/:iso?/:freeOnly?","categories":["shopping"],"example":"/mymusicsheet/user/sheets/HalcyonMusic/USD/1","parameters":{"username":"Username, can be found in the URL","iso":"ISO 4217 currency code for displaying prices, defaults to `USD`","freeOnly":"Only return free scores, any value to enable"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["mymusicfive.com/:username/*","mymusicfive.com/:username"],"target":"/user/sheets/:username"}],"name":"User Sheets","maintainers":["Freddd13"],"description":"Please refer to [Wikipedia](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) for ISO 4217.","location":"usersheets.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
-关于 ISO 4217，请参考[维基百科](https://zh.wikipedia.org/zh-cn/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81)
+Please refer to [Wikipedia](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) for ISO 4217.
 
 ## ShopBack <Site url="shopback.com.tw"/>
 
