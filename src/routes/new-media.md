@@ -5319,6 +5319,12 @@ To subscribe to [AI](https://www.pixelstech.net/feed/ai), where the source URL i
 | -------- | -------- | -------- | -------- | -------- | -------- |
 | 1        | 5        | 3        | 4        | 6        | 8        |
 
+## 中天新聞網 <Site url="ctinews.com"/>
+
+### 話題 <Site url="ctinews.com" size="sm" />
+
+<Route namespace="ctinews" :data='{"path":"/topic/:topic?","categories":["new-media"],"example":"/ctinews/topic/KDdek5vgXx","parameters":{"topic":"話題 ID，可在 URL 中獲取，留空為 `KDdek5vgXx`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ctinews.com/news/topics/:topic","ctinews.com"]}],"name":"話題","maintainers":["TonyRL"],"url":"ctinews.com","location":"topic.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 数字尾巴 <Site url="dgtle.com"/>
 
 ### 鲸闻 <Site url="www.dgtle.com" size="sm" />
