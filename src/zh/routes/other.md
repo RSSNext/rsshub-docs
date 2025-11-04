@@ -849,12 +849,6 @@ To subscribe to [Activity Tracker - International trade](https://digitalpolicyal
 
 <Route namespace="abskoop" :data='{"path":"/","radar":[{"source":["ahhhhfs.com/"],"target":""}],"name":"存档列表","maintainers":["zhenhappy"],"url":"ahhhhfs.com/","features":{"nsfw":true},"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
-## 中国炼焦行业协会 <Site url="cnljxh.com"/>
-
-### Unknown <Site url="cnljxh.com" size="sm" />
-
-<Route namespace="cnljxh" :data='{"path":"/:category?/:id?","name":"Unknown","maintainers":[],"location":"index.ts","heat":2,"topFeeds":[{"id":"91881826416330752","type":"feed","url":"rsshub://cnljxh/price","title":"中国炼焦行业协会 - 价格行情","description":"中国炼焦行业协会 - Powered by RSSHub","image":"http://www.cnljxh.com/images/logo.jpg"},{"id":"91881980301474816","type":"feed","url":"rsshub://cnljxh/info","title":"中国炼焦行业协会 - 市场分析","description":"中国炼焦行业协会 - Powered by RSSHub","image":"http://www.cnljxh.com/images/logo.jpg"}]}' :test='undefined' />
-
 ## ELSEVIER <Site url="www.sciencedirect.com"/>
 
 ### Unknown <Site url="www.sciencedirect.com" size="sm" />
