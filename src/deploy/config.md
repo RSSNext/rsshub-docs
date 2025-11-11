@@ -388,11 +388,11 @@ Get paid content
 
 -   `SARABA1ST_COOKIE`: 对应网页端的 Cookie。
 
-### Sci-hub
+### Sci-Hub
 
 For scientific journal routes
 
--   `SCIHUB_HOST`: The Sci-hub mirror address that is accessible from your location, default to `https://sci-hub.se`.
+-   `SCIHUB_HOST`: The Sci-Hub mirror address that is accessible from your location, default to `https://sci-hub.se`.
 
 ### Spotify
 

@@ -357,7 +357,7 @@ healthcheck:
 
 -   `SARABA1ST_COOKIE`: 对应网页端的 Cookie。
 
-### Sci-hub
+### Sci-Hub
 
 用于科学期刊路由。
 
