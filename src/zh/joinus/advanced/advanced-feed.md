@@ -6,7 +6,7 @@ sidebar_position: 1
 
 本指南面向希望深入了解如何制作 RSS 订阅源的高级用户。如果您是第一次制作 RSS 订阅源，我们建议先阅读 [制作自己的 RSSHub 路由](/zh/joinus/new-rss/start-code)。
 
-一旦您获取了要包含在您的 RSS 订阅源中的数据，就可以将其传递给 `ctx.set('data', obj)`。然后RSSHub的中间件 [`template.tsx`](https://github.com/DIYgod/RSSHub/blob/master/lib/middleware/template.tsx) 将处理数据并以所需的格式呈现 RSS 输出（默认为RSS 2.0）。除了 [制作自己的 RSSHub 路由](/zh/joinus/new-rss/start-code) 中提到的字段外，您还可以使用以下字段进一步自定义 RSS 订阅源。
+一旦您获取了要包含在您的 RSS 订阅源中的数据，就可以返回它。然后RSSHub的中间件 [`template.tsx`](https://github.com/DIYgod/RSSHub/blob/master/lib/middleware/template.tsx) 将处理数据并以所需的格式呈现 RSS 输出（默认为RSS 2.0）。除了 [制作自己的 RSSHub 路由](/zh/joinus/new-rss/start-code) 中提到的字段外，您还可以使用以下字段进一步自定义 RSS 订阅源。
 
 需要注意的是，并非所有字段都适用于所有的输出格式，因为 RSSHub 支持多种输出格式。下表显示了不同输出格式兼容的字段。我们使用以下符号表示兼容性：`A` 表示 Atom，`J` 表示 JSON Feed，`R` 表示 RSS 2.0。
 
@@ -72,7 +72,7 @@ RSSHub 支持制作 BitTorrent／磁力订阅源，这将帮助你的 RSS 订阅
 以下是制作 BitTorrent／磁力订阅源的示例：
 
 ```js
-ctx.set('data', {
+return {
     item: [
         {
             enclosure_url: '', // 磁力链接
@@ -80,53 +80,65 @@ ctx.set('data', {
             enclosure_type: 'application/x-bittorrent', // 应固定为 'application/x-bittorrent'
         },
     ],
-});
+};
 ```
 
 在 RSS 源中包含这些字段，您将能够制作被 BitTorrent 客户端识别并自动下载的 BitTorrent／磁力订阅源。
 
 ### 更新文档
 
-如果您要在 RSSHub 路由中添加对 BitTorrent／磁力订阅支持，最重要的是在文档以反映此功能。要做到这一点，您需要将 `Route` 组件的 `supportBT` 属性设置为 `"1"`。 以下是一个示例：
+如果您要在 RSSHub 路由中添加对 BitTorrent／磁力订阅支持，最重要的是在文档以反映此功能。要做到这一点，您需要将 `Route` 导出对象的 `features` 中的 `supportBT` 属性设置为 `true`。以下是一个示例：
 
-```tsx
-<Route author="..." example="..." path="..." supportBT="1" />
+```ts
+export const route: Route = {
+    // ...
+    features: {
+        // ...
+        supportBT: true,
+    },
+};
 ```
 
-通过将 `supportBT` 属性设置为 `"1"`，您将能够准确反映您的路由支持 BitTorrent／磁力订阅。
+通过将 `supportBT` 属性设置为 `true`，您将能够准确反映您的路由支持 BitTorrent／磁力订阅。
 
 ## 制作期刊订阅源
 
 RSSHub支持制作期刊订阅源。如果用户提供 [通用参数](/zh/guide/parameters#输出-sci-hub-链接) `scihub`，则可以将 `item.link` 替换为 Sci-hub 链接。要制作期刊订阅源，您需要在您的 RSS 源中包含一个附加字段：
 
 ```js
-ctx.set('data', {
+return {
     item: [
         {
             doi: '', // 条目的 DOI（例如，'10.47366/sabia.v5n1a3'）
         },
     ],
-});
+};
 ```
 
 通过在 RSS 源中包含 `doi` 字段，您将能够制作与 RSSHub 的 Sci-hub 功能兼容的期刊订阅源。
 
 ### 更新文档
 
-要显示您制作的期刊订阅源支持 Sci-hub 功能，您需要将 `Route` 组件的 `supportScihub` 属性设置为 `"1"`。以下是一个示例：
+要显示您制作的期刊订阅源支持 Sci-hub 功能，您需要将 `Route` 导出对象的 `features` 中的 `supportScihub` 属性设置为 `true`。以下是一个示例：
 
-```tsx
-<Route author="..." example="..." path="..." supportScihub="1" />
+```ts
+export const route: Route = {
+    // ...
+    features: {
+        // ...
+        supportScihub: true,
+    },
+};
 ```
 
-通过将 `supportSciHub` 属性设置为 `"1"`，路由文档将准确反映其支持提供具有 Sci-hub 链接的期刊订阅源。
+通过将 `supportScihub` 属性设置为 `true`，路由文档将准确反映其支持提供具有 Sci-hub 链接的期刊订阅源。
 
 ## 制作播客订阅源
 
 RSSHub 支持制作与播客播放器订阅格式兼容的播客订阅源。要制作播客订阅源，您需要在RSS源中包含几个附加字段：
 
 ```js
-ctx.set('data', {
+return {
     itunes_author: '', // **必需**，应为主播名称
     itunes_category: '', // 播客分类
     image: '', // 专辑封面，作为播客源时**必填**
@@ -139,7 +151,7 @@ ctx.set('data', {
             enclosure_type: '', // 音频文件 MIME 类型（常见类型 .mp3 是 'audio/mpeg'，.m4a 是 'audio/x-m4a'，.mp4 是 'video/mp4'）
         },
     ],
-});
+};
 ```
 
 通过在 RSS 源中包含这些字段，您将能够制作与播客播放器兼容的播客订阅源。
@@ -153,13 +165,19 @@ ctx.set('data', {
 
 ### 更新文档
 
-要显示您制作的订阅源与播客播放器兼容，您需要将 `Route` 组件的 `supportPodcast` 属性设置为 `"1"`。以下是一个示例：
+要显示您制作的订阅源与播客播放器兼容，您需要将 `Route` 导出对象的 `features` 中的 `supportPodcast` 属性设置为 `true`。以下是一个示例：
 
-```tsx
-<Route author="..." example="..." path="..." supportPodcast="1" />
+```ts
+export const route: Route = {
+    // ...
+    features: {
+        // ...
+        supportPodcast: true,
+    },
+};
 ```
 
-通过将 `supportPodcast` 属性设置为 `"1"`，路由文档将准确反映其支持播客订阅。
+通过将 `supportPodcast` 属性设置为 `true`，路由文档将准确反映其支持播客订阅。
 
 ## 制作媒体订阅源
 
@@ -168,7 +186,7 @@ RSSHub支持制作与 [Media RSS](https://www.rssboard.org/media-rss) 格式兼�
 以下是制作媒体订阅源的示例：
 
 ```js
-ctx.set('data', {
+return {
     item: [
         {
             media: {
@@ -185,7 +203,7 @@ ctx.set('data', {
             },
         },
     ],
-});
+};
 ```
 
 通过在 RSS 源中包含这些字段，您将能够制作与 [Media RSS](https://www.rssboard.org/media-rss) 格式兼容的媒体订阅源。
@@ -197,7 +215,7 @@ RSSHub支持制作包含互动，如点赞、反对和评论的 Atom 订阅源�
 以下是制作带有互动的 Atom 订阅源的示例：
 
 ```js
-ctx.set('data', {
+return {
     item: [
         {
             upvotes: 0, // 条目的点赞数
@@ -205,7 +223,7 @@ ctx.set('data', {
             comments: 0, // 条目的评论数
         },
     ],
-});
+};
 ```
 
 通过在 Atom 源中包含这些字段，您将能够制作包含互动的 Atom 订阅源，这些源与支持 Atom 订阅源的阅读器兼容。
