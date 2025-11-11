@@ -103,7 +103,7 @@ export const route: Route = {
 
 ## 制作期刊订阅源
 
-RSSHub支持制作期刊订阅源。如果用户提供 [通用参数](/zh/guide/parameters#输出-sci-hub-链接) `scihub`，则可以将 `item.link` 替换为 Sci-hub 链接。要制作期刊订阅源，您需要在您的 RSS 源中包含一个附加字段：
+RSSHub支持制作期刊订阅源。如果用户提供 [通用参数](/zh/guide/parameters#输出-sci-hub-链接) `scihub`，则可以将 `item.link` 替换为 Sci-Hub 链接。要制作期刊订阅源，您需要在您的 RSS 源中包含一个附加字段：
 
 ```js
 return {
@@ -115,11 +115,11 @@ return {
 };
 ```
 
-通过在 RSS 源中包含 `doi` 字段，您将能够制作与 RSSHub 的 Sci-hub 功能兼容的期刊订阅源。
+通过在 RSS 源中包含 `doi` 字段，您将能够制作与 RSSHub 的 Sci-Hub 功能兼容的期刊订阅源。
 
 ### 更新文档
 
-要显示您制作的期刊订阅源支持 Sci-hub 功能，您需要将 `Route` 导出对象的 `features` 中的 `supportScihub` 属性设置为 `true`。以下是一个示例：
+要显示您制作的期刊订阅源支持 Sci-Hub 功能，您需要将 `Route` 导出对象的 `features` 中的 `supportScihub` 属性设置为 `true`。以下是一个示例：
 
 ```ts
 export const route: Route = {
@@ -131,7 +131,7 @@ export const route: Route = {
 };
 ```
 
-通过将 `supportScihub` 属性设置为 `true`，路由文档将准确反映其支持提供具有 Sci-hub 链接的期刊订阅源。
+通过将 `supportScihub` 属性设置为 `true`，路由文档将准确反映其支持提供具有 Sci-Hub 链接的期刊订阅源。
 
 ## 制作播客订阅源
 

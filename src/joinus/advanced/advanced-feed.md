@@ -103,7 +103,7 @@ By setting the `supportBT` attribute to `true`, you'll be able to update your do
 
 ## Create a Journal Feed
 
-RSSHub supports creating journal feeds that can replace `item.link` with a Sci-hub link if users provide the [common parameter](/guide/parameters#sci-hub-link) `scihub`. To create a journal feed, you'll need to include an **additional** field in your RSS feed:
+RSSHub supports creating journal feeds that can replace `item.link` with a Sci-Hub link if users provide the [common parameter](/guide/parameters#sci-hub-link) `scihub`. To create a journal feed, you'll need to include an **additional** field in your RSS feed:
 
 ```js
 return {
@@ -115,11 +115,11 @@ return {
 };
 ```
 
-By including this `doi` field in your RSS feed, you'll be able to create journal feeds that are compatible with RSSHub's Sci-hub functionality.
+By including this `doi` field in your RSS feed, you'll be able to create journal feeds that are compatible with RSSHub's Sci-Hub functionality.
 
 ### Update the documentation
 
-To update the documentation for your route with support for Sci-hub, you'll need to set the `supportScihub` attribute of `features` in the `Route` export object to `true`. Here's an example:
+To update the documentation for your route with support for Sci-Hub, you'll need to set the `supportScihub` attribute of `features` in the `Route` export object to `true`. Here's an example:
 
 ```ts
 export const route: Route = {
@@ -131,7 +131,7 @@ export const route: Route = {
 };
 ```
 
-By setting the `supportScihub` attribute to `true`, the documentation for your route will accurately reflect its support for creating journal feeds with Sci-hub links.
+By setting the `supportScihub` attribute to `true`, the documentation for your route will accurately reflect its support for creating journal feeds with Sci-Hub links.
 
 ## Create a Podcast Feed
 
