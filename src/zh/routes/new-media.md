@@ -5464,6 +5464,10 @@ This route provides a better reading experience (full text articles) over the of
 | 0    | 395  | 396  | 388      |
 
 
+### 视频 <Site url="www.dgtle.com" size="sm" />
+
+<Route namespace="dgtle" :data='{"path":"/video","name":"视频","url":"www.dgtle.com","maintainers":["nczitzk"],"example":"/dgtle/video","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dgtle.com/video"],"target":"/video"}],"view":0,"location":"video.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Diario Frutícola <Site url="diariofruticola.cl"/>
 
 ### Filtro <Site url="diariofruticola.cl" size="sm" />
