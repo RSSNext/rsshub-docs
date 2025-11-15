@@ -26,7 +26,7 @@ sidebar: auto
 
 ## Docker 镜像
 
-支持两种注册表：
+支持两种镜像仓库：
 
 - Docker Hub: [`diygod/rsshub`](https://hub.docker.com/r/diygod/rsshub)
 - GitHub: [`ghcr.io/diygod/rsshub`](https://github.com/DIYgod/RSSHub/pkgs/container/rsshub)
