@@ -260,6 +260,10 @@ Language
 
 <Route namespace="google" :data='{"path":"/jules/changelog","categories":["program-update"],"example":"/google/jules/changelog","features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Jules Changelog","url":"jules.google/docs/changelog/","maintainers":["johan456789"],"location":"jules.ts","heat":4,"topFeeds":[{"id":"191021263382244352","type":"feed","url":"rsshub://google/jules/changelog","title":"Jules Changelog","description":"Jules Changelog - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
+### Play Store Update <Site url="www.google.com" size="sm" />
+
+<Route namespace="google" :data='{"name":"Play Store Update","path":"/play/:id/:lang?","categories":["program-update"],"example":"/google/play/net.dinglisch.android.taskerm","parameters":{"id":"Package id, can be found in url","lang":{"description":"language","options":[{"value":"en-us","label":"English"},{"value":"zh-cn","label":"简体中文"}],"default":"en-us"}},"features":{"requireConfig":false,"requirePuppeteer":true,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["play.google.com/store/apps/details?id=:id"]}],"maintainers":["surwall"],"location":"play.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## Infuse <Site url="firecore.com"/>
 
 ### Release Notes <Site url="firecore.com" size="sm" />
