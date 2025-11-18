@@ -1,0 +1,24 @@
+name: Pull RSSHub Analytics
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pull-analytics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Fetch analytics JSON
+        run: |
+          curl -sSfL https://api.folo.is/discover/rsshub-analytics -o rsshub-analytics.json
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: auto update analytics"
+          file_pattern: "rsshub-analytics.json"
