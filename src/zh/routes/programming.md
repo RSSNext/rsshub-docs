@@ -1616,6 +1616,12 @@ Programming Tutorials and Engineering Articles
 
 <Route namespace="bbcnewslabs" :data='{"path":"/news","categories":["programming"],"example":"/bbcnewslabs/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["bbcnewslabs.co.uk/"]}],"name":"News","maintainers":["elxy"],"url":"bbcnewslabs.co.uk/","location":"news.ts","heat":0,"topFeeds":[]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
 
+## Cloudflare Status <Site url="cloudflarestatus.com"/>
+
+### Status <Site url="www.cloudflarestatus.com" size="sm" />
+
+<Route namespace="cloudflarestatus" :data='{"path":"/","name":"Status","url":"www.cloudflarestatus.com","maintainers":["nczitzk"],"example":"/cloudflarestatus","categories":["programming"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cloudflarestatus.com"],"target":"/"}],"view":5,"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## dbaplus社群 <Site url="dbaplus.cn"/>
 
 ### 资讯 <Site url="dbaplus.cn" size="sm" />
