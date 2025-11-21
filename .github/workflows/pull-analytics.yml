@@ -13,7 +13,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Fetch analytics JSON
         run: |
           curl -sSfL https://api.folo.is/discover/rsshub-analytics -o rsshub-analytics.json
