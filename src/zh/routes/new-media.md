@@ -5789,3 +5789,14 @@ To subscribe to [Cybersecurity](https://surfshark.com/blog/cybersecurity), where
 
 <Route namespace="thewirehindi" :data='{"path":"/","categories":["new-media"],"example":"/thewirehindi","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["thewirehindi.com/"]}],"name":"Latest News","maintainers":["Rjnishant530"],"url":"thewirehindi.com/","location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## 北青网 <Site url="ynet.com"/>
+
+### 列表 <Site url="ynet.com" size="sm" />
+
+<Route namespace="ynet" :data='{"path":"/list/:category?/:id?","name":"列表","url":"ynet.com","maintainers":["nczitzk"],"example":"/ynet/list/news/2121t76","parameters":{"category":{"description":"分类，默认为 `news`，可在对应分类页 URL 中找到"},"id":{"description":"列表 ID，可在对应列表页 URL 中找到"}},"description":":::tip\n订阅 [北青快讯](https://news.ynet.com/list/2121t76.html)，其源网址为 `https://news.ynet.com/list/2121t76.html`，请参考该 URL 指定部分构成参数，此时路由为 [`/ynet/list/news/2121t76`](https://rsshub.app/ynet/list/news/2121t76)。\n:::\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["ynet.com"]}],"view":0,"location":"list.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+:::tip
+订阅 [北青快讯](https://news.ynet.com/list/2121t76.html)，其源网址为 `https://news.ynet.com/list/2121t76.html`，请参考该 URL 指定部分构成参数，此时路由为 [`/ynet/list/news/2121t76`](https://rsshub.app/ynet/list/news/2121t76)。
+:::
+
+
