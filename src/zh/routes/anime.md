@@ -215,20 +215,6 @@ NSFW WARNING!!! It contains adult content. Hanime1 provides adult anime
 
 <Route namespace="baozimh" :data='{"path":"/comic/:name","categories":["anime"],"example":"/baozimh/comic/guowangpaiming-shiricaofu","parameters":{"name":"漫画名称，在漫画链接可以得到(`comic/` 后的那段)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.baozimh.com/comic/:name"]}],"name":"订阅漫画","maintainers":["Fatpandac"],"location":"index.ts","heat":393,"topFeeds":[{"id":"54865981635501056","type":"feed","url":"rsshub://baozimh/comic/yirenzhixia-dongmantang","title":"包子漫画- 一人之下","description":"一人之下漫畫： 他，在爺爺的教導下成爲異人，從小修習天師府的金光咒和陽五雷，是八奇技之一炁體源流的繼承人。 隨着爺爺屍體被盜，神秘少女馮寶寶的造訪，少年張楚嵐的平靜校園生活被徹底顛覆。急於解開爺爺和自身秘密的張楚嵐和沒有任何記憶“不死少女”馮寶寶開啓了“異人”之旅…… - Powered by RSSHub","image":null},{"id":"65719229974521856","type":"feed","url":"rsshub://baozimh/comic/hanghaiwang-weitianrongyilang_l20yux","title":"包子漫画- 航海王","description":"《航海王》又名《海賊王》、《ONE PIECE》、《海盜路飛》，原名《ワンピース》。是日本漫畫家尾田榮一郎作畫的少年漫畫作品。擁有財富、名聲、權力，這世界上的一切的男人 “海賊王”哥爾•D•羅傑，在被行刑受死之前說了一句話，讓全世界的人都涌向了大海。“想要我的寶藏嗎？如果想要的話，那就到海上去找吧，我全部都放在那裡。”，世界開始迎接“大海賊時代”的來臨。時值“大海賊時代”，爲了尋找傳說中海賊王羅傑所留下的大秘寶“ONE PIECE”，無數海賊揚起旗幟，互相爭鬥。一個叫路飛的少年爲了與因救他而斷臂的香克斯的約定而出海，在旅途中不斷尋找志同道合的夥伴，開始了以成爲海賊王爲目標的偉大冒險旅程。 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
-## iwara <Site url="ecchi.iwara.tv"/>
-
-### Unknown <Site url="ecchi.iwara.tv" size="sm" />
-
-<Route namespace="iwara" :data='{"path":"/users/:username?/:type?","name":"Unknown","maintainers":["Fatpandac"],"features":{"nsfw":true},"location":"index.ts","heat":307,"topFeeds":[{"id":"60202923086415884","type":"feed","url":"rsshub://iwara/users/user1263963","title":"user1263963&#39;s iwara - Videos","description":"user1263963&#39;s iwara - Videos - Powered by RSSHub","image":null},{"id":"60202923086415887","type":"feed","url":"rsshub://iwara/users/inwerwm","title":"inwerwm&#39;s iwara - Videos","description":"inwerwm&#39;s iwara - Videos - Powered by RSSHub","image":null}]}' :test='undefined' />
-
-### User Subscriptions <Site url="ecchi.iwara.tv/" size="sm" />
-
-<Route namespace="iwara" :data='{"path":"/subscriptions","categories":["anime"],"example":"/iwara/subscriptions","parameters":{},"features":{"requireConfig":[{"name":"IWARA_USERNAME","description":""},{"name":"IWARA_PASSWORD","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"nsfw":true},"radar":[{"source":["ecchi.iwara.tv/"]}],"name":"User Subscriptions","maintainers":["FeCCC"],"url":"ecchi.iwara.tv/","description":"::: warning\n  This route requires username and password, therefore it&#39;s only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n:::","location":"subscriptions.ts","heat":14,"topFeeds":[{"id":"106240479887734784","type":"feed","url":"rsshub://iwara/subscriptions","title":"Iwara Subscription","description":"Iwara Subscription - Powered by RSSHub","image":null}]}' :test='undefined' />
-
-::: warning
-  This route requires username and password, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.
-:::
-
 ## pixivision <Site url="www.pixivision.net"/>
 
 ### Category <Site url="www.pixivision.net" size="sm" />
@@ -478,6 +464,20 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 ### Article <Site url="www.dora-world.com" size="sm" />
 
 <Route namespace="dora-world" :data='{"path":"/article/:topic/:topicId?","categories":["anime"],"view":0,"example":"/dora-world/article/contents","parameters":{"topic":"Topic name, can be found in URL. For example: the topic name of [https://www.dora-world.com/movie](https://www.dora-world.com/movie) is `movie`","topicId":"Topic id, can be found in URL. For example: the topic id of [https://www.dora-world.com/contents?t=197](https://www.dora-world.com/contents?t=197) is `197`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dora-world.com/:topic"]}],"name":"Article","maintainers":["AChangAZha"],"location":"article.ts","heat":15,"topFeeds":[{"id":"73747352310672384","type":"feed","url":"rsshub://dora-world/article/movie","title":"【映画ドラえもん のび太の絵世界物語】 - ドラえもんチャンネル","description":"【映画ドラえもん のび太の絵世界物語】 - ドラえもんチャンネル - Powered by RSSHub","image":"https://dora-world.com/assets/images/DORAch_web-touch-icon.png"},{"id":"70014144165769216","type":"feed","url":"rsshub://dora-world/article/contents","title":"新着 - ドラえもんチャンネル","description":"新着 - ドラえもんチャンネル - Powered by RSSHub","image":"https://dora-world.com/assets/images/DORAch_web-touch-icon.png"}]}' :test='{"code":0}' />
+
+## iwara <Site url="ecchi.iwara.tv"/>
+
+### User Subscriptions <Site url="www.iwara.tv/" size="sm" />
+
+<Route namespace="iwara" :data='{"path":"/subscriptions","categories":["anime"],"example":"/iwara/subscriptions","parameters":{},"features":{"requireConfig":[{"name":"IWARA_USERNAME","description":""},{"name":"IWARA_PASSWORD","description":""}],"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false,"nsfw":true},"radar":[{"source":["www.iwara.tv/subscriptions/videos","www.iwara.tv/subscriptions/images"]}],"name":"User Subscriptions","maintainers":["FeCCC"],"url":"www.iwara.tv/","description":"::: warning\n  This route requires username and password, therefore it&#39;s only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n:::","location":"subscriptions.ts","heat":14,"topFeeds":[{"id":"106240479887734784","type":"feed","url":"rsshub://iwara/subscriptions","title":"Iwara Subscription","description":"Iwara Subscription - Powered by RSSHub","image":null}]}' :test='undefined' />
+
+::: warning
+  This route requires username and password, therefore it's only available when self-hosting, refer to the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.
+:::
+
+### User <Site url="ecchi.iwara.tv" size="sm" />
+
+<Route namespace="iwara" :data='{"path":"/users/:username/:type?","example":"/iwara/users/kelpie/video","parameters":{"username":"username, can find in userpage","type":"content type, can be video or image, default is video"},"name":"User","maintainers":["Fatpandac"],"features":{"nsfw":true},"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ## QooApp <Site url="apps.qoo-app.com"/>
 
