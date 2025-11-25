@@ -1341,6 +1341,20 @@ with a number of `district` parameters. Once you've set up all desired
 filters, copy the part of the URL after the `?`.
 :::
 
+## Gesiba <Site url="gesiba.at"/>
+
+Gemeinnützige Siedlungs- und Bau AG
+
+### Angebote <Site url="gesiba.at" size="sm" />
+
+<Route namespace="gesiba" :data='{"name":"Angebote","example":"/gesiba/verfuegbar=alle&plz[]=1100&plz[]=1120&size-from=45&size-to=80&rooms-from=2&rooms-to=3&betreuung=0","path":"*","maintainers":["sk22"],"categories":["other"],"description":"\nNote that, on https://www.gesiba.at/immobilien/wohnungen, filters are added to\nthe URL like `&filter[plz]=1100,1120`, but the endpoint used here expects it\nlike `&plz[]=1100&plz[]=1120`, if multiple values are passed to one parameter\n","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+
+Note that, on https://www.gesiba.at/immobilien/wohnungen, filters are added to
+the URL like `&filter[plz]=1100,1120`, but the endpoint used here expects it
+like `&plz[]=1100&plz[]=1120`, if multiple values are passed to one parameter
+
+
 ## 趨勢科技防詐達人 <Site url="getdr.com"/>
 
 ### Unknown <Site url="getdr.com/" size="sm" />
