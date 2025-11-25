@@ -1902,6 +1902,19 @@ Filtering by state is done client-side.
 
 <Route namespace="wfdf" :data='{"path":"/news","categories":["other"],"example":"/wfdf/news","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wfdf.sport/news/","wfdf.sport/"]}],"name":"News","maintainers":["HankChow"],"url":"wfdf.sport/news/","location":"news.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Wien-Süd <Site url="wiensued.at"/>
+
+Gemeinnützige Bau- u. Wohnungsgenossenschaft „Wien-Süd“ eingetragene Genossenschaft m.b.H.
+
+### Objekte <Site url="wiensued.at" size="sm" />
+
+<Route namespace="wiensued" :data='{"name":"Objekte","example":"/wiensued/city=Wien&search=&space-from=30&space-to=100&room-from=2&room-to=4&rent=1&property=1&state[]=inplanung&state[]=inbau&state[]=sofort&state[]=bestand","path":"*","maintainers":["sk22"],"categories":["other"],"description":"\nPass in the parameters (e.g. `city=Wien&state[]=sofort`) and/or the path\nleading up to the listing (e.g. `wohnen/sofort-verfuegbar`)\n","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+
+Pass in the parameters (e.g. `city=Wien&state[]=sofort`) and/or the path
+leading up to the listing (e.g. `wohnen/sofort-verfuegbar`)
+
+
 ## World Meteorological Centre Beijing <Site url="wmc-bj.net"/>
 
 ### Unknown <Site url="wmc-bj.net" size="sm" />
