@@ -1871,6 +1871,19 @@ United Parcel Service (UPS) updates, news, and tracking RSS feeds.
 
 <Route namespace="wallpaperhub" :data='{"path":"/","radar":[{"source":["wallpaperhub.app/wallpaperhub","wallpaperhub.app/"],"target":""}],"name":"Unknown","maintainers":["nczitzk"],"url":"wallpaperhub.app/wallpaperhub","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
+## WBV-GPA <Site url="wbv-gpa.at"/>
+
+Wohnbauvereinigung für Privatangestellte - Gemeinnützige Gesellschaft mit beschränkter Haftung
+
+### Angebote <Site url="wbv-gpa.at" size="sm" />
+
+<Route namespace="wbv-gpa" :data='{"name":"Angebote","example":"/wbv-gpa/wohnungen/wien","path":"/:category?/:state?","maintainers":["sk22"],"categories":["other"],"description":"\nSearch housing by WBV-GPA, see \"Angebote\" menu item in https://www.wbv-gpa.at.\nFiltering by state is done client-side.\n","parameters":{"category":"Anything behind `/angebote/` in the URL. Default: `wohnungen`","state":"Optionally filter by Austrian state (`wien`, `steiermark`, ...)"},"radar":[{"source":["https://www.wbv-gpa.at/wohnungen/","https://www.wbv-gpa.at/angebote//:category"],"target":"/:category"}],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+
+Search housing by WBV-GPA, see "Angebote" menu item in https://www.wbv-gpa.at.
+Filtering by state is done client-side.
+
+
 ## Web3Caff <Site url="web3caff.com"/>
 
 ### Unknown <Site url="web3caff.com" size="sm" />
