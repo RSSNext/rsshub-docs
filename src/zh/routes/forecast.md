@@ -104,7 +104,7 @@
 
 ### Current Weather Report <Site url="www.weather.gov.hk/en/wxinfo/currwx/current.htm" size="sm" />
 
-<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":5,"topFeeds":[{"id":"69176555091531776","type":"feed","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Mon, 24 Nov 2025 09:02:00 GMT - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
+<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":5,"topFeeds":[{"id":"69176555091531776","type":"feed","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Tue, 25 Nov 2025 10:02:00 GMT - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
 ## 深圳市罗湖区人民政府 <Site url="www.szlh.gov.cn"/>
 
