@@ -45,9 +45,9 @@ $ bun add rsshub
 ### Usage
 
 ```js
-import RSSHub from 'rsshub';
+import * as RSSHub from 'rsshub';
 
-RSSHub.init({
+await RSSHub.init({
     // config
 });
 
