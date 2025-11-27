@@ -5482,6 +5482,10 @@ This route provides a better reading experience (full text articles) over the of
 </details>
 
 
+### 兴趣 <Site url="www.dgtle.com" size="sm" />
+
+<Route namespace="dgtle" :data='{"path":"/feed","name":"兴趣","url":"www.dgtle.com","maintainers":["nczitzk"],"example":"/dgtle/feed","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dgtle.com/feed"],"target":"/feed"}],"view":0,"location":"feed.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ### 鲸闻 <Site url="www.dgtle.com" size="sm" />
 
 <Route namespace="dgtle" :data='{"path":"/news/:id?","name":"鲸闻","url":"www.dgtle.com","maintainers":["nczitzk"],"example":"/dgtle/news/0","parameters":{"id":{"description":"分类，默认为 `0`，即最新，可在下表中找到","options":[{"label":"最新","value":"0"},{"label":"直播","value":"395"},{"label":"资讯","value":"396"},{"label":"每日一言","value":"388"}]}},"description":":::tip\n订阅 [最新](https://www.dgtle.com/news)，其对应分类 ID 为 `0`，此时路由为 [`/dgtle/news/0`](https://rsshub.app/dgtle/news/0)。\n:::\n\n| 最新 | 直播 | 资讯 | 每日一言 |\n| ---- | ---- | ---- | -------- |\n| 0    | 395  | 396  | 388      |\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.dgtle.com/news"],"target":"/news"},{"title":"最新","source":["www.dgtle.com/news"],"target":"/news/0"},{"title":"直播","source":["www.dgtle.com/news"],"target":"/news/395"},{"title":"资讯","source":["www.dgtle.com/news"],"target":"/news/396"},{"title":"每日一言","source":["www.dgtle.com/news"],"target":"/news/388"}],"view":0,"location":"news.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
