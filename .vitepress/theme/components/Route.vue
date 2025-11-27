@@ -124,6 +124,7 @@
 import MarkdownIt from 'markdown-it';
 import type { Route } from '../types';
 import CopyButton from './CopyButton.vue';
+import { parseJsonSchema } from './parse-json-schema';
 
 const props = defineProps<{
   namespace: string,
@@ -134,7 +135,11 @@ const props = defineProps<{
     description: string | null,
     siteUrl: string | null,
     image: string | null,
-  }[] },
+  }[],
+  param?: any,
+  query?: any,
+  location?: string,
+},
   test?: {
     code: number,
     message?: string,
@@ -143,9 +148,10 @@ const props = defineProps<{
 
 const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example) : null;
 const path = typeof props.data.path === "string" ? props.data.path : props.data.path[0];
+const param = parseJsonSchema(props.data.param);
 const paramMatch = path.match?.(/(?<=:).*?(?=\/|$)/g)?.map((item) => {
   const name = item.replace(/:|\?|\+|\*/g, '');
-  let parameter = props.data.parameters?.[name];
+  let parameter = param?.[name] || props.data.parameters?.[name];
   if (typeof parameter === "string") {
     parameter = {
       description: parameter,
