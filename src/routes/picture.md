@@ -480,7 +480,7 @@ For example:
 
 ### Artist Profolio <Site url="www.artstation.com" size="sm" />
 
-<Route namespace="artstation" :data='{"path":"/:handle","categories":["picture"],"example":"/artstation/wlop","parameters":{"handle":"Artist handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.artstation.com/:handle"]}],"name":"Artist Profolio","maintainers":["TonyRL"],"location":"user.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+<Route namespace="artstation" :data='{"path":"/:handle","categories":["picture"],"example":"/artstation/wlop","parameters":{"handle":"Artist handle, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.artstation.com/:handle"]}],"name":"Artist Profolio","maintainers":["TonyRL"],"location":"user.ts","heat":0,"topFeeds":[]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:79:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
 
 ## 奇葩买家秀 <Site url="qipamaijia.com"/>
 
