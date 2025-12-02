@@ -42,7 +42,7 @@
 
 ### Latest Stories <Site url="www.nationalgeographic.com/pages/topic/latest-stories" size="sm" />
 
-<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts","heat":135,"topFeeds":[{"id":"47544732473072640","type":"feed","url":"rsshub://nationalgeographic/latest-stories","title":"Latest Stories from National Geographic","description":"Latest Stories from National Geographic - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
+<Route namespace="nationalgeographic" :data='{"path":"/latest-stories","categories":["travel"],"example":"/nationalgeographic/latest-stories","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.nationalgeographic.com/pages/topic/latest-stories"]}],"name":"Latest Stories","maintainers":["miles170"],"url":"www.nationalgeographic.com/pages/topic/latest-stories","location":"latest-stories.ts","heat":136,"topFeeds":[{"id":"47544732473072640","type":"feed","url":"rsshub://nationalgeographic/latest-stories","title":"Latest Stories from National Geographic","description":"Latest Stories from National Geographic - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
 ## 走进日本 <Site url="www.nippon.com"/>
 
