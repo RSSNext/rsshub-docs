@@ -33,10 +33,8 @@ To speed up the development process and make it easier to keep your code clean, 
 
 ### Cloud hosted development environment
 
-If you don't want to install Node.js and a code editor on your computer, you can use a cloud-hosted development environment. You may use [GitHub Codespaces](https://codespace.new/) or [Gitpod](https://www.gitpod.io). Just click one of the buttons below to start a new workspace:
+If you don't want to install Node.js and a code editor on your computer, you can use a cloud-hosted development environment. You may use [GitHub Codespaces](https://codespace.new/). Just click one of the buttons below to start a new workspace:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DIYgod/RSSHub?quickstart=1)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DIYgod/RSSHub)
-
-For more information about how to use [GitHub Codespaces](https://codespace.new/) or [Gitpod](https://www.gitpod.io/) , see [GitHub's documentation](https://docs.github.com/codespaces) and [Gitpod's documentation](https://www.gitpod.io/docs/).
+For more information about how to use [GitHub Codespaces](https://codespace.new/), see [GitHub's documentation](https://docs.github.com/codespaces).

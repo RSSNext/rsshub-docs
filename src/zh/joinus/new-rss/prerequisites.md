@@ -33,10 +33,8 @@ sidebar_position: 1
 
 ### 云托管的开发环境
 
-如果您不想在计算机上安装 Node.js 和代码编辑器，您可以使用云托管的开发环境。您可以使用 [GitHub Codespaces](https://codespace.new) 或 [Gitpod](https://www.gitpod.io)。只需点击以下按钮即可启动新的工作区：
+如果您不想在计算机上安装 Node.js 和代码编辑器，您可以使用云托管的开发环境。您可以使用 [GitHub Codespaces](https://codespace.new)。只需点击以下按钮即可启动新的工作区：
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DIYgod/RSSHub?quickstart=1)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DIYgod/RSSHub)
-
-有关如何使用 [GitHub Codespaces](https://codespace.new) 或 [Gitpod](https://www.gitpod.io) 的更多信息，请参见 [GitHub 文档](https://docs.github.com/codespaces) 和 [Gitpod 文档](https://www.gitpod.io/docs)。
+有关如何使用 [GitHub Codespaces](https://codespace.new) 的更多信息，请参见 [GitHub 文档](https://docs.github.com/codespaces)。
