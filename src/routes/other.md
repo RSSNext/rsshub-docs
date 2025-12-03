@@ -1139,6 +1139,26 @@ Filter parameters:
 
 <Route namespace="biquge" :data='{"path":"*","name":"Unknown","maintainers":[],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
+## BWSG <Site url="bwsg.at"/>
+
+BWS Gemeinnützige allgemeine Bau-, Wohn- und Siedlungsgenossenschaft, registrierte Genossenschaft mit beschränkter Haftung
+
+### Angebote <Site url="bwsg.at" size="sm" />
+
+<Route namespace="bwsg" :data='{"name":"Angebote","example":"/bwsg/_vermarktungsart=miete&_objektart=wohnung&_zimmer=2,3&_wohnflaeche=45,70&_plz=1210,1220","path":"*","maintainers":["sk22"],"categories":["other"],"description":"\nCopy the query parameters for your https://www.bwsg.at/immobilien/immobilie-suchen\nsearch, omitting the leading `?`\n\n::: tip\nSince there&#39;s no parameter available that sorts by \"last added\" (and there&#39;s no\nobvious pattern to the default ordering), and since this RSS feed only fetches\nthe first page of results, you probably want to specify enough search\nparameters to make sure you only get one page of results – because else, your\nRSS feed might not get all items.\n:::","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+
+Copy the query parameters for your https://www.bwsg.at/immobilien/immobilie-suchen
+search, omitting the leading `?`
+
+::: tip
+Since there's no parameter available that sorts by "last added" (and there's no
+obvious pattern to the default ordering), and since this RSS feed only fetches
+the first page of results, you probably want to specify enough search
+parameters to make sure you only get one page of results – because else, your
+RSS feed might not get all items.
+:::
+
 ## ui.dev <Site url="bytes.dev"/>
 
 ### Unknown <Site url="bytes.dev/archives" size="sm" />
