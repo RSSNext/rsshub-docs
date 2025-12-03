@@ -2212,6 +2212,10 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 
 <Route namespace="ecnu" :data='{"path":"/yjs","categories":["university"],"example":"/ecnu/yjs","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["yz.kaoyan.com/ecnu/tiaoji","yz.kaoyan.com/"]}],"name":"研究生院","maintainers":["shengmaosu"],"url":"yz.kaoyan.com/ecnu/tiaoji","location":"yjs.ts","heat":1,"topFeeds":[{"id":"73235012638578688","type":"feed","url":"rsshub://ecnu/yjs","title":"华东师范大学研究生院","description":"华东师范大学研究生调剂信息 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
+### 美术学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/art","categories":["university"],"example":"/ecnu/art","radar":[{"source":["art.ecnu.edu.cn"],"target":"/art"}],"name":"美术学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"art.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ### 本科生院通知 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/bksy","categories":["university"],"example":"/ecnu/bksy","radar":[{"source":["bksy.ecnu.edu.cn"],"target":"/bksy"}],"name":"本科生院通知","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"bksy.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
@@ -2219,6 +2223,18 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 ### 通信与电子工程学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/cee","categories":["university"],"example":"/ecnu/cee","radar":[{"source":["cee.ecnu.edu.cn"],"target":"/cee"}],"name":"通信与电子工程学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"cee.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+
+### 化学与分子工程学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/chem","categories":["university"],"example":"/ecnu/chem","radar":[{"source":["chem.ecnu.edu.cn"],"target":"/chem"}],"name":"化学与分子工程学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"chem.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### 国际汉语文化学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/chinese","categories":["university"],"example":"/ecnu/chinese","radar":[{"source":["chinese.ecnu.edu.cn"],"target":"/chinese"}],"name":"国际汉语文化学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"chinese.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### 传播学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/comm","categories":["university"],"example":"/ecnu/comm","radar":[{"source":["comm.ecnu.edu.cn"],"target":"/comm"}],"name":"传播学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"comm.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ### ACM Online-Judge contests list <Site url="acm.ecnu.edu.cn/contest/" size="sm" />
 
@@ -2256,17 +2272,49 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 
 <Route namespace="ecnu" :data='{"path":"/history","categories":["university"],"example":"/ecnu/history","radar":[{"source":["history.ecnu.edu.cn"],"target":"/history"}],"name":"历史学系通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"history.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+### 马克思主义学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/mks","categories":["university"],"example":"/ecnu/mks","radar":[{"source":["mks.ecnu.edu.cn"],"target":"/mks"}],"name":"马克思主义学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"mks.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ### 孟宪承书院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/mxcsy","categories":["university"],"example":"/ecnu/mxcsy","radar":[{"source":["mxcsy.ecnu.edu.cn"],"target":"/mxcsy"}],"name":"孟宪承书院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"mxcsy.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+
+### 药学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/pharm","categories":["university"],"example":"/ecnu/pharm","radar":[{"source":["pharm.ecnu.edu.cn"],"target":"/pharm"}],"name":"药学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"pharm.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ### 哲学系通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/philo","categories":["university"],"example":"/ecnu/philo","radar":[{"source":["www.philo.ecnu.edu.cn"],"target":"/philo"}],"name":"哲学系通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"philo.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+### 物理与电子科学学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/phy","categories":["university"],"example":"/ecnu/phy","radar":[{"source":["phy.ecnu.edu.cn"],"target":"/phy"}],"name":"物理与电子科学学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"phy.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### 心理与认知科学学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/psy","categories":["university"],"example":"/ecnu/psy","radar":[{"source":["psy.ecnu.edu.cn"],"target":"/psy"}],"name":"心理与认知科学学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"psy.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### 生态与环境科学学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/sees","categories":["university"],"example":"/ecnu/sees","radar":[{"source":["sees.ecnu.edu.cn"],"target":"/sees"}],"name":"生态与环境科学学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"sees.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ### 软件工程学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/sei","categories":["university"],"example":"/ecnu/sei","radar":[{"source":["sei.ecnu.edu.cn"],"target":"/sei"}],"name":"软件工程学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"sei.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+
+### 公共管理学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/spm","categories":["university"],"example":"/ecnu/spm","radar":[{"source":["spm.ecnu.edu.cn"],"target":"/spm"}],"name":"公共管理学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"spm.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### 统计学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/stat","categories":["university"],"example":"/ecnu/stat","radar":[{"source":["stat.ecnu.edu.cn"],"target":"/stat"}],"name":"统计学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"stat.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+### 体育与健康学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/tyxx","categories":["university"],"example":"/ecnu/tyxx","radar":[{"source":["tyxx.ecnu.edu.cn"],"target":"/tyxx"}],"name":"体育与健康学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"tyxx.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ## 华北水利水电大学 <Site url="ncwu.edu.cn"/>
 
