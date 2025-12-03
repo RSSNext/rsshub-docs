@@ -37,7 +37,7 @@
 
 ### 中国地震局 <Site url="www.cea.gov.cn/cea/xwzx/zqsd/index.html" size="sm" />
 
-<Route namespace="earthquake" :data='{"path":"/:region?","categories":["forecast"],"example":"/earthquake","parameters":{"region":"区域，0全部，1国内（默认），2国外"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震局","maintainers":["LogicJake"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"可通过全局过滤参数订阅您感兴趣的地区.","location":"index.ts","heat":131,"topFeeds":[{"id":"58939140174548992","type":"feed","url":"rsshub://earthquake","title":"中国地震局震情速递","description":"中国地震局震情速递 - Powered by RSSHub","image":null},{"id":"60836830967846986","type":"feed","url":"rsshub://earthquake/0","title":"中国地震局震情速递","description":"中国地震局震情速递 - Powered by RSSHub","image":null}]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
+<Route namespace="earthquake" :data='{"path":"/:region?","categories":["forecast"],"example":"/earthquake","parameters":{"region":"区域，0全部，1国内（默认），2国外"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.cea.gov.cn/cea/xwzx/zqsd/index.html","www.cea.gov.cn/"],"target":""}],"name":"中国地震局","maintainers":["LogicJake"],"url":"www.cea.gov.cn/cea/xwzx/zqsd/index.html","description":"可通过全局过滤参数订阅您感兴趣的地区.","location":"index.ts","heat":130,"topFeeds":[{"id":"58939140174548992","type":"feed","url":"rsshub://earthquake","title":"中国地震局震情速递","description":"中国地震局震情速递 - Powered by RSSHub","image":null},{"id":"60836830967846986","type":"feed","url":"rsshub://earthquake/0","title":"中国地震局震情速递","description":"中国地震局震情速递 - Powered by RSSHub","image":null}]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
 
 可通过全局过滤参数订阅您感兴趣的地区.
 
@@ -86,7 +86,7 @@
 
 ### 空气质量 <Site url="air-level.com" size="sm" />
 
-<Route namespace="air-level" :data='{"path":"/air/:area","radar":[{"source":["m.air-level.com/air/:area/"],"target":"/air/:area"}],"parameters":{"area":"地区"},"name":"空气质量","maintainers":["lifetraveler"],"example":"/air-level/air/xian","location":"index.ts","heat":24,"topFeeds":[{"id":"146122544518077440","type":"feed","url":"rsshub://air-level/air/suzhou","title":"苏州市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null},{"id":"81563872281993216","type":"feed","url":"rsshub://air-level/air/shanghai","title":"上海市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
+<Route namespace="air-level" :data='{"path":"/air/:area","radar":[{"source":["m.air-level.com/air/:area/"],"target":"/air/:area"}],"parameters":{"area":"地区"},"name":"空气质量","maintainers":["lifetraveler"],"example":"/air-level/air/xian","location":"index.ts","heat":24,"topFeeds":[{"id":"81563872281993216","type":"feed","url":"rsshub://air-level/air/shanghai","title":"上海市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null},{"id":"146122544518077440","type":"feed","url":"rsshub://air-level/air/suzhou","title":"苏州市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
 ### 空气质量排行 <Site url="air-level.com" size="sm" />
 
@@ -104,7 +104,7 @@
 
 ### Current Weather Report <Site url="www.weather.gov.hk/en/wxinfo/currwx/current.htm" size="sm" />
 
-<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":5,"topFeeds":[{"id":"69176555091531776","type":"feed","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Mon, 01 Dec 2025 09:02:00 GMT - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
+<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":5,"topFeeds":[{"id":"69176555091531776","type":"feed","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Tue, 02 Dec 2025 11:02:00 GMT - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
 ## 深圳市罗湖区人民政府 <Site url="www.szlh.gov.cn"/>
 
