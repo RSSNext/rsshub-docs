@@ -104,6 +104,10 @@
 电竞分类参见 [游戏热帖](https://bbs.hupu.com/all-gg) 的对应路由 [`/hupu/all/all-gg`](https://rsshub.app/hupu/all/all-gg)。
 :::
 
+### 队伍新闻 <Site url="m.hupu.com" size="sm" />
+
+<Route namespace="hupu" :data='{"path":["/news/:team"],"name":"队伍新闻","url":"m.hupu.com","maintainers":["hyoban"],"example":"/news/Spurs","parameters":{"team":{"description":"全小写的英文队名，例如：spurs, lakers, warriors 等等"}},"categories":["bbs"],"location":"news.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 禁忌书屋 <Site url="cool18.com"/>
 
 ### 禁忌书屋 <Site url="cool18.com" size="sm" />
