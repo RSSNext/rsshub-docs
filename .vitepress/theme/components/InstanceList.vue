@@ -98,16 +98,6 @@ const instances = [{
     maintainer: 'Tuấn Dev',
     maintainerUrl: 'https://duonganhtuan.com'
   }, {
-    url: 'https://rsshub.asailor.org',
-    location: '🇸🇬',
-    maintainer: 'Aethersailor',
-    maintainerUrl: 'https://github.com/Aethersailor'
-  }, {
-    url: 'https://rsshub2.asailor.org',
-    location: '🇺🇸',
-    maintainer: 'Aethersailor',
-    maintainerUrl: 'https://github.com/Aethersailor'
-  }, {
     url: 'https://rss.4040940.xyz',
     location: '🇩🇪',
     maintainer: 'TingyuShare',
