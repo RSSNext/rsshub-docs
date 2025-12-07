@@ -5254,6 +5254,16 @@ This route provides a better reading experience (full text articles) over the of
 
 <Route namespace="autocentre" :data='{"path":"/","name":"Автомобільний сайт N1 в Україні","categories":["new-media"],"maintainers":["driversti"],"example":"/autocentre","location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
 
+## bntnews <Site url="bntnews.co.kr"/>
+
+### Category <Site url="bntnews.co.kr" size="sm" />
+
+<Route namespace="bntnews" :data='{"path":"/:category?","categories":["new-media"],"example":"/bntnews/bnt003000000","parameters":{"category":"Category ID, see table below, default to Now (bnt008000000)"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"name":"Category","maintainers":["iamsnn"],"description":"| Beauty | Fashion | Star | Style+ | Photo | Life | Now |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n| bnt003000000 | bnt002000000 | bnt004000000 | bnt007000000 | bnt009000000 | bnt005000000 | bnt008000000 |","location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| Beauty | Fashion | Star | Style+ | Photo | Life | Now |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| bnt003000000 | bnt002000000 | bnt004000000 | bnt007000000 | bnt009000000 | bnt005000000 | bnt008000000 |
+
 ## 加美财经 <Site url="caus.com"/>
 
 ### 分类 <Site url="caus.com" size="sm" />
