@@ -454,7 +454,7 @@ Automatic updates are included.
 
 [![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
-## Deploy to Vercel <Badge type="danger" text="🚧 Under repair" />
+## Deploy to Vercel
 
 ### Instant deploy (without automatic update)
 
