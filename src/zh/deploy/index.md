@@ -445,7 +445,7 @@ sudo ansible-playbook rsshub.yaml
 
 [![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
-## 部署到 Vercel <Badge type="danger" text="🚧 修复中" />
+## 部署到 Vercel
 
 ### 一键部署（无自动更新）
 
