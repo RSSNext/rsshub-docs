@@ -24,20 +24,20 @@ Apart from serving as an information source hub, RSSHub is also made compatible 
 
 ::: code-group
 
-```sh [npm]
-$ npm install rsshub --save
-```
-
 ```sh [pnpm]
 $ pnpm add rsshub
+```
+
+```sh [bun]
+$ bun add rsshub
 ```
 
 ```sh [yarn]
 $ yarn add rsshub
 ```
 
-```sh [bun]
-$ bun add rsshub
+```sh [npm]
+$ npm install rsshub --save
 ```
 
 :::

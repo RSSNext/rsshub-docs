@@ -172,39 +172,15 @@ $ cd RSSHub
 
 Execute the following commands to install dependencies
 
-::: code-group
-
-```bash [pnpm]
+```bash
 pnpm i
 ```
 
-```bash [yarn]
-yarn i
-```
-
-```bash [npm]
-npm install
-```
-
-:::
-
 ### Build
 
-::: code-group
-
-```bash [pnpm]
+```bash
 pnpm build
 ```
-
-```bash [yarn]
-yarn build
-```
-
-```bash [npm]
-npm run build
-```
-
-:::
 
 ### Launch
 
@@ -216,16 +192,8 @@ Under `RSSHub`'s root directory, execute the following commands to launch
 pnpm start
 ```
 
-```bash [yarn]
-yarn start
-```
-
-```bash [npm]
-npm run start
-```
-
 ```bash [pm2]
-pm2 start lib/index.ts --name rsshub
+pm2 start dist/index.mjs --name rsshub
 ```
 
 :::

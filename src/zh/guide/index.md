@@ -24,20 +24,20 @@ RSSHub 的发展离不开社区的力量，欢迎编写你感兴趣的订阅源�
 
 ::: code-group
 
-```sh [npm]
-$ npm install rsshub --save
-```
-
 ```sh [pnpm]
 $ pnpm add rsshub
+```
+
+```sh [bun]
+$ bun add rsshub
 ```
 
 ```sh [yarn]
 $ yarn add rsshub
 ```
 
-```sh [bun]
-$ bun add rsshub
+```sh [npm]
+$ npm install rsshub --save
 ```
 
 :::
