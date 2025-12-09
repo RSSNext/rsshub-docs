@@ -165,39 +165,15 @@ $ cd RSSHub
 
 下载完成后，需要安装依赖
 
-::: code-group
-
-```bash [pnpm]
+```bash
 pnpm i
 ```
 
-```bash [yarn]
-yarn i
-```
-
-```bash [npm]
-npm install
-```
-
-:::
-
 ### 编译
 
-::: code-group
-
-```bash [pnpm]
+```bash
 pnpm build
 ```
-
-```bash [yarn]
-yarn build
-```
-
-```bash [npm]
-npm run build
-```
-
-:::
 
 ### 启动
 
@@ -209,16 +185,8 @@ npm run build
 pnpm start
 ```
 
-```bash [yarn]
-yarn start
-```
-
-```bash [npm]
-npm run start
-```
-
 ```bash [pm2]
-pm2 start lib/index.ts --name rsshub
+pm2 start dist/index.mjs --name rsshub
 ```
 
 :::
