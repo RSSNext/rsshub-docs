@@ -662,6 +662,12 @@ MIT HAN Lab pioneers research in efficient AI, advancing algorithms and hardware
 
 <Route namespace="railway" :data='{"path":"/blog","categories":["blog"],"example":"/railway/blog","url":"blog.railway.com","name":"Blog","maintainers":["jihuayu"],"location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+## Read Something Wonderful <Site url="readsomethingwonderful.com"/>
+
+### Articles <Site url="readsomethingwonderful.com" size="sm" />
+
+<Route namespace="readsomethingwonderful" :data='{"path":"/","name":"Articles","categories":["blog"],"example":"/readsomethingwonderful","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["readsomethingwonderful.com/"]}],"maintainers":["ttttmr"],"location":"index.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
 ## 云谦的博客 <Site url="sorrycc.com"/>
 
 ### 文章 <Site url="sorrycc.com" size="sm" />
