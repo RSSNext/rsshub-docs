@@ -592,6 +592,14 @@ Category ID
 
 <Route namespace="techflowpost" :data='{"path":"/express","categories":["finance"],"view":0,"example":"/techflowpost/express","radar":[{"source":["techflowpost.com/newsletter/index.html"]}],"name":"快讯","maintainers":["nczitzk"],"url":"techflowpost.com/","location":"express.ts","heat":656,"topFeeds":[{"id":"49375919416104960","type":"feed","url":"rsshub://techflowpost/express","title":"深潮TechFlow - 快讯","description":"深潮TechFlow - 快讯 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
+### 精选 <Site url="techflowpost.com/article/index.html" size="sm" />
+
+<Route namespace="techflowpost" :data='{"path":"/featured/:category?","categories":["finance"],"view":0,"example":"/techflowpost/featured","parameters":{"category":"分类，见下表，默认为全部"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["techflowpost.com/article/index.html"]}],"name":"精选","maintainers":["zhenlohuang"],"url":"techflowpost.com/article/index.html","description":"| 全部 | 行业 & 项目观察 | 项目简介 | 项目动态 | 赛道解读 | 播客笔记 | 交易观察 | VC洞察 | 实用教程 | 人物故事 & 访谈 | 法律 & 监管动态 | 活动动态 | 交易所动态 |\n  | ---- | --------------- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | --------------- | --------------- | -------- | ---------- |\n  |      | 2040            | 2046     | 2047     | 2045     | 2044     | 2043     | 2042   | 2041     | 2039            | 2033            | 2032     | 2031       |","location":"featured.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 全部 | 行业 & 项目观察 | 项目简介 | 项目动态 | 赛道解读 | 播客笔记 | 交易观察 | VC洞察 | 实用教程 | 人物故事 & 访谈 | 法律 & 监管动态 | 活动动态 | 交易所动态 |
+  | ---- | --------------- | -------- | -------- | -------- | -------- | -------- | ------ | -------- | --------------- | --------------- | -------- | ---------- |
+  |      | 2040            | 2046     | 2047     | 2045     | 2044     | 2043     | 2042   | 2041     | 2039            | 2033            | 2032     | 2031       |
+
 ### 首页 <Site url="techflowpost.com/" size="sm" />
 
 <Route namespace="techflowpost" :data='{"path":"/","example":"/techflowpost","radar":[{"source":["techflowpost.com/"]}],"name":"首页","categories":["finance"],"view":0,"maintainers":["nczitzk"],"url":"techflowpost.com/","location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
