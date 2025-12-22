@@ -215,7 +215,7 @@
 
 ### 空气质量 <Site url="air-level.com" size="sm" />
 
-<Route namespace="air-level" :data='{"path":"/air/:area","radar":[{"source":["m.air-level.com/air/:area/"],"target":"/air/:area"}],"parameters":{"area":"地区"},"name":"空气质量","maintainers":["lifetraveler"],"example":"/air-level/air/xian","location":"index.ts","heat":24,"topFeeds":[{"id":"81563872281993216","type":"feed","url":"rsshub://air-level/air/shanghai","title":"上海市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null},{"id":"146122544518077440","type":"feed","url":"rsshub://air-level/air/suzhou","title":"苏州市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
+<Route namespace="air-level" :data='{"path":"/air/:area","radar":[{"source":["m.air-level.com/air/:area/"],"target":"/air/:area"}],"parameters":{"area":"地区"},"name":"空气质量","maintainers":["lifetraveler"],"example":"/air-level/air/xian","location":"index.ts","heat":24,"topFeeds":[{"id":"146122544518077440","type":"feed","url":"rsshub://air-level/air/suzhou","title":"苏州市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null},{"id":"81563872281993216","type":"feed","url":"rsshub://air-level/air/shanghai","title":"上海市空气质量指数","description":"订阅每个城市的天气质量 - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
 ### 空气质量排行 <Site url="air-level.com" size="sm" />
 
@@ -233,7 +233,7 @@
 
 ### Current Weather Report <Site url="www.weather.gov.hk/en/wxinfo/currwx/current.htm" size="sm" />
 
-<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":5,"topFeeds":[{"id":"69176555091531776","type":"feed","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Sat, 20 Dec 2025 10:02:00 GMT - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
+<Route namespace="hko" :data='{"path":"/weather","radar":[{"source":["www.weather.gov.hk/en/wxinfo/currwx/current.htm"]}],"name":"Current Weather Report","example":"/hko/weather","maintainers":["calpa"],"categories":["forecast"],"url":"www.weather.gov.hk/en/wxinfo/currwx/current.htm","location":"weather.ts","heat":5,"topFeeds":[{"id":"69176555091531776","type":"feed","url":"rsshub://hko/weather","title":"Current Weather Report","description":"provided by the Hong Kong Observatory: Sun, 21 Dec 2025 12:02:00 GMT - Powered by RSSHub","image":null}]}' :test='{"code":0}' />
 
 ## 深圳市罗湖区人民政府 <Site url="www.szlh.gov.cn"/>
 
