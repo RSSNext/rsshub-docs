@@ -5600,9 +5600,13 @@ To subscribe to [Daily News](https://www.expats.cz/czech-news/daily-news), where
 
 FoodTalks全球食品资讯网是一个提供食品饮料行业新闻、资讯、分析和商业资源的领先在线平台。它涵盖行业趋势、市场动态、产品创新、投融资信息以及企业新闻，连接行业内的专业人士、企业和消费者。
 
-### FoodTalks global food information network <Site url="www.foodtalks.cn" size="sm" />
+### 最新资讯 <Site url="www.foodtalks.cn" size="sm" />
 
-<Route namespace="foodtalks" :data='{"path":"/","categories":["new-media"],"example":"/foodtalks","radar":[{"source":["www.foodtalks.cn"]}],"name":"FoodTalks global food information network","maintainers":["Geraldxm"],"url":"www.foodtalks.cn","location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+<Route namespace="foodtalks" :data='{"path":"/","categories":["new-media"],"example":"/foodtalks","radar":[{"source":["www.foodtalks.cn"]}],"name":"最新资讯","maintainers":["Geraldxm"],"url":"www.foodtalks.cn","location":"index.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+
+### 标签 <Site url="www.foodtalks.cn" size="sm" />
+
+<Route namespace="foodtalks" :data='{"path":"/news/tag/:tagId","parameters":{"tagId":"标签 ID"},"categories":["new-media"],"example":"/foodtalks/news/tag/13335","radar":[{"source":["www.foodtalks.cn/news/tag/:tagId"]}],"name":"标签","maintainers":["TonyRL"],"url":"www.foodtalks.cn","location":"tag.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ## Follow The Money <Site url="www.ftm.eu"/>
 
