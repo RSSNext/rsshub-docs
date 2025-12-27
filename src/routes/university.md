@@ -2244,6 +2244,14 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 
 <Route namespace="ecnu" :data='{"path":"/cs","categories":["university"],"example":"/ecnu/cs","radar":[{"source":["cs.ecnu.edu.cn"],"target":"/cs"}],"name":"计算机科学与技术学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"cs.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
 
+### 本科创新创业教育网 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/cxcy/:type?","categories":["university"],"example":"/ecnu/cxcy","parameters":{"type":"默认为 announcement"},"radar":[{"source":["cxcy.ecnu.edu.cn"],"target":"/cxcy"}],"name":"本科创新创业教育网","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"description":"| 通知公告     | 新闻动态     | 学科竞赛     | 常用资源     |\n| ------------ | ------------ | ------------ | ------------ |\n| announcement | news         | contest      | resources    |","location":"cxcy.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+| 通知公告     | 新闻动态     | 学科竞赛     | 常用资源     |
+| ------------ | ------------ | ------------ | ------------ |
+| announcement | news         | contest      | resources    |
+
 ### 数据科学与工程学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/dase","categories":["university"],"example":"/ecnu/dase","radar":[{"source":["dase.ecnu.edu.cn"],"target":"/dase"}],"name":"数据科学与工程学院通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"dase.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
@@ -2271,6 +2279,10 @@ Availible catagories：_all, normal, bachelorAdmission, masterAdmission, speeche
 ### 历史学系通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
 <Route namespace="ecnu" :data='{"path":"/history","categories":["university"],"example":"/ecnu/history","radar":[{"source":["history.ecnu.edu.cn"],"target":"/history"}],"name":"历史学系通知公告","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"history.ts","heat":0,"topFeeds":[]}' :test='{"code":0}' />
+
+### 本科生交流通知 <Site url="www.ecnu.edu.cn" size="sm" />
+
+<Route namespace="ecnu" :data='{"path":"/jiaoliu","categories":["university"],"example":"/ecnu/jiaoliu","radar":[{"source":["www.jiaoliu.ecnu.edu.cn"],"target":"/jiaoliu"}],"name":"本科生交流通知","maintainers":["FrozenStarrrr","ChiyoYuki","ECNU-minus"],"location":"jiaoliu.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ### 马克思主义学院通知公告 <Site url="www.ecnu.edu.cn" size="sm" />
 
