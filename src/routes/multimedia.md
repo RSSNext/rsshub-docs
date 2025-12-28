@@ -1340,13 +1340,17 @@ Fetches the latest announcements from Black Forest Labs (bfl.ai). Provides full 
 
 <Route namespace="mixcloud" :data='{"path":"/:username/playlists/:playlist","categories":["multimedia"],"example":"/mixcloud/dholbach/playlists/ecclectic-dance","parameters":{"username":"Username, can be found in URL","playlist":"Playlist slug, can be found in URL"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":true,"supportScihub":false},"radar":[{"source":["mixcloud.com/:username/playlists/:playlist"]},{"source":["www.mixcloud.com/:username/playlists/:playlist"]}],"name":"Playlist","maintainers":["Misaka13514"],"location":"user-playlist.ts","heat":0,"topFeeds":[]}' :test='{"code":1,"message":"AssertionError: expected 396777111070 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:38:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:63:13)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:82:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
 
-## BT影视 <Site url="btbtla.com"/>
+## BT影视 <Site url="www.btbtla.com"/>
 
-BT影视更新列表
+BT影视的页面内容，最近更新列表，视频种子列表。
 
-### BTBTLA <Site url="btbtla.com/tt/gxlist.html" size="sm" />
+### BTBTLA | 最近更新 <Site url="btbtla.com/tt/gxlist.html" size="sm" />
 
-<Route namespace="btbtla" :data='{"categories":["multimedia"],"example":"/btbtla/gxlist","maintainers":["Hermes1030"],"name":"BTBTLA","path":"/gxlist","url":"btbtla.com/tt/gxlist.html","location":"gxlist.ts","heat":4,"topFeeds":[]}' :test='{"code":0}' />
+<Route namespace="btbtla" :data='{"categories":["multimedia"],"example":"/btbtla/gxlist","maintainers":["Hermes1030"],"name":"BTBTLA | 最近更新","path":"/gxlist","url":"btbtla.com/tt/gxlist.html","location":"gxlist.ts","heat":4,"topFeeds":[]}' :test='{"code":0}' />
+
+### BTBTLA | 指定剧名 <Site url="www.btbtla.com" size="sm" />
+
+<Route namespace="btbtla" :data='{"path":"/detail/:name","categories":["multimedia"],"example":"/btbtla/detail/雍正王朝","parameters":{"name":"电影 | 电视剧名称"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":true,"supportPodcast":false,"supportScihub":false},"name":"BTBTLA | 指定剧名","maintainers":["Hermes1030"],"location":"detail.ts","heat":0,"topFeeds":[]}' :test='undefined' />
 
 ## 爱奇艺 <Site url="iq.com"/>
 
