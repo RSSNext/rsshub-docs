@@ -82,8 +82,6 @@ Your namespace folder structure should look like this:
 ```
 ├───lib/routes
 │   ├───furstar
-│       ├─── templates
-│           ├─── description.art
 │       ├─── router.ts
 │       ├─── maintainer.ts
 │       ├─── radar.ts
@@ -134,33 +132,6 @@ To generate a complete `radar-rules.ts` file, use the following command: `yarn b
 Remember to remove all build artifacts in `assets/build/` before committing.
 
 :::
-
-### Rendering Templates
-
-When rendering custom content with HTML, such as `item.description`, using [art-template](https://web.archive.org/web/20241011185323/http://aui.github.io/art-template/docs/syntax.html) for layout is mandatory.
-
-All templates should be placed in the namespace's `templates` folder with the `.art` file extension.
-
-#### Example
-
-Here's an example taken from the [furstar](https://github.com/DIYgod/RSSHub/blob/master/lib/routes/furstar) namespace:
-
-```html
-<div>
-    <img src="{{ avatar }}" />
-    {{ if link !== null }}
-    <a href="{{ link }}">{{name}}</a>
-    {{ else }}
-    <a href="#">{{name}}</a>
-    {{ /if }}
-</div>
-```
-
-```js
-import path from 'node:path';
-import { art } from '@/utils/render';
-const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'), author);
-```
 
 ## v1 Route Standard
 

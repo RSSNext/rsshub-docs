@@ -81,8 +81,6 @@ v2 路由规范已被弃用。所有新路由都应遵循[制作路由](/joinus/
 
     ├───lib/routes
     │   ├───furstar
-    │       ├─── templates
-    │           ├─── description.art
     │       ├─── router.ts
     │       ├─── maintainer.ts
     │       ├─── radar.ts
@@ -132,35 +130,6 @@ RSSHub 会将所有路由命名空间的文件夹名附加到路由前面。路�
 在提交代码之前，请记得删除所有在 `assets/build/` 中的生成的资源。
 
 :::
-
-### 渲染模板
-
-当渲染自定义 HTML 内容（例如 `item.description`）时，**必须**使用 [art-template](https://web.archive.org/web/20241011185323/http://aui.github.io/art-template/docs/syntax.html) 进行排版。
-
-所有模板都应放置在路由命名空间下的 `templates` 文件夹中，并使用 `.art` 文件扩展名命名。
-
-#### 示例
-
-下面是在 [furstar](https://github.com/DIYgod/RSSHub/blob/master/lib/routes/furstar) 命名空间中示例：
-
-<!-- markdownlint-disable MD046 -->
-
-```html
-<div>
-    <img src="{{ avatar }}" />
-    {{ if link !== null }}
-    <a href="{{ link }}">{{name}}</a>
-    {{ else }}
-    <a href="#">{{name}}</a>
-    {{ /if }}
-</div>
-```
-
-```js
-import path from 'node:path';
-import { art } from '@/utils/render';
-const renderAuthor = (author) => art(path.join(__dirname, 'templates/author.art'), author);
-```
 
 <!-- markdownlint-enable MD046 -->
 
