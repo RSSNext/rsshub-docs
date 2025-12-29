@@ -433,6 +433,12 @@ Type category
 
 <Route namespace="binance" :data='{"path":"/launchpool","categories":["finance"],"example":"/binance/launchpool","radar":[{"source":["binance.com/:lang/support/announcement"]}],"name":"Binance数字货币及交易对上新","maintainers":["zhenlohuang"],"location":"launchpool.ts","heat":8,"topFeeds":[{"id":"208953371452225542","type":"feed","url":"rsshub://binance/launchpool","title":"Importing","description":null,"image":null}]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
 
+### 币安公告 <Site url="binance.com" size="sm" />
+
+<Route namespace="binance" :data='{"path":"/messages/announcement","categories":["finance"],"view":0,"example":"/binance/messages/announcement","radar":[{"source":["www.binance.com/zh-CN/messages/v2/group/announcement"],"target":"/binance/messages/announcement"}],"name":"币安公告","description":"Announcement list from Binance message center.","maintainers":["DIYgod"],"location":"messages.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+Announcement list from Binance message center.
+
 ## 金色财经 <Site url="jinse.cn"/>
 
 ### 快讯 <Site url="jinse.cn" size="sm" />
