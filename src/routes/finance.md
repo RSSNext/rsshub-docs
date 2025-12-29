@@ -410,35 +410,6 @@
 
 <Route namespace="wallstreetcn" :data='{"path":"/calendar/:section?","categories":["finance"],"example":"/wallstreetcn/calendar","parameters":{"section":"`macrodatas` 或 `report`，默认为 `macrodatas`"},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["wallstreetcn.com/calendar"]}],"name":"财经日历","maintainers":["TonyRL"],"url":"wallstreetcn.com/calendar","location":"calendar.ts","heat":85,"topFeeds":[{"id":"80430906726720512","type":"feed","url":"rsshub://wallstreetcn/calendar","title":"财经日历 - 华尔街见闻","description":"财经日历 - 华尔街见闻 - Powered by RSSHub","image":"https://static.wscn.net/wscn/_static/favicon.png"},{"id":"165321950833192960","type":"feed","url":"rsshub://wallstreetcn/calendar/macrodatas","title":"财经日历 - 华尔街见闻","description":"财经日历 - 华尔街见闻 - Powered by RSSHub","image":"https://static.wscn.net/wscn/_static/favicon.png"}]}' :test='{"code":0}' />
 
-## Binance <Site url="binance.com"/>
-
-### Announcement <Site url="binance.com" size="sm" />
-
-<Route namespace="binance" :data='{"path":"/announcement/:type","categories":["finance","popular"],"view":0,"example":"/binance/announcement/new-cryptocurrency-listing","parameters":{"type":{"description":"Binance Announcement type","default":"new-cryptocurrency-listing","options":[{"value":"new-cryptocurrency-listing","label":"New Cryptocurrency Listing"},{"value":"latest-binance-news","label":"Latest Binance News"},{"value":"latest-activities","label":"Latest Activities"},{"value":"new-fiat-listings","label":"New Fiat Listings"},{"value":"api-updates","label":"API Updates"},{"value":"crypto-airdrop","label":"Crypto Airdrop"},{"value":"wallet-maintenance-updates","label":"Wallet Maintenance Updates"},{"value":"delisting","label":"Delisting"}]}},"name":"Announcement","description":"\nType category\n\n - new-cryptocurrency-listing => New Cryptocurrency Listing\n - latest-binance-news        => Latest Binance News\n - latest-activities          => Latest Activities\n - new-fiat-listings          => New Fiat Listings\n - api-updates                => API Updates\n - crypto-airdrop             => Crypto Airdrop\n - wallet-maintenance-updates => Wallet Maintenance Updates\n - delisting                  => Delisting\n","maintainers":["enpitsulin"],"location":"announcement.ts","heat":1675,"topFeeds":[{"id":"54390728350522368","type":"feed","url":"rsshub://binance/announcement/new-cryptocurrency-listing","title":"New Cryptocurrency Listing","description":"Check out the latest coin listings and pairs on Launchpad, Launchpool, Spot, Margin, and Futures markets. - Powered by RSSHub","image":null},{"id":"56573138387473408","type":"feed","url":"rsshub://binance/announcement/latest-binance-news","title":"Latest Binance News","description":"Stay on top of what&#39;s new in Binance. - Powered by RSSHub","image":null}]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
-
-
-Type category
-
- - new-cryptocurrency-listing => New Cryptocurrency Listing
- - latest-binance-news        => Latest Binance News
- - latest-activities          => Latest Activities
- - new-fiat-listings          => New Fiat Listings
- - api-updates                => API Updates
- - crypto-airdrop             => Crypto Airdrop
- - wallet-maintenance-updates => Wallet Maintenance Updates
- - delisting                  => Delisting
-
-
-### Binance数字货币及交易对上新 <Site url="binance.com" size="sm" />
-
-<Route namespace="binance" :data='{"path":"/launchpool","categories":["finance"],"example":"/binance/launchpool","radar":[{"source":["binance.com/:lang/support/announcement"]}],"name":"Binance数字货币及交易对上新","maintainers":["zhenlohuang"],"location":"launchpool.ts","heat":8,"topFeeds":[{"id":"208953371452225542","type":"feed","url":"rsshub://binance/launchpool","title":"Importing","description":null,"image":null}]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
-
-### 币安公告 <Site url="binance.com" size="sm" />
-
-<Route namespace="binance" :data='{"path":"/messages/announcement","categories":["finance"],"view":0,"example":"/binance/messages/announcement","radar":[{"source":["www.binance.com/zh-CN/messages/v2/group/announcement"],"target":"/binance/messages/announcement"}],"name":"币安公告","description":"Announcement list from Binance message center.","maintainers":["DIYgod"],"location":"messages.ts","heat":0,"topFeeds":[]}' :test='undefined' />
-
-Announcement list from Binance message center.
-
 ## 金色财经 <Site url="jinse.cn"/>
 
 ### 快讯 <Site url="jinse.cn" size="sm" />
@@ -1698,6 +1669,18 @@ Language:
 | Analysis | News | Transcripts | Press Releases | Related Analysis |
 | -------- | ---- | ----------- | -------------- | ---------------- |
 | analysis | news | transcripts | press-releases | related-analysis |
+
+## Binance <Site url="binance.com"/>
+
+### Binance数字货币及交易对上新 <Site url="binance.com" size="sm" />
+
+<Route namespace="binance" :data='{"path":"/launchpool","categories":["finance"],"example":"/binance/launchpool","radar":[{"source":["binance.com/:lang/support/announcement"]}],"name":"Binance数字货币及交易对上新","maintainers":["zhenlohuang"],"location":"launchpool.ts","heat":8,"topFeeds":[{"id":"208953371452225542","type":"feed","url":"rsshub://binance/launchpool","title":"Importing","description":null,"image":null}]}' :test='{"code":1,"message":"AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/routes.test.ts:81:41\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.0.9/node_modules/@vitest/runner/dist/index.js:753:20"}' />
+
+### Announcement <Site url="binance.com" size="sm" />
+
+<Route namespace="binance" :data='{"path":"/announcement/:type?/:lang?","categories":["finance"],"view":0,"example":"/binance/announcement/new-cryptocurrency-listing","radar":[{"source":["www.binance.com/:lang/messages/v2/group/announcement"],"target":"/binance/announcement/all/:lang"}],"parameters":{"type":{"description":"Announcement type. Omit for all categories.","default":"all","options":[{"value":"all","label":"All"},{"value":"new-cryptocurrency-listing","label":"New Cryptocurrency Listing"},{"value":"latest-binance-news","label":"Latest Binance News"},{"value":"latest-activities","label":"Latest Activities"},{"value":"new-fiat-listings","label":"New Fiat Listings"},{"value":"api-updates","label":"API Updates"},{"value":"crypto-airdrop","label":"Crypto Airdrop"},{"value":"wallet-maintenance-updates","label":"Wallet Maintenance Updates"},{"value":"delisting","label":"Delisting"}]},"lang":{"description":"Language code for the messages page.","default":"zh-CN","options":[{"value":"zh-CN","label":"Simplified Chinese"},{"value":"en","label":"English"}]}},"name":"Announcement","description":"Announcement list from Binance message center with language and type selection.","maintainers":["enpitsulin","DIYgod"],"location":"announcement.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+Announcement list from Binance message center with language and type selection.
 
 ## Forklog <Site url="forklog.com"/>
 
