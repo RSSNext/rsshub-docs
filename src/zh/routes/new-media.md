@@ -5516,6 +5516,17 @@ This route provides a better reading experience (full text articles) over the of
 </details>
 
 
+## CoStar <Site url="costar.com"/>
+
+### Press Releases <Site url="www.costar.com" size="sm" />
+
+<Route namespace="costar" :data='{"path":"/press-releases/:filter{.+}?","name":"Press Releases","url":"www.costar.com","maintainers":["nczitzk"],"example":"/costar/press-releases","parameters":{"filter":{"description":"Filter"}},"description":":::tip\nTo subscribe to [Press Releases - Asia Pacific - Preliminary](https://www.costar.com/products/benchmark/resources/press-releases?region=406&tag=581), where the source URL is `https://www.costar.com/products/benchmark/resources/press-releases?region=406&tag=581`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/costar/press-releases/region=406&tag=581`](https://rsshub.app/costar/press-releases/region=406&tag=581).\n:::\n","categories":["new-media"],"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportRadar":true,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.costar.com"]}],"view":0,"location":"press-releases.ts","heat":0,"topFeeds":[]}' :test='undefined' />
+
+:::tip
+To subscribe to [Press Releases - Asia Pacific - Preliminary](https://www.costar.com/products/benchmark/resources/press-releases?region=406&tag=581), where the source URL is `https://www.costar.com/products/benchmark/resources/press-releases?region=406&tag=581`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/costar/press-releases/region=406&tag=581`](https://rsshub.app/costar/press-releases/region=406&tag=581).
+:::
+
+
 ## 中天新聞網 <Site url="ctinews.com"/>
 
 ### 話題 <Site url="ctinews.com" size="sm" />
