@@ -394,11 +394,26 @@ sudo ansible-playbook rsshub.yaml
 # For example, if your users use https://rsshub.example.com to access your RSSHub instance, enter rsshub.example.com (remove the https://)
 ```
 
-## Deploy to Railway
+## Deploy to Vercel
 
-Automatic updates are included.
+### Instant deploy (without automatic update)
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW__f?referralCode=9wT3hc)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub)
+
+### Automatic deploy upon update
+
+1.  [Fork RSSHub](https://github.com/DIYgod/RSSHub/fork) to your GitHub account.
+2.  Deploy your fork to Vercel: Login Vercel with your GitHub account, create and deploy [new Vercel project](https://vercel.com/new/) with your RSSHub repository.
+3.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
+
+## Deploy to Zeabur
+
+1.  [Sign up for Zeabur](https://dash.zeabur.com)
+2.  Create a new project.
+3.  Create a new service in the project, select deploying from the **marketplace**.
+4.  Add a domain name, if you use a custom domain name, you can refer to [Zeabur's domain name binding document](https://docs.zeabur.com/deploy/domain-binding).
+
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
 ## Deploy to Heroku
 
@@ -413,26 +428,20 @@ Automatic updates are included.
 3.  Configure `automatic deploy` in Heroku app to follow the changes to your fork.
 4.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
 
-## Deploy to Zeabur
+## Deploy to Cloudflare Workers
 
-1.  [Sign up for Zeabur](https://dash.zeabur.com)
-2.  Create a new project.
-3.  Create a new service in the project, select deploying from the **marketplace**.
-4.  Add a domain name, if you use a custom domain name, you can refer to [Zeabur's domain name binding document](https://docs.zeabur.com/deploy/domain-binding).
+RSSHub can be deployed to Cloudflare Workers with one click.
 
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
 
-## Deploy to Vercel
+Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
 
-### Instant deploy (without automatic update)
+:::warning
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub)
+-   Workers Paid plan is required. Free plan has a 3 MB Worker size limit which is insufficient for RSSHub.
+-   Browser Rendering (for puppeteer) also requires Workers Paid plan.
 
-### Automatic deploy upon update
-
-1.  [Fork RSSHub](https://github.com/DIYgod/RSSHub/fork) to your GitHub account.
-2.  Deploy your fork to Vercel: Login Vercel with your GitHub account, create and deploy [new Vercel project](https://vercel.com/new/) with your RSSHub repository.
-3.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
+:::
 
 ## Deploy to Fly.io
 
@@ -492,32 +501,11 @@ $ fly secrets set CACHE_TYPE=redis REDIS_URL='<the connection URL>'
 
 and execute `fly deploy` (if use the second install method) to trigger a redeployment to complete the configuration.
 
-## Deploy to Sealos(use Redis as cache)
+## Deploy to Railway
 
 Automatic updates are included.
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
-
-## Deploy to PikaPods
-
-Run RSSHub from just $1/month. Includes automatic updates and $5 free starting credit.
-
-[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
-
-## Deploy to Cloudflare Workers
-
-RSSHub can be deployed to Cloudflare Workers with one click.
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
-
-Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
-
-:::warning
-
--   Workers Paid plan is required. Free plan has a 3 MB Worker size limit which is insufficient for RSSHub.
--   Browser Rendering (for puppeteer) also requires Workers Paid plan.
-
-:::
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW__f?referralCode=9wT3hc)
 
 ## Deploy to Google App Engine(GAE)
 
@@ -592,6 +580,18 @@ gcloud app deploy
 For changing the deployment project id or version id, please refer to `Deploying a service` section [here](https://cloud.google.com/appengine/docs/flexible/nodejs/testing-and-deploying-your-app).
 
 You can access your `Google App Engine URL` to check the deployment status
+
+## Deploy to Sealos(use Redis as cache)
+
+Automatic updates are included.
+
+[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+
+## Deploy to PikaPods
+
+Run RSSHub from just $1/month. Includes automatic updates and $5 free starting credit.
+
+[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
 
 ## Play with Docker
 
