@@ -500,6 +500,21 @@ $ fly secrets set CACHE_TYPE=redis REDIS_URL='<刚才的连接 URL>'
 
 [![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
 
+## 部署到 Cloudflare Workers
+
+RSSHub 支持一键部署到 Cloudflare Workers。
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
+
+通过 [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/) 支持 puppeteer，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
+
+:::warning
+
+-   需要 Workers 付费版。免费版的 Worker 大小限制为 3 MB，不足以运行 RSSHub。
+-   Browser Rendering（用于 puppeteer）同样需要 Workers 付费版。
+
+:::
+
 ## 部署到 Google App Engine
 
 ### 准备

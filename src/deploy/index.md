@@ -504,6 +504,21 @@ Run RSSHub from just $1/month. Includes automatic updates and $5 free starting c
 
 [![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
 
+## Deploy to Cloudflare Workers
+
+RSSHub can be deployed to Cloudflare Workers with one click.
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
+
+Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
+
+:::warning
+
+-   Workers Paid plan is required. Free plan has a 3 MB Worker size limit which is insufficient for RSSHub.
+-   Browser Rendering (for puppeteer) also requires Workers Paid plan.
+
+:::
+
 ## Deploy to Google App Engine(GAE)
 
 ### Before You Begin
