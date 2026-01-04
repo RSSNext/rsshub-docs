@@ -9,6 +9,8 @@ import Sponsors from './components/Sponsors.vue'
 import InstanceList from './components/InstanceList.vue'
 import CopyButtonVue from './components/CopyButton.vue'
 import Banner from './components/Banner.vue'
+import NamespaceList from './components/NamespaceList.vue'
+import NamespaceDetail from './components/NamespaceDetail.vue'
 
 export default {
   extends: DefaultTheme,
@@ -25,5 +27,7 @@ export default {
     app.component('InstanceList', InstanceList)
     app.component('CopyButton', CopyButtonVue)
     app.component('Banner', Banner)
+    app.component('NamespaceList', NamespaceList)
+    app.component('NamespaceDetail', NamespaceDetail)
   }
 } satisfies Theme

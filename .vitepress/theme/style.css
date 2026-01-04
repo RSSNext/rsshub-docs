@@ -222,3 +222,23 @@ select {
   border: 1px solid #e2e8f0;
   padding: 2px 4px;
 }
+
+/* Routes list page - wider layout */
+.routes-list-page .VPDoc .content-container {
+  max-width: 100% !important;
+}
+
+.routes-list-page .VPDoc .content {
+  padding: 0 24px !important;
+}
+
+@media (min-width: 960px) {
+  .routes-list-page .VPDoc .content {
+    padding: 0 48px !important;
+  }
+}
+
+.routes-list-page .VPDoc .aside {
+  display: none;
+}
+

@@ -1,5 +1,4 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
-import { categories } from './data'
 
 const telegramLogo = `
 <?xml version="1.0" encoding="UTF-8"?>
@@ -154,10 +153,9 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     },
     {
       text: 'Routes',
-      items: categories.map((category) => ({
-        text: `${category.icon} ${category.en}`,
-        link: category.link,
-      })),
+      items: [
+        { text: 'All Routes', link: '/routes/' },
+      ],
     },
   ]
 }

@@ -34,7 +34,7 @@
       </a>
       <CopyButton :text="demoUrl" />
     </p>
-    <p v-if="data.topFeeds?.length">
+    <div v-if="data.topFeeds?.length" class="top-feeds">
       <span>🔥 Top Feeds on Folo: </span>
       <ul>
         <li v-for="(item, index) in data.topFeeds" :key="index">
@@ -43,7 +43,7 @@
           </a>
         </li>
       </ul>
-    </p>
+    </div>
     <p class="path" style="display: flex; align-items: center; gap: 8px;">
       🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}
       <CopyButton :text="`/${namespace}${data.path}`" />
