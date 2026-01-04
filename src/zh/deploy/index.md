@@ -385,11 +385,26 @@ sudo ansible-playbook rsshub.yaml
 # 举例：如果您的 RSSHub 用户使用 https://rsshub.example.com 访问您的 RSSHub 实例，输入 rsshub.example.com（去掉 https://）
 ```
 
-## 部署到 Railway
+## 部署到 Vercel
 
-包含自动更新。
+### 一键部署（无自动更新）
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW\_\_f?referralCode=9wT3hc)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub)
+
+### 自动更新部署
+
+1.  将 RSSHub [分叉（fork）](https://github.com/DIYgod/RSSHub/fork) 到自己的账户下
+2.  去 Vercel 部署一个新项目：使用 GitHub 账户登录 Vercel，进入 [项目创建页面](https://vercel.com/new/) 选择导入 RSSHub 仓库进行部署
+3.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的仓库
+
+## 部署到 Zeabur
+
+1.  前往 [Zeabur 完成注册](https://dash.zeabur.com)
+2.  创建一个新项目
+3.  在项目中选择创建新服务，选择从**服务市场**部署。
+4.  添加域名，若使用自定义域名，可参见 [Zeabur 的域名绑定文档](https://docs.zeabur.com/zh-CN/deploy/domain-binding)。
+
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
 
 ## 部署到 Heroku
 
@@ -404,26 +419,20 @@ sudo ansible-playbook rsshub.yaml
 3.  检查 Heroku 设置，随代码库更新自动部署。
 4.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的分叉。
 
-## 部署到 Zeabur
+## 部署到 Cloudflare Workers
 
-1.  前往 [Zeabur 完成注册](https://dash.zeabur.com)
-2.  创建一个新项目
-3.  在项目中选择创建新服务，选择从**服务市场**部署。
-4.  添加域名，若使用自定义域名，可参见 [Zeabur 的域名绑定文档](https://docs.zeabur.com/zh-CN/deploy/domain-binding)。
+RSSHub 支持一键部署到 Cloudflare Workers。
 
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/X46PTP)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
 
-## 部署到 Vercel
+通过 [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/) 支持 puppeteer，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
 
-### 一键部署（无自动更新）
+:::warning
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub)
+-   需要 Workers 付费版。免费版的 Worker 大小限制为 3 MB，不足以运行 RSSHub。
+-   Browser Rendering（用于 puppeteer）同样需要 Workers 付费版。
 
-### 自动更新部署
-
-1.  将 RSSHub [分叉（fork）](https://github.com/DIYgod/RSSHub/fork) 到自己的账户下
-2.  去 Vercel 部署一个新项目：使用 GitHub 账户登录 Vercel，进入 [项目创建页面](https://vercel.com/new/) 选择导入 RSSHub 仓库进行部署
-3.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的仓库
+:::
 
 ## 部署到 Fly.io
 
@@ -488,32 +497,11 @@ $ fly secrets set CACHE_TYPE=redis REDIS_URL='<刚才的连接 URL>'
 
 并执行 `fly deploy` 触发重新部署来完成配置。
 
-## 部署到 Sealos
+## 部署到 Railway
 
-包含自动更新
+包含自动更新。
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
-
-## 部署到 PikaPods
-
-每月只需 1 美元即可运行 RSSHub。包括自动更新和 5 美元的免费起始额度。
-
-[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
-
-## 部署到 Cloudflare Workers
-
-RSSHub 支持一键部署到 Cloudflare Workers。
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
-
-通过 [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/) 支持 puppeteer，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
-
-:::warning
-
--   需要 Workers 付费版。免费版的 Worker 大小限制为 3 MB，不足以运行 RSSHub。
--   Browser Rendering（用于 puppeteer）同样需要 Workers 付费版。
-
-:::
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW\_\_f?referralCode=9wT3hc)
 
 ## 部署到 Google App Engine
 
@@ -590,6 +578,18 @@ gcloud app deploy
 进行项目部署，如果您需要变更 app.yaml 文件名称或者变更部署的项目 ID 或者指定版本号等，请参考 [Deploying a service](https://cloud.google.com/appengine/docs/flexible/nodejs/testing-and-deploying-your-app#deploying_a_service\_2)。
 
 部署完成后可访问您的 Google App Engine URL 查看部署情况。
+
+## 部署到 Sealos
+
+包含自动更新
+
+[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+
+## 部署到 PikaPods
+
+每月只需 1 美元即可运行 RSSHub。包括自动更新和 5 美元的免费起始额度。
+
+[![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
 
 ## Play with Docker
 
