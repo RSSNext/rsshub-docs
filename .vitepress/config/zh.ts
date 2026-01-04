@@ -1,5 +1,4 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
-import { categories } from './data'
 
 export const zh = defineConfig({
   lang: 'zh-Hans',
@@ -103,10 +102,9 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     },
     {
       text: '路由',
-      items: categories.map((category) => ({
-        text: `${category.icon} ${category.zh}`,
-        link: '/zh' + category.link,
-      })),
+      items: [
+        { text: '全部路由', link: '/zh/routes/' },
+      ],
     },
   ]
 }
