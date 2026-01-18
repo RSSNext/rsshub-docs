@@ -64,7 +64,7 @@
       >
         <div class="namespace-icon">
           <img
-            :src="`https://unavatar.webp.se/${ns.url || ns.id + '.com'}?fallback=true`"
+            :src="`https://icons.folo.is/${ns.url || ns.id + '.com'}`"
             :alt="ns.name"
             @error="handleImageError"
           />
