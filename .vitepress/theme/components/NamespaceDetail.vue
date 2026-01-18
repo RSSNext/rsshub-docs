@@ -3,7 +3,7 @@
     <div class="namespace-header">
       <div class="namespace-icon">
         <img
-          :src="`https://unavatar.webp.se/${namespace.url || currentNamespaceId + '.com'}?fallback=true`"
+          :src="`https://icons.folo.is/${namespace.url || currentNamespaceId + '.com'}`"
           :alt="namespace.name"
           @error="handleImageError"
         />
