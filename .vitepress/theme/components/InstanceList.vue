@@ -107,6 +107,11 @@ const instances = [{
     location: '🇺🇸',
     maintainer: 'FunnyCups',
     maintainerUrl: 'https://www.cups.moe'
+  }, {
+    url: 'https://rss.spriple.org',
+    location: '🇨🇳',
+    maintainer: 'Spriple',
+    maintainerUrl: 'https://blog.spriple.org'
   }
 ]
 
