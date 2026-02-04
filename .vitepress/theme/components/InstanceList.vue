@@ -84,7 +84,7 @@ const instances = [{
     maintainerUrl: 'https://umzzz.com',
   }, {
     url: 'https://rsshub.isrss.com',
-    location: '🇰🇷',
+    location: 'LA',
     maintainer: 'isRSS',
     maintainerUrl: 'https://isrss.com',
   }, {
