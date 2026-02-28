@@ -445,6 +445,7 @@ It is recommended to use a non-important account, new accounts or logins from di
 
 -   All routes:
   -   `YOUTUBE_KEY`: YouTube API Key, support multiple keys, split them with `,`
+  -   `YOUTUBE_VIDEO_EMBED_URL`: Base URL of the YouTube iframe embed player. Defaults to `https://www.youtube-nocookie.com/embed/`.
 -   Extra requirements for subscriptions route:
   -   `YOUTUBE_CLIENT_ID`: YouTube API OAuth 2.0 client ID
   -   `YOUTUBE_CLIENT_SECRET`: YouTube API OAuth 2.0 client secret

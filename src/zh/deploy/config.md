@@ -414,6 +414,7 @@ healthcheck:
 
 -   全部路由
   -   `YOUTUBE_KEY`: YouTube API Key，支持多个 key，用英文逗号 `,` 隔开
+  -   `YOUTUBE_VIDEO_EMBED_URL`: YouTube iframe 播放器嵌入链接的基础地址。默认值为 `https://www.youtube-nocookie.com/embed/`。
 -   订阅列表路由额外设置
   -   `YOUTUBE_CLIENT_ID`: YouTube API 的 OAuth 2.0 客户端 ID
   -   `YOUTUBE_CLIENT_SECRET`: YouTube API 的 OAuth 2.0 客户端 Secret
