@@ -1,6 +1,7 @@
-import { createI18n } from 'vue-i18n'
-import en from './en.json'
-import zh from './zh.json'
+import { createI18n } from 'vue-i18n';
+
+import en from './en.json';
+import zh from './zh.json';
 
 export function setupI18n() {
   return createI18n({
@@ -9,5 +10,5 @@ export function setupI18n() {
     fallbackLocale: 'en',
     flatJson: true,
     messages: { en, 'zh-Hans': zh },
-  })
+  });
 }

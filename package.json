@@ -3,12 +3,15 @@
   "scripts": {
     "docs:build": "vitepress build",
     "docs:dev": "vitepress dev",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "devDependencies": {
     "@intlify/unplugin-vue-i18n": "11.0.7",
     "@types/json-schema": "7.0.15",
     "markdown-it": "14.1.1",
+    "oxfmt": "0.40.0",
     "vitepress": "1.6.4",
     "vue": "3.5.30",
     "vue-i18n": "11.3.0"

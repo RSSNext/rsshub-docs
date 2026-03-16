@@ -1,6 +1,7 @@
 <template>
   <div class="banner">
-    RSSHub is now part of <a href="https://open.network/" target="_blank">Open</a>. <a href="http://open.network/blog/introducing-open" target="_blank">Read More</a>
+    RSSHub is now part of <a href="https://open.network/" target="_blank">Open</a>.
+    <a href="http://open.network/blog/introducing-open" target="_blank">Read More</a>
   </div>
 </template>
 

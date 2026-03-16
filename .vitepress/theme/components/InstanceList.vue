@@ -11,15 +11,18 @@
     <tbody>
       <tr v-for="instance in instances" :key="instance.url">
         <td>
-          <a target="_blank" :href="instance.url">{{getHost(instance.url)}}</a>
+          <a target="_blank" :href="instance.url">{{ getHost(instance.url) }}</a>
         </td>
-        <td>{{instance.location}}</td>
+        <td>{{ instance.location }}</td>
         <td>
-          <a v-if="instance.maintainer" target="_blank" :href="instance.maintainerUrl">{{instance.maintainer}}</a>
+          <a v-if="instance.maintainer" target="_blank" :href="instance.maintainerUrl">{{ instance.maintainer }}</a>
           <span v-if="!instance.maintainer">{{ t('instance.anonymous') }}</span>
         </td>
         <td>
-          <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(`${instance.url}/healthz`)}`" />
+          <img
+            loading="lazy"
+            :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(`${instance.url}/healthz`)}`"
+          />
         </td>
       </tr>
     </tbody>
@@ -27,101 +30,118 @@
 </template>
 
 <script setup lang="ts">
-import { useLocale } from '../composables/useLocale'
+import { useLocale } from '../composables/useLocale';
 
-const { t } = useLocale()
+const { t } = useLocale();
 
-const instances = [{
+const instances = [
+  {
     url: 'https://rsshub.rssforever.com',
     location: '🇦🇪',
     maintainer: 'Stille',
     maintainerUrl: 'https://www.ioiox.com',
-  }, {
+  },
+  {
     url: 'https://hub.slarker.me',
     location: '🇺🇸',
     maintainer: 'Slarker',
     maintainerUrl: 'https://slarker.me',
-  }, {
+  },
+  {
     url: 'https://rsshub.pseudoyu.com',
     location: '🇫🇷',
     maintainer: 'pseudoyu',
     maintainerUrl: 'https://github.com/pseudoyu',
-  }, {
+  },
+  {
     url: 'https://rsshub.rss.tips',
     location: '🇺🇸',
     maintainer: 'AboutRSS',
     maintainerUrl: 'https://github.com/AboutRSS/ALL-about-RSS',
-  }, {
+  },
+  {
     url: 'https://rsshub.ktachibana.party',
     location: '🇺🇸',
     maintainer: 'KTachibanaM',
     maintainerUrl: 'https://github.com/KTachibanaM',
-  }, {
+  },
+  {
     url: 'https://rss.owo.nz',
     location: '🇩🇪',
     maintainer: 'Vincent Yang',
     maintainerUrl: 'https://missuo.me',
-  }, {
+  },
+  {
     url: 'https://rss.wudifeixue.com',
     location: '🇨🇦',
     maintainer: 'wudifeixue',
     maintainerUrl: 'https://github.com/wudifeixue',
-  }, {
+  },
+  {
     url: 'https://rss.littlebaby.life/rsshub',
     location: '🇺🇸',
     maintainer: 'yuanhong',
     maintainerUrl: 'https://github.com/yuanhong078',
-  }, {
+  },
+  {
     url: 'https://rsshub.henry.wang',
     location: '🇬🇧',
     maintainer: 'HenryQW',
     maintainerUrl: 'https://github.com/HenryQW',
-  }, {
+  },
+  {
     url: 'https://holoxx.f5.si/',
     location: '🇯🇵',
     maintainer: 'Vania',
     maintainerUrl: 'https://note.com/vania',
-  }, {
+  },
+  {
     url: 'https://rsshub.umzzz.com',
     location: '🇭🇰',
     maintainer: 'nesay',
     maintainerUrl: 'https://umzzz.com',
-  }, {
+  },
+  {
     url: 'https://rsshub.isrss.com',
     location: '🇺🇸',
     maintainer: 'isRSS',
     maintainerUrl: 'https://isrss.com',
-  }, {
+  },
+  {
     url: 'https://rsshub.email-once.com',
     location: '🇭🇰',
     maintainer: 'EmailOnce',
-    maintainerUrl: 'https://email-once.com'
-  }, {
+    maintainerUrl: 'https://email-once.com',
+  },
+  {
     url: 'https://rss.datuan.dev',
     location: '🇻🇳',
     maintainer: 'Tuấn Dev',
-    maintainerUrl: 'https://duonganhtuan.com'
-  }, {
+    maintainerUrl: 'https://duonganhtuan.com',
+  },
+  {
     url: 'https://rss.4040940.xyz',
     location: '🇩🇪',
     maintainer: 'TingyuShare',
     maintainerUrl: 'https://github.com/TingyuShare',
-  }, {
+  },
+  {
     url: 'https://rsshub.cups.moe',
     location: '🇺🇸',
     maintainer: 'FunnyCups',
-    maintainerUrl: 'https://www.cups.moe'
-  }, {
+    maintainerUrl: 'https://www.cups.moe',
+  },
+  {
     url: 'https://rss.spriple.org',
     location: '🇨🇳',
     maintainer: 'Spriple',
-    maintainerUrl: 'https://blog.spriple.org'
-  }
-]
+    maintainerUrl: 'https://blog.spriple.org',
+  },
+];
 
 // You can copy the location country flag from https://emojipedia.org/flags
 
-const getHost = (url: string) => new URL(url).host
+const getHost = (url: string) => new URL(url).host;
 </script>
 
 <style scoped>
@@ -138,7 +158,7 @@ const getHost = (url: string) => new URL(url).host
 }
 
 .header {
-  color: rgba(60, 60, 67, .78);
+  color: rgba(60, 60, 67, 0.78);
 }
 
 .love {

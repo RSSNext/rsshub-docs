@@ -20,6 +20,6 @@ jobs:
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "chore: auto update analytics"
-          file_pattern: "rsshub-analytics.json"
+          commit_message: 'chore: auto update analytics'
+          file_pattern: 'rsshub-analytics.json'
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>

@@ -25,7 +25,11 @@
       </span>
     </div>
 
-    <div v-if="getLocalizedDescription(namespace)" class="namespace-description" v-html="renderMarkdown(getLocalizedDescription(namespace))"></div>
+    <div
+      v-if="getLocalizedDescription(namespace)"
+      class="namespace-description"
+      v-html="renderMarkdown(getLocalizedDescription(namespace))"
+    ></div>
 
     <h2>{{ t('namespace.routes') }}</h2>
 
@@ -33,7 +37,8 @@
       <div v-for="(route, path) in sortedRoutes" :key="path" class="route-block">
         <h3 :id="getRouteId(path as string)">
           <a class="header-anchor" :href="`#${getRouteId(path as string)}`">#</a>
-          {{ getLocalizedRouteName(route) }} <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
+          {{ getLocalizedRouteName(route) }}
+          <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
         </h3>
         <Route :namespace="currentNamespaceId" :data="prepareRouteData(route)" :test="route.test" />
         <div v-if="getLocalizedDescription(route)" v-html="renderMarkdown(getLocalizedDescription(route))"></div>
@@ -51,187 +56,187 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue'
-import { useRoute } from 'vitepress'
-import MarkdownIt from 'markdown-it'
-import Route from './Route.vue'
-import Site from './Site.vue'
-import RouteOutline from './RouteOutline.vue'
-import { useLocale } from '../composables/useLocale'
+import MarkdownIt from 'markdown-it';
+import { useRoute } from 'vitepress';
+import { ref, computed, onMounted, watch } from 'vue';
+
+import { useLocale } from '../composables/useLocale';
+import Route from './Route.vue';
+import RouteOutline from './RouteOutline.vue';
+import Site from './Site.vue';
 
 interface RouteData {
-  path: string | string[]
-  name: string
-  url?: string
-  maintainers: string[]
-  example: string
-  parameters?: Record<string, any>
-  description?: string
-  categories?: string[]
-  features?: Record<string, any>
-  radar?: any[]
-  view?: number
-  location?: string
-  heat: number
-  topFeeds: any[]
+  path: string | string[];
+  name: string;
+  url?: string;
+  maintainers: string[];
+  example: string;
+  parameters?: Record<string, any>;
+  description?: string;
+  categories?: string[];
+  features?: Record<string, any>;
+  radar?: any[];
+  view?: number;
+  location?: string;
+  heat: number;
+  topFeeds: any[];
   zh?: {
-    name?: string
-    description?: string
-    parameters?: Record<string, any>
-  }
+    name?: string;
+    description?: string;
+    parameters?: Record<string, any>;
+  };
   test?: {
-    code: number
-    message?: string
-  }
+    code: number;
+    message?: string;
+  };
 }
 
 interface NamespaceData {
-  name: string
-  url?: string
-  description?: string
-  categories: string[]
-  heat: number
-  routes: Record<string, RouteData>
+  name: string;
+  url?: string;
+  description?: string;
+  categories: string[];
+  heat: number;
+  routes: Record<string, RouteData>;
   zh?: {
-    name?: string
-    description?: string
-  }
+    name?: string;
+    description?: string;
+  };
 }
 
 interface Category {
-  id: string
-  icon: string
-  en: string
-  zh: string
+  id: string;
+  icon: string;
+  en: string;
+  zh: string;
 }
 
 const props = defineProps<{
-  namespaceId?: string
-}>()
+  namespaceId?: string;
+}>();
 
-const { t, locale, localized } = useLocale()
-const vpRoute = useRoute()
+const { t, locale, localized } = useLocale();
+const vpRoute = useRoute();
 
 // Get namespace from props or URL path
 const getNamespaceFromPath = () => {
-  const path = vpRoute.path
+  const path = vpRoute.path;
   // Path format: /routes/[namespace] or /zh/routes/[namespace]
-  const segments = path.split('/').filter(Boolean)
+  const segments = path.split('/').filter(Boolean);
   // Last segment is the namespace
-  return segments[segments.length - 1] || ''
-}
+  return segments[segments.length - 1] || '';
+};
 
-const currentNamespaceId = computed(() => props.namespaceId || getNamespaceFromPath())
+const currentNamespaceId = computed(() => props.namespaceId || getNamespaceFromPath());
 
-const namespace = ref<NamespaceData | null>(null)
-const categories = ref<Category[]>([])
-const loading = ref(true)
-const routesData = ref<Record<string, NamespaceData>>({})
+const namespace = ref<NamespaceData | null>(null);
+const categories = ref<Category[]>([]);
+const loading = ref(true);
+const routesData = ref<Record<string, NamespaceData>>({});
 
 const md = new MarkdownIt({
   html: true,
-})
+});
 
 onMounted(async () => {
-  await loadData()
-})
+  await loadData();
+});
 
 watch(currentNamespaceId, async () => {
-  updateNamespace()
-})
+  updateNamespace();
+});
 
 async function loadData() {
-  loading.value = true
+  loading.value = true;
   try {
-    const [routesRes, categoriesRes] = await Promise.all([
-      fetch('/routes.json'),
-      fetch('/categories.json')
-    ])
-    routesData.value = await routesRes.json()
-    categories.value = await categoriesRes.json()
-    updateNamespace()
+    const [routesRes, categoriesRes] = await Promise.all([fetch('/routes.json'), fetch('/categories.json')]);
+    routesData.value = await routesRes.json();
+    categories.value = await categoriesRes.json();
+    updateNamespace();
   } catch (e) {
-    console.error('Failed to load data:', e)
-    namespace.value = null
+    console.error('Failed to load data:', e);
+    namespace.value = null;
   } finally {
-    loading.value = false
+    loading.value = false;
   }
 }
 
 function updateNamespace() {
-  const nsId = currentNamespaceId.value
-  namespace.value = routesData.value[nsId] || null
+  const nsId = currentNamespaceId.value;
+  namespace.value = routesData.value[nsId] || null;
 }
 
 const namespaceCategories = computed(() => {
-  if (!namespace.value) return []
-  return categories.value.filter(cat => namespace.value?.categories.includes(cat.id))
-})
+  if (!namespace.value) return [];
+  return categories.value.filter((cat) => namespace.value?.categories.includes(cat.id));
+});
 
 const sortedRoutes = computed(() => {
-  if (!namespace.value) return {}
-  const routes = Object.entries(namespace.value.routes)
-    .sort(([, a], [, b]) => b.heat - a.heat)
-  return Object.fromEntries(routes)
-})
+  if (!namespace.value) return {};
+  const routes = Object.entries(namespace.value.routes).sort(([, a], [, b]) => b.heat - a.heat);
+  return Object.fromEntries(routes);
+});
 
 function getRouteId(path: string) {
   // Generate a URL-safe ID from the route path
-  return path.replace(/^\//, '').replace(/\//g, '-').replace(/[^a-zA-Z0-9-]/g, '')
+  return path
+    .replace(/^\//, '')
+    .replace(/\//g, '-')
+    .replace(/[^a-zA-Z0-9-]/g, '');
 }
 
 function getLocalizedRouteName(data: RouteData) {
-  return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name
+  return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name;
 }
 
 const outlineRoutes = computed(() => {
   return Object.entries(sortedRoutes.value).map(([path, route]) => ({
     id: getRouteId(path),
-    name: getLocalizedRouteName(route as RouteData)
-  }))
-})
+    name: getLocalizedRouteName(route as RouteData),
+  }));
+});
 
 function getLocalizedName(data: NamespaceData) {
-  return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name
+  return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name;
 }
 
 function getLocalizedDescription(data: NamespaceData | RouteData) {
-  const zhDesc = (data as RouteData).zh?.description
-  return zhDesc ? localized({ en: data.description || '', zh: zhDesc }) : data.description
+  const zhDesc = (data as RouteData).zh?.description;
+  return zhDesc ? localized({ en: data.description || '', zh: zhDesc }) : data.description;
 }
 
 function formatHeat(heat: number) {
   if (heat >= 1000000) {
-    return (heat / 1000000).toFixed(1) + 'M'
+    return (heat / 1000000).toFixed(1) + 'M';
   }
   if (heat >= 1000) {
-    return (heat / 1000).toFixed(1) + 'K'
+    return (heat / 1000).toFixed(1) + 'K';
   }
-  return heat.toString()
+  return heat.toString();
 }
 
 function handleImageError(e: Event) {
-  const img = e.target as HTMLImageElement
-  img.src = '/logo.png'
+  const img = e.target as HTMLImageElement;
+  img.src = '/logo.png';
 }
 
 function renderMarkdown(content: string) {
-  return md.render(content)
+  return md.render(content);
 }
 
 function prepareRouteData(route: RouteData) {
   // Prepare route data for the Route component
   // Apply localization if needed
-  const data = { ...route }
+  const data = { ...route };
   if (route.zh) {
     if (route.zh.name) {
-      data.name = localized({ en: route.name, zh: route.zh.name })
+      data.name = localized({ en: route.name, zh: route.zh.name });
     }
     if (route.zh.parameters && locale.value.split('-')[0] === 'zh') {
-      data.parameters = { ...data.parameters, ...route.zh.parameters }
+      data.parameters = { ...data.parameters, ...route.zh.parameters };
     }
   }
-  return data
+  return data;
 }
 </script>
 
@@ -376,7 +381,9 @@ function prepareRouteData(route: RouteData) {
   padding-right: 0.23em;
   font-weight: 500;
   opacity: 0;
-  transition: color 0.25s, opacity 0.25s;
+  transition:
+    color 0.25s,
+    opacity 0.25s;
   text-decoration: none;
   color: var(--vp-c-brand-1);
 }

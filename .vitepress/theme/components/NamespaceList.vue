@@ -3,19 +3,12 @@
     <div class="filters">
       <div class="filter-row">
         <div class="search-box">
-          <input
-            v-model="searchQuery"
-            type="text"
-            :placeholder="t('search.placeholder')"
-            class="search-input"
-          />
+          <input v-model="searchQuery" type="text" :placeholder="t('search.placeholder')" class="search-input" />
         </div>
         <div class="filter-group">
           <select v-model="selectedCategory" class="filter-select">
             <option value="">{{ t('filter.allCategories') }}</option>
-            <option v-for="cat in categories" :key="cat.id" :value="cat.id">
-              {{ cat.icon }} {{ localized(cat) }}
-            </option>
+            <option v-for="cat in categories" :key="cat.id" :value="cat.id">{{ cat.icon }} {{ localized(cat) }}</option>
           </select>
           <select v-model="sortBy" class="filter-select">
             <option value="heat">{{ t('sort.byHeat') }}</option>
@@ -56,18 +49,9 @@
     </div>
 
     <div class="namespace-grid">
-      <a
-        v-for="ns in filteredNamespaces"
-        :key="ns.id"
-        :href="getNamespaceLink(ns.id)"
-        class="namespace-card"
-      >
+      <a v-for="ns in filteredNamespaces" :key="ns.id" :href="getNamespaceLink(ns.id)" class="namespace-card">
         <div class="namespace-icon">
-          <img
-            :src="`https://icons.folo.is/${ns.url || ns.id + '.com'}`"
-            :alt="ns.name"
-            @error="handleImageError"
-          />
+          <img :src="`https://icons.folo.is/${ns.url || ns.id + '.com'}`" :alt="ns.name" @error="handleImageError" />
         </div>
         <div class="namespace-info">
           <div class="namespace-name">{{ getLocalizedName(ns) }}</div>
@@ -86,57 +70,58 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
-import { useLocale } from '../composables/useLocale'
+import { ref, computed, onMounted } from 'vue';
+
+import { useLocale } from '../composables/useLocale';
 
 interface RouteData {
-  path: string | string[]
-  name: string
-  categories?: string[]
-  heat: number
+  path: string | string[];
+  name: string;
+  categories?: string[];
+  heat: number;
   features?: {
-    antiCrawler?: boolean
-    supportBT?: boolean
-    supportPodcast?: boolean
-    supportScihub?: boolean
-    requirePuppeteer?: boolean
-    requireConfig?: boolean | string[]
-  }
+    antiCrawler?: boolean;
+    supportBT?: boolean;
+    supportPodcast?: boolean;
+    supportScihub?: boolean;
+    requirePuppeteer?: boolean;
+    requireConfig?: boolean | string[];
+  };
   test?: {
-    code: number
-    message?: string
-  }
+    code: number;
+    message?: string;
+  };
   zh?: {
-    name?: string
-  }
+    name?: string;
+  };
 }
 
 interface NamespaceData {
-  id: string
-  name: string
-  url?: string
-  categories: string[]
-  heat: number
-  routes: Record<string, RouteData>
+  id: string;
+  name: string;
+  url?: string;
+  categories: string[];
+  heat: number;
+  routes: Record<string, RouteData>;
   zh?: {
-    name?: string
-  }
+    name?: string;
+  };
 }
 
 interface Category {
-  id: string
-  icon: string
-  en: string
-  zh: string
+  id: string;
+  icon: string;
+  en: string;
+  zh: string;
 }
 
-const { t, locale, localePath, localized } = useLocale()
+const { t, locale, localePath, localized } = useLocale();
 
-const namespaces = ref<NamespaceData[]>([])
-const categories = ref<Category[]>([])
-const searchQuery = ref('')
-const selectedCategory = ref('')
-const sortBy = ref<'heat' | 'alpha'>('heat')
+const namespaces = ref<NamespaceData[]>([]);
+const categories = ref<Category[]>([]);
+const searchQuery = ref('');
+const selectedCategory = ref('');
+const sortBy = ref<'heat' | 'alpha'>('heat');
 const featureFilters = ref({
   passed: false,
   notAntiCrawler: false,
@@ -144,48 +129,45 @@ const featureFilters = ref({
   supportPodcast: false,
   supportScihub: false,
   notPuppeteer: false,
-  notRequireConfig: false
-})
+  notRequireConfig: false,
+});
 
 onMounted(async () => {
   try {
-    const [routesRes, categoriesRes] = await Promise.all([
-      fetch('/routes.json'),
-      fetch('/categories.json')
-    ])
-    const routesData = await routesRes.json()
-    const categoriesData = await categoriesRes.json()
+    const [routesRes, categoriesRes] = await Promise.all([fetch('/routes.json'), fetch('/categories.json')]);
+    const routesData = await routesRes.json();
+    const categoriesData = await categoriesRes.json();
 
     namespaces.value = Object.entries(routesData).map(([id, data]: [string, any]) => ({
       id,
-      ...data
-    }))
+      ...data,
+    }));
 
-    categories.value = categoriesData
+    categories.value = categoriesData;
   } catch (e) {
-    console.error('Failed to load routes data:', e)
+    console.error('Failed to load routes data:', e);
   }
-})
+});
 
 // Helper function to check if a route matches a specific feature
 function routeHasFeature(route: RouteData, feature: string): boolean {
   switch (feature) {
     case 'passed':
-      return route.test?.code === 0
+      return route.test?.code === 0;
     case 'notAntiCrawler':
-      return route.features?.antiCrawler !== true
+      return route.features?.antiCrawler !== true;
     case 'supportBT':
-      return route.features?.supportBT === true
+      return route.features?.supportBT === true;
     case 'supportPodcast':
-      return route.features?.supportPodcast === true
+      return route.features?.supportPodcast === true;
     case 'supportScihub':
-      return route.features?.supportScihub === true
+      return route.features?.supportScihub === true;
     case 'notPuppeteer':
-      return route.features?.requirePuppeteer !== true
+      return route.features?.requirePuppeteer !== true;
     case 'notRequireConfig':
-      return route.features?.requireConfig !== true && !Array.isArray(route.features?.requireConfig)
+      return route.features?.requireConfig !== true && !Array.isArray(route.features?.requireConfig);
     default:
-      return true
+      return true;
   }
 }
 
@@ -193,79 +175,77 @@ function routeHasFeature(route: RouteData, feature: string): boolean {
 function namespaceMatchesFeatureFilters(ns: NamespaceData): boolean {
   const activeFilters = Object.entries(featureFilters.value)
     .filter(([_, active]) => active)
-    .map(([feature]) => feature)
+    .map(([feature]) => feature);
 
-  if (activeFilters.length === 0) return true
+  if (activeFilters.length === 0) return true;
 
   // Namespace must have at least one route matching ALL active filters
-  return Object.values(ns.routes).some(route =>
-    activeFilters.every(feature => routeHasFeature(route, feature))
-  )
+  return Object.values(ns.routes).some((route) => activeFilters.every((feature) => routeHasFeature(route, feature)));
 }
 
 const filteredNamespaces = computed(() => {
-  let result = namespaces.value
+  let result = namespaces.value;
 
   // Category filter
   if (selectedCategory.value) {
-    result = result.filter(ns => ns.categories.includes(selectedCategory.value))
+    result = result.filter((ns) => ns.categories.includes(selectedCategory.value));
   }
 
   // Search filter
   if (searchQuery.value) {
-    const query = searchQuery.value.toLowerCase()
-    result = result.filter(ns => {
-      const nameMatch = ns.name.toLowerCase().includes(query) ||
+    const query = searchQuery.value.toLowerCase();
+    result = result.filter((ns) => {
+      const nameMatch =
+        ns.name.toLowerCase().includes(query) ||
         ns.id.toLowerCase().includes(query) ||
-        (ns.zh?.name?.toLowerCase().includes(query))
+        ns.zh?.name?.toLowerCase().includes(query);
 
-      const routeMatch = Object.values(ns.routes).some(route =>
-        route.name.toLowerCase().includes(query) ||
-        (route.zh?.name?.toLowerCase().includes(query))
-      )
+      const routeMatch = Object.values(ns.routes).some(
+        (route) => route.name.toLowerCase().includes(query) || route.zh?.name?.toLowerCase().includes(query),
+      );
 
-      return nameMatch || routeMatch
-    })
+      return nameMatch || routeMatch;
+    });
   }
 
   // Feature filters
-  result = result.filter(ns => namespaceMatchesFeatureFilters(ns))
+  result = result.filter((ns) => namespaceMatchesFeatureFilters(ns));
 
   // Sort
   if (sortBy.value === 'heat') {
-    result = [...result].sort((a, b) => b.heat - a.heat)
+    result = [...result].sort((a, b) => b.heat - a.heat);
   } else if (sortBy.value === 'alpha') {
     result = [...result].sort((a, b) => {
-      const nameA = getLocalizedName(a).toLowerCase()
-      const nameB = getLocalizedName(b).toLowerCase()
-      return nameA.localeCompare(nameB)
-    })
+      const nameA = getLocalizedName(a).toLowerCase();
+      const nameB = getLocalizedName(b).toLowerCase();
+      return nameA.localeCompare(nameB);
+    });
   }
 
-  return result
-})
+  return result;
+});
 
 function getNamespaceLink(id: string) {
-  return `${localePath.value}/routes/${id}`
+  return `${localePath.value}/routes/${id}`;
 }
 
 function getLocalizedName(ns: NamespaceData) {
-  return ns.zh?.name ? localized({ en: ns.name, zh: ns.zh.name }) : ns.name
+  return ns.zh?.name ? localized({ en: ns.name, zh: ns.zh.name }) : ns.name;
 }
 
 function formatHeat(heat: number) {
   if (heat >= 1000000) {
-    return (heat / 1000000).toFixed(1) + 'M'
+    return (heat / 1000000).toFixed(1) + 'M';
   }
   if (heat >= 1000) {
-    return (heat / 1000).toFixed(1) + 'K'
+    return (heat / 1000).toFixed(1) + 'K';
   }
-  return heat.toString()
+  return heat.toString();
 }
 
 function handleImageError(e: Event) {
-  const img = e.target as HTMLImageElement
-  img.src = '/logo.png'
+  const img = e.target as HTMLImageElement;
+  img.src = '/logo.png';
 }
 </script>
 
@@ -345,7 +325,7 @@ function handleImageError(e: Event) {
   user-select: none;
 }
 
-.feature-checkbox input[type="checkbox"] {
+.feature-checkbox input[type='checkbox'] {
   width: 16px;
   height: 16px;
   cursor: pointer;

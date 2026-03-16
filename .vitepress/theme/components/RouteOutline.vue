@@ -17,57 +17,58 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import { useLocale } from '../composables/useLocale'
+import { ref, onMounted, onUnmounted } from 'vue';
+
+import { useLocale } from '../composables/useLocale';
 
 interface RouteItem {
-  id: string
-  name: string
+  id: string;
+  name: string;
 }
 
 const props = defineProps<{
-  routes: RouteItem[]
-}>()
+  routes: RouteItem[];
+}>();
 
-const { t } = useLocale()
+const { t } = useLocale();
 
-const activeId = ref('')
+const activeId = ref('');
 
 function handleClick(id: string, e: Event) {
-  e.preventDefault()
-  const el = document.getElementById(id)
+  e.preventDefault();
+  const el = document.getElementById(id);
   if (el) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    history.pushState(null, '', `#${id}`)
-    activeId.value = id
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.pushState(null, '', `#${id}`);
+    activeId.value = id;
   }
 }
 
 function updateActiveId() {
-  const headings = props.routes.map(r => document.getElementById(r.id)).filter(Boolean) as HTMLElement[]
-  const scrollY = window.scrollY
+  const headings = props.routes.map((r) => document.getElementById(r.id)).filter(Boolean) as HTMLElement[];
+  const scrollY = window.scrollY;
 
   for (let i = headings.length - 1; i >= 0; i--) {
-    const heading = headings[i]
+    const heading = headings[i];
     if (heading.offsetTop <= scrollY + 100) {
-      activeId.value = heading.id
-      return
+      activeId.value = heading.id;
+      return;
     }
   }
 
   if (headings.length > 0) {
-    activeId.value = headings[0].id
+    activeId.value = headings[0].id;
   }
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', updateActiveId, { passive: true })
-  updateActiveId()
-})
+  window.addEventListener('scroll', updateActiveId, { passive: true });
+  updateActiveId();
+});
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', updateActiveId)
-})
+  window.removeEventListener('scroll', updateActiveId);
+});
 </script>
 
 <style scoped>

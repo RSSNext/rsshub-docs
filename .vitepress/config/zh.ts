@@ -1,8 +1,8 @@
-import { defineConfig, type DefaultTheme } from 'vitepress'
+import { defineConfig, type DefaultTheme } from 'vitepress';
 
 export const zh = defineConfig({
   lang: 'zh-Hans',
-  description: "万物皆可 RSS 🧡",
+  description: '万物皆可 RSS 🧡',
 
   themeConfig: {
     nav: [
@@ -21,25 +21,25 @@ export const zh = defineConfig({
 
     footer: {
       message: '基于 MIT 许可发布',
-      copyright: `版权所有 © 2018-${new Date().getFullYear()} DIYgod`
+      copyright: `版权所有 © 2018-${new Date().getFullYear()} DIYgod`,
     },
 
     docFooter: {
       prev: '上一页',
-      next: '下一页'
+      next: '下一页',
     },
 
     outline: {
       level: [2, 3],
-      label: '页面导航'
+      label: '页面导航',
     },
 
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
         dateStyle: 'short',
-        timeStyle: 'medium'
-      }
+        timeStyle: 'medium',
+      },
     },
 
     langMenuLabel: '多语言',
@@ -69,8 +69,8 @@ export const zh = defineConfig({
             { text: '使用缓存', link: '/zh/joinus/advanced/use-cache' },
             { text: '日期处理', link: '/zh/joinus/advanced/pub-date' },
             { text: '调试', link: '/zh/joinus/advanced/debug' },
-          ]
-        }
+          ],
+        },
       ],
       '/zh/deploy/': [
         {
@@ -79,13 +79,13 @@ export const zh = defineConfig({
             { text: '部署', link: '/zh/deploy/' },
             { text: '配置', link: '/zh/deploy/config' },
           ],
-        }
+        },
       ],
       '/zh/guide/': sidebarGuide(),
       '/zh/routes/': sidebarGuide(),
     },
   },
-})
+});
 
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
   return [
@@ -102,9 +102,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     },
     {
       text: '路由',
-      items: [
-        { text: '全部路由', link: '/zh/routes/' },
-      ],
+      items: [{ text: '全部路由', link: '/zh/routes/' }],
     },
-  ]
+  ];
 }

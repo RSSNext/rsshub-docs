@@ -1,7 +1,11 @@
 <template>
   <div :id="namespace + JSON.stringify(data.path)" class="routeBlock">
     <p class="badges">
-      <a v-if="data?.heat" :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`" target="_blank">
+      <a
+        v-if="data?.heat"
+        :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`"
+        target="_blank"
+      >
         <Badge type="info">🔥 {{ data?.heat }}</Badge>
       </a>
       <Badge v-if="!test" type="warning">🟡 {{ t('badge.missingTest') }}</Badge>
@@ -13,18 +17,31 @@
       <Badge v-if="data.features?.supportPodcast" type="tip">🎙️ {{ t('badge.supportPodcast') }}</Badge>
       <Badge v-if="data.features?.supportScihub" type="tip">🧪 {{ t('badge.supportSciHub') }}</Badge>
       <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 {{ t('badge.relyPuppeteer') }}</Badge>
-      <a v-if="data.features?.requireConfig" :href="`${localePath}/deploy/config#route-specific-configurations`" target="_blank">
+      <a
+        v-if="data.features?.requireConfig"
+        :href="`${localePath}/deploy/config#route-specific-configurations`"
+        target="_blank"
+      >
         <Badge type="warning">⚙️ {{ t('badge.configRequired') }}</Badge>
       </a>
       <a v-if="data.radar" :href="`${localePath}/guide/#radar`" target="_blank">
         <Badge type="tip">🔍 {{ t('badge.supportRadar') }}</Badge>
       </a>
     </p>
-    <p class="author" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+    <p class="author" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
       👨‍💻 {{ t('route.author') }}
-      <a v-for="(uid, index) in data.maintainers" :key="index" :href="`https://github.com/${uid}`" target="_blank" style="display: inline-flex; align-items: center; margin-right: 6px;">
-        <img :src="`https://avatars.githubusercontent.com/${uid}`" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px;" />
-        {{ uid }}{{' '}}
+      <a
+        v-for="(uid, index) in data.maintainers"
+        :key="index"
+        :href="`https://github.com/${uid}`"
+        target="_blank"
+        style="display: inline-flex; align-items: center; margin-right: 6px"
+      >
+        <img
+          :src="`https://avatars.githubusercontent.com/${uid}`"
+          style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px"
+        />
+        {{ uid }}{{ ' ' }}
       </a>
     </p>
     <p v-if="demoUrl" class="example">
@@ -44,13 +61,16 @@
         </li>
       </ul>
     </div>
-    <p class="path" style="display: flex; align-items: center; gap: 8px;">
-      🛎️ {{ t('route.route') }}<code>/{{ namespace + data.path }}</code>{{ ' ' }}
+    <p class="path" style="display: flex; align-items: center; gap: 8px">
+      🛎️ {{ t('route.route') }}<code>/{{ namespace + data.path }}</code
+      >{{ ' ' }}
       <CopyButton :text="`/${namespace}${data.path}`" />
-      <a v-if="data.categories?.includes('popular')"
+      <a
+        v-if="data.categories?.includes('popular')"
         :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`"
         target="_blank"
-        style="display: inline-flex; align-items: center;">
+        style="display: inline-flex; align-items: center"
+      >
         <svg width="24" height="24" viewBox="0 0 145 145" fill="none" xmlns="http://www.w3.org/2000/svg">
           <mask id="mask0_54_296" maskUnits="userSpaceOnUse" x="0" y="0" width="145" height="145">
             <path
@@ -84,17 +104,31 @@
       <ul>
         <li v-for="(item, index) in paramMatch" :key="index" class="params">
           <code>{{ item.name.replace(/:|\?|\+|\*/g, '') }}</code>
-            <ul :style="{fontSize: '13px', lineHeight: 1.5}">
-            <li><strong>{{ item.optional ? t('param.optional') : t('param.required') }}</strong></li>
-            <li v-if="item.default"><strong>{{ t('param.default') }}</strong> {{ item.default }}</li>
+          <ul :style="{ fontSize: '13px', lineHeight: 1.5 }">
+            <li>
+              <strong>{{ item.optional ? t('param.optional') : t('param.required') }}</strong>
+            </li>
+            <li v-if="item.default">
+              <strong>{{ t('param.default') }}</strong> {{ item.default }}
+            </li>
             <li v-if="item.options?.length">
-              <strong>{{ t('param.options') }}</strong> <select v-if="item.options?.length" :style="{marginRight: '8px'}">
-              <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
-                {{ option.value }}: {{ option.label }}
-              </option>
+              <strong>{{ t('param.options') }}</strong>
+              <select v-if="item.options?.length" :style="{ marginRight: '8px' }">
+                <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
+                  {{ option.value }}: {{ option.label }}
+                </option>
               </select>
             </li>
-            <li><strong>{{ t('param.description') }}</strong> <span v-html="item.description?.includes('|') ? renderMarkdown(item.description, false) : renderMarkdown(item.description || 'N/A')"/></li>
+            <li>
+              <strong>{{ t('param.description') }}</strong>
+              <span
+                v-html="
+                  item.description?.includes('|')
+                    ? renderMarkdown(item.description, false)
+                    : renderMarkdown(item.description || 'N/A')
+                "
+              />
+            </li>
           </ul>
         </li>
       </ul>
@@ -103,17 +137,22 @@
       <p>⚙️ {{ t('route.deploymentConfigs') }}</p>
       <ul>
         <li v-for="(item, index) in data.features.requireConfig" :key="index" class="params">
-          <code>{{ item.name }}</code>,{{ ' ' }}
+          <code>{{ item.name }}</code
+          >,{{ ' ' }}
           {{ item.optional ? t('config.optional') : t('config.required') }}
           {{ ' - ' }}
-          <span v-html="renderMarkdown(item.description)"/>
+          <span v-html="renderMarkdown(item.description)" />
         </li>
       </ul>
     </div>
     <p class="path">
       🐙 {{ t('route.sourceCode') }}{{ ' ' }}
       <code>
-        <a target='_blank' :href="`https://github.com/DIYgod/RSSHub/blob/master/lib/routes/${namespace}/${data.location}`">/{{ namespace }}/{{ data.location }}</a>
+        <a
+          target="_blank"
+          :href="`https://github.com/DIYgod/RSSHub/blob/master/lib/routes/${namespace}/${data.location}`"
+          >/{{ namespace }}/{{ data.location }}</a
+        >
       </code>
     </p>
     <!-- TODO: Render children if any -->
@@ -122,55 +161,58 @@
 
 <script setup lang="ts">
 import MarkdownIt from 'markdown-it';
+
+import { useLocale } from '../composables/useLocale';
 import type { Route } from '../types';
 import CopyButton from './CopyButton.vue';
 import { parseJsonSchema } from './parse-json-schema';
-import { useLocale } from '../composables/useLocale';
 
-const { t, localePath } = useLocale()
+const { t, localePath } = useLocale();
 
 const props = defineProps<{
-  namespace: string,
-  data: Route & { heat?: number, topFeeds?: {
-    id: string,
-    url: string,
-    title: string,
-    description: string | null,
-    siteUrl: string | null,
-    image: string | null,
-  }[],
-  param?: any,
-  query?: any,
-  location?: string,
-},
+  namespace: string;
+  data: Route & {
+    heat?: number;
+    topFeeds?: {
+      id: string;
+      url: string;
+      title: string;
+      description: string | null;
+      siteUrl: string | null;
+      image: string | null;
+    }[];
+    param?: any;
+    query?: any;
+    location?: string;
+  };
   test?: {
-    code: number,
-    message?: string,
-  }
+    code: number;
+    message?: string;
+  };
 }>();
 
-const demoUrl = props.data.example ? ('https://rsshub.app' + props.data.example) : null;
-const path = typeof props.data.path === "string" ? props.data.path : props.data.path[0];
+const demoUrl = props.data.example ? 'https://rsshub.app' + props.data.example : null;
+const path = typeof props.data.path === 'string' ? props.data.path : props.data.path[0];
 const param = parseJsonSchema(props.data.param);
 const paramMatch = path.match?.(/(?<=:).*?(?=\/|$)/g)?.map((item) => {
   const name = item.replace(/:|\?|\+|\*/g, '');
   let parameter = param?.[name] || props.data.parameters?.[name];
-  if (typeof parameter === "string") {
+  if (typeof parameter === 'string') {
     parameter = {
       description: parameter,
-    }
+    };
   }
   return {
     name,
     optional: item.endsWith('?'),
     ...parameter,
-  }
+  };
 });
 
 const renderMarkdown = (item, inline = true) => {
-    const md = new MarkdownIt({
-        html: true,
-    });
-    return inline ? md.renderInline(item) : md.render(item);
+  const md = new MarkdownIt({
+    html: true,
+  });
+  return inline ? md.renderInline(item) : md.render(item);
 };
 </script>
