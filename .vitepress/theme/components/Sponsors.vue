@@ -7,10 +7,7 @@
         </div>
       </div>
       <div class="sponsors">
-        <img
-          alt="Contributors"
-          src="https://camo.githubusercontent.com/c2b516b800e3976ee2efca1244fc373236547c15fd92000d1ef727ea86b72847/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f5253534875622f636f6e7472696275746f72732e7376673f77696474683d383930"
-        />
+        <object type="image/svg+xml" data="https://opencollective.com/RSSHub/contributors.svg?width=1000"></object>
         <img alt="Sponsors" src="https://raw.githubusercontent.com/DIYgod/sponsors/main/sponsors.simple.svg" />
       </div>
     </div>

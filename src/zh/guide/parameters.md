@@ -6,9 +6,7 @@
 
 通用参数需要置于路由路径的最后。有些路由在路由路径（route path）的最后引入了<span style="color: blue">**自定义参数**</span>，<span style="color: violet">**通用参数**</span>也需要置于它们之后。
 
-举例: <a href="https://rsshub.app/twitter/user/durov/readable=1&includeRts=0?brief=100&limit=5">
-  https://rsshub.app/twitter/user/durov/<span style="color: blue">**readable=1&includeRts=0**</span>?<span style="color: violet">**brief=100&limit=5**</span>
-</a>
+举例: https://rsshub.app/twitter/user/durov/<span style="color: blue">**readable=1&includeRts=0**</span>?<span style="color: violet">**brief=100&limit=5**</span>
 
 
 :::

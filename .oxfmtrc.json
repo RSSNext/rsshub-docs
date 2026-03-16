@@ -3,5 +3,5 @@
   "ignorePatterns": ["src/**/*.md"],
   "printWidth": 120,
   "singleQuote": true,
-  "sortImports": {},
+  "sortImports": {}
 }

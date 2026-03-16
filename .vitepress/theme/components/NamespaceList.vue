@@ -51,7 +51,13 @@
     <div class="namespace-grid">
       <a v-for="ns in filteredNamespaces" :key="ns.id" :href="getNamespaceLink(ns.id)" class="namespace-card">
         <div class="namespace-icon">
-          <img :src="`https://icons.folo.is/${ns.url || ns.id + '.com'}`" :alt="ns.name" @error="handleImageError" />
+          <img
+            :src="`https://icons.folo.is/${ns.url || ns.id + '.com'}`"
+            :alt="ns.name"
+            loading="lazy"
+            decoding="async"
+            @error="handleImageError"
+          />
         </div>
         <div class="namespace-info">
           <div class="namespace-name">{{ getLocalizedName(ns) }}</div>
@@ -63,7 +69,10 @@
       </a>
     </div>
 
-    <div v-if="filteredNamespaces.length === 0" class="no-results">
+    <div v-if="loading" class="no-results">
+      {{ t('namespace.loading') }}
+    </div>
+    <div v-else-if="filteredNamespaces.length === 0" class="no-results">
       {{ t('namespace.noResults') }}
     </div>
   </div>
@@ -119,6 +128,7 @@ const { t, locale, localePath, localized } = useLocale();
 
 const namespaces = ref<NamespaceData[]>([]);
 const categories = ref<Category[]>([]);
+const loading = ref(true);
 const searchQuery = ref('');
 const selectedCategory = ref('');
 const sortBy = ref<'heat' | 'alpha'>('heat');
@@ -146,6 +156,8 @@ onMounted(async () => {
     categories.value = categoriesData;
   } catch (e) {
     console.error('Failed to load routes data:', e);
+  } finally {
+    loading.value = false;
   }
 });
 
