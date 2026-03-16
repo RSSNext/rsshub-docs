@@ -21,13 +21,13 @@
 
     <div class="category-tags">
       <span v-for="cat in namespaceCategories" :key="cat.id" class="category-tag">
-        {{ cat.icon }} {{ isZh ? cat.zh : cat.en }}
+        {{ cat.icon }} {{ localized(cat) }}
       </span>
     </div>
 
     <div v-if="getLocalizedDescription(namespace)" class="namespace-description" v-html="renderMarkdown(getLocalizedDescription(namespace))"></div>
 
-    <h2>{{ isZh ? 'Routes' : 'Routes' }}</h2>
+    <h2>{{ t('namespace.routes') }}</h2>
 
     <div class="routes-list">
       <div v-for="(route, path) in sortedRoutes" :key="path" class="route-block">
@@ -43,20 +43,21 @@
     <RouteOutline :routes="outlineRoutes" />
   </div>
   <div v-else-if="loading" class="loading">
-    {{ isZh ? '加载中...' : 'Loading...' }}
+    {{ t('namespace.loading') }}
   </div>
   <div v-else class="not-found">
-    {{ isZh ? '未找到该路由' : 'Namespace not found' }}
+    {{ t('namespace.notFound') }}
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
-import { useData, useRoute } from 'vitepress'
+import { useRoute } from 'vitepress'
 import MarkdownIt from 'markdown-it'
 import Route from './Route.vue'
 import Site from './Site.vue'
 import RouteOutline from './RouteOutline.vue'
+import { useLocale } from '../composables/useLocale'
 
 interface RouteData {
   path: string | string[]
@@ -108,7 +109,7 @@ const props = defineProps<{
   namespaceId?: string
 }>()
 
-const { lang } = useData()
+const { t, locale, localized } = useLocale()
 const vpRoute = useRoute()
 
 // Get namespace from props or URL path
@@ -121,8 +122,6 @@ const getNamespaceFromPath = () => {
 }
 
 const currentNamespaceId = computed(() => props.namespaceId || getNamespaceFromPath())
-
-const isZh = computed(() => lang.value === 'zh')
 
 const namespace = ref<NamespaceData | null>(null)
 const categories = ref<Category[]>([])
@@ -182,10 +181,7 @@ function getRouteId(path: string) {
 }
 
 function getLocalizedRouteName(data: RouteData) {
-  if (isZh.value && data.zh?.name) {
-    return data.zh.name
-  }
-  return data.name
+  return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name
 }
 
 const outlineRoutes = computed(() => {
@@ -196,17 +192,12 @@ const outlineRoutes = computed(() => {
 })
 
 function getLocalizedName(data: NamespaceData) {
-  if (isZh.value && data.zh?.name) {
-    return data.zh.name
-  }
-  return data.name
+  return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name
 }
 
 function getLocalizedDescription(data: NamespaceData | RouteData) {
-  if (isZh.value && (data as RouteData).zh?.description) {
-    return (data as RouteData).zh!.description
-  }
-  return data.description
+  const zhDesc = (data as RouteData).zh?.description
+  return zhDesc ? localized({ en: data.description || '', zh: zhDesc }) : data.description
 }
 
 function formatHeat(heat: number) {
@@ -232,9 +223,11 @@ function prepareRouteData(route: RouteData) {
   // Prepare route data for the Route component
   // Apply localization if needed
   const data = { ...route }
-  if (isZh.value && route.zh) {
-    if (route.zh.name) data.name = route.zh.name
-    if (route.zh.parameters) {
+  if (route.zh) {
+    if (route.zh.name) {
+      data.name = localized({ en: route.name, zh: route.zh.name })
+    }
+    if (route.zh.parameters && locale.value.split('-')[0] === 'zh') {
       data.parameters = { ...data.parameters, ...route.zh.parameters }
     }
   }

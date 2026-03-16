@@ -2,10 +2,10 @@
   <table>
     <thead>
       <tr>
-        <th>URL</th>
-        <th>Location</th>
-        <th>Maintainer</th>
-        <th>Online</th>
+        <th>{{ t('instance.url') }}</th>
+        <th>{{ t('instance.location') }}</th>
+        <th>{{ t('instance.maintainer') }}</th>
+        <th>{{ t('instance.online') }}</th>
       </tr>
     </thead>
     <tbody>
@@ -16,7 +16,7 @@
         <td>{{instance.location}}</td>
         <td>
           <a v-if="instance.maintainer" target="_blank" :href="instance.maintainerUrl">{{instance.maintainer}}</a>
-          <span v-if="!instance.maintainer">Anonymous</span>
+          <span v-if="!instance.maintainer">{{ t('instance.anonymous') }}</span>
         </td>
         <td>
           <img loading="lazy" :src="`https://img.shields.io/website.svg?label=&url=${encodeURIComponent(`${instance.url}/healthz`)}`" />
@@ -27,6 +27,10 @@
 </template>
 
 <script setup lang="ts">
+import { useLocale } from '../composables/useLocale'
+
+const { t } = useLocale()
+
 const instances = [{
     url: 'https://rsshub.rssforever.com',
     location: '🇦🇪',

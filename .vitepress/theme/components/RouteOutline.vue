@@ -1,6 +1,6 @@
 <template>
   <div class="route-outline" v-if="routes.length > 0">
-    <div class="outline-title">{{ isZh ? '路由列表' : 'On this page' }}</div>
+    <div class="outline-title">{{ t('outline.title') }}</div>
     <nav class="outline-nav">
       <a
         v-for="route in routes"
@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed } from 'vue'
-import { useData } from 'vitepress'
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useLocale } from '../composables/useLocale'
 
 interface RouteItem {
   id: string
@@ -29,8 +29,7 @@ const props = defineProps<{
   routes: RouteItem[]
 }>()
 
-const { lang } = useData()
-const isZh = computed(() => lang.value === 'zh')
+const { t } = useLocale()
 
 const activeId = ref('')
 

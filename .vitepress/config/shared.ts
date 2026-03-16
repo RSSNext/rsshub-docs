@@ -1,4 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+import { resolve } from 'path'
 
 const telegramLogo = `
 <?xml version="1.0" encoding="UTF-8"?>
@@ -23,6 +25,14 @@ export const shared = defineConfig({
   title: "RSSHub",
   description: "Everything is RSSible 🧡",
   srcDir: 'src',
+  vite: {
+    plugins: [
+      VueI18nPlugin({
+        include: [resolve(__dirname, '../theme/i18n/*.json')],
+        ssr: true,
+      }),
+    ],
+  },
   lastUpdated: true,
   ignoreDeadLinks: true,
   cleanUrls: true,

@@ -6,51 +6,51 @@
           <input
             v-model="searchQuery"
             type="text"
-            :placeholder="isZh ? '搜索路由...' : 'Search routes...'"
+            :placeholder="t('search.placeholder')"
             class="search-input"
           />
         </div>
         <div class="filter-group">
           <select v-model="selectedCategory" class="filter-select">
-            <option value="">{{ isZh ? '全部分类' : 'All Categories' }}</option>
+            <option value="">{{ t('filter.allCategories') }}</option>
             <option v-for="cat in categories" :key="cat.id" :value="cat.id">
-              {{ cat.icon }} {{ isZh ? cat.zh : cat.en }}
+              {{ cat.icon }} {{ localized(cat) }}
             </option>
           </select>
           <select v-model="sortBy" class="filter-select">
-            <option value="heat">{{ isZh ? '按热度排序' : 'Sort by Heat' }}</option>
-            <option value="alpha">{{ isZh ? '按字母排序' : 'Sort by Name' }}</option>
+            <option value="heat">{{ t('sort.byHeat') }}</option>
+            <option value="alpha">{{ t('sort.byName') }}</option>
           </select>
         </div>
       </div>
       <div class="feature-filters">
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.passed" />
-          <span>{{ isZh ? '测试通过' : 'Passed Test' }}</span>
+          <span>{{ t('filter.passedTest') }}</span>
         </label>
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.notAntiCrawler" />
-          <span>{{ isZh ? '无反爬' : 'No Anti-crawling' }}</span>
+          <span>{{ t('filter.noAntiCrawling') }}</span>
         </label>
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.supportBT" />
-          <span>{{ isZh ? '支持 BT' : 'Support BT' }}</span>
+          <span>{{ t('filter.supportBT') }}</span>
         </label>
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.supportPodcast" />
-          <span>{{ isZh ? '支持播客' : 'Support Podcast' }}</span>
+          <span>{{ t('filter.supportPodcast') }}</span>
         </label>
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.supportScihub" />
-          <span>{{ isZh ? '支持 Sci-Hub' : 'Support Sci-Hub' }}</span>
+          <span>{{ t('filter.supportSciHub') }}</span>
         </label>
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.notPuppeteer" />
-          <span>{{ isZh ? '无需 Puppeteer' : 'No Puppeteer' }}</span>
+          <span>{{ t('filter.noPuppeteer') }}</span>
         </label>
         <label class="feature-checkbox">
           <input type="checkbox" v-model="featureFilters.notRequireConfig" />
-          <span>{{ isZh ? '无需配置' : 'No Config' }}</span>
+          <span>{{ t('filter.noConfig') }}</span>
         </label>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="namespace-info">
           <div class="namespace-name">{{ getLocalizedName(ns) }}</div>
           <div class="namespace-meta">
-            <span class="route-count">{{ Object.keys(ns.routes).length }} {{ isZh ? 'routes' : 'routes' }}</span>
+            <span class="route-count">{{ Object.keys(ns.routes).length }} {{ t('namespace.routeCount') }}</span>
             <span v-if="ns.heat" class="heat-badge">{{ formatHeat(ns.heat) }}</span>
           </div>
         </div>
@@ -80,14 +80,14 @@
     </div>
 
     <div v-if="filteredNamespaces.length === 0" class="no-results">
-      {{ isZh ? '没有找到匹配的路由' : 'No matching routes found' }}
+      {{ t('namespace.noResults') }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { useData } from 'vitepress'
+import { useLocale } from '../composables/useLocale'
 
 interface RouteData {
   path: string | string[]
@@ -130,8 +130,7 @@ interface Category {
   zh: string
 }
 
-const { lang } = useData()
-const isZh = computed(() => lang.value === 'zh')
+const { t, locale, localePath, localized } = useLocale()
 
 const namespaces = ref<NamespaceData[]>([])
 const categories = ref<Category[]>([])
@@ -247,15 +246,11 @@ const filteredNamespaces = computed(() => {
 })
 
 function getNamespaceLink(id: string) {
-  const prefix = isZh.value ? '/zh' : ''
-  return `${prefix}/routes/${id}`
+  return `${localePath.value}/routes/${id}`
 }
 
 function getLocalizedName(ns: NamespaceData) {
-  if (isZh.value && ns.zh?.name) {
-    return ns.zh.name
-  }
-  return ns.name
+  return ns.zh?.name ? localized({ en: ns.name, zh: ns.zh.name }) : ns.name
 }
 
 function formatHeat(heat: number) {

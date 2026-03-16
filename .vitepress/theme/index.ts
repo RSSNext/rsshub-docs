@@ -3,6 +3,7 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import { setupI18n } from './i18n'
 import Route from './components/Route.vue'
 import Site from './components/Site.vue'
 import Sponsors from './components/Sponsors.vue'
@@ -21,6 +22,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    app.use(setupI18n())
     app.component('Route', Route)
     app.component('Site', Site)
     app.component('Sponsors', Sponsors)

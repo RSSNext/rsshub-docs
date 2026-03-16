@@ -4,38 +4,38 @@
       <a v-if="data?.heat" :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`" target="_blank">
         <Badge type="info">🔥 {{ data?.heat }}</Badge>
       </a>
-      <Badge v-if="!test" type="warning">🟡 Missing Test</Badge>
-      <Badge v-if="test && !test?.code" type="tip">🟢 Passed Test</Badge>
-      <a v-if="data.features?.antiCrawler" href="/guide/faqs" target="_blank">
-        <Badge type="danger">🚨 Strict Anti-crawling</Badge>
+      <Badge v-if="!test" type="warning">🟡 {{ t('badge.missingTest') }}</Badge>
+      <Badge v-if="test && !test?.code" type="tip">🟢 {{ t('badge.passedTest') }}</Badge>
+      <a v-if="data.features?.antiCrawler" :href="`${localePath}/guide/faqs`" target="_blank">
+        <Badge type="danger">🚨 {{ t('badge.antiCrawling') }}</Badge>
       </a>
-      <Badge v-if="data.features?.supportBT" type="tip">🔄 Support BT</Badge>
-      <Badge v-if="data.features?.supportPodcast" type="tip">🎙️ Support Podcast</Badge>
-      <Badge v-if="data.features?.supportScihub" type="tip">🧪 Support Sci-Hub</Badge>
-      <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 Rely on Puppeteer</Badge>
-      <a v-if="data.features?.requireConfig" href="/deploy/config#route-specific-configurations" target="_blank">
-        <Badge type="warning">⚙️ Config Required</Badge>
+      <Badge v-if="data.features?.supportBT" type="tip">🔄 {{ t('badge.supportBT') }}</Badge>
+      <Badge v-if="data.features?.supportPodcast" type="tip">🎙️ {{ t('badge.supportPodcast') }}</Badge>
+      <Badge v-if="data.features?.supportScihub" type="tip">🧪 {{ t('badge.supportSciHub') }}</Badge>
+      <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 {{ t('badge.relyPuppeteer') }}</Badge>
+      <a v-if="data.features?.requireConfig" :href="`${localePath}/deploy/config#route-specific-configurations`" target="_blank">
+        <Badge type="warning">⚙️ {{ t('badge.configRequired') }}</Badge>
       </a>
-      <a v-if="data.radar" href="/guide/#radar" target="_blank">
-        <Badge type="tip">🔍 Support Radar</Badge>
+      <a v-if="data.radar" :href="`${localePath}/guide/#radar`" target="_blank">
+        <Badge type="tip">🔍 {{ t('badge.supportRadar') }}</Badge>
       </a>
     </p>
     <p class="author" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-      👨‍💻 Author: {{ ' ' }}
+      👨‍💻 {{ t('route.author') }}
       <a v-for="(uid, index) in data.maintainers" :key="index" :href="`https://github.com/${uid}`" target="_blank" style="display: inline-flex; align-items: center; margin-right: 6px;">
         <img :src="`https://avatars.githubusercontent.com/${uid}`" style="width: 20px; height: 20px; border-radius: 50%; margin-right: 4px;" />
         {{ uid }}{{' '}}
       </a>
     </p>
     <p v-if="demoUrl" class="example">
-      <span>💡 Example: </span>
+      <span>💡 {{ t('route.example') }}</span>
       <a :href="demoUrl" target="_blank">
         {{ demoUrl }}
       </a>
       <CopyButton :text="demoUrl" />
     </p>
     <div v-if="data.topFeeds?.length" class="top-feeds">
-      <span>🔥 Top Feeds on Folo: </span>
+      <span>🔥 {{ t('route.topFeeds') }}</span>
       <ul>
         <li v-for="(item, index) in data.topFeeds" :key="index">
           <a :href="`https://app.follow.is/share/feeds/${item.id}`" target="_blank">
@@ -45,7 +45,7 @@
       </ul>
     </div>
     <p class="path" style="display: flex; align-items: center; gap: 8px;">
-      🛎️ Route: <code>/{{ namespace + data.path }}</code>{{ ' ' }}
+      🛎️ {{ t('route.route') }}<code>/{{ namespace + data.path }}</code>{{ ' ' }}
       <CopyButton :text="`/${namespace}${data.path}`" />
       <a v-if="data.categories?.includes('popular')"
         :href="`follow://discover?route=${encodeURIComponent(`/${namespace}${data.path}`)}`"
@@ -80,38 +80,38 @@
     </p>
 
     <div v-if="paramMatch">
-      <p>🔗 Parameters: </p>
+      <p>🔗 {{ t('route.parameters') }}</p>
       <ul>
         <li v-for="(item, index) in paramMatch" :key="index" class="params">
           <code>{{ item.name.replace(/:|\?|\+|\*/g, '') }}</code>
             <ul :style="{fontSize: '13px', lineHeight: 1.5}">
-            <li><strong>{{ item.optional ? 'Optional' : 'Required' }}</strong></li>
-            <li v-if="item.default"><strong>Default:</strong> {{ item.default }}</li>
+            <li><strong>{{ item.optional ? t('param.optional') : t('param.required') }}</strong></li>
+            <li v-if="item.default"><strong>{{ t('param.default') }}</strong> {{ item.default }}</li>
             <li v-if="item.options?.length">
-              <strong>Options:</strong> <select v-if="item.options?.length" :style="{marginRight: '8px'}">
+              <strong>{{ t('param.options') }}</strong> <select v-if="item.options?.length" :style="{marginRight: '8px'}">
               <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
                 {{ option.value }}: {{ option.label }}
               </option>
               </select>
             </li>
-            <li><strong>Description:</strong> <span v-html="item.description?.includes('|') ? renderMarkdown(item.description, false) : renderMarkdown(item.description || 'N/A')"/></li>
+            <li><strong>{{ t('param.description') }}</strong> <span v-html="item.description?.includes('|') ? renderMarkdown(item.description, false) : renderMarkdown(item.description || 'N/A')"/></li>
           </ul>
         </li>
       </ul>
     </div>
     <div v-if="data.features?.requireConfig">
-      <p>⚙️ Deployment Configs: </p>
+      <p>⚙️ {{ t('route.deploymentConfigs') }}</p>
       <ul>
         <li v-for="(item, index) in data.features.requireConfig" :key="index" class="params">
           <code>{{ item.name }}</code>,{{ ' ' }}
-          {{ item.optional ? 'optional' : 'required' }}
+          {{ item.optional ? t('config.optional') : t('config.required') }}
           {{ ' - ' }}
           <span v-html="renderMarkdown(item.description)"/>
         </li>
       </ul>
     </div>
     <p class="path">
-      🐙 Source Code:{{ ' ' }}
+      🐙 {{ t('route.sourceCode') }}{{ ' ' }}
       <code>
         <a target='_blank' :href="`https://github.com/DIYgod/RSSHub/blob/master/lib/routes/${namespace}/${data.location}`">/{{ namespace }}/{{ data.location }}</a>
       </code>
@@ -125,6 +125,9 @@ import MarkdownIt from 'markdown-it';
 import type { Route } from '../types';
 import CopyButton from './CopyButton.vue';
 import { parseJsonSchema } from './parse-json-schema';
+import { useLocale } from '../composables/useLocale';
+
+const { t, localePath } = useLocale()
 
 const props = defineProps<{
   namespace: string,

@@ -6,12 +6,14 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "11.0.7",
     "@types/json-schema": "7.0.15",
     "markdown-it": "14.1.1",
     "vitepress": "1.6.4",
-    "vue": "3.5.30"
+    "vue": "3.5.30",
+    "vue-i18n": "11.3.0"
   },
-  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a",
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
