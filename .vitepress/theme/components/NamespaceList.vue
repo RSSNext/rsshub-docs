@@ -3,7 +3,7 @@
     <div class="filters">
       <div class="filter-row">
         <div class="search-box">
-          <input v-model="searchQuery" type="text" :placeholder="t('search.placeholder')" class="search-input" />
+          <input v-model="searchInput" type="text" :placeholder="t('search.placeholder')" class="search-input" />
         </div>
         <div class="filter-group">
           <select v-model="selectedCategory" class="filter-select">
@@ -49,7 +49,7 @@
     </div>
 
     <div class="namespace-grid">
-      <a v-for="ns in filteredNamespaces" :key="ns.id" :href="getNamespaceLink(ns.id)" class="namespace-card">
+      <a v-for="ns in visibleNamespaces" :key="ns.id" :href="getNamespaceLink(ns.id)" class="namespace-card">
         <div class="namespace-icon">
           <img
             :src="`https://icons.folo.is/${ns.url || ns.id + '.com'}`"
@@ -69,6 +69,7 @@
       </a>
     </div>
 
+    <div v-if="!loading && visibleCount < filteredNamespaces.length" ref="sentinel" class="sentinel" />
     <div v-if="loading" class="no-results">
       {{ t('namespace.loading') }}
     </div>
@@ -79,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue';
 
 import { useLocale } from '../composables/useLocale';
 
@@ -126,9 +127,12 @@ interface Category {
 
 const { t, locale, localePath, localized } = useLocale();
 
+const BATCH_SIZE = 60;
+
 const namespaces = ref<NamespaceData[]>([]);
 const categories = ref<Category[]>([]);
 const loading = ref(true);
+const searchInput = ref('');
 const searchQuery = ref('');
 const selectedCategory = ref('');
 const sortBy = ref<'heat' | 'alpha'>('heat');
@@ -140,6 +144,50 @@ const featureFilters = ref({
   supportScihub: false,
   notPuppeteer: false,
   notRequireConfig: false,
+});
+const visibleCount = ref(BATCH_SIZE);
+const sentinel = ref<HTMLElement>();
+
+let debounceTimer: ReturnType<typeof setTimeout>;
+watch(searchInput, (val) => {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => {
+    searchQuery.value = val;
+  }, 200);
+});
+
+watch(
+  [searchQuery, selectedCategory, sortBy, featureFilters],
+  () => {
+    visibleCount.value = BATCH_SIZE;
+  },
+  { deep: true },
+);
+
+let observer: IntersectionObserver | undefined;
+onMounted(() => {
+  observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0]?.isIntersecting) {
+        visibleCount.value += BATCH_SIZE;
+      }
+    },
+    { rootMargin: '200px' },
+  );
+});
+
+watch(sentinel, (el, oldEl) => {
+  if (oldEl) {
+    observer?.unobserve(oldEl);
+  }
+  if (el) {
+    observer?.observe(el);
+  }
+});
+
+onBeforeUnmount(() => {
+  clearTimeout(debounceTimer);
+  observer?.disconnect();
 });
 
 onMounted(async () => {
@@ -235,6 +283,10 @@ const filteredNamespaces = computed(() => {
   }
 
   return result;
+});
+
+const visibleNamespaces = computed(() => {
+  return filteredNamespaces.value.slice(0, visibleCount.value);
 });
 
 function getNamespaceLink(id: string) {
@@ -434,6 +486,10 @@ function handleImageError(e: Event) {
   content: '\01F525';
   margin-right: 2px;
   font-size: 10px;
+}
+
+.sentinel {
+  height: 1px;
 }
 
 .no-results {
