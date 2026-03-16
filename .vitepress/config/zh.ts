@@ -20,7 +20,7 @@ export const zh = defineConfig({
     },
 
     footer: {
-      message: '基于 MIT 许可发布',
+      message: '基于 AGPL-3.0 许可发布',
       copyright: `版权所有 © 2018-${new Date().getFullYear()} DIYgod`,
     },
 

@@ -110,7 +110,7 @@ export const shared = defineConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License.',
+      message: 'Released under the AGPL-3.0 License.',
       copyright: `© ${new Date().getFullYear()}. An <a href="https://open.network/" target="_blank">Open</a> project.`,
     },
 

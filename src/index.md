@@ -23,10 +23,10 @@ features:
     details: More than 5,000 instances are live, forming the largest RSS network in the world.
   - title: Open
     icon: 🕊️
-    details: All code is open-sourced under the MIT license and follows open standards and protocols.
+    details: All code is open-sourced under the AGPL-3.0 license and follows open standards and protocols.
   - title: Thriving community
     icon: 🌿
-    details: Over 900 contributors and maintainers are actively supporting RSSHub.
+    details: Over 1300 contributors and maintainers are actively supporting RSSHub.
   - title: Out of the box
     icon: 🥳
     details: Numerous pre-configured routes and public instances are available for immediate use.

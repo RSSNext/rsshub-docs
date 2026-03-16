@@ -23,10 +23,10 @@ features:
     details: 5000 多个实例在运行，形成了世界上最大的 RSS 网络。
   - title: 开放
     icon: 🕊️
-    details: 所有代码都在 MIT 许可下开源，并遵循开放标准和协议。
+    details: 所有代码都在 AGPL-3.0 许可下开源，并遵循开放标准和协议。
   - title: 繁荣的社区
     icon: 🌿
-    details: 超过900名贡献者和维护者正在积极支持RSSHub。
+    details: 超过1300名贡献者和维护者正在积极支持RSSHub。
   - title: 开箱即用
     icon: 🥳
     details: 大量预配置路由和公共实例可供立即使用。
