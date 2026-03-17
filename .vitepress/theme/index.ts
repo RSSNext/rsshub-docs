@@ -6,6 +6,7 @@ import { h } from 'vue';
 import './style.css';
 import Banner from './components/Banner.vue';
 import CopyButtonVue from './components/CopyButton.vue';
+import FoloAsideAd from './components/FoloAsideAd.vue';
 import InstanceList from './components/InstanceList.vue';
 import NamespaceDetail from './components/NamespaceDetail.vue';
 import NamespaceList from './components/NamespaceList.vue';
@@ -19,6 +20,7 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      'aside-ads-before': () => h(FoloAsideAd),
     });
   },
   enhanceApp({ app, router, siteData }) {

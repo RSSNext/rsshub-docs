@@ -4,6 +4,8 @@ sidebar: auto
 
 # Deployment
 
+If you want a ready-to-use option, try [Folo](https://folo.is/), an AI RSS reader built for modern feed workflows. The project is also open source on [GitHub](https://github.com/RSSNext/Folo).
+
 RSSHub provides a painless deployment process if you are equipped with basic programming knowledge, you may open an [issue](https://github.com/DIYgod/RSSHub/issues/new/choose) if you believe you have encountered a problem not listed [here](https://github.com/DIYgod/RSSHub/issues), the community will try to sort it out asap.
 
 The deployment may involve the followings:

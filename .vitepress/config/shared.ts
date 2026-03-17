@@ -65,10 +65,6 @@ export const shared = defineConfig({
 
   themeConfig: {
     logo: '/logo.png',
-    carbonAds: {
-      code: 'CEAI653E',
-      placement: 'docsrsshubapp',
-    },
     outline: {
       level: [2, 3],
     },
@@ -94,6 +90,7 @@ export const shared = defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
+      { text: 'Folo', link: 'https://folo.is/' },
       { text: 'Develop', link: '/joinus/' },
       { text: 'Deploy', link: '/deploy/' },
       { text: 'Ecosystem', link: '/ecosystem' },

@@ -1,5 +1,9 @@
 # Ecosystem
 
+## Recommended Reader
+
+- [Folo](https://folo.is/): AI RSS reader built for modern feed discovery and reading workflows, with strong support for RSSHub. Source code: [GitHub](https://github.com/RSSNext/Folo)
+
 ## Radar
 
 - [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar): Browser extension that simplifies finding and subscribing RSS and RSSHub

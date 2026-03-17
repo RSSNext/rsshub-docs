@@ -1,5 +1,9 @@
 # 生态系统
 
+## 推荐阅读器
+
+- [Folo](https://folo.is/): 面向现代订阅发现和阅读工作流的 AI RSS 阅读器，并对 RSSHub 提供良好支持。源码见 [GitHub](https://github.com/RSSNext/Folo)
+
 ## 雷达
 
 - [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar): Browser extension that simplifies finding and subscribing RSS and RSSHub

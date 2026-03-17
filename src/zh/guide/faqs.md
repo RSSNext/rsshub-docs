@@ -12,6 +12,10 @@
 
 **A:** 演示地址为 [rsshub.app](https://rsshub.app), 缓存时间 120 分钟，可以随意使用。但如果你看到路由有 <Badge type="danger">🚨 反爬严格</Badge> 标记，如微博、知乎等，意味着目标网站有严重的反爬策略，demo 无法确保可用性，建议自建来提高稳定性。
 
+**Q: 有什么和 RSSHub 搭配得比较好的阅读器？**
+
+**A:** [Folo](https://folo.is/) 是一个和 RSSHub 配合良好的 AI RSS 阅读器，适合做订阅发现、阅读和共享实例切换。项目同时在 [GitHub](https://github.com/RSSNext/Folo) 开源。
+
 **Q: 为什么 RSSHub 里的图片 / 视频加载不出来？**
 
 **A:** RSSHub 里的图片 / 视频地址都是源站地址，部分有防盗链，所以 RSSHub 给图片加了 `referrerpolicy="no-referrer"` 属性来防止跨域问题，但部分 RSS 服务会自作主张去掉这个属性，如 Feedly、Inoreader，在它们的网页端图片会触发跨域加载不出来。同时，视频目前没有类似的属性，因此大部分阅读器都无法通过防盗链检查。下面是一些解决方案：

@@ -4,6 +4,8 @@ sidebar: auto
 
 # 部署
 
+如果你想直接开始使用，可以试试 [Folo](https://folo.is/)，一个面向现代订阅工作流的 AI RSS 阅读器。项目同时在 [GitHub](https://github.com/RSSNext/Folo) 开源。
+
 部署 RSSHub 需要基本的计算机编程常识，如果您在部署过程中遇到无法解决的问题请到 [issues](https://github.com/DIYgod/RSSHub/issues) 寻找类似的问题或 [向我们提问](https://github.com/DIYgod/RSSHub/issues/new/choose)，我们会尽快给您答复。
 
 部署涉及到以下基本编程常识：

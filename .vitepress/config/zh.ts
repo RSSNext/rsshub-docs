@@ -8,6 +8,7 @@ export const zh = defineConfig({
     nav: [
       { text: '首页', link: '/zh/' },
       { text: '食用指南', link: '/zh/guide/' },
+      { text: 'Folo', link: 'https://folo.is/' },
       { text: '开发路由', link: '/zh/joinus/' },
       { text: '部署', link: '/zh/deploy/' },
       { text: '生态系统', link: '/zh/ecosystem' },

@@ -14,13 +14,16 @@ hero:
       text: Documentation
       link: /guide/
     - theme: alt
+      text: Try Folo
+      link: https://folo.is/
+    - theme: alt
       text: GitHub
       link: https://github.com/DIYgod/RSSHub
 
 features:
-  - title: Decentralized
-    icon: 🌐
-    details: More than 5,000 instances are live, forming the largest RSS network in the world.
+  - title: Better with Folo
+    icon: ✨
+    details: Use RSSHub with Folo, the AI RSS reader for smarter discovery, shared instances, and modern reading workflows.
   - title: Open
     icon: 🕊️
     details: All code is open-sourced under the AGPL-3.0 license and follows open standards and protocols.

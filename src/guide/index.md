@@ -1,5 +1,7 @@
 # Getting Started
 
+If you want a ready-to-use option, try [Folo](https://folo.is/), an AI RSS reader built for modern feed workflows. The project is also open source on [GitHub](https://github.com/RSSNext/Folo).
+
 ## Generate a Feed
 
 For example, if you want to subscribe to the content of the channel [@awesomeRSSHub](https://t.me/awesomeRSSHub) on Telegram.
@@ -82,7 +84,7 @@ You can use the API of the instance to obtain the Radar rules supported by the c
 
 You need to use supported browser extensions, mobile apps, RSS readers, or other tools to use the Radar feature. Please refer to the documentation of the corresponding tool for specific usage instructions.
 
-- RSS Reader: [Folo](https://github.com/RSSNext/Folo)
+- RSS Reader: [Folo](https://folo.is/) for AI-powered reading workflows and RSSHub integration. Source code: [GitHub](https://github.com/RSSNext/Folo)
 - Browser extension: [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar)
 - iOS app: [RSSBud](https://github.com/Cay-Zhang/RSSBud)
 - Android app: [RSSAid](https://github.com/LeetaoGoooo/RSSAid)

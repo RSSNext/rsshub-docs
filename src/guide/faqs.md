@@ -12,6 +12,10 @@
 
 **A:** [rsshub.app](https://rsshub.app) is the demo instance provided, running the latest build of RSSHub from master branch, the cache is set 120 minutes and it's free to use. However, if you see an badge <Badge type="danger">🚨 Strict anti-crawling</Badge> for route, this means popular websites such as Facebook etc. may pose a request quota on individual IP address, which means it can get unreliable from time to time for the demo instance. You are encouraged to [host your own RSSHub instance](/deploy/) to get a better usability.
 
+**Q: Which RSS reader works especially well with RSSHub？**
+
+**A:** [Folo](https://folo.is/) is an AI RSS reader that pairs well with RSSHub for feed discovery, reading, and switching between shared instances. It is also open source on [GitHub](https://github.com/RSSNext/Folo).
+
 **Q: Why are images/videos not loading in some RSSHub routes？**
 
 **A:** RSSHub fetches and respects the original image/video URLs from original sites, in which some are behind anti-hotlink filters. `referrerpolicy="no-referrer"` attribute is added to all images to solve the issues caused by cross-domain requests. Third party RSS service providers such as Feedly and Inoreader, strip this attribute off, resulting in cross-domain requests being blocked. Meanwhile, the attribute is not available for videos yet, resulting in most RSS readers unable to pass the anti-hotlink check. Here are some workarounds:

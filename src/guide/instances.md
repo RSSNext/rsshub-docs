@@ -12,7 +12,7 @@ If you are willing to contribute your own instance for others to use, please edi
 
 ## Folo
 
-[Folo](https://github.com/RSSNext/Folo) offers numerous user-shared instances that you can switch between and use with just one click. However, these instances are not compatible with external readers. Additionally, you can share your own instances on Folo to earn tokens.
+[Folo](https://folo.is/) is an AI RSS reader and discovery platform that works especially well with RSSHub. It offers numerous user-shared instances that you can browse, switch between, and use with just one click inside Folo. These instances are not compatible with external readers. You can also share your own instance on Folo to earn tokens. Source code: [GitHub](https://github.com/RSSNext/Folo).
 
 ![img](https://i.imgur.com/HZKrUSd.png)
 

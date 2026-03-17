@@ -12,7 +12,7 @@
 
 ## Folo
 
-[Folo](https://github.com/RSSNext/Folo) 提供了许多用户共享的实例，支持一键切换和使用，但无法在外部阅读器中使用。你也可以将自己的实例分享到 Folo 中以赚取代币。
+[Folo](https://folo.is/) 是一个与 RSSHub 配合良好的 AI RSS 阅读器和发现平台，提供了许多用户共享的实例，支持在 Folo 内一键浏览、切换和使用，但无法在外部阅读器中使用。你也可以将自己的实例分享到 Folo 中以赚取代币。源码见 [GitHub](https://github.com/RSSNext/Folo)。
 
 ![img](https://i.imgur.com/HZKrUSd.png)
 
