@@ -137,6 +137,12 @@ const instances = [
     maintainer: 'Spriple',
     maintainerUrl: 'https://blog.spriple.org',
   },
+  {
+    url: 'https://rsshub-balancer.virworks.moe',
+    location: '🇺🇳',
+    maintainer: 'chesha1',
+    maintainerUrl: 'https://github.com/chesha1',
+  },
 ];
 
 // You can copy the location country flag from https://emojipedia.org/flags
