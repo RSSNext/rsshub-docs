@@ -399,6 +399,10 @@ sudo ansible-playbook rsshub.yaml
 2.  去 Vercel 部署一个新项目：使用 GitHub 账户登录 Vercel，进入 [项目创建页面](https://vercel.com/new/) 选择导入 RSSHub 仓库进行部署
 3.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的仓库
 
+::: tip
+如果在部署过程中遇到 `ERR_REQUIRE_ESM` 错误，需要启用 Node.js 实验性的 require() ES Module 支持。在 Vercel 项目设置中添加环境变量 `NODE_OPTIONS=--experimental-require-module`。详见 [Vercel 文档](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-node.js-require-of-es-module)。
+:::
+
 ## 部署到 Zeabur
 
 1.  前往 [Zeabur 完成注册](https://dash.zeabur.com)

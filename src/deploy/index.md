@@ -408,6 +408,10 @@ sudo ansible-playbook rsshub.yaml
 2.  Deploy your fork to Vercel: Login Vercel with your GitHub account, create and deploy [new Vercel project](https://vercel.com/new/) with your RSSHub repository.
 3.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
 
+::: tip
+If you encounter an `ERR_REQUIRE_ESM` error during deployment, you need to enable experimental Node.js require() of ES Module support. Add the environment variable `NODE_OPTIONS=--experimental-require-module` in your Vercel project settings. See [Vercel's documentation](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-node.js-require-of-es-module) for more details.
+:::
+
 ## Deploy to Zeabur
 
 1.  [Sign up for Zeabur](https://dash.zeabur.com)
