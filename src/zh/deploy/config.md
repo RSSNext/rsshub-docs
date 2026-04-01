@@ -94,7 +94,9 @@ healthcheck:
 
 `SENTRY`: [Sentry](https://sentry.io) dsn，用于错误追踪
 
-`SENTRY_ROUTE_TIMEOUT`: 路由耗时超过此毫秒值上报 Sentry，默认 `3000`
+`HONEYBADGER_API_KEY`: [Honeybadger](https://www.honeybadger.io) API key，用于错误追踪
+
+`ERROR_TRACKING_ROUTE_TIMEOUT`: 路由耗时超过此毫秒值上报错误追踪服务（Sentry 或 Honeybadger），默认 `30000` 毫秒。此选项之前命名为 `SENTRY_ROUTE_TIMEOUT`，旧名称仍然支持以保持向后兼容，但建议切换到新名称。
 
 ## 图片处理
 

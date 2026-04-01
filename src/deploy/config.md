@@ -94,7 +94,9 @@ healthcheck:
 
 `SENTRY`: [Sentry](https://sentry.io) dsn, used for error tracking
 
-`SENTRY_ROUTE_TIMEOUT`: Report Sentry if route execution takes more than this milliseconds, default to `3000`
+`HONEYBADGER_API_KEY`: [Honeybadger](https://www.honeybadger.io) API key, used for error tracking
+
+`ERROR_TRACKING_ROUTE_TIMEOUT`: Report to error tracking service (Sentry or Honeybadger) if route execution takes more than this milliseconds, default to `30000` ms. This option is previously named `SENTRY_ROUTE_TIMEOUT`, and the old name is still supported for backward compatibility, but it is recommended to switch to the new name.
 
 ## Image Processing
 
