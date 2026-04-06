@@ -63,7 +63,73 @@ sidebar_position: 2
 -   Use `kebab-case` for files and folders.
 -   Use `CONSTANT_CASE` for constants.
 
-### v2 Route Standard
+### Anti-Patterns
+
+-   Select every `a` element with `href` attribute without any parent element or class name.
+
+:::details
+
+```javascript
+const seen = new Set();
+$('a[href="some/url"]').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
+```
+:::
+
+-   Brute-force matching of selectors.
+
+:::details
+
+```javascript
+const randomGuessingSelectors = ['spray-and-pray', 'a-bunch-of-selectors', 'or-classes', 'that-most-does-not-exist', 'except-one-that-actually-exist'];
+for (const selector of randomGuessingSelectors) {
+    const element = $(selector);
+    if (element.length > 0) {
+        // ...
+        break;
+    }
+}
+```
+:::
+
+-   Enumerate combinations of selectors of the same element.
+
+:::details
+
+```html
+<ul><!-- Suppose we want to extract the text of the “Three” element -->
+    <li>One</li>
+    <li>Two</li>
+    <li class="blue sel">Three</li>
+    <li class="red">Four</li>
+</ul>
+```
+
+```javascript
+const text = $('ul li.blue.sel, li.blue.sel, .blue.sel, li.blue, .blue, li.sel, .sel').text();
+// or
+const text = $('ul li.blue.sel').text() || $('li.blue.sel').text() || $('.blue.sel').text() || $('li.blue').text() || $('.blue').text() || $('li.sel').text() || $('.sel').text();
+```
+:::
+
+-   Use `.first()` or `.last()` to select an element which appears only once in the page.
+
+:::details
+
+```javascript
+const element = $('.some-unique-element-that-appears-only-once').first();
+// or
+const element = $('.some-unique-element-that-appears-only-once').last();
+```
+:::
+
+## v2 Route Standard
 
 :::danger
 

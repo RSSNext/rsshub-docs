@@ -63,6 +63,72 @@ sidebar_position: 2
 -   使用 `kebab-case` 命名文件和文件夹。
 -   使用 `CONSTANT_CASE` 命名常量。
 
+### 反面模式
+
+-   在没有任何父元素或类名限定的情况下选择所有带 `href` 属性的 `a` 元素。
+
+:::details
+
+```javascript
+const seen = new Set();
+$('a[href="some/url"]').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
+```
+:::
+
+-   暴力尝试匹配选择器。
+
+:::details
+
+```javascript
+const randomGuessingSelectors = ['spray-and-pray', 'a-bunch-of-selectors', 'or-classes', 'that-most-does-not-exist', 'except-one-that-actually-exist'];
+for (const selector of randomGuessingSelectors) {
+    const element = $(selector);
+    if (element.length > 0) {
+        // ...
+        break;
+    }
+}
+```
+:::
+
+-   罗列指向同一元素的多种选择器组合。
+
+:::details
+
+```html
+<ul><!-- 假设我们想要提取 “Three” 元素的文本 -->
+    <li>One</li>
+    <li>Two</li>
+    <li class="blue sel">Three</li>
+    <li class="red">Four</li>
+</ul>
+```
+
+```javascript
+const text = $('ul li.blue.sel, li.blue.sel, .blue.sel, li.blue, .blue, li.sel, .sel').text();
+// 或
+const text = $('ul li.blue.sel').text() || $('li.blue.sel').text() || $('.blue.sel').text() || $('li.blue').text() || $('.blue').text() || $('li.sel').text() || $('.sel').text();
+```
+:::
+
+-   对页面中仅出现一次的元素使用 `.first()` 或 `.last()` 进行选取。
+
+:::details
+
+```javascript
+const element = $('.some-unique-element-that-appears-only-once').first();
+// 或
+const element = $('.some-unique-element-that-appears-only-once').last();
+```
+:::
+
 ## v2 路由规范
 
 :::danger
