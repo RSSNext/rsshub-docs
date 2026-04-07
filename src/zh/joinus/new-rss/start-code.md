@@ -292,7 +292,7 @@ export const route: Route = {
 
 首先，我们将向 API 发送 HTTP GET 请求，并将 HTML 响应加载到 Cheerio 中，Cheerio 是一个帮助我们解析和操作 HTML 的库。
 
-```js{6-7}
+```ts{6-7}
 export const route: Route = {
     // ...
     handler: (ctx) => {
@@ -306,7 +306,7 @@ export const route: Route = {
 
 接下来，我们将使用 Cheerio 选择器选择相关的 HTML 元素，解析我们需要的数据，并将其转换为数组。
 
-```ts{9-29}
+```ts{9-31}
 export const route: Route = {
     // ...
     handler: (ctx) => {
@@ -315,23 +315,25 @@ export const route: Route = {
         const response = await ofetch(`https://github.com/${user}/${repo}/issues`);
         const $ = load(response);
 
-        // 我们使用 Cheerio 选择器选择所有带类名“js-navigation-container”的“div”元素，
-        // 其中包含带类名“flex-auto”的子元素。
-        const items = $('div.js-navigation-container .flex-auto')
-            // 使用“toArray()”方法将选择的所有 DOM 元素以数组的形式返回。
+        // 我们使用 Cheerio 选择器选择所有类名以 'ListItem-module__listItem__' 开头的 'li' 元素，
+        // 这些元素位于类名以 'ListView-module__ul__' 开头的 'ul' 元素内。
+        const items = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
+            // 使用 `toArray()` 方法将选择的所有 DOM 元素以数组的形式返回。
             .toArray()
-            // 使用“map()”方法遍历数组，并从每个元素中解析需要的数据。
+            // 使用 `map()` 方法遍历数组，并从每个元素中解析需要的数据。
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                // 我们使用 `first()` 选择当前 item 中的第一个 'a' 元素，
+                // 因为每个 item 中有多个 'a' 元素，我们需要指定要使用哪一个。
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     // `link` 需要一个绝对 URL，但 `a.attr('href')` 返回一个相对 URL。
                     link: `${baseUrl}${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -362,18 +364,18 @@ export const route: Route = {
         const response = await ofetch(`https://github.com/${user}/${repo}/issues`);
         const $ = load(response);
 
-        const items = $('div.js-navigation-container .flex-auto')
+        const items = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             .toArray()
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     link: `https://github.com${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -401,8 +403,9 @@ export const route: Route = {
 
 以下是更新后的代码：
 
-```ts{31-45}
+```ts{32-47}
 import ofetch from '@/utils/ofetch';
+import cache from '@/utils/cache';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 
@@ -415,18 +418,18 @@ export const route: Route = {
         const response = await ofetch(`${baseUrl}/${user}/${repo}/issues`);
         const $ = load(response);
 
-        const list = $('div.js-navigation-container .flex-auto')
+        const list = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             .toArray()
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     link: `${baseUrl}${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -438,8 +441,9 @@ export const route: Route = {
                     const response = await ofetch(item.link);
                     const $ = load(response);
 
-                    // 选择类名为“comment-body”的第一个元素
-                    item.description = $('.comment-body').first().html();
+                    // 选择第一个 comment body，因为每个 issue 页面中有多个 comment body，
+                    // 我们需要指定要使用哪一个。
+                    item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                     // 上面每个列表项的每个属性都在此重用，
                     // 并增加了一个新属性“description”
@@ -468,7 +472,7 @@ export const route: Route = {
 
 现在，我们将使用 `puppeteer` 代替 `ofetch` 来从网页获取数据。
 
-```ts{12-43}
+```ts{13-44}
 import { Route } from '@/types';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -525,12 +529,13 @@ export const route: Route = {
 
 使用浏览器新标签页获取每个 GitHub Issue 的正文，类似于 [上一节](#获取全文)。我们可以使用以下代码：
 
-```ts
+```ts{51-65}
 import { Route } from '@/types';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
+import cache from '@/utils/cache';
 
 export const route: Route = {
     // ...
@@ -555,18 +560,18 @@ export const route: Route = {
 
         const $ = load(response);
 
-        const list = $('div.js-navigation-container .flex-auto')
+        const list = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             .toArray()
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     link: `${baseUrl}${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -575,7 +580,6 @@ export const route: Route = {
         const items = await Promise.all(
             list.map((item) =>
                 cache.tryGet(item.link, async () => {
-                    // highlight-start
                     // 重用浏览器实例并打开新标签页
                     const page = await browser.newPage();
                     // 设置请求拦截，仅允许 HTML 请求
@@ -591,11 +595,10 @@ export const route: Route = {
                     const response = await page.content();
                     // 获取 HTML 内容后关闭标签页
                     page.close();
-                    // highlight-end
 
                     const $ = load(response);
 
-                    item.description = $('.comment-body').first().html();
+                    item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                     return item;
                 })
@@ -627,7 +630,7 @@ export const route: Route = {
 
 这是如何实现的：
 
-```js
+```ts
 await page.setRequestInterception(true);
 page.on('request', (request) => {
     request.resourceType() === 'document' ? request.continue() : request.abort();

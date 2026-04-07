@@ -19,7 +19,7 @@ RSSHub 有一个缓存模块，该缓存在短时间后过期。您可以通过�
                 const { data: response } = await got(item.link);
                 const $ = load(response);
 
-                item.description = $('.comment-body').first().html();
+                item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                 return item;
             })

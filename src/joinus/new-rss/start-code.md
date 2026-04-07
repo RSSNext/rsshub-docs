@@ -193,15 +193,18 @@ export const route: Route = {
 
 After obtaining user input, we can use it to send requests to the API. In most cases, you need to use `ofetch` (a custom [ofetch](https://github.com/unjs/ofetch) wrapper function) in `@/utils/ofetch` to send HTTP requests. For more information, please refer to the [ofetch documentation](https://github.com/unjs/ofetch).
 
-```ts{3-8}
+```ts{5-10}
 export const route: Route = {
-    const { user, repo = 'RSSHub' } = ctx.req.param();
-    // Send an HTTP GET request to the API and destructure the returned data object.
-    const data = await ofetch(`https://api.github.com/repos/${user}/${repo}/issues`, {
-        headers: {
-            accept: 'application/vnd.github.html+json',
-        },
-    });
+    // ...
+    handler: (ctx) => {
+        const { user, repo = 'RSSHub' } = ctx.req.param();
+        // Send an HTTP GET request to the API and destructure the returned data object.
+        const data = await ofetch(`https://api.github.com/repos/${user}/${repo}/issues`, {
+            headers: {
+                accept: 'application/vnd.github.html+json',
+            },
+        });
+    },
 };
 ```
 
@@ -296,7 +299,7 @@ After obtaining the user input, we need to initiate a request to the webpage to 
 
 To begin, we'll make an HTTP GET request to the API and load the HTML response into Cheerio, a library that helps us parse and manipulate HTML.
 
-```js{6-7}
+```ts{6-7}
 export const route: Route = {
     // ...
     handler: (ctx) => {
@@ -310,7 +313,7 @@ export const route: Route = {
 
 Next, we'll use Cheerio selectors to select the relevant HTML elements, parse the data we need, and convert it into an array.
 
-```ts{9-29}
+```ts{9-31}
 export const route: Route = {
     // ...
     handler: (ctx) => {
@@ -319,23 +322,25 @@ export const route: Route = {
         const response = await ofetch(`https://github.com/${user}/${repo}/issues`);
         const $ = load(response);
 
-        // We use a Cheerio selector to select all 'div' elements with the class name 'js-navigation-container'
-        // that contain child elements with the class name 'flex-auto'.
-        const items = $('div.js-navigation-container .flex-auto')
+        // We use a Cheerio selector to select all 'li' elements with a class name that starts with 'ListItem-module__listItem__' that 
+        // are within a 'ul' element with a class name which starts with 'ListView-module__ul__'.
+        const items = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             // We use the `toArray()` method to retrieve all the DOM elements selected as an array.
             .toArray()
             // We use the `map()` method to traverse the array and parse the data we need from each element.
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                // We use `first()` to select the first 'a' element within the current item
+                // as there are multiple 'a' elements in each item, and we need to specify which one we want to use.
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     // We need an absolute URL for `link`, but `a.attr('href')` returns a relative URL.
                     link: `${baseUrl}${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -366,18 +371,18 @@ export const route: Route = {
         const response = await ofetch(`https://github.com/${user}/${repo}/issues`);
         const $ = load(response);
 
-        const items = $('div.js-navigation-container .flex-auto')
+        const items = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             .toArray()
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     link: `https://github.com${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -405,7 +410,7 @@ Some websites may not like receiving a large number of requests in a short perio
 
 Here's the updated code:
 
-```ts{31-45}
+```ts{32-47}
 import ofetch from '@/utils/ofetch';
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
@@ -420,18 +425,18 @@ export const route: Route = {
         const response = await ofetch(`${baseUrl}/${user}/${repo}/issues`);
         const $ = load(response);
 
-        const list = $('div.js-navigation-container .flex-auto')
+        const list = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             .toArray()
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     link: `${baseUrl}${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -443,8 +448,9 @@ export const route: Route = {
                     const response = await ofetch(item.link);
                     const $ = load(response);
 
-                    // Select the first element with the class name 'comment-body'
-                    item.description = $('.comment-body').first().html();
+                    // Select the first comment body as there are multiple comment bodies in each issue page,
+                    // and we need to specify which one we want to use.
+                    item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                     // Every property of a list item defined above is reused here
                     // and we add a new property 'description'
@@ -472,8 +478,9 @@ It is recommended that you read the previous two methods first, as this section 
 
 Now, we will be using `puppeteer` instead of `ofetch` to retrieve data from the web page.
 
-```ts{12-43}
+```ts{13-44}
 import { Route } from '@/types';
+import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
@@ -528,7 +535,7 @@ export const route: Route = {
 
 Retrieving the full articles of each issue using a new browser page is similar to the [previous section](#fetch-the-full-text). We can use the following code:
 
-```ts
+```ts{51-65}
 import { Route } from '@/types';
 import { load } from 'cheerio';
 import { parseDate } from '@/utils/parse-date';
@@ -559,18 +566,18 @@ export const route: Route = {
 
         const $ = load(response);
 
-        const list = $('div.js-navigation-container .flex-auto')
+        const list = $('ul[class^="ListView-module__ul__"] li[class^="ListItem-module__listItem__"]')
             .toArray()
             .map((item) => {
-                item = $(item);
-                const a = item.find('a').first();
+                const $item = $(item);
+                const a = $item.find('a').first();
                 return {
                     title: a.text(),
                     link: `${baseUrl}${a.attr('href')}`,
-                    pubDate: parseDate(item.find('relative-time').attr('datetime')),
-                    author: item.find('.opened-by a').text(),
-                    category: item
-                        .find('a[id^=label]')
+                    pubDate: parseDate($item.find('relative-time').attr('datetime')),
+                    author: $item.find('div[data-testid="created-at"] a').text(),
+                    category: $item
+                        .find('a[class^="prc-Link-Link-"] span[class^="prc-Text-Text-"]')
                         .toArray()
                         .map((item) => $(item).text()),
                 };
@@ -579,7 +586,6 @@ export const route: Route = {
         const items = await Promise.all(
             list.map((item) =>
                 cache.tryGet(item.link, async () => {
-                    // highlight-start
                     // reuse the browser instance and open a new tab
                     const page = await browser.newPage();
                     // set up request interception to only allow document requests
@@ -595,11 +601,11 @@ export const route: Route = {
                     const response = await page.content();
                     // close the tab after retrieving the HTML content
                     page.close();
-                    // highlight-end
+
 
                     const $ = load(response);
 
-                    item.description = $('.comment-body').first().html();
+                    item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                     return item;
                 })
@@ -630,7 +636,7 @@ When scraping web pages, you may encounter images, fonts, and other resources th
 
 Here's how to do it:
 
-```js
+```ts
 await page.setRequestInterception(true);
 page.on('request', (request) => {
     request.resourceType() === 'document' ? request.continue() : request.abort();

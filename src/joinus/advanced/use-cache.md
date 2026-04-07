@@ -19,7 +19,7 @@ Here's an example of how you can use the cache to retrieve the data:
                 const { data: response } = await got(item.link);
                 const $ = load(response);
 
-                item.description = $('.comment-body').first().html();
+                item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                 return item;
             })
