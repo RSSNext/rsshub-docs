@@ -103,7 +103,7 @@ for (const selector of randomGuessingSelectors) {
 :::details
 
 ```html
-<ul><!-- 假设我们想要提取 “Three” 元素的文本 -->
+<ul><!-- 假设我们想要提取 "Three" 元素的文本 -->
     <li>One</li>
     <li>Two</li>
     <li class="blue sel">Three</li>

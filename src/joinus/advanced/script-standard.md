@@ -103,7 +103,7 @@ for (const selector of randomGuessingSelectors) {
 :::details
 
 ```html
-<ul><!-- Suppose we want to extract the text of the “Three” element -->
+<ul><!-- Suppose we want to extract the text of the "Three" element -->
     <li>One</li>
     <li>Two</li>
     <li class="blue sel">Three</li>
