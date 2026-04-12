@@ -138,6 +138,12 @@
     "zh": "金融"
   },
   {
+    "id": "sport",
+    "icon": "⚽",
+    "en": "Sport",
+    "zh": "体育"
+  },
+  {
     "id": "other",
     "icon": "🔍",
     "en": "Uncategorized",
