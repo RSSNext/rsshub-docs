@@ -10,6 +10,8 @@
 
 `LISTEN_INADDR_ANY`: 是否允许公网连接，默认 `1`
 
+`DISABLE_IPV6`: 禁用 IPv6 支持，启用后 RSSHub 将监听 `0.0.0.0` 而非 `::`，默认 `false`
+
 `REQUEST_RETRY`: 请求失败重试次数，默认 `2`
 
 `REQUEST_TIMEOUT`: 请求超时毫秒数，默认 `3000`

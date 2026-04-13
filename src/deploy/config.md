@@ -10,6 +10,8 @@ Configure RSSHub by setting environment variables
 
 `LISTEN_INADDR_ANY`: open up for external access, default to `1`
 
+`DISABLE_IPV6`: disable IPv6 support, when enabled, RSSHub will listen on `0.0.0.0` instead of `::`, default to `false`
+
 `REQUEST_RETRY`: retries allowed for failed requests, default to `2`
 
 `REQUEST_TIMEOUT`: milliseconds to wait for the server to end the response before aborting the request with error, default to `3000`
