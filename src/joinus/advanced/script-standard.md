@@ -129,6 +129,23 @@ const element = $('.some-unique-element-that-appears-only-once').last();
 ```
 :::
 
+## Forbidden behavior
+
+### False attribution
+
+Do not list another developer's GitHub ID in the `maintainers` field of a route unless they have explicitly agreed. Only list GitHub IDs that belong to you or to contributors who have given you permission.
+
+```ts
+export const route: Route = {
+    // ...
+    name: 'Some route',
+    maintainers: ['some-other-developer-who-never-agreed'],
+    handler,
+};
+```
+
+Each offense results in a temporary ban (1 month) from submitting pull requests. Bans are enforced via [vouch](https://github.com/mitchellh/vouch). New PRs from a banned author will be closed automatically. A maintainer can lift the ban once the circumstances have been reviewed.
+
 ## v2 Route Standard
 
 :::danger
@@ -136,6 +153,8 @@ const element = $('.some-unique-element-that-appears-only-once').last();
 The v2 Route Standard is deprecated. All new routes should follow the [Create Route](/joinus/new-rss/start-code).
 
 :::
+
+::::details
 
 When creating a new route in RSSHub, you need to organize your files in a specific way. Your namespace folder should be stored in the `lib/routes` directory and should include three mandatory files:
 
@@ -198,6 +217,8 @@ To generate a complete `radar-rules.ts` file, use the following command: `yarn b
 Remember to remove all build artifacts in `assets/build/` before committing.
 
 :::
+
+::::
 
 ## v1 Route Standard
 
