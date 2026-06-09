@@ -15,8 +15,8 @@ importers:
         specifier: 7.0.15
         version: 7.0.15
       hono:
-        specifier: 4.12.23
-        version: 4.12.23
+        specifier: 4.12.25
+        version: 4.12.25
       markdown-it:
         specifier: 14.2.0
         version: 14.2.0
@@ -1208,8 +1208,8 @@ packages:
   hast-util-whitespace@3.0.0:
     resolution: {integrity: sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==}
 
-  hono@4.12.23:
-    resolution: {integrity: sha512-eIaZ9qDgu7XV0pxOCrg7/WhnQ6Ivm22UcxhXx/A3dcbqbbYgBEkc6e/J/s7j2tS96zoB0S9VBdLwQNCWwUo4LA==}
+  hono@4.12.25:
+    resolution: {integrity: sha512-2NFaIyNVgJmBs/ecmtGzlmluTFs5cHEWGTdu0t1HBwYzoGXOL5nUQBRMXsXWla5i4KkG//QMzVP88m1+I3fdAQ==}
     engines: {node: '>=16.9.0'}
 
   hookable@5.5.3:
@@ -2589,7 +2589,7 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
 
-  hono@4.12.23: {}
+  hono@4.12.25: {}
 
   hookable@5.5.3: {}
 
