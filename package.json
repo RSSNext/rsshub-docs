@@ -12,7 +12,7 @@
     "@types/json-schema": "7.0.15",
     "hono": "4.12.23",
     "markdown-it": "14.2.0",
-    "oxfmt": "0.53.0",
+    "oxfmt": "0.54.0",
     "vitepress": "2.0.0-alpha.17",
     "vue": "3.5.35",
     "vue-i18n": "11.4.5"
