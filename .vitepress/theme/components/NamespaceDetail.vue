@@ -120,11 +120,11 @@ const vpRoute = useRoute();
 
 // Get namespace from props or URL path
 const getNamespaceFromPath = () => {
-  const path = vpRoute.path;
-  // Path format: /routes/[namespace] or /zh/routes/[namespace]
+  const path = vpRoute.path.replace(/\.html$/, '');
+  // Path format: /routes/[namespace] or /zh/routes/[namespace], where the namespace may be nested (e.g. ns/sub)
   const segments = path.split('/').filter(Boolean);
-  // Last segment is the namespace
-  return segments[segments.length - 1] || '';
+  const routesIndex = segments.indexOf('routes');
+  return routesIndex === -1 ? segments[segments.length - 1] || '' : segments.slice(routesIndex + 1).join('/');
 };
 
 const currentNamespaceId = computed(() => props.namespaceId || getNamespaceFromPath());

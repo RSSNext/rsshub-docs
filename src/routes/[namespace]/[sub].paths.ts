@@ -14,11 +14,14 @@ export default {
     const routes = JSON.parse(fs.readFileSync(routesPath, 'utf-8'));
     const namespaces = Object.keys(routes);
 
-    // Nested namespaces (e.g. ns/sub) are handled by [namespace]/[sub].paths.ts
+    // Nested namespace keys, e.g. ns/sub -> /routes/ns/sub
     return namespaces
-      .filter((namespace) => !namespace.includes('/'))
-      .map((namespace) => ({
-        params: { namespace },
-      }));
+      .filter((namespace) => namespace.split('/').length === 2)
+      .map((namespace) => {
+        const [ns, sub] = namespace.split('/');
+        return {
+          params: { namespace: ns, sub },
+        };
+      });
   },
 };

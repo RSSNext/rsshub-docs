@@ -1,0 +1,4 @@
+---
+---
+
+<NamespaceDetail />
