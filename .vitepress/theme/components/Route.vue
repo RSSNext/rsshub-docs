@@ -50,6 +50,23 @@
         {{ demoUrl.replace(/^https:\/\//, '') }}
       </a>
       <CopyButton :text="demoUrl" />
+      <button v-if="modified" class="copy reset" :title="t('route.reset')" @click="resetExample">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-rotate-ccw"
+        >
+          <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+          <path d="M3 3v5h5" />
+        </svg>
+      </button>
     </p>
     <div v-if="data.topFeeds?.length" class="top-feeds">
       <span>🔥 {{ t('route.topFeeds') }}</span>
@@ -109,20 +126,22 @@
             <span v-if="item.default" :style="{ fontSize: '13px' }">
               <strong>{{ t('param.default') }}</strong> <code>{{ item.default }}</code>
             </span>
-            <select v-if="item.options?.length" :style="{ fontSize: '13px' }">
-              <option v-for="option in item.options" :key="option.value" :value="option.value">
+            <select
+              v-if="item.options?.length"
+              :style="{ fontSize: '13px' }"
+              @change="updateExample(item.name, ($event.target as HTMLSelectElement).value)"
+            >
+              <option
+                v-for="option in item.options"
+                :key="option.value"
+                :value="option.value"
+                :selected="option.value === paramValues[item.name]"
+              >
                 {{ option.value }}: {{ option.label }}
               </option>
             </select>
           </span>
-          <span
-            :style="{ display: 'block', fontSize: '13px', lineHeight: 1.5 }"
-            v-html="
-              item.description?.includes('|')
-                ? renderMarkdown(item.description, false)
-                : renderMarkdown(item.description || 'N/A')
-            "
-          />
+          <span :style="{ display: 'block', fontSize: '13px', lineHeight: 1.5 }" v-html="item.descriptionHtml" />
         </li>
       </ul>
     </div>
@@ -154,6 +173,7 @@
 
 <script setup lang="ts">
 import MarkdownIt from 'markdown-it';
+import { ref } from 'vue';
 
 import { useLocale } from '../composables/useLocale';
 import type { Route } from '../types';
@@ -184,9 +204,49 @@ const props = defineProps<{
   };
 }>();
 
-const demoUrl = props.data.example ? 'https://rsshub.app' + props.data.example : null;
 const path = typeof props.data.path === 'string' ? props.data.path : props.data.path[0];
 const param = parseJsonSchema(props.data.param);
+const md = new MarkdownIt({ html: true });
+
+const example = props.data.example ?? '';
+const initialSegments = example.split('/');
+const exampleSegments = [...initialSegments];
+
+// Map each path parameter to its segment index in the example URL
+const paramIndex: Record<string, number> = {};
+`/${props.namespace}${path}`.split('/').forEach((segment, i) => {
+  const name = segment.match(/^:(\w+)/)?.[1];
+  if (name) {
+    paramIndex[name] = i;
+  }
+});
+
+// Pre-select each dropdown to the value already used in the example
+const initialParamValues = () =>
+  Object.fromEntries(Object.entries(paramIndex).map(([name, i]) => [name, initialSegments[i]]));
+const paramValues = ref<Record<string, string>>(initialParamValues());
+
+const initialDemoUrl = example ? 'https://rsshub.app' + example : null;
+const demoUrl = ref(initialDemoUrl);
+const modified = ref(false);
+
+const updateExample = (name: string, value: string) => {
+  const i = paramIndex[name];
+  if (i === undefined || i > exampleSegments.length) {
+    return;
+  }
+  exampleSegments[i] = value;
+  paramValues.value[name] = value;
+  demoUrl.value = 'https://rsshub.app' + exampleSegments.join('/');
+  modified.value = true;
+};
+
+const resetExample = () => {
+  exampleSegments.splice(0, exampleSegments.length, ...initialSegments);
+  paramValues.value = initialParamValues();
+  demoUrl.value = initialDemoUrl;
+  modified.value = false;
+};
 //   `:name`        -> required
 //   `:name?`       -> optional     (zero or one)
 //   `:name{.+}`    -> one or more  (the `.+` regex matches across `/`, i.e. multiple segments)
@@ -202,10 +262,13 @@ const paramMatch = [...path.matchAll(/:(?<name>\w+)(?:\{(?<regex>.+?)\})?(?<opti
   const optional = groups!.optional === '?';
   const multiSegment = groups!.regex === '.+';
   const necessity = multiSegment ? (optional ? 'zeroOrMore' : 'oneOrMore') : optional ? 'optional' : 'required';
+  const description = parameter?.description;
   return {
     name,
     necessity,
     ...parameter,
+    // Pre-render once so re-renders (i.e., on dropdown change) don't re-parse the markdown
+    descriptionHtml: description?.includes('|') ? md.render(description) : md.renderInline(description || 'N/A'),
   };
 });
 
@@ -216,10 +279,5 @@ const necessityBadge: Record<string, 'info' | 'tip' | 'warning' | 'danger'> = {
   zeroOrMore: 'info',
 };
 
-const renderMarkdown = (item, inline = true) => {
-  const md = new MarkdownIt({
-    html: true,
-  });
-  return inline ? md.renderInline(item) : md.render(item);
-};
+const renderMarkdown = (item, inline = true) => (inline ? md.renderInline(item) : md.render(item));
 </script>

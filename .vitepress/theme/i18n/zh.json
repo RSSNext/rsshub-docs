@@ -40,6 +40,7 @@
   "route.deploymentConfigs": "部署配置: ",
   "route.example": "示例: ",
   "route.parameters": "参数: ",
+  "route.reset": "重置示例",
   "route.route": "路由: ",
   "route.sourceCode": "源码:",
   "route.topFeeds": "Folo 热门订阅: ",

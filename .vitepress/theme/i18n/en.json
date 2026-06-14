@@ -40,6 +40,7 @@
   "route.deploymentConfigs": "Deployment Configs: ",
   "route.example": "Example: ",
   "route.parameters": "Parameters: ",
+  "route.reset": "Reset example",
   "route.route": "Route: ",
   "route.sourceCode": "Source Code:",
   "route.topFeeds": "Top Feeds on Folo: ",
