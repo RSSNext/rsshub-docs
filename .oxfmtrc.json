@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["src/**/*.md"],
+  "ignorePatterns": [".vitepress/theme/types.ts", "rsshub-analytics.json", "src/**/*.md", "src/public/routes.json"],
   "printWidth": 120,
   "singleQuote": true,
   "sortImports": {}

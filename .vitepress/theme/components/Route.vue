@@ -47,7 +47,7 @@
     <p v-if="demoUrl" class="example">
       <span>💡 {{ t('route.example') }}</span>
       <a :href="demoUrl" target="_blank">
-        {{ demoUrl }}
+        {{ demoUrl.replace(/^https:\/\//, '') }}
       </a>
       <CopyButton :text="demoUrl" />
     </p>
@@ -99,37 +99,30 @@
       </a>
     </p>
 
-    <div v-if="paramMatch">
+    <div v-if="paramMatch.length">
       <p>🔗 {{ t('route.parameters') }}</p>
       <ul>
         <li v-for="(item, index) in paramMatch" :key="index" class="params">
-          <code>{{ item.name.replace(/:|\?|\+|\*/g, '') }}</code>
-          <ul :style="{ fontSize: '13px', lineHeight: 1.5 }">
-            <li>
-              <strong>{{ item.optional ? t('param.optional') : t('param.required') }}</strong>
-            </li>
-            <li v-if="item.default">
-              <strong>{{ t('param.default') }}</strong> {{ item.default }}
-            </li>
-            <li v-if="item.options?.length">
-              <strong>{{ t('param.options') }}</strong>
-              <select v-if="item.options?.length" :style="{ marginRight: '8px' }">
-                <option v-for="(option, index) in item.options" :key="option.value" :value="option.value">
-                  {{ option.value }}: {{ option.label }}
-                </option>
-              </select>
-            </li>
-            <li>
-              <strong>{{ t('param.description') }}</strong>
-              <span
-                v-html="
-                  item.description?.includes('|')
-                    ? renderMarkdown(item.description, false)
-                    : renderMarkdown(item.description || 'N/A')
-                "
-              />
-            </li>
-          </ul>
+          <span style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap">
+            <code>{{ item.name }}</code>
+            <Badge :type="necessityBadge[item.necessity]">{{ t(`param.${item.necessity}`) }}</Badge>
+            <span v-if="item.default" :style="{ fontSize: '13px' }">
+              <strong>{{ t('param.default') }}</strong> <code>{{ item.default }}</code>
+            </span>
+            <select v-if="item.options?.length" :style="{ fontSize: '13px' }">
+              <option v-for="option in item.options" :key="option.value" :value="option.value">
+                {{ option.value }}: {{ option.label }}
+              </option>
+            </select>
+          </span>
+          <span
+            :style="{ display: 'block', fontSize: '13px', lineHeight: 1.5 }"
+            v-html="
+              item.description?.includes('|')
+                ? renderMarkdown(item.description, false)
+                : renderMarkdown(item.description || 'N/A')
+            "
+          />
         </li>
       </ul>
     </div>
@@ -194,20 +187,34 @@ const props = defineProps<{
 const demoUrl = props.data.example ? 'https://rsshub.app' + props.data.example : null;
 const path = typeof props.data.path === 'string' ? props.data.path : props.data.path[0];
 const param = parseJsonSchema(props.data.param);
-const paramMatch = path.match?.(/(?<=:).*?(?=\/|$)/g)?.map((item) => {
-  const name = item.replace(/:|\?|\+|\*/g, '');
+//   `:name`        -> required
+//   `:name?`       -> optional     (zero or one)
+//   `:name{.+}`    -> one or more  (the `.+` regex matches across `/`, i.e. multiple segments)
+//   `:name{.+}?`   -> zero or more
+const paramMatch = [...path.matchAll(/:(?<name>\w+)(?:\{(?<regex>.+?)\})?(?<optional>\?)?/g)].map(({ groups }) => {
+  const name = groups!.name;
   let parameter = param?.[name] || props.data.parameters?.[name];
   if (typeof parameter === 'string') {
     parameter = {
       description: parameter,
     };
   }
+  const optional = groups!.optional === '?';
+  const multiSegment = groups!.regex === '.+';
+  const necessity = multiSegment ? (optional ? 'zeroOrMore' : 'oneOrMore') : optional ? 'optional' : 'required';
   return {
     name,
-    optional: item.endsWith('?'),
+    necessity,
     ...parameter,
   };
 });
+
+const necessityBadge: Record<string, 'info' | 'tip' | 'warning' | 'danger'> = {
+  required: 'warning',
+  optional: 'tip',
+  oneOrMore: 'info',
+  zeroOrMore: 'info',
+};
 
 const renderMarkdown = (item, inline = true) => {
   const md = new MarkdownIt({

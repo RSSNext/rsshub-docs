@@ -31,7 +31,12 @@
         <a class="folo-button folo-button--primary" href="https://folo.is/" target="_blank" rel="noopener noreferrer">
           {{ copy.primaryAction }}
         </a>
-        <a class="folo-button folo-button--secondary" href="https://github.com/RSSNext/Folo" target="_blank" rel="noopener noreferrer">
+        <a
+          class="folo-button folo-button--secondary"
+          href="https://github.com/RSSNext/Folo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub
         </a>
       </div>

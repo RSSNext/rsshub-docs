@@ -350,6 +350,12 @@ function prepareRouteData(route: RouteData) {
   color: var(--vp-c-text-2);
 }
 
+.namespace-description :deep(pre) {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 .routes-list {
   display: flex;
   flex-direction: column;
