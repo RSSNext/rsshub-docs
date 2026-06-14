@@ -172,9 +172,9 @@
 </template>
 
 <script setup lang="ts">
-import MarkdownIt from 'markdown-it';
 import { ref } from 'vue';
 
+import { renderMarkdown } from '../composables/markdown';
 import { useLocale } from '../composables/useLocale';
 import type { Route } from '../types';
 import CopyButton from './CopyButton.vue';
@@ -206,7 +206,6 @@ const props = defineProps<{
 
 const path = typeof props.data.path === 'string' ? props.data.path : props.data.path[0];
 const param = parseJsonSchema(props.data.param);
-const md = new MarkdownIt({ html: true });
 
 const example = props.data.example ?? '';
 const initialSegments = example.split('/');
@@ -263,12 +262,13 @@ const paramMatch = [...path.matchAll(/:(?<name>\w+)(?:\{(?<regex>.+?)\})?(?<opti
   const multiSegment = groups!.regex === '.+';
   const necessity = multiSegment ? (optional ? 'zeroOrMore' : 'oneOrMore') : optional ? 'optional' : 'required';
   const description = parameter?.description;
+  const block = !!description && (description.includes('|') || description.includes(':::'));
   return {
     name,
     necessity,
     ...parameter,
     // Pre-render once so re-renders (i.e., on dropdown change) don't re-parse the markdown
-    descriptionHtml: description?.includes('|') ? md.render(description) : md.renderInline(description || 'N/A'),
+    descriptionHtml: renderMarkdown(description || 'N/A', !block),
   };
 });
 
@@ -278,6 +278,4 @@ const necessityBadge: Record<string, 'info' | 'tip' | 'warning' | 'danger'> = {
   oneOrMore: 'info',
   zeroOrMore: 'info',
 };
-
-const renderMarkdown = (item, inline = true) => (inline ? md.renderInline(item) : md.render(item));
 </script>

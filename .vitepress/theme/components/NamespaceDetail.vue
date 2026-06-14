@@ -28,7 +28,7 @@
     <div
       v-if="getLocalizedDescription(namespace)"
       class="namespace-description"
-      v-html="renderMarkdown(getLocalizedDescription(namespace))"
+      v-html="renderMarkdown(getLocalizedDescription(namespace), false)"
     ></div>
 
     <h2>{{ t('namespace.routes') }}</h2>
@@ -41,7 +41,7 @@
           <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
         </h3>
         <Route :namespace="currentNamespaceId" :data="prepareRouteData(route)" :test="route.test" />
-        <div v-if="getLocalizedDescription(route)" v-html="renderMarkdown(getLocalizedDescription(route))"></div>
+        <div v-if="getLocalizedDescription(route)" v-html="renderMarkdown(getLocalizedDescription(route), false)"></div>
       </div>
     </div>
 
@@ -56,10 +56,10 @@
 </template>
 
 <script setup lang="ts">
-import MarkdownIt from 'markdown-it';
 import { useRoute } from 'vitepress';
 import { ref, computed, onMounted, watch } from 'vue';
 
+import { renderMarkdown } from '../composables/markdown';
 import { useLocale } from '../composables/useLocale';
 import Route from './Route.vue';
 import RouteOutline from './RouteOutline.vue';
@@ -133,10 +133,6 @@ const namespace = ref<NamespaceData | null>(null);
 const categories = ref<Category[]>([]);
 const loading = ref(true);
 const routesData = ref<Record<string, NamespaceData>>({});
-
-const md = new MarkdownIt({
-  html: true,
-});
 
 onMounted(async () => {
   await loadData();
@@ -218,10 +214,6 @@ function formatHeat(heat: number) {
 function handleImageError(e: Event) {
   const img = e.target as HTMLImageElement;
   img.src = '/logo.png';
-}
-
-function renderMarkdown(content: string) {
-  return md.render(content);
 }
 
 function prepareRouteData(route: RouteData) {
