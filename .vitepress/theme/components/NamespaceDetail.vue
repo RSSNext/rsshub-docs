@@ -28,7 +28,7 @@
     <div
       v-if="getLocalizedDescription(namespace)"
       class="namespace-description"
-      v-html="renderMarkdown(getLocalizedDescription(namespace), false)"
+      v-html="renderMarkdown(getLocalizedDescription(namespace), false, t)"
     ></div>
 
     <h2>{{ t('namespace.routes') }}</h2>
@@ -41,7 +41,7 @@
           <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
         </h3>
         <Route :namespace="currentNamespaceId" :data="prepareRouteData(route)" :test="route.test" />
-        <div v-if="getLocalizedDescription(route)" v-html="renderMarkdown(getLocalizedDescription(route), false)"></div>
+        <div v-if="getLocalizedDescription(route)" v-html="renderMarkdown(getLocalizedDescription(route), false, t)"></div>
       </div>
     </div>
 

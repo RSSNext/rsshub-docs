@@ -153,7 +153,7 @@
           >,{{ ' ' }}
           {{ item.optional ? t('config.optional') : t('config.required') }}
           {{ ' - ' }}
-          <span v-html="renderMarkdown(item.description)" />
+          <span v-html="renderMarkdown(item.description, true, t)" />
         </li>
       </ul>
     </div>
@@ -268,7 +268,7 @@ const paramMatch = [...path.matchAll(/:(?<name>\w+)(?:\{(?<regex>.+?)\})?(?<opti
     necessity,
     ...parameter,
     // Pre-render once so re-renders (i.e., on dropdown change) don't re-parse the markdown
-    descriptionHtml: renderMarkdown(description || 'N/A', !block),
+    descriptionHtml: renderMarkdown(description || 'N/A', !block, t),
   };
 });
 
