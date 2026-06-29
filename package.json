@@ -10,7 +10,7 @@
   "devDependencies": {
     "@intlify/unplugin-vue-i18n": "11.2.4",
     "@types/json-schema": "7.0.15",
-    "hono": "4.12.26",
+    "hono": "4.12.27",
     "markdown-it": "14.2.0",
     "markdown-it-container": "4.0.0",
     "oxfmt": "0.55.0",
