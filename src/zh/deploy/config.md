@@ -42,6 +42,12 @@ RSSHub 支持 `memory` 和 `redis` 两种缓存方式，建议使用 `redis` 以
 
 部分路由反爬严格，可以配置使用代理抓取。
 
+::: tip 代理服务
+[SX.org](https://sx.org/?c=p9gKCb) 可作为需要代理访问的 RSSHub 路由所使用的 HTTP/HTTPS 代理服务提供商。RSSHub 用户可使用优惠码 `RSShub3gb` 获取免费试用期。
+
+将 SX.org HTTP/HTTPS 代理端点按 `{protocol}://{host}:{port}` 格式配置到 `PROXY_URI`。如果需要身份验证，请将 Base64 编码后的凭证添加到 `PROXY_AUTH`。使用 `PROXY_URL_REGEX` 定义哪些目标 URL 需要通过代理访问。
+:::
+
 `PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 只支持 http, https。socks5 支持讨论见 [nodejs/undici#2224](https://github.com/nodejs/undici/issues/2224)
 
 `PROXY_AUTH`: 给代理服务器的身份验证凭证，会添加 header `Proxy-Authorization: Basic ${PROXY_AUTH}`

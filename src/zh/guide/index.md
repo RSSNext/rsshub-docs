@@ -2,6 +2,14 @@
 
 如果你想直接开始使用，可以试试 [Folo](https://folo.is/)，一个面向现代订阅工作流的 AI RSS 阅读器。项目同时在 [GitHub](https://github.com/RSSNext/Folo) 开源。
 
+<a href="https://sx.org/?c=p9gKCb" target="_blank" rel="noopener noreferrer">
+  <img src="https://i.imgur.com/SpNJJZQ.png" alt="SX.org RSSHub 代理服务" width="419" height="166" />
+</a>
+
+对于自部署 RSSHub 实例，稳定的代理连接可以在访问存在地域限制、严格网络规则或可用性不稳定的外部来源时，帮助路由更可靠地工作。
+
+[SX.org](https://sx.org/?c=p9gKCb) 提供可与 RSSHub 代理设置配合使用的 HTTP/HTTPS 代理。RSSHub 用户可使用优惠码 `RSShub3gb` 获取免费试用期。
+
 ## 生成订阅源
 
 比如你希望订阅 Telegram 上 [@awesomeRSSHub](https://t.me/awesomeRSSHub) 频道的内容

@@ -2,6 +2,14 @@
 
 If you want a ready-to-use option, try [Folo](https://folo.is/), an AI RSS reader built for modern feed workflows. The project is also open source on [GitHub](https://github.com/RSSNext/Folo).
 
+<a href="https://sx.org/?c=p9gKCb" target="_blank" rel="noopener noreferrer">
+  <img src="https://i.imgur.com/SpNJJZQ.png" alt="SX.org proxy provider for RSSHub" width="419" height="166" />
+</a>
+
+For self-hosted RSSHub instances, a stable proxy connection can help routes work more reliably when accessing external sources with regional limits, strict network rules, or unstable availability.
+
+[SX.org](https://sx.org/?c=p9gKCb) provides HTTP/HTTPS proxies that can be used with RSSHub proxy settings. RSSHub users can use promo code `RSShub3gb` to get a free trial period.
+
 ## Generate a Feed
 
 For example, if you want to subscribe to the content of the channel [@awesomeRSSHub](https://t.me/awesomeRSSHub) on Telegram.
