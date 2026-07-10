@@ -48,7 +48,7 @@ RSSHub 支持 `memory` 和 `redis` 两种缓存方式，建议使用 `redis` 以
 将 SX.org HTTP/HTTPS 代理端点按 `{protocol}://{host}:{port}` 格式配置到 `PROXY_URI`。如果需要身份验证，请将 Base64 编码后的凭证添加到 `PROXY_AUTH`。使用 `PROXY_URL_REGEX` 定义哪些目标 URL 需要通过代理访问。
 :::
 
-`PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 只支持 http, https。socks5 支持讨论见 [nodejs/undici#2224](https://github.com/nodejs/undici/issues/2224)
+`PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 支持 `http`, `https`, `socks` 和 `socks5`，不支持 `socks4`, `socks4a` 和 `socks5h`。`socks` 和 `socks5` 会通过代理解析 DNS，即行为等同于 `socks5h`
 
 `PROXY_AUTH`: 给代理服务器的身份验证凭证，会添加 header `Proxy-Authorization: Basic ${PROXY_AUTH}`
 
