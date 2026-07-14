@@ -82,6 +82,23 @@ $('a[href="some/url"]').each((_, a) => {
 ```
 :::
 
+-   不必要的去重。
+
+:::details
+
+```javascript
+const seen = new Set();
+$('li a.all-of-the-matched-elements-are-unique').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
+```
+:::
+
 -   暴力尝试匹配选择器。
 
 :::details
@@ -126,6 +143,45 @@ const text = $('ul li.blue.sel').text() || $('li.blue.sel').text() || $('.blue.s
 const element = $('.some-unique-element-that-appears-only-once').first();
 // 或
 const element = $('.some-unique-element-that-appears-only-once').last();
+```
+:::
+
+-   对嵌套的同一内容容器逐层回退取值。
+
+:::details
+
+```html
+<div class="root">
+    <div class="content-container">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+    </div>
+</div>
+```
+
+```javascript
+const description = $('.content').html() || $('.content-container').html() || $('.root').html();
+```
+:::
+
+-   通过向数组 `push` 再 `join` 的方式拼接字符串。
+
+:::details
+
+```javascript
+const strArr = ['foo'];
+strArr.push('bar');
+const str = strArr.join('');
+```
+:::
+
+-   不必要的 `flatMap()`。
+
+:::details
+
+```javascript
+const ids = array.flatMap((value) => (value.active ? [value.id] : []));
 ```
 :::
 
