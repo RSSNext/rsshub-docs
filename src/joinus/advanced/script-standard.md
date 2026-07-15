@@ -185,6 +185,20 @@ const ids = array.flatMap((value) => (value.active ? [value.id] : []));
 ```
 :::
 
+-   Silently return an empty `Data` object instead of throwing an error.
+
+:::details
+
+```javascript
+if (something) {
+    return {
+        title: 'RSS Feed',
+        item: [],
+    };
+}
+```
+:::
+
 ## Forbidden behavior
 
 ### False attribution

@@ -185,6 +185,20 @@ const ids = array.flatMap((value) => (value.active ? [value.id] : []));
 ```
 :::
 
+-   静默返回空的 `Data` 对象而不是抛出错误。
+
+:::details
+
+```javascript
+if (something) {
+    return {
+        title: 'RSS Feed',
+        item: [],
+    };
+}
+```
+:::
+
 ## 禁止行为
 
 ### 虚假署名
