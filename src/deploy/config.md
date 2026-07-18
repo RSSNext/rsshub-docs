@@ -162,6 +162,8 @@ Configs in this sections are in beta stage, and **are turn off by default**. Ple
 
 `TITLE_LENGTH_LIMIT`: limit the length of feed title generated in bytes, an English alphabet counts as 1 byte, the rest such as Chinese, Japanese, Korean or Arabic counts as 2 bytes by design, default to `150`
 
+`FORMAT`: [output format](/guide/parameters#output-formats), default to `rss`; the `format` parameter, if specified in the feed address, will override this setting
+
 `OPENAI_API_KEY`: OpenAI API Key, used for using ChatGPT to summarize articles
 
 `OPENAI_MODEL`: OpenAI model name, used for using ChatGPT to summarize articles, default to `gpt-3.5-turbo-16k`, see [OpenAI API reference](https://platform.openai.com/docs/models/overview) for details
