@@ -162,6 +162,8 @@ healthcheck:
 
 `TITLE_LENGTH_LIMIT`: 限制输出标题的字节长度，一个英文字符的长度为 1 字节，部分语言如中文，日文，韩文或阿拉伯文等，统一算作 2 字节，默认 `150`
 
+`FORMAT`: [输出格式](/zh/guide/parameters#输出格式)，默认 `rss`；如果订阅地址中指定了 `format` 参数，将覆盖此设置
+
 `OPENAI_API_KEY`: OpenAI API Key，用于使用 ChatGPT 总结文章
 
 `OPENAI_MODEL`: OpenAI 模型名称，用于使用 ChatGPT 总结文章，默认`gpt-3.5-turbo-16k`，详见 [OpenAI API 文档](https://platform.openai.com/docs/models/overview)
