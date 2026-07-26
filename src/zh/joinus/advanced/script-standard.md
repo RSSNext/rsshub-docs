@@ -12,10 +12,11 @@ sidebar_position: 2
 -   避免使用已经被废弃的特性。
 -   避免修改 `yarn.lock` 和 `package.json`，除非您添加了新的依赖。
 -   将重复的代码合并为函数。
+-   保持中间值不可变，构造新对象而不是修改已有对象。
 -   优先使用更高版本的 ECMAScript 标准特性，而不是使用低版本特性。
 -   按字母顺序排序（大写字母优先），以便更容易找到条目。
 -   尽量使用 HTTPS 而非 HTTP 传输数据。
--   尽量使用 WebP 格式而非 JPG 格式，因为前者支持更好的压缩。
+-   尽量使用 AVIF/HEIF/WebP 格式而非 JPG 格式，因为前者支持更好的压缩。
 
 ### 代码格式
 
@@ -65,40 +66,6 @@ sidebar_position: 2
 
 ### 反面模式
 
--   在没有任何父元素或类名限定的情况下选择所有带 `href` 属性的 `a` 元素。
-
-:::details
-
-```javascript
-const seen = new Set();
-$('a[href="some/url"]').each((_, a) => {
-    // ...
-    if (seen.has(a.href)) {
-        return;
-    }
-    seen.add(a.href);
-    // ...
-});
-```
-:::
-
--   不必要的去重。
-
-:::details
-
-```javascript
-const seen = new Set();
-$('li a.all-of-the-matched-elements-are-unique').each((_, a) => {
-    // ...
-    if (seen.has(a.href)) {
-        return;
-    }
-    seen.add(a.href);
-    // ...
-});
-```
-:::
-
 -   暴力尝试匹配选择器。
 
 :::details
@@ -112,6 +79,17 @@ for (const selector of randomGuessingSelectors) {
         break;
     }
 }
+```
+:::
+
+-   通过向数组 `push` 再 `join` 的方式拼接字符串。
+
+:::details
+
+```javascript
+const strArr = ['foo'];
+strArr.push('bar');
+const str = strArr.join('');
 ```
 :::
 
@@ -135,17 +113,6 @@ const text = $('ul li.blue.sel').text() || $('li.blue.sel').text() || $('.blue.s
 ```
 :::
 
--   对页面中仅出现一次的元素使用 `.first()` 或 `.last()` 进行选取。
-
-:::details
-
-```javascript
-const element = $('.some-unique-element-that-appears-only-once').first();
-// 或
-const element = $('.some-unique-element-that-appears-only-once').last();
-```
-:::
-
 -   对嵌套的同一内容容器逐层回退取值。
 
 :::details
@@ -165,23 +132,20 @@ const description = $('.content').html() || $('.content-container').html() || $(
 ```
 :::
 
--   通过向数组 `push` 再 `join` 的方式拼接字符串。
+-   在没有任何父元素或类名限定的情况下选择所有带 `href` 属性的 `a` 元素。
 
 :::details
 
 ```javascript
-const strArr = ['foo'];
-strArr.push('bar');
-const str = strArr.join('');
-```
-:::
-
--   不必要的 `flatMap()`。
-
-:::details
-
-```javascript
-const ids = array.flatMap((value) => (value.active ? [value.id] : []));
+const seen = new Set();
+$('a[href="some/url"]').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
 ```
 :::
 
@@ -196,6 +160,58 @@ if (something) {
         item: [],
     };
 }
+```
+:::
+
+-   不必要的 `flatMap()`。
+
+:::details
+
+```javascript
+const ids = array.flatMap((value) => (value.active ? [value.id] : []));
+```
+:::
+
+-   为可选属性赋值时使用不必要的 `if` 判断。
+
+:::details
+
+```javascript
+const item = {};
+if (author) {
+    item.author = author;
+}
+if (description) {
+    item.description = description;
+}
+```
+:::
+
+-   不必要的去重。
+
+:::details
+
+```javascript
+const seen = new Set();
+$('li a.all-of-the-matched-elements-are-unique').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
+```
+:::
+
+-   对页面中仅出现一次的元素使用 `.first()` 或 `.last()` 进行选取。
+
+:::details
+
+```javascript
+const element = $('.some-unique-element-that-appears-only-once').first();
+// 或
+const element = $('.some-unique-element-that-appears-only-once').last();
 ```
 :::
 

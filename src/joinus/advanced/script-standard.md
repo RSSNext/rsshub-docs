@@ -12,10 +12,11 @@ sidebar_position: 2
 -   Avoid using deprecated features.
 -   Avoid modifying `yarn.lock` and `package.json`, unless you add a new dependency.
 -   Combine repetitive code into functions.
+-   Keep intermediate values immutable; construct a new object instead of mutating an existing one.
 -   Prefer higher ECMAScript Standard features over lower ones.
 -   Sort the entries alphabetically (uppercase first) to make it easier to find an entry.
 -   Use HTTPS instead of HTTP whenever possible.
--   Use WebP format instead of JPG whenever possible since it offers better compression.
+-   Use AVIF/HEIF/WebP format instead of JPG whenever possible since it offers better compression.
 
 ### Formatting
 
@@ -65,40 +66,6 @@ sidebar_position: 2
 
 ### Anti-Patterns
 
--   Select every `a` element with `href` attribute without any parent element or class name.
-
-:::details
-
-```javascript
-const seen = new Set();
-$('a[href="some/url"]').each((_, a) => {
-    // ...
-    if (seen.has(a.href)) {
-        return;
-    }
-    seen.add(a.href);
-    // ...
-});
-```
-:::
-
--   Unnecessary deduplication.
-
-:::details
-
-```javascript
-const seen = new Set();
-$('li a.all-of-the-matched-elements-are-unique').each((_, a) => {
-    // ...
-    if (seen.has(a.href)) {
-        return;
-    }
-    seen.add(a.href);
-    // ...
-});
-```
-:::
-
 -   Brute-force matching of selectors.
 
 :::details
@@ -112,6 +79,17 @@ for (const selector of randomGuessingSelectors) {
         break;
     }
 }
+```
+:::
+
+-   Create strings by pushing to an array and joining it.
+
+:::details
+
+```javascript
+const strArr = ['foo'];
+strArr.push('bar');
+const str = strArr.join('');
 ```
 :::
 
@@ -135,17 +113,6 @@ const text = $('ul li.blue.sel').text() || $('li.blue.sel').text() || $('.blue.s
 ```
 :::
 
--   Use `.first()` or `.last()` to select an element which appears only once in the page.
-
-:::details
-
-```javascript
-const element = $('.some-unique-element-that-appears-only-once').first();
-// or
-const element = $('.some-unique-element-that-appears-only-once').last();
-```
-:::
-
 -   Fall back through nested containers of the same content.
 
 :::details
@@ -165,23 +132,20 @@ const description = $('.content').html() || $('.content-container').html() || $(
 ```
 :::
 
--   Create strings by pushing to an array and joining it.
+-   Select every `a` element with `href` attribute without any parent element or class name.
 
 :::details
 
 ```javascript
-const strArr = ['foo'];
-strArr.push('bar');
-const str = strArr.join('');
-```
-:::
-
--   Unnecessary `flatMap()`.
-
-:::details
-
-```javascript
-const ids = array.flatMap((value) => (value.active ? [value.id] : []));
+const seen = new Set();
+$('a[href="some/url"]').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
 ```
 :::
 
@@ -196,6 +160,58 @@ if (something) {
         item: [],
     };
 }
+```
+:::
+
+-   Unnecessary `flatMap()`.
+
+:::details
+
+```javascript
+const ids = array.flatMap((value) => (value.active ? [value.id] : []));
+```
+:::
+
+-   Unnecessary `if` guards when assigning optional properties.
+
+:::details
+
+```javascript
+const item = {};
+if (author) {
+    item.author = author;
+}
+if (description) {
+    item.description = description;
+}
+```
+:::
+
+-   Unnecessary deduplication.
+
+:::details
+
+```javascript
+const seen = new Set();
+$('li a.all-of-the-matched-elements-are-unique').each((_, a) => {
+    // ...
+    if (seen.has(a.href)) {
+        return;
+    }
+    seen.add(a.href);
+    // ...
+});
+```
+:::
+
+-   Use `.first()` or `.last()` to select an element which appears only once in the page.
+
+:::details
+
+```javascript
+const element = $('.some-unique-element-that-appears-only-once').first();
+// or
+const element = $('.some-unique-element-that-appears-only-once').last();
 ```
 :::
 
