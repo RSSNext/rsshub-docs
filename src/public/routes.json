@@ -4711,6 +4711,56 @@
       }
     }
   },
+  "immich": {
+    "name": "Immich",
+    "url": "immich.app",
+    "categories": [
+      "blog"
+    ],
+    "heat": 2,
+    "routes": {
+      "/immich/cursed-knowledge": {
+        "path": "/cursed-knowledge",
+        "name": "Cursed Knowledge",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/immich/cursed-knowledge",
+        "categories": [
+          "blog"
+        ],
+        "radar": [
+          {
+            "source": [
+              "immich.app/cursed-knowledge",
+              "immich.app"
+            ],
+            "target": "/cursed-knowledge"
+          }
+        ],
+        "location": "cursed-knowledge.ts",
+        "heat": 2,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "181238816402329600",
+            "url": "rsshub://immich/cursed-knowledge",
+            "title": "Cursed Knowledge | Immich",
+            "description": "Cursed Knowledge | Immich - Powered by RSSHub",
+            "siteUrl": "https://immich.app/cursed-knowledge/",
+            "image": "https://immich.app./favicon.ico",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected [ Array(1) ] to not include 'https://immich.app/cursed-knowledge/#'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.10/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.10/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:91:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:106:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "isct": {
     "name": "Institute of Science Tokyo",
     "url": "isct.ac.jp",
@@ -10498,88 +10548,6 @@
       }
     }
   },
-  "byteclicks": {
-    "name": "字节点击",
-    "url": "byteclicks.com",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 5,
-    "routes": {
-      "/byteclicks/": {
-        "path": "/",
-        "name": "Unknown",
-        "url": "byteclicks.com/",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "byteclicks.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "location": "index.ts",
-        "heat": 0,
-        "topFeeds": []
-      },
-      "/byteclicks/tag/:tag": {
-        "path": "/tag/:tag",
-        "name": "标签",
-        "url": "byteclicks.com/",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/byteclicks/tag/人工智能",
-        "parameters": {
-          "tag": "标签，可在URL中找到"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "byteclicks.com/tag/:tag"
-            ]
-          }
-        ],
-        "location": "tag.ts",
-        "heat": 5,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "63118600077338624",
-            "url": "rsshub://byteclicks/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD",
-            "title": "人工智能 - 字节点击",
-            "description": "人工智能 - 字节点击 - Powered by RSSHub",
-            "siteUrl": "https://byteclicks.com/tag/%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd",
-            "image": "https://byteclicks.com/wp-content/themes/RK-Blogger/images/wbolt.ico",
-            "errorMessage": "[GET] \"https://byteclicks.com/wp-json/wp/v2/tags?search=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&per_page=100\": 403 Forbidden\n[GET] \"https://byteclicks.com/wp-json/wp/v2/tags?search=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&per_page=100\": 403 Forbidden\n",
-            "errorAt": "2025-08-10T14:10:25.018Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "cbnweek": {
     "name": "第一财经杂志",
     "url": "cbnweek.com",
@@ -13607,7 +13575,7 @@
             "target": "/news"
           }
         ],
-        "location": "type.ts",
+        "location": "news.ts",
         "heat": 1,
         "topFeeds": [
           {
@@ -53559,6 +53527,80 @@
       }
     }
   },
+  "byteclicks": {
+    "name": "字节点击",
+    "url": "byteclicks.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 5,
+    "routes": {
+      "/byteclicks/": {
+        "path": "/",
+        "name": "首页",
+        "url": "byteclicks.com/",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/byteclicks",
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "byteclicks.com/"
+            ]
+          }
+        ],
+        "location": "index.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/byteclicks/tag/:tag": {
+        "path": "/tag/:tag",
+        "name": "标签",
+        "url": "byteclicks.com/",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/byteclicks/tag/人工智能",
+        "parameters": {
+          "tag": "标签，可在URL中找到"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "byteclicks.com/tag/:tag"
+            ]
+          }
+        ],
+        "location": "tag.ts",
+        "heat": 5,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "63118600077338624",
+            "url": "rsshub://byteclicks/tag/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD",
+            "title": "人工智能 - 字节点击",
+            "description": "人工智能 - 字节点击 - Powered by RSSHub",
+            "siteUrl": "https://byteclicks.com/tag/%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd",
+            "image": "https://byteclicks.com/wp-content/themes/RK-Blogger/images/wbolt.ico",
+            "errorMessage": "[GET] \"https://byteclicks.com/wp-json/wp/v2/tags?search=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&per_page=100\": 403 Forbidden\n[GET] \"https://byteclicks.com/wp-json/wp/v2/tags?search=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&per_page=100\": 403 Forbidden\n",
+            "errorAt": "2025-08-10T14:10:25.018Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "bytes": {
     "name": "ui.dev",
     "url": "bytes.dev",
@@ -91217,56 +91259,6 @@
       }
     }
   },
-  "immich": {
-    "name": "Immich",
-    "url": "immich.app",
-    "categories": [
-      "blog"
-    ],
-    "heat": 2,
-    "routes": {
-      "/immich/cursed-knowledge": {
-        "path": "/cursed-knowledge",
-        "name": "Cursed Knowledge",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/immich/cursed-knowledge",
-        "categories": [
-          "blog"
-        ],
-        "radar": [
-          {
-            "source": [
-              "immich.app/cursed-knowledge",
-              "immich.app"
-            ],
-            "target": "/cursed-knowledge"
-          }
-        ],
-        "location": "cursed-knowledge.ts",
-        "heat": 2,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "181238816402329600",
-            "url": "rsshub://immich/cursed-knowledge",
-            "title": "Cursed Knowledge | Immich",
-            "description": "Cursed Knowledge | Immich - Powered by RSSHub",
-            "siteUrl": "https://immich.app/cursed-knowledge/",
-            "image": "https://immich.app./favicon.ico",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected [ Array(1) ] to not include 'https://immich.app/cursed-knowledge/#'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.10/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.10/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:91:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:106:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "imop": {
     "name": "imop",
     "url": "imop.com",
@@ -91532,7 +91524,7 @@
     "categories": [
       "game"
     ],
-    "heat": 380,
+    "heat": 379,
     "routes": {
       "/indienova/:type": {
         "path": "/:type",
@@ -91649,31 +91641,43 @@
           "code": 0
         }
       },
-      "/indienova/gamedb/recent": {
-        "path": "/gamedb/recent",
-        "name": "Unknown",
+      "/indienova/gamedb/recent/:platform?": {
+        "path": "/gamedb/recent/:platform?",
+        "name": "GameDB 游戏库",
         "maintainers": [
           "TonyRL"
         ],
+        "example": "/indienova/gamedb/recent",
+        "parameters": {
+          "platform": {
+            "description": "平台，留空为 `all`",
+            "options": [
+              {
+                "value": "all",
+                "label": "全部"
+              },
+              {
+                "value": "ps4",
+                "label": "PS4"
+              },
+              {
+                "value": "xboxone",
+                "label": "XBOX One"
+              },
+              {
+                "value": "nintendo-switch",
+                "label": "Nintendo Switch"
+              }
+            ],
+            "default": "all"
+          }
+        },
         "categories": [
           "game"
         ],
         "location": "gamedb.ts",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "63456437927240704",
-            "url": "rsshub://indienova/gamedb/recent",
-            "title": "游戏库 - 最近发行的游戏（全平台） | indienova GameDB 游戏库",
-            "description": "游戏库 - 最近发行的游戏（全平台） | indienova GameDB 游戏库 - Powered by RSSHub",
-            "siteUrl": "https://docs.rsshub.app/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ]
+        "heat": 0,
+        "topFeeds": []
       },
       "/indienova/usergames": {
         "path": "/usergames",
