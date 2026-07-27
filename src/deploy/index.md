@@ -587,11 +587,11 @@ For changing the deployment project id or version id, please refer to `Deploying
 
 You can access your `Google App Engine URL` to check the deployment status
 
-## Deploy to Sealos(use Redis as cache)
+## Deploy to Sealos
 
-Automatic updates are included.
+The Sealos template deploys RSSHub with Redis caching, Browserless, persistent Redis storage, and an HTTPS endpoint.
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+[![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://sealos.io/products/app-store/rsshub)
 
 ## Deploy to PikaPods
 

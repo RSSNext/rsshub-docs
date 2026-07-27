@@ -587,9 +587,9 @@ gcloud app deploy
 
 ## 部署到 Sealos
 
-包含自动更新
+Sealos 模板会部署 RSSHub、Redis 缓存、Browserless、Redis 持久化存储和 HTTPS 访问地址。
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+[![Deploy on Sealos](https://sealos.io/Deploy-on-Sealos.svg)](https://sealos.io/products/app-store/rsshub)
 
 ## 部署到 PikaPods
 
