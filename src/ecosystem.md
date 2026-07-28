@@ -42,7 +42,7 @@ Please refer to [deployment](/deploy/) for details.
 
 - [Heroku](https://heroku.com/deploy?template=https%3A%2F%2Fgithub.com%2FDIYgod%2FRSSHub)
 
-- [Sealos](https://template.cloud.sealos.io/deploy?templateName=rsshub)
+- [Sealos](https://sealos.io/products/app-store/rsshub)
 
 - [Vercel](https://vercel.com/import/project?template=https://github.com/DIYgod/RSSHub)
 
