@@ -28951,7 +28951,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -29001,7 +29001,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -29059,6 +29059,14 @@
         "categories": [
           "new-media"
         ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
@@ -29089,7 +29097,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
