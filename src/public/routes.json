@@ -2371,6 +2371,49 @@
       }
     }
   },
+  "chub": {
+    "name": "Chub",
+    "url": "chub.ai",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 42,
+    "routes": {
+      "/chub/characters": {
+        "path": "/characters",
+        "name": "Characters",
+        "maintainers": [
+          "flameleaf"
+        ],
+        "example": "/chub/characters",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "nsfw": true
+        },
+        "location": "characters.ts",
+        "heat": 42,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "84145553358908416",
+            "url": "rsshub://chub/characters",
+            "title": "Chub",
+            "description": "Chub - Powered by RSSHub",
+            "siteUrl": "https://www.chub.ai/characters",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "codefather": {
     "name": "编程导航",
     "url": "www.codefather.cn",
@@ -4298,6 +4341,248 @@
       }
     }
   },
+  "gitee": {
+    "name": "Gitee",
+    "url": "gitee.com",
+    "categories": [
+      "programming"
+    ],
+    "heat": 24,
+    "routes": {
+      "/gitee/commits/:owner/:repo": {
+        "path": "/commits/:owner/:repo",
+        "name": "仓库提交",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/gitee/commits/y_project/RuoYi",
+        "parameters": {
+          "owner": "用户名",
+          "repo": "仓库名"
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gitee.com/:owner/:repo/commits"
+            ]
+          }
+        ],
+        "location": "repos/commits.ts",
+        "heat": 1,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "86665639185398784",
+            "url": "rsshub://gitee/commits/PublicGuan/qipaishi_server",
+            "title": "PublicGuan/qipaishi_server - 提交",
+            "description": "PublicGuan/qipaishi_server - 提交 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/PublicGuan/qipaishi_server/commits",
+            "image": null,
+            "errorMessage": "[GET] \"https://gitee.com/api/v5/repos/PublicGuan/qipaishi_server/commits?per_page=100&direction=desc\": 404 Not Found\n",
+            "errorAt": "2025-08-14T04:34:50.481Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/gitee/events/:owner/:repo": {
+        "path": "/events/:owner/:repo",
+        "name": "仓库动态",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/gitee/events/y_project/RuoYi",
+        "parameters": {
+          "owner": "用户名",
+          "repo": "仓库名"
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gitee.com/:owner/:repo"
+            ]
+          }
+        ],
+        "location": "repos/events.ts",
+        "heat": 15,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "83741276078048256",
+            "url": "rsshub://gitee/events/yhArcadia/Yunzai-Bot-plugins-index",
+            "title": "yhArcadia/Yunzai-Bot-plugins-index - 仓库动态",
+            "description": "yhArcadia/Yunzai-Bot-plugins-index - 仓库动态 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "165023100116440064",
+            "url": "rsshub://gitee/events/labuladong/fucking-algorithm",
+            "title": "labuladong/fucking-algorithm - 仓库动态",
+            "description": "labuladong/fucking-algorithm - 仓库动态 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/labuladong/fucking-algorithm",
+            "image": null,
+            "errorMessage": "Cannot read properties of null (reading 'login')\n",
+            "errorAt": "2026-07-12T02:04:12.308Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/gitee/releases/:owner/:repo": {
+        "path": "/releases/:owner/:repo",
+        "name": "仓库 Releases",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/gitee/releases/y_project/RuoYi",
+        "parameters": {
+          "owner": "用户名",
+          "repo": "仓库名"
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gitee.com/:owner/:repo/releases"
+            ]
+          }
+        ],
+        "location": "repos/releases.ts",
+        "heat": 2,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "221039033592649728",
+            "url": "rsshub://gitee/releases/dromara/liteFlow",
+            "title": "dromara/liteFlow - 发行版",
+            "description": "dromara/liteFlow - 发行版 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/dromara/liteFlow/releases",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "121884655654946816",
+            "url": "rsshub://gitee/releases/gurecn/YuyanIme",
+            "title": "gurecn/YuyanIme - 发行版",
+            "description": "gurecn/YuyanIme - 发行版 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/gurecn/YuyanIme/releases",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/gitee/events/:username": {
+        "path": "/events/:username",
+        "name": "用户公开动态",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/gitee/events/y_project",
+        "parameters": {
+          "username": "用户名"
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gitee.com/:username"
+            ]
+          }
+        ],
+        "location": "users/events.ts",
+        "heat": 6,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "140336243023671296",
+            "url": "rsshub://gitee/events/silencedream",
+            "title": "silencedream - 公开动态",
+            "description": "silencedream - 公开动态 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/silencedream",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "158419992977388544",
+            "url": "rsshub://gitee/events/callmer",
+            "title": "callmer - 公开动态",
+            "description": "callmer - 公开动态 - Powered by RSSHub",
+            "siteUrl": "https://gitee.com/callmer",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "grupoanimal": {
     "name": "Grupo Animal",
     "url": "grupoanimal.mx",
@@ -4395,6 +4680,62 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected [ Array(255) ] to not include 'dreo'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.10/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.10/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:91:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:106:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
+  "huawei": {
+    "name": "华为开发者联盟",
+    "url": "developer.huawei.com",
+    "categories": [
+      "programming"
+    ],
+    "heat": 71,
+    "routes": {
+      "/huawei/developer/harmonyos/sample-code": {
+        "path": "/developer/harmonyos/sample-code",
+        "name": "HarmonyOS 示例代码",
+        "maintainers": [
+          "JiZhi-Error"
+        ],
+        "example": "/huawei/developer/harmonyos/sample-code",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "developer.huawei.com/consumer/cn/samples"
+            ],
+            "target": "/huawei/developer/harmonyos/sample-code"
+          }
+        ],
+        "location": "developer/harmonyos/samplecode.ts",
+        "heat": 71,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "154848864006838272",
+            "url": "rsshub://huawei/developer/harmonyos/sample-code",
+            "title": "HarmonyOS 示例代码 - 华为开发者联盟",
+            "description": "华为鸿蒙系统示例代码更新 - Powered by RSSHub",
+            "siteUrl": "https://developer.huawei.com/consumer/cn/samples/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
         }
       }
     }
@@ -4821,6 +5162,45 @@
             "ownerUserId": null
           }
         ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
+  "jetbrains": {
+    "name": "JetBrains",
+    "url": "jetbrains.com",
+    "description": "JetBrains is a software development company that creates professional development tools and IDEs.",
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/jetbrains/youtrack/comments/:issueId": {
+        "path": "/youtrack/comments/:issueId",
+        "name": "YouTrack Issue Comments",
+        "maintainers": [
+          "NekoAria"
+        ],
+        "example": "/jetbrains/youtrack/comments/IJPL-174543",
+        "parameters": {
+          "issueId": "Issue ID (e.g., IJPL-174543)"
+        },
+        "categories": [
+          "programming"
+        ],
+        "radar": [
+          {
+            "source": [
+              "youtrack.jetbrains.com/issue/:issueId"
+            ],
+            "target": "/youtrack/comments/:issueId"
+          }
+        ],
+        "location": "comments.ts",
+        "heat": 0,
+        "topFeeds": [],
         "test": {
           "code": 0
         }
@@ -6408,6 +6788,157 @@
             "title": "ktown4u MIYEON (i-dle)",
             "description": "ktown4u MIYEON (i-dle) - Powered by RSSHub",
             "siteUrl": "https://cn.ktown4u.com/artistBrandlist?grp_no=234590&grp_no2=",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
+  "lemmy": {
+    "name": "Lemmy",
+    "url": "join-lemmy.org",
+    "categories": [
+      "social-media"
+    ],
+    "heat": 32,
+    "routes": {
+      "/lemmy/:community/:sort?": {
+        "path": "/:community/:sort?",
+        "name": "Community",
+        "maintainers": [
+          "wb14123",
+          "pseudoyu"
+        ],
+        "example": "/lemmy/technology@lemmy.world/Hot",
+        "parameters": {
+          "community": "Lemmmy community, for example technology@lemmy.world",
+          "sort": {
+            "description": "Sort by",
+            "options": [
+              {
+                "value": "Active",
+                "label": "Active"
+              },
+              {
+                "value": "Hot",
+                "label": "Hot"
+              },
+              {
+                "value": "New",
+                "label": "New"
+              },
+              {
+                "value": "Old",
+                "label": "Old"
+              },
+              {
+                "value": "TopDay",
+                "label": "TopDay"
+              },
+              {
+                "value": "TopWeek",
+                "label": "TopWeek"
+              },
+              {
+                "value": "TopMonth",
+                "label": "TopMonth"
+              },
+              {
+                "value": "TopYear",
+                "label": "TopYear"
+              },
+              {
+                "value": "TopAll",
+                "label": "TopAll"
+              },
+              {
+                "value": "MostComments",
+                "label": "MostComments"
+              },
+              {
+                "value": "NewComments",
+                "label": "NewComments"
+              },
+              {
+                "value": "TopHour",
+                "label": "TopHour"
+              },
+              {
+                "value": "TopSixHour",
+                "label": "TopSixHour"
+              },
+              {
+                "value": "TopTwelveHour",
+                "label": "TopTwelveHour"
+              },
+              {
+                "value": "TopThreeMonths",
+                "label": "TopThreeMonths"
+              },
+              {
+                "value": "TopSixMonths",
+                "label": "TopSixMonths"
+              },
+              {
+                "value": "TopNineMonths",
+                "label": "TopNineMonths"
+              },
+              {
+                "value": "Controversial",
+                "label": "Controversial"
+              },
+              {
+                "value": "Scaled",
+                "label": "Scaled"
+              }
+            ],
+            "default": "Active"
+          }
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "ALLOW_USER_SUPPLY_UNSAFE_DOMAIN",
+              "description": ""
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "index.ts",
+        "heat": 32,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "61702651840877568",
+            "url": "rsshub://lemmy/technology%40lemmy.world",
+            "title": "technology@lemmy.world - Active posts",
+            "description": "This is a [most excellent](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3N0NmhuODNib3d3Nzg0OHU2bTFqMXAzNW42Y2JsOTVmenNsNG8ycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CDHTqbmnGZyxKo/giphy.gif) place for technology news and articles. --- ## Our Rules --- 1. Follow the [lemmy.world rules.](https://mastodon.world/about) 2. Only tech related news or articles. 3. Be [excellent to each other!](https://www.youtube.com/watch?v=rph_1DODXDU) 4. Mod approved content bots can post up to 10 articles per day. 5. Threads asking for personal tech support may be deleted. 6. Politics threads may be removed. 7. No memes allowed as posts, OK to post as comments. 8. Only approved bots from the list below, this includes using AI responses and summaries. To ask if your bot can be added please contact a mod. 9. Check for duplicates before posting, duplicates may be removed 10. Accounts 7 days and younger will have their posts automatically removed. --- ## Approved Bots --- - [@L4s@lemmy.world](https://lemmy.world/u/L4s) - [@autotldr@lemmings.world](https://lemmings.world/u/autotldr) - [@PipedLinkBot@feddit.rocks](https://feddit.rocks/u/PipedLinkBot) - [@wikibot@lemmy.world](https://lemmy.world/u/wikibot) - Powered by RSSHub",
+            "siteUrl": "https://lemmy.world/c/technology",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "67488077733605376",
+            "url": "rsshub://lemmy/technology@lemmy.world/Hot",
+            "title": "technology@lemmy.world - Hot posts",
+            "description": "This is a [most excellent](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3N0NmhuODNib3d3Nzg0OHU2bTFqMXAzNW42Y2JsOTVmenNsNG8ycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CDHTqbmnGZyxKo/giphy.gif) place for technology news and articles. --- ## Our Rules --- 1. Follow the [lemmy.world rules.](https://mastodon.world/about) 2. Only tech related news or articles. 3. Be [excellent to each other!](https://www.youtube.com/watch?v=rph_1DODXDU) 4. Mod approved content bots can post up to 10 articles per day. 5. Threads asking for personal tech support may be deleted. 6. Politics threads may be removed. 7. No memes allowed as posts, OK to post as comments. 8. Only approved bots from the list below, this includes using AI responses and summaries. To ask if your bot can be added please contact a mod. 9. Check for duplicates before posting, duplicates may be removed 10. Accounts 7 days and younger will have their posts automatically removed. --- ## Approved Bots --- - [@L4s@lemmy.world](https://lemmy.world/u/L4s) - [@autotldr@lemmings.world](https://lemmings.world/u/autotldr) - [@PipedLinkBot@feddit.rocks](https://feddit.rocks/u/PipedLinkBot) - [@wikibot@lemmy.world](https://lemmy.world/u/wikibot) - Powered by RSSHub",
+            "siteUrl": "https://lemmy.world/c/technology",
             "image": null,
             "errorMessage": null,
             "errorAt": null,
@@ -10869,49 +11400,6 @@
       }
     }
   },
-  "chub": {
-    "name": "Chub",
-    "url": "chub.ai",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 42,
-    "routes": {
-      "/chub/characters": {
-        "path": "/characters",
-        "name": "Characters",
-        "maintainers": [
-          "flameleaf"
-        ],
-        "example": "/chub/characters",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "nsfw": true
-        },
-        "location": "characters.ts",
-        "heat": 42,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "84145553358908416",
-            "url": "rsshub://chub/characters",
-            "title": "Chub",
-            "description": "Chub - Powered by RSSHub",
-            "siteUrl": "https://www.chub.ai/characters",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "cn-healthcare": {
     "name": "健康界",
     "url": "cn-healthcare.com",
@@ -13175,248 +13663,6 @@
       }
     }
   },
-  "gitee": {
-    "name": "Gitee",
-    "url": "gitee.com",
-    "categories": [
-      "programming"
-    ],
-    "heat": 24,
-    "routes": {
-      "/gitee/commits/:owner/:repo": {
-        "path": "/commits/:owner/:repo",
-        "name": "仓库提交",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/gitee/commits/y_project/RuoYi",
-        "parameters": {
-          "owner": "用户名",
-          "repo": "仓库名"
-        },
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "gitee.com/:owner/:repo/commits"
-            ]
-          }
-        ],
-        "location": "repos/commits.ts",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "86665639185398784",
-            "url": "rsshub://gitee/commits/PublicGuan/qipaishi_server",
-            "title": "PublicGuan/qipaishi_server - 提交",
-            "description": "PublicGuan/qipaishi_server - 提交 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/PublicGuan/qipaishi_server/commits",
-            "image": null,
-            "errorMessage": "[GET] \"https://gitee.com/api/v5/repos/PublicGuan/qipaishi_server/commits?per_page=100&direction=desc\": 404 Not Found\n",
-            "errorAt": "2025-08-14T04:34:50.481Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/gitee/events/:owner/:repo": {
-        "path": "/events/:owner/:repo",
-        "name": "仓库动态",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/gitee/events/y_project/RuoYi",
-        "parameters": {
-          "owner": "用户名",
-          "repo": "仓库名"
-        },
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "gitee.com/:owner/:repo"
-            ]
-          }
-        ],
-        "location": "repos/events.ts",
-        "heat": 15,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "83741276078048256",
-            "url": "rsshub://gitee/events/yhArcadia/Yunzai-Bot-plugins-index",
-            "title": "yhArcadia/Yunzai-Bot-plugins-index - 仓库动态",
-            "description": "yhArcadia/Yunzai-Bot-plugins-index - 仓库动态 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "165023100116440064",
-            "url": "rsshub://gitee/events/labuladong/fucking-algorithm",
-            "title": "labuladong/fucking-algorithm - 仓库动态",
-            "description": "labuladong/fucking-algorithm - 仓库动态 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/labuladong/fucking-algorithm",
-            "image": null,
-            "errorMessage": "Cannot read properties of null (reading 'login')\n",
-            "errorAt": "2026-07-12T02:04:12.308Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/gitee/releases/:owner/:repo": {
-        "path": "/releases/:owner/:repo",
-        "name": "仓库 Releases",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/gitee/releases/y_project/RuoYi",
-        "parameters": {
-          "owner": "用户名",
-          "repo": "仓库名"
-        },
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "gitee.com/:owner/:repo/releases"
-            ]
-          }
-        ],
-        "location": "repos/releases.ts",
-        "heat": 2,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "221039033592649728",
-            "url": "rsshub://gitee/releases/dromara/liteFlow",
-            "title": "dromara/liteFlow - 发行版",
-            "description": "dromara/liteFlow - 发行版 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/dromara/liteFlow/releases",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "121884655654946816",
-            "url": "rsshub://gitee/releases/gurecn/YuyanIme",
-            "title": "gurecn/YuyanIme - 发行版",
-            "description": "gurecn/YuyanIme - 发行版 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/gurecn/YuyanIme/releases",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/gitee/events/:username": {
-        "path": "/events/:username",
-        "name": "用户公开动态",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/gitee/events/y_project",
-        "parameters": {
-          "username": "用户名"
-        },
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "gitee.com/:username"
-            ]
-          }
-        ],
-        "location": "users/events.ts",
-        "heat": 6,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "140336243023671296",
-            "url": "rsshub://gitee/events/silencedream",
-            "title": "silencedream - 公开动态",
-            "description": "silencedream - 公开动态 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/silencedream",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "158419992977388544",
-            "url": "rsshub://gitee/events/callmer",
-            "title": "callmer - 公开动态",
-            "description": "callmer - 公开动态 - Powered by RSSHub",
-            "siteUrl": "https://gitee.com/callmer",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "gocn": {
     "name": "GoCN",
     "url": "gocn.vip",
@@ -13742,62 +13988,6 @@
             "title": "校园招聘",
             "description": "校园招聘 - Powered by RSSHub",
             "siteUrl": "http://scc.hnu.edu.cn/module/getcareers",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
-  "huawei": {
-    "name": "华为开发者联盟",
-    "url": "developer.huawei.com",
-    "categories": [
-      "programming"
-    ],
-    "heat": 71,
-    "routes": {
-      "/huawei/developer/harmonyos/sample-code": {
-        "path": "/developer/harmonyos/sample-code",
-        "name": "HarmonyOS 示例代码",
-        "maintainers": [
-          "JiZhi-Error"
-        ],
-        "example": "/huawei/developer/harmonyos/sample-code",
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "developer.huawei.com/consumer/cn/samples"
-            ],
-            "target": "/huawei/developer/harmonyos/sample-code"
-          }
-        ],
-        "location": "developer/harmonyos/samplecode.ts",
-        "heat": 71,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "154848864006838272",
-            "url": "rsshub://huawei/developer/harmonyos/sample-code",
-            "title": "HarmonyOS 示例代码 - 华为开发者联盟",
-            "description": "华为鸿蒙系统示例代码更新 - Powered by RSSHub",
-            "siteUrl": "https://developer.huawei.com/consumer/cn/samples/",
             "image": null,
             "errorMessage": null,
             "errorAt": null,
@@ -14406,45 +14596,6 @@
       }
     }
   },
-  "jetbrains": {
-    "name": "JetBrains",
-    "url": "jetbrains.com",
-    "description": "JetBrains is a software development company that creates professional development tools and IDEs.",
-    "categories": [
-      "programming"
-    ],
-    "heat": 0,
-    "routes": {
-      "/jetbrains/youtrack/comments/:issueId": {
-        "path": "/youtrack/comments/:issueId",
-        "name": "YouTrack Issue Comments",
-        "maintainers": [
-          "NekoAria"
-        ],
-        "example": "/jetbrains/youtrack/comments/IJPL-174543",
-        "parameters": {
-          "issueId": "Issue ID (e.g., IJPL-174543)"
-        },
-        "categories": [
-          "programming"
-        ],
-        "radar": [
-          {
-            "source": [
-              "youtrack.jetbrains.com/issue/:issueId"
-            ],
-            "target": "/youtrack/comments/:issueId"
-          }
-        ],
-        "location": "comments.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "jiaoliudao": {
     "name": "交流岛资源网",
     "url": "jiaoliudao.com",
@@ -14905,157 +15056,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.10/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
-  "lemmy": {
-    "name": "Lemmy",
-    "url": "join-lemmy.org",
-    "categories": [
-      "social-media"
-    ],
-    "heat": 32,
-    "routes": {
-      "/lemmy/:community/:sort?": {
-        "path": "/:community/:sort?",
-        "name": "Community",
-        "maintainers": [
-          "wb14123",
-          "pseudoyu"
-        ],
-        "example": "/lemmy/technology@lemmy.world/Hot",
-        "parameters": {
-          "community": "Lemmmy community, for example technology@lemmy.world",
-          "sort": {
-            "description": "Sort by",
-            "options": [
-              {
-                "value": "Active",
-                "label": "Active"
-              },
-              {
-                "value": "Hot",
-                "label": "Hot"
-              },
-              {
-                "value": "New",
-                "label": "New"
-              },
-              {
-                "value": "Old",
-                "label": "Old"
-              },
-              {
-                "value": "TopDay",
-                "label": "TopDay"
-              },
-              {
-                "value": "TopWeek",
-                "label": "TopWeek"
-              },
-              {
-                "value": "TopMonth",
-                "label": "TopMonth"
-              },
-              {
-                "value": "TopYear",
-                "label": "TopYear"
-              },
-              {
-                "value": "TopAll",
-                "label": "TopAll"
-              },
-              {
-                "value": "MostComments",
-                "label": "MostComments"
-              },
-              {
-                "value": "NewComments",
-                "label": "NewComments"
-              },
-              {
-                "value": "TopHour",
-                "label": "TopHour"
-              },
-              {
-                "value": "TopSixHour",
-                "label": "TopSixHour"
-              },
-              {
-                "value": "TopTwelveHour",
-                "label": "TopTwelveHour"
-              },
-              {
-                "value": "TopThreeMonths",
-                "label": "TopThreeMonths"
-              },
-              {
-                "value": "TopSixMonths",
-                "label": "TopSixMonths"
-              },
-              {
-                "value": "TopNineMonths",
-                "label": "TopNineMonths"
-              },
-              {
-                "value": "Controversial",
-                "label": "Controversial"
-              },
-              {
-                "value": "Scaled",
-                "label": "Scaled"
-              }
-            ],
-            "default": "Active"
-          }
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "ALLOW_USER_SUPPLY_UNSAFE_DOMAIN",
-              "description": ""
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "index.ts",
-        "heat": 32,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "61702651840877568",
-            "url": "rsshub://lemmy/technology%40lemmy.world",
-            "title": "technology@lemmy.world - Active posts",
-            "description": "This is a [most excellent](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3N0NmhuODNib3d3Nzg0OHU2bTFqMXAzNW42Y2JsOTVmenNsNG8ycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CDHTqbmnGZyxKo/giphy.gif) place for technology news and articles. --- ## Our Rules --- 1. Follow the [lemmy.world rules.](https://mastodon.world/about) 2. Only tech related news or articles. 3. Be [excellent to each other!](https://www.youtube.com/watch?v=rph_1DODXDU) 4. Mod approved content bots can post up to 10 articles per day. 5. Threads asking for personal tech support may be deleted. 6. Politics threads may be removed. 7. No memes allowed as posts, OK to post as comments. 8. Only approved bots from the list below, this includes using AI responses and summaries. To ask if your bot can be added please contact a mod. 9. Check for duplicates before posting, duplicates may be removed 10. Accounts 7 days and younger will have their posts automatically removed. --- ## Approved Bots --- - [@L4s@lemmy.world](https://lemmy.world/u/L4s) - [@autotldr@lemmings.world](https://lemmings.world/u/autotldr) - [@PipedLinkBot@feddit.rocks](https://feddit.rocks/u/PipedLinkBot) - [@wikibot@lemmy.world](https://lemmy.world/u/wikibot) - Powered by RSSHub",
-            "siteUrl": "https://lemmy.world/c/technology",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "67488077733605376",
-            "url": "rsshub://lemmy/technology@lemmy.world/Hot",
-            "title": "technology@lemmy.world - Hot posts",
-            "description": "This is a [most excellent](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3N0NmhuODNib3d3Nzg0OHU2bTFqMXAzNW42Y2JsOTVmenNsNG8ycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CDHTqbmnGZyxKo/giphy.gif) place for technology news and articles. --- ## Our Rules --- 1. Follow the [lemmy.world rules.](https://mastodon.world/about) 2. Only tech related news or articles. 3. Be [excellent to each other!](https://www.youtube.com/watch?v=rph_1DODXDU) 4. Mod approved content bots can post up to 10 articles per day. 5. Threads asking for personal tech support may be deleted. 6. Politics threads may be removed. 7. No memes allowed as posts, OK to post as comments. 8. Only approved bots from the list below, this includes using AI responses and summaries. To ask if your bot can be added please contact a mod. 9. Check for duplicates before posting, duplicates may be removed 10. Accounts 7 days and younger will have their posts automatically removed. --- ## Approved Bots --- - [@L4s@lemmy.world](https://lemmy.world/u/L4s) - [@autotldr@lemmings.world](https://lemmings.world/u/autotldr) - [@PipedLinkBot@feddit.rocks](https://feddit.rocks/u/PipedLinkBot) - [@wikibot@lemmy.world](https://lemmy.world/u/wikibot) - Powered by RSSHub",
-            "siteUrl": "https://lemmy.world/c/technology",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
         }
       }
     }
@@ -81299,6 +81299,63 @@
           "code": 0
         }
       },
+      "/github/comments/:user/:repo/:number?": {
+        "path": "/comments/:user/:repo/:number?",
+        "name": "Issue / Pull Request comments",
+        "maintainers": [
+          "TonyRL",
+          "FliegendeWurst"
+        ],
+        "example": "/github/comments/DIYgod/RSSHub/8116",
+        "parameters": {
+          "user": "User / Org name",
+          "repo": "Repo name",
+          "number": "Issue or pull number (if omitted: all)"
+        },
+        "categories": [
+          "programming"
+        ],
+        "radar": [
+          {
+            "source": [
+              "github.com/:user/:repo/:type",
+              "github.com/:user/:repo/:type/:number"
+            ],
+            "target": "/comments/:user/:repo/:number?"
+          }
+        ],
+        "location": "comments.ts",
+        "heat": 291,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "73345605774977024",
+            "url": "rsshub://github/comments/521xueweihan/HelloGitHub",
+            "title": "521xueweihan/HelloGitHub: Issue & Pull request comments",
+            "description": "521xueweihan/HelloGitHub: Issue & Pull request comments - Powered by RSSHub",
+            "siteUrl": "https://github.com/521xueweihan/HelloGitHub",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "68377703545822208",
+            "url": "rsshub://github/comments/comfyanonymous/ComfyUI",
+            "title": "comfyanonymous/ComfyUI: Issue & Pull request comments",
+            "description": "comfyanonymous/ComfyUI: Issue & Pull request comments - Powered by RSSHub",
+            "siteUrl": "https://github.com/comfyanonymous/ComfyUI",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
       "/github/contributors/:user/:repo/:order?/:anon?": {
         "path": "/contributors/:user/:repo/:order?/:anon?",
         "name": "Repo Contributors",
@@ -81363,6 +81420,102 @@
         "test": {
           "code": 0
         }
+      },
+      "/github/discussion/:user/:repo/:state?/:category?": {
+        "path": "/discussion/:user/:repo/:state?/:category?",
+        "name": "Repo Discussions",
+        "maintainers": [
+          "waynzh"
+        ],
+        "example": "/github/discussion/DIYgod/RSSHub",
+        "parameters": {
+          "user": "User name",
+          "repo": "Repo name",
+          "state": {
+            "description": "The state of discussions",
+            "default": "open",
+            "options": [
+              {
+                "label": "Open",
+                "value": "open"
+              },
+              {
+                "label": "Closed",
+                "value": "closed"
+              },
+              {
+                "label": "Answered",
+                "value": "answered"
+              },
+              {
+                "label": "Unanswered",
+                "value": "unanswered"
+              },
+              {
+                "label": "Locked",
+                "value": "locked"
+              },
+              {
+                "label": "Unlocked",
+                "value": "unlocked"
+              },
+              {
+                "label": "All",
+                "value": "all"
+              }
+            ]
+          },
+          "category": "Category Name (case-sensitive). Default: `null`."
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "description": "GitHub Access Token"
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "github.com/:user/:repo/discussions",
+              "github.com/:user/:repo/discussions/:id",
+              "github.com/:user/:repo"
+            ],
+            "target": "/discussion/:user/:repo"
+          }
+        ],
+        "location": "discussions.ts",
+        "heat": 43,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "65680104647425024",
+            "url": "rsshub://github/discussion/DIYgod/RSSHub",
+            "title": "DIYgod/RSSHub Discussions",
+            "description": "DIYgod/RSSHub Discussions - Powered by RSSHub",
+            "siteUrl": "https://github.com/DIYgod/RSSHub/discussions",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "65940238359013376",
+            "url": "rsshub://github/discussion/noncegeek/indiehacker-handbook",
+            "title": "noncegeek/indiehacker-handbook Discussions",
+            "description": "noncegeek/indiehacker-handbook Discussions - Powered by RSSHub",
+            "siteUrl": "https://github.com/noncegeek/indiehacker-handbook/discussions",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": "55822446012235776"
+          }
+        ]
       },
       "/github/file/:user/:repo/:branch/:filepath{.+}": {
         "path": "/file/:user/:repo/:branch/:filepath{.+}",
@@ -81535,6 +81688,83 @@
             "description": "JavDB top 250 movies list. [Updated on 2026/01] - Powered by RSSHub",
             "siteUrl": "https://gist.github.com/jinjier/7a405fad753f996d85ed43073e3bf009/revisions",
             "image": "https://avatars.githubusercontent.com/u/101241777?v=4",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/github/issue/:user/:repo/:state?/:labels?": {
+        "path": "/issue/:user/:repo/:state?/:labels?",
+        "name": "Repo Issues",
+        "maintainers": [
+          "HenryQW",
+          "AndreyMZ"
+        ],
+        "example": "/github/issue/DIYgod/RSSHub/open",
+        "parameters": {
+          "user": "GitHub username",
+          "repo": "GitHub repo name",
+          "state": {
+            "description": "the state of the issues.",
+            "default": "open",
+            "options": [
+              {
+                "label": "Open",
+                "value": "open"
+              },
+              {
+                "label": "Closed",
+                "value": "closed"
+              },
+              {
+                "label": "All",
+                "value": "all"
+              }
+            ]
+          },
+          "labels": "a list of comma separated label names"
+        },
+        "categories": [
+          "programming"
+        ],
+        "radar": [
+          {
+            "source": [
+              "github.com/:user/:repo/issues",
+              "github.com/:user/:repo/issues/:id",
+              "github.com/:user/:repo"
+            ],
+            "target": "/issue/:user/:repo"
+          }
+        ],
+        "view": 5,
+        "location": "issue.ts",
+        "heat": 624,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "52721325092269113",
+            "url": "rsshub://github/issue/ruanyf/weekly",
+            "title": "ruanyf/weekly Issues",
+            "description": "ruanyf/weekly Issues - Powered by RSSHub",
+            "siteUrl": "https://github.com/ruanyf/weekly/issues",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "53505290474416128",
+            "url": "rsshub://github/issue/Geekhyt/weekly",
+            "title": "Geekhyt/weekly Issues",
+            "description": "Geekhyt/weekly Issues - Powered by RSSHub",
+            "siteUrl": "https://github.com/Geekhyt/weekly/issues",
+            "image": null,
             "errorMessage": null,
             "errorAt": null,
             "ownerUserId": null
@@ -81816,6 +82046,90 @@
             "title": "vancaem's GitHub Private Feed - Events: star",
             "description": "GitHub events received by vancaem (filtered: star) - includes private events - Powered by RSSHub",
             "siteUrl": "https://github.com/vancaem",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/github/pull/:user/:repo/:state?/:labels?": {
+        "path": "/pull/:user/:repo/:state?/:labels?",
+        "name": "Repo Pull Requests",
+        "maintainers": [
+          "hashman",
+          "TonyRL"
+        ],
+        "example": "/github/pull/DIYgod/RSSHub",
+        "parameters": {
+          "user": "GitHub username",
+          "repo": "GitHub repo name",
+          "state": {
+            "description": "the state of pull requests.",
+            "default": "open",
+            "options": [
+              {
+                "label": "Open",
+                "value": "open"
+              },
+              {
+                "label": "Closed",
+                "value": "closed"
+              },
+              {
+                "label": "All",
+                "value": "all"
+              }
+            ]
+          },
+          "labels": "a list of comma separated label names"
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "github.com/:user/:repo/pulls",
+              "github.com/:user/:repo/pulls/:id",
+              "github.com/:user/:repo"
+            ],
+            "target": "/pull/:user/:repo"
+          }
+        ],
+        "location": "pulls.ts",
+        "heat": 81,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "77720830590388224",
+            "url": "rsshub://github/pull/RSSNext/Follow",
+            "title": "RSSNext/Follow Open Pull Requests",
+            "description": "RSSNext/Follow Open Pull Requests - Powered by RSSHub",
+            "siteUrl": "https://github.com/RSSNext/Follow/pulls",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "154479685635981317",
+            "url": "rsshub://github/pull/projectdiscovery/nuclei-templates",
+            "title": "projectdiscovery/nuclei-templates Open Pull Requests",
+            "description": "projectdiscovery/nuclei-templates Open Pull Requests - Powered by RSSHub",
+            "siteUrl": "https://github.com/projectdiscovery/nuclei-templates/pulls",
             "image": null,
             "errorMessage": null,
             "errorAt": null,
@@ -82303,320 +82617,6 @@
             "title": "azmiao GitHub User Feed - All Events",
             "description": "GitHub events received by azmiao - includes private events - Powered by RSSHub",
             "siteUrl": "https://github.com/azmiao",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/github/comments/:user/:repo/:number?": {
-        "path": "/comments/:user/:repo/:number?",
-        "name": "Issue / Pull Request comments",
-        "maintainers": [
-          "TonyRL",
-          "FliegendeWurst"
-        ],
-        "example": "/github/comments/DIYgod/RSSHub/8116",
-        "parameters": {
-          "user": "User / Org name",
-          "repo": "Repo name",
-          "number": "Issue or pull number (if omitted: all)"
-        },
-        "categories": [
-          "programming"
-        ],
-        "radar": [
-          {
-            "source": [
-              "github.com/:user/:repo/:type",
-              "github.com/:user/:repo/:type/:number"
-            ],
-            "target": "/comments/:user/:repo/:number?"
-          }
-        ],
-        "location": "comments.ts",
-        "heat": 291,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "73345605774977024",
-            "url": "rsshub://github/comments/521xueweihan/HelloGitHub",
-            "title": "521xueweihan/HelloGitHub: Issue & Pull request comments",
-            "description": "521xueweihan/HelloGitHub: Issue & Pull request comments - Powered by RSSHub",
-            "siteUrl": "https://github.com/521xueweihan/HelloGitHub",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "68377703545822208",
-            "url": "rsshub://github/comments/comfyanonymous/ComfyUI",
-            "title": "comfyanonymous/ComfyUI: Issue & Pull request comments",
-            "description": "comfyanonymous/ComfyUI: Issue & Pull request comments - Powered by RSSHub",
-            "siteUrl": "https://github.com/comfyanonymous/ComfyUI",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/github/discussion/:user/:repo/:state?/:category?": {
-        "path": "/discussion/:user/:repo/:state?/:category?",
-        "name": "Repo Discussions",
-        "maintainers": [
-          "waynzh"
-        ],
-        "example": "/github/discussion/DIYgod/RSSHub",
-        "parameters": {
-          "user": "User name",
-          "repo": "Repo name",
-          "state": {
-            "description": "The state of discussions",
-            "default": "open",
-            "options": [
-              {
-                "label": "Open",
-                "value": "open"
-              },
-              {
-                "label": "Closed",
-                "value": "closed"
-              },
-              {
-                "label": "Answered",
-                "value": "answered"
-              },
-              {
-                "label": "Unanswered",
-                "value": "unanswered"
-              },
-              {
-                "label": "Locked",
-                "value": "locked"
-              },
-              {
-                "label": "Unlocked",
-                "value": "unlocked"
-              },
-              {
-                "label": "All",
-                "value": "all"
-              }
-            ]
-          },
-          "category": "Category Name (case-sensitive). Default: `null`."
-        },
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "GITHUB_ACCESS_TOKEN",
-              "description": "GitHub Access Token"
-            }
-          ]
-        },
-        "radar": [
-          {
-            "source": [
-              "github.com/:user/:repo/discussions",
-              "github.com/:user/:repo/discussions/:id",
-              "github.com/:user/:repo"
-            ],
-            "target": "/discussion/:user/:repo"
-          }
-        ],
-        "location": "discussions.ts",
-        "heat": 43,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "65680104647425024",
-            "url": "rsshub://github/discussion/DIYgod/RSSHub",
-            "title": "DIYgod/RSSHub Discussions",
-            "description": "DIYgod/RSSHub Discussions - Powered by RSSHub",
-            "siteUrl": "https://github.com/DIYgod/RSSHub/discussions",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "65940238359013376",
-            "url": "rsshub://github/discussion/noncegeek/indiehacker-handbook",
-            "title": "noncegeek/indiehacker-handbook Discussions",
-            "description": "noncegeek/indiehacker-handbook Discussions - Powered by RSSHub",
-            "siteUrl": "https://github.com/noncegeek/indiehacker-handbook/discussions",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": "55822446012235776"
-          }
-        ]
-      },
-      "/github/issue/:user/:repo/:state?/:labels?": {
-        "path": "/issue/:user/:repo/:state?/:labels?",
-        "name": "Repo Issues",
-        "maintainers": [
-          "HenryQW",
-          "AndreyMZ"
-        ],
-        "example": "/github/issue/DIYgod/RSSHub/open",
-        "parameters": {
-          "user": "GitHub username",
-          "repo": "GitHub repo name",
-          "state": {
-            "description": "the state of the issues.",
-            "default": "open",
-            "options": [
-              {
-                "label": "Open",
-                "value": "open"
-              },
-              {
-                "label": "Closed",
-                "value": "closed"
-              },
-              {
-                "label": "All",
-                "value": "all"
-              }
-            ]
-          },
-          "labels": "a list of comma separated label names"
-        },
-        "categories": [
-          "programming"
-        ],
-        "radar": [
-          {
-            "source": [
-              "github.com/:user/:repo/issues",
-              "github.com/:user/:repo/issues/:id",
-              "github.com/:user/:repo"
-            ],
-            "target": "/issue/:user/:repo"
-          }
-        ],
-        "view": 5,
-        "location": "issue.ts",
-        "heat": 624,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "52721325092269113",
-            "url": "rsshub://github/issue/ruanyf/weekly",
-            "title": "ruanyf/weekly Issues",
-            "description": "ruanyf/weekly Issues - Powered by RSSHub",
-            "siteUrl": "https://github.com/ruanyf/weekly/issues",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "53505290474416128",
-            "url": "rsshub://github/issue/Geekhyt/weekly",
-            "title": "Geekhyt/weekly Issues",
-            "description": "Geekhyt/weekly Issues - Powered by RSSHub",
-            "siteUrl": "https://github.com/Geekhyt/weekly/issues",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/github/pull/:user/:repo/:state?/:labels?": {
-        "path": "/pull/:user/:repo/:state?/:labels?",
-        "name": "Repo Pull Requests",
-        "maintainers": [
-          "hashman",
-          "TonyRL"
-        ],
-        "example": "/github/pull/DIYgod/RSSHub",
-        "parameters": {
-          "user": "GitHub username",
-          "repo": "GitHub repo name",
-          "state": {
-            "description": "the state of pull requests.",
-            "default": "open",
-            "options": [
-              {
-                "label": "Open",
-                "value": "open"
-              },
-              {
-                "label": "Closed",
-                "value": "closed"
-              },
-              {
-                "label": "All",
-                "value": "all"
-              }
-            ]
-          },
-          "labels": "a list of comma separated label names"
-        },
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "github.com/:user/:repo/pulls",
-              "github.com/:user/:repo/pulls/:id",
-              "github.com/:user/:repo"
-            ],
-            "target": "/pull/:user/:repo"
-          }
-        ],
-        "location": "pulls.ts",
-        "heat": 81,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "77720830590388224",
-            "url": "rsshub://github/pull/RSSNext/Follow",
-            "title": "RSSNext/Follow Open Pull Requests",
-            "description": "RSSNext/Follow Open Pull Requests - Powered by RSSHub",
-            "siteUrl": "https://github.com/RSSNext/Follow/pulls",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "154479685635981317",
-            "url": "rsshub://github/pull/projectdiscovery/nuclei-templates",
-            "title": "projectdiscovery/nuclei-templates Open Pull Requests",
-            "description": "projectdiscovery/nuclei-templates Open Pull Requests - Powered by RSSHub",
-            "siteUrl": "https://github.com/projectdiscovery/nuclei-templates/pulls",
             "image": null,
             "errorMessage": null,
             "errorAt": null,
