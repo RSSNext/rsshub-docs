@@ -27187,6 +27187,44 @@
       }
     }
   },
+  "wuzhongmuseum": {
+    "name": "Museum of Wu",
+    "url": "www.wuzhongmuseum.com",
+    "zh": {
+      "name": "吴文化博物馆"
+    },
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/wuzhongmuseum/exhibition/:type?": {
+        "path": "/exhibition/:type?",
+        "name": "Exhibition",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/wuzhongmuseum/exhibition",
+        "parameters": {
+          "type": "Exhibition type, supported values: short (特别展览), long (常设展览), online (线上展览). Default: all exhibitions."
+        },
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.wuzhongmuseum.com/portal/exhibition"
+            ],
+            "target": "/exhibition"
+          }
+        ],
+        "location": "exhibition.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "xkb": {
     "name": "新快报",
     "url": "xkb.com.cn",
