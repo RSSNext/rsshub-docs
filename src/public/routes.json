@@ -122313,7 +122313,7 @@
       "/people/xjpjh/:keyword?/:year?": {
         "path": "/xjpjh/:keyword?/:year?",
         "name": "习近平系列重要讲话",
-        "url": "people.com.cn/",
+        "url": "jhsjk.people.cn",
         "maintainers": [
           "LogicJake"
         ],
@@ -122336,9 +122336,9 @@
         "radar": [
           {
             "source": [
-              "people.com.cn/"
+              "jhsjk.people.cn/"
             ],
-            "target": "/:site?/:category?"
+            "target": "/xjpjh"
           }
         ],
         "location": "xjpjh.ts",
