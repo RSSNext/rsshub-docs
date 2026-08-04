@@ -145972,36 +145972,6 @@
     ],
     "heat": 2,
     "routes": {
-      "/tsinghua/lib/notice": {
-        "path": "/lib/notice",
-        "name": "图书馆通知公告",
-        "maintainers": [
-          "Aquarius-Situla"
-        ],
-        "example": "/tsinghua/lib/notice",
-        "parameters": {},
-        "categories": [
-          "university"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "lib.tsinghua.edu.cn/tzgg.htm"
-            ]
-          }
-        ],
-        "location": "lib/notice.ts",
-        "heat": 0,
-        "topFeeds": []
-      },
       "/tsinghua/lib/tzgg/:category": {
         "path": "/lib/tzgg/:category",
         "name": "图书馆通知公告",
