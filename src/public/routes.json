@@ -145972,15 +145972,17 @@
     ],
     "heat": 3,
     "routes": {
-      "/tsinghua/lib/tzgg/:category": {
-        "path": "/lib/tzgg/:category",
+      "/tsinghua/lib/tzgg/:category?": {
+        "path": "/lib/tzgg/:category?",
         "name": "图书馆通知公告",
+        "url": "lib.tsinghua.edu.cn",
         "maintainers": [
-          "linsenwang"
+          "linsenwang",
+          "Aquarius-Situla"
         ],
         "example": "/tsinghua/lib/tzgg/qtkx",
         "parameters": {
-          "category": "分类，可在对应分类页 URL 中找到"
+          "category": "分类，可在对应分类页 URL 中找到，留空则获取全局通知公告"
         },
         "categories": [
           "university"
@@ -145996,16 +145998,14 @@
         "radar": [
           {
             "source": [
-              "lib.tsinghua.edu.cn/tzgg/:category"
+              "lib.tsinghua.edu.cn/tzgg/:category",
+              "lib.tsinghua.edu.cn/tzgg.htm"
             ]
           }
         ],
         "location": "lib/tzgg.ts",
         "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1
-        }
+        "topFeeds": []
       },
       "/tsinghua/lib/zydt/:category?": {
         "path": "/lib/zydt/:category?",
