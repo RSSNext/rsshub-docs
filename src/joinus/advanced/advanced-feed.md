@@ -38,6 +38,7 @@ Each item in an RSS feed is represented by an object with a set of fields that d
 | **`link`**        | *(Recommended)* The URL of the item, which should link to a human-readable website | `undefinded` | A, J, R |
 | **`content.html`** | *(Recommended)* The HTML content of the item. For an Atom feed, it's the `atom:content` element with the `type="html"` attribute. For a JSON feed, it's the `content_html` field. For an RSS feed, the equivalent field is `description` | `undefinded` | A, J, R |
 | **`content.text`** | *(Optional)* The text content of the item. For an Atom feed, it's the `atom:content` element with the `type="text"` attribute. For a JSON feed, it's the `content_text` field. Can be used instead of `content.html`, or in addition to it for JSON feed | `undefined` | A, J |
+| **`summary`** | *(Optional)* A plain text summary, abstract, or excerpt of the item | `undefined` | A, J |
 | **`author`**      | *(Optional)* The author of the item                                      | `undefinded`   | A, J, R |
 | **`category`**    | *(Optional)* The category of the item. You can use a plain string or an array of strings | `undefinded` | A, J, R |
 | **`guid`**        | *(Optional)* The unique identifier of the item                           | **`link || title`** | A, J, R |
