@@ -128,7 +128,7 @@ const text = $('ul li.blue.sel').text() || $('li.blue.sel').text() || $('.blue.s
 ```
 
 ```javascript
-const description = $('.content').html() || $('.content-container').html() || $('.root').html();
+const content = $('.content').html() || $('.content-container').html() || $('.root').html();
 ```
 :::
 
@@ -181,8 +181,8 @@ const item = {};
 if (author) {
     item.author = author;
 }
-if (description) {
-    item.description = description;
+if (content) {
+    item.content.html = content;
 }
 ```
 :::

@@ -210,7 +210,7 @@ export const route: Route = {
 
 ### Construct and return results
 
-Once we have retrieved the data from the API, we need to process it further to generate an RSS feed that conforms to the RSS specification. Specifically, we need to extract the channel title, channel link, item title, item link, item description, and item publication date.
+Once we have retrieved the data from the API, we need to process it further to generate an RSS feed that conforms to the RSS specification. Specifically, we need to extract the channel title, channel link, item title, item link, item content, and item publication date.
 
 For this, we can return the relevant data through the handler, and the RSSHub middleware will handle the rest.
 
@@ -237,8 +237,8 @@ export const route: Route = {
             title: item.title,
             // item link
             link: item.html_url,
-            // item description
-            description: item.body_html,
+            // item content
+            content: { html: item.body_html },
             // item publish date or time
             pubDate: parseDate(item.created_at),
             // item author, if available
@@ -351,7 +351,7 @@ export const route: Route = {
 
 ### Construct and return results
 
-Once we have the data from the web page, we need to further process it to generate RSS in accordance with the RSS specification. Mainly, we need the channel title, channel link, item title, item link, item description, and item publication date.
+Once we have the data from the web page, we need to further process it to generate RSS in accordance with the RSS specification. Mainly, we need the channel title, channel link, item title, item link, item content, and item publication date.
 
 For this, we can return the relevant data through the handler, and the RSSHub middleware will handle the rest.
 
@@ -450,10 +450,10 @@ export const route: Route = {
 
                     // Select the first comment body as there are multiple comment bodies in each issue page,
                     // and we need to specify which one we want to use.
-                    item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
+                    item.content.html = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                     // Every property of a list item defined above is reused here
-                    // and we add a new property 'description'
+                    // and we add a new property 'content.html'
                     return item;
                 })
             )
@@ -605,7 +605,7 @@ export const route: Route = {
 
                     const $ = load(response);
 
-                    item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
+                    item.content.html = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                     return item;
                 })

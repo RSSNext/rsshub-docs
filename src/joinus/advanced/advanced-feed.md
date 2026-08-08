@@ -36,7 +36,8 @@ Each item in an RSS feed is represented by an object with a set of fields that d
 | :---------- | :----------                                                                   | :------------- | :------------ |
 | **`title`**       | *(Required)* The title of the item, which should be plain text only              | `undefinded`   | A, J, R |
 | **`link`**        | *(Recommended)* The URL of the item, which should link to a human-readable website | `undefinded` | A, J, R |
-| **`description`** | *(Recommended)* The content of the item. For an Atom feed, it's the `atom:content` element. For a JSON feed, it's the `content_html` field | `undefinded` | A, J, R |
+| **`content.html`** | *(Recommended)* The HTML content of the item. For an Atom feed, it's the `atom:content` element with the `type="html"` attribute. For a JSON feed, it's the `content_html` field. For an RSS feed, the equivalent field is `description` | `undefinded` | A, J, R |
+| **`content.text`** | *(Optional)* The text content of the item. For an Atom feed, it's the `atom:content` element with the `type="text"` attribute. For a JSON feed, it's the `content_text` field. Can be used instead of `content.html`, or in addition to it for JSON feed | `undefined` | A, J |
 | **`author`**      | *(Optional)* The author of the item                                      | `undefinded`   | A, J, R |
 | **`category`**    | *(Optional)* The category of the item. You can use a plain string or an array of strings | `undefinded` | A, J, R |
 | **`guid`**        | *(Optional)* The unique identifier of the item                           | **`link || title`** | A, J, R |
@@ -59,7 +60,7 @@ When specifying certain fields in an RSS feed, it's important to keep in mind so
 
 While most RSS readers will automatically trim these fields, some may not process them properly. Therefore, to ensure compatibility with all RSS readers, we recommend trimming these fields before outputting them. If your route cannot tolerate trimming these fields, you should consider changing their format.
 
-Additionally, while other fields will not be forced to be trimmed, we suggest avoiding violations of the above formatting rules as much as possible. If you are using Cheerio to extract content from web pages, be aware that Cheerio will retain line breaks and indentation. For the **`item.description`** field, in particular, any intended linebreaks should be converted to `<br>` tags to prevent them from being trimmed by the RSS reader. If you're extracting an RSS feed from JSON data, be aware that the JSON may contain linebreaks that need to be displayed, so you should convert them to `<br>` tags in this case.
+Additionally, while other fields will not be forced to be trimmed, we suggest avoiding violations of the above formatting rules as much as possible. If you are using Cheerio to extract content from web pages, be aware that Cheerio will retain line breaks and indentation. For the **`item.content.html`** field, in particular, any intended linebreaks should be converted to `<br>` tags to prevent them from being trimmed by the RSS reader. If you're extracting an RSS feed from JSON data, be aware that the JSON may contain linebreaks that need to be displayed, so you should convert them to `<br>` tags in this case.
 
 It's important to keep these formatting considerations in mind to ensure your RSS feed is compatible with all RSS readers.
 
