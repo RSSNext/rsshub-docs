@@ -19,7 +19,7 @@ Here's an example of how you can use the cache to retrieve the data:
                 const { data: response } = await got(item.link);
                 const $ = load(response);
 
-                item.description = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
+                item.content.html = $('[class^="markdown-body"][class*="NewMarkdownViewer-module__safe-html-box__"]').first().html();
 
                 return item;
             })
@@ -29,7 +29,7 @@ Here's an example of how you can use the cache to retrieve the data:
 
 The above code snippet from [Create Your Own RSSHub Route](/joinus/new-rss/start-code#better-reading-experience) shows how to use the cache to get the full text of the first comment of each issue. `cache.tryGet()` is used to determine if the data is already available within the cache. If it's not, the code retrieves the data and stores it in the cache.
 
-The object returned from the previous statement will be reused, and an extra `description` property will be added to it. The returned cache for each `item.link` will be `{ title, link, pubDate, author, category, description }`. The next time the same path is requested, this processed cache will be used instead of making a request to the server and recomputing the data.
+The object returned from the previous statement will be reused, and an extra `content.html` property will be added to it. The returned cache for each `item.link` will be `{ title, link, pubDate, author, category, content.html }`. The next time the same path is requested, this processed cache will be used instead of making a request to the server and recomputing the data.
 
 :::warning
 
