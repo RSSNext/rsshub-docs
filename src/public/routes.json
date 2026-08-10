@@ -30990,6 +30990,30 @@
         "test": {
           "code": 0
         }
+      },
+      "/mi/newproducts": {
+        "path": "/newproducts",
+        "name": "小米上新",
+        "maintainers": [
+          "nuomi1"
+        ],
+        "example": "/mi/newproducts",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "view": 5,
+        "location": "newproducts.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
@@ -41744,7 +41768,7 @@
         "parameters": {
           "type": "栏目类型，见下表，默认为 `akyw`"
         },
-        "description": "| 栏目 | type |\n| ---- | ---- |\n| 安科要闻 | akyw |\n| 通知公告 | tzgg |\n| 学术安科 | xsak |\n| 校园动态 | xydt |\n| 媒体聚焦 | mtak |\n| 人物风采 | rwfc |\n| 视觉校园 | sjxy |",
+        "description": "| 栏目     | type |\n| -------- | ---- |\n| 安科要闻 | akyw |\n| 通知公告 | tzgg |\n| 学术安科 | xsak |\n| 校园动态 | xydt |\n| 媒体聚焦 | mtak |\n| 人物风采 | rwfc |\n| 视觉校园 | sjxy |",
         "categories": [
           "university"
         ],
