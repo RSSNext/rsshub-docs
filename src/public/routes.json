@@ -48276,17 +48276,48 @@
       "bbs",
       "other"
     ],
-    "heat": 907,
+    "heat": 257,
     "routes": {
-      "/baidu/gushitong/index": {
-        "path": "/gushitong/index",
+      "/baidu/gushitong/index/:market?": {
+        "path": "/gushitong/index/:market?",
         "name": "首页指数",
-        "url": "gushitong.baidu.com/",
+        "url": "finance.baidu.com/",
         "maintainers": [
-          "CaoMeiYouRen"
+          "CaoMeiYouRen",
+          "hutianyu2006"
         ],
         "example": "/baidu/gushitong/index",
-        "parameters": {},
+        "parameters": {
+          "market": {
+            "description": "市场分类，默认为亚洲市场，即上证指数、深圳成指、恒生指数、富时中国A50、日经225指数和韩国综合指数",
+            "options": [
+              {
+                "label": "亚洲",
+                "value": "asia"
+              },
+              {
+                "label": "美洲",
+                "value": "america"
+              },
+              {
+                "label": "欧非",
+                "value": "europeafrica"
+              },
+              {
+                "label": "外汇",
+                "value": "foreign"
+              },
+              {
+                "label": "债券",
+                "value": "bond"
+              },
+              {
+                "label": "其他",
+                "value": "other"
+              }
+            ]
+          }
+        },
         "categories": [
           "finance"
         ],
@@ -48301,30 +48332,14 @@
         "radar": [
           {
             "source": [
-              "gushitong.baidu.com/"
+              "finance.baidu.com/"
             ]
           }
         ],
         "view": 5,
         "location": "gushitong/index.tsx",
-        "heat": 650,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "64898003762100224",
-            "url": "rsshub://baidu/gushitong/index",
-            "title": "百度股市通",
-            "description": "百度股市通，汇聚全球金融市场的股票、基金、外汇、期货等实时行情，7*24小时覆盖专业财经资讯，提供客观、准确、及时、全面的沪深港美上市公司股价、财务、股东、分红等信息，让用户在复杂的金融市场，更简单的获取投资信息。 - Powered by RSSHub",
-            "siteUrl": "https://gushitong.baidu.com/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
+        "heat": 0,
+        "topFeeds": []
       },
       "/baidu/tieba/forum/good/:kw/:cid?/:sortBy?": {
         "path": [
@@ -145943,7 +145958,7 @@
         "parameters": {
           "category": "分类，可在对应分类页 URL 中找到，留空则获取全局通知公告"
         },
-        "description": "\n| 全部 | 开馆通知 | 施工维修 | 服务通知 | 违规通报 | 清图快讯 | 馆际通知 |\n| ---- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 留空 | kgtz     | sgwx     | fwtz     | wgtb     | qtkx     | gjtz     |\n",
+        "description": "| 全部 | 开馆通知 | 施工维修 | 服务通知 | 违规通报 | 清图快讯 | 馆际通知 |\n| ---- | -------- | -------- | -------- | -------- | -------- | -------- |\n| 留空 | kgtz     | sgwx     | fwtz     | wgtb     | qtkx     | gjtz     |",
         "categories": [
           "university"
         ],
