@@ -26857,7 +26857,7 @@
           "nczitzk"
         ],
         "example": "/wallstreetcn/news",
-        "description": "| id           | 分类 |\n| ------------ | ---- |\n| global       | 最新 |\n| shares       | 股市 |\n| bonds        | 债市 |\n| commodities  | 商品 |\n| forex        | 外汇 |\n| finance      | 金融 |\n| enterprise   | 公司 |\n| asset-manage | 资管 |\n| tmt          | 科技 |\n| ai           | 硬AI |\n| estate       | 地产 |\n| car          | 汽车 |\n| medicine     | 医药 |",
+        "description": "| id           | 分类  |\n| ------------ | ----- |\n| global       | 最新  |\n| shares       | 股市  |\n| bonds        | 债市  |\n| commodities  | 商品  |\n| forex        | 外汇  |\n| finance      | 金融  |\n| enterprise   | 公司  |\n| asset-manage | 资管  |\n| tmt          | 科技  |\n| ai           | 硬 AI |\n| estate       | 地产  |\n| car          | 汽车  |\n| medicine     | 医药  |",
         "categories": [
           "finance"
         ],
@@ -41723,6 +41723,50 @@
         "test": {
           "code": 0
         }
+      }
+    }
+  },
+  "ahstu": {
+    "name": "安徽科技工程大学",
+    "url": "ahstu.edu.cn",
+    "categories": [
+      "university"
+    ],
+    "heat": 0,
+    "routes": {
+      "/ahstu/:type?": {
+        "path": "/:type?",
+        "name": "官网通知与新闻",
+        "maintainers": [
+          "JizzCruiy"
+        ],
+        "example": "/ahstu/akyw",
+        "parameters": {
+          "type": "栏目类型，见下表，默认为 `akyw`"
+        },
+        "description": "| 栏目 | type |\n| ---- | ---- |\n| 安科要闻 | akyw |\n| 通知公告 | tzgg |\n| 学术安科 | xsak |\n| 校园动态 | xydt |\n| 媒体聚焦 | mtak |\n| 人物风采 | rwfc |\n| 视觉校园 | sjxy |",
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.ahstu.edu.cn/index/:type.htm"
+            ],
+            "target": "/:type"
+          }
+        ],
+        "location": "index.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
