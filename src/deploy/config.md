@@ -42,12 +42,6 @@ RSSHub supports two caching methods: memory and redis, it is recommended to use 
 
 Partial routes have a strict anti-crawler policy, and can be configured to use proxy.
 
-::: tip Proxy provider
-[SX.org](https://sx.org/?c=p9gKCb) can be used as an HTTP/HTTPS proxy provider for RSSHub routes that require proxy access. RSSHub users can use promo code `RSShub3gb` to get a free trial period.
-
-Set your SX.org HTTP/HTTPS proxy endpoint in `PROXY_URI` using the `{protocol}://{host}:{port}` format. If authentication is required, add Base64-encoded credentials to `PROXY_AUTH`. Use `PROXY_URL_REGEX` to define which target URLs should be routed through the proxy.
-:::
-
 `PROXY_URI`: The proxy URI should be in the format `{protocol}://{host}:{port}`. Supported protocols: `http`, `https`, `socks` and `socks5`. Note that `socks4`, `socks4a` and `socks5h` are not supported, `socks` and `socks5` resolve DNS through the proxy, i.e. they behave as `socks5h`.
 
 `PROXY_AUTH`: Authentication credentials for the proxy server, will add header `Proxy-Authorization: Basic ${PROXY_AUTH}`
