@@ -8,7 +8,7 @@
     "fmt:check": "oxfmt --check"
   },
   "devDependencies": {
-    "@intlify/unplugin-vue-i18n": "11.2.4",
+    "@intlify/unplugin-vue-i18n": "11.2.5",
     "@types/json-schema": "7.0.15",
     "hono": "4.13.2",
     "markdown-it": "15.0.0",
