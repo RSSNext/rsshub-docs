@@ -84170,6 +84170,63 @@
       }
     }
   },
+  "grandcanalmuseum": {
+    "name": "China Grand Canal Museum",
+    "url": "www.grandcanalmuseum.cn",
+    "zh": {
+      "name": "中国大运河博物馆"
+    },
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/grandcanalmuseum/linzhantezhan": {
+        "path": "/linzhantezhan",
+        "name": "临展特展",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/grandcanalmuseum/linzhantezhan",
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.grandcanalmuseum.cn/linzhantezhan.html"
+            ],
+            "target": "/linzhantezhan"
+          }
+        ],
+        "location": "linzhantezhan.tsx",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/grandcanalmuseum/yunboxinwen": {
+        "path": "/yunboxinwen",
+        "name": "运博新闻",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/grandcanalmuseum/yunboxinwen",
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.grandcanalmuseum.cn/yunboxinwen.html"
+            ],
+            "target": "/yunboxinwen"
+          }
+        ],
+        "location": "yunboxinwen.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "greasyfork": {
     "name": "Greasy Fork",
     "url": "greasyfork.org",
