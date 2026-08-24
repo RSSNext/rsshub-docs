@@ -217259,6 +217259,69 @@
       }
     }
   },
+  "ryo.lu": {
+    "name": "Ryo Lu",
+    "url": "ryo.lu",
+    "categories": [
+      "blog"
+    ],
+    "heat": 0,
+    "routes": {
+      "/ryo.lu/journal/:lang?": {
+        "path": "/journal/:lang?",
+        "name": "Journal",
+        "url": "ryo.lu/journal",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/ryo.lu/journal",
+        "parameters": {
+          "lang": {
+            "description": "Language",
+            "default": "en",
+            "options": [
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "zh",
+                "label": "中文"
+              },
+              {
+                "value": "ja",
+                "label": "日本語"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "blog"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ryo.lu/journal",
+              "ryo.lu/"
+            ],
+            "target": "/journal"
+          }
+        ],
+        "view": 0,
+        "location": "journal.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "taptap": {
     "name": "TapTap",
     "url": "www.taptap.io",
