@@ -140184,6 +140184,48 @@
       }
     }
   },
+  "schwabnetwork": {
+    "name": "Schwab Network",
+    "url": "schwabnetwork.com",
+    "description": "Charles Schwab Media Productions Company",
+    "categories": [
+      "finance"
+    ],
+    "heat": 0,
+    "routes": {
+      "/schwabnetwork/markets": {
+        "path": "/markets",
+        "name": "市场新闻",
+        "url": "schwabnetwork.com/markets",
+        "maintainers": [
+          "hutianyu2006"
+        ],
+        "example": "/schwabnetwork/markets",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "schwabnetwork.com/markets"
+            ]
+          }
+        ],
+        "view": 5,
+        "location": "markets.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "science": {
     "name": "Science Magazine",
     "url": "science.org",
