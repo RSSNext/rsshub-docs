@@ -143969,7 +143969,7 @@
     "name": "Shopify",
     "url": "shopify.com",
     "categories": [
-      "other"
+      "programming"
     ],
     "heat": 0,
     "routes": {
@@ -143984,7 +143984,7 @@
           "handle": "例如一个 App 的链接 https://apps.shopify.com/flow，其中 flow 就是指的是 handle"
         },
         "categories": [
-          "other"
+          "programming"
         ],
         "radar": [
           {
@@ -144011,7 +144011,7 @@
           "q": "需要搜索的 App"
         },
         "categories": [
-          "other"
+          "programming"
         ],
         "radar": [
           {
@@ -144026,6 +144026,48 @@
         "test": {
           "code": 0
         }
+      },
+      "/shopify/engineering/:topic?": {
+        "path": "/engineering/:topic?",
+        "name": "Engineering",
+        "url": "shopify.engineering/latest",
+        "maintainers": [
+          "zhsama"
+        ],
+        "example": "/shopify/engineering",
+        "parameters": {
+          "topic": "Topic slug from `/topics/:topic`, e.g. `mobile`, `ai-machine-learning`. Defaults to the latest listing."
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "shopify.engineering/",
+              "shopify.engineering/latest"
+            ],
+            "target": "/engineering"
+          },
+          {
+            "source": [
+              "shopify.engineering/topics/:topic"
+            ],
+            "target": "/engineering/:topic"
+          }
+        ],
+        "location": "engineering.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
