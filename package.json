@@ -11,7 +11,7 @@
     "@intlify/unplugin-vue-i18n": "11.2.5",
     "@types/json-schema": "7.0.15",
     "hono": "4.13.4",
-    "markdown-it": "15.0.0",
+    "markdown-it": "15.0.1",
     "markdown-it-container": "4.0.0",
     "oxfmt": "0.65.0",
     "vitepress": "2.0.0-alpha.19",
