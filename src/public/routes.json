@@ -52241,6 +52241,7 @@
     "categories": [
       "finance",
       "bbs",
+      "new-media",
       "other"
     ],
     "heat": 1286,
@@ -52655,6 +52656,42 @@
             "ownerUserId": null
           }
         ]
+      },
+      "/baidu/baijiahao/:id/:tab?": {
+        "path": "/baijiahao/:id/:tab?",
+        "name": "百家号",
+        "url": "baijiahao.baidu.com",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/baidu/baijiahao/3617",
+        "parameters": {
+          "id": "Account id, the `app_id` in the URL of the author page",
+          "tab": {
+            "description": "Content type",
+            "options": [
+              {
+                "value": "main",
+                "label": "全部"
+              },
+              {
+                "value": "article",
+                "label": "文章"
+              },
+              {
+                "value": "dynamic",
+                "label": "动态"
+              }
+            ],
+            "default": "main"
+          }
+        },
+        "categories": [
+          "new-media"
+        ],
+        "location": "baijiahao.ts",
+        "heat": 0,
+        "topFeeds": []
       },
       "/baidu/search/:keyword": {
         "path": "/search/:keyword",
