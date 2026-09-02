@@ -28884,71 +28884,6 @@
       }
     }
   },
-  "toutiao": {
-    "name": "今日头条",
-    "url": "www.toutiao.com",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 381,
-    "routes": {
-      "/toutiao/user/token/:token": {
-        "path": "/user/token/:token",
-        "name": "头条主页",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/toutiao/user/token/MS4wLjABAAAApOspM7AnWqplD9FIBGnhJRfUjFT_msD1KZMfNPBZa-c",
-        "parameters": {
-          "token": "用户 token，可在用户主页 URL 找到"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "antiCrawler": true
-        },
-        "radar": [
-          {
-            "source": [
-              "www.toutiao.com/c/user/token/:token"
-            ]
-          }
-        ],
-        "location": "user.tsx",
-        "heat": 381,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "84064321853358080",
-            "url": "rsshub://toutiao/user/token/MS4wLjABAAAAuaHJxshSggAbn-LFL6O0BjzOrTlpHxUDLxcvCP73__GXaavP1FTSVX87jpouwAG2",
-            "title": "程序员老张（AI教学）的头条主页 - 今日头条(www.toutiao.com)",
-            "description": "🌈资深程序猿一名 🏠分享AI知识，以及好用的软件推荐 🙊一个说真话的培训师 软件都在 抖音粉丝群 承接各类培训服务 - Powered by RSSHub",
-            "siteUrl": "https://www.toutiao.com/c/user/token/MS4wLjABAAAAuaHJxshSggAbn-LFL6O0BjzOrTlpHxUDLxcvCP73__GXaavP1FTSVX87jpouwAG2/",
-            "image": "https://sf6-cdn-tos.bdxiguastatic.com/img/user-avatar/b8b6c80c419c2743cabb64c20b65271b~300x300.image",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "84412058211393536",
-            "url": "rsshub://toutiao/user/token/MS4wLjABAAAA1q3h6c_FuudwZwYJBcGMC4LjJwrnBkzE6tkRu2pVPOg",
-            "title": "听风的蚕工作室的头条主页 - 今日头条(www.toutiao.com)",
-            "description": "关注不迷路🤙🏻 - Powered by RSSHub",
-            "siteUrl": "https://www.toutiao.com/c/user/token/MS4wLjABAAAA1q3h6c_FuudwZwYJBcGMC4LjJwrnBkzE6tkRu2pVPOg/",
-            "image": "https://p3-sign.toutiaoimg.com/user-avatar/574d56bc5fcc3e3dd56bf1d0989e7c2e~300x300.image?_iz=112761&from=tt_user.profile_all_shortvideo&lk3s=06827d14&x-expires=1788912000&x-signature=2zZ5THqFRMIivWNB3vA%2BM50LSL4%3D",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "tqyb": {
     "name": "广东天气",
     "url": "www.tqyb.com.cn",
@@ -156394,6 +156329,181 @@
         "test": {
           "code": 0
         }
+      }
+    }
+  },
+  "toutiao": {
+    "name": "今日头条",
+    "url": "www.toutiao.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 381,
+    "routes": {
+      "/toutiao/user/token/:token": {
+        "path": "/user/token/:token",
+        "name": "头条主页",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/toutiao/user/token/MS4wLjABAAAApOspM7AnWqplD9FIBGnhJRfUjFT_msD1KZMfNPBZa-c",
+        "parameters": {
+          "token": "用户 token，可在用户主页 URL 找到"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.toutiao.com/c/user/token/:token"
+            ]
+          }
+        ],
+        "location": "user.tsx",
+        "heat": 381,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "84064321853358080",
+            "url": "rsshub://toutiao/user/token/MS4wLjABAAAAuaHJxshSggAbn-LFL6O0BjzOrTlpHxUDLxcvCP73__GXaavP1FTSVX87jpouwAG2",
+            "title": "程序员老张（AI教学）的头条主页 - 今日头条(www.toutiao.com)",
+            "description": "🌈资深程序猿一名 🏠分享AI知识，以及好用的软件推荐 🙊一个说真话的培训师 软件都在 抖音粉丝群 承接各类培训服务 - Powered by RSSHub",
+            "siteUrl": "https://www.toutiao.com/c/user/token/MS4wLjABAAAAuaHJxshSggAbn-LFL6O0BjzOrTlpHxUDLxcvCP73__GXaavP1FTSVX87jpouwAG2/",
+            "image": "https://sf6-cdn-tos.bdxiguastatic.com/img/user-avatar/b8b6c80c419c2743cabb64c20b65271b~300x300.image",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "84412058211393536",
+            "url": "rsshub://toutiao/user/token/MS4wLjABAAAA1q3h6c_FuudwZwYJBcGMC4LjJwrnBkzE6tkRu2pVPOg",
+            "title": "听风的蚕工作室的头条主页 - 今日头条(www.toutiao.com)",
+            "description": "关注不迷路🤙🏻 - Powered by RSSHub",
+            "siteUrl": "https://www.toutiao.com/c/user/token/MS4wLjABAAAA1q3h6c_FuudwZwYJBcGMC4LjJwrnBkzE6tkRu2pVPOg/",
+            "image": "https://p3-sign.toutiaoimg.com/user-avatar/574d56bc5fcc3e3dd56bf1d0989e7c2e~300x300.image?_iz=112761&from=tt_user.profile_all_shortvideo&lk3s=06827d14&x-expires=1788912000&x-signature=2zZ5THqFRMIivWNB3vA%2BM50LSL4%3D",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/toutiao/channel/:category": {
+        "path": "/channel/:category",
+        "name": "频道",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/toutiao/channel/news_tech",
+        "parameters": {
+          "category": {
+            "description": "频道",
+            "options": [
+              {
+                "value": "recommend",
+                "label": "推荐"
+              },
+              {
+                "value": "news_hot",
+                "label": "热点"
+              },
+              {
+                "value": "news_tech",
+                "label": "科技"
+              },
+              {
+                "value": "news_finance",
+                "label": "财经"
+              },
+              {
+                "value": "news_entertainment",
+                "label": "娱乐"
+              },
+              {
+                "value": "news_sports",
+                "label": "体育"
+              },
+              {
+                "value": "news_world",
+                "label": "国际"
+              },
+              {
+                "value": "news_military",
+                "label": "军事"
+              },
+              {
+                "value": "news_history",
+                "label": "历史"
+              },
+              {
+                "value": "news_essay",
+                "label": "美文"
+              },
+              {
+                "value": "news_food",
+                "label": "美食"
+              },
+              {
+                "value": "news_travel",
+                "label": "旅游"
+              },
+              {
+                "value": "news_fashion",
+                "label": "时尚"
+              },
+              {
+                "value": "news_game",
+                "label": "游戏"
+              },
+              {
+                "value": "news_baby",
+                "label": "育儿"
+              },
+              {
+                "value": "news_regimen",
+                "label": "养生"
+              },
+              {
+                "value": "digital",
+                "label": "数码"
+              },
+              {
+                "value": "video",
+                "label": "视频"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.toutiao.com/ch/:category"
+            ]
+          },
+          {
+            "title": "推荐",
+            "source": [
+              "www.toutiao.com/"
+            ],
+            "target": "/channel/recommend"
+          }
+        ],
+        "location": "channel.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
