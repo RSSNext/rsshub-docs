@@ -12,7 +12,7 @@ sidebar_position: 2
 -   Avoid using deprecated features.
 -   Avoid modifying `yarn.lock` and `package.json`, unless you add a new dependency.
 -   Combine repetitive code into functions.
--   Keep intermediate values immutable; construct a new object instead of mutating an existing one.
+-   Keep intermediate values immutable. Construct a new object instead of mutating an existing one.
 -   Prefer higher ECMAScript Standard features over lower ones.
 -   Sort the entries alphabetically (uppercase first) to make it easier to find an entry.
 -   Use HTTPS instead of HTTP whenever possible.
