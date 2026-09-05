@@ -59468,6 +59468,66 @@
       }
     }
   },
+  "canalmuseum": {
+    "name": "The Grand Canal Museum of Beijing",
+    "url": "www.canalmuseum.org.cn",
+    "zh": {
+      "name": "北京大运河博物馆"
+    },
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/canalmuseum/consulting/:type": {
+        "path": "/consulting/:type",
+        "name": "NEWS",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/canalmuseum/consulting/tzgg",
+        "parameters": {
+          "type": "News type, supported values: tzgg（通知公告）, xwdt（新闻动态）"
+        },
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.canalmuseum.org.cn/consulting.html"
+            ],
+            "target": "/consulting/tzgg"
+          }
+        ],
+        "location": "consulting.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/canalmuseum/lszl": {
+        "path": "/lszl",
+        "name": "临时展览",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/canalmuseum/lszl",
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.canalmuseum.org.cn/lszl.html"
+            ],
+            "target": "/lszl"
+          }
+        ],
+        "location": "lszl.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "capitalmuseum": {
     "name": "Capital Museum",
     "url": "www.capitalmuseum.org.cn/",
