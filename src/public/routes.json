@@ -25001,6 +25001,91 @@
       }
     }
   },
+  "gamebase": {
+    "name": "遊戲基地 Gamebase",
+    "url": "news.gamebase.com.tw",
+    "categories": [
+      "game"
+    ],
+    "heat": 50,
+    "routes": {
+      "/gamebase/news/:type?/:category?": {
+        "path": "/news/:type?/:category?",
+        "name": "新聞",
+        "url": "news.gamebase.com.tw",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/gamebase/news",
+        "parameters": {
+          "type": "類型，見下表，預設為 newslist",
+          "category": "分類，預設為 `all`，即全部，可在對應分類頁 URL 中找到"
+        },
+        "description": "::: tip\n若訂閱 [手機遊戲新聞](https://news.gamebase.com.tw/news/newslist?type=mobile)，網址為 `https://news.gamebase.com.tw/news/newslist?type=mobile`，請截取 `https://news.gamebase.com.tw/news/` 到末尾的部分 `newslist` 作為 `type` 參數填入，`mobile` 作為 `category` 參數填入，此時目標路由為 [`/gamebase/news/newslist/mobile`](https://rsshub.app/gamebase/news/newslist/mobile)。\n:::\n\n| newslist | r18list |\n| -------- | ------- |",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "news.gamebase.com.tw/news",
+              "news.gamebase.com.tw/news/:type"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "news.tsx",
+        "heat": 50,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "62600104047803392",
+            "url": "rsshub://gamebase/news",
+            "title": "新聞 | 遊戲基地 Gamebase",
+            "description": "精選基地編輯每日為你帶來的電玩、動漫、娛樂遊戲最新新聞 - Powered by RSSHub",
+            "siteUrl": "https://news.gamebase.com.tw/news",
+            "image": "https://image.gamebase.com.tw/gb_tw/static/logo_01.png",
+            "errorMessage": "[GET] \"undefined\": <no response> Failed to parse URL from undefined (Invalid URL)\n",
+            "errorAt": "2026-06-23T05:39:10.805Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "67001925811204096",
+            "url": "rsshub://gamebase/news/r18list",
+            "title": "新聞 | 遊戲基地 Gamebase",
+            "description": "精選基地編輯每日為你帶來的電玩、動漫、娛樂遊戲最新新聞 - Powered by RSSHub",
+            "siteUrl": "https://news.gamebase.com.tw/news",
+            "image": "https://image.gamebase.com.tw/gb_tw/static/logo_01.png",
+            "errorMessage": "[GET] \"undefined\": <no response> Failed to parse URL from undefined (Invalid URL)\n[GET] \"undefined\": <no response> Failed to parse URL from undefined (Invalid URL)\n",
+            "errorAt": "2026-06-25T13:36:56.554Z",
+            "ownerUserId": null
+          }
+        ],
+        "zh": {
+          "name": "新闻",
+          "description": "::: tip\n若订阅 [手机游戏新闻](https://news.gamebase.com.tw/news/newslist?type=mobile)，网址为 `https://news.gamebase.com.tw/news/newslist?type=mobile`，请截取 `https://news.gamebase.com.tw/news/` 到末尾的部分 `newslist` 作为 `type` 参数填入，`mobile` 作为 `category` 参数填入，此时目标路由为 [`/gamebase/news/newslist/mobile`](https://rsshub.app/gamebase/news/newslist/mobile)。\n:::\n\n| newslist | r18list |\n| -------- | ------- |",
+          "parameters": {
+            "type": "类型，见下表，默认为 newslist",
+            "category": "分类，默认为 `all`，即全部，可在对应分类页 URL 中找到"
+          }
+        },
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at listOnTimeout (node:internal/timers:597:9)\n    at processTimers (node:internal/timers:571:7)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "gettr": {
     "name": "GETTR",
     "url": "gettr.com",
@@ -86600,91 +86685,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
-  "gamebase": {
-    "name": "遊戲基地 Gamebase",
-    "url": "news.gamebase.com.tw",
-    "categories": [
-      "game"
-    ],
-    "heat": 50,
-    "routes": {
-      "/gamebase/news/:type?/:category?": {
-        "path": "/news/:type?/:category?",
-        "name": "新聞",
-        "url": "news.gamebase.com.tw",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/gamebase/news",
-        "parameters": {
-          "type": "類型，見下表，預設為 newslist",
-          "category": "分類，預設為 `all`，即全部，可在對應分類頁 URL 中找到"
-        },
-        "description": "::: tip\n若訂閱 [手機遊戲新聞](https://news.gamebase.com.tw/news/newslist?type=mobile)，網址為 `https://news.gamebase.com.tw/news/newslist?type=mobile`，請截取 `https://news.gamebase.com.tw/news/` 到末尾的部分 `newslist` 作為 `type` 參數填入，`mobile` 作為 `category` 參數填入，此時目標路由為 [`/gamebase/news/newslist/mobile`](https://rsshub.app/gamebase/news/newslist/mobile)。\n:::\n\n| newslist | r18list |\n| -------- | ------- |",
-        "categories": [
-          "game"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "news.gamebase.com.tw/news",
-              "news.gamebase.com.tw/news/:type"
-            ]
-          }
-        ],
-        "view": 0,
-        "location": "news.tsx",
-        "heat": 50,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "62600104047803392",
-            "url": "rsshub://gamebase/news",
-            "title": "新聞 | 遊戲基地 Gamebase",
-            "description": "精選基地編輯每日為你帶來的電玩、動漫、娛樂遊戲最新新聞 - Powered by RSSHub",
-            "siteUrl": "https://news.gamebase.com.tw/news",
-            "image": "https://image.gamebase.com.tw/gb_tw/static/logo_01.png",
-            "errorMessage": "[GET] \"undefined\": <no response> Failed to parse URL from undefined (Invalid URL)\n",
-            "errorAt": "2026-06-23T05:39:10.805Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "67001925811204096",
-            "url": "rsshub://gamebase/news/r18list",
-            "title": "新聞 | 遊戲基地 Gamebase",
-            "description": "精選基地編輯每日為你帶來的電玩、動漫、娛樂遊戲最新新聞 - Powered by RSSHub",
-            "siteUrl": "https://news.gamebase.com.tw/news",
-            "image": "https://image.gamebase.com.tw/gb_tw/static/logo_01.png",
-            "errorMessage": "[GET] \"undefined\": <no response> Failed to parse URL from undefined (Invalid URL)\n[GET] \"undefined\": <no response> Failed to parse URL from undefined (Invalid URL)\n",
-            "errorAt": "2026-06-25T13:36:56.554Z",
-            "ownerUserId": null
-          }
-        ],
-        "zh": {
-          "name": "新闻",
-          "description": "::: tip\n若订阅 [手机游戏新闻](https://news.gamebase.com.tw/news/newslist?type=mobile)，网址为 `https://news.gamebase.com.tw/news/newslist?type=mobile`，请截取 `https://news.gamebase.com.tw/news/` 到末尾的部分 `newslist` 作为 `type` 参数填入，`mobile` 作为 `category` 参数填入，此时目标路由为 [`/gamebase/news/newslist/mobile`](https://rsshub.app/gamebase/news/newslist/mobile)。\n:::\n\n| newslist | r18list |\n| -------- | ------- |",
-          "parameters": {
-            "type": "类型，见下表，默认为 newslist",
-            "category": "分类，默认为 `all`，即全部，可在对应分类页 URL 中找到"
-          }
-        },
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at listOnTimeout (node:internal/timers:597:9)\n    at processTimers (node:internal/timers:571:7)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
