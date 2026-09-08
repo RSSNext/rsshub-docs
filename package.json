@@ -14,7 +14,7 @@
     "markdown-it": "15.0.1",
     "markdown-it-container": "4.0.0",
     "oxfmt": "0.66.0",
-    "vitepress": "2.0.0-alpha.19",
+    "vitepress": "2.0.0-alpha.20",
     "vue": "3.5.42",
     "vue-i18n": "11.4.10"
   },
