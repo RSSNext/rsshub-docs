@@ -40128,82 +40128,6 @@
       }
     }
   },
-  "1lou": {
-    "name": "BT 之家 1LOU 站",
-    "url": "1lou.me",
-    "description": "",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 520,
-    "routes": {
-      "/1lou/:params{.+}?": {
-        "path": "/:params{.+}?",
-        "name": "通用",
-        "url": "1lou.me",
-        "maintainers": [
-          "falling",
-          "nczitzk"
-        ],
-        "example": "/1lou/forum-2-1",
-        "parameters": {
-          "params": "路径参数，可以在对应页面的 URL 中找到"
-        },
-        "description": "::: tip\n`1lou.me/` 后的内容填入 params 参数，以下是几个例子：\n\n若订阅 [大陆电视剧](https://www.1lou.me/forum-2-1.htm?tagids=0_97_0_0)，网址为 `https://www.1lou.me/forum-2-1.htm?tagids=0_97_0_0`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `forum-2-1` 作为参数，并补充 `tagids`，此时路由为 [`/1lou/forum-2-1?tagids=0_97_0_0`](https://rsshub.app/1lou/forum-2-1?tagids=0_97_0_0)。\n\n若订阅 [最新发帖电视剧](https://www.1lou.me/forum-2-1.htm?orderby=tid\\&digest=0)，网址为 `https://www.1lou.me/forum-2-1.htm?orderby=tid&digest=0`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `forum-2-1` 作为参数，并补充 `orderby`，此时路由为 [`/1lou/forum-2-1?orderby=tid`](https://rsshub.app/1lou/forum-2-1?orderby=tid)。\n\n若订阅 [搜素繁花主题贴](https://www.1lou.me/search-_E7_B9_81_E8_8A_B1-1.htm)，网址为 `https://www.1lou.me/search-_E7_B9_81_E8_8A_B1-1.htm`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `search-_E7_B9_81_E8_8A_B1-1` 作为参数，此时路由为 [`/1lou/search-_E7_B9_81_E8_8A_B1-1`](https://rsshub.app/1lou/search-_E7_B9_81_E8_8A_B1-1)。\n:::",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "1lou.me/:params"
-            ]
-          }
-        ],
-        "location": "index.ts",
-        "heat": 520,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "62495339293222913",
-            "url": "rsshub://1lou/forum-1",
-            "title": "最新电影 - BT 之家 1LOU 站",
-            "description": "论坛影视区推荐使用纯BT软件：Transmission，qBittorrent，Bitcomet，uTorrent，其他下载软件请自行尝试。不支持吸血迅雷。 - Powered by RSSHub",
-            "siteUrl": "https://www.1lou.me/forum-1.htm?format=json",
-            "image": "https://www.1lou.me/view/img/logo.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "64249408253921283",
-            "url": "rsshub://1lou/forum-2-1",
-            "title": "电视剧集 - BT 之家 1LOU 站",
-            "description": "论坛影视区推荐使用纯BT软件：Transmission，qBittorrent，Bitcomet，uTorrent，其他下载软件请自行尝试。不支持吸血迅雷。 - Powered by RSSHub",
-            "siteUrl": "https://www.1lou.me/forum-2-1.htm?format=json",
-            "image": "https://www.1lou.me/view/img/logo.png",
-            "errorMessage": "Failed query: select \"id\", \"guid\", \"media\" from \"entries\" \"entries\" where \"entries\".\"feed_id\" = $1\nparams: 64249408253921283",
-            "errorAt": "2026-09-07T03:12:40.510Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "Error: STACK_TRACE_ERROR\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1784:27)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1817:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1563:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:599:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:98:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1889:40\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:2258:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1889:10)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:54)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
-        }
-      }
-    }
-  },
   "1point3acres": {
     "name": "一亩三分地",
     "url": "blog.1point3acres.com",
@@ -174034,6 +173958,117 @@
         "test": {
           "code": 1
         }
+      }
+    }
+  },
+  "1lou": {
+    "name": "BT 之家 1LOU 站",
+    "url": "1lou.me",
+    "description": "",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 520,
+    "routes": {
+      "/1lou/:params{.+}?": {
+        "path": "/:params{.+}?",
+        "name": "通用",
+        "url": "1lou.me",
+        "maintainers": [
+          "falling",
+          "nczitzk"
+        ],
+        "example": "/1lou/forum-2-1",
+        "parameters": {
+          "params": "路径参数，可以在对应页面的 URL 中找到"
+        },
+        "description": "::: tip\n`1lou.me/` 后的内容填入 params 参数，以下是几个例子：\n\n若订阅 [大陆电视剧](https://www.1lou.me/forum-2-1.htm?tagids=0_97_0_0)，网址为 `https://www.1lou.me/forum-2-1.htm?tagids=0_97_0_0`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `forum-2-1` 作为参数，并补充 `tagids`，此时路由为 [`/1lou/forum-2-1?tagids=0_97_0_0`](https://rsshub.app/1lou/forum-2-1?tagids=0_97_0_0)。\n\n若订阅 [最新发帖电视剧](https://www.1lou.me/forum-2-1.htm?orderby=tid\\&digest=0)，网址为 `https://www.1lou.me/forum-2-1.htm?orderby=tid&digest=0`。截取 `https://www.1lou.me/` 到末尾 `.htm` 的部分 `forum-2-1` 作为参数，并补充 `orderby`，此时路由为 [`/1lou/forum-2-1?orderby=tid`](https://rsshub.app/1lou/forum-2-1?orderby=tid)。\n\n搜索功能已移至 “搜索” 路由。\n:::",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "1lou.me/:params"
+            ]
+          }
+        ],
+        "location": "index.ts",
+        "heat": 520,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "62495339293222913",
+            "url": "rsshub://1lou/forum-1",
+            "title": "最新电影 - BT 之家 1LOU 站",
+            "description": "论坛影视区推荐使用纯BT软件：Transmission，qBittorrent，Bitcomet，uTorrent，其他下载软件请自行尝试。不支持吸血迅雷。 - Powered by RSSHub",
+            "siteUrl": "https://www.1lou.me/forum-1.htm?format=json",
+            "image": "https://www.1lou.me/view/img/logo.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "64249408253921283",
+            "url": "rsshub://1lou/forum-2-1",
+            "title": "电视剧集 - BT 之家 1LOU 站",
+            "description": "论坛影视区推荐使用纯BT软件：Transmission，qBittorrent，Bitcomet，uTorrent，其他下载软件请自行尝试。不支持吸血迅雷。 - Powered by RSSHub",
+            "siteUrl": "https://www.1lou.me/forum-2-1.htm?format=json",
+            "image": "https://www.1lou.me/view/img/logo.png",
+            "errorMessage": "Failed query: select \"id\", \"guid\", \"media\" from \"entries\" \"entries\" where \"entries\".\"feed_id\" = $1\nparams: 64249408253921283",
+            "errorAt": "2026-09-07T03:12:40.510Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "Error: STACK_TRACE_ERROR\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1784:27)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1817:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1563:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:599:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:98:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1889:40\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:2258:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1889:10)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1893:54)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+        }
+      },
+      "/1lou/search/:params": {
+        "path": "/search/:params",
+        "name": "搜索",
+        "url": "1lou.me/search",
+        "maintainers": [
+          "JimenezLi"
+        ],
+        "example": "/1lou/search/繁花",
+        "parameters": {
+          "params": "搜索关键词"
+        },
+        "description": "搜索路由，支持关键词搜索。",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "1lou.me/search"
+            ]
+          }
+        ],
+        "location": "search.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
