@@ -117296,6 +117296,41 @@
       }
     }
   },
+  "namoc": {
+    "name": "National Art Museum of China",
+    "url": "www.namoc.cn",
+    "zh": {
+      "name": "中国美术馆"
+    },
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/namoc/zhanlan": {
+        "path": "/zhanlan",
+        "name": "Exhibitions",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/namoc/zhanlan",
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.namoc.cn/namoc/zhanlan/zl_list.shtml"
+            ],
+            "target": "/zhanlan"
+          }
+        ],
+        "location": "zhanlan.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "nankai": {
     "name": "南开大学",
     "url": "yzb.nankai.edu.cn",
