@@ -235,7 +235,7 @@ const copy = computed(() => ({
   color: #9a3412;
 }
 
-:global(.dark) .folo-card {
+.dark .folo-card {
   border-color: rgba(255, 92, 0, 0.22);
   background:
     radial-gradient(circle at top left, rgba(255, 92, 0, 0.28), transparent 38%),
@@ -245,30 +245,30 @@ const copy = computed(() => ({
     inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
-:global(.dark) .folo-card::before {
+.dark .folo-card::before {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 34%, rgba(255, 92, 0, 0.08));
 }
 
-:global(.dark) .folo-brand__name,
-:global(.dark) .folo-card__title {
+.dark .folo-brand__name,
+.dark .folo-card__title {
   color: rgba(255, 255, 255, 0.92);
 }
 
-:global(.dark) .folo-card__description {
+.dark .folo-card__description {
   color: rgba(255, 255, 255, 0.72);
 }
 
-:global(.dark) .folo-card__footnote {
+.dark .folo-card__footnote {
   color: rgba(255, 255, 255, 0.52);
 }
 
-:global(.dark) .folo-button--secondary {
+.dark .folo-button--secondary {
   border-color: rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.86);
 }
 
-:global(.dark) .folo-button--secondary:hover {
+.dark .folo-button--secondary:hover {
   border-color: rgba(255, 92, 0, 0.34);
   color: #ffb089;
 }
