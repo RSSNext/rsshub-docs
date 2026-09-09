@@ -43594,6 +43594,38 @@
       }
     }
   },
+  "98zhibo": {
+    "name": "98直播吧",
+    "url": "www.98zhibo.com",
+    "categories": [
+      "sport"
+    ],
+    "heat": 0,
+    "routes": {
+      "/98zhibo/zuqiujijin": {
+        "path": "/zuqiujijin",
+        "name": "足球集锦",
+        "maintainers": [
+          "chouj"
+        ],
+        "example": "/98zhibo/zuqiujijin",
+        "categories": [
+          "sport"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.98zhibo.com/zuqiujijin/"
+            ],
+            "target": "/zuqiujijin"
+          }
+        ],
+        "location": "zuqiujijin.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "99percentinvisible": {
     "name": "99% Invisible",
     "url": "99percentinvisible.org",
