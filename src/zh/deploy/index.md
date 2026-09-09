@@ -403,6 +403,14 @@ sudo ansible-playbook rsshub.yaml
 如果在部署过程中遇到 `ERR_REQUIRE_ESM` 错误，需要启用 Node.js 实验性的 require() ES Module 支持。在 Vercel 项目设置中添加环境变量 `NODE_OPTIONS=--experimental-require-module`。详见 [Vercel 文档](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-node.js-require-of-es-module)。
 :::
 
+## 部署到 Cloudflare Workers
+
+RSSHub 支持一键部署到 Cloudflare Workers。
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
+
+通过 [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/) 支持 puppeteer，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
+
 ## 部署到 Zeabur
 
 1.  前往 [Zeabur 完成注册](https://dash.zeabur.com)
@@ -424,21 +432,6 @@ sudo ansible-playbook rsshub.yaml
 2.  把自己的分叉部署到 Heroku：`https://heroku.com/deploy?template=URL`，其中 `URL` 改为分叉地址 （例如 `https://github.com/USERNAME/RSSHub`）。
 3.  检查 Heroku 设置，随代码库更新自动部署。
 4.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的分叉。
-
-## 部署到 Cloudflare Workers
-
-RSSHub 支持一键部署到 Cloudflare Workers。
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
-
-通过 [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/) 支持 puppeteer，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
-
-:::warning
-
--   需要 Workers 付费版。免费版的 Worker 大小限制为 3 MB，不足以运行 RSSHub。
--   Browser Rendering（用于 puppeteer）同样需要 Workers 付费版。
-
-:::
 
 ## 部署到 Fly.io
 

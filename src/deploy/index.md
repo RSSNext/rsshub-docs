@@ -412,6 +412,14 @@ sudo ansible-playbook rsshub.yaml
 If you encounter an `ERR_REQUIRE_ESM` error during deployment, you need to enable experimental Node.js require() of ES Module support. Add the environment variable `NODE_OPTIONS=--experimental-require-module` in your Vercel project settings. See [Vercel's documentation](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-node.js-require-of-es-module) for more details.
 :::
 
+## Deploy to Cloudflare Workers
+
+RSSHub can be deployed to Cloudflare Workers with one click.
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
+
+Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
+
 ## Deploy to Zeabur
 
 1.  [Sign up for Zeabur](https://dash.zeabur.com)
@@ -433,21 +441,6 @@ If you encounter an `ERR_REQUIRE_ESM` error during deployment, you need to enabl
 2.  Deploy your fork to Heroku: `https://heroku.com/deploy?template=URL`, where `URL` is your fork address (_e.g._ `https://github.com/USERNAME/RSSHub`).
 3.  Configure `automatic deploy` in Heroku app to follow the changes to your fork.
 4.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
-
-## Deploy to Cloudflare Workers
-
-RSSHub can be deployed to Cloudflare Workers with one click.
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
-
-Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
-
-:::warning
-
--   Workers Paid plan is required. Free plan has a 3 MB Worker size limit which is insufficient for RSSHub.
--   Browser Rendering (for puppeteer) also requires Workers Paid plan.
-
-:::
 
 ## Deploy to Fly.io
 
