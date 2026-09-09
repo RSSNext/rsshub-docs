@@ -111629,6 +111629,50 @@
       }
     }
   },
+  "maldita": {
+    "name": "Maldita.es",
+    "url": "maldita.es",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/maldita/updates/:category?": {
+        "path": "/updates/:category?",
+        "name": "Latest Updates",
+        "maintainers": [
+          "canonnizq"
+        ],
+        "example": "/maldita/updates/desinfo",
+        "parameters": {
+          "category": "Category to fetch"
+        },
+        "description": "Categories: all | desinfo | prebunking | investigaciones | control-del-poder | policy",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "maldita.es/:category/"
+            ],
+            "target": "/updates/:category"
+          }
+        ],
+        "location": "updates.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "manhuagui": {
     "name": "看漫画",
     "url": "www.manhuagui.com",
