@@ -44711,6 +44711,32 @@
           "code": 0
         }
       },
+      "/acfun/user/article/:uid": {
+        "path": "/user/article/:uid",
+        "name": "用户文章",
+        "maintainers": [
+          "tiaod"
+        ],
+        "example": "/acfun/user/article/1384329",
+        "parameters": {
+          "uid": "用户 UID"
+        },
+        "categories": [
+          "anime"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.acfun.cn/u/:id"
+            ],
+            "target": "/user/article/:id"
+          }
+        ],
+        "view": 0,
+        "location": "user-article.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/acfun/user/video/:uid/:embed?": {
         "path": "/user/video/:uid/:embed?",
         "name": "用户投稿",
