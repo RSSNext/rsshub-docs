@@ -77785,6 +77785,14 @@
         "categories": [
           "bbs"
         ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "ALLOW_USER_SUPPLY_UNSAFE_DOMAIN",
+              "description": "Allow user supplied domain"
+            }
+          ]
+        },
         "location": "discuz.ts",
         "heat": 0,
         "topFeeds": [],
