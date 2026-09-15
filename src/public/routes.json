@@ -6918,6 +6918,62 @@
       }
     }
   },
+  "jma": {
+    "name": "気象庁 Japan Meteorological Agency",
+    "url": "www.jma.go.jp",
+    "categories": [
+      "forecast"
+    ],
+    "heat": 0,
+    "routes": {
+      "/jma/wxchart/:type?": {
+        "path": "/wxchart/:type?",
+        "name": "天気図",
+        "url": "www.jma.go.jp/bosai/weather_map/",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/jma/wxchart/daily",
+        "parameters": {
+          "type": {
+            "description": "Chart type",
+            "options": [
+              {
+                "value": "daily",
+                "label": "天気図（最新）"
+              },
+              {
+                "value": "monthly",
+                "label": "過去の実況天気図（今月）"
+              }
+            ],
+            "default": "daily"
+          }
+        },
+        "categories": [
+          "forecast"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.jma.go.jp/bosai/weather_map/"
+            ],
+            "target": "/wxchart/daily"
+          },
+          {
+            "source": [
+              "www.data.jma.go.jp/yoho/wxchart/quickmonthly.html"
+            ],
+            "target": "/wxchart/monthly"
+          }
+        ],
+        "view": 2,
+        "location": "wxchart.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "joneslanglasalle": {
     "name": "Jones Lang LaSalle",
     "url": "joneslanglasalle.com.cn",
