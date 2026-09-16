@@ -26,6 +26,12 @@ Deploy for public access may require:
 7.  [Zeabur](https://zeabur.com)
 8.  [Sealos](https://sealos.io)
 
+## Deploy to Hostinger
+
+Deploy RSSHub with a single click on Hostinger – pre-configured and ready to run
+
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostg.xyz/aff_c?offer_id=48&aff_id=244128&url_id=6824)
+
 ## Docker Image
 
 The following two registries are supported:

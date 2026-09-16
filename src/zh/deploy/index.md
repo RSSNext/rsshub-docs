@@ -26,6 +26,12 @@ sidebar: auto
 7.  [Zeabur](https://zeabur.com)
 8.  [Sealos](https://sealos.io)
 
+## 部署到 Hostinger
+
+在 Hostinger 上一键部署 RSSHub，已预配置，开箱即用。
+
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostg.xyz/aff_c?offer_id=48&aff_id=244128&url_id=6824)
+
 ## Docker 镜像
 
 支持两种镜像仓库：
