@@ -205769,7 +205769,7 @@
       "/openai/cookbook": {
         "path": "/cookbook",
         "name": "Cookbook",
-        "url": "cookbook.openai.com/",
+        "url": "developers.openai.com/cookbook",
         "maintainers": [
           "liyaozhong"
         ],
@@ -205778,9 +205778,18 @@
         "categories": [
           "programming"
         ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
+              "developers.openai.com/cookbook",
               "cookbook.openai.com/"
             ]
           }
