@@ -32010,10 +32010,7 @@
     "heat": 23,
     "routes": {
       "/ff14/global/:lang/:type?": {
-        "path": [
-          "/global/:lang/:type?",
-          "/ff14_global/:lang/:type?"
-        ],
+        "path": "/global/:lang/:type?",
         "name": "FINAL FANTASY XIV (The Lodestone)",
         "maintainers": [
           "kmod-midori"
@@ -32056,10 +32053,7 @@
         }
       },
       "/ff14/zh/:type?": {
-        "path": [
-          "/zh/:type?",
-          "/ff14_zh/:type?"
-        ],
+        "path": "/zh/:type?",
         "name": "最终幻想 14 国服",
         "url": "ff.web.sdo.com/web8/index.html",
         "maintainers": [
