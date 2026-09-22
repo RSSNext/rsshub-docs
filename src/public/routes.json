@@ -86723,6 +86723,59 @@
       }
     }
   },
+  "fraenkelgallery": {
+    "name": "Fraenkel Gallery",
+    "url": "fraenkelgallery.com",
+    "description": "Photography gallery in San Francisco: exhibitions and conversations.",
+    "categories": [
+      "picture"
+    ],
+    "heat": 0,
+    "routes": {
+      "/fraenkelgallery/:type?": {
+        "path": "/:type?",
+        "name": "Exhibitions & Conversations",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/fraenkelgallery/exhibitions",
+        "parameters": {
+          "type": "`exhibitions` (default) or `posts` (the Conversations blog)"
+        },
+        "description": "Exhibitions come with artist, year, type and status as categories and the full exhibition page including all images.",
+        "categories": [
+          "picture"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "fraenkelgallery.com/exhibitions",
+              "fraenkelgallery.com/"
+            ],
+            "target": "/exhibitions"
+          },
+          {
+            "source": [
+              "fraenkelgallery.com/conversations"
+            ],
+            "target": "/posts"
+          }
+        ],
+        "view": 2,
+        "location": "index.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "freecomputerbooks": {
     "name": "Free Computer Books",
     "url": "freecomputerbooks.com",
