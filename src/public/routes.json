@@ -18645,59 +18645,6 @@
       }
     }
   },
-  "fortnite": {
-    "name": "Fortnite",
-    "url": "fortnite.com",
-    "categories": [
-      "game"
-    ],
-    "heat": 6,
-    "routes": {
-      "/fortnite/news/:options?": {
-        "path": "/news/:options?",
-        "name": "News",
-        "maintainers": [
-          "lyqluis"
-        ],
-        "example": "/fortnite/news",
-        "parameters": {
-          "options": "Params"
-        },
-        "description": "- `options.lang`, optional, language, eg. `/fortnite/news/lang=en-US`, common languages are listed below, more languages are available one the [official website](https://www.fortnite.com/news)\n\n| English (default) | Spanish | Japanese | French | Korean | Polish |\n| ----------------- | ------- | -------- | ------ | ------ | ------ |\n| en-US             | es-ES   | ja       | fr     | ko     | pl     |",
-        "categories": [
-          "game"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "news.ts",
-        "heat": 6,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "68983907798491136",
-            "url": "rsshub://fortnite/news",
-            "title": "Fortnite News",
-            "description": "Fortnite News - Powered by RSSHub",
-            "siteUrl": "https://www.fortnite.com/news?lang=en-US",
-            "image": null,
-            "errorMessage": "Fortnite API responded with 403 for https://www.fortnite.com/api/blog/getPosts?category=&postsPerPage=0&offset=0&locale=en-US&rootPageSlug=blog\n",
-            "errorAt": "2025-05-15T04:29:52.956Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "gamer520": {
     "name": "全球游戏交流中心",
     "url": "www.gamer520.com",
@@ -221397,6 +221344,74 @@
         ],
         "test": {
           "code": 1
+        }
+      }
+    }
+  },
+  "fortnite": {
+    "name": "Fortnite",
+    "url": "fortnite.com",
+    "categories": [
+      "game"
+    ],
+    "heat": 6,
+    "routes": {
+      "/fortnite/news/:options?": {
+        "path": "/news/:options?",
+        "name": "News",
+        "url": "www.fortnite.com/news",
+        "maintainers": [
+          "lyqluis"
+        ],
+        "example": "/fortnite/news",
+        "parameters": {
+          "options": "Query-style options, `lang` and `tag`, see below"
+        },
+        "description": "- `lang`, default `en-US`, one of `ar`, `de`, `en-US`, `es-ES`, `es-MX`, `fr`, `it`, `ja`, `ko`, `pl`, `pt-BR`, `ru`, `tr`, `zh-Hans`\n- `tag`, optional, one of `battle-royale` (Battle Royale), `fortnite-competitive` (Fortnite Competitive), `fortnite-festival` (Fortnite Festival), `fortnite-news` (Fortnite News), `fortnite-og` (Fortnite OG), `fortnite-uefn-and-creative` (UEFN and Creative), `lego-fortnite` (LEGO Fortnite Odyssey), `lego-fortnite-brick-life` (LEGO Fortnite Brick Life), `ranked` (Ranked Battle Royale), `reload` (Reload), `rocket-racing` (Rocket Racing), `save-the-world` (Save the World)",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.fortnite.com/news"
+            ],
+            "target": "/news"
+          },
+          {
+            "source": [
+              "www.fortnite.com/news/tag/:tag"
+            ],
+            "target": "/news/tag=:tag"
+          }
+        ],
+        "location": "news.ts",
+        "heat": 6,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "68983907798491136",
+            "url": "rsshub://fortnite/news",
+            "title": "Fortnite News",
+            "description": "Fortnite News - Powered by RSSHub",
+            "siteUrl": "https://www.fortnite.com/news?lang=en-US",
+            "image": null,
+            "errorMessage": "Fortnite API responded with 403 for https://www.fortnite.com/api/blog/getPosts?category=&postsPerPage=0&offset=0&locale=en-US&rootPageSlug=blog\n",
+            "errorAt": "2025-05-15T04:29:52.956Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
