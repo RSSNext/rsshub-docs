@@ -8623,38 +8623,6 @@
       }
     }
   },
-  "rockstargames": {
-    "name": "Rockstar Games",
-    "url": "www.rockstargames.com",
-    "categories": [
-      "game"
-    ],
-    "heat": 0,
-    "routes": {
-      "/rockstargames/socialclub/events/:game?": {
-        "path": "/socialclub/events/:game?",
-        "name": "在线活动",
-        "maintainers": [
-          "kookxiang"
-        ],
-        "example": "/rockstargames/socialclub/events/GTAV",
-        "parameters": {
-          "game": "游戏代码（默认所有）"
-        },
-        "description": "| 游戏代码 | 游戏名称     |\n| -------- | ------------ |\n| GTAV     | 侠盗猎车手 5 |\n| RDR2     | 荒野大镖客 2 |",
-        "categories": [
-          "game"
-        ],
-        "location": "events.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected [ Array(1) ] to not include 'https://socialclub.rockstargames.com/…'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:91:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:106:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "rss3": {
     "name": "RSS3",
     "url": "rss3.io",
@@ -20799,6 +20767,60 @@
         "test": {
           "code": 0
         }
+      }
+    }
+  },
+  "rockstargames": {
+    "name": "Rockstar Games",
+    "url": "www.rockstargames.com",
+    "categories": [
+      "game"
+    ],
+    "heat": 0,
+    "routes": {
+      "/rockstargames/socialclub/events/:game?": {
+        "path": "/socialclub/events/:game?",
+        "name": "在线活动",
+        "maintainers": [
+          "kookxiang"
+        ],
+        "example": "/rockstargames/socialclub/events/GTAV",
+        "parameters": {
+          "game": "游戏代码（默认所有）"
+        },
+        "description": "| 游戏代码 | 游戏名称     |\n| -------- | ------------ |\n| GTAV     | 侠盗猎车手 5 |\n| RDR2     | 荒野大镖客 2 |",
+        "categories": [
+          "game"
+        ],
+        "location": "events.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected [ Array(1) ] to not include 'https://socialclub.rockstargames.com/…'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:91:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:106:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      },
+      "/rockstargames/newswire": {
+        "path": "/newswire",
+        "name": "Newswire",
+        "url": "www.rockstargames.com/newswire",
+        "maintainers": [
+          "dapexyz"
+        ],
+        "example": "/rockstargames/newswire",
+        "categories": [
+          "game"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.rockstargames.com/newswire"
+            ]
+          }
+        ],
+        "location": "newswire.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
