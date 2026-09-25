@@ -220476,69 +220476,6 @@
           "code": 1
         }
       },
-      "/zhihu/zhuanlan/:id": {
-        "path": "/zhuanlan/:id",
-        "name": "专栏",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/zhihu/zhuanlan/googledevelopers",
-        "parameters": {
-          "id": "专栏 id，可在专栏主页 URL 中找到"
-        },
-        "categories": [
-          "social-media",
-          "popular"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "ZHIHU_COOKIES",
-              "description": "A complete d_c0 and __zse_ck cookie pair skips session initialization. Otherwise Workers use a Playwright browser session; Docker and Vercel generate credentials with JSDOM."
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "zhuanlan.zhihu.com/:id"
-            ]
-          }
-        ],
-        "location": "zhuanlan.ts",
-        "heat": 1870,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "41359836954400791",
-            "url": "rsshub://zhihu/zhuanlan/c_1186819163765649408",
-            "title": "知乎专栏-体验碎周报",
-            "description": "知乎专栏-体验碎周报 - Powered by RSSHub",
-            "siteUrl": "https://www.zhihu.com/column/c_1186819163765649408",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.zhihu.com/api/v4/columns/c_1186819163765649408/items\": 403 Forbidden\nzhihu: browser API request failed with HTTP 403\n",
-            "errorAt": "2026-08-24T02:08:31.954Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "57215618626397184",
-            "url": "rsshub://zhihu/zhuanlan/yushuzhilan",
-            "title": "知乎专栏-玉树芝兰",
-            "description": "知乎专栏-玉树芝兰 - Powered by RSSHub",
-            "siteUrl": "https://zhuanlan.zhihu.com/yushuzhilan",
-            "image": null,
-            "errorMessage": "zhihu: browser API request failed with HTTP 403\n",
-            "errorAt": "2025-10-29T05:43:58.029Z",
-            "ownerUserId": null
-          }
-        ]
-      },
       "/zhihu/people/activities/:id": {
         "path": "/people/activities/:id",
         "name": "用户动态",
@@ -221216,6 +221153,64 @@
         "test": {
           "code": 1
         }
+      },
+      "/zhihu/zhuanlan/:id": {
+        "path": "/zhuanlan/:id",
+        "name": "专栏",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/zhihu/zhuanlan/googledevelopers",
+        "parameters": {
+          "id": "专栏 id，可在专栏主页 URL 中找到"
+        },
+        "categories": [
+          "social-media",
+          "popular"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "zhuanlan.zhihu.com/:id"
+            ]
+          }
+        ],
+        "location": "zhuanlan.ts",
+        "heat": 1870,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "41359836954400791",
+            "url": "rsshub://zhihu/zhuanlan/c_1186819163765649408",
+            "title": "知乎专栏-体验碎周报",
+            "description": "知乎专栏-体验碎周报 - Powered by RSSHub",
+            "siteUrl": "https://www.zhihu.com/column/c_1186819163765649408",
+            "image": null,
+            "errorMessage": "[GET] \"https://www.zhihu.com/api/v4/columns/c_1186819163765649408/items\": 403 Forbidden\nzhihu: browser API request failed with HTTP 403\n",
+            "errorAt": "2026-08-24T02:08:31.954Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "57215618626397184",
+            "url": "rsshub://zhihu/zhuanlan/yushuzhilan",
+            "title": "知乎专栏-玉树芝兰",
+            "description": "知乎专栏-玉树芝兰 - Powered by RSSHub",
+            "siteUrl": "https://zhuanlan.zhihu.com/yushuzhilan",
+            "image": null,
+            "errorMessage": "zhihu: browser API request failed with HTTP 403\n",
+            "errorAt": "2025-10-29T05:43:58.029Z",
+            "ownerUserId": null
+          }
+        ]
       }
     }
   },
