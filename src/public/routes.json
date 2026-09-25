@@ -179997,60 +179997,6 @@
           "code": 1
         }
       },
-      "/bilibili/readlist/:listid": {
-        "path": "/readlist/:listid",
-        "name": "专栏文集",
-        "maintainers": [
-          "hoilc"
-        ],
-        "example": "/bilibili/readlist/25611",
-        "parameters": {
-          "listid": "文集 id, 可在专栏文集 URL 中找到"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "view": 0,
-        "location": "readlist.ts",
-        "heat": 87,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "61348871765397504",
-            "url": "rsshub://bilibili/readlist/25611",
-            "title": "bilibili 专栏文集 - Galgame",
-            "description": "bilibili 专栏文集 - Galgame - Powered by RSSHub",
-            "siteUrl": "https://www.bilibili.com/read/readlist/rl25611",
-            "image": "http://i0.hdslb.com/bfs/article/d1b4ff3871674fb8c7cca0e7e7c13061c0067488.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "72902324883282944",
-            "url": "rsshub://bilibili/readlist/153371",
-            "title": "bilibili 专栏文集 - 【新番导视】",
-            "description": "新番导视 - Powered by RSSHub",
-            "siteUrl": "https://www.bilibili.com/read/readlist/rl153371",
-            "image": "http://i0.hdslb.com/bfs/article/be670d9f8ce40aa64d272203eda3a26825027e64.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1
-        }
-      },
       "/bilibili/manga/update/:comicid": {
         "path": "/manga/update/:comicid",
         "name": "漫画更新",
@@ -180102,6 +180048,60 @@
             "description": "【此漫画的翻译由杭州翻翻公司提供】被骗得负债累累，过着贫困生活的少年电次，与链锯恶魔波奇塔一起做恶魔猎人勉强活了下去。最底层的生活，因为一次残忍的背叛全都改变了！！让恶魔寄宿在自己的身体去狩猎恶魔，新时代黑暗英雄故事，开幕！！ - Powered by RSSHub",
             "siteUrl": "https://manga.bilibili.com/detail/mc28376",
             "image": "https://i0.hdslb.com/bfs/manga-static/fef4e807325510365fb87389a4e2c1695360249a.jpg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1
+        }
+      },
+      "/bilibili/readlist/:listid": {
+        "path": "/readlist/:listid",
+        "name": "专栏文集",
+        "maintainers": [
+          "hoilc"
+        ],
+        "example": "/bilibili/readlist/25611",
+        "parameters": {
+          "listid": "文集 id, 可在专栏文集 URL 中找到"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "view": 0,
+        "location": "readlist.ts",
+        "heat": 87,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "61348871765397504",
+            "url": "rsshub://bilibili/readlist/25611",
+            "title": "bilibili 专栏文集 - Galgame",
+            "description": "bilibili 专栏文集 - Galgame - Powered by RSSHub",
+            "siteUrl": "https://www.bilibili.com/read/readlist/rl25611",
+            "image": "http://i0.hdslb.com/bfs/article/d1b4ff3871674fb8c7cca0e7e7c13061c0067488.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "72902324883282944",
+            "url": "rsshub://bilibili/readlist/153371",
+            "title": "bilibili 专栏文集 - 【新番导视】",
+            "description": "新番导视 - Powered by RSSHub",
+            "siteUrl": "https://www.bilibili.com/read/readlist/rl153371",
+            "image": "http://i0.hdslb.com/bfs/article/be670d9f8ce40aa64d272203eda3a26825027e64.png",
             "errorMessage": null,
             "errorAt": null,
             "ownerUserId": null
