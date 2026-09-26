@@ -220256,6 +220256,54 @@
           "code": 1
         }
       },
+      "/zhihu/daily": {
+        "path": "/daily",
+        "name": "知乎日报",
+        "url": "daily.zhihu.com/*",
+        "maintainers": [
+          "DHPO",
+          "pseudoyu"
+        ],
+        "example": "/zhihu/daily",
+        "parameters": {},
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "daily.zhihu.com/*"
+            ]
+          }
+        ],
+        "location": "daily.ts",
+        "heat": 857,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "73575434596858887",
+            "url": "rsshub://zhihu/daily",
+            "title": "知乎日报",
+            "description": "每天3次，每次7分钟 - Powered by RSSHub",
+            "siteUrl": "https://daily.zhihu.com/",
+            "image": "http://static.daily.zhihu.com/img/new_home_v3/mobile_top_logo.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1
+        }
+      },
       "/zhihu/xhu/people/answers/:hexId": {
         "path": "/xhu/people/answers/:hexId",
         "name": "xhu - 用户回答",
@@ -220483,54 +220531,6 @@
             "ownerUserId": null
           }
         ]
-      },
-      "/zhihu/daily": {
-        "path": "/daily",
-        "name": "知乎日报",
-        "url": "daily.zhihu.com/*",
-        "maintainers": [
-          "DHPO",
-          "pseudoyu"
-        ],
-        "example": "/zhihu/daily",
-        "parameters": {},
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "daily.zhihu.com/*"
-            ]
-          }
-        ],
-        "location": "daily.ts",
-        "heat": 857,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "73575434596858887",
-            "url": "rsshub://zhihu/daily",
-            "title": "知乎日报",
-            "description": "每天3次，每次7分钟 - Powered by RSSHub",
-            "siteUrl": "https://daily.zhihu.com/",
-            "image": "http://static.daily.zhihu.com/img/new_home_v3/mobile_top_logo.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1
-        }
       },
       "/zhihu/weekly": {
         "path": "/weekly",
