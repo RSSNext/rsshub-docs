@@ -97834,6 +97834,24 @@
     ],
     "heat": 3483,
     "routes": {
+      "/huggingface/datasets/:author": {
+        "path": "/datasets/:author",
+        "name": "Datasets by author",
+        "maintainers": [
+          "Cod1doc"
+        ],
+        "example": "/huggingface/datasets/HuggingFaceFW",
+        "parameters": {
+          "author": "Hugging Face username or organization name"
+        },
+        "description": "The 20 most recently created datasets from a Hugging Face user or organization.",
+        "categories": [
+          "programming"
+        ],
+        "location": "datasets.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/huggingface/activity/:user/likes": {
         "path": "/activity/:user/likes",
         "name": "User Likes Activity",
@@ -169807,6 +169825,38 @@
       }
     }
   },
+  "xmlcom": {
+    "name": "XML.com",
+    "url": "www.xml.com",
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/xmlcom/": {
+        "path": "/",
+        "name": "Articles and News",
+        "maintainers": [
+          "AboutRSS"
+        ],
+        "example": "/xmlcom",
+        "description": "The official Atom feed (/feed/all/) truncates every entry to a 128 character summary and carries no category tags. This route fetches the full body from each detail page and extracts the tags of that page into category.",
+        "categories": [
+          "programming"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.xml.com/"
+            ]
+          }
+        ],
+        "location": "index.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "xmnn": {
     "name": "厦门网",
     "url": "epaper.xmnn.cn",
@@ -223581,6 +223631,40 @@
         "test": {
           "code": 1
         }
+      },
+      "/youtube/streams/:handle/:routeParams?": {
+        "path": "/streams/:handle/:routeParams?",
+        "name": "Live Streams",
+        "maintainers": [
+          "ouuan"
+        ],
+        "example": "/youtube/streams/@GawrGura",
+        "parameters": {
+          "handle": "YouTube handle or channel id",
+          "routeParams": "Extra parameters, see the table below"
+        },
+        "description": "::: tip Parameter\n\n| Name               | Description                                                                                 | Default |\n| ------------------ | ------------------------------------------------------------------------------------------- | ------- |\n| embed              | Whether to embed the video, fill in any value to disable embedding                          | embed   |\n| includeDescription | Whether to include the description of each stream, fill in any truthy value to include them | false   |\n\n:::\n\n::: tip\nUnlike [Live](#youtube-live), this route reads the channel's Live tab, so it also covers scheduled and finished streams, and it does not require an API key.\n\nEvery stream is categorized as `live`, `upcoming` or `completed`, so a single state can be picked out with the `filter_category` and `filterout_category` [common parameters](https://docs.rsshub.app/guide/parameters#filtering). For example, `/youtube/streams/@GawrGura?filterout_category=completed` only tracks streams that are live or about to start.\n\nThe Live tab does not carry the stream descriptions, so `includeDescription` costs one extra request per stream and is off by default.\n:::",
+        "categories": [
+          "live"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/@:handle/streams"
+            ],
+            "target": "/streams/@:handle"
+          },
+          {
+            "source": [
+              "www.youtube.com/channel/:handle/streams"
+            ],
+            "target": "/streams/:handle"
+          }
+        ],
+        "view": 3,
+        "location": "streams.ts",
+        "heat": 0,
+        "topFeeds": []
       },
       "/youtube/user/:username/:routeParams?": {
         "path": "/user/:username/:routeParams?",
