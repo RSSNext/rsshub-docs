@@ -157275,6 +157275,34 @@
           "code": 0
         }
       },
+      "/threads/:user/post/:id/:routeParams?": {
+        "path": "/:user/post/:id/:routeParams?",
+        "name": "Post & Replies",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/threads/@zuck/post/Ddt7cL5EfUG",
+        "parameters": {
+          "user": "Username",
+          "id": "Post ID, the last segment of the post URL",
+          "routeParams": "Extra parameters, in the format of query string. Accepts the same options as User timeline"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.threads.com/:user/post/:id"
+            ],
+            "target": "/:user/post/:id"
+          }
+        ],
+        "view": 1,
+        "location": "post.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/threads/search/:keyword/:routeParams?": {
         "path": "/search/:keyword/:routeParams?",
         "name": "Search",
