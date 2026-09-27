@@ -1788,6 +1788,41 @@
       }
     }
   },
+  "autotrader": {
+    "name": "AutoTrader",
+    "url": "www.autotrader.co.uk",
+    "categories": [
+      "other"
+    ],
+    "heat": 0,
+    "routes": {
+      "/autotrader/:query": {
+        "path": "/:query",
+        "name": "Search",
+        "maintainers": [
+          "HenryQW"
+        ],
+        "example": "/autotrader/radius=50&postcode=sw1a1aa&price-to=9000&year-from=2012&body-type=Hatchback&transmission=Automatic&exclude-writeoff-categories=on",
+        "parameters": {
+          "query": "the search query"
+        },
+        "description": "1. Conduct a search with desired filters on AutoTrader\n2. Copy everything in the URL after `?`, for example: `https://www.autotrader.co.uk/car-search?radius=50&postcode=sw1a1aa&price-to=9000&year-from=2012&body-type=Hatchback&transmission=Automatic&exclude-writeoff-categories=on` will produce `radius=50&postcode=sw1a1aa&price-to=9000&year-from=2012&body-type=Hatchback&transmission=Automatic&exclude-writeoff-categories=on`",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requirePuppeteer": false
+        },
+        "location": "index.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at processImmediate (node:internal/timers:541:9)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "azurlane": {
     "name": "Azur Lane",
     "url": "azurlane.jp",
@@ -15972,41 +16007,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
-  "autotrader": {
-    "name": "AutoTrader",
-    "url": "www.autotrader.co.uk",
-    "categories": [
-      "other"
-    ],
-    "heat": 0,
-    "routes": {
-      "/autotrader/:query": {
-        "path": "/:query",
-        "name": "Search",
-        "maintainers": [
-          "HenryQW"
-        ],
-        "example": "/autotrader/radius=50&postcode=sw1a1aa&price-to=9000&year-from=2012&body-type=Hatchback&transmission=Automatic&exclude-writeoff-categories=on",
-        "parameters": {
-          "query": "the search query"
-        },
-        "description": "1. Conduct a search with desired filters on AutoTrader\n2. Copy everything in the URL after `?`, for example: `https://www.autotrader.co.uk/car-search?radius=50&postcode=sw1a1aa&price-to=9000&year-from=2012&body-type=Hatchback&transmission=Automatic&exclude-writeoff-categories=on` will produce `radius=50&postcode=sw1a1aa&price-to=9000&year-from=2012&body-type=Hatchback&transmission=Automatic&exclude-writeoff-categories=on`",
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requirePuppeteer": true
-        },
-        "location": "index.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:105:41\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at processImmediate (node:internal/timers:541:9)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
@@ -31821,7 +31821,7 @@
               "optional": true
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "nsfw": true
         },
         "location": "index.ts",
@@ -32134,7 +32134,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -32184,7 +32184,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -32244,7 +32244,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -32280,7 +32280,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -33324,7 +33324,7 @@
           "anime"
         ],
         "features": {
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "nsfw": true
         },
         "radar": [
@@ -37114,7 +37114,7 @@
         ],
         "features": {
           "nsfw": true,
-          "requirePuppeteer": true
+          "requirePuppeteer": false
         },
         "radar": [
           {
@@ -37163,7 +37163,7 @@
         "maintainers": [
           "TonyRL"
         ],
-        "example": "/javtrailers/categories/50001755",
+        "example": "/javtrailers/categories/hi-def",
         "parameters": {
           "category": "Category name, can be found in the URL of the category page"
         },
@@ -37172,7 +37172,7 @@
         ],
         "features": {
           "nsfw": true,
-          "requirePuppeteer": true
+          "requirePuppeteer": false
         },
         "radar": [
           {
@@ -37229,7 +37229,7 @@
         ],
         "features": {
           "nsfw": true,
-          "requirePuppeteer": true
+          "requirePuppeteer": false
         },
         "radar": [
           {
@@ -48315,7 +48315,7 @@
           "reading"
         ],
         "features": {
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true
         },
         "location": "order.ts",
@@ -48488,7 +48488,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -48527,7 +48527,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -94838,7 +94838,7 @@
           "programming"
         ],
         "features": {
-          "requirePuppeteer": true
+          "requirePuppeteer": false
         },
         "radar": [
           {
@@ -96111,7 +96111,7 @@
           "shopping"
         ],
         "features": {
-          "requirePuppeteer": true
+          "requirePuppeteer": false
         },
         "radar": [
           {
@@ -116489,7 +116489,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -116499,14 +116499,14 @@
         "radar": [
           {
             "source": [
-              "missav.ws/dm514/new",
+              "missav.ws/dm539/new",
               "missav.ws/new",
               "missav.ws/"
             ]
           },
           {
             "source": [
-              "missav.ai/dm514/new",
+              "missav.ai/dm539/new",
               "missav.ai/new",
               "missav.ai/"
             ]
@@ -136796,7 +136796,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -136848,7 +136848,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -136887,7 +136887,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -136926,7 +136926,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -136978,7 +136978,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -137017,7 +137017,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -137056,7 +137056,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -137103,7 +137103,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -137142,7 +137142,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -137176,7 +137176,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -142563,7 +142563,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -169578,10 +169578,6 @@
             {
               "name": "XSIJISHE_COOKIE",
               "description": ""
-            },
-            {
-              "name": "XSIJISHE_USER_AGENT",
-              "description": ""
             }
           ],
           "requirePuppeteer": false,
@@ -169652,13 +169648,9 @@
             {
               "name": "XSIJISHE_COOKIE",
               "description": ""
-            },
-            {
-              "name": "XSIJISHE_USER_AGENT",
-              "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -170714,7 +170706,7 @@
         ],
         "features": {
           "antiCrawler": true,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "requireConfig": [
             {
               "optional": true,
@@ -170776,7 +170768,7 @@
         ],
         "features": {
           "antiCrawler": true,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "requireConfig": [
             {
               "optional": true,
@@ -184612,7 +184604,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -184661,7 +184653,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -184714,7 +184706,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -184741,7 +184733,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -200370,7 +200362,8 @@
         ],
         "features": {
           "nsfw": true,
-          "requirePuppeteer": true
+          "requirePuppeteer": false,
+          "antiCrawler": true
         },
         "radar": [
           {
@@ -222819,7 +222812,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
