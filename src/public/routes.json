@@ -222886,8 +222886,8 @@
     "url": "youtube.com",
     "categories": [
       "social-media",
-      "live",
-      "popular"
+      "popular",
+      "live"
     ],
     "heat": 457554,
     "routes": {
@@ -222994,62 +222994,6 @@
             "description": "Lex Fridman Podcast and other videos. - Powered by RSSHub",
             "siteUrl": "https://www.youtube.com/c/lexfridman",
             "image": "https://yt3.googleusercontent.com/ytc/AIdro_ljfMy9kUR1PH9VRf-XsTsPqFMgORC_zodOQVEAm4hx36lC=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ]
-      },
-      "/youtube/live/:username/:embed?": {
-        "path": "/live/:username/:embed?",
-        "name": "Live",
-        "maintainers": [
-          "sussurr127"
-        ],
-        "example": "/youtube/live/@GawrGura",
-        "parameters": {
-          "username": "YouTuber id",
-          "embed": "Default to embed the video, set to any value to disable embedding"
-        },
-        "categories": [
-          "live"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "YOUTUBE_KEY",
-              "description": "YouTube API Key (enable YouTube Data API v3), support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/), [YouTube Data API v3](https://console.cloud.google.com/apis/library/youtube.googleapis.com)"
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "live.ts",
-        "heat": 254,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "69051964046186496",
-            "url": "rsshub://youtube/live/@laogao",
-            "title": "老高與小茉 Mr & Mrs Gao's Live Status",
-            "description": "$老高與小茉 Mr & Mrs Gao's live streaming status - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "42001666786766848",
-            "url": "rsshub://youtube/live/@GawrGura",
-            "title": "Gawr Gura Ch. hololive-EN's Live Status",
-            "description": "$Gawr Gura Ch. hololive-EN's live streaming status - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g",
-            "image": null,
             "errorMessage": null,
             "errorAt": null,
             "ownerUserId": null
@@ -223235,6 +223179,66 @@
           "code": 1
         }
       },
+      "/youtube/live/:username/:embed?": {
+        "path": "/live/:username/:embed?",
+        "name": "Live",
+        "maintainers": [
+          "sussurr127",
+          "ouuan"
+        ],
+        "example": "/youtube/live/@GawrGura",
+        "parameters": {
+          "username": "YouTube handle or channel id",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "description": "::: tip\nEvery stream is categorized as `live`, `upcoming` or `completed`, so a single state can be picked out with the `filter_category` and `filterout_category` [common parameters](https://docs.rsshub.app/guide/parameters#filtering). For example, `/youtube/live/@GawrGura?filterout_category=completed` only tracks streams that are live or about to start.\n:::",
+        "categories": [
+          "live"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/@:username/streams"
+            ],
+            "target": "/live/@:username"
+          },
+          {
+            "source": [
+              "www.youtube.com/channel/:username/streams"
+            ],
+            "target": "/live/:username"
+          }
+        ],
+        "view": 3,
+        "location": "live.ts",
+        "heat": 254,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "69051964046186496",
+            "url": "rsshub://youtube/live/@laogao",
+            "title": "老高與小茉 Mr & Mrs Gao's Live Status",
+            "description": "$老高與小茉 Mr & Mrs Gao's live streaming status - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "42001666786766848",
+            "url": "rsshub://youtube/live/@GawrGura",
+            "title": "Gawr Gura Ch. hololive-EN's Live Status",
+            "description": "$Gawr Gura Ch. hololive-EN's live streaming status - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ]
+      },
       "/youtube/playlist/:id/:embed?": {
         "path": "/playlist/:id/:embed?",
         "name": "Playlist",
@@ -223293,43 +223297,6 @@
             "ownerUserId": null
           }
         ],
-        "test": {
-          "code": 1
-        }
-      },
-      "/youtube/streams/:handle/:routeParams?": {
-        "path": "/streams/:handle/:routeParams?",
-        "name": "Live Streams",
-        "maintainers": [
-          "ouuan"
-        ],
-        "example": "/youtube/streams/@GawrGura",
-        "parameters": {
-          "handle": "YouTube handle or channel id",
-          "routeParams": "Extra parameters, see the table below"
-        },
-        "description": "::: tip Parameter\n\n| Name               | Description                                                                                 | Default |\n| ------------------ | ------------------------------------------------------------------------------------------- | ------- |\n| embed              | Whether to embed the video, fill in any value to disable embedding                          | embed   |\n| includeDescription | Whether to include the description of each stream, fill in any truthy value to include them | false   |\n\n:::\n\n::: tip\nUnlike [Live](#youtube-live), this route reads the channel's Live tab, so it also covers scheduled and finished streams, and it does not require an API key.\n\nEvery stream is categorized as `live`, `upcoming` or `completed`, so a single state can be picked out with the `filter_category` and `filterout_category` [common parameters](https://docs.rsshub.app/guide/parameters#filtering). For example, `/youtube/streams/@GawrGura?filterout_category=completed` only tracks streams that are live or about to start.\n\nThe Live tab does not carry the stream descriptions, so `includeDescription` costs one extra request per stream and is off by default.\n:::",
-        "categories": [
-          "live"
-        ],
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/@:handle/streams"
-            ],
-            "target": "/streams/@:handle"
-          },
-          {
-            "source": [
-              "www.youtube.com/channel/:handle/streams"
-            ],
-            "target": "/streams/:handle"
-          }
-        ],
-        "view": 3,
-        "location": "streams.ts",
-        "heat": 0,
-        "topFeeds": [],
         "test": {
           "code": 1
         }
