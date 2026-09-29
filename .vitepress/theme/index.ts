@@ -1,4 +1,4 @@
-import type { Theme } from 'vitepress';
+import { inBrowser, type Theme, useData } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue';
@@ -13,6 +13,7 @@ import NamespaceList from './components/NamespaceList.vue';
 import Route from './components/Route.vue';
 import Site from './components/Site.vue';
 import Sponsors from './components/Sponsors.vue';
+import { loadRoutesData } from './composables/routesData';
 import { setupI18n } from './i18n';
 
 export default {
@@ -34,5 +35,14 @@ export default {
     app.component('Banner', Banner);
     app.component('NamespaceList', NamespaceList);
     app.component('NamespaceDetail', NamespaceDetail);
+
+    if (inBrowser) {
+      const { localeIndex } = app.runWithContext(useData);
+      const preload = () => {
+        import('@localSearchIndex').then((m) => m.default[localeIndex.value]?.());
+        loadRoutesData();
+      };
+      document.readyState === 'complete' ? preload() : window.addEventListener('load', preload, { once: true });
+    }
   },
 } satisfies Theme;

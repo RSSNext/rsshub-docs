@@ -41,7 +41,10 @@
           <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
         </h3>
         <Route :namespace="currentNamespaceId" :data="prepareRouteData(route)" :test="route.test" />
-        <div v-if="getLocalizedDescription(route)" v-html="renderMarkdown(getLocalizedDescription(route), false, t)"></div>
+        <div
+          v-if="getLocalizedDescription(route)"
+          v-html="renderMarkdown(getLocalizedDescription(route), false, t)"
+        ></div>
       </div>
     </div>
 
@@ -60,8 +63,9 @@ import { useRoute } from 'vitepress';
 import { ref, computed, onMounted, watch } from 'vue';
 
 import { renderMarkdown } from '../composables/markdown';
-import { slugify } from '../slugify';
+import { loadRoutesData } from '../composables/routesData';
 import { useLocale } from '../composables/useLocale';
+import { slugify } from '../slugify';
 import Route from './Route.vue';
 import RouteOutline from './RouteOutline.vue';
 import Site from './Site.vue';
@@ -146,9 +150,7 @@ watch(currentNamespaceId, async () => {
 async function loadData() {
   loading.value = true;
   try {
-    const [routesRes, categoriesRes] = await Promise.all([fetch('/routes.json'), fetch('/categories.json')]);
-    routesData.value = await routesRes.json();
-    categories.value = await categoriesRes.json();
+    [routesData.value, categories.value] = await loadRoutesData();
     updateNamespace();
   } catch (e) {
     console.error('Failed to load data:', e);
@@ -182,7 +184,7 @@ const routeIds = computed(() => {
   const seen = new Set<string>();
   const ids: Record<string, string> = {};
   for (const [path, route] of Object.entries(sortedRoutes.value)) {
-    const base = slugify(getLocalizedRouteName(route as RouteData));
+    const base = slugify((route as RouteData).name);
     let id = base;
     for (let n = 1; seen.has(id); n++) id = `${base}-${n}`;
     seen.add(id);

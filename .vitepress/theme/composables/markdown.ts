@@ -1,4 +1,4 @@
-import MarkdownIt from 'markdown-it';
+import MarkdownIt, { type Env } from 'markdown-it';
 import container from 'markdown-it-container';
 
 type TranslateFn = (key: string) => string;
@@ -17,7 +17,7 @@ export const md = new MarkdownIt({ html: true });
 
 for (const [klass, defaultTitle] of containers) {
   md.use(container, klass, {
-    render(tokens: any[], idx: number, _options: unknown, env: { references?: unknown; t?: TranslateFn }) {
+    render(tokens: any[], idx: number, _options: unknown, env: Env & { t?: TranslateFn }) {
       const token = tokens[idx];
       if (token.nesting === 1) {
         token.attrJoin('class', `${klass} custom-block`);

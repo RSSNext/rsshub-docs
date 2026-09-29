@@ -10,6 +10,7 @@
   "devDependencies": {
     "@intlify/unplugin-vue-i18n": "11.2.5",
     "@types/json-schema": "7.0.15",
+    "@types/node": "26.6.3",
     "hono": "4.13.9",
     "markdown-it": "15.0.2",
     "markdown-it-container": "4.0.0",
@@ -19,7 +20,7 @@
     "vue": "3.5.43",
     "vue-i18n": "11.4.12"
   },
-  "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d",
+  "packageManager": "pnpm@10.34.6+sha512.7e1ae66a83a9143c118cc1944f37cc4f2b8acddeda4b001cfa78908f6e46e45e15292739ca6c9d026426cc757e9318cc98c5551d6a16c165097b0028ba87b4e6",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"

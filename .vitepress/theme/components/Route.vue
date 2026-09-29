@@ -17,11 +17,7 @@
       <Badge v-if="data.features?.supportPodcast" type="tip">🎙️ {{ t('badge.supportPodcast') }}</Badge>
       <Badge v-if="data.features?.supportScihub" type="tip">🧪 {{ t('badge.supportSciHub') }}</Badge>
       <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 {{ t('badge.relyPuppeteer') }}</Badge>
-      <a
-        v-if="data.features?.requireConfig"
-        :href="`${localePath}${t('badge.configRequiredLink')}`"
-        target="_blank"
-      >
+      <a v-if="data.features?.requireConfig" :href="`${localePath}${t('badge.configRequiredLink')}`" target="_blank">
         <Badge type="warning">⚙️ {{ t('badge.configRequired') }}</Badge>
       </a>
       <a v-if="data.radar" :href="`${localePath}${t('badge.supportRadarLink')}`" target="_blank">

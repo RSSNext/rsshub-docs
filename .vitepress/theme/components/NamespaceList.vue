@@ -82,6 +82,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue';
 
+import { loadRoutesData } from '../composables/routesData';
 import { useLocale } from '../composables/useLocale';
 
 interface RouteData {
@@ -192,9 +193,7 @@ onBeforeUnmount(() => {
 
 onMounted(async () => {
   try {
-    const [routesRes, categoriesRes] = await Promise.all([fetch('/routes.json'), fetch('/categories.json')]);
-    const routesData = await routesRes.json();
-    const categoriesData = await categoriesRes.json();
+    const [routesData, categoriesData] = await loadRoutesData();
 
     namespaces.value = Object.entries(routesData).map(([id, data]: [string, any]) => ({
       id,

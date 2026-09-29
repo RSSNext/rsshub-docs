@@ -4,6 +4,7 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
 import { defineConfig, type DefaultTheme } from 'vitepress';
 
 import { slugify } from '../theme/slugify.ts';
+import { routeSections } from './searchRoutes.ts';
 
 const telegramLogo = /* HTML */ `
   <?xml version="1.0" encoding="UTF-8"?>
@@ -109,7 +110,15 @@ export const shared = defineConfig({
     search: {
       provider: 'local',
       options: {
+        async _render(src, env, md) {
+          if (!src) {
+            return ' ';
+          }
+          const html = await md.renderAsync(src, env);
+          return env.frontmatter?.search === false ? '' : html;
+        },
         miniSearch: {
+          _splitIntoSections: routeSections as DefaultTheme.MiniSearchOptions['_splitIntoSections'],
           options: {
             extractField: (document, fieldName) => {
               if (fieldName !== 'text' || document.id.includes('/routes/')) {
