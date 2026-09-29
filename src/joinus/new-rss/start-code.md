@@ -100,7 +100,7 @@ In the above example, `issue` is an exact match, `:user` is a required parameter
 
 ## Writing Radar Rules
 
-In [Creating Route](#creating-Route), we mentioned that route information includes a radar field to record RSSHub Radar rules.
+In [Creating Route](#create-route-creating-route), we mentioned that route information includes a radar field to record RSSHub Radar rules.
 
 Take the RSS rule of `GitHub repository Issues` as an example. The code is as follows:
 
@@ -144,9 +144,9 @@ The handler function will be passed a parameter ctx. By the end of the function,
 
 We have three common methods of data acquisition:
 
-1.  [Via API](#via-api)
-2.  [Via HTML](#via-html)
-3.  [Using puppeteer](#using-puppeteer)
+1.  [Via API](#create-route-via-api)
+2.  [Via HTML](#create-route-via-html)
+3.  [Using puppeteer](#create-route-using-puppeteer)
 
 Next, we will continue to use GitHub repository Issues as an example to introduce how to write these three common Route Handler functions.
 
@@ -533,7 +533,7 @@ export const route: Route = {
 
 ### Fetch the Full Text
 
-Retrieving the full articles of each issue using a new browser page is similar to the [previous section](#fetch-the-full-text). We can use the following code:
+Retrieving the full articles of each issue using a new browser page is similar to the [previous section](#create-route-via-html-fetch-the-full-text). We can use the following code:
 
 ```ts{51-65}
 import { Route } from '@/types';

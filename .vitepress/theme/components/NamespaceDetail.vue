@@ -35,8 +35,8 @@
 
     <div class="routes-list">
       <div v-for="(route, path) in sortedRoutes" :key="path" class="route-block">
-        <h3 :id="getRouteId(path as string)">
-          <a class="header-anchor" :href="`#${getRouteId(path as string)}`"></a>
+        <h3 :id="routeIds[path]">
+          <a class="header-anchor" :href="`#${routeIds[path]}`"></a>
           {{ getLocalizedRouteName(route) }}
           <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
         </h3>
@@ -60,6 +60,7 @@ import { useRoute } from 'vitepress';
 import { ref, computed, onMounted, watch } from 'vue';
 
 import { renderMarkdown } from '../composables/markdown';
+import { slugify } from '../slugify';
 import { useLocale } from '../composables/useLocale';
 import Route from './Route.vue';
 import RouteOutline from './RouteOutline.vue';
@@ -173,21 +174,26 @@ const sortedRoutes = computed(() => {
   return Object.fromEntries(routes);
 });
 
-function getRouteId(path: string) {
-  // Generate a URL-safe ID from the route path
-  return path
-    .replace(/^\//, '')
-    .replace(/\//g, '-')
-    .replace(/[^a-zA-Z0-9-]/g, '');
-}
-
 function getLocalizedRouteName(data: RouteData) {
   return data.zh?.name ? localized({ en: data.name, zh: data.zh.name }) : data.name;
 }
 
+const routeIds = computed(() => {
+  const seen = new Set<string>();
+  const ids: Record<string, string> = {};
+  for (const [path, route] of Object.entries(sortedRoutes.value)) {
+    const base = slugify(getLocalizedRouteName(route as RouteData));
+    let id = base;
+    for (let n = 1; seen.has(id); n++) id = `${base}-${n}`;
+    seen.add(id);
+    ids[path] = id;
+  }
+  return ids;
+});
+
 const outlineRoutes = computed(() => {
   return Object.entries(sortedRoutes.value).map(([path, route]) => ({
-    id: getRouteId(path),
+    id: routeIds.value[path],
     name: getLocalizedRouteName(route as RouteData),
   }));
 });

@@ -19,12 +19,12 @@
       <Badge v-if="data.features?.requirePuppeteer" type="warning">🎭 {{ t('badge.relyPuppeteer') }}</Badge>
       <a
         v-if="data.features?.requireConfig"
-        :href="`${localePath}/deploy/config#route-specific-configurations`"
+        :href="`${localePath}${t('badge.configRequiredLink')}`"
         target="_blank"
       >
         <Badge type="warning">⚙️ {{ t('badge.configRequired') }}</Badge>
       </a>
-      <a v-if="data.radar" :href="`${localePath}/guide/#radar`" target="_blank">
+      <a v-if="data.radar" :href="`${localePath}${t('badge.supportRadarLink')}`" target="_blank">
         <Badge type="tip">🔍 {{ t('badge.supportRadar') }}</Badge>
       </a>
     </p>

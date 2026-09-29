@@ -26,6 +26,9 @@ importers:
       oxfmt:
         specifier: 0.70.0
         version: 0.70.0
+      pinyin-pro:
+        specifier: 3.29.4
+        version: 3.29.4
       vitepress:
         specifier: 2.0.0-alpha.20
         version: 2.0.0-alpha.20(esbuild@0.27.4)(postcss@8.5.28)(typescript@5.9.3)(yaml@2.9.0)
@@ -1572,6 +1575,9 @@ packages:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
 
+  pinyin-pro@3.29.4:
+    resolution: {integrity: sha512-SPXpDT2cHEy+d26V1RXYMlVzXN42hotFAak1fzyWPi4o2dKXb61UqD4pzxDJHwk6gbv8vQ6EfErd+hYX0Qhzug==}
+
   postcss@8.5.28:
     resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
@@ -3051,6 +3057,8 @@ snapshots:
   picomatch@2.3.2: {}
 
   picomatch@4.0.7: {}
+
+  pinyin-pro@3.29.4: {}
 
   postcss@8.5.28:
     dependencies:

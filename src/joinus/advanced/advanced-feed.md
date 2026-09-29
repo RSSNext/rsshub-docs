@@ -105,7 +105,7 @@ By setting the `supportBT` attribute to `true`, you'll be able to update your do
 
 ## Create a Journal Feed
 
-RSSHub supports creating journal feeds that can replace `item.link` with a Sci-Hub link if users provide the [common parameter](/guide/parameters#sci-hub-link) `scihub`. To create a journal feed, you'll need to include an **additional** field in your RSS feed:
+RSSHub supports creating journal feeds that can replace `item.link` with a Sci-Hub link if users provide the [common parameter](/guide/parameters#parameters-sci-hub-link) `scihub`. To create a journal feed, you'll need to include an **additional** field in your RSS feed:
 
 ```js
 return {

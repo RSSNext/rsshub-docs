@@ -104,7 +104,7 @@ healthcheck:
 
 :::tip New Config Format
 
-We are currently testing out a new format, providing end-user with more flexibility. For more info, please refer to [Parameters->Multimedia processing](/guide/parameters#multimedia-processing).
+We are currently testing out a new format, providing end-user with more flexibility. For more info, please refer to [Parameters->Multimedia processing](/guide/parameters#parameters-multimedia-processing).
 
 When using our new config, please leave the following environment vairable blank. By default, image hotlink template will be forced when present.
 
@@ -134,9 +134,9 @@ Configs in this sections are in beta stage, and **are turn off by default**. Ple
 
 :::
 
-`ALLOW_USER_HOTLINK_TEMPLATE`: [Parameters->Multimedia processing](/guide/parameters#multimedia-processing)
+`ALLOW_USER_HOTLINK_TEMPLATE`: [Parameters->Multimedia processing](/guide/parameters#parameters-multimedia-processing)
 
-`FILTER_REGEX_ENGINE`: Define Regex engine used in [Parameters->filtering](/guide/parameters#filtering). Valid value are `[re2, regexp]`. Default value is `re2`. We suggest public instance should leave this value to default, and this option right now is mainly for backward compatibility.
+`FILTER_REGEX_ENGINE`: Define Regex engine used in [Parameters->filtering](/guide/parameters#parameters-filtering). Valid value are `[re2, regexp]`. Default value is `re2`. We suggest public instance should leave this value to default, and this option right now is mainly for backward compatibility.
 
 `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN`: allow users to provide a domain as a parameter to routes that are not in their allow list, respectively. Public instances are suggested to leave this value default, as it may lead to [Server-Side Request Forgery (SSRF)](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
 
@@ -156,7 +156,7 @@ Configs in this sections are in beta stage, and **are turn off by default**. Ple
 
 `TITLE_LENGTH_LIMIT`: limit the length of feed title generated in bytes, an English alphabet counts as 1 byte, the rest such as Chinese, Japanese, Korean or Arabic counts as 2 bytes by design, default to `150`
 
-`FORMAT`: [output format](/guide/parameters#output-formats), default to `rss`; the `format` parameter, if specified in the feed address, will override this setting
+`FORMAT`: [output format](/guide/parameters#parameters-output-formats), default to `rss`; the `format` parameter, if specified in the feed address, will override this setting
 
 `OPENAI_API_KEY`: OpenAI API Key, used for using ChatGPT to summarize articles
 
@@ -172,7 +172,7 @@ Configs in this sections are in beta stage, and **are turn off by default**. Ple
 
 `REMOTE_CONFIG`: Remote configuration URL, used for dynamically updating configurations. The address should return a JSON with an environment variable name as the key. It will be loaded and merged with local configurations when the application starts. In case of conflicts with local configurations, remote configurations will take precedence. But please note that some basic configuration items do not support remote retrieval.
 
-## Route-specific Configurations {#route-specific-configurations}
+## Route-specific Configurations
 
 :::tip
 

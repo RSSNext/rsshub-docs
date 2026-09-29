@@ -85,7 +85,7 @@ E.g. Bilibili article [https://rsshub.app/bilibili/user/article/334958638?mode=f
 
 ## Access Control
 
-Set `key` or `code` to grant access to requests. See [Access Control Configuration](/deploy/config#access-control-configurations).
+Set `key` or `code` to grant access to requests. See [Access Control Configuration](/deploy/config#configuration-access-control-configurations).
 
 ## Telegram Instant View
 
@@ -168,7 +168,7 @@ For example：
 
 ## Summarized by ChatGPT (Self-hosted)
 
-Set the parameter `chatgpt` to generate a summary by ChatGPT. See [Install](/deploy/config#other-application-configurations) for details. Please consider the necessity of this feature, because it will consume some tokens.
+Set the parameter `chatgpt` to generate a summary by ChatGPT. See [Install](/deploy/config#configuration-other-application-configurations) for details. Please consider the necessity of this feature, because it will consume some tokens.
 
 -   `chatgpt`: set to any value
 

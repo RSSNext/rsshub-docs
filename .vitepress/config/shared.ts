@@ -3,6 +3,8 @@ import { resolve } from 'node:path';
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
 import { defineConfig, type DefaultTheme } from 'vitepress';
 
+import { slugify } from '../theme/slugify.ts';
+
 const telegramLogo = /* HTML */ `
   <?xml version="1.0" encoding="UTF-8"?>
   <svg
@@ -52,6 +54,31 @@ export const shared = defineConfig({
     theme: {
       light: 'github-light',
       dark: 'github-dark',
+    },
+    config(md) {
+      md.core.ruler.before('anchor', 'nested_anchor', (state) => {
+        const stack: string[] = [];
+        const seen = new Set<string>();
+        for (const [i, token] of state.tokens.entries()) {
+          if (token.type !== 'heading_open') {
+            continue;
+          }
+          const level = Number(token.tag[1]);
+          const title = (state.tokens[i + 1].children ?? [])
+            .filter((t) => !['html_inline', 'emoji'].includes(t.type))
+            .map((t) => t.content)
+            .join('');
+          stack.length = level - 1;
+          stack[level - 1] = slugify(title);
+          const base = stack.filter(Boolean).join('-');
+          let id = base;
+          for (let n = 1; seen.has(id); n++) {
+            id = `${base}-${n}`;
+          }
+          seen.add(id);
+          token.attrSet('id', id);
+        }
+      });
     },
   },
 

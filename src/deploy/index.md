@@ -163,7 +163,7 @@ $ docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 -e GITHUB_ACCESS
 
 This deployment method does not include puppeteer (unless using `diygod/rsshub:chromium-bundled` instead) and Redis dependencies. Use the Docker Compose deployment method or deploy external dependencies yourself if you need it.
 
-To configure more options please refer to [Configuration](#configuration).
+To configure more options please refer to [Configuration](#deployment-docker-compose-deployment-recommended-configuration).
 
 ## Manual Deployment
 
@@ -245,7 +245,7 @@ Please notice that it will not override already existed environment variables, m
 
 This deployment method does not include Redis dependencies. Use the Docker Compose deployment method or deploy external dependencies yourself if you need it.
 
-To configure more options please refer to [Configuration](#configuration).
+To configure more options please refer to [Configuration](#deployment-docker-compose-deployment-recommended-configuration).
 
 ### Update
 
@@ -462,7 +462,7 @@ Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.clo
 
 3.  [Sign up for Fly.io](https://fly.io/app/sign-up) and install the [flyctl CLI](https://fly.io/docs/hands-on/install-flyctl/);
 4.  Run `fly launch` and choose a unique name and region to deploy;
-5.  Use `fly secrets set KEY=VALUE` to [configure some modules](config#route-specific-configurations);
+5.  Use `fly secrets set KEY=VALUE` to [configure some modules](config#configuration-route-specific-configurations);
 6.  [Set up automatic deployment via GitHub Actions](https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/);
 7.  (Optional) Use `fly certs add your domain` to configure a custom domain, and follow the instructions to configure the related domain resolution at your DNS service provider (you can check the domain configuration status on the Dashboard Certificate page).
 
@@ -479,8 +479,8 @@ Upgrade: On the homepage of your Forked repository, click "Sync fork - Update Br
    image = "diygod/rsshub:latest"
    ```
 
-   Depending on the actual situation, you may want to use other image tags, please read the relevant content of [Docker Image](#docker-image);
-4.  Modify the `[env]` section in fly.toml or use `fly secrets set KEY=VALUE` to [configure some modules](config#route-specific-configurations);
+   Depending on the actual situation, you may want to use other image tags, please read the relevant content of [Docker Image](#deployment-docker-image);
+4.  Modify the `[env]` section in fly.toml or use `fly secrets set KEY=VALUE` to [configure some modules](config#configuration-route-specific-configurations);
 5.  Execute `fly deploy` to start the application;
 6.  (Optional) Use `fly certs add your domain` to configure a custom domain, and follow the instructions to configure the related domain resolution at your DNS service provider (you can check the domain configuration status on the Dashboard Certificate page).
 

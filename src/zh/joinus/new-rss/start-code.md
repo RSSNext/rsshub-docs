@@ -96,7 +96,7 @@ export const route: Route = {
 
 ## 编写雷达规则
 
-在[创建路由](#创建路由)中，我们提到路由信息包含一个 radar 字段来记录 RSSHub Radar 规则。
+在[创建路由](#zhi-zuo-lu-you-chuang-jian-lu-you)中，我们提到路由信息包含一个 radar 字段来记录 RSSHub Radar 规则。
 
 下面以 `GitHub 仓库 Issues` 的 RSS 规则为例。代码如下所示：
 
@@ -140,9 +140,9 @@ source 应为一个字符串数组。例如，如果 `GitHub 仓库 Issues` 的 
 
 我们有三种常见的数据获取方法：
 
-1.  [通过 API](#通过-api)
-2.  [通过 HTML](#通过-html)
-3.  [使用 Puppeteer](#使用-puppeteer)
+1.  [通过 API](#zhi-zuo-lu-you-tong-guo-api)
+2.  [通过 HTML](#zhi-zuo-lu-you-tong-guo-html)
+3.  [使用 Puppeteer](#zhi-zuo-lu-you-shi-yong-puppeteer)
 
 下面我们继续以 GitHub 仓库 Issues 为例，介绍如何编写这三种常见的路由处理函数。
 
@@ -527,7 +527,7 @@ export const route: Route = {
 
 ### 获取全文
 
-使用浏览器新标签页获取每个 GitHub Issue 的正文，类似于 [上一节](#获取全文)。我们可以使用以下代码：
+使用浏览器新标签页获取每个 GitHub Issue 的正文，类似于 [上一节](#zhi-zuo-lu-you-tong-guo-html-huo-qu-quan-wen)。我们可以使用以下代码：
 
 ```ts{51-65}
 import { Route } from '@/types';

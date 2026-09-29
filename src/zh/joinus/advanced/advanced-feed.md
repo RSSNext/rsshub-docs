@@ -103,7 +103,7 @@ export const route: Route = {
 
 ## 制作期刊订阅源
 
-RSSHub支持制作期刊订阅源。如果用户提供 [通用参数](/zh/guide/parameters#输出-sci-hub-链接) `scihub`，则可以将 `item.link` 替换为 Sci-Hub 链接。要制作期刊订阅源，您需要在您的 RSS 源中包含一个附加字段：
+RSSHub支持制作期刊订阅源。如果用户提供 [通用参数](/zh/guide/parameters#tong-yong-can-shu-shu-chu-sci-hub-lian-jie) `scihub`，则可以将 `item.link` 替换为 Sci-Hub 链接。要制作期刊订阅源，您需要在您的 RSS 源中包含一个附加字段：
 
 ```js
 return {

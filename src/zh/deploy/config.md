@@ -104,7 +104,7 @@ healthcheck:
 
 :::tip 新配置方式
 
-我们正在试验新的，更灵活的配置方式。如果有需要，请转到 [通用参数 -> 多媒体处理](/zh/guide/parameters#多媒体处理) 了解更多。
+我们正在试验新的，更灵活的配置方式。如果有需要，请转到 [通用参数 -> 多媒体处理](/zh/guide/parameters#tong-yong-can-shu-duo-mei-ti-chu-li) 了解更多。
 
 在使用新配置时，请将下方环境变量留空。否则默认图片模版会继续遵循下方配置。
 
@@ -134,9 +134,9 @@ healthcheck:
 
 :::
 
-`ALLOW_USER_HOTLINK_TEMPLATE`: [通用参数 -> 多媒体处理](/zh/guide/parameters#多媒体处理)特性控制
+`ALLOW_USER_HOTLINK_TEMPLATE`: [通用参数 -> 多媒体处理](/zh/guide/parameters#tong-yong-can-shu-duo-mei-ti-chu-li)特性控制
 
-`FILTER_REGEX_ENGINE`: 控制 [通用参数 -> 内容过滤](/zh/guide/parameters#内容过滤) 使用的正则引擎。可选`[re2, regexp]`，默认`re2`。我们推荐公开实例不要调整这个选项，这个选项目前主要用于向后兼容。
+`FILTER_REGEX_ENGINE`: 控制 [通用参数 -> 内容过滤](/zh/guide/parameters#tong-yong-can-shu-nei-rong-guo-lv) 使用的正则引擎。可选`[re2, regexp]`，默认`re2`。我们推荐公开实例不要调整这个选项，这个选项目前主要用于向后兼容。
 
 `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN`: 允许用户为路由提供域名作为参数。建议公共实例不要调整此选项，开启后可能会导致 [服务端请求伪造（SSRF）](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
 
@@ -156,7 +156,7 @@ healthcheck:
 
 `TITLE_LENGTH_LIMIT`: 限制输出标题的字节长度，一个英文字符的长度为 1 字节，部分语言如中文，日文，韩文或阿拉伯文等，统一算作 2 字节，默认 `150`
 
-`FORMAT`: [输出格式](/zh/guide/parameters#输出格式)，默认 `rss`；如果订阅地址中指定了 `format` 参数，将覆盖此设置
+`FORMAT`: [输出格式](/zh/guide/parameters#tong-yong-can-shu-shu-chu-ge-shi)，默认 `rss`；如果订阅地址中指定了 `format` 参数，将覆盖此设置
 
 `OPENAI_API_KEY`: OpenAI API Key，用于使用 ChatGPT 总结文章
 
@@ -172,7 +172,7 @@ healthcheck:
 
 `REMOTE_CONFIG`: 远程配置地址，用于动态更新配置，地址应返回一个环境变量名作为 key 的 JSON，会在应用启动时加载并合并本地配置，与本地配置冲突时以远程配置为准，但请注意部分基础配置项不支持从远程获取
 
-## 部分 RSS 模块配置 {#route-specific-configurations}
+## 部分 RSS 模块配置
 
 :::tip
 

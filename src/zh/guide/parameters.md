@@ -23,7 +23,7 @@
 
 filter 支持正则表达式。由于正则部分特性可被利用于 DoS (ReDOS)，默认引擎`re2`屏蔽了部分`Regexp`功能，且在部分情况下表现不一致。具体差异可以[查看文档](https://github.com/uhop/node-re2#limitations-things-re2-does-not-support)
 
-如果需要指定不同的引擎，请参考[功能特性 -> FILTER_REGEX_ENGINE](/zh/deploy/config#功能特性)。
+如果需要指定不同的引擎，请参考[功能特性 -> FILTER_REGEX_ENGINE](/zh/deploy/config#pei-zhi-gong-neng-te-xing)。
 
 :::
 
@@ -86,7 +86,7 @@ filter 支持正则表达式。由于正则部分特性可被利用于 DoS (ReDO
 
 ## 访问控制
 
-可以使用 `code` 或 `key` 进行访问控制。参考[访问控制配置](/zh/deploy/config#访问控制配置)。
+可以使用 `code` 或 `key` 进行访问控制。参考[访问控制配置](/zh/deploy/config#pei-zhi-fang-wen-kong-zhi-pei-zhi)。
 
 ## 输出 Telegram 即时预览链接
 
