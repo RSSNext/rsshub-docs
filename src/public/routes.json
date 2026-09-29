@@ -223296,12 +223296,7 @@
         "radar": [
           {
             "source": [
-              "www.youtube.com/@:username/streams"
-            ],
-            "target": "/live/@:username"
-          },
-          {
-            "source": [
+              "www.youtube.com/:username/streams",
               "www.youtube.com/channel/:username/streams"
             ],
             "target": "/live/:username"
@@ -223398,6 +223393,32 @@
         "test": {
           "code": 1
         }
+      },
+      "/youtube/shows/:username": {
+        "path": "/shows/:username",
+        "name": "Shows",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/youtube/shows/@LinusTechTips",
+        "parameters": {
+          "username": "YouTube handle or channel id"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/:username/shows",
+              "www.youtube.com/channel/:username/shows"
+            ],
+            "target": "/shows/:username"
+          }
+        ],
+        "location": "shows.ts",
+        "heat": 0,
+        "topFeeds": []
       },
       "/youtube/user/:username/:routeParams?": {
         "path": "/user/:username/:routeParams?",
