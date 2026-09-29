@@ -40,7 +40,7 @@ export const shared = defineConfig({
   vite: {
     plugins: [
       VueI18nPlugin({
-        include: [resolve(__dirname, '../theme/i18n/*.json')],
+        include: [resolve(import.meta.dirname, '../theme/i18n/*.json')],
         ssr: true,
       }),
     ],
