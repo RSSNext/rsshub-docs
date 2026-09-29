@@ -36,7 +36,7 @@
     <div class="routes-list">
       <div v-for="(route, path) in sortedRoutes" :key="path" class="route-block">
         <h3 :id="getRouteId(path as string)">
-          <a class="header-anchor" :href="`#${getRouteId(path as string)}`">#</a>
+          <a class="header-anchor" :href="`#${getRouteId(path as string)}`"></a>
           {{ getLocalizedRouteName(route) }}
           <Site v-if="route.url || namespace.url" :url="route.url || namespace.url" size="sm" />
         </h3>

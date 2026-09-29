@@ -30,6 +30,7 @@ try {
 }
 
 .namespace img {
+  margin: 0;
   border-radius: 5px;
 }
 </style>
