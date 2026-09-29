@@ -210,9 +210,10 @@ img {
 }
 
 select {
-  -webkit-appearance: auto;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--vp-c-divider);
   padding: 2px 4px;
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
 }
 
 /* Routes list page - wider layout */
