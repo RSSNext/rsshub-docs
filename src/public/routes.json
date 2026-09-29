@@ -108106,6 +108106,53 @@
       }
     }
   },
+  "kosmofoto": {
+    "name": "Kosmo Foto",
+    "url": "kosmofoto.com",
+    "description": "Film photography news, camera reviews and analogue culture.",
+    "categories": [
+      "picture"
+    ],
+    "heat": 0,
+    "routes": {
+      "/kosmofoto/:category?": {
+        "path": "/:category?",
+        "name": "Posts",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/kosmofoto/news",
+        "parameters": {
+          "category": "Category slug, see the table below or the URL of a category page. All posts by default"
+        },
+        "description": "The official feed only carries excerpts; this route returns the full post with all images.\n\n| Category           | Slug                   |\n| ------------------ | ---------------------- |\n| News               | `news`                 |\n| Film               | `film-2`               |\n| Featured           | `featured`             |\n| Analogue lifestyle | `analogue-lifestyle-2` |\n| Analogue Culture   | `analogue-culture`     |\n| Analogue History   | `analogue-history`     |\n| Camera reviews     | `camera-review-2`      |\n| Classic cameras    | `classic-cameras`      |\n| Vintage cameras    | `vintage-cameras`      |\n| Soviet cameras     | `soviet-cameras`       |\n| Lomography         | `lomography`           |\n| Kosmo Foto Mono    | `kosmo-foto-mono`      |",
+        "categories": [
+          "picture"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "kosmofoto.com/category/:category",
+              "kosmofoto.com/category/:parent/:category",
+              "kosmofoto.com/"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "index.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "kovidgoyal": {
     "name": "Kovid's software projects",
     "url": "sw.kovidgoyal.net",
