@@ -292,12 +292,7 @@ See docs of the specified route and `lib/config.ts` for detailed information.
 
 ### Instagram
 
--   `IG_USERNAME`: Your Instagram username (Private API only)
--   `IG_PASSWORD`: Your Instagram password (Private API only)
--   `IG_PROXY`: Proxy URL for Instagram (Private API only, optional)
--   `IG_COOKIE`: Your Instagram cookie (Cookie only)
-
-Warning: Two Factor Authentication is **not** supported.
+-   `INSTAGRAM_COOKIE`: Your Instagram cookie, only the `sessionid` and `ds_user_id` cookies are required. Optional for public profiles, required for stories, highlights, hashtags and private profiles. `IG_COOKIE` is still accepted as a fallback.
 
 ### Iwara
 

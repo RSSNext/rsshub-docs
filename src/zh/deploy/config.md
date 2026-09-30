@@ -275,12 +275,7 @@ healthcheck:
 
 ### Instagram
 
--   `IG_USERNAME`: Instagram 用户名（仅 Private API）
--   `IG_PASSWORD`: Instagram 密码（仅 Private API）
--   `IG_PROXY`: Instagram 代理 URL（仅 Private API，可选）
--   `IG_COOKIE`: Instagram 登录后的 Cookie（仅 Cookie）
-
-注意，暂**不支持**两步验证。
+-   `INSTAGRAM_COOKIE`: Instagram 登录后的 Cookie，只需要 `sessionid` 和 `ds_user_id` 两项。公开主页可不填，快拍、精选快拍、话题标签和私密主页必填。仍兼容 `IG_COOKIE` 作为回退。
 
 ### Iwara
 
