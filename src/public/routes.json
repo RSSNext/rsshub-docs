@@ -167658,6 +167658,66 @@
       }
     }
   },
+  "wzbwg": {
+    "name": "National Museum of Chinese Writing",
+    "url": "www.wzbwg.com",
+    "zh": {
+      "name": "中国文字博物馆"
+    },
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/wzbwg/news/:type": {
+        "path": "/news/:type",
+        "name": "资讯",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/wzbwg/news/24",
+        "parameters": {
+          "type": "News Type, supported values: 24（重要资讯）, 23（通知公告）, 25（工作动态）"
+        },
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.wzbwg.com/news/:type"
+            ],
+            "target": "/news/:type"
+          }
+        ],
+        "location": "news.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/wzbwg/zhanlan/specialexhibition": {
+        "path": "/zhanlan/specialexhibition",
+        "name": "最新展览",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/wzbwg/zhanlan/specialexhibition",
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.wzbwg.com/zhanlan/73/image"
+            ],
+            "target": "/zhanlan/specialexhibition"
+          }
+        ],
+        "location": "zhanlan.tsx",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "wzu": {
     "name": "温州大学",
     "url": "wzu.edu.cn",
