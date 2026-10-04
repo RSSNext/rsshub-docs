@@ -169543,7 +169543,7 @@
       }
     }
   },
-  "xmlcom": {
+  "xml": {
     "name": "XML.com",
     "url": "www.xml.com",
     "categories": [
@@ -169551,13 +169551,13 @@
     ],
     "heat": 0,
     "routes": {
-      "/xmlcom/": {
+      "/xml/": {
         "path": "/",
         "name": "Articles and News",
         "maintainers": [
           "AboutRSS"
         ],
-        "example": "/xmlcom",
+        "example": "/xml",
         "description": "The official Atom feed (/feed/all/) truncates every entry to a 128 character summary and carries no category tags. This route fetches the full body from each detail page and extracts the tags of that page into category.",
         "categories": [
           "programming"
@@ -169571,10 +169571,7 @@
         ],
         "location": "index.ts",
         "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1
-        }
+        "topFeeds": []
       }
     }
   },
