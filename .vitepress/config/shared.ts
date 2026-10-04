@@ -40,6 +40,7 @@ export const shared = defineConfig({
   title: 'RSSHub',
   description: 'Everything is RSSible 🧡',
   srcDir: 'src',
+  base: process.env.DOCS_BASE || '/',
   vite: {
     plugins: [
       VueI18nPlugin({

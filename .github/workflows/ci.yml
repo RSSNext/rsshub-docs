@@ -26,6 +26,27 @@ jobs:
         run: pnpm i
       - name: Build docs
         run: pnpm run docs:build
+        env:
+          DOCS_BASE: ${{ github.event_name == 'push' && '/rsshub-docs/' || '' }}
+      - name: Upload Pages artifact
+        if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .vitepress/dist
+
+  deploy:
+    if: github.event_name == 'push'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
 
   automerge:
     if: github.triggering_actor == 'dependabot[bot]' && github.event_name == 'pull_request'
