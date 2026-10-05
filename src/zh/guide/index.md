@@ -6,7 +6,7 @@
 
 比如你希望订阅 Telegram 上 [@awesomeRSSHub](https://t.me/awesomeRSSHub) 频道的内容
 
-根据 [Telegram 路由](/zh/routes/social-media#telegram)的文档，路由为 `/telegram/channel/:username/:routeParams?`，其中 username 为必选参数，routeParams 为可选参数，把 `:username` 替换为频道 id awesomeRSSHub，得到路径为 `/telegram/channel/awesomeRSSHub`，再加上实例域名 `https://rsshub.app`，一个订阅源就生成了：`https://rsshub.app/telegram/channel/awesomeRSSHub`
+根据 [Telegram 路由](/zh/routes/telegram)的文档，路由为 `/telegram/channel/:username/:routeParams?`，其中 username 为必选参数，routeParams 为可选参数，把 `:username` 替换为频道 id awesomeRSSHub，得到路径为 `/telegram/channel/awesomeRSSHub`，再加上实例域名 `https://rsshub.app`，一个订阅源就生成了：`https://rsshub.app/telegram/channel/awesomeRSSHub`
 
 然后你可以把 `https://rsshub.app/telegram/channel/awesomeRSSHub` 添加到任意 RSS 阅读器里来使用
 
