@@ -6,7 +6,7 @@ If you want a ready-to-use option, try [Folo](https://folo.is/), an AI RSS reade
 
 For example, if you want to subscribe to the content of the channel [@awesomeRSSHub](https://t.me/awesomeRSSHub) on Telegram.
 
-According to the [Telegram route](/routes/social-media#telegram) documentation, the route is `/telegram/channel/:username/:routeParams?`, where username is a required parameter and routeParams is an optional parameter. Replace `:username` with the channel id awesomeRSSHub to get the path `/telegram/channel/awesomeRSSHub`, then add the instance domain `https://rsshub.app`, a subscription source is generated: `https://rsshub.app/telegram/channel/awesomeRSSHub`.
+According to the [Telegram route](/routes/telegram) documentation, the route is `/telegram/channel/:username/:routeParams?`, where username is a required parameter and routeParams is an optional parameter. Replace `:username` with the channel id awesomeRSSHub to get the path `/telegram/channel/awesomeRSSHub`, then add the instance domain `https://rsshub.app`, a subscription source is generated: `https://rsshub.app/telegram/channel/awesomeRSSHub`.
 
 Then you can add `https://rsshub.app/telegram/channel/awesomeRSSHub` to any RSS reader for use.
 
