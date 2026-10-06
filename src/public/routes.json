@@ -148170,7 +148170,7 @@
       "shopping",
       "popular"
     ],
-    "heat": 12190,
+    "heat": 11846,
     "routes": {
       "/smzdm/ranking/:rank_type/:rank_id/:hour": {
         "path": "/ranking/:rank_type/:rank_id/:hour",
@@ -148364,6 +148364,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
@@ -148420,6 +148421,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
@@ -148482,6 +148484,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
@@ -148527,18 +148530,16 @@
           }
         ]
       },
-      "/smzdm/haowen/fenlei/:name/:sort?": {
-        "path": "/haowen/fenlei/:name/:sort?",
+      "/smzdm/haowen/fenlei/:name": {
+        "path": "/haowen/fenlei/:name",
         "name": "好文分类",
         "maintainers": [
           "LogicJake"
         ],
         "example": "/smzdm/haowen/fenlei/shenghuodianqi",
         "parameters": {
-          "name": "分类名，可在 URL 中查看",
-          "sort": "排序方式，默认为最新"
+          "name": "分类名，可在 URL 中查看"
         },
-        "description": "| 最新 | 周排行 | 月排行 |\n| ---- | ------ | ------ |\n| 0    | 7      | 30     |",
         "categories": [
           "shopping"
         ],
@@ -148546,6 +148547,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
@@ -148558,39 +148560,14 @@
         "radar": [
           {
             "source": [
-              "post.smzdm.com/fenlei/:name"
+              "www.smzdm.com/fenlei/:name"
             ],
             "target": "/haowen/fenlei/:name"
           }
         ],
         "location": "haowen-fenlei.ts",
-        "heat": 344,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "63960223947361280",
-            "url": "rsshub://smzdm/haowen/fenlei/nascunchufuwuqi",
-            "title": "NAS存储 - 什么值得买好文分类",
-            "description": "NAS存储 - 什么值得买好文分类 - Powered by RSSHub",
-            "siteUrl": "https://post.smzdm.com/fenlei/nascunchufuwuqi/",
-            "image": null,
-            "errorMessage": "什么值得买排行榜 is disabled due to the lack of SMZDM_COOKIE\nthis route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-04-23T01:49:36.639Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "62650278906211328",
-            "url": "rsshub://smzdm/haowen/fenlei/ruanjianyingyong",
-            "title": "软件应用 - 什么值得买好文分类",
-            "description": "软件应用 - 什么值得买好文分类 - Powered by RSSHub",
-            "siteUrl": "https://post.smzdm.com/fenlei/ruanjianyingyong/",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-05-17T21:30:41.594Z",
-            "ownerUserId": null
-          }
-        ]
+        "heat": 0,
+        "topFeeds": []
       },
       "/smzdm/haowen/:day?": {
         "path": "/haowen/:day?",
@@ -148628,6 +148605,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
@@ -148685,6 +148663,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
@@ -148741,6 +148720,7 @@
           "requireConfig": [
             {
               "name": "SMZDM_COOKIE",
+              "optional": true,
               "description": "什么值得买登录后的 Cookie 值"
             }
           ],
