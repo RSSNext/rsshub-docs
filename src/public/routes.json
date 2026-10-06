@@ -26291,6 +26291,82 @@
       }
     }
   },
+  "ixigua": {
+    "name": "西瓜视频",
+    "url": "ixigua.com",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 72,
+    "routes": {
+      "/ixigua/user/video/:uid/:disableEmbed?": {
+        "path": "/user/video/:uid/:disableEmbed?",
+        "name": "用户视频投稿",
+        "maintainers": [
+          "FlashWingShadow",
+          "Fatpandac",
+          "pseudoyu"
+        ],
+        "example": "/ixigua/user/video/4234740937",
+        "parameters": {
+          "uid": "用户 id, 可在用户主页中找到",
+          "disableEmbed": "默认为开启内嵌视频, 任意值为关闭"
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ixigua.com/home/:uid",
+              "m.ixigua.com/user/:uid"
+            ],
+            "target": "/user/video/:uid"
+          }
+        ],
+        "location": "user-video.tsx",
+        "heat": 72,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "55214863323976729",
+            "url": "rsshub://ixigua/user/video/62435616925",
+            "title": "心智观察所 的西瓜视频",
+            "description": "以心智观察新质 - Powered by RSSHub",
+            "siteUrl": "https://www.ixigua.com/home/62435616925/?wid_try=1",
+            "image": null,
+            "errorMessage": "Failed to find SSR_HYDRATED_DATA\nFailed to find SSR_HYDRATED_DATA\n",
+            "errorAt": "2025-06-05T10:27:31.877Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "77019657545759744",
+            "url": "rsshub://ixigua/user/video/4234740937",
+            "title": "李永乐老师 的西瓜视频",
+            "description": "一个爱科普的豆比中学老师 - Powered by RSSHub",
+            "siteUrl": "https://www.ixigua.com/home/4234740937/?wid_try=1",
+            "image": null,
+            "errorMessage": "Failed to find SSR_HYDRATED_DATA\nFailed to find SSR_HYDRATED_DATA\n",
+            "errorAt": "2025-06-05T12:19:25.914Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "javtrailers": {
     "name": "JavTrailers",
     "url": "javtrailers.com",
@@ -103751,81 +103827,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "ixigua": {
-    "name": "西瓜视频",
-    "url": "ixigua.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 72,
-    "routes": {
-      "/ixigua/user/video/:uid/:disableEmbed?": {
-        "path": "/user/video/:uid/:disableEmbed?",
-        "name": "用户视频投稿",
-        "maintainers": [
-          "FlashWingShadow",
-          "Fatpandac",
-          "pseudoyu"
-        ],
-        "example": "/ixigua/user/video/4234740937",
-        "parameters": {
-          "uid": "用户 id, 可在用户主页中找到",
-          "disableEmbed": "默认为开启内嵌视频, 任意值为关闭"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "ixigua.com/home/:uid"
-            ],
-            "target": "/user/video/:uid"
-          }
-        ],
-        "location": "user-video.tsx",
-        "heat": 72,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "55214863323976729",
-            "url": "rsshub://ixigua/user/video/62435616925",
-            "title": "心智观察所 的西瓜视频",
-            "description": "以心智观察新质 - Powered by RSSHub",
-            "siteUrl": "https://www.ixigua.com/home/62435616925/?wid_try=1",
-            "image": null,
-            "errorMessage": "Failed to find SSR_HYDRATED_DATA\nFailed to find SSR_HYDRATED_DATA\n",
-            "errorAt": "2025-06-05T10:27:31.877Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "77019657545759744",
-            "url": "rsshub://ixigua/user/video/4234740937",
-            "title": "李永乐老师 的西瓜视频",
-            "description": "一个爱科普的豆比中学老师 - Powered by RSSHub",
-            "siteUrl": "https://www.ixigua.com/home/4234740937/?wid_try=1",
-            "image": null,
-            "errorMessage": "Failed to find SSR_HYDRATED_DATA\nFailed to find SSR_HYDRATED_DATA\n",
-            "errorAt": "2025-06-05T12:19:25.914Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
