@@ -16,6 +16,8 @@ Configure RSSHub by setting environment variables
 
 `REQUEST_TIMEOUT`: milliseconds to wait for the server to end the response before aborting the request with error, default to `3000`
 
+`REQUEST_RATE_LIMITS`: JSON object of outgoing request limits keyed by exact hostname, default `{}`. Each policy requires `points` (a positive integer number of requests) and `duration` (a positive number of seconds). For example, `{"api.example.com":{"points":2,"duration":1}}` spaces request starts at least 0.5 seconds apart and queues excess requests. Subdomains are separate hosts. Limits are local to each Node process or Worker isolate and do not coordinate multiple instances. The existing Node global limit of 10 outgoing requests per second remains in effect. Only requests through RSSHub's fetch wrapper are covered, not requests made inside browser sessions.
+
 `UA`: user agent, using random user agent (Chrome on macOS) by default
 
 `NO_RANDOM_UA`: disable random user agent, default to `null`

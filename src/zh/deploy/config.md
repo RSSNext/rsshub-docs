@@ -16,6 +16,8 @@
 
 `REQUEST_TIMEOUT`: 请求超时毫秒数，默认 `3000`
 
+`REQUEST_RATE_LIMITS`: 按精确主机名配置出站请求限速的 JSON 对象，默认 `{}`。每个策略包含 `points`（正整数，请求次数）和 `duration`（正数，单位为秒）。例如 `{"api.example.com":{"points":2,"duration":1}}` 会让请求至少间隔 0.5 秒开始执行，超过速率的请求进入队列。子域名需要单独配置。限速状态仅在各 Node 进程或 Worker isolate 内共享，不协调多个实例。原有的 Node 全局每秒 10 次出站请求限制继续生效。仅经过 RSSHub fetch 封装的请求受此配置控制，浏览器会话内部发出的请求不受影响。
+
 `UA`: 用户代理，默认为随机用户代理用户代理（macOS 上的 Chrome）
 
 `NO_RANDOM_UA`: 是否禁用随机用户代理，默认 `null`
