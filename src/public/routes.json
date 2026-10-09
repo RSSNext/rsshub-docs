@@ -86183,6 +86183,34 @@
       }
     }
   },
+  "freshplaza": {
+    "name": "FreshPlaza",
+    "url": "www.freshplaza.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/freshplaza/search/:keyword": {
+        "path": "/search/:keyword",
+        "name": "Search",
+        "url": "www.freshplaza.com/asia/",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/freshplaza/search/durian",
+        "parameters": {
+          "keyword": "Search keyword"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "location": "search.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "fruitdatakings": {
     "name": "Fruit Data Kings",
     "url": "www.fruitdatakings.com",
