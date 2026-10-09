@@ -461,9 +461,9 @@ healthcheck:
 
 ### 豆瓣
 
-用于想看
+-   `DOUBAN_COOKIE`: 本人登录豆瓣后的 Cookie，用于个人列表和需要登录的小组帖子；公开帖子可不配置。账号必须具有查看对应内容的权限。
 
--   `DOUBAN_COOKIE`: 豆瓣登陆后的 Cookie 值
+`/douban/group/topic/:id/:author?` 订阅主帖和首屏回复。`author` 默认为 `all`，填写 `author` 时使用源站的“只看楼主”页面。主帖标题或正文变化会生成新 GUID，回复保留源站创建日期。源站回复按从早到晚排序，长帖后续页面的新回复暂不覆盖。
 
 ### 雪球
 
