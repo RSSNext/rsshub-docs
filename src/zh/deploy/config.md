@@ -228,6 +228,10 @@ healthcheck:
     4.  找到 `https://webapp.bupt.edu.cn/extensions/wap/news/list.html?p-1&type=xnxw` 请求
     5.  找到请求头中的 Cookie
 
+### Ci-en
+
+-   `CI_EN_COOKIE`: 可选的 Ci-en 登录账号 Cookie 请求头值，用于 `/dlsite/ci-en/:id/article`。列表和详情请求使用同一 Cookie，详情缓存按 Cookie 值隔离。不设置时读取公开文章；订阅者文章仍受该账号和已订阅方案的访问权限限制。
+
 ### Civitai
 
 -   `CIVITAI_COOKIE`: Civitai 登录后的 cookie 值

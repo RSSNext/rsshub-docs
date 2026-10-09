@@ -233,6 +233,10 @@ See docs of the specified route and `lib/config.ts` for detailed information.
     4.  找到 `https://webapp.bupt.edu.cn/extensions/wap/news/list.html?p-1&type=xnxw` 请求
     5.  找到请求头中的 Cookie
 
+### Ci-en
+
+-   `CI_EN_COOKIE`: optional Cookie request header value from your signed-in Ci-en account, used by `/dlsite/ci-en/:id/article`. The same Cookie is sent for the article list and details, and detail caches are separated by Cookie value. Leave it unset for public articles. Access to subscriber articles remains limited to your account and subscribed plans.
+
 ### Civitai
 
 -   `CIVITAI_COOKIE`: Cookie of Civitai
