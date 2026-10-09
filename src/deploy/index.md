@@ -499,7 +499,38 @@ RSSHub can be deployed to Cloudflare Workers with one click.
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
 
-Puppeteer is supported via [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
+Playwright is supported via [Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/playwright/), and caching is supported via [Cloudflare Workers KV](https://developers.cloudflare.com/kv/).
+
+### Browser Session Reuse {#browser-session-reuse}
+
+When `PLAYWRIGHT_WS_ENDPOINT` is unset, RSSHub uses the `BROWSER` binding for browser requests. On this path, the repository's `wrangler.toml` configures a `BrowserSession` Durable Object to coordinate a shared Browser Run session across requests and Worker isolates. Each request uses a separate browser context. Cleanup closes that context and disconnects its Playwright client; the acquired session remains available for reuse, with a 60-second idle timeout. Expired sessions are replaced when a later request reconnects. A configured `PLAYWRIGHT_WS_ENDPOINT` takes precedence and uses the remote server instead. See Cloudflare's [Playwright session reuse](https://developers.cloudflare.com/browser-run/playwright/#session-reuse) documentation.
+
+Keep `nodejs_compat` in `compatibility_flags` alongside your existing flags, and retain these entries when maintaining your own Wrangler configuration:
+
+```toml
+compatibility_flags = ["global_fetch_strictly_public", "nodejs_compat"]
+
+[browser]
+binding = "BROWSER"
+
+[[durable_objects.bindings]]
+name = "BROWSER_SESSIONS"
+class_name = "BrowserSession"
+
+[[migrations]]
+tag = "browser-session-v1"
+new_sqlite_classes = ["BrowserSession"]
+```
+
+The Worker entry point must also export `BrowserSession`; RSSHub's `lib/worker.ts` already does this:
+
+```ts
+export { BrowserSession } from './utils/browser-session.worker';
+```
+
+For an existing Worker using migrations, retain its previous migration entries and append the new class migration with a unique tag if `BrowserSession` has not already been created. Keep `nodejs_compat`, `BROWSER`, `BROWSER_SESSIONS`, the class export and the migration in sync when updating a custom configuration. The example follows the repository's migration format; consult [Durable Object class migrations](https://developers.cloudflare.com/durable-objects/reference/durable-object-class-migrations-legacy/) if your deployment uses a different lifecycle configuration.
+
+Without `BROWSER_SESSIONS`, each browser request using the `BROWSER` binding launches a Browser Run session. Session reuse can reduce repeated launches; it does not guarantee lower charges. Check your account's usage and current [Browser Run pricing](https://developers.cloudflare.com/browser-run/platform/pricing/) after deployment.
 
 ## Deploy to Zeabur
 

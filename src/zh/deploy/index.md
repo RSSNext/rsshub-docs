@@ -490,7 +490,38 @@ RSSHub 支持一键部署到 Cloudflare Workers。
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/DIYgod/RSSHub)
 
-通过 [Cloudflare Browser Rendering](https://developers.cloudflare.com/browser-rendering/) 支持 puppeteer，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
+通过 [Cloudflare Browser Run](https://developers.cloudflare.com/browser-run/playwright/) 支持 Playwright，通过 [Cloudflare Workers KV](https://developers.cloudflare.com/kv/) 支持缓存。
+
+### 浏览器会话复用 {#browser-session-reuse}
+
+未设置 `PLAYWRIGHT_WS_ENDPOINT` 时，RSSHub 使用 `BROWSER` 绑定处理浏览器请求。在这种情况下，仓库中的 `wrangler.toml` 通过 `BrowserSession` Durable Object，在不同请求和 Worker isolate 之间协调共享 Browser Run 会话。每个请求使用独立的浏览器上下文；清理时关闭该上下文并断开 Playwright 客户端连接，取得的会话继续保留供后续请求复用，空闲超时为 60 秒。后续请求重新连接时会替换已过期的会话。若配置了 `PLAYWRIGHT_WS_ENDPOINT`，则优先使用远程服务。协议行为可参考 Cloudflare 的 [Playwright 会话复用说明](https://developers.cloudflare.com/browser-run/playwright/#session-reuse)。
+
+自行维护 Wrangler 配置时，在原有 `compatibility_flags` 中保留 `nodejs_compat`，并同步保留以下配置：
+
+```toml
+compatibility_flags = ["global_fetch_strictly_public", "nodejs_compat"]
+
+[browser]
+binding = "BROWSER"
+
+[[durable_objects.bindings]]
+name = "BROWSER_SESSIONS"
+class_name = "BrowserSession"
+
+[[migrations]]
+tag = "browser-session-v1"
+new_sqlite_classes = ["BrowserSession"]
+```
+
+Worker 入口还需要导出 `BrowserSession`；RSSHub 的 `lib/worker.ts` 已包含：
+
+```ts
+export { BrowserSession } from './utils/browser-session.worker';
+```
+
+已有 Worker 使用 migrations 时，应保留原有迁移记录；如果尚未创建 `BrowserSession`，再追加使用唯一 tag 的新类迁移。更新自定义配置时，同步保留 `nodejs_compat`、`BROWSER`、`BROWSER_SESSIONS`、类导出和迁移。示例沿用仓库的迁移格式；采用其他类生命周期配置的部署可参考 [Durable Object 类迁移文档](https://developers.cloudflare.com/durable-objects/reference/durable-object-class-migrations-legacy/)。
+
+未配置 `BROWSER_SESSIONS` 时，每次使用 `BROWSER` 绑定的浏览器请求都会启动 Browser Run 会话。复用可以减少重复启动，费用变化需要在部署后核对账户用量与最新的 [Browser Run 计费规则](https://developers.cloudflare.com/browser-run/platform/pricing/)。
 
 ## 部署到 Zeabur
 
