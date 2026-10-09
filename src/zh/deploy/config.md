@@ -408,6 +408,9 @@ healthcheck:
 -   `TWITTER_PASSWORD`: Twitter 密码
 -   `TWITTER_PHONE_OR_EMAIL`: 可选，Twitter 手机号码或电子邮件地址
 -   `TWITTER_AUTHENTICATION_SECRET`: 可选，Twitter 两步验证 -> 认证应用 -> `otpauth://totp/Twitter:@_RSSHub?secret=xxxxxxxxxxxxxxxx&issuer=Twitter` 中的 secret 部分
+-   `TWITTER_AUTH_TOKEN`: 本人获授权的 X 会话中 `auth_token` Cookie 值。`/twitter/spaces/:username` 必须配置；开发者 API key 和第三方时间线路由服务不提供该路由所需的发言状态。请在自己的实例配置，会话失效时更新。
+
+`/twitter/spaces/:username` 订阅用户主持、共同主持或正在发言的直播 Space，也包括由其他人主持的 Space，不包含仅收听的参与者。条目使用 Space 实际开始时间和稳定的用户/Space GUID；当前没有发言时返回固定状态条目，不添加发布时间。路由不会加入或收听 Space。
 
 ### Wordpress
 

@@ -443,6 +443,9 @@ It is recommended to use a non-important account, new accounts or logins from di
 -   `TWITTER_PASSWORD`: Twitter password
 -   `TWITTER_PHONE_OR_EMAIL`: Optional, Twitter phone or email
 -   `TWITTER_AUTHENTICATION_SECRET`: Optional, Twitter Two-factor authentication -> Authentication app -> Secret part in `otpauth://totp/Twitter:@_RSSHub?secret=xxxxxxxxxxxxxxxx&issuer=Twitter`
+-   `TWITTER_AUTH_TOKEN`: The `auth_token` Cookie value from your own authorized X session. Required by `/twitter/spaces/:username`; developer API keys and third-party timeline providers do not supply this route's speaker status. Configure it on your own instance and refresh expired sessions.
+
+`/twitter/spaces/:username` reports when the user hosts, co-hosts, or speaks in a live Space, including Spaces hosted by someone else. Listeners are excluded. Entries use the actual Space start time and a stable user/Space GUID; when no speaking session is found, the route emits a fixed status entry without a publication date. The route does not join or listen to the Space.
 
 ### Wordpress
 
