@@ -1,5 +1,25 @@
 # 制作路由
 
+## 生成路由模板
+
+在 RSSHub 仓库根目录运行 `pnpm new:route`，即可生成路由模板。在交互式终端中，命令会依次询问命名空间、路由文件名、显示名称、来源网址、GitHub 维护者、分类和模板类型。运行 `pnpm new:route --help` 可查看可用参数。
+
+根据来源选择模板：
+
+-   `api`：请求网站第一页的 API 并解析响应。
+-   `html`：请求 HTML，使用 Cheerio 提取文章。
+-   `browser`：使用 Playwright 处理需要浏览器的内容，等待指定元素，并在提取完成后关闭浏览器上下文。
+
+也可以通过命令参数提供所有必填值。将 `YOUR_GITHUB_ID` 替换为自己的 GitHub 用户名，并按实际来源修改网址和命名空间：
+
+```bash
+pnpm new:route --namespace example --route news --name "Example news" --url https://example.com --maintainer YOUR_GITHUB_ID --category new-media --template api
+```
+
+命令会创建 `lib/routes/example/news.ts`，仅在缺少 `namespace.ts` 时创建该文件。它会验证维护者的 GitHub 账号、检查来源网址，并拒绝覆盖已有路由。使用 `--path` 自定义路由路径；路径含参数时，还需要用 `--example` 提供参数已填写的示例，例如 `--path /news/:id --example /example/news/123`。
+
+提交前，需要将模板中的 API 地址、字段名或 HTML 选择器替换为网站的实际内容。如果请求文章详情，使用 `cache.tryGet()` 缓存结果。运行 `pnpm format`，并通过真实网站验证路由示例。下文介绍如何调整生成的命名空间和路由。
+
 ## 创建命名空间
 
 制作新的 RSS 路由的第一步是创建命名空间。命名空间原则上应该与你制作 RSS 源的主要网站的二级域名**相同**。例如，如果你正在为 [https://github.com/DIYgod/RSSHub/issues](https://github.com/DIYgod/RSSHub/issues) 制作 RSS 源，第二级域名是 `github`。因此，你应该在 `lib/routes` 下创建名为 `github` 的文件夹，作为你的 RSS 路由的命名空间。

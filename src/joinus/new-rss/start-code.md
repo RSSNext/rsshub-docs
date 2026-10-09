@@ -4,6 +4,26 @@ sidebar_position: 3
 
 # Create Route
 
+## Generate a Route Scaffold
+
+Run `pnpm new:route` from the RSSHub repository root to create a route scaffold. In an interactive terminal, the command prompts for the namespace, route filename, display name, source URL, GitHub maintainer, category and template. Run `pnpm new:route --help` to see the available flags.
+
+Choose a template based on the source:
+
+-   `api`: fetch and parse the site's first-page API response.
+-   `html`: fetch HTML and extract articles with Cheerio.
+-   `browser`: use Playwright for content that requires a browser, wait for a selector and close the browser context after extraction.
+
+You can also provide all required values as flags. Replace `YOUR_GITHUB_ID` with your own GitHub username and adjust the source URL and namespace:
+
+```bash
+pnpm new:route --namespace example --route news --name "Example news" --url https://example.com --maintainer YOUR_GITHUB_ID --category new-media --template api
+```
+
+The command writes `lib/routes/example/news.ts` and creates `namespace.ts` only if it is missing. It verifies the maintainer's GitHub account, checks the source URL and refuses to overwrite an existing route. Use `--path` for a custom route path; a path with parameters also needs `--example` containing concrete parameter values, such as `--path /news/:id --example /example/news/123`.
+
+Before submitting, replace the generated API endpoint, field names or HTML selectors with those from the actual site. If you fetch article details, cache them with `cache.tryGet()`. Run `pnpm format` and verify the route example against the live site. The sections below explain how to customize the generated namespace and route.
+
 ## Creating Namespace
 
 The first step to making a new RSS route is to create a namespace. In principle, the namespace should be **the same** as the secondary domain of the main website where you are making the RSS feed. For example, if you are making an RSS feed for [https://github.com/DIYgod/RSSHub/issues](https://github.com/DIYgod/RSSHub/issues), the secondary domain is `github`. Therefore, you should create a folder named `github` under `lib/routes` as the namespace for your RSS route.
