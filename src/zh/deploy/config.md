@@ -455,6 +455,8 @@ healthcheck:
 
 ### 抖音
 
+`/douyin/live/:rid/:showTime?` 默认保留现有标题。将 `showTime` 设为 `1` 或 `true`，可在标题后添加 RSSHub 本场首次检测时间（UTC+8）。这是检测时间，并非源站实际开播时间，也不会写入 `pubDate`。记录按本场真实 room ID 缓存 30 天，读取不延长有效期；清除缓存或重启使用内存缓存的实例会重置记录，使用 Redis 可跨重启保留。
+
 -   `DOUYIN_COOKIE`: 本人登录抖音网页版后的请求头 Cookie。`/douyin/likes/self` 和 `/douyin/collection` 必须配置；`/douyin/likes/:uid` 的喜欢列表必须对当前账号可见。路由只读取首屏，使用视频原始发布时间，抖音没有提供点赞或收藏时间。请在具有访问控制的实例上配置，会话过期后更新 Cookie。
 
     获取方法：登录 [抖音网页版](https://www.douyin.com)，打开浏览器 Network 面板，切换到喜欢或收藏的视频标签，复制对应 `aweme/favorite` 或 `aweme/listcollection` 请求头中的 `Cookie`。不要将 Cookie 放入订阅地址。收藏路由仅涵盖收藏的视频，暂不涵盖收藏夹、音乐、合集及短剧。

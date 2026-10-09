@@ -490,6 +490,8 @@ It is recommended to use a non-important account, new accounts or logins from di
 
 ### Douyin
 
+`/douyin/live/:rid/:showTime?` keeps its existing title by default. Set `showTime` to `1` or `true` to append the time RSSHub first detected the current live event, in UTC+8. This is an observation time, not the source's actual start time, and is not used as `pubDate`. It is cached by the event's real room ID for 30 days without extending its lifetime on reads. Clearing the cache or restarting an instance with memory caching resets the record; use Redis to retain it across restarts.
+
 -   `DOUYIN_COOKIE`: The Cookie request header from your own signed-in Douyin web session. It is required for `/douyin/likes/self` and `/douyin/collection`; for `/douyin/likes/:uid`, the liked list must be visible to the current account. The routes read only the first screen and use each video's original publication time, because Douyin does not provide the time it was liked or collected. Keep this configuration on an instance with access control. Refresh the Cookie when the session expires.
 
     To obtain it, sign in to [Douyin](https://www.douyin.com), open the browser's Network panel, select the liked or collected videos tab, and copy the `Cookie` request header of the corresponding `aweme/favorite` or `aweme/listcollection` request. Do not put it in a subscription URL. The collection route covers collected videos; folders, music, series, and short dramas are outside its scope.
