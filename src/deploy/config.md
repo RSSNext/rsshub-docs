@@ -16,6 +16,8 @@ Configure RSSHub by setting environment variables
 
 `REQUEST_TIMEOUT`: milliseconds to wait for the server to end the response before aborting the request with error, default to `3000`
 
+`REQUEST_AUTO_SELECT_FAMILY`: controls Node's address-family autoselection for outgoing connections made by RSSHub's default dispatcher and TLS-version-specific agents. Leaving it unset preserves Node's default. `true` lets Node automatically attempt IPv4 and IPv6 addresses; `false` disables automatic family selection without forcing IPv4. This setting is not used in Workers and does not change RSSHub's listening address.
+
 `REQUEST_RATE_LIMITS`: JSON object of outgoing request limits keyed by exact hostname, default `{}`. Each policy requires `points` (a positive integer number of requests) and `duration` (a positive number of seconds). For example, `{"api.example.com":{"points":2,"duration":1}}` spaces request starts at least 0.5 seconds apart and queues excess requests. Subdomains are separate hosts. Limits are local to each Node process or Worker isolate and do not coordinate multiple instances. The existing Node global limit of 10 outgoing requests per second remains in effect. Only requests through RSSHub's fetch wrapper are covered, not requests made inside browser sessions.
 
 `UA`: user agent, using random user agent (Chrome on macOS) by default
