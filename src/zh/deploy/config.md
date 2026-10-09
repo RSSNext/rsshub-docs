@@ -467,6 +467,8 @@ healthcheck:
 
 ### 雪球
 
+`/xueqiu/column/:id` 的专栏页面和内容接口也会使用已配置的 Cookie。未配置时尝试匿名访客会话；如果源站对访客隐藏文章，需要配置能查看该专栏的登录账号。
+
 -   `XUEQIU_COOKIES`: 本人登录[雪球](https://xueqiu.com)后的请求头 Cookie。`/xueqiu/user_stock/:id` 必须配置，`/xueqiu/snb/:id` 会使用已配置的 Cookie。账号必须能在源站查看对应自选列表或组合。会话失效时需要更新 Cookie；无法访问的数据会明确报错，不会作为正常空订阅返回。
 
 ### 饭否

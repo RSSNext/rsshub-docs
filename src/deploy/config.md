@@ -498,6 +498,8 @@ It is recommended to use a non-important account, new accounts or logins from di
 
 ### Xueqiu
 
+`/xueqiu/column/:id` also uses the configured Cookie for both the profile and its timeline. Without it, the route tries an anonymous visitor session; columns that hide posts from that session require a signed-in account with access.
+
 -   `XUEQIU_COOKIES`: The Cookie request header from your own signed-in [Xueqiu](https://xueqiu.com) browser session. `/xueqiu/user_stock/:id` requires it, and `/xueqiu/snb/:id` uses it when configured. The account must be able to view the requested watchlist or portfolio on the source website. Refresh expired sessions; inaccessible data produces an authorization error instead of a successful empty feed.
 
 ### 饭否
