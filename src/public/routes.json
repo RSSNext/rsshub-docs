@@ -1608,6 +1608,66 @@
       }
     }
   },
+  "acea": {
+    "name": "ACEA",
+    "url": "www.acea.auto",
+    "categories": [
+      "finance"
+    ],
+    "heat": 0,
+    "routes": {
+      "/acea/publications/:type?": {
+        "path": "/publications/:type?",
+        "name": "Publications",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/acea/publications/press-releases",
+        "parameters": {
+          "type": {
+            "description": "Native content type",
+            "options": [
+              {
+                "value": "press-releases",
+                "label": "Press releases"
+              },
+              {
+                "value": "news",
+                "label": "News"
+              },
+              {
+                "value": "facts",
+                "label": "Facts"
+              },
+              {
+                "value": "figures",
+                "label": "Figures"
+              },
+              {
+                "value": "publications",
+                "label": "Publications"
+              }
+            ],
+            "default": "press-releases"
+          }
+        },
+        "categories": [
+          "finance"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.acea.auto/nav/"
+            ],
+            "target": "/publications"
+          }
+        ],
+        "location": "publications.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "alipan": {
     "name": "阿里云盘",
     "url": "www.alipan.com",
@@ -44430,41 +44490,6 @@
         "test": {
           "code": 0
         }
-      }
-    }
-  },
-  "acea": {
-    "name": "ACEA",
-    "url": "www.acea.auto",
-    "categories": [
-      "finance"
-    ],
-    "heat": 0,
-    "routes": {
-      "/acea/publications/:type?": {
-        "path": "/publications/:type?",
-        "name": "Publications",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/acea/publications/press-releases",
-        "parameters": {
-          "type": "Native content type, e.g. press-releases, facts, figures or publications. Defaults to press-releases."
-        },
-        "categories": [
-          "finance"
-        ],
-        "radar": [
-          {
-            "source": [
-              "www.acea.auto/nav/"
-            ],
-            "target": "/publications"
-          }
-        ],
-        "location": "publications.ts",
-        "heat": 0,
-        "topFeeds": []
       }
     }
   },
