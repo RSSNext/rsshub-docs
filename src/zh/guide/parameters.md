@@ -127,6 +127,7 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 :::
 
 -   `image_hotlink_template`: 用于处理描述中图片的 URL，绕过防盗链等限制，留空不生效。用法参考 [#2769](https://github.com/DIYgod/RSSHub/issues/2769)。可以使用 [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL#Properties) 的所有属性（加上后缀 `_ue` 则会对其进行 URL 编码），格式为 JS 变量模板。例子：`${protocol}//${host}${pathname}`, `https://i3.wp.com/${host}${pathname}`, `https://images.weserv.nl?url=${href_ue}`
+-   `image_hotlink_domains`: 用逗号分隔需要应用 `image_hotlink_template` 的完整主机名，例如 `example.com,images.example.com`。只按主机名精确匹配，不包含协议、路径、端口或通配符；子域名需单独列出。需设置 `ALLOW_USER_HOTLINK_TEMPLATE=true` 并提供非空的 `image_hotlink_template`。省略或留空时不限制域名。若配置了 `HOTLINK_TEMPLATE`，则以该配置为准，忽略此参数。
 -   `multimedia_hotlink_template`: 用法同 `image_hotlink_template`，但应用于音频和视频。注意：该服务必须跟随跳转、允许反代音频和视频，且必须在反代时丢弃 `Referer` 请求头。[这里有一个符合要求的易于自行搭建的项目](https://github.com/Rongronggg9/rsstt-img-relay/blob/main/README_zh-CN.md)，该项目接受直接拼接 URL，即 `https://example.com/${href}`，其中 `example.com` 应替换为自行搭建的服务的域名
 -   `wrap_multimedia_in_iframe`: 将音频和视频包裹在 `<iframe>` 中，以阻止阅读器发送 `Referer` 请求头。支持该变通解决方案的阅读器较少，且可能造成显示错误。有些阅读器，如 RSS Guard、Akregator，可能不支持前一种方法，则可尝试此方法。设置为 `1` 生效
 
