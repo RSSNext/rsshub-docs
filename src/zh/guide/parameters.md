@@ -132,6 +132,8 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 RSSHub 同时支持 RSS 2.0、Atom、JSON Feed 和 RSS3 输出格式，在路由添加 `format` 参数（值为`rss`、`atom`、`json` 或 `rss3`）即可请求对应输出格式，缺省为 RSS 2.0
 
+RSS 2.0 的条目作者使用 Dublin Core。所有 RSS 2.0 输出都会声明 `xmlns:dc="http://purl.org/dc/elements/1.1/"`，非空的 `item.author`（包括邮箱地址）统一输出为 `<dc:creator>`，不再输出 `<author>`。路由开发者仍填写 `author` 字段。此变化不影响 Atom、JSON Feed、`<itunes:author>` 或条目的 GUID。
+
 举例:
 
 -   缺省 RSS 2.0 - [https://rsshub.app/jianshu/home](https://rsshub.app/jianshu/home)

@@ -131,6 +131,8 @@ There are more details in the [FAQ](/guide/faq).
 
 RSSHub conforms to RSS 2.0, Atom, JSON Feed, and RSS3 Protocol. To obtain the feed in a specific format, simply add the `format` parameter with the value `rss`, `atom`, `json`, or `rss3` to the feed address to obtain the feed in the corresponding format. The default output format is RSS 2.0.
 
+RSS 2.0 entry authors use Dublin Core. Every RSS 2.0 feed declares `xmlns:dc="http://purl.org/dc/elements/1.1/"`, and every nonempty `item.author`, including email addresses, is emitted as `<dc:creator>` instead of `<author>`. Route developers still use the `author` field. This change does not affect Atom, JSON Feed, `<itunes:author>`, or entry GUIDs.
+
 E.g.
 
 -   Default (RSS 2.0) - [https://rsshub.app/dribbble/popular](https://rsshub.app/dribbble/popular)

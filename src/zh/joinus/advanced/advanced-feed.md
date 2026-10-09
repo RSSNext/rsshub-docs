@@ -53,6 +53,16 @@ sidebar_position: 1
 | **`media.*`** | *（可选）* 条目相关的媒体。更多详情请参见 [媒体 RSS](https://www.rssboard.org/media-rss) | `undefinded` | R |
 | **`doi`** | *（可选）* 条目的数字对象标识符 (DOI)，应为格式为 `10.xxx/xxxxx.xxxx` 的字符串 | `undefinded` | R |
 
+<span id="item-authors"></span>
+
+## 条目作者 {#item-authors}
+
+在路由返回的数据中，将作者名称填入 `item.author`。RSSHub 在 RSS 2.0 中会将它输出为 `<dc:creator>`，使用 `http://purl.org/dc/elements/1.1/` 命名空间。路由的数据字段仍是 `author`，不要给条目添加 `dc:creator` 属性。
+
+RSS 2.0 的 [`author` 元素](https://www.rssboard.org/rss-specification#ltauthorgtSubelementOfLtitemgt)要求邮箱地址，Dublin Core 的 [`creator`](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/creator/)则适合保存作者名称。RSSHub 对所有非空 `item.author` 都使用 `<dc:creator>`，包括含邮箱地址的值。没有作者的条目不会输出这两个元素。
+
+Atom 作者名称、JSON Feed 作者和播客 `<itunes:author>` 的输出格式保持原样。原先读取 RSSHub `<author>` 元素的客户端或脚本，需要改为读取 `<dc:creator>`。
+
 :::warning 格式考虑
 
 在指定 RSS 订阅源中的某些字段时，重要的是要注意一些格式考虑因素。具体来说，您应避免在以下字段中包含任何换行符、连续的空格或前导／尾随空格：**`title`**，**`subtitle`**（仅适用于 Atom），**`author`**（仅适用于 Atom），**`item.title`** 和 **`item.author`**。

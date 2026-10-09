@@ -55,6 +55,16 @@ Each item in an RSS feed is represented by an object with a set of fields that d
 | **`media.*`** | *(Optional)* The media associated with the item. See [Media RSS](https://www.rssboard.org/media-rss) for more details | `undefinded` | R |
 | **`doi`** | *(Optional)* The Digital Object Identifier of the item, which should be a string in the format `10.xxxx/xxxxx.xxxx` | `undefinded` | R |
 
+<span id="item-authors"></span>
+
+## Item Authors {#item-authors}
+
+Set `item.author` to the author's name in the data returned by a route. RSSHub renders this field as `<dc:creator>` in RSS 2.0, using the `http://purl.org/dc/elements/1.1/` namespace. The route field remains `author`; do not add a `dc:creator` property to your item.
+
+The RSS 2.0 [`author` element](https://www.rssboard.org/rss-specification#ltauthorgtSubelementOfLtitemgt) requires an email address, while Dublin Core [`creator`](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/elements11/creator/) supports an author's name. RSSHub uses `<dc:creator>` for every nonempty `item.author`, including values containing an email address. An item without an author has neither element.
+
+Atom author names, JSON Feed authors and podcast `<itunes:author>` fields retain their existing format. Consumers that previously read RSSHub's `<author>` element should read `<dc:creator>` instead.
+
 :::warning Formatting Considerations
 
 When specifying certain fields in an RSS feed, it's important to keep in mind some formatting considerations. Specifically, you should avoid including any linebreaks, consecutive whitespace, or leading/trailing whitespace in the following fields: **`title`**, **`subtitle`** (only for Atom), **`author`** (only for Atom), **`item.title`**, and **`item.author`**.
