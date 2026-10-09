@@ -158,6 +158,55 @@ $ docker rm rsshub
 $ docker run -d --name rsshub -p 1200:1200 -e CACHE_EXPIRE=3600 -e GITHUB_ACCESS_TOKEN=example diygod/rsshub
 ```
 
+<span id="private-routes"></span>
+
+### 私有路由 {#private-routes}
+
+Node.js 和 Docker 部署可以从指定目录加载独立的 `.mjs` 私有路由模块，无需改动 RSSHub 内置路由。每个文件名定义一个命名空间；已有命名空间和保留的服务路径受到保护，不能被替换。
+
+在 Compose 文件旁创建 `routes-user/personal.mjs`。模块导出 `namespace` 和 `routes` 数组，每个 handler 返回 RSSHub 的 `Data` 结构：
+
+```js
+export const namespace = { name: 'Personal', url: 'example.com' };
+
+export const routes = [
+    {
+        path: '/news',
+        name: 'News',
+        maintainers: [],
+        handler: async () => ({
+            title: 'Personal news',
+            link: 'https://example.com/',
+            item: [
+                {
+                    title: 'Example item',
+                    link: 'https://example.com/#item-1',
+                    description: '<p>Replace this item with content from your own source.</p>',
+                },
+            ],
+        }),
+    },
+];
+```
+
+该模块注册 `/personal/news`。将示例条目替换为源站文章，每条使用稳定且唯一的 `link`。源站提供发布时间时填写 `pubDate`，时间未知时省略。
+
+将以下内容合并到已有 RSSHub 服务，以只读方式挂载模块，并将 `USER_ROUTES_PATH` 设置为容器内路径：
+
+```yaml
+services:
+    rsshub:
+        environment:
+            USER_ROUTES_PATH: /app/routes-user
+            ACCESS_KEY: '${ACCESS_KEY:?Set ACCESS_KEY in the Compose .env file}'
+        volumes:
+            - ./routes-user:/app/routes-user:ro
+```
+
+在 Compose 的 `.env` 文件中设置 `ACCESS_KEY`，订阅时使用文档中的 `key` 或 `code` 参数认证。按照[访问控制配置](/zh/deploy/config#pei-zhi-fang-wen-kong-zhi-pei-zhi)设置访问凭据和需要认证的健康检查。
+
+手动部署 Node.js 时，将 `USER_ROUTES_PATH` 设置为宿主机上该目录的绝对路径。新增或修改模块后重启 RSSHub。独立模块使用 JavaScript，不支持 TypeScript 或 RSSHub 的 `@/` 导入别名。运行时目录加载适用于 Node.js 和 Docker；Workers 需要在构建时包含私有路由。
+
 ## 手动部署
 
 部署 `RSSHub` 最直接的方式，您可以按照以下步骤将 `RSSHub` 部署在您的电脑、服务器或者其他任何地方

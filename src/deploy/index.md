@@ -165,6 +165,55 @@ This deployment method does not include puppeteer (unless using `diygod/rsshub:c
 
 To configure more options please refer to [Configuration](#deployment-docker-compose-deployment-recommended-configuration).
 
+<span id="private-routes"></span>
+
+### Private Routes {#private-routes}
+
+Node.js and Docker deployments can load private routes from a directory of standalone `.mjs` modules without changing RSSHub's built-in routes. Each filename defines a namespace; existing namespaces and reserved service paths cannot be replaced.
+
+Create `routes-user/personal.mjs` beside your Compose file. Export `namespace` and a `routes` array, with each handler returning RSSHub's `Data` structure:
+
+```js
+export const namespace = { name: 'Personal', url: 'example.com' };
+
+export const routes = [
+    {
+        path: '/news',
+        name: 'News',
+        maintainers: [],
+        handler: async () => ({
+            title: 'Personal news',
+            link: 'https://example.com/',
+            item: [
+                {
+                    title: 'Example item',
+                    link: 'https://example.com/#item-1',
+                    description: '<p>Replace this item with content from your own source.</p>',
+                },
+            ],
+        }),
+    },
+];
+```
+
+This registers `/personal/news`. Replace the example item with your source's articles, giving each item a stable, unique `link`. Include `pubDate` when the source provides a publication time; omit it when the time is unknown.
+
+Merge the following into the existing RSSHub service to mount the modules read-only and point `USER_ROUTES_PATH` to their container path:
+
+```yaml
+services:
+    rsshub:
+        environment:
+            USER_ROUTES_PATH: /app/routes-user
+            ACCESS_KEY: '${ACCESS_KEY:?Set ACCESS_KEY in the Compose .env file}'
+        volumes:
+            - ./routes-user:/app/routes-user:ro
+```
+
+Set `ACCESS_KEY` in the Compose `.env` file and use the documented `key` or `code` parameters to authenticate subscriptions. Follow the [access control configuration](/deploy/config#configuration-access-control-configurations), including its authenticated health check configuration.
+
+For a manual Node.js deployment, set `USER_ROUTES_PATH` to the directory's absolute path on the host. Restart RSSHub after adding or editing modules. Standalone modules use JavaScript and cannot use TypeScript or RSSHub's `@/` import aliases. Runtime directory loading is available on Node.js and Docker; Workers need routes included at build time.
+
 ## Manual Deployment
 
 The most direct way to deploy `RSSHub`, you can follow the steps below to deploy`RSSHub` on your computer, server or anywhere.

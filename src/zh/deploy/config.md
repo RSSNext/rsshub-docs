@@ -154,6 +154,8 @@ healthcheck:
 
 `NODE_NAME`: 节点名，用于负载均衡，识别当前节点
 
+`USER_ROUTES_PATH`: 私有路由模块目录，默认不设置。支持 Node 和 Docker 部署。目录中放置导出 `namespace` 和 `routes` 的独立 `.mjs` ES 模块；模块在启动时加载，修改后需要重启。私有命名空间不能覆盖内置命名空间。设置此变量本身不会启用访问保护，需要时应另行配置 `ACCESS_KEY` 或保护实例。模块格式和挂载方式见 [私有路由](/zh/deploy#private-routes)。
+
 `PUPPETEER_WS_ENDPOINT`: 用于 puppeteer.connect 的浏览器 websocket 链接，见 [browserWSEndpoint](https://zhaoqize.github.io/puppeteer-api-zh_CN/#?product=Puppeteer&show=api-browserwsendpoint)
 
 `CHROMIUM_EXECUTABLE_PATH`: Chromium（或 Chrome）的可执行路径。若 puppeteer 没有下载捆绑的 Chromium（主动跳过下载或体系架构为 arm/arm64），设置此项可启用 puppeteer。或者，偏好 Chrome 而不是 Chromium 时，此项也很有用。**注意**：`PUPPETEER_WS_ENDPOINT` 被设置时，此项不生效；仅在手动部署时有用，对于 Docker 部署，请改用 `chromium-bundled` 版本镜像。
