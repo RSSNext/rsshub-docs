@@ -113,6 +113,10 @@ E.g. [https://rsshub.app/theinitium/channel/latest/zh-hans?opencc=t2s](https://r
 
 ## Multimedia processing
 
+-   `show_image`: images are kept by default (`true`). Set it to `false` to remove images from entry content, feed and entry covers, thumbnails, and image attachments. Audio and video are kept, but video `poster` images are removed.
+
+For example, `/github/issue/DIYgod/RSSHub?show_image=false`. This parameter applies to RSS 2.0, Atom and JSON Feed output.
+
 :::warning
 
 This is an experimental API

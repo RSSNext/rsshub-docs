@@ -114,6 +114,10 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 ## 多媒体处理
 
+-   `show_image`: 默认为 `true`，保留图片。设为 `false` 时，移除条目正文图片、订阅和条目封面、缩略图及图片附件；音频和视频保留，但视频的 `poster` 封面会移除。
+
+例如 `/github/issue/DIYgod/RSSHub?show_image=false`。此参数适用于 RSS 2.0、Atom 和 JSON Feed 输出。
+
 :::warning
 
 这是个测试中的 API
