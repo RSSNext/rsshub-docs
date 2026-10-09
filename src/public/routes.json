@@ -76187,14 +76187,67 @@
     }
   },
   "deepseek": {
-    "name": "Deepseek",
+    "name": "DeepSeek",
     "url": "api-docs.deepseek.com",
-    "description": "Deepseek API 文档。",
+    "description": "DeepSeek API documentation.",
+    "zh": {
+      "name": "DeepSeek",
+      "description": "DeepSeek API 文档。"
+    },
     "categories": [
+      "program-update",
       "programming"
     ],
     "heat": 414,
     "routes": {
+      "/deepseek/changelog/:language?": {
+        "path": "/changelog/:language?",
+        "name": "Change Log",
+        "url": "api-docs.deepseek.com",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/deepseek/changelog",
+        "parameters": {
+          "language": "Language, use `en` for English; defaults to Chinese"
+        },
+        "description": "DeepSeek API change log in Chinese and English.",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "api-docs.deepseek.com/updates"
+            ],
+            "target": "/changelog/en"
+          },
+          {
+            "source": [
+              "api-docs.deepseek.com/zh-cn/updates"
+            ],
+            "target": "/changelog"
+          }
+        ],
+        "location": "changelog.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "更新日志",
+          "description": "DeepSeek API 更新日志，支持中文和英文。",
+          "parameters": {
+            "language": "语言，可选 `en`，默认为中文"
+          }
+        }
+      },
       "/deepseek/news": {
         "path": "/news",
         "name": "新闻",
