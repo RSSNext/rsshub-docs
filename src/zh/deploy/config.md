@@ -453,6 +453,12 @@ healthcheck:
 -   `DIDA365_USERNAME`: 滴答清单用户名
 -   `DIDA365_PASSWORD`: 滴答清单密码
 
+### 抖音
+
+-   `DOUYIN_COOKIE`: 本人登录抖音网页版后的请求头 Cookie。`/douyin/likes/self` 和 `/douyin/collection` 必须配置；`/douyin/likes/:uid` 的喜欢列表必须对当前账号可见。路由只读取首屏，使用视频原始发布时间，抖音没有提供点赞或收藏时间。请在具有访问控制的实例上配置，会话过期后更新 Cookie。
+
+    获取方法：登录 [抖音网页版](https://www.douyin.com)，打开浏览器 Network 面板，切换到喜欢或收藏的视频标签，复制对应 `aweme/favorite` 或 `aweme/listcollection` 请求头中的 `Cookie`。不要将 Cookie 放入订阅地址。收藏路由仅涵盖收藏的视频，暂不涵盖收藏夹、音乐、合集及短剧。
+
 ### 豆瓣
 
 用于想看
