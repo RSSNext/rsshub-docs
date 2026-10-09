@@ -55483,22 +55483,25 @@
     ],
     "heat": 0,
     "routes": {
-      "/bcg/infrastructure": {
-        "path": "/infrastructure",
-        "name": "Infrastructure insights",
+      "/bcg/search/:params?": {
+        "path": "/search/:params?",
+        "name": "Search",
+        "url": "www.bcg.com/search",
         "maintainers": [
           "DIYgod"
         ],
-        "example": "/bcg/infrastructure",
+        "example": "/bcg/search/f5=00000171-f12e-d394-ab73-f3ef7fc10000&f7=00000171-f17b-d394-ab73-f3fbae0d0000&f3=00000172-0efd-d58d-a97a-5eff51730077",
+        "parameters": {
+          "params": "The query string of a www.bcg.com/search URL (`q`, `f3`, `f5`, `f7`, ...). Sort defaults to date (`s=1`)."
+        },
         "categories": [
           "new-media"
         ],
         "radar": [
           {
             "source": [
-              "bcg.com/industries/urban-planning/infrastructure"
-            ],
-            "target": "/infrastructure"
+              "www.bcg.com/search"
+            ]
           }
         ],
         "location": "infrastructure.ts",
@@ -79528,7 +79531,7 @@
           "DIYgod"
         ],
         "example": "/douyin/collection",
-        "description": "订阅 DOUYIN_COOKIE 对应账号收藏的视频首屏。收藏夹、音乐、合集和短剧不在此路由范围内。发布时间为视频原始发布时间，收藏时间没有公开提供。",
+        "description": "订阅 DOUYIN\\_COOKIE 对应账号收藏的视频首屏。收藏夹、音乐、合集和短剧不在此路由范围内。发布时间为视频原始发布时间，收藏时间没有公开提供。",
         "categories": [
           "social-media"
         ],
@@ -103611,7 +103614,7 @@
             "description": "Any path of list page on javbus"
           }
         },
-        "description": "The item title receives a [中字] prefix and the 中文字幕 category when the magnet selected as the enclosure has a subtitle badge. The existing magnet selection order is preserved.",
+        "description": "The item title receives a \\[中字] prefix and the 中文字幕 category when the magnet selected as the enclosure has a subtitle badge. The existing magnet selection order is preserved.",
         "categories": [
           "multimedia",
           "popular"
@@ -188546,7 +188549,7 @@
           "id": "话题id",
           "sort": "排序方式，hot或new，默认为new"
         },
-        "description": "源详情页明确显示的作者 IP 属地和首屏回帖 IP 属地分别放入 IP属地：… 和 回帖IP属地：… 分类，可使用通用过滤参数。不以作者个人资料所在地替代 IP。需要登录才能查看的内容请配置 DOUBAN_COOKIE。",
+        "description": "源详情页明确显示的作者 IP 属地和首屏回帖 IP 属地分别放入 IP 属地：… 和 回帖 IP 属地：… 分类，可使用通用过滤参数。不以作者个人资料所在地替代 IP。需要登录才能查看的内容请配置 DOUBAN\\_COOKIE。",
         "categories": [
           "social-media"
         ],
@@ -226809,7 +226812,7 @@
         "parameters": {
           "username": "The X username, without @."
         },
-        "description": "Reports a user speaking in a live Space, including Spaces hosted by other users. Hosts and co-hosts are also included; listeners are excluded. Each user/Space pair has a stable entry ID and uses the actual Space start time. When the user is not speaking in a live Space, a status entry has a fixed ID and no publication date. This does not join or listen to a Space. Requires your own authorized TWITTER_AUTH_TOKEN on a self-hosted instance.",
+        "description": "Reports a user speaking in a live Space, including Spaces hosted by other users. Hosts and co-hosts are also included; listeners are excluded. Each user/Space pair has a stable entry ID and uses the actual Space start time. When the user is not speaking in a live Space, a status entry has a fixed ID and no publication date. This does not join or listen to a Space. Requires your own authorized TWITTER\\_AUTH\\_TOKEN on a self-hosted instance.",
         "categories": [
           "social-media"
         ],
