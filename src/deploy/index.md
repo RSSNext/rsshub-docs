@@ -618,6 +618,10 @@ Automatic updates are included.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW__f?referralCode=9wT3hc)
 
+For a GitHub source deployment, use the repository root as the service's Root Directory. The repository's `railway.json` explicitly selects the Dockerfile builder and the root `Dockerfile`, which installs dependencies with the project's Corepack-managed pnpm version. Leave custom build and start commands unset so Railway uses the Dockerfile and its startup command. RSSHub reads Railway's `PORT` environment variable.
+
+If an existing template deployment reports `yarn@pnpm@...` or a global Yarn version error, check that the build log is using `Dockerfile`, update the deployed source, and remove legacy Yarn/Nixpacks build-command overrides. You can also set `RAILWAY_DOCKERFILE_PATH=Dockerfile` in the service variables. See Railway's [Dockerfile guide](https://docs.railway.com/builds/dockerfiles) and [configuration reference](https://docs.railway.com/config-as-code/reference). A local Docker build alone does not verify the Railway service's builder settings or deployed runtime.
+
 ## Deploy to Google App Engine(GAE)
 
 ### Before You Begin
