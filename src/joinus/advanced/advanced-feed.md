@@ -46,9 +46,10 @@ Each item in an RSS feed is represented by an object with a set of fields that d
 | **`updated`**     | *(Optional)* The date of the last modification of the item, which should be a [Date object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) | `undefinded` | A, J |
 | **`itunes_item_image`** | *(Optional)* The URL of an image associated with the item                           | `undefinded` | R |
 | **`itunes_duration`** | *(Optional)* The length of an audio or video item in seconds (or in the format H:mm:ss), which should be a number or string | `undefinded` | J, R |
-| **`enclosure_url`** | *(Optional)* The URL of an enclosure associated with the item                                  | `undefinded` | J, R |
-| **`enclosure_length`** | *(Optional)* The size of the enclosure file in **byte**, which should be a number                                | `undefinded` | J, R |
-| **`enclosure_type`** | *(Optional)* The MIME type of the enclosure file, which should be a string                           | `undefinded` | J, R |
+| **`enclosure_url`** | *(Optional)* The URL of an enclosure associated with the item                                  | `undefinded` | A, J, R |
+| **`enclosure_length`** | *(Optional)* The size of the enclosure file in **byte**, which should be a number                                | `undefinded` | A, J, R |
+| **`enclosure_type`** | *(Optional)* The MIME type of the enclosure file, which should be a string                           | `undefinded` | A, J, R |
+| **`attachments`** | *(Optional)* An array of attachments with direct `url`, `mime_type`, and optional `title`, `size_in_bytes` and `duration_in_seconds`. Atom and JSON Feed expose all attachments; RSS uses the first as a fallback when no explicit enclosure is set. | `undefined` | A, J, R |
 | **`upvotes`** | *(Optional)*  The number of upvotes the item has received, which should be a number                               | `undefinded` | A |
 | **`downvotes`** | *(Optional)* The number of downvotes the item has received, which should be a number                          | `undefinded` | A |
 | **`comments`** | *(Optional)*  The number of comments for the item, which should be a number                             | `undefinded` | A |

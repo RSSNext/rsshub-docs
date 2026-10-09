@@ -44,9 +44,10 @@ sidebar_position: 1
 | **`updated`**     | *（可选）* 条目的最后修改日期，应该是 [Date object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) | `undefinded` | A, J |
 | **`itunes_item_image`** | *（可选）* 条目相关联的图片的网址 | `undefinded` | R |
 | **`itunes_duration`** | *（可选）* 音频或视频条目的长度，以秒为单位（或格式为 H:mm:ss），应为数字或字符串 | `undefinded` | J, R |
-| **`enclosure_url`** | *（可选）* 条目相关联的附件的网址 | `undefinded` | J, R |
-| **`enclosure_length`** | *（可选）* 附件文件的大小（以 **byte** 为单位），应为数字 | `undefinded` | J, R |
-| **`enclosure_type`** | *（可选）* 附件文件的 MIME 类型，应为字符串 | `undefinded` | J, R |
+| **`enclosure_url`** | *（可选）* 条目相关联的附件的网址 | `undefinded` | A, J, R |
+| **`enclosure_length`** | *（可选）* 附件文件的大小（以 **byte** 为单位），应为数字 | `undefinded` | A, J, R |
+| **`enclosure_type`** | *（可选）* 附件文件的 MIME 类型，应为字符串 | `undefinded` | A, J, R |
+| **`attachments`** | *（可选）* 附件对象数组，包含直链 `url`、`mime_type` 和可选的 `title`、`size_in_bytes`、`duration_in_seconds`。Atom 和 JSON Feed 输出所有附件；RSS 使用第一个附件作为未指定 enclosure 时的后备。 | `undefined` | A, J, R |
 | **`upvotes`** | *（可选）* 条目的赞数，应为数字 | `undefinded` | A |
 | **`downvotes`** | *（可选）* 条目的踩数，应为数字 | `undefinded` | A |
 | **`comments`** | *（可选）* 条目的评论数，应为数字 | `undefinded` | A |

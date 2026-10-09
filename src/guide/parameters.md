@@ -117,6 +117,10 @@ E.g. [https://rsshub.app/theinitium/channel/latest/zh-hans?opencc=t2s](https://r
 
 For example, `/github/issue/DIYgod/RSSHub?show_image=false`. This parameter applies to RSS 2.0, Atom and JSON Feed output.
 
+-   `enclosure`: automatic extraction is disabled by default. Set it to `true` to expose direct images, audio, video and downloadable files from entry content as attachments while retaining the HTML content. Only HTTP(S) URLs with a recognized file extension or a declared media type are extracted; embedded players and data/blob URLs are skipped. Existing attachments are preserved and duplicate URLs are removed. This does not make extra requests to media servers or discover download links behind players.
+
+For example, `/github/issue/DIYgod/RSSHub?enclosure=true&format=atom`. Atom and JSON Feed can expose multiple attachments; RSS 2.0 uses the first attachment when the route has no explicit enclosure. Audio and video are extracted before images. Unknown RSS enclosure lengths are represented as `0`; Atom omits an unknown length. `show_image=false` also excludes extracted images. Atom now includes enclosure links for attachments explicitly supplied by routes, even without this parameter.
+
 :::warning
 
 This is an experimental API

@@ -118,6 +118,10 @@ Telegram 即时预览模式需要在官网制作页面处理模板，请前往[�
 
 例如 `/github/issue/DIYgod/RSSHub?show_image=false`。此参数适用于 RSS 2.0、Atom 和 JSON Feed 输出。
 
+-   `enclosure`: 默认不自动提取。设为 `true` 时，将条目正文中的图片、音频、视频和可下载文件直链提取为附件，同时保留 HTML 正文。只提取有已知文件扩展名或声明媒体类型的 HTTP(S) 链接，跳过嵌入式播放器和 data/blob 链接；保留已有附件并按 URL 去重。此过程不会额外请求媒体服务器，也不会寻找播放器背后的下载地址。
+
+例如 `/github/issue/DIYgod/RSSHub?enclosure=true&format=atom`。Atom 和 JSON Feed 支持多个附件；RSS 2.0 在路由未指定 enclosure 时使用第一个附件。自动提取时优先音频和视频，再处理图片；未知的 RSS 附件长度用 `0` 表示，Atom 则省略未知长度。`show_image=false` 也会排除提取的图片。对于路由已经提供的附件，Atom 即使未开启此参数也会输出 enclosure 链接。
+
 :::warning
 
 这是个测试中的 API
