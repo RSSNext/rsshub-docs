@@ -273,6 +273,8 @@ See docs of the specified route and `lib/config.ts` for detailed information.
 
 `/douban/group/topic/:id/:author?` tracks the main post and the first page of replies. `author` defaults to `all`; use `author` to request the source website's author-only view. Changes to the main post title or body produce a new GUID. Replies keep their source creation times. The source sorts replies from oldest to newest, so new replies on later pages of a long topic are not covered.
 
+User broadcasts and gallery topics add source IP locations to categories when the detail page provides them: `IP属地：…` for the author and `回帖IP属地：…` for first-page replies. You can use the common `filter_category` parameter, for example `filter_category=^IP属地：广东$`. Profile locations are not used as IP locations. Details hidden from anonymous visitors require `DOUBAN_COOKIE`; if an IP field is unavailable, it is omitted.
+
 ### E-Hentai
 
 -   `EH_IPB_MEMBER_ID`: The value of `ipb_member_id` in the cookie header after logging in E-Hentai
