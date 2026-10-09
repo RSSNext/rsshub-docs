@@ -53,9 +53,12 @@ sidebar: auto
 | --- | --- | --- | --- |
 | `latest` | 最新 | No | `latest` |
 | `chromium-bundled` | 最新 | Yes | `chromium-bundled` |
-| `{YYYY-MM-DD}` | 特定日期 | No | `2021-06-18` |
-| `chromium-bundled-{YYYY-MM-DD}` | 特定日期 | Yes | `chromium-bundled-2021-06-18` |
+| `{YYYY-MM-DD}` | 当日构建，同一天的后续构建可能更新此标签 | No | `2021-06-18` |
+| `chromium-bundled-{YYYY-MM-DD}` | 包含 Chromium 的当日构建，同一天可能更新 | Yes | `chromium-bundled-2021-06-18` |
 | `{commit hash}` | 特定提交  | No | `e7c233b1df982fae10684a11c9df57892e96940a` |
+| `chromium-bundled-{commit hash}` | 包含 Chromium 的特定提交 | Yes | `chromium-bundled-e7c233b1df982fae10684a11c9df57892e96940a` |
+
+两种多架构镜像发布成功后，发布工作流会创建标签为 `vYYYY.MM.DD-<7位SHA>` 的 [GitHub 源码 Release](https://github.com/DIYgod/RSSHub/releases)，日期采用 UTC。Release 说明中会列出完整源码提交和对应镜像标签。Docker 部署需要固定到该版本时，使用完整的 40 位提交 SHA，或 `chromium-bundled-<完整SHA>` 作为镜像标签，例如 `ghcr.io/diygod/rsshub:<完整SHA>`。日期标签可能被当天的后续构建更新。
 
 支持 puppeteer 会占用更多资源，但支持更多路由
 

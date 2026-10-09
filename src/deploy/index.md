@@ -54,9 +54,12 @@ There are several tags available:
 | --- | --- | --- | --- |
 | `latest` | Latest version  | No  | `latest` |
 | `chromium-bundled`  | Latest version with Chromium bundled in  | Yes | `chromium-bundled`|
-| `{YYYY-MM-DD}`   | Specific date of the release    | No     | `2021-06-18` |
-| `chromium-bundled-{YYYY-MM-DD}` | Specific date of the release with Chromium bundled in | Yes | `chromium-bundled-2021-06-18` |
+| `{YYYY-MM-DD}`   | Daily build; may be updated by later builds that day | No     | `2021-06-18` |
+| `chromium-bundled-{YYYY-MM-DD}` | Daily build with Chromium; may be updated that day | Yes | `chromium-bundled-2021-06-18` |
 | `{commit hash}` | Specific commit | No | `e7c233b1df982fae10684a11c9df57892e96940a` |
+| `chromium-bundled-{commit hash}` | Specific commit with Chromium bundled in | Yes | `chromium-bundled-e7c233b1df982fae10684a11c9df57892e96940a` |
+
+After publishing both multi-platform image variants, the release workflow creates a [GitHub source release](https://github.com/DIYgod/RSSHub/releases) tagged `vYYYY.MM.DD-<7-character-SHA>`, using the UTC release date. Its release notes list the full source commit and corresponding image tags. To pin a Docker deployment to that release, use the full 40-character commit SHA, or `chromium-bundled-<full-SHA>`, as the image tag. For example, `ghcr.io/diygod/rsshub:<full-SHA>`. Daily tags can change after another build on the same day.
 
 While supporting puppeteer may consume more resources, it also supports a wider range of routes.
 
