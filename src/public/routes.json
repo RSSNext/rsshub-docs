@@ -2493,7 +2493,8 @@
           "live"
         ],
         "features": {
-          "nsfw": true
+          "nsfw": true,
+          "antiCrawler": true
         },
         "radar": [
           {
