@@ -529,7 +529,9 @@ It is recommended to use a non-important account, new accounts or logins from di
 
 -   `WEIBO_APP_KEY`: 微博 App Key
 -   `WEIBO_APP_SECRET`: 微博 App Secret
--   `WEIBO_REDIRECT_URL`: 微博登录授权回调地址，默认为 `RSSHub 地址/weibo/timeline/0`，自定义回调地址请确保最后可以转跳到 `RSSHub 地址/weibo/timeline/0?code=xxx`
+-   `WEIBO_REDIRECT_URL`: Weibo OAuth callback URL, defaulting to `<RSSHub request origin>/weibo/timeline/0`. A custom callback must forward both OAuth query parameters, `code` and `state`, unchanged to `<RSSHub URL>/weibo/timeline/0?code=<oauth-code>&state=<returned-state>`.
+
+    When `ACCESS_KEY` is enabled, first open the desired timeline route with a valid RSSHub `key` or access `code` to start authorization. RSSHub creates a one-time `state` valid for ten minutes and consumes it when the callback returns, then redirects to the final subscription URL with its route-specific access code. This requires an available memory or Redis cache; HTTP and KV cache backends do not support this protected callback flow. Start authorization again if the state expires or has already been used. The configured `WEIBO_REDIRECT_URL` must not contain RSSHub `key` or access `code` parameters; preserve the OAuth `code` and `state` returned by Weibo instead.
 
 用于自定义分组
 

@@ -516,7 +516,9 @@ healthcheck:
 
 -   `WEIBO_APP_KEY`: 微博 App Key
 -   `WEIBO_APP_SECRET`: 微博 App Secret
--   `WEIBO_REDIRECT_URL`: 微博登录授权回调地址，默认为 `RSSHub 地址/weibo/timeline/0`，自定义回调地址请确保最后可以转跳到 `RSSHub 地址/weibo/timeline/0?code=xxx`
+-   `WEIBO_REDIRECT_URL`: 微博 OAuth 授权回调地址，默认为 `<RSSHub 请求来源>/weibo/timeline/0`。自定义回调必须将 OAuth 返回的 `code` 和 `state` 两个查询参数原样转发至 `<RSSHub 地址>/weibo/timeline/0?code=<oauth-code>&state=<returned-state>`。
+
+    开启 `ACCESS_KEY` 后，先使用有效的 RSSHub `key` 或访问 `code` 打开所需时间线路由来发起授权。RSSHub 会生成十分钟内有效的一次性 `state`，回调时消费该状态，并转跳到带有对应路由访问码的最终订阅地址。此流程需要可用的 memory 或 Redis 缓存，HTTP 和 KV 缓存不支持受保护的回调流程。状态过期或已经使用时，需要重新发起授权。配置的 `WEIBO_REDIRECT_URL` 不得包含 RSSHub 的 `key` 或访问 `code` 参数；应保留微博实际返回的 OAuth `code` 和 `state`。
 
 用于自定义分组
 
