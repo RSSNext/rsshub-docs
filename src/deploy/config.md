@@ -156,9 +156,11 @@ Configs in this sections are in beta stage, and **are turn off by default**. Ple
 
 `USER_ROUTES_PATH`: directory containing private route modules, unset by default. Supported in Node and Docker deployments. Put standalone `.mjs` ES modules that export `namespace` and `routes` in this directory; modules are loaded at startup, so changes require a restart. Private namespaces cannot override built-in namespaces. Setting this variable does not add access protection; configure `ACCESS_KEY` or protect the instance separately when needed. See [Private routes](/deploy#private-routes) for module format and mounting instructions.
 
-`PUPPETEER_WS_ENDPOINT`: browser WebSocket endpoint which can be used as an argument to puppeteer.connect, refer to [browserWSEndpoint](https://pptr.dev/api/puppeteer.browser.wsendpoint)
+`PLAYWRIGHT_WS_ENDPOINT`: remote browser WebSocket endpoint using the [Playwright protocol](https://playwright.dev/docs/api/class-browsertype#browser-type-connect). The server must use a compatible Playwright version. Do not put a Chromium CDP endpoint in this variable. `PUPPETEER_WS_ENDPOINT` remains a fallback alias when `PLAYWRIGHT_WS_ENDPOINT` is unset.
 
-`CHROMIUM_EXECUTABLE_PATH`: path to the Chromium (or Chrome) executable. If puppeteer is not bundled with Chromium (manually skipped downloading or system architecture is arm/arm64), configuring this can effectively enable puppeteer. Or alternatively, if you prefer Chrome to Chromium, this configuration will help. **WARNING**: only effective when `PUPPETEER_WS_ENDPOINT` is not set; only useful for manual deployment, for Docker, please use the `chromium-bundled` image instead.
+`PLAYWRIGHT_CDP_ENDPOINT`: Chromium [Chrome DevTools Protocol endpoint](https://playwright.dev/docs/api/class-browsertype#browser-type-connect-over-cdp) for Node deployments. The Docker Compose Browserless V2 service uses `ws://browserless:3000?token=<token>`, where the token must match the Browserless service's `TOKEN`. In Node, this setting takes precedence over `PLAYWRIGHT_WS_ENDPOINT` and a locally launched browser. Workers use `PLAYWRIGHT_WS_ENDPOINT` or their Browser Run binding instead.
+
+`CHROMIUM_EXECUTABLE_PATH`: path to the local Chromium or Chrome executable used by Playwright. It applies when neither a CDP nor a WebSocket endpoint is configured. For Docker deployments that use a local browser, use the `chromium-bundled` image.
 
 `TITLE_LENGTH_LIMIT`: limit the length of feed title generated in bytes, an English alphabet counts as 1 byte, the rest such as Chinese, Japanese, Korean or Arabic counts as 2 bytes by design, default to `150`
 

@@ -108,6 +108,29 @@ $ docker-compose up -d
 
 Edit `environment` in [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml)
 
+### Browserless V2 {#browserless-v2}
+
+The current Compose file uses [Browserless V2](https://docs.browserless.io/enterprise/open-source) with the `ghcr.io/browserless/chromium` image. These entries connect RSSHub to the browser service over CDP:
+
+```yaml
+services:
+    rsshub:
+        environment:
+            PLAYWRIGHT_CDP_ENDPOINT: 'ws://browserless:3000?token=${BROWSERLESS_TOKEN:-rsshub}'
+    browserless:
+        image: ghcr.io/browserless/chromium
+        environment:
+            TOKEN: '${BROWSERLESS_TOKEN:-rsshub}'
+        healthcheck:
+            test: ['CMD-SHELL', 'curl -f "http://localhost:3000/pressure?token=$$TOKEN"']
+```
+
+Set `BROWSERLESS_TOKEN` in the Compose `.env` file so that the endpoint's `token` and Browserless's `TOKEN` match. The checked-in file uses `rsshub` when the variable is unset. Keep the existing Redis, ports, dependencies, and RSSHub and Redis health checks when merging this excerpt. Update the Browserless health check to include its token as shown above. `$$TOKEN` passes `$TOKEN` to the container shell for expansion instead of having Compose expand it on the host.
+
+An image update does not replace a Compose file you already downloaded. To migrate an existing deployment, manually update the Browserless image, replace its old WebSocket setting with `PLAYWRIGHT_CDP_ENDPOINT`, add the matching `TOKEN`, and update the Browserless health check. Then pull the images and recreate the services with `docker-compose pull` and `docker-compose up -d`.
+
+`PLAYWRIGHT_CDP_ENDPOINT` uses the Chrome DevTools Protocol. `PLAYWRIGHT_WS_ENDPOINT` is for a [native Playwright server endpoint](https://playwright.dev/docs/api/class-browsertype#browser-type-connect), which uses a different protocol and must match the client's Playwright version. Use the CDP setting for the Browserless service shown above.
+
 ## Docker Deployment
 
 :::warning

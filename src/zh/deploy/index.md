@@ -107,6 +107,29 @@ $ docker-compose up -d
 
 修改 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) 中的 `environment` 进行配置
 
+### Browserless V2 {#browserless-v2}
+
+当前 Compose 文件使用 [Browserless V2](https://docs.browserless.io/enterprise/open-source) 的 `ghcr.io/browserless/chromium` 镜像。以下配置通过 CDP 连接 RSSHub 和浏览器服务：
+
+```yaml
+services:
+    rsshub:
+        environment:
+            PLAYWRIGHT_CDP_ENDPOINT: 'ws://browserless:3000?token=${BROWSERLESS_TOKEN:-rsshub}'
+    browserless:
+        image: ghcr.io/browserless/chromium
+        environment:
+            TOKEN: '${BROWSERLESS_TOKEN:-rsshub}'
+        healthcheck:
+            test: ['CMD-SHELL', 'curl -f "http://localhost:3000/pressure?token=$$TOKEN"']
+```
+
+在 Compose 的 `.env` 文件中设置 `BROWSERLESS_TOKEN`，确保端点的 `token` 与 Browserless 的 `TOKEN` 一致。仓库中的文件在未设置该变量时使用 `rsshub`。合并这段配置时，保留已有的 Redis、端口、服务依赖以及 RSSHub 和 Redis 的健康检查；Browserless 的健康检查需要按上例添加 token。`$$TOKEN` 会将 `$TOKEN` 交给容器内的 shell 展开，而不是由宿主机上的 Compose 展开。
+
+更新镜像不会替换已经下载的 Compose 文件。迁移已有部署时，需要手工更新 Browserless 镜像，将原来的 WebSocket 配置替换为 `PLAYWRIGHT_CDP_ENDPOINT`，添加一致的 `TOKEN`，并更新 Browserless 健康检查。随后执行 `docker-compose pull` 和 `docker-compose up -d` 拉取镜像并重新创建服务。
+
+`PLAYWRIGHT_CDP_ENDPOINT` 使用 Chrome DevTools Protocol。`PLAYWRIGHT_WS_ENDPOINT` 用于[原生 Playwright 服务端点](https://playwright.dev/docs/api/class-browsertype#browser-type-connect)，协议不同，且服务端与客户端的 Playwright 版本需要匹配。上面的 Browserless 服务应使用 CDP 配置。
+
 ## Docker 部署
 
 :::warning
