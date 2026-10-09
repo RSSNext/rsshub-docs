@@ -405,6 +405,7 @@ healthcheck:
 
 ### Wordpress
 
+-   `WORDPRESS_ALLOWED_DOMAINS`: WordPress 路由允许访问的精确主机名列表，以英文逗号分隔，例如 `wordpress.org,blog.example.com`。默认列表为空，可在保持 `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` 关闭时使用这些站点。配置项会去除首尾空格，匹配时不区分大小写。只填写主机名，不带协议、端口、路径或通配符；各子域名需要单独列出。若开启 `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN`，则允许任意 WordPress 主机名。
 -   `WORDPRESS_CDN`: 用于中转 http 图片链接。可供考虑的服务见下表：
 
     | url                                                                              | backbone     |

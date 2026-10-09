@@ -436,6 +436,7 @@ It is recommended to use a non-important account, new accounts or logins from di
 
 ### Wordpress
 
+-   `WORDPRESS_ALLOWED_DOMAINS`: comma-separated exact hostnames permitted by the WordPress route while `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` remains disabled, for example `wordpress.org,blog.example.com`. Empty by default. Whitespace is trimmed and matching is case-insensitive. Use hostnames without a scheme, port, path or wildcard; list each subdomain explicitly. Enabling `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` instead allows arbitrary WordPress hostnames.
 -   `WORDPRESS_CDN`: Proxy HTTP image link with HTTPS link. Consider using:
 
     | url                                    | backbone     |
