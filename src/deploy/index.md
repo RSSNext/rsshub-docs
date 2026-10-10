@@ -709,6 +709,16 @@ Run RSSHub from just $1/month. Includes automatic updates and $5 free starting c
 
 [![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
 
+## Deploy to Pethost
+
+[Pethost](https://pethost.dev) runs RSSHub from the [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) above, with Redis and Browserless, and serves it over HTTPS.
+
+1.  Download `docker-compose.yml` and remove the `ports` entry of the `rsshub` service: Pethost serves port 1200 through its own HTTPS proxy.
+2.  Install the [Pethost CLI](https://pethost.dev/docs/cli/) and run `pethost deploy` in the folder that has the file.
+3.  Give RSSHub its address with the command the deploy prints: `pethost domain add rsshub.<your-account>.pethost.app rsshub:1200`.
+
+See the [Pethost guide](https://pethost.dev/blog/self-host-rsshub/) for configuration and updates.
+
 ## Play with Docker
 
 If you would like to test routes or avoid IP limits, etc., you may build your own RSSHub for free by clicking the button below.
