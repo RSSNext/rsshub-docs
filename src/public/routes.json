@@ -152568,362 +152568,6 @@
       }
     }
   },
-  "steam": {
-    "name": "Steam",
-    "url": "store.steampowered.com",
-    "categories": [
-      "game"
-    ],
-    "heat": 143,
-    "routes": {
-      "/steam/appcommunityfeed/:appid/:routeParams?": {
-        "path": "/appcommunityfeed/:appid/:routeParams?",
-        "name": "Steam Community Hub Feeds",
-        "maintainers": [
-          "NyaaaDoge"
-        ],
-        "example": "/steam/appcommunityfeed/730",
-        "parameters": {
-          "appid": "Steam appid, can be found on the community hub page or store page URL.",
-          "routeParams": "Query parameters."
-        },
-        "description": "Query Parameters:\n\n| Name                   | Type   | Description             |\n| ---------------------- | ------ | ----------------------- |\n| p                      | string | p                       |\n| rgSections\\[]          | string | rgSections              |\n| filterLanguage         | string | Filter Language         |\n| languageTag            | string | Language Tag            |\n| nMaxInappropriateScore | string | Max Inappropriate Score |\n\nExample:\n\n- `/appcommunityfeed/730/p=1&rgSections[]=2&rgSections[]=4&filterLanguage=english&languageTag=english&nMaxInappropriateScore=1` for CS2 Screenshot and Artwork contents.\n- `/appcommunityfeed/730/rgSections[]=6` for CS2 Workshop contents only.\n- `/appcommunityfeed/570/rgSections[]=3&rgSections[]=9` for Dota2 Video and Guides contents.\n\n::: tip\nIt can also access community hub contents that require a logged-in account.\n:::",
-        "categories": [
-          "game"
-        ],
-        "radar": [
-          {
-            "title": "Community Hub",
-            "source": [
-              "steamcommunity.com/app/:appid"
-            ],
-            "target": "/appcommunityfeed/:appid"
-          },
-          {
-            "title": "Community Hub",
-            "source": [
-              "store.steampowered.com/app/:appid/*/"
-            ],
-            "target": "/appcommunityfeed/:appid"
-          }
-        ],
-        "location": "appcommunityfeed.tsx",
-        "heat": 7,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "58956346985948160",
-            "url": "rsshub://steam/appcommunityfeed/2358720",
-            "title": "2358720 Steam Community Hub",
-            "description": "2358720 Steam Community Hub - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/app/2358720",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "58748050964336640",
-            "url": "rsshub://steam/appcommunityfeed/730",
-            "title": "730 Steam Community Hub",
-            "description": "730 Steam Community Hub - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/app/730",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/steam/news/:appid/:language?": {
-        "path": "/news/:appid/:language?",
-        "name": "News",
-        "url": "steamcommunity.com",
-        "maintainers": [
-          "keocheung"
-        ],
-        "example": "/steam/news/958260/english",
-        "parameters": {
-          "appid": "Game App ID, all digits, can be found in the URL",
-          "language": "Language, english by default, see below for more languages"
-        },
-        "description": "<details>\n<summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n</details>",
-        "categories": [
-          "game"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "title": "News",
-            "source": [
-              "steamcommunity.com/app/:appid",
-              "steamcommunity.com/app/:appid/allnews",
-              "steamcommunity.com/app/:appid/announcements",
-              "steamcommunity.com/app/:appid/news"
-            ],
-            "target": "/news/:appid"
-          }
-        ],
-        "location": "news.ts",
-        "heat": 107,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "149545975496265728",
-            "url": "rsshub://steam/news/774171/schinese",
-            "title": "App 774171 News",
-            "description": "App 774171 News - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/app/774171/allnews/",
-            "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774171/hero_capsule.jpg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "149547667423973376",
-            "url": "rsshub://steam/news/960170/schinese",
-            "title": "App 960170 News",
-            "description": "App 960170 News - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/app/960170/allnews/",
-            "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/hero_capsule.jpg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/steam/curator/:id/:routeParams?": {
-        "path": "/curator/:id/:routeParams?",
-        "name": "Latest Curator Reviews",
-        "maintainers": [
-          "naremloa",
-          "fenxer"
-        ],
-        "example": "/steam/curator/34646096-80-Days",
-        "parameters": {
-          "id": "Steam curator id. It usually consists of a series of numbers and the curator's name.",
-          "routeParams": {
-            "description": "Extra parameters to filter the reviews. The following parameters are supported:\n| Key             | Description                                                                                   | Accepts                                    | Defaults to |\n| --------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------ | ----------- |\n| `curations`   | Review type to filter by. `0`: Recommended, `1`: Not Recommended, `2`: Informational    | `0`/`1`/`2`/`0,1`/`0,2`/`1,2`  |             |\n| `tagids`      | Tag to filter by. Details are provided below.                                                 | use comma to separate multiple tagid       |             |\n\nNote: There is a [‘Popular Tags’](https://store.steampowered.com/tag/browse) page where you can find many but not all of the tags. The tag’s ID is in the `data-tagid` attribute of the element.Steam does not currently provide a page that comprehensively lists all tags, and you may need to explore alternative ways to find them.\n\nExamples:\n* `/steam/curator/34646096-80-Days/curations=&tagids=`\n* `/steam/curator/34646096-80-Days/curations=0&tagids=19`\n* `/steam/curator/34646096-80-Days/curations=0,2&tagids=19,21`\n"
-          }
-        },
-        "description": "The Latest reviews from a Steam Curator.",
-        "categories": [
-          "game"
-        ],
-        "radar": [
-          {
-            "title": "Latest Curator Reviews",
-            "source": [
-              "store.steampowered.com/curator/:id"
-            ],
-            "target": "/curator/:id"
-          }
-        ],
-        "location": "curator.tsx",
-        "heat": 18,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "99407355545093120",
-            "url": "rsshub://steam/curator/32686107-%D0%85t%D0%B5%D0%B0%D0%BC-250",
-            "title": "Steam Curator 32686107-Ѕtеам-250 Reviews",
-            "description": "Steam Curator 32686107-Ѕtеам-250 Reviews - Powered by RSSHub",
-            "siteUrl": "https://store.steampowered.com/curator/32686107-%D0%85t%D0%B5%D0%B0%D0%BC-250/ajaxgetfilteredrecommendations/?query&start=0&count=10&dynamic_data=&sort=recent&app_types=&reset=false&curations=&tagids=",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "99268471009976320",
-            "url": "rsshub://steam/curator/34646096-80-Days",
-            "title": "Steam Curator 34646096-80-Days Reviews",
-            "description": "Steam Curator 34646096-80-Days Reviews - Powered by RSSHub",
-            "siteUrl": "https://store.steampowered.com/curator/34646096-80-Days/ajaxgetfilteredrecommendations/?query&start=0&count=10&dynamic_data=&sort=recent&app_types=&reset=false&curations=&tagids=",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/steam/search/:params": {
-        "path": "/search/:params",
-        "name": "Store Search",
-        "maintainers": [
-          "moppman"
-        ],
-        "example": "/steam/search/sort_by=Released_DESC&tags=492&category1=10&os=linux",
-        "parameters": {
-          "params": "Query parameters for a Steam Store search."
-        },
-        "categories": [
-          "game"
-        ],
-        "radar": [
-          {
-            "source": [
-              "store.steampowered.com",
-              "store.steampowered.com/search/:params"
-            ]
-          }
-        ],
-        "location": "search.ts",
-        "heat": 5,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "58377300258747392",
-            "url": "rsshub://steam/search/sort_by=Released_DESC&tags=492&category1=10&os=linux",
-            "title": "Steam search result",
-            "description": "Query: sort_by=Released_DESC&tags=492&category1=10&os=linux - Powered by RSSHub",
-            "siteUrl": "https://store.steampowered.com/search/?sort_by=Released_DESC&tags=492&category1=10&os=linux&ignore_preferences=1",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "156158747312015360",
-            "url": "rsshub://steam/search/sort_by%3DReleased_DESC%26tags%3D1716%26category1%3D998%26category3%3D9%26supportedlang%3Denglish%26ndl%3D1",
-            "title": "Steam search result",
-            "description": "Query: sort_by=Released_DESC&tags=1716&category1=998&category3=9&supportedlang=english&ndl=1 - Powered by RSSHub",
-            "siteUrl": "https://store.steampowered.com/search/?sort_by=Released_DESC&tags=1716&category1=998&category3=9&supportedlang=english&ndl=1&ignore_preferences=1",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/steam/sharefile-changelog/:sharefileID/:routeParams?": {
-        "path": "/sharefile-changelog/:sharefileID/:routeParams?",
-        "name": "Sharefile Changelog",
-        "maintainers": [
-          "NyaaaDoge"
-        ],
-        "example": "/steam/sharefile-changelog/2851063440/l=schinese",
-        "parameters": {
-          "sharefileID": "Steam community sharefile id. Usually refers to a workshop item.",
-          "routeParams": "Route parameters."
-        },
-        "description": "Steam Community Sharefile's Changelog. Primary used for a workshop item.\nHelpful route parameters:\n\n- `l=` language parameter, change the language of description.\n- `p=` page parameter, change the results page. p=1 by default.",
-        "categories": [
-          "game"
-        ],
-        "radar": [
-          {
-            "title": "Sharefile Changelog",
-            "source": [
-              "steamcommunity.com/sharedfiles/filedetails/changelog/:sharefileID"
-            ],
-            "target": "/sharefile-changelog/:sharefileID"
-          }
-        ],
-        "location": "sharefile-changelog.ts",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "242658970454784000",
-            "url": "rsshub://steam/sharefile-changelog/2815540735/l=schinese",
-            "title": "Fargo's Souls Mod",
-            "description": "tModLoader steam community sharefile changelog - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/sharedfiles/filedetails/changelog/2815540735",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected [ Array(1) ] to not include 'https://steamcommunity.com/sharedfile…'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:94:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      },
-      "/steam/workshopsearch/:appid?/:routeParams?": {
-        "path": "/workshopsearch/:appid?/:routeParams?",
-        "name": "Community Workshop Search",
-        "maintainers": [
-          "NyaaaDoge"
-        ],
-        "example": "/steam/workshopsearch/730",
-        "parameters": {
-          "appid": "Steam appid, can be found on the community hub page or store page URL, 730 by default.",
-          "routeParams": "Route parameters, can be found on the search result page URL. Route parameters located after the appid."
-        },
-        "description": "Steam Community Workshop Search Results.\nThe parameter 'l=language' changes the language of search results(if possible).\nFor example, route `/workshopsearch/730/l=schinese` will display the simplified Chinese descriptions of the entry.\n\nLanguage Parameter:\n\n| English | 简体中文 | 繁體中文 | 日本語   | 한국어  | ภาษาไทย | български | čeština | dansk  | Deutsch | español | latam | ελληνικά | français | italiano | Bahasa Indonesia | magyar    | Nederlands | norsk     | polski | português  | brasileiro | română   | русский | suomi   | svenska | Türkçe  | Tiếng Việt | українська |\n| ------- | -------- | -------- | -------- | ------- | ------- | --------- | ------- | ------ | ------- | ------- | ----- | -------- | -------- | -------- | ---------------- | --------- | ---------- | --------- | ------ | ---------- | ---------- | -------- | ------- | ------- | ------- | ------- | ---------- | ---------- |\n| english | schinese | tchinese | japanese | koreana | thai    | bulgarian | czech   | danish | german  | spanish | latam | greek    | french   | italian  | indonesian       | hungarian | dutch      | norwegian | polish | portuguese | brazilian  | romanian | russian | finnish | swedish | turkish | vietnamese | ukrainian  |",
-        "categories": [
-          "game"
-        ],
-        "radar": [
-          {
-            "title": "Workshop Search Results",
-            "source": [
-              "steamcommunity.com/app/:appid/workshop/"
-            ],
-            "target": "/workshopsearch/:appid"
-          }
-        ],
-        "location": "workshop-search.tsx",
-        "heat": 5,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "58747758573134848",
-            "url": "rsshub://steam/workshopsearch/730",
-            "title": "Counter-Strike 2 Steam Workshop Content",
-            "description": "Interested in making content for Counter-Strike? Show us what you can do. Explore our guides for creating weapons, stickers, maps and start submitting. Learn More - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/workshop/browse/?appid=730",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "58572516674359296",
-            "url": "rsshub://steam/workshopsearch/730/searchtext=ze&browsesort=mostrecent&section=&actualsort=mostrecent&l=schinese",
-            "title": "Counter-Strike 2 Steam Workshop Content",
-            "description": "有兴趣为《反恐精英》创作内容吗？ 那就来展示一下您的能耐吧。 探索我们的武器、印花、地图制作指南，并开始提交作品吧。 了解更多 - Powered by RSSHub",
-            "siteUrl": "https://steamcommunity.com/workshop/browse/?appid=730&searchtext=ze&browsesort=mostrecent&section=&actualsort=mostrecent&l=schinese",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2026-05-27T21:02:28.198Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "stheadline": {
     "name": "星島日報",
     "url": "std.stheadline.com",
@@ -214165,6 +213809,442 @@
         "test": {
           "code": 1
         }
+      }
+    }
+  },
+  "steam": {
+    "name": "Steam",
+    "url": "store.steampowered.com",
+    "categories": [
+      "game"
+    ],
+    "heat": 143,
+    "routes": {
+      "/steam/appcommunityfeed/:appid/:routeParams?": {
+        "path": "/appcommunityfeed/:appid/:routeParams?",
+        "name": "Steam Community Hub Feeds",
+        "maintainers": [
+          "NyaaaDoge"
+        ],
+        "example": "/steam/appcommunityfeed/730",
+        "parameters": {
+          "appid": "Steam appid, can be found on the community hub page or store page URL.",
+          "routeParams": "Query parameters."
+        },
+        "description": "Query Parameters:\n\n| Name                   | Type   | Description             |\n| ---------------------- | ------ | ----------------------- |\n| p                      | string | p                       |\n| rgSections\\[]          | string | rgSections              |\n| filterLanguage         | string | Filter Language         |\n| languageTag            | string | Language Tag            |\n| nMaxInappropriateScore | string | Max Inappropriate Score |\n\nExample:\n\n- `/appcommunityfeed/730/p=1&rgSections[]=2&rgSections[]=4&filterLanguage=english&languageTag=english&nMaxInappropriateScore=1` for CS2 Screenshot and Artwork contents.\n- `/appcommunityfeed/730/rgSections[]=6` for CS2 Workshop contents only.\n- `/appcommunityfeed/570/rgSections[]=3&rgSections[]=9` for Dota2 Video and Guides contents.\n\n::: tip\nIt can also access community hub contents that require a logged-in account.\n:::",
+        "categories": [
+          "game"
+        ],
+        "radar": [
+          {
+            "title": "Community Hub",
+            "source": [
+              "steamcommunity.com/app/:appid"
+            ],
+            "target": "/appcommunityfeed/:appid"
+          },
+          {
+            "title": "Community Hub",
+            "source": [
+              "store.steampowered.com/app/:appid/*/"
+            ],
+            "target": "/appcommunityfeed/:appid"
+          }
+        ],
+        "location": "appcommunityfeed.tsx",
+        "heat": 7,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "58956346985948160",
+            "url": "rsshub://steam/appcommunityfeed/2358720",
+            "title": "2358720 Steam Community Hub",
+            "description": "2358720 Steam Community Hub - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/app/2358720",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "58748050964336640",
+            "url": "rsshub://steam/appcommunityfeed/730",
+            "title": "730 Steam Community Hub",
+            "description": "730 Steam Community Hub - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/app/730",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/steam/news/:appid/:language?": {
+        "path": "/news/:appid/:language?",
+        "name": "News",
+        "url": "steamcommunity.com",
+        "maintainers": [
+          "keocheung"
+        ],
+        "example": "/steam/news/958260/english",
+        "parameters": {
+          "appid": "Game App ID, all digits, can be found in the URL",
+          "language": "Language, english by default, see below for more languages"
+        },
+        "description": "<details>\n<summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n</details>",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "News",
+            "source": [
+              "steamcommunity.com/app/:appid",
+              "steamcommunity.com/app/:appid/allnews",
+              "steamcommunity.com/app/:appid/announcements",
+              "steamcommunity.com/app/:appid/news"
+            ],
+            "target": "/news/:appid"
+          }
+        ],
+        "location": "news.ts",
+        "heat": 107,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "149545975496265728",
+            "url": "rsshub://steam/news/774171/schinese",
+            "title": "App 774171 News",
+            "description": "App 774171 News - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/app/774171/allnews/",
+            "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/774171/hero_capsule.jpg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "149547667423973376",
+            "url": "rsshub://steam/news/960170/schinese",
+            "title": "App 960170 News",
+            "description": "App 960170 News - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/app/960170/allnews/",
+            "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960170/hero_capsule.jpg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/steam/curator/:id/:routeParams?": {
+        "path": "/curator/:id/:routeParams?",
+        "name": "Latest Curator Reviews",
+        "maintainers": [
+          "naremloa",
+          "fenxer"
+        ],
+        "example": "/steam/curator/34646096-80-Days",
+        "parameters": {
+          "id": "Steam curator id. It usually consists of a series of numbers and the curator's name.",
+          "routeParams": {
+            "description": "Extra parameters to filter the reviews. The following parameters are supported:\n| Key             | Description                                                                                   | Accepts                                    | Defaults to |\n| --------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------ | ----------- |\n| `curations`   | Review type to filter by. `0`: Recommended, `1`: Not Recommended, `2`: Informational    | `0`/`1`/`2`/`0,1`/`0,2`/`1,2`  |             |\n| `tagids`      | Tag to filter by. Details are provided below.                                                 | use comma to separate multiple tagid       |             |\n\nNote: There is a [‘Popular Tags’](https://store.steampowered.com/tag/browse) page where you can find many but not all of the tags. The tag’s ID is in the `data-tagid` attribute of the element.Steam does not currently provide a page that comprehensively lists all tags, and you may need to explore alternative ways to find them.\n\nExamples:\n* `/steam/curator/34646096-80-Days/curations=&tagids=`\n* `/steam/curator/34646096-80-Days/curations=0&tagids=19`\n* `/steam/curator/34646096-80-Days/curations=0,2&tagids=19,21`\n"
+          }
+        },
+        "description": "The Latest reviews from a Steam Curator.",
+        "categories": [
+          "game"
+        ],
+        "radar": [
+          {
+            "title": "Latest Curator Reviews",
+            "source": [
+              "store.steampowered.com/curator/:id"
+            ],
+            "target": "/curator/:id"
+          }
+        ],
+        "location": "curator.tsx",
+        "heat": 18,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "99407355545093120",
+            "url": "rsshub://steam/curator/32686107-%D0%85t%D0%B5%D0%B0%D0%BC-250",
+            "title": "Steam Curator 32686107-Ѕtеам-250 Reviews",
+            "description": "Steam Curator 32686107-Ѕtеам-250 Reviews - Powered by RSSHub",
+            "siteUrl": "https://store.steampowered.com/curator/32686107-%D0%85t%D0%B5%D0%B0%D0%BC-250/ajaxgetfilteredrecommendations/?query&start=0&count=10&dynamic_data=&sort=recent&app_types=&reset=false&curations=&tagids=",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "99268471009976320",
+            "url": "rsshub://steam/curator/34646096-80-Days",
+            "title": "Steam Curator 34646096-80-Days Reviews",
+            "description": "Steam Curator 34646096-80-Days Reviews - Powered by RSSHub",
+            "siteUrl": "https://store.steampowered.com/curator/34646096-80-Days/ajaxgetfilteredrecommendations/?query&start=0&count=10&dynamic_data=&sort=recent&app_types=&reset=false&curations=&tagids=",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/steam/search/:params": {
+        "path": "/search/:params",
+        "name": "Store Search",
+        "maintainers": [
+          "moppman"
+        ],
+        "example": "/steam/search/sort_by=Released_DESC&tags=492&category1=10&os=linux",
+        "parameters": {
+          "params": "Query parameters for a Steam Store search."
+        },
+        "categories": [
+          "game"
+        ],
+        "radar": [
+          {
+            "source": [
+              "store.steampowered.com",
+              "store.steampowered.com/search/:params"
+            ]
+          }
+        ],
+        "location": "search.ts",
+        "heat": 5,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "58377300258747392",
+            "url": "rsshub://steam/search/sort_by=Released_DESC&tags=492&category1=10&os=linux",
+            "title": "Steam search result",
+            "description": "Query: sort_by=Released_DESC&tags=492&category1=10&os=linux - Powered by RSSHub",
+            "siteUrl": "https://store.steampowered.com/search/?sort_by=Released_DESC&tags=492&category1=10&os=linux&ignore_preferences=1",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "156158747312015360",
+            "url": "rsshub://steam/search/sort_by%3DReleased_DESC%26tags%3D1716%26category1%3D998%26category3%3D9%26supportedlang%3Denglish%26ndl%3D1",
+            "title": "Steam search result",
+            "description": "Query: sort_by=Released_DESC&tags=1716&category1=998&category3=9&supportedlang=english&ndl=1 - Powered by RSSHub",
+            "siteUrl": "https://store.steampowered.com/search/?sort_by=Released_DESC&tags=1716&category1=998&category3=9&supportedlang=english&ndl=1&ignore_preferences=1",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/steam/sharefile-changelog/:sharefileID/:routeParams?": {
+        "path": "/sharefile-changelog/:sharefileID/:routeParams?",
+        "name": "Sharefile Changelog",
+        "maintainers": [
+          "NyaaaDoge"
+        ],
+        "example": "/steam/sharefile-changelog/2851063440/l=schinese",
+        "parameters": {
+          "sharefileID": "Steam community sharefile id. Usually refers to a workshop item.",
+          "routeParams": "Route parameters."
+        },
+        "description": "Steam Community Sharefile's Changelog. Primary used for a workshop item.\nHelpful route parameters:\n\n- `l=` language parameter, change the language of description.\n- `p=` page parameter, change the results page. p=1 by default.",
+        "categories": [
+          "game"
+        ],
+        "radar": [
+          {
+            "title": "Sharefile Changelog",
+            "source": [
+              "steamcommunity.com/sharedfiles/filedetails/changelog/:sharefileID"
+            ],
+            "target": "/sharefile-changelog/:sharefileID"
+          }
+        ],
+        "location": "sharefile-changelog.ts",
+        "heat": 1,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "242658970454784000",
+            "url": "rsshub://steam/sharefile-changelog/2815540735/l=schinese",
+            "title": "Fargo's Souls Mod",
+            "description": "tModLoader steam community sharefile changelog - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/sharedfiles/filedetails/changelog/2815540735",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected [ Array(1) ] to not include 'https://steamcommunity.com/sharedfile…'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1319:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+expect@4.1.11/node_modules/@vitest/expect/dist/index.js:1156:15)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.2.2/node_modules/chai/index.js:1700:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:94:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      },
+      "/steam/workshopsearch/:appid?/:routeParams?": {
+        "path": "/workshopsearch/:appid?/:routeParams?",
+        "name": "Community Workshop Search",
+        "maintainers": [
+          "NyaaaDoge"
+        ],
+        "example": "/steam/workshopsearch/730",
+        "parameters": {
+          "appid": "Steam appid, can be found on the community hub page or store page URL, 730 by default.",
+          "routeParams": "Route parameters, can be found on the search result page URL. Route parameters located after the appid."
+        },
+        "description": "Steam Community Workshop Search Results.\nThe parameter 'l=language' changes the language of search results(if possible).\nFor example, route `/workshopsearch/730/l=schinese` will display the simplified Chinese descriptions of the entry.\n\nLanguage Parameter:\n\n| English | 简体中文 | 繁體中文 | 日本語   | 한국어  | ภาษาไทย | български | čeština | dansk  | Deutsch | español | latam | ελληνικά | français | italiano | Bahasa Indonesia | magyar    | Nederlands | norsk     | polski | português  | brasileiro | română   | русский | suomi   | svenska | Türkçe  | Tiếng Việt | українська |\n| ------- | -------- | -------- | -------- | ------- | ------- | --------- | ------- | ------ | ------- | ------- | ----- | -------- | -------- | -------- | ---------------- | --------- | ---------- | --------- | ------ | ---------- | ---------- | -------- | ------- | ------- | ------- | ------- | ---------- | ---------- |\n| english | schinese | tchinese | japanese | koreana | thai    | bulgarian | czech   | danish | german  | spanish | latam | greek    | french   | italian  | indonesian       | hungarian | dutch      | norwegian | polish | portuguese | brazilian  | romanian | russian | finnish | swedish | turkish | vietnamese | ukrainian  |",
+        "categories": [
+          "game"
+        ],
+        "radar": [
+          {
+            "title": "Workshop Search Results",
+            "source": [
+              "steamcommunity.com/app/:appid/workshop/"
+            ],
+            "target": "/workshopsearch/:appid"
+          }
+        ],
+        "location": "workshop-search.tsx",
+        "heat": 5,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "58747758573134848",
+            "url": "rsshub://steam/workshopsearch/730",
+            "title": "Counter-Strike 2 Steam Workshop Content",
+            "description": "Interested in making content for Counter-Strike? Show us what you can do. Explore our guides for creating weapons, stickers, maps and start submitting. Learn More - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/workshop/browse/?appid=730",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "58572516674359296",
+            "url": "rsshub://steam/workshopsearch/730/searchtext=ze&browsesort=mostrecent&section=&actualsort=mostrecent&l=schinese",
+            "title": "Counter-Strike 2 Steam Workshop Content",
+            "description": "有兴趣为《反恐精英》创作内容吗？ 那就来展示一下您的能耐吧。 探索我们的武器、印花、地图制作指南，并开始提交作品吧。 了解更多 - Powered by RSSHub",
+            "siteUrl": "https://steamcommunity.com/workshop/browse/?appid=730&searchtext=ze&browsesort=mostrecent&section=&actualsort=mostrecent&l=schinese",
+            "image": null,
+            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
+            "errorAt": "2026-05-27T21:02:28.198Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      },
+      "/steam/discussions/:appid/:feature?": {
+        "path": "/discussions/:appid/:feature?",
+        "name": "Discussion List",
+        "url": "steamcommunity.com",
+        "maintainers": [
+          "NekoAria"
+        ],
+        "example": "/steam/discussions/730",
+        "parameters": {
+          "appid": "App ID, found in the Steam Community URL",
+          "feature": {
+            "description": "App-local discussion subforum slot, found in the Steam Community URL",
+            "default": "0"
+          }
+        },
+        "description": "This new-topic feed enriches up to 15 topics from Steam's first, most-recently-active page with their full original posts and publication times. RSSHub sorts items by publication time by default; use `?sorted=false` to retain Steam's activity order. Recently created topics beyond that page may be missed. Pagination is not supported.",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requirePuppeteer": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "steamcommunity.com/app/:appid/discussions"
+            ],
+            "target": "/discussions/:appid"
+          },
+          {
+            "source": [
+              "steamcommunity.com/app/:appid/discussions/:feature"
+            ],
+            "target": "/discussions/:appid/:feature"
+          },
+          {
+            "source": [
+              "steamcommunity.com/app/:appid/discussions/:feature/:topicId"
+            ],
+            "target": "/discussions/:appid/:feature"
+          }
+        ],
+        "location": "discussion-list.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/steam/discussion/:appid/:feature/:topicId": {
+        "path": "/discussion/:appid/:feature/:topicId",
+        "name": "Discussion Thread",
+        "url": "steamcommunity.com",
+        "maintainers": [
+          "NekoAria"
+        ],
+        "example": "/steam/discussion/730/0/563667940587817948",
+        "parameters": {
+          "appid": "App ID, found in the Steam Community URL",
+          "feature": "App-local discussion subforum slot, found in the Steam Community URL",
+          "topicId": "Discussion topic ID, found in the Steam Community URL"
+        },
+        "description": "This route contains the original post and up to 15 replies from each of the first and current last pages. Replies on intervening pages are not included, and pagination is not supported.",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requirePuppeteer": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "steamcommunity.com/app/:appid/discussions/:feature/:topicId"
+            ],
+            "target": "/discussion/:appid/:feature/:topicId"
+          }
+        ],
+        "location": "discussion-thread.ts",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
