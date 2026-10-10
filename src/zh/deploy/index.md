@@ -707,6 +707,16 @@ Sealos 模板会部署 RSSHub、Redis 缓存、Browserless、Redis 持久化存�
 
 [![Run on PikaPods](https://www.pikapods.com/static/run-button.svg)](https://www.pikapods.com/pods?run=rsshub)
 
+## 部署到 Pethost
+
+[Pethost](https://pethost.dev) 使用上文的 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) 运行 RSSHub（包含 Redis 和 Browserless），并通过 HTTPS 提供访问。
+
+1.  下载 `docker-compose.yml`，删除 `rsshub` 服务的 `ports` 配置：Pethost 会通过自带的 HTTPS 代理转发 1200 端口。
+2.  安装 [Pethost CLI](https://pethost.dev/docs/cli/)，在该文件所在目录运行 `pethost deploy`。
+3.  使用部署完成后输出的命令为 RSSHub 绑定地址：`pethost domain add rsshub.<your-account>.pethost.app rsshub:1200`。
+
+配置与更新可参见 [Pethost 指南](https://pethost.dev/blog/self-host-rsshub/)。
+
 ## Play with Docker
 
 如果想要测试因为反爬规则导致无法访问的路由，您可以点击下方按钮拉起一套免费，临时，专属于您的 RSSHub
