@@ -164263,6 +164263,38 @@
       }
     }
   },
+  "vb-audio": {
+    "name": "VB-Audio",
+    "url": "forum.vb-audio.com",
+    "categories": [
+      "program-update"
+    ],
+    "heat": 0,
+    "routes": {
+      "/vb-audio/voicemeeter/changelog": {
+        "path": "/voicemeeter/changelog",
+        "name": "Voicemeeter Version History",
+        "url": "forum.vb-audio.com/viewtopic.php?t=498",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/vb-audio/voicemeeter/changelog",
+        "categories": [
+          "program-update"
+        ],
+        "radar": [
+          {
+            "source": [
+              "forum.vb-audio.com/viewtopic.php"
+            ]
+          }
+        ],
+        "location": "voicemeeter-changelog.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "verfghbw": {
     "name": "Constitutional Court of Baden-Württemberg (Germany)",
     "url": "verfgh.baden-wuerttemberg.de",
