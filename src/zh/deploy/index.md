@@ -709,13 +709,11 @@ Sealos 模板会部署 RSSHub、Redis 缓存、Browserless、Redis 持久化存�
 
 ## 部署到 Pethost
 
-[Pethost](https://pethost.dev) 使用上文的 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) 运行 RSSHub（包含 Redis 和 Browserless），并通过 HTTPS 提供访问。
+[Pethost](https://pethost.dev) 通过一键模板运行 RSSHub（包含 Redis 和 Browserless），并通过 HTTPS 提供访问，每月 €9.99 起。
 
-1.  下载 `docker-compose.yml`，删除 `rsshub` 服务的 `ports` 配置：Pethost 会通过自带的 HTTPS 代理转发 1200 端口。
-2.  安装 [Pethost CLI](https://pethost.dev/docs/cli/)，在该文件所在目录运行 `pethost deploy`。
-3.  使用部署完成后输出的命令为 RSSHub 绑定地址：`pethost domain add rsshub.<your-account>.pethost.app rsshub:1200`。
+[![Deploy on Pethost](https://pethost.dev/button.svg)](https://console.pethost.dev/?template=rsshub)
 
-配置与更新可参见 [Pethost 指南](https://pethost.dev/blog/self-host-rsshub/)。
+如需直接部署上文的 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml)，可安装 [Pethost CLI](https://pethost.dev/docs/cli/)，在该文件所在目录运行 `pethost deploy`。配置与更新可参见 [Pethost 指南](https://pethost.dev/blog/self-host-rsshub/)。
 
 ## Play with Docker
 
