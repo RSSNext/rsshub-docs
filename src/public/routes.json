@@ -93749,6 +93749,42 @@
           "code": 0
         }
       },
+      "/huggingface/activity/:user/posts": {
+        "path": "/activity/:user/posts",
+        "name": "User Posts Activity",
+        "url": "huggingface.co",
+        "maintainers": [
+          "qqc20043",
+          "pseudoyu"
+        ],
+        "example": "/huggingface/activity/AbstractPhil/posts",
+        "parameters": {
+          "user": "Hugging Face username"
+        },
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "huggingface.co/:user/activity/posts"
+            ],
+            "target": "/activity/:user/posts"
+          }
+        ],
+        "view": 1,
+        "location": "user-posts.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/huggingface/blog-community/:sort?": {
         "path": "/blog-community/:sort?",
         "name": "Community Articles",
