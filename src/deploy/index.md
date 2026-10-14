@@ -711,13 +711,11 @@ Run RSSHub from just $1/month. Includes automatic updates and $5 free starting c
 
 ## Deploy to Pethost
 
-[Pethost](https://pethost.dev) runs RSSHub from the [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) above, with Redis and Browserless, and serves it over HTTPS.
+[Pethost](https://pethost.dev) runs RSSHub with Redis and Browserless from a one-click template and serves it over HTTPS, from €9.99/month.
 
-1.  Download `docker-compose.yml` and remove the `ports` entry of the `rsshub` service: Pethost serves port 1200 through its own HTTPS proxy.
-2.  Install the [Pethost CLI](https://pethost.dev/docs/cli/) and run `pethost deploy` in the folder that has the file.
-3.  Give RSSHub its address with the command the deploy prints: `pethost domain add rsshub.<your-account>.pethost.app rsshub:1200`.
+[![Deploy on Pethost](https://pethost.dev/button.svg)](https://console.pethost.dev/?template=rsshub)
 
-See the [Pethost guide](https://pethost.dev/blog/self-host-rsshub/) for configuration and updates.
+To deploy the [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) above as it is, run `pethost deploy` in its folder with the [Pethost CLI](https://pethost.dev/docs/cli/). See the [Pethost guide](https://pethost.dev/blog/self-host-rsshub/) for configuration and updates.
 
 ## Play with Docker
 
