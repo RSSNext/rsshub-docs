@@ -134928,6 +134928,44 @@
           "code": 0
         }
       },
+      "/ps/price/:id/:locale?": {
+        "path": "/price/:id/:locale?",
+        "name": "Game Price",
+        "url": "store.playstation.com",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "example": "/ps/price/10001538",
+        "parameters": {
+          "id": "Concept or product ID from the store URL, such as `10001538` in `https://store.playstation.com/en-us/concept/10001538`",
+          "locale": "Store locale from the URL, `en-us` by default"
+        },
+        "description": "A concept ID lists every edition of the game, and a product ID lists only that product. A new item appears whenever the price or the end of the offer changes. PlayStation Plus prices and trials are not included.",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "store.playstation.com/:locale/concept/:id",
+              "store.playstation.com/:locale/product/:id"
+            ],
+            "target": "/price/:id/:locale"
+          }
+        ],
+        "view": 5,
+        "location": "price.tsx",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/ps/trophy/:id": {
         "path": "/trophy/:id",
         "name": "Network user trophy",
