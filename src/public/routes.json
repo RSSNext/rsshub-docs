@@ -1988,6 +1988,52 @@
       }
     }
   },
+  "bbcnewslabs": {
+    "name": "BBC News Labs",
+    "url": "www.bbc.co.uk/rdnewslabs",
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/bbcnewslabs/news": {
+        "path": "/news",
+        "name": "News",
+        "url": "www.bbc.co.uk/rdnewslabs/news/",
+        "maintainers": [
+          "elxy"
+        ],
+        "example": "/bbcnewslabs/news",
+        "parameters": {},
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "bbcnewslabs.co.uk/",
+              "www.bbc.co.uk/rdnewslabs/news/"
+            ]
+          }
+        ],
+        "location": "news.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "bestblogs": {
     "name": "bestblogs.dev",
     "url": "www.bestblogs.dev",
@@ -3796,34 +3842,6 @@
       }
     }
   },
-  "ele.me": {
-    "name": "饿了么",
-    "url": "www.ele.me",
-    "categories": [
-      "programming"
-    ],
-    "heat": 0,
-    "routes": {
-      "/ele.me/open/announce": {
-        "path": "/open/announce",
-        "name": "商家开放平台公告",
-        "maintainers": [
-          "phantomk"
-        ],
-        "example": "/ele.me/open/announce",
-        "categories": [
-          "programming"
-        ],
-        "location": "open/announce.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "englishhome": {
     "name": "英語之家",
     "url": "englishhome.org",
@@ -5271,118 +5289,6 @@
         "test": {
           "code": 0
         }
-      }
-    }
-  },
-  "last.fm": {
-    "name": "Last.fm",
-    "url": "www.last.fm",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 0,
-    "routes": {
-      "/last.fm/loved/:user": {
-        "path": "/loved/:user",
-        "name": "用户 Love 记录",
-        "maintainers": [
-          "hoilc"
-        ],
-        "example": "/last.fm/loved/yeFoenix",
-        "parameters": {
-          "user": "Last.fm 用户名"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "LASTFM_API_KEY",
-              "optional": false,
-              "description": "Last.fm API key"
-            }
-          ]
-        },
-        "radar": [
-          {
-            "source": [
-              "www.last.fm/user/:user",
-              "www.last.fm/user/:user/*"
-            ]
-          }
-        ],
-        "location": "loved.ts",
-        "heat": 0,
-        "topFeeds": []
-      },
-      "/last.fm/recent/:user": {
-        "path": "/recent/:user",
-        "name": "用户播放记录",
-        "maintainers": [
-          "hoilc"
-        ],
-        "example": "/last.fm/recent/yeFoenix",
-        "parameters": {
-          "user": "Last.fm 用户名"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "LASTFM_API_KEY",
-              "optional": false,
-              "description": "Last.fm API key"
-            }
-          ]
-        },
-        "radar": [
-          {
-            "source": [
-              "www.last.fm/user/:user",
-              "www.last.fm/user/:user/*"
-            ]
-          }
-        ],
-        "location": "recent.ts",
-        "heat": 0,
-        "topFeeds": []
-      },
-      "/last.fm/top/:country?": {
-        "path": "/top/:country?",
-        "name": "站内 Top 榜单",
-        "maintainers": [
-          "hoilc"
-        ],
-        "example": "/last.fm/top/spain",
-        "parameters": {
-          "country": "国家或地区, 需要符合`ISO 3166-1`的英文全称, 可参考`https://zh.wikipedia.org/wiki/ISO_3166-1二位字母代码#正式分配代码`"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "LASTFM_API_KEY",
-              "optional": false,
-              "description": "Last.fm API key"
-            }
-          ]
-        },
-        "radar": [
-          {
-            "source": [
-              "www.last.fm/charts"
-            ],
-            "target": "/top"
-          }
-        ],
-        "location": "top.ts",
-        "heat": 0,
-        "topFeeds": []
       }
     }
   },
@@ -9443,55 +9349,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "bse": {
-    "name": "北京证券交易所",
-    "url": "bse.cn",
-    "categories": [
-      "finance"
-    ],
-    "heat": 0,
-    "routes": {
-      "/bse/:category?/:keyword?": {
-        "path": "/:category?/:keyword?",
-        "name": "栏目",
-        "url": "bse.cn/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/bse",
-        "parameters": {
-          "category": "分类，见下表，默认为本所要闻",
-          "keyword": "关键字，默认为空"
-        },
-        "description": "| 本所要闻        | 人才招聘 | 采购信息 | 业务通知   |\n| --------------- | -------- | -------- | ---------- |\n| important\\_news | recruit  | purchase | news\\_list |\n\n| 法律法规  | 公开征求意见    | 部门规章         | 发行融资   |\n| --------- | --------------- | ---------------- | ---------- |\n| law\\_list | public\\_opinion | regulation\\_list | fxrz\\_list |\n\n| 持续监管   | 交易管理   | 市场管理   | 上市委会议公告  |\n| ---------- | ---------- | ---------- | --------------- |\n| cxjg\\_list | jygl\\_list | scgl\\_list | meeting\\_notice |\n\n| 上市委会议结果公告 | 上市委会议变更公告 | 并购重组委会议公告 |\n| ------------------ | ------------------ | ------------------ |\n| meeting\\_result    | meeting\\_change    | bgcz\\_notice       |\n\n| 并购重组委会议结果公告 | 并购重组委会议变更公告 | 终止审核           | 注册结果      |\n| ---------------------- | ---------------------- | ------------------ | ------------- |\n| bgcz\\_result           | bgcz\\_change           | termination\\_audit | audit\\_result |",
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "bse.cn/"
-            ]
-          }
-        ],
-        "location": "index.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
@@ -16629,6 +16486,55 @@
       }
     }
   },
+  "bse": {
+    "name": "北京证券交易所",
+    "url": "bse.cn",
+    "categories": [
+      "finance"
+    ],
+    "heat": 0,
+    "routes": {
+      "/bse/:category?/:keyword?": {
+        "path": "/:category?/:keyword?",
+        "name": "栏目",
+        "url": "bse.cn/",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/bse",
+        "parameters": {
+          "category": "分类，见下表，默认为本所要闻",
+          "keyword": "关键字，默认为空"
+        },
+        "description": "| 本所要闻        | 人才招聘 | 采购信息 | 业务通知   |\n| --------------- | -------- | -------- | ---------- |\n| important\\_news | recruit  | purchase | news\\_list |\n\n| 法律法规  | 公开征求意见    | 部门规章         | 发行融资   |\n| --------- | --------------- | ---------------- | ---------- |\n| law\\_list | public\\_opinion | regulation\\_list | fxrz\\_list |\n\n| 持续监管   | 交易管理   | 市场管理   | 上市委会议公告  |\n| ---------- | ---------- | ---------- | --------------- |\n| cxjg\\_list | jygl\\_list | scgl\\_list | meeting\\_notice |\n\n| 上市委会议结果公告 | 上市委会议变更公告 | 并购重组委会议公告 |\n| ------------------ | ------------------ | ------------------ |\n| meeting\\_result    | meeting\\_change    | bgcz\\_notice       |\n\n| 并购重组委会议结果公告 | 并购重组委会议变更公告 | 终止审核           | 注册结果      |\n| ---------------------- | ---------------------- | ------------------ | ------------- |\n| bgcz\\_result           | bgcz\\_change           | termination\\_audit | audit\\_result |",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "bse.cn/"
+            ]
+          }
+        ],
+        "location": "index.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
   "cbre": {
     "name": "世邦魏理仕 CBRE",
     "url": "www.cbre.com.cn",
@@ -21809,6 +21715,9 @@
         "categories": [
           "new-media"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "location": "index.ts",
         "heat": 2,
         "topFeeds": [
@@ -24510,6 +24419,45 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      }
+    }
+  },
+  "openwrt": {
+    "name": "OpenWrt",
+    "url": "openwrt.org",
+    "categories": [
+      "program-update"
+    ],
+    "heat": 0,
+    "routes": {
+      "/openwrt/releases/:brand/:model": {
+        "path": "/releases/:brand/:model",
+        "name": "Releases",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/openwrt/releases/xiaomi/xiaomi_redmi_router_ac2100",
+        "parameters": {
+          "brand": "Device Model, can be found in url of `Table of Hardware` -> `Device Page`",
+          "model": "Same as above"
+        },
+        "categories": [
+          "program-update"
+        ],
+        "radar": [
+          {
+            "source": [
+              "openwrt.org/toh/:brand/:model"
+            ],
+            "target": "/releases/:brand/:model"
+          }
+        ],
+        "location": "releases.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
         }
       }
     }
@@ -38550,109 +38498,6 @@
       }
     }
   },
-  "6park": {
-    "name": "留园网",
-    "url": "club.6parkbbs.com",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 5,
-    "routes": {
-      "/6park/index/:id?/:type?/:keyword?": {
-        "path": "/index/:id?/:type?/:keyword?",
-        "name": "首页",
-        "maintainers": [
-          "nczitzk",
-          "cscnk52"
-        ],
-        "example": "/6park/index",
-        "parameters": {
-          "id": "分站，见下表，默认为史海钩沉",
-          "type": "类型，可选值为 gold、type，默认为空",
-          "keyword": "关键词，可选，默认为空"
-        },
-        "description": "| 婚姻家庭 | 魅力时尚 | 女性频道 | 生活百态 | 美食厨房 | 非常影音 | 车迷沙龙 | 游戏天地 | 卡通漫画 | 体坛纵横 | 运动健身 | 电脑前线 | 数码家电 | 旅游风向 | 摄影部落 | 奇珍异宝 | 笑口常开 | 娱乐八卦 | 吃喝玩乐 | 文化长廊 | 军事纵横 | 百家论坛 | 科技频道 | 爱子情怀 | 健康人生 | 博论天下 | 史海钩沉 | 网际谈兵 | 经济观察 | 谈股论金 | 杂论闲侃 | 唯美乐园 | 学习园地 | 命理玄机 | 宠物情缘 | 网络歌坛 | 音乐殿堂 | 情感世界 |\n| -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |\n| life9    | life1    | chan10   | life2    | life6    | fr       | enter7   | enter3   | enter6   | enter5   | sport    | know1    | chan6    | life7    | chan8    | page     | enter1   | enter8   | netstar  | life10   | nz       | other    | chan2    | chan5    | life5    | bolun    | chan1    | military | finance  | chan4    | pk       | gz1      | gz2      | gz3      | life8    | chan7    | enter4   | life3    |",
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "club.6parkbbs.com/:id/index.php",
-              "club.6parkbbs.com/"
-            ],
-            "target": "/index/:id?"
-          }
-        ],
-        "location": "index.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      },
-      "/6park/news/:site?/:id?/:keyword?": {
-        "path": "/news/:site?/:id?/:keyword?",
-        "name": "新闻栏目",
-        "maintainers": [
-          "nczitzk",
-          "cscnk52"
-        ],
-        "example": "/6park/news",
-        "parameters": {
-          "site": "分站，见下表，默认为 newspark",
-          "id": "栏目 id",
-          "keyword": "关键字"
-        },
-        "description": "分站\n\n| newspark | local |\n| -------- | ----- |\n\n::: tip 提示\n若订阅 [时政](https://www.6parknews.com/newspark/index.php?type=1)，其网址为 <https://www.6parknews.com/newspark/index.php?type=1>，其中 `newspark` 为分站，`1` 为栏目 id。\n若订阅 [美国](https://local.6parknews.com/index.php?type_id=1)，其网址为 <https://local.6parknews.com/index.php?type_id=1>，其中 `local` 为分站，`1` 为栏目 id。\n:::",
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "club.6parkbbs.com/:id/index.php",
-              "club.6parkbbs.com/"
-            ],
-            "target": "/:id?"
-          }
-        ],
-        "location": "news.ts",
-        "heat": 5,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "82300149476718592",
-            "url": "rsshub://6park/news/newspark/keywords/%E6%96%B0%E9%97%BB%E9%80%9F%E9%80%92",
-            "title": "6park.com",
-            "description": "6park.com - Powered by RSSHub",
-            "siteUrl": "https://www.6parknews.com/newspark/index.php?act=newssearch&app=news&keywords=%E6%96%B0%E9%97%BB%E9%80%9F%E9%80%92&submit=%E6%9F%A5%E8%AF%A2",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.6parknews.com/newspark/index.php?act=newssearch&app=news&keywords=新闻速递&submit=查询\": 410 Gone\n",
-            "errorAt": "2024-11-27T02:54:40.175Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "82298733055304704",
-            "url": "rsshub://6park/news/newspark/keywords/%E6%90%9C%E7%B4%A2",
-            "title": "6park.com",
-            "description": "6park.com - Powered by RSSHub",
-            "siteUrl": "https://www.6parknews.com/newspark/index.php?act=newssearch&app=news&keywords=%E6%90%9C%E7%B4%A2&submit=%E6%9F%A5%E8%AF%A2",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.6parknews.com/newspark/index.php?act=newssearch&app=news&keywords=搜索&submit=查询\": 410 Gone\n",
-            "errorAt": "2025-11-04T02:18:39.177Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "78dm": {
     "name": "78 动漫",
     "url": "78dm.net",
@@ -40394,67 +40239,6 @@
         ],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "acgvinyl": {
-    "name": "ACG Vinyl - 黑胶",
-    "url": "www.acgvinyl.com",
-    "categories": [
-      "anime"
-    ],
-    "heat": 7,
-    "routes": {
-      "/acgvinyl/news": {
-        "path": "/news",
-        "name": "News",
-        "url": "www.acgvinyl.com/col.jsp?id=103",
-        "maintainers": [
-          "williamgateszhao"
-        ],
-        "example": "/acgvinyl/news",
-        "categories": [
-          "anime"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.acgvinyl.com"
-            ],
-            "target": "/news"
-          }
-        ],
-        "location": "news.ts",
-        "heat": 7,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "190228194247987200",
-            "url": "rsshub://acgvinyl/news",
-            "title": "ACG Vinyl - 黑胶 - 黑胶新闻",
-            "description": "ACG Vinyl - 黑胶 - 黑胶新闻 - Powered by RSSHub",
-            "siteUrl": "http://www.acgvinyl.com/col.jsp?id=103",
-            "image": null,
-            "errorMessage": "Unexpected end of JSON input\n",
-            "errorAt": "2026-06-15T16:08:13.332Z",
-            "ownerUserId": null
-          }
-        ],
-        "zh": {
-          "name": "黑胶新闻"
-        },
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
@@ -49162,6 +48946,10 @@
         "categories": [
           "anime"
         ],
+        "features": {
+          "requirePuppeteer": true,
+          "antiCrawler": true
+        },
         "radar": [
           {
             "source": [
@@ -50783,51 +50571,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
-  "bbcnewslabs": {
-    "name": "BBC News Labs",
-    "url": "bbcnewslabs.co.uk",
-    "categories": [
-      "programming"
-    ],
-    "heat": 0,
-    "routes": {
-      "/bbcnewslabs/news": {
-        "path": "/news",
-        "name": "News",
-        "url": "bbcnewslabs.co.uk/",
-        "maintainers": [
-          "elxy"
-        ],
-        "example": "/bbcnewslabs/news",
-        "parameters": {},
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "bbcnewslabs.co.uk/"
-            ]
-          }
-        ],
-        "location": "news.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
@@ -53777,7 +53520,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportRadar": false,
           "supportBT": false,
@@ -55719,77 +55462,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "cartoonmad": {
-    "name": "動漫狂",
-    "url": "cartoonmad.com",
-    "categories": [
-      "anime"
-    ],
-    "heat": 7,
-    "routes": {
-      "/cartoonmad/comic/:id": {
-        "path": "/comic/:id",
-        "name": "漫画更新",
-        "maintainers": [
-          "KellyHwong"
-        ],
-        "example": "/cartoonmad/comic/5827",
-        "parameters": {
-          "id": "漫画ID"
-        },
-        "categories": [
-          "anime"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "cartoonmad.com/comic/:id"
-            ]
-          }
-        ],
-        "location": "comic.tsx",
-        "heat": 7,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "84204897757024256",
-            "url": "rsshub://cartoonmad/comic/1155",
-            "title": "全職獵人 - 免費漫畫區 - 動漫狂",
-            "description": "主角小傑小時候因誤入母狐熊的勢力範圍，就快要被攻擊時，一名路過，名叫凱特的男子救了他。 原來凱特是他的父親──金的徒弟，來到鯨魚島的目的是為了要尋找線索，以完成金給的最終測試「找出他的行蹤」。凱特告訴小傑許多關於他的父親及獵人相關的事情，因此小傑對金及獵人這個職業有很大的憧憬。 不過，撫養小傑長大的米特阿姨並不希望他成為獵人，因此和他約定條件──釣到沼澤裡的魚精。而小傑也順利完成，拿到獵人試驗的應考資格，並結識奇犽、酷拉皮卡、雷歐力等夥伴展開一連串的冒險旅程。 - Powered by RSSHub",
-            "siteUrl": "https://www.cartoonmad.com/comic/1155",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-09-10T22:22:59.189Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "84204073493511168",
-            "url": "rsshub://cartoonmad/comic/3583",
-            "title": "一拳超人 - 免費漫畫區 - 動漫狂",
-            "description": "主人公埼玉原本是一名整日奔波于求職的普通人.3年前的一天偶然遇到了要對淘氣少年下殺手的異變螃蟹人後,回憶起年少年時\"想要成為英雄\"的夢想,最終拼盡全力救下了淘氣少年.之後通過拼命鍛煉,埼玉終于脫胎換骨獲得了最強的力量,但同時失去了頭髮成了光頭.在獨自做了一段時間英雄後,正式加入英雄協會,與眾多英雄一起開始了對抗各種怪人以及惡勢力的生活…… 原作版：原作版 - Powered by RSSHub",
-            "siteUrl": "https://www.cartoonmad.com/comic/3583",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-09-10T20:14:40.020Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
@@ -62943,7 +62615,7 @@
   },
   "cloudnative": {
     "name": "云原生社区",
-    "url": "cloudnative.to",
+    "url": "cloudnative.jimmysong.io",
     "categories": [
       "blog"
     ],
@@ -68613,6 +68285,9 @@
         "categories": [
           "university"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "radar": [
           {
             "source": [
@@ -73871,195 +73546,6 @@
       }
     }
   },
-  "domp4": {
-    "name": "DoMP4 影视",
-    "url": "www.xlmp4.com",
-    "description": "::: tip\n域名频繁更换，目前使用 [www.xlmp4.com](http://www.xlmp4.com)\n:::",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 141,
-    "routes": {
-      "/domp4/detail/:id": {
-        "path": "/detail/:id",
-        "name": "剧集订阅",
-        "maintainers": [
-          "savokiss",
-          "pseudoyu"
-        ],
-        "example": "/domp4/detail/LBTANI22222I",
-        "parameters": {
-          "id": "从剧集详情页 URL 处获取，如：`https://www.xlmp4.com/html/LBTANI22222I.html`，取 `.html` 前面部分"
-        },
-        "description": "::: tip\n由于大部分详情页是 `/html/xxx.html`，还有部分是 `/detail/123.html`，所以此处做了兼容，id 取 `xxx` 或者 `123` 都可以。\n\n新增 `second` 参数，用于选择下载地址二（地址二不可用或者不填都默认地址一），用法: `/domp4/detail/LBTANI22222I?second=1`。\n\n域名频繁更换，目前使用 [www.xlmp4.com](http://www.xlmp4.com)\n:::",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": true,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.xlmp4.com/html/:id",
-              "www.xlmp4.com/detail/:id"
-            ]
-          }
-        ],
-        "location": "detail.ts",
-        "heat": 26,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "64907131788397568",
-            "url": "rsshub://domp4/detail/9DvTT8bbbbb8",
-            "title": "凡人修仙传",
-            "description": "平凡少年韩立出生贫困，为了让家人过上更好的生活，自愿前去七玄门参加入门考核，最终被墨大夫收入门下。 墨大夫一开始对韩立悉心培养、传授医术，让韩立对他非常感激，但随着一同入门的弟子张铁失踪，韩立才发现了墨大夫的真面目。 墨大夫试图夺舍韩立，最终却被韩立反杀。通过墨大夫的遗书韩立得知了一个全新世界：修仙界的存在。 在帮助七玄门抵御外敌之后，韩立离开了七玄门，前去墨大夫的家中寻找暖阳宝玉解毒，并帮助墨家人打败了敌人。 通过墨大夫之女墨彩环的口中得知太南小会地址，韩立为追寻修仙人的足迹决定前往太南小会，拜别家人后…… - Powered by RSSHub",
-            "siteUrl": "https://www.xlmp4.com/html/9DvTT8bbbbb8.html",
-            "image": "https://img.xlmp4.cc/vod/7/619086a42fed7.jpg",
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-05-15T15:21:43.457Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "112346789614543872",
-            "url": "rsshub://domp4/detail/CVnfK5000005",
-            "title": "斗破苍穹年番",
-            "description": "三年之约后，萧炎终于在迦南学院见到了薰儿，此后他广交挚友并成立磐门；为继续提升实力以三上云岚宗为父复仇，他以身犯险深入天焚炼气塔吞噬陨落心炎…… - Powered by RSSHub",
-            "siteUrl": "https://www.xlmp4.com/html/CVnfK5000005.html",
-            "image": "https://img.xlmp4.cc/vod/d/62e5e8f6a1697.jpg",
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-05-15T17:19:35.693Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      },
-      "/domp4/latest_movie_bt": {
-        "path": "/latest_movie_bt",
-        "name": "最近更新的电源BT列表",
-        "url": "www.xlmp4.com/",
-        "maintainers": [
-          "xianghuawe",
-          "pseudoyu"
-        ],
-        "example": "/domp4/latest_movie_bt",
-        "parameters": {},
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": true,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.xlmp4.com/",
-              "www.xlmp4.com/custom/update.html"
-            ]
-          }
-        ],
-        "location": "latest-movie-bt.ts",
-        "heat": 34,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "66073912567524352",
-            "url": "rsshub://domp4/latest_movie_bt",
-            "title": "domp4电影",
-            "description": "domp4电影 - Powered by RSSHub",
-            "siteUrl": "https://www.xlmp4.com/custom/update.html",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-05-15T15:20:46.121Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      },
-      "/domp4/latest/:type?": {
-        "path": "/latest/:type?",
-        "name": "最近更新",
-        "url": "www.xlmp4.com/",
-        "maintainers": [
-          "savokiss",
-          "pseudoyu"
-        ],
-        "example": "/domp4/latest/vod",
-        "parameters": {
-          "type": "`vod` 代表电影，`tv` 代表电视剧，默认 vod"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.xlmp4.com/",
-              "www.xlmp4.com/custom/update.html"
-            ]
-          }
-        ],
-        "location": "latest.ts",
-        "heat": 81,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "69928302166378496",
-            "url": "rsshub://domp4/latest",
-            "title": "domp4电影",
-            "description": "domp4电影 - Powered by RSSHub",
-            "siteUrl": "https://www.xlmp4.com/custom/update.html",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-05-15T17:19:35.955Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "59547099087379456",
-            "url": "rsshub://domp4/latest/vod",
-            "title": "domp4电影",
-            "description": "domp4电影 - Powered by RSSHub",
-            "siteUrl": "https://www.xlmp4.com/custom/update.html",
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-05-15T16:33:12.170Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
   "dongmanmanhua": {
     "name": "咚漫",
     "url": "www.dongmanmanhua.cn",
@@ -74929,7 +74415,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -77167,6 +76653,34 @@
         ],
         "test": {
           "code": 0
+        }
+      }
+    }
+  },
+  "ele.me": {
+    "name": "饿了么",
+    "url": "www.ele.me",
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/ele.me/open/announce": {
+        "path": "/open/announce",
+        "name": "商家开放平台公告",
+        "maintainers": [
+          "phantomk"
+        ],
+        "example": "/ele.me/open/announce",
+        "categories": [
+          "programming"
+        ],
+        "location": "open/announce.ts",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
       }
     }
@@ -83711,6 +83225,15 @@
         "categories": [
           "programming"
         ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "GITHUB_ACCESS_TOKEN",
+              "optional": true,
+              "description": "Required for the latest events of a single issue or pull request whose timeline exceeds one REST API page. Optional for smaller public timelines and repository-wide comments."
+            }
+          ]
+        },
         "radar": [
           {
             "source": [
@@ -93317,7 +92840,7 @@
   },
   "hubu": {
     "name": "湖北大学",
-    "url": "hubu.edu.cn",
+    "url": "www.hubu.edu.cn",
     "description": "",
     "categories": [
       "university"
@@ -93411,7 +92934,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportRadar": true,
           "supportBT": false,
@@ -95939,7 +95462,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -95991,6 +95514,9 @@
         "categories": [
           "journal"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "location": "journal.ts",
         "heat": 268,
         "topFeeds": [
@@ -100537,7 +100063,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -107702,7 +107228,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -115901,8 +115427,8 @@
     }
   },
   "mox": {
-    "name": "Mox.moe",
-    "url": "mox.moe",
+    "name": "Kmoe",
+    "url": "kxx.moe",
     "categories": [
       "anime"
     ],
@@ -115918,7 +115444,7 @@
         "parameters": {
           "category": "分类，可在对应分类页 URL 中找到"
         },
-        "description": "::: tip\n在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://mox.moe/l/CAT%2A 科幻，日本，完結，lastupdate,jpn,l,BL](https://mox.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n:::\n\n::: warning\n由于 mox.moe 对非登录用户屏蔽了部分漫画详情内容的获取，且极易触发反爬机制，导致访问 ip 被重定向至 google.com，因此在未配置`MOX_COOKIE`参数的情况下路由只会返回漫画标题和封面，不会对详情内容进行抓取。\n:::",
+        "description": "::: tip\n在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。\n\n如 [科幻 + 日語 + 日本 + 長篇 + 完結 + 最近更新](https://kxx.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL) 的 URL 为 [https://kxx.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL](https://kxx.moe/l/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)，此时 `/l/` 后的字段为 `CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`。最终获得路由为 [`/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL`](https://rsshub.app/mox/CAT%2A科幻,日本,完結,lastupdate,jpn,l,BL)\n:::\n\n::: warning\n原 mox.moe 现跳转至 kxx.moe。未配置 `MOX_COOKIE` 时只获取首页漫画标题和封面，不请求详情；部分分类需要登录。配置该站有效登录 Cookie 后才获取详情，Cookie 不会随跳转发送到其他站点。\n:::",
         "categories": [
           "anime"
         ],
@@ -115927,7 +115453,7 @@
             {
               "name": "MOX_COOKIE",
               "optional": true,
-              "description": "注册用户登录后的 Cookie, 可以从浏览器开发者工具Network面板中的mox页面请求获取，Cookie内容形如VOLSKEY=xxxxxx; VLIBSID=xxxxxx; VOLSESS=xxxxxx"
+              "description": "Kmoe（kxx.moe）登录后的 Cookie，可从该站浏览器开发者工具的 Network 请求中获取。原 mox.moe 现跳转至该站；Cookie 仅发送到 kxx.moe。"
             }
           ],
           "antiCrawler": true
@@ -115935,6 +115461,8 @@
         "radar": [
           {
             "source": [
+              "kxx.moe/l/:category",
+              "kxx.moe/",
               "mox.moe/l/:category",
               "mox.moe/"
             ]
@@ -127687,45 +127215,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
-  "openwrt": {
-    "name": "OpenWrt",
-    "url": "openwrt.org",
-    "categories": [
-      "program-update"
-    ],
-    "heat": 0,
-    "routes": {
-      "/openwrt/releases/:brand/:model": {
-        "path": "/releases/:brand/:model",
-        "name": "Releases",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/openwrt/releases/xiaomi/xiaomi_redmi_router_ac2100",
-        "parameters": {
-          "brand": "Device Model, can be found in url of `Table of Hardware` -> `Device Page`",
-          "model": "Same as above"
-        },
-        "categories": [
-          "program-update"
-        ],
-        "radar": [
-          {
-            "source": [
-              "openwrt.org/toh/:brand/:model"
-            ],
-            "target": "/releases/:brand/:model"
-          }
-        ],
-        "location": "releases.ts",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
         }
       }
     }
@@ -143533,7 +143022,8 @@
           "multimedia"
         ],
         "features": {
-          "antiCrawler": true
+          "antiCrawler": true,
+          "requirePuppeteer": true
         },
         "location": "index.ts",
         "heat": 0,
@@ -153892,7 +153382,13 @@
           "finance"
         ],
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "TAOGUBA_COOKIE",
+              "optional": true,
+              "description": "Your own www.tgb.cn Cookie for articles that require login. Anonymous excerpts remain available without it."
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -153953,6 +153449,15 @@
         "categories": [
           "finance"
         ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "TAOGUBA_COOKIE",
+              "optional": true,
+              "description": "Your own www.tgb.cn Cookie for articles that require login. Anonymous excerpts remain available without it."
+            }
+          ]
+        },
         "location": "index.ts",
         "heat": 249,
         "topFeeds": [
@@ -156333,6 +155838,9 @@
         "categories": [
           "programming"
         ],
+        "features": {
+          "requirePuppeteer": true
+        },
         "radar": [
           {
             "source": [
@@ -161873,7 +161381,7 @@
         "parameters": {
           "types": "选择内容类型(多选`,`分割），可选值：[newreply,newthread,digest,life,hotlist]。默认为所有。"
         },
-        "description": "::: tip\n仅支持自建，您需要设置以下配置才能正常使用：\n\n- 河畔 cookie: `UESTC_BBS_COOKIE`\n- Header 中的授权字段: `UESTC_BBS_AUTH_KEY`\n\n:::",
+        "description": "::: tip\n仅支持自建，您需要设置以下配置才能正常使用：\n\n- 河畔 cookie: `UESTC_BBS_COOKIE`\n- Header 中的授权字段: `UESTC_BBS_AUTH_STR`\n\n:::",
         "categories": [
           "university"
         ],
@@ -161885,7 +161393,7 @@
               "description": "河畔的cookie"
             },
             {
-              "name": "UESTC_BBS_AUTH_KEY",
+              "name": "UESTC_BBS_AUTH_STR",
               "optional": false,
               "description": "河畔Header中的authorization字段"
             }
@@ -164992,6 +164500,222 @@
       }
     }
   },
+  "wainao": {
+    "name": "歪脑",
+    "url": "wainao.me",
+    "description": "歪脑是为讲中文的年轻一代度身定制的新闻杂志。",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 60,
+    "routes": {
+      "/wainao/topics/:id?": {
+        "path": "/topics/:id?",
+        "name": "主题",
+        "url": "wainao.me",
+        "maintainers": [
+          "shuiRong",
+          "nczitzk"
+        ],
+        "example": "/wainao/topics/hotspot",
+        "parameters": {
+          "id": {
+            "description": "主题 id，默认为 `hotspot`，即热点，可在对应主题页 URL 中找到",
+            "options": [
+              {
+                "label": "热点",
+                "value": "hotspot"
+              },
+              {
+                "label": "人物",
+                "value": "people"
+              },
+              {
+                "label": "身份",
+                "value": "identity"
+              },
+              {
+                "label": "政治",
+                "value": "politics"
+              },
+              {
+                "label": "社会",
+                "value": "society"
+              },
+              {
+                "label": "文化",
+                "value": "culture"
+              },
+              {
+                "label": "经济",
+                "value": "economics"
+              },
+              {
+                "label": "环境",
+                "value": "environment"
+              },
+              {
+                "label": "FUN",
+                "value": "fun"
+              }
+            ]
+          }
+        },
+        "description": "::: tip\n若订阅 [人物](https://www.wainao.me/topics/people)，网址为 `https://www.wainao.me/topics/people`，请截取 `https://www.wainao.me/topics/` 到末尾的部分 `people` 作为 `id` 参数填入，此时目标路由为 [`/wainao/topics/people`](https://rsshub.app/wainao/topics/people)。\n:::\n\n| [热点](https://www.wainao.me/topics/hotspot)        | [人物](https://www.wainao.me/topics/people)       | [身份](https://www.wainao.me/topics/identity)         | [政治](https://www.wainao.me/topics/politics)         | [社会](https://www.wainao.me/topics/society)        | [文化](https://www.wainao.me/topics/culture)        | [经济](https://www.wainao.me/topics/economics)          | [环境](https://www.wainao.me/topics/environment)            | [FUN](https://www.wainao.me/topics/fun)     |\n| --------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------- |\n| [hotspot](https://rsshub.app/wainao/topics/hotspot) | [people](https://rsshub.app/wainao/topics/people) | [identity](https://rsshub.app/wainao/topics/identity) | [politics](https://rsshub.app/wainao/topics/politics) | [society](https://rsshub.app/wainao/topics/society) | [culture](https://rsshub.app/wainao/topics/culture) | [economics](https://rsshub.app/wainao/topics/economics) | [environment](https://rsshub.app/wainao/topics/environment) | [fun](https://rsshub.app/wainao/topics/fun) |",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.wainao.me/topics/:id"
+            ],
+            "target": "/topics/:id"
+          },
+          {
+            "title": "热点",
+            "source": [
+              "www.wainao.me/topics/hotspot"
+            ],
+            "target": "/topics/hotspot"
+          },
+          {
+            "title": "人物",
+            "source": [
+              "www.wainao.me/topics/people"
+            ],
+            "target": "/topics/people"
+          },
+          {
+            "title": "身份",
+            "source": [
+              "www.wainao.me/topics/identity"
+            ],
+            "target": "/topics/identity"
+          },
+          {
+            "title": "政治",
+            "source": [
+              "www.wainao.me/topics/politics"
+            ],
+            "target": "/topics/politics"
+          },
+          {
+            "title": "社会",
+            "source": [
+              "www.wainao.me/topics/society"
+            ],
+            "target": "/topics/society"
+          },
+          {
+            "title": "文化",
+            "source": [
+              "www.wainao.me/topics/culture"
+            ],
+            "target": "/topics/culture"
+          },
+          {
+            "title": "经济",
+            "source": [
+              "www.wainao.me/topics/economics"
+            ],
+            "target": "/topics/economics"
+          },
+          {
+            "title": "环境",
+            "source": [
+              "www.wainao.me/topics/environment"
+            ],
+            "target": "/topics/environment"
+          },
+          {
+            "title": "FUN",
+            "source": [
+              "www.wainao.me/topics/fun"
+            ],
+            "target": "/topics/fun"
+          }
+        ],
+        "view": 0,
+        "location": "topics.tsx",
+        "heat": 3,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "118195542971350016",
+            "url": "rsshub://wainao/topics/hotspot",
+            "title": "热点 - Wainao",
+            "description": "热点 - Wainao - Powered by RSSHub",
+            "siteUrl": "https://www.wainao.me/topics/hotspot",
+            "image": "https://www.wainao.me/resizer/v2/https%3A%2F%2Fstatic.themebuilder.aws.arc.pub%2Fradiofreeasia%2F1730929154842.png?auth=46d25eedb529be1f271f4530ba42081d2f32310870e394d5ef29b5e95c643a38&width=1200",
+            "errorMessage": "[GET] \"https://www.wainao.me/pf/api/v3/content/fetch/story-feed-sections?query=%7B%22feedOffset%22:0,%22feedSize%22:30,%22includeSections%22:%22%2Ftopics%2Fhotspot%22%7D&d=81&_website=wainao\": 404 Not Found\n",
+            "errorAt": "2025-03-06T02:34:40.461Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1
+        }
+      },
+      "/wainao/wainao-reads": {
+        "path": "/wainao-reads",
+        "name": "读",
+        "url": "www.wainao.me",
+        "maintainers": [
+          "lucky13820"
+        ],
+        "example": "/wainao/wainao-reads",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.wainao.me",
+              "www.wainao.me/wainao-reads"
+            ],
+            "target": "/wainao-reads"
+          }
+        ],
+        "location": "wainao-reads.ts",
+        "heat": 57,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "109801824683778048",
+            "url": "rsshub://wainao/wainao-reads",
+            "title": "歪脑读 - 歪脑",
+            "description": "歪脑读 - 歪脑 - Powered by RSSHub",
+            "siteUrl": "https://www.wainao.me/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1
+        }
+      }
+    }
+  },
   "wallhaven": {
     "name": "wallhaven",
     "url": "wallhaven.cc",
@@ -166144,6 +165868,10 @@
         "categories": [
           "reading"
         ],
+        "features": {
+          "requirePuppeteer": true,
+          "antiCrawler": true
+        },
         "radar": [
           {
             "source": [
@@ -170610,8 +170338,8 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false,
@@ -171142,7 +170870,7 @@
               "description": "需要登录才能访问的专栏请配置雪球登录 Cookie。"
             }
           ],
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -171928,8 +171656,8 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -172154,6 +171882,10 @@
         "categories": [
           "reading"
         ],
+        "features": {
+          "requirePuppeteer": true,
+          "antiCrawler": true
+        },
         "radar": [
           {
             "source": [
@@ -174721,7 +174453,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -177988,87 +177720,6 @@
             "ownerUserId": null
           }
         ],
-        "test": {
-          "code": 1
-        }
-      }
-    }
-  },
-  "56kog": {
-    "name": "明月中文网",
-    "url": "56kog.com",
-    "categories": [
-      "reading"
-    ],
-    "heat": 1,
-    "routes": {
-      "/56kog/class/:category?": {
-        "path": "/class/:category?",
-        "name": "分类",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/56kog/class/1_1",
-        "parameters": {
-          "category": "分类，见下表，默认为玄幻魔法"
-        },
-        "description": "| [玄幻魔法](https://www.56kog.com/class/1_1.html) | [武侠修真](https://www.56kog.com/class/2_1.html) | [历史军事](https://www.56kog.com/class/4_1.html) | [侦探推理](https://www.56kog.com/class/5_1.html) | [网游动漫](https://www.56kog.com/class/6_1.html) |\n| ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |\n| 1\\_1                                             | 2\\_1                                             | 4\\_1                                             | 5\\_1                                             | 6\\_1                                             |\n\n| [恐怖灵异](https://www.56kog.com/class/8_1.html) | [都市言情](https://www.56kog.com/class/3_1.html) | [科幻](https://www.56kog.com/class/7_1.html) | [女生小说](https://www.56kog.com/class/9_1.html) | [其他](https://www.56kog.com/class/10_1.html) |\n| ------------------------------------------------ | ------------------------------------------------ | -------------------------------------------- | ------------------------------------------------ | --------------------------------------------- |\n| 8\\_1                                             | 3\\_1                                             | 7\\_1                                         | 9\\_1                                             | 10\\_1                                         |",
-        "categories": [
-          "reading"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "class.ts",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "164538769126922240",
-            "url": "rsshub://56kog/class/7_1",
-            "title": "Redirecting",
-            "description": "Redirecting - Powered by RSSHub",
-            "siteUrl": "https://www.56kog.com/class/7_1.html",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1
-        }
-      },
-      "/56kog/top/:category?": {
-        "path": "/top/:category?",
-        "name": "榜单",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/56kog/top/weekvisit",
-        "parameters": {
-          "category": "分类，见下表，默认为周点击榜"
-        },
-        "description": "| [周点击榜](https://www.56kog.com/top/weekvisit.html) | [总收藏榜](https://www.56kog.com/top/goodnum.html) | [最新 入库](https://www.56kog.com/top/postdate.html) |\n| ---------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- |\n| weekvisit                                            | goodnum                                            | postdate                                             |",
-        "categories": [
-          "reading"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "top.ts",
-        "heat": 0,
-        "topFeeds": [],
         "test": {
           "code": 1
         }
@@ -184822,6 +184473,14 @@
         "categories": [
           "social-media"
         ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "CARA_COOKIE",
+              "description": "A logged-in cara.app Cookie containing __Secure-next-auth.session-token. Obtain it from your own browser session; it is only sent to https://cara.app."
+            }
+          ]
+        },
         "radar": [
           {
             "source": [
@@ -208715,6 +208374,122 @@
       }
     }
   },
+  "last.fm": {
+    "name": "Last.fm",
+    "url": "www.last.fm",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 0,
+    "routes": {
+      "/last.fm/top/:country?": {
+        "path": "/top/:country?",
+        "name": "站内 Top 榜单",
+        "maintainers": [
+          "hoilc"
+        ],
+        "example": "/last.fm/top/spain",
+        "parameters": {
+          "country": "国家或地区, 需要符合`ISO 3166-1`的英文全称, 可参考`https://zh.wikipedia.org/wiki/ISO_3166-1二位字母代码#正式分配代码`"
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "LASTFM_API_KEY",
+              "optional": false,
+              "description": "Last.fm API key"
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "www.last.fm/charts"
+            ],
+            "target": "/top"
+          }
+        ],
+        "location": "top.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/last.fm/loved/:user": {
+        "path": "/loved/:user",
+        "name": "用户 Love 记录",
+        "maintainers": [
+          "hoilc"
+        ],
+        "example": "/last.fm/loved/yeFoenix",
+        "parameters": {
+          "user": "Last.fm 用户名"
+        },
+        "description": "未配置 LASTFM_API_KEY 时使用公开页面，公开页面的时间精度为分钟。",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requirePuppeteer": true,
+          "requireConfig": [
+            {
+              "name": "LASTFM_API_KEY",
+              "optional": true,
+              "description": "Last.fm API key"
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "www.last.fm/user/:user",
+              "www.last.fm/user/:user/*"
+            ]
+          }
+        ],
+        "location": "loved.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/last.fm/recent/:user": {
+        "path": "/recent/:user",
+        "name": "用户播放记录",
+        "maintainers": [
+          "hoilc"
+        ],
+        "example": "/last.fm/recent/yeFoenix",
+        "parameters": {
+          "user": "Last.fm 用户名"
+        },
+        "description": "未配置 LASTFM_API_KEY 时使用公开页面，公开页面的时间精度为分钟。",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requirePuppeteer": true,
+          "requireConfig": [
+            {
+              "name": "LASTFM_API_KEY",
+              "optional": true,
+              "description": "Last.fm API key"
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "www.last.fm/user/:user",
+              "www.last.fm/user/:user/*"
+            ]
+          }
+        ],
+        "location": "recent.ts",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "leiphone": {
     "name": "雷峰网",
     "url": "leiphone.com",
@@ -210630,7 +210405,7 @@
         "parameters": {
           "user": "Username"
         },
-        "description": "::: warning\nPersonalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.\n:::",
+        "description": "::: warning\nPersonalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.\n:::\n\nWhen Medium blocks article pages, their publicly visible previews may be returned.",
         "categories": [
           "blog"
         ],
@@ -210641,7 +210416,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -210674,7 +210449,7 @@
         "parameters": {
           "user": "Username"
         },
-        "description": "::: warning\nPersonalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.\n:::",
+        "description": "::: warning\nPersonalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.\n:::\n\nWhen Medium blocks article pages, their publicly visible previews may be returned.",
         "categories": [
           "blog"
         ],
@@ -210685,7 +210460,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -210761,7 +210536,7 @@
           "user": "Username",
           "tag": "Subscribed Tag"
         },
-        "description": "There are many tags, which can be obtained by clicking on a tag from the homepage and looking at the URL. For example, if the URL is `https://medium.com/?tag=web3`, then the tag is `web3`.\n\n::: warning\nPersonalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.\n:::",
+        "description": "There are many tags, which can be obtained by clicking on a tag from the homepage and looking at the URL. For example, if the URL is `https://medium.com/?tag=web3`, then the tag is `web3`.\n\n::: warning\nPersonalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.\n:::\n\nWhen Medium blocks article pages, their publicly visible previews may be returned.",
         "categories": [
           "blog"
         ],
@@ -210772,7 +210547,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -219527,7 +219302,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": false,
+          "requirePuppeteer": true,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -220987,222 +220762,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      }
-    }
-  },
-  "wainao": {
-    "name": "歪脑",
-    "url": "wainao.me",
-    "description": "歪脑是为讲中文的年轻一代度身定制的新闻杂志。",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 60,
-    "routes": {
-      "/wainao/topics/:id?": {
-        "path": "/topics/:id?",
-        "name": "主题",
-        "url": "wainao.me",
-        "maintainers": [
-          "shuiRong",
-          "nczitzk"
-        ],
-        "example": "/wainao/topics/hotspot",
-        "parameters": {
-          "id": {
-            "description": "主题 id，默认为 `hotspot`，即热点，可在对应主题页 URL 中找到",
-            "options": [
-              {
-                "label": "热点",
-                "value": "hotspot"
-              },
-              {
-                "label": "人物",
-                "value": "people"
-              },
-              {
-                "label": "身份",
-                "value": "identity"
-              },
-              {
-                "label": "政治",
-                "value": "politics"
-              },
-              {
-                "label": "社会",
-                "value": "society"
-              },
-              {
-                "label": "文化",
-                "value": "culture"
-              },
-              {
-                "label": "经济",
-                "value": "economics"
-              },
-              {
-                "label": "环境",
-                "value": "environment"
-              },
-              {
-                "label": "FUN",
-                "value": "fun"
-              }
-            ]
-          }
-        },
-        "description": "::: tip\n若订阅 [人物](https://www.wainao.me/topics/people)，网址为 `https://www.wainao.me/topics/people`，请截取 `https://www.wainao.me/topics/` 到末尾的部分 `people` 作为 `id` 参数填入，此时目标路由为 [`/wainao/topics/people`](https://rsshub.app/wainao/topics/people)。\n:::\n\n| [热点](https://www.wainao.me/topics/hotspot)        | [人物](https://www.wainao.me/topics/people)       | [身份](https://www.wainao.me/topics/identity)         | [政治](https://www.wainao.me/topics/politics)         | [社会](https://www.wainao.me/topics/society)        | [文化](https://www.wainao.me/topics/culture)        | [经济](https://www.wainao.me/topics/economics)          | [环境](https://www.wainao.me/topics/environment)            | [FUN](https://www.wainao.me/topics/fun)     |\n| --------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------- |\n| [hotspot](https://rsshub.app/wainao/topics/hotspot) | [people](https://rsshub.app/wainao/topics/people) | [identity](https://rsshub.app/wainao/topics/identity) | [politics](https://rsshub.app/wainao/topics/politics) | [society](https://rsshub.app/wainao/topics/society) | [culture](https://rsshub.app/wainao/topics/culture) | [economics](https://rsshub.app/wainao/topics/economics) | [environment](https://rsshub.app/wainao/topics/environment) | [fun](https://rsshub.app/wainao/topics/fun) |",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.wainao.me/topics/:id"
-            ],
-            "target": "/topics/:id"
-          },
-          {
-            "title": "热点",
-            "source": [
-              "www.wainao.me/topics/hotspot"
-            ],
-            "target": "/topics/hotspot"
-          },
-          {
-            "title": "人物",
-            "source": [
-              "www.wainao.me/topics/people"
-            ],
-            "target": "/topics/people"
-          },
-          {
-            "title": "身份",
-            "source": [
-              "www.wainao.me/topics/identity"
-            ],
-            "target": "/topics/identity"
-          },
-          {
-            "title": "政治",
-            "source": [
-              "www.wainao.me/topics/politics"
-            ],
-            "target": "/topics/politics"
-          },
-          {
-            "title": "社会",
-            "source": [
-              "www.wainao.me/topics/society"
-            ],
-            "target": "/topics/society"
-          },
-          {
-            "title": "文化",
-            "source": [
-              "www.wainao.me/topics/culture"
-            ],
-            "target": "/topics/culture"
-          },
-          {
-            "title": "经济",
-            "source": [
-              "www.wainao.me/topics/economics"
-            ],
-            "target": "/topics/economics"
-          },
-          {
-            "title": "环境",
-            "source": [
-              "www.wainao.me/topics/environment"
-            ],
-            "target": "/topics/environment"
-          },
-          {
-            "title": "FUN",
-            "source": [
-              "www.wainao.me/topics/fun"
-            ],
-            "target": "/topics/fun"
-          }
-        ],
-        "view": 0,
-        "location": "topics.tsx",
-        "heat": 3,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "118195542971350016",
-            "url": "rsshub://wainao/topics/hotspot",
-            "title": "热点 - Wainao",
-            "description": "热点 - Wainao - Powered by RSSHub",
-            "siteUrl": "https://www.wainao.me/topics/hotspot",
-            "image": "https://www.wainao.me/resizer/v2/https%3A%2F%2Fstatic.themebuilder.aws.arc.pub%2Fradiofreeasia%2F1730929154842.png?auth=46d25eedb529be1f271f4530ba42081d2f32310870e394d5ef29b5e95c643a38&width=1200",
-            "errorMessage": "[GET] \"https://www.wainao.me/pf/api/v3/content/fetch/story-feed-sections?query=%7B%22feedOffset%22:0,%22feedSize%22:30,%22includeSections%22:%22%2Ftopics%2Fhotspot%22%7D&d=81&_website=wainao\": 404 Not Found\n",
-            "errorAt": "2025-03-06T02:34:40.461Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1
-        }
-      },
-      "/wainao/wainao-reads": {
-        "path": "/wainao-reads",
-        "name": "读",
-        "url": "www.wainao.me",
-        "maintainers": [
-          "lucky13820"
-        ],
-        "example": "/wainao/wainao-reads",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.wainao.me",
-              "www.wainao.me/wainao-reads"
-            ],
-            "target": "/wainao-reads"
-          }
-        ],
-        "location": "wainao-reads.ts",
-        "heat": 57,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "109801824683778048",
-            "url": "rsshub://wainao/wainao-reads",
-            "title": "歪脑读 - 歪脑",
-            "description": "歪脑读 - 歪脑 - Powered by RSSHub",
-            "siteUrl": "https://www.wainao.me/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1
         }
       }
     }
