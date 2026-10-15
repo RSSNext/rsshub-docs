@@ -46,7 +46,7 @@ RSSHub 支持 `memory` 和 `redis` 两种缓存方式，建议使用 `redis` 以
 
 部分路由反爬严格，可以配置使用代理抓取。
 
-`PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 支持 `http`, `https`, `socks` 和 `socks5`，不支持 `socks4`, `socks4a` 和 `socks5h`。`socks` 和 `socks5` 会通过代理解析 DNS，即行为等同于 `socks5h`
+`PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 支持 `http`, `https`, `socks`, `socks5` 和 `socks5h`，不支持 `socks4` 和 `socks4a`，设置后代理会被停用。需要通过代理解析 DNS 时请使用 `socks5h` 或 `socks`。
 
 `PROXY_AUTH`: 给代理服务器的身份验证凭证，会添加 header `Proxy-Authorization: Basic ${PROXY_AUTH}`
 
