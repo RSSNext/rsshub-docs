@@ -619,9 +619,9 @@ Automatic updates are included.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW__f?referralCode=9wT3hc)
 
-For a GitHub source deployment, use the repository root as the service's Root Directory. The repository's `railway.json` explicitly selects the Dockerfile builder and the root `Dockerfile`, which installs dependencies with the project's Corepack-managed pnpm version. Leave custom build and start commands unset so Railway uses the Dockerfile and its startup command. RSSHub reads Railway's `PORT` environment variable.
+For a GitHub source deployment, use the repository root as the service's Root Directory. Railway builds the root `Dockerfile` automatically, which installs dependencies with the project's Corepack-managed pnpm version. Leave custom build and start commands unset so Railway uses the Dockerfile and its startup command. RSSHub reads Railway's `PORT` environment variable.
 
-If an existing template deployment reports `yarn@pnpm@...` or a global Yarn version error, check that the build log is using `Dockerfile`, update the deployed source, and remove legacy Yarn/Nixpacks build-command overrides. You can also set `RAILWAY_DOCKERFILE_PATH=Dockerfile` in the service variables. See Railway's [Dockerfile guide](https://docs.railway.com/builds/dockerfiles) and [configuration reference](https://docs.railway.com/config-as-code/reference). A local Docker build alone does not verify the Railway service's builder settings or deployed runtime.
+If a deployment created from the template above fails with `yarn@pnpm@...` or a global Yarn version error and keeps restarting, the template has set the service's start command to `yarn start`. That command replaces the image's own startup command and runs the Yarn 1 bundled with the Node.js image. Clear the custom start command in the RSSHub service's settings (or set it to `npm run start`) and redeploy. The template also sets `CACHE_TYPE=redis` without passing the Redis address, so add a `REDIS_URL` variable to the RSSHub service that references the Redis service's `REDIS_URL`; otherwise RSSHub falls back to `localhost:6379` and nothing is cached. See Railway's [Dockerfile guide](https://docs.railway.com/builds/dockerfiles) and [start command docs](https://docs.railway.com/deployments/start-command).
 
 ## Deploy to Google App Engine(GAE)
 

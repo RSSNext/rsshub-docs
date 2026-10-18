@@ -615,9 +615,9 @@ $ fly secrets set CACHE_TYPE=redis REDIS_URL='<刚才的连接 URL>'
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/QxW\_\_f?referralCode=9wT3hc)
 
-从 GitHub 源码部署时，将服务的 Root Directory 设为仓库根目录。仓库中的 `railway.json` 明确选择 Dockerfile 构建器和根目录 `Dockerfile`，依赖安装使用项目声明的 Corepack/pnpm 版本。不要设置自定义构建和启动命令，让 Railway 使用 Dockerfile 及其启动命令。RSSHub 会读取 Railway 提供的 `PORT` 环境变量。
+从 GitHub 源码部署时，将服务的 Root Directory 设为仓库根目录。Railway 会自动使用根目录的 `Dockerfile` 构建，依赖安装使用项目声明的 Corepack/pnpm 版本。不要设置自定义构建和启动命令，让 Railway 使用 Dockerfile 及其启动命令。RSSHub 会读取 Railway 提供的 `PORT` 环境变量。
 
-如果旧模板部署出现 `yarn@pnpm@...` 或全局 Yarn 版本错误，请检查构建日志是否使用 `Dockerfile`，更新部署源码，并移除旧的 Yarn/Nixpacks 构建命令覆盖。也可以在服务变量中设置 `RAILWAY_DOCKERFILE_PATH=Dockerfile`。配置说明见 Railway 的 [Dockerfile 文档](https://docs.railway.com/builds/dockerfiles)和[配置参考](https://docs.railway.com/config-as-code/reference)。本地 Docker 构建通过仍需在 Railway 上核对实际构建器设置及部署运行状态。
+如果用上面的模板部署后出现 `yarn@pnpm@...` 或全局 Yarn 版本错误并不断重启，原因是模板把服务的启动命令设成了 `yarn start`。这条命令会替换镜像自带的启动命令，运行 Node.js 镜像里的 Yarn 1。请在 RSSHub 服务的设置中清空自定义启动命令（或改为 `npm run start`），然后重新部署。模板还设置了 `CACHE_TYPE=redis`，却没有传入 Redis 地址，请在 RSSHub 服务中添加 `REDIS_URL` 变量并引用 Redis 服务的 `REDIS_URL`，否则 RSSHub 会回退到 `localhost:6379`，缓存不会生效。配置说明见 Railway 的 [Dockerfile 文档](https://docs.railway.com/builds/dockerfiles)和[启动命令说明](https://docs.railway.com/deployments/start-command)。
 
 ## 部署到 Google App Engine
 
