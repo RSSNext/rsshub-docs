@@ -138611,6 +138611,32 @@
     ],
     "heat": 6305,
     "routes": {
+      "/reuters/my-news": {
+        "path": "/my-news",
+        "name": "My News",
+        "maintainers": [
+          "dzx-dzx"
+        ],
+        "example": "/reuters/my-news",
+        "description": "The first page of the configured Reuters account's personalized My News feed. Requires a self-hosted instance with `REUTERS_AUTH_TOKEN` configured.",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "REUTERS_AUTH_TOKEN",
+              "optional": false,
+              "description": "Sign in to Reuters and open Browser Devtools to find `rt_token` from Local Storage."
+            }
+          ],
+          "requirePuppeteer": false
+        },
+        "view": 0,
+        "location": "my-news.ts",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/reuters/:category/:topic?": {
         "path": "/:category/:topic?",
         "name": "Category/Topic/Author",
