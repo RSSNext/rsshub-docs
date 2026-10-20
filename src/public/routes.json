@@ -128440,6 +128440,40 @@
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
         }
+      },
+      "/nytimes/wirecutter": {
+        "path": "/wirecutter",
+        "name": "Wirecutter",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/nytimes/wirecutter",
+        "parameters": {},
+        "description": "The official feed only carries the opening few paragraphs; this route returns the whole review, including the picks and their photos.",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.nytimes.com/wirecutter",
+              "www.nytimes.com/wirecutter/reviews/:slug"
+            ]
+          }
+        ],
+        "view": 0,
+        "location": "wirecutter.ts",
+        "addedAt": "2026-10-20T18:16:48.000Z",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
