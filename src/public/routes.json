@@ -178908,6 +178908,112 @@
       }
     }
   },
+  "zjnu": {
+    "name": "浙江师范大学",
+    "url": "www.zjnu.edu.cn",
+    "categories": [
+      "university"
+    ],
+    "heat": 0,
+    "routes": {
+      "/zjnu/academic": {
+        "path": "/academic",
+        "name": "学术动态",
+        "maintainers": [
+          "gushen610140"
+        ],
+        "example": "/zjnu/academic",
+        "parameters": {},
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "academic/index.ts",
+        "addedAt": "2026-10-21T15:41:32.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/zjnu/general": {
+        "path": "/general",
+        "name": "综合新闻",
+        "maintainers": [
+          "gushen610140"
+        ],
+        "example": "/zjnu/general",
+        "parameters": {},
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "general/index.ts",
+        "addedAt": "2026-10-21T15:41:32.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/zjnu/media": {
+        "path": "/media",
+        "name": "媒体视角",
+        "maintainers": [
+          "gushen610140"
+        ],
+        "example": "/zjnu/media",
+        "parameters": {},
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "media/index.ts",
+        "addedAt": "2026-10-21T15:41:32.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/zjnu/news": {
+        "path": "/news",
+        "name": "浙师要闻",
+        "maintainers": [
+          "gushen610140"
+        ],
+        "example": "/zjnu/news",
+        "parameters": {},
+        "categories": [
+          "university"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "news/index.ts",
+        "addedAt": "2026-10-21T15:41:32.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "zjol": {
     "name": "浙江在线",
     "url": "zjol.com.cn",
