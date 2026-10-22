@@ -11435,6 +11435,40 @@
       }
     }
   },
+  "hn.plus": {
+    "name": "HN+",
+    "url": "hn.plus",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/hn.plus/konek/newest": {
+        "path": "/konek/newest",
+        "name": "Deep Web Konek - Newest posts",
+        "url": "konek.hn.plus/newest",
+        "maintainers": [
+          "TungHaHuy"
+        ],
+        "example": "/hn.plus/konek/newest",
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "konek.hn.plus/newest"
+            ],
+            "target": "/konek/newest"
+          }
+        ],
+        "location": "newest.ts",
+        "addedAt": "2026-10-22T22:27:36.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "hnu": {
     "name": "湖南大学",
     "url": "scc.hnu.edu.cn",
