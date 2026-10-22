@@ -174283,6 +174283,49 @@
       }
     }
   },
+  "xsw": {
+    "name": "台湾小说网",
+    "url": "m.xsw.tw",
+    "categories": [
+      "reading"
+    ],
+    "heat": 0,
+    "routes": {
+      "/xsw/:bookId": {
+        "path": "/:bookId",
+        "name": "章节目录",
+        "maintainers": [
+          "xbpk3t"
+        ],
+        "example": "/xsw/17301350",
+        "parameters": {
+          "bookId": "书籍编号，见网址如 /17301350/ 中的数字"
+        },
+        "categories": [
+          "reading"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "m.xsw.tw/:bookId/"
+            ]
+          }
+        ],
+        "location": "index.ts",
+        "addedAt": "2026-10-22T21:10:47.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "xueqiu": {
     "name": "雪球",
     "url": "danjuanapp.com",
