@@ -83456,6 +83456,96 @@
       }
     }
   },
+  "game-wisdom": {
+    "name": "Game Wisdom",
+    "url": "game-wisdom.com",
+    "categories": [
+      "game"
+    ],
+    "heat": 0,
+    "routes": {
+      "/game-wisdom/:category?": {
+        "path": "/:category?",
+        "name": "Articles",
+        "url": "game-wisdom.com",
+        "maintainers": [
+          "mcdp-adk"
+        ],
+        "example": "/game-wisdom",
+        "parameters": {
+          "category": {
+            "description": "Category. Omit for the latest articles.",
+            "options": [
+              {
+                "value": "analysis",
+                "label": "Analysis"
+              },
+              {
+                "value": "critical",
+                "label": "Critical Pieces"
+              },
+              {
+                "value": "general",
+                "label": "General"
+              },
+              {
+                "value": "guest",
+                "label": "Guest Pieces"
+              },
+              {
+                "value": "podcast",
+                "label": "Podcast"
+              },
+              {
+                "value": "series",
+                "label": "Series"
+              },
+              {
+                "value": "spotlight",
+                "label": "Spotlight"
+              },
+              {
+                "value": "videos",
+                "label": "Videos"
+              }
+            ]
+          }
+        },
+        "description": "Game Wisdom's official RSS feeds only include excerpts. This route fetches the full article body from each article page.",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "game-wisdom.com/"
+            ],
+            "target": "/"
+          },
+          {
+            "source": [
+              "game-wisdom.com/category/:category"
+            ],
+            "target": "/:category"
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "addedAt": "2026-10-22T21:35:23.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "gameapps": {
     "name": "GameApps.hk 香港手机游戏网",
     "url": "gameapps.hk",
