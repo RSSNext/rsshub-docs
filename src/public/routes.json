@@ -94236,6 +94236,67 @@
         "test": {
           "code": 0
         }
+      },
+      "/hotukdeals/tag/:tag/:sort?": {
+        "path": "/tag/:tag/:sort?",
+        "name": "Tag",
+        "url": "www.hotukdeals.com",
+        "maintainers": [
+          "zhgqthomas"
+        ],
+        "example": "/hotukdeals/tag/flight",
+        "parameters": {
+          "tag": "Tag, can be found in URL, e.g. `flight` for `https://www.hotukdeals.com/tag/flight`",
+          "sort": {
+            "description": "Sort order",
+            "default": "new",
+            "options": [
+              {
+                "value": "new",
+                "label": "Most recent"
+              },
+              {
+                "value": "temp",
+                "label": "Hottest"
+              },
+              {
+                "value": "highest_price",
+                "label": "Highest price"
+              },
+              {
+                "value": "lowest_price",
+                "label": "Lowest price"
+              },
+              {
+                "value": "discussion",
+                "label": "Recently commented"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.hotukdeals.com/tag/:tag"
+            ],
+            "target": "/tag/:tag"
+          }
+        ],
+        "location": "tag.ts",
+        "addedAt": "2026-10-22T23:52:31.000Z",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
