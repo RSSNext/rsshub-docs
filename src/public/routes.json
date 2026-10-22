@@ -19745,6 +19745,60 @@
       }
     }
   },
+  "cum.st": {
+    "name": "OnlyHeaven",
+    "url": "cum.st",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 0,
+    "routes": {
+      "/cum.st/:service?/:id?/:type?": {
+        "path": "/:service?/:id?/:type?",
+        "name": "Posts and DMs",
+        "maintainers": [
+          "gekangen"
+        ],
+        "example": "/cum.st/posts",
+        "parameters": {
+          "service": "Platform (`onlyfans`, `fansly`, or `patreon`), or `posts` / `dms` for the latest posts / DMs across all creators (defaults to `posts`)",
+          "id": "Creator ID from the creator URL; required when a platform is specified",
+          "type": "Use `dms` for the creator’s DMs; defaults to posts"
+        },
+        "description": "Sources\n\n| Latest posts | Latest DMs | OnlyFans creator | Fansly creator | Patreon creator |\n| ------------ | ---------- | ---------------- | -------------- | --------------- |\n| posts        | dms        | onlyfans         | fansly         | patreon         |\n\n::: tip\nWhen **service** is `posts` or `dms`, **id** is not used. For a creator, use `/cum.st/onlyfans/CREATOR_ID` for posts or `/cum.st/onlyfans/CREATOR_ID/dms` for DMs. Replace `onlyfans` with `fansly` or `patreon` for other creators. Available images are included in the feed entries.\n:::",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "nsfw": true
+        },
+        "radar": [
+          {
+            "source": [
+              "cum.st/posts"
+            ],
+            "target": "/posts"
+          },
+          {
+            "source": [
+              "cum.st/dms"
+            ],
+            "target": "/dms"
+          },
+          {
+            "source": [
+              "cum.st/creators/:service/:id"
+            ],
+            "target": "/:service/:id"
+          }
+        ],
+        "location": "index.ts",
+        "addedAt": "2026-10-22T21:03:11.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "dahecube": {
     "name": "大河财立方",
     "url": "dahecube.com",
