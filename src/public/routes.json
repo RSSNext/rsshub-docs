@@ -128731,6 +128731,40 @@
       }
     }
   },
+  "oaktree": {
+    "name": "Oaktree Capital",
+    "url": "www.oaktreecapital.com",
+    "categories": [
+      "finance"
+    ],
+    "heat": 0,
+    "routes": {
+      "/oaktree/insights": {
+        "path": "/insights",
+        "name": "Insights",
+        "url": "www.oaktreecapital.com/insights",
+        "maintainers": [
+          "argsno"
+        ],
+        "example": "/oaktree/insights",
+        "description": "Includes Howard Marks memos, market commentary, education and press mentions. Items are categorised by content type (`memos`, `press`, ...) and media type (`article`, `audio`, `video`), so both can be filtered with the common `filter_category` / `filterout_category` parameters. Full text is fetched from each insight page, while press items link to external websites. The latest 30 entries are returned by default, use the `limit` parameter for more.",
+        "categories": [
+          "finance"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.oaktreecapital.com/insights"
+            ]
+          }
+        ],
+        "location": "insights.ts",
+        "addedAt": "2026-10-23T20:04:10.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "obsidian": {
     "name": "Obsidian",
     "url": "obsidian.md",
