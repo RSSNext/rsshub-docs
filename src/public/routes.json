@@ -68541,6 +68541,36 @@
       }
     }
   },
+  "craigslist": {
+    "name": "Craigslist",
+    "url": "www.craigslist.org",
+    "categories": [
+      "shopping"
+    ],
+    "heat": 0,
+    "routes": {
+      "/craigslist/:location/:type/:query?": {
+        "path": "/:location/:type/:query?",
+        "name": "Search",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/craigslist/sfbay/sso",
+        "parameters": {
+          "location": "Craigslist site, the subdomain of the site you browse, e.g. `sfbay` for `sfbay.craigslist.org`",
+          "type": "Search type, the category abbreviation that follows `/search/` in the Craigslist search URL, e.g. `sso` (sale by owner), `apa` (apartments / housing for rent), `cta` (cars & trucks), `jjj` (all jobs), `sss` (all for sale)",
+          "query": "Search keywords"
+        },
+        "categories": [
+          "shopping"
+        ],
+        "location": "search.ts",
+        "addedAt": "2026-10-23T18:06:20.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "creaders": {
     "name": "万维读者",
     "url": "news.creaders.net",
