@@ -159540,6 +159540,40 @@
     ],
     "heat": 1404,
     "routes": {
+      "/theatlantic/author/:id": {
+        "path": "/author/:id",
+        "name": "Author",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "example": "/theatlantic/author/alan-taylor",
+        "parameters": {
+          "id": "Author ID, can be found in the author page URL"
+        },
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.theatlantic.com/author/:id"
+            ],
+            "target": "/author/:id"
+          }
+        ],
+        "location": "author.ts",
+        "addedAt": "2026-10-23T15:33:22.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/theatlantic/:category": {
         "path": "/:category",
         "name": "News",
