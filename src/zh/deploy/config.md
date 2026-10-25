@@ -52,6 +52,12 @@ RSSHub 支持 `memory` 和 `redis` 两种缓存方式，建议使用 `redis` 以
 
 `PROXY_URL_REGEX`: 启用代理的 URL 正则表达式，默认全部开启 `.*`
 
+::: tip
+
+如需多代理故障转移或负载均衡，可将 `PROXY_URI` 设为 [gost](https://github.com/go-gost/gost) 实例。之后在 gost 中更换代理无需重启 RSSHub，内存缓存不会丢失。
+
+:::
+
 ## 访问控制配置
 
 RSSHub 支持使用访问密钥 / 码进行访问控制。开启将会激活全局访问控制，没有访问权限将会导致访问被拒绝。

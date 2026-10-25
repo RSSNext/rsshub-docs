@@ -52,6 +52,12 @@ Partial routes have a strict anti-crawler policy, and can be configured to use p
 
 `PROXY_URL_REGEX`: Regular expression of URL to enable proxy, all enabled by default `.*`
 
+::: tip
+
+For failover or load balancing across multiple proxies, set `PROXY_URI` to a [gost](https://github.com/go-gost/gost) instance. You can then change proxies in gost without restarting RSSHub and losing the in-memory cache.
+
+:::
+
 ## Access Control Configurations
 
 RSSHub supports access control using access keys/codes. Enabling it will activate global access control, and lack of access permission will result in denied access.
