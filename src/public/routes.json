@@ -214020,6 +214020,155 @@
       }
     }
   },
+  "lingowhale": {
+    "name": "语鲸 LingoWhale",
+    "url": "lingowhale.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/lingowhale/channel/:id": {
+        "path": "/channel/:id",
+        "name": "频道",
+        "url": "lingowhale.com",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/lingowhale/channel/67cc08a19a4297b6148b297e",
+        "parameters": {
+          "id": "Channel ID, found in the `channel_id` query of the channel page URL"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/channels"
+            ]
+          }
+        ],
+        "location": "channel.ts",
+        "addedAt": "2026-10-26T14:56:08.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/lingowhale/hot/:type?": {
+        "path": "/hot/:type?",
+        "name": "热门",
+        "url": "lingowhale.com",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/lingowhale/hot/2",
+        "parameters": {
+          "type": {
+            "description": "Hot list type",
+            "options": [
+              {
+                "value": "1",
+                "label": "热门频道"
+              },
+              {
+                "value": "2",
+                "label": "热门话题"
+              },
+              {
+                "value": "3",
+                "label": "热门文章"
+              }
+            ],
+            "default": "2"
+          }
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/topics"
+            ]
+          }
+        ],
+        "location": "hot.ts",
+        "addedAt": "2026-10-26T14:56:08.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/lingowhale/search/:keyword/:type?": {
+        "path": "/search/:keyword/:type?",
+        "name": "搜索",
+        "url": "lingowhale.com",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/lingowhale/search/F1",
+        "parameters": {
+          "keyword": "Search keyword",
+          "type": {
+            "description": "Search type",
+            "options": [
+              {
+                "value": "1",
+                "label": "频道"
+              },
+              {
+                "value": "2",
+                "label": "话题"
+              },
+              {
+                "value": "3",
+                "label": "文章"
+              }
+            ],
+            "default": "1"
+          }
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/channels"
+            ]
+          }
+        ],
+        "location": "search.ts",
+        "addedAt": "2026-10-26T14:56:08.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/lingowhale/topic/:id": {
+        "path": "/topic/:id",
+        "name": "话题",
+        "url": "lingowhale.com",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/lingowhale/topic/6ace33a60c047819650365b1",
+        "parameters": {
+          "id": "Topic ID, found in the `topic_id` query of the topic page URL"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/topics"
+            ]
+          }
+        ],
+        "location": "topic.ts",
+        "addedAt": "2026-10-26T14:56:08.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "linkedin": {
     "name": "LinkedIn",
     "url": "linkedin.com",
