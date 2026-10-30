@@ -46,6 +46,12 @@ RSSHub 支持 `memory` 和 `redis` 两种缓存方式，建议使用 `redis` 以
 
 部分路由反爬严格，可以配置使用代理抓取。
 
+::: tip 代理服务
+[Proxy-Seller](https://proxy-seller.com/?utm_source=rsshub) 提供住宅、ISP、数据中心 IPv4/IPv6 和移动代理，覆盖 220 多个地区，可用于需要代理访问的 RSSHub 路由。使用优惠码 `RSSHUB` 购买 ISP、IPv4 和住宅代理可享 85 折。
+
+将 Proxy-Seller 代理端点按 `{protocol}://{host}:{port}` 格式配置到 `PROXY_URI`。如果需要身份验证，请将 Base64 编码后的凭证添加到 `PROXY_AUTH`。使用 `PROXY_URL_REGEX` 定义哪些目标 URL 需要通过代理访问。
+:::
+
 `PROXY_URI`: 代理 URI，格式为 `{protocol}://{host}:{port}`，protocol 支持 `http`, `https`, `socks`, `socks5` 和 `socks5h`，不支持 `socks4` 和 `socks4a`，设置后代理会被停用。需要通过代理解析 DNS 时请使用 `socks5h` 或 `socks`。
 
 `PROXY_AUTH`: 给代理服务器的身份验证凭证，会添加 header `Proxy-Authorization: Basic ${PROXY_AUTH}`

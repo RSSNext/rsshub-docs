@@ -2,6 +2,14 @@
 
 如果你想直接开始使用，可以试试 [Folo](https://folo.is/)，一个面向现代订阅工作流的 AI RSS 阅读器。项目同时在 [GitHub](https://github.com/RSSNext/Folo) 开源。
 
+<a href="https://proxy-seller.com/?utm_source=rsshub" target="_blank" rel="noopener noreferrer">
+  <img src="/img/sponsors/proxy-seller.png" alt="Proxy-Seller RSSHub 代理服务" width="419" height="166" />
+</a>
+
+对于自部署 RSSHub 实例，稳定的代理连接可以在访问存在地域限制或严格反爬策略的外部来源时，帮助路由更可靠地工作。
+
+[Proxy-Seller](https://proxy-seller.com/?utm_source=rsshub) 是一家全球代理服务商，提供住宅、ISP、数据中心 IPv4/IPv6 和移动代理，覆盖 220 多个地区。使用优惠码 `RSSHUB` 购买 ISP、IPv4 和住宅代理可享 85 折。
+
 ## 生成订阅源
 
 比如你希望订阅 Telegram 上 [@awesomeRSSHub](https://t.me/awesomeRSSHub) 频道的内容

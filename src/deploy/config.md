@@ -46,6 +46,12 @@ RSSHub supports two caching methods: memory and redis, it is recommended to use 
 
 Partial routes have a strict anti-crawler policy, and can be configured to use proxy.
 
+::: tip Proxy provider
+[Proxy-Seller](https://proxy-seller.com/?utm_source=rsshub) offers residential, ISP, datacenter IPv4/IPv6, and mobile proxies across 220+ locations, and can be used for RSSHub routes that require proxy access. Use promo code `RSSHUB` for 15% off ISP, IPv4, and residential proxies.
+
+Set your Proxy-Seller proxy endpoint in `PROXY_URI` using the `{protocol}://{host}:{port}` format. If authentication is required, add Base64-encoded credentials to `PROXY_AUTH`. Use `PROXY_URL_REGEX` to define which target URLs should be routed through the proxy.
+:::
+
 `PROXY_URI`: The proxy URI should be in the format `{protocol}://{host}:{port}`. Supported protocols: `http`, `https`, `socks`, `socks5` and `socks5h`. `socks4` and `socks4a` are not supported, and setting them disables the proxy. Use `socks5h` or `socks` to resolve DNS through the proxy.
 
 `PROXY_AUTH`: Authentication credentials for the proxy server, will add header `Proxy-Authorization: Basic ${PROXY_AUTH}`

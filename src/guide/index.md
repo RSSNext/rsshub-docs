@@ -2,6 +2,14 @@
 
 If you want a ready-to-use option, try [Folo](https://folo.is/), an AI RSS reader built for modern feed workflows. The project is also open source on [GitHub](https://github.com/RSSNext/Folo).
 
+<a href="https://proxy-seller.com/?utm_source=rsshub" target="_blank" rel="noopener noreferrer">
+  <img src="/img/sponsors/proxy-seller.png" alt="Proxy-Seller proxies for RSSHub" width="419" height="166" />
+</a>
+
+For self-hosted RSSHub instances, a stable proxy connection can help routes work more reliably when accessing sources with regional limits or strict anti-crawler policies.
+
+[Proxy-Seller](https://proxy-seller.com/?utm_source=rsshub) is a global proxy provider offering residential, ISP, datacenter IPv4/IPv6, and mobile proxies across 220+ locations. Use promo code `RSSHUB` for 15% off ISP, IPv4, and residential proxies.
+
 ## Generate a Feed
 
 For example, if you want to subscribe to the content of the channel [@awesomeRSSHub](https://t.me/awesomeRSSHub) on Telegram.
