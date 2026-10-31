@@ -477,6 +477,20 @@ sudo ansible-playbook rsshub.yaml
 # For example, if your users use https://rsshub.example.com to access your RSSHub instance, enter rsshub.example.com (remove the https://)
 ```
 
+## Keep Your Fork Updated
+
+Deployments that build from your fork (Vercel, Heroku, Fly.io and others) only pick up RSSHub changes after the fork is updated.
+
+- Manually: on your fork's GitHub page, click "Sync fork", then "Update branch".
+- Automatically: RSSHub includes a "Sync fork" workflow that updates your fork from RSSHub once a day.
+    1.  Open the Actions tab of your fork and enable workflows.
+    2.  Create a [personal access token](https://github.com/settings/tokens) with the `workflow` scope, or a fine-grained token with read and write access to Contents and Workflows on your fork, and save it as a repository secret named `SYNC_TOKEN`. Without it the workflow uses the default token, which cannot update files under `.github/workflows/`, so the sync fails whenever RSSHub changes a workflow.
+    3.  To sync right away, run the "Sync fork" workflow from the Actions tab.
+
+Enabling workflows in a fork also enables RSSHub's other workflows there, such as the weekly full route test. You can disable the ones you don't need in the Actions tab.
+
+If your fork has changes that conflict with RSSHub, the sync fails and you need to resolve the conflict yourself.
+
 ## Deploy to Vercel
 
 ### Instant deploy (without automatic update)
@@ -487,7 +501,7 @@ sudo ansible-playbook rsshub.yaml
 
 1.  [Fork RSSHub](https://github.com/DIYgod/RSSHub/fork) to your GitHub account.
 2.  Deploy your fork to Vercel: Login Vercel with your GitHub account, create and deploy [new Vercel project](https://vercel.com/new/) with your RSSHub repository.
-3.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
+3.  [Keep your fork updated](#deployment-keep-your-fork-updated) so new RSSHub changes get deployed.
 
 ::: tip
 If you encounter an `ERR_REQUIRE_ESM` error during deployment, you need to enable experimental Node.js require() of ES Module support. Add the environment variable `NODE_OPTIONS=--experimental-require-module` in your Vercel project settings. See [Vercel's documentation](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-node.js-require-of-es-module) for more details.
@@ -553,7 +567,7 @@ Without `BROWSER_SESSIONS`, each browser request using the `BROWSER` binding lau
 1.  [Fork RSSHub](https://github.com/DIYgod/RSSHub/fork) to your GitHub account.
 2.  Deploy your fork to Heroku: `https://heroku.com/deploy?template=URL`, where `URL` is your fork address (_e.g._ `https://github.com/USERNAME/RSSHub`).
 3.  Configure `automatic deploy` in Heroku app to follow the changes to your fork.
-4.  Install [Pull](https://github.com/apps/pull) app to keep your fork synchronized with RSSHub.
+4.  [Keep your fork updated](#deployment-keep-your-fork-updated) so new RSSHub changes get deployed.
 
 ## Deploy to Fly.io
 
@@ -573,7 +587,7 @@ Without `BROWSER_SESSIONS`, each browser request using the `BROWSER` binding lau
 6.  [Set up automatic deployment via GitHub Actions](https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/);
 7.  (Optional) Use `fly certs add your domain` to configure a custom domain, and follow the instructions to configure the related domain resolution at your DNS service provider (you can check the domain configuration status on the Dashboard Certificate page).
 
-Upgrade: On the homepage of your Forked repository, click "Sync fork - Update Branch" to manually update to the latest official master branch, or install the [Pull](https://github.com/apps/pull) GitHub app to keep your fork synchronized with upstream.
+Upgrade: On the homepage of your Forked repository, click "Sync fork - Update Branch" to manually update to the latest official master branch, or [sync it automatically](#deployment-keep-your-fork-updated).
 
 ### Method 2: Maintain fly.toml by yourself
 
