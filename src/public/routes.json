@@ -141574,6 +141574,48 @@
     ],
     "heat": 6306,
     "routes": {
+      "/reuters/investigates": {
+        "path": "/investigates",
+        "name": "Investigates",
+        "maintainers": [
+          "LyleLee"
+        ],
+        "example": "/reuters/investigates",
+        "parameters": {},
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "view": 0,
+        "location": "investigates.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 235,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "55135298544041995",
+            "url": "rsshub://reuters/investigates",
+            "title": "Special Reports from Reuters journalists around the world | Reuters",
+            "description": "Special Reports from Reuters journalists around the world - Powered by RSSHub",
+            "siteUrl": "https://www.reuters.com/investigates/",
+            "image": "https://www.reuters.com/pf/resources/images/reuters/logo-vertical-default-512x512.png?d=116",
+            "errorMessage": "[GET] \"https://www.reuters.com/investigates/\": 401 Unauthorized\n",
+            "errorAt": "2025-07-29T12:13:51.981Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
+        }
+      },
       "/reuters/my-news": {
         "path": "/my-news",
         "name": "My News",
@@ -141702,48 +141744,6 @@
             "image": "https://www.reuters.com/pf/resources/images/reuters/logo-vertical-default-512x512.png?d=116",
             "errorMessage": "[GET] \"https://www.reuters.com/arc/outboundfeeds/v4/mobile/section/world/china/?outputType=json\": 404 Not Found\n[GET] \"https://www.reuters.com/arc/outboundfeeds/v4/mobile/section/world/china/?outputType=json\": <no response> fetch failed\n[GET] \"https://www.reuters.com/arc/outboundfeeds/v4/mobile/section/world/china/?outputType=json\": 404 Not Found\n[GET] \"https://www.reuters.com/arc/outboundfeeds/v4/mobile/section/world/china/?outputType=json\": 404 \n[GET] \"https://www.reuters.com/arc/outboundfeeds/v4/mobile/section/world/china/?outputType=json\": 404 Not Found\n",
             "errorAt": "2026-10-30T03:37:00.662Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/@vitest+runner@4.1.11/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:20"
-        }
-      },
-      "/reuters/investigates": {
-        "path": "/investigates",
-        "name": "Investigates",
-        "maintainers": [
-          "LyleLee"
-        ],
-        "example": "/reuters/investigates",
-        "parameters": {},
-        "categories": [
-          "traditional-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "view": 0,
-        "location": "investigates.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 235,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "55135298544041995",
-            "url": "rsshub://reuters/investigates",
-            "title": "Special Reports from Reuters journalists around the world | Reuters",
-            "description": "Special Reports from Reuters journalists around the world - Powered by RSSHub",
-            "siteUrl": "https://www.reuters.com/investigates/",
-            "image": "https://www.reuters.com/pf/resources/images/reuters/logo-vertical-default-512x512.png?d=116",
-            "errorMessage": "[GET] \"https://www.reuters.com/investigates/\": 401 Unauthorized\n",
-            "errorAt": "2025-07-29T12:13:51.981Z",
             "ownerUserId": null
           }
         ],
