@@ -483,11 +483,13 @@ Deployments that build from your fork (Vercel, Heroku, Fly.io and others) only p
 
 - Manually: on your fork's GitHub page, click "Sync fork", then "Update branch".
 - Automatically: RSSHub includes a "Sync fork" workflow that updates your fork from RSSHub once a day.
-    1.  Open the Actions tab of your fork and enable workflows.
+    1.  Open the Actions tab of your fork and enable workflows, then keep only the "Sync fork" workflow enabled and disable the others.
     2.  Create a [personal access token](https://github.com/settings/tokens) with the `workflow` scope, or a fine-grained token with read and write access to Contents and Workflows on your fork, and save it as a repository secret named `SYNC_TOKEN`. Without it the workflow uses the default token, which cannot update files under `.github/workflows/`, so the sync fails whenever RSSHub changes a workflow.
     3.  To sync right away, run the "Sync fork" workflow from the Actions tab.
 
+::: danger
 Enabling workflows in a fork also enables RSSHub's other workflows there, such as the weekly full route test. You can disable the ones you don't need in the Actions tab.
+:::
 
 If your fork has changes that conflict with RSSHub, the sync fails and you need to resolve the conflict yourself.
 

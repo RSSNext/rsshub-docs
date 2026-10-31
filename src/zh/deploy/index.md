@@ -474,11 +474,13 @@ sudo ansible-playbook rsshub.yaml
 
 - 手动更新：在分叉的 GitHub 页面点击「Sync fork」，再点「Update branch」。
 - 自动更新：RSSHub 自带一个「Sync fork」工作流，每天从 RSSHub 同步一次你的分叉。
-    1.  打开分叉的 Actions 页面，启用工作流。
+    1.  打开分叉的 Actions 页面启用工作流，然后只保留「Sync fork」工作流，停用其他工作流。
     2.  创建一个带 `workflow` 权限的 [个人访问令牌](https://github.com/settings/tokens)，或者对分叉的 Contents 和 Workflows 有读写权限的细粒度令牌，保存为名为 `SYNC_TOKEN` 的仓库 secret。不配置的话，工作流会使用默认令牌，它无法更新 `.github/workflows/` 下的文件，RSSHub 改动工作流时同步就会失败。
     3.  想立即同步，可以在 Actions 页面手动运行「Sync fork」工作流。
 
+::: danger
 在分叉里启用工作流后，RSSHub 的其他工作流（例如每周的全量路由测试）也会一起启用，用不到的可以在 Actions 页面单独停用。
+:::
 
 如果你的分叉里有和 RSSHub 冲突的改动，同步会失败，需要你自己解决冲突。
 
