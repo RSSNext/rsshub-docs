@@ -468,6 +468,22 @@ sudo ansible-playbook rsshub.yaml
 # 举例：如果您的 RSSHub 用户使用 https://rsshub.example.com 访问您的 RSSHub 实例，输入 rsshub.example.com（去掉 https://）
 ```
 
+## 保持分叉更新
+
+从分叉部署的方式（Vercel、Heroku、Fly.io 等）只有在分叉更新后才会用上 RSSHub 的新改动。
+
+- 手动更新：在分叉的 GitHub 页面点击「Sync fork」，再点「Update branch」。
+- 自动更新：RSSHub 自带一个「Sync fork」工作流，每天从 RSSHub 同步一次你的分叉。
+    1.  打开分叉的 Actions 页面启用工作流，然后只保留「Sync fork」工作流，停用其他工作流。
+    2.  创建一个带 `workflow` 权限的 [个人访问令牌](https://github.com/settings/tokens)，或者对分叉的 Contents 和 Workflows 有读写权限的细粒度令牌，保存为名为 `SYNC_TOKEN` 的仓库 secret。不配置的话，工作流会使用默认令牌，它无法更新 `.github/workflows/` 下的文件，RSSHub 改动工作流时同步就会失败。
+    3.  想立即同步，可以在 Actions 页面手动运行「Sync fork」工作流。
+
+::: danger
+在分叉里启用工作流后，RSSHub 的其他工作流（例如每周的全量路由测试）也会一起启用，用不到的可以在 Actions 页面单独停用。
+:::
+
+如果你的分叉里有和 RSSHub 冲突的改动，同步会失败，需要你自己解决冲突。
+
 ## 部署到 Vercel
 
 ### 一键部署（无自动更新）
@@ -478,7 +494,7 @@ sudo ansible-playbook rsshub.yaml
 
 1.  将 RSSHub [分叉（fork）](https://github.com/DIYgod/RSSHub/fork) 到自己的账户下
 2.  去 Vercel 部署一个新项目：使用 GitHub 账户登录 Vercel，进入 [项目创建页面](https://vercel.com/new/) 选择导入 RSSHub 仓库进行部署
-3.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的仓库
+3.  按 [保持分叉更新](#bu-shu-bao-chi-fen-cha-geng-xin) 设置自动同步，定期将 RSSHub 改动同步至你的仓库
 
 ::: tip
 如果在部署过程中遇到 `ERR_REQUIRE_ESM` 错误，需要启用 Node.js 实验性的 require() ES Module 支持。在 Vercel 项目设置中添加环境变量 `NODE_OPTIONS=--experimental-require-module`。详见 [Vercel 文档](https://vercel.com/docs/functions/runtimes/node-js/advanced-node-configuration#experimental-node.js-require-of-es-module)。
@@ -544,7 +560,7 @@ export { BrowserSession } from './utils/browser-session.worker';
 1.  将 RSSHub [分叉（fork）](https://github.com/DIYgod/RSSHub/fork) 到自己的账户下。
 2.  把自己的分叉部署到 Heroku：`https://heroku.com/deploy?template=URL`，其中 `URL` 改为分叉地址 （例如 `https://github.com/USERNAME/RSSHub`）。
 3.  检查 Heroku 设置，随代码库更新自动部署。
-4.  安装 [Pull](https://github.com/apps/pull) 应用，定期将 RSSHub 改动自动同步至你的分叉。
+4.  按 [保持分叉更新](#bu-shu-bao-chi-fen-cha-geng-xin) 设置自动同步，定期将 RSSHub 改动同步至你的分叉。
 
 ## 部署到 Fly.io
 
@@ -569,7 +585,7 @@ export { BrowserSession } from './utils/browser-session.worker';
 
 7.  （可选）利用 `fly certs add 你的域名` 来配置自定义域名，并根据指引在你的 DNS 服务商配置相关域名解析（你可在 Dashboard Certificate 页面查看域名的配置状态）。
 
-更新：在你 Fork 出来的仓库首页点击「Sync fork - Update Branch」来手动更新至官方最新的 master 分支，或安装 [Pull](https://github.com/apps/pull) 应用来定期自动同步。
+更新：在你 Fork 出来的仓库首页点击「Sync fork - Update Branch」来手动更新至官方最新的 master 分支，或按 [保持分叉更新](#bu-shu-bao-chi-fen-cha-geng-xin) 设置定期自动同步。
 
 ### 方案二：自行维护 fly.toml
 
