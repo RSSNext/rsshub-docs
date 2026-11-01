@@ -238185,62 +238185,6 @@
           "code": 0
         }
       },
-      "/google/doodles/:language?": {
-        "path": "/doodles/:language?",
-        "name": "Update",
-        "maintainers": [
-          "xyqfer"
-        ],
-        "example": "/google/doodles/zh-CN",
-        "parameters": {
-          "language": "Language, default to `zh-CN`, for other language values, you can get it from [Google Doodles official website](https://www.google.com/doodles)"
-        },
-        "categories": [
-          "picture"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "view": 2,
-        "location": "doodles.ts",
-        "addedAt": "2018-12-26T10:35:10.000Z",
-        "heat": 365,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "57366193674068992",
-            "url": "rsshub://google/doodles/zh-CN",
-            "title": "Google Doodles",
-            "description": "Google Doodles - Powered by RSSHub",
-            "siteUrl": "https://www.google.com/doodles?hl=zh-CN",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.google.com/doodles/json/2026/10?hl=zh-CN\": 404 Not Found\n",
-            "errorAt": "2025-05-02T22:52:17.568Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "64590393280128000",
-            "url": "rsshub://google/doodles",
-            "title": "Google Doodles",
-            "description": "Google Doodles - Powered by RSSHub",
-            "siteUrl": "https://www.google.com/doodles?hl=zh-CN",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.google.com/doodles/json/2026/10?hl=zh-CN\": 404 Not Found\n",
-            "errorAt": "2025-05-02T15:53:49.300Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
       "/google/fonts/:sort?": {
         "path": "/fonts/:sort?",
         "name": "Fonts",
@@ -238502,6 +238446,62 @@
         ],
         "test": {
           "code": 0
+        }
+      },
+      "/google/doodles/:language?": {
+        "path": "/doodles/:language?",
+        "name": "Update",
+        "maintainers": [
+          "xyqfer"
+        ],
+        "example": "/google/doodles/zh-CN",
+        "parameters": {
+          "language": "No longer used, [Google Doodles](https://doodles.google/) is only served in English now. Kept so existing feed URLs keep working"
+        },
+        "categories": [
+          "picture"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "view": 2,
+        "location": "doodles.ts",
+        "addedAt": "2018-12-26T10:35:10.000Z",
+        "heat": 365,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "57366193674068992",
+            "url": "rsshub://google/doodles/zh-CN",
+            "title": "Google Doodles",
+            "description": "Google Doodles - Powered by RSSHub",
+            "siteUrl": "https://www.google.com/doodles?hl=zh-CN",
+            "image": null,
+            "errorMessage": "[GET] \"https://www.google.com/doodles/json/2026/10?hl=zh-CN\": 404 Not Found\n",
+            "errorAt": "2025-05-02T22:52:17.568Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "64590393280128000",
+            "url": "rsshub://google/doodles",
+            "title": "Google Doodles",
+            "description": "Google Doodles - Powered by RSSHub",
+            "siteUrl": "https://www.google.com/doodles?hl=zh-CN",
+            "image": null,
+            "errorMessage": "[GET] \"https://www.google.com/doodles/json/2026/10?hl=zh-CN\": 404 Not Found\n",
+            "errorAt": "2025-05-02T15:53:49.300Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       },
       "/google/chrome/extension/:id": {
