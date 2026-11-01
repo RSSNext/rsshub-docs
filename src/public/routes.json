@@ -229344,6 +229344,7 @@
     "name": "Yahoo",
     "url": "news.yahoo.com",
     "categories": [
+      "shopping",
       "traditional-media",
       "game",
       "new-media",
@@ -229351,6 +229352,34 @@
     ],
     "heat": 554,
     "routes": {
+      "/yahoo/auctions/search/:query": {
+        "path": "/auctions/search/:query",
+        "name": "Yahoo! Auctions Search",
+        "url": "auctions.yahoo.co.jp",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "example": "/yahoo/auctions/search/p=カメラ&aucmaxprice=10000",
+        "parameters": {
+          "query": "Search conditions, the query string of a search result URL on auctions.yahoo.co.jp, e.g. `p=カメラ&auccat=23632&aucmaxprice=10000`. Every condition the site supports works, including those set in 条件指定. Newest listings come first unless `s1` is set"
+        },
+        "description": "Search conditions are passed to the site as is, so the easiest way to build a feed is to search on [Yahoo! Auctions](https://auctions.yahoo.co.jp), then copy everything after `?` in the result URL.\n\n::: warning\nYahoo! JAPAN services are not available from the EEA and the UK.\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "auctions/search.tsx",
+        "addedAt": "2026-11-01T15:21:46.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/yahoo/author/:author": {
         "path": "/author/:author",
         "name": "News By Author",
