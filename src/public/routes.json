@@ -1636,65 +1636,6 @@
       }
     }
   },
-  "fuliba": {
-    "name": "福利吧",
-    "url": "fuliba2023.net",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 463,
-    "routes": {
-      "/fuliba/latest": {
-        "path": "/latest",
-        "name": "最新",
-        "url": "fuliba2023.net/",
-        "maintainers": [
-          "shinemoon"
-        ],
-        "example": "/fuliba/latest",
-        "parameters": {},
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "fuliba2023.net/"
-            ]
-          }
-        ],
-        "location": "latest.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 463,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "55989776559142912",
-            "url": "rsshub://fuliba/latest",
-            "title": "福利吧",
-            "description": "福利吧 - Powered by RSSHub",
-            "siteUrl": "https://fuliba2023.net/",
-            "image": null,
-            "errorMessage": "Fuliba returned HTTP 410 for its configured WordPress API. The route needs a verified current article source.\n[GET] \"https://fuliba2023.net/wp-json/wp/v2/posts?per_page=100&_embed=1\": 410 Gone\nFuliba returned HTTP 410 for its configured WordPress API. The route needs a verified current article source.\nFuliba returned HTTP 410 for its configured WordPress API. The route needs a verified current article source.\n[GET] \"https://fuliba2023.net/wp-json/wp/v2/posts?per_page=100&_embed=1\": 410 Gone\n",
-            "errorAt": "2026-06-15T11:07:58.453Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "7gogo": {
     "name": "755",
     "url": "7gogo.jp",
@@ -83185,6 +83126,65 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
+  "fuliba": {
+    "name": "福利吧",
+    "url": "fuliba2023.net",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 463,
+    "routes": {
+      "/fuliba/latest": {
+        "path": "/latest",
+        "name": "最新",
+        "url": "fuliba2023.net/",
+        "maintainers": [
+          "shinemoon"
+        ],
+        "example": "/fuliba/latest",
+        "parameters": {},
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "fuliba2023.net/"
+            ]
+          }
+        ],
+        "location": "latest.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 463,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "55989776559142912",
+            "url": "rsshub://fuliba/latest",
+            "title": "福利吧",
+            "description": "福利吧 - Powered by RSSHub",
+            "siteUrl": "https://fuliba2023.net/",
+            "image": null,
+            "errorMessage": "Fuliba returned HTTP 410 for its configured WordPress API. The route needs a verified current article source.\n[GET] \"https://fuliba2023.net/wp-json/wp/v2/posts?per_page=100&_embed=1\": 410 Gone\nFuliba returned HTTP 410 for its configured WordPress API. The route needs a verified current article source.\nFuliba returned HTTP 410 for its configured WordPress API. The route needs a verified current article source.\n[GET] \"https://fuliba2023.net/wp-json/wp/v2/posts?per_page=100&_embed=1\": 410 Gone\n",
+            "errorAt": "2026-06-15T11:07:58.453Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
