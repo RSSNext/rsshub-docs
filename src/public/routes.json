@@ -28251,10 +28251,10 @@
         "name": "众筹",
         "url": "xiaomiyoupin.com/",
         "maintainers": [
-          "bigfei"
+          "bigfei",
+          "nuomi1"
         ],
         "example": "/xiaomiyoupin/crowdfunding",
-        "parameters": {},
         "categories": [
           "shopping"
         ],
@@ -28273,6 +28273,7 @@
             ]
           }
         ],
+        "view": 5,
         "location": "crowdfunding.ts",
         "addedAt": "2024-02-29T17:24:49.000Z",
         "heat": 886,
@@ -28296,15 +28297,15 @@
       },
       "/xiaomiyoupin/latest": {
         "path": "/latest",
-        "name": "每日上新",
+        "name": "上新",
         "url": "xiaomiyoupin.com/",
         "maintainers": [
           "xyqfer",
           "DIYgod",
-          "bigfei"
+          "bigfei",
+          "nuomi1"
         ],
         "example": "/xiaomiyoupin/latest",
-        "parameters": {},
         "categories": [
           "shopping"
         ],
@@ -28323,6 +28324,7 @@
             ]
           }
         ],
+        "view": 5,
         "location": "latest.ts",
         "addedAt": "2024-02-29T17:24:49.000Z",
         "heat": 568,
