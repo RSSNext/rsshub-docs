@@ -222499,42 +222499,26 @@
       "sport",
       "new-media"
     ],
-    "heat": 1073,
+    "heat": 1072,
     "routes": {
-      "/sina/sports/:type?": {
-        "path": "/sports/:type?",
+      "/sina/sports/:type": {
+        "path": "/sports/:type",
         "name": "体育",
         "maintainers": [
           "nczitzk"
         ],
-        "example": "/sina/sports",
+        "example": "/sina/sports/volley",
         "parameters": {
-          "type": "类别"
+          "type": "运动类型，见下表"
         },
+        "description": "| 排球   | 游泳 | 乒乓球   | 羽毛球 | 台球    | 田径     | 体操  | 冰雪   | 射击 | 马术  | 拳击搏击 | UFC | 其他   |\n| ------ | ---- | -------- | ------ | ------- | -------- | ----- | ------ | ---- | ----- | -------- | --- | ------ |\n| volley | swim | pingpang | badmin | snooker | tianjing | ticao | winter | sh   | horse | kungfu   | ufc | others |",
         "categories": [
           "sport"
         ],
         "location": "sports.ts",
         "addedAt": "2020-10-18T15:37:53.000Z",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "197554467454926851",
-            "url": "rsshub://sina/sports/volley",
-            "title": "排球 - 新浪体育",
-            "description": "关注排坛大事 - Powered by RSSHub",
-            "siteUrl": "https://sports.sina.com.cn/others/volley.shtml",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
+        "heat": 0,
+        "topFeeds": []
       },
       "/sina/csj": {
         "path": "/csj",
