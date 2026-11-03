@@ -22391,8 +22391,8 @@
           "code": 0
         }
       },
-      "/inspirehep/:collection{jobs|seminars|conferences|institutions|experiments|journals}/:q?": {
-        "path": "/:collection{jobs|seminars|conferences|institutions|experiments|journals}/:q?",
+      "/inspirehep/:collection{(?:jobs|seminars|conferences|institutions|experiments|journals)}/:q?": {
+        "path": "/:collection{(?:jobs|seminars|conferences|institutions|experiments|journals)}/:q?",
         "name": "Collection Search",
         "maintainers": [
           "DIYgod"
@@ -22475,10 +22475,7 @@
         "location": "collections.tsx",
         "addedAt": "2026-10-08T19:04:15.000Z",
         "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
+        "topFeeds": []
       },
       "/inspirehep/authors/:id": {
         "path": "/authors/:id",
@@ -47940,8 +47937,8 @@
     ],
     "heat": 0,
     "routes": {
-      "/aqara/:region{cn|kr|eu|us|ru|en}/:type?": {
-        "path": "/:region{cn|kr|eu|us|ru|en}/:type?",
+      "/aqara/:region{(?:cn|kr|eu|us|ru|en)}/:type?": {
+        "path": "/:region{(?:cn|kr|eu|us|ru|en)}/:type?",
         "name": "新闻、博客",
         "maintainers": [
           "nczitzk"
@@ -47958,11 +47955,7 @@
         "location": "region.ts",
         "addedAt": "2024-02-29T17:24:49.000Z",
         "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 301 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
+        "topFeeds": []
       },
       "/aqara/community/:id?/:keyword?": {
         "path": "/community/:id?/:keyword?",
