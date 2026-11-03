@@ -44373,7 +44373,7 @@
         "maintainers": [
           "lifetraveler"
         ],
-        "example": "/air-level/rank/best,/air-level/rank",
+        "example": "/air-level/rank",
         "parameters": {
           "status": "地区"
         },
