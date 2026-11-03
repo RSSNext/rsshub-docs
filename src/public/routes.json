@@ -185127,7 +185127,8 @@
     "name": "Bandcamp",
     "url": "bandcamp.com",
     "categories": [
-      "multimedia"
+      "multimedia",
+      "new-media"
     ],
     "heat": 26,
     "routes": {
@@ -185259,6 +185260,40 @@
         "test": {
           "code": 0
         }
+      },
+      "/bandcamp/daily": {
+        "path": "/daily",
+        "name": "Daily",
+        "url": "daily.bandcamp.com/latest",
+        "maintainers": [
+          "ashi-koki"
+        ],
+        "example": "/bandcamp/daily",
+        "parameters": {},
+        "description": "The latest Bandcamp Daily articles, with the full article text and images.",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "daily.bandcamp.com/latest"
+            ],
+            "target": "/daily"
+          }
+        ],
+        "location": "daily.ts",
+        "addedAt": "2026-11-03T14:38:57.000Z",
+        "heat": 0,
+        "topFeeds": []
       },
       "/bandcamp/tag/:tag?": {
         "path": "/tag/:tag?",
