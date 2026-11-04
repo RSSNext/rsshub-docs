@@ -148643,37 +148643,6 @@
     ],
     "heat": 0,
     "routes": {
-      "/shopback/cashback/:store/:market?": {
-        "path": "/cashback/:store/:market?",
-        "name": "Merchant cashback rates",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/shopback/cashback/agoda/tw",
-        "parameters": {
-          "store": "Merchant slug from its ShopBack URL.",
-          "market": "tw (default), my, sg, th, kr, au, id, or ph."
-        },
-        "description": "Includes the merchant’s current cashback rates. Each distinct product-and-rate combination has a separate GUID. A return to a previously seen rate reuses its earlier GUID. The former product/search and store/search endpoints are no longer available.",
-        "categories": [
-          "shopping"
-        ],
-        "radar": [
-          {
-            "source": [
-              "www.shopback.com.tw/:store"
-            ],
-            "target": "/cashback/:store/tw"
-          }
-        ],
-        "location": "cashback.ts",
-        "addedAt": "2026-10-08T19:04:47.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
       "/shopback/:store": {
         "path": "/:store",
         "name": "Store",
@@ -148710,6 +148679,37 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      },
+      "/shopback/cashback/:store/:market?": {
+        "path": "/cashback/:store/:market?",
+        "name": "Merchant cashback rates",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/shopback/cashback/agoda/tw",
+        "parameters": {
+          "store": "Merchant slug from its ShopBack URL.",
+          "market": "tw (default), my, sg, th, kr, au, id, or ph."
+        },
+        "description": "Includes the merchant’s current cashback rates. Each distinct product-and-rate combination has a separate GUID. A return to a previously seen rate reuses its earlier GUID. The former product/search and store/search endpoints are no longer available.",
+        "categories": [
+          "shopping"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.shopback.com.tw/:store"
+            ],
+            "target": "/cashback/:store/tw"
+          }
+        ],
+        "location": "cashback.ts",
+        "addedAt": "2026-10-08T19:04:47.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
         }
       }
     }
