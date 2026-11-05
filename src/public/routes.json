@@ -22701,6 +22701,80 @@
       }
     }
   },
+  "instagram": {
+    "name": "Instagram",
+    "url": "www.instagram.com",
+    "description": "::: tip\nIt's highly recommended to deploy with Redis cache enabled.\n:::",
+    "categories": [
+      "social-media"
+    ],
+    "heat": 55,
+    "routes": {
+      "/instagram/:category/:key": {
+        "path": "/:category/:key",
+        "name": "User",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/instagram/user/stefaniejoosten",
+        "parameters": {
+          "category": "Feed category, see table below",
+          "key": "Username / Hashtag name"
+        },
+        "description": "| User Posts | Current stories | Highlighted stories | Hashtag |\n| ---------- | --------------- | ------------------- | ------- |\n| user       | stories         | highlights          | tags    |\n\nStories, highlights and hashtags require a cookie.",
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "INSTAGRAM_COOKIE",
+              "optional": true,
+              "description": "Instagram cookie, only `sessionid` and `ds_user_id` are required."
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "index.ts",
+        "addedAt": "2026-09-30T22:07:47.000Z",
+        "heat": 55,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "70631931772977152",
+            "url": "rsshub://instagram/user/stefaniejoosten",
+            "title": "undefined (@stefaniejoosten) - Instagram",
+            "description": "undefined (@stefaniejoosten) - Instagram - Powered by RSSHub",
+            "siteUrl": "https://www.instagram.com/stefaniejoosten",
+            "image": "https://scontent-ord5-2.cdninstagram.com/v/t51.2885-19/387739978_181173168359511_7722211169329121600_n.jpg?stp=dst-jpg_e0_s150x150&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=103&_nc_ohc=-J4UemQ3dPsQ7kNvgFFvACb&_nc_gid=a20d273ebe7148119c1abd93d6d45d4b&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYBVycUmjMnx2eGiiQ4dX2PDkPrT1XFznkh369Uxv2hV9A&oe=6706D955&_nc_sid=1e20d2",
+            "errorMessage": "[GET] \"https://www.instagram.com/stefaniejoosten/\": 429 Too Many Requests\n",
+            "errorAt": "2024-12-25T02:49:15.475Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "62147426956831744",
+            "url": "rsshub://instagram/user/arrriiaa_w",
+            "title": "undefined (@arrriiaa_w) - Instagram",
+            "description": "undefined (@arrriiaa_w) - Instagram - Powered by RSSHub",
+            "siteUrl": "https://www.instagram.com/arrriiaa_w",
+            "image": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/279747740_420453782772871_6986839216162999403_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGdZ_iENXEPn3OpzQQo0OYdf3Y3tfr2djTnFy3QSF7xZA-stNQTPT9hWlyFKFiRpng&_nc_ohc=P1f0w8MXen4Q7kNvwEAWqvY&_nc_gid=Sv_9hZ32tlXXC_LZ_100hg&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AfmvZx4fq_tU13sGypV6ChjMru8t8FbGpn8NjhYrWxD5Jg&oe=694045FB&_nc_sid=1e20d2",
+            "errorMessage": "[GET] \"https://www.instagram.com/arrriiaa_w/\": 429 Too Many Requests\nInstagram user @arrriiaa_w not found\n",
+            "errorAt": "2025-12-11T11:45:24.669Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "iwara": {
     "name": "iwara",
     "url": "www.iwara.tv",
@@ -211661,80 +211735,6 @@
         ],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "instagram": {
-    "name": "Instagram",
-    "url": "www.instagram.com",
-    "description": "::: tip\nIt's highly recommended to deploy with Redis cache enabled.\n:::",
-    "categories": [
-      "social-media"
-    ],
-    "heat": 55,
-    "routes": {
-      "/instagram/:category/:key": {
-        "path": "/:category/:key",
-        "name": "User",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/instagram/user/stefaniejoosten",
-        "parameters": {
-          "category": "Feed category, see table below",
-          "key": "Username / Hashtag name"
-        },
-        "description": "| User Posts | Current stories | Highlighted stories | Hashtag |\n| ---------- | --------------- | ------------------- | ------- |\n| user       | stories         | highlights          | tags    |\n\nStories, highlights and hashtags require a cookie.",
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "INSTAGRAM_COOKIE",
-              "optional": true,
-              "description": "Instagram cookie, only `sessionid` and `ds_user_id` are required."
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "index.ts",
-        "addedAt": "2026-09-30T22:07:47.000Z",
-        "heat": 55,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "70631931772977152",
-            "url": "rsshub://instagram/user/stefaniejoosten",
-            "title": "undefined (@stefaniejoosten) - Instagram",
-            "description": "undefined (@stefaniejoosten) - Instagram - Powered by RSSHub",
-            "siteUrl": "https://www.instagram.com/stefaniejoosten",
-            "image": "https://scontent-ord5-2.cdninstagram.com/v/t51.2885-19/387739978_181173168359511_7722211169329121600_n.jpg?stp=dst-jpg_e0_s150x150&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_cat=103&_nc_ohc=-J4UemQ3dPsQ7kNvgFFvACb&_nc_gid=a20d273ebe7148119c1abd93d6d45d4b&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYBVycUmjMnx2eGiiQ4dX2PDkPrT1XFznkh369Uxv2hV9A&oe=6706D955&_nc_sid=1e20d2",
-            "errorMessage": "[GET] \"https://www.instagram.com/stefaniejoosten/\": 429 Too Many Requests\n",
-            "errorAt": "2024-12-25T02:49:15.475Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "62147426956831744",
-            "url": "rsshub://instagram/user/arrriiaa_w",
-            "title": "undefined (@arrriiaa_w) - Instagram",
-            "description": "undefined (@arrriiaa_w) - Instagram - Powered by RSSHub",
-            "siteUrl": "https://www.instagram.com/arrriiaa_w",
-            "image": "https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/279747740_420453782772871_6986839216162999403_n.jpg?stp=dst-jpg_e0_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-lax3-2.cdninstagram.com&_nc_cat=107&_nc_oc=Q6cZ2QGdZ_iENXEPn3OpzQQo0OYdf3Y3tfr2djTnFy3QSF7xZA-stNQTPT9hWlyFKFiRpng&_nc_ohc=P1f0w8MXen4Q7kNvwEAWqvY&_nc_gid=Sv_9hZ32tlXXC_LZ_100hg&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AfmvZx4fq_tU13sGypV6ChjMru8t8FbGpn8NjhYrWxD5Jg&oe=694045FB&_nc_sid=1e20d2",
-            "errorMessage": "[GET] \"https://www.instagram.com/arrriiaa_w/\": 429 Too Many Requests\nInstagram user @arrriiaa_w not found\n",
-            "errorAt": "2025-12-11T11:45:24.669Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
