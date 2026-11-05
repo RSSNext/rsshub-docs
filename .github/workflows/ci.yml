@@ -38,6 +38,10 @@ jobs:
     if: github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest
+    # Queue Pages deployments so back-to-back pushes don't collide
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     permissions:
       pages: write
       id-token: write
