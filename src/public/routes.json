@@ -87704,6 +87704,60 @@
       }
     }
   },
+  "gmrb": {
+    "name": "光明日报",
+    "url": "epaper.gmw.cn/gmrb",
+    "categories": [
+      "traditional-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/gmrb/paper/:page?": {
+        "path": "/paper/:page?",
+        "name": "电子版",
+        "url": "epaper.gmw.cn/gmrb/html/layout/index.html",
+        "maintainers": [
+          "zhangsan-xyz"
+        ],
+        "example": "/gmrb/paper",
+        "parameters": {
+          "page": "版面编号，如 `01`；使用 `all` 或留空获取全部版面"
+        },
+        "description": "获取当日《光明日报》电子版的全部文章或指定版面文章。",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "epaper.gmw.cn/gmrb",
+              "epaper.gmw.cn/gmrb/html/layout/index.html",
+              "epaper.gmw.cn/gmrb/paperindex.htm"
+            ],
+            "target": "/paper"
+          },
+          {
+            "source": [
+              "epaper.gmw.cn/gmrb/html/layout/:yearMonth/:day/node_:page.html"
+            ],
+            "target": "/paper/:page"
+          }
+        ],
+        "location": "paper.ts",
+        "addedAt": "2026-11-05T06:40:51.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "gmu": {
     "name": "赣南医科大学",
     "url": "gmu.cn",
