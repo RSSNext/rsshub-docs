@@ -140387,7 +140387,7 @@
     "categories": [
       "traditional-media"
     ],
-    "heat": 569,
+    "heat": 62,
     "routes": {
       "/qstheory/:category?": {
         "path": "/:category?",
@@ -140446,16 +140446,18 @@
           "message": "AssertionError: expected [ …(13) ] to not include 'https://www.qstheory.cn/20261015/0715…'\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/index.aTZaPVhf.js:2093:15)\n    at Proxy.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/index.aTZaPVhf.js:1958:14)\n    at Proxy.methodWrapper (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1737:25)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:94:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       },
-      "/qstheory/magazine/:magazine": {
-        "path": "/magazine/:magazine",
+      "/qstheory/magazine/:magazine/:issue?": {
+        "path": "/magazine/:magazine/:issue?",
         "name": "在线读刊",
         "maintainers": [
           "TonyRL",
-          "cscnk52"
+          "cscnk52",
+          "zhangsan-xyz"
         ],
         "example": "/qstheory/magazine/qs",
         "parameters": {
-          "magazine": "刊物，`qs` 为求是，`hqwglist` 为红旗文稿"
+          "magazine": "刊物，`qs` 为求是，`hqwglist` 为红旗文稿",
+          "issue": "期数编号，如 `21` 或 `2026-21`；留空或 `latest` 获取最新一期"
         },
         "categories": [
           "traditional-media"
@@ -140469,36 +140471,8 @@
         ],
         "location": "magazine.ts",
         "addedAt": "2024-11-15T11:52:40.000Z",
-        "heat": 507,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "80489063705907200",
-            "url": "rsshub://qstheory/magazine/hqwglist",
-            "title": "《红旗文稿》 - 求是网",
-            "description": "《红旗文稿》 - 求是网 - Powered by RSSHub",
-            "siteUrl": "http://www.qstheory.cn/hqwglist/mulu.htm",
-            "image": "http://www.qstheory.cn/20261027/9b70fcfd095149efa40c66d68c3eef96/94bafcad0ec54fc1bacd9aa8bb030dfe.jpg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "80433099883252736",
-            "url": "rsshub://qstheory/magazine/qs",
-            "title": "《求是》 - 求是网",
-            "description": "《求是》 - 求是网 - Powered by RSSHub",
-            "siteUrl": "http://www.qstheory.cn/qs/mulu.htm",
-            "image": "http://www.qstheory.cn/20261103/1da50038302c4b08afc43e6586f2e7c7/428ec094324448c69def0a7bf4f97e31.jpg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
