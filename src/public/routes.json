@@ -17962,6 +17962,139 @@
       }
     }
   },
+  "mi": {
+    "name": "小米",
+    "url": "mi.com",
+    "categories": [
+      "program-update",
+      "shopping"
+    ],
+    "heat": 349,
+    "routes": {
+      "/mi/golden": {
+        "path": "/golden",
+        "name": "小米应用商店金米奖",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/mi/golden",
+        "categories": [
+          "program-update"
+        ],
+        "location": "golden.ts",
+        "addedAt": "2024-03-17T18:44:47.000Z",
+        "heat": 57,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "58115214164304896",
+            "url": "rsshub://mi/golden",
+            "title": "金米奖 - 小米应用商店",
+            "description": "每周我们都会评选出优秀的应用和游戏授予“金米奖”。 请您每周五准时来这里体验每周的好应用和好游戏！ “金米奖”评选出的应用： 都有优秀的内容、创新的设计、极致的体验； “金米奖”评选出的游戏： 都有酷炫的画面、新颖的玩法、耐玩的关卡； 我们秉承“编辑选荐”的品质， 为您精心挑选“金米奖”的每一个应用和游戏。 - Powered by RSSHub",
+            "siteUrl": "https://app.mi.com/subject/169449",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/mi/crowdfunding": {
+        "path": "/crowdfunding",
+        "name": "众筹",
+        "maintainers": [
+          "DIYgod",
+          "nuomi1"
+        ],
+        "example": "/mi/crowdfunding",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "m.mi.com/crowdfunding/home"
+            ],
+            "target": "/crowdfunding"
+          }
+        ],
+        "view": 5,
+        "location": "crowdfunding.ts",
+        "addedAt": "2024-03-17T18:44:47.000Z",
+        "heat": 286,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "42123928726287360",
+            "url": "rsshub://mi/crowdfunding",
+            "title": "小米众筹",
+            "description": "小米众筹 - Powered by RSSHub",
+            "siteUrl": "https://m.mi.com/crowdfunding/home",
+            "image": "https://m.mi.com/static/img/icons/apple-touch-icon-152x152.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/mi/newproducts": {
+        "path": "/newproducts",
+        "name": "上新",
+        "maintainers": [
+          "nuomi1"
+        ],
+        "example": "/mi/newproducts",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "view": 5,
+        "location": "newproducts.ts",
+        "addedAt": "2026-08-10T16:25:58.000Z",
+        "heat": 6,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "1239880299701993472",
+            "url": "rsshub://mi/newproducts",
+            "title": "小米上新",
+            "description": "小米上新 - Powered by RSSHub",
+            "siteUrl": "https://m.mi.com/",
+            "image": "https://m.mi.com/static/img/icons/apple-touch-icon-152x152.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "mixcloud": {
     "name": "Mixcloud",
     "url": "www.mixcloud.com",
@@ -24312,139 +24445,6 @@
         "test": {
           "code": 1,
           "message": "Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:101:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
-        }
-      }
-    }
-  },
-  "mi": {
-    "name": "小米",
-    "url": "mi.com",
-    "categories": [
-      "program-update",
-      "shopping"
-    ],
-    "heat": 349,
-    "routes": {
-      "/mi/golden": {
-        "path": "/golden",
-        "name": "小米应用商店金米奖",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/mi/golden",
-        "categories": [
-          "program-update"
-        ],
-        "location": "golden.ts",
-        "addedAt": "2024-03-17T18:44:47.000Z",
-        "heat": 57,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "58115214164304896",
-            "url": "rsshub://mi/golden",
-            "title": "金米奖 - 小米应用商店",
-            "description": "每周我们都会评选出优秀的应用和游戏授予“金米奖”。 请您每周五准时来这里体验每周的好应用和好游戏！ “金米奖”评选出的应用： 都有优秀的内容、创新的设计、极致的体验； “金米奖”评选出的游戏： 都有酷炫的画面、新颖的玩法、耐玩的关卡； 我们秉承“编辑选荐”的品质， 为您精心挑选“金米奖”的每一个应用和游戏。 - Powered by RSSHub",
-            "siteUrl": "https://app.mi.com/subject/169449",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/mi/crowdfunding": {
-        "path": "/crowdfunding",
-        "name": "众筹",
-        "maintainers": [
-          "DIYgod",
-          "nuomi1"
-        ],
-        "example": "/mi/crowdfunding",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "m.mi.com/crowdfunding/home"
-            ],
-            "target": "/crowdfunding"
-          }
-        ],
-        "view": 5,
-        "location": "crowdfunding.ts",
-        "addedAt": "2024-03-17T18:44:47.000Z",
-        "heat": 286,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "42123928726287360",
-            "url": "rsshub://mi/crowdfunding",
-            "title": "小米众筹",
-            "description": "小米众筹 - Powered by RSSHub",
-            "siteUrl": "https://m.mi.com/crowdfunding/home",
-            "image": "https://m.mi.com/static/img/icons/apple-touch-icon-152x152.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/mi/newproducts": {
-        "path": "/newproducts",
-        "name": "上新",
-        "maintainers": [
-          "nuomi1"
-        ],
-        "example": "/mi/newproducts",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "view": 5,
-        "location": "newproducts.ts",
-        "addedAt": "2026-08-10T16:25:58.000Z",
-        "heat": 6,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "1239880299701993472",
-            "url": "rsshub://mi/newproducts",
-            "title": "小米上新",
-            "description": "小米上新 - Powered by RSSHub",
-            "siteUrl": "https://m.mi.com/",
-            "image": "https://m.mi.com/static/img/icons/apple-touch-icon-152x152.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
         }
       }
     }
