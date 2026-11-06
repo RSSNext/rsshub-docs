@@ -16477,6 +16477,47 @@
       }
     }
   },
+  "zagg": {
+    "name": "Zagg",
+    "url": "zagg.com",
+    "categories": [
+      "shopping"
+    ],
+    "heat": 0,
+    "routes": {
+      "/zagg/new-arrivals/:query?": {
+        "path": "/new-arrivals/:query?",
+        "name": "New Arrivals",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/zagg/new-arrivals/vendor=ZAGG,InvisibleShield&product_type=cases",
+        "parameters": {
+          "query": "query string, `vendor` and `product_type`, comma separated"
+        },
+        "description": "Filter by vendor (`ZAGG`, `InvisibleShield`, `ZAGG Custom`...) and product type (`cases`, `screen protectors`, `tablet keyboards`...), e.g. `vendor=ZAGG&product_type=cases,tablet cases`",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "new-arrivals.tsx",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "zaozao": {
     "name": "前端早早聊",
     "url": "www.zaozao.run",
@@ -179328,47 +179369,6 @@
       }
     }
   },
-  "zagg": {
-    "name": "Zagg",
-    "url": "zagg.com",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 0,
-    "routes": {
-      "/zagg/new-arrivals/:query?": {
-        "path": "/new-arrivals/:query?",
-        "name": "New Arrivals",
-        "maintainers": [
-          "IvanWng97"
-        ],
-        "example": "/zagg/new-arrivals/brand=164&cat=3038,3041",
-        "parameters": {
-          "query": "query, search page querystring"
-        },
-        "description": "For instance, in `https://www.zagg.com/en_us/new-arrivals?brand=164&cat=3038%2C3041`, the query is `brand=164&cat=3038%2C3041`",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "new-arrivals.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "zaker": {
     "name": "ZAKER",
     "url": "myzaker.com",
@@ -239862,539 +239862,6 @@
       }
     }
   },
-  "youtube": {
-    "name": "YouTube",
-    "url": "youtube.com",
-    "categories": [
-      "social-media",
-      "popular",
-      "live"
-    ],
-    "heat": 480011,
-    "routes": {
-      "/youtube/community/:handle": {
-        "path": "/community/:handle",
-        "name": "Community Posts",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/youtube/community/@JFlaMusic",
-        "parameters": {
-          "handle": "YouTube handles or channel id"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "location": "community.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 173,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "74865083357282304",
-            "url": "rsshub://youtube/community/@chaijing2023",
-            "title": "柴静 Chai Jing - Community Posts- YouTube",
-            "description": "柴静 Chai Jing 记者 纪录片：《穹顶之下》（2015）《陌生人》（2023） 两部纪录片制作费用均来自柴静书籍《看见》版税，公益播出。 邮箱：chaijing2023@gmail.com - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCjuNibFJ21MiSNpu8LZyV4w",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "59504691960224768",
-            "url": "rsshub://youtube/community/@xiaoshu",
-            "title": "小叔TV - Community Posts- YouTube",
-            "description": "小叔TV，这是北京小叔的另外一个频道，\"北同\"的一个子品牌和兄弟频道，这里没有LGBT内容，我的目标是寻找适合自己的养老城市，我计划走遍中国的大小城市，记录当地风土人情和国家变迁，见证这个大时代的发展，同时也去看看各个地方的房地产，合适时机我会买一套属于自己的房定居下来。油管是小叔TV的首发平台。 - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCPNfoYdMopKZKlaTB92g-QQ",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/youtube/c/:username/:embed?": {
-        "path": "/c/:username/:embed?",
-        "name": "Custom URL",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/youtube/c/YouTubeCreators",
-        "parameters": {
-          "username": "YouTube custom URL",
-          "embed": "Default to embed the video, set to any value to disable embedding"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/c/:id"
-            ],
-            "target": "/c/:id"
-          }
-        ],
-        "location": "custom.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 90,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "69248136853592064",
-            "url": "rsshub://youtube/c/lexfridman",
-            "title": "lexfridman - YouTube",
-            "description": "Lex Fridman Podcast and other videos. - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/c/lexfridman",
-            "image": "https://yt3.googleusercontent.com/ytc/AIdro_ljfMy9kUR1PH9VRf-XsTsPqFMgORC_zodOQVEAm4hx36lC=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "83922899515574272",
-            "url": "rsshub://youtube/c/3blue1brown",
-            "title": "3blue1brown - YouTube",
-            "description": "My name is Grant Sanderson. Videos here cover a variety of topics in math, or adjacent fields like physics and CS, all with an emphasis on visualizing the core ideas. The goal is to use animation to help elucidate and motivate otherwise tricky topics, and for difficult problems to be made simple with changes in perspective. For more information, other projects, FAQs, and inquiries see the website: https://www.3blue1brown.com - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/c/3blue1brown",
-            "image": "https://yt3.googleusercontent.com/ytc/AIdro_nFzZFPLxPZRHcE3SSwzdrbuWqfoWYwLAu0_2iO6blQYAU=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": "Cannot read properties of undefined (reading '0')\nYouTube RSS is disabled due to the lack of <a href=\"https://docs.rsshub.app/deploy/config#route-specific-configurations\">relevant config</a>\n",
-            "errorAt": "2026-09-08T08:06:21.415Z",
-            "ownerUserId": null
-          }
-        ]
-      },
-      "/youtube/charts/:category?/:country?/:embed?": {
-        "path": "/charts/:category?/:country?/:embed?",
-        "name": "Music Charts",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/youtube/charts",
-        "parameters": {
-          "category": "Chart, see table below, default to `TopVideos`",
-          "country": "Country Code, see table below, default to global",
-          "embed": "Default to embed the video, set to any value to disable embedding"
-        },
-        "description": "Chart\n\n| Top artists | Top songs | Top music videos | Trending       |\n| ----------- | --------- | ---------------- | -------------- |\n| TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\nCountry Code\n\n| Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n| --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n| ar        | au        | at      | be      | bo      | br     | ca     |\n\n| Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n| ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n| cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n| Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n| ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n| eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n| Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n| -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n| hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n| Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n| ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n| jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n| Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n| ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n| ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n| Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n| ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n| ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n| Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n| -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n| tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n| Uruguay | Zimbabwe |\n| ------- | -------- |\n| uy      | zw       |",
-        "categories": [
-          "social-media"
-        ],
-        "location": "charts.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 43,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "57503645768295424",
-            "url": "rsshub://youtube/charts/TopSongs",
-            "title": "YouTube Music Charts - Top songs",
-            "description": "YouTube Music Charts - Top songs - Powered by RSSHub",
-            "siteUrl": "https://charts.youtube.com/charts/TopSongs/global",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "57506261522656256",
-            "url": "rsshub://youtube/charts",
-            "title": "YouTube Music Charts - Top music videos",
-            "description": "YouTube Music Charts - Top music videos - Powered by RSSHub",
-            "siteUrl": "https://charts.youtube.com/charts/TopVideos/global",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/youtube/subscriptions/:embed?": {
-        "path": "/subscriptions/:embed?",
-        "name": "Subscriptions",
-        "url": "www.youtube.com/feed/subscriptions",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/youtube/subscriptions",
-        "parameters": {
-          "embed": "Default to embed the video, set to any value to disable embedding"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "YOUTUBE_KEY",
-              "description": ""
-            },
-            {
-              "name": "YOUTUBE_CLIENT_ID",
-              "description": ""
-            },
-            {
-              "name": "YOUTUBE_CLIENT_SECRET",
-              "description": ""
-            },
-            {
-              "name": "YOUTUBE_REFRESH_TOKEN",
-              "description": ""
-            }
-          ]
-        },
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/feed/subscriptions",
-              "www.youtube.com/feed/channels"
-            ],
-            "target": "/subscriptions"
-          }
-        ],
-        "location": "subscriptions.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 26,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "121166426445163520",
-            "url": "rsshub://youtube/subscriptions",
-            "title": "Subscriptions - YouTube",
-            "description": "YouTube Subscriptions - Powered by RSSHub",
-            "siteUrl": "rsshub://youtube/www.youtube.com/feed/subscriptions",
-            "image": null,
-            "errorMessage": "YouTube RSS is disabled due to the lack of <a href=\"https://docs.rsshub.app/deploy/config#route-specific-configurations\">relevant config</a>\n",
-            "errorAt": "2025-03-08T16:50:14.180Z",
-            "ownerUserId": null
-          }
-        ]
-      },
-      "/youtube/channel/:id/:routeParams?": {
-        "path": "/channel/:id/:routeParams?",
-        "name": "Channel with id",
-        "maintainers": [
-          "DIYgod",
-          "pseudoyu"
-        ],
-        "example": "/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ",
-        "parameters": {
-          "id": "YouTube channel id",
-          "routeParams": "Extra parameters, see the table below"
-        },
-        "description": "::: tip Parameter\n\n| Name         | Description                                                                        | Default |\n| ------------ | ---------------------------------------------------------------------------------- | ------- |\n| embed        | Whether to embed the video, fill in any value to disable embedding                 | embed   |\n| filterShorts | Whether to filter out shorts from the feed, fill in any falsy value to show shorts | true    |\n\n:::\n\n::: tip\nYouTube provides official RSS feeds for channels, for instance <https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ>.\n:::",
-        "categories": [
-          "social-media",
-          "popular"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
-              "optional": true
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/channel/:id"
-            ],
-            "target": "/channel/:id"
-          }
-        ],
-        "location": "channel.ts",
-        "addedAt": "2018-12-26T10:35:10.000Z",
-        "heat": 3084,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "62110731608091648",
-            "url": "rsshub://youtube/channel/UCxr75Ze604OZsLKEAJ4jqAg",
-            "title": "Johnny's Vlog - YouTube",
-            "description": "Hello, I'm Johnny, a passionate backpacker currently based in Africa. My journey has taken me to 39 countries worldwide, including 23 in Africa. My dream is ... - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCxr75Ze604OZsLKEAJ4jqAg",
-            "image": "https://yt3.googleusercontent.com/ytc/AIdro_nLxOCT7qrhIe50CgsatjLIkcALBlBA5b6phRdsYEH9MA=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "143637676052105216",
-            "url": "rsshub://youtube/channel/UCWI-ohtRu8eEeDj93hmUsUQ",
-            "title": "Coding with Lewis - YouTube",
-            "description": "My name is Lewis. I am on a mission to inspire developers and tech enthusiasts. 🧑‍💻 Professionally coding since 2016! Business: sydney@lewismenelaws.com - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCWI-ohtRu8eEeDj93hmUsUQ",
-            "image": "https://yt3.googleusercontent.com/CsruQ_I1lU51KzpO58FHQIpzuQneCdmJOOLsmy_usGKQANxgnJ-cK6kNylwQYhY0LYwVrp3EHQ=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/youtube/live/:username/:embed?": {
-        "path": "/live/:username/:embed?",
-        "name": "Live",
-        "maintainers": [
-          "sussurr127",
-          "ouuan"
-        ],
-        "example": "/youtube/live/@GawrGura",
-        "parameters": {
-          "username": "YouTube handle or channel id",
-          "embed": "Default to embed the video, set to any value to disable embedding"
-        },
-        "description": "::: tip\nEvery stream is categorized as `live`, `upcoming` or `completed`, so a single state can be picked out with the `filter_category` and `filterout_category` [common parameters](https://docs.rsshub.app/guide/parameters#filtering). For example, `/youtube/live/@GawrGura?filterout_category=completed` only tracks streams that are live or about to start.\n:::",
-        "categories": [
-          "live"
-        ],
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/:username/streams",
-              "www.youtube.com/channel/:username/streams"
-            ],
-            "target": "/live/:username"
-          }
-        ],
-        "view": 3,
-        "location": "live.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 267,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "42001666786766848",
-            "url": "rsshub://youtube/live/@GawrGura",
-            "title": "Gawr Gura Ch. hololive-EN - Live - YouTube",
-            "description": "[April 30, 2025 Graduated.] Shark-girl Idol of Hololive EN ! 🐟 --- A descendant of the Lost City of Atlantis, who swam to Earth while saying, \"It's so boring... - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g/streams",
-            "image": "https://yt3.googleusercontent.com/6BCfAqi9yIpZbHLbw9BAWySvB3XZf9r8jFqudO5nSOsHoGzLhlKrm1M1uuMCRabi_pXGDzl7=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "69051964046186496",
-            "url": "rsshub://youtube/live/@laogao",
-            "title": "老高與小茉 Mr & Mrs Gao's Live Status",
-            "description": "$老高與小茉 Mr & Mrs Gao's live streaming status - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ",
-            "image": null,
-            "errorMessage": "Tab \"streams\" not found\n",
-            "errorAt": "2026-09-28T22:00:54.900Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/youtube/playlist/:id/:embed?": {
-        "path": "/playlist/:id/:embed?",
-        "name": "Playlist",
-        "maintainers": [
-          "HenryQW"
-        ],
-        "example": "/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z",
-        "parameters": {
-          "id": "YouTube playlist id",
-          "embed": "Default to embed the video, set to any value to disable embedding"
-        },
-        "categories": [
-          "social-media",
-          "popular"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
-              "optional": true
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "view": 3,
-        "location": "playlist.ts",
-        "addedAt": "2018-12-26T10:35:10.000Z",
-        "heat": 1568,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "63845323989307392",
-            "url": "rsshub://youtube/playlist/PL3bAfMXyZjrPfLIHtd6Phb4R1gBswybSq",
-            "title": "王局拍案 by 王志安 - YouTube",
-            "description": "这是中国调查记者王志安在YouTube上开设的节目，每天关注中国重要的时政和社会新闻。 - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/playlist?list=PL3bAfMXyZjrPfLIHtd6Phb4R1gBswybSq",
-            "image": "https://i.ytimg.com/pl_c/PL3bAfMXyZjrPfLIHtd6Phb4R1gBswybSq/studio_square_thumbnail.jpg?sqp=CP__stcG-oaymwEICNAFENAFSFqi85f_AwYImOKvqwY=&rs=AOn4CLBfFV8lHv36OBJ0XvOQfb3c46k53A",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "93660941816522752",
-            "url": "rsshub://youtube/playlist/PLjzImVTiIJZn_esvTZ7KH5RCngxPOc7-i",
-            "title": "付鹏说 by Since1982 - YouTube",
-            "description": "付鹏说 by Since1982 - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/playlist?list=PLjzImVTiIJZn_esvTZ7KH5RCngxPOc7-i",
-            "image": "https://i.ytimg.com/vi/m7tfUrsJsrw/hqdefault.jpg?sqp=-oaymwExCNACELwBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYYyBjKGMwDw==&rs=AOn4CLAzP1etQerVVHfma9Gn-2IH3klTkA",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 315532800898 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:65:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:90:13)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/youtube/shows/:username": {
-        "path": "/shows/:username",
-        "name": "Shows",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/youtube/shows/@LinusTechTips",
-        "parameters": {
-          "username": "YouTube handle or channel id"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/:username/shows",
-              "www.youtube.com/channel/:username/shows"
-            ],
-            "target": "/shows/:username"
-          }
-        ],
-        "location": "shows.ts",
-        "addedAt": "2026-09-29T14:45:58.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/youtube/user/:username/:routeParams?": {
-        "path": "/user/:username/:routeParams?",
-        "name": "Channel with user handle",
-        "maintainers": [
-          "DIYgod",
-          "pseudoyu"
-        ],
-        "example": "/youtube/user/@JFlaMusic",
-        "parameters": {
-          "username": "YouTuber handle with @",
-          "routeParams": "Extra parameters, see the table below"
-        },
-        "description": "::: tip Parameter\n\n| Name         | Description                                                                        | Default |\n| ------------ | ---------------------------------------------------------------------------------- | ------- |\n| embed        | Whether to embed the video, fill in any value to disable embedding                 | embed   |\n| filterShorts | Whether to filter out shorts from the feed, fill in any falsy value to show shorts | true    |\n\n:::",
-        "categories": [
-          "social-media",
-          "popular"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
-              "optional": true
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.youtube.com/user/:username",
-              "www.youtube.com/:username",
-              "www.youtube.com/:username/videos"
-            ],
-            "target": "/user/:username"
-          }
-        ],
-        "view": 3,
-        "location": "user.ts",
-        "addedAt": "2018-12-26T10:35:10.000Z",
-        "heat": 474760,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "60991924147702784",
-            "url": "rsshub://youtube/user/@AndrejKarpathy",
-            "title": "Andrej Karpathy - YouTube",
-            "description": "Andrej Karpathy - YouTube - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCXUPKJO5MZQN11PqgIvyuvQ",
-            "image": "https://yt3.googleusercontent.com/ytc/AIdro_nDvyq2NoPL626bk1IbxQ94SfQsD-B0qgZchghtQNkLWoEz=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "57461667496141824",
-            "url": "rsshub://youtube/user/%40anthropic-ai",
-            "title": "Anthropic - YouTube",
-            "description": "We’re an AI safety and research company. Talk to our AI assistant Claude on claude.com. Download Claude on desktop, iOS, or Android. We believe AI will have ... - Powered by RSSHub",
-            "siteUrl": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
-            "image": "https://yt3.googleusercontent.com/ux-GXUpB4PkI-qXVOpj9gGEiCkytT0Q78ka4srlxOm_Y3m1gEh5qy8Vu6vTjGSDztMT0NybtC7I=s900-c-k-c0x00ffffff-no-rj",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "twitter": {
     "name": "X (Twitter)",
     "url": "x.com",
@@ -240982,6 +240449,539 @@
             "ownerUserId": null
           }
         ]
+      }
+    }
+  },
+  "youtube": {
+    "name": "YouTube",
+    "url": "youtube.com",
+    "categories": [
+      "social-media",
+      "popular",
+      "live"
+    ],
+    "heat": 480011,
+    "routes": {
+      "/youtube/community/:handle": {
+        "path": "/community/:handle",
+        "name": "Community Posts",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/youtube/community/@JFlaMusic",
+        "parameters": {
+          "handle": "YouTube handles or channel id"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "location": "community.tsx",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 173,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "74865083357282304",
+            "url": "rsshub://youtube/community/@chaijing2023",
+            "title": "柴静 Chai Jing - Community Posts- YouTube",
+            "description": "柴静 Chai Jing 记者 纪录片：《穹顶之下》（2015）《陌生人》（2023） 两部纪录片制作费用均来自柴静书籍《看见》版税，公益播出。 邮箱：chaijing2023@gmail.com - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCjuNibFJ21MiSNpu8LZyV4w",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "59504691960224768",
+            "url": "rsshub://youtube/community/@xiaoshu",
+            "title": "小叔TV - Community Posts- YouTube",
+            "description": "小叔TV，这是北京小叔的另外一个频道，\"北同\"的一个子品牌和兄弟频道，这里没有LGBT内容，我的目标是寻找适合自己的养老城市，我计划走遍中国的大小城市，记录当地风土人情和国家变迁，见证这个大时代的发展，同时也去看看各个地方的房地产，合适时机我会买一套属于自己的房定居下来。油管是小叔TV的首发平台。 - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCPNfoYdMopKZKlaTB92g-QQ",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/youtube/c/:username/:embed?": {
+        "path": "/c/:username/:embed?",
+        "name": "Custom URL",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/youtube/c/YouTubeCreators",
+        "parameters": {
+          "username": "YouTube custom URL",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/c/:id"
+            ],
+            "target": "/c/:id"
+          }
+        ],
+        "location": "custom.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 90,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "69248136853592064",
+            "url": "rsshub://youtube/c/lexfridman",
+            "title": "lexfridman - YouTube",
+            "description": "Lex Fridman Podcast and other videos. - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/c/lexfridman",
+            "image": "https://yt3.googleusercontent.com/ytc/AIdro_ljfMy9kUR1PH9VRf-XsTsPqFMgORC_zodOQVEAm4hx36lC=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "83922899515574272",
+            "url": "rsshub://youtube/c/3blue1brown",
+            "title": "3blue1brown - YouTube",
+            "description": "My name is Grant Sanderson. Videos here cover a variety of topics in math, or adjacent fields like physics and CS, all with an emphasis on visualizing the core ideas. The goal is to use animation to help elucidate and motivate otherwise tricky topics, and for difficult problems to be made simple with changes in perspective. For more information, other projects, FAQs, and inquiries see the website: https://www.3blue1brown.com - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/c/3blue1brown",
+            "image": "https://yt3.googleusercontent.com/ytc/AIdro_nFzZFPLxPZRHcE3SSwzdrbuWqfoWYwLAu0_2iO6blQYAU=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": "Cannot read properties of undefined (reading '0')\nYouTube RSS is disabled due to the lack of <a href=\"https://docs.rsshub.app/deploy/config#route-specific-configurations\">relevant config</a>\n",
+            "errorAt": "2026-09-08T08:06:21.415Z",
+            "ownerUserId": null
+          }
+        ]
+      },
+      "/youtube/charts/:category?/:country?/:embed?": {
+        "path": "/charts/:category?/:country?/:embed?",
+        "name": "Music Charts",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/youtube/charts",
+        "parameters": {
+          "category": "Chart, see table below, default to `TopVideos`",
+          "country": "Country Code, see table below, default to global",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "description": "Chart\n\n| Top artists | Top songs | Top music videos | Trending       |\n| ----------- | --------- | ---------------- | -------------- |\n| TopArtists  | TopSongs  | TopVideos        | TrendingVideos |\n\nCountry Code\n\n| Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |\n| --------- | --------- | ------- | ------- | ------- | ------ | ------ |\n| ar        | au        | at      | be      | bo      | br     | ca     |\n\n| Chile | Colombia | Costa Rica | Czechia | Denmark | Dominican Republic | Ecuador |\n| ----- | -------- | ---------- | ------- | ------- | ------------------ | ------- |\n| cl    | co       | cr         | cz      | dk      | do                 | ec      |\n\n| Egypt | El Salvador | Estonia | Finland | France | Germany | Guatemala |\n| ----- | ----------- | ------- | ------- | ------ | ------- | --------- |\n| eg    | sv          | ee      | fi      | fr     | de      | gt        |\n\n| Honduras | Hungary | Iceland | India | Indonesia | Ireland | Israel | Italy |\n| -------- | ------- | ------- | ----- | --------- | ------- | ------ | ----- |\n| hn       | hu      | is      | in    | id        | ie      | il     | it    |\n\n| Japan | Kenya | Luxembourg | Mexico | Netherlands | New Zealand | Nicaragua |\n| ----- | ----- | ---------- | ------ | ----------- | ----------- | --------- |\n| jp    | ke    | lu         | mx     | nl          | nz          | ni        |\n\n| Nigeria | Norway | Panama | Paraguay | Peru | Poland | Portugal | Romania |\n| ------- | ------ | ------ | -------- | ---- | ------ | -------- | ------- |\n| ng      | no     | pa     | py       | pe   | pl     | pt       | ro      |\n\n| Russia | Saudi Arabia | Serbia | South Africa | South Korea | Spain | Sweden | Switzerland |\n| ------ | ------------ | ------ | ------------ | ----------- | ----- | ------ | ----------- |\n| ru     | sa           | rs     | za           | kr          | es    | se     | ch          |\n\n| Tanzania | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States |\n| -------- | ------ | ------ | ------- | -------------------- | -------------- | ------------- |\n| tz       | tr     | ug     | ua      | ae                   | gb             | us            |\n\n| Uruguay | Zimbabwe |\n| ------- | -------- |\n| uy      | zw       |",
+        "categories": [
+          "social-media"
+        ],
+        "location": "charts.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 43,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "57503645768295424",
+            "url": "rsshub://youtube/charts/TopSongs",
+            "title": "YouTube Music Charts - Top songs",
+            "description": "YouTube Music Charts - Top songs - Powered by RSSHub",
+            "siteUrl": "https://charts.youtube.com/charts/TopSongs/global",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "57506261522656256",
+            "url": "rsshub://youtube/charts",
+            "title": "YouTube Music Charts - Top music videos",
+            "description": "YouTube Music Charts - Top music videos - Powered by RSSHub",
+            "siteUrl": "https://charts.youtube.com/charts/TopVideos/global",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/youtube/subscriptions/:embed?": {
+        "path": "/subscriptions/:embed?",
+        "name": "Subscriptions",
+        "url": "www.youtube.com/feed/subscriptions",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/youtube/subscriptions",
+        "parameters": {
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": ""
+            },
+            {
+              "name": "YOUTUBE_CLIENT_ID",
+              "description": ""
+            },
+            {
+              "name": "YOUTUBE_CLIENT_SECRET",
+              "description": ""
+            },
+            {
+              "name": "YOUTUBE_REFRESH_TOKEN",
+              "description": ""
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/feed/subscriptions",
+              "www.youtube.com/feed/channels"
+            ],
+            "target": "/subscriptions"
+          }
+        ],
+        "location": "subscriptions.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 26,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "121166426445163520",
+            "url": "rsshub://youtube/subscriptions",
+            "title": "Subscriptions - YouTube",
+            "description": "YouTube Subscriptions - Powered by RSSHub",
+            "siteUrl": "rsshub://youtube/www.youtube.com/feed/subscriptions",
+            "image": null,
+            "errorMessage": "YouTube RSS is disabled due to the lack of <a href=\"https://docs.rsshub.app/deploy/config#route-specific-configurations\">relevant config</a>\n",
+            "errorAt": "2025-03-08T16:50:14.180Z",
+            "ownerUserId": null
+          }
+        ]
+      },
+      "/youtube/channel/:id/:routeParams?": {
+        "path": "/channel/:id/:routeParams?",
+        "name": "Channel with id",
+        "maintainers": [
+          "DIYgod",
+          "pseudoyu"
+        ],
+        "example": "/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ",
+        "parameters": {
+          "id": "YouTube channel id",
+          "routeParams": "Extra parameters, see the table below"
+        },
+        "description": "::: tip Parameter\n\n| Name         | Description                                                                        | Default |\n| ------------ | ---------------------------------------------------------------------------------- | ------- |\n| embed        | Whether to embed the video, fill in any value to disable embedding                 | embed   |\n| filterShorts | Whether to filter out shorts from the feed, fill in any falsy value to show shorts | true    |\n\n:::\n\n::: tip\nYouTube provides official RSS feeds for channels, for instance <https://www.youtube.com/feeds/videos.xml?channel_id=UCDwDMPOZfxVV0x_dz0eQ8KQ>.\n:::",
+        "categories": [
+          "social-media",
+          "popular"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/channel/:id"
+            ],
+            "target": "/channel/:id"
+          }
+        ],
+        "location": "channel.ts",
+        "addedAt": "2018-12-26T10:35:10.000Z",
+        "heat": 3084,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "62110731608091648",
+            "url": "rsshub://youtube/channel/UCxr75Ze604OZsLKEAJ4jqAg",
+            "title": "Johnny's Vlog - YouTube",
+            "description": "Hello, I'm Johnny, a passionate backpacker currently based in Africa. My journey has taken me to 39 countries worldwide, including 23 in Africa. My dream is ... - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCxr75Ze604OZsLKEAJ4jqAg",
+            "image": "https://yt3.googleusercontent.com/ytc/AIdro_nLxOCT7qrhIe50CgsatjLIkcALBlBA5b6phRdsYEH9MA=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "143637676052105216",
+            "url": "rsshub://youtube/channel/UCWI-ohtRu8eEeDj93hmUsUQ",
+            "title": "Coding with Lewis - YouTube",
+            "description": "My name is Lewis. I am on a mission to inspire developers and tech enthusiasts. 🧑‍💻 Professionally coding since 2016! Business: sydney@lewismenelaws.com - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCWI-ohtRu8eEeDj93hmUsUQ",
+            "image": "https://yt3.googleusercontent.com/CsruQ_I1lU51KzpO58FHQIpzuQneCdmJOOLsmy_usGKQANxgnJ-cK6kNylwQYhY0LYwVrp3EHQ=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/youtube/live/:username/:embed?": {
+        "path": "/live/:username/:embed?",
+        "name": "Live",
+        "maintainers": [
+          "sussurr127",
+          "ouuan"
+        ],
+        "example": "/youtube/live/@GawrGura",
+        "parameters": {
+          "username": "YouTube handle or channel id",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "description": "::: tip\nEvery stream is categorized as `live`, `upcoming` or `completed`, so a single state can be picked out with the `filter_category` and `filterout_category` [common parameters](https://docs.rsshub.app/guide/parameters#filtering). For example, `/youtube/live/@GawrGura?filterout_category=completed` only tracks streams that are live or about to start.\n:::",
+        "categories": [
+          "live"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/:username/streams",
+              "www.youtube.com/channel/:username/streams"
+            ],
+            "target": "/live/:username"
+          }
+        ],
+        "view": 3,
+        "location": "live.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 267,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "42001666786766848",
+            "url": "rsshub://youtube/live/@GawrGura",
+            "title": "Gawr Gura Ch. hololive-EN - Live - YouTube",
+            "description": "[April 30, 2025 Graduated.] Shark-girl Idol of Hololive EN ! 🐟 --- A descendant of the Lost City of Atlantis, who swam to Earth while saying, \"It's so boring... - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g/streams",
+            "image": "https://yt3.googleusercontent.com/6BCfAqi9yIpZbHLbw9BAWySvB3XZf9r8jFqudO5nSOsHoGzLhlKrm1M1uuMCRabi_pXGDzl7=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "69051964046186496",
+            "url": "rsshub://youtube/live/@laogao",
+            "title": "老高與小茉 Mr & Mrs Gao's Live Status",
+            "description": "$老高與小茉 Mr & Mrs Gao's live streaming status - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCMUnInmOkrWN4gof9KlhNmQ",
+            "image": null,
+            "errorMessage": "Tab \"streams\" not found\n",
+            "errorAt": "2026-09-28T22:00:54.900Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/youtube/playlist/:id/:embed?": {
+        "path": "/playlist/:id/:embed?",
+        "name": "Playlist",
+        "maintainers": [
+          "HenryQW"
+        ],
+        "example": "/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z",
+        "parameters": {
+          "id": "YouTube playlist id",
+          "embed": "Default to embed the video, set to any value to disable embedding"
+        },
+        "categories": [
+          "social-media",
+          "popular"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "view": 3,
+        "location": "playlist.ts",
+        "addedAt": "2018-12-26T10:35:10.000Z",
+        "heat": 1568,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "63845323989307392",
+            "url": "rsshub://youtube/playlist/PL3bAfMXyZjrPfLIHtd6Phb4R1gBswybSq",
+            "title": "王局拍案 by 王志安 - YouTube",
+            "description": "这是中国调查记者王志安在YouTube上开设的节目，每天关注中国重要的时政和社会新闻。 - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/playlist?list=PL3bAfMXyZjrPfLIHtd6Phb4R1gBswybSq",
+            "image": "https://i.ytimg.com/pl_c/PL3bAfMXyZjrPfLIHtd6Phb4R1gBswybSq/studio_square_thumbnail.jpg?sqp=CP__stcG-oaymwEICNAFENAFSFqi85f_AwYImOKvqwY=&rs=AOn4CLBfFV8lHv36OBJ0XvOQfb3c46k53A",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "93660941816522752",
+            "url": "rsshub://youtube/playlist/PLjzImVTiIJZn_esvTZ7KH5RCngxPOc7-i",
+            "title": "付鹏说 by Since1982 - YouTube",
+            "description": "付鹏说 by Since1982 - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/playlist?list=PLjzImVTiIJZn_esvTZ7KH5RCngxPOc7-i",
+            "image": "https://i.ytimg.com/vi/m7tfUrsJsrw/hqdefault.jpg?sqp=-oaymwExCNACELwBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYYyBjKGMwDw==&rs=AOn4CLAzP1etQerVVHfma9Gn-2IH3klTkA",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 315532800898 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:65:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:90:13)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.5_@vitest+coverage-v8@5.0.5_jsd_ad4bc666725d6867fe9f383e4cd11b72/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      },
+      "/youtube/shows/:username": {
+        "path": "/shows/:username",
+        "name": "Shows",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/youtube/shows/@LinusTechTips",
+        "parameters": {
+          "username": "YouTube handle or channel id"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/:username/shows",
+              "www.youtube.com/channel/:username/shows"
+            ],
+            "target": "/shows/:username"
+          }
+        ],
+        "location": "shows.ts",
+        "addedAt": "2026-09-29T14:45:58.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/youtube/user/:username/:routeParams?": {
+        "path": "/user/:username/:routeParams?",
+        "name": "Channel with user handle",
+        "maintainers": [
+          "DIYgod",
+          "pseudoyu"
+        ],
+        "example": "/youtube/user/@JFlaMusic",
+        "parameters": {
+          "username": "YouTuber handle with @",
+          "routeParams": "Extra parameters, see the table below"
+        },
+        "description": "::: tip Parameter\n\n| Name         | Description                                                                        | Default |\n| ------------ | ---------------------------------------------------------------------------------- | ------- |\n| embed        | Whether to embed the video, fill in any value to disable embedding                 | embed   |\n| filterShorts | Whether to filter out shorts from the feed, fill in any falsy value to show shorts | true    |\n\n:::",
+        "categories": [
+          "social-media",
+          "popular"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "YOUTUBE_KEY",
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.youtube.com/user/:username",
+              "www.youtube.com/:username",
+              "www.youtube.com/:username/videos"
+            ],
+            "target": "/user/:username"
+          }
+        ],
+        "view": 3,
+        "location": "user.ts",
+        "addedAt": "2018-12-26T10:35:10.000Z",
+        "heat": 474760,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "60991924147702784",
+            "url": "rsshub://youtube/user/@AndrejKarpathy",
+            "title": "Andrej Karpathy - YouTube",
+            "description": "Andrej Karpathy - YouTube - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCXUPKJO5MZQN11PqgIvyuvQ",
+            "image": "https://yt3.googleusercontent.com/ytc/AIdro_nDvyq2NoPL626bk1IbxQ94SfQsD-B0qgZchghtQNkLWoEz=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "57461667496141824",
+            "url": "rsshub://youtube/user/%40anthropic-ai",
+            "title": "Anthropic - YouTube",
+            "description": "We’re an AI safety and research company. Talk to our AI assistant Claude on claude.com. Download Claude on desktop, iOS, or Android. We believe AI will have ... - Powered by RSSHub",
+            "siteUrl": "https://www.youtube.com/channel/UCrDwWp7EBBv4NwvScIpBDOA",
+            "image": "https://yt3.googleusercontent.com/ux-GXUpB4PkI-qXVOpj9gGEiCkytT0Q78ka4srlxOm_Y3m1gEh5qy8Vu6vTjGSDztMT0NybtC7I=s900-c-k-c0x00ffffff-no-rj",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
       }
     }
   },
