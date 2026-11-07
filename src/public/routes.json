@@ -7832,6 +7832,44 @@
       }
     }
   },
+  "the-decoder": {
+    "name": "The Decoder",
+    "url": "the-decoder.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/the-decoder/news": {
+        "path": "/news",
+        "name": "News",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/the-decoder/news",
+        "description": "Full English news and analysis from the official WordPress API, including images and videos. The official RSS feed only contains excerpts. Fetches the latest 30 articles by default; use the common `limit` parameter for up to 100 articles.",
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "the-decoder.com/",
+              "the-decoder.com/artificial-intelligence-news/"
+            ]
+          }
+        ],
+        "location": "news.ts",
+        "addedAt": "2026-11-07T02:32:05.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "新闻",
+          "description": "官方 RSS 只提供摘要。本路由通过官方 WordPress API 获取英文新闻与分析全文，保留正文中的图片和视频。默认获取最新 30 篇，可通过通用参数 `limit` 调整，最多 100 篇。"
+        }
+      }
+    }
+  },
   "trendingpapers": {
     "name": "Trending Papers",
     "url": "trendingpapers.com",
@@ -26418,7 +26456,7 @@
         "path": "/illust/:type",
         "name": "Illust",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skebetter/illust/hot",
         "parameters": {
@@ -26505,7 +26543,7 @@
         "path": "/:type",
         "name": "Hot",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skebetter/hot",
         "parameters": {
@@ -26592,7 +26630,7 @@
         "path": "/manga/:order",
         "name": "Manga",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skebetter/manga/1",
         "parameters": {
@@ -33631,7 +33669,7 @@
         "name": "User timeline",
         "maintainers": [
           "siygle",
-          "SnowAgar25",
+          "Tsuyumi25",
           "HanaokaYuzu"
         ],
         "example": "/misskey/users/notes/support@misskey.io",
@@ -34869,7 +34907,7 @@
         "path": "/:category",
         "name": "Works and Creators",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skeb/new_art_works",
         "parameters": {
@@ -34984,7 +35022,7 @@
         "path": "/search/:keyword",
         "name": "Search Results",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skeb/search/初音ミク",
         "parameters": {
@@ -35015,7 +35053,7 @@
         "path": "/works/:username",
         "name": "Creator Works",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skeb/works/@brm2_1925",
         "parameters": {
@@ -35071,7 +35109,7 @@
         "path": "/following_creators/:username",
         "name": "Following Creators",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skeb/following_creators/@brm2_1925",
         "parameters": {
@@ -35114,7 +35152,7 @@
         "path": "/following_works/:username",
         "name": "Following Works",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skeb/following_works/@brm2_1925",
         "parameters": {
@@ -35157,7 +35195,7 @@
         "path": "/friend_works/:username",
         "name": "Friend Works",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/skeb/friend_works/@brm2_1925",
         "parameters": {
@@ -136688,7 +136726,7 @@
         "path": "/:lang/:category?",
         "name": "Category",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/pixivision/zh-tw",
         "parameters": {
@@ -191302,7 +191340,7 @@
         "path": "/category/:keyword",
         "name": "Category",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi/category/nipple-lesbian",
         "parameters": {
@@ -191366,7 +191404,7 @@
         "path": "/",
         "name": "最新記事",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi",
         "categories": [
@@ -191444,7 +191482,7 @@
         "path": "/:keyword",
         "name": "Navigation",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi",
         "parameters": {
@@ -191500,7 +191538,7 @@
         "path": "/nipple-video-category/:keyword",
         "name": "動画カテゴリー",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi/nipple-video-category/cat-nipple-video-god",
         "parameters": {
@@ -191564,7 +191602,7 @@
         "path": "/nipple-video-maker/:keyword",
         "name": "AVメーカー",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi/nipple-video-maker/nipple-video-maker-nh",
         "parameters": {
@@ -191616,7 +191654,7 @@
         "path": "/search/:keyword",
         "name": "Search",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi/search/ギャップ",
         "parameters": {
@@ -191672,7 +191710,7 @@
         "path": "/tag/:keyword",
         "name": "Tag",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/chikubi/tag/ドリームチケット",
         "parameters": {
@@ -235252,7 +235290,7 @@
         "path": "/novel/series/:id",
         "name": "Novel Series",
         "maintainers": [
-          "SnowAgar25",
+          "Tsuyumi25",
           "keocheung"
         ],
         "example": "/pixiv/novel/series/11586857",
@@ -235324,7 +235362,7 @@
         "name": "User Novels",
         "maintainers": [
           "TonyRL",
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/pixiv/user/novels/27104704",
         "parameters": {
@@ -235699,7 +235737,7 @@
         "name": "なろう小説 API の更新履歴",
         "url": "dev.syosetu.com",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/syosetu/dev",
         "categories": [
@@ -235735,7 +235773,7 @@
         "name": "Novel Updates",
         "maintainers": [
           "eternasuno",
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/syosetu/n9292ii",
         "parameters": {
@@ -235783,7 +235821,7 @@
         "name": "R18 Rankings",
         "url": "syosetu.com/site/group",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/syosetu/rankingr18/noc/daily_total?limit=50",
         "parameters": {
@@ -236109,7 +236147,7 @@
         "path": "/search/:sub/:query",
         "name": "Search",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/syosetu/search/noc/word=ハーレム&notword=&type=r&mintime=&maxtime=&minlen=30000&maxlen=&min_globalpoint=&max_globalpoint=&minlastup=&maxlastup=&minfirstup=&maxfirstup=&isgl=1&notbl=1&order=new?limit=5",
         "parameters": {
@@ -236185,7 +236223,7 @@
         "name": "Rankings",
         "url": "yomou.syosetu.com/rank/top",
         "maintainers": [
-          "SnowAgar25"
+          "Tsuyumi25"
         ],
         "example": "/syosetu/ranking/list/daily_total?limit=50",
         "parameters": {
