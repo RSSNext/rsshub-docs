@@ -150219,17 +150219,21 @@
     "categories": [
       "journal"
     ],
-    "heat": 92,
+    "heat": 0,
     "routes": {
-      "/sigsac/ccs": {
-        "path": "/ccs",
+      "/sigsac/ccs/:year?": {
+        "path": "/ccs/:year?",
         "name": "The ACM Conference on Computer and Communications Security",
         "url": "sigsac.org/ccs.html",
         "maintainers": [
-          "ZeddYu"
+          "ZeddYu",
+          "yuguorui"
         ],
         "example": "/sigsac/ccs",
-        "description": "Return results from 2020",
+        "parameters": {
+          "year": "4-digit year, for example `2026`. Without it, all available years from 2020 through the current year + 1 are returned."
+        },
+        "description": "Return accepted papers from 2020 through the current year + 1. Specify a year in the path to return a single year.",
         "categories": [
           "journal"
         ],
@@ -150243,24 +150247,8 @@
         ],
         "location": "ccs.ts",
         "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 92,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "67195037686410240",
-            "url": "rsshub://sigsac/ccs",
-            "title": "ACM CCS",
-            "description": "The ACM Conference on Computer and Communications Security (CCS) Accepted Papers - Powered by RSSHub",
-            "siteUrl": "https://www.sigsac.org/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
