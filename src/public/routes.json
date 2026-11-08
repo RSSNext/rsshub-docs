@@ -24784,71 +24784,6 @@
       }
     }
   },
-  "mymusicsheet": {
-    "name": "mymusic5 (MyMusicSheet)",
-    "url": "mymusicfive.com",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 1,
-    "routes": {
-      "/mymusicsheet/user/sheets/:username/:iso?/:freeOnly?": {
-        "path": "/user/sheets/:username/:iso?/:freeOnly?",
-        "name": "User Sheets",
-        "maintainers": [
-          "Freddd13"
-        ],
-        "example": "/mymusicsheet/user/sheets/HalcyonMusic/USD",
-        "parameters": {
-          "username": "Username, can be found in the URL",
-          "iso": "ISO 4217 currency code for displaying prices, defaults to `USD`",
-          "freeOnly": "Only return free scores, any value to enable"
-        },
-        "description": "Please refer to [Wikipedia](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) for ISO 4217.",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "mymusicfive.com/:username/*",
-              "mymusicfive.com/:username"
-            ],
-            "target": "/user/sheets/:username"
-          }
-        ],
-        "location": "usersheets.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "1197719687631077376",
-            "url": "rsshub://mymusicsheet/user/sheets/HalcyonMusic/USD",
-            "title": "HalcyonMusic (ハルシオン) Official",
-            "description": "Official sheet music by HalcyonMusic (ハルシオン). Purchase Piano,61-Key Piano sheet music from HalcyonMusic (ハルシオン). 279 sheet music, I beg you, Fu Re N Do Shi Ta i, MyGO!!!!! and many others are on sale. - Powered by RSSHub",
-            "siteUrl": "https://www.mymusicfive.com/HalcyonMusic?viewType=sheet&orderBy=createdAt",
-            "image": "https://cdn.mymusic5.com/variants/4765d3e7aa6c361bbe6c0c83341792de/profile64.webp",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "nanhua": {
     "name": "南华期货",
     "url": "mall.nanhua.net",
@@ -30948,74 +30883,6 @@
       }
     }
   },
-  "fanbox": {
-    "name": "fanbox",
-    "url": "www.fanbox.cc",
-    "categories": [
-      "social-media"
-    ],
-    "heat": 39,
-    "routes": {
-      "/fanbox/:creator": {
-        "path": "/:creator",
-        "name": "Creator",
-        "maintainers": [
-          "KarasuShin",
-          "pseudoyu"
-        ],
-        "example": "/fanbox/official",
-        "parameters": {
-          "creator": "fanbox user name"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "FANBOX_SESSION_ID",
-              "description": "Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID",
-              "optional": true
-            }
-          ],
-          "requirePuppeteer": false,
-          "nsfw": true
-        },
-        "location": "index.ts",
-        "addedAt": "2024-05-01T03:15:47.000Z",
-        "heat": 39,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "82082879942475776",
-            "url": "rsshub://fanbox/feather",
-            "title": "Fanbox - Feather",
-            "description": "Fanbox - Feather - Powered by RSSHub",
-            "siteUrl": "https://feather.fanbox.cc/",
-            "image": "https://pixiv.pximg.net/c/160x160_90_a2_g5/fanbox/public/images/user/24059807/icon/aeWv4PxOsfgxu9I1n6OenEl5.jpeg",
-            "errorMessage": "browserType.connect: WebSocket error: wss://cloudflare-patchright.rss3.workers.dev/playwright 428 Precondition Required\n╔════════════════════════════════════════════════════╗\n║ Playwright version mismatch:                       ║\n║   - server version: v1.61                          ║\n║   - client version: v1.62                          ║\n║                                                    ║\n║ If you are using VSCode extension, restart VSCode. ║\n║                                                    ║\n║ If you are connecting to a remote service,         ║\n║ keep your local Playwright version in sync         ║\n║ with the remote service version.                   ║\n║                                                    ║\n║ <3 Playwright Team                                 ║\n╚════════════════════════════════════════════════════╝\nCall log:\n  - <ws connecting> wss://cloudflare-patchright.rss3.workers.dev/playwright\n  - <ws unexpected response> wss://cloudflare-patchright.rss3.workers.dev/playwright 428 Precondition Required\n╔════════════════════════════════════════════════════╗\n║ Playwright version mismatch:                       ║\n║   - server version: v1.61                          ║\n║   - client version: v1.62                          ║\n║                                                    ║\n║ If you are using VSCode extension, restart VSCode. ║\n║                                                    ║\n║ If you are connecting to a remote service,         ║\n║ keep your local Playwright version in sync         ║\n║ with the remote service version.                   ║\n║                                                    ║\n║ <3 Playwright Team                                 ║\n╚════════════════════════════════════════════════════╝\n  - <ws error> wss://cloudflare-patchright.rss3.workers.dev/playwright error WebSocket was closed before the connection was established\n  - <ws connect error> wss://cloudflare-patchright.rss3.workers.dev/playwright WebSocket was closed before the connection was established\n  - <ws disconnected> wss://cloudflare-patchright.rss3.workers.dev/playwright code=1006 reason=\n\n",
-            "errorAt": "2026-08-24T11:41:19.099Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "140056726308777984",
-            "url": "rsshub://fanbox/kuromomo",
-            "title": "Fanbox - 黒猫桃園",
-            "description": "特はない。 - Powered by RSSHub",
-            "siteUrl": "https://kuromomo.fanbox.cc/",
-            "image": "https://pixiv.pximg.net/c/160x160_90_a2_g5/fanbox/public/images/user/3326223/icon/MueHg8Ixy6zLRTamiarKT8xC.jpeg",
-            "errorMessage": "[GET] \"https://api.fanbox.cc/post.listCreator?creatorId=kuromomo&limit=20&withPinned=true\": 403 Forbidden\n",
-            "errorAt": "2026-08-24T04:09:18.826Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "fansly": {
     "name": "Fansly",
     "url": "fansly.com",
@@ -35900,111 +35767,6 @@
         "test": {
           "code": 1,
           "message": "Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:101:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
-        }
-      }
-    }
-  },
-  "zuvio": {
-    "name": "Zuvio",
-    "url": "irs.zuvio.com.tw",
-    "categories": [
-      "bbs"
-    ],
-    "heat": 16,
-    "routes": {
-      "/zuvio/student5/:board?": {
-        "path": "/student5/:board?",
-        "name": "校園話題",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/zuvio/student5/34",
-        "parameters": {
-          "board": "看板 ID，空为全站文章，可在看板 URL 或下方路由找到"
-        },
-        "categories": [
-          "bbs"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "student5.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 15,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "62423784708376576",
-            "url": "rsshub://zuvio/student5",
-            "title": "Zuvio 校園全部話題 - 大學生論壇",
-            "description": "Zuvio 校園話題千種動物頭像交流心得。最萌的匿名論壇，上千種逗趣動物頭像隨你變換，點頭像立即私訊功能，讓你找到共同話題的小夥伴！多人分享配對心得、聊天交友心情在此，快加入17分享！ - Powered by RSSHub",
-            "siteUrl": "https://irs.zuvio.com.tw/student5/chickenM/articles",
-            "image": "https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/chicken/shared/webshare.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "67154120410034176",
-            "url": "rsshub://zuvio/student5/34",
-            "title": "Zuvio 校園攝影話題 - 大學生論壇",
-            "description": "Zuvio 校園話題千種動物頭像交流心得。最萌的匿名論壇，上千種逗趣動物頭像隨你變換，點頭像立即私訊功能，讓你找到共同話題的小夥伴！多人分享配對心得、聊天交友心情在此，快加入17分享！ - Powered by RSSHub",
-            "siteUrl": "https://irs.zuvio.com.tw/student5/chickenM/articles",
-            "image": "https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/chicken/shared/webshare.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:101:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
-        }
-      },
-      "/zuvio/student5/boards": {
-        "path": "/student5/boards",
-        "name": "看板列表",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/zuvio/student5/boards",
-        "parameters": {},
-        "categories": [
-          "bbs"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "boards.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "74265484917714944",
-            "url": "rsshub://zuvio/student5/boards",
-            "title": "Zuvio 校園話題列表 - 大學生論壇",
-            "description": "Zuvio 校園話題，Zuvio 校園話題千種動物頭像交流心得。最萌的匿名論壇，上千種逗趣動物頭像隨你變換，點頭像立即私訊功能，讓你找到共同話題的小夥伴！多人分享配對心得、聊天交友心情在此，快加入17分享！ - Powered by RSSHub",
-            "siteUrl": "https://irs.zuvio.com.tw/student5/chickenM/articles",
-            "image": "https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/chicken/shared/webshare.png",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
         }
       }
     }
@@ -138556,121 +138318,6 @@
       }
     }
   },
-  "psyche": {
-    "name": "Psyche",
-    "url": "psyche.co",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 2,
-    "routes": {
-      "/psyche/topic/:topic": {
-        "path": "/topic/:topic",
-        "name": "Topics",
-        "maintainers": [
-          "emdoe"
-        ],
-        "example": "/psyche/topic/therapeia",
-        "parameters": {
-          "topic": "Topic"
-        },
-        "description": "Supported categories: Therapeia, Eudaimonia, and Poiesis.",
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "psyche.co/therapeia"
-            ],
-            "target": "/topic/therapeia"
-          },
-          {
-            "source": [
-              "psyche.co/eudaimonia"
-            ],
-            "target": "/topic/eudaimonia"
-          },
-          {
-            "source": [
-              "psyche.co/poiesis"
-            ],
-            "target": "/topic/poiesis"
-          }
-        ],
-        "location": "topic.ts",
-        "addedAt": "2024-06-02T05:15:26.000Z",
-        "heat": 2,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "73541535521044480",
-            "url": "rsshub://psyche/topic/therapeia",
-            "title": "Heal | Emotional & Mental Health | Psyche",
-            "description": "Clinical psychologists and other experts offer research and advice on managing emotional and psychological challenges - Powered by RSSHub",
-            "siteUrl": "https://psyche.co/heal",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/psyche/type/:type": {
-        "path": "/type/:type",
-        "name": "Types",
-        "maintainers": [
-          "emdoe"
-        ],
-        "example": "/psyche/type/ideas",
-        "parameters": {
-          "type": "Type"
-        },
-        "description": "Supported types: Ideas, Guides, and Films.",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "psyche.co/ideas"
-            ],
-            "target": "/type/ideas"
-          },
-          {
-            "source": [
-              "psyche.co/guides"
-            ],
-            "target": "/type/guides"
-          },
-          {
-            "source": [
-              "psyche.co/films"
-            ],
-            "target": "/type/films"
-          }
-        ],
-        "location": "type.ts",
-        "addedAt": "2024-06-02T05:15:26.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "publico": {
     "name": "Público",
     "url": "publico.es",
@@ -227526,192 +227173,6 @@
       }
     }
   },
-  "twreporter": {
-    "name": "報導者",
-    "url": "twreporter.org",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 410,
-    "routes": {
-      "/twreporter/category/:category": {
-        "path": "/category/:category",
-        "name": "分類",
-        "url": "twreporter.org/",
-        "maintainers": [
-          "emdoe"
-        ],
-        "example": "/twreporter/category/world",
-        "parameters": {
-          "category": "Category"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "twreporter.org/:category"
-            ]
-          },
-          {
-            "source": [
-              "twreporter.org/categories/world"
-            ],
-            "target": "/category/world"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/humanrights"
-            ],
-            "target": "/category/humanrights"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/politics-and-society"
-            ],
-            "target": "/category/politics_and_society"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/health"
-            ],
-            "target": "/category/health"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/environment"
-            ],
-            "target": "/category/environment"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/econ"
-            ],
-            "target": "/category/econ"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/culture"
-            ],
-            "target": "/category/culture"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/education"
-            ],
-            "target": "/category/education"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/podcast"
-            ],
-            "target": "/category/podcast"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/opinion"
-            ],
-            "target": "/category/opinion"
-          },
-          {
-            "source": [
-              "twreporter.org/categories/photography"
-            ],
-            "target": "/category/photos_section"
-          }
-        ],
-        "location": "category.ts",
-        "addedAt": "2024-03-26T14:33:48.000Z",
-        "heat": 16,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "86341038400596992",
-            "url": "rsshub://twreporter/category/econ",
-            "title": "報導者 | 經濟產業",
-            "description": "報導者 | 經濟產業 - Powered by RSSHub",
-            "siteUrl": "https://www.twreporter.org/categories/econ",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "81748915929398272",
-            "url": "rsshub://twreporter/category/world",
-            "title": "報導者 | 國際兩岸",
-            "description": "報導者 | 國際兩岸 - Powered by RSSHub",
-            "siteUrl": "https://www.twreporter.org/categories/world",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/twreporter/newest": {
-        "path": "/newest",
-        "name": "最新",
-        "url": "twreporter.org/",
-        "maintainers": [
-          "emdoe"
-        ],
-        "example": "/twreporter/newest",
-        "parameters": {},
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "twreporter.org/"
-            ]
-          }
-        ],
-        "location": "newest.ts",
-        "addedAt": "2020-11-01T15:53:24.000Z",
-        "heat": 394,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "41652564174343168",
-            "url": "rsshub://twreporter/newest",
-            "title": "報導者 | 最新",
-            "description": "報導者 | 最新 - Powered by RSSHub",
-            "siteUrl": "https://www.twreporter.org/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "vocus": {
     "name": "方格子",
     "url": "vocus.cc",
@@ -234683,6 +234144,71 @@
       }
     }
   },
+  "mymusicsheet": {
+    "name": "mymusic5 (MyMusicSheet)",
+    "url": "mymusicfive.com",
+    "categories": [
+      "shopping"
+    ],
+    "heat": 1,
+    "routes": {
+      "/mymusicsheet/user/sheets/:username/:iso?/:freeOnly?": {
+        "path": "/user/sheets/:username/:iso?/:freeOnly?",
+        "name": "User Sheets",
+        "maintainers": [
+          "Freddd13"
+        ],
+        "example": "/mymusicsheet/user/sheets/HalcyonMusic/USD",
+        "parameters": {
+          "username": "Username, can be found in the URL",
+          "iso": "ISO 4217 currency code for displaying prices, defaults to `USD`",
+          "freeOnly": "Only return free scores, any value to enable"
+        },
+        "description": "Please refer to [Wikipedia](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) for ISO 4217.",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "mymusicfive.com/:username/*",
+              "mymusicfive.com/:username"
+            ],
+            "target": "/user/sheets/:username"
+          }
+        ],
+        "location": "usersheets.tsx",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 1,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "1197719687631077376",
+            "url": "rsshub://mymusicsheet/user/sheets/HalcyonMusic/USD",
+            "title": "HalcyonMusic (ハルシオン) Official",
+            "description": "Official sheet music by HalcyonMusic (ハルシオン). Purchase Piano,61-Key Piano sheet music from HalcyonMusic (ハルシオン). 279 sheet music, I beg you, Fu Re N Do Shi Ta i, MyGO!!!!! and many others are on sale. - Powered by RSSHub",
+            "siteUrl": "https://www.mymusicfive.com/HalcyonMusic?viewType=sheet&orderBy=createdAt",
+            "image": "https://cdn.mymusic5.com/variants/4765d3e7aa6c361bbe6c0c83341792de/profile64.webp",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "pixiv": {
     "name": "pixiv",
     "url": "www.pixiv.net",
@@ -235269,6 +234795,121 @@
             "ownerUserId": null
           }
         ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
+  "psyche": {
+    "name": "Psyche",
+    "url": "psyche.co",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 2,
+    "routes": {
+      "/psyche/topic/:topic": {
+        "path": "/topic/:topic",
+        "name": "Topics",
+        "maintainers": [
+          "emdoe"
+        ],
+        "example": "/psyche/topic/therapeia",
+        "parameters": {
+          "topic": "Topic"
+        },
+        "description": "Supported categories: Therapeia, Eudaimonia, and Poiesis.",
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "psyche.co/therapeia"
+            ],
+            "target": "/topic/therapeia"
+          },
+          {
+            "source": [
+              "psyche.co/eudaimonia"
+            ],
+            "target": "/topic/eudaimonia"
+          },
+          {
+            "source": [
+              "psyche.co/poiesis"
+            ],
+            "target": "/topic/poiesis"
+          }
+        ],
+        "location": "topic.ts",
+        "addedAt": "2024-06-02T05:15:26.000Z",
+        "heat": 2,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "73541535521044480",
+            "url": "rsshub://psyche/topic/therapeia",
+            "title": "Heal | Emotional & Mental Health | Psyche",
+            "description": "Clinical psychologists and other experts offer research and advice on managing emotional and psychological challenges - Powered by RSSHub",
+            "siteUrl": "https://psyche.co/heal",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/psyche/type/:type": {
+        "path": "/type/:type",
+        "name": "Types",
+        "maintainers": [
+          "emdoe"
+        ],
+        "example": "/psyche/type/ideas",
+        "parameters": {
+          "type": "Type"
+        },
+        "description": "Supported types: Ideas, Guides, and Films.",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "psyche.co/ideas"
+            ],
+            "target": "/type/ideas"
+          },
+          {
+            "source": [
+              "psyche.co/guides"
+            ],
+            "target": "/type/guides"
+          },
+          {
+            "source": [
+              "psyche.co/films"
+            ],
+            "target": "/type/films"
+          }
+        ],
+        "location": "type.ts",
+        "addedAt": "2024-06-02T05:15:26.000Z",
+        "heat": 0,
+        "topFeeds": [],
         "test": {
           "code": 0
         }
@@ -238985,6 +238626,260 @@
       }
     }
   },
+  "twreporter": {
+    "name": "報導者",
+    "url": "twreporter.org",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 410,
+    "routes": {
+      "/twreporter/category/:category": {
+        "path": "/category/:category",
+        "name": "分類",
+        "url": "twreporter.org/",
+        "maintainers": [
+          "emdoe"
+        ],
+        "example": "/twreporter/category/world",
+        "parameters": {
+          "category": "Category"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "twreporter.org/:category"
+            ]
+          },
+          {
+            "source": [
+              "twreporter.org/categories/world"
+            ],
+            "target": "/category/world"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/humanrights"
+            ],
+            "target": "/category/humanrights"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/politics-and-society"
+            ],
+            "target": "/category/politics_and_society"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/health"
+            ],
+            "target": "/category/health"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/environment"
+            ],
+            "target": "/category/environment"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/econ"
+            ],
+            "target": "/category/econ"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/culture"
+            ],
+            "target": "/category/culture"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/education"
+            ],
+            "target": "/category/education"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/podcast"
+            ],
+            "target": "/category/podcast"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/opinion"
+            ],
+            "target": "/category/opinion"
+          },
+          {
+            "source": [
+              "twreporter.org/categories/photography"
+            ],
+            "target": "/category/photos_section"
+          }
+        ],
+        "location": "category.ts",
+        "addedAt": "2024-03-26T14:33:48.000Z",
+        "heat": 16,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "86341038400596992",
+            "url": "rsshub://twreporter/category/econ",
+            "title": "報導者 | 經濟產業",
+            "description": "報導者 | 經濟產業 - Powered by RSSHub",
+            "siteUrl": "https://www.twreporter.org/categories/econ",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "81748915929398272",
+            "url": "rsshub://twreporter/category/world",
+            "title": "報導者 | 國際兩岸",
+            "description": "報導者 | 國際兩岸 - Powered by RSSHub",
+            "siteUrl": "https://www.twreporter.org/categories/world",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/twreporter/newest": {
+        "path": "/newest",
+        "name": "最新",
+        "url": "twreporter.org/",
+        "maintainers": [
+          "emdoe"
+        ],
+        "example": "/twreporter/newest",
+        "parameters": {},
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "twreporter.org/"
+            ]
+          }
+        ],
+        "location": "newest.ts",
+        "addedAt": "2020-11-01T15:53:24.000Z",
+        "heat": 394,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "41652564174343168",
+            "url": "rsshub://twreporter/newest",
+            "title": "報導者 | 最新",
+            "description": "報導者 | 最新 - Powered by RSSHub",
+            "siteUrl": "https://www.twreporter.org/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
+  "fanbox": {
+    "name": "fanbox",
+    "url": "www.fanbox.cc",
+    "categories": [
+      "social-media"
+    ],
+    "heat": 39,
+    "routes": {
+      "/fanbox/:creator": {
+        "path": "/:creator",
+        "name": "Creator",
+        "maintainers": [
+          "KarasuShin",
+          "pseudoyu"
+        ],
+        "example": "/fanbox/official",
+        "parameters": {
+          "creator": "fanbox user name"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FANBOX_SESSION_ID",
+              "description": "Required for private posts. Can be found in browser DevTools -> Application -> Cookies -> https://www.fanbox.cc -> FANBOXSESSID",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "nsfw": true
+        },
+        "location": "index.ts",
+        "addedAt": "2024-05-01T03:15:47.000Z",
+        "heat": 39,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "82082879942475776",
+            "url": "rsshub://fanbox/feather",
+            "title": "Fanbox - Feather",
+            "description": "Fanbox - Feather - Powered by RSSHub",
+            "siteUrl": "https://feather.fanbox.cc/",
+            "image": "https://pixiv.pximg.net/c/160x160_90_a2_g5/fanbox/public/images/user/24059807/icon/aeWv4PxOsfgxu9I1n6OenEl5.jpeg",
+            "errorMessage": "browserType.connect: WebSocket error: wss://cloudflare-patchright.rss3.workers.dev/playwright 428 Precondition Required\n╔════════════════════════════════════════════════════╗\n║ Playwright version mismatch:                       ║\n║   - server version: v1.61                          ║\n║   - client version: v1.62                          ║\n║                                                    ║\n║ If you are using VSCode extension, restart VSCode. ║\n║                                                    ║\n║ If you are connecting to a remote service,         ║\n║ keep your local Playwright version in sync         ║\n║ with the remote service version.                   ║\n║                                                    ║\n║ <3 Playwright Team                                 ║\n╚════════════════════════════════════════════════════╝\nCall log:\n  - <ws connecting> wss://cloudflare-patchright.rss3.workers.dev/playwright\n  - <ws unexpected response> wss://cloudflare-patchright.rss3.workers.dev/playwright 428 Precondition Required\n╔════════════════════════════════════════════════════╗\n║ Playwright version mismatch:                       ║\n║   - server version: v1.61                          ║\n║   - client version: v1.62                          ║\n║                                                    ║\n║ If you are using VSCode extension, restart VSCode. ║\n║                                                    ║\n║ If you are connecting to a remote service,         ║\n║ keep your local Playwright version in sync         ║\n║ with the remote service version.                   ║\n║                                                    ║\n║ <3 Playwright Team                                 ║\n╚════════════════════════════════════════════════════╝\n  - <ws error> wss://cloudflare-patchright.rss3.workers.dev/playwright error WebSocket was closed before the connection was established\n  - <ws connect error> wss://cloudflare-patchright.rss3.workers.dev/playwright WebSocket was closed before the connection was established\n  - <ws disconnected> wss://cloudflare-patchright.rss3.workers.dev/playwright code=1006 reason=\n\n",
+            "errorAt": "2026-08-24T11:41:19.099Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "140056726308777984",
+            "url": "rsshub://fanbox/kuromomo",
+            "title": "Fanbox - 黒猫桃園",
+            "description": "特はない。 - Powered by RSSHub",
+            "siteUrl": "https://kuromomo.fanbox.cc/",
+            "image": "https://pixiv.pximg.net/c/160x160_90_a2_g5/fanbox/public/images/user/3326223/icon/MueHg8Ixy6zLRTamiarKT8xC.jpeg",
+            "errorMessage": "[GET] \"https://api.fanbox.cc/post.listCreator?creatorId=kuromomo&limit=20&withPinned=true\": 403 Forbidden\n",
+            "errorAt": "2026-08-24T04:09:18.826Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "google": {
     "name": "Google",
     "url": "www.google.com",
@@ -239717,6 +239612,111 @@
         ],
         "test": {
           "code": 0
+        }
+      }
+    }
+  },
+  "zuvio": {
+    "name": "Zuvio",
+    "url": "irs.zuvio.com.tw",
+    "categories": [
+      "bbs"
+    ],
+    "heat": 16,
+    "routes": {
+      "/zuvio/student5/boards": {
+        "path": "/student5/boards",
+        "name": "看板列表",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/zuvio/student5/boards",
+        "parameters": {},
+        "categories": [
+          "bbs"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "boards.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 1,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "74265484917714944",
+            "url": "rsshub://zuvio/student5/boards",
+            "title": "Zuvio 校園話題列表 - 大學生論壇",
+            "description": "Zuvio 校園話題，Zuvio 校園話題千種動物頭像交流心得。最萌的匿名論壇，上千種逗趣動物頭像隨你變換，點頭像立即私訊功能，讓你找到共同話題的小夥伴！多人分享配對心得、聊天交友心情在此，快加入17分享！ - Powered by RSSHub",
+            "siteUrl": "https://irs.zuvio.com.tw/student5/chickenM/articles",
+            "image": "https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/chicken/shared/webshare.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/zuvio/student5/:board?": {
+        "path": "/student5/:board?",
+        "name": "校園話題",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/zuvio/student5/34",
+        "parameters": {
+          "board": "看板 ID，空为全站文章，可在看板 URL 或下方路由找到"
+        },
+        "categories": [
+          "bbs"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "student5.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 15,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "62423784708376576",
+            "url": "rsshub://zuvio/student5",
+            "title": "Zuvio 校園全部話題 - 大學生論壇",
+            "description": "Zuvio 校園話題千種動物頭像交流心得。最萌的匿名論壇，上千種逗趣動物頭像隨你變換，點頭像立即私訊功能，讓你找到共同話題的小夥伴！多人分享配對心得、聊天交友心情在此，快加入17分享！ - Powered by RSSHub",
+            "siteUrl": "https://irs.zuvio.com.tw/student5/chickenM/articles",
+            "image": "https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/chicken/shared/webshare.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "67154120410034176",
+            "url": "rsshub://zuvio/student5/34",
+            "title": "Zuvio 校園攝影話題 - 大學生論壇",
+            "description": "Zuvio 校園話題千種動物頭像交流心得。最萌的匿名論壇，上千種逗趣動物頭像隨你變換，點頭像立即私訊功能，讓你找到共同話題的小夥伴！多人分享配對心得、聊天交友心情在此，快加入17分享！ - Powered by RSSHub",
+            "siteUrl": "https://irs.zuvio.com.tw/student5/chickenM/articles",
+            "image": "https://s3.hicloud.net.tw/zuvio.public/public/system/images/irs_v4/chicken/shared/webshare.png",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:101:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
         }
       }
     }
