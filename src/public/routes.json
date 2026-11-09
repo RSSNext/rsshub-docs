@@ -121912,18 +121912,24 @@
     "categories": [
       "journal"
     ],
-    "heat": 46,
+    "heat": 0,
     "routes": {
-      "/ndss-symposium/ndss": {
-        "path": "/ndss",
+      "/ndss-symposium/ndss/:abstract?": {
+        "path": "/ndss/:abstract?",
         "name": "Accepted papers",
         "url": "ndss-symposium.org/",
         "maintainers": [
-          "ZeddYu"
+          "ZeddYu",
+          "yuguorui"
         ],
         "example": "/ndss-symposium/ndss",
-        "parameters": {},
-        "description": "Accepted papers from the latest symposium and workshop pages.",
+        "parameters": {
+          "abstract": {
+            "description": "Set to `1` to fetch abstracts for every accepted paper. The default `0` returns titles and authors only.",
+            "default": "0"
+          }
+        },
+        "description": "Set `abstract` to `1` to include paper abstracts, taken from the detailed program page or, when a paper is missing there, from its own page.",
         "categories": [
           "journal"
         ],
@@ -121944,24 +121950,8 @@
         ],
         "location": "ndss.ts",
         "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 46,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "41467081627747361",
-            "url": "rsshub://ndss-symposium/ndss",
-            "title": "NDSS",
-            "description": "The Network and Distributed System Security (NDSS) Symposium Accpeted Papers - Powered by RSSHub",
-            "siteUrl": "https://www.ndss-symposium.org/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
