@@ -2079,53 +2079,6 @@
       }
     }
   },
-  "bbcnewslabs": {
-    "name": "BBC News Labs",
-    "url": "www.bbc.co.uk/rdnewslabs",
-    "categories": [
-      "programming"
-    ],
-    "heat": 0,
-    "routes": {
-      "/bbcnewslabs/news": {
-        "path": "/news",
-        "name": "News",
-        "url": "www.bbc.co.uk/rdnewslabs/news/",
-        "maintainers": [
-          "elxy"
-        ],
-        "example": "/bbcnewslabs/news",
-        "parameters": {},
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "bbcnewslabs.co.uk/",
-              "www.bbc.co.uk/rdnewslabs/news/"
-            ]
-          }
-        ],
-        "location": "news.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "bestblogs": {
     "name": "bestblogs.dev",
     "url": "www.bestblogs.dev",
