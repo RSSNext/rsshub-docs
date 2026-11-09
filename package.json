@@ -17,7 +17,7 @@
     "oxfmt": "0.75.0",
     "pinyin-pro": "3.29.5",
     "vitepress": "2.0.0-alpha.21",
-    "vue": "3.5.44",
+    "vue": "3.5.45",
     "vue-i18n": "11.4.17"
   },
   "packageManager": "pnpm@12.15.0+sha512.b3951d6d6ff4a9f13dc7cf56cd28d2b8eb37dbcc9c68e52e1e1191873ea9f82a017287ab50baadc5ccc494f036c67c0e47eb13608c2fa36f47711b61ea128e61"
