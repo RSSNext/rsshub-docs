@@ -14,7 +14,7 @@
     "hono": "4.13.16",
     "markdown-it": "15.0.3",
     "markdown-it-container": "4.0.0",
-    "oxfmt": "0.76.0",
+    "oxfmt": "0.77.0",
     "pinyin-pro": "3.29.5",
     "vitepress": "2.0.0-alpha.21",
     "vue": "3.5.45",
