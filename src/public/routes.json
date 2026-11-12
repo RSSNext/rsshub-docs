@@ -89376,6 +89376,43 @@
       }
     }
   },
+  "groq": {
+    "name": "Groq",
+    "url": "groq.com",
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/groq/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/groq/blog",
+        "description": "Full articles from the Groq blog, including news listed on the blog page. Follows the page order and fetches 20 entries by default. Use the common `limit` parameter to adjust the count.",
+        "categories": [
+          "programming"
+        ],
+        "radar": [
+          {
+            "source": [
+              "groq.com/blog"
+            ]
+          }
+        ],
+        "location": "blog.ts",
+        "addedAt": "2026-11-12T03:52:38.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "博客",
+          "description": "获取 Groq 官方博客及该页面所列新闻的英文全文。按页面顺序默认获取 20 篇，可通过通用参数 `limit` 调整。"
+        }
+      }
+    }
+  },
   "gs": {
     "name": "Goldman Sachs",
     "url": "goldmansachs.com",
