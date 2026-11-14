@@ -4696,6 +4696,55 @@
       }
     }
   },
+  "hashnode": {
+    "name": "Hashnode",
+    "url": "hashnode.dev",
+    "categories": [
+      "blog"
+    ],
+    "heat": 0,
+    "routes": {
+      "/hashnode/blog/:username": {
+        "path": "/blog/:username",
+        "name": "用户博客",
+        "url": "hashnode.dev/",
+        "maintainers": [
+          "hnrainll"
+        ],
+        "example": "/hashnode/blog/philnash",
+        "parameters": {
+          "username": "Hashnode 用户名，或 hashnode.dev 前面的博客子域名"
+        },
+        "description": "用户名与博客子域名相同或账号只关联一个博客时，可以直接使用用户名。账号关联多个博客且子域名不匹配时，请使用所需博客的 Hashnode 子域名。",
+        "categories": [
+          "blog"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hashnode.dev/"
+            ]
+          }
+        ],
+        "location": "blog.tsx",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "home-assistant": {
     "name": "Home Assistant",
     "url": "www.home-assistant.io",
@@ -5520,91 +5569,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "link3": {
-    "name": "Link3",
-    "url": "link3.to",
-    "categories": [
-      "other"
-    ],
-    "heat": 0,
-    "routes": {
-      "/link3/events": {
-        "path": "/events",
-        "name": "Events",
-        "url": "link3.to",
-        "maintainers": [
-          "cxheng315"
-        ],
-        "example": "/link3/events",
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "link3.to/events"
-            ],
-            "target": "/events"
-          }
-        ],
-        "location": "events.ts",
-        "addedAt": "2024-08-25T05:36:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/link3/profile/:handle": {
-        "path": "/profile/:handle",
-        "name": "Profile",
-        "url": "link3.to",
-        "maintainers": [
-          "cxheng315"
-        ],
-        "example": "/link3/profile/synfutures_defi",
-        "parameters": {
-          "handle": "Profile handle"
-        },
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "link3.to/:handle"
-            ],
-            "target": "/profile/:handle"
-          }
-        ],
-        "location": "profile.ts",
-        "addedAt": "2024-08-25T05:36:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -8375,6 +8339,46 @@
       }
     }
   },
+  "abskoop": {
+    "name": "A 姐分享",
+    "url": "www.ahhhhfs.com",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 0,
+    "routes": {
+      "/abskoop/": {
+        "path": "/",
+        "name": "存档列表",
+        "url": "ahhhhfs.com/",
+        "maintainers": [
+          "zhenhappy"
+        ],
+        "example": "/abskoop",
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "nsfw": true
+        },
+        "radar": [
+          {
+            "source": [
+              "ahhhhfs.com/"
+            ],
+            "target": ""
+          }
+        ],
+        "location": "index.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "acg17": {
     "name": "ACG17",
     "url": "acg17.com",
@@ -9491,66 +9495,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected NaN to be greater than -432000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:64:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:90:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
-  "bitmovin": {
-    "name": "Bitmovin",
-    "url": "bitmovin.com",
-    "categories": [
-      "programming"
-    ],
-    "heat": 2,
-    "routes": {
-      "/bitmovin/blog": {
-        "path": "/blog",
-        "name": "Blog",
-        "url": "bitmovin.com/blog",
-        "maintainers": [
-          "elxy"
-        ],
-        "example": "/bitmovin/blog",
-        "parameters": {},
-        "categories": [
-          "programming"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "bitmovin.com/blog",
-              "bitmovin.com/"
-            ]
-          }
-        ],
-        "location": "blog.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 2,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "65418280634804224",
-            "url": "rsshub://bitmovin/blog",
-            "title": "Blog - Bitmovin",
-            "description": "Blog - Bitmovin - Powered by RSSHub",
-            "siteUrl": "https://bitmovin.com/blog/",
-            "image": null,
-            "errorMessage": "[GET] \"https://bitmovin.com/wp-json/wp/v2/posts?per_page=100\": 403 Forbidden\n",
-            "errorAt": "2025-04-15T21:50:56.111Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -11448,55 +11392,6 @@
       }
     }
   },
-  "hashnode": {
-    "name": "hashnode",
-    "url": "hashnode.dev",
-    "categories": [
-      "blog"
-    ],
-    "heat": 0,
-    "routes": {
-      "/hashnode/blog/:username": {
-        "path": "/blog/:username",
-        "name": "用户博客",
-        "url": "hashnode.dev/",
-        "maintainers": [
-          "hnrainll"
-        ],
-        "example": "/hashnode/blog/inklings",
-        "parameters": {
-          "username": "博主名称，用户头像 URL 中找到"
-        },
-        "description": "::: tip\nusername 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。\n:::",
-        "categories": [
-          "blog"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "hashnode.dev/"
-            ]
-          }
-        ],
-        "location": "blog.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "hn.plus": {
     "name": "HN+",
     "url": "hn.plus",
@@ -11992,50 +11887,6 @@
         ],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "iheima": {
-    "name": "i黑马网",
-    "url": "www.iheima.com",
-    "description": "",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 18,
-    "routes": {
-      "/iheima/recommend": {
-        "path": "/recommend",
-        "name": "推荐",
-        "url": "www.iheima.com",
-        "maintainers": [
-          "p3psi-boo"
-        ],
-        "example": "/iheima/recommend",
-        "categories": [
-          "new-media"
-        ],
-        "location": "index.ts",
-        "addedAt": "2024-12-11T12:42:13.000Z",
-        "heat": 18,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "89665632473522176",
-            "url": "rsshub://iheima/recommend",
-            "title": "推荐",
-            "description": "推荐 - Powered by RSSHub",
-            "siteUrl": "https://www.iheima.com/",
-            "image": null,
-            "errorMessage": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\nUnexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n",
-            "errorAt": "2026-11-07T10:36:38.864Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -15321,6 +15172,174 @@
       }
     }
   },
+  "thewirehindi": {
+    "name": "The Wire Hindi",
+    "url": "thewirehindi.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/thewirehindi/category/:category": {
+        "path": "/category/:category",
+        "name": "Category",
+        "url": "thewirehindi.com/",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "example": "/thewirehindi/category/bharat",
+        "parameters": {
+          "category": {
+            "description": "Category name",
+            "options": [
+              {
+                "value": "interview",
+                "label": "इंटरव्यू"
+              },
+              {
+                "value": "audio",
+                "label": "ऑडियो"
+              },
+              {
+                "value": "kala-sahitya",
+                "label": "कला-साहित्य"
+              },
+              {
+                "value": "campus",
+                "label": "कैंपस"
+              },
+              {
+                "value": "covid-19",
+                "label": "कोविड-19"
+              },
+              {
+                "value": "jan-ki-baat",
+                "label": "जन की बात"
+              },
+              {
+                "value": "duniya",
+                "label": "दुनिया"
+              },
+              {
+                "value": "north-east",
+                "label": "नॉर्थ ईस्ट"
+              },
+              {
+                "value": "prasangik",
+                "label": "प्रासंगिक"
+              },
+              {
+                "value": "bharat",
+                "label": "भारत"
+              },
+              {
+                "value": "media",
+                "label": "मीडिया"
+              },
+              {
+                "value": "media-bol",
+                "label": "मीडिया बोल"
+              },
+              {
+                "value": "rajneeti",
+                "label": "राजनीति"
+              },
+              {
+                "value": "vichar",
+                "label": "विचार"
+              },
+              {
+                "value": "vigyan",
+                "label": "विज्ञान"
+              },
+              {
+                "value": "vishesh",
+                "label": "विशेष"
+              },
+              {
+                "value": "video",
+                "label": "वीडियो"
+              },
+              {
+                "value": "samaj",
+                "label": "समाज"
+              },
+              {
+                "value": "ham-bhi-bharat",
+                "label": "हम भी भारत"
+              },
+              {
+                "value": "hamare-bare-mein",
+                "label": "हमारे बारे में"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "thewirehindi.com/category/:category"
+            ]
+          }
+        ],
+        "location": "category.ts",
+        "addedAt": "2025-08-07T17:05:31.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      },
+      "/thewirehindi/": {
+        "path": "/",
+        "name": "Latest News",
+        "url": "thewirehindi.com/",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "example": "/thewirehindi",
+        "parameters": {},
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "thewirehindi.com/"
+            ]
+          }
+        ],
+        "location": "index.ts",
+        "addedAt": "2025-08-07T17:05:31.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "thwiki": {
     "name": "THBWiki",
     "url": "thwiki.cc",
@@ -15380,6 +15399,56 @@
         ],
         "test": {
           "code": 0
+        }
+      }
+    }
+  },
+  "towardsdatascience": {
+    "name": "Towards Data Science",
+    "url": "towardsdatascience.com",
+    "categories": [
+      "blog"
+    ],
+    "heat": 19,
+    "routes": {
+      "/towardsdatascience/latest": {
+        "path": "/latest",
+        "name": "Latest articles",
+        "url": "towardsdatascience.com/latest",
+        "maintainers": [
+          "mintyfrankie"
+        ],
+        "example": "/towardsdatascience/latest",
+        "categories": [
+          "blog"
+        ],
+        "radar": [
+          {
+            "source": [
+              "towardsdatascience.com/"
+            ]
+          }
+        ],
+        "location": "latest.ts",
+        "addedAt": "2024-08-20T21:09:30.000Z",
+        "heat": 19,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "74489134815213568",
+            "url": "rsshub://towardsdatascience/latest",
+            "title": "Towards Data Science - Latest",
+            "description": "Latest articles from Towards Data Science - Powered by RSSHub",
+            "siteUrl": "https://towardsdatascience.com/latest",
+            "image": null,
+            "errorMessage": "[GET] \"https://medium.com/towards-data-science/latest?posts=true\": 403 Forbidden\n",
+            "errorAt": "2025-07-11T18:16:34.828Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -17007,6 +17076,66 @@
       }
     }
   },
+  "bitmovin": {
+    "name": "Bitmovin",
+    "url": "bitmovin.com",
+    "categories": [
+      "programming"
+    ],
+    "heat": 2,
+    "routes": {
+      "/bitmovin/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "bitmovin.com/blog",
+        "maintainers": [
+          "elxy"
+        ],
+        "example": "/bitmovin/blog",
+        "parameters": {},
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "bitmovin.com/blog",
+              "bitmovin.com/"
+            ]
+          }
+        ],
+        "location": "blog.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 2,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "65418280634804224",
+            "url": "rsshub://bitmovin/blog",
+            "title": "Blog - Bitmovin",
+            "description": "Blog - Bitmovin - Powered by RSSHub",
+            "siteUrl": "https://bitmovin.com/blog/",
+            "image": null,
+            "errorMessage": "[GET] \"https://bitmovin.com/wp-json/wp/v2/posts?per_page=100\": 403 Forbidden\n",
+            "errorAt": "2025-04-15T21:50:56.111Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "bse": {
     "name": "北京证券交易所",
     "url": "bse.cn",
@@ -17704,8 +17833,7 @@
           "requireConfig": [
             {
               "name": "GELBOORU_API_KEY",
-              "description": "Gelbooru 偶尔会开启 API 认证，需配合 `GELBOORU_USER_ID`，从 `https://gelbooru.com/index.php?page=account&s=options` 获取",
-              "optional": true
+              "description": "Gelbooru 偶尔会开启 API 认证，需配合 `GELBOORU_USER_ID`，从 `https://gelbooru.com/index.php?page=account&s=options` 获取"
             },
             {
               "name": "GELBOORU_USER_ID",
@@ -18843,174 +18971,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 853720711974 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:65:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:90:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:109:17\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
-  "thewirehindi": {
-    "name": "The Wire Hindi",
-    "url": "thewirehindi.com",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 0,
-    "routes": {
-      "/thewirehindi/category/:category": {
-        "path": "/category/:category",
-        "name": "Category",
-        "url": "thewirehindi.com/",
-        "maintainers": [
-          "Rjnishant530"
-        ],
-        "example": "/thewirehindi/category/bharat",
-        "parameters": {
-          "category": {
-            "description": "Category name",
-            "options": [
-              {
-                "value": "interview",
-                "label": "इंटरव्यू"
-              },
-              {
-                "value": "audio",
-                "label": "ऑडियो"
-              },
-              {
-                "value": "kala-sahitya",
-                "label": "कला-साहित्य"
-              },
-              {
-                "value": "campus",
-                "label": "कैंपस"
-              },
-              {
-                "value": "covid-19",
-                "label": "कोविड-19"
-              },
-              {
-                "value": "jan-ki-baat",
-                "label": "जन की बात"
-              },
-              {
-                "value": "duniya",
-                "label": "दुनिया"
-              },
-              {
-                "value": "north-east",
-                "label": "नॉर्थ ईस्ट"
-              },
-              {
-                "value": "prasangik",
-                "label": "प्रासंगिक"
-              },
-              {
-                "value": "bharat",
-                "label": "भारत"
-              },
-              {
-                "value": "media",
-                "label": "मीडिया"
-              },
-              {
-                "value": "media-bol",
-                "label": "मीडिया बोल"
-              },
-              {
-                "value": "rajneeti",
-                "label": "राजनीति"
-              },
-              {
-                "value": "vichar",
-                "label": "विचार"
-              },
-              {
-                "value": "vigyan",
-                "label": "विज्ञान"
-              },
-              {
-                "value": "vishesh",
-                "label": "विशेष"
-              },
-              {
-                "value": "video",
-                "label": "वीडियो"
-              },
-              {
-                "value": "samaj",
-                "label": "समाज"
-              },
-              {
-                "value": "ham-bhi-bharat",
-                "label": "हम भी भारत"
-              },
-              {
-                "value": "hamare-bare-mein",
-                "label": "हमारे बारे में"
-              }
-            ]
-          }
-        },
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "thewirehindi.com/category/:category"
-            ]
-          }
-        ],
-        "location": "category.ts",
-        "addedAt": "2025-08-07T17:05:31.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/thewirehindi/": {
-        "path": "/",
-        "name": "Latest News",
-        "url": "thewirehindi.com/",
-        "maintainers": [
-          "Rjnishant530"
-        ],
-        "example": "/thewirehindi",
-        "parameters": {},
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "thewirehindi.com/"
-            ]
-          }
-        ],
-        "location": "index.ts",
-        "addedAt": "2025-08-07T17:05:31.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -23209,7 +23169,7 @@
         "maintainers": [
           "miles170"
         ],
-        "example": "/jin10/topic/396",
+        "example": "/jin10/topic/397",
         "parameters": {
           "id": "N"
         },
@@ -24241,6 +24201,19 @@
         "categories": [
           "other"
         ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "EMAIL_CONFIG_*",
+              "description": "IMAP account settings, see [Route-specific Configurations](https://docs.rsshub.app/deploy/config#route-specific-configurations)"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "location": "imap.ts",
         "addedAt": "2019-08-23T09:12:25.000Z",
         "heat": 0,
@@ -39180,65 +39153,6 @@
       }
     }
   },
-  "4ksj": {
-    "name": "4k 世界",
-    "url": "4ksj.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 330,
-    "routes": {
-      "/4ksj/:id?": {
-        "path": "/:id?",
-        "name": "分类",
-        "url": "4ksj.com",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/4ksj/4k-uhd-1",
-        "parameters": {
-          "id": "分类 id，默认为最新4K电影"
-        },
-        "description": "::: tip\n若订阅 [最新 4K 电影](https://www.4ksj.com/4k-uhd-1.html)，网址为 `https://www.4ksj.com/4k-uhd-1.html`。截取 `https://www.4ksj.com/` 到末尾 `.html` 的部分 `4k-uhd-1` 作为参数，此时路由为 [`/4ksj/4k-uhd-1`](https://rsshub.app/4ksj/4k-uhd-1)。\n\n若订阅子分类 [Dolby Vision 动作 4K 电影](https://www.4ksj.com/4k-uhd-s7-display-3-dytypes-1-1.html)，网址为 `https://www.4ksj.com/4k-uhd-s7-display-3-dytypes-1-1.html`。截取 `https://www.4ksj.com/forum-` 到末尾 `.html` 的部分 `4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1` 作为参数，此时路由为 [`/4ksj/4k-uhd-s7-display-3-dytypes-1-1`](https://rsshub.app/4ksj/4k-uhd-s7-display-3-dytypes-1-1)。\n:::",
-        "categories": [
-          "multimedia"
-        ],
-        "location": "forum.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 330,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "61772657634165760",
-            "url": "rsshub://4ksj/4k-uhd-1",
-            "title": "4k世界 - 不限",
-            "description": ",4K世界 - Powered by RSSHub",
-            "siteUrl": "https://www.4ksj.com/4k-uhd-1.html",
-            "image": "https://cloud.tencent.com.aliyun.dalvhe.com/template/nex_film_181120/neoconex/logo.png",
-            "errorMessage": "Cannot read properties of undefined (reading 'link')\n",
-            "errorAt": "2025-08-29T19:35:36.310Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "69030207718530048",
-            "url": "rsshub://4ksj",
-            "title": "4k世界 - 不限",
-            "description": ",4K世界 - Powered by RSSHub",
-            "siteUrl": "https://www.4ksj.com/4k-uhd-1.html",
-            "image": "https://cloud.tencent.com.aliyun.dalvhe.com/template/nex_film_181120/neoconex/logo.png",
-            "errorMessage": "Cannot read properties of undefined (reading 'link')\n[GET] \"https://www.4ksj.com/4k-uhd-1.html\": <no response> fetch failed\n",
-            "errorAt": "2025-08-29T18:58:23.874Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "50forum": {
     "name": "经济 50 人论坛",
     "url": "50forum.org.cn",
@@ -40908,90 +40822,6 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
-  "abskoop": {
-    "name": "A 姐分享",
-    "url": "www.ahhhhfs.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 9,
-    "routes": {
-      "/abskoop/nsfw": {
-        "path": "/nsfw",
-        "name": "存档列表 - NSFW",
-        "url": "ahhhhfs.com/",
-        "maintainers": [
-          "zhenhappy"
-        ],
-        "example": "/abskoop/nsfw",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "ahhhhfs.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "location": "nsfw.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 9,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "167549568401875969",
-            "url": "rsshub://abskoop/nsfw",
-            "title": "ahhhhfs-A姐分享NSFW",
-            "description": "A姐分享NSFW，分享各种网络云盘资源、BT种子、磁力链接、高清电影电视剧和羊毛福利，收集各种有趣实用的软件和APP的下载、安装、使用方法，发现一些稀奇古怪的的网站，折腾一些有趣实用的教程，关注谷歌苹果等互联网最新的资讯动态，探索新领域，发现新美好，分享小快乐。 - Powered by RSSHub",
-            "siteUrl": "https://nsfw.ahhhhfs.com/articles-archive",
-            "image": null,
-            "errorMessage": "[GET] \"https://nsfw.abskoop.com/wp-json/wp/v2/posts?per_page=10&_embed\": 530 <none>\n",
-            "errorAt": "2026-03-26T13:46:45.963Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/abskoop/": {
-        "path": "/",
-        "name": "存档列表",
-        "url": "ahhhhfs.com/",
-        "maintainers": [
-          "zhenhappy"
-        ],
-        "example": "/abskoop",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "ahhhhfs.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "location": "index.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
         }
       }
     }
@@ -51986,65 +51816,6 @@
       }
     }
   },
-  "bdys": {
-    "name": "哔嘀影视",
-    "url": "52bdys.com",
-    "description": "::: tip\n哔嘀影视有多个备用域名，路由默认使用域名 `https://bdys01.com`。若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 `https://bde4.icu`，则在所有哔嘀影视路由最后加上 `?domain=bde4.icu` 即可，此时路由为 [`/bdys?domain=bde4.icu`](https://rsshub.app/bdys?domain=bde4.icu)\n:::",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 26,
-    "routes": {
-      "/bdys/:caty?/:type?/:area?/:year?/:order?": {
-        "path": "/:caty?/:type?/:area?/:year?/:order?",
-        "name": "首页",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/bdys",
-        "parameters": {
-          "caty": "影视类型，见下表，默认为 `all` 即不限",
-          "type": "资源分类，见下表，默认为 `all` 即不限",
-          "area": "制片地区，见下表，默认为 `all` 即不限",
-          "year": "上映时间，此处填写年份不小于2000，默认为 `all` 即不限",
-          "order": "影视排序，见下表，默认为更新时间"
-        },
-        "description": "#### 资源分类\n\n| 不限 | 电影 | 电视剧 |\n| ---- | ---- | ------ |\n| all  | 0    | 1      |\n\n#### 影视类型\n\n| 不限 | 动作    | 爱情   | 喜剧 | 科幻   | 恐怖   |\n| ---- | ------- | ------ | ---- | ------ | ------ |\n| all  | dongzuo | aiqing | xiju | kehuan | kongbu |\n\n| 战争      | 武侠  | 魔幻   | 剧情   | 动画    | 惊悚     |\n| --------- | ----- | ------ | ------ | ------- | -------- |\n| zhanzheng | wuxia | mohuan | juqing | donghua | jingsong |\n\n| 3D | 灾难   | 悬疑   | 警匪    | 文艺  | 青春     |\n| -- | ------ | ------ | ------- | ----- | -------- |\n| 3D | zainan | xuanyi | jingfei | wenyi | qingchun |\n\n| 冒险    | 犯罪   | 纪录 | 古装     | 奇幻   | 国语  |\n| ------- | ------ | ---- | -------- | ------ | ----- |\n| maoxian | fanzui | jilu | guzhuang | qihuan | guoyu |\n\n| 综艺   | 历史  | 运动    | 原创压制   |\n| ------ | ----- | ------- | ---------- |\n| zongyi | lishi | yundong | yuanchuang |\n\n| 美剧  | 韩剧  | 国产电视剧 | 日剧 | 英剧   | 德剧 |\n| ----- | ----- | ---------- | ---- | ------ | ---- |\n| meiju | hanju | guoju      | riju | yingju | deju |\n\n| 俄剧 | 巴剧 | 加剧  | 西剧    | 意大利剧 | 泰剧  |\n| ---- | ---- | ----- | ------- | -------- | ----- |\n| eju  | baju | jiaju | spanish | yidaliju | taiju |\n\n| 港台剧    | 法剧 | 澳剧 |\n| --------- | ---- | ---- |\n| gangtaiju | faju | aoju |\n\n#### 制片地区\n\n| 大陆 | 中国香港 | 中国台湾 |\n| ---- | -------- | -------- |\n\n| 美国 | 英国 | 日本 | 韩国 | 法国 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 印度 | 德国 | 西班牙 | 意大利 | 澳大利亚 |\n| ---- | ---- | ------ | ------ | -------- |\n\n| 比利时 | 瑞典 | 荷兰 | 丹麦 | 加拿大 | 俄罗斯 |\n| ------ | ---- | ---- | ---- | ------ | ------ |\n\n#### 影视排序\n\n| 更新时间 | 豆瓣评分 |\n| -------- | -------- |\n| 0        | 1        |",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "index.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 26,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "112474437722406912",
-            "url": "rsshub://bdys",
-            "title": "哔嘀影视",
-            "description": "哔嘀影视 - Powered by RSSHub",
-            "siteUrl": "https://www.bdys01.com/s/all?&order=0",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.bdys01.com/s/all?&order=0\": 401 Unauthorized\n",
-            "errorAt": "2025-02-20T13:50:10.262Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "beijingprice": {
     "name": "北京价格",
     "url": "beijingprice.cn",
@@ -54845,80 +54616,6 @@
         ],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "btzj": {
-    "name": "BT 之家",
-    "url": "btbtt20.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 37,
-    "routes": {
-      "/btzj/:category?": {
-        "path": "/:category?",
-        "name": "分类",
-        "url": "btbtt20.com/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/btzj",
-        "parameters": {
-          "category": "分类，可在对应分类页 URL 中找到，默认为首页"
-        },
-        "description": "::: tip\n分类页中域名末尾到 `.htm` 前的字段即为对应分类，如 [电影](https://www.btbtt20.com/forum-index-fid-951.htm) `https://www.btbtt20.com/forum-index-fid-951.htm` 中域名末尾到 `.htm` 前的字段为 `forum-index-fid-951`，所以路由应为 [`/btzj/forum-index-fid-951`](https://rsshub.app/btzj/forum-index-fid-951)\n\n部分分类页，如 [电影](https://www.btbtt20.com/forum-index-fid-951.htm)、[剧集](https://www.btbtt20.com/forum-index-fid-950.htm) 等，提供了更复杂的分类筛选。你可以将选项选中后，获得结果分类页 URL 中分类参数，构成路由。如选中分类 [高清电影 - 年份：2021 - 地区：欧美](https://www.btbtt20.com/forum-index-fid-1183-typeid1-0-typeid2-738-typeid3-10086-typeid4-0.htm) `https://www.btbtt20.com/forum-index-fid-1183-typeid1-0-typeid2-738-typeid3-10086-typeid4-0.htm` 中域名末尾到 `.htm` 前的字段为 `forum-index-fid-1183-typeid1-0-typeid2-738-typeid3-10086-typeid4-0`，所以路由应为 [`/btzj/forum-index-fid-1183-typeid1-0-typeid2-738-typeid3-10086-typeid4-0`](https://rsshub.app/btzj/forum-index-fid-1183-typeid1-0-typeid2-738-typeid3-10086-typeid4-0)\n:::\n\n基础分类如下：\n\n| 交流                | 电影                | 剧集                | 高清电影             |\n| ------------------- | ------------------- | ------------------- | -------------------- |\n| forum-index-fid-975 | forum-index-fid-951 | forum-index-fid-950 | forum-index-fid-1183 |\n\n| 音乐                | 动漫                | 游戏                | 综艺                 |\n| ------------------- | ------------------- | ------------------- | -------------------- |\n| forum-index-fid-953 | forum-index-fid-981 | forum-index-fid-955 | forum-index-fid-1106 |\n\n| 图书                 | 美图                | 站务              | 科技                |\n| -------------------- | ------------------- | ----------------- | ------------------- |\n| forum-index-fid-1151 | forum-index-fid-957 | forum-index-fid-2 | forum-index-fid-952 |\n\n| 求助                 | 音轨字幕             |\n| -------------------- | -------------------- |\n| forum-index-fid-1187 | forum-index-fid-1191 |\n\n::: tip\nBT 之家的域名会变更，本路由以 `https://www.btbtt20.com` 为默认域名，若该域名无法访问，可以通过在路由后方加上 `?domain=<域名>` 指定路由访问的域名。如指定域名为 `https://www.btbtt15.com`，则在 `/btzj` 后加上 `?domain=btbtt15.com` 即可，此时路由为 [`/btzj?domain=btbtt15.com`](https://rsshub.app/btzj?domain=btbtt15.com)\n\n如果加入了分类参数，直接在分类参数后加入 `?domain=<域名>` 即可。如指定分类 [剧集](https://www.btbtt20.com/forum-index-fid-950.htm) `https://www.btbtt20.com/forum-index-fid-950.htm` 并指定域名为 `https://www.btbtt15.com`，即在 `/btzj/forum-index-fid-950` 后加上 `?domain=btbtt15.com`，此时路由为 [`/btzj/forum-index-fid-950?domain=btbtt15.com`](https://rsshub.app/btzj/forum-index-fid-950?domain=btbtt15.com)\n\n目前，你可以选择的域名有 `btbtt10-20.com` 共 10 个，或 `88btbbt.com`，该站也提供了专用网址查询工具。详见 [此贴](https://www.btbtt20.com/thread-index-fid-2-tid-4550191.htm)\n:::",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "btbtt20.com/"
-            ]
-          }
-        ],
-        "location": "index.tsx",
-        "addedAt": "2020-01-08T09:22:47.000Z",
-        "heat": 37,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "148757739569766405",
-            "url": "rsshub://btzj/base",
-            "title": "Importing",
-            "description": null,
-            "siteUrl": null,
-            "image": null,
-            "errorMessage": "Failed to fetch\n[GET] \"https://www.88btbtt.com\": <no response> fetch failed (certificate has expired)\n",
-            "errorAt": "2025-05-23T18:45:47.942Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "155957211745995779",
-            "url": "rsshub://btzj",
-            "title": "Importing",
-            "description": null,
-            "siteUrl": null,
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-06-12T12:09:22.478Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -59284,66 +58981,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "ccreports": {
-    "name": "消费者报道",
-    "url": "www.ccreports.com.cn",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 305,
-    "routes": {
-      "/ccreports/article": {
-        "path": "/article",
-        "name": "要闻",
-        "url": "www.ccreports.com.cn/",
-        "maintainers": [
-          "EsuRt",
-          "Fatpandac"
-        ],
-        "example": "/ccreports/article",
-        "parameters": {},
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.ccreports.com.cn/"
-            ]
-          }
-        ],
-        "location": "index.ts",
-        "addedAt": "2020-04-13T11:52:18.000Z",
-        "heat": 305,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "55939235463397390",
-            "url": "rsshub://ccreports/article",
-            "title": "消费者报道",
-            "description": "消费者报道 - Powered by RSSHub",
-            "siteUrl": "https://www.ccreports.com.cn/",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.ccreports.com.cn\": 404 Not Found\n",
-            "errorAt": "2026-10-30T19:17:56.732Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -77157,73 +76794,8 @@
     "categories": [
       "traditional-media"
     ],
-    "heat": 83,
+    "heat": 18,
     "routes": {
-      "/eastday/24/:category?": {
-        "path": "/24/:category?",
-        "name": "24 小时热闻",
-        "url": "mini.eastday.com/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/eastday/24",
-        "parameters": {
-          "category": "分类，见下表，默认为社会"
-        },
-        "description": "| 推荐 | 社会 | 娱乐 | 国际 | 军事 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 养生 | 汽车 | 体育 | 财经 | 游戏 |\n| ---- | ---- | ---- | ---- | ---- |\n\n| 科技 | 国内 | 宠物 | 情感 | 人文 | 教育 |\n| ---- | ---- | ---- | ---- | ---- | ---- |",
-        "categories": [
-          "traditional-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "mini.eastday.com/"
-            ],
-            "target": "/24"
-          }
-        ],
-        "location": "24.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 65,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "177651896288583692",
-            "url": "rsshub://eastday/24/%E6%95%99%E8%82%B2",
-            "title": "24小时教育热闻 - 东方资讯",
-            "description": "24小时教育热闻 - 东方资讯 - Powered by RSSHub",
-            "siteUrl": "https://mini.eastday.com/#jiaoyu",
-            "image": null,
-            "errorMessage": "[GET] \"https://mini.eastday.com/ns/api/detail/trust/trust-news-jiaoyu.json\": 514 Frequency Capped\n",
-            "errorAt": "2026-09-01T11:41:57.671Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "59852419254124544",
-            "url": "rsshub://eastday/24",
-            "title": "24小时社会热闻 - 东方资讯",
-            "description": "24小时社会热闻 - 东方资讯 - Powered by RSSHub",
-            "siteUrl": "https://mini.eastday.com/#shehui",
-            "image": null,
-            "errorMessage": "[GET] \"https://mini.eastday.com/ns/api/detail/trust/trust-news-shehui.json\": 514 <none>\n",
-            "errorAt": "2026-09-01T12:23:40.085Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
       "/eastday/portrait": {
         "path": "/portrait",
         "name": "原创",
@@ -84261,52 +83833,6 @@
         },
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "gamegene": {
-    "name": "游戏基因",
-    "url": "gamegene.cn",
-    "categories": [
-      "game"
-    ],
-    "heat": 0,
-    "routes": {
-      "/gamegene/news": {
-        "path": "/news",
-        "name": "资讯",
-        "url": "news.gamegene.cn/news",
-        "maintainers": [
-          "lone1y-51"
-        ],
-        "example": "/gamegene/news",
-        "parameters": {},
-        "categories": [
-          "game"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "news.gamegene.cn/news"
-            ]
-          }
-        ],
-        "location": "news.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -99009,6 +98535,50 @@
       }
     }
   },
+  "iheima": {
+    "name": "i黑马网",
+    "url": "www.iheima.com",
+    "description": "",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 18,
+    "routes": {
+      "/iheima/recommend": {
+        "path": "/recommend",
+        "name": "推荐",
+        "url": "www.iheima.com",
+        "maintainers": [
+          "p3psi-boo"
+        ],
+        "example": "/iheima/recommend",
+        "categories": [
+          "new-media"
+        ],
+        "location": "index.ts",
+        "addedAt": "2024-12-11T12:42:13.000Z",
+        "heat": 18,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "89665632473522176",
+            "url": "rsshub://iheima/recommend",
+            "title": "推荐",
+            "description": "推荐 - Powered by RSSHub",
+            "siteUrl": "https://www.iheima.com/",
+            "image": null,
+            "errorMessage": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\nUnexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n",
+            "errorAt": "2026-11-07T10:36:38.864Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
+        }
+      }
+    }
+  },
   "iiilab": {
     "name": "人人都是自媒体",
     "url": "www.iiilab.com",
@@ -111400,48 +110970,6 @@
       }
     }
   },
-  "lightnovel": {
-    "name": "轻之国度",
-    "url": "lightNovel.us",
-    "categories": [
-      "anime"
-    ],
-    "heat": 0,
-    "routes": {
-      "/lightnovel/:keywords/:security_key?": {
-        "path": "/:keywords/:security_key?",
-        "name": "文章更新阅读",
-        "url": "lightNovel.us/",
-        "maintainers": [
-          "nightmare-mio"
-        ],
-        "example": "/lightnovel/歡迎來到實力至上主義的教室/3cfc2dc63f3575ee42e12823188ad1b5:1709125:0",
-        "parameters": {
-          "keywords": "关键字，可以模糊匹配，但最好精确匹配",
-          "security_key": "cookie,由于文章有防爬，所以必须携带cookie请求。route中的cookie优先级高于环境变量cookie，取token中的security_key值"
-        },
-        "categories": [
-          "anime"
-        ],
-        "radar": [
-          {
-            "source": [
-              "lightNovel.us/"
-            ],
-            "target": "/:keywords/:security_key"
-          }
-        ],
-        "location": "light-novel.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "lineageos": {
     "name": "LineageOS",
     "url": "lineageos.org",
@@ -123546,70 +123074,6 @@
         ],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "newzmz": {
-    "name": "NEW 字幕组",
-    "url": "newzmz.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 6,
-    "routes": {
-      "/newzmz/:id?/:downLinkType?": {
-        "path": "/:id?/:downLinkType?",
-        "name": "指定剧集",
-        "url": "newzmz.com/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/newzmz/qEzRyY3v",
-        "parameters": {
-          "id": "剧集 id，可在剧集下载页 URL 中找到",
-          "downLinkType": "下载链接类型，默认为磁力链"
-        },
-        "description": "::: tip\n[雪国列车 (剧版)](https://nzmz.xyz/details-qEzRyY3v.html) 的下载页 URL 为 `https://v.ys99.xyz/view/qEzRyY3v.html`，即剧集 id 为 `qEzRyY3v`\n:::",
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "newzmz.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "location": "index.ts",
-        "addedAt": "2021-01-12T02:05:33.000Z",
-        "heat": 6,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "133788689281561656",
-            "url": "rsshub://newzmz",
-            "title": "Redirecting...",
-            "description": "Redirecting... - Powered by RSSHub",
-            "siteUrl": "https://nzmz.xyz/index.html",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -138089,6 +137553,31 @@
     ],
     "heat": 203,
     "routes": {
+      "/producthunt/feed": {
+        "path": "/feed",
+        "name": "Official Feed",
+        "url": "www.producthunt.com/feed/",
+        "maintainers": [
+          "miaoyafeng",
+          "Fatpandac"
+        ],
+        "example": "/producthunt/feed",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "feed.ts",
+        "addedAt": "2026-11-14T12:04:24.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/producthunt/today": {
         "path": "/today",
         "name": "Top Products Launching Today",
@@ -138098,13 +137587,20 @@
           "Fatpandac"
         ],
         "example": "/producthunt/today",
+        "description": "Top products from the publisher’s Today list. The general Product Hunt feed is also available at `/producthunt/feed`.",
         "categories": [
           "other"
         ],
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "PRODUCTHUNT_ACCESS_TOKEN",
+              "description": "Optional API access token for the featured daily list when the website is unavailable. See [Product Hunt API documentation](https://api.producthunt.com/v2/docs).",
+              "optional": true
+            }
+          ],
           "requirePuppeteer": false,
-          "antiCrawler": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -142527,7 +142023,7 @@
         "maintainers": [
           "nczitzk"
         ],
-        "example": "/right/forum/31",
+        "example": "/right/forum/171",
         "parameters": {
           "id": "板块 id，可在板块页 URL 中找到，默认为新手入门及其它(硬件)"
         },
@@ -144806,14 +144302,14 @@
         "parameters": {
           "journal": "Short name for a journal"
         },
-        "description": "|  Short name |    Full name of the journal    | Route                                                                          |\n| :---------: | :----------------------------: | ------------------------------------------------------------------------------ |\n|   science   |             Science            | [/science/current/science](https://rsshub.app/science/current/science)         |\n|    sciadv   |        Science Advances        | [/science/current/sciadv](https://rsshub.app/science/current/sciadv)           |\n|  sciimmunol |       Science Immunology       | [/science/current/sciimmunol](https://rsshub.app/science/current/sciimmunol)   |\n| scirobotics |        Science Robotics        | [/science/current/scirobotics](https://rsshub.app/science/current/scirobotics) |\n|  signaling  |        Science Signaling       | [/science/current/signaling](https://rsshub.app/science/current/signaling)     |\n|     stm     | Science Translational Medicine | [/science/current/stm](https://rsshub.app/science/current/stm)                 |\n\n- Using route (`/science/current/` + \"short name for a journal\") to get current issue of a journal from AAAS.\n- Leaving it empty (`/science/current`) to get update from Science.",
+        "description": "|  Short name |    Full name of the journal    | Route                                                                          |\n| :---------: | :----------------------------: | ------------------------------------------------------------------------------ |\n|   science   |             Science            | [/science/current/science](https://rsshub.app/science/current/science)         |\n|    sciadv   |        Science Advances        | [/science/current/sciadv](https://rsshub.app/science/current/sciadv)           |\n|  sciimmunol |       Science Immunology       | [/science/current/sciimmunol](https://rsshub.app/science/current/sciimmunol)   |\n| scirobotics |        Science Robotics        | [/science/current/scirobotics](https://rsshub.app/science/current/scirobotics) |\n|  signaling  |        Science Signaling       | [/science/current/signaling](https://rsshub.app/science/current/signaling)     |\n|     stm     | Science Translational Medicine | [/science/current/stm](https://rsshub.app/science/current/stm)                 |\n\n- Using route (`/science/current/` + \"short name for a journal\") to get current issue of a journal from AAAS.\n- Leaving it empty (`/science/current`) to get update from Science.\n- Abstracts are included when available from Crossref.",
         "categories": [
           "journal"
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": true,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": true
@@ -163522,56 +163018,6 @@
       }
     }
   },
-  "towardsdatascience": {
-    "name": "Towards Data Science",
-    "url": "towardsdatascience.com",
-    "categories": [
-      "blog"
-    ],
-    "heat": 19,
-    "routes": {
-      "/towardsdatascience/latest": {
-        "path": "/latest",
-        "name": "Latest articles",
-        "url": "towardsdatascience.com/latest",
-        "maintainers": [
-          "mintyfrankie"
-        ],
-        "example": "/towardsdatascience/latest",
-        "categories": [
-          "blog"
-        ],
-        "radar": [
-          {
-            "source": [
-              "towardsdatascience.com/"
-            ]
-          }
-        ],
-        "location": "latest.ts",
-        "addedAt": "2024-08-20T21:09:30.000Z",
-        "heat": 19,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "74489134815213568",
-            "url": "rsshub://towardsdatascience/latest",
-            "title": "Towards Data Science - Latest",
-            "description": "Latest articles from Towards Data Science - Powered by RSSHub",
-            "siteUrl": "https://towardsdatascience.com/latest",
-            "image": null,
-            "errorMessage": "[GET] \"https://medium.com/towards-data-science/latest?posts=true\": 403 Forbidden\n",
-            "errorAt": "2025-07-11T18:16:34.828Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "tpre": {
     "name": "天津产权交易中心",
     "url": "www.tpre.cn",
@@ -169843,472 +169289,6 @@
         "addedAt": "2024-02-29T17:24:49.000Z",
         "heat": 0,
         "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
-  "wdfxw": {
-    "name": "WDFXW文档分享网",
-    "url": "wdfxw.net",
-    "description": "",
-    "categories": [
-      "reading"
-    ],
-    "heat": 12,
-    "routes": {
-      "/wdfxw/bookfree/:id?": {
-        "path": "/bookfree/:id?",
-        "name": "免费区",
-        "url": "www.wdfxw.net",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/wdfxw/bookfree",
-        "parameters": {
-          "id": {
-            "description": "分类，默认为空，即全部，可在对应分类页 URL 中找到",
-            "options": [
-              {
-                "label": "全部",
-                "value": ""
-              },
-              {
-                "label": "行业标准",
-                "value": "00002"
-              },
-              {
-                "label": "国家标准GB",
-                "value": "00001"
-              },
-              {
-                "label": "国外标准",
-                "value": "00003"
-              },
-              {
-                "label": "监理资料",
-                "value": "00004"
-              },
-              {
-                "label": "施工组织设计",
-                "value": "00005"
-              },
-              {
-                "label": "土木工程毕业设计论文",
-                "value": "00006"
-              },
-              {
-                "label": "机械类毕业设计论文",
-                "value": "00007"
-              },
-              {
-                "label": "小学课件教学资料",
-                "value": "00008"
-              },
-              {
-                "label": "初中课件教学资料",
-                "value": "00009"
-              },
-              {
-                "label": "高中课件教学资料",
-                "value": "00010"
-              },
-              {
-                "label": "工作计划个人总结",
-                "value": "00011"
-              },
-              {
-                "label": "中学小学教案导学案与教学设计",
-                "value": "00012"
-              },
-              {
-                "label": "作文大全",
-                "value": "00013"
-              },
-              {
-                "label": "幼儿教育",
-                "value": "00014"
-              },
-              {
-                "label": "论文",
-                "value": "00015"
-              },
-              {
-                "label": "财务管理",
-                "value": "00016"
-              },
-              {
-                "label": "管理信息化",
-                "value": "00017"
-              },
-              {
-                "label": "行业分类",
-                "value": "00018"
-              },
-              {
-                "label": "合同样本",
-                "value": "00019"
-              },
-              {
-                "label": "品质管理",
-                "value": "00020"
-              },
-              {
-                "label": "企业管理",
-                "value": "00021"
-              },
-              {
-                "label": "人力资源",
-                "value": "00022"
-              },
-              {
-                "label": "生产管理",
-                "value": "00023"
-              },
-              {
-                "label": "市场营销",
-                "value": "00024"
-              },
-              {
-                "label": "制度表格",
-                "value": "00025"
-              },
-              {
-                "label": "行业资料",
-                "value": "00026"
-              },
-              {
-                "label": "国家标准",
-                "value": "00027"
-              },
-              {
-                "label": "软件教程",
-                "value": "00028"
-              },
-              {
-                "label": "标准汇编",
-                "value": "00029"
-              },
-              {
-                "label": "其他",
-                "value": "00030"
-              },
-              {
-                "label": "职业资格考试",
-                "value": "00031"
-              },
-              {
-                "label": "股票证券行业研究报告(研报）",
-                "value": "00032"
-              },
-              {
-                "label": "基金申请",
-                "value": "00033"
-              },
-              {
-                "label": "教师资格证考试资料",
-                "value": "00034"
-              },
-              {
-                "label": "专利说明书",
-                "value": "00035"
-              }
-            ]
-          }
-        },
-        "description": "::: tip\n订阅 [行业标准](https://www.wdfxw.net/bookfree-00002.html)，其源网址为 `https://www.wdfxw.net/bookfree-00002.html`，请参考该 URL 指定部分构成参数，此时路由为 [`/wdfxw/bookfree/00002`](https://rsshub.app/wdfxw/bookfree/00002)。\n:::\n\n<details>\n  <summary>更多分类</summary>\n\n| 分类                                                                      | ID                                               |\n| ------------------------------------------------------------------------- | ------------------------------------------------ |\n| [全部](https://www.wdfxw.net/bookfree.html)                               | [<无>](https://rsshub.app/wdfxw/bookfree)        |\n| [行业标准](https://www.wdfxw.net/bookfree-00002.html)                     | [00002](https://rsshub.app/wdfxw/bookfree/00002) |\n| [国家标准 GB](https://www.wdfxw.net/bookfree-00001.html)                  | [00001](https://rsshub.app/wdfxw/bookfree/00001) |\n| [国外标准](https://www.wdfxw.net/bookfree-00003.html)                     | [00003](https://rsshub.app/wdfxw/bookfree/00003) |\n| [监理资料](https://www.wdfxw.net/bookfree-00004.html)                     | [00004](https://rsshub.app/wdfxw/bookfree/00004) |\n| [施工组织设计](https://www.wdfxw.net/bookfree-00005.html)                 | [00005](https://rsshub.app/wdfxw/bookfree/00005) |\n| [土木工程毕业设计论文](https://www.wdfxw.net/bookfree-00006.html)         | [00006](https://rsshub.app/wdfxw/bookfree/00006) |\n| [机械类毕业设计论文](https://www.wdfxw.net/bookfree-00007.html)           | [00007](https://rsshub.app/wdfxw/bookfree/00007) |\n| [小学课件教学资料](https://www.wdfxw.net/bookfree-00008.html)             | [00008](https://rsshub.app/wdfxw/bookfree/00008) |\n| [初中课件教学资料](https://www.wdfxw.net/bookfree-00009.html)             | [00009](https://rsshub.app/wdfxw/bookfree/00009) |\n| [高中课件教学资料](https://www.wdfxw.net/bookfree-00010.html)             | [00010](https://rsshub.app/wdfxw/bookfree/00010) |\n| [工作计划个人总结](https://www.wdfxw.net/bookfree-00011.html)             | [00011](https://rsshub.app/wdfxw/bookfree/00011) |\n| [中学小学教案导学案与教学设计](https://www.wdfxw.net/bookfree-00012.html) | [00012](https://rsshub.app/wdfxw/bookfree/00012) |\n| [作文大全](https://www.wdfxw.net/bookfree-00013.html)                     | [00013](https://rsshub.app/wdfxw/bookfree/00013) |\n| [幼儿教育](https://www.wdfxw.net/bookfree-00014.html)                     | [00014](https://rsshub.app/wdfxw/bookfree/00014) |\n| [论文](https://www.wdfxw.net/bookfree-00015.html)                         | [00015](https://rsshub.app/wdfxw/bookfree/00015) |\n| [财务管理](https://www.wdfxw.net/bookfree-00016.html)                     | [00016](https://rsshub.app/wdfxw/bookfree/00016) |\n| [管理信息化](https://www.wdfxw.net/bookfree-00017.html)                   | [00017](https://rsshub.app/wdfxw/bookfree/00017) |\n| [行业分类](https://www.wdfxw.net/bookfree-00018.html)                     | [00018](https://rsshub.app/wdfxw/bookfree/00018) |\n| [合同样本](https://www.wdfxw.net/bookfree-00019.html)                     | [00019](https://rsshub.app/wdfxw/bookfree/00019) |\n| [品质管理](https://www.wdfxw.net/bookfree-00020.html)                     | [00020](https://rsshub.app/wdfxw/bookfree/00020) |\n| [企业管理](https://www.wdfxw.net/bookfree-00021.html)                     | [00021](https://rsshub.app/wdfxw/bookfree/00021) |\n| [人力资源](https://www.wdfxw.net/bookfree-00022.html)                     | [00022](https://rsshub.app/wdfxw/bookfree/00022) |\n| [生产管理](https://www.wdfxw.net/bookfree-00023.html)                     | [00023](https://rsshub.app/wdfxw/bookfree/00023) |\n| [市场营销](https://www.wdfxw.net/bookfree-00024.html)                     | [00024](https://rsshub.app/wdfxw/bookfree/00024) |\n| [制度表格](https://www.wdfxw.net/bookfree-00025.html)                     | [00025](https://rsshub.app/wdfxw/bookfree/00025) |\n| [行业资料](https://www.wdfxw.net/bookfree-00026.html)                     | [00026](https://rsshub.app/wdfxw/bookfree/00026) |\n| [国家标准](https://www.wdfxw.net/bookfree-00027.html)                     | [00027](https://rsshub.app/wdfxw/bookfree/00027) |\n| [软件教程](https://www.wdfxw.net/bookfree-00028.html)                     | [00028](https://rsshub.app/wdfxw/bookfree/00028) |\n| [标准汇编](https://www.wdfxw.net/bookfree-00029.html)                     | [00029](https://rsshub.app/wdfxw/bookfree/00029) |\n| [其他](https://www.wdfxw.net/bookfree-00030.html)                         | [00030](https://rsshub.app/wdfxw/bookfree/00030) |\n| [职业资格考试](https://www.wdfxw.net/bookfree-00031.html)                 | [00031](https://rsshub.app/wdfxw/bookfree/00031) |\n| [股票证券行业研究报告 (研报）](https://www.wdfxw.net/bookfree-00032.html) | [00032](https://rsshub.app/wdfxw/bookfree/00032) |\n| [基金申请](https://www.wdfxw.net/bookfree-00033.html)                     | [00033](https://rsshub.app/wdfxw/bookfree/00033) |\n| [教师资格证考试资料](https://www.wdfxw.net/bookfree-00034.html)           | [00034](https://rsshub.app/wdfxw/bookfree/00034) |\n| [专利说明书](https://www.wdfxw.net/bookfree-00035.html)                   | [00035](https://rsshub.app/wdfxw/bookfree/00035) |\n\n</details>",
-        "categories": [
-          "reading"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.wdfxw.net"
-            ],
-            "target": "/bookfree"
-          },
-          {
-            "title": "全部",
-            "source": [
-              "www.wdfxw.net/bookfree.html"
-            ],
-            "target": "/bookfree"
-          },
-          {
-            "title": "行业标准",
-            "source": [
-              "www.wdfxw.net/bookfree-00002.html"
-            ],
-            "target": "/bookfree/00002"
-          },
-          {
-            "title": "国家标准GB",
-            "source": [
-              "www.wdfxw.net/bookfree-00001.html"
-            ],
-            "target": "/bookfree/00001"
-          },
-          {
-            "title": "国外标准",
-            "source": [
-              "www.wdfxw.net/bookfree-00003.html"
-            ],
-            "target": "/bookfree/00003"
-          },
-          {
-            "title": "监理资料",
-            "source": [
-              "www.wdfxw.net/bookfree-00004.html"
-            ],
-            "target": "/bookfree/00004"
-          },
-          {
-            "title": "施工组织设计",
-            "source": [
-              "www.wdfxw.net/bookfree-00005.html"
-            ],
-            "target": "/bookfree/00005"
-          },
-          {
-            "title": "土木工程毕业设计论文",
-            "source": [
-              "www.wdfxw.net/bookfree-00006.html"
-            ],
-            "target": "/bookfree/00006"
-          },
-          {
-            "title": "机械类毕业设计论文",
-            "source": [
-              "www.wdfxw.net/bookfree-00007.html"
-            ],
-            "target": "/bookfree/00007"
-          },
-          {
-            "title": "小学课件教学资料",
-            "source": [
-              "www.wdfxw.net/bookfree-00008.html"
-            ],
-            "target": "/bookfree/00008"
-          },
-          {
-            "title": "初中课件教学资料",
-            "source": [
-              "www.wdfxw.net/bookfree-00009.html"
-            ],
-            "target": "/bookfree/00009"
-          },
-          {
-            "title": "高中课件教学资料",
-            "source": [
-              "www.wdfxw.net/bookfree-00010.html"
-            ],
-            "target": "/bookfree/00010"
-          },
-          {
-            "title": "工作计划个人总结",
-            "source": [
-              "www.wdfxw.net/bookfree-00011.html"
-            ],
-            "target": "/bookfree/00011"
-          },
-          {
-            "title": "中学小学教案导学案与教学设计",
-            "source": [
-              "www.wdfxw.net/bookfree-00012.html"
-            ],
-            "target": "/bookfree/00012"
-          },
-          {
-            "title": "作文大全",
-            "source": [
-              "www.wdfxw.net/bookfree-00013.html"
-            ],
-            "target": "/bookfree/00013"
-          },
-          {
-            "title": "幼儿教育",
-            "source": [
-              "www.wdfxw.net/bookfree-00014.html"
-            ],
-            "target": "/bookfree/00014"
-          },
-          {
-            "title": "论文",
-            "source": [
-              "www.wdfxw.net/bookfree-00015.html"
-            ],
-            "target": "/bookfree/00015"
-          },
-          {
-            "title": "财务管理",
-            "source": [
-              "www.wdfxw.net/bookfree-00016.html"
-            ],
-            "target": "/bookfree/00016"
-          },
-          {
-            "title": "管理信息化",
-            "source": [
-              "www.wdfxw.net/bookfree-00017.html"
-            ],
-            "target": "/bookfree/00017"
-          },
-          {
-            "title": "行业分类",
-            "source": [
-              "www.wdfxw.net/bookfree-00018.html"
-            ],
-            "target": "/bookfree/00018"
-          },
-          {
-            "title": "合同样本",
-            "source": [
-              "www.wdfxw.net/bookfree-00019.html"
-            ],
-            "target": "/bookfree/00019"
-          },
-          {
-            "title": "品质管理",
-            "source": [
-              "www.wdfxw.net/bookfree-00020.html"
-            ],
-            "target": "/bookfree/00020"
-          },
-          {
-            "title": "企业管理",
-            "source": [
-              "www.wdfxw.net/bookfree-00021.html"
-            ],
-            "target": "/bookfree/00021"
-          },
-          {
-            "title": "人力资源",
-            "source": [
-              "www.wdfxw.net/bookfree-00022.html"
-            ],
-            "target": "/bookfree/00022"
-          },
-          {
-            "title": "生产管理",
-            "source": [
-              "www.wdfxw.net/bookfree-00023.html"
-            ],
-            "target": "/bookfree/00023"
-          },
-          {
-            "title": "市场营销",
-            "source": [
-              "www.wdfxw.net/bookfree-00024.html"
-            ],
-            "target": "/bookfree/00024"
-          },
-          {
-            "title": "制度表格",
-            "source": [
-              "www.wdfxw.net/bookfree-00025.html"
-            ],
-            "target": "/bookfree/00025"
-          },
-          {
-            "title": "行业资料",
-            "source": [
-              "www.wdfxw.net/bookfree-00026.html"
-            ],
-            "target": "/bookfree/00026"
-          },
-          {
-            "title": "国家标准",
-            "source": [
-              "www.wdfxw.net/bookfree-00027.html"
-            ],
-            "target": "/bookfree/00027"
-          },
-          {
-            "title": "软件教程",
-            "source": [
-              "www.wdfxw.net/bookfree-00028.html"
-            ],
-            "target": "/bookfree/00028"
-          },
-          {
-            "title": "标准汇编",
-            "source": [
-              "www.wdfxw.net/bookfree-00029.html"
-            ],
-            "target": "/bookfree/00029"
-          },
-          {
-            "title": "其他",
-            "source": [
-              "www.wdfxw.net/bookfree-00030.html"
-            ],
-            "target": "/bookfree/00030"
-          },
-          {
-            "title": "职业资格考试",
-            "source": [
-              "www.wdfxw.net/bookfree-00031.html"
-            ],
-            "target": "/bookfree/00031"
-          },
-          {
-            "title": "股票证券行业研究报告(研报）",
-            "source": [
-              "www.wdfxw.net/bookfree-00032.html"
-            ],
-            "target": "/bookfree/00032"
-          },
-          {
-            "title": "基金申请",
-            "source": [
-              "www.wdfxw.net/bookfree-00033.html"
-            ],
-            "target": "/bookfree/00033"
-          },
-          {
-            "title": "教师资格证考试资料",
-            "source": [
-              "www.wdfxw.net/bookfree-00034.html"
-            ],
-            "target": "/bookfree/00034"
-          },
-          {
-            "title": "专利说明书",
-            "source": [
-              "www.wdfxw.net/bookfree-00035.html"
-            ],
-            "target": "/bookfree/00035"
-          }
-        ],
-        "view": 0,
-        "location": "bookfree.tsx",
-        "addedAt": "2025-07-10T02:22:54.000Z",
-        "heat": 12,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "167817053585897472",
-            "url": "rsshub://wdfxw/bookfree",
-            "title": "滑动验证",
-            "description": "滑动验证 - Powered by RSSHub",
-            "siteUrl": "https://www.wdfxw.net/bookfree.html",
-            "image": "/images/logo_wk.png",
-            "errorMessage": "[GET] \"https://www.wdfxw.net/bookfree.html\": 404 Not Found\n",
-            "errorAt": "2026-09-26T07:45:55.865Z",
-            "ownerUserId": null
-          }
-        ],
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
@@ -183870,185 +182850,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "95mm": {
-    "name": "MM 范",
-    "url": "95mm.org",
-    "categories": [
-      "picture"
-    ],
-    "heat": 179,
-    "routes": {
-      "/95mm/category/:category": {
-        "path": "/category/:category",
-        "name": "集合",
-        "url": "95mm.org/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/95mm/category/1",
-        "parameters": {
-          "category": "集合，见下表"
-        },
-        "description": "| 清纯唯美 | 摄影私房 | 明星写真 | 三次元 | 异域美景 | 性感妖姬 | 游戏主题 | 美女壁纸 |\n| -------- | -------- | -------- | ------ | -------- | -------- | -------- | -------- |\n| 1        | 2        | 4        | 5      | 6        | 7        | 9        | 11       |",
-        "categories": [
-          "picture"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false,
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "95mm.org/"
-            ]
-          }
-        ],
-        "location": "category.ts",
-        "addedAt": "2020-10-05T13:57:09.000Z",
-        "heat": 158,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "154611732399652877",
-            "url": "rsshub://95mm/category/2",
-            "title": "Importing",
-            "description": null,
-            "siteUrl": null,
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\nthis route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-06-08T19:57:28.293Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "154611732399652876",
-            "url": "rsshub://95mm/category/1",
-            "title": "Importing",
-            "description": null,
-            "siteUrl": null,
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-06-08T19:57:27.501Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/95mm/tab/:tab?": {
-        "path": "/tab/:tab?",
-        "name": "分类",
-        "url": "95mm.org/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/95mm/tab/热门",
-        "parameters": {
-          "tab": "分类，见下表，默认为最新"
-        },
-        "description": "| 最新 | 热门 | 校花 | 森系 | 清纯 | 童颜 | 嫩模 | 少女 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |",
-        "categories": [
-          "picture"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false,
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "95mm.org/"
-            ]
-          }
-        ],
-        "location": "tab.ts",
-        "addedAt": "2020-10-05T13:57:09.000Z",
-        "heat": 21,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "154611732399652869",
-            "url": "rsshub://95mm/tab/%E7%83%AD%E9%97%A8",
-            "title": "Importing",
-            "description": null,
-            "siteUrl": null,
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-06-08T19:57:25.619Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "167549568401875968",
-            "url": "rsshub://95mm/tab/%E6%9C%80%E6%96%B0",
-            "title": "Importing",
-            "description": null,
-            "siteUrl": null,
-            "image": null,
-            "errorMessage": "this route is empty, please check the original site or <a href=\"https://github.com/DIYgod/RSSHub/issues/new/choose\">create an issue</a>\n",
-            "errorAt": "2025-07-14T11:50:59.607Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/95mm/tag/:tag": {
-        "path": "/tag/:tag",
-        "name": "标签",
-        "url": "95mm.org/",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/95mm/tag/黑丝",
-        "parameters": {
-          "tag": "标签，可在对应标签页中找到"
-        },
-        "categories": [
-          "picture"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false,
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "95mm.org/"
-            ]
-          }
-        ],
-        "location": "tag.ts",
-        "addedAt": "2020-10-05T13:57:09.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
@@ -197995,158 +196796,6 @@
       }
     }
   },
-  "furstar": {
-    "name": "Furstar",
-    "url": "furstar.jp",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 2,
-    "routes": {
-      "/furstar/artists/:lang?": {
-        "path": "/artists/:lang?",
-        "name": "画师列表",
-        "url": "furstar.jp/",
-        "maintainers": [
-          "NeverBehave"
-        ],
-        "example": "/furstar/artists/cn",
-        "parameters": {
-          "lang": "语言, 留空为jp, 支持cn, en"
-        },
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "furstar.jp/"
-            ],
-            "target": "/artists"
-          }
-        ],
-        "location": "artists.ts",
-        "addedAt": "2020-07-28T17:57:51.000Z",
-        "heat": 2,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "113036045586930688",
-            "url": "rsshub://furstar/artists/cn",
-            "title": "furstar 所有画家",
-            "description": "Furstar 所有画家列表 - Powered by RSSHub",
-            "siteUrl": "https://furstar.jp/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "157430068202511360",
-            "url": "rsshub://furstar/artists",
-            "title": "furstar 所有画家",
-            "description": "Furstar 所有画家列表 - Powered by RSSHub",
-            "siteUrl": "https://furstar.jp/",
-            "image": null,
-            "errorMessage": "Failed to fetch\n",
-            "errorAt": "2026-05-05T01:18:32.796Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/furstar/archive/:lang?": {
-        "path": "/archive/:lang?",
-        "name": "已经出售的角色列表",
-        "maintainers": [
-          "NeverBehave"
-        ],
-        "example": "/furstar/archive/cn",
-        "parameters": {
-          "lang": "语言, 留空为jp, 支持cn, en"
-        },
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "furstar.jp/:lang/archive.php",
-              "furstar.jp/archive.php"
-            ],
-            "target": "/archive/:lang"
-          }
-        ],
-        "location": "archive.ts",
-        "addedAt": "2020-07-28T17:57:51.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/furstar/characters/:lang?": {
-        "path": "/characters/:lang?",
-        "name": "最新售卖角色列表",
-        "maintainers": [
-          "NeverBehave"
-        ],
-        "example": "/furstar/characters/cn",
-        "parameters": {
-          "lang": "语言, 留空为jp, 支持cn, en"
-        },
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "furstar.jp/:lang",
-              "furstar.jp/"
-            ],
-            "target": "/characters/:lang"
-          }
-        ],
-        "location": "index.ts",
-        "addedAt": "2020-07-28T17:57:51.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      }
-    }
-  },
   "gamer": {
     "name": "巴哈姆特電玩資訊站",
     "url": "acg.gamer.com.tw",
@@ -199234,125 +197883,6 @@
         ],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "getitfree": {
-    "name": "正版中国",
-    "url": "getitfree.cn",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 1,
-    "routes": {
-      "/getitfree/category/:id{.+}?": {
-        "path": "/category/:id{.+}?",
-        "name": "分类",
-        "url": "getitfree.cn",
-        "maintainers": [
-          "sanmmm",
-          "nczitzk"
-        ],
-        "example": "/getitfree/category/pc",
-        "parameters": {
-          "id": "分类，见下表，可在对应分类页中找到，默认为所有类别"
-        },
-        "description": "::: tip\n可以叠加使用得到分类结果并集，如 [`/getitfree/category/pc,android`](https://rsshub.app/getitfree/category/pc,android)\n\n亦可与标签组合使用，如 [`/getitfree/category/pc/tag/ai`](https://rsshub.app/getitfree/category/pc/tag/ai)\n:::\n\n| 所有类别 | Android | iOS | Mac | PC | UWP | 公告         | 永久免费 | 限时免费 | 正版折扣 |\n| -------- | ------- | --- | --- | -- | --- | ------------ | -------- | -------- | -------- |\n|          | android | ios | mac | pc | uwp | notification | free     | giveaway | discount |",
-        "categories": [
-          "shopping"
-        ],
-        "radar": [
-          {
-            "source": [
-              "getitfree.cn/category/:id"
-            ],
-            "target": "/category/:id"
-          }
-        ],
-        "location": "index.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 1,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "82378651141339164",
-            "url": "rsshub://getitfree/category/pc",
-            "title": "Getitfree",
-            "description": "正版中国（GetItFree）成立于2015年7月,以提供正版软件限时免费信息为途径,引导用户养成使用正版软件的习惯,以此促进国内版权氛围的改进。目前已经得到上百家软件开发者的支持！ - Powered by RSSHub",
-            "siteUrl": "https://getitfree.cn/category/",
-            "image": "https://getitfree.cn/wp-content/uploads/site_logo.png",
-            "errorMessage": "[GET] \"https://getitfree.cn/wp-json/wp/v2/categories?search=pc\": <no response> fetch failed (Hostname/IP does not match certificate's altnames: Host: getitfree.cn. is not in the cert's altnames: DNS:linhtrucsang.space)\n",
-            "errorAt": "2025-07-27T04:21:48.277Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/getitfree/search/:keyword": {
-        "path": "/search/:keyword",
-        "name": "搜索",
-        "url": "getitfree.cn",
-        "maintainers": [
-          "sanmmm",
-          "nczitzk"
-        ],
-        "example": "/getitfree/search/windows",
-        "parameters": {
-          "keyword": "关键字"
-        },
-        "categories": [
-          "shopping"
-        ],
-        "radar": [
-          {
-            "source": [
-              "getitfree.cn/"
-            ]
-          }
-        ],
-        "location": "search.ts",
-        "addedAt": "2026-07-29T01:25:19.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
-        }
-      },
-      "/getitfree/tag/:id{.+}?": {
-        "path": "/tag/:id{.+}?",
-        "name": "标签",
-        "url": "getitfree.cn",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/getitfree/tag/ai",
-        "parameters": {
-          "id": "标签，见下表，可在对应标签页中找到，默认为所有标签"
-        },
-        "description": "::: tip\n可以叠加使用得到标签结果并集，如 [`/getitfree/tag/ai,office`](https://rsshub.app/getitfree/tag/ai,office)\n:::\n\n| AI | Android | DVD | GIF | iCloud |\n| -- | ------- | --- | --- | ------ |\n\n| ICON | iOS | iPhone | Leawo | Mac |\n| ---- | --- | ------ | ----- | --- |\n\n| Markdown | OCR | Office | Office 办公 | PDF |\n| -------- | --- | ------ | ----------- | --- |\n\n| PDF 转换 | Windows | 下载 | 书签管理 | 健康 |\n| -------- | ------- | ---- | -------- | ---- |\n\n| 全平台 | 办公软件 | 加密保护 | 卸载 / 清理 / 优化 | 卸载清理 |\n| ------ | -------- | -------- | ------------------ | -------- |\n\n| 图像处理 | 图片 / 编辑 / 管理 | 壁纸 | 备份 / 恢复 / 加密 | 备份恢复 |\n| -------- | ------------------ | ---- | ------------------ | -------- |\n\n| 字体 | 学习 | 密码管理 | 导航 | 开始菜单 |\n| ---- | ---- | -------- | ---- | -------- |\n\n| 录屏截图 | 影音 / 刻录 / 转换 | 投屏镜像 | 提醒 | 摄影 |\n| -------- | ------------------ | -------- | ---- | ---- |\n\n| 播放器 | 收藏夹 | 效率工具 | 数据传输 | 数据恢复 |\n| ------ | ------ | -------- | -------- | -------- |\n\n| 数据擦除 | 文件管理 | 文档 / 转换 / 压缩 | 文档扫描 | 日历 |\n| -------- | -------- | ------------------ | -------- | ---- |\n\n| 杀毒防护 | 查重 | 正版特惠 | 水印 | 清理优化 |\n| -------- | ---- | -------- | ---- | -------- |\n\n| 滤镜 | 硬件外设 | 硬盘 / 分区 / 驱动 | 硬盘检测 | 稍后阅读 |\n| ---- | -------- | ------------------ | -------- | -------- |\n\n| 笔记 | 系统工具 | 素材 | 网络 / 安全 / 传输 | 网络安全 |\n| ---- | -------- | ---- | ------------------ | -------- |\n\n| 色彩 | 视频剪辑 | 视频转换 | 记账 | 设计 |\n| ---- | -------- | -------- | ---- | ---- |\n\n| 软件卸载 | 远程控制 | 音乐 | 音频 | 驱动 |\n| -------- | -------- | ---- | ---- | ---- |",
-        "categories": [
-          "shopping"
-        ],
-        "radar": [
-          {
-            "source": [
-              "getitfree.cn/tag/:id"
-            ],
-            "target": "/tag/:id"
-          }
-        ],
-        "location": "tag.ts",
-        "addedAt": "2026-07-29T01:25:19.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:108:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2801:20"
         }
       }
     }
