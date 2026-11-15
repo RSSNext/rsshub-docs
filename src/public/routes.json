@@ -16803,6 +16803,38 @@
       }
     }
   },
+  "zuiyou": {
+    "name": "最右",
+    "url": "www.izuiyou.com",
+    "categories": [
+      "social-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/zuiyou/user/:mid": {
+        "path": "/user/:mid",
+        "name": "用户动态",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/zuiyou/user/298793092",
+        "parameters": {
+          "mid": "用户 ID，即最右分享主页链接中 `mid` 参数的值。"
+        },
+        "description": "订阅用户公开分享主页首屏中的动态，包括文字、图片和视频。",
+        "categories": [
+          "social-media"
+        ],
+        "location": "user.tsx",
+        "addedAt": "2026-10-09T05:00:20.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "zyw": {
     "name": "zyw",
     "url": "hot.zyw.asia",
@@ -19098,6 +19130,133 @@
       }
     }
   },
+  "arcteryx": {
+    "name": "Arcteryx",
+    "url": "arcteryx.com",
+    "categories": [
+      "shopping"
+    ],
+    "heat": 0,
+    "routes": {
+      "/arcteryx/regear/new-arrivals": {
+        "path": "/regear/new-arrivals",
+        "name": "Regear New Arrivals",
+        "url": "www.resale.arcteryx.com/collections/new-arrivals",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/arcteryx/regear/new-arrivals",
+        "parameters": {},
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.resale.arcteryx.com/collections/new-arrivals",
+              "www.resale.arcteryx.com/"
+            ]
+          },
+          {
+            "source": [
+              "regear.arcteryx.com/"
+            ]
+          }
+        ],
+        "location": "regear-new-arrivals.tsx",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/arcteryx/new-arrivals/:country/:gender": {
+        "path": "/new-arrivals/:country/:gender",
+        "name": "New Arrivals",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/arcteryx/new-arrivals/us/mens",
+        "parameters": {
+          "country": "country",
+          "gender": "gender"
+        },
+        "description": "Country\n\n| United States | Canada | United Kingdom |\n| ------------- | ------ | -------------- |\n| us            | ca     | gb             |\n\ngender\n\n| male | female |\n| ---- | ------ |\n| mens | womens |\n\n::: tip\nParameter `country` can be found within the url of `Arcteryx` website.\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "arcteryx.com/:country/en/c/:gender/new-arrivals"
+            ]
+          }
+        ],
+        "location": "new-arrivals.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/arcteryx/outlet/:country/:gender": {
+        "path": "/outlet/:country/:gender",
+        "name": "Outlet",
+        "maintainers": [
+          "IvanWng97"
+        ],
+        "example": "/arcteryx/outlet/us/mens",
+        "parameters": {
+          "country": "country",
+          "gender": "gender"
+        },
+        "description": "Country\n\n| United States | Canada | United Kingdom |\n| ------------- | ------ | -------------- |\n| us            | ca     | gb             |\n\ngender\n\n| male | female |\n| ---- | ------ |\n| mens | womens |\n\n::: tip\nParameter `country` can be found within the url of `Arcteryx` website.\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "outlet.arcteryx.com/:country/en/c/:gender"
+            ]
+          }
+        ],
+        "location": "outlet.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "artstation": {
     "name": "ArtStation",
     "url": "www.artstation.com",
@@ -21333,6 +21492,330 @@
       }
     }
   },
+  "fantia": {
+    "name": "Fantia",
+    "url": "fantia.jp",
+    "categories": [
+      "picture"
+    ],
+    "heat": 291,
+    "routes": {
+      "/fantia/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?": {
+        "path": "/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?",
+        "name": "Search",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/fantia/search/posts/all/daily",
+        "parameters": {
+          "type": {
+            "description": "Type, see the table below, `posts` by default",
+            "options": [
+              {
+                "value": "fanclubs",
+                "label": "クリエイター"
+              },
+              {
+                "value": "posts",
+                "label": "投稿"
+              },
+              {
+                "value": "products",
+                "label": "商品"
+              },
+              {
+                "value": "commissions",
+                "label": "コミッション"
+              }
+            ],
+            "default": "posts"
+          },
+          "caty": {
+            "description": "Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default",
+            "options": [
+              {
+                "value": "all",
+                "label": "すべてのクリエイター"
+              },
+              {
+                "value": "illust",
+                "label": "イラスト"
+              },
+              {
+                "value": "comic",
+                "label": "漫画"
+              },
+              {
+                "value": "cosplay",
+                "label": "コスプレ"
+              },
+              {
+                "value": "youtuber",
+                "label": "YouTuber・配信者"
+              },
+              {
+                "value": "vtuber",
+                "label": "Vtuber"
+              },
+              {
+                "value": "voice",
+                "label": "音声作品・ASMR"
+              },
+              {
+                "value": "voiceactor",
+                "label": "声優・歌い手"
+              },
+              {
+                "value": "idol",
+                "label": "アイドル"
+              },
+              {
+                "value": "anime",
+                "label": "アニメ・映像・写真"
+              },
+              {
+                "value": "3d",
+                "label": "3D"
+              },
+              {
+                "value": "game",
+                "label": "ゲーム制作"
+              },
+              {
+                "value": "music",
+                "label": "音楽"
+              },
+              {
+                "value": "novel",
+                "label": "小説"
+              },
+              {
+                "value": "doll",
+                "label": "ドール"
+              },
+              {
+                "value": "art",
+                "label": "アート・デザイン"
+              },
+              {
+                "value": "program",
+                "label": "プログラム"
+              },
+              {
+                "value": "handmade",
+                "label": "創作・ハンドメイド"
+              },
+              {
+                "value": "history",
+                "label": "歴史・評論・情報"
+              },
+              {
+                "value": "railroad",
+                "label": "鉄道・旅行・ミリタリー"
+              },
+              {
+                "value": "shop",
+                "label": "ショップ"
+              },
+              {
+                "value": "other",
+                "label": "その他"
+              }
+            ],
+            "default": "all"
+          },
+          "period": {
+            "description": "Ranking period, see the table below, empty by default. Rankings cannot be combined with a keyword or a custom search order.",
+            "options": [
+              {
+                "value": "daily",
+                "label": "デイリー"
+              },
+              {
+                "value": "weekly",
+                "label": "ウィークリー"
+              },
+              {
+                "value": "monthly",
+                "label": "マンスリー"
+              },
+              {
+                "value": "all",
+                "label": "全期間"
+              }
+            ],
+            "default": ""
+          },
+          "order": {
+            "description": "Sorting, see the table below, `更新の新しい順` by default",
+            "options": [
+              {
+                "value": "updater",
+                "label": "更新の新しい順"
+              },
+              {
+                "value": "update_old",
+                "label": "更新の古い順"
+              },
+              {
+                "value": "newer",
+                "label": "投稿の新しい順"
+              },
+              {
+                "value": "create_old",
+                "label": "投稿の古い順"
+              },
+              {
+                "value": "popular",
+                "label": "お気に入り数順"
+              }
+            ],
+            "default": "updater"
+          },
+          "rating": {
+            "description": "Rating, see the table below, `すべて` by default",
+            "options": [
+              {
+                "value": "all",
+                "label": "すべて"
+              },
+              {
+                "value": "general",
+                "label": "一般のみ"
+              },
+              {
+                "value": "adult",
+                "label": "R18 のみ"
+              }
+            ],
+            "default": "all"
+          },
+          "keyword": "Keyword, empty by default"
+        },
+        "description": "Type\n\n| クリエイター | 投稿  | 商品     | コミッション |\n| ------------ | ----- | -------- | ------------ |\n| fanclubs     | posts | products | commissions  |\n\nCategory\n\n| 分类                   | 分类名     |\n| ---------------------- | ---------- |\n| イラスト               | illust     |\n| 漫画                   | comic      |\n| コスプレ               | cosplay    |\n| YouTuber・配信者       | youtuber   |\n| Vtuber                 | vtuber     |\n| 音声作品・ASMR         | voice      |\n| 声優・歌い手           | voiceactor |\n| アイドル               | idol       |\n| アニメ・映像・写真     | anime      |\n| 3D                     | 3d         |\n| ゲーム制作             | game       |\n| 音楽                   | music      |\n| 小説                   | novel      |\n| ドール                 | doll       |\n| アート・デザイン       | art        |\n| プログラム             | program    |\n| 創作・ハンドメイド     | handmade   |\n| 歴史・評論・情報       | history    |\n| 鉄道・旅行・ミリタリー | railroad   |\n| ショップ               | shop       |\n| その他                 | other      |\n\nRanking period\n\n| デイリー | ウィークリー | マンスリー | 全期間 |\n| -------- | ------------ | ---------- | ------ |\n| daily    | weekly       | monthly    | all    |\n\nSorting\n\n| 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n| -------------- | ------------ | -------------- | ------------ | -------------- |\n| updater        | update\\_old  | newer          | create\\_old  | popular        |\n\nRating\n\n| すべて | 一般のみ | R18 のみ |\n| ------ | -------- | -------- |\n| all    | general  | adult    |",
+        "categories": [
+          "picture"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FANTIA_COOKIE",
+              "optional": true,
+              "description": "The `cookie` after login can be obtained by viewing the request header in the console, If not filled in will cause some posts that require login to read to get exceptions"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "nsfw": true
+        },
+        "view": 2,
+        "location": "search.ts",
+        "addedAt": "2020-11-29T19:24:47.000Z",
+        "heat": 82,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "73225112084486144",
+            "url": "rsshub://fantia/search/posts/all/daily/updater/all",
+            "title": "Fantia - Search posts",
+            "description": "Fantia - Search posts - Powered by RSSHub",
+            "siteUrl": "https://fantia.jp/ranking?brand_type=0&category=&per_page=30&period=daily&kind=point&rating_type=all&content=post",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "74696531705607168",
+            "url": "rsshub://fantia/search/posts/all/all/updater/all",
+            "title": "Fantia - Search posts",
+            "description": "Fantia - Search posts - Powered by RSSHub",
+            "siteUrl": "https://fantia.jp/ranking?brand_type=0&category=&per_page=30&period=all&kind=point&rating_type=all&content=post",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/fantia/user/:id": {
+        "path": "/user/:id",
+        "name": "User Posts",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/fantia/user/3498",
+        "parameters": {
+          "id": "User id, can be found in user profile URL"
+        },
+        "categories": [
+          "picture"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FANTIA_COOKIE",
+              "optional": true,
+              "description": "The `cookie` after login can be obtained by viewing the request header in the console, If not filled in will cause some posts that require login to read to get exceptions"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "nsfw": true
+        },
+        "radar": [
+          {
+            "source": [
+              "fantia.jp/fanclubs/:id"
+            ]
+          }
+        ],
+        "view": 2,
+        "location": "user.ts",
+        "addedAt": "2020-11-29T19:17:37.000Z",
+        "heat": 209,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "41147805276726313",
+            "url": "rsshub://fantia/user/496365",
+            "title": "Fantia - かほてぃあ (夏帆)",
+            "description": "Fantia - かほてぃあ (夏帆) - Powered by RSSHub",
+            "siteUrl": "https://fantia.jp/fanclubs/496365",
+            "image": null,
+            "errorMessage": "[GET] \"https://fantia.jp/api/v1/fanclubs/496365\": 404 Not Found\n",
+            "errorAt": "2025-04-30T18:31:32.447Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "66192437247858688",
+            "url": "rsshub://fantia/user/404572",
+            "title": "Fantia - ありすほりっく (ありすほりっく)",
+            "description": "🐇 ありすほりっくのFantiaへようこそ 🪄 ありすほりっくは、2026年8月末をもちまして 新作の投稿を無期限でお休みしています これまで公開した作品は、 ファンクラブ内･商品ページから 引き続きお楽しみいただけます🐇🩷 ⟡・········································・⟡ 🎥 作品一覧はこちら ▶︎ https://x.gd/0fI5z ♥️ 有料プラン限定・お得な購入ページはこちら ▶︎ https://x.gd/NWRhy 🎰 お得な限定動画ガチャはこちら ▶︎ https://fantia.jp/products/1033491 ⟡・········································・⟡ ♥️ ありすほりっくについて🪄 🐇 完全コスプレ×シチュエーション作品を中心に、 衣装・セリフ・シナリオ・性癖・プレイまで、 私たちなりの「好き」と「こだわり」を詰め込んだ作品を制作してきました🐇🩷 ありすほりっくとして作ってきた作品を、 これからも楽しんでいただけましたら嬉しいです💕 ⟡・········································・⟡ ☑️ 男優・モデルのプライバシー保護のため、 「作品本編」でも顔にはぼかしを入れています。 ☑️ 予告なく投稿動画・写真等を削除する場合がございます。 あらかじめご了承ください。 ☑️ 当サークルでは、動画・画像・投稿コンテンツを無断転載することを禁止しています。 ⟡・········································・⟡ 新しいお知らせがある際は、 こちらのファンクラブやSNSにてご案内いたします🐇💌 - Powered by RSSHub",
+            "siteUrl": "https://fantia.jp/fanclubs/404572",
+            "image": "https://c.fantia.jp/uploads/fanclub/icon_image/404572/73d6bc55-86d2-4c82-86be-d3132ff1bbb5.jpg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "fediverse": {
     "name": "Fediverse",
     "url": "fediverse.observer",
@@ -23068,6 +23551,194 @@
       }
     }
   },
+  "javtrailers": {
+    "name": "JavTrailers",
+    "url": "javtrailers.com",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 187,
+    "routes": {
+      "/javtrailers/casts/:cast": {
+        "path": "/casts/:cast",
+        "name": "Casts",
+        "url": "javtrailers.com/casts",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/javtrailers/casts/hibiki-otsuki",
+        "parameters": {
+          "cast": "Cast name, can be found in the URL of the cast page"
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "nsfw": true,
+          "requirePuppeteer": false
+        },
+        "radar": [
+          {
+            "source": [
+              "javtrailers.com/casts/:cast"
+            ],
+            "target": "/casts/:cast"
+          }
+        ],
+        "location": "casts.ts",
+        "addedAt": "2024-11-15T10:13:49.000Z",
+        "heat": 99,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "111072758149291008",
+            "url": "rsshub://javtrailers/casts/miu-shiramine",
+            "title": "Watch Miu Shiromine Jav Online | Japanese Adult Video - JavTrailers.com",
+            "description": "Watch Miu Shiromine Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
+            "siteUrl": "https://javtrailers.com/casts/miu-shiramine",
+            "image": "https://pics.dmm.co.jp/mono/actjpgs/siromine_miu.jpg",
+            "errorMessage": "[GET] \"https://javtrailers.com/casts/miu-shiramine\": 403 Forbidden\n",
+            "errorAt": "2026-08-24T21:52:49.598Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "80211295551420416",
+            "url": "rsshub://javtrailers/casts/hibiki-otsuki",
+            "title": "Watch Hibiki Otsuki Jav Online | Japanese Adult Video - JavTrailers.com",
+            "description": "Watch Hibiki Otsuki Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
+            "siteUrl": "https://javtrailers.com/casts/hibiki-otsuki",
+            "image": "https://pics.dmm.co.jp/mono/actjpgs/ootuki_hibiki.jpg",
+            "errorMessage": "[GET] \"https://javtrailers.com/casts/hibiki-otsuki\": 403 Forbidden\nCould not find Chrome (ver. 136.0.7103.49). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /app/node_modules/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\n",
+            "errorAt": "2026-08-23T17:48:13.042Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      },
+      "/javtrailers/categories/:category": {
+        "path": "/categories/:category",
+        "name": "Categories",
+        "url": "javtrailers.com/categories",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/javtrailers/categories/hi-def",
+        "parameters": {
+          "category": "Category name, can be found in the URL of the category page"
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "nsfw": true,
+          "requirePuppeteer": false
+        },
+        "radar": [
+          {
+            "source": [
+              "javtrailers.com/categories/:category"
+            ]
+          }
+        ],
+        "location": "categories.ts",
+        "addedAt": "2024-11-15T10:13:49.000Z",
+        "heat": 53,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "89580112137494528",
+            "url": "rsshub://javtrailers/categories/female-teacher",
+            "title": "Watch Female Teacher Jav Online | Japanese Adult Video - JavTrailers.com",
+            "description": "Watch Female Teacher Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
+            "siteUrl": "https://javtrailers.com/categories/female-teacher",
+            "image": null,
+            "errorMessage": "[GET] \"https://javtrailers.com/categories/female-teacher\": 403 Forbidden\n",
+            "errorAt": "2026-09-01T02:15:38.922Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "89582686639029248",
+            "url": "rsshub://javtrailers/categories/humiliation",
+            "title": "Watch Humiliation Jav Online | Japanese Adult Video - JavTrailers.com",
+            "description": "Watch Humiliation Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
+            "siteUrl": "https://javtrailers.com/categories/humiliation",
+            "image": null,
+            "errorMessage": "[GET] \"https://javtrailers.com/categories/humiliation\": 403 Forbidden\n",
+            "errorAt": "2026-08-23T02:50:48.928Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      },
+      "/javtrailers/studios/:studio": {
+        "path": "/studios/:studio",
+        "name": "Studios",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/javtrailers/studios/s1-no-1-style",
+        "parameters": {
+          "studio": "Studio name, can be found in the URL of the studio page"
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "nsfw": true,
+          "requirePuppeteer": false
+        },
+        "radar": [
+          {
+            "source": [
+              "javtrailers.com/studios/:studio"
+            ],
+            "target": "/studios/:studio"
+          }
+        ],
+        "location": "studios.ts",
+        "addedAt": "2024-11-15T10:13:49.000Z",
+        "heat": 35,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "80227253777350656",
+            "url": "rsshub://javtrailers/studios/s1-no-1-style",
+            "title": "SSNI OFJE Jav Online | Japanese Adult Video - JavTrailers.com",
+            "description": "Watch Jav made by Prestige free, with high definition, we have over 4,000 studios available for free streaming. - Powered by RSSHub",
+            "siteUrl": "https://javtrailers.com/studios/s1-no-1-style",
+            "image": null,
+            "errorMessage": "[GET] \"https://javtrailers.com/studios/s1-no-1-style\": 403 Forbidden\n",
+            "errorAt": "2026-08-23T23:08:07.803Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "176520262640196608",
+            "url": "rsshub://javtrailers/studios/dogma",
+            "title": "Dogma Jav Online | Japanese Adult Video - JavTrailers.com",
+            "description": "Watch Jav made by Prestige free, with high definition, we have over 4,000 studios available for free streaming. - Powered by RSSHub",
+            "siteUrl": "https://javtrailers.com/studios/dogma",
+            "image": null,
+            "errorMessage": "[GET] \"https://javtrailers.com/api/studios/dogma?page=0\": 403 Forbidden\n",
+            "errorAt": "2026-08-31T19:11:32.851Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      }
+    }
+  },
   "jin10": {
     "name": "金十数据",
     "url": "jin10.com",
@@ -24746,6 +25417,66 @@
             "ownerUserId": null
           }
         ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
+  "newmuseum": {
+    "name": "New Museum",
+    "url": "www.newmuseum.org",
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/newmuseum/exhibitions/:state?": {
+        "path": "/exhibitions/:state?",
+        "name": "Exhibitions",
+        "maintainers": [
+          "chazeon"
+        ],
+        "example": "/newmuseum/exhibitions",
+        "parameters": {
+          "state": {
+            "description": "Exhibition status from the exhibition overview",
+            "default": "current",
+            "options": [
+              {
+                "value": "current",
+                "label": "Current exhibitions and long-term commissions"
+              },
+              {
+                "value": "upcoming",
+                "label": "Upcoming exhibitions"
+              },
+              {
+                "value": "past",
+                "label": "Past exhibitions"
+              },
+              {
+                "value": "online",
+                "label": "Online exhibitions"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "travel"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "exhibitions.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
         "test": {
           "code": 0
         }
@@ -30573,6 +31304,245 @@
       }
     }
   },
+  "douyin": {
+    "name": "抖音直播",
+    "url": "douyin.com",
+    "description": "::: warning\n反爬严格，需要启用 Playwright。抖音的视频 CDN 会验证 Referer，意味着许多阅读器都无法直接播放内嵌视频，以下是一些变通解决方案：\n\n1. 启用内嵌视频 (`embed=1`), 参考 [通用参数 -> 多媒体处理](/parameter#多媒体处理) 配置 `multimedia_hotlink_template` **或** `wrap_multimedia_in_iframe`。\n2. 关闭内嵌视频 (`embed=0`)，手动点击 `视频直链` 超链接，一般情况下均可成功播放视频。若仍然出现 HTTP 403，请复制 URL 以后到浏览器打开。\n3. 点击原文链接打开抖音网页版的视频详情页播放视频。\n\n:::\n\n额外参数\n\n| 键      | 含义             | 值                     | 默认值  |\n| ------- | ---------------- | ---------------------- | ------- |\n| `embed` | 是否启用内嵌视频 | `0`/`1`/`true`/`false` | `false` |",
+    "categories": [
+      "social-media",
+      "live"
+    ],
+    "heat": 272,
+    "routes": {
+      "/douyin/hashtag/:cid/:routeParams?": {
+        "path": "/hashtag/:cid/:routeParams?",
+        "name": "标签",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/douyin/hashtag/1592824105719812",
+        "parameters": {
+          "cid": "标签 ID，可在标签页面 URL 中找到",
+          "routeParams": "额外参数，query string 格式，请参阅上面的表格"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "douyin.com/hashtag/:cid"
+            ],
+            "target": "/hashtag/:cid"
+          }
+        ],
+        "location": "hashtag.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      },
+      "/douyin/live/:rid/:showTime?": {
+        "path": "/live/:rid/:showTime?",
+        "name": "直播间开播",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/douyin/live/685317364746",
+        "parameters": {
+          "rid": "直播间 id, 可在主播直播间页 URL 中找到",
+          "showTime": "是否在标题后添加本场首次检测时间，0/1/true/false，默认 false。"
+        },
+        "description": "优先读取公开页面中的直播状态，必要时使用 Playwright 读取页面或直播间接口。showTime 开启时，标题后显示 RSSHub 本场首次检测时间（UTC+8），并非源站实际开播时刻，也不会作为 pubDate。时间按本场真实 room ID 缓存 30 天，重复读取不会延长有效期。内存缓存重启或清除缓存会重置记录，建议使用 Redis 保持记录稳定。",
+        "categories": [
+          "live"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "live.douyin.com/:rid"
+            ]
+          }
+        ],
+        "location": "live.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 57,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "72456550295913472",
+            "url": "rsshub://douyin/live/921169302662",
+            "title": "陈伯(全能王)的抖音直播间 - 抖音直播",
+            "description": "欢迎来到陈伯(全能王)的抖音直播间，陈伯(全能王)与大家一起记录美好生活 - 抖音直播 - Powered by RSSHub",
+            "siteUrl": "https://live.douyin.com/921169302662",
+            "image": "https://p11.douyinpic.com/origin/aweme-avatar/tos-cn-avt-0015_bed947cccd9ad785a0a96dbec1fb2fe3.jpeg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "59212657080258560",
+            "url": "rsshub://douyin/live/685317364746",
+            "title": "JJ斗地主的抖音直播间 - 抖音直播",
+            "description": "欢迎来到JJ斗地主的抖音直播间，JJ斗地主与大家一起记录美好生活 - 抖音直播 - Powered by RSSHub",
+            "siteUrl": "https://live.douyin.com/685317364746",
+            "image": "https://p3.douyinpic.com/origin/aweme-avatar/tos-cn-avt-0015_970a4d312023de54cbac3d0f9e0e77f8.jpeg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/douyin/user/:uid/:routeParams?": {
+        "path": "/user/:uid/:routeParams?",
+        "name": "博主",
+        "maintainers": [
+          "Max-Tortoise",
+          "Rongronggg9"
+        ],
+        "example": "/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao",
+        "parameters": {
+          "uid": "uid，可在用户页面 URL 中找到",
+          "routeParams": "额外参数，query string 格式，请参阅上面的表格"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "douyin.com/user/:uid"
+            ],
+            "target": "/user/:uid"
+          }
+        ],
+        "location": "user.ts",
+        "addedAt": "2018-12-26T10:35:10.000Z",
+        "heat": 215,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "116825524532749312",
+            "url": "rsshub://douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao",
+            "title": "伟布丁生活日记",
+            "description": "伟布丁生活日记 - Powered by RSSHub",
+            "siteUrl": "https://www.douyin.com/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao",
+            "image": "https://p3-pc.douyinpic.com/origin/aweme-avatar/mosaic-legacy_2e9e1000165a072193d95.jpeg",
+            "errorMessage": "Could not find Chrome (ver. 136.0.7103.49). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /app/node_modules/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\nRemote Playwright WebSocket upgrade failed with HTTP 428\n",
+            "errorAt": "2025-02-24T16:02:08.988Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "188221989912814592",
+            "url": "rsshub://douyin/user/MS4wLjABAAAAxaSHyjKQyfWHKjIS1mYbpxxEQZpT8ogl_eyks2M_Twc",
+            "title": "姜胡说",
+            "description": "姜胡说 - Powered by RSSHub",
+            "siteUrl": "https://www.douyin.com/user/MS4wLjABAAAAxaSHyjKQyfWHKjIS1mYbpxxEQZpT8ogl_eyks2M_Twc",
+            "image": "https://p3-pc.douyinpic.com/origin/aweme-avatar/mosaic-legacy_3149e000524a7b8745c42.jpeg",
+            "errorMessage": "Douyin API returned invalid JSON (HTTP 200). Anonymous access may be blocked by the source site.\nCould not find Chrome (ver. 136.0.7103.49). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /app/node_modules/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\n",
+            "errorAt": "2025-11-11T16:10:38.172Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      },
+      "/douyin/collection": {
+        "path": "/collection",
+        "name": "收藏的视频",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/douyin/collection",
+        "description": "订阅 DOUYIN\\_COOKIE 对应账号收藏的视频首屏。收藏夹、音乐、合集和短剧不在此路由范围内。发布时间为视频原始发布时间，收藏时间没有公开提供。",
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "requireConfig": [
+            {
+              "name": "DOUYIN_COOKIE",
+              "description": "对应允许用于订阅的本人账号。"
+            }
+          ]
+        },
+        "location": "collection.ts",
+        "addedAt": "2026-10-09T05:49:12.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/douyin/likes/:uid": {
+        "path": "/likes/:uid",
+        "name": "喜欢的视频",
+        "maintainers": [
+          "DIYgod"
+        ],
+        "example": "/douyin/likes/self",
+        "parameters": {
+          "uid": "用户页面 URL 中的 sec_user_id，或者 self 表示 DOUYIN_COOKIE 对应的登录账号。"
+        },
+        "description": "只读取喜欢列表的首屏。设为私密的列表仅对应账号能够访问。发布时间为视频原始发布时间，点赞时间没有公开提供。",
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requirePuppeteer": true,
+          "antiCrawler": true,
+          "requireConfig": [
+            {
+              "name": "DOUYIN_COOKIE",
+              "optional": true,
+              "description": "订阅自己的喜欢列表时必须配置；其他用户的列表须对当前账号公开。"
+            }
+          ]
+        },
+        "location": "likes.ts",
+        "addedAt": "2026-10-09T05:49:12.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      }
+    }
+  },
   "facebook": {
     "name": "Facebook",
     "url": "www.facebook.com",
@@ -31500,6 +32470,315 @@
         "addedAt": "2026-08-22T04:18:37.000Z",
         "heat": 0,
         "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
+  "hk01": {
+    "name": "香港 01",
+    "url": "hk01.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 1291,
+    "routes": {
+      "/hk01/channel/:id?": {
+        "path": "/channel/:id?",
+        "name": "子栏目",
+        "maintainers": [
+          "hoilc",
+          "Fatpandac",
+          "nczitzk"
+        ],
+        "example": "/hk01/channel/391",
+        "parameters": {
+          "id": "子栏目 id, 可在 URL 中找到"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "hk01.com/channel/:id",
+              "hk01.com/"
+            ]
+          }
+        ],
+        "location": "channel.ts",
+        "addedAt": "2019-10-22T03:28:04.000Z",
+        "heat": 234,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "89497724836871168",
+            "url": "rsshub://hk01/channel/458",
+            "title": "中國觀察 | 香港01",
+            "description": "中國觀察 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/channel/458",
+            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408227633252274176150476.png/UybVDNwHnFf4UdCJXjKTL2mGyQ6f5SUU2cyM39nMjN8",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "69916583666986024",
+            "url": "rsshub://hk01/channel/19",
+            "title": "即時國際 | 香港01",
+            "description": "即時國際 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/channel/19",
+            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408227683839774720096251.png/ScxTeV2WCrObm45OUvrYMlnYDo46wQlqpPf-bKT3_mw",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/hk01/hot": {
+        "path": "/hot",
+        "name": "热门",
+        "url": "hk01.com/hot",
+        "maintainers": [
+          "hoilc",
+          "Fatpandac",
+          "nczitzk"
+        ],
+        "example": "/hk01/hot",
+        "parameters": {},
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hk01.com/hot",
+              "hk01.com/"
+            ]
+          }
+        ],
+        "location": "hot.ts",
+        "addedAt": "2019-10-22T03:28:04.000Z",
+        "heat": 512,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "55218960054033409",
+            "url": "rsshub://hk01/hot",
+            "title": "熱門新聞、全城熱話及社會時事 | 香港01",
+            "description": "熱門新聞、全城熱話及社會時事 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/hot",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/hk01/issue/:id?": {
+        "path": "/issue/:id?",
+        "name": "专题",
+        "maintainers": [
+          "hoilc",
+          "Fatpandac",
+          "nczitzk"
+        ],
+        "example": "/hk01/issue/649",
+        "parameters": {
+          "id": "专题 id, 可在 URL 中找到"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "hk01.com/issue/:id",
+              "hk01.com/"
+            ]
+          }
+        ],
+        "location": "issue.ts",
+        "addedAt": "2019-10-22T03:28:04.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/hk01/latest": {
+        "path": "/latest",
+        "name": "即時",
+        "url": "hk01.com/latest",
+        "maintainers": [
+          "5upernova-heng"
+        ],
+        "example": "/hk01/latest",
+        "parameters": {},
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hk01.com/latest",
+              "hk01.com/"
+            ]
+          }
+        ],
+        "location": "latest.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 384,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "55294680289713152",
+            "url": "rsshub://hk01/latest",
+            "title": "即時 | 香港01",
+            "description": "即時 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/latest",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/hk01/tag/:id?": {
+        "path": "/tag/:id?",
+        "name": "标签",
+        "maintainers": [
+          "hoilc",
+          "Fatpandac",
+          "nczitzk"
+        ],
+        "example": "/hk01/tag/2787",
+        "parameters": {
+          "id": "标签 id, 可在 URL 中找到"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "hk01.com/tag/:id",
+              "hk01.com/"
+            ]
+          }
+        ],
+        "location": "tag.ts",
+        "addedAt": "2019-10-22T03:28:04.000Z",
+        "heat": 11,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "92006333948699648",
+            "url": "rsshub://hk01/tag/13102",
+            "title": "13102 | 香港01",
+            "description": "13102 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/tag/13102",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "87141419213215744",
+            "url": "rsshub://hk01/tag/365",
+            "title": "365 | 香港01",
+            "description": "365 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/tag/365",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/hk01/zone/:id?": {
+        "path": "/zone/:id?",
+        "name": "栏目",
+        "maintainers": [
+          "hoilc",
+          "Fatpandac",
+          "nczitzk"
+        ],
+        "example": "/hk01/zone/11",
+        "parameters": {
+          "id": "栏目 id, 可在 URL 中找到"
+        },
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "hk01.com/zone/:id",
+              "hk01.com/"
+            ]
+          }
+        ],
+        "location": "zone.ts",
+        "addedAt": "2019-10-22T03:28:04.000Z",
+        "heat": 150,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "67391706472795145",
+            "url": "rsshub://hk01/zone/1",
+            "title": "港聞 | 香港01",
+            "description": "港聞 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/zone/1",
+            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408227309540085760319542.jpeg/d8hq2b6WibciRCsMNd7W2yLPmgpIT5f7HaSF0B2khdA",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "67391706472795143",
+            "url": "rsshub://hk01/zone/12",
+            "title": "觀點 | 香港01",
+            "description": "觀點 | 香港01 - Powered by RSSHub",
+            "siteUrl": "https://hk01.com/zone/12",
+            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408228012966809600968521.png/iLSX3aBqMJua0Gc3o1pEMySDayDl34CKLKMCpiyjAqY",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
         "test": {
           "code": 0
         }
@@ -34636,6 +35915,316 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      }
+    }
+  },
+  "showstart": {
+    "name": "秀动网",
+    "url": "www.showstart.com",
+    "categories": [
+      "shopping"
+    ],
+    "heat": 153,
+    "routes": {
+      "/showstart/artist/:id": {
+        "path": "/artist/:id",
+        "name": "按音乐人 - 演出更新",
+        "maintainers": [
+          "lchtao26"
+        ],
+        "example": "/showstart/artist/301783",
+        "parameters": {
+          "id": "音乐人 ID"
+        },
+        "description": "::: tip\n音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.app/showstart/search/artist/ 周杰伦](https://rsshub.app/showstart/search/artist/周杰伦)\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.showstart.com/artist/:id"
+            ]
+          }
+        ],
+        "location": "artist.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 7,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "142941022923232256",
+            "url": "rsshub://showstart/artist/4434",
+            "title": "秀动网 - 邓紫棋",
+            "description": "邓紫棋（G.E.M.），原名邓诗颖，1991年8月16日生于中国上海，4岁移居香港，中国香港创作型女歌手 。 2009年1月，获得叱咤乐坛流行榜“叱咤乐坛生力军女歌手金奖” 。2011年5月，19岁的邓紫棋在香港红馆举行5场的个人演唱会。2012年，获得IPFI香港唱片销量大奖“全年*销量女歌手奖”；创作的专辑《Xposed》获得“*销量国语唱片奖”。2014年，参加中国内地湖南卫视歌唱类综艺节目《我是歌手第二季》 ，获得总决赛亚军 。3月，获第27届KCA美国儿童选择奖“*亚洲艺人” 。12月10日，邓紫棋在香港杜莎夫人蜡像馆为自己的蜡像揭幕 。2015年2月18日晚，邓紫棋参加2015年中央电视台春节联欢晚会，自弹自唱其自创的歌曲《多远都要在一起》 。截至北京时间2015年5月31日，《G.E.M.X.X.X.Live”世界巡回演唱会》已经完成60场。 - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/artist/4434",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "59225327242170368",
+            "url": "rsshub://showstart/artist/135890",
+            "title": "秀动网 - 阿克江 LilAkin",
+            "description": "阿克江·阿依丁 Lil’Akin 哈萨克族 歌手 音乐人 麻醉师出身的他，却用歌声治愈了无数迷茫中的潮男潮女。独 特的声线，难以模仿的转音技巧，通通钻进你的耳洞，带你进 入全新的维度。仔细检查封面，你还是不敢相信这声音来自遥 远的西北。阿克江在互联网上肆意散播他的声音魔法，几乎在 全国每个城市，都有被他麻醉的耳朵。 爷爷是哈萨克族*诗人的他流淌着诗歌沁润的血液，充满未 来气息的作曲结构，澎湃的贝斯和绵密旋律，慢慢植入了你的 脑海，在不经意间，已经哼唱了一天。 自从在虾米玩乐计划发行单曲“BLUE MOON”后,阿克江 Lil'Akin紧接着与参与玩乐计划的 future 制作人ZHI16 以及VISUDY成立 Artux Surfin’Boi 并发布了“My soul,my boon”等 future 作品,*的 R&B 唱法,特 有的 酥麻嗓音,也为他‘麻醉’了众多国内外听众,作为 soul singer/song writer 的身份便开始受到了大量的关注 “这 声音会舔你耳朵眼”这是诸多听过他现场的观众对他的评价 通 过与ZHI16,VISUDY,SUSUSU,JZLee等音乐人合作将他独一 无二的声音传播至全世界。 这不仅赢得了众多国内外制作人的支持更让他的声音出现在了 英国*海盗电台 Rinse FM. 2015 年参与中国好声音亚军 吴莫愁 的专辑制作,并创作了 单曲【Blue moon】与吴莫愁演唱。 不久之前虾米寻光 X 计划更是把代表国内*锋独立之声的几组音乐人送 往【洛杉矶】与虾米*合作伙伴【BMG】旗下的国际*制作人共同创 作歌曲， 阿克江作为其中一名音乐人参与其中， 与 Chris Brown 制作人 Non-Fiction 一同完成了四部具有国际化视野的音乐作品。 - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/artist/135890",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/showstart/brand/:id": {
+        "path": "/brand/:id",
+        "name": "按厂牌 - 演出更新",
+        "maintainers": [
+          "lchtao26"
+        ],
+        "example": "/showstart/brand/34707",
+        "parameters": {
+          "id": "厂牌 ID"
+        },
+        "description": "::: tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.showstart.com/host/:id"
+            ]
+          }
+        ],
+        "location": "brand.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/showstart/event/:cityCode/:showStyle?": {
+        "path": "/event/:cityCode/:showStyle?",
+        "name": "按城市 - 演出更新",
+        "maintainers": [
+          "lchtao26"
+        ],
+        "example": "/showstart/event/571/3",
+        "parameters": {
+          "cityCode": "演出城市 (编号)",
+          "showStyle": "演出风格 (编号)"
+        },
+        "description": "::: tip\n\n- 演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n- 演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "event.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 38,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "68586319985771520",
+            "url": "rsshub://showstart/event/571/2",
+            "title": "秀动网 -",
+            "description": "秀动网 - - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "67433992246280192",
+            "url": "rsshub://showstart/event/21/2",
+            "title": "秀动网 -",
+            "description": "秀动网 - - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/showstart/search/:type/:keyword?": {
+        "path": "/search/:type/:keyword?",
+        "name": "演出搜索",
+        "maintainers": [
+          "lchtao26"
+        ],
+        "example": "/showstart/search/live",
+        "parameters": {
+          "keyword": "搜索关键词",
+          "type": {
+            "description": "类别",
+            "options": [
+              {
+                "value": "event",
+                "label": "演出"
+              },
+              {
+                "value": "artist",
+                "label": "音乐人"
+              },
+              {
+                "value": "site",
+                "label": "场地"
+              },
+              {
+                "value": "brand",
+                "label": "厂牌"
+              },
+              {
+                "value": "city",
+                "label": "城市"
+              },
+              {
+                "value": "style",
+                "label": "风格"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "search.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 6,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "175967172586634240",
+            "url": "rsshub://showstart/search/city/%E8%8B%8F%E5%B7%9E",
+            "title": "秀动网 - 搜城市 - 苏州",
+            "description": "秀动网 - 搜城市 - 苏州 - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/",
+            "image": null,
+            "errorMessage": "e[t].localeCompare is not a function\n",
+            "errorAt": "2026-08-02T16:57:18.143Z",
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "220803179682283520",
+            "url": "rsshub://showstart/search/artist/%E5%A3%B0%E9%9F%B3%E7%8E%A9%E5%85%B7",
+            "title": "秀动网 - 搜艺人 - 声音玩具",
+            "description": "秀动网 - 搜艺人 - 声音玩具 - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/showstart/site/:siteId": {
+        "path": "/site/:siteId",
+        "name": "按场地 - 演出更新",
+        "maintainers": [
+          "lchtao26"
+        ],
+        "example": "/showstart/site/3583",
+        "parameters": {
+          "siteId": "演出场地 (编号)"
+        },
+        "description": "::: tip\n\n- 演出场地 ID 查询: `/showstart/search/site/:keyword`, 如: [https://rsshub.app/showstart/search/site/ 酒球会](https://rsshub.app/showstart/search/site/酒球会)\n\n:::",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.showstart.com/venue/:siteId"
+            ]
+          }
+        ],
+        "location": "site.ts",
+        "addedAt": "2024-08-07T01:38:24.000Z",
+        "heat": 102,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "68851013929552896",
+            "url": "rsshub://showstart/site/18165038",
+            "title": "秀动网 - 上海 - 回响之地 Music Park",
+            "description": "上海市长宁区绥宁路820号 - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "70160608790705152",
+            "url": "rsshub://showstart/site/3515",
+            "title": "秀动网 - 广州 - SDlivehouse",
+            "description": "广州市海珠区南洲路154号（侨建·HICITY ）2F 207 - Powered by RSSHub",
+            "siteUrl": "https://www.showstart.com/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
         }
       }
     }
@@ -71823,6 +73412,62 @@
           "code": 0
         }
       },
+      "/dedao/user/:id/:type?": {
+        "path": "/user/:id/:type?",
+        "name": "用户主页",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/dedao/user/VkA5OqLX4RyGxmZRNBMlwBrDaJQ9og",
+        "parameters": {
+          "id": "用户 id，可在对应用户主页 URL 中找到",
+          "type": "类型，见下表，默认为`0`，即动态"
+        },
+        "description": "| 动态 | 书评 | 视频 |\n| ---- | ---- | ---- |\n| 0    | 7    | 12   |",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "user.tsx",
+        "addedAt": "2025-12-29T04:27:32.000Z",
+        "heat": 206,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "77758485233487872",
+            "url": "rsshub://dedao/user/VN0Wo2b7GJAYwMWGMdvgePOam4Zjlz",
+            "title": "快刀青衣的得到主页 - 动态",
+            "description": "得到联合创始人: 顺风不浪，逆风不投 - Powered by RSSHub",
+            "siteUrl": "https://m.igetget.com/native/mine/account#/user/detail?enId=VN0Wo2b7GJAYwMWGMdvgePOam4Zjlz",
+            "image": "https://piccdn2.umiwi.com/avatar/iget/19-1531375237.jpeg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "65325031453147265",
+            "url": "rsshub://dedao/user/vNBaAbwjq5nMoamqzZ1GLKkzgPXy9o",
+            "title": "万维钢的得到主页 - 动态",
+            "description": "《万维钢·精英日课》主理人: - Powered by RSSHub",
+            "siteUrl": "https://m.igetget.com/native/mine/account#/user/detail?enId=vNBaAbwjq5nMoamqzZ1GLKkzgPXy9o",
+            "image": "https://piccdn2.umiwi.com/avatar/iget/11359683-1493051027.jpeg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
       "/dedao/articles/:id?": {
         "path": "/articles/:id?",
         "name": "得到文章",
@@ -71987,62 +73632,6 @@
             "description": "得到 - 年度日更 - Powered by RSSHub",
             "siteUrl": "https://www.igetget.com/list/%E5%B9%B4%E5%BA%A6%E6%97%A5%E6%9B%B4/Z01i89TzfXcv",
             "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/dedao/user/:id/:type?": {
-        "path": "/user/:id/:type?",
-        "name": "用户主页",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/dedao/user/VkA5OqLX4RyGxmZRNBMlwBrDaJQ9og",
-        "parameters": {
-          "id": "用户 id，可在对应用户主页 URL 中找到",
-          "type": "类型，见下表，默认为`0`，即动态"
-        },
-        "description": "| 动态 | 书评 | 视频 |\n| ---- | ---- | ---- |\n| 0    | 7    | 12   |",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "user.tsx",
-        "addedAt": "2025-12-29T04:27:32.000Z",
-        "heat": 206,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "77758485233487872",
-            "url": "rsshub://dedao/user/VN0Wo2b7GJAYwMWGMdvgePOam4Zjlz",
-            "title": "快刀青衣的得到主页 - 动态",
-            "description": "得到联合创始人: 顺风不浪，逆风不投 - Powered by RSSHub",
-            "siteUrl": "https://m.igetget.com/native/mine/account#/user/detail?enId=VN0Wo2b7GJAYwMWGMdvgePOam4Zjlz",
-            "image": "https://piccdn2.umiwi.com/avatar/iget/19-1531375237.jpeg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "65325031453147265",
-            "url": "rsshub://dedao/user/vNBaAbwjq5nMoamqzZ1GLKkzgPXy9o",
-            "title": "万维钢的得到主页 - 动态",
-            "description": "《万维钢·精英日课》主理人: - Powered by RSSHub",
-            "siteUrl": "https://m.igetget.com/native/mine/account#/user/detail?enId=vNBaAbwjq5nMoamqzZ1GLKkzgPXy9o",
-            "image": "https://piccdn2.umiwi.com/avatar/iget/11359683-1493051027.jpeg",
             "errorMessage": null,
             "errorAt": null,
             "ownerUserId": null
@@ -75322,245 +76911,6 @@
             "description": "アニメ『ドロヘドロ』 - Powered by RSSHub",
             "siteUrl": "https://dorohedoro.net/news/",
             "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
-  "douyin": {
-    "name": "抖音直播",
-    "url": "douyin.com",
-    "description": "::: warning\n反爬严格，需要启用 Playwright。抖音的视频 CDN 会验证 Referer，意味着许多阅读器都无法直接播放内嵌视频，以下是一些变通解决方案：\n\n1. 启用内嵌视频 (`embed=1`), 参考 [通用参数 -> 多媒体处理](/parameter#多媒体处理) 配置 `multimedia_hotlink_template` **或** `wrap_multimedia_in_iframe`。\n2. 关闭内嵌视频 (`embed=0`)，手动点击 `视频直链` 超链接，一般情况下均可成功播放视频。若仍然出现 HTTP 403，请复制 URL 以后到浏览器打开。\n3. 点击原文链接打开抖音网页版的视频详情页播放视频。\n\n:::\n\n额外参数\n\n| 键      | 含义             | 值                     | 默认值  |\n| ------- | ---------------- | ---------------------- | ------- |\n| `embed` | 是否启用内嵌视频 | `0`/`1`/`true`/`false` | `false` |",
-    "categories": [
-      "social-media",
-      "live"
-    ],
-    "heat": 272,
-    "routes": {
-      "/douyin/hashtag/:cid/:routeParams?": {
-        "path": "/hashtag/:cid/:routeParams?",
-        "name": "标签",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/douyin/hashtag/1592824105719812",
-        "parameters": {
-          "cid": "标签 ID，可在标签页面 URL 中找到",
-          "routeParams": "额外参数，query string 格式，请参阅上面的表格"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "douyin.com/hashtag/:cid"
-            ],
-            "target": "/hashtag/:cid"
-          }
-        ],
-        "location": "hashtag.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
-        }
-      },
-      "/douyin/user/:uid/:routeParams?": {
-        "path": "/user/:uid/:routeParams?",
-        "name": "博主",
-        "maintainers": [
-          "Max-Tortoise",
-          "Rongronggg9"
-        ],
-        "example": "/douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao",
-        "parameters": {
-          "uid": "uid，可在用户页面 URL 中找到",
-          "routeParams": "额外参数，query string 格式，请参阅上面的表格"
-        },
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "douyin.com/user/:uid"
-            ],
-            "target": "/user/:uid"
-          }
-        ],
-        "location": "user.ts",
-        "addedAt": "2018-12-26T10:35:10.000Z",
-        "heat": 215,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "116825524532749312",
-            "url": "rsshub://douyin/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao",
-            "title": "伟布丁生活日记",
-            "description": "伟布丁生活日记 - Powered by RSSHub",
-            "siteUrl": "https://www.douyin.com/user/MS4wLjABAAAARcAHmmF9mAG3JEixq_CdP72APhBlGlLVbN-1eBcPqao",
-            "image": "https://p3-pc.douyinpic.com/origin/aweme-avatar/mosaic-legacy_2e9e1000165a072193d95.jpeg",
-            "errorMessage": "Could not find Chrome (ver. 136.0.7103.49). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /app/node_modules/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\nRemote Playwright WebSocket upgrade failed with HTTP 428\n",
-            "errorAt": "2025-02-24T16:02:08.988Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "188221989912814592",
-            "url": "rsshub://douyin/user/MS4wLjABAAAAxaSHyjKQyfWHKjIS1mYbpxxEQZpT8ogl_eyks2M_Twc",
-            "title": "姜胡说",
-            "description": "姜胡说 - Powered by RSSHub",
-            "siteUrl": "https://www.douyin.com/user/MS4wLjABAAAAxaSHyjKQyfWHKjIS1mYbpxxEQZpT8ogl_eyks2M_Twc",
-            "image": "https://p3-pc.douyinpic.com/origin/aweme-avatar/mosaic-legacy_3149e000524a7b8745c42.jpeg",
-            "errorMessage": "Douyin API returned invalid JSON (HTTP 200). Anonymous access may be blocked by the source site.\nCould not find Chrome (ver. 136.0.7103.49). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /app/node_modules/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\n",
-            "errorAt": "2025-11-11T16:10:38.172Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
-        }
-      },
-      "/douyin/collection": {
-        "path": "/collection",
-        "name": "收藏的视频",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/douyin/collection",
-        "description": "订阅 DOUYIN\\_COOKIE 对应账号收藏的视频首屏。收藏夹、音乐、合集和短剧不在此路由范围内。发布时间为视频原始发布时间，收藏时间没有公开提供。",
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requirePuppeteer": true,
-          "antiCrawler": true,
-          "requireConfig": [
-            {
-              "name": "DOUYIN_COOKIE",
-              "description": "对应允许用于订阅的本人账号。"
-            }
-          ]
-        },
-        "location": "collection.ts",
-        "addedAt": "2026-10-09T05:49:12.000Z",
-        "heat": 0,
-        "topFeeds": []
-      },
-      "/douyin/likes/:uid": {
-        "path": "/likes/:uid",
-        "name": "喜欢的视频",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/douyin/likes/self",
-        "parameters": {
-          "uid": "用户页面 URL 中的 sec_user_id，或者 self 表示 DOUYIN_COOKIE 对应的登录账号。"
-        },
-        "description": "只读取喜欢列表的首屏。设为私密的列表仅对应账号能够访问。发布时间为视频原始发布时间，点赞时间没有公开提供。",
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requirePuppeteer": true,
-          "antiCrawler": true,
-          "requireConfig": [
-            {
-              "name": "DOUYIN_COOKIE",
-              "optional": true,
-              "description": "订阅自己的喜欢列表时必须配置；其他用户的列表须对当前账号公开。"
-            }
-          ]
-        },
-        "location": "likes.ts",
-        "addedAt": "2026-10-09T05:49:12.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
-        }
-      },
-      "/douyin/live/:rid/:showTime?": {
-        "path": "/live/:rid/:showTime?",
-        "name": "直播间开播",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/douyin/live/685317364746",
-        "parameters": {
-          "rid": "直播间 id, 可在主播直播间页 URL 中找到",
-          "showTime": "是否在标题后添加本场首次检测时间，0/1/true/false，默认 false。"
-        },
-        "description": "优先读取公开页面中的直播状态，必要时使用 Playwright 读取页面或直播间接口。showTime 开启时，标题后显示 RSSHub 本场首次检测时间（UTC+8），并非源站实际开播时刻，也不会作为 pubDate。时间按本场真实 room ID 缓存 30 天，重复读取不会延长有效期。内存缓存重启或清除缓存会重置记录，建议使用 Redis 保持记录稳定。",
-        "categories": [
-          "live"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "live.douyin.com/:rid"
-            ]
-          }
-        ],
-        "location": "live.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 57,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "72456550295913472",
-            "url": "rsshub://douyin/live/921169302662",
-            "title": "陈伯(全能王)的抖音直播间 - 抖音直播",
-            "description": "欢迎来到陈伯(全能王)的抖音直播间，陈伯(全能王)与大家一起记录美好生活 - 抖音直播 - Powered by RSSHub",
-            "siteUrl": "https://live.douyin.com/921169302662",
-            "image": "https://p11.douyinpic.com/origin/aweme-avatar/tos-cn-avt-0015_bed947cccd9ad785a0a96dbec1fb2fe3.jpeg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "59212657080258560",
-            "url": "rsshub://douyin/live/685317364746",
-            "title": "JJ斗地主的抖音直播间 - 抖音直播",
-            "description": "欢迎来到JJ斗地主的抖音直播间，JJ斗地主与大家一起记录美好生活 - 抖音直播 - Powered by RSSHub",
-            "siteUrl": "https://live.douyin.com/685317364746",
-            "image": "https://p3.douyinpic.com/origin/aweme-avatar/tos-cn-avt-0015_970a4d312023de54cbac3d0f9e0e77f8.jpeg",
             "errorMessage": null,
             "errorAt": null,
             "ownerUserId": null
@@ -80154,330 +81504,6 @@
             "description": "灰色世界的清道夫，变成了阳光明媚的洛杉矶警探，能生活在阳光下，真好？ 洛克站在好莱坞地标下，看着圣莫妮卡海滩上的比坚尼美女们， 他推了一下鼻梁上的太阳眼镜， 从此以后，洛圣都由他守护…… - Powered by RSSHub",
             "siteUrl": "https://fanqienovel.com/page/7251428606465805347",
             "image": "https://p3-novel-sign.byteimg.com/novel-pic/p2o72ee066c92a3759c16f57e3440f1090f~tplv-resize:225:300.image?lk3s=191c1ecc&x-expires=1791689427&x-signature=qd%2BqCVMq2gFRckcq%2FwpAc86Hsrc%3D",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
-  "fantia": {
-    "name": "Fantia",
-    "url": "fantia.jp",
-    "categories": [
-      "picture"
-    ],
-    "heat": 291,
-    "routes": {
-      "/fantia/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?": {
-        "path": "/search/:type?/:caty?/:period?/:order?/:rating?/:keyword?",
-        "name": "Search",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/fantia/search/posts/all/daily",
-        "parameters": {
-          "type": {
-            "description": "Type, see the table below, `posts` by default",
-            "options": [
-              {
-                "value": "fanclubs",
-                "label": "クリエイター"
-              },
-              {
-                "value": "posts",
-                "label": "投稿"
-              },
-              {
-                "value": "products",
-                "label": "商品"
-              },
-              {
-                "value": "commissions",
-                "label": "コミッション"
-              }
-            ],
-            "default": "posts"
-          },
-          "caty": {
-            "description": "Category, see the table below, can also be found in search page URL, `すべてのクリエイター` by default",
-            "options": [
-              {
-                "value": "all",
-                "label": "すべてのクリエイター"
-              },
-              {
-                "value": "illust",
-                "label": "イラスト"
-              },
-              {
-                "value": "comic",
-                "label": "漫画"
-              },
-              {
-                "value": "cosplay",
-                "label": "コスプレ"
-              },
-              {
-                "value": "youtuber",
-                "label": "YouTuber・配信者"
-              },
-              {
-                "value": "vtuber",
-                "label": "Vtuber"
-              },
-              {
-                "value": "voice",
-                "label": "音声作品・ASMR"
-              },
-              {
-                "value": "voiceactor",
-                "label": "声優・歌い手"
-              },
-              {
-                "value": "idol",
-                "label": "アイドル"
-              },
-              {
-                "value": "anime",
-                "label": "アニメ・映像・写真"
-              },
-              {
-                "value": "3d",
-                "label": "3D"
-              },
-              {
-                "value": "game",
-                "label": "ゲーム制作"
-              },
-              {
-                "value": "music",
-                "label": "音楽"
-              },
-              {
-                "value": "novel",
-                "label": "小説"
-              },
-              {
-                "value": "doll",
-                "label": "ドール"
-              },
-              {
-                "value": "art",
-                "label": "アート・デザイン"
-              },
-              {
-                "value": "program",
-                "label": "プログラム"
-              },
-              {
-                "value": "handmade",
-                "label": "創作・ハンドメイド"
-              },
-              {
-                "value": "history",
-                "label": "歴史・評論・情報"
-              },
-              {
-                "value": "railroad",
-                "label": "鉄道・旅行・ミリタリー"
-              },
-              {
-                "value": "shop",
-                "label": "ショップ"
-              },
-              {
-                "value": "other",
-                "label": "その他"
-              }
-            ],
-            "default": "all"
-          },
-          "period": {
-            "description": "Ranking period, see the table below, empty by default. Rankings cannot be combined with a keyword or a custom search order.",
-            "options": [
-              {
-                "value": "daily",
-                "label": "デイリー"
-              },
-              {
-                "value": "weekly",
-                "label": "ウィークリー"
-              },
-              {
-                "value": "monthly",
-                "label": "マンスリー"
-              },
-              {
-                "value": "all",
-                "label": "全期間"
-              }
-            ],
-            "default": ""
-          },
-          "order": {
-            "description": "Sorting, see the table below, `更新の新しい順` by default",
-            "options": [
-              {
-                "value": "updater",
-                "label": "更新の新しい順"
-              },
-              {
-                "value": "update_old",
-                "label": "更新の古い順"
-              },
-              {
-                "value": "newer",
-                "label": "投稿の新しい順"
-              },
-              {
-                "value": "create_old",
-                "label": "投稿の古い順"
-              },
-              {
-                "value": "popular",
-                "label": "お気に入り数順"
-              }
-            ],
-            "default": "updater"
-          },
-          "rating": {
-            "description": "Rating, see the table below, `すべて` by default",
-            "options": [
-              {
-                "value": "all",
-                "label": "すべて"
-              },
-              {
-                "value": "general",
-                "label": "一般のみ"
-              },
-              {
-                "value": "adult",
-                "label": "R18 のみ"
-              }
-            ],
-            "default": "all"
-          },
-          "keyword": "Keyword, empty by default"
-        },
-        "description": "Type\n\n| クリエイター | 投稿  | 商品     | コミッション |\n| ------------ | ----- | -------- | ------------ |\n| fanclubs     | posts | products | commissions  |\n\nCategory\n\n| 分类                   | 分类名     |\n| ---------------------- | ---------- |\n| イラスト               | illust     |\n| 漫画                   | comic      |\n| コスプレ               | cosplay    |\n| YouTuber・配信者       | youtuber   |\n| Vtuber                 | vtuber     |\n| 音声作品・ASMR         | voice      |\n| 声優・歌い手           | voiceactor |\n| アイドル               | idol       |\n| アニメ・映像・写真     | anime      |\n| 3D                     | 3d         |\n| ゲーム制作             | game       |\n| 音楽                   | music      |\n| 小説                   | novel      |\n| ドール                 | doll       |\n| アート・デザイン       | art        |\n| プログラム             | program    |\n| 創作・ハンドメイド     | handmade   |\n| 歴史・評論・情報       | history    |\n| 鉄道・旅行・ミリタリー | railroad   |\n| ショップ               | shop       |\n| その他                 | other      |\n\nRanking period\n\n| デイリー | ウィークリー | マンスリー | 全期間 |\n| -------- | ------------ | ---------- | ------ |\n| daily    | weekly       | monthly    | all    |\n\nSorting\n\n| 更新の新しい順 | 更新の古い順 | 投稿の新しい順 | 投稿の古い順 | お気に入り数順 |\n| -------------- | ------------ | -------------- | ------------ | -------------- |\n| updater        | update\\_old  | newer          | create\\_old  | popular        |\n\nRating\n\n| すべて | 一般のみ | R18 のみ |\n| ------ | -------- | -------- |\n| all    | general  | adult    |",
-        "categories": [
-          "picture"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "FANTIA_COOKIE",
-              "optional": true,
-              "description": "The `cookie` after login can be obtained by viewing the request header in the console, If not filled in will cause some posts that require login to read to get exceptions"
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false,
-          "nsfw": true
-        },
-        "view": 2,
-        "location": "search.ts",
-        "addedAt": "2020-11-29T19:24:47.000Z",
-        "heat": 82,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "73225112084486144",
-            "url": "rsshub://fantia/search/posts/all/daily/updater/all",
-            "title": "Fantia - Search posts",
-            "description": "Fantia - Search posts - Powered by RSSHub",
-            "siteUrl": "https://fantia.jp/ranking?brand_type=0&category=&per_page=30&period=daily&kind=point&rating_type=all&content=post",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "74696531705607168",
-            "url": "rsshub://fantia/search/posts/all/all/updater/all",
-            "title": "Fantia - Search posts",
-            "description": "Fantia - Search posts - Powered by RSSHub",
-            "siteUrl": "https://fantia.jp/ranking?brand_type=0&category=&per_page=30&period=all&kind=point&rating_type=all&content=post",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/fantia/user/:id": {
-        "path": "/user/:id",
-        "name": "User Posts",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/fantia/user/3498",
-        "parameters": {
-          "id": "User id, can be found in user profile URL"
-        },
-        "categories": [
-          "picture"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "FANTIA_COOKIE",
-              "optional": true,
-              "description": "The `cookie` after login can be obtained by viewing the request header in the console, If not filled in will cause some posts that require login to read to get exceptions"
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false,
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "fantia.jp/fanclubs/:id"
-            ]
-          }
-        ],
-        "view": 2,
-        "location": "user.ts",
-        "addedAt": "2020-11-29T19:17:37.000Z",
-        "heat": 209,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "41147805276726313",
-            "url": "rsshub://fantia/user/496365",
-            "title": "Fantia - かほてぃあ (夏帆)",
-            "description": "Fantia - かほてぃあ (夏帆) - Powered by RSSHub",
-            "siteUrl": "https://fantia.jp/fanclubs/496365",
-            "image": null,
-            "errorMessage": "[GET] \"https://fantia.jp/api/v1/fanclubs/496365\": 404 Not Found\n",
-            "errorAt": "2025-04-30T18:31:32.447Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "66192437247858688",
-            "url": "rsshub://fantia/user/404572",
-            "title": "Fantia - ありすほりっく (ありすほりっく)",
-            "description": "🐇 ありすほりっくのFantiaへようこそ 🪄 ありすほりっくは、2026年8月末をもちまして 新作の投稿を無期限でお休みしています これまで公開した作品は、 ファンクラブ内･商品ページから 引き続きお楽しみいただけます🐇🩷 ⟡・········································・⟡ 🎥 作品一覧はこちら ▶︎ https://x.gd/0fI5z ♥️ 有料プラン限定・お得な購入ページはこちら ▶︎ https://x.gd/NWRhy 🎰 お得な限定動画ガチャはこちら ▶︎ https://fantia.jp/products/1033491 ⟡・········································・⟡ ♥️ ありすほりっくについて🪄 🐇 完全コスプレ×シチュエーション作品を中心に、 衣装・セリフ・シナリオ・性癖・プレイまで、 私たちなりの「好き」と「こだわり」を詰め込んだ作品を制作してきました🐇🩷 ありすほりっくとして作ってきた作品を、 これからも楽しんでいただけましたら嬉しいです💕 ⟡・········································・⟡ ☑️ 男優・モデルのプライバシー保護のため、 「作品本編」でも顔にはぼかしを入れています。 ☑️ 予告なく投稿動画・写真等を削除する場合がございます。 あらかじめご了承ください。 ☑️ 当サークルでは、動画・画像・投稿コンテンツを無断転載することを禁止しています。 ⟡・········································・⟡ 新しいお知らせがある際は、 こちらのファンクラブやSNSにてご案内いたします🐇💌 - Powered by RSSHub",
-            "siteUrl": "https://fantia.jp/fanclubs/404572",
-            "image": "https://c.fantia.jp/uploads/fanclub/icon_image/404572/73d6bc55-86d2-4c82-86be-d3132ff1bbb5.jpg",
             "errorMessage": null,
             "errorAt": null,
             "ownerUserId": null
@@ -122780,66 +123806,6 @@
       }
     }
   },
-  "newmuseum": {
-    "name": "New Museum",
-    "url": "www.newmuseum.org",
-    "categories": [
-      "travel"
-    ],
-    "heat": 0,
-    "routes": {
-      "/newmuseum/exhibitions/:state?": {
-        "path": "/exhibitions/:state?",
-        "name": "Exhibitions",
-        "maintainers": [
-          "chazeon"
-        ],
-        "example": "/newmuseum/exhibitions",
-        "parameters": {
-          "state": {
-            "description": "Exhibition status from the exhibition overview",
-            "default": "current",
-            "options": [
-              {
-                "value": "current",
-                "label": "Current exhibitions and long-term commissions"
-              },
-              {
-                "value": "upcoming",
-                "label": "Upcoming exhibitions"
-              },
-              {
-                "value": "past",
-                "label": "Past exhibitions"
-              },
-              {
-                "value": "online",
-                "label": "Online exhibitions"
-              }
-            ]
-          }
-        },
-        "categories": [
-          "travel"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "exhibitions.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "newrank": {
     "name": "新榜",
     "url": "newrank.cn",
@@ -137683,101 +138649,6 @@
         "topFeeds": [],
         "test": {
           "code": 0
-        }
-      }
-    }
-  },
-  "producthunt": {
-    "name": "Product Hunt",
-    "url": "www.producthunt.com",
-    "description": "> 官方 Feed 地址为: <https://www.producthunt.com/feed>",
-    "categories": [
-      "other"
-    ],
-    "heat": 203,
-    "routes": {
-      "/producthunt/feed": {
-        "path": "/feed",
-        "name": "Official Feed",
-        "url": "www.producthunt.com/feed/",
-        "maintainers": [
-          "miaoyafeng",
-          "Fatpandac"
-        ],
-        "example": "/producthunt/feed",
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "feed.ts",
-        "addedAt": "2026-11-14T12:04:24.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/producthunt/today": {
-        "path": "/today",
-        "name": "Top Products Launching Today",
-        "url": "www.producthunt.com/",
-        "maintainers": [
-          "miaoyafeng",
-          "Fatpandac"
-        ],
-        "example": "/producthunt/today",
-        "description": "Top products from the publisher’s Today list. The general Product Hunt feed is also available at `/producthunt/feed`.",
-        "categories": [
-          "other"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "PRODUCTHUNT_ACCESS_TOKEN",
-              "description": "Optional API access token for the featured daily list when the website is unavailable. See [Product Hunt API documentation](https://api.producthunt.com/v2/docs).",
-              "optional": true
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.producthunt.com/"
-            ]
-          }
-        ],
-        "location": "today.tsx",
-        "addedAt": "2019-12-27T08:26:46.000Z",
-        "heat": 203,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "41369544201246720",
-            "url": "rsshub://producthunt/today",
-            "title": "Product Hunt Today Popular",
-            "description": "Product Hunt Today Popular - Powered by RSSHub",
-            "siteUrl": "https://www.producthunt.com/",
-            "image": null,
-            "errorMessage": "[GET] \"https://www.producthunt.com/\": 403 Forbidden\nAuthentication failed. Access denied.\n/producthunt/today\n[GET] \"https://www.producthunt.com/\": 403 Forbidden\n",
-            "errorAt": "2025-10-28T05:52:00.116Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
         }
       }
     }
@@ -180749,38 +181620,6 @@
       }
     }
   },
-  "zuiyou": {
-    "name": "最右",
-    "url": "www.izuiyou.com",
-    "categories": [
-      "social-media"
-    ],
-    "heat": 0,
-    "routes": {
-      "/zuiyou/user/:mid": {
-        "path": "/user/:mid",
-        "name": "用户动态",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "example": "/zuiyou/user/298793092",
-        "parameters": {
-          "mid": "用户 ID，即最右分享主页链接中 `mid` 参数的值。"
-        },
-        "description": "订阅用户公开分享主页首屏中的动态，包括文字、图片和视频。",
-        "categories": [
-          "social-media"
-        ],
-        "location": "user.tsx",
-        "addedAt": "2026-10-09T05:00:20.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "zxcs": {
     "name": "知轩藏书",
     "url": "zxcs.click",
@@ -183919,133 +184758,6 @@
         "view": 0,
         "location": "rss.ts",
         "addedAt": "2024-05-03T13:20:02.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
-  "arcteryx": {
-    "name": "Arcteryx",
-    "url": "arcteryx.com",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 0,
-    "routes": {
-      "/arcteryx/regear/new-arrivals": {
-        "path": "/regear/new-arrivals",
-        "name": "Regear New Arrivals",
-        "url": "www.resale.arcteryx.com/collections/new-arrivals",
-        "maintainers": [
-          "IvanWng97"
-        ],
-        "example": "/arcteryx/regear/new-arrivals",
-        "parameters": {},
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.resale.arcteryx.com/collections/new-arrivals",
-              "www.resale.arcteryx.com/"
-            ]
-          },
-          {
-            "source": [
-              "regear.arcteryx.com/"
-            ]
-          }
-        ],
-        "location": "regear-new-arrivals.tsx",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/arcteryx/new-arrivals/:country/:gender": {
-        "path": "/new-arrivals/:country/:gender",
-        "name": "New Arrivals",
-        "maintainers": [
-          "IvanWng97"
-        ],
-        "example": "/arcteryx/new-arrivals/us/mens",
-        "parameters": {
-          "country": "country",
-          "gender": "gender"
-        },
-        "description": "Country\n\n| United States | Canada | United Kingdom |\n| ------------- | ------ | -------------- |\n| us            | ca     | gb             |\n\ngender\n\n| male | female |\n| ---- | ------ |\n| mens | womens |\n\n::: tip\nParameter `country` can be found within the url of `Arcteryx` website.\n:::",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "arcteryx.com/:country/en/c/:gender/new-arrivals"
-            ]
-          }
-        ],
-        "location": "new-arrivals.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/arcteryx/outlet/:country/:gender": {
-        "path": "/outlet/:country/:gender",
-        "name": "Outlet",
-        "maintainers": [
-          "IvanWng97"
-        ],
-        "example": "/arcteryx/outlet/us/mens",
-        "parameters": {
-          "country": "country",
-          "gender": "gender"
-        },
-        "description": "Country\n\n| United States | Canada | United Kingdom |\n| ------------- | ------ | -------------- |\n| us            | ca     | gb             |\n\ngender\n\n| male | female |\n| ---- | ------ |\n| mens | womens |\n\n::: tip\nParameter `country` can be found within the url of `Arcteryx` website.\n:::",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "outlet.arcteryx.com/:country/en/c/:gender"
-            ]
-          }
-        ],
-        "location": "outlet.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
         "heat": 0,
         "topFeeds": [],
         "test": {
@@ -207984,315 +208696,6 @@
       }
     }
   },
-  "hk01": {
-    "name": "香港 01",
-    "url": "hk01.com",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 1291,
-    "routes": {
-      "/hk01/channel/:id?": {
-        "path": "/channel/:id?",
-        "name": "子栏目",
-        "maintainers": [
-          "hoilc",
-          "Fatpandac",
-          "nczitzk"
-        ],
-        "example": "/hk01/channel/391",
-        "parameters": {
-          "id": "子栏目 id, 可在 URL 中找到"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "hk01.com/channel/:id",
-              "hk01.com/"
-            ]
-          }
-        ],
-        "location": "channel.ts",
-        "addedAt": "2019-10-22T03:28:04.000Z",
-        "heat": 234,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "89497724836871168",
-            "url": "rsshub://hk01/channel/458",
-            "title": "中國觀察 | 香港01",
-            "description": "中國觀察 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/channel/458",
-            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408227633252274176150476.png/UybVDNwHnFf4UdCJXjKTL2mGyQ6f5SUU2cyM39nMjN8",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "69916583666986024",
-            "url": "rsshub://hk01/channel/19",
-            "title": "即時國際 | 香港01",
-            "description": "即時國際 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/channel/19",
-            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408227683839774720096251.png/ScxTeV2WCrObm45OUvrYMlnYDo46wQlqpPf-bKT3_mw",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/hk01/hot": {
-        "path": "/hot",
-        "name": "热门",
-        "url": "hk01.com/hot",
-        "maintainers": [
-          "hoilc",
-          "Fatpandac",
-          "nczitzk"
-        ],
-        "example": "/hk01/hot",
-        "parameters": {},
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "hk01.com/hot",
-              "hk01.com/"
-            ]
-          }
-        ],
-        "location": "hot.ts",
-        "addedAt": "2019-10-22T03:28:04.000Z",
-        "heat": 512,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "55218960054033409",
-            "url": "rsshub://hk01/hot",
-            "title": "熱門新聞、全城熱話及社會時事 | 香港01",
-            "description": "熱門新聞、全城熱話及社會時事 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/hot",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/hk01/issue/:id?": {
-        "path": "/issue/:id?",
-        "name": "专题",
-        "maintainers": [
-          "hoilc",
-          "Fatpandac",
-          "nczitzk"
-        ],
-        "example": "/hk01/issue/649",
-        "parameters": {
-          "id": "专题 id, 可在 URL 中找到"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "hk01.com/issue/:id",
-              "hk01.com/"
-            ]
-          }
-        ],
-        "location": "issue.ts",
-        "addedAt": "2019-10-22T03:28:04.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/hk01/latest": {
-        "path": "/latest",
-        "name": "即時",
-        "url": "hk01.com/latest",
-        "maintainers": [
-          "5upernova-heng"
-        ],
-        "example": "/hk01/latest",
-        "parameters": {},
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "hk01.com/latest",
-              "hk01.com/"
-            ]
-          }
-        ],
-        "location": "latest.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 384,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "55294680289713152",
-            "url": "rsshub://hk01/latest",
-            "title": "即時 | 香港01",
-            "description": "即時 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/latest",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/hk01/tag/:id?": {
-        "path": "/tag/:id?",
-        "name": "标签",
-        "maintainers": [
-          "hoilc",
-          "Fatpandac",
-          "nczitzk"
-        ],
-        "example": "/hk01/tag/2787",
-        "parameters": {
-          "id": "标签 id, 可在 URL 中找到"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "hk01.com/tag/:id",
-              "hk01.com/"
-            ]
-          }
-        ],
-        "location": "tag.ts",
-        "addedAt": "2019-10-22T03:28:04.000Z",
-        "heat": 11,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "92006333948699648",
-            "url": "rsshub://hk01/tag/13102",
-            "title": "13102 | 香港01",
-            "description": "13102 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/tag/13102",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "87141419213215744",
-            "url": "rsshub://hk01/tag/365",
-            "title": "365 | 香港01",
-            "description": "365 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/tag/365",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/hk01/zone/:id?": {
-        "path": "/zone/:id?",
-        "name": "栏目",
-        "maintainers": [
-          "hoilc",
-          "Fatpandac",
-          "nczitzk"
-        ],
-        "example": "/hk01/zone/11",
-        "parameters": {
-          "id": "栏目 id, 可在 URL 中找到"
-        },
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "hk01.com/zone/:id",
-              "hk01.com/"
-            ]
-          }
-        ],
-        "location": "zone.ts",
-        "addedAt": "2019-10-22T03:28:04.000Z",
-        "heat": 150,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "67391706472795145",
-            "url": "rsshub://hk01/zone/1",
-            "title": "港聞 | 香港01",
-            "description": "港聞 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/zone/1",
-            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408227309540085760319542.jpeg/d8hq2b6WibciRCsMNd7W2yLPmgpIT5f7HaSF0B2khdA",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "67391706472795143",
-            "url": "rsshub://hk01/zone/12",
-            "title": "觀點 | 香港01",
-            "description": "觀點 | 香港01 - Powered by RSSHub",
-            "siteUrl": "https://hk01.com/zone/12",
-            "image": "https://cdn.hk01.com/di/media/images/dw/20201125/408228012966809600968521.png/iLSX3aBqMJua0Gc3o1pEMySDayDl34CKLKMCpiyjAqY",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "homes": {
     "name": "LIFULL HOME'S",
     "url": "www.homes.co.jp",
@@ -211897,194 +212300,6 @@
         "addedAt": "2024-02-29T17:24:49.000Z",
         "heat": 0,
         "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
-        }
-      }
-    }
-  },
-  "javtrailers": {
-    "name": "JavTrailers",
-    "url": "javtrailers.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 187,
-    "routes": {
-      "/javtrailers/casts/:cast": {
-        "path": "/casts/:cast",
-        "name": "Casts",
-        "url": "javtrailers.com/casts",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/javtrailers/casts/hibiki-otsuki",
-        "parameters": {
-          "cast": "Cast name, can be found in the URL of the cast page"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "nsfw": true,
-          "requirePuppeteer": false
-        },
-        "radar": [
-          {
-            "source": [
-              "javtrailers.com/casts/:cast"
-            ],
-            "target": "/casts/:cast"
-          }
-        ],
-        "location": "casts.ts",
-        "addedAt": "2024-11-15T10:13:49.000Z",
-        "heat": 99,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "111072758149291008",
-            "url": "rsshub://javtrailers/casts/miu-shiramine",
-            "title": "Watch Miu Shiromine Jav Online | Japanese Adult Video - JavTrailers.com",
-            "description": "Watch Miu Shiromine Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
-            "siteUrl": "https://javtrailers.com/casts/miu-shiramine",
-            "image": "https://pics.dmm.co.jp/mono/actjpgs/siromine_miu.jpg",
-            "errorMessage": "[GET] \"https://javtrailers.com/casts/miu-shiramine\": 403 Forbidden\n",
-            "errorAt": "2026-08-24T21:52:49.598Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "80211295551420416",
-            "url": "rsshub://javtrailers/casts/hibiki-otsuki",
-            "title": "Watch Hibiki Otsuki Jav Online | Japanese Adult Video - JavTrailers.com",
-            "description": "Watch Hibiki Otsuki Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
-            "siteUrl": "https://javtrailers.com/casts/hibiki-otsuki",
-            "image": "https://pics.dmm.co.jp/mono/actjpgs/ootuki_hibiki.jpg",
-            "errorMessage": "[GET] \"https://javtrailers.com/casts/hibiki-otsuki\": 403 Forbidden\nCould not find Chrome (ver. 136.0.7103.49). This can occur if either\n 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or\n 2. your cache path is incorrectly configured (which is: /app/node_modules/.cache/puppeteer).\nFor (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.\n",
-            "errorAt": "2026-08-23T17:48:13.042Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
-        }
-      },
-      "/javtrailers/categories/:category": {
-        "path": "/categories/:category",
-        "name": "Categories",
-        "url": "javtrailers.com/categories",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/javtrailers/categories/hi-def",
-        "parameters": {
-          "category": "Category name, can be found in the URL of the category page"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "nsfw": true,
-          "requirePuppeteer": false
-        },
-        "radar": [
-          {
-            "source": [
-              "javtrailers.com/categories/:category"
-            ]
-          }
-        ],
-        "location": "categories.ts",
-        "addedAt": "2024-11-15T10:13:49.000Z",
-        "heat": 53,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "89580112137494528",
-            "url": "rsshub://javtrailers/categories/female-teacher",
-            "title": "Watch Female Teacher Jav Online | Japanese Adult Video - JavTrailers.com",
-            "description": "Watch Female Teacher Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
-            "siteUrl": "https://javtrailers.com/categories/female-teacher",
-            "image": null,
-            "errorMessage": "[GET] \"https://javtrailers.com/categories/female-teacher\": 403 Forbidden\n",
-            "errorAt": "2026-09-01T02:15:38.922Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "89582686639029248",
-            "url": "rsshub://javtrailers/categories/humiliation",
-            "title": "Watch Humiliation Jav Online | Japanese Adult Video - JavTrailers.com",
-            "description": "Watch Humiliation Jav video’s free, we have the largest Jav collections with high definition - Powered by RSSHub",
-            "siteUrl": "https://javtrailers.com/categories/humiliation",
-            "image": null,
-            "errorMessage": "[GET] \"https://javtrailers.com/categories/humiliation\": 403 Forbidden\n",
-            "errorAt": "2026-08-23T02:50:48.928Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
-        }
-      },
-      "/javtrailers/studios/:studio": {
-        "path": "/studios/:studio",
-        "name": "Studios",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/javtrailers/studios/s1-no-1-style",
-        "parameters": {
-          "studio": "Studio name, can be found in the URL of the studio page"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "nsfw": true,
-          "requirePuppeteer": false
-        },
-        "radar": [
-          {
-            "source": [
-              "javtrailers.com/studios/:studio"
-            ],
-            "target": "/studios/:studio"
-          }
-        ],
-        "location": "studios.ts",
-        "addedAt": "2024-11-15T10:13:49.000Z",
-        "heat": 35,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "80227253777350656",
-            "url": "rsshub://javtrailers/studios/s1-no-1-style",
-            "title": "SSNI OFJE Jav Online | Japanese Adult Video - JavTrailers.com",
-            "description": "Watch Jav made by Prestige free, with high definition, we have over 4,000 studios available for free streaming. - Powered by RSSHub",
-            "siteUrl": "https://javtrailers.com/studios/s1-no-1-style",
-            "image": null,
-            "errorMessage": "[GET] \"https://javtrailers.com/studios/s1-no-1-style\": 403 Forbidden\n",
-            "errorAt": "2026-08-23T23:08:07.803Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "176520262640196608",
-            "url": "rsshub://javtrailers/studios/dogma",
-            "title": "Dogma Jav Online | Japanese Adult Video - JavTrailers.com",
-            "description": "Watch Jav made by Prestige free, with high definition, we have over 4,000 studios available for free streaming. - Powered by RSSHub",
-            "siteUrl": "https://javtrailers.com/studios/dogma",
-            "image": null,
-            "errorMessage": "[GET] \"https://javtrailers.com/api/studios/dogma?page=0\": 403 Forbidden\n",
-            "errorAt": "2026-08-31T19:11:32.851Z",
-            "ownerUserId": null
-          }
-        ],
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
@@ -221470,316 +221685,6 @@
             "image": "https://upload.wikimedia.org/wikipedia/zh/4/45/Sichuan_University_logo.svg",
             "errorMessage": "Cache key must be a string\n",
             "errorAt": "2026-07-06T10:18:01.330Z",
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
-  "showstart": {
-    "name": "秀动网",
-    "url": "www.showstart.com",
-    "categories": [
-      "shopping"
-    ],
-    "heat": 153,
-    "routes": {
-      "/showstart/artist/:id": {
-        "path": "/artist/:id",
-        "name": "按音乐人 - 演出更新",
-        "maintainers": [
-          "lchtao26"
-        ],
-        "example": "/showstart/artist/301783",
-        "parameters": {
-          "id": "音乐人 ID"
-        },
-        "description": "::: tip\n音乐人 ID 查询: `/showstart/search/artist/:keyword`，如: [https://rsshub.app/showstart/search/artist/ 周杰伦](https://rsshub.app/showstart/search/artist/周杰伦)\n:::",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.showstart.com/artist/:id"
-            ]
-          }
-        ],
-        "location": "artist.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 7,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "142941022923232256",
-            "url": "rsshub://showstart/artist/4434",
-            "title": "秀动网 - 邓紫棋",
-            "description": "邓紫棋（G.E.M.），原名邓诗颖，1991年8月16日生于中国上海，4岁移居香港，中国香港创作型女歌手 。 2009年1月，获得叱咤乐坛流行榜“叱咤乐坛生力军女歌手金奖” 。2011年5月，19岁的邓紫棋在香港红馆举行5场的个人演唱会。2012年，获得IPFI香港唱片销量大奖“全年*销量女歌手奖”；创作的专辑《Xposed》获得“*销量国语唱片奖”。2014年，参加中国内地湖南卫视歌唱类综艺节目《我是歌手第二季》 ，获得总决赛亚军 。3月，获第27届KCA美国儿童选择奖“*亚洲艺人” 。12月10日，邓紫棋在香港杜莎夫人蜡像馆为自己的蜡像揭幕 。2015年2月18日晚，邓紫棋参加2015年中央电视台春节联欢晚会，自弹自唱其自创的歌曲《多远都要在一起》 。截至北京时间2015年5月31日，《G.E.M.X.X.X.Live”世界巡回演唱会》已经完成60场。 - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/artist/4434",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "59225327242170368",
-            "url": "rsshub://showstart/artist/135890",
-            "title": "秀动网 - 阿克江 LilAkin",
-            "description": "阿克江·阿依丁 Lil’Akin 哈萨克族 歌手 音乐人 麻醉师出身的他，却用歌声治愈了无数迷茫中的潮男潮女。独 特的声线，难以模仿的转音技巧，通通钻进你的耳洞，带你进 入全新的维度。仔细检查封面，你还是不敢相信这声音来自遥 远的西北。阿克江在互联网上肆意散播他的声音魔法，几乎在 全国每个城市，都有被他麻醉的耳朵。 爷爷是哈萨克族*诗人的他流淌着诗歌沁润的血液，充满未 来气息的作曲结构，澎湃的贝斯和绵密旋律，慢慢植入了你的 脑海，在不经意间，已经哼唱了一天。 自从在虾米玩乐计划发行单曲“BLUE MOON”后,阿克江 Lil'Akin紧接着与参与玩乐计划的 future 制作人ZHI16 以及VISUDY成立 Artux Surfin’Boi 并发布了“My soul,my boon”等 future 作品,*的 R&B 唱法,特 有的 酥麻嗓音,也为他‘麻醉’了众多国内外听众,作为 soul singer/song writer 的身份便开始受到了大量的关注 “这 声音会舔你耳朵眼”这是诸多听过他现场的观众对他的评价 通 过与ZHI16,VISUDY,SUSUSU,JZLee等音乐人合作将他独一 无二的声音传播至全世界。 这不仅赢得了众多国内外制作人的支持更让他的声音出现在了 英国*海盗电台 Rinse FM. 2015 年参与中国好声音亚军 吴莫愁 的专辑制作,并创作了 单曲【Blue moon】与吴莫愁演唱。 不久之前虾米寻光 X 计划更是把代表国内*锋独立之声的几组音乐人送 往【洛杉矶】与虾米*合作伙伴【BMG】旗下的国际*制作人共同创 作歌曲， 阿克江作为其中一名音乐人参与其中， 与 Chris Brown 制作人 Non-Fiction 一同完成了四部具有国际化视野的音乐作品。 - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/artist/135890",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/showstart/brand/:id": {
-        "path": "/brand/:id",
-        "name": "按厂牌 - 演出更新",
-        "maintainers": [
-          "lchtao26"
-        ],
-        "example": "/showstart/brand/34707",
-        "parameters": {
-          "id": "厂牌 ID"
-        },
-        "description": "::: tip\n厂牌 ID 查询: `/showstart/search/brand/:keyword`，如: [https://rsshub.app/showstart/search/brand/ 声场](https://rsshub.app/showstart/search/brand/声场)\n:::",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.showstart.com/host/:id"
-            ]
-          }
-        ],
-        "location": "brand.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/showstart/event/:cityCode/:showStyle?": {
-        "path": "/event/:cityCode/:showStyle?",
-        "name": "按城市 - 演出更新",
-        "maintainers": [
-          "lchtao26"
-        ],
-        "example": "/showstart/event/571/3",
-        "parameters": {
-          "cityCode": "演出城市 (编号)",
-          "showStyle": "演出风格 (编号)"
-        },
-        "description": "::: tip\n\n- 演出城市 `cityCode` 查询: `/showstart/search/city/:keyword`, 如: [https://rsshub.app/showstart/search/city/ 杭州](https://rsshub.app/showstart/search/city/杭州)\n\n- 演出风格 `showStyle` 查询: `/showstart/search/style/:keyword`，如: [https://rsshub.app/showstart/search/style/ 摇滚](https://rsshub.app/showstart/search/style/摇滚)\n\n:::",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "event.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 38,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "68586319985771520",
-            "url": "rsshub://showstart/event/571/2",
-            "title": "秀动网 -",
-            "description": "秀动网 - - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "67433992246280192",
-            "url": "rsshub://showstart/event/21/2",
-            "title": "秀动网 -",
-            "description": "秀动网 - - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/showstart/search/:type/:keyword?": {
-        "path": "/search/:type/:keyword?",
-        "name": "演出搜索",
-        "maintainers": [
-          "lchtao26"
-        ],
-        "example": "/showstart/search/live",
-        "parameters": {
-          "keyword": "搜索关键词",
-          "type": {
-            "description": "类别",
-            "options": [
-              {
-                "value": "event",
-                "label": "演出"
-              },
-              {
-                "value": "artist",
-                "label": "音乐人"
-              },
-              {
-                "value": "site",
-                "label": "场地"
-              },
-              {
-                "value": "brand",
-                "label": "厂牌"
-              },
-              {
-                "value": "city",
-                "label": "城市"
-              },
-              {
-                "value": "style",
-                "label": "风格"
-              }
-            ]
-          }
-        },
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "location": "search.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 6,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "175967172586634240",
-            "url": "rsshub://showstart/search/city/%E8%8B%8F%E5%B7%9E",
-            "title": "秀动网 - 搜城市 - 苏州",
-            "description": "秀动网 - 搜城市 - 苏州 - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/",
-            "image": null,
-            "errorMessage": "e[t].localeCompare is not a function\n",
-            "errorAt": "2026-08-02T16:57:18.143Z",
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "220803179682283520",
-            "url": "rsshub://showstart/search/artist/%E5%A3%B0%E9%9F%B3%E7%8E%A9%E5%85%B7",
-            "title": "秀动网 - 搜艺人 - 声音玩具",
-            "description": "秀动网 - 搜艺人 - 声音玩具 - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/showstart/site/:siteId": {
-        "path": "/site/:siteId",
-        "name": "按场地 - 演出更新",
-        "maintainers": [
-          "lchtao26"
-        ],
-        "example": "/showstart/site/3583",
-        "parameters": {
-          "siteId": "演出场地 (编号)"
-        },
-        "description": "::: tip\n\n- 演出场地 ID 查询: `/showstart/search/site/:keyword`, 如: [https://rsshub.app/showstart/search/site/ 酒球会](https://rsshub.app/showstart/search/site/酒球会)\n\n:::",
-        "categories": [
-          "shopping"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.showstart.com/venue/:siteId"
-            ]
-          }
-        ],
-        "location": "site.ts",
-        "addedAt": "2024-08-07T01:38:24.000Z",
-        "heat": 102,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "68851013929552896",
-            "url": "rsshub://showstart/site/18165038",
-            "title": "秀动网 - 上海 - 回响之地 Music Park",
-            "description": "上海市长宁区绥宁路820号 - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "70160608790705152",
-            "url": "rsshub://showstart/site/3515",
-            "title": "秀动网 - 广州 - SDlivehouse",
-            "description": "广州市海珠区南洲路154号（侨建·HICITY ）2F 207 - Powered by RSSHub",
-            "siteUrl": "https://www.showstart.com/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
             "ownerUserId": null
           }
         ],
@@ -233857,6 +233762,101 @@
         ],
         "test": {
           "code": 0
+        }
+      }
+    }
+  },
+  "producthunt": {
+    "name": "Product Hunt",
+    "url": "www.producthunt.com",
+    "description": "> 官方 Feed 地址为: <https://www.producthunt.com/feed>",
+    "categories": [
+      "other"
+    ],
+    "heat": 203,
+    "routes": {
+      "/producthunt/feed": {
+        "path": "/feed",
+        "name": "Official Feed",
+        "url": "www.producthunt.com/feed/",
+        "maintainers": [
+          "miaoyafeng",
+          "Fatpandac"
+        ],
+        "example": "/producthunt/feed",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "feed.ts",
+        "addedAt": "2026-11-14T12:04:24.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/producthunt/today": {
+        "path": "/today",
+        "name": "Top Products Launching Today",
+        "url": "www.producthunt.com/",
+        "maintainers": [
+          "miaoyafeng",
+          "Fatpandac"
+        ],
+        "example": "/producthunt/today",
+        "description": "Top products from the publisher’s Today list. The general Product Hunt feed is also available at `/producthunt/feed`.",
+        "categories": [
+          "other"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "PRODUCTHUNT_ACCESS_TOKEN",
+              "description": "Optional API access token for the featured daily list when the website is unavailable. See [Product Hunt API documentation](https://api.producthunt.com/v2/docs).",
+              "optional": true
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.producthunt.com/"
+            ]
+          }
+        ],
+        "location": "today.tsx",
+        "addedAt": "2019-12-27T08:26:46.000Z",
+        "heat": 203,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "41369544201246720",
+            "url": "rsshub://producthunt/today",
+            "title": "Product Hunt Today Popular",
+            "description": "Product Hunt Today Popular - Powered by RSSHub",
+            "siteUrl": "https://www.producthunt.com/",
+            "image": null,
+            "errorMessage": "[GET] \"https://www.producthunt.com/\": 403 Forbidden\nAuthentication failed. Access denied.\n/producthunt/today\n[GET] \"https://www.producthunt.com/\": 403 Forbidden\n",
+            "errorAt": "2025-10-28T05:52:00.116Z",
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
         }
       }
     }
