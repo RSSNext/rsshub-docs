@@ -13264,6 +13264,73 @@
       }
     }
   },
+  "manyvids": {
+    "name": "ManyVids",
+    "url": "www.manyvids.com",
+    "categories": [
+      "multimedia"
+    ],
+    "heat": 20,
+    "routes": {
+      "/manyvids/profile/vids/:uid": {
+        "path": "/profile/vids/:uid",
+        "name": "Creator Videos",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/manyvids/profile/vids/1001213004",
+        "parameters": {
+          "uid": "User ID, can be found in the URL."
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "nsfw": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.manyvids.com/Profile/:uid/:handle/Store/*",
+              "www.manyvids.com/Profile/:uid/:handle/Store"
+            ]
+          }
+        ],
+        "location": "video.tsx",
+        "addedAt": "2024-06-04T15:29:11.000Z",
+        "heat": 20,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "62869444363986944",
+            "url": "rsshub://manyvids/profile/vids/1001213004",
+            "title": "Sydney Harwin's Profile - Porn vids, Pics & More | ManyVids - ManyVids",
+            "description": "Thankyou for sinning with me... - Powered by RSSHub",
+            "siteUrl": "https://www.manyvids.com/Profile/1001213004/sydney-harwin/Store/Videos",
+            "image": "https://cdn5.manyvids.com/php_uploads/profile/Icecreeam92/image/cropped-image_1770419448.jpeg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "165059777441617920",
+            "url": "rsshub://manyvids/profile/vids/1002855322",
+            "title": "Katekuray's Profile - Porn vids, Pics & More | ManyVids - ManyVids",
+            "description": "Too cute to behave - Powered by RSSHub",
+            "siteUrl": "https://www.manyvids.com/Profile/1002855322/katekuray/Store/Videos",
+            "image": "https://cdn5.manyvids.com/php_uploads/profile/Katekuray/image/Bkvs423ciOU_1587018300.jpg",
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      }
+    }
+  },
   "metmuseum": {
     "name": "The Metropolitan Museum of Art",
     "url": "www.metmuseum.org",
@@ -24293,73 +24360,6 @@
         "test": {
           "code": 1,
           "message": "Error: Test timed out in 60000ms.\nIf this is a long-running test, pass a timeout value as the last argument or configure it globally with \"testTimeout\".\n    at task (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2700:43)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2717:16)\n    at Object.<anonymous> (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2486:28)\n    at chain (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:1870:14)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:101:12\n    at file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:52\n    at runWithSuite (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:3267:8)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2781:22)\n    at Object.collect (file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.0.5_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.0.5_jsd_64c5805e821360279d63f0d94336e51b/node_modules/vitest/dist/chunks/run.BPv-BBRv.js:2786:51)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
-        }
-      }
-    }
-  },
-  "manyvids": {
-    "name": "ManyVids",
-    "url": "www.manyvids.com",
-    "categories": [
-      "multimedia"
-    ],
-    "heat": 20,
-    "routes": {
-      "/manyvids/profile/vids/:uid": {
-        "path": "/profile/vids/:uid",
-        "name": "Creator Videos",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "example": "/manyvids/profile/vids/1001213004",
-        "parameters": {
-          "uid": "User ID, can be found in the URL."
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "nsfw": true
-        },
-        "radar": [
-          {
-            "source": [
-              "www.manyvids.com/Profile/:uid/:handle/Store/*",
-              "www.manyvids.com/Profile/:uid/:handle/Store"
-            ]
-          }
-        ],
-        "location": "video.tsx",
-        "addedAt": "2024-06-04T15:29:11.000Z",
-        "heat": 20,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "62869444363986944",
-            "url": "rsshub://manyvids/profile/vids/1001213004",
-            "title": "Sydney Harwin's Profile - Porn vids, Pics & More | ManyVids - ManyVids",
-            "description": "Thankyou for sinning with me... - Powered by RSSHub",
-            "siteUrl": "https://www.manyvids.com/Profile/1001213004/sydney-harwin/Store/Videos",
-            "image": "https://cdn5.manyvids.com/php_uploads/profile/Icecreeam92/image/cropped-image_1770419448.jpeg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "165059777441617920",
-            "url": "rsshub://manyvids/profile/vids/1002855322",
-            "title": "Katekuray's Profile - Porn vids, Pics & More | ManyVids - ManyVids",
-            "description": "Too cute to behave - Powered by RSSHub",
-            "siteUrl": "https://www.manyvids.com/Profile/1002855322/katekuray/Store/Videos",
-            "image": "https://cdn5.manyvids.com/php_uploads/profile/Katekuray/image/Bkvs423ciOU_1587018300.jpg",
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
         }
       }
     }
