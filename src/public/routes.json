@@ -158864,41 +158864,6 @@
     ],
     "heat": 318403,
     "routes": {
-      "/telegram/media/:entityName/:messageId": {
-        "path": "/media/:entityName/:messageId",
-        "name": "Channel Media",
-        "maintainers": [
-          "synchrone"
-        ],
-        "example": "/telegram/media/telegram/1233",
-        "parameters": {
-          "entityName": "entity name",
-          "messageId": "message id"
-        },
-        "description": "::: tip\nServes telegram media like pictures, video or files.\n:::",
-        "categories": [
-          "social-media"
-        ],
-        "features": {
-          "requireConfig": [
-            {
-              "name": "TELEGRAM_SESSION",
-              "optional": false,
-              "description": "Telegram API Authentication"
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [],
-        "location": "channel-media.ts",
-        "addedAt": "2025-09-16T13:41:05.000Z",
-        "heat": 0,
-        "topFeeds": []
-      },
       "/telegram/stickerpack/:name": {
         "path": "/stickerpack/:name",
         "name": "Sticker Pack",
@@ -158956,6 +158921,41 @@
             "ownerUserId": null
           }
         ]
+      },
+      "/telegram/media/:entityName/:messageId": {
+        "path": "/media/:entityName/:messageId",
+        "name": "Channel Media",
+        "maintainers": [
+          "synchrone"
+        ],
+        "example": "/telegram/media/telegram/1233",
+        "parameters": {
+          "entityName": "entity name",
+          "messageId": "message id"
+        },
+        "description": "::: tip\nServes telegram media like pictures, video or files.\n:::",
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "TELEGRAM_SESSION",
+              "optional": false,
+              "description": "Telegram API Authentication"
+            }
+          ],
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [],
+        "location": "channel-media.ts",
+        "addedAt": "2025-09-16T13:41:05.000Z",
+        "heat": 0,
+        "topFeeds": []
       },
       "/telegram/stories/:username/:story?": {
         "path": "/stories/:username/:story?",
