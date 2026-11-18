@@ -239,7 +239,7 @@ Here is the final code that you should have:
 ```ts
 import { Route } from '@/types';
 import ofetch from '@/utils/ofetch'; // Unified request library used
-import { parseDate } from '@/utils/parse-date'; // Tool function for parsing dates
+import { parseDate } from '@/utils/time'; // Tool function for parsing dates
 
 export const route: Route = {
     // Write the routing information introduced in the previous text here.
@@ -381,7 +381,7 @@ Here's an example code:
 import { Route } from '@/types';
 import ofetch from '@/utils/ofetch';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 
 export const route: Route = {
     // Write the routing information introduced in the previous text here.
@@ -434,7 +434,7 @@ Here's the updated code:
 import ofetch from '@/utils/ofetch';
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 
 export const route: Route = {
     // Write the routing information introduced in the previous text here.
@@ -501,7 +501,7 @@ Now, we will be using `puppeteer` instead of `ofetch` to retrieve data from the 
 ```ts{13-44}
 import { Route } from '@/types';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
 
@@ -558,7 +558,7 @@ Retrieving the full articles of each issue using a new browser page is similar t
 ```ts{51-65}
 import { Route } from '@/types';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
 import cache from '@/utils/cache';

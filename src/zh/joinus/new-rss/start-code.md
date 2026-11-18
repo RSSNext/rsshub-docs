@@ -232,7 +232,7 @@ export const route: Route = {
 ```ts
 import { Route } from '@/types';
 import ofetch from '@/utils/ofetch'; // 统一使用的请求库
-import { parseDate } from '@/utils/parse-date'; // 解析日期的工具函数
+import { parseDate } from '@/utils/time'; // 解析日期的工具函数
 
 export const route: Route = {
     // 在此处编写前文介绍的路由信息
@@ -374,7 +374,7 @@ export const route: Route = {
 import { Route } from '@/types';
 import ofetch from '@/utils/ofetch';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 
 export const route: Route = {
     // 在此处编写前文介绍的路由信息
@@ -427,7 +427,7 @@ export const route: Route = {
 import ofetch from '@/utils/ofetch';
 import cache from '@/utils/cache';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 
 export const route: Route = {
     // 在此处编写前文介绍的路由信息
@@ -495,7 +495,7 @@ export const route: Route = {
 ```ts{13-44}
 import { Route } from '@/types';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
 
@@ -552,7 +552,7 @@ export const route: Route = {
 ```ts{51-65}
 import { Route } from '@/types';
 import { load } from 'cheerio';
-import { parseDate } from '@/utils/parse-date';
+import { parseDate } from '@/utils/time';
 import logger from '@/utils/logger';
 import puppeteer from '@/utils/puppeteer';
 import cache from '@/utils/cache';
