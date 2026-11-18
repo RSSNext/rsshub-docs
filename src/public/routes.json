@@ -169512,6 +169512,70 @@
       }
     }
   },
+  "vllm": {
+    "name": "vLLM",
+    "url": "vllm.ai",
+    "description": "Technical articles, release announcements, model guides, and community updates from the vLLM project.",
+    "zh": {
+      "name": "vLLM",
+      "description": "vLLM 官方技术博客、版本发布、模型适配指南与社区动态。"
+    },
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/vllm/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "vllm.ai/blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/vllm/blog",
+        "description": "Full-text articles, release announcements, and model guides from the official vLLM blog. Fetches up to 20 entries by default via the official RSS feed; supports the common `limit` query parameter.",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "vllm.ai/blog",
+              "vllm.ai/blog/:slug",
+              "vllm.ai/blog/rss.xml",
+              "vllm.ai/blog/atom.xml"
+            ],
+            "target": "/blog"
+          },
+          {
+            "source": [
+              "blog.vllm.ai/",
+              "blog.vllm.ai/:slug"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "addedAt": "2026-11-18T02:40:46.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "博客",
+          "description": "通过官方 RSS 发现并抓取 vLLM 官方博客全文（涵盖技术文章、版本发布与模型指南），默认获取最多 20 篇，支持通用 `limit` 参数。"
+        }
+      }
+    }
+  },
   "voanews": {
     "name": "Voice of America (VOA)",
     "url": "www.voachinese.com",
