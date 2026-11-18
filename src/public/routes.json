@@ -219301,6 +219301,85 @@
           "code": 0
         }
       },
+      "/openai/developers/blog/:lang?": {
+        "path": "/developers/blog/:lang?",
+        "name": "Developers Blog",
+        "url": "developers.openai.com/blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/openai/developers/blog",
+        "parameters": {
+          "lang": {
+            "description": "Language code (`en` by default, `zh-Hans` for Simplified Chinese).",
+            "default": "en",
+            "options": [
+              {
+                "value": "en",
+                "label": "English"
+              },
+              {
+                "value": "zh-Hans",
+                "label": "简体中文"
+              }
+            ]
+          }
+        },
+        "description": "Full-text engineering and developer posts from the official OpenAI Developer Blog (`developers.openai.com/blog` by default, or `zh-Hans` for Simplified Chinese). Fetches up to 20 entries by default; supports the common `limit` parameter.",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false,
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "developers.openai.com/blog",
+              "developers.openai.com/blog/:slug"
+            ],
+            "target": "/developers/blog"
+          },
+          {
+            "source": [
+              "developers.openai.com/zh-Hans/blog",
+              "developers.openai.com/zh-Hans/blog/:slug"
+            ],
+            "target": "/developers/blog/zh-Hans"
+          }
+        ],
+        "view": 0,
+        "location": "developers-blog.ts",
+        "addedAt": "2026-11-18T08:08:59.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "开发者博客",
+          "description": "抓取 OpenAI 官方开发者博客全文（涵盖 Codex、Agents SDK、API 工程实践等，默认英文站，传入 `zh-Hans` 切换中文站），默认返回最多 20 篇，支持通用 `limit` 参数。",
+          "parameters": {
+            "lang": {
+              "description": "语言版本（默认 `en` 对应英文站，传入 `zh-Hans` 可切换简体中文站）。",
+              "default": "en",
+              "options": [
+                {
+                  "value": "en",
+                  "label": "English"
+                },
+                {
+                  "value": "zh-Hans",
+                  "label": "简体中文"
+                }
+              ]
+            }
+          }
+        }
+      },
       "/openai/news": {
         "path": "/news",
         "name": "News",
