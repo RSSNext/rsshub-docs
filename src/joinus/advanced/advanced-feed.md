@@ -42,10 +42,10 @@ Each item in an RSS feed is represented by an object with a set of fields that d
 | **`author`**      | *(Optional)* The author of the item                                      | `undefinded`   | A, J, R |
 | **`category`**    | *(Optional)* The category of the item. You can use a plain string or an array of strings | `undefinded` | A, J, R |
 | **`guid`**        | *(Optional)* The unique identifier of the item                           | **`link || title`** | A, J, R |
-| **`pubDate`**     | *(Recommended)* The publication date of the item, which should be a [Date object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) following [the standard](/joinus/advanced/pub-date) | `undefinded` | A, J, R |
-| **`updated`**     | *(Optional)* The date of the last modification of the item, which should be a [Date object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) | `undefinded` | A, J |
+| **`pubDate`**     | *(Recommended)* The publication date of the item, which should be a [Temporal.Instant](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant) following [the standard](/joinus/advanced/pub-date) | `undefinded` | A, J, R |
+| **`updated`**     | *(Optional)* The date of the last modification of the item, which should be a [Temporal.Instant](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant) | `undefinded` | A, J |
 | **`itunes_item_image`** | *(Optional)* The URL of an image associated with the item                           | `undefinded` | R |
-| **`itunes_duration`** | *(Optional)* The length of an audio or video item in seconds (or in the format H:mm:ss), which should be a number or string | `undefinded` | J, R |
+| **`itunes_duration`** | *(Optional)* The length of an audio or video item, which should be a number. A string in the format `mm:ss` or `H:mm:ss` will be converted to seconds. | `undefinded` | J, R |
 | **`enclosure_url`** | *(Optional)* The URL of an enclosure associated with the item                                  | `undefinded` | A, J, R |
 | **`enclosure_length`** | *(Optional)* The size of the enclosure file in **byte**, which should be a number                                | `undefinded` | A, J, R |
 | **`enclosure_type`** | *(Optional)* The MIME type of the enclosure file, which should be a string                           | `undefinded` | A, J, R |
@@ -158,7 +158,7 @@ return {
     item: [
         {
             itunes_item_image: '', // This field specifies the item's cover image
-            itunes_duration: '', // This field is optional and specifies the length of the audio in seconds or the format H:mm:ss
+            itunes_duration: '', // This field is optional and specifies the length of the audio in seconds or in the format mm:ss or H:mm:ss
             enclosure_url: '', // This should be the item's direct audio link
             enclosure_length: '', // This field is optional and specifies the size of the file in **bytes**
             enclosure_type: '', // This field specifies the MIME type of the audio file (common types are 'audio/mpeg' for .mp3, 'audio/x-m4a' for .m4a, and 'video/mp4' for .mp4)

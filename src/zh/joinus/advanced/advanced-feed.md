@@ -40,10 +40,10 @@ sidebar_position: 1
 | **`author`**      | *（可选）* 条目的作者                         | `undefinded` | A, J, R |
 | **`category`**    | *（可选）* 条目的分类。字符串或字符串数组皆可 | `undefinded` | A, J, R |
 | **`guid`**        | *（可选）* 条目的唯一标识符 | **`link || title`**  | A, J, R |
-| **`pubDate`**     | *（推荐）* 条目的发布日期，应该 [遵从规范](/zh/joinus/advanced/pub-date) 是 [Date object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) | `undefinded` | A, J, R |
-| **`updated`**     | *（可选）* 条目的最后修改日期，应该是 [Date object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date) | `undefinded` | A, J |
+| **`pubDate`**     | *（推荐）* 条目的发布日期，应该 [遵从规范](/zh/joinus/advanced/pub-date) 是 [Temporal.Instant](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant) | `undefinded` | A, J, R |
+| **`updated`**     | *（可选）* 条目的最后修改日期，应该是 [Temporal.Instant](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant) | `undefinded` | A, J |
 | **`itunes_item_image`** | *（可选）* 条目相关联的图片的网址 | `undefinded` | R |
-| **`itunes_duration`** | *（可选）* 音频或视频条目的长度，以秒为单位（或格式为 H:mm:ss），应为数字或字符串 | `undefinded` | J, R |
+| **`itunes_duration`** | *（可选）* 音频或视频条目的长度，应为数字。格式为 `mm:ss` 或 `H:mm:ss` 的字符串会被转换为秒。 | `undefinded` | J, R |
 | **`enclosure_url`** | *（可选）* 条目相关联的附件的网址 | `undefinded` | A, J, R |
 | **`enclosure_length`** | *（可选）* 附件文件的大小（以 **byte** 为单位），应为数字 | `undefinded` | A, J, R |
 | **`enclosure_type`** | *（可选）* 附件文件的 MIME 类型，应为字符串 | `undefinded` | A, J, R |
@@ -156,7 +156,7 @@ return {
     item: [
         {
             itunes_item_image: '', // 条目的封面图像
-            itunes_duration: '', // 可选，音频的长度，以秒为单位 或 H:mm:ss 格式
+            itunes_duration: '', // 可选，音频的长度，以秒为单位，或 mm:ss、H:mm:ss 格式
             enclosure_url: '', // 音频直链
             enclosure_length: '', // 可选，文件大小，以 Byte 为单位
             enclosure_type: '', // 音频文件 MIME 类型（常见类型 .mp3 是 'audio/mpeg'，.m4a 是 'audio/x-m4a'，.mp4 是 'video/mp4'）
