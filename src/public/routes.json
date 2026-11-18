@@ -83302,65 +83302,6 @@
       }
     }
   },
-  "foreverblog": {
-    "name": "十年之约",
-    "url": "www.foreverblog.cn",
-    "categories": [
-      "blog"
-    ],
-    "heat": 620,
-    "routes": {
-      "/foreverblog/feeds": {
-        "path": "/feeds",
-        "name": "专题展示 - 文章",
-        "url": "www.foreverblog.cn/feeds.html",
-        "maintainers": [
-          "7Wate",
-          "a180285"
-        ],
-        "example": "/foreverblog/feeds",
-        "parameters": {},
-        "categories": [
-          "blog"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.foreverblog.cn/feeds.html"
-            ]
-          }
-        ],
-        "location": "feeds.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 620,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "53110725864198144",
-            "url": "rsshub://foreverblog/feeds",
-            "title": "十年之约——专题展示",
-            "description": "十年之约——专题展示 - Powered by RSSHub",
-            "siteUrl": "https://www.foreverblog.cn/feeds.html",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "fortunechina": {
     "name": "财富中文网",
     "url": "fortunechina.com",
