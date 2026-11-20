@@ -150808,6 +150808,62 @@
       }
     }
   },
+  "sierra": {
+    "name": "Sierra",
+    "url": "sierra.ai",
+    "description": "News, product updates, engineering deep dives, and customer stories from Sierra.",
+    "zh": {
+      "name": "Sierra",
+      "description": "Sierra 官方博客、产品更新、工程实践与客户案例。"
+    },
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/sierra/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "sierra.ai/blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/sierra/blog",
+        "parameters": {},
+        "description": "Full-text news, product updates, engineering deep dives, and customer stories from the official Sierra blog via its RSS feed.",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "sierra.ai/blog",
+              "sierra.ai/blog/:slug",
+              "sierra.ai/rss.xml"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "addedAt": "2026-11-20T10:01:45.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "博客",
+          "description": "通过官方 RSS 获取 Sierra 博客的产品更新、工程实践与客户案例全文。"
+        }
+      }
+    }
+  },
   "sigsac": {
     "name": "ACM Special Interest Group on Security Audit and Control",
     "url": "sigsac.org",
