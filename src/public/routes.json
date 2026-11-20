@@ -79795,6 +79795,53 @@
       }
     }
   },
+  "elevenlabs": {
+    "name": "ElevenLabs",
+    "url": "elevenlabs.io",
+    "description": "Product updates, research, and customer stories from ElevenLabs.",
+    "zh": {
+      "name": "ElevenLabs",
+      "description": "ElevenLabs 官方产品动态、研究文章与客户案例。"
+    },
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/elevenlabs/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "elevenlabs.io/blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/elevenlabs/blog",
+        "description": "Full-text product updates, research, and customer stories from the official blog.",
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "elevenlabs.io/blog",
+              "elevenlabs.io/blog/:slug",
+              "elevenlabs.io/blog/rss.xml"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "addedAt": "2026-11-20T02:55:17.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "博客",
+          "description": "通过官方 RSS 获取 ElevenLabs 的产品动态、研究文章和客户案例全文。"
+        }
+      }
+    }
+  },
   "elpais": {
     "name": "El País",
     "url": "elpais.com",
