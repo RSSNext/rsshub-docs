@@ -114505,6 +114505,67 @@
       }
     }
   },
+  "manager-dev": {
+    "name": "Manager.dev",
+    "url": "www.manager.dev",
+    "description": "A weekly newsletter for engineering managers by Anton Zaides.",
+    "categories": [
+      "blog"
+    ],
+    "heat": 0,
+    "routes": {
+      "/manager-dev/newsletter/:sort?": {
+        "path": "/newsletter/:sort?",
+        "name": "Newsletter",
+        "url": "www.manager.dev/newsletter",
+        "maintainers": [
+          "Rjnishant530"
+        ],
+        "example": "/manager-dev/newsletter",
+        "parameters": {
+          "sort": {
+            "description": "Sort order, same as the tabs on the newsletter page",
+            "default": "most-read",
+            "options": [
+              {
+                "value": "most-read",
+                "label": "Most read"
+              },
+              {
+                "value": "newest",
+                "label": "Newest"
+              }
+            ]
+          }
+        },
+        "description": "Full-text posts from the Manager.dev newsletter, either the most-read posts of all time (by view count) or the newest posts. Sponsor blocks are removed.",
+        "categories": [
+          "blog"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.manager.dev/newsletter"
+            ],
+            "target": "/newsletter"
+          }
+        ],
+        "view": 0,
+        "location": "newsletter.ts",
+        "addedAt": "2026-11-21T05:29:48.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "manhuagui": {
     "name": "看漫画",
     "url": "www.manhuagui.com",
