@@ -48763,6 +48763,7 @@
       "popular",
       "design",
       "other",
+      "programming",
       "new-media",
       "multimedia"
     ],
@@ -48953,6 +48954,80 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 340764801293 to be less than 311040000000\n    at checkDate (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:75:46)\n    at checkRSS (/home/runner/work/RSSHub/RSSHub/lib/app.test.ts:100:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:119:17\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      },
+      "/apple/ml-research/:category?": {
+        "path": "/ml-research/:category?",
+        "name": "Machine Learning Research",
+        "url": "machinelearning.apple.com",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/apple/ml-research",
+        "parameters": {
+          "category": {
+            "description": "Content category: `all` (default, highlights + research papers), `highlights` (featured research & engineering articles), or `research` (research publications).",
+            "default": "all",
+            "options": [
+              {
+                "value": "all",
+                "label": "All"
+              },
+              {
+                "value": "highlights",
+                "label": "Highlights"
+              },
+              {
+                "value": "research",
+                "label": "Research Publications"
+              }
+            ]
+          }
+        },
+        "description": "Full-text engineering highlights and research publications (with full abstracts, KaTeX math, audio/video, and arXiv/GitHub links) from Apple Machine Learning Research (`machinelearning.apple.com`).",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "machinelearning.apple.com/",
+              "machinelearning.apple.com/research/:slug"
+            ],
+            "target": "/ml-research"
+          },
+          {
+            "source": [
+              "machinelearning.apple.com/highlights"
+            ],
+            "target": "/ml-research/highlights"
+          },
+          {
+            "source": [
+              "machinelearning.apple.com/research"
+            ],
+            "target": "/ml-research/research"
+          }
+        ],
+        "view": 0,
+        "location": "ml-research.ts",
+        "addedAt": "2026-11-21T12:25:25.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "机器学习研究",
+          "description": "获取 Apple Machine Learning Research（`machinelearning.apple.com`）的精选技术长文与研究论文（含完整摘要、公式、音视频及 arXiv/GitHub 源码链接）。",
+          "parameters": {
+            "category": "内容分类：默认 `all`（精选文章 + 研究论文合并按时间排序），可选 `highlights`（精选工程与研究博客）或 `research`（论文全库）。"
+          }
         }
       },
       "/apple/newsroom": {
