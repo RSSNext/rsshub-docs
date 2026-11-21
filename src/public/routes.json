@@ -7251,47 +7251,6 @@
       }
     }
   },
-  "the-decoder": {
-    "name": "The Decoder",
-    "url": "the-decoder.com",
-    "categories": [
-      "new-media"
-    ],
-    "heat": 0,
-    "routes": {
-      "/the-decoder/news": {
-        "path": "/news",
-        "name": "News",
-        "maintainers": [
-          "ljh12138164"
-        ],
-        "example": "/the-decoder/news",
-        "description": "Full English news and analysis from the official WordPress API, including images and videos. The official RSS feed only contains excerpts. Fetches the latest 30 articles by default; use the common `limit` parameter for up to 100 articles.",
-        "categories": [
-          "new-media"
-        ],
-        "radar": [
-          {
-            "source": [
-              "the-decoder.com/",
-              "the-decoder.com/artificial-intelligence-news/"
-            ]
-          }
-        ],
-        "location": "news.ts",
-        "addedAt": "2026-11-07T02:32:05.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "zh": {
-          "name": "新闻",
-          "description": "官方 RSS 只提供摘要。本路由通过官方 WordPress API 获取英文新闻与分析全文，保留正文中的图片和视频。默认获取最新 30 篇，可通过通用参数 `limit` 调整，最多 100 篇。"
-        },
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "trendingpapers": {
     "name": "Trending Papers",
     "url": "trendingpapers.com",
@@ -161510,6 +161469,47 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:118:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_c013b057866a1d3262e1bb4b0388a836/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      }
+    }
+  },
+  "the-decoder": {
+    "name": "The Decoder",
+    "url": "the-decoder.com",
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/the-decoder/news": {
+        "path": "/news",
+        "name": "News",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/the-decoder/news",
+        "description": "Free-to-read English news and analysis in full from the official WordPress API, including images and videos. Skips subscriber-only posts and posts without a body. Returns up to 30 articles by default; use the common `limit` parameter to request up to 100 articles.",
+        "categories": [
+          "new-media"
+        ],
+        "radar": [
+          {
+            "source": [
+              "the-decoder.com/",
+              "the-decoder.com/artificial-intelligence-news/"
+            ]
+          }
+        ],
+        "location": "news.ts",
+        "addedAt": "2026-11-07T02:32:05.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "新闻",
+          "description": "通过官方 WordPress API 获取可免费阅读的英文新闻与分析全文，保留正文中的图片和视频，跳过订阅专享和无正文的文章。默认最多返回 30 篇，可通过通用参数 `limit` 请求最多 100 篇。"
+        },
+        "test": {
+          "code": 0
         }
       }
     }
