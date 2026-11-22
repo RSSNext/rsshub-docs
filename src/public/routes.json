@@ -164341,6 +164341,64 @@
       }
     }
   },
+  "together": {
+    "name": "Together AI",
+    "url": "together.ai",
+    "description": "News, research, model releases, and inference engineering articles from Together AI.",
+    "zh": {
+      "name": "Together AI",
+      "description": "Together AI 官方博客、研究发布、模型上线与推理工程实践文章。"
+    },
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/together/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "together.ai/blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/together/blog",
+        "parameters": {},
+        "description": "Full-text news, research, model launches, and engineering posts from the official Together AI blog (`together.ai/blog`) via its RSS feed, preserving hero media, `<audio>` samples, `<video>` players, YouTube/Vimeo embeds, code blocks, and tables. Returns up to 20 articles by default and supports the common `limit` parameter.",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.together.ai/blog",
+              "www.together.ai/blog/:slug",
+              "www.together.ai/blog/rss.xml",
+              "together.ai/blog",
+              "together.ai/blog/:slug"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "addedAt": "2026-11-22T14:13:10.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "博客",
+          "description": "通过官方 RSS 抓取 Together AI 官方博客全文（涵盖新闻动态、前沿研究、模型发布与推理工程实践），完整保留题图、音视频播放器、YouTube/Vimeo 视频嵌入、代码块与表格。默认返回最新 20 篇，支持通用 `limit` 参数。"
+        }
+      }
+    }
+  },
   "tokeninsight": {
     "name": "TokenInsight",
     "url": "tokeninsight.com",
