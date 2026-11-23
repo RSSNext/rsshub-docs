@@ -31854,6 +31854,34 @@
         "test": {
           "code": 0
         }
+      },
+      "/facebook/search/:keyword": {
+        "path": "/search/:keyword",
+        "name": "Search",
+        "url": "www.facebook.com",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "example": "/facebook/search/rsshub",
+        "parameters": {
+          "keyword": "Search keyword"
+        },
+        "categories": [
+          "social-media"
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FACEBOOK_COOKIE",
+              "description": "Facebook cookie, only `c_user` and `xs` are required."
+            }
+          ],
+          "antiCrawler": true
+        },
+        "location": "search.ts",
+        "addedAt": "2026-11-23T06:30:46.000Z",
+        "heat": 0,
+        "topFeeds": []
       }
     }
   },
