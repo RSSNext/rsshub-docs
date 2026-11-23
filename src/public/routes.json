@@ -47702,7 +47702,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -74749,7 +74749,7 @@
       "/dealstreetasia/home": {
         "path": "/home",
         "name": "Home",
-        "url": "dealstreetasia.com/",
+        "url": "www.dealstreetasia.com/",
         "maintainers": [
           "jack2game"
         ],
@@ -74788,7 +74788,7 @@
       "/dealstreetasia/section/:section": {
         "path": "/section/:section",
         "name": "Section",
-        "url": "dealstreetasia.com/",
+        "url": "www.dealstreetasia.com/",
         "maintainers": [
           "jack2game"
         ],
@@ -103685,6 +103685,44 @@
     ],
     "heat": 3,
     "routes": {
+      "/iqiyi/user/video/:uid": {
+        "path": "/user/video/:uid",
+        "name": "用户视频",
+        "maintainers": [
+          "talengu",
+          "JimenezLi"
+        ],
+        "example": "/iqiyi/user/video/2289191062",
+        "parameters": {
+          "uid": "用户名"
+        },
+        "categories": [
+          "multimedia"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "iqiyi.com/u/:uid/*"
+            ]
+          }
+        ],
+        "location": "video.ts",
+        "addedAt": "2019-08-09T03:54:01.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 1,
+          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:138:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_f6175c2bc99982aa5aefc7463c3d6e1d/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      },
       "/iqiyi/album/:id": {
         "path": "/album/:id",
         "name": "剧集",
@@ -103726,44 +103764,6 @@
         ],
         "test": {
           "code": 0
-        }
-      },
-      "/iqiyi/user/video/:uid": {
-        "path": "/user/video/:uid",
-        "name": "用户视频",
-        "maintainers": [
-          "talengu",
-          "JimenezLi"
-        ],
-        "example": "/iqiyi/user/video/2289191062",
-        "parameters": {
-          "uid": "用户名"
-        },
-        "categories": [
-          "multimedia"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "iqiyi.com/u/:uid/*"
-            ]
-          }
-        ],
-        "location": "video.ts",
-        "addedAt": "2019-08-09T03:54:01.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 1,
-          "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:138:41\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_f6175c2bc99982aa5aefc7463c3d6e1d/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
         }
       }
     }
@@ -112568,7 +112568,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -123772,7 +123772,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -154969,8 +154969,8 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
           "supportScihub": false
@@ -169167,7 +169167,6 @@
           "university"
         ],
         "features": {
-          "requirePuppeteer": true,
           "antiCrawler": true
         },
         "radar": [
@@ -169198,7 +169197,6 @@
           "university"
         ],
         "features": {
-          "requirePuppeteer": true,
           "antiCrawler": true
         },
         "radar": [
@@ -169228,7 +169226,6 @@
           "university"
         ],
         "features": {
-          "requirePuppeteer": true,
           "antiCrawler": true
         },
         "radar": [
@@ -169258,7 +169255,6 @@
           "university"
         ],
         "features": {
-          "requirePuppeteer": true,
           "antiCrawler": true
         },
         "radar": [
@@ -178241,7 +178237,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -178303,7 +178299,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -178356,7 +178352,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -178396,7 +178392,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -178463,7 +178459,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -178533,7 +178529,7 @@
               "description": "需要登录才能访问的专栏请配置雪球登录 Cookie。"
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -178675,7 +178671,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
@@ -206885,7 +206881,7 @@
           "government"
         ],
         "features": {
-          "requirePuppeteer": true
+          "antiCrawler": true
         },
         "radar": [
           {
@@ -220174,7 +220170,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -220219,7 +220215,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -220309,7 +220305,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -229550,7 +229546,7 @@
         ],
         "features": {
           "requireConfig": false,
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -230492,7 +230488,7 @@
           "social-media"
         ],
         "features": {
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "requireConfig": [
             {
@@ -230545,7 +230541,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -230692,7 +230688,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -230821,7 +230817,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
           "supportPodcast": false,
@@ -231004,7 +231000,7 @@
               "description": ""
             }
           ],
-          "requirePuppeteer": true,
+          "requirePuppeteer": false,
           "antiCrawler": true,
           "supportBT": false,
           "supportPodcast": false,
