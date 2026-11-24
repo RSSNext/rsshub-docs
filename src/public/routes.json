@@ -65739,6 +65739,70 @@
       }
     }
   },
+  "chrome": {
+    "name": "Chrome for Developers",
+    "url": "developer.chrome.com",
+    "zh": {
+      "name": "Chrome 开发者"
+    },
+    "categories": [
+      "programming"
+    ],
+    "heat": 0,
+    "routes": {
+      "/chrome/blog/:lang?": {
+        "path": "/blog/:lang?",
+        "name": "Blog",
+        "url": "developer.chrome.com/blog",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/chrome/blog",
+        "parameters": {
+          "lang": {
+            "description": "Language code (`hl` parameter on `developer.chrome.com`, supported: en, ar, bn, de, es-419, es, fa, fr, he, hi, id, it, ja, ko, nl, pl, pt-br, ru, th, tr, vi, zh-cn, zh-tw)",
+            "default": "en"
+          }
+        },
+        "description": "Full-text articles from the Chrome for Developers Blog (`developer.chrome.com/blog`), stripping DevSite inline CSS/author header chrome and converting `<devsite-video>` embeds into standard YouTube `<iframe>` players.",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "developer.chrome.com/blog",
+              "developer.chrome.com/blog/:slug"
+            ],
+            "target": "/blog/:lang?"
+          }
+        ],
+        "view": 0,
+        "location": "blog.tsx",
+        "addedAt": "2026-11-24T02:08:22.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "博客",
+          "description": "获取 Chrome for Developers 官方博客全文（基于最新动态接口，清理头部内联样式与作者卡片，并将 `<devsite-video>` 转换为标准 YouTube `<iframe>` 播放器），支持 `:lang?` 参数（默认英文 `en`）。",
+          "parameters": {
+            "lang": {
+              "description": "语言代码（对应 `developer.chrome.com` 的 `hl` 参数，支持：en, ar, bn, de, es-419, es, fa, fr, he, hi, id, it, ja, ko, nl, pl, pt-br, ru, th, tr, vi, zh-cn, zh-tw）",
+              "default": "en"
+            }
+          }
+        }
+      }
+    }
+  },
   "chsi": {
     "name": "中国研究生招生信息网",
     "url": "yz.chsi.com.cn",
