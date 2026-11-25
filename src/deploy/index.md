@@ -733,6 +733,12 @@ Run RSSHub from just $1/month. Includes automatic updates and $5 free starting c
 
 To deploy the [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) above as it is, run `pethost deploy` in its folder with the [Pethost CLI](https://pethost.dev/docs/cli/). See the [Pethost guide](https://pethost.dev/blog/self-host-rsshub/) for configuration and updates.
 
+## Deploy to Simafri
+
+[Simafri](https://www.simafri.com) publishes a [step-by-step guide](https://www.simafri.com/en/guides/self-host-rsshub/) to run the [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml) above, with Redis, Browserless and an access key, on its managed VPS behind HTTPS, where its teams keep the server up to date, monitor it and back it up every night.
+
+[![Self-host on Simafri](https://www.simafri.com/assets/img/self-host-on-simafri.svg)](https://www.simafri.com/en/guides/self-host-rsshub/)
+
 ## Play with Docker
 
 If you would like to test routes or avoid IP limits, etc., you may build your own RSSHub for free by clicking the button below.

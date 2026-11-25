@@ -731,6 +731,12 @@ Sealos 模板会部署 RSSHub、Redis 缓存、Browserless、Redis 持久化存�
 
 如需直接部署上文的 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml)，可安装 [Pethost CLI](https://pethost.dev/docs/cli/)，在该文件所在目录运行 `pethost deploy`。配置与更新可参见 [Pethost 指南](https://pethost.dev/blog/self-host-rsshub/)。
 
+## 部署到 Simafri
+
+[Simafri](https://www.simafri.com) 发布了一份[分步指南](https://www.simafri.com/en/guides/self-host-rsshub/)（英文），介绍如何在其托管 VPS 上运行上文的 [docker-compose.yml](https://github.com/DIYgod/RSSHub/blob/master/docker-compose.yml)（包含 Redis、Browserless 和访问密钥），并通过 HTTPS 提供访问；服务器的更新、监控和每晚备份由 Simafri 团队负责。
+
+[![Self-host on Simafri](https://www.simafri.com/assets/img/self-host-on-simafri.svg)](https://www.simafri.com/en/guides/self-host-rsshub/)
+
 ## Play with Docker
 
 如果想要测试因为反爬规则导致无法访问的路由，您可以点击下方按钮拉起一套免费，临时，专属于您的 RSSHub
