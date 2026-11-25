@@ -85873,227 +85873,6 @@
       }
     }
   },
-  "futunn": {
-    "name": "Futubull 富途牛牛",
-    "url": "news.futunn.com",
-    "categories": [
-      "finance"
-    ],
-    "heat": 114,
-    "routes": {
-      "/futunn/live/:lang?": {
-        "path": "/live/:lang?",
-        "name": "快讯",
-        "maintainers": [
-          "kennyfong19931"
-        ],
-        "example": "/futunn/live",
-        "parameters": {
-          "lang": {
-            "description": "通知语言",
-            "default": "Mandarin",
-            "options": [
-              {
-                "label": "国语",
-                "value": "Mandarin"
-              },
-              {
-                "label": "粵語",
-                "value": "Cantonese"
-              },
-              {
-                "label": "English",
-                "value": "English"
-              }
-            ]
-          }
-        },
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "supportRadar": true,
-          "supportPodcast": true
-        },
-        "radar": [
-          {
-            "source": [
-              "news.futunn.com/main/live"
-            ],
-            "target": "/live"
-          },
-          {
-            "source": [
-              "news.futunn.com/hk/main/live"
-            ],
-            "target": "/live/Cantonese"
-          },
-          {
-            "source": [
-              "news.futunn.com/en/main/live"
-            ],
-            "target": "/live/English"
-          }
-        ],
-        "location": "live.ts",
-        "addedAt": "2025-11-12T14:26:35.000Z",
-        "heat": 23,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "212343743490256896",
-            "url": "rsshub://futunn/live",
-            "title": "富途牛牛 - 快讯",
-            "description": "富途牛牛 - 快讯 - Powered by RSSHub",
-            "siteUrl": "https://news.futunn.com/main/live",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/futunn/video": {
-        "path": "/video",
-        "name": "视频",
-        "maintainers": [
-          "kennyfong19931"
-        ],
-        "example": "/futunn/video",
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "supportRadar": true
-        },
-        "radar": [
-          {
-            "source": [
-              "news.futunn.com/main/video-list",
-              "news.futunn.com/:lang/main/video-list"
-            ],
-            "target": "/video"
-          }
-        ],
-        "location": "video.ts",
-        "addedAt": "2025-11-12T14:26:35.000Z",
-        "heat": 0,
-        "topFeeds": [],
-        "test": {
-          "code": 0
-        }
-      },
-      "/futunn/main": {
-        "path": [
-          "/main",
-          "/"
-        ],
-        "name": "要闻",
-        "maintainers": [
-          "Wsine",
-          "nczitzk",
-          "kennyfong19931"
-        ],
-        "example": "/futunn/main",
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "supportRadar": true
-        },
-        "radar": [
-          {
-            "source": [
-              "news.futunn.com/main",
-              "news.futunn.com/:lang/main"
-            ],
-            "target": "/main"
-          }
-        ],
-        "location": "main.ts",
-        "addedAt": "2024-02-29T17:24:49.000Z",
-        "heat": 63,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "61252688943239169",
-            "url": "rsshub://futunn/main",
-            "title": "富途牛牛 - 要闻",
-            "description": "富途牛牛 - 要闻 - Powered by RSSHub",
-            "siteUrl": "https://news.futunn.com/main",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      },
-      "/futunn/topic/:id": {
-        "path": "/topic/:id",
-        "name": "专题",
-        "maintainers": [
-          "kennyfong19931"
-        ],
-        "example": "/futunn/topic/1267",
-        "parameters": {
-          "id": "Topic ID, can be found in URL"
-        },
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "supportRadar": true
-        },
-        "radar": [
-          {
-            "source": [
-              "news.futunn.com/news-topics/:id/*",
-              "news.futunn.com/:lang/news-topics/:id/*"
-            ],
-            "target": "/topic/:id"
-          }
-        ],
-        "location": "topic.ts",
-        "addedAt": "2025-11-12T14:26:35.000Z",
-        "heat": 28,
-        "topFeeds": [
-          {
-            "type": "feed",
-            "id": "233311236627653632",
-            "url": "rsshub://futunn/topic/1267",
-            "title": "富途牛牛 - 专题 - 聚焦AI动向",
-            "description": "更多AI黑科技、场景落地、商用价值，尽在这里。 - Powered by RSSHub",
-            "siteUrl": "https://news.futunn.com/news-topics/1267/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          },
-          {
-            "type": "feed",
-            "id": "212426851395679232",
-            "url": "rsshub://futunn/topic/127",
-            "title": "富途牛牛 - 专题 - 投资干货",
-            "description": "可借鉴的投资经验，实用的交易方法，探索炒股之道。 - Powered by RSSHub",
-            "siteUrl": "https://news.futunn.com/news-topics/127/",
-            "image": null,
-            "errorMessage": null,
-            "errorAt": null,
-            "ownerUserId": null
-          }
-        ],
-        "test": {
-          "code": 0
-        }
-      }
-    }
-  },
   "fx-markets": {
     "name": "FX Markets",
     "url": "fx-markets.com",
@@ -200275,6 +200054,224 @@
         "test": {
           "code": 1,
           "message": "AssertionError: expected 503 to be 200 // Object.is equality\n    at /home/runner/work/RSSHub/RSSHub/lib/app.test.ts:138:41\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async file:///home/runner/work/RSSHub/RSSHub/node_modules/.pnpm/vitest@5.1.0_@opentelemetry+api@1.10.0_@types+node@26.6.6_@vitest+coverage-v8@5.1.0_jsd_f6175c2bc99982aa5aefc7463c3d6e1d/node_modules/vitest/dist/chunks/run.CjdgFZiW.js:2801:20"
+        }
+      }
+    }
+  },
+  "futunn": {
+    "name": "Futubull 富途牛牛",
+    "url": "news.futunn.com",
+    "categories": [
+      "finance"
+    ],
+    "heat": 114,
+    "routes": {
+      "/futunn/live/:lang?": {
+        "path": "/live/:lang?",
+        "name": "快讯",
+        "maintainers": [
+          "kennyfong19931"
+        ],
+        "example": "/futunn/live",
+        "parameters": {
+          "lang": {
+            "description": "通知语言",
+            "default": "Mandarin",
+            "options": [
+              {
+                "label": "国语",
+                "value": "Mandarin"
+              },
+              {
+                "label": "粵語",
+                "value": "Cantonese"
+              },
+              {
+                "label": "English",
+                "value": "English"
+              }
+            ]
+          }
+        },
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "supportRadar": true,
+          "supportPodcast": true
+        },
+        "radar": [
+          {
+            "source": [
+              "news.futunn.com/main/live"
+            ],
+            "target": "/live"
+          },
+          {
+            "source": [
+              "news.futunn.com/hk/main/live"
+            ],
+            "target": "/live/Cantonese"
+          },
+          {
+            "source": [
+              "news.futunn.com/en/main/live"
+            ],
+            "target": "/live/English"
+          }
+        ],
+        "location": "live.ts",
+        "addedAt": "2025-11-12T14:26:35.000Z",
+        "heat": 23,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "212343743490256896",
+            "url": "rsshub://futunn/live",
+            "title": "富途牛牛 - 快讯",
+            "description": "富途牛牛 - 快讯 - Powered by RSSHub",
+            "siteUrl": "https://news.futunn.com/main/live",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/futunn/video": {
+        "path": "/video",
+        "name": "视频",
+        "maintainers": [
+          "kennyfong19931"
+        ],
+        "example": "/futunn/video",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "news.futunn.com/main/video-list",
+              "news.futunn.com/:lang/main/video-list"
+            ],
+            "target": "/video"
+          }
+        ],
+        "location": "video.ts",
+        "addedAt": "2025-11-12T14:26:35.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "test": {
+          "code": 0
+        }
+      },
+      "/futunn/main": {
+        "path": "/main",
+        "name": "要闻",
+        "maintainers": [
+          "Wsine",
+          "nczitzk",
+          "kennyfong19931"
+        ],
+        "example": "/futunn/main",
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "news.futunn.com/main",
+              "news.futunn.com/:lang/main"
+            ],
+            "target": "/main"
+          }
+        ],
+        "location": "main.ts",
+        "addedAt": "2024-02-29T17:24:49.000Z",
+        "heat": 63,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "61252688943239169",
+            "url": "rsshub://futunn/main",
+            "title": "富途牛牛 - 要闻",
+            "description": "富途牛牛 - 要闻 - Powered by RSSHub",
+            "siteUrl": "https://news.futunn.com/main",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
+        }
+      },
+      "/futunn/topic/:id": {
+        "path": "/topic/:id",
+        "name": "专题",
+        "maintainers": [
+          "kennyfong19931"
+        ],
+        "example": "/futunn/topic/1267",
+        "parameters": {
+          "id": "Topic ID, can be found in URL"
+        },
+        "categories": [
+          "finance"
+        ],
+        "features": {
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "news.futunn.com/news-topics/:id/*",
+              "news.futunn.com/:lang/news-topics/:id/*"
+            ],
+            "target": "/topic/:id"
+          }
+        ],
+        "location": "topic.ts",
+        "addedAt": "2025-11-12T14:26:35.000Z",
+        "heat": 28,
+        "topFeeds": [
+          {
+            "type": "feed",
+            "id": "233311236627653632",
+            "url": "rsshub://futunn/topic/1267",
+            "title": "富途牛牛 - 专题 - 聚焦AI动向",
+            "description": "更多AI黑科技、场景落地、商用价值，尽在这里。 - Powered by RSSHub",
+            "siteUrl": "https://news.futunn.com/news-topics/1267/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          },
+          {
+            "type": "feed",
+            "id": "212426851395679232",
+            "url": "rsshub://futunn/topic/127",
+            "title": "富途牛牛 - 专题 - 投资干货",
+            "description": "可借鉴的投资经验，实用的交易方法，探索炒股之道。 - Powered by RSSHub",
+            "siteUrl": "https://news.futunn.com/news-topics/127/",
+            "image": null,
+            "errorMessage": null,
+            "errorAt": null,
+            "ownerUserId": null
+          }
+        ],
+        "test": {
+          "code": 0
         }
       }
     }
