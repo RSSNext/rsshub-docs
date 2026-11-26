@@ -225095,6 +225095,59 @@
       }
     }
   },
+  "restofworld": {
+    "name": "Rest of World",
+    "url": "restofworld.org",
+    "zh": {
+      "name": "Rest of World"
+    },
+    "categories": [
+      "new-media"
+    ],
+    "heat": 0,
+    "routes": {
+      "/restofworld/latest": {
+        "path": "/latest",
+        "name": "Latest",
+        "url": "restofworld.org/latest",
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "example": "/restofworld/latest",
+        "description": "Latest full-text articles from Rest of World (`restofworld.org/latest/`), enriching the excerpt-only official RSS feed with complete story bodies, Datawrapper chart embeds, and image credits.",
+        "categories": [
+          "new-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "restofworld.org",
+              "restofworld.org/latest",
+              "restofworld.org/latest/*"
+            ],
+            "target": "/latest"
+          }
+        ],
+        "view": 0,
+        "location": "latest.ts",
+        "addedAt": "2026-11-26T02:43:39.000Z",
+        "heat": 0,
+        "topFeeds": [],
+        "zh": {
+          "name": "最新资讯",
+          "description": "获取 Rest of World 最新全文报道（`restofworld.org/latest/`），在官方仅含摘要的 RSS 基础上补全完整文章正文、Datawrapper 图表与图片来源署名。"
+        }
+      }
+    }
+  },
   "ruancan": {
     "name": "软餐",
     "url": "ruancan.com",
