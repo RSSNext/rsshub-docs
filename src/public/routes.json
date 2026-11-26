@@ -229850,6 +229850,29 @@
           "code": 0
         }
       },
+      "/tongji/cs": {
+        "path": "/cs",
+        "name": "计算机科学与技术学院通知公告",
+        "url": "cs.tongji.edu.cn/index/tzgg.htm",
+        "maintainers": [
+          "MXH814"
+        ],
+        "example": "/tongji/cs",
+        "categories": [
+          "university"
+        ],
+        "radar": [
+          {
+            "source": [
+              "cs.tongji.edu.cn/index/tzgg.htm"
+            ]
+          }
+        ],
+        "location": "cs.ts",
+        "addedAt": "2026-11-26T08:39:50.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
       "/tongji/gs": {
         "path": "/gs",
         "name": "研究生院通知公告",
