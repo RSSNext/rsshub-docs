@@ -35542,6 +35542,71 @@
       }
     }
   },
+  "nanshanmuseum": {
+    "name": "Nanshan Museum",
+    "url": "www.nanshanmuseum.com",
+    "zh": {
+      "name": "南山博物馆"
+    },
+    "categories": [
+      "travel"
+    ],
+    "heat": 0,
+    "routes": {
+      "/nanshanmuseum/consultIndex/:type": {
+        "path": "/consultIndex/:type",
+        "name": "News",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/nanshanmuseum/consultIndex/news",
+        "parameters": {
+          "type": "News type, supported values: news（南博动态）、notice（通知公告）、procurement（政采信息）、affairs（馆务公开）"
+        },
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.nanshanmuseum.com/consultIndex"
+            ],
+            "target": "/consultIndex/news"
+          }
+        ],
+        "location": "consult-index.ts",
+        "addedAt": "2026-11-28T01:33:18.000Z",
+        "heat": 0,
+        "topFeeds": []
+      },
+      "/nanshanmuseum/exhibition/topicList/:type": {
+        "path": "/exhibition/topicList/:type",
+        "name": "Exhibitions",
+        "maintainers": [
+          "magazian"
+        ],
+        "example": "/nanshanmuseum/exhibition/topicList/topic",
+        "parameters": {
+          "type": "Exhibition type, supported values: topic（专题展览）、permanent（常设展览）、virtual（虚拟展厅）"
+        },
+        "categories": [
+          "travel"
+        ],
+        "radar": [
+          {
+            "source": [
+              "www.nanshanmuseum.com/exhibition/topicList"
+            ],
+            "target": "/exhibition/topicList/topic"
+          }
+        ],
+        "location": "topic-list.tsx",
+        "addedAt": "2026-11-28T01:33:18.000Z",
+        "heat": 0,
+        "topFeeds": []
+      }
+    }
+  },
   "nicovideo": {
     "name": "Niconico",
     "url": "www.nicovideo.jp",
